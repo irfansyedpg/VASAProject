@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.irfansyed.umeedenau.umeedenauMonitring">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pdra"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".SurveyCompletedActivity"
+            android:label="@string/title_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppThemeNACB">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+
+
+        <activity
+            android:name=".preg"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+
+        <activity
+            android:name=".deliv"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+        <activity
+            android:name=".pnc"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+
+        <activity
+            android:name=".newborn"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+        <activity
+            android:name=".imm"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+
+        <activity
+        android:name=".pneuonia"
+        android:label="@string/title_activity_main2"
+        android:theme="@style/AppTheme.NoActionBar">
+
+
+
+    </activity>
+        <activity
+            android:name=".diarhea"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+
+        <activity
+            android:name=".finall"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+
+
+
+        <activity
+            android:name=".preg_txt"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+
+        <activity
+            android:name=".deliv_textbox"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+        <activity
+            android:name=".pnc_txt"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+
+        <activity
+            android:name=".newborn_txt"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+        <activity
+            android:name=".imm_txt"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+
+        <activity
+            android:name=".pneuonia_txt"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+        <activity
+            android:name=".diarhea_txt"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+        <activity
+            android:name=".finall_txt"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+
+
+    </application>
+
+</manifest>
