@@ -280,6 +280,16 @@
 
     </style>
 
+
+
+    <style name="Button_date">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/black_overlay</item>
+
+    </style>
     <style name="Button_collder">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

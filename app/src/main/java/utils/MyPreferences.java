@@ -11,7 +11,7 @@ public class MyPreferences {
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
 
-    final public static String FILE_NAME = "com.irfansyed.umeedenau";
+    final public static String FILE_NAME = "com.irfansyed.VAS";
     final public static String  USER_ID  = "userId";
     final public static String  USER_NAME  = "username";
     final public static String  NAME  = "name";

@@ -29,81 +29,25 @@
     <string name="default_guest_name">Name</string>
 
 
-    <!-- Welcom section Starts -->
-    <string name="txt_welecom">
-         Assalam o Alaikum\n
-        My name is %%Name\n and I am working with Centre of Excellence in Women and Child Health, Aga Khan University Karachi with the collaboration of National Ministry of Health Services, Regulation and Coordination Government of Pakistan and Provincial Health Departments of Balochistan, Punjab and Sindh. I believe the data collector has asked you
-        a number of questions regarding maternal and child health. I would like to confirm a few questions for monitoring purposes.
-
-</string>
-    <!-- A section Ends -->
-
-
-    <string name="txt_A1">Cluster number </string>
-
-    <string name="txt_A2">Khandan/House Number</string>
-    <string name="txt_B1">Latitude</string>
-    <string name="txt_B2">Longitude</string>
-    <string name="txt_C1">Did the data collector visit your house?</string>
-    <string name="txt_C2">Did the data collector greet you when she came?</string>
-    <string name="txt_C3">Did the data collector introduce herself?</string>
-    <string name="txt_C4">Did the data collector take informed consent?</string>
-    <string name="txt_D1">Name of Head of the household</string>
-    <string name="txt_D2">Total number of members in the household</string>
-
-
-    <string name="txt_D3">Total number of eligible women in the household </string>
-    <string name="txt_D4">Number of children less than 5 yrs in the HH</string>
-    <string name="txt_D5">Name of respondent</string>
-
-
-    <string name="txt_E1">Total number of pregnancies among the WRAs in the HH</string>
-    <string name="txt_E2">Number of children born live in the HH who are still alive</string>
-    <string name="txt_E3">God Forbid (Khuda Na Khuwasta), did any woman in your household die in the past five years due to complications related to pregnancy, delivery and 42 days after delivery</string>
-    <string name="txt_E4">How many women have died</string>
-
-    <string name="txt_I1">Has any child less than 5 years of age in the household had diarrhea in the last 2 weeks in your household</string>
-    <string name="txt_I2">Has any child had an illness with cough that he/she breathes faster than usual with short, rapid breaths or has difficulty breathing in the past two weeks</string>
-    <string name="txt_I3">Did any child have do chest x-ray</string>
-
-    <string name="txt_L1">Do you have a separate room which is used as a kitchen</string>
-    <string name="txt_L2">How many rooms in this HH are used for sleeping</string>
-    <string name="txt_L3">What language do you usually speak in your household</string>
-
-    <string name="rb_L3_1">Urdu </string>
-    <string name="rb_L3_2">Punjabi </string>
-    <string name="rb_L3_3">Sindhi </string>
-    <string name="rb_L3_4">Balochi </string>
-    <string name="rb_L3_5">Siraiki </string>
-    <string name="rb_L3_6">Barauhi </string>
-    <string name="rb_L3_7">Brushaski </string>
-    <string name="rb_L3_8">Pashto </string>
-
-
-    <string name="txt_M1">What is the main source of drinking water for members of your household </string>
-
-    <string name="rb_M1_1">Piped into dwelling </string>
-    <string name="rb_M1_2">Piped into compound, yard or plot  </string>
-    <string name="rb_M1_3">Piped to neighbor </string>
-    <string name="rb_M1_4">Public tap / standpipe  </string>
-    <string name="rb_M1_5">Filtration Plant/unit </string>
-    <string name="rb_M1_6">Tube Well, Borehole </string>
-    <string name="rb_M1_7">Hand Pump </string>
-    <string name="rb_M1_8">Protected well </string>
-    <string name="rb_M1_9">Unprotected well </string>
-    <string name="rb_M1_10">Rainwater collection </string>
-    <string name="rb_M1_11">Tanker-truck </string>
-    <string name="rb_M1_12">Cart with small tank / drum </string>
-    <string name="rb_M1_13">Surface water (river, stream, dam, lake, pond, canal, irrigation channel) </string>
-    <string name="rb_M1_14">Bottled water </string>
-
-
-    <string name="txt_N1">Do you have any soap or detergent or ash/mud/sand in your house for washing hands</string>
-
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_main2">Main2Activity</string>
+
+
+
+    <string name="txt_header_text">txt_header_text</string>
+    <string name="txt_rb">txt_rb</string>
+    <string name="rb_text">rb_text</string>
+
+    <string name="txt_cb">txt_rb</string>
+
+    <string name="cb_text">cb_text</string>
+    <string name="ed_text">ed_text</string>
+    <string name="cmb_text">cmb_text</string>
+    <string name="date_text">date_text</string>
+
+
 
 
     <!-- E Ends -->

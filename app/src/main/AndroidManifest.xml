@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.irfansyed.umeedenau.umeedenauMonitring">
+    package="com.irfansyed.VAS.VASMonitring">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -19,14 +19,11 @@
             android:label="@string/title_home"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".SurveyCompletedActivity"
             android:label="@string/title_home"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
         <activity
             android:name=".LoginActivity"
             android:screenOrientation="portrait"
@@ -40,156 +37,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
-            android:name=".Main2Activity"
+            android:name=".templete"
             android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-
-
-        <activity
-            android:name=".preg"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-
-        <activity
-            android:name=".deliv"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-        <activity
-            android:name=".pnc"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-
-        <activity
-            android:name=".newborn"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-        <activity
-            android:name=".imm"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-
-        <activity
-        android:name=".pneuonia"
-        android:label="@string/title_activity_main2"
-        android:theme="@style/AppTheme.NoActionBar">
-
-
-
-    </activity>
-        <activity
-            android:name=".diarhea"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-
-        <activity
-            android:name=".finall"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-
-
-
-        <activity
-            android:name=".preg_txt"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-
-        <activity
-            android:name=".deliv_textbox"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-        <activity
-            android:name=".pnc_txt"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-
-        <activity
-            android:name=".newborn_txt"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-        <activity
-            android:name=".imm_txt"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-
-        <activity
-            android:name=".pneuonia_txt"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-        <activity
-            android:name=".diarhea_txt"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
-        <activity
-            android:name=".finall_txt"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
 
 
     </application>

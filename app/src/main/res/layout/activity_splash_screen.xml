@@ -5,7 +5,7 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent" android:orientation="vertical"
-tools:context="com.samirk433.umeedenau.umeedenauMonitring.LoginActivity"
+tools:context="com.samirk433.VAS.VASMonitring.LoginActivity"
 android:weightSum="1"
 android:background="#EEEEEE"
 
