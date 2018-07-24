@@ -14,7 +14,7 @@ public class globale {
 // hi globale
 
     // hey
-
+// aduld jaidsadd
 // abdu sjadd
     // abdu sajid
 }
