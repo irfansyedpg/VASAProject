@@ -18,5 +18,5 @@ public class globale {
 // abdu sjadd
     // abdu sajid
 
-    // irfan changes yaha hai ggg
+    // sajid changes yaha hai a
 }
