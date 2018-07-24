@@ -20,5 +20,5 @@ public class globale {
 
     // sajid changes yaha hai a
 
-    // sajid made changes here 
+    // sajid made changes here
 }
