@@ -280,7 +280,13 @@
 
     </style>
 
-
+    <style name="EditText_date">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">true</item>
+    </style>
 
     <style name="Button_date">
         <item name="android:layout_width">match_parent</item>

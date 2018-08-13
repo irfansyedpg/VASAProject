@@ -7,12 +7,15 @@ import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import data.C.C3001_C3011;
+import data.C.C3012_C3022;
+
 /**
  * Created by Umeed-e-Nau on 12/21/2016.
  */
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final String DB_NAME = "tran_DB.db";
+    private static final String DB_NAME = "vasa.db";
     private static final int VERSION = 1;
 
     Context mContext;
@@ -27,7 +30,8 @@ public class DBHelper extends SQLiteOpenHelper {
 
         db.beginTransaction();
 
-        db.execSQL(oTable.getCreateQuery());
+        db.execSQL(C3001_C3011.getCreateQuery()); // C3001_C3011 created here
+        db.execSQL(C3012_C3022.getCreateQuery()); // C3012_C3022 created here
 
         db.setTransactionSuccessful();
         db.endTransaction();
@@ -37,12 +41,12 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
 
         String query;
-        db.beginTransaction();
-        query = "DROP TABLE IF EXISTS " + oTable.TABLE_NAME;
-        db.execSQL(query);
+        //db.beginTransaction();
+        //query = "DROP TABLE IF EXISTS " + oTable.TABLE_NAME;
+        //db.execSQL(query);
 
-        db.setTransactionSuccessful();
-        db.endTransaction();
+        //db.setTransactionSuccessful();
+        //db.endTransaction();
     }
 
     public Cursor execRAW(String query) {

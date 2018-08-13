@@ -3,7 +3,6 @@ package com.irfansyed.VAS.VASMonitring;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -19,7 +18,6 @@ import java.util.List;
 
 import data.LocalDataManager;
 import data.UploadHouseInfoAsync;
-import data.col_A;
 
 
 public class SurveyCompletedActivity extends AppCompatActivity {
@@ -34,7 +32,7 @@ public class SurveyCompletedActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey_completed);
 
-          List<String> list = new LocalDataManager(this).getLogList("1");
+        List<String> list = new LocalDataManager(this).getLogList("0");
 
 
         if(list == null)
@@ -50,9 +48,6 @@ public class SurveyCompletedActivity extends AppCompatActivity {
         mAdapter = new SurveyCompletedCustomAdapter(this, list);
         mRecyclerView.setAdapter(mAdapter);
     }
-
-
-
 }
 
 
@@ -101,7 +96,7 @@ class  SurveyCompletedCustomAdapter extends RecyclerView.Adapter{
 
                         String[] arrr=memberId.split("/");
 
-                        col_A.data_upload_id=arrr[1];
+                        // col_A.data_upload_id=arrr[1];
 
                         new UploadHouseInfoAsync(mContext).execute();
                     //    new UploadSectionEAsync(mContext, "3").execute(); // irfan
@@ -121,6 +116,7 @@ class  SurveyCompletedCustomAdapter extends RecyclerView.Adapter{
             }
         });
     }
+
 
     @Override
     public int getItemCount() {

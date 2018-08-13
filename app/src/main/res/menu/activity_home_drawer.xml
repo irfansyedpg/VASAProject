@@ -13,21 +13,21 @@
             <item
                 android:id="@+id/stage_1"
                 android:icon="@drawable/pregnancy"
-                android:title="Pregnancy" />
+                android:title="C Section" />
 
             <item
                 android:id="@+id/stage_2"
                 android:icon="@drawable/delivery"
-                android:title="Delivery" />
+                android:title="N section" />
 
             <item
                 android:id="@+id/stage_3"
                 android:icon="@drawable/pills"
-                android:title="Post-natal Care" />
+                android:title="Gen Info" />
             <item
                 android:id="@+id/stage_4"
                 android:icon="@drawable/babygirl"
-                android:title="Neonatal Care" />
+                android:title=" A section" />
             <item
                 android:id="@+id/stage_5"
                 android:icon="@drawable/syringe"

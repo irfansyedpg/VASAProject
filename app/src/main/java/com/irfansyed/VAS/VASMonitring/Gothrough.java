@@ -16,23 +16,14 @@ public class Gothrough {
 
     public static boolean IamHiden(LinearLayout lv) {
 
-
-
-///Yes dear should I import Adult Section Layout
-
-
-
+        ///Yes dear should I import Adult Section Layout
 
         /// Checkbox Celar*************************************
 
       try {
-
-
             if (lv.getVisibility() != View.VISIBLE)
             {
                 return true;
-
-
             }
 
             for (int i = 0, count = lv.getChildCount(); i < count; ++i) {
@@ -58,8 +49,6 @@ public class Gothrough {
 
                        return true;
                    }
-
-
                 }
 
                 else  if (view instanceof EditText) {
@@ -73,25 +62,16 @@ public class Gothrough {
                     {
                         ((EditText) view).setError("Enter Text");
                     }
-
                 }
-
             }
         }
         catch (Exception e) {
 
-      //      return true;
-
+            // return true;
         }
-
 
         lv.requestFocus();
 
-
         return false;
-
-
-
-
     }
 }

@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.irfansyed.VAS.VASMonitring.templete;
+import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
 
 import utils.MyPreferences;
 
@@ -39,9 +39,7 @@ public class HomeActivity extends AppCompatActivity
 
         navigationView.setNavigationItemSelectedListener(this);
 
-
-
-
+        //DBHelper dbHelper = new DBHelper(this);
     }
 
     @Override
@@ -88,31 +86,33 @@ public class HomeActivity extends AppCompatActivity
         }
         if (id == com.irfansyed.VAS.VASMonitring.R.id.stage_1)
         {
-            intent = new Intent(this, templete.class);
+            intent = new Intent(this, C3001_C3011.class);
+            put_extr = 1;
+
+        }
+        if (id == R.id.stage_2) {
+            intent = new Intent(this, VasaAdult.class);
             put_extr=1;
 
         }
+        if (id == R.id.stage_3) {
+            intent = new Intent(this, Genifno.class);
+            put_extr = 1;
 
+        }
 
+        if (id == R.id.stage_4) {
+            intent = new Intent(this, Asection.class);
+            put_extr = 1;
 
-
-
-
-
-
-
-        else if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_e) {
+        } else if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_e) {
             preferences.setlanguage("en","US");
             Toast.makeText(this,"Application Language Changed to English",Toast.LENGTH_LONG).show();
 
-        }
-        else if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_u) {
+        } else if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_u) {
             preferences.setlanguage("en","GB");
             Toast.makeText(this,"Application Language Changed to Urdu",Toast.LENGTH_LONG).show();
         }
-
-
-
 
 
 intent.putExtra("put_extra",put_extr);

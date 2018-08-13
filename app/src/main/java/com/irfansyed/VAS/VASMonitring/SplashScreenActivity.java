@@ -1,9 +1,9 @@
 package com.irfansyed.VAS.VASMonitring;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import utils.MyPreferences;
 
@@ -27,13 +27,13 @@ public class SplashScreenActivity extends AppCompatActivity {
          //  preferences.setReq1("http://43.245.131.159/umeed/Monitoring");
 
 
-        preferences.setReq1("http://10.198.97.189:61259///Testing/insert_info");
+        preferences.setReq1("http://10.198.96.207/sm/welcome/collect_upload_data");
 
 
      //   preferences.setReqLogin("http://10.198.96.124:61259/Testing/check_user_id");
 
         //    preferences.setReq1("http://43.245.131.159/umeed/Testing/Monitoring");
-            preferences.setReqLogin("http://10.198.97.189:61259///Testing/check_user_id");
+        //preferences.setReqLogin("http://10.198.97.189:61259///Testing/check_user_id");
 
      //   }
         new Handler().postDelayed(new Runnable() {

@@ -3,13 +3,9 @@ package data;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-
-import utils.MyPreferences;
 
 
 /**
@@ -17,7 +13,7 @@ import utils.MyPreferences;
  */
 public class LocalDataManager {
     Context mContext;
- public static     SQLiteDatabase database;
+    public static SQLiteDatabase database;
 
 
 
@@ -41,7 +37,7 @@ public class LocalDataManager {
 
         try {
 
-          String  query = "select * from ttable where Interview_status = '%s' order by id ASC";
+            String query = "select * from C3001_C3011 where STATUS = '%s' order by id ASC";
             query = String.format(query, status);
 
             database.beginTransaction();
@@ -50,13 +46,7 @@ public class LocalDataManager {
                 if (c.moveToFirst()) {
                     do {
 
-
-                        list.add(c.getString(1) + "/" + c.getString(0));
-
-
-
-
-
+                        list.add(c.getString(2) + "/" + c.getString(0));
                     } while (c.moveToNext());
                 }
             }
@@ -67,16 +57,4 @@ public class LocalDataManager {
         }
         return list;
     }
-
-
-
-
-
-
-
 }
-
-
-
-
-
