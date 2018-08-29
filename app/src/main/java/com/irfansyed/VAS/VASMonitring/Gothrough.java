@@ -21,7 +21,7 @@ public class Gothrough {
         /// Checkbox Celar*************************************
 
       try {
-            if (lv.getVisibility() != View.VISIBLE)
+          if (lv.getVisibility() != View.VISIBLE)  // ll_C3002
             {
                 return true;
             }

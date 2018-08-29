@@ -17,7 +17,6 @@ import com.irfansyed.VAS.VASMonitring.R;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 
-
 public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, View.OnFocusChangeListener {
 
 
@@ -159,9 +158,9 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c2 = new Intent(this, C3012_C3022.class);
+        Intent c = new Intent(this, C3012_C3022.class);
 
-        startActivity(c2);
+        startActivity(c);
     }
 
     void Initialization() {
@@ -841,7 +840,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
 
         LocalDataManager Lm = new LocalDataManager(this);
 
-        Lm.database.execSQL(query);
+        LocalDataManager.database.execSQL(query);
 
         Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
     }
@@ -908,11 +907,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_C3011) == false) {
-            return false;
-        }
-
-        return true;
+        return Gothrough.IamHiden(ll_C3011) != false;
     }
 
 }

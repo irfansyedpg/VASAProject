@@ -18,8 +18,6 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 
-import global.C.C.C3001_C3011;
-import global.C.C.C3012_C3022;
 import utils.MyPreferences;
 import utils.PostRequestData;
 import utils.QuestionModel;
@@ -65,13 +63,13 @@ public class UploadHouseInfoAsync extends AsyncTask {
 
         LocalDataManager Lm = new LocalDataManager(mContext);
 
-        Cursor c = Lm.database.rawQuery(query, null);
-        Cursor c2 = Lm.database.rawQuery(query2, null);
+        Cursor c = LocalDataManager.database.rawQuery(query, null);
+        Cursor c2 = LocalDataManager.database.rawQuery(query2, null);
 
         if (c != null) {
             if (c.moveToFirst()) {
                 param.put("id", c.getString(0));
-                param.put(C3001_C3011.study_id, "1");
+                param.put(global.C.C.C3001_C3011.study_id, "1");
                 param.put(global.C.C.C3001_C3011.C3001, c.getString(2));
                 param.put(global.C.C.C3001_C3011.C3002, c.getString(3));
                 param.put(global.C.C.C3001_C3011.C3003, c.getString(4));
@@ -93,8 +91,8 @@ public class UploadHouseInfoAsync extends AsyncTask {
 
         if (c2 != null) {
             if (c2.moveToFirst()) {
-                param.put("id", c2.getString(0));
-                param.put(C3012_C3022.study_id, "1");
+                param.put("id2", c2.getString(0));
+                param.put(global.C.C.C3012_C3022.study_id, "1");
                 param.put(global.C.C.C3012_C3022.C3012, c2.getString(2));
                 param.put(global.C.C.C3012_C3022.C3013, c2.getString(3));
                 param.put(global.C.C.C3012_C3022.C3015, c2.getString(4));
@@ -230,7 +228,7 @@ public class UploadHouseInfoAsync extends AsyncTask {
 
         LocalDataManager Lm = new LocalDataManager(mContext);
 
-        Lm.database.execSQL(query);
+        LocalDataManager.database.execSQL(query);
 
         Toast.makeText(mContext, "Status updated", Toast.LENGTH_SHORT).show();
     }

@@ -25,9 +25,24 @@ public class C3051_C3099 {
                 global.C.C.C3051_C3099.C3062 + " TEXT," +
                 global.C.C.C3051_C3099.C3063 + " TEXT," +
                 global.C.C.C3051_C3099.C3064 + " TEXT," +
-                global.C.C.C3051_C3099.C3065 + " TEXT," +
+                global.C.C.C3051_C3099.C3065_1 + " TEXT," +
+                global.C.C.C3051_C3099.C3065_2 + " TEXT," +
+                global.C.C.C3051_C3099.C3065_3 + " TEXT," +
+                global.C.C.C3051_C3099.C3065_4 + " TEXT," +
+                global.C.C.C3051_C3099.C3065_5 + " TEXT," +
+                global.C.C.C3051_C3099.C3065_6 + " TEXT," +
+                global.C.C.C3051_C3099.C3065_7 + " TEXT," +
+                global.C.C.C3051_C3099.C3065_DK + " TEXT," +
+                global.C.C.C3051_C3099.C3065_OT + " TEXT," +
                 global.C.C.C3051_C3099.C3066 + " TEXT," +
-                global.C.C.C3051_C3099.C3067 + " TEXT," +
+                global.C.C.C3051_C3099.C3067_1 + " TEXT," +
+                global.C.C.C3051_C3099.C3067_2 + " TEXT," +
+                global.C.C.C3051_C3099.C3067_3 + " TEXT," +
+                global.C.C.C3051_C3099.C3067_4 + " TEXT," +
+                global.C.C.C3051_C3099.C3067_5 + " TEXT," +
+                global.C.C.C3051_C3099.C3067_6 + " TEXT," +
+                global.C.C.C3051_C3099.C3067_7 + " TEXT," +
+                global.C.C.C3051_C3099.C3067_DK + " TEXT," +
                 global.C.C.C3051_C3099.C3068 + " TEXT," +
                 global.C.C.C3051_C3099.C3069 + " TEXT," +
                 global.C.C.C3051_C3099.C3070 + " TEXT," +
@@ -52,7 +67,8 @@ public class C3051_C3099 {
                 global.C.C.C3051_C3099.C3087 + " TEXT," +
                 global.C.C.C3051_C3099.C3088 + " TEXT," +
                 global.C.C.C3051_C3099.C3089 + " TEXT," +
-                global.C.C.C3051_C3099.C3090 + " TEXT," +
+                global.C.C.C3051_C3099.C3090_1 + " TEXT," +
+                global.C.C.C3051_C3099.C3090_2 + " TEXT," +
                 global.C.C.C3051_C3099.C3091 + " TEXT," +
                 global.C.C.C3051_C3099.C3092 + " TEXT," +
                 global.C.C.C3051_C3099.C3093 + " TEXT," +
@@ -62,7 +78,7 @@ public class C3051_C3099 {
                 global.C.C.C3051_C3099.C3097 + " TEXT," +
                 global.C.C.C3051_C3099.C3098 + " TEXT," +
                 global.C.C.C3051_C3099.C3099 + " TEXT," +
-                global.C.C.C3001_C3011.STATUS + " TEXT" +
+                global.C.C.C3051_C3099.STATUS + " TEXT" +
                 ')';
 
         return query;

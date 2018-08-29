@@ -9,6 +9,9 @@ import android.util.Log;
 
 import data.C.C3001_C3011;
 import data.C.C3012_C3022;
+import data.C.C3051_C3099;
+import data.C.C3101_C3112;
+import data.C.C3121_C3228;
 
 /**
  * Created by Umeed-e-Nau on 12/21/2016.
@@ -32,6 +35,9 @@ public class DBHelper extends SQLiteOpenHelper {
 
         db.execSQL(C3001_C3011.getCreateQuery()); // C3001_C3011 created here
         db.execSQL(C3012_C3022.getCreateQuery()); // C3012_C3022 created here
+        db.execSQL(C3051_C3099.getCreateQuery()); // C3051_C3099 created here
+        db.execSQL(C3101_C3112.getCreateQuery()); // C3101_C3112 created here
+        db.execSQL(C3121_C3228.getCreateQuery()); // C3121_C3228 created here
 
         db.setTransactionSuccessful();
         db.endTransaction();

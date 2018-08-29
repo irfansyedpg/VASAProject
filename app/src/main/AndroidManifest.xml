@@ -42,10 +42,6 @@
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".VasaAdult"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Genifno"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -58,7 +54,25 @@
             android:name=".C.C3001_C3011"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".C.C3012_C3022"></activity>
+
+        <activity
+            android:name=".C.C3012_C3022"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".C.C3051_C3099"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".C.C3101_C3112"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".C.C3121_C3228"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
     </application>
 
 </manifest>

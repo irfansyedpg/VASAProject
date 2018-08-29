@@ -1,5 +1,6 @@
 package com.irfansyed.VAS.VASMonitring.C;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,7 +17,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 
-public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
+public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, View.OnFocusChangeListener {
 
 
     //region Declaration
@@ -122,7 +123,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.c3012__c3022);
+        setContentView(R.layout.c3012_c3022);
 
         this.Initialization();
 
@@ -148,8 +149,17 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
     @Override
     public void onClick(View view) {
 
+        if (validateField() == false) {
+            Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
+            return;
+        }
+
         value_assignment();
         insert_data();
+
+        Intent c = new Intent(this, C3051_C3099.class);
+
+        startActivity(c);
     }
 
     void Initialization() {
@@ -401,6 +411,22 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
         }
     }
 
+
+    @Override
+    public void onFocusChange(View view, boolean b) {
+        if (view.getId() == R.id.ed_C3006_6
+                || view.getId() == R.id.ed_C3006_10
+                || view.getId() == R.id.ed_C3006_OT) {
+
+            if (!b) {
+            } else {
+
+                //rb_C3006_1.setChecked(false);
+
+            }
+        }
+    }
+
     void value_assignment() {
 
         study_id = "0";
@@ -607,7 +633,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
         LocalDataManager Lm = new LocalDataManager(this);
 
-        Lm.database.execSQL(query);
+        LocalDataManager.database.execSQL(query);
 
         Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
     }
@@ -626,10 +652,6 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_C3016) == false) {
-            return false;
-        }
-
         if (Gothrough.IamHiden(ll_C3017) == false) {
             return false;
         }
@@ -638,23 +660,11 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_C3018_1) == false) {
-            return false;
-        }
-
         if (Gothrough.IamHiden(ll_C3019_u) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_C3019_a) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3019_b) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3019_c) == false) {
+        if (Gothrough.IamHiden(ll_C3019_a) == false && Gothrough.IamHiden(ll_C3019_b) == false && Gothrough.IamHiden(ll_C3019_c) == false) {
             return false;
         }
 
@@ -666,27 +676,11 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_C3021d) == false) {
+        if (Gothrough.IamHiden(ll_C3021d) == false && Gothrough.IamHiden(ll_C3021m) == false && Gothrough.IamHiden(ll_C3021y) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_C3021m) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3021y) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3022) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_c3013_c3018) == false) {
-            return false;
-        }
-
-        return true;
+        return Gothrough.IamHiden(ll_C3022) != false;
     }
 
 }
