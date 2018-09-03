@@ -13,8 +13,6 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.irfansyed.VAS.VASMonitring.C.C3121_C3228;
-
 import utils.MyPreferences;
 
 public class HomeActivity extends AppCompatActivity
@@ -86,7 +84,7 @@ public class HomeActivity extends AppCompatActivity
         }
         if (id == com.irfansyed.VAS.VASMonitring.R.id.stage_1)
         {
-            intent = new Intent(this, C3121_C3228.class);
+            intent = new Intent(this, Q1101_Q1610.class);
             put_extr = 1;
 
         }

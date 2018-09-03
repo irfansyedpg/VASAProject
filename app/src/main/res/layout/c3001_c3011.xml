@@ -2,9 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-
-    >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -30,7 +28,6 @@
 
     </RelativeLayout>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +47,6 @@
             <!--C3001 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_C3001"
                     style="@style/Q_Linerlayout_v">
@@ -59,7 +55,6 @@
                         android:id="@+id/txt_C3001"
                         style="@style/TextView"
                         android:text="@string/txt_C3001" />
-
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -93,7 +88,6 @@
             <!--C3002 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_C3002"
                     style="@style/Q_Linerlayout_v">
@@ -102,7 +96,6 @@
                         android:id="@+id/txt_C3002"
                         style="@style/TextView"
                         android:text="@string/txt_C3002" />
-
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -345,7 +338,6 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3006" />
 
-
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -374,6 +366,11 @@
                             android:text="@string/rb_C3006_5" />
 
                         <RadioButton
+                            android:id="@+id/rb_C3006_6"
+                            style="@style/RadioButton"
+                            android:text="Other public (specify)" />
+
+                        <RadioButton
                             android:id="@+id/rb_C3006_7"
                             style="@style/RadioButton"
                             android:text="@string/rb_C3006_7" />
@@ -389,9 +386,19 @@
                             android:text="@string/rb_C3006_9" />
 
                         <RadioButton
+                            android:id="@+id/rb_C3006_10"
+                            style="@style/RadioButton"
+                            android:text="Other private medical (Specify)" />
+
+                        <RadioButton
                             android:id="@+id/rb_C3006_11"
                             style="@style/RadioButton"
                             android:text="@string/rb_C3006_11" />
+
+                        <RadioButton
+                            android:id="@+id/rb_C3006_12"
+                            style="@style/RadioButton"
+                            android:text="Other (specify)" />
 
                         <RadioButton
                             android:id="@+id/rb_C3006_DK"
@@ -403,27 +410,29 @@
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
-                        <EditText
-                            android:id="@+id/ed_C3006_6"
-                            style="@style/EditText_varchar"
-                            android:hint="@string/rb_C3006_6" />
-
-                        <EditText
-                            android:id="@+id/ed_C3006_10"
-                            style="@style/EditText_varchar"
-                            android:hint="@string/rb_C3006_10" />
-
-                        <EditText
-                            android:id="@+id/ed_C3006_OT"
-                            style="@style/EditText_varchar"
-                            android:hint="Somewhere else" />
-
                     </RadioGroup>
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
             <!--C3006 Radio Button and Edit text Ends-->
+
+            <!--C3006_OT Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_C3006_OT"
+                    style="@style/Q_Linerlayout_v">
+
+                    <EditText
+                        android:id="@+id/ed_C3006_OT"
+                        style="@style/EditText_varchar"
+                        android:hint="C3006: Other (specify)" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!--C3006_OT Edit text Ends-->
 
             <!--C3008 Radio Button and Edit text Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
@@ -436,7 +445,6 @@
                         android:id="@+id/txt_C3008"
                         style="@style/TextView"
                         android:text="@string/txt_C3008" />
-
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -471,6 +479,11 @@
                             android:text="@string/rb_C3008_6" />
 
                         <RadioButton
+                            android:id="@+id/rb_C3008_7"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3008_7" />
+
+                        <RadioButton
                             android:id="@+id/rb_C3008_8"
                             style="@style/RadioButton"
                             android:text="@string/rb_C3008_8" />
@@ -480,11 +493,6 @@
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
-                        <EditText
-                            android:id="@+id/ed_C3008_7"
-                            style="@style/EditText_varchar"
-                            android:hint="@string/ot_other" />
-
                     </RadioGroup>
 
                 </LinearLayout>
@@ -492,7 +500,24 @@
             </android.support.v7.widget.CardView>
             <!--C3008 Radio Button and Edit text Ends-->
 
-            <!--C3009_1 Radio Button Starts -->
+            <!--C3008_OT Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_C3008_OT"
+                    style="@style/Q_Linerlayout_v">
+
+                    <EditText
+                        android:id="@+id/ed_C3008_OT"
+                        style="@style/EditText_varchar"
+                        android:hint="C3008: Other (specify)" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!--C3008_OT Edit text Ends-->
+
+            <!--C3008_1 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
@@ -723,6 +748,5 @@
         </LinearLayout>
 
     </ScrollView>
-
 
 </LinearLayout>

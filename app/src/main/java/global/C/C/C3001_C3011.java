@@ -12,7 +12,9 @@ public class C3001_C3011 {
     public static String C3005w   = "C3005w";
     public static String C3005m   = "C3005m";
     public static String C3006    = "C3006";
+    public static String C3006_OT = "C3006_OT";
     public static String C3008    = "C3008";
+    public static String C3008_OT = "C3008_OT";
     public static String C3009_1  = "C3009_1";
     public static String C3009_2  = "C3009_2";
     public static String C3009_3  = "C3009_3";

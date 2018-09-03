@@ -17,7 +17,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 
-public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, View.OnFocusChangeListener {
+public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
 
     //region Declaration
@@ -261,6 +261,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3013_2.setOnCheckedChangeListener(this);
         rb_C3013_DK.setOnCheckedChangeListener(this);
         rb_C3013_RA.setOnCheckedChangeListener(this);
+
         rb_C3015_1.setOnCheckedChangeListener(this);
         rb_C3015_2.setOnCheckedChangeListener(this);
         rb_C3015_3.setOnCheckedChangeListener(this);
@@ -407,22 +408,6 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             } else if (rb_C3021u_3.isChecked()) {
 
                 ll_C3021y.setVisibility(View.VISIBLE);
-            }
-        }
-    }
-
-
-    @Override
-    public void onFocusChange(View view, boolean b) {
-        if (view.getId() == R.id.ed_C3006_6
-                || view.getId() == R.id.ed_C3006_10
-                || view.getId() == R.id.ed_C3006_OT) {
-
-            if (!b) {
-            } else {
-
-                //rb_C3006_1.setChecked(false);
-
             }
         }
     }
@@ -635,7 +620,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
         LocalDataManager.database.execSQL(query);
 
-        Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Section 2: Background (Child Deaths) inserted successfully", Toast.LENGTH_SHORT).show();
     }
 
     boolean validateField() {
@@ -682,5 +667,4 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
         return Gothrough.IamHiden(ll_C3022) != false;
     }
-
 }

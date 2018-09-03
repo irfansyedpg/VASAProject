@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scrollbarSize="50dip">
+        <!-- Parent layout starts -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1F1F1"
+            android:orientation="vertical">
+
+            <!--C3301 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3301"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3301"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3301" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3301_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3301_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3301_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3301_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3301_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3301_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3301_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3301_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3301 Radio Button and Edit text Ends-->
+
+            <!--C3302_1 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3302_1"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3302_1"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3302_1" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_1_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_1_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_1_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_1_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_1_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_1_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_1_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_1_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3302_1 Radio Button and Edit text Ends-->
+
+            <!--C3302_2 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3302_2"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3302_2"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3302_2" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_2_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_2_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_2_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_2_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_2_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_2_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_2_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_2_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3302_2 Radio Button and Edit text Ends-->
+
+            <!--C3302_3 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3302_3"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3302_3"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3302_3" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_3_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_3_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_3_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_3_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_3_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_3_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_3_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_3_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3302_3 Radio Button and Edit text Ends-->
+
+            <!--C3302_4 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3302_4"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3302_4"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3302_4" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_4_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_4_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_4_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_4_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_4_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_4_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_4_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_4_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3302_4 Radio Button and Edit text Ends-->
+
+            <!--C3302_5 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3302_5"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3302_5"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3302_5" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_5_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_5_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_5_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_5_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_5_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_5_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_5_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_5_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3302_5 Radio Button and Edit text Ends-->
+
+            <!--C3302_6 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3302_6"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3302_6"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3302_6" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_6_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_6_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_6_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_6_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_6_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_6_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_6_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_6_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3302_6 Radio Button and Edit text Ends-->
+
+            <!--C3302_7 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3302_7"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3302_7"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3302_7" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_7_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_7_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_7_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_7_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_7_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_7_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3302_7_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3302_7_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3302_7 Radio Button and Edit text Ends-->
+
+            <!--C3303 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3303"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3303"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3303" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3303_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3303_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3303_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3303_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3303_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3303_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3303_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3303_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3303 Radio Button and Edit text Ends-->
+
+            <!--C3304 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3304"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3304"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3304" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3304_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3303_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3304_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3304_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3304_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3304_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3304_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3304_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3304 Radio Button and Edit text Ends-->
+
+            <!--C3305 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3305"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3305"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3305" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3305_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3305_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3305_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3305_2" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3305 Radio Button and Edit text Ends-->
+
+            <!--C3306_1check Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3306_1check"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3306_1check"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3306_1check" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_C3306_1check_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3306_1check_1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_C3306_1check_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3306_1check_2" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3306_1check Radio Button and Edit text Ends-->
+
+            <!-- EditText C3306_1 Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3306_1"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3306_1"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3306_1" />
+
+                    <EditText
+                        android:id="@+id/ed_C3306_1"
+                        style="@style/EditText_varchar"
+                        android:hint="@string/txt_C3306_1" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText C3306_1 Ends -->
+
+            <!--C3306_2check Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3306_2check"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3306_2check"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3306_2check" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3306_2check_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3306_2check_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3306_2check_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3306_2check_2" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3306_2check Radio Button and Edit text Ends-->
+
+            <!-- EditText C3306_2 Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3306_2"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3306_2"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3306_2" />
+
+                    <EditText
+                        android:id="@+id/ed_C3306_2"
+                        style="@style/EditText_varchar"
+                        android:hint="@string/txt_C3306_2" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText C3306_2 Ends -->
+
+            <!-- EditText C3307 Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3307"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3307"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3307" />
+
+                    <EditText
+                        android:id="@+id/ed_C3307"
+                        style="@style/EditText_varchar"
+                        android:hint="@string/txt_C3307" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText C3307 Ends -->
+
+            <!-- EditText C3308 Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3308"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3308"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3308" />
+
+                    <EditText
+                        android:id="@+id/ed_C3308"
+                        style="@style/EditText_number"
+                        android:hint="@string/txt_C3308" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText C3308 Ends -->
+
+            <!-- EditText C3309 Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3309"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3309"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3309" />
+
+                    <EditText
+                        android:id="@+id/ed_C3309"
+                        style="@style/EditText_varchar"
+                        android:hint="@string/txt_C3309" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText C3309 Ends -->
+
+            <!--C3310_1 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3310_1"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3310_1"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3310_1" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_1_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_1_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_1_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_1_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_1_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_1_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_1_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_1_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3310_1 Radio Button and Edit text Ends-->
+
+            <!--C3310_2 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3310_2"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3310_2"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3310_2" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_2_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_2_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_2_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_2_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_2_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_2_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_2_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_2_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3310_2 Radio Button and Edit text Ends-->
+
+            <!--C3310_3 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3310_3"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3310_3"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3310_3" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_3_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_3_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_3_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_3_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_3_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_3_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_3_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_3_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3310_3 Radio Button and Edit text Ends-->
+
+            <!--C3310_4 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3310_4"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3310_4"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3310_4" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_4_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_4_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_4_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_4_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_4_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_4_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_4_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_4_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3310_4 Radio Button and Edit text Ends-->
+
+            <!--C3310_5 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3310_5"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3310_5"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3310_5" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_5_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_5_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_5_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_5_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_5_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_5_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_5_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_5_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3310_5 Radio Button and Edit text Ends-->
+
+            <!--C3310_6 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3310_6"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3310_6"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3310_6" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_6_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_6_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_6_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_6_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_6_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_6_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_6_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_6_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3310_6 Radio Button and Edit text Ends-->
+
+            <!--C3310_7 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3310_7"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3310_7"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3310_7" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_7_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_7_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_7_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_7_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_7_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_7_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_7_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_7_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3310_7 Radio Button and Edit text Ends-->
+
+            <!--C3310_8 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3310_8"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3310_8"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3310_8" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_8_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_8_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_8_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_8_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_8_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_8_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_8_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_8_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3310_8 Radio Button and Edit text Ends-->
+
+            <!--C3310_9 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3310_9"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3310_9"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3310_9" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_9_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_9_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_9_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_9_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_9_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_9_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_9_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_9_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3310_9 Radio Button and Edit text Ends-->
+
+            <!--C3310_10 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3310_10"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3310_10"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3310_10" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_10_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_10_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_10_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_10_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_10_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_10_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_10_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_10_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3310_10 Radio Button and Edit text Ends-->
+
+            <!--C3310_11 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3310_11"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3310_11"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3310_11" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_11_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_11_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_11_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_11_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_11_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_11_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3310_11_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3310_11_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3310_11 Radio Button and Edit text Ends-->
+
+            <!--C3311 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3311"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3311"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3311" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3311_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3311_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3311_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3311_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3311_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3311_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3311_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3311_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3311 Radio Button and Edit text Ends-->
+
+            <!--C3312 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3312"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3312"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3312" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3312_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3312_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3312_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3312_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3312_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3312_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3312_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3312_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3312 Radio Button and Edit text Ends-->
+
+            <!--C3313 Radio Button and Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3313"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3313"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3313" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3313_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3313_1" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3313_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3313_2" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3313_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3313_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3313_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3313_RA" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--C3313 Radio Button and Edit text Ends-->
+
+            <!-- EditText C3314 Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_C3314"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_C3314"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3314" />
+
+                    <EditText
+                        android:id="@+id/ed_C3314"
+                        style="@style/EditText_varchar"
+                        android:hint="@string/txt_C3314" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText C3314 Ends -->
+
+
+            <Button
+                android:id="@+id/btn_next"
+                style="@style/Button_collder"
+                android:layout_margin="10dp"
+                android:text="Next" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

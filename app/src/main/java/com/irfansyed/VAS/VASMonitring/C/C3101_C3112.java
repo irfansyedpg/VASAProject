@@ -1679,7 +1679,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
         LocalDataManager.database.execSQL(query);
 
-        Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Section 7: Preventive care of children", Toast.LENGTH_SHORT).show();
     }
 
     boolean validateField() {

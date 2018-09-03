@@ -1,5 +1,6 @@
 package com.irfansyed.VAS.VASMonitring.C;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -970,11 +971,9 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Toast.makeText(this, "Section 5 Inserted Successfully...", Toast.LENGTH_LONG).show();
+        Intent c = new Intent(this, C3301_C3314.class);
 
-        //Intent c = new Intent(this, C3012_C3022.class);
-
-        //startActivity(c);
+        startActivity(c);
     }
 
     void Initialization() {
@@ -1732,7 +1731,6 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         ed_C3228 = (EditText) findViewById(R.id.ed_C3228);
 
     }
-
 
     void events_call() {
 
@@ -6190,7 +6188,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
         LocalDataManager.database.execSQL(query);
 
-        Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Section 8: Signs and symptoms associated with the fatal illness", Toast.LENGTH_SHORT).show();
     }
 
     boolean validateField() {

@@ -1857,6 +1857,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     void insert_data() {
+
         String query = "insert into   C3051_C3099("
                 + global.C.C.C3051_C3099.study_id + ","
                 + global.C.C.C3051_C3099.C3051 + ","
@@ -2007,7 +2008,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
         LocalDataManager.database.execSQL(query);
 
-        Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Section 6: Signs and symptoms associated with the fatal illness inserted successfully", Toast.LENGTH_SHORT).show();
     }
 
     boolean validateField() {

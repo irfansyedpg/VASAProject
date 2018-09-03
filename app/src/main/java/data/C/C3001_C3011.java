@@ -4,6 +4,7 @@ package data.C;
  * Created by Umeed-e-Nau on 12/24/2016.
  */
 public class C3001_C3011 {
+
     public static String TABLE_NAME = "C3001_C3011";
 
     public static String getCreateQuery() {
@@ -19,7 +20,9 @@ public class C3001_C3011 {
                 global.C.C.C3001_C3011.C3005w + " TEXT," +
                 global.C.C.C3001_C3011.C3005m + " TEXT," +
                 global.C.C.C3001_C3011.C3006 + " TEXT," +
+                global.C.C.C3001_C3011.C3006_OT + " TEXT," +
                 global.C.C.C3001_C3011.C3008 + " TEXT," +
+                global.C.C.C3001_C3011.C3008_OT + " TEXT," +
                 global.C.C.C3001_C3011.C3009_1 + " TEXT," +
                 global.C.C.C3001_C3011.C3009_2 + " TEXT," +
                 global.C.C.C3001_C3011.C3009_3 + " TEXT," +
