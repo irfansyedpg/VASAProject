@@ -1,7 +1,6 @@
 package utils;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
@@ -19,12 +18,9 @@ public class LocationTry2 {
 
 
     static Context mContext;
-    public LocationTry2(Context context){
-        this.mContext = context;
-    }
 
-    public static interface LocationCallback {
-        public void onNewLocationAvailable(GPSCoordinates location);
+    public LocationTry2(Context context) {
+        mContext = context;
     }
 
     // calls back to calling thread, note this is for low grain: if you want higher precision, swap the
@@ -36,7 +32,7 @@ public class LocationTry2 {
         if (isNetworkEnabled) {
             Criteria criteria = new Criteria();
             criteria.setAccuracy(Criteria.ACCURACY_COARSE);
-            if (ActivityCompat.checkSelfPermission(((Activity)mContext), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(((Activity)mContext), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 // TODO: Consider calling
                 //    ActivityCompat#requestPermissions
                 // here to request the missing permissions, and then overriding
@@ -77,14 +73,25 @@ public class LocationTry2 {
                         callback.onNewLocationAvailable(new GPSCoordinates(location.getLatitude(), location.getLongitude()));
                     }
 
-                    @Override public void onStatusChanged(String provider, int status, Bundle extras) { }
-                    @Override public void onProviderEnabled(String provider) { }
-                    @Override public void onProviderDisabled(String provider) { }
+                    @Override
+                    public void onStatusChanged(String provider, int status, Bundle extras) {
+                    }
+
+                    @Override
+                    public void onProviderEnabled(String provider) {
+                    }
+
+                    @Override
+                    public void onProviderDisabled(String provider) {
+                    }
                 }, null);
             }
         }
     }
 
+    public interface LocationCallback {
+        void onNewLocationAvailable(GPSCoordinates location);
+    }
 
     // consider returning Location instead of this dummy wrapper class
     public static class GPSCoordinates {

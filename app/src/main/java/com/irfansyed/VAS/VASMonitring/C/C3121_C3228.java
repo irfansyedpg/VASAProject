@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.R;
 
+import Global.C.C3001_C3011;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -979,756 +980,756 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
     void Initialization() {
 
         // Button Next
-        btn_next = (Button) findViewById(R.id.btn_next);
+        btn_next = findViewById(R.id.btn_next);
 
         // Layouts
 
-        ll_C3121 = (LinearLayout) findViewById(R.id.ll_C3121);
-        ll_C3122 = (LinearLayout) findViewById(R.id.ll_C3122);
-        ll_C3122d = (LinearLayout) findViewById(R.id.ll_C3122d);
-        ll_C3122m = (LinearLayout) findViewById(R.id.ll_C3122m);
-        ll_C3123_u = (LinearLayout) findViewById(R.id.ll_C3123_u);
-        ll_C3123_b = (LinearLayout) findViewById(R.id.ll_C3123_b);
-        ll_C3123_c = (LinearLayout) findViewById(R.id.ll_C3123_c);
-        ll_C3124 = (LinearLayout) findViewById(R.id.ll_C3124);
-        ll_C3125 = (LinearLayout) findViewById(R.id.ll_C3125);
-        ll_C3126 = (LinearLayout) findViewById(R.id.ll_C3126);
-        ll_C3127 = (LinearLayout) findViewById(R.id.ll_C3127);
-        ll_C3128 = (LinearLayout) findViewById(R.id.ll_C3128);
-        ll_C3129 = (LinearLayout) findViewById(R.id.ll_C3129);
-        ll_C3130 = (LinearLayout) findViewById(R.id.ll_C3130);
-        ll_C3131 = (LinearLayout) findViewById(R.id.ll_C3131);
-        ll_C3132_u = (LinearLayout) findViewById(R.id.ll_C3132_u);
-        ll_C3132_a = (LinearLayout) findViewById(R.id.ll_C3132_a);
-        ll_C3132_b = (LinearLayout) findViewById(R.id.ll_C3132_b);
-        ll_C3133 = (LinearLayout) findViewById(R.id.ll_C3133);
-        ll_C3134 = (LinearLayout) findViewById(R.id.ll_C3134);
-        ll_C3135 = (LinearLayout) findViewById(R.id.ll_C3135);
-        ll_C3136 = (LinearLayout) findViewById(R.id.ll_C3136);
-        ll_C3137 = (LinearLayout) findViewById(R.id.ll_C3137);
-        ll_C3138 = (LinearLayout) findViewById(R.id.ll_C3138);
-        ll_C3139 = (LinearLayout) findViewById(R.id.ll_C3139);
-        ll_C3140 = (LinearLayout) findViewById(R.id.ll_C3140);
-        ll_C3141 = (LinearLayout) findViewById(R.id.ll_C3141);
-        ll_C3142 = (LinearLayout) findViewById(R.id.ll_C3142);
-        ll_C3143 = (LinearLayout) findViewById(R.id.ll_C3143);
-        ll_C3144_u = (LinearLayout) findViewById(R.id.ll_C3144_u);
-        ll_C3144 = (LinearLayout) findViewById(R.id.ll_C3144);
-        ll_C3144_a = (LinearLayout) findViewById(R.id.ll_C3144_a);
-        ll_C3144_b = (LinearLayout) findViewById(R.id.ll_C3144_b);
-        ll_C3145 = (LinearLayout) findViewById(R.id.ll_C3145);
-        ll_C3146 = (LinearLayout) findViewById(R.id.ll_C3146);
-        ll_C3147_u = (LinearLayout) findViewById(R.id.ll_C3147_u);
-        ll_C3147_a = (LinearLayout) findViewById(R.id.ll_C3147_a);
-        ll_C3147_b = (LinearLayout) findViewById(R.id.ll_C3147_b);
-        ll_C3148 = (LinearLayout) findViewById(R.id.ll_C3148);
-        ll_C3149 = (LinearLayout) findViewById(R.id.ll_C3149);
-        ll_C3150_u = (LinearLayout) findViewById(R.id.ll_C3150_u);
-        ll_C3150_a = (LinearLayout) findViewById(R.id.ll_C3150_a);
-        ll_C3150_b = (LinearLayout) findViewById(R.id.ll_C3150_b);
-        ll_C3151 = (LinearLayout) findViewById(R.id.ll_C3151);
-        ll_C3152_u = (LinearLayout) findViewById(R.id.ll_C3152_u);
-        ll_C3152_a = (LinearLayout) findViewById(R.id.ll_C3152_a);
-        ll_C3152_b = (LinearLayout) findViewById(R.id.ll_C3152_b);
-        ll_C3153 = (LinearLayout) findViewById(R.id.ll_C3153);
-        ll_C3154 = (LinearLayout) findViewById(R.id.ll_C3154);
-        ll_C3155 = (LinearLayout) findViewById(R.id.ll_C3155);
-        ll_C3156 = (LinearLayout) findViewById(R.id.ll_C3156);
-        ll_C3157 = (LinearLayout) findViewById(R.id.ll_C3157);
-        ll_C3158 = (LinearLayout) findViewById(R.id.ll_C3158);
-        ll_C3159_u = (LinearLayout) findViewById(R.id.ll_C3159_u);
-        ll_C3159_a = (LinearLayout) findViewById(R.id.ll_C3159_a);
-        ll_C3159_b = (LinearLayout) findViewById(R.id.ll_C3159_b);
-        ll_C3159_c = (LinearLayout) findViewById(R.id.ll_C3159_c);
-        ll_C3160 = (LinearLayout) findViewById(R.id.ll_C3160);
-        ll_C3161 = (LinearLayout) findViewById(R.id.ll_C3161);
-        ll_C3162 = (LinearLayout) findViewById(R.id.ll_C3162);
-        ll_C3162d = (LinearLayout) findViewById(R.id.ll_C3162d);
-        ll_C3162m = (LinearLayout) findViewById(R.id.ll_C3162m);
-        ll_C3163_u = (LinearLayout) findViewById(R.id.ll_C3163_u);
-        ll_C3163_a = (LinearLayout) findViewById(R.id.ll_C3163_a);
-        ll_C3163_b = (LinearLayout) findViewById(R.id.ll_C3163_b);
-        ll_C3164 = (LinearLayout) findViewById(R.id.ll_C3164);
-        ll_C3165_u = (LinearLayout) findViewById(R.id.ll_C3165_u);
-        ll_C3165_a = (LinearLayout) findViewById(R.id.ll_C3165_a);
-        ll_C3165_b = (LinearLayout) findViewById(R.id.ll_C3165_b);
-        ll_C3166 = (LinearLayout) findViewById(R.id.ll_C3166);
-        ll_C3167 = (LinearLayout) findViewById(R.id.ll_C3167);
-        ll_C3168 = (LinearLayout) findViewById(R.id.ll_C3168);
-        ll_C3169 = (LinearLayout) findViewById(R.id.ll_C3169);
-        ll_C3170 = (LinearLayout) findViewById(R.id.ll_C3170);
-        ll_C3171 = (LinearLayout) findViewById(R.id.ll_C3171);
-        ll_C3172 = (LinearLayout) findViewById(R.id.ll_C3172);
-        ll_C3173 = (LinearLayout) findViewById(R.id.ll_C3173);
-        ll_C3174 = (LinearLayout) findViewById(R.id.ll_C3174);
-        ll_C3175_u = (LinearLayout) findViewById(R.id.ll_C3175_u);
-        ll_C3175_a = (LinearLayout) findViewById(R.id.ll_C3175_a);
-        ll_C3175_b = (LinearLayout) findViewById(R.id.ll_C3175_b);
-        ll_C3176 = (LinearLayout) findViewById(R.id.ll_C3176);
-        ll_C3177_u = (LinearLayout) findViewById(R.id.ll_C3177_u);
-        ll_C3177_a = (LinearLayout) findViewById(R.id.ll_C3177_a);
-        ll_C3177_b = (LinearLayout) findViewById(R.id.ll_C3177_b);
-        ll_C3178 = (LinearLayout) findViewById(R.id.ll_C3178);
-        ll_C3179_u = (LinearLayout) findViewById(R.id.ll_C3179_u);
-        ll_C3179_a = (LinearLayout) findViewById(R.id.ll_C3179_a);
-        ll_C3179_b = (LinearLayout) findViewById(R.id.ll_C3179_b);
-        ll_C3180 = (LinearLayout) findViewById(R.id.ll_C3180);
-        ll_C3181 = (LinearLayout) findViewById(R.id.ll_C3181);
-        ll_C3182 = (LinearLayout) findViewById(R.id.ll_C3182);
-        ll_C3183 = (LinearLayout) findViewById(R.id.ll_C3183);
-        ll_C3184 = (LinearLayout) findViewById(R.id.ll_C3184);
-        ll_C3185 = (LinearLayout) findViewById(R.id.ll_C3185);
-        ll_C3186_1 = (LinearLayout) findViewById(R.id.ll_C3186_1);
-        ll_C3186 = (LinearLayout) findViewById(R.id.ll_C3186);
-        ll_C3187 = (LinearLayout) findViewById(R.id.ll_C3187);
-        ll_C3188 = (LinearLayout) findViewById(R.id.ll_C3188);
-        ll_C3189 = (LinearLayout) findViewById(R.id.ll_C3189);
-        ll_C3190 = (LinearLayout) findViewById(R.id.ll_C3190);
-        ll_C3191 = (LinearLayout) findViewById(R.id.ll_C3191);
-        ll_C3192 = (LinearLayout) findViewById(R.id.ll_C3192);
-        ll_C3193_u = (LinearLayout) findViewById(R.id.ll_C3193_u);
-        ll_C3193_a = (LinearLayout) findViewById(R.id.ll_C3193_a);
-        ll_C3193_b = (LinearLayout) findViewById(R.id.ll_C3193_b);
-        ll_C3194 = (LinearLayout) findViewById(R.id.ll_C3194);
-        ll_C3195A = (LinearLayout) findViewById(R.id.ll_C3195A);
-        ll_C3195 = (LinearLayout) findViewById(R.id.ll_C3195);
-        ll_C3196 = (LinearLayout) findViewById(R.id.ll_C3196);
-        ll_C3197 = (LinearLayout) findViewById(R.id.ll_C3197);
-        ll_C3198 = (LinearLayout) findViewById(R.id.ll_C3198);
-        ll_C3199 = (LinearLayout) findViewById(R.id.ll_C3199);
-        ll_C3199_1 = (LinearLayout) findViewById(R.id.ll_C3199_1);
-        ll_C3200 = (LinearLayout) findViewById(R.id.ll_C3200);
-        ll_C3201_u = (LinearLayout) findViewById(R.id.ll_C3201_u);
-        ll_C3201_a = (LinearLayout) findViewById(R.id.ll_C3201_a);
-        ll_C3201_b = (LinearLayout) findViewById(R.id.ll_C3201_b);
-        ll_C3202 = (LinearLayout) findViewById(R.id.ll_C3202);
-        ll_C3203 = (LinearLayout) findViewById(R.id.ll_C3203);
-        ll_C3204_u = (LinearLayout) findViewById(R.id.ll_C3204_u);
-        ll_C3204_a = (LinearLayout) findViewById(R.id.ll_C3204_a);
-        ll_C3204_b = (LinearLayout) findViewById(R.id.ll_C3204_b);
-        ll_C3205 = (LinearLayout) findViewById(R.id.ll_C3205);
-        ll_C3206 = (LinearLayout) findViewById(R.id.ll_C3206);
-        ll_C3207 = (LinearLayout) findViewById(R.id.ll_C3207);
-        ll_C3208_u = (LinearLayout) findViewById(R.id.ll_C3208_u);
-        ll_C3208_a = (LinearLayout) findViewById(R.id.ll_C3208_a);
-        ll_C3208_b = (LinearLayout) findViewById(R.id.ll_C3208_b);
-        ll_C3209 = (LinearLayout) findViewById(R.id.ll_C3209);
-        ll_C3210 = (LinearLayout) findViewById(R.id.ll_C3210);
-        ll_C3212 = (LinearLayout) findViewById(R.id.ll_C3212);
-        ll_C3213 = (LinearLayout) findViewById(R.id.ll_C3213);
-        ll_C3214 = (LinearLayout) findViewById(R.id.ll_C3214);
-        ll_C3215 = (LinearLayout) findViewById(R.id.ll_C3215);
-        ll_C3216 = (LinearLayout) findViewById(R.id.ll_C3216);
-        ll_C3217 = (LinearLayout) findViewById(R.id.ll_C3217);
-        ll_C3218 = (LinearLayout) findViewById(R.id.ll_C3218);
-        ll_C3219 = (LinearLayout) findViewById(R.id.ll_C3219);
-        ll_C3220_u = (LinearLayout) findViewById(R.id.ll_C3220_u);
-        ll_C3220_a = (LinearLayout) findViewById(R.id.ll_C3220_a);
-        ll_C3220_b = (LinearLayout) findViewById(R.id.ll_C3220_b);
-        ll_C3221 = (LinearLayout) findViewById(R.id.ll_C3221);
-        ll_C3222 = (LinearLayout) findViewById(R.id.ll_C3222);
-        ll_C3223 = (LinearLayout) findViewById(R.id.ll_C3223);
-        ll_C3224 = (LinearLayout) findViewById(R.id.ll_C3224);
-        ll_C3225 = (LinearLayout) findViewById(R.id.ll_C3225);
-        ll_C3226 = (LinearLayout) findViewById(R.id.ll_C3226);
-        ll_C3227 = (LinearLayout) findViewById(R.id.ll_C3227);
-        ll_C3227_1 = (LinearLayout) findViewById(R.id.ll_C3227_1);
-        ll_C3227_2 = (LinearLayout) findViewById(R.id.ll_C3227_2);
-        ll_C3227_3 = (LinearLayout) findViewById(R.id.ll_C3227_3);
-        ll_C3227_4 = (LinearLayout) findViewById(R.id.ll_C3227_4);
-        ll_C3227_5 = (LinearLayout) findViewById(R.id.ll_C3227_5);
-        ll_C3227_6 = (LinearLayout) findViewById(R.id.ll_C3227_6);
-        ll_C3227_7 = (LinearLayout) findViewById(R.id.ll_C3227_7);
-        ll_C3227_8 = (LinearLayout) findViewById(R.id.ll_C3227_8);
-        ll_C3227_9 = (LinearLayout) findViewById(R.id.ll_C3227_9);
-        ll_C3227_10 = (LinearLayout) findViewById(R.id.ll_C3227_10);
-        ll_C3227_11 = (LinearLayout) findViewById(R.id.ll_C3227_11);
-        ll_C3227_12 = (LinearLayout) findViewById(R.id.ll_C3227_12);
-        ll_C3227_13 = (LinearLayout) findViewById(R.id.ll_C3227_13);
-        ll_C3227_14 = (LinearLayout) findViewById(R.id.ll_C3227_14);
-        ll_C3227_15 = (LinearLayout) findViewById(R.id.ll_C3227_15);
-        ll_C3227_16 = (LinearLayout) findViewById(R.id.ll_C3227_16);
-        ll_C3227_17 = (LinearLayout) findViewById(R.id.ll_C3227_17);
-        ll_C3227_18 = (LinearLayout) findViewById(R.id.ll_C3227_18);
-        ll_C3227_19 = (LinearLayout) findViewById(R.id.ll_C3227_19);
-        ll_C3227_20 = (LinearLayout) findViewById(R.id.ll_C3227_20);
-        ll_C3227_21 = (LinearLayout) findViewById(R.id.ll_C3227_21);
-        ll_C3227_22 = (LinearLayout) findViewById(R.id.ll_C3227_22);
-        ll_C3228 = (LinearLayout) findViewById(R.id.ll_C3228);
+        ll_C3121 = findViewById(R.id.ll_C3121);
+        ll_C3122 = findViewById(R.id.ll_C3122);
+        ll_C3122d = findViewById(R.id.ll_C3122d);
+        ll_C3122m = findViewById(R.id.ll_C3122m);
+        ll_C3123_u = findViewById(R.id.ll_C3123_u);
+        ll_C3123_b = findViewById(R.id.ll_C3123_b);
+        ll_C3123_c = findViewById(R.id.ll_C3123_c);
+        ll_C3124 = findViewById(R.id.ll_C3124);
+        ll_C3125 = findViewById(R.id.ll_C3125);
+        ll_C3126 = findViewById(R.id.ll_C3126);
+        ll_C3127 = findViewById(R.id.ll_C3127);
+        ll_C3128 = findViewById(R.id.ll_C3128);
+        ll_C3129 = findViewById(R.id.ll_C3129);
+        ll_C3130 = findViewById(R.id.ll_C3130);
+        ll_C3131 = findViewById(R.id.ll_C3131);
+        ll_C3132_u = findViewById(R.id.ll_C3132_u);
+        ll_C3132_a = findViewById(R.id.ll_C3132_a);
+        ll_C3132_b = findViewById(R.id.ll_C3132_b);
+        ll_C3133 = findViewById(R.id.ll_C3133);
+        ll_C3134 = findViewById(R.id.ll_C3134);
+        ll_C3135 = findViewById(R.id.ll_C3135);
+        ll_C3136 = findViewById(R.id.ll_C3136);
+        ll_C3137 = findViewById(R.id.ll_C3137);
+        ll_C3138 = findViewById(R.id.ll_C3138);
+        ll_C3139 = findViewById(R.id.ll_C3139);
+        ll_C3140 = findViewById(R.id.ll_C3140);
+        ll_C3141 = findViewById(R.id.ll_C3141);
+        ll_C3142 = findViewById(R.id.ll_C3142);
+        ll_C3143 = findViewById(R.id.ll_C3143);
+        ll_C3144_u = findViewById(R.id.ll_C3144_u);
+        ll_C3144 = findViewById(R.id.ll_C3144);
+        ll_C3144_a = findViewById(R.id.ll_C3144_a);
+        ll_C3144_b = findViewById(R.id.ll_C3144_b);
+        ll_C3145 = findViewById(R.id.ll_C3145);
+        ll_C3146 = findViewById(R.id.ll_C3146);
+        ll_C3147_u = findViewById(R.id.ll_C3147_u);
+        ll_C3147_a = findViewById(R.id.ll_C3147_a);
+        ll_C3147_b = findViewById(R.id.ll_C3147_b);
+        ll_C3148 = findViewById(R.id.ll_C3148);
+        ll_C3149 = findViewById(R.id.ll_C3149);
+        ll_C3150_u = findViewById(R.id.ll_C3150_u);
+        ll_C3150_a = findViewById(R.id.ll_C3150_a);
+        ll_C3150_b = findViewById(R.id.ll_C3150_b);
+        ll_C3151 = findViewById(R.id.ll_C3151);
+        ll_C3152_u = findViewById(R.id.ll_C3152_u);
+        ll_C3152_a = findViewById(R.id.ll_C3152_a);
+        ll_C3152_b = findViewById(R.id.ll_C3152_b);
+        ll_C3153 = findViewById(R.id.ll_C3153);
+        ll_C3154 = findViewById(R.id.ll_C3154);
+        ll_C3155 = findViewById(R.id.ll_C3155);
+        ll_C3156 = findViewById(R.id.ll_C3156);
+        ll_C3157 = findViewById(R.id.ll_C3157);
+        ll_C3158 = findViewById(R.id.ll_C3158);
+        ll_C3159_u = findViewById(R.id.ll_C3159_u);
+        ll_C3159_a = findViewById(R.id.ll_C3159_a);
+        ll_C3159_b = findViewById(R.id.ll_C3159_b);
+        ll_C3159_c = findViewById(R.id.ll_C3159_c);
+        ll_C3160 = findViewById(R.id.ll_C3160);
+        ll_C3161 = findViewById(R.id.ll_C3161);
+        ll_C3162 = findViewById(R.id.ll_C3162);
+        ll_C3162d = findViewById(R.id.ll_C3162d);
+        ll_C3162m = findViewById(R.id.ll_C3162m);
+        ll_C3163_u = findViewById(R.id.ll_C3163_u);
+        ll_C3163_a = findViewById(R.id.ll_C3163_a);
+        ll_C3163_b = findViewById(R.id.ll_C3163_b);
+        ll_C3164 = findViewById(R.id.ll_C3164);
+        ll_C3165_u = findViewById(R.id.ll_C3165_u);
+        ll_C3165_a = findViewById(R.id.ll_C3165_a);
+        ll_C3165_b = findViewById(R.id.ll_C3165_b);
+        ll_C3166 = findViewById(R.id.ll_C3166);
+        ll_C3167 = findViewById(R.id.ll_C3167);
+        ll_C3168 = findViewById(R.id.ll_C3168);
+        ll_C3169 = findViewById(R.id.ll_C3169);
+        ll_C3170 = findViewById(R.id.ll_C3170);
+        ll_C3171 = findViewById(R.id.ll_C3171);
+        ll_C3172 = findViewById(R.id.ll_C3172);
+        ll_C3173 = findViewById(R.id.ll_C3173);
+        ll_C3174 = findViewById(R.id.ll_C3174);
+        ll_C3175_u = findViewById(R.id.ll_C3175_u);
+        ll_C3175_a = findViewById(R.id.ll_C3175_a);
+        ll_C3175_b = findViewById(R.id.ll_C3175_b);
+        ll_C3176 = findViewById(R.id.ll_C3176);
+        ll_C3177_u = findViewById(R.id.ll_C3177_u);
+        ll_C3177_a = findViewById(R.id.ll_C3177_a);
+        ll_C3177_b = findViewById(R.id.ll_C3177_b);
+        ll_C3178 = findViewById(R.id.ll_C3178);
+        ll_C3179_u = findViewById(R.id.ll_C3179_u);
+        ll_C3179_a = findViewById(R.id.ll_C3179_a);
+        ll_C3179_b = findViewById(R.id.ll_C3179_b);
+        ll_C3180 = findViewById(R.id.ll_C3180);
+        ll_C3181 = findViewById(R.id.ll_C3181);
+        ll_C3182 = findViewById(R.id.ll_C3182);
+        ll_C3183 = findViewById(R.id.ll_C3183);
+        ll_C3184 = findViewById(R.id.ll_C3184);
+        ll_C3185 = findViewById(R.id.ll_C3185);
+        ll_C3186_1 = findViewById(R.id.ll_C3186_1);
+        ll_C3186 = findViewById(R.id.ll_C3186);
+        ll_C3187 = findViewById(R.id.ll_C3187);
+        ll_C3188 = findViewById(R.id.ll_C3188);
+        ll_C3189 = findViewById(R.id.ll_C3189);
+        ll_C3190 = findViewById(R.id.ll_C3190);
+        ll_C3191 = findViewById(R.id.ll_C3191);
+        ll_C3192 = findViewById(R.id.ll_C3192);
+        ll_C3193_u = findViewById(R.id.ll_C3193_u);
+        ll_C3193_a = findViewById(R.id.ll_C3193_a);
+        ll_C3193_b = findViewById(R.id.ll_C3193_b);
+        ll_C3194 = findViewById(R.id.ll_C3194);
+        ll_C3195A = findViewById(R.id.ll_C3195A);
+        ll_C3195 = findViewById(R.id.ll_C3195);
+        ll_C3196 = findViewById(R.id.ll_C3196);
+        ll_C3197 = findViewById(R.id.ll_C3197);
+        ll_C3198 = findViewById(R.id.ll_C3198);
+        ll_C3199 = findViewById(R.id.ll_C3199);
+        ll_C3199_1 = findViewById(R.id.ll_C3199_1);
+        ll_C3200 = findViewById(R.id.ll_C3200);
+        ll_C3201_u = findViewById(R.id.ll_C3201_u);
+        ll_C3201_a = findViewById(R.id.ll_C3201_a);
+        ll_C3201_b = findViewById(R.id.ll_C3201_b);
+        ll_C3202 = findViewById(R.id.ll_C3202);
+        ll_C3203 = findViewById(R.id.ll_C3203);
+        ll_C3204_u = findViewById(R.id.ll_C3204_u);
+        ll_C3204_a = findViewById(R.id.ll_C3204_a);
+        ll_C3204_b = findViewById(R.id.ll_C3204_b);
+        ll_C3205 = findViewById(R.id.ll_C3205);
+        ll_C3206 = findViewById(R.id.ll_C3206);
+        ll_C3207 = findViewById(R.id.ll_C3207);
+        ll_C3208_u = findViewById(R.id.ll_C3208_u);
+        ll_C3208_a = findViewById(R.id.ll_C3208_a);
+        ll_C3208_b = findViewById(R.id.ll_C3208_b);
+        ll_C3209 = findViewById(R.id.ll_C3209);
+        ll_C3210 = findViewById(R.id.ll_C3210);
+        ll_C3212 = findViewById(R.id.ll_C3212);
+        ll_C3213 = findViewById(R.id.ll_C3213);
+        ll_C3214 = findViewById(R.id.ll_C3214);
+        ll_C3215 = findViewById(R.id.ll_C3215);
+        ll_C3216 = findViewById(R.id.ll_C3216);
+        ll_C3217 = findViewById(R.id.ll_C3217);
+        ll_C3218 = findViewById(R.id.ll_C3218);
+        ll_C3219 = findViewById(R.id.ll_C3219);
+        ll_C3220_u = findViewById(R.id.ll_C3220_u);
+        ll_C3220_a = findViewById(R.id.ll_C3220_a);
+        ll_C3220_b = findViewById(R.id.ll_C3220_b);
+        ll_C3221 = findViewById(R.id.ll_C3221);
+        ll_C3222 = findViewById(R.id.ll_C3222);
+        ll_C3223 = findViewById(R.id.ll_C3223);
+        ll_C3224 = findViewById(R.id.ll_C3224);
+        ll_C3225 = findViewById(R.id.ll_C3225);
+        ll_C3226 = findViewById(R.id.ll_C3226);
+        ll_C3227 = findViewById(R.id.ll_C3227);
+        ll_C3227_1 = findViewById(R.id.ll_C3227_1);
+        ll_C3227_2 = findViewById(R.id.ll_C3227_2);
+        ll_C3227_3 = findViewById(R.id.ll_C3227_3);
+        ll_C3227_4 = findViewById(R.id.ll_C3227_4);
+        ll_C3227_5 = findViewById(R.id.ll_C3227_5);
+        ll_C3227_6 = findViewById(R.id.ll_C3227_6);
+        ll_C3227_7 = findViewById(R.id.ll_C3227_7);
+        ll_C3227_8 = findViewById(R.id.ll_C3227_8);
+        ll_C3227_9 = findViewById(R.id.ll_C3227_9);
+        ll_C3227_10 = findViewById(R.id.ll_C3227_10);
+        ll_C3227_11 = findViewById(R.id.ll_C3227_11);
+        ll_C3227_12 = findViewById(R.id.ll_C3227_12);
+        ll_C3227_13 = findViewById(R.id.ll_C3227_13);
+        ll_C3227_14 = findViewById(R.id.ll_C3227_14);
+        ll_C3227_15 = findViewById(R.id.ll_C3227_15);
+        ll_C3227_16 = findViewById(R.id.ll_C3227_16);
+        ll_C3227_17 = findViewById(R.id.ll_C3227_17);
+        ll_C3227_18 = findViewById(R.id.ll_C3227_18);
+        ll_C3227_19 = findViewById(R.id.ll_C3227_19);
+        ll_C3227_20 = findViewById(R.id.ll_C3227_20);
+        ll_C3227_21 = findViewById(R.id.ll_C3227_21);
+        ll_C3227_22 = findViewById(R.id.ll_C3227_22);
+        ll_C3228 = findViewById(R.id.ll_C3228);
 
         // Radio Buttons
 
-        rb_C3121_1 = (RadioButton) findViewById(R.id.rb_C3121_1);
-        rb_C3121_2 = (RadioButton) findViewById(R.id.rb_C3121_2);
-        rb_C3121_DK = (RadioButton) findViewById(R.id.rb_C3121_DK);
-        rb_C3123_u_1 = (RadioButton) findViewById(R.id.rb_C3123_u_1);
-        rb_C3123_u_2 = (RadioButton) findViewById(R.id.rb_C3123_u_2);
-        rb_C3123_u_DK = (RadioButton) findViewById(R.id.rb_C3123_u_DK);
-        rb_C3122_1 = (RadioButton) findViewById(R.id.rb_C3122_1);
-        rb_C3122_2 = (RadioButton) findViewById(R.id.rb_C3122_2);
-        rb_C3122_DK = (RadioButton) findViewById(R.id.rb_C3122_DK);
-        rb_C3123_u_RA = (RadioButton) findViewById(R.id.rb_C3123_u_RA);
-        rb_C3124_1 = (RadioButton) findViewById(R.id.rb_C3124_1);
-        rb_C3124_2 = (RadioButton) findViewById(R.id.rb_C3124_2);
-        rb_C3124_DK = (RadioButton) findViewById(R.id.rb_C3124_DK);
-        rb_C3124_RA = (RadioButton) findViewById(R.id.rb_C3124_RA);
-        rb_C3125_1 = (RadioButton) findViewById(R.id.rb_C3125_1);
-        rb_C3125_2 = (RadioButton) findViewById(R.id.rb_C3125_2);
-        rb_C3125_3 = (RadioButton) findViewById(R.id.rb_C3125_3);
-        rb_C3125_DK = (RadioButton) findViewById(R.id.rb_C3125_DK);
-        rb_C3125_RA = (RadioButton) findViewById(R.id.rb_C3125_RA);
-        rb_C3126_1 = (RadioButton) findViewById(R.id.rb_C3126_1);
-        rb_C3126_2 = (RadioButton) findViewById(R.id.rb_C3126_2);
-        rb_C3126_3 = (RadioButton) findViewById(R.id.rb_C3126_3);
-        rb_C3126_DK = (RadioButton) findViewById(R.id.rb_C3126_DK);
-        rb_C3126_RA = (RadioButton) findViewById(R.id.rb_C3126_RA);
-        rb_C3127_1 = (RadioButton) findViewById(R.id.rb_C3127_1);
-        rb_C3127_2 = (RadioButton) findViewById(R.id.rb_C3127_2);
-        rb_C3127_DK = (RadioButton) findViewById(R.id.rb_C3127_DK);
-        rb_C3127_RA = (RadioButton) findViewById(R.id.rb_C3127_RA);
-        rb_C3128_1 = (RadioButton) findViewById(R.id.rb_C3128_1);
-        rb_C3128_2 = (RadioButton) findViewById(R.id.rb_C3128_2);
-        rb_C3128_DK = (RadioButton) findViewById(R.id.rb_C3128_DK);
-        rb_C3128_RA = (RadioButton) findViewById(R.id.rb_C3128_RA);
-        rb_C3129_1 = (RadioButton) findViewById(R.id.rb_C3129_1);
-        rb_C3129_2 = (RadioButton) findViewById(R.id.rb_C3129_2);
-        rb_C3129_DK = (RadioButton) findViewById(R.id.rb_C3129_DK);
-        rb_C3129_RA = (RadioButton) findViewById(R.id.rb_C3129_RA);
-        rb_C3130_1 = (RadioButton) findViewById(R.id.rb_C3130_1);
-        rb_C3130_2 = (RadioButton) findViewById(R.id.rb_C3130_2);
-        rb_C3130_DK = (RadioButton) findViewById(R.id.rb_C3130_DK);
-        rb_C3130_RA = (RadioButton) findViewById(R.id.rb_C3130_RA);
-        rb_C3132_u_1 = (RadioButton) findViewById(R.id.rb_C3132_u_1);
-        rb_C3132_u_2 = (RadioButton) findViewById(R.id.rb_C3132_u_2);
-        rb_C3132_u_DK = (RadioButton) findViewById(R.id.rb_C3132_u_DK);
-        rb_C3132_u_RA = (RadioButton) findViewById(R.id.rb_C3132_u_RA);
-        rb_C3133_1 = (RadioButton) findViewById(R.id.rb_C3133_1);
-        rb_C3133_2 = (RadioButton) findViewById(R.id.rb_C3133_2);
-        rb_C3133_DK = (RadioButton) findViewById(R.id.rb_C3133_DK);
-        rb_C3133_RA = (RadioButton) findViewById(R.id.rb_C3133_RA);
-        rb_C3135_1 = (RadioButton) findViewById(R.id.rb_C3135_1);
-        rb_C3135_2 = (RadioButton) findViewById(R.id.rb_C3135_2);
-        rb_C3135_DK = (RadioButton) findViewById(R.id.rb_C3135_DK);
-        rb_C3135_RA = (RadioButton) findViewById(R.id.rb_C3135_RA);
-        rb_C3136_1 = (RadioButton) findViewById(R.id.rb_C3136_1);
-        rb_C3136_2 = (RadioButton) findViewById(R.id.rb_C3136_2);
-        rb_C3136_DK = (RadioButton) findViewById(R.id.rb_C3136_DK);
-        rb_C3136_RA = (RadioButton) findViewById(R.id.rb_C3136_RA);
-        rb_C3137_1 = (RadioButton) findViewById(R.id.rb_C3137_1);
-        rb_C3137_2 = (RadioButton) findViewById(R.id.rb_C3137_2);
-        rb_C3137_DK = (RadioButton) findViewById(R.id.rb_C3137_DK);
-        rb_C3137_RA = (RadioButton) findViewById(R.id.rb_C3137_RA);
-        rb_C3138_1 = (RadioButton) findViewById(R.id.rb_C3138_1);
-        rb_C3138_2 = (RadioButton) findViewById(R.id.rb_C3138_2);
-        rb_C3138_DK = (RadioButton) findViewById(R.id.rb_C3138_DK);
-        rb_C3138_RA = (RadioButton) findViewById(R.id.rb_C3138_RA);
-        rb_C3139_1 = (RadioButton) findViewById(R.id.rb_C3139_1);
-        rb_C3139_2 = (RadioButton) findViewById(R.id.rb_C3139_2);
-        rb_C3139_DK = (RadioButton) findViewById(R.id.rb_C3139_DK);
-        rb_C3139_RA = (RadioButton) findViewById(R.id.rb_C3139_RA);
-        rb_C3140_1 = (RadioButton) findViewById(R.id.rb_C3140_1);
-        rb_C3140_2 = (RadioButton) findViewById(R.id.rb_C3140_2);
-        rb_C3140_DK = (RadioButton) findViewById(R.id.rb_C3140_DK);
-        rb_C3140_RA = (RadioButton) findViewById(R.id.rb_C3140_RA);
-        rb_C3141_1 = (RadioButton) findViewById(R.id.rb_C3141_1);
-        rb_C3141_2 = (RadioButton) findViewById(R.id.rb_C3141_2);
-        rb_C3141_DK = (RadioButton) findViewById(R.id.rb_C3141_DK);
-        rb_C3141_RA = (RadioButton) findViewById(R.id.rb_C3141_RA);
-        rb_C3142_1 = (RadioButton) findViewById(R.id.rb_C3142_1);
-        rb_C3142_2 = (RadioButton) findViewById(R.id.rb_C3142_2);
-        rb_C3142_DK = (RadioButton) findViewById(R.id.rb_C3142_DK);
-        rb_C3142_RA = (RadioButton) findViewById(R.id.rb_C3142_RA);
-        rb_C3143_1 = (RadioButton) findViewById(R.id.rb_C3143_1);
-        rb_C3143_2 = (RadioButton) findViewById(R.id.rb_C3143_2);
-        rb_C3143_DK = (RadioButton) findViewById(R.id.rb_C3143_DK);
-        rb_C3143_RA = (RadioButton) findViewById(R.id.rb_C3143_RA);
-        rb_C3144_u_1 = (RadioButton) findViewById(R.id.rb_C3144_u_1);
-        rb_C3144_u_2 = (RadioButton) findViewById(R.id.rb_C3144_u_2);
-        rb_C3144_u_3 = (RadioButton) findViewById(R.id.rb_C3144_u_3);
-        rb_C3144_u_DK = (RadioButton) findViewById(R.id.rb_C3144_u_DK);
-        rb_C3144_u_RA = (RadioButton) findViewById(R.id.rb_C3144_u_RA);
-        rb_C3145_1 = (RadioButton) findViewById(R.id.rb_C3145_1);
-        rb_C3145_2 = (RadioButton) findViewById(R.id.rb_C3145_2);
-        rb_C3145_3 = (RadioButton) findViewById(R.id.rb_C3145_3);
-        rb_C3145_DK = (RadioButton) findViewById(R.id.rb_C3145_DK);
-        rb_C3145_RA = (RadioButton) findViewById(R.id.rb_C3145_RA);
-        rb_C3146_1 = (RadioButton) findViewById(R.id.rb_C3146_1);
-        rb_C3146_2 = (RadioButton) findViewById(R.id.rb_C3146_2);
-        rb_C3146_DK = (RadioButton) findViewById(R.id.rb_C3146_DK);
-        rb_C3146_RA = (RadioButton) findViewById(R.id.rb_C3146_RA);
-        rb_C3147_u_3 = (RadioButton) findViewById(R.id.rb_C3147_u_3);
-        rb_C3147_u_4 = (RadioButton) findViewById(R.id.rb_C3147_u_4);
-        rb_C3147_u_DK = (RadioButton) findViewById(R.id.rb_C3147_u_DK);
-        rb_C3147_u_RA = (RadioButton) findViewById(R.id.rb_C3147_u_RA);
-        rb_C3148_1 = (RadioButton) findViewById(R.id.rb_C3148_1);
-        rb_C3148_2 = (RadioButton) findViewById(R.id.rb_C3148_2);
-        rb_C3148_DK = (RadioButton) findViewById(R.id.rb_C3148_DK);
-        rb_C3148_RA = (RadioButton) findViewById(R.id.rb_C3148_RA);
-        rb_C3149_1 = (RadioButton) findViewById(R.id.rb_C3149_1);
-        rb_C3149_2 = (RadioButton) findViewById(R.id.rb_C3149_2);
-        rb_C3149_DK = (RadioButton) findViewById(R.id.rb_C3149_DK);
-        rb_C3149_RA = (RadioButton) findViewById(R.id.rb_C3149_RA);
-        rb_C3150_u_1 = (RadioButton) findViewById(R.id.rb_C3150_u_1);
-        rb_C3150_u_2 = (RadioButton) findViewById(R.id.rb_C3150_u_2);
-        rb_C3150_u_DK = (RadioButton) findViewById(R.id.rb_C3150_u_DK);
-        rb_C3150_u_RA = (RadioButton) findViewById(R.id.rb_C3150_u_RA);
-        rb_C3151_1 = (RadioButton) findViewById(R.id.rb_C3151_1);
-        rb_C3151_2 = (RadioButton) findViewById(R.id.rb_C3151_2);
-        rb_C3151_DK = (RadioButton) findViewById(R.id.rb_C3151_DK);
-        rb_C3152_u_1 = (RadioButton) findViewById(R.id.rb_C3152_u_1);
-        rb_C3152_u_2 = (RadioButton) findViewById(R.id.rb_C3152_u_2);
-        rb_C3152_u_DK = (RadioButton) findViewById(R.id.rb_C3152_u_DK);
-        rb_C3152_u_RA = (RadioButton) findViewById(R.id.rb_C3152_u_RA);
-        rb_C3153_1 = (RadioButton) findViewById(R.id.rb_C3153_1);
-        rb_C3153_2 = (RadioButton) findViewById(R.id.rb_C3153_2);
-        rb_C3153_DK = (RadioButton) findViewById(R.id.rb_C3153_DK);
-        rb_C3153_RA = (RadioButton) findViewById(R.id.rb_C3153_RA);
-        rb_C3154_1 = (RadioButton) findViewById(R.id.rb_C3154_1);
-        rb_C3154_2 = (RadioButton) findViewById(R.id.rb_C3154_2);
-        rb_C3154_DK = (RadioButton) findViewById(R.id.rb_C3154_DK);
-        rb_C3154_RA = (RadioButton) findViewById(R.id.rb_C3154_RA);
-        rb_C3155_1 = (RadioButton) findViewById(R.id.rb_C3155_1);
-        rb_C3155_2 = (RadioButton) findViewById(R.id.rb_C3155_2);
-        rb_C3155_DK = (RadioButton) findViewById(R.id.rb_C3155_DK);
-        rb_C3155_RA = (RadioButton) findViewById(R.id.rb_C3155_RA);
-        rb_C3156_1 = (RadioButton) findViewById(R.id.rb_C3156_1);
-        rb_C3156_2 = (RadioButton) findViewById(R.id.rb_C3156_2);
-        rb_C3156_DK = (RadioButton) findViewById(R.id.rb_C3156_DK);
-        rb_C3156_RA = (RadioButton) findViewById(R.id.rb_C3156_RA);
-        rb_C3157_1 = (RadioButton) findViewById(R.id.rb_C3157_1);
-        rb_C3157_2 = (RadioButton) findViewById(R.id.rb_C3157_2);
-        rb_C3157_DK = (RadioButton) findViewById(R.id.rb_C3157_DK);
-        rb_C3157_RA = (RadioButton) findViewById(R.id.rb_C3157_RA);
-        rb_C3158_1 = (RadioButton) findViewById(R.id.rb_C3158_1);
-        rb_C3158_2 = (RadioButton) findViewById(R.id.rb_C3158_2);
-        rb_C3158_DK = (RadioButton) findViewById(R.id.rb_C3158_DK);
-        rb_C3158_RA = (RadioButton) findViewById(R.id.rb_C3158_RA);
-        rb_C3159_u_1 = (RadioButton) findViewById(R.id.rb_C3159_u_1);
-        rb_C3159_u_2 = (RadioButton) findViewById(R.id.rb_C3159_u_2);
-        rb_C3159_u_3 = (RadioButton) findViewById(R.id.rb_C3159_u_3);
-        rb_C3159_u_DK = (RadioButton) findViewById(R.id.rb_C3159_u_DK);
-        rb_C3159_u_RA = (RadioButton) findViewById(R.id.rb_C3159_u_RA);
-        rb_C3160_1 = (RadioButton) findViewById(R.id.rb_C3160_1);
-        rb_C3160_2 = (RadioButton) findViewById(R.id.rb_C3160_2);
-        rb_C3160_DK = (RadioButton) findViewById(R.id.rb_C3160_DK);
-        rb_C3160_RA = (RadioButton) findViewById(R.id.rb_C3160_RA);
-        rb_C3161_1 = (RadioButton) findViewById(R.id.rb_C3161_1);
-        rb_C3161_2 = (RadioButton) findViewById(R.id.rb_C3161_2);
-        rb_C3161_DK = (RadioButton) findViewById(R.id.rb_C3161_DK);
-        rb_C3161_RA = (RadioButton) findViewById(R.id.rb_C3161_RA);
-        rb_C3162_1 = (RadioButton) findViewById(R.id.rb_C3162_1);
-        rb_C3162_2 = (RadioButton) findViewById(R.id.rb_C3162_2);
-        rb_C3162_DK = (RadioButton) findViewById(R.id.rb_C3162_DK);
-        rb_C3163_u_1 = (RadioButton) findViewById(R.id.rb_C3163_u_1);
-        rb_C3163_u_2 = (RadioButton) findViewById(R.id.rb_C3163_u_2);
-        rb_C3163_u_DK = (RadioButton) findViewById(R.id.rb_C3163_u_DK);
-        rb_C3163_u_RA = (RadioButton) findViewById(R.id.rb_C3163_u_RA);
-        rb_C3164_1 = (RadioButton) findViewById(R.id.rb_C3164_1);
-        rb_C3164_2 = (RadioButton) findViewById(R.id.rb_C3164_2);
-        rb_C3164_DK = (RadioButton) findViewById(R.id.rb_C3164_DK);
-        rb_C3164_RA = (RadioButton) findViewById(R.id.rb_C3164_RA);
-        rb_C3165_u_1 = (RadioButton) findViewById(R.id.rb_C3165_u_1);
-        rb_C3165_u_2 = (RadioButton) findViewById(R.id.rb_C3165_u_2);
-        rb_C3165_u_DK = (RadioButton) findViewById(R.id.rb_C3165_u_DK);
-        rb_C3165_u_RA = (RadioButton) findViewById(R.id.rb_C3165_u_RA);
-        rb_C3166_1 = (RadioButton) findViewById(R.id.rb_C3166_1);
-        rb_C3166_2 = (RadioButton) findViewById(R.id.rb_C3166_2);
-        rb_C3166_DK = (RadioButton) findViewById(R.id.rb_C3166_DK);
-        rb_C3166_RA = (RadioButton) findViewById(R.id.rb_C3166_RA);
-        rb_C3168_1 = (RadioButton) findViewById(R.id.rb_C3168_1);
-        rb_C3168_2 = (RadioButton) findViewById(R.id.rb_C3168_2);
-        rb_C3168_DK = (RadioButton) findViewById(R.id.rb_C3168_DK);
-        rb_C3168_RA = (RadioButton) findViewById(R.id.rb_C3168_RA);
-        rb_C3169_1 = (RadioButton) findViewById(R.id.rb_C3169_1);
-        rb_C3169_2 = (RadioButton) findViewById(R.id.rb_C3169_2);
-        rb_C3169_DK = (RadioButton) findViewById(R.id.rb_C3169_DK);
-        rb_C3169_RA = (RadioButton) findViewById(R.id.rb_C3169_RA);
-        rb_C3170_1 = (RadioButton) findViewById(R.id.rb_C3170_1);
-        rb_C3170_2 = (RadioButton) findViewById(R.id.rb_C3170_2);
-        rb_C3170_DK = (RadioButton) findViewById(R.id.rb_C3170_DK);
-        rb_C3170_RA = (RadioButton) findViewById(R.id.rb_C3170_RA);
-        rb_C3171_1 = (RadioButton) findViewById(R.id.rb_C3171_1);
-        rb_C3171_2 = (RadioButton) findViewById(R.id.rb_C3171_2);
-        rb_C3171_DK = (RadioButton) findViewById(R.id.rb_C3171_DK);
-        rb_C3171_RA = (RadioButton) findViewById(R.id.rb_C3171_RA);
-        rb_C3173_1 = (RadioButton) findViewById(R.id.rb_C3173_1);
-        rb_C3173_2 = (RadioButton) findViewById(R.id.rb_C3173_2);
-        rb_C3173_DK = (RadioButton) findViewById(R.id.rb_C3173_DK);
-        rb_C3173_RA = (RadioButton) findViewById(R.id.rb_C3173_RA);
-        rb_C3174_1 = (RadioButton) findViewById(R.id.rb_C3174_1);
-        rb_C3174_2 = (RadioButton) findViewById(R.id.rb_C3174_2);
-        rb_C3174_DK = (RadioButton) findViewById(R.id.rb_C3174_DK);
-        rb_C3174_RA = (RadioButton) findViewById(R.id.rb_C3174_RA);
-        rb_C3175_u_1 = (RadioButton) findViewById(R.id.rb_C3175_u_1);
-        rb_C3175_u_2 = (RadioButton) findViewById(R.id.rb_C3175_u_2);
-        rb_C3175_u_DK = (RadioButton) findViewById(R.id.rb_C3175_u_DK);
-        rb_C3175_u_RA = (RadioButton) findViewById(R.id.rb_C3175_u_RA);
-        rb_C3176_1 = (RadioButton) findViewById(R.id.rb_C3176_1);
-        rb_C3176_2 = (RadioButton) findViewById(R.id.rb_C3176_2);
-        rb_C3176_DK = (RadioButton) findViewById(R.id.rb_C3176_DK);
-        rb_C3176_RA = (RadioButton) findViewById(R.id.rb_C3176_RA);
-        rb_C3177_u_1 = (RadioButton) findViewById(R.id.rb_C3177_u_1);
-        rb_C3177_u_2 = (RadioButton) findViewById(R.id.rb_C3177_u_2);
-        rb_C3177_u_DK = (RadioButton) findViewById(R.id.rb_C3177_u_DK);
-        rb_C3177_u_RA = (RadioButton) findViewById(R.id.rb_C3177_u_RA);
-        rb_C3178_1 = (RadioButton) findViewById(R.id.rb_C3178_1);
-        rb_C3178_2 = (RadioButton) findViewById(R.id.rb_C3178_2);
-        rb_C3178_DK = (RadioButton) findViewById(R.id.rb_C3178_DK);
-        rb_C3178_RA = (RadioButton) findViewById(R.id.rb_C3178_RA);
-        rb_C3179_u_1 = (RadioButton) findViewById(R.id.rb_C3179_u_1);
-        rb_C3179_u_2 = (RadioButton) findViewById(R.id.rb_C3179_u_2);
-        rb_C3179_u_DK = (RadioButton) findViewById(R.id.rb_C3179_u_DK);
-        rb_C3179_u_RA = (RadioButton) findViewById(R.id.rb_C3179_u_RA);
-        rb_C3180_1 = (RadioButton) findViewById(R.id.rb_C3180_1);
-        rb_C3180_2 = (RadioButton) findViewById(R.id.rb_C3180_2);
-        rb_C3180_DK = (RadioButton) findViewById(R.id.rb_C3180_DK);
-        rb_C3180_RA = (RadioButton) findViewById(R.id.rb_C3180_RA);
-        rb_C3181_1 = (RadioButton) findViewById(R.id.rb_C3181_1);
-        rb_C3181_2 = (RadioButton) findViewById(R.id.rb_C3181_2);
-        rb_C3181_DK = (RadioButton) findViewById(R.id.rb_C3181_DK);
-        rb_C3181_RA = (RadioButton) findViewById(R.id.rb_C3181_RA);
-        rb_C3182_1 = (RadioButton) findViewById(R.id.rb_C3182_1);
-        rb_C3182_2 = (RadioButton) findViewById(R.id.rb_C3182_2);
-        rb_C3182_DK = (RadioButton) findViewById(R.id.rb_C3182_DK);
-        rb_C3182_RA = (RadioButton) findViewById(R.id.rb_C3182_RA);
-        rb_C3183_1 = (RadioButton) findViewById(R.id.rb_C3183_1);
-        rb_C3183_2 = (RadioButton) findViewById(R.id.rb_C3183_2);
-        rb_C3183_DK = (RadioButton) findViewById(R.id.rb_C3183_DK);
-        rb_C3183_RA = (RadioButton) findViewById(R.id.rb_C3183_RA);
-        rb_C3185_1 = (RadioButton) findViewById(R.id.rb_C3185_1);
-        rb_C3185_2 = (RadioButton) findViewById(R.id.rb_C3185_2);
-        rb_C3185_DK = (RadioButton) findViewById(R.id.rb_C3185_DK);
-        rb_C3185_RA = (RadioButton) findViewById(R.id.rb_C3185_RA);
-        rb_C3186_1_1 = (RadioButton) findViewById(R.id.rb_C3186_1_1);
-        rb_C3186_1_2 = (RadioButton) findViewById(R.id.rb_C3186_1_2);
-        rb_C3186_1_DK = (RadioButton) findViewById(R.id.rb_C3186_1_DK);
-        rb_C3186_1_RA = (RadioButton) findViewById(R.id.rb_C3186_1_RA);
-        rb_C3186_1 = (RadioButton) findViewById(R.id.rb_C3186_1);
-        rb_C3186_2 = (RadioButton) findViewById(R.id.rb_C3186_2);
-        rb_C3186_DK = (RadioButton) findViewById(R.id.rb_C3186_DK);
-        rb_C3186_RA = (RadioButton) findViewById(R.id.rb_C3186_RA);
-        rb_C3187_1 = (RadioButton) findViewById(R.id.rb_C3187_1);
-        rb_C3187_2 = (RadioButton) findViewById(R.id.rb_C3187_2);
-        rb_C3187_DK = (RadioButton) findViewById(R.id.rb_C3187_DK);
-        rb_C3187_RA = (RadioButton) findViewById(R.id.rb_C3187_RA);
-        rb_C3188_1 = (RadioButton) findViewById(R.id.rb_C3188_1);
-        rb_C3188_2 = (RadioButton) findViewById(R.id.rb_C3188_2);
-        rb_C3188_DK = (RadioButton) findViewById(R.id.rb_C3188_DK);
-        rb_C3188_RA = (RadioButton) findViewById(R.id.rb_C3188_RA);
-        rb_C3189_1 = (RadioButton) findViewById(R.id.rb_C3189_1);
-        rb_C3189_2 = (RadioButton) findViewById(R.id.rb_C3189_2);
-        rb_C3189_DK = (RadioButton) findViewById(R.id.rb_C3189_DK);
-        rb_C3189_RA = (RadioButton) findViewById(R.id.rb_C3189_RA);
-        rb_C3190_1 = (RadioButton) findViewById(R.id.rb_C3190_1);
-        rb_C3190_2 = (RadioButton) findViewById(R.id.rb_C3190_2);
-        rb_C3190_DK = (RadioButton) findViewById(R.id.rb_C3190_DK);
-        rb_C3190_RA = (RadioButton) findViewById(R.id.rb_C3190_RA);
-        rb_C3191_1 = (RadioButton) findViewById(R.id.rb_C3191_1);
-        rb_C3191_2 = (RadioButton) findViewById(R.id.rb_C3191_2);
-        rb_C3191_DK = (RadioButton) findViewById(R.id.rb_C3191_DK);
-        rb_C3191_RA = (RadioButton) findViewById(R.id.rb_C3191_RA);
-        rb_C3192_1 = (RadioButton) findViewById(R.id.rb_C3192_1);
-        rb_C3192_2 = (RadioButton) findViewById(R.id.rb_C3192_2);
-        rb_C3192_DK = (RadioButton) findViewById(R.id.rb_C3192_DK);
-        rb_C3192_RA = (RadioButton) findViewById(R.id.rb_C3192_RA);
-        rb_C3193_u_3 = (RadioButton) findViewById(R.id.rb_C3193_u_3);
-        rb_C3193_u_4 = (RadioButton) findViewById(R.id.rb_C3193_u_4);
-        rb_C3193_u_DK = (RadioButton) findViewById(R.id.rb_C3193_u_DK);
-        rb_C3193_u_RA = (RadioButton) findViewById(R.id.rb_C3193_u_RA);
-        rb_C3194_1 = (RadioButton) findViewById(R.id.rb_C3194_1);
-        rb_C3194_2 = (RadioButton) findViewById(R.id.rb_C3194_2);
-        rb_C3194_DK = (RadioButton) findViewById(R.id.rb_C3194_DK);
-        rb_C3194_RA = (RadioButton) findViewById(R.id.rb_C3194_RA);
-        rb_C3195A_1 = (RadioButton) findViewById(R.id.rb_C3195A_1);
-        rb_C3195A_2 = (RadioButton) findViewById(R.id.rb_C3195A_2);
-        rb_C3195A_3 = (RadioButton) findViewById(R.id.rb_C3195A_3);
-        rb_C3195A_4 = (RadioButton) findViewById(R.id.rb_C3195A_4);
-        rb_C3195A_DK = (RadioButton) findViewById(R.id.rb_C3195A_DK);
-        rb_C3195A_RA = (RadioButton) findViewById(R.id.rb_C3195A_RA);
-        rb_C3195_1 = (RadioButton) findViewById(R.id.rb_C3195_1);
-        rb_C3195_2 = (RadioButton) findViewById(R.id.rb_C3195_2);
-        rb_C3195_3 = (RadioButton) findViewById(R.id.rb_C3195_3);
-        rb_C3195_4 = (RadioButton) findViewById(R.id.rb_C3195_4);
-        rb_C3195_DK = (RadioButton) findViewById(R.id.rb_C3195_DK);
-        rb_C3195_RA = (RadioButton) findViewById(R.id.rb_C3195_RA);
-        rb_C3197_1 = (RadioButton) findViewById(R.id.rb_C3197_1);
-        rb_C3197_2 = (RadioButton) findViewById(R.id.rb_C3197_2);
-        rb_C3197_DK = (RadioButton) findViewById(R.id.rb_C3197_DK);
-        rb_C3197_RA = (RadioButton) findViewById(R.id.rb_C3197_RA);
-        rb_C3198_1 = (RadioButton) findViewById(R.id.rb_C3198_1);
-        rb_C3198_2 = (RadioButton) findViewById(R.id.rb_C3198_2);
-        rb_C3198_DK = (RadioButton) findViewById(R.id.rb_C3198_DK);
-        rb_C3198_RA = (RadioButton) findViewById(R.id.rb_C3198_RA);
-        rb_C3199_1 = (RadioButton) findViewById(R.id.rb_C3199_1);
-        rb_C3199_2 = (RadioButton) findViewById(R.id.rb_C3199_2);
-        rb_C3199_DK = (RadioButton) findViewById(R.id.rb_C3199_DK);
-        rb_C3199_RA = (RadioButton) findViewById(R.id.rb_C3199_RA);
-        rb_C3199_1_1 = (RadioButton) findViewById(R.id.rb_C3199_1_1);
-        rb_C3199_1_2 = (RadioButton) findViewById(R.id.rb_C3199_1_2);
-        rb_C3199_1_DK = (RadioButton) findViewById(R.id.rb_C3199_1_DK);
-        rb_C3199_1_RA = (RadioButton) findViewById(R.id.rb_C3199_1_RA);
-        rb_C3200_1 = (RadioButton) findViewById(R.id.rb_C3200_1);
-        rb_C3200_2 = (RadioButton) findViewById(R.id.rb_C3200_2);
-        rb_C3200_DK = (RadioButton) findViewById(R.id.rb_C3200_DK);
-        rb_C3200_RA = (RadioButton) findViewById(R.id.rb_C3200_RA);
-        rb_C3201_u_1 = (RadioButton) findViewById(R.id.rb_C3201_u_1);
-        rb_C3201_u_2 = (RadioButton) findViewById(R.id.rb_C3201_u_2);
-        rb_C3201_u_DK = (RadioButton) findViewById(R.id.rb_C3201_u_DK);
-        rb_C3201_u_RA = (RadioButton) findViewById(R.id.rb_C3201_u_RA);
-        rb_C3202_1 = (RadioButton) findViewById(R.id.rb_C3202_1);
-        rb_C3202_2 = (RadioButton) findViewById(R.id.rb_C3202_2);
-        rb_C3202_DK = (RadioButton) findViewById(R.id.rb_C3202_DK);
-        rb_C3202_RA = (RadioButton) findViewById(R.id.rb_C3202_RA);
-        rb_C3203_1 = (RadioButton) findViewById(R.id.rb_C3203_1);
-        rb_C3203_2 = (RadioButton) findViewById(R.id.rb_C3203_2);
-        rb_C3203_DK = (RadioButton) findViewById(R.id.rb_C3203_DK);
-        rb_C3203_RA = (RadioButton) findViewById(R.id.rb_C3203_RA);
-        rb_C3204_u_1 = (RadioButton) findViewById(R.id.rb_C3204_u_1);
-        rb_C3204_u_2 = (RadioButton) findViewById(R.id.rb_C3204_u_2);
-        rb_C3204_u_DK = (RadioButton) findViewById(R.id.rb_C3204_u_DK);
-        rb_C3204_u_RA = (RadioButton) findViewById(R.id.rb_C3204_u_RA);
-        rb_C3205_1 = (RadioButton) findViewById(R.id.rb_C3205_1);
-        rb_C3205_2 = (RadioButton) findViewById(R.id.rb_C3205_2);
-        rb_C3205_DK = (RadioButton) findViewById(R.id.rb_C3205_DK);
-        rb_C3205_RA = (RadioButton) findViewById(R.id.rb_C3205_RA);
-        rb_C3206_1 = (RadioButton) findViewById(R.id.rb_C3206_1);
-        rb_C3206_2 = (RadioButton) findViewById(R.id.rb_C3206_2);
-        rb_C3206_DK = (RadioButton) findViewById(R.id.rb_C3206_DK);
-        rb_C3206_RA = (RadioButton) findViewById(R.id.rb_C3206_RA);
-        rb_C3207_1 = (RadioButton) findViewById(R.id.rb_C3207_1);
-        rb_C3207_2 = (RadioButton) findViewById(R.id.rb_C3207_2);
-        rb_C3207_DK = (RadioButton) findViewById(R.id.rb_C3207_DK);
-        rb_C3207_RA = (RadioButton) findViewById(R.id.rb_C3207_RA);
-        rb_C3208_u_0 = (RadioButton) findViewById(R.id.rb_C3208_u_0);
-        rb_C3208_u_1 = (RadioButton) findViewById(R.id.rb_C3208_u_1);
-        rb_C3208_u_DK = (RadioButton) findViewById(R.id.rb_C3208_u_DK);
-        rb_C3208_u_RA = (RadioButton) findViewById(R.id.rb_C3208_u_RA);
-        rb_C3209_1 = (RadioButton) findViewById(R.id.rb_C3209_1);
-        rb_C3209_2 = (RadioButton) findViewById(R.id.rb_C3209_2);
-        rb_C3209_DK = (RadioButton) findViewById(R.id.rb_C3209_DK);
-        rb_C3209_RA = (RadioButton) findViewById(R.id.rb_C3209_RA);
-        rb_C3210_1 = (RadioButton) findViewById(R.id.rb_C3210_1);
-        rb_C3210_2 = (RadioButton) findViewById(R.id.rb_C3210_2);
-        rb_C3210_DK = (RadioButton) findViewById(R.id.rb_C3210_DK);
-        rb_C3210_RA = (RadioButton) findViewById(R.id.rb_C3210_RA);
-        rb_C3212_1 = (RadioButton) findViewById(R.id.rb_C3212_1);
-        rb_C3212_2 = (RadioButton) findViewById(R.id.rb_C3212_2);
-        rb_C3212_DK = (RadioButton) findViewById(R.id.rb_C3212_DK);
-        rb_C3212_RA = (RadioButton) findViewById(R.id.rb_C3212_RA);
-        rb_C3213_1 = (RadioButton) findViewById(R.id.rb_C3213_1);
-        rb_C3213_2 = (RadioButton) findViewById(R.id.rb_C3213_2);
-        rb_C3213_DK = (RadioButton) findViewById(R.id.rb_C3213_DK);
-        rb_C3213_RA = (RadioButton) findViewById(R.id.rb_C3213_RA);
-        rb_C3214_1 = (RadioButton) findViewById(R.id.rb_C3214_1);
-        rb_C3214_2 = (RadioButton) findViewById(R.id.rb_C3214_2);
-        rb_C3214_DK = (RadioButton) findViewById(R.id.rb_C3214_DK);
-        rb_C3214_RA = (RadioButton) findViewById(R.id.rb_C3214_RA);
-        rb_C3215_1 = (RadioButton) findViewById(R.id.rb_C3215_1);
-        rb_C3215_2 = (RadioButton) findViewById(R.id.rb_C3215_2);
-        rb_C3215_DK = (RadioButton) findViewById(R.id.rb_C3215_DK);
-        rb_C3215_RA = (RadioButton) findViewById(R.id.rb_C3215_RA);
-        rb_C3216_1 = (RadioButton) findViewById(R.id.rb_C3216_1);
-        rb_C3216_2 = (RadioButton) findViewById(R.id.rb_C3216_2);
-        rb_C3216_DK = (RadioButton) findViewById(R.id.rb_C3216_DK);
-        rb_C3216_RA = (RadioButton) findViewById(R.id.rb_C3216_RA);
-        rb_C3217_1 = (RadioButton) findViewById(R.id.rb_C3217_1);
-        rb_C3217_2 = (RadioButton) findViewById(R.id.rb_C3217_2);
-        rb_C3217_DK = (RadioButton) findViewById(R.id.rb_C3217_DK);
-        rb_C3217_RA = (RadioButton) findViewById(R.id.rb_C3217_RA);
-        rb_C3218_1 = (RadioButton) findViewById(R.id.rb_C3218_1);
-        rb_C3218_2 = (RadioButton) findViewById(R.id.rb_C3218_2);
-        rb_C3218_3 = (RadioButton) findViewById(R.id.rb_C3218_3);
-        rb_C3218_4 = (RadioButton) findViewById(R.id.rb_C3218_4);
-        rb_C3218_5 = (RadioButton) findViewById(R.id.rb_C3218_5);
-        rb_C3218_6 = (RadioButton) findViewById(R.id.rb_C3218_6);
-        rb_C3218_7 = (RadioButton) findViewById(R.id.rb_C3218_7);
-        rb_C3218_OT = (RadioButton) findViewById(R.id.rb_C3218_OT);
-        rb_C3218_DK = (RadioButton) findViewById(R.id.rb_C3218_DK);
-        rb_C3218_RA = (RadioButton) findViewById(R.id.rb_C3218_RA);
-        rb_C3219_1 = (RadioButton) findViewById(R.id.rb_C3219_1);
-        rb_C3219_2 = (RadioButton) findViewById(R.id.rb_C3219_2);
-        rb_C3219_DK = (RadioButton) findViewById(R.id.rb_C3219_DK);
-        rb_C3219_RA = (RadioButton) findViewById(R.id.rb_C3219_RA);
-        rb_C3220_u_1 = (RadioButton) findViewById(R.id.rb_C3220_u_1);
-        rb_C3220_u_2 = (RadioButton) findViewById(R.id.rb_C3220_u_2);
-        rb_C3220_u_DK = (RadioButton) findViewById(R.id.rb_C3220_u_DK);
-        rb_C3220_u_RA = (RadioButton) findViewById(R.id.rb_C3220_u_RA);
-        rb_C3221_1 = (RadioButton) findViewById(R.id.rb_C3221_1);
-        rb_C3221_2 = (RadioButton) findViewById(R.id.rb_C3221_2);
-        rb_C3221_3 = (RadioButton) findViewById(R.id.rb_C3221_3);
-        rb_C3222_1 = (RadioButton) findViewById(R.id.rb_C3222_1);
-        rb_C3222_2 = (RadioButton) findViewById(R.id.rb_C3222_2);
-        rb_C3222_DK = (RadioButton) findViewById(R.id.rb_C3222_DK);
-        rb_C3222_RA = (RadioButton) findViewById(R.id.rb_C3222_RA);
-        rb_C3223_1 = (RadioButton) findViewById(R.id.rb_C3223_1);
-        rb_C3223_2 = (RadioButton) findViewById(R.id.rb_C3223_2);
-        rb_C3223_DK = (RadioButton) findViewById(R.id.rb_C3223_DK);
-        rb_C3223_RA = (RadioButton) findViewById(R.id.rb_C3223_RA);
-        rb_C3224_1 = (RadioButton) findViewById(R.id.rb_C3224_1);
-        rb_C3224_2 = (RadioButton) findViewById(R.id.rb_C3224_2);
-        rb_C3224_DK = (RadioButton) findViewById(R.id.rb_C3224_DK);
-        rb_C3224_RA = (RadioButton) findViewById(R.id.rb_C3224_RA);
-        rb_C3225_1 = (RadioButton) findViewById(R.id.rb_C3225_1);
-        rb_C3225_2 = (RadioButton) findViewById(R.id.rb_C3225_2);
-        rb_C3225_DK = (RadioButton) findViewById(R.id.rb_C3225_DK);
-        rb_C3225_RA = (RadioButton) findViewById(R.id.rb_C3225_RA);
-        rb_C3226_1 = (RadioButton) findViewById(R.id.rb_C3226_1);
-        rb_C3226_2 = (RadioButton) findViewById(R.id.rb_C3226_2);
-        rb_C3226_DK = (RadioButton) findViewById(R.id.rb_C3226_DK);
-        rb_C3226_RA = (RadioButton) findViewById(R.id.rb_C3226_RA);
-        rb_C3227_1 = (RadioButton) findViewById(R.id.rb_C3227_1);
-        rb_C3227_2 = (RadioButton) findViewById(R.id.rb_C3227_2);
-        rb_C3227_DK = (RadioButton) findViewById(R.id.rb_C3227_DK);
-        rb_C3227_RA = (RadioButton) findViewById(R.id.rb_C3227_RA);
-        rb_C3227_1_1 = (RadioButton) findViewById(R.id.rb_C3227_1_1);
-        rb_C3227_1_2 = (RadioButton) findViewById(R.id.rb_C3227_1_2);
-        rb_C3227_1_DK = (RadioButton) findViewById(R.id.rb_C3227_1_DK);
-        rb_C3227_1_RA = (RadioButton) findViewById(R.id.rb_C3227_1_RA);
-        rb_C3227_2_1 = (RadioButton) findViewById(R.id.rb_C3227_2_1);
-        rb_C3227_2_2 = (RadioButton) findViewById(R.id.rb_C3227_2_2);
-        rb_C3227_2_3 = (RadioButton) findViewById(R.id.rb_C3227_2_3);
-        rb_C3227_2_4 = (RadioButton) findViewById(R.id.rb_C3227_2_4);
-        rb_C3227_2_5 = (RadioButton) findViewById(R.id.rb_C3227_2_5);
-        rb_C3227_2_OT = (RadioButton) findViewById(R.id.rb_C3227_2_OT);
-        rb_C3227_2_DK = (RadioButton) findViewById(R.id.rb_C3227_2_DK);
-        rb_C3227_2_RA = (RadioButton) findViewById(R.id.rb_C3227_2_RA);
-        rb_C3227_3_1 = (RadioButton) findViewById(R.id.rb_C3227_3_1);
-        rb_C3227_3_2 = (RadioButton) findViewById(R.id.rb_C3227_3_2);
-        rb_C3227_3_3 = (RadioButton) findViewById(R.id.rb_C3227_3_3);
-        rb_C3227_3_4 = (RadioButton) findViewById(R.id.rb_C3227_3_4);
-        rb_C3227_3_5 = (RadioButton) findViewById(R.id.rb_C3227_3_5);
-        rb_C3227_3_6 = (RadioButton) findViewById(R.id.rb_C3227_3_6);
-        rb_C3227_3_OT = (RadioButton) findViewById(R.id.rb_C3227_3_OT);
-        rb_C3227_3_DK = (RadioButton) findViewById(R.id.rb_C3227_3_DK);
-        rb_C3227_3_RA = (RadioButton) findViewById(R.id.rb_C3227_3_RA);
-        rb_C3227_4_1 = (RadioButton) findViewById(R.id.rb_C3227_4_1);
-        rb_C3227_4_2 = (RadioButton) findViewById(R.id.rb_C3227_4_2);
-        rb_C3227_4_DK = (RadioButton) findViewById(R.id.rb_C3227_4_DK);
-        rb_C3227_4_RA = (RadioButton) findViewById(R.id.rb_C3227_4_RA);
-        rb_C3227_5_1 = (RadioButton) findViewById(R.id.rb_C3227_5_1);
-        rb_C3227_5_2 = (RadioButton) findViewById(R.id.rb_C3227_5_2);
-        rb_C3227_5_DK = (RadioButton) findViewById(R.id.rb_C3227_5_DK);
-        rb_C3227_5_RA = (RadioButton) findViewById(R.id.rb_C3227_5_RA);
-        rb_C3227_6_1 = (RadioButton) findViewById(R.id.rb_C3227_6_1);
-        rb_C3227_6_2 = (RadioButton) findViewById(R.id.rb_C3227_6_2);
-        rb_C3227_6_DK = (RadioButton) findViewById(R.id.rb_C3227_6_DK);
-        rb_C3227_6_RA = (RadioButton) findViewById(R.id.rb_C3227_6_RA);
-        rb_C3227_7_1 = (RadioButton) findViewById(R.id.rb_C3227_7_1);
-        rb_C3227_7_2 = (RadioButton) findViewById(R.id.rb_C3227_7_2);
-        rb_C3227_7_DK = (RadioButton) findViewById(R.id.rb_C3227_7_DK);
-        rb_C3227_7_RA = (RadioButton) findViewById(R.id.rb_C3227_7_RA);
-        rb_C3227_8_1 = (RadioButton) findViewById(R.id.rb_C3227_8_1);
-        rb_C3227_8_2 = (RadioButton) findViewById(R.id.rb_C3227_8_2);
-        rb_C3227_8_DK = (RadioButton) findViewById(R.id.rb_C3227_8_DK);
-        rb_C3227_8_RA = (RadioButton) findViewById(R.id.rb_C3227_8_RA);
-        rb_C3227_9_1 = (RadioButton) findViewById(R.id.rb_C3227_9_1);
-        rb_C3227_9_2 = (RadioButton) findViewById(R.id.rb_C3227_9_2);
-        rb_C3227_9_DK = (RadioButton) findViewById(R.id.rb_C3227_9_DK);
-        rb_C3227_9_RA = (RadioButton) findViewById(R.id.rb_C3227_9_RA);
-        rb_C3227_10_1 = (RadioButton) findViewById(R.id.rb_C3227_10_1);
-        rb_C3227_10_2 = (RadioButton) findViewById(R.id.rb_C3227_10_2);
-        rb_C3227_10_3 = (RadioButton) findViewById(R.id.rb_C3227_10_3);
-        rb_C3227_10_OT = (RadioButton) findViewById(R.id.rb_C3227_10_OT);
-        rb_C3227_10_DK = (RadioButton) findViewById(R.id.rb_C3227_10_DK);
-        rb_C3227_10_RA = (RadioButton) findViewById(R.id.rb_C3227_10_RA);
-        rb_C3227_11_1 = (RadioButton) findViewById(R.id.rb_C3227_11_1);
-        rb_C3227_11_2 = (RadioButton) findViewById(R.id.rb_C3227_11_2);
-        rb_C3227_11_DK = (RadioButton) findViewById(R.id.rb_C3227_11_DK);
-        rb_C3227_11_RA = (RadioButton) findViewById(R.id.rb_C3227_11_RA);
-        rb_C3227_12_1 = (RadioButton) findViewById(R.id.rb_C3227_12_1);
-        rb_C3227_12_2 = (RadioButton) findViewById(R.id.rb_C3227_12_2);
-        rb_C3227_12_DK = (RadioButton) findViewById(R.id.rb_C3227_12_DK);
-        rb_C3227_12_RA = (RadioButton) findViewById(R.id.rb_C3227_12_RA);
-        rb_C3227_13_1 = (RadioButton) findViewById(R.id.rb_C3227_13_1);
-        rb_C3227_13_2 = (RadioButton) findViewById(R.id.rb_C3227_13_2);
-        rb_C3227_13_DK = (RadioButton) findViewById(R.id.rb_C3227_13_DK);
-        rb_C3227_13_RA = (RadioButton) findViewById(R.id.rb_C3227_13_RA);
-        rb_C3227_14_1 = (RadioButton) findViewById(R.id.rb_C3227_14_1);
-        rb_C3227_14_2 = (RadioButton) findViewById(R.id.rb_C3227_14_2);
-        rb_C3227_14_DK = (RadioButton) findViewById(R.id.rb_C3227_14_DK);
-        rb_C3227_14_RA = (RadioButton) findViewById(R.id.rb_C3227_14_RA);
-        rb_C3227_15_1 = (RadioButton) findViewById(R.id.rb_C3227_15_1);
-        rb_C3227_15_2 = (RadioButton) findViewById(R.id.rb_C3227_15_2);
-        rb_C3227_15_DK = (RadioButton) findViewById(R.id.rb_C3227_15_DK);
-        rb_C3227_15_RA = (RadioButton) findViewById(R.id.rb_C3227_15_RA);
-        rb_C3227_16_1 = (RadioButton) findViewById(R.id.rb_C3227_16_1);
-        rb_C3227_16_2 = (RadioButton) findViewById(R.id.rb_C3227_16_2);
-        rb_C3227_16_DK = (RadioButton) findViewById(R.id.rb_C3227_16_DK);
-        rb_C3227_16_RA = (RadioButton) findViewById(R.id.rb_C3227_16_RA);
-        rb_C3227_17_1 = (RadioButton) findViewById(R.id.rb_C3227_17_1);
-        rb_C3227_17_2 = (RadioButton) findViewById(R.id.rb_C3227_17_2);
-        rb_C3227_17_DK = (RadioButton) findViewById(R.id.rb_C3227_17_DK);
-        rb_C3227_17_RA = (RadioButton) findViewById(R.id.rb_C3227_17_RA);
-        rb_C3227_18_1 = (RadioButton) findViewById(R.id.rb_C3227_18_1);
-        rb_C3227_18_2 = (RadioButton) findViewById(R.id.rb_C3227_18_2);
-        rb_C3227_18_DK = (RadioButton) findViewById(R.id.rb_C3227_18_DK);
-        rb_C3227_18_RA = (RadioButton) findViewById(R.id.rb_C3227_18_RA);
-        rb_C3227_19_1 = (RadioButton) findViewById(R.id.rb_C3227_19_1);
-        rb_C3227_19_2 = (RadioButton) findViewById(R.id.rb_C3227_19_2);
-        rb_C3227_19_DK = (RadioButton) findViewById(R.id.rb_C3227_19_DK);
-        rb_C3227_19_RA = (RadioButton) findViewById(R.id.rb_C3227_19_RA);
-        rb_C3227_20_1 = (RadioButton) findViewById(R.id.rb_C3227_20_1);
-        rb_C3227_20_2 = (RadioButton) findViewById(R.id.rb_C3227_20_2);
-        rb_C3227_20_DK = (RadioButton) findViewById(R.id.rb_C3227_20_DK);
-        rb_C3227_20_RA = (RadioButton) findViewById(R.id.rb_C3227_20_RA);
-        rb_C3227_21_1 = (RadioButton) findViewById(R.id.rb_C3227_21_1);
-        rb_C3227_21_2 = (RadioButton) findViewById(R.id.rb_C3227_21_2);
-        rb_C3227_21_DK = (RadioButton) findViewById(R.id.rb_C3227_21_DK);
-        rb_C3227_21_RA = (RadioButton) findViewById(R.id.rb_C3227_21_RA);
-        rb_C3227_22_1 = (RadioButton) findViewById(R.id.rb_C3227_22_1);
-        rb_C3227_22_2 = (RadioButton) findViewById(R.id.rb_C3227_22_2);
-        rb_C3227_22_DK = (RadioButton) findViewById(R.id.rb_C3227_22_DK);
-        rb_C3227_22_RA = (RadioButton) findViewById(R.id.rb_C3227_22_RA);
+        rb_C3121_1 = findViewById(R.id.rb_C3121_1);
+        rb_C3121_2 = findViewById(R.id.rb_C3121_2);
+        rb_C3121_DK = findViewById(R.id.rb_C3121_DK);
+        rb_C3123_u_1 = findViewById(R.id.rb_C3123_u_1);
+        rb_C3123_u_2 = findViewById(R.id.rb_C3123_u_2);
+        rb_C3123_u_DK = findViewById(R.id.rb_C3123_u_DK);
+        rb_C3122_1 = findViewById(R.id.rb_C3122_1);
+        rb_C3122_2 = findViewById(R.id.rb_C3122_2);
+        rb_C3122_DK = findViewById(R.id.rb_C3122_DK);
+        rb_C3123_u_RA = findViewById(R.id.rb_C3123_u_RA);
+        rb_C3124_1 = findViewById(R.id.rb_C3124_1);
+        rb_C3124_2 = findViewById(R.id.rb_C3124_2);
+        rb_C3124_DK = findViewById(R.id.rb_C3124_DK);
+        rb_C3124_RA = findViewById(R.id.rb_C3124_RA);
+        rb_C3125_1 = findViewById(R.id.rb_C3125_1);
+        rb_C3125_2 = findViewById(R.id.rb_C3125_2);
+        rb_C3125_3 = findViewById(R.id.rb_C3125_3);
+        rb_C3125_DK = findViewById(R.id.rb_C3125_DK);
+        rb_C3125_RA = findViewById(R.id.rb_C3125_RA);
+        rb_C3126_1 = findViewById(R.id.rb_C3126_1);
+        rb_C3126_2 = findViewById(R.id.rb_C3126_2);
+        rb_C3126_3 = findViewById(R.id.rb_C3126_3);
+        rb_C3126_DK = findViewById(R.id.rb_C3126_DK);
+        rb_C3126_RA = findViewById(R.id.rb_C3126_RA);
+        rb_C3127_1 = findViewById(R.id.rb_C3127_1);
+        rb_C3127_2 = findViewById(R.id.rb_C3127_2);
+        rb_C3127_DK = findViewById(R.id.rb_C3127_DK);
+        rb_C3127_RA = findViewById(R.id.rb_C3127_RA);
+        rb_C3128_1 = findViewById(R.id.rb_C3128_1);
+        rb_C3128_2 = findViewById(R.id.rb_C3128_2);
+        rb_C3128_DK = findViewById(R.id.rb_C3128_DK);
+        rb_C3128_RA = findViewById(R.id.rb_C3128_RA);
+        rb_C3129_1 = findViewById(R.id.rb_C3129_1);
+        rb_C3129_2 = findViewById(R.id.rb_C3129_2);
+        rb_C3129_DK = findViewById(R.id.rb_C3129_DK);
+        rb_C3129_RA = findViewById(R.id.rb_C3129_RA);
+        rb_C3130_1 = findViewById(R.id.rb_C3130_1);
+        rb_C3130_2 = findViewById(R.id.rb_C3130_2);
+        rb_C3130_DK = findViewById(R.id.rb_C3130_DK);
+        rb_C3130_RA = findViewById(R.id.rb_C3130_RA);
+        rb_C3132_u_1 = findViewById(R.id.rb_C3132_u_1);
+        rb_C3132_u_2 = findViewById(R.id.rb_C3132_u_2);
+        rb_C3132_u_DK = findViewById(R.id.rb_C3132_u_DK);
+        rb_C3132_u_RA = findViewById(R.id.rb_C3132_u_RA);
+        rb_C3133_1 = findViewById(R.id.rb_C3133_1);
+        rb_C3133_2 = findViewById(R.id.rb_C3133_2);
+        rb_C3133_DK = findViewById(R.id.rb_C3133_DK);
+        rb_C3133_RA = findViewById(R.id.rb_C3133_RA);
+        rb_C3135_1 = findViewById(R.id.rb_C3135_1);
+        rb_C3135_2 = findViewById(R.id.rb_C3135_2);
+        rb_C3135_DK = findViewById(R.id.rb_C3135_DK);
+        rb_C3135_RA = findViewById(R.id.rb_C3135_RA);
+        rb_C3136_1 = findViewById(R.id.rb_C3136_1);
+        rb_C3136_2 = findViewById(R.id.rb_C3136_2);
+        rb_C3136_DK = findViewById(R.id.rb_C3136_DK);
+        rb_C3136_RA = findViewById(R.id.rb_C3136_RA);
+        rb_C3137_1 = findViewById(R.id.rb_C3137_1);
+        rb_C3137_2 = findViewById(R.id.rb_C3137_2);
+        rb_C3137_DK = findViewById(R.id.rb_C3137_DK);
+        rb_C3137_RA = findViewById(R.id.rb_C3137_RA);
+        rb_C3138_1 = findViewById(R.id.rb_C3138_1);
+        rb_C3138_2 = findViewById(R.id.rb_C3138_2);
+        rb_C3138_DK = findViewById(R.id.rb_C3138_DK);
+        rb_C3138_RA = findViewById(R.id.rb_C3138_RA);
+        rb_C3139_1 = findViewById(R.id.rb_C3139_1);
+        rb_C3139_2 = findViewById(R.id.rb_C3139_2);
+        rb_C3139_DK = findViewById(R.id.rb_C3139_DK);
+        rb_C3139_RA = findViewById(R.id.rb_C3139_RA);
+        rb_C3140_1 = findViewById(R.id.rb_C3140_1);
+        rb_C3140_2 = findViewById(R.id.rb_C3140_2);
+        rb_C3140_DK = findViewById(R.id.rb_C3140_DK);
+        rb_C3140_RA = findViewById(R.id.rb_C3140_RA);
+        rb_C3141_1 = findViewById(R.id.rb_C3141_1);
+        rb_C3141_2 = findViewById(R.id.rb_C3141_2);
+        rb_C3141_DK = findViewById(R.id.rb_C3141_DK);
+        rb_C3141_RA = findViewById(R.id.rb_C3141_RA);
+        rb_C3142_1 = findViewById(R.id.rb_C3142_1);
+        rb_C3142_2 = findViewById(R.id.rb_C3142_2);
+        rb_C3142_DK = findViewById(R.id.rb_C3142_DK);
+        rb_C3142_RA = findViewById(R.id.rb_C3142_RA);
+        rb_C3143_1 = findViewById(R.id.rb_C3143_1);
+        rb_C3143_2 = findViewById(R.id.rb_C3143_2);
+        rb_C3143_DK = findViewById(R.id.rb_C3143_DK);
+        rb_C3143_RA = findViewById(R.id.rb_C3143_RA);
+        rb_C3144_u_1 = findViewById(R.id.rb_C3144_u_1);
+        rb_C3144_u_2 = findViewById(R.id.rb_C3144_u_2);
+        rb_C3144_u_3 = findViewById(R.id.rb_C3144_u_3);
+        rb_C3144_u_DK = findViewById(R.id.rb_C3144_u_DK);
+        rb_C3144_u_RA = findViewById(R.id.rb_C3144_u_RA);
+        rb_C3145_1 = findViewById(R.id.rb_C3145_1);
+        rb_C3145_2 = findViewById(R.id.rb_C3145_2);
+        rb_C3145_3 = findViewById(R.id.rb_C3145_3);
+        rb_C3145_DK = findViewById(R.id.rb_C3145_DK);
+        rb_C3145_RA = findViewById(R.id.rb_C3145_RA);
+        rb_C3146_1 = findViewById(R.id.rb_C3146_1);
+        rb_C3146_2 = findViewById(R.id.rb_C3146_2);
+        rb_C3146_DK = findViewById(R.id.rb_C3146_DK);
+        rb_C3146_RA = findViewById(R.id.rb_C3146_RA);
+        rb_C3147_u_3 = findViewById(R.id.rb_C3147_u_3);
+        rb_C3147_u_4 = findViewById(R.id.rb_C3147_u_4);
+        rb_C3147_u_DK = findViewById(R.id.rb_C3147_u_DK);
+        rb_C3147_u_RA = findViewById(R.id.rb_C3147_u_RA);
+        rb_C3148_1 = findViewById(R.id.rb_C3148_1);
+        rb_C3148_2 = findViewById(R.id.rb_C3148_2);
+        rb_C3148_DK = findViewById(R.id.rb_C3148_DK);
+        rb_C3148_RA = findViewById(R.id.rb_C3148_RA);
+        rb_C3149_1 = findViewById(R.id.rb_C3149_1);
+        rb_C3149_2 = findViewById(R.id.rb_C3149_2);
+        rb_C3149_DK = findViewById(R.id.rb_C3149_DK);
+        rb_C3149_RA = findViewById(R.id.rb_C3149_RA);
+        rb_C3150_u_1 = findViewById(R.id.rb_C3150_u_1);
+        rb_C3150_u_2 = findViewById(R.id.rb_C3150_u_2);
+        rb_C3150_u_DK = findViewById(R.id.rb_C3150_u_DK);
+        rb_C3150_u_RA = findViewById(R.id.rb_C3150_u_RA);
+        rb_C3151_1 = findViewById(R.id.rb_C3151_1);
+        rb_C3151_2 = findViewById(R.id.rb_C3151_2);
+        rb_C3151_DK = findViewById(R.id.rb_C3151_DK);
+        rb_C3152_u_1 = findViewById(R.id.rb_C3152_u_1);
+        rb_C3152_u_2 = findViewById(R.id.rb_C3152_u_2);
+        rb_C3152_u_DK = findViewById(R.id.rb_C3152_u_DK);
+        rb_C3152_u_RA = findViewById(R.id.rb_C3152_u_RA);
+        rb_C3153_1 = findViewById(R.id.rb_C3153_1);
+        rb_C3153_2 = findViewById(R.id.rb_C3153_2);
+        rb_C3153_DK = findViewById(R.id.rb_C3153_DK);
+        rb_C3153_RA = findViewById(R.id.rb_C3153_RA);
+        rb_C3154_1 = findViewById(R.id.rb_C3154_1);
+        rb_C3154_2 = findViewById(R.id.rb_C3154_2);
+        rb_C3154_DK = findViewById(R.id.rb_C3154_DK);
+        rb_C3154_RA = findViewById(R.id.rb_C3154_RA);
+        rb_C3155_1 = findViewById(R.id.rb_C3155_1);
+        rb_C3155_2 = findViewById(R.id.rb_C3155_2);
+        rb_C3155_DK = findViewById(R.id.rb_C3155_DK);
+        rb_C3155_RA = findViewById(R.id.rb_C3155_RA);
+        rb_C3156_1 = findViewById(R.id.rb_C3156_1);
+        rb_C3156_2 = findViewById(R.id.rb_C3156_2);
+        rb_C3156_DK = findViewById(R.id.rb_C3156_DK);
+        rb_C3156_RA = findViewById(R.id.rb_C3156_RA);
+        rb_C3157_1 = findViewById(R.id.rb_C3157_1);
+        rb_C3157_2 = findViewById(R.id.rb_C3157_2);
+        rb_C3157_DK = findViewById(R.id.rb_C3157_DK);
+        rb_C3157_RA = findViewById(R.id.rb_C3157_RA);
+        rb_C3158_1 = findViewById(R.id.rb_C3158_1);
+        rb_C3158_2 = findViewById(R.id.rb_C3158_2);
+        rb_C3158_DK = findViewById(R.id.rb_C3158_DK);
+        rb_C3158_RA = findViewById(R.id.rb_C3158_RA);
+        rb_C3159_u_1 = findViewById(R.id.rb_C3159_u_1);
+        rb_C3159_u_2 = findViewById(R.id.rb_C3159_u_2);
+        rb_C3159_u_3 = findViewById(R.id.rb_C3159_u_3);
+        rb_C3159_u_DK = findViewById(R.id.rb_C3159_u_DK);
+        rb_C3159_u_RA = findViewById(R.id.rb_C3159_u_RA);
+        rb_C3160_1 = findViewById(R.id.rb_C3160_1);
+        rb_C3160_2 = findViewById(R.id.rb_C3160_2);
+        rb_C3160_DK = findViewById(R.id.rb_C3160_DK);
+        rb_C3160_RA = findViewById(R.id.rb_C3160_RA);
+        rb_C3161_1 = findViewById(R.id.rb_C3161_1);
+        rb_C3161_2 = findViewById(R.id.rb_C3161_2);
+        rb_C3161_DK = findViewById(R.id.rb_C3161_DK);
+        rb_C3161_RA = findViewById(R.id.rb_C3161_RA);
+        rb_C3162_1 = findViewById(R.id.rb_C3162_1);
+        rb_C3162_2 = findViewById(R.id.rb_C3162_2);
+        rb_C3162_DK = findViewById(R.id.rb_C3162_DK);
+        rb_C3163_u_1 = findViewById(R.id.rb_C3163_u_1);
+        rb_C3163_u_2 = findViewById(R.id.rb_C3163_u_2);
+        rb_C3163_u_DK = findViewById(R.id.rb_C3163_u_DK);
+        rb_C3163_u_RA = findViewById(R.id.rb_C3163_u_RA);
+        rb_C3164_1 = findViewById(R.id.rb_C3164_1);
+        rb_C3164_2 = findViewById(R.id.rb_C3164_2);
+        rb_C3164_DK = findViewById(R.id.rb_C3164_DK);
+        rb_C3164_RA = findViewById(R.id.rb_C3164_RA);
+        rb_C3165_u_1 = findViewById(R.id.rb_C3165_u_1);
+        rb_C3165_u_2 = findViewById(R.id.rb_C3165_u_2);
+        rb_C3165_u_DK = findViewById(R.id.rb_C3165_u_DK);
+        rb_C3165_u_RA = findViewById(R.id.rb_C3165_u_RA);
+        rb_C3166_1 = findViewById(R.id.rb_C3166_1);
+        rb_C3166_2 = findViewById(R.id.rb_C3166_2);
+        rb_C3166_DK = findViewById(R.id.rb_C3166_DK);
+        rb_C3166_RA = findViewById(R.id.rb_C3166_RA);
+        rb_C3168_1 = findViewById(R.id.rb_C3168_1);
+        rb_C3168_2 = findViewById(R.id.rb_C3168_2);
+        rb_C3168_DK = findViewById(R.id.rb_C3168_DK);
+        rb_C3168_RA = findViewById(R.id.rb_C3168_RA);
+        rb_C3169_1 = findViewById(R.id.rb_C3169_1);
+        rb_C3169_2 = findViewById(R.id.rb_C3169_2);
+        rb_C3169_DK = findViewById(R.id.rb_C3169_DK);
+        rb_C3169_RA = findViewById(R.id.rb_C3169_RA);
+        rb_C3170_1 = findViewById(R.id.rb_C3170_1);
+        rb_C3170_2 = findViewById(R.id.rb_C3170_2);
+        rb_C3170_DK = findViewById(R.id.rb_C3170_DK);
+        rb_C3170_RA = findViewById(R.id.rb_C3170_RA);
+        rb_C3171_1 = findViewById(R.id.rb_C3171_1);
+        rb_C3171_2 = findViewById(R.id.rb_C3171_2);
+        rb_C3171_DK = findViewById(R.id.rb_C3171_DK);
+        rb_C3171_RA = findViewById(R.id.rb_C3171_RA);
+        rb_C3173_1 = findViewById(R.id.rb_C3173_1);
+        rb_C3173_2 = findViewById(R.id.rb_C3173_2);
+        rb_C3173_DK = findViewById(R.id.rb_C3173_DK);
+        rb_C3173_RA = findViewById(R.id.rb_C3173_RA);
+        rb_C3174_1 = findViewById(R.id.rb_C3174_1);
+        rb_C3174_2 = findViewById(R.id.rb_C3174_2);
+        rb_C3174_DK = findViewById(R.id.rb_C3174_DK);
+        rb_C3174_RA = findViewById(R.id.rb_C3174_RA);
+        rb_C3175_u_1 = findViewById(R.id.rb_C3175_u_1);
+        rb_C3175_u_2 = findViewById(R.id.rb_C3175_u_2);
+        rb_C3175_u_DK = findViewById(R.id.rb_C3175_u_DK);
+        rb_C3175_u_RA = findViewById(R.id.rb_C3175_u_RA);
+        rb_C3176_1 = findViewById(R.id.rb_C3176_1);
+        rb_C3176_2 = findViewById(R.id.rb_C3176_2);
+        rb_C3176_DK = findViewById(R.id.rb_C3176_DK);
+        rb_C3176_RA = findViewById(R.id.rb_C3176_RA);
+        rb_C3177_u_1 = findViewById(R.id.rb_C3177_u_1);
+        rb_C3177_u_2 = findViewById(R.id.rb_C3177_u_2);
+        rb_C3177_u_DK = findViewById(R.id.rb_C3177_u_DK);
+        rb_C3177_u_RA = findViewById(R.id.rb_C3177_u_RA);
+        rb_C3178_1 = findViewById(R.id.rb_C3178_1);
+        rb_C3178_2 = findViewById(R.id.rb_C3178_2);
+        rb_C3178_DK = findViewById(R.id.rb_C3178_DK);
+        rb_C3178_RA = findViewById(R.id.rb_C3178_RA);
+        rb_C3179_u_1 = findViewById(R.id.rb_C3179_u_1);
+        rb_C3179_u_2 = findViewById(R.id.rb_C3179_u_2);
+        rb_C3179_u_DK = findViewById(R.id.rb_C3179_u_DK);
+        rb_C3179_u_RA = findViewById(R.id.rb_C3179_u_RA);
+        rb_C3180_1 = findViewById(R.id.rb_C3180_1);
+        rb_C3180_2 = findViewById(R.id.rb_C3180_2);
+        rb_C3180_DK = findViewById(R.id.rb_C3180_DK);
+        rb_C3180_RA = findViewById(R.id.rb_C3180_RA);
+        rb_C3181_1 = findViewById(R.id.rb_C3181_1);
+        rb_C3181_2 = findViewById(R.id.rb_C3181_2);
+        rb_C3181_DK = findViewById(R.id.rb_C3181_DK);
+        rb_C3181_RA = findViewById(R.id.rb_C3181_RA);
+        rb_C3182_1 = findViewById(R.id.rb_C3182_1);
+        rb_C3182_2 = findViewById(R.id.rb_C3182_2);
+        rb_C3182_DK = findViewById(R.id.rb_C3182_DK);
+        rb_C3182_RA = findViewById(R.id.rb_C3182_RA);
+        rb_C3183_1 = findViewById(R.id.rb_C3183_1);
+        rb_C3183_2 = findViewById(R.id.rb_C3183_2);
+        rb_C3183_DK = findViewById(R.id.rb_C3183_DK);
+        rb_C3183_RA = findViewById(R.id.rb_C3183_RA);
+        rb_C3185_1 = findViewById(R.id.rb_C3185_1);
+        rb_C3185_2 = findViewById(R.id.rb_C3185_2);
+        rb_C3185_DK = findViewById(R.id.rb_C3185_DK);
+        rb_C3185_RA = findViewById(R.id.rb_C3185_RA);
+        rb_C3186_1_1 = findViewById(R.id.rb_C3186_1_1);
+        rb_C3186_1_2 = findViewById(R.id.rb_C3186_1_2);
+        rb_C3186_1_DK = findViewById(R.id.rb_C3186_1_DK);
+        rb_C3186_1_RA = findViewById(R.id.rb_C3186_1_RA);
+        rb_C3186_1 = findViewById(R.id.rb_C3186_1);
+        rb_C3186_2 = findViewById(R.id.rb_C3186_2);
+        rb_C3186_DK = findViewById(R.id.rb_C3186_DK);
+        rb_C3186_RA = findViewById(R.id.rb_C3186_RA);
+        rb_C3187_1 = findViewById(R.id.rb_C3187_1);
+        rb_C3187_2 = findViewById(R.id.rb_C3187_2);
+        rb_C3187_DK = findViewById(R.id.rb_C3187_DK);
+        rb_C3187_RA = findViewById(R.id.rb_C3187_RA);
+        rb_C3188_1 = findViewById(R.id.rb_C3188_1);
+        rb_C3188_2 = findViewById(R.id.rb_C3188_2);
+        rb_C3188_DK = findViewById(R.id.rb_C3188_DK);
+        rb_C3188_RA = findViewById(R.id.rb_C3188_RA);
+        rb_C3189_1 = findViewById(R.id.rb_C3189_1);
+        rb_C3189_2 = findViewById(R.id.rb_C3189_2);
+        rb_C3189_DK = findViewById(R.id.rb_C3189_DK);
+        rb_C3189_RA = findViewById(R.id.rb_C3189_RA);
+        rb_C3190_1 = findViewById(R.id.rb_C3190_1);
+        rb_C3190_2 = findViewById(R.id.rb_C3190_2);
+        rb_C3190_DK = findViewById(R.id.rb_C3190_DK);
+        rb_C3190_RA = findViewById(R.id.rb_C3190_RA);
+        rb_C3191_1 = findViewById(R.id.rb_C3191_1);
+        rb_C3191_2 = findViewById(R.id.rb_C3191_2);
+        rb_C3191_DK = findViewById(R.id.rb_C3191_DK);
+        rb_C3191_RA = findViewById(R.id.rb_C3191_RA);
+        rb_C3192_1 = findViewById(R.id.rb_C3192_1);
+        rb_C3192_2 = findViewById(R.id.rb_C3192_2);
+        rb_C3192_DK = findViewById(R.id.rb_C3192_DK);
+        rb_C3192_RA = findViewById(R.id.rb_C3192_RA);
+        rb_C3193_u_3 = findViewById(R.id.rb_C3193_u_3);
+        rb_C3193_u_4 = findViewById(R.id.rb_C3193_u_4);
+        rb_C3193_u_DK = findViewById(R.id.rb_C3193_u_DK);
+        rb_C3193_u_RA = findViewById(R.id.rb_C3193_u_RA);
+        rb_C3194_1 = findViewById(R.id.rb_C3194_1);
+        rb_C3194_2 = findViewById(R.id.rb_C3194_2);
+        rb_C3194_DK = findViewById(R.id.rb_C3194_DK);
+        rb_C3194_RA = findViewById(R.id.rb_C3194_RA);
+        rb_C3195A_1 = findViewById(R.id.rb_C3195A_1);
+        rb_C3195A_2 = findViewById(R.id.rb_C3195A_2);
+        rb_C3195A_3 = findViewById(R.id.rb_C3195A_3);
+        rb_C3195A_4 = findViewById(R.id.rb_C3195A_4);
+        rb_C3195A_DK = findViewById(R.id.rb_C3195A_DK);
+        rb_C3195A_RA = findViewById(R.id.rb_C3195A_RA);
+        rb_C3195_1 = findViewById(R.id.rb_C3195_1);
+        rb_C3195_2 = findViewById(R.id.rb_C3195_2);
+        rb_C3195_3 = findViewById(R.id.rb_C3195_3);
+        rb_C3195_4 = findViewById(R.id.rb_C3195_4);
+        rb_C3195_DK = findViewById(R.id.rb_C3195_DK);
+        rb_C3195_RA = findViewById(R.id.rb_C3195_RA);
+        rb_C3197_1 = findViewById(R.id.rb_C3197_1);
+        rb_C3197_2 = findViewById(R.id.rb_C3197_2);
+        rb_C3197_DK = findViewById(R.id.rb_C3197_DK);
+        rb_C3197_RA = findViewById(R.id.rb_C3197_RA);
+        rb_C3198_1 = findViewById(R.id.rb_C3198_1);
+        rb_C3198_2 = findViewById(R.id.rb_C3198_2);
+        rb_C3198_DK = findViewById(R.id.rb_C3198_DK);
+        rb_C3198_RA = findViewById(R.id.rb_C3198_RA);
+        rb_C3199_1 = findViewById(R.id.rb_C3199_1);
+        rb_C3199_2 = findViewById(R.id.rb_C3199_2);
+        rb_C3199_DK = findViewById(R.id.rb_C3199_DK);
+        rb_C3199_RA = findViewById(R.id.rb_C3199_RA);
+        rb_C3199_1_1 = findViewById(R.id.rb_C3199_1_1);
+        rb_C3199_1_2 = findViewById(R.id.rb_C3199_1_2);
+        rb_C3199_1_DK = findViewById(R.id.rb_C3199_1_DK);
+        rb_C3199_1_RA = findViewById(R.id.rb_C3199_1_RA);
+        rb_C3200_1 = findViewById(R.id.rb_C3200_1);
+        rb_C3200_2 = findViewById(R.id.rb_C3200_2);
+        rb_C3200_DK = findViewById(R.id.rb_C3200_DK);
+        rb_C3200_RA = findViewById(R.id.rb_C3200_RA);
+        rb_C3201_u_1 = findViewById(R.id.rb_C3201_u_1);
+        rb_C3201_u_2 = findViewById(R.id.rb_C3201_u_2);
+        rb_C3201_u_DK = findViewById(R.id.rb_C3201_u_DK);
+        rb_C3201_u_RA = findViewById(R.id.rb_C3201_u_RA);
+        rb_C3202_1 = findViewById(R.id.rb_C3202_1);
+        rb_C3202_2 = findViewById(R.id.rb_C3202_2);
+        rb_C3202_DK = findViewById(R.id.rb_C3202_DK);
+        rb_C3202_RA = findViewById(R.id.rb_C3202_RA);
+        rb_C3203_1 = findViewById(R.id.rb_C3203_1);
+        rb_C3203_2 = findViewById(R.id.rb_C3203_2);
+        rb_C3203_DK = findViewById(R.id.rb_C3203_DK);
+        rb_C3203_RA = findViewById(R.id.rb_C3203_RA);
+        rb_C3204_u_1 = findViewById(R.id.rb_C3204_u_1);
+        rb_C3204_u_2 = findViewById(R.id.rb_C3204_u_2);
+        rb_C3204_u_DK = findViewById(R.id.rb_C3204_u_DK);
+        rb_C3204_u_RA = findViewById(R.id.rb_C3204_u_RA);
+        rb_C3205_1 = findViewById(R.id.rb_C3205_1);
+        rb_C3205_2 = findViewById(R.id.rb_C3205_2);
+        rb_C3205_DK = findViewById(R.id.rb_C3205_DK);
+        rb_C3205_RA = findViewById(R.id.rb_C3205_RA);
+        rb_C3206_1 = findViewById(R.id.rb_C3206_1);
+        rb_C3206_2 = findViewById(R.id.rb_C3206_2);
+        rb_C3206_DK = findViewById(R.id.rb_C3206_DK);
+        rb_C3206_RA = findViewById(R.id.rb_C3206_RA);
+        rb_C3207_1 = findViewById(R.id.rb_C3207_1);
+        rb_C3207_2 = findViewById(R.id.rb_C3207_2);
+        rb_C3207_DK = findViewById(R.id.rb_C3207_DK);
+        rb_C3207_RA = findViewById(R.id.rb_C3207_RA);
+        rb_C3208_u_0 = findViewById(R.id.rb_C3208_u_0);
+        rb_C3208_u_1 = findViewById(R.id.rb_C3208_u_1);
+        rb_C3208_u_DK = findViewById(R.id.rb_C3208_u_DK);
+        rb_C3208_u_RA = findViewById(R.id.rb_C3208_u_RA);
+        rb_C3209_1 = findViewById(R.id.rb_C3209_1);
+        rb_C3209_2 = findViewById(R.id.rb_C3209_2);
+        rb_C3209_DK = findViewById(R.id.rb_C3209_DK);
+        rb_C3209_RA = findViewById(R.id.rb_C3209_RA);
+        rb_C3210_1 = findViewById(R.id.rb_C3210_1);
+        rb_C3210_2 = findViewById(R.id.rb_C3210_2);
+        rb_C3210_DK = findViewById(R.id.rb_C3210_DK);
+        rb_C3210_RA = findViewById(R.id.rb_C3210_RA);
+        rb_C3212_1 = findViewById(R.id.rb_C3212_1);
+        rb_C3212_2 = findViewById(R.id.rb_C3212_2);
+        rb_C3212_DK = findViewById(R.id.rb_C3212_DK);
+        rb_C3212_RA = findViewById(R.id.rb_C3212_RA);
+        rb_C3213_1 = findViewById(R.id.rb_C3213_1);
+        rb_C3213_2 = findViewById(R.id.rb_C3213_2);
+        rb_C3213_DK = findViewById(R.id.rb_C3213_DK);
+        rb_C3213_RA = findViewById(R.id.rb_C3213_RA);
+        rb_C3214_1 = findViewById(R.id.rb_C3214_1);
+        rb_C3214_2 = findViewById(R.id.rb_C3214_2);
+        rb_C3214_DK = findViewById(R.id.rb_C3214_DK);
+        rb_C3214_RA = findViewById(R.id.rb_C3214_RA);
+        rb_C3215_1 = findViewById(R.id.rb_C3215_1);
+        rb_C3215_2 = findViewById(R.id.rb_C3215_2);
+        rb_C3215_DK = findViewById(R.id.rb_C3215_DK);
+        rb_C3215_RA = findViewById(R.id.rb_C3215_RA);
+        rb_C3216_1 = findViewById(R.id.rb_C3216_1);
+        rb_C3216_2 = findViewById(R.id.rb_C3216_2);
+        rb_C3216_DK = findViewById(R.id.rb_C3216_DK);
+        rb_C3216_RA = findViewById(R.id.rb_C3216_RA);
+        rb_C3217_1 = findViewById(R.id.rb_C3217_1);
+        rb_C3217_2 = findViewById(R.id.rb_C3217_2);
+        rb_C3217_DK = findViewById(R.id.rb_C3217_DK);
+        rb_C3217_RA = findViewById(R.id.rb_C3217_RA);
+        rb_C3218_1 = findViewById(R.id.rb_C3218_1);
+        rb_C3218_2 = findViewById(R.id.rb_C3218_2);
+        rb_C3218_3 = findViewById(R.id.rb_C3218_3);
+        rb_C3218_4 = findViewById(R.id.rb_C3218_4);
+        rb_C3218_5 = findViewById(R.id.rb_C3218_5);
+        rb_C3218_6 = findViewById(R.id.rb_C3218_6);
+        rb_C3218_7 = findViewById(R.id.rb_C3218_7);
+        rb_C3218_OT = findViewById(R.id.rb_C3218_OT);
+        rb_C3218_DK = findViewById(R.id.rb_C3218_DK);
+        rb_C3218_RA = findViewById(R.id.rb_C3218_RA);
+        rb_C3219_1 = findViewById(R.id.rb_C3219_1);
+        rb_C3219_2 = findViewById(R.id.rb_C3219_2);
+        rb_C3219_DK = findViewById(R.id.rb_C3219_DK);
+        rb_C3219_RA = findViewById(R.id.rb_C3219_RA);
+        rb_C3220_u_1 = findViewById(R.id.rb_C3220_u_1);
+        rb_C3220_u_2 = findViewById(R.id.rb_C3220_u_2);
+        rb_C3220_u_DK = findViewById(R.id.rb_C3220_u_DK);
+        rb_C3220_u_RA = findViewById(R.id.rb_C3220_u_RA);
+        rb_C3221_1 = findViewById(R.id.rb_C3221_1);
+        rb_C3221_2 = findViewById(R.id.rb_C3221_2);
+        rb_C3221_3 = findViewById(R.id.rb_C3221_3);
+        rb_C3222_1 = findViewById(R.id.rb_C3222_1);
+        rb_C3222_2 = findViewById(R.id.rb_C3222_2);
+        rb_C3222_DK = findViewById(R.id.rb_C3222_DK);
+        rb_C3222_RA = findViewById(R.id.rb_C3222_RA);
+        rb_C3223_1 = findViewById(R.id.rb_C3223_1);
+        rb_C3223_2 = findViewById(R.id.rb_C3223_2);
+        rb_C3223_DK = findViewById(R.id.rb_C3223_DK);
+        rb_C3223_RA = findViewById(R.id.rb_C3223_RA);
+        rb_C3224_1 = findViewById(R.id.rb_C3224_1);
+        rb_C3224_2 = findViewById(R.id.rb_C3224_2);
+        rb_C3224_DK = findViewById(R.id.rb_C3224_DK);
+        rb_C3224_RA = findViewById(R.id.rb_C3224_RA);
+        rb_C3225_1 = findViewById(R.id.rb_C3225_1);
+        rb_C3225_2 = findViewById(R.id.rb_C3225_2);
+        rb_C3225_DK = findViewById(R.id.rb_C3225_DK);
+        rb_C3225_RA = findViewById(R.id.rb_C3225_RA);
+        rb_C3226_1 = findViewById(R.id.rb_C3226_1);
+        rb_C3226_2 = findViewById(R.id.rb_C3226_2);
+        rb_C3226_DK = findViewById(R.id.rb_C3226_DK);
+        rb_C3226_RA = findViewById(R.id.rb_C3226_RA);
+        rb_C3227_1 = findViewById(R.id.rb_C3227_1);
+        rb_C3227_2 = findViewById(R.id.rb_C3227_2);
+        rb_C3227_DK = findViewById(R.id.rb_C3227_DK);
+        rb_C3227_RA = findViewById(R.id.rb_C3227_RA);
+        rb_C3227_1_1 = findViewById(R.id.rb_C3227_1_1);
+        rb_C3227_1_2 = findViewById(R.id.rb_C3227_1_2);
+        rb_C3227_1_DK = findViewById(R.id.rb_C3227_1_DK);
+        rb_C3227_1_RA = findViewById(R.id.rb_C3227_1_RA);
+        rb_C3227_2_1 = findViewById(R.id.rb_C3227_2_1);
+        rb_C3227_2_2 = findViewById(R.id.rb_C3227_2_2);
+        rb_C3227_2_3 = findViewById(R.id.rb_C3227_2_3);
+        rb_C3227_2_4 = findViewById(R.id.rb_C3227_2_4);
+        rb_C3227_2_5 = findViewById(R.id.rb_C3227_2_5);
+        rb_C3227_2_OT = findViewById(R.id.rb_C3227_2_OT);
+        rb_C3227_2_DK = findViewById(R.id.rb_C3227_2_DK);
+        rb_C3227_2_RA = findViewById(R.id.rb_C3227_2_RA);
+        rb_C3227_3_1 = findViewById(R.id.rb_C3227_3_1);
+        rb_C3227_3_2 = findViewById(R.id.rb_C3227_3_2);
+        rb_C3227_3_3 = findViewById(R.id.rb_C3227_3_3);
+        rb_C3227_3_4 = findViewById(R.id.rb_C3227_3_4);
+        rb_C3227_3_5 = findViewById(R.id.rb_C3227_3_5);
+        rb_C3227_3_6 = findViewById(R.id.rb_C3227_3_6);
+        rb_C3227_3_OT = findViewById(R.id.rb_C3227_3_OT);
+        rb_C3227_3_DK = findViewById(R.id.rb_C3227_3_DK);
+        rb_C3227_3_RA = findViewById(R.id.rb_C3227_3_RA);
+        rb_C3227_4_1 = findViewById(R.id.rb_C3227_4_1);
+        rb_C3227_4_2 = findViewById(R.id.rb_C3227_4_2);
+        rb_C3227_4_DK = findViewById(R.id.rb_C3227_4_DK);
+        rb_C3227_4_RA = findViewById(R.id.rb_C3227_4_RA);
+        rb_C3227_5_1 = findViewById(R.id.rb_C3227_5_1);
+        rb_C3227_5_2 = findViewById(R.id.rb_C3227_5_2);
+        rb_C3227_5_DK = findViewById(R.id.rb_C3227_5_DK);
+        rb_C3227_5_RA = findViewById(R.id.rb_C3227_5_RA);
+        rb_C3227_6_1 = findViewById(R.id.rb_C3227_6_1);
+        rb_C3227_6_2 = findViewById(R.id.rb_C3227_6_2);
+        rb_C3227_6_DK = findViewById(R.id.rb_C3227_6_DK);
+        rb_C3227_6_RA = findViewById(R.id.rb_C3227_6_RA);
+        rb_C3227_7_1 = findViewById(R.id.rb_C3227_7_1);
+        rb_C3227_7_2 = findViewById(R.id.rb_C3227_7_2);
+        rb_C3227_7_DK = findViewById(R.id.rb_C3227_7_DK);
+        rb_C3227_7_RA = findViewById(R.id.rb_C3227_7_RA);
+        rb_C3227_8_1 = findViewById(R.id.rb_C3227_8_1);
+        rb_C3227_8_2 = findViewById(R.id.rb_C3227_8_2);
+        rb_C3227_8_DK = findViewById(R.id.rb_C3227_8_DK);
+        rb_C3227_8_RA = findViewById(R.id.rb_C3227_8_RA);
+        rb_C3227_9_1 = findViewById(R.id.rb_C3227_9_1);
+        rb_C3227_9_2 = findViewById(R.id.rb_C3227_9_2);
+        rb_C3227_9_DK = findViewById(R.id.rb_C3227_9_DK);
+        rb_C3227_9_RA = findViewById(R.id.rb_C3227_9_RA);
+        rb_C3227_10_1 = findViewById(R.id.rb_C3227_10_1);
+        rb_C3227_10_2 = findViewById(R.id.rb_C3227_10_2);
+        rb_C3227_10_3 = findViewById(R.id.rb_C3227_10_3);
+        rb_C3227_10_OT = findViewById(R.id.rb_C3227_10_OT);
+        rb_C3227_10_DK = findViewById(R.id.rb_C3227_10_DK);
+        rb_C3227_10_RA = findViewById(R.id.rb_C3227_10_RA);
+        rb_C3227_11_1 = findViewById(R.id.rb_C3227_11_1);
+        rb_C3227_11_2 = findViewById(R.id.rb_C3227_11_2);
+        rb_C3227_11_DK = findViewById(R.id.rb_C3227_11_DK);
+        rb_C3227_11_RA = findViewById(R.id.rb_C3227_11_RA);
+        rb_C3227_12_1 = findViewById(R.id.rb_C3227_12_1);
+        rb_C3227_12_2 = findViewById(R.id.rb_C3227_12_2);
+        rb_C3227_12_DK = findViewById(R.id.rb_C3227_12_DK);
+        rb_C3227_12_RA = findViewById(R.id.rb_C3227_12_RA);
+        rb_C3227_13_1 = findViewById(R.id.rb_C3227_13_1);
+        rb_C3227_13_2 = findViewById(R.id.rb_C3227_13_2);
+        rb_C3227_13_DK = findViewById(R.id.rb_C3227_13_DK);
+        rb_C3227_13_RA = findViewById(R.id.rb_C3227_13_RA);
+        rb_C3227_14_1 = findViewById(R.id.rb_C3227_14_1);
+        rb_C3227_14_2 = findViewById(R.id.rb_C3227_14_2);
+        rb_C3227_14_DK = findViewById(R.id.rb_C3227_14_DK);
+        rb_C3227_14_RA = findViewById(R.id.rb_C3227_14_RA);
+        rb_C3227_15_1 = findViewById(R.id.rb_C3227_15_1);
+        rb_C3227_15_2 = findViewById(R.id.rb_C3227_15_2);
+        rb_C3227_15_DK = findViewById(R.id.rb_C3227_15_DK);
+        rb_C3227_15_RA = findViewById(R.id.rb_C3227_15_RA);
+        rb_C3227_16_1 = findViewById(R.id.rb_C3227_16_1);
+        rb_C3227_16_2 = findViewById(R.id.rb_C3227_16_2);
+        rb_C3227_16_DK = findViewById(R.id.rb_C3227_16_DK);
+        rb_C3227_16_RA = findViewById(R.id.rb_C3227_16_RA);
+        rb_C3227_17_1 = findViewById(R.id.rb_C3227_17_1);
+        rb_C3227_17_2 = findViewById(R.id.rb_C3227_17_2);
+        rb_C3227_17_DK = findViewById(R.id.rb_C3227_17_DK);
+        rb_C3227_17_RA = findViewById(R.id.rb_C3227_17_RA);
+        rb_C3227_18_1 = findViewById(R.id.rb_C3227_18_1);
+        rb_C3227_18_2 = findViewById(R.id.rb_C3227_18_2);
+        rb_C3227_18_DK = findViewById(R.id.rb_C3227_18_DK);
+        rb_C3227_18_RA = findViewById(R.id.rb_C3227_18_RA);
+        rb_C3227_19_1 = findViewById(R.id.rb_C3227_19_1);
+        rb_C3227_19_2 = findViewById(R.id.rb_C3227_19_2);
+        rb_C3227_19_DK = findViewById(R.id.rb_C3227_19_DK);
+        rb_C3227_19_RA = findViewById(R.id.rb_C3227_19_RA);
+        rb_C3227_20_1 = findViewById(R.id.rb_C3227_20_1);
+        rb_C3227_20_2 = findViewById(R.id.rb_C3227_20_2);
+        rb_C3227_20_DK = findViewById(R.id.rb_C3227_20_DK);
+        rb_C3227_20_RA = findViewById(R.id.rb_C3227_20_RA);
+        rb_C3227_21_1 = findViewById(R.id.rb_C3227_21_1);
+        rb_C3227_21_2 = findViewById(R.id.rb_C3227_21_2);
+        rb_C3227_21_DK = findViewById(R.id.rb_C3227_21_DK);
+        rb_C3227_21_RA = findViewById(R.id.rb_C3227_21_RA);
+        rb_C3227_22_1 = findViewById(R.id.rb_C3227_22_1);
+        rb_C3227_22_2 = findViewById(R.id.rb_C3227_22_2);
+        rb_C3227_22_DK = findViewById(R.id.rb_C3227_22_DK);
+        rb_C3227_22_RA = findViewById(R.id.rb_C3227_22_RA);
 
 
         //ed_C3005d   = (EditText) findViewById(R.id.ed_C3005d);
 
-        ed_C3122d = (EditText) findViewById(R.id.ed_C3122d);
-        ed_C3122m = (EditText) findViewById(R.id.ed_C3122m);
-        ed_C3123_b = (EditText) findViewById(R.id.ed_C3123_b);
-        ed_C3123_c = (EditText) findViewById(R.id.ed_C3123_c);
-        ed_C3131 = (EditText) findViewById(R.id.ed_C3131);
-        ed_C3132_a = (EditText) findViewById(R.id.ed_C3132_a);
-        ed_C3132_b = (EditText) findViewById(R.id.ed_C3132_b);
-        ed_C3134 = (EditText) findViewById(R.id.ed_C3134);
-        ed_C3144 = (EditText) findViewById(R.id.ed_C3144);
-        ed_C3144_a = (EditText) findViewById(R.id.ed_C3144);
-        ed_C3144_b = (EditText) findViewById(R.id.ed_C3144);
-        ed_C3147_a = (EditText) findViewById(R.id.ed_C3147_a);
-        ed_C3147_b = (EditText) findViewById(R.id.ed_C3147_b);
-        ed_C3150_a = (EditText) findViewById(R.id.ed_C3150_a);
-        ed_C3150_b = (EditText) findViewById(R.id.ed_C3150_b);
-        ed_C3152_a = (EditText) findViewById(R.id.ed_C3152_a);
-        ed_C3152_b = (EditText) findViewById(R.id.ed_C3152_b);
-        ed_C3159_a = (EditText) findViewById(R.id.ed_C3159_a);
-        ed_C3159_b = (EditText) findViewById(R.id.ed_C3159_b);
-        ed_C3159_c = (EditText) findViewById(R.id.ed_C3159_c);
-        ed_C3162d = (EditText) findViewById(R.id.ed_C3162d);
-        ed_C3162m = (EditText) findViewById(R.id.ed_C3162m);
-        ed_C3163_a = (EditText) findViewById(R.id.ed_C3163_a);
-        ed_C3163_b = (EditText) findViewById(R.id.ed_C3163_b);
-        ed_C3165_a = (EditText) findViewById(R.id.ed_C3165_a);
-        ed_C3165_b = (EditText) findViewById(R.id.ed_C3165_b);
-        ed_C3172 = (EditText) findViewById(R.id.ed_C3172);
-        ed_C3175_a = (EditText) findViewById(R.id.ed_C3175_a);
-        ed_C3175_b = (EditText) findViewById(R.id.ed_C3175_b);
-        ed_C3177_a = (EditText) findViewById(R.id.ed_C3177_a);
-        ed_C3177_b = (EditText) findViewById(R.id.ed_C3177_b);
-        ed_C3179_a = (EditText) findViewById(R.id.ed_C3179_a);
-        ed_C3179_b = (EditText) findViewById(R.id.ed_C3179_b);
-        ed_C3184 = (EditText) findViewById(R.id.ed_C3184);
-        ed_C3193_a = (EditText) findViewById(R.id.ed_C3193_a);
-        ed_C3193_b = (EditText) findViewById(R.id.ed_C3193_b);
-        ed_C3196 = (EditText) findViewById(R.id.ed_C3196);
-        ed_C3201_a = (EditText) findViewById(R.id.ed_C3201_a);
-        ed_C3201_b = (EditText) findViewById(R.id.ed_C3201_b);
-        ed_C3204_a = (EditText) findViewById(R.id.ed_C3204_a);
-        ed_C3204_b = (EditText) findViewById(R.id.ed_C3204_b);
-        ed_C3208_a = (EditText) findViewById(R.id.ed_C3208_a);
-        ed_C3208_b = (EditText) findViewById(R.id.ed_C3208_b);
-        ed_C3220_a = (EditText) findViewById(R.id.ed_C3220_a);
-        ed_C3220_b = (EditText) findViewById(R.id.ed_C3220_b);
-        ed_C3228 = (EditText) findViewById(R.id.ed_C3228);
+        ed_C3122d = findViewById(R.id.ed_C3122d);
+        ed_C3122m = findViewById(R.id.ed_C3122m);
+        ed_C3123_b = findViewById(R.id.ed_C3123_b);
+        ed_C3123_c = findViewById(R.id.ed_C3123_c);
+        ed_C3131 = findViewById(R.id.ed_C3131);
+        ed_C3132_a = findViewById(R.id.ed_C3132_a);
+        ed_C3132_b = findViewById(R.id.ed_C3132_b);
+        ed_C3134 = findViewById(R.id.ed_C3134);
+        ed_C3144 = findViewById(R.id.ed_C3144);
+        ed_C3144_a = findViewById(R.id.ed_C3144);
+        ed_C3144_b = findViewById(R.id.ed_C3144);
+        ed_C3147_a = findViewById(R.id.ed_C3147_a);
+        ed_C3147_b = findViewById(R.id.ed_C3147_b);
+        ed_C3150_a = findViewById(R.id.ed_C3150_a);
+        ed_C3150_b = findViewById(R.id.ed_C3150_b);
+        ed_C3152_a = findViewById(R.id.ed_C3152_a);
+        ed_C3152_b = findViewById(R.id.ed_C3152_b);
+        ed_C3159_a = findViewById(R.id.ed_C3159_a);
+        ed_C3159_b = findViewById(R.id.ed_C3159_b);
+        ed_C3159_c = findViewById(R.id.ed_C3159_c);
+        ed_C3162d = findViewById(R.id.ed_C3162d);
+        ed_C3162m = findViewById(R.id.ed_C3162m);
+        ed_C3163_a = findViewById(R.id.ed_C3163_a);
+        ed_C3163_b = findViewById(R.id.ed_C3163_b);
+        ed_C3165_a = findViewById(R.id.ed_C3165_a);
+        ed_C3165_b = findViewById(R.id.ed_C3165_b);
+        ed_C3172 = findViewById(R.id.ed_C3172);
+        ed_C3175_a = findViewById(R.id.ed_C3175_a);
+        ed_C3175_b = findViewById(R.id.ed_C3175_b);
+        ed_C3177_a = findViewById(R.id.ed_C3177_a);
+        ed_C3177_b = findViewById(R.id.ed_C3177_b);
+        ed_C3179_a = findViewById(R.id.ed_C3179_a);
+        ed_C3179_b = findViewById(R.id.ed_C3179_b);
+        ed_C3184 = findViewById(R.id.ed_C3184);
+        ed_C3193_a = findViewById(R.id.ed_C3193_a);
+        ed_C3193_b = findViewById(R.id.ed_C3193_b);
+        ed_C3196 = findViewById(R.id.ed_C3196);
+        ed_C3201_a = findViewById(R.id.ed_C3201_a);
+        ed_C3201_b = findViewById(R.id.ed_C3201_b);
+        ed_C3204_a = findViewById(R.id.ed_C3204_a);
+        ed_C3204_b = findViewById(R.id.ed_C3204_b);
+        ed_C3208_a = findViewById(R.id.ed_C3208_a);
+        ed_C3208_b = findViewById(R.id.ed_C3208_b);
+        ed_C3220_a = findViewById(R.id.ed_C3220_a);
+        ed_C3220_b = findViewById(R.id.ed_C3220_b);
+        ed_C3228 = findViewById(R.id.ed_C3228);
 
     }
 
@@ -5839,176 +5840,176 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
         String query = "insert into   C3121_C3228("
 
-                + global.C.C.C3001_C3011.study_id + ","
-                + global.C.C.C3121_C3228.C3121 + ","
-                + global.C.C.C3121_C3228.C3122 + ","
-                + global.C.C.C3121_C3228.C3123_u + ","
-                + global.C.C.C3121_C3228.C3123_b + ","
-                + global.C.C.C3121_C3228.C3123_c + ","
-                + global.C.C.C3121_C3228.C3124 + ","
-                + global.C.C.C3121_C3228.C3125 + ","
-                + global.C.C.C3121_C3228.C3126 + ","
-                + global.C.C.C3121_C3228.C3127 + ","
-                + global.C.C.C3121_C3228.C3128 + ","
-                + global.C.C.C3121_C3228.C3129 + ","
-                + global.C.C.C3121_C3228.C3130 + ","
-                + global.C.C.C3121_C3228.C3131 + ","
-                + global.C.C.C3121_C3228.C3132_u + ","
-                + global.C.C.C3121_C3228.C3132_a + ","
-                + global.C.C.C3121_C3228.C3132_b + ","
-                + global.C.C.C3121_C3228.C3133 + ","
-                + global.C.C.C3121_C3228.C3134 + ","
-                + global.C.C.C3121_C3228.C3135 + ","
-                + global.C.C.C3121_C3228.C3136 + ","
-                + global.C.C.C3121_C3228.C3137 + ","
-                + global.C.C.C3121_C3228.C3138 + ","
-                + global.C.C.C3121_C3228.C3139 + ","
-                + global.C.C.C3121_C3228.C3140 + ","
-                + global.C.C.C3121_C3228.C3141 + ","
-                + global.C.C.C3121_C3228.C3142 + ","
-                + global.C.C.C3121_C3228.C3143 + ","
-                + global.C.C.C3121_C3228.C3144_u + ","
-                + global.C.C.C3121_C3228.C3144 + ","
-                + global.C.C.C3121_C3228.C3144_a + ","
-                + global.C.C.C3121_C3228.C3144_b + ","
-                + global.C.C.C3121_C3228.C3145 + ","
-                + global.C.C.C3121_C3228.C3146 + ","
-                + global.C.C.C3121_C3228.C3147_u + ","
-                + global.C.C.C3121_C3228.C3147_a + ","
-                + global.C.C.C3121_C3228.C3147_b + ","
-                + global.C.C.C3121_C3228.C3148 + ","
-                + global.C.C.C3121_C3228.C3149 + ","
-                + global.C.C.C3121_C3228.C3150_u + ","
-                + global.C.C.C3121_C3228.C3150_a + ","
-                + global.C.C.C3121_C3228.C3150_b + ","
-                + global.C.C.C3121_C3228.C3151 + ","
-                + global.C.C.C3121_C3228.C3152_u + ","
-                + global.C.C.C3121_C3228.C3152_a + ","
-                + global.C.C.C3121_C3228.C3152_b + ","
-                + global.C.C.C3121_C3228.C3153 + ","
-                + global.C.C.C3121_C3228.C3154 + ","
-                + global.C.C.C3121_C3228.C3155 + ","
-                + global.C.C.C3121_C3228.C3156 + ","
-                + global.C.C.C3121_C3228.C3157 + ","
-                + global.C.C.C3121_C3228.C3158 + ","
-                + global.C.C.C3121_C3228.C3159_u + ","
-                + global.C.C.C3121_C3228.C3159_a + ","
-                + global.C.C.C3121_C3228.C3159_b + ","
-                + global.C.C.C3121_C3228.C3159_c + ","
-                + global.C.C.C3121_C3228.C3160 + ","
-                + global.C.C.C3121_C3228.C3161 + ","
-                + global.C.C.C3121_C3228.C3162 + ","
-                + global.C.C.C3121_C3228.C3163_u + ","
-                + global.C.C.C3121_C3228.C3163_a + ","
-                + global.C.C.C3121_C3228.C3163_b + ","
-                + global.C.C.C3121_C3228.C3164 + ","
-                + global.C.C.C3121_C3228.C3165_u + ","
-                + global.C.C.C3121_C3228.C3165_a + ","
-                + global.C.C.C3121_C3228.C3165_b + ","
-                + global.C.C.C3121_C3228.C3166 + ","
-                + global.C.C.C3121_C3228.C3167 + ","
-                + global.C.C.C3121_C3228.C3168 + ","
-                + global.C.C.C3121_C3228.C3169 + ","
-                + global.C.C.C3121_C3228.C3170 + ","
-                + global.C.C.C3121_C3228.C3171 + ","
-                + global.C.C.C3121_C3228.C3172 + ","
-                + global.C.C.C3121_C3228.C3173 + ","
-                + global.C.C.C3121_C3228.C3174 + ","
-                + global.C.C.C3121_C3228.C3175_u + ","
-                + global.C.C.C3121_C3228.C3175_a + ","
-                + global.C.C.C3121_C3228.C3175_b + ","
-                + global.C.C.C3121_C3228.C3176 + ","
-                + global.C.C.C3121_C3228.C3177_u + ","
-                + global.C.C.C3121_C3228.C3177_a + ","
-                + global.C.C.C3121_C3228.C3177_b + ","
-                + global.C.C.C3121_C3228.C3178 + ","
-                + global.C.C.C3121_C3228.C3179_u + ","
-                + global.C.C.C3121_C3228.C3179_a + ","
-                + global.C.C.C3121_C3228.C3179_b + ","
-                + global.C.C.C3121_C3228.C3180 + ","
-                + global.C.C.C3121_C3228.C3181 + ","
-                + global.C.C.C3121_C3228.C3182 + ","
-                + global.C.C.C3121_C3228.C3183 + ","
-                + global.C.C.C3121_C3228.C3184 + ","
-                + global.C.C.C3121_C3228.C3185 + ","
-                + global.C.C.C3121_C3228.C3186_1 + ","
-                + global.C.C.C3121_C3228.C3186 + ","
-                + global.C.C.C3121_C3228.C3187 + ","
-                + global.C.C.C3121_C3228.C3188 + ","
-                + global.C.C.C3121_C3228.C3189 + ","
-                + global.C.C.C3121_C3228.C3190 + ","
-                + global.C.C.C3121_C3228.C3191 + ","
-                + global.C.C.C3121_C3228.C3192 + ","
-                + global.C.C.C3121_C3228.C3193_u + ","
-                + global.C.C.C3121_C3228.C3193_a + ","
-                + global.C.C.C3121_C3228.C3193_b + ","
-                + global.C.C.C3121_C3228.C3194 + ","
-                + global.C.C.C3121_C3228.C3195A + ","
-                + global.C.C.C3121_C3228.C3195 + ","
-                + global.C.C.C3121_C3228.C3196 + ","
-                + global.C.C.C3121_C3228.C3197 + ","
-                + global.C.C.C3121_C3228.C3198 + ","
-                + global.C.C.C3121_C3228.C3199 + ","
-                + global.C.C.C3121_C3228.C3199_1 + ","
-                + global.C.C.C3121_C3228.C3200 + ","
-                + global.C.C.C3121_C3228.C3201_u + ","
-                + global.C.C.C3121_C3228.C3201_a + ","
-                + global.C.C.C3121_C3228.C3201_b + ","
-                + global.C.C.C3121_C3228.C3202 + ","
-                + global.C.C.C3121_C3228.C3203 + ","
-                + global.C.C.C3121_C3228.C3204_u + ","
-                + global.C.C.C3121_C3228.C3204_a + ","
-                + global.C.C.C3121_C3228.C3204_b + ","
-                + global.C.C.C3121_C3228.C3205 + ","
-                + global.C.C.C3121_C3228.C3206 + ","
-                + global.C.C.C3121_C3228.C3207 + ","
-                + global.C.C.C3121_C3228.C3208_u + ","
-                + global.C.C.C3121_C3228.C3208_a + ","
-                + global.C.C.C3121_C3228.C3208_b + ","
-                + global.C.C.C3121_C3228.C3209 + ","
-                + global.C.C.C3121_C3228.C3210 + ","
-                + global.C.C.C3121_C3228.C3212 + ","
-                + global.C.C.C3121_C3228.C3213 + ","
-                + global.C.C.C3121_C3228.C3214 + ","
-                + global.C.C.C3121_C3228.C3215 + ","
-                + global.C.C.C3121_C3228.C3216 + ","
-                + global.C.C.C3121_C3228.C3217 + ","
-                + global.C.C.C3121_C3228.C3218 + ","
-                + global.C.C.C3121_C3228.C3219 + ","
-                + global.C.C.C3121_C3228.C3220_u + ","
-                + global.C.C.C3121_C3228.C3220_a + ","
-                + global.C.C.C3121_C3228.C3220_b + ","
-                + global.C.C.C3121_C3228.C3221 + ","
-                + global.C.C.C3121_C3228.C3222 + ","
-                + global.C.C.C3121_C3228.C3223 + ","
-                + global.C.C.C3121_C3228.C3224 + ","
-                + global.C.C.C3121_C3228.C3225 + ","
-                + global.C.C.C3121_C3228.C3226 + ","
-                + global.C.C.C3121_C3228.C3227 + ","
-                + global.C.C.C3121_C3228.C3227_1 + ","
-                + global.C.C.C3121_C3228.C3227_2 + ","
-                + global.C.C.C3121_C3228.C3227_3 + ","
-                + global.C.C.C3121_C3228.C3227_4 + ","
-                + global.C.C.C3121_C3228.C3227_5 + ","
-                + global.C.C.C3121_C3228.C3227_6 + ","
-                + global.C.C.C3121_C3228.C3227_7 + ","
-                + global.C.C.C3121_C3228.C3227_8 + ","
-                + global.C.C.C3121_C3228.C3227_9 + ","
-                + global.C.C.C3121_C3228.C3227_10 + ","
-                + global.C.C.C3121_C3228.C3227_11 + ","
-                + global.C.C.C3121_C3228.C3227_12 + ","
-                + global.C.C.C3121_C3228.C3227_13 + ","
-                + global.C.C.C3121_C3228.C3227_14 + ","
-                + global.C.C.C3121_C3228.C3227_15 + ","
-                + global.C.C.C3121_C3228.C3227_16 + ","
-                + global.C.C.C3121_C3228.C3227_17 + ","
-                + global.C.C.C3121_C3228.C3227_18 + ","
-                + global.C.C.C3121_C3228.C3227_19 + ","
-                + global.C.C.C3121_C3228.C3227_20 + ","
-                + global.C.C.C3121_C3228.C3227_21 + ","
-                + global.C.C.C3121_C3228.C3227_22 + ","
-                + global.C.C.C3121_C3228.C3228 + ","
-                + global.C.C.C3001_C3011.STATUS + ") values ('" +
+                + C3001_C3011.study_id + ","
+                + Global.C.C3121_C3228.C3121 + ","
+                + Global.C.C3121_C3228.C3122 + ","
+                + Global.C.C3121_C3228.C3123_u + ","
+                + Global.C.C3121_C3228.C3123_b + ","
+                + Global.C.C3121_C3228.C3123_c + ","
+                + Global.C.C3121_C3228.C3124 + ","
+                + Global.C.C3121_C3228.C3125 + ","
+                + Global.C.C3121_C3228.C3126 + ","
+                + Global.C.C3121_C3228.C3127 + ","
+                + Global.C.C3121_C3228.C3128 + ","
+                + Global.C.C3121_C3228.C3129 + ","
+                + Global.C.C3121_C3228.C3130 + ","
+                + Global.C.C3121_C3228.C3131 + ","
+                + Global.C.C3121_C3228.C3132_u + ","
+                + Global.C.C3121_C3228.C3132_a + ","
+                + Global.C.C3121_C3228.C3132_b + ","
+                + Global.C.C3121_C3228.C3133 + ","
+                + Global.C.C3121_C3228.C3134 + ","
+                + Global.C.C3121_C3228.C3135 + ","
+                + Global.C.C3121_C3228.C3136 + ","
+                + Global.C.C3121_C3228.C3137 + ","
+                + Global.C.C3121_C3228.C3138 + ","
+                + Global.C.C3121_C3228.C3139 + ","
+                + Global.C.C3121_C3228.C3140 + ","
+                + Global.C.C3121_C3228.C3141 + ","
+                + Global.C.C3121_C3228.C3142 + ","
+                + Global.C.C3121_C3228.C3143 + ","
+                + Global.C.C3121_C3228.C3144_u + ","
+                + Global.C.C3121_C3228.C3144 + ","
+                + Global.C.C3121_C3228.C3144_a + ","
+                + Global.C.C3121_C3228.C3144_b + ","
+                + Global.C.C3121_C3228.C3145 + ","
+                + Global.C.C3121_C3228.C3146 + ","
+                + Global.C.C3121_C3228.C3147_u + ","
+                + Global.C.C3121_C3228.C3147_a + ","
+                + Global.C.C3121_C3228.C3147_b + ","
+                + Global.C.C3121_C3228.C3148 + ","
+                + Global.C.C3121_C3228.C3149 + ","
+                + Global.C.C3121_C3228.C3150_u + ","
+                + Global.C.C3121_C3228.C3150_a + ","
+                + Global.C.C3121_C3228.C3150_b + ","
+                + Global.C.C3121_C3228.C3151 + ","
+                + Global.C.C3121_C3228.C3152_u + ","
+                + Global.C.C3121_C3228.C3152_a + ","
+                + Global.C.C3121_C3228.C3152_b + ","
+                + Global.C.C3121_C3228.C3153 + ","
+                + Global.C.C3121_C3228.C3154 + ","
+                + Global.C.C3121_C3228.C3155 + ","
+                + Global.C.C3121_C3228.C3156 + ","
+                + Global.C.C3121_C3228.C3157 + ","
+                + Global.C.C3121_C3228.C3158 + ","
+                + Global.C.C3121_C3228.C3159_u + ","
+                + Global.C.C3121_C3228.C3159_a + ","
+                + Global.C.C3121_C3228.C3159_b + ","
+                + Global.C.C3121_C3228.C3159_c + ","
+                + Global.C.C3121_C3228.C3160 + ","
+                + Global.C.C3121_C3228.C3161 + ","
+                + Global.C.C3121_C3228.C3162 + ","
+                + Global.C.C3121_C3228.C3163_u + ","
+                + Global.C.C3121_C3228.C3163_a + ","
+                + Global.C.C3121_C3228.C3163_b + ","
+                + Global.C.C3121_C3228.C3164 + ","
+                + Global.C.C3121_C3228.C3165_u + ","
+                + Global.C.C3121_C3228.C3165_a + ","
+                + Global.C.C3121_C3228.C3165_b + ","
+                + Global.C.C3121_C3228.C3166 + ","
+                + Global.C.C3121_C3228.C3167 + ","
+                + Global.C.C3121_C3228.C3168 + ","
+                + Global.C.C3121_C3228.C3169 + ","
+                + Global.C.C3121_C3228.C3170 + ","
+                + Global.C.C3121_C3228.C3171 + ","
+                + Global.C.C3121_C3228.C3172 + ","
+                + Global.C.C3121_C3228.C3173 + ","
+                + Global.C.C3121_C3228.C3174 + ","
+                + Global.C.C3121_C3228.C3175_u + ","
+                + Global.C.C3121_C3228.C3175_a + ","
+                + Global.C.C3121_C3228.C3175_b + ","
+                + Global.C.C3121_C3228.C3176 + ","
+                + Global.C.C3121_C3228.C3177_u + ","
+                + Global.C.C3121_C3228.C3177_a + ","
+                + Global.C.C3121_C3228.C3177_b + ","
+                + Global.C.C3121_C3228.C3178 + ","
+                + Global.C.C3121_C3228.C3179_u + ","
+                + Global.C.C3121_C3228.C3179_a + ","
+                + Global.C.C3121_C3228.C3179_b + ","
+                + Global.C.C3121_C3228.C3180 + ","
+                + Global.C.C3121_C3228.C3181 + ","
+                + Global.C.C3121_C3228.C3182 + ","
+                + Global.C.C3121_C3228.C3183 + ","
+                + Global.C.C3121_C3228.C3184 + ","
+                + Global.C.C3121_C3228.C3185 + ","
+                + Global.C.C3121_C3228.C3186_1 + ","
+                + Global.C.C3121_C3228.C3186 + ","
+                + Global.C.C3121_C3228.C3187 + ","
+                + Global.C.C3121_C3228.C3188 + ","
+                + Global.C.C3121_C3228.C3189 + ","
+                + Global.C.C3121_C3228.C3190 + ","
+                + Global.C.C3121_C3228.C3191 + ","
+                + Global.C.C3121_C3228.C3192 + ","
+                + Global.C.C3121_C3228.C3193_u + ","
+                + Global.C.C3121_C3228.C3193_a + ","
+                + Global.C.C3121_C3228.C3193_b + ","
+                + Global.C.C3121_C3228.C3194 + ","
+                + Global.C.C3121_C3228.C3195A + ","
+                + Global.C.C3121_C3228.C3195 + ","
+                + Global.C.C3121_C3228.C3196 + ","
+                + Global.C.C3121_C3228.C3197 + ","
+                + Global.C.C3121_C3228.C3198 + ","
+                + Global.C.C3121_C3228.C3199 + ","
+                + Global.C.C3121_C3228.C3199_1 + ","
+                + Global.C.C3121_C3228.C3200 + ","
+                + Global.C.C3121_C3228.C3201_u + ","
+                + Global.C.C3121_C3228.C3201_a + ","
+                + Global.C.C3121_C3228.C3201_b + ","
+                + Global.C.C3121_C3228.C3202 + ","
+                + Global.C.C3121_C3228.C3203 + ","
+                + Global.C.C3121_C3228.C3204_u + ","
+                + Global.C.C3121_C3228.C3204_a + ","
+                + Global.C.C3121_C3228.C3204_b + ","
+                + Global.C.C3121_C3228.C3205 + ","
+                + Global.C.C3121_C3228.C3206 + ","
+                + Global.C.C3121_C3228.C3207 + ","
+                + Global.C.C3121_C3228.C3208_u + ","
+                + Global.C.C3121_C3228.C3208_a + ","
+                + Global.C.C3121_C3228.C3208_b + ","
+                + Global.C.C3121_C3228.C3209 + ","
+                + Global.C.C3121_C3228.C3210 + ","
+                + Global.C.C3121_C3228.C3212 + ","
+                + Global.C.C3121_C3228.C3213 + ","
+                + Global.C.C3121_C3228.C3214 + ","
+                + Global.C.C3121_C3228.C3215 + ","
+                + Global.C.C3121_C3228.C3216 + ","
+                + Global.C.C3121_C3228.C3217 + ","
+                + Global.C.C3121_C3228.C3218 + ","
+                + Global.C.C3121_C3228.C3219 + ","
+                + Global.C.C3121_C3228.C3220_u + ","
+                + Global.C.C3121_C3228.C3220_a + ","
+                + Global.C.C3121_C3228.C3220_b + ","
+                + Global.C.C3121_C3228.C3221 + ","
+                + Global.C.C3121_C3228.C3222 + ","
+                + Global.C.C3121_C3228.C3223 + ","
+                + Global.C.C3121_C3228.C3224 + ","
+                + Global.C.C3121_C3228.C3225 + ","
+                + Global.C.C3121_C3228.C3226 + ","
+                + Global.C.C3121_C3228.C3227 + ","
+                + Global.C.C3121_C3228.C3227_1 + ","
+                + Global.C.C3121_C3228.C3227_2 + ","
+                + Global.C.C3121_C3228.C3227_3 + ","
+                + Global.C.C3121_C3228.C3227_4 + ","
+                + Global.C.C3121_C3228.C3227_5 + ","
+                + Global.C.C3121_C3228.C3227_6 + ","
+                + Global.C.C3121_C3228.C3227_7 + ","
+                + Global.C.C3121_C3228.C3227_8 + ","
+                + Global.C.C3121_C3228.C3227_9 + ","
+                + Global.C.C3121_C3228.C3227_10 + ","
+                + Global.C.C3121_C3228.C3227_11 + ","
+                + Global.C.C3121_C3228.C3227_12 + ","
+                + Global.C.C3121_C3228.C3227_13 + ","
+                + Global.C.C3121_C3228.C3227_14 + ","
+                + Global.C.C3121_C3228.C3227_15 + ","
+                + Global.C.C3121_C3228.C3227_16 + ","
+                + Global.C.C3121_C3228.C3227_17 + ","
+                + Global.C.C3121_C3228.C3227_18 + ","
+                + Global.C.C3121_C3228.C3227_19 + ","
+                + Global.C.C3121_C3228.C3227_20 + ","
+                + Global.C.C3121_C3228.C3227_21 + ","
+                + Global.C.C3121_C3228.C3227_22 + ","
+                + Global.C.C3121_C3228.C3228 + ","
+                + C3001_C3011.STATUS + ") values ('" +
 
                 study_id + "','" +
                 C3121 + "','" +

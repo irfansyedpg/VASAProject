@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.R;
 
+import Global.C.C3001_C3011;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -243,159 +244,159 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
     void Initialization() {
 
         // Button Next
-        btn_next = (Button) findViewById(R.id.btn_next);
+        btn_next = findViewById(R.id.btn_next);
 
         // Layouts
 
-        ll_C3301 = (LinearLayout) findViewById(R.id.ll_C3301);
-        ll_C3302_1 = (LinearLayout) findViewById(R.id.ll_C3302_1);
-        ll_C3302_2 = (LinearLayout) findViewById(R.id.ll_C3302_2);
-        ll_C3302_3 = (LinearLayout) findViewById(R.id.ll_C3302_3);
-        ll_C3302_4 = (LinearLayout) findViewById(R.id.ll_C3302_4);
-        ll_C3302_5 = (LinearLayout) findViewById(R.id.ll_C3302_5);
-        ll_C3302_6 = (LinearLayout) findViewById(R.id.ll_C3302_6);
-        ll_C3302_7 = (LinearLayout) findViewById(R.id.ll_C3302_7);
-        ll_C3303 = (LinearLayout) findViewById(R.id.ll_C3303);
-        ll_C3304 = (LinearLayout) findViewById(R.id.ll_C3304);
-        ll_C3305 = (LinearLayout) findViewById(R.id.ll_C3305);
-        ll_C3306_1check = (LinearLayout) findViewById(R.id.ll_C3306_1check);
-        ll_C3306_1 = (LinearLayout) findViewById(R.id.ll_C3306_1);
-        ll_C3306_2check = (LinearLayout) findViewById(R.id.ll_C3306_2check);
-        ll_C3306_2 = (LinearLayout) findViewById(R.id.ll_C3306_2);
-        ll_C3307 = (LinearLayout) findViewById(R.id.ll_C3307);
-        ll_C3308 = (LinearLayout) findViewById(R.id.ll_C3308);
-        ll_C3309 = (LinearLayout) findViewById(R.id.ll_C3309);
-        ll_C3310_1 = (LinearLayout) findViewById(R.id.ll_C3310_1);
-        ll_C3310_2 = (LinearLayout) findViewById(R.id.ll_C3310_2);
-        ll_C3310_3 = (LinearLayout) findViewById(R.id.ll_C3310_3);
-        ll_C3310_4 = (LinearLayout) findViewById(R.id.ll_C3310_4);
-        ll_C3310_5 = (LinearLayout) findViewById(R.id.ll_C3310_5);
-        ll_C3310_6 = (LinearLayout) findViewById(R.id.ll_C3310_6);
-        ll_C3310_7 = (LinearLayout) findViewById(R.id.ll_C3310_7);
-        ll_C3310_8 = (LinearLayout) findViewById(R.id.ll_C3310_8);
-        ll_C3310_9 = (LinearLayout) findViewById(R.id.ll_C3310_9);
-        ll_C3310_10 = (LinearLayout) findViewById(R.id.ll_C3310_10);
-        ll_C3310_11 = (LinearLayout) findViewById(R.id.ll_C3310_11);
-        ll_C3311 = (LinearLayout) findViewById(R.id.ll_C3311);
-        ll_C3312 = (LinearLayout) findViewById(R.id.ll_C3312);
-        ll_C3313 = (LinearLayout) findViewById(R.id.ll_C3313);
-        ll_C3314 = (LinearLayout) findViewById(R.id.ll_C3314);
+        ll_C3301 = findViewById(R.id.ll_C3301);
+        ll_C3302_1 = findViewById(R.id.ll_C3302_1);
+        ll_C3302_2 = findViewById(R.id.ll_C3302_2);
+        ll_C3302_3 = findViewById(R.id.ll_C3302_3);
+        ll_C3302_4 = findViewById(R.id.ll_C3302_4);
+        ll_C3302_5 = findViewById(R.id.ll_C3302_5);
+        ll_C3302_6 = findViewById(R.id.ll_C3302_6);
+        ll_C3302_7 = findViewById(R.id.ll_C3302_7);
+        ll_C3303 = findViewById(R.id.ll_C3303);
+        ll_C3304 = findViewById(R.id.ll_C3304);
+        ll_C3305 = findViewById(R.id.ll_C3305);
+        ll_C3306_1check = findViewById(R.id.ll_C3306_1check);
+        ll_C3306_1 = findViewById(R.id.ll_C3306_1);
+        ll_C3306_2check = findViewById(R.id.ll_C3306_2check);
+        ll_C3306_2 = findViewById(R.id.ll_C3306_2);
+        ll_C3307 = findViewById(R.id.ll_C3307);
+        ll_C3308 = findViewById(R.id.ll_C3308);
+        ll_C3309 = findViewById(R.id.ll_C3309);
+        ll_C3310_1 = findViewById(R.id.ll_C3310_1);
+        ll_C3310_2 = findViewById(R.id.ll_C3310_2);
+        ll_C3310_3 = findViewById(R.id.ll_C3310_3);
+        ll_C3310_4 = findViewById(R.id.ll_C3310_4);
+        ll_C3310_5 = findViewById(R.id.ll_C3310_5);
+        ll_C3310_6 = findViewById(R.id.ll_C3310_6);
+        ll_C3310_7 = findViewById(R.id.ll_C3310_7);
+        ll_C3310_8 = findViewById(R.id.ll_C3310_8);
+        ll_C3310_9 = findViewById(R.id.ll_C3310_9);
+        ll_C3310_10 = findViewById(R.id.ll_C3310_10);
+        ll_C3310_11 = findViewById(R.id.ll_C3310_11);
+        ll_C3311 = findViewById(R.id.ll_C3311);
+        ll_C3312 = findViewById(R.id.ll_C3312);
+        ll_C3313 = findViewById(R.id.ll_C3313);
+        ll_C3314 = findViewById(R.id.ll_C3314);
 
 
         // Radio Buttons
 
-        rb_C3301_1 = (RadioButton) findViewById(R.id.rb_C3301_1);
-        rb_C3301_2 = (RadioButton) findViewById(R.id.rb_C3301_2);
-        rb_C3301_DK = (RadioButton) findViewById(R.id.rb_C3301_DK);
-        rb_C3301_RA = (RadioButton) findViewById(R.id.rb_C3301_RA);
-        rb_C3302_1_1 = (RadioButton) findViewById(R.id.rb_C3302_1_1);
-        rb_C3302_1_2 = (RadioButton) findViewById(R.id.rb_C3302_1_2);
-        rb_C3302_1_DK = (RadioButton) findViewById(R.id.rb_C3302_1_DK);
-        rb_C3302_1_RA = (RadioButton) findViewById(R.id.rb_C3302_1_RA);
-        rb_C3302_2_1 = (RadioButton) findViewById(R.id.rb_C3302_2_1);
-        rb_C3302_2_2 = (RadioButton) findViewById(R.id.rb_C3302_2_2);
-        rb_C3302_2_DK = (RadioButton) findViewById(R.id.rb_C3302_2_DK);
-        rb_C3302_2_RA = (RadioButton) findViewById(R.id.rb_C3302_2_RA);
-        rb_C3302_3_1 = (RadioButton) findViewById(R.id.rb_C3302_3_1);
-        rb_C3302_3_2 = (RadioButton) findViewById(R.id.rb_C3302_3_2);
-        rb_C3302_3_DK = (RadioButton) findViewById(R.id.rb_C3302_3_DK);
-        rb_C3302_3_RA = (RadioButton) findViewById(R.id.rb_C3302_3_RA);
-        rb_C3302_4_1 = (RadioButton) findViewById(R.id.rb_C3302_4_1);
-        rb_C3302_4_2 = (RadioButton) findViewById(R.id.rb_C3302_4_2);
-        rb_C3302_4_DK = (RadioButton) findViewById(R.id.rb_C3302_4_DK);
-        rb_C3302_4_RA = (RadioButton) findViewById(R.id.rb_C3302_4_RA);
-        rb_C3302_5_1 = (RadioButton) findViewById(R.id.rb_C3302_5_1);
-        rb_C3302_5_2 = (RadioButton) findViewById(R.id.rb_C3302_5_2);
-        rb_C3302_5_DK = (RadioButton) findViewById(R.id.rb_C3302_5_DK);
-        rb_C3302_5_RA = (RadioButton) findViewById(R.id.rb_C3302_5_RA);
-        rb_C3302_6_1 = (RadioButton) findViewById(R.id.rb_C3302_6_1);
-        rb_C3302_6_2 = (RadioButton) findViewById(R.id.rb_C3302_6_2);
-        rb_C3302_6_DK = (RadioButton) findViewById(R.id.rb_C3302_6_DK);
-        rb_C3302_6_RA = (RadioButton) findViewById(R.id.rb_C3302_6_RA);
-        rb_C3302_7_1 = (RadioButton) findViewById(R.id.rb_C3302_7_1);
-        rb_C3302_7_2 = (RadioButton) findViewById(R.id.rb_C3302_7_2);
-        rb_C3302_7_DK = (RadioButton) findViewById(R.id.rb_C3302_7_DK);
-        rb_C3302_7_RA = (RadioButton) findViewById(R.id.rb_C3302_7_RA);
-        rb_C3303_1 = (RadioButton) findViewById(R.id.rb_C3303_1);
-        rb_C3303_2 = (RadioButton) findViewById(R.id.rb_C3303_2);
-        rb_C3303_DK = (RadioButton) findViewById(R.id.rb_C3303_DK);
-        rb_C3303_RA = (RadioButton) findViewById(R.id.rb_C3303_RA);
-        rb_C3304_1 = (RadioButton) findViewById(R.id.rb_C3304_1);
-        rb_C3304_2 = (RadioButton) findViewById(R.id.rb_C3304_2);
-        rb_C3304_DK = (RadioButton) findViewById(R.id.rb_C3304_DK);
-        rb_C3304_RA = (RadioButton) findViewById(R.id.rb_C3304_RA);
-        rb_C3305_1 = (RadioButton) findViewById(R.id.rb_C3305_1);
-        rb_C3305_2 = (RadioButton) findViewById(R.id.rb_C3305_2);
-        rb_C3306_1check_1 = (RadioButton) findViewById(R.id.rb_C3306_1check_1);
-        rb_C3306_1check_2 = (RadioButton) findViewById(R.id.rb_C3306_1check_2);
-        rb_C3306_2check_1 = (RadioButton) findViewById(R.id.rb_C3306_2check_1);
-        rb_C3306_2check_2 = (RadioButton) findViewById(R.id.rb_C3306_2check_2);
-        rb_C3310_1_1 = (RadioButton) findViewById(R.id.rb_C3310_1_1);
-        rb_C3310_1_2 = (RadioButton) findViewById(R.id.rb_C3310_1_2);
-        rb_C3310_1_DK = (RadioButton) findViewById(R.id.rb_C3310_1_DK);
-        rb_C3310_1_RA = (RadioButton) findViewById(R.id.rb_C3310_1_RA);
-        rb_C3310_2_1 = (RadioButton) findViewById(R.id.rb_C3310_2_1);
-        rb_C3310_2_2 = (RadioButton) findViewById(R.id.rb_C3310_2_2);
-        rb_C3310_2_DK = (RadioButton) findViewById(R.id.rb_C3310_2_DK);
-        rb_C3310_2_RA = (RadioButton) findViewById(R.id.rb_C3310_2_RA);
-        rb_C3310_3_1 = (RadioButton) findViewById(R.id.rb_C3310_3_1);
-        rb_C3310_3_2 = (RadioButton) findViewById(R.id.rb_C3310_3_2);
-        rb_C3310_3_DK = (RadioButton) findViewById(R.id.rb_C3310_3_DK);
-        rb_C3310_3_RA = (RadioButton) findViewById(R.id.rb_C3310_3_RA);
-        rb_C3310_4_1 = (RadioButton) findViewById(R.id.rb_C3310_4_1);
-        rb_C3310_4_2 = (RadioButton) findViewById(R.id.rb_C3310_4_2);
-        rb_C3310_4_DK = (RadioButton) findViewById(R.id.rb_C3310_4_DK);
-        rb_C3310_4_RA = (RadioButton) findViewById(R.id.rb_C3310_4_RA);
-        rb_C3310_5_1 = (RadioButton) findViewById(R.id.rb_C3310_5_1);
-        rb_C3310_5_2 = (RadioButton) findViewById(R.id.rb_C3310_5_2);
-        rb_C3310_5_DK = (RadioButton) findViewById(R.id.rb_C3310_5_DK);
-        rb_C3310_5_RA = (RadioButton) findViewById(R.id.rb_C3310_5_RA);
-        rb_C3310_6_1 = (RadioButton) findViewById(R.id.rb_C3310_6_1);
-        rb_C3310_6_2 = (RadioButton) findViewById(R.id.rb_C3310_6_2);
-        rb_C3310_6_DK = (RadioButton) findViewById(R.id.rb_C3310_6_DK);
-        rb_C3310_6_RA = (RadioButton) findViewById(R.id.rb_C3310_6_RA);
-        rb_C3310_7_1 = (RadioButton) findViewById(R.id.rb_C3310_7_1);
-        rb_C3310_7_2 = (RadioButton) findViewById(R.id.rb_C3310_7_2);
-        rb_C3310_7_DK = (RadioButton) findViewById(R.id.rb_C3310_7_DK);
-        rb_C3310_7_RA = (RadioButton) findViewById(R.id.rb_C3310_7_RA);
-        rb_C3310_8_1 = (RadioButton) findViewById(R.id.rb_C3310_8_1);
-        rb_C3310_8_2 = (RadioButton) findViewById(R.id.rb_C3310_8_2);
-        rb_C3310_8_DK = (RadioButton) findViewById(R.id.rb_C3310_8_DK);
-        rb_C3310_8_RA = (RadioButton) findViewById(R.id.rb_C3310_8_RA);
-        rb_C3310_9_1 = (RadioButton) findViewById(R.id.rb_C3310_9_1);
-        rb_C3310_9_2 = (RadioButton) findViewById(R.id.rb_C3310_9_2);
-        rb_C3310_9_DK = (RadioButton) findViewById(R.id.rb_C3310_9_DK);
-        rb_C3310_9_RA = (RadioButton) findViewById(R.id.rb_C3310_9_RA);
-        rb_C3310_10_1 = (RadioButton) findViewById(R.id.rb_C3310_10_1);
-        rb_C3310_10_2 = (RadioButton) findViewById(R.id.rb_C3310_10_2);
-        rb_C3310_10_DK = (RadioButton) findViewById(R.id.rb_C3310_10_DK);
-        rb_C3310_10_RA = (RadioButton) findViewById(R.id.rb_C3310_10_RA);
-        rb_C3310_11_1 = (RadioButton) findViewById(R.id.rb_C3310_11_1);
-        rb_C3310_11_2 = (RadioButton) findViewById(R.id.rb_C3310_11_2);
-        rb_C3310_11_DK = (RadioButton) findViewById(R.id.rb_C3310_11_DK);
-        rb_C3310_11_RA = (RadioButton) findViewById(R.id.rb_C3310_11_RA);
-        rb_C3311_1 = (RadioButton) findViewById(R.id.rb_C3311_1);
-        rb_C3311_2 = (RadioButton) findViewById(R.id.rb_C3311_2);
-        rb_C3311_DK = (RadioButton) findViewById(R.id.rb_C3311_DK);
-        rb_C3311_RA = (RadioButton) findViewById(R.id.rb_C3311_RA);
-        rb_C3312_1 = (RadioButton) findViewById(R.id.rb_C3312_1);
-        rb_C3312_2 = (RadioButton) findViewById(R.id.rb_C3312_2);
-        rb_C3312_DK = (RadioButton) findViewById(R.id.rb_C3312_DK);
-        rb_C3312_RA = (RadioButton) findViewById(R.id.rb_C3312_RA);
-        rb_C3313_1 = (RadioButton) findViewById(R.id.rb_C3313_1);
-        rb_C3313_2 = (RadioButton) findViewById(R.id.rb_C3313_2);
-        rb_C3313_DK = (RadioButton) findViewById(R.id.rb_C3313_DK);
-        rb_C3313_RA = (RadioButton) findViewById(R.id.rb_C3313_RA);
+        rb_C3301_1 = findViewById(R.id.rb_C3301_1);
+        rb_C3301_2 = findViewById(R.id.rb_C3301_2);
+        rb_C3301_DK = findViewById(R.id.rb_C3301_DK);
+        rb_C3301_RA = findViewById(R.id.rb_C3301_RA);
+        rb_C3302_1_1 = findViewById(R.id.rb_C3302_1_1);
+        rb_C3302_1_2 = findViewById(R.id.rb_C3302_1_2);
+        rb_C3302_1_DK = findViewById(R.id.rb_C3302_1_DK);
+        rb_C3302_1_RA = findViewById(R.id.rb_C3302_1_RA);
+        rb_C3302_2_1 = findViewById(R.id.rb_C3302_2_1);
+        rb_C3302_2_2 = findViewById(R.id.rb_C3302_2_2);
+        rb_C3302_2_DK = findViewById(R.id.rb_C3302_2_DK);
+        rb_C3302_2_RA = findViewById(R.id.rb_C3302_2_RA);
+        rb_C3302_3_1 = findViewById(R.id.rb_C3302_3_1);
+        rb_C3302_3_2 = findViewById(R.id.rb_C3302_3_2);
+        rb_C3302_3_DK = findViewById(R.id.rb_C3302_3_DK);
+        rb_C3302_3_RA = findViewById(R.id.rb_C3302_3_RA);
+        rb_C3302_4_1 = findViewById(R.id.rb_C3302_4_1);
+        rb_C3302_4_2 = findViewById(R.id.rb_C3302_4_2);
+        rb_C3302_4_DK = findViewById(R.id.rb_C3302_4_DK);
+        rb_C3302_4_RA = findViewById(R.id.rb_C3302_4_RA);
+        rb_C3302_5_1 = findViewById(R.id.rb_C3302_5_1);
+        rb_C3302_5_2 = findViewById(R.id.rb_C3302_5_2);
+        rb_C3302_5_DK = findViewById(R.id.rb_C3302_5_DK);
+        rb_C3302_5_RA = findViewById(R.id.rb_C3302_5_RA);
+        rb_C3302_6_1 = findViewById(R.id.rb_C3302_6_1);
+        rb_C3302_6_2 = findViewById(R.id.rb_C3302_6_2);
+        rb_C3302_6_DK = findViewById(R.id.rb_C3302_6_DK);
+        rb_C3302_6_RA = findViewById(R.id.rb_C3302_6_RA);
+        rb_C3302_7_1 = findViewById(R.id.rb_C3302_7_1);
+        rb_C3302_7_2 = findViewById(R.id.rb_C3302_7_2);
+        rb_C3302_7_DK = findViewById(R.id.rb_C3302_7_DK);
+        rb_C3302_7_RA = findViewById(R.id.rb_C3302_7_RA);
+        rb_C3303_1 = findViewById(R.id.rb_C3303_1);
+        rb_C3303_2 = findViewById(R.id.rb_C3303_2);
+        rb_C3303_DK = findViewById(R.id.rb_C3303_DK);
+        rb_C3303_RA = findViewById(R.id.rb_C3303_RA);
+        rb_C3304_1 = findViewById(R.id.rb_C3304_1);
+        rb_C3304_2 = findViewById(R.id.rb_C3304_2);
+        rb_C3304_DK = findViewById(R.id.rb_C3304_DK);
+        rb_C3304_RA = findViewById(R.id.rb_C3304_RA);
+        rb_C3305_1 = findViewById(R.id.rb_C3305_1);
+        rb_C3305_2 = findViewById(R.id.rb_C3305_2);
+        rb_C3306_1check_1 = findViewById(R.id.rb_C3306_1check_1);
+        rb_C3306_1check_2 = findViewById(R.id.rb_C3306_1check_2);
+        rb_C3306_2check_1 = findViewById(R.id.rb_C3306_2check_1);
+        rb_C3306_2check_2 = findViewById(R.id.rb_C3306_2check_2);
+        rb_C3310_1_1 = findViewById(R.id.rb_C3310_1_1);
+        rb_C3310_1_2 = findViewById(R.id.rb_C3310_1_2);
+        rb_C3310_1_DK = findViewById(R.id.rb_C3310_1_DK);
+        rb_C3310_1_RA = findViewById(R.id.rb_C3310_1_RA);
+        rb_C3310_2_1 = findViewById(R.id.rb_C3310_2_1);
+        rb_C3310_2_2 = findViewById(R.id.rb_C3310_2_2);
+        rb_C3310_2_DK = findViewById(R.id.rb_C3310_2_DK);
+        rb_C3310_2_RA = findViewById(R.id.rb_C3310_2_RA);
+        rb_C3310_3_1 = findViewById(R.id.rb_C3310_3_1);
+        rb_C3310_3_2 = findViewById(R.id.rb_C3310_3_2);
+        rb_C3310_3_DK = findViewById(R.id.rb_C3310_3_DK);
+        rb_C3310_3_RA = findViewById(R.id.rb_C3310_3_RA);
+        rb_C3310_4_1 = findViewById(R.id.rb_C3310_4_1);
+        rb_C3310_4_2 = findViewById(R.id.rb_C3310_4_2);
+        rb_C3310_4_DK = findViewById(R.id.rb_C3310_4_DK);
+        rb_C3310_4_RA = findViewById(R.id.rb_C3310_4_RA);
+        rb_C3310_5_1 = findViewById(R.id.rb_C3310_5_1);
+        rb_C3310_5_2 = findViewById(R.id.rb_C3310_5_2);
+        rb_C3310_5_DK = findViewById(R.id.rb_C3310_5_DK);
+        rb_C3310_5_RA = findViewById(R.id.rb_C3310_5_RA);
+        rb_C3310_6_1 = findViewById(R.id.rb_C3310_6_1);
+        rb_C3310_6_2 = findViewById(R.id.rb_C3310_6_2);
+        rb_C3310_6_DK = findViewById(R.id.rb_C3310_6_DK);
+        rb_C3310_6_RA = findViewById(R.id.rb_C3310_6_RA);
+        rb_C3310_7_1 = findViewById(R.id.rb_C3310_7_1);
+        rb_C3310_7_2 = findViewById(R.id.rb_C3310_7_2);
+        rb_C3310_7_DK = findViewById(R.id.rb_C3310_7_DK);
+        rb_C3310_7_RA = findViewById(R.id.rb_C3310_7_RA);
+        rb_C3310_8_1 = findViewById(R.id.rb_C3310_8_1);
+        rb_C3310_8_2 = findViewById(R.id.rb_C3310_8_2);
+        rb_C3310_8_DK = findViewById(R.id.rb_C3310_8_DK);
+        rb_C3310_8_RA = findViewById(R.id.rb_C3310_8_RA);
+        rb_C3310_9_1 = findViewById(R.id.rb_C3310_9_1);
+        rb_C3310_9_2 = findViewById(R.id.rb_C3310_9_2);
+        rb_C3310_9_DK = findViewById(R.id.rb_C3310_9_DK);
+        rb_C3310_9_RA = findViewById(R.id.rb_C3310_9_RA);
+        rb_C3310_10_1 = findViewById(R.id.rb_C3310_10_1);
+        rb_C3310_10_2 = findViewById(R.id.rb_C3310_10_2);
+        rb_C3310_10_DK = findViewById(R.id.rb_C3310_10_DK);
+        rb_C3310_10_RA = findViewById(R.id.rb_C3310_10_RA);
+        rb_C3310_11_1 = findViewById(R.id.rb_C3310_11_1);
+        rb_C3310_11_2 = findViewById(R.id.rb_C3310_11_2);
+        rb_C3310_11_DK = findViewById(R.id.rb_C3310_11_DK);
+        rb_C3310_11_RA = findViewById(R.id.rb_C3310_11_RA);
+        rb_C3311_1 = findViewById(R.id.rb_C3311_1);
+        rb_C3311_2 = findViewById(R.id.rb_C3311_2);
+        rb_C3311_DK = findViewById(R.id.rb_C3311_DK);
+        rb_C3311_RA = findViewById(R.id.rb_C3311_RA);
+        rb_C3312_1 = findViewById(R.id.rb_C3312_1);
+        rb_C3312_2 = findViewById(R.id.rb_C3312_2);
+        rb_C3312_DK = findViewById(R.id.rb_C3312_DK);
+        rb_C3312_RA = findViewById(R.id.rb_C3312_RA);
+        rb_C3313_1 = findViewById(R.id.rb_C3313_1);
+        rb_C3313_2 = findViewById(R.id.rb_C3313_2);
+        rb_C3313_DK = findViewById(R.id.rb_C3313_DK);
+        rb_C3313_RA = findViewById(R.id.rb_C3313_RA);
 
 
         // Edittexts
 
-        ed_C3306_1 = (EditText) findViewById(R.id.ed_C3306_1);
-        ed_C3306_2 = (EditText) findViewById(R.id.ed_C3306_2);
-        ed_C3307 = (EditText) findViewById(R.id.ed_C3307);
-        ed_C3308 = (EditText) findViewById(R.id.ed_C3308);
-        ed_C3309 = (EditText) findViewById(R.id.ed_C3309);
-        ed_C3314 = (EditText) findViewById(R.id.ed_C3314);
+        ed_C3306_1 = findViewById(R.id.ed_C3306_1);
+        ed_C3306_2 = findViewById(R.id.ed_C3306_2);
+        ed_C3307 = findViewById(R.id.ed_C3307);
+        ed_C3308 = findViewById(R.id.ed_C3308);
+        ed_C3309 = findViewById(R.id.ed_C3309);
+        ed_C3314 = findViewById(R.id.ed_C3314);
 
     }
 
@@ -1071,41 +1072,41 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
 
         String query = "insert into C3301_C3314("
 
-                + global.C.C.C3001_C3011.study_id + ","
-                + global.C.C.C3301_C3314.C3301 + ","
-                + global.C.C.C3301_C3314.C3302_1 + ","
-                + global.C.C.C3301_C3314.C3302_2 + ","
-                + global.C.C.C3301_C3314.C3302_3 + ","
-                + global.C.C.C3301_C3314.C3302_4 + ","
-                + global.C.C.C3301_C3314.C3302_5 + ","
-                + global.C.C.C3301_C3314.C3302_6 + ","
-                + global.C.C.C3301_C3314.C3302_7 + ","
-                + global.C.C.C3301_C3314.C3303 + ","
-                + global.C.C.C3301_C3314.C3304 + ","
-                + global.C.C.C3301_C3314.C3305 + ","
-                + global.C.C.C3301_C3314.C3306_1check + ","
-                + global.C.C.C3301_C3314.C3306_1 + ","
-                + global.C.C.C3301_C3314.C3306_2check + ","
-                + global.C.C.C3301_C3314.C3306_2 + ","
-                + global.C.C.C3301_C3314.C3307 + ","
-                + global.C.C.C3301_C3314.C3308 + ","
-                + global.C.C.C3301_C3314.C3309 + ","
-                + global.C.C.C3301_C3314.C3310_1 + ","
-                + global.C.C.C3301_C3314.C3310_2 + ","
-                + global.C.C.C3301_C3314.C3310_3 + ","
-                + global.C.C.C3301_C3314.C3310_4 + ","
-                + global.C.C.C3301_C3314.C3310_5 + ","
-                + global.C.C.C3301_C3314.C3310_6 + ","
-                + global.C.C.C3301_C3314.C3310_7 + ","
-                + global.C.C.C3301_C3314.C3310_8 + ","
-                + global.C.C.C3301_C3314.C3310_9 + ","
-                + global.C.C.C3301_C3314.C3310_10 + ","
-                + global.C.C.C3301_C3314.C3310_11 + ","
-                + global.C.C.C3301_C3314.C3311 + ","
-                + global.C.C.C3301_C3314.C3312 + ","
-                + global.C.C.C3301_C3314.C3313 + ","
-                + global.C.C.C3301_C3314.C3314 + ","
-                + global.C.C.C3001_C3011.STATUS + ") values ('" +
+                + C3001_C3011.study_id + ","
+                + Global.C.C3301_C3314.C3301 + ","
+                + Global.C.C3301_C3314.C3302_1 + ","
+                + Global.C.C3301_C3314.C3302_2 + ","
+                + Global.C.C3301_C3314.C3302_3 + ","
+                + Global.C.C3301_C3314.C3302_4 + ","
+                + Global.C.C3301_C3314.C3302_5 + ","
+                + Global.C.C3301_C3314.C3302_6 + ","
+                + Global.C.C3301_C3314.C3302_7 + ","
+                + Global.C.C3301_C3314.C3303 + ","
+                + Global.C.C3301_C3314.C3304 + ","
+                + Global.C.C3301_C3314.C3305 + ","
+                + Global.C.C3301_C3314.C3306_1check + ","
+                + Global.C.C3301_C3314.C3306_1 + ","
+                + Global.C.C3301_C3314.C3306_2check + ","
+                + Global.C.C3301_C3314.C3306_2 + ","
+                + Global.C.C3301_C3314.C3307 + ","
+                + Global.C.C3301_C3314.C3308 + ","
+                + Global.C.C3301_C3314.C3309 + ","
+                + Global.C.C3301_C3314.C3310_1 + ","
+                + Global.C.C3301_C3314.C3310_2 + ","
+                + Global.C.C3301_C3314.C3310_3 + ","
+                + Global.C.C3301_C3314.C3310_4 + ","
+                + Global.C.C3301_C3314.C3310_5 + ","
+                + Global.C.C3301_C3314.C3310_6 + ","
+                + Global.C.C3301_C3314.C3310_7 + ","
+                + Global.C.C3301_C3314.C3310_8 + ","
+                + Global.C.C3301_C3314.C3310_9 + ","
+                + Global.C.C3301_C3314.C3310_10 + ","
+                + Global.C.C3301_C3314.C3310_11 + ","
+                + Global.C.C3301_C3314.C3311 + ","
+                + Global.C.C3301_C3314.C3312 + ","
+                + Global.C.C3301_C3314.C3313 + ","
+                + Global.C.C3301_C3314.C3314 + ","
+                + C3001_C3011.STATUS + ") values ('" +
 
                 study_id + "','" +
                 C3301 + "','" +

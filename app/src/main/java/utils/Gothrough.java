@@ -20,38 +20,48 @@ public class Gothrough {
         /// Checkbox Celar*************************************
 
         try {
-            if (lv.getVisibility() != View.VISIBLE)  // ll_C3002
-            {
+            if (lv.getVisibility() != View.VISIBLE) {
                 return true;
             }
 
             for (int i = 0, count = lv.getChildCount(); i < count; ++i) {
                 View view = lv.getChildAt(i);
                 if (view instanceof CheckBox) {
+                    ((CheckBox) view).setError(null);
+
                     if (((CheckBox) view).isChecked()) {
                         return true;
                     }
 
-                    ((CheckBox) view).setError(null);
                     if (i == count - 1) {
                         ((CheckBox) view).setError("Select Atleast One");
                     }
                 } else if (view instanceof RadioGroup) {
-                    if (((RadioGroup) view).getCheckedRadioButtonId() != -1)
-
-                    //if(((RadioButton) view).isChecked())
-                    {
-
+                    if (((RadioGroup) view).getCheckedRadioButtonId() != -1) {
                         return true;
                     }
+
                 } else if (view instanceof EditText) {
-                    if (((EditText) view).getText().length() > 0) {
-                        return true;
-                    }
+                    if (view.isEnabled()) {
 
-                    ((EditText) view).setError(null);
-                    if (i == count - 1) {
-                        ((EditText) view).setError("Enter Text");
+                        ((EditText) view).setError(null);
+
+                        if (((EditText) view).getText().toString().trim().length() > 0) {
+                            if (i + 1 == lv.getChildCount()) {
+                                return true;
+                            }
+                        } else {
+                            if (view.isEnabled()) {
+                                ((EditText) view).setError("Enter Text");
+                                return false;
+                            } else {
+                                if (i + 1 == lv.getChildCount()) {
+                                    return true;
+                                }
+                            }
+                        }
+                    } else {
+                        return true;
                     }
                 }
             }
@@ -63,5 +73,22 @@ public class Gothrough {
         lv.requestFocus();
 
         return false;
+    }
+
+
+    public static boolean TextHidden(EditText txt) {
+
+        if (txt != null) {
+            txt.setError(null);
+            txt.clearFocus();
+            if (txt.getText().toString().trim().length() > 0)
+                return true;
+            else {
+                txt.setError("Enter Text");
+                return false;
+            }
+        } else {
+            return true;
+        }
     }
 }

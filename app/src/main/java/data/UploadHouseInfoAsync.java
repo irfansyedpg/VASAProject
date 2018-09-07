@@ -18,6 +18,8 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 
+import Global.C.C3001_C3011;
+import Global.C.C3012_C3022;
 import utils.MyPreferences;
 import utils.PostRequestData;
 import utils.QuestionModel;
@@ -69,47 +71,47 @@ public class UploadHouseInfoAsync extends AsyncTask {
         if (c != null) {
             if (c.moveToFirst()) {
                 param.put("id", c.getString(0));
-                param.put(global.C.C.C3001_C3011.study_id, "1");
-                param.put(global.C.C.C3001_C3011.C3001, c.getString(2));
-                param.put(global.C.C.C3001_C3011.C3002, c.getString(3));
-                param.put(global.C.C.C3001_C3011.C3003, c.getString(4));
-                param.put(global.C.C.C3001_C3011.C3004, c.getString(5));
-                param.put(global.C.C.C3001_C3011.C3005u, c.getString(6));
-                param.put(global.C.C.C3001_C3011.C3005d, c.getString(7));
-                param.put(global.C.C.C3001_C3011.C3005w, c.getString(8));
-                param.put(global.C.C.C3001_C3011.C3005m, c.getString(9));
-                param.put(global.C.C.C3001_C3011.C3006, c.getString(10));
-                param.put(global.C.C.C3001_C3011.C3008, c.getString(11));
-                param.put(global.C.C.C3001_C3011.C3009_1, c.getString(12));
-                param.put(global.C.C.C3001_C3011.C3009_2, c.getString(13));
-                param.put(global.C.C.C3001_C3011.C3009_3, c.getString(14));
-                param.put(global.C.C.C3001_C3011.C3009_4, c.getString(15));
-                param.put(global.C.C.C3001_C3011.C3010, c.getString(16));
-                param.put(global.C.C.C3001_C3011.C3011, c.getString(17));
+                param.put(C3001_C3011.study_id, "1");
+                param.put(C3001_C3011.C3001, c.getString(2));
+                param.put(C3001_C3011.C3002, c.getString(3));
+                param.put(C3001_C3011.C3003, c.getString(4));
+                param.put(C3001_C3011.C3004, c.getString(5));
+                param.put(C3001_C3011.C3005u, c.getString(6));
+                param.put(C3001_C3011.C3005d, c.getString(7));
+                param.put(C3001_C3011.C3005w, c.getString(8));
+                param.put(C3001_C3011.C3005m, c.getString(9));
+                param.put(C3001_C3011.C3006, c.getString(10));
+                param.put(C3001_C3011.C3008, c.getString(11));
+                param.put(C3001_C3011.C3009_1, c.getString(12));
+                param.put(C3001_C3011.C3009_2, c.getString(13));
+                param.put(C3001_C3011.C3009_3, c.getString(14));
+                param.put(C3001_C3011.C3009_4, c.getString(15));
+                param.put(C3001_C3011.C3010, c.getString(16));
+                param.put(C3001_C3011.C3011, c.getString(17));
             }
         }
 
         if (c2 != null) {
             if (c2.moveToFirst()) {
                 param.put("id2", c2.getString(0));
-                param.put(global.C.C.C3012_C3022.study_id, "1");
-                param.put(global.C.C.C3012_C3022.C3012, c2.getString(2));
-                param.put(global.C.C.C3012_C3022.C3013, c2.getString(3));
-                param.put(global.C.C.C3012_C3022.C3015, c2.getString(4));
-                param.put(global.C.C.C3012_C3022.C3016, c2.getString(5));
-                param.put(global.C.C.C3012_C3022.C3017, c2.getString(6));
-                param.put(global.C.C.C3012_C3022.C3018, c2.getString(7));
-                param.put(global.C.C.C3012_C3022.C3018_1, c2.getString(8));
-                param.put(global.C.C.C3012_C3022.C3019_u, c2.getString(9));
-                param.put(global.C.C.C3012_C3022.C3019_a, c2.getString(10));
-                param.put(global.C.C.C3012_C3022.C3019_b, c2.getString(11));
-                param.put(global.C.C.C3012_C3022.C3019_c, c2.getString(12));
-                param.put(global.C.C.C3012_C3022.C3020, c2.getString(13));
-                param.put(global.C.C.C3012_C3022.C3021u, c2.getString(14));
-                param.put(global.C.C.C3012_C3022.C3021d, c2.getString(15));
-                param.put(global.C.C.C3012_C3022.C3021m, c2.getString(16));
-                param.put(global.C.C.C3012_C3022.C3021y, c2.getString(17));
-                param.put(global.C.C.C3012_C3022.C3022, c2.getString(18));
+                param.put(C3012_C3022.study_id, "1");
+                param.put(C3012_C3022.C3012, c2.getString(2));
+                param.put(C3012_C3022.C3013, c2.getString(3));
+                param.put(C3012_C3022.C3015, c2.getString(4));
+                param.put(C3012_C3022.C3016, c2.getString(5));
+                param.put(C3012_C3022.C3017, c2.getString(6));
+                param.put(C3012_C3022.C3018, c2.getString(7));
+                param.put(C3012_C3022.C3018_1, c2.getString(8));
+                param.put(C3012_C3022.C3019_u, c2.getString(9));
+                param.put(C3012_C3022.C3019_a, c2.getString(10));
+                param.put(C3012_C3022.C3019_b, c2.getString(11));
+                param.put(C3012_C3022.C3019_c, c2.getString(12));
+                param.put(C3012_C3022.C3020, c2.getString(13));
+                param.put(C3012_C3022.C3021u, c2.getString(14));
+                param.put(C3012_C3022.C3021d, c2.getString(15));
+                param.put(C3012_C3022.C3021m, c2.getString(16));
+                param.put(C3012_C3022.C3021y, c2.getString(17));
+                param.put(C3012_C3022.C3022, c2.getString(18));
             }
         }
 

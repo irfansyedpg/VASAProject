@@ -11,25 +11,25 @@ public class C3001_C3011 {
         String query;
         query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' INTEGER,   " +
 
-                global.C.C.C3001_C3011.C3001 + " TEXT," +
-                global.C.C.C3001_C3011.C3002 + " TEXT," +
-                global.C.C.C3001_C3011.C3003 + " TEXT," +
-                global.C.C.C3001_C3011.C3004 + " TEXT," +
-                global.C.C.C3001_C3011.C3005u + " TEXT," +
-                global.C.C.C3001_C3011.C3005d + " TEXT," +
-                global.C.C.C3001_C3011.C3005w + " TEXT," +
-                global.C.C.C3001_C3011.C3005m + " TEXT," +
-                global.C.C.C3001_C3011.C3006 + " TEXT," +
-                global.C.C.C3001_C3011.C3006_OT + " TEXT," +
-                global.C.C.C3001_C3011.C3008 + " TEXT," +
-                global.C.C.C3001_C3011.C3008_OT + " TEXT," +
-                global.C.C.C3001_C3011.C3009_1 + " TEXT," +
-                global.C.C.C3001_C3011.C3009_2 + " TEXT," +
-                global.C.C.C3001_C3011.C3009_3 + " TEXT," +
-                global.C.C.C3001_C3011.C3009_4 + " TEXT," +
-                global.C.C.C3001_C3011.C3010 + " TEXT," +
-                global.C.C.C3001_C3011.C3011 + " TEXT," +
-                global.C.C.C3001_C3011.STATUS + " TEXT" +
+                Global.C.C3001_C3011.C3001 + " TEXT," +
+                Global.C.C3001_C3011.C3002 + " TEXT," +
+                Global.C.C3001_C3011.C3003 + " TEXT," +
+                Global.C.C3001_C3011.C3004 + " TEXT," +
+                Global.C.C3001_C3011.C3005u + " TEXT," +
+                Global.C.C3001_C3011.C3005d + " TEXT," +
+                Global.C.C3001_C3011.C3005w + " TEXT," +
+                Global.C.C3001_C3011.C3005m + " TEXT," +
+                Global.C.C3001_C3011.C3006 + " TEXT," +
+                Global.C.C3001_C3011.C3006_OT + " TEXT," +
+                Global.C.C3001_C3011.C3008 + " TEXT," +
+                Global.C.C3001_C3011.C3008_OT + " TEXT," +
+                Global.C.C3001_C3011.C3009_1 + " TEXT," +
+                Global.C.C3001_C3011.C3009_2 + " TEXT," +
+                Global.C.C3001_C3011.C3009_3 + " TEXT," +
+                Global.C.C3001_C3011.C3009_4 + " TEXT," +
+                Global.C.C3001_C3011.C3010 + " TEXT," +
+                Global.C.C3001_C3011.C3011 + " TEXT," +
+                Global.C.C3001_C3011.STATUS + " TEXT" +
                 ')';
 
         return query;

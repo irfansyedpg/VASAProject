@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.R;
 
+import Global.C.C3001_C3011;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -107,46 +108,46 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
     void Initialization() {
 
         // Button Next
-        btn_next = (Button) findViewById(R.id.btn_next);
+        btn_next = findViewById(R.id.btn_next);
 
         // Layouts
 
-        ll_C3351 = (LinearLayout) findViewById(R.id.ll_C3351);
-        ll_C3352 = (LinearLayout) findViewById(R.id.ll_C3352);
-        ll_C3353 = (LinearLayout) findViewById(R.id.ll_C3353);
-        ll_C3354 = (LinearLayout) findViewById(R.id.ll_C3354);
-        ll_C3355 = (LinearLayout) findViewById(R.id.ll_C3355);
-        ll_C3356 = (LinearLayout) findViewById(R.id.ll_C3356);
-        ll_C3357 = (LinearLayout) findViewById(R.id.ll_C3357);
-        ll_C3358 = (LinearLayout) findViewById(R.id.ll_C3358);
-        ll_C3363 = (LinearLayout) findViewById(R.id.ll_C3363);
-        ll_C3364 = (LinearLayout) findViewById(R.id.ll_C3364);
+        ll_C3351 = findViewById(R.id.ll_C3351);
+        ll_C3352 = findViewById(R.id.ll_C3352);
+        ll_C3353 = findViewById(R.id.ll_C3353);
+        ll_C3354 = findViewById(R.id.ll_C3354);
+        ll_C3355 = findViewById(R.id.ll_C3355);
+        ll_C3356 = findViewById(R.id.ll_C3356);
+        ll_C3357 = findViewById(R.id.ll_C3357);
+        ll_C3358 = findViewById(R.id.ll_C3358);
+        ll_C3363 = findViewById(R.id.ll_C3363);
+        ll_C3364 = findViewById(R.id.ll_C3364);
 
 
         // Radio Buttons
 
-        rb_C3351_1 = (RadioButton) findViewById(R.id.rb_C3351_1);
-        rb_C3351_2 = (RadioButton) findViewById(R.id.rb_C3351_2);
-        rb_C3351_DK = (RadioButton) findViewById(R.id.rb_C3351_DK);
-        rb_C3351_RA = (RadioButton) findViewById(R.id.rb_C3351_RA);
-        rb_C3352_1 = (RadioButton) findViewById(R.id.rb_C3352_1);
-        rb_C3352_2 = (RadioButton) findViewById(R.id.rb_C3352_2);
-        rb_C3363_1 = (RadioButton) findViewById(R.id.rb_C3363_1);
-        rb_C3363_2 = (RadioButton) findViewById(R.id.rb_C3363_2);
-        rb_C3363_3 = (RadioButton) findViewById(R.id.rb_C3363_3);
-        rb_C3363_DK = (RadioButton) findViewById(R.id.rb_C3363_DK);
-        rb_C3363_RA = (RadioButton) findViewById(R.id.rb_C3363_RA);
+        rb_C3351_1 = findViewById(R.id.rb_C3351_1);
+        rb_C3351_2 = findViewById(R.id.rb_C3351_2);
+        rb_C3351_DK = findViewById(R.id.rb_C3351_DK);
+        rb_C3351_RA = findViewById(R.id.rb_C3351_RA);
+        rb_C3352_1 = findViewById(R.id.rb_C3352_1);
+        rb_C3352_2 = findViewById(R.id.rb_C3352_2);
+        rb_C3363_1 = findViewById(R.id.rb_C3363_1);
+        rb_C3363_2 = findViewById(R.id.rb_C3363_2);
+        rb_C3363_3 = findViewById(R.id.rb_C3363_3);
+        rb_C3363_DK = findViewById(R.id.rb_C3363_DK);
+        rb_C3363_RA = findViewById(R.id.rb_C3363_RA);
 
 
         // Edittexts
 
-        ed_C3353 = (EditText) findViewById(R.id.ed_C3353);
-        ed_C3354 = (EditText) findViewById(R.id.ed_C3354);
-        ed_C3355 = (EditText) findViewById(R.id.ed_C3355);
-        ed_C3356 = (EditText) findViewById(R.id.ed_C3356);
-        ed_C3357 = (EditText) findViewById(R.id.ed_C3357);
-        ed_C3358 = (EditText) findViewById(R.id.ed_C3358);
-        ed_C3364 = (EditText) findViewById(R.id.ed_C3364);
+        ed_C3353 = findViewById(R.id.ed_C3353);
+        ed_C3354 = findViewById(R.id.ed_C3354);
+        ed_C3355 = findViewById(R.id.ed_C3355);
+        ed_C3356 = findViewById(R.id.ed_C3356);
+        ed_C3357 = findViewById(R.id.ed_C3357);
+        ed_C3358 = findViewById(R.id.ed_C3358);
+        ed_C3364 = findViewById(R.id.ed_C3364);
 
     }
 
@@ -361,18 +362,18 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
 
         String query = "insert into C3351_C3364("
 
-                + global.C.C.C3001_C3011.study_id + ","
-                + global.C.C.C3351_C3364.C3351 + ","
-                + global.C.C.C3351_C3364.C3352 + ","
-                + global.C.C.C3351_C3364.C3353 + ","
-                + global.C.C.C3351_C3364.C3354 + ","
-                + global.C.C.C3351_C3364.C3355 + ","
-                + global.C.C.C3351_C3364.C3356 + ","
-                + global.C.C.C3351_C3364.C3357 + ","
-                + global.C.C.C3351_C3364.C3358 + ","
-                + global.C.C.C3351_C3364.C3363 + ","
-                + global.C.C.C3351_C3364.C3364 + ","
-                + global.C.C.C3001_C3011.STATUS + ") values ('" +
+                + C3001_C3011.study_id + ","
+                + Global.C.C3351_C3364.C3351 + ","
+                + Global.C.C3351_C3364.C3352 + ","
+                + Global.C.C3351_C3364.C3353 + ","
+                + Global.C.C3351_C3364.C3354 + ","
+                + Global.C.C3351_C3364.C3355 + ","
+                + Global.C.C3351_C3364.C3356 + ","
+                + Global.C.C3351_C3364.C3357 + ","
+                + Global.C.C3351_C3364.C3358 + ","
+                + Global.C.C3351_C3364.C3363 + ","
+                + Global.C.C3351_C3364.C3364 + ","
+                + C3001_C3011.STATUS + ") values ('" +
 
                 study_id + "','" +
                 C3351 + "','" +

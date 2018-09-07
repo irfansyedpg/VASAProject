@@ -83,29 +83,29 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
     void Initialization() {
 
         // Button Next
-        btn_next = (Button) findViewById(R.id.btn_next);
+        btn_next = findViewById(R.id.btn_next);
 
         // Layouts
-        ll_C3471 = (LinearLayout) findViewById(R.id.ll_C3471);
-        ll_C3472 = (LinearLayout) findViewById(R.id.ll_C3472);
+        ll_C3471 = findViewById(R.id.ll_C3471);
+        ll_C3472 = findViewById(R.id.ll_C3472);
 
         // Radio Buttons
 
-        rb_C3472_1 = (RadioButton) findViewById(R.id.rb_C3472_1);
-        rb_C3472_2 = (RadioButton) findViewById(R.id.rb_C3472_2);
-        rb_C3472_3 = (RadioButton) findViewById(R.id.rb_C3472_3);
-        rb_C3472_4 = (RadioButton) findViewById(R.id.rb_C3472_4);
-        rb_C3472_5 = (RadioButton) findViewById(R.id.rb_C3472_5);
-        rb_C3472_6 = (RadioButton) findViewById(R.id.rb_C3472_6);
-        rb_C3472_7 = (RadioButton) findViewById(R.id.rb_C3472_7);
-        rb_C3472_8 = (RadioButton) findViewById(R.id.rb_C3472_8);
-        rb_C3472_9 = (RadioButton) findViewById(R.id.rb_C3472_9);
-        rb_C3472_10 = (RadioButton) findViewById(R.id.rb_C3472_10);
-        rb_C3472_11 = (RadioButton) findViewById(R.id.rb_C3472_11);
-        rb_C3472_DK = (RadioButton) findViewById(R.id.rb_C3472_DK);
+        rb_C3472_1 = findViewById(R.id.rb_C3472_1);
+        rb_C3472_2 = findViewById(R.id.rb_C3472_2);
+        rb_C3472_3 = findViewById(R.id.rb_C3472_3);
+        rb_C3472_4 = findViewById(R.id.rb_C3472_4);
+        rb_C3472_5 = findViewById(R.id.rb_C3472_5);
+        rb_C3472_6 = findViewById(R.id.rb_C3472_6);
+        rb_C3472_7 = findViewById(R.id.rb_C3472_7);
+        rb_C3472_8 = findViewById(R.id.rb_C3472_8);
+        rb_C3472_9 = findViewById(R.id.rb_C3472_9);
+        rb_C3472_10 = findViewById(R.id.rb_C3472_10);
+        rb_C3472_11 = findViewById(R.id.rb_C3472_11);
+        rb_C3472_DK = findViewById(R.id.rb_C3472_DK);
 
 
-        ed_C3471 = (EditText) findViewById(R.id.ed_C3471);
+        ed_C3471 = findViewById(R.id.ed_C3471);
 
     }
 
@@ -150,10 +150,10 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     void insert_data() {
         String query = "insert into   C3471_C3472("
-                + global.C.C.C3471_C3472.study_id + ","
-                + global.C.C.C3471_C3472.C3471 + ","
-                + global.C.C.C3471_C3472.C3472 + ","
-                + global.C.C.C3471_C3472.STATUS + ") values ('" +
+                + Global.C.C3471_C3472.study_id + ","
+                + Global.C.C3471_C3472.C3471 + ","
+                + Global.C.C3471_C3472.C3472 + ","
+                + Global.C.C3471_C3472.STATUS + ") values ('" +
 
                 study_id + "','" +
                 C3471 + "','" +

@@ -1,4 +1,4 @@
-package global.C.C;
+package Global.C;
 
 public class C3471_C3472 {
 
