@@ -24,6 +24,20 @@ import Global.N.N2271_N2284;
 import Global.N.N2291_N2304;
 import Global.N.N2311_N2317;
 import Global.N.N2321_N2322;
+import data.A.A4001_A4014;
+import data.A.A4051_A4066;
+import data.A.A4067_A4080;
+import data.A.A4081_A4094;
+import data.A.A4095_A4108;
+import data.A.A4109_A4125;
+import data.A.A4126_A4140;
+import data.A.A4144_A4156;
+import data.A.A4157_A4205;
+import data.A.A4206_A4207;
+import data.A.A4251_A4284;
+import data.A.A4301_A4315;
+import data.A.A4351_A4364;
+import data.A.A4401_A4473;
 import data.C.C3001_C3011;
 import data.C.C3012_C3022;
 import data.C.C3051_C3099;
@@ -85,6 +99,21 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(data.N.N2311_N2317.getCreateQuery()); // N2311_N2317 created here
         db.execSQL(data.N.N2321_N2322.getCreateQuery()); // N2321_N2322 created here
 
+        /*Sajid's File creation*/
+        db.execSQL(A4001_A4014.getCreateQuery()); // A4001_A4014 created here
+        db.execSQL(A4051_A4066.getCreateQuery()); // A4051_A4066 created here
+        db.execSQL(A4067_A4080.getCreateQuery()); // A4067_A4080 created here
+        db.execSQL(A4081_A4094.getCreateQuery()); // A4081_A4094 created here
+        db.execSQL(A4095_A4108.getCreateQuery()); // A4095_A4108 created here
+        db.execSQL(A4109_A4125.getCreateQuery()); // A4109_A4125 created here
+        db.execSQL(A4126_A4140.getCreateQuery()); // A4126_A4140 created here
+        db.execSQL(A4144_A4156.getCreateQuery()); // A4144_A4156 created here
+        db.execSQL(A4157_A4205.getCreateQuery()); // A4157_A4205 created here
+        db.execSQL(A4206_A4207.getCreateQuery()); // A4206_A4207 created here
+        db.execSQL(A4251_A4284.getCreateQuery()); // A4251_A4284 created here
+        db.execSQL(A4301_A4315.getCreateQuery()); // A4301_A4315 created here
+        db.execSQL(A4351_A4364.getCreateQuery()); // A4351_A4364 created here
+        db.execSQL(A4401_A4473.getCreateQuery()); // A4401_A4405 created here
 
         db.setTransactionSuccessful();
         db.endTransaction();
