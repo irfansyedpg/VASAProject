@@ -2020,11 +2020,10 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="rb_C3058_1">Yes	</string>
     <string name="rb_C3058_2">No	</string>
     <string name="rb_C3058_DK">Don’t know	</string>
-    <string name="rb_C3059_1">Refused to answer	</string>
-    <string name="rb_C3059_2">Yes	</string>
-    <string name="rb_C3059_9">No	</string>
+    <string name="rb_C3059_1">Yes	</string>
+    <string name="rb_C3059_2">No	</string>
     <string name="rb_C3059_DK">Don’t know	</string>
-    <string name="rb_C3059_RA">Refused</string>
+    <string name="rb_C3059_RA">Refused to Answer	</string>
     <string name="rb_C3060_1">Yes	</string>
     <string name="rb_C3060_2">No	</string>
     <string name="rb_C3060_DK">Don’t know	</string>

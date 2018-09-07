@@ -2671,15 +2671,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 ed_Q1206_m.setEnabled(true);
                 ed_Q1206_y.setEnabled(true);
             }
-        } else {
-
-            ed_Q1206_d.setText(null);
-            ed_Q1206_m.setText(null);
-            ed_Q1206_y.setText(null);
-
-            ed_Q1206_d.setEnabled(true);
-            ed_Q1206_m.setEnabled(true);
-            ed_Q1206_y.setEnabled(true);
         }
 
         if (ed_Q1603.getText().toString().length() == 10 && ed_Q1606.getText().toString().length() == 10) {
@@ -2716,30 +2707,24 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 ed_Q1607_3.setEnabled(true);
 
             }
-        } else {
-
-            ed_Q1607_1.setText(null);
-            ed_Q1607_2.setText(null);
-            ed_Q1607_3.setText(null);
-
-            ed_Q1607_1.setEnabled(true);
-            ed_Q1607_2.setEnabled(true);
-            ed_Q1607_3.setEnabled(true);
         }
     }
 
     @Override
     public void afterTextChanged(Editable s) {
 
-        /*if (isValid(ed_Q1204.getText().toString()) || isValid(ed_Q1205.getText().toString())) {
+        if (ed_Q1204.getText().toString().length() == 10 && ed_Q1205.getText().toString().length() == 10) {
+            if (!isValid(ed_Q1204.getText().toString()) && !isValid(ed_Q1205.getText().toString())) {
 
-            ed_Q1206_d.setEnabled(false);
-            ed_Q1206_m.setEnabled(false);
-            ed_Q1206_y.setEnabled(false);
+                Toast.makeText(this, "Provide a valid date", Toast.LENGTH_LONG).show();
+            }
+        }
 
-            ed_Q1206_d.setText(null);
-            ed_Q1206_m.setText(null);
-            ed_Q1206_y.setText(null);
-        }*/
+        if (ed_Q1603.getText().toString().length() == 10 && ed_Q1606.getText().toString().length() == 10) {
+            if (!isValid(ed_Q1603.getText().toString()) && !isValid(ed_Q1606.getText().toString())) {
+
+                Toast.makeText(this, "Provide a valid date", Toast.LENGTH_LONG).show();
+            }
+        }
     }
 }
