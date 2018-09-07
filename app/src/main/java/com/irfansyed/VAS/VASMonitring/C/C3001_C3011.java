@@ -15,7 +15,6 @@ import com.irfansyed.VAS.VASMonitring.R;
 
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 
 public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -889,7 +888,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_C3001) == false) {
+        /*if (Gothrough.IamHiden(ll_C3001) == false) {
             return false;
         }
 
@@ -957,7 +956,11 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3011) != false;
+        if(Gothrough.IamHiden(ll_C3011) != false == ){
+            return false;
+        }*/
+
+        return true;
     }
 
 }

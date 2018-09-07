@@ -26,7 +26,6 @@ import utils.Gothrough;
 
 public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
-
     //region Declaration
     Button btn_next;
 
@@ -366,8 +365,11 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
             if (rb_C3013_1.isChecked()) {
 
-                ll_C3015.setVisibility(View.VISIBLE);
+                ClearAllcontrol.ClearAll(ll_C3015);
+                ll_C3015.setVisibility(View.GONE);
+
                 ll_C3016.setVisibility(View.VISIBLE);
+
             } else {
 
                 ClearAllcontrol.ClearAll(ll_C3015);
@@ -378,20 +380,23 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
-
         if (compoundButton.getId() == R.id.rb_C3015_1
                 || compoundButton.getId() == R.id.rb_C3015_2
                 || compoundButton.getId() == R.id.rb_C3015_3
                 || compoundButton.getId() == R.id.rb_C3015_DK
                 || compoundButton.getId() == R.id.rb_C3015_RA) {
 
-            if (rb_C3015_DK.isChecked() || rb_C3015_RA.isChecked()) {
+            ClearAllcontrol.ClearAll(ll_C3016);
+            ll_C3016.setVisibility(View.GONE);
+
+            if (rb_C3015_1.isChecked() || rb_C3015_2.isChecked() || rb_C3015_3.isChecked()) {
+
+                ll_C3016.setVisibility(View.VISIBLE);
+
+            } else {
 
                 ClearAllcontrol.ClearAll(ll_C3016);
                 ll_C3016.setVisibility(View.GONE);
-            } else {
-
-                ll_C3016.setVisibility(View.VISIBLE);
             }
         }
 
@@ -405,9 +410,13 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3018_DK
                 || compoundButton.getId() == R.id.rb_C3018_RA) {
 
+            ClearAllcontrol.ClearAll(ll_C3018_1);
+            ll_C3018_1.setVisibility(View.GONE);
+
             if (rb_C3018_2.isChecked()) {
 
                 ll_C3018_1.setVisibility(View.VISIBLE);
+
             } else {
 
                 ClearAllcontrol.ClearAll(ll_C3018_1);
@@ -433,9 +442,11 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_C3019_u_1.isChecked()) {
 
                 ll_C3019_a.setVisibility(View.VISIBLE);
+
             } else if (rb_C3019_u_2.isChecked()) {
 
                 ll_C3019_b.setVisibility(View.VISIBLE);
+
             } else if (rb_C3019_u_3.isChecked()) {
 
                 ll_C3019_c.setVisibility(View.VISIBLE);
@@ -460,9 +471,11 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_C3021u_1.isChecked()) {
 
                 ll_C3021d.setVisibility(View.VISIBLE);
+
             } else if (rb_C3021u_2.isChecked()) {
 
                 ll_C3021m.setVisibility(View.VISIBLE);
+
             } else if (rb_C3021u_3.isChecked()) {
 
                 ll_C3021y.setVisibility(View.VISIBLE);
