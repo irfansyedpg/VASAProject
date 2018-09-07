@@ -14,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.GS.Q1101_Q1610;
-import com.irfansyed.VAS.VASMonitring.Other.Asection;
 import com.irfansyed.VAS.VASMonitring.Other.Genifno;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.Upload.SurveyCompletedActivity;
@@ -25,21 +24,22 @@ public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     TextView Profile_name;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.irfansyed.VAS.VASMonitring.R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(com.irfansyed.VAS.VASMonitring.R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         final MyPreferences preferences = new MyPreferences(this);
-        DrawerLayout drawer = (DrawerLayout) findViewById(com.irfansyed.VAS.VASMonitring.R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, com.irfansyed.VAS.VASMonitring.R.string.navigation_drawer_open, com.irfansyed.VAS.VASMonitring.R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(com.irfansyed.VAS.VASMonitring.R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
 
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -48,7 +48,7 @@ public class HomeActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(com.irfansyed.VAS.VASMonitring.R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -82,14 +82,13 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
         Intent intent = null;
 
-        int put_extr=0;
+        int put_extr = 0;
         final MyPreferences preferences = new MyPreferences(HomeActivity.this);
 
-         if (id == com.irfansyed.VAS.VASMonitring.R.id.upload_date) {
-             intent = new Intent(this, SurveyCompletedActivity.class);
+        if (id == com.irfansyed.VAS.VASMonitring.R.id.upload_date) {
+            intent = new Intent(this, SurveyCompletedActivity.class);
         }
-        if (id == com.irfansyed.VAS.VASMonitring.R.id.stage_1)
-        {
+        if (id == com.irfansyed.VAS.VASMonitring.R.id.stage_1) {
             intent = new Intent(this, Q1101_Q1610.class);
             put_extr = 1;
 
@@ -106,24 +105,24 @@ public class HomeActivity extends AppCompatActivity
         }
 
         if (id == R.id.stage_4) {
-            intent = new Intent(this, Asection.class);
+//            intent = new Intent(this, Asection.class);
             put_extr = 1;
 
         } else if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_e) {
-            preferences.setlanguage("en","US");
-            Toast.makeText(this,"Application Language Changed to English",Toast.LENGTH_LONG).show();
+            preferences.setlanguage("en", "US");
+            Toast.makeText(this, "Application Language Changed to English", Toast.LENGTH_LONG).show();
 
         } else if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_u) {
-            preferences.setlanguage("en","GB");
-            Toast.makeText(this,"Application Language Changed to Urdu",Toast.LENGTH_LONG).show();
+            preferences.setlanguage("en", "GB");
+            Toast.makeText(this, "Application Language Changed to Urdu", Toast.LENGTH_LONG).show();
         }
 
 
-intent.putExtra("put_extra",put_extr);
+        intent.putExtra("put_extra", put_extr);
         if (intent != null)
             startActivity(intent);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(com.irfansyed.VAS.VASMonitring.R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
