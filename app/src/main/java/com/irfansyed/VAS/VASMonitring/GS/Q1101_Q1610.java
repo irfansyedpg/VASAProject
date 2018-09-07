@@ -469,333 +469,333 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
     void Initialization() {
 
         // Button Next
-        btn_next = (Button) findViewById(R.id.btn_next);
+        btn_next = findViewById(R.id.btn_next);
 
         // Layouts
 
-        ll_Q1101 = (LinearLayout) findViewById(R.id.ll_Q1101);
-        ll_Q1102 = (LinearLayout) findViewById(R.id.ll_Q1102);
-        ll_Q1103 = (LinearLayout) findViewById(R.id.ll_Q1103);
-        ll_Q1202 = (LinearLayout) findViewById(R.id.ll_Q1202);
-        ll_Q1203 = (LinearLayout) findViewById(R.id.ll_Q1203);
-        ll_Q1204 = (LinearLayout) findViewById(R.id.ll_Q1204);
-        ll_Q1205 = (LinearLayout) findViewById(R.id.ll_Q1205);
-        ll_Q1206_d = (LinearLayout) findViewById(R.id.ll_Q1206_d);
-        ll_Q1206_m = (LinearLayout) findViewById(R.id.ll_Q1206_m);
-        ll_Q1206_y = (LinearLayout) findViewById(R.id.ll_Q1206_y);
-        ll_Q1207 = (LinearLayout) findViewById(R.id.ll_Q1207);
-        ll_Q1208 = (LinearLayout) findViewById(R.id.ll_Q1208);
-        ll_Q1209 = (LinearLayout) findViewById(R.id.ll_Q1209);
-        ll_Q1301 = (LinearLayout) findViewById(R.id.ll_Q1301);
-        ll_Q1302 = (LinearLayout) findViewById(R.id.ll_Q1302);
-        ll_Q1307 = (LinearLayout) findViewById(R.id.ll_Q1307);
-        ll_Q1308 = (LinearLayout) findViewById(R.id.ll_Q1308);
-        ll_Q1309 = (LinearLayout) findViewById(R.id.ll_Q1309);
-        ll_Q1310 = (LinearLayout) findViewById(R.id.ll_Q1310);
-        ll_Q1311 = (LinearLayout) findViewById(R.id.ll_Q1311);
-        ll_Q1312 = (LinearLayout) findViewById(R.id.ll_Q1312);
-        ll_Q1313 = (LinearLayout) findViewById(R.id.ll_Q1313);
-        ll_Q1401 = (LinearLayout) findViewById(R.id.ll_Q1401);
-        ll_Q1402 = (LinearLayout) findViewById(R.id.ll_Q1402);
-        ll_Q1403 = (LinearLayout) findViewById(R.id.ll_Q1403);
-        ll_Q1403_OT = (LinearLayout) findViewById(R.id.ll_Q1403_OT);
-        ll_Q1404 = (LinearLayout) findViewById(R.id.ll_Q1404);
-        ll_Q1405 = (LinearLayout) findViewById(R.id.ll_Q1405);
-        ll_Q1406 = (LinearLayout) findViewById(R.id.ll_Q1406);
-        ll_Q1407 = (LinearLayout) findViewById(R.id.ll_Q1407);
-        ll_Q1408 = (LinearLayout) findViewById(R.id.ll_Q1408);
-        ll_Q1409 = (LinearLayout) findViewById(R.id.ll_Q1409);
-        ll_Q1410 = (LinearLayout) findViewById(R.id.ll_Q1410);
-        ll_Q1411 = (LinearLayout) findViewById(R.id.ll_Q1411);
-        ll_Q1412 = (LinearLayout) findViewById(R.id.ll_Q1412);
-        ll_Q1413 = (LinearLayout) findViewById(R.id.ll_Q1413);
+        ll_Q1101 = findViewById(R.id.ll_Q1101);
+        ll_Q1102 = findViewById(R.id.ll_Q1102);
+        ll_Q1103 = findViewById(R.id.ll_Q1103);
+        ll_Q1202 = findViewById(R.id.ll_Q1202);
+        ll_Q1203 = findViewById(R.id.ll_Q1203);
+        ll_Q1204 = findViewById(R.id.ll_Q1204);
+        ll_Q1205 = findViewById(R.id.ll_Q1205);
+        ll_Q1206_d = findViewById(R.id.ll_Q1206_d);
+        ll_Q1206_m = findViewById(R.id.ll_Q1206_m);
+        ll_Q1206_y = findViewById(R.id.ll_Q1206_y);
+        ll_Q1207 = findViewById(R.id.ll_Q1207);
+        ll_Q1208 = findViewById(R.id.ll_Q1208);
+        ll_Q1209 = findViewById(R.id.ll_Q1209);
+        ll_Q1301 = findViewById(R.id.ll_Q1301);
+        ll_Q1302 = findViewById(R.id.ll_Q1302);
+        ll_Q1307 = findViewById(R.id.ll_Q1307);
+        ll_Q1308 = findViewById(R.id.ll_Q1308);
+        ll_Q1309 = findViewById(R.id.ll_Q1309);
+        ll_Q1310 = findViewById(R.id.ll_Q1310);
+        ll_Q1311 = findViewById(R.id.ll_Q1311);
+        ll_Q1312 = findViewById(R.id.ll_Q1312);
+        ll_Q1313 = findViewById(R.id.ll_Q1313);
+        ll_Q1401 = findViewById(R.id.ll_Q1401);
+        ll_Q1402 = findViewById(R.id.ll_Q1402);
+        ll_Q1403 = findViewById(R.id.ll_Q1403);
+        ll_Q1403_OT = findViewById(R.id.ll_Q1403_OT);
+        ll_Q1404 = findViewById(R.id.ll_Q1404);
+        ll_Q1405 = findViewById(R.id.ll_Q1405);
+        ll_Q1406 = findViewById(R.id.ll_Q1406);
+        ll_Q1407 = findViewById(R.id.ll_Q1407);
+        ll_Q1408 = findViewById(R.id.ll_Q1408);
+        ll_Q1409 = findViewById(R.id.ll_Q1409);
+        ll_Q1410 = findViewById(R.id.ll_Q1410);
+        ll_Q1411 = findViewById(R.id.ll_Q1411);
+        ll_Q1412 = findViewById(R.id.ll_Q1412);
+        ll_Q1413 = findViewById(R.id.ll_Q1413);
 
-        ll_Q1414_1 = (LinearLayout) findViewById(R.id.ll_Q1414_1);
-        ll_Q1414_2 = (LinearLayout) findViewById(R.id.ll_Q1414_2);
-        ll_Q1414_3 = (LinearLayout) findViewById(R.id.ll_Q1414_3);
-        ll_Q1414_4 = (LinearLayout) findViewById(R.id.ll_Q1414_4);
-        ll_Q1414_5 = (LinearLayout) findViewById(R.id.ll_Q1414_5);
-        ll_Q1414_6 = (LinearLayout) findViewById(R.id.ll_Q1414_6);
-        ll_Q1414_7 = (LinearLayout) findViewById(R.id.ll_Q1414_7);
-        ll_Q1414_8 = (LinearLayout) findViewById(R.id.ll_Q1414_8);
-        ll_Q1414_9 = (LinearLayout) findViewById(R.id.ll_Q1414_9);
-        ll_Q1414_10 = (LinearLayout) findViewById(R.id.ll_Q1414_10);
-        ll_Q1415 = (LinearLayout) findViewById(R.id.ll_Q1415);
+        ll_Q1414_1 = findViewById(R.id.ll_Q1414_1);
+        ll_Q1414_2 = findViewById(R.id.ll_Q1414_2);
+        ll_Q1414_3 = findViewById(R.id.ll_Q1414_3);
+        ll_Q1414_4 = findViewById(R.id.ll_Q1414_4);
+        ll_Q1414_5 = findViewById(R.id.ll_Q1414_5);
+        ll_Q1414_6 = findViewById(R.id.ll_Q1414_6);
+        ll_Q1414_7 = findViewById(R.id.ll_Q1414_7);
+        ll_Q1414_8 = findViewById(R.id.ll_Q1414_8);
+        ll_Q1414_9 = findViewById(R.id.ll_Q1414_9);
+        ll_Q1414_10 = findViewById(R.id.ll_Q1414_10);
+        ll_Q1415 = findViewById(R.id.ll_Q1415);
 
 
-        ll_Q1416 = (LinearLayout) findViewById(R.id.ll_Q1416);
-        ll_Q1416_OT = (LinearLayout) findViewById(R.id.ll_Q1416_OT);
-        ll_Q1417 = (LinearLayout) findViewById(R.id.ll_Q1417);
-        ll_Q1417_OT = (LinearLayout) findViewById(R.id.ll_Q1417_OT);
-        ll_Q1418 = (LinearLayout) findViewById(R.id.ll_Q1418);
-        ll_Q1418_OT = (LinearLayout) findViewById(R.id.ll_Q1418_OT);
-        ll_Q1419 = (LinearLayout) findViewById(R.id.ll_Q1419);
-        ll_Q1419_OT = (LinearLayout) findViewById(R.id.ll_Q1419_OT);
-        ll_Q1420 = (LinearLayout) findViewById(R.id.ll_Q1420);
-        ll_Q1420_OT = (LinearLayout) findViewById(R.id.ll_Q1420_OT);
-        ll_Q1421 = (LinearLayout) findViewById(R.id.ll_Q1421);
-        ll_Q1421_OT = (LinearLayout) findViewById(R.id.ll_Q1421_OT);
-        ll_Q1501 = (LinearLayout) findViewById(R.id.ll_Q1501);
-        ll_Q1502 = (LinearLayout) findViewById(R.id.ll_Q1502);
-        ll_Q1503 = (LinearLayout) findViewById(R.id.ll_Q1503);
-        ll_Q1503_OT = (LinearLayout) findViewById(R.id.ll_Q1503_OT);
-        ll_Q1601 = (LinearLayout) findViewById(R.id.ll_Q1601);
-        ll_Q1602 = (LinearLayout) findViewById(R.id.ll_Q1602);
-        ll_Q1603 = (LinearLayout) findViewById(R.id.ll_Q1603);
-        ll_Q1604 = (LinearLayout) findViewById(R.id.ll_Q1604);
-        ll_Q1604_OT = (LinearLayout) findViewById(R.id.ll_Q1604_OT);
-        ll_Q1605 = (LinearLayout) findViewById(R.id.ll_Q1605);
-        ll_Q1606 = (LinearLayout) findViewById(R.id.ll_Q1606);
-        ll_Q1607 = (LinearLayout) findViewById(R.id.ll_Q1607);
-        ll_Q1608 = (LinearLayout) findViewById(R.id.ll_Q1608);
-        ll_Q1609 = (LinearLayout) findViewById(R.id.ll_Q1609);
-        ll_Q1610 = (LinearLayout) findViewById(R.id.ll_Q1610);
+        ll_Q1416 = findViewById(R.id.ll_Q1416);
+        ll_Q1416_OT = findViewById(R.id.ll_Q1416_OT);
+        ll_Q1417 = findViewById(R.id.ll_Q1417);
+        ll_Q1417_OT = findViewById(R.id.ll_Q1417_OT);
+        ll_Q1418 = findViewById(R.id.ll_Q1418);
+        ll_Q1418_OT = findViewById(R.id.ll_Q1418_OT);
+        ll_Q1419 = findViewById(R.id.ll_Q1419);
+        ll_Q1419_OT = findViewById(R.id.ll_Q1419_OT);
+        ll_Q1420 = findViewById(R.id.ll_Q1420);
+        ll_Q1420_OT = findViewById(R.id.ll_Q1420_OT);
+        ll_Q1421 = findViewById(R.id.ll_Q1421);
+        ll_Q1421_OT = findViewById(R.id.ll_Q1421_OT);
+        ll_Q1501 = findViewById(R.id.ll_Q1501);
+        ll_Q1502 = findViewById(R.id.ll_Q1502);
+        ll_Q1503 = findViewById(R.id.ll_Q1503);
+        ll_Q1503_OT = findViewById(R.id.ll_Q1503_OT);
+        ll_Q1601 = findViewById(R.id.ll_Q1601);
+        ll_Q1602 = findViewById(R.id.ll_Q1602);
+        ll_Q1603 = findViewById(R.id.ll_Q1603);
+        ll_Q1604 = findViewById(R.id.ll_Q1604);
+        ll_Q1604_OT = findViewById(R.id.ll_Q1604_OT);
+        ll_Q1605 = findViewById(R.id.ll_Q1605);
+        ll_Q1606 = findViewById(R.id.ll_Q1606);
+        ll_Q1607 = findViewById(R.id.ll_Q1607);
+        ll_Q1608 = findViewById(R.id.ll_Q1608);
+        ll_Q1609 = findViewById(R.id.ll_Q1609);
+        ll_Q1610 = findViewById(R.id.ll_Q1610);
 
         // Radio Buttons
 
-        rb_Q1101_1 = (RadioButton) findViewById(R.id.rb_Q1101_1);
-        rb_Q1101_2 = (RadioButton) findViewById(R.id.rb_Q1101_2);
-        rb_Q1101_3 = (RadioButton) findViewById(R.id.rb_Q1101_3);
-        rb_Q1102_1 = (RadioButton) findViewById(R.id.rb_Q1102_1);
-        rb_Q1102_2 = (RadioButton) findViewById(R.id.rb_Q1102_2);
-        rb_Q1102_3 = (RadioButton) findViewById(R.id.rb_Q1102_3);
-        rb_Q1103_1 = (RadioButton) findViewById(R.id.rb_Q1103_1);
-        rb_Q1103_2 = (RadioButton) findViewById(R.id.rb_Q1103_2);
-        rb_Q1103_DK = (RadioButton) findViewById(R.id.rb_Q1103_DK);
-        rb_Q1203_1 = (RadioButton) findViewById(R.id.rb_Q1203_1);
-        rb_Q1203_2 = (RadioButton) findViewById(R.id.rb_Q1203_2);
-        rb_Q1207_1 = (RadioButton) findViewById(R.id.rb_Q1207_1);
-        rb_Q1207_2 = (RadioButton) findViewById(R.id.rb_Q1207_2);
-        rb_Q1207_DK = (RadioButton) findViewById(R.id.rb_Q1207_DK);
-        rb_Q1311_1 = (RadioButton) findViewById(R.id.rb_Q1311_1);
-        rb_Q1311_2 = (RadioButton) findViewById(R.id.rb_Q1311_2);
-        rb_Q1311_3 = (RadioButton) findViewById(R.id.rb_Q1311_3);
-        rb_Q1311_4 = (RadioButton) findViewById(R.id.rb_Q1311_4);
-        rb_Q1311_5 = (RadioButton) findViewById(R.id.rb_Q1311_5);
-        rb_Q1311_6 = (RadioButton) findViewById(R.id.rb_Q1311_6);
-        rb_Q1311_7 = (RadioButton) findViewById(R.id.rb_Q1311_7);
-        rb_Q1311_8 = (RadioButton) findViewById(R.id.rb_Q1311_8);
-        rb_Q1311_9 = (RadioButton) findViewById(R.id.rb_Q1311_9);
-        rb_Q1311_10 = (RadioButton) findViewById(R.id.rb_Q1311_10);
-        rb_Q1311_11 = (RadioButton) findViewById(R.id.rb_Q1311_11);
-        rb_Q1311_12 = (RadioButton) findViewById(R.id.rb_Q1311_12);
-        rb_Q1402_1 = (RadioButton) findViewById(R.id.rb_Q1402_1);
-        rb_Q1402_2 = (RadioButton) findViewById(R.id.rb_Q1402_2);
-        rb_Q1402_DK = (RadioButton) findViewById(R.id.rb_Q1402_DK);
-        rb_Q1403_1 = (RadioButton) findViewById(R.id.rb_Q1403_1);
-        rb_Q1403_2 = (RadioButton) findViewById(R.id.rb_Q1403_2);
-        rb_Q1403_3 = (RadioButton) findViewById(R.id.rb_Q1403_3);
-        rb_Q1403_4 = (RadioButton) findViewById(R.id.rb_Q1403_4);
-        rb_Q1403_5 = (RadioButton) findViewById(R.id.rb_Q1403_5);
-        rb_Q1403_6 = (RadioButton) findViewById(R.id.rb_Q1403_6);
-        rb_Q1403_7 = (RadioButton) findViewById(R.id.rb_Q1403_7);
-        rb_Q1403_8 = (RadioButton) findViewById(R.id.rb_Q1403_8);
-        rb_Q1403_9 = (RadioButton) findViewById(R.id.rb_Q1403_9);
-        rb_Q1403_10 = (RadioButton) findViewById(R.id.rb_Q1403_10);
-        rb_Q1403_11 = (RadioButton) findViewById(R.id.rb_Q1403_11);
-        rb_Q1403_12 = (RadioButton) findViewById(R.id.rb_Q1403_12);
-        rb_Q1403_13 = (RadioButton) findViewById(R.id.rb_Q1403_13);
-        rb_Q1403_14 = (RadioButton) findViewById(R.id.rb_Q1403_14);
-        rb_Q1404_1 = (RadioButton) findViewById(R.id.rb_Q1404_1);
-        rb_Q1404_2 = (RadioButton) findViewById(R.id.rb_Q1404_2);
-        rb_Q1404_DK = (RadioButton) findViewById(R.id.rb_Q1404_DK);
-        rb_Q1405_1 = (RadioButton) findViewById(R.id.rb_Q1405_1);
-        rb_Q1405_2 = (RadioButton) findViewById(R.id.rb_Q1405_2);
-        rb_Q1407_1 = (RadioButton) findViewById(R.id.rb_Q1407_1);
-        rb_Q1407_2 = (RadioButton) findViewById(R.id.rb_Q1407_2);
-        rb_Q1407_DK = (RadioButton) findViewById(R.id.rb_Q1407_DK);
-        rb_Q1408_1 = (RadioButton) findViewById(R.id.rb_Q1408_1);
-        rb_Q1408_2 = (RadioButton) findViewById(R.id.rb_Q1408_2);
-        rb_Q1408_3 = (RadioButton) findViewById(R.id.rb_Q1408_3);
-        rb_Q1408_DK = (RadioButton) findViewById(R.id.rb_Q1408_DK);
-        rb_Q1410_1 = (RadioButton) findViewById(R.id.rb_Q1410_1);
-        rb_Q1410_2 = (RadioButton) findViewById(R.id.rb_Q1410_2);
-        rb_Q1410_3 = (RadioButton) findViewById(R.id.rb_Q1410_3);
-        rb_Q1410_4 = (RadioButton) findViewById(R.id.rb_Q1410_4);
-        rb_Q1410_5 = (RadioButton) findViewById(R.id.rb_Q1410_5);
-        rb_Q1413_1 = (RadioButton) findViewById(R.id.rb_Q1413_1);
-        rb_Q1413_2 = (RadioButton) findViewById(R.id.rb_Q1413_2);
-        rb_Q1413_DK = (RadioButton) findViewById(R.id.rb_Q1413_DK);
-        rb_Q1414_1_1 = (RadioButton) findViewById(R.id.rb_Q1414_1_1);
-        rb_Q1414_1_2 = (RadioButton) findViewById(R.id.rb_Q1414_1_2);
-        rb_Q1414_1_DK = (RadioButton) findViewById(R.id.rb_Q1414_1_DK);
-        rb_Q1414_2_1 = (RadioButton) findViewById(R.id.rb_Q1414_2_1);
-        rb_Q1414_2_2 = (RadioButton) findViewById(R.id.rb_Q1414_2_2);
-        rb_Q1414_2_DK = (RadioButton) findViewById(R.id.rb_Q1414_2_DK);
-        rb_Q1414_3_1 = (RadioButton) findViewById(R.id.rb_Q1414_3_1);
-        rb_Q1414_3_2 = (RadioButton) findViewById(R.id.rb_Q1414_3_2);
-        rb_Q1414_3_DK = (RadioButton) findViewById(R.id.rb_Q1414_3_DK);
-        rb_Q1414_4_1 = (RadioButton) findViewById(R.id.rb_Q1414_4_1);
-        rb_Q1414_4_2 = (RadioButton) findViewById(R.id.rb_Q1414_4_2);
-        rb_Q1414_4_DK = (RadioButton) findViewById(R.id.rb_Q1414_4_DK);
-        rb_Q1414_5_1 = (RadioButton) findViewById(R.id.rb_Q1414_5_1);
-        rb_Q1414_5_2 = (RadioButton) findViewById(R.id.rb_Q1414_5_2);
-        rb_Q1414_5_DK = (RadioButton) findViewById(R.id.rb_Q1414_5_DK);
-        rb_Q1414_6_1 = (RadioButton) findViewById(R.id.rb_Q1414_6_1);
-        rb_Q1414_6_2 = (RadioButton) findViewById(R.id.rb_Q1414_6_2);
-        rb_Q1414_6_DK = (RadioButton) findViewById(R.id.rb_Q1414_6_DK);
-        rb_Q1414_7_1 = (RadioButton) findViewById(R.id.rb_Q1414_7_1);
-        rb_Q1414_7_2 = (RadioButton) findViewById(R.id.rb_Q1414_7_2);
-        rb_Q1414_7_DK = (RadioButton) findViewById(R.id.rb_Q1414_7_DK);
-        rb_Q1414_8_1 = (RadioButton) findViewById(R.id.rb_Q1414_8_1);
-        rb_Q1414_8_2 = (RadioButton) findViewById(R.id.rb_Q1414_8_2);
-        rb_Q1414_8_DK = (RadioButton) findViewById(R.id.rb_Q1414_8_DK);
-        rb_Q1414_9_1 = (RadioButton) findViewById(R.id.rb_Q1414_9_1);
-        rb_Q1414_9_2 = (RadioButton) findViewById(R.id.rb_Q1414_9_2);
-        rb_Q1414_9_DK = (RadioButton) findViewById(R.id.rb_Q1414_9_DK);
-        rb_Q1414_10_1 = (RadioButton) findViewById(R.id.rb_Q1414_10_1);
-        rb_Q1414_10_2 = (RadioButton) findViewById(R.id.rb_Q1414_10_2);
-        rb_Q1414_10_DK = (RadioButton) findViewById(R.id.rb_Q1414_10_DK);
-        rb_Q1415_1 = (RadioButton) findViewById(R.id.rb_Q1415_1);
-        rb_Q1415_2 = (RadioButton) findViewById(R.id.rb_Q1415_2);
-        rb_Q1415_3 = (RadioButton) findViewById(R.id.rb_Q1415_3);
-        rb_Q1415_4 = (RadioButton) findViewById(R.id.rb_Q1415_4);
-        rb_Q1415_5 = (RadioButton) findViewById(R.id.rb_Q1415_5);
-        rb_Q1415_6 = (RadioButton) findViewById(R.id.rb_Q1415_6);
-        rb_Q1415_7 = (RadioButton) findViewById(R.id.rb_Q1415_7);
-        rb_Q1415_8 = (RadioButton) findViewById(R.id.rb_Q1415_8);
-        rb_Q1415_9 = (RadioButton) findViewById(R.id.rb_Q1415_9);
-        rb_Q1415_10 = (RadioButton) findViewById(R.id.rb_Q1415_10);
-        rb_Q1415_11 = (RadioButton) findViewById(R.id.rb_Q1415_11);
-        rb_Q1415_12 = (RadioButton) findViewById(R.id.rb_Q1415_12);
-        rb_Q1415_DK = (RadioButton) findViewById(R.id.rb_Q1415_DK);
-        rb_Q1416_1 = (RadioButton) findViewById(R.id.rb_Q1416_1);
-        rb_Q1416_2 = (RadioButton) findViewById(R.id.rb_Q1416_2);
-        rb_Q1416_3 = (RadioButton) findViewById(R.id.rb_Q1416_3);
-        rb_Q1416_4 = (RadioButton) findViewById(R.id.rb_Q1416_4);
-        rb_Q1416_5 = (RadioButton) findViewById(R.id.rb_Q1416_5);
-        rb_Q1416_6 = (RadioButton) findViewById(R.id.rb_Q1416_6);
-        rb_Q1416_7 = (RadioButton) findViewById(R.id.rb_Q1416_7);
-        rb_Q1416_8 = (RadioButton) findViewById(R.id.rb_Q1416_8);
-        rb_Q1416_DK = (RadioButton) findViewById(R.id.rb_Q1416_DK);
-        rb_Q1417_1 = (RadioButton) findViewById(R.id.rb_Q1417_1);
-        rb_Q1417_2 = (RadioButton) findViewById(R.id.rb_Q1417_2);
-        rb_Q1417_3 = (RadioButton) findViewById(R.id.rb_Q1417_3);
-        rb_Q1417_4 = (RadioButton) findViewById(R.id.rb_Q1417_4);
-        rb_Q1417_5 = (RadioButton) findViewById(R.id.rb_Q1417_5);
-        rb_Q1417_6 = (RadioButton) findViewById(R.id.rb_Q1417_6);
-        rb_Q1417_7 = (RadioButton) findViewById(R.id.rb_Q1417_7);
-        rb_Q1417_8 = (RadioButton) findViewById(R.id.rb_Q1417_8);
-        rb_Q1417_9 = (RadioButton) findViewById(R.id.rb_Q1417_9);
-        rb_Q1417_DK = (RadioButton) findViewById(R.id.rb_Q1417_DK);
-        rb_Q1418_1 = (RadioButton) findViewById(R.id.rb_Q1418_1);
-        rb_Q1418_2 = (RadioButton) findViewById(R.id.rb_Q1418_2);
-        rb_Q1418_3 = (RadioButton) findViewById(R.id.rb_Q1418_3);
-        rb_Q1418_4 = (RadioButton) findViewById(R.id.rb_Q1418_4);
-        rb_Q1418_5 = (RadioButton) findViewById(R.id.rb_Q1418_5);
-        rb_Q1418_6 = (RadioButton) findViewById(R.id.rb_Q1418_6);
-        rb_Q1418_7 = (RadioButton) findViewById(R.id.rb_Q1418_7);
-        rb_Q1418_8 = (RadioButton) findViewById(R.id.rb_Q1418_8);
-        rb_Q1418_9 = (RadioButton) findViewById(R.id.rb_Q1418_9);
-        rb_Q1418_DK = (RadioButton) findViewById(R.id.rb_Q1418_DK);
-        rb_Q1419_1 = (RadioButton) findViewById(R.id.rb_Q1419_1);
-        rb_Q1419_2 = (RadioButton) findViewById(R.id.rb_Q1419_2);
-        rb_Q1419_3 = (RadioButton) findViewById(R.id.rb_Q1419_3);
-        rb_Q1419_4 = (RadioButton) findViewById(R.id.rb_Q1419_4);
-        rb_Q1419_5 = (RadioButton) findViewById(R.id.rb_Q1419_5);
-        rb_Q1419_6 = (RadioButton) findViewById(R.id.rb_Q1419_6);
-        rb_Q1419_7 = (RadioButton) findViewById(R.id.rb_Q1419_7);
-        rb_Q1419_8 = (RadioButton) findViewById(R.id.rb_Q1419_8);
-        rb_Q1419_DK = (RadioButton) findViewById(R.id.rb_Q1419_DK);
-        rb_Q1420_1 = (RadioButton) findViewById(R.id.rb_Q1420_1);
-        rb_Q1420_2 = (RadioButton) findViewById(R.id.rb_Q1420_2);
-        rb_Q1420_3 = (RadioButton) findViewById(R.id.rb_Q1420_3);
-        rb_Q1420_4 = (RadioButton) findViewById(R.id.rb_Q1420_4);
-        rb_Q1420_5 = (RadioButton) findViewById(R.id.rb_Q1420_5);
-        rb_Q1420_6 = (RadioButton) findViewById(R.id.rb_Q1420_6);
-        rb_Q1420_7 = (RadioButton) findViewById(R.id.rb_Q1420_7);
-        rb_Q1420_DK = (RadioButton) findViewById(R.id.rb_Q1420_DK);
+        rb_Q1101_1 = findViewById(R.id.rb_Q1101_1);
+        rb_Q1101_2 = findViewById(R.id.rb_Q1101_2);
+        rb_Q1101_3 = findViewById(R.id.rb_Q1101_3);
+        rb_Q1102_1 = findViewById(R.id.rb_Q1102_1);
+        rb_Q1102_2 = findViewById(R.id.rb_Q1102_2);
+        rb_Q1102_3 = findViewById(R.id.rb_Q1102_3);
+        rb_Q1103_1 = findViewById(R.id.rb_Q1103_1);
+        rb_Q1103_2 = findViewById(R.id.rb_Q1103_2);
+        rb_Q1103_DK = findViewById(R.id.rb_Q1103_DK);
+        rb_Q1203_1 = findViewById(R.id.rb_Q1203_1);
+        rb_Q1203_2 = findViewById(R.id.rb_Q1203_2);
+        rb_Q1207_1 = findViewById(R.id.rb_Q1207_1);
+        rb_Q1207_2 = findViewById(R.id.rb_Q1207_2);
+        rb_Q1207_DK = findViewById(R.id.rb_Q1207_DK);
+        rb_Q1311_1 = findViewById(R.id.rb_Q1311_1);
+        rb_Q1311_2 = findViewById(R.id.rb_Q1311_2);
+        rb_Q1311_3 = findViewById(R.id.rb_Q1311_3);
+        rb_Q1311_4 = findViewById(R.id.rb_Q1311_4);
+        rb_Q1311_5 = findViewById(R.id.rb_Q1311_5);
+        rb_Q1311_6 = findViewById(R.id.rb_Q1311_6);
+        rb_Q1311_7 = findViewById(R.id.rb_Q1311_7);
+        rb_Q1311_8 = findViewById(R.id.rb_Q1311_8);
+        rb_Q1311_9 = findViewById(R.id.rb_Q1311_9);
+        rb_Q1311_10 = findViewById(R.id.rb_Q1311_10);
+        rb_Q1311_11 = findViewById(R.id.rb_Q1311_11);
+        rb_Q1311_12 = findViewById(R.id.rb_Q1311_12);
+        rb_Q1402_1 = findViewById(R.id.rb_Q1402_1);
+        rb_Q1402_2 = findViewById(R.id.rb_Q1402_2);
+        rb_Q1402_DK = findViewById(R.id.rb_Q1402_DK);
+        rb_Q1403_1 = findViewById(R.id.rb_Q1403_1);
+        rb_Q1403_2 = findViewById(R.id.rb_Q1403_2);
+        rb_Q1403_3 = findViewById(R.id.rb_Q1403_3);
+        rb_Q1403_4 = findViewById(R.id.rb_Q1403_4);
+        rb_Q1403_5 = findViewById(R.id.rb_Q1403_5);
+        rb_Q1403_6 = findViewById(R.id.rb_Q1403_6);
+        rb_Q1403_7 = findViewById(R.id.rb_Q1403_7);
+        rb_Q1403_8 = findViewById(R.id.rb_Q1403_8);
+        rb_Q1403_9 = findViewById(R.id.rb_Q1403_9);
+        rb_Q1403_10 = findViewById(R.id.rb_Q1403_10);
+        rb_Q1403_11 = findViewById(R.id.rb_Q1403_11);
+        rb_Q1403_12 = findViewById(R.id.rb_Q1403_12);
+        rb_Q1403_13 = findViewById(R.id.rb_Q1403_13);
+        rb_Q1403_14 = findViewById(R.id.rb_Q1403_14);
+        rb_Q1404_1 = findViewById(R.id.rb_Q1404_1);
+        rb_Q1404_2 = findViewById(R.id.rb_Q1404_2);
+        rb_Q1404_DK = findViewById(R.id.rb_Q1404_DK);
+        rb_Q1405_1 = findViewById(R.id.rb_Q1405_1);
+        rb_Q1405_2 = findViewById(R.id.rb_Q1405_2);
+        rb_Q1407_1 = findViewById(R.id.rb_Q1407_1);
+        rb_Q1407_2 = findViewById(R.id.rb_Q1407_2);
+        rb_Q1407_DK = findViewById(R.id.rb_Q1407_DK);
+        rb_Q1408_1 = findViewById(R.id.rb_Q1408_1);
+        rb_Q1408_2 = findViewById(R.id.rb_Q1408_2);
+        rb_Q1408_3 = findViewById(R.id.rb_Q1408_3);
+        rb_Q1408_DK = findViewById(R.id.rb_Q1408_DK);
+        rb_Q1410_1 = findViewById(R.id.rb_Q1410_1);
+        rb_Q1410_2 = findViewById(R.id.rb_Q1410_2);
+        rb_Q1410_3 = findViewById(R.id.rb_Q1410_3);
+        rb_Q1410_4 = findViewById(R.id.rb_Q1410_4);
+        rb_Q1410_5 = findViewById(R.id.rb_Q1410_5);
+        rb_Q1413_1 = findViewById(R.id.rb_Q1413_1);
+        rb_Q1413_2 = findViewById(R.id.rb_Q1413_2);
+        rb_Q1413_DK = findViewById(R.id.rb_Q1413_DK);
+        rb_Q1414_1_1 = findViewById(R.id.rb_Q1414_1_1);
+        rb_Q1414_1_2 = findViewById(R.id.rb_Q1414_1_2);
+        rb_Q1414_1_DK = findViewById(R.id.rb_Q1414_1_DK);
+        rb_Q1414_2_1 = findViewById(R.id.rb_Q1414_2_1);
+        rb_Q1414_2_2 = findViewById(R.id.rb_Q1414_2_2);
+        rb_Q1414_2_DK = findViewById(R.id.rb_Q1414_2_DK);
+        rb_Q1414_3_1 = findViewById(R.id.rb_Q1414_3_1);
+        rb_Q1414_3_2 = findViewById(R.id.rb_Q1414_3_2);
+        rb_Q1414_3_DK = findViewById(R.id.rb_Q1414_3_DK);
+        rb_Q1414_4_1 = findViewById(R.id.rb_Q1414_4_1);
+        rb_Q1414_4_2 = findViewById(R.id.rb_Q1414_4_2);
+        rb_Q1414_4_DK = findViewById(R.id.rb_Q1414_4_DK);
+        rb_Q1414_5_1 = findViewById(R.id.rb_Q1414_5_1);
+        rb_Q1414_5_2 = findViewById(R.id.rb_Q1414_5_2);
+        rb_Q1414_5_DK = findViewById(R.id.rb_Q1414_5_DK);
+        rb_Q1414_6_1 = findViewById(R.id.rb_Q1414_6_1);
+        rb_Q1414_6_2 = findViewById(R.id.rb_Q1414_6_2);
+        rb_Q1414_6_DK = findViewById(R.id.rb_Q1414_6_DK);
+        rb_Q1414_7_1 = findViewById(R.id.rb_Q1414_7_1);
+        rb_Q1414_7_2 = findViewById(R.id.rb_Q1414_7_2);
+        rb_Q1414_7_DK = findViewById(R.id.rb_Q1414_7_DK);
+        rb_Q1414_8_1 = findViewById(R.id.rb_Q1414_8_1);
+        rb_Q1414_8_2 = findViewById(R.id.rb_Q1414_8_2);
+        rb_Q1414_8_DK = findViewById(R.id.rb_Q1414_8_DK);
+        rb_Q1414_9_1 = findViewById(R.id.rb_Q1414_9_1);
+        rb_Q1414_9_2 = findViewById(R.id.rb_Q1414_9_2);
+        rb_Q1414_9_DK = findViewById(R.id.rb_Q1414_9_DK);
+        rb_Q1414_10_1 = findViewById(R.id.rb_Q1414_10_1);
+        rb_Q1414_10_2 = findViewById(R.id.rb_Q1414_10_2);
+        rb_Q1414_10_DK = findViewById(R.id.rb_Q1414_10_DK);
+        rb_Q1415_1 = findViewById(R.id.rb_Q1415_1);
+        rb_Q1415_2 = findViewById(R.id.rb_Q1415_2);
+        rb_Q1415_3 = findViewById(R.id.rb_Q1415_3);
+        rb_Q1415_4 = findViewById(R.id.rb_Q1415_4);
+        rb_Q1415_5 = findViewById(R.id.rb_Q1415_5);
+        rb_Q1415_6 = findViewById(R.id.rb_Q1415_6);
+        rb_Q1415_7 = findViewById(R.id.rb_Q1415_7);
+        rb_Q1415_8 = findViewById(R.id.rb_Q1415_8);
+        rb_Q1415_9 = findViewById(R.id.rb_Q1415_9);
+        rb_Q1415_10 = findViewById(R.id.rb_Q1415_10);
+        rb_Q1415_11 = findViewById(R.id.rb_Q1415_11);
+        rb_Q1415_12 = findViewById(R.id.rb_Q1415_12);
+        rb_Q1415_DK = findViewById(R.id.rb_Q1415_DK);
+        rb_Q1416_1 = findViewById(R.id.rb_Q1416_1);
+        rb_Q1416_2 = findViewById(R.id.rb_Q1416_2);
+        rb_Q1416_3 = findViewById(R.id.rb_Q1416_3);
+        rb_Q1416_4 = findViewById(R.id.rb_Q1416_4);
+        rb_Q1416_5 = findViewById(R.id.rb_Q1416_5);
+        rb_Q1416_6 = findViewById(R.id.rb_Q1416_6);
+        rb_Q1416_7 = findViewById(R.id.rb_Q1416_7);
+        rb_Q1416_8 = findViewById(R.id.rb_Q1416_8);
+        rb_Q1416_DK = findViewById(R.id.rb_Q1416_DK);
+        rb_Q1417_1 = findViewById(R.id.rb_Q1417_1);
+        rb_Q1417_2 = findViewById(R.id.rb_Q1417_2);
+        rb_Q1417_3 = findViewById(R.id.rb_Q1417_3);
+        rb_Q1417_4 = findViewById(R.id.rb_Q1417_4);
+        rb_Q1417_5 = findViewById(R.id.rb_Q1417_5);
+        rb_Q1417_6 = findViewById(R.id.rb_Q1417_6);
+        rb_Q1417_7 = findViewById(R.id.rb_Q1417_7);
+        rb_Q1417_8 = findViewById(R.id.rb_Q1417_8);
+        rb_Q1417_9 = findViewById(R.id.rb_Q1417_9);
+        rb_Q1417_DK = findViewById(R.id.rb_Q1417_DK);
+        rb_Q1418_1 = findViewById(R.id.rb_Q1418_1);
+        rb_Q1418_2 = findViewById(R.id.rb_Q1418_2);
+        rb_Q1418_3 = findViewById(R.id.rb_Q1418_3);
+        rb_Q1418_4 = findViewById(R.id.rb_Q1418_4);
+        rb_Q1418_5 = findViewById(R.id.rb_Q1418_5);
+        rb_Q1418_6 = findViewById(R.id.rb_Q1418_6);
+        rb_Q1418_7 = findViewById(R.id.rb_Q1418_7);
+        rb_Q1418_8 = findViewById(R.id.rb_Q1418_8);
+        rb_Q1418_9 = findViewById(R.id.rb_Q1418_9);
+        rb_Q1418_DK = findViewById(R.id.rb_Q1418_DK);
+        rb_Q1419_1 = findViewById(R.id.rb_Q1419_1);
+        rb_Q1419_2 = findViewById(R.id.rb_Q1419_2);
+        rb_Q1419_3 = findViewById(R.id.rb_Q1419_3);
+        rb_Q1419_4 = findViewById(R.id.rb_Q1419_4);
+        rb_Q1419_5 = findViewById(R.id.rb_Q1419_5);
+        rb_Q1419_6 = findViewById(R.id.rb_Q1419_6);
+        rb_Q1419_7 = findViewById(R.id.rb_Q1419_7);
+        rb_Q1419_8 = findViewById(R.id.rb_Q1419_8);
+        rb_Q1419_DK = findViewById(R.id.rb_Q1419_DK);
+        rb_Q1420_1 = findViewById(R.id.rb_Q1420_1);
+        rb_Q1420_2 = findViewById(R.id.rb_Q1420_2);
+        rb_Q1420_3 = findViewById(R.id.rb_Q1420_3);
+        rb_Q1420_4 = findViewById(R.id.rb_Q1420_4);
+        rb_Q1420_5 = findViewById(R.id.rb_Q1420_5);
+        rb_Q1420_6 = findViewById(R.id.rb_Q1420_6);
+        rb_Q1420_7 = findViewById(R.id.rb_Q1420_7);
+        rb_Q1420_DK = findViewById(R.id.rb_Q1420_DK);
 
-        rb_Q1421_1 = (RadioButton) findViewById(R.id.rb_Q1421_1);
-        rb_Q1421_2 = (RadioButton) findViewById(R.id.rb_Q1421_2);
-        rb_Q1421_3 = (RadioButton) findViewById(R.id.rb_Q1421_3);
-        rb_Q1421_4 = (RadioButton) findViewById(R.id.rb_Q1421_4);
-        rb_Q1421_5 = (RadioButton) findViewById(R.id.rb_Q1421_5);
-        rb_Q1421_6 = (RadioButton) findViewById(R.id.rb_Q1421_6);
-        rb_Q1421_7 = (RadioButton) findViewById(R.id.rb_Q1421_7);
-        rb_Q1421_8 = (RadioButton) findViewById(R.id.rb_Q1421_8);
-        rb_Q1421_9 = (RadioButton) findViewById(R.id.rb_Q1421_9);
-        rb_Q1421_10 = (RadioButton) findViewById(R.id.rb_Q1421_10);
-        rb_Q1421_DK = (RadioButton) findViewById(R.id.rb_Q1421_DK);
-        rb_Q1501_1 = (RadioButton) findViewById(R.id.rb_Q1501_1);
-        rb_Q1501_2 = (RadioButton) findViewById(R.id.rb_Q1501_2);
-        rb_Q1503_1 = (RadioButton) findViewById(R.id.rb_Q1503_1);
-        rb_Q1503_2 = (RadioButton) findViewById(R.id.rb_Q1503_2);
-        rb_Q1503_3 = (RadioButton) findViewById(R.id.rb_Q1503_3);
-        rb_Q1503_4 = (RadioButton) findViewById(R.id.rb_Q1503_4);
-        rb_Q1503_5 = (RadioButton) findViewById(R.id.rb_Q1503_5);
-        rb_Q1503_6 = (RadioButton) findViewById(R.id.rb_Q1503_6);
-        rb_Q1503_7 = (RadioButton) findViewById(R.id.rb_Q1503_7);
-        rb_Q1503_8 = (RadioButton) findViewById(R.id.rb_Q1503_8);
-        rb_Q1503_9 = (RadioButton) findViewById(R.id.rb_Q1503_9);
-        rb_Q1503_10 = (RadioButton) findViewById(R.id.rb_Q1503_10);
-        rb_Q1503_11 = (RadioButton) findViewById(R.id.rb_Q1503_11);
-        rb_Q1503_12 = (RadioButton) findViewById(R.id.rb_Q1503_12);
-        rb_Q1503_13 = (RadioButton) findViewById(R.id.rb_Q1503_13);
-        rb_Q1503_14 = (RadioButton) findViewById(R.id.rb_Q1503_14);
-        rb_Q1601_1 = (RadioButton) findViewById(R.id.rb_Q1601_1);
-        rb_Q1601_2 = (RadioButton) findViewById(R.id.rb_Q1601_2);
-        rb_Q1601_DK = (RadioButton) findViewById(R.id.rb_Q1601_DK);
-        rb_Q1602_1 = (RadioButton) findViewById(R.id.rb_Q1602_1);
-        rb_Q1602_2 = (RadioButton) findViewById(R.id.rb_Q1602_2);
-        rb_Q1602_DK = (RadioButton) findViewById(R.id.rb_Q1602_DK);
-        rb_Q1604_1 = (RadioButton) findViewById(R.id.rb_Q1604_1);
-        rb_Q1604_2 = (RadioButton) findViewById(R.id.rb_Q1604_2);
-        rb_Q1604_3 = (RadioButton) findViewById(R.id.rb_Q1604_3);
-        rb_Q1604_4 = (RadioButton) findViewById(R.id.rb_Q1604_4);
-        rb_Q1604_5 = (RadioButton) findViewById(R.id.rb_Q1604_5);
-        rb_Q1604_DK = (RadioButton) findViewById(R.id.rb_Q1604_DK);
-        rb_Q1605_1 = (RadioButton) findViewById(R.id.rb_Q1605_1);
-        rb_Q1605_2 = (RadioButton) findViewById(R.id.rb_Q1605_2);
-        rb_Q1609_1 = (RadioButton) findViewById(R.id.rb_Q1609_1);
-        rb_Q1609_2 = (RadioButton) findViewById(R.id.rb_Q1609_2);
-        rb_Q1609_3 = (RadioButton) findViewById(R.id.rb_Q1609_3);
-        rb_Q1609_4 = (RadioButton) findViewById(R.id.rb_Q1609_4);
-        rb_Q1609_5 = (RadioButton) findViewById(R.id.rb_Q1609_5);
+        rb_Q1421_1 = findViewById(R.id.rb_Q1421_1);
+        rb_Q1421_2 = findViewById(R.id.rb_Q1421_2);
+        rb_Q1421_3 = findViewById(R.id.rb_Q1421_3);
+        rb_Q1421_4 = findViewById(R.id.rb_Q1421_4);
+        rb_Q1421_5 = findViewById(R.id.rb_Q1421_5);
+        rb_Q1421_6 = findViewById(R.id.rb_Q1421_6);
+        rb_Q1421_7 = findViewById(R.id.rb_Q1421_7);
+        rb_Q1421_8 = findViewById(R.id.rb_Q1421_8);
+        rb_Q1421_9 = findViewById(R.id.rb_Q1421_9);
+        rb_Q1421_10 = findViewById(R.id.rb_Q1421_10);
+        rb_Q1421_DK = findViewById(R.id.rb_Q1421_DK);
+        rb_Q1501_1 = findViewById(R.id.rb_Q1501_1);
+        rb_Q1501_2 = findViewById(R.id.rb_Q1501_2);
+        rb_Q1503_1 = findViewById(R.id.rb_Q1503_1);
+        rb_Q1503_2 = findViewById(R.id.rb_Q1503_2);
+        rb_Q1503_3 = findViewById(R.id.rb_Q1503_3);
+        rb_Q1503_4 = findViewById(R.id.rb_Q1503_4);
+        rb_Q1503_5 = findViewById(R.id.rb_Q1503_5);
+        rb_Q1503_6 = findViewById(R.id.rb_Q1503_6);
+        rb_Q1503_7 = findViewById(R.id.rb_Q1503_7);
+        rb_Q1503_8 = findViewById(R.id.rb_Q1503_8);
+        rb_Q1503_9 = findViewById(R.id.rb_Q1503_9);
+        rb_Q1503_10 = findViewById(R.id.rb_Q1503_10);
+        rb_Q1503_11 = findViewById(R.id.rb_Q1503_11);
+        rb_Q1503_12 = findViewById(R.id.rb_Q1503_12);
+        rb_Q1503_13 = findViewById(R.id.rb_Q1503_13);
+        rb_Q1503_14 = findViewById(R.id.rb_Q1503_14);
+        rb_Q1601_1 = findViewById(R.id.rb_Q1601_1);
+        rb_Q1601_2 = findViewById(R.id.rb_Q1601_2);
+        rb_Q1601_DK = findViewById(R.id.rb_Q1601_DK);
+        rb_Q1602_1 = findViewById(R.id.rb_Q1602_1);
+        rb_Q1602_2 = findViewById(R.id.rb_Q1602_2);
+        rb_Q1602_DK = findViewById(R.id.rb_Q1602_DK);
+        rb_Q1604_1 = findViewById(R.id.rb_Q1604_1);
+        rb_Q1604_2 = findViewById(R.id.rb_Q1604_2);
+        rb_Q1604_3 = findViewById(R.id.rb_Q1604_3);
+        rb_Q1604_4 = findViewById(R.id.rb_Q1604_4);
+        rb_Q1604_5 = findViewById(R.id.rb_Q1604_5);
+        rb_Q1604_DK = findViewById(R.id.rb_Q1604_DK);
+        rb_Q1605_1 = findViewById(R.id.rb_Q1605_1);
+        rb_Q1605_2 = findViewById(R.id.rb_Q1605_2);
+        rb_Q1609_1 = findViewById(R.id.rb_Q1609_1);
+        rb_Q1609_2 = findViewById(R.id.rb_Q1609_2);
+        rb_Q1609_3 = findViewById(R.id.rb_Q1609_3);
+        rb_Q1609_4 = findViewById(R.id.rb_Q1609_4);
+        rb_Q1609_5 = findViewById(R.id.rb_Q1609_5);
 
 
-        ed_Q1202 = (EditText) findViewById(R.id.ed_Q1202);
-        ed_Q1204 = (EditText) findViewById(R.id.ed_Q1204);
-        ed_Q1205 = (EditText) findViewById(R.id.ed_Q1205);
-        ed_Q1206_d = (EditText) findViewById(R.id.ed_Q1206_d);
-        ed_Q1206_m = (EditText) findViewById(R.id.ed_Q1206_m);
-        ed_Q1206_y = (EditText) findViewById(R.id.ed_Q1206_y);
-        ed_Q1208 = (EditText) findViewById(R.id.ed_Q1208);
-        ed_Q1209 = (EditText) findViewById(R.id.ed_Q1209);
-        ed_Q1301 = (EditText) findViewById(R.id.ed_Q1301);
-        ed_Q1302 = (EditText) findViewById(R.id.ed_Q1302);
-        ed_Q1307 = (EditText) findViewById(R.id.ed_Q1307);
-        ed_Q1308 = (EditText) findViewById(R.id.ed_Q1308);
-        ed_Q1309 = (EditText) findViewById(R.id.ed_Q1309);
-        ed_Q1310 = (EditText) findViewById(R.id.ed_Q1310);
-        ed_Q1312 = (EditText) findViewById(R.id.ed_Q1312);
-        ed_Q1313 = (EditText) findViewById(R.id.ed_Q1313);
-        ed_Q1401 = (EditText) findViewById(R.id.ed_Q1401);
-        ed_Q1403_OT = (EditText) findViewById(R.id.ed_Q1403_OT);
-        ed_Q1406 = (EditText) findViewById(R.id.ed_Q1406);
-        ed_Q1409 = (EditText) findViewById(R.id.ed_Q1409);
-        ed_Q1411 = (EditText) findViewById(R.id.ed_Q1411);
-        ed_Q1412 = (EditText) findViewById(R.id.ed_Q1412);
-        ed_Q1416_OT = (EditText) findViewById(R.id.ed_Q1416_OT);
-        ed_Q1417_OT = (EditText) findViewById(R.id.ed_Q1417_OT);
-        ed_Q1418_OT = (EditText) findViewById(R.id.ed_Q1418_OT);
-        ed_Q1419_OT = (EditText) findViewById(R.id.ed_Q1419_OT);
-        ed_Q1420_OT = (EditText) findViewById(R.id.ed_Q1420_OT);
-        ed_Q1421_OT = (EditText) findViewById(R.id.ed_Q1421_OT);
-        ed_Q1502 = (EditText) findViewById(R.id.ed_Q1502);
-        ed_Q1503_OT = (EditText) findViewById(R.id.ed_Q1503_OT);
-        ed_Q1603 = (EditText) findViewById(R.id.ed_Q1603);
-        ed_Q1604_OT = (EditText) findViewById(R.id.ed_Q1604_OT);
-        ed_Q1606 = (EditText) findViewById(R.id.ed_Q1606);
-        ed_Q1607_1 = (EditText) findViewById(R.id.ed_Q1607_1);
-        ed_Q1607_2 = (EditText) findViewById(R.id.ed_Q1607_2);
-        ed_Q1607_3 = (EditText) findViewById(R.id.ed_Q1607_3);
-        ed_Q1608_1 = (EditText) findViewById(R.id.ed_Q1608_1);
-        ed_Q1608_2 = (EditText) findViewById(R.id.ed_Q1608_2);
-        ed_Q1608_3 = (EditText) findViewById(R.id.ed_Q1608_3);
-        ed_Q1610_1 = (EditText) findViewById(R.id.ed_Q1610_1);
-        ed_Q1610_2 = (EditText) findViewById(R.id.ed_Q1610_2);
-        ed_Q1610_3 = (EditText) findViewById(R.id.ed_Q1610_3);
+        ed_Q1202 = findViewById(R.id.ed_Q1202);
+        ed_Q1204 = findViewById(R.id.ed_Q1204);
+        ed_Q1205 = findViewById(R.id.ed_Q1205);
+        ed_Q1206_d = findViewById(R.id.ed_Q1206_d);
+        ed_Q1206_m = findViewById(R.id.ed_Q1206_m);
+        ed_Q1206_y = findViewById(R.id.ed_Q1206_y);
+        ed_Q1208 = findViewById(R.id.ed_Q1208);
+        ed_Q1209 = findViewById(R.id.ed_Q1209);
+        ed_Q1301 = findViewById(R.id.ed_Q1301);
+        ed_Q1302 = findViewById(R.id.ed_Q1302);
+        ed_Q1307 = findViewById(R.id.ed_Q1307);
+        ed_Q1308 = findViewById(R.id.ed_Q1308);
+        ed_Q1309 = findViewById(R.id.ed_Q1309);
+        ed_Q1310 = findViewById(R.id.ed_Q1310);
+        ed_Q1312 = findViewById(R.id.ed_Q1312);
+        ed_Q1313 = findViewById(R.id.ed_Q1313);
+        ed_Q1401 = findViewById(R.id.ed_Q1401);
+        ed_Q1403_OT = findViewById(R.id.ed_Q1403_OT);
+        ed_Q1406 = findViewById(R.id.ed_Q1406);
+        ed_Q1409 = findViewById(R.id.ed_Q1409);
+        ed_Q1411 = findViewById(R.id.ed_Q1411);
+        ed_Q1412 = findViewById(R.id.ed_Q1412);
+        ed_Q1416_OT = findViewById(R.id.ed_Q1416_OT);
+        ed_Q1417_OT = findViewById(R.id.ed_Q1417_OT);
+        ed_Q1418_OT = findViewById(R.id.ed_Q1418_OT);
+        ed_Q1419_OT = findViewById(R.id.ed_Q1419_OT);
+        ed_Q1420_OT = findViewById(R.id.ed_Q1420_OT);
+        ed_Q1421_OT = findViewById(R.id.ed_Q1421_OT);
+        ed_Q1502 = findViewById(R.id.ed_Q1502);
+        ed_Q1503_OT = findViewById(R.id.ed_Q1503_OT);
+        ed_Q1603 = findViewById(R.id.ed_Q1603);
+        ed_Q1604_OT = findViewById(R.id.ed_Q1604_OT);
+        ed_Q1606 = findViewById(R.id.ed_Q1606);
+        ed_Q1607_1 = findViewById(R.id.ed_Q1607_1);
+        ed_Q1607_2 = findViewById(R.id.ed_Q1607_2);
+        ed_Q1607_3 = findViewById(R.id.ed_Q1607_3);
+        ed_Q1608_1 = findViewById(R.id.ed_Q1608_1);
+        ed_Q1608_2 = findViewById(R.id.ed_Q1608_2);
+        ed_Q1608_3 = findViewById(R.id.ed_Q1608_3);
+        ed_Q1610_1 = findViewById(R.id.ed_Q1610_1);
+        ed_Q1610_2 = findViewById(R.id.ed_Q1610_2);
+        ed_Q1610_3 = findViewById(R.id.ed_Q1610_3);
     }
 
     private static boolean isValid(String s) {
@@ -2103,88 +2103,88 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
     void insert_data() {
 
         String query = "insert into   Q1101_Q1610("
-                + data.Q1101_Q1610.study_id + ","
-                + data.Q1101_Q1610.Q1101 + ","
-                + data.Q1101_Q1610.Q1102 + ","
-                + data.Q1101_Q1610.Q1103 + ","
-                + data.Q1101_Q1610.Q1202 + ","
-                + data.Q1101_Q1610.Q1203 + ","
-                + data.Q1101_Q1610.Q1204 + ","
-                + data.Q1101_Q1610.Q1205 + ","
-                + data.Q1101_Q1610.Q1206_d + ","
-                + data.Q1101_Q1610.Q1206_m + ","
-                + data.Q1101_Q1610.Q1206_y + ","
-                + data.Q1101_Q1610.Q1207 + ","
-                + data.Q1101_Q1610.Q1208 + ","
-                + data.Q1101_Q1610.Q1209 + ","
-                + data.Q1101_Q1610.Q1301 + ","
-                + data.Q1101_Q1610.Q1302 + ","
-                + data.Q1101_Q1610.Q1307 + ","
-                + data.Q1101_Q1610.Q1308 + ","
-                + data.Q1101_Q1610.Q1309 + ","
-                + data.Q1101_Q1610.Q1310 + ","
-                + data.Q1101_Q1610.Q1311 + ","
-                + data.Q1101_Q1610.Q1312 + ","
-                + data.Q1101_Q1610.Q1313 + ","
-                + data.Q1101_Q1610.Q1401 + ","
-                + data.Q1101_Q1610.Q1402 + ","
-                + data.Q1101_Q1610.Q1403 + ","
-                + data.Q1101_Q1610.Q1403_OT + ","
-                + data.Q1101_Q1610.Q1404 + ","
-                + data.Q1101_Q1610.Q1405 + ","
-                + data.Q1101_Q1610.Q1406 + ","
-                + data.Q1101_Q1610.Q1407 + ","
-                + data.Q1101_Q1610.Q1408 + ","
-                + data.Q1101_Q1610.Q1409 + ","
-                + data.Q1101_Q1610.Q1410 + ","
-                + data.Q1101_Q1610.Q1411 + ","
-                + data.Q1101_Q1610.Q1412 + ","
-                + data.Q1101_Q1610.Q1413 + ","
-                + data.Q1101_Q1610.Q1414_1 + ","
-                + data.Q1101_Q1610.Q1414_2 + ","
-                + data.Q1101_Q1610.Q1414_3 + ","
-                + data.Q1101_Q1610.Q1414_4 + ","
-                + data.Q1101_Q1610.Q1414_5 + ","
-                + data.Q1101_Q1610.Q1414_6 + ","
-                + data.Q1101_Q1610.Q1414_7 + ","
-                + data.Q1101_Q1610.Q1414_8 + ","
-                + data.Q1101_Q1610.Q1414_9 + ","
-                + data.Q1101_Q1610.Q1414_10 + ","
-                + data.Q1101_Q1610.Q1415 + ","
-                + data.Q1101_Q1610.Q1416 + ","
-                + data.Q1101_Q1610.Q1416_OT + ","
-                + data.Q1101_Q1610.Q1417 + ","
-                + data.Q1101_Q1610.Q1417_OT + ","
-                + data.Q1101_Q1610.Q1418 + ","
-                + data.Q1101_Q1610.Q1418_OT + ","
-                + data.Q1101_Q1610.Q1419 + ","
-                + data.Q1101_Q1610.Q1419_OT + ","
-                + data.Q1101_Q1610.Q1420 + ","
-                + data.Q1101_Q1610.Q1420_OT + ","
-                + data.Q1101_Q1610.Q1421 + ","
-                + data.Q1101_Q1610.Q1421_OT + ","
-                + data.Q1101_Q1610.Q1501 + ","
-                + data.Q1101_Q1610.Q1502 + ","
-                + data.Q1101_Q1610.Q1503 + ","
-                + data.Q1101_Q1610.Q1503_OT + ","
-                + data.Q1101_Q1610.Q1601 + ","
-                + data.Q1101_Q1610.Q1602 + ","
-                + data.Q1101_Q1610.Q1603 + ","
-                + data.Q1101_Q1610.Q1604 + ","
-                + data.Q1101_Q1610.Q1604_OT + ","
-                + data.Q1101_Q1610.Q1605 + ","
-                + data.Q1101_Q1610.Q1606 + ","
-                + data.Q1101_Q1610.Q1607_1 + ","
-                + data.Q1101_Q1610.Q1607_2 + ","
-                + data.Q1101_Q1610.Q1607_3 + ","
-                + data.Q1101_Q1610.Q1608_1 + ","
-                + data.Q1101_Q1610.Q1608_2 + ","
-                + data.Q1101_Q1610.Q1608_3 + ","
-                + data.Q1101_Q1610.Q1609 + ","
-                + data.Q1101_Q1610.Q1610_1 + ","
-                + data.Q1101_Q1610.Q1610_2 + ","
-                + data.Q1101_Q1610.Q1610_3 + ","
-                + data.Q1101_Q1610.STATUS + ") values ('" +
+                + data.GS.Q1101_Q1610.study_id + ","
+                + data.GS.Q1101_Q1610.Q1101 + ","
+                + data.GS.Q1101_Q1610.Q1102 + ","
+                + data.GS.Q1101_Q1610.Q1103 + ","
+                + data.GS.Q1101_Q1610.Q1202 + ","
+                + data.GS.Q1101_Q1610.Q1203 + ","
+                + data.GS.Q1101_Q1610.Q1204 + ","
+                + data.GS.Q1101_Q1610.Q1205 + ","
+                + data.GS.Q1101_Q1610.Q1206_d + ","
+                + data.GS.Q1101_Q1610.Q1206_m + ","
+                + data.GS.Q1101_Q1610.Q1206_y + ","
+                + data.GS.Q1101_Q1610.Q1207 + ","
+                + data.GS.Q1101_Q1610.Q1208 + ","
+                + data.GS.Q1101_Q1610.Q1209 + ","
+                + data.GS.Q1101_Q1610.Q1301 + ","
+                + data.GS.Q1101_Q1610.Q1302 + ","
+                + data.GS.Q1101_Q1610.Q1307 + ","
+                + data.GS.Q1101_Q1610.Q1308 + ","
+                + data.GS.Q1101_Q1610.Q1309 + ","
+                + data.GS.Q1101_Q1610.Q1310 + ","
+                + data.GS.Q1101_Q1610.Q1311 + ","
+                + data.GS.Q1101_Q1610.Q1312 + ","
+                + data.GS.Q1101_Q1610.Q1313 + ","
+                + data.GS.Q1101_Q1610.Q1401 + ","
+                + data.GS.Q1101_Q1610.Q1402 + ","
+                + data.GS.Q1101_Q1610.Q1403 + ","
+                + data.GS.Q1101_Q1610.Q1403_OT + ","
+                + data.GS.Q1101_Q1610.Q1404 + ","
+                + data.GS.Q1101_Q1610.Q1405 + ","
+                + data.GS.Q1101_Q1610.Q1406 + ","
+                + data.GS.Q1101_Q1610.Q1407 + ","
+                + data.GS.Q1101_Q1610.Q1408 + ","
+                + data.GS.Q1101_Q1610.Q1409 + ","
+                + data.GS.Q1101_Q1610.Q1410 + ","
+                + data.GS.Q1101_Q1610.Q1411 + ","
+                + data.GS.Q1101_Q1610.Q1412 + ","
+                + data.GS.Q1101_Q1610.Q1413 + ","
+                + data.GS.Q1101_Q1610.Q1414_1 + ","
+                + data.GS.Q1101_Q1610.Q1414_2 + ","
+                + data.GS.Q1101_Q1610.Q1414_3 + ","
+                + data.GS.Q1101_Q1610.Q1414_4 + ","
+                + data.GS.Q1101_Q1610.Q1414_5 + ","
+                + data.GS.Q1101_Q1610.Q1414_6 + ","
+                + data.GS.Q1101_Q1610.Q1414_7 + ","
+                + data.GS.Q1101_Q1610.Q1414_8 + ","
+                + data.GS.Q1101_Q1610.Q1414_9 + ","
+                + data.GS.Q1101_Q1610.Q1414_10 + ","
+                + data.GS.Q1101_Q1610.Q1415 + ","
+                + data.GS.Q1101_Q1610.Q1416 + ","
+                + data.GS.Q1101_Q1610.Q1416_OT + ","
+                + data.GS.Q1101_Q1610.Q1417 + ","
+                + data.GS.Q1101_Q1610.Q1417_OT + ","
+                + data.GS.Q1101_Q1610.Q1418 + ","
+                + data.GS.Q1101_Q1610.Q1418_OT + ","
+                + data.GS.Q1101_Q1610.Q1419 + ","
+                + data.GS.Q1101_Q1610.Q1419_OT + ","
+                + data.GS.Q1101_Q1610.Q1420 + ","
+                + data.GS.Q1101_Q1610.Q1420_OT + ","
+                + data.GS.Q1101_Q1610.Q1421 + ","
+                + data.GS.Q1101_Q1610.Q1421_OT + ","
+                + data.GS.Q1101_Q1610.Q1501 + ","
+                + data.GS.Q1101_Q1610.Q1502 + ","
+                + data.GS.Q1101_Q1610.Q1503 + ","
+                + data.GS.Q1101_Q1610.Q1503_OT + ","
+                + data.GS.Q1101_Q1610.Q1601 + ","
+                + data.GS.Q1101_Q1610.Q1602 + ","
+                + data.GS.Q1101_Q1610.Q1603 + ","
+                + data.GS.Q1101_Q1610.Q1604 + ","
+                + data.GS.Q1101_Q1610.Q1604_OT + ","
+                + data.GS.Q1101_Q1610.Q1605 + ","
+                + data.GS.Q1101_Q1610.Q1606 + ","
+                + data.GS.Q1101_Q1610.Q1607_1 + ","
+                + data.GS.Q1101_Q1610.Q1607_2 + ","
+                + data.GS.Q1101_Q1610.Q1607_3 + ","
+                + data.GS.Q1101_Q1610.Q1608_1 + ","
+                + data.GS.Q1101_Q1610.Q1608_2 + ","
+                + data.GS.Q1101_Q1610.Q1608_3 + ","
+                + data.GS.Q1101_Q1610.Q1609 + ","
+                + data.GS.Q1101_Q1610.Q1610_1 + ","
+                + data.GS.Q1101_Q1610.Q1610_2 + ","
+                + data.GS.Q1101_Q1610.Q1610_3 + ","
+                + data.GS.Q1101_Q1610.STATUS + ") values ('" +
 
                 study_id + "','" +
                 Q1101 + "','" +
