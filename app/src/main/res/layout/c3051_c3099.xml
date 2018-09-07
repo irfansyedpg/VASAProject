@@ -830,45 +830,45 @@
                     <CheckBox
 
                         android:id="@+id/cb_C3067_1"
-                        style="@style/RadioButton"
+                        style="@style/CheckBox"
                         android:text="@string/cb_C3067_1" />
 
                     <CheckBox
 
                         android:id="@+id/cb_C3067_2"
-                        style="@style/RadioButton"
+                        style="@style/CheckBox"
                         android:text="@string/cb_C3067_2" />
 
                     <CheckBox
 
                         android:id="@+id/cb_C3067_3"
-                        style="@style/RadioButton"
+                        style="@style/CheckBox"
                         android:text="@string/cb_C3067_3" />
 
                     <CheckBox
 
                         android:id="@+id/cb_C3067_4"
-                        style="@style/RadioButton"
+                        style="@style/CheckBox"
                         android:text="@string/cb_C3067_4" />
 
                     <CheckBox
                         android:id="@+id/cb_C3067_5"
-                        style="@style/RadioButton"
+                        style="@style/CheckBox"
                         android:text="@string/cb_C3067_5" />
 
                     <CheckBox
                         android:id="@+id/cb_C3067_6"
-                        style="@style/RadioButton"
+                        style="@style/CheckBox"
                         android:text="@string/cb_C3067_6" />
 
                     <CheckBox
                         android:id="@+id/cb_C3067_7"
-                        style="@style/RadioButton"
+                        style="@style/CheckBox"
                         android:text="Other (Specify)" />
 
                     <CheckBox
                         android:id="@+id/cb_C3067_DK"
-                        style="@style/RadioButton"
+                        style="@style/CheckBox"
                         android:text="@string/cb_C3067_DK" />
 
 
@@ -896,59 +896,59 @@
                         android:text="@string/txt_C3068" />
 
 
-                    <CheckBox
+                    <RadioButton
                         android:id="@+id/rb_C3068_1"
-                        style="@style/CheckBox"
+                        style="@style/RadioButton"
                         android:text="@string/rb_C3068_1" />
 
-                    <CheckBox
+                    <RadioButton
                         android:id="@+id/rb_C3068_2"
-                        style="@style/CheckBox"
+                        style="@style/RadioButton"
                         android:text="@string/rb_C3068_2" />
 
-                    <CheckBox
+                    <RadioButton
                         android:id="@+id/rb_C3068_3"
-                        style="@style/CheckBox"
+                        style="@style/RadioButton"
                         android:text="@string/rb_C3068_3" />
 
-                    <CheckBox
+                    <RadioButton
                         android:id="@+id/rb_C3068_4"
-                        style="@style/CheckBox"
+                        style="@style/RadioButton"
                         android:text="@string/rb_C3068_4" />
 
-                    <CheckBox
+                    <RadioButton
                         android:id="@+id/rb_C3068_5"
-                        style="@style/CheckBox"
+                        style="@style/RadioButton"
                         android:text="@string/rb_C3068_5" />
 
-                    <CheckBox
+                    <RadioButton
                         android:id="@+id/rb_C3068_6"
-                        style="@style/CheckBox"
+                        style="@style/RadioButton"
                         android:text="@string/rb_C3068_6" />
 
-                    <CheckBox
+                    <RadioButton
                         android:id="@+id/rb_C3068_7"
-                        style="@style/CheckBox"
+                        style="@style/RadioButton"
                         android:text="@string/rb_C3068_7" />
 
-                    <CheckBox
+                    <RadioButton
                         android:id="@+id/rb_C3068_8"
-                        style="@style/CheckBox"
+                        style="@style/RadioButton"
                         android:text="@string/rb_C3068_8" />
 
-                    <CheckBox
+                    <RadioButton
                         android:id="@+id/rb_C3068_9"
-                        style="@style/CheckBox"
+                        style="@style/RadioButton"
                         android:text="@string/rb_C3068_9" />
 
-                    <CheckBox
+                    <RadioButton
                         android:id="@+id/rb_C3068_10"
-                        style="@style/CheckBox"
+                        style="@style/RadioButton"
                         android:text="@string/rb_C3068_10" />
 
-                    <CheckBox
+                    <RadioButton
                         android:id="@+id/rb_C3068_DK"
-                        style="@style/CheckBox"
+                        style="@style/RadioButton"
                         android:text="@string/rb_C3068_DK" />
 
                     <EditText

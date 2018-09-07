@@ -1,8 +1,11 @@
 package com.irfansyed.VAS.VASMonitring;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -11,11 +14,16 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
+import com.irfansyed.VAS.VASMonitring.C.C3012_C3022;
+
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 
-public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
+import static java.lang.Integer.parseInt;
+
+public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, TextWatcher {
 
 
     //region Declaration
@@ -352,9 +360,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             Q1203,
             Q1204,
             Q1205,
-            Q1206_d,
-            Q1206_m,
-            Q1206_y,
             Q1207,
             Q1208,
             Q1209,
@@ -415,9 +420,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             Q1604_OT,
             Q1605,
             Q1606,
-            Q1607_1,
-            Q1607_2,
-            Q1607_3,
             Q1608_1,
             Q1608_2,
             Q1608_3,
@@ -427,6 +429,14 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             Q1610_3,
             STATUS,
             study_id;
+
+    int
+            Q1206_d,
+            Q1206_m,
+            Q1206_y,
+            Q1607_1,
+            Q1607_2,
+            Q1607_3;
 
     //endregion
 
@@ -440,40 +450,19 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         btn_next.setOnClickListener(this);
     }
 
-    @Override
-    public void onClick(View view) {
-
-        if (validateField() == false) {
-            Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
-            return;
-        }
-
-        value_assignment();
-        insert_data();
-
-        DBHelper db = new DBHelper(this);
-
-        Cursor res = db.getData();
-
-        if (res.getCount() > 0) {
-
-            if (res.moveToFirst()) {
-                Toast.makeText(this, "" + res.getString(0), Toast.LENGTH_LONG).show();
+    public static int MonthsToDays(int tMonth, int tYear) {
+        if (tMonth == 1 || tMonth == 3 || tMonth == 5 || tMonth == 7
+                || tMonth == 8 || tMonth == 10 || tMonth == 12) {
+            return 31;
+        } else if (tMonth == 2) {
+            if (tYear % 4 == 0) {
+                return 29;
+            } else {
+                return 28;
             }
-
+        } else {
+            return 30;
         }
-
-        //if(res.getCount() == 0) {
-
-        //  Toast.makeText(this, "No Data", Toast.LENGTH_LONG).show();
-        //} else {
-
-        //  Toast.makeText(this, res.getString(0), Toast.LENGTH_LONG).show();
-        //}
-
-        //Intent c = new Intent(this, C3012_C3022.class);
-
-        //startActivity(c);
     }
 
     void Initialization() {
@@ -808,125 +797,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1610_3 = (EditText) findViewById(R.id.ed_Q1610_3);
     }
 
-    void events_call() {
+    private static boolean isValid(String s) {
 
-        rb_Q1403_1.setOnCheckedChangeListener(this);
-        rb_Q1403_2.setOnCheckedChangeListener(this);
-        rb_Q1403_3.setOnCheckedChangeListener(this);
-        rb_Q1403_4.setOnCheckedChangeListener(this);
-        rb_Q1403_5.setOnCheckedChangeListener(this);
-        rb_Q1403_6.setOnCheckedChangeListener(this);
-        rb_Q1403_7.setOnCheckedChangeListener(this);
-        rb_Q1403_8.setOnCheckedChangeListener(this);
-        rb_Q1403_9.setOnCheckedChangeListener(this);
-        rb_Q1403_10.setOnCheckedChangeListener(this);
-        rb_Q1403_11.setOnCheckedChangeListener(this);
-        rb_Q1403_12.setOnCheckedChangeListener(this);
-        rb_Q1403_13.setOnCheckedChangeListener(this);
-        rb_Q1403_14.setOnCheckedChangeListener(this);
-
-        rb_Q1416_1.setOnCheckedChangeListener(this);
-        rb_Q1416_2.setOnCheckedChangeListener(this);
-        rb_Q1416_3.setOnCheckedChangeListener(this);
-        rb_Q1416_4.setOnCheckedChangeListener(this);
-        rb_Q1416_5.setOnCheckedChangeListener(this);
-        rb_Q1416_6.setOnCheckedChangeListener(this);
-        rb_Q1416_7.setOnCheckedChangeListener(this);
-        rb_Q1416_8.setOnCheckedChangeListener(this);
-        rb_Q1416_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1417_1.setOnCheckedChangeListener(this);
-        rb_Q1417_2.setOnCheckedChangeListener(this);
-        rb_Q1417_3.setOnCheckedChangeListener(this);
-        rb_Q1417_4.setOnCheckedChangeListener(this);
-        rb_Q1417_5.setOnCheckedChangeListener(this);
-        rb_Q1417_6.setOnCheckedChangeListener(this);
-        rb_Q1417_7.setOnCheckedChangeListener(this);
-        rb_Q1417_8.setOnCheckedChangeListener(this);
-        rb_Q1417_9.setOnCheckedChangeListener(this);
-        rb_Q1417_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1418_1.setOnCheckedChangeListener(this);
-        rb_Q1418_2.setOnCheckedChangeListener(this);
-        rb_Q1418_3.setOnCheckedChangeListener(this);
-        rb_Q1418_4.setOnCheckedChangeListener(this);
-        rb_Q1418_5.setOnCheckedChangeListener(this);
-        rb_Q1418_6.setOnCheckedChangeListener(this);
-        rb_Q1418_7.setOnCheckedChangeListener(this);
-        rb_Q1418_8.setOnCheckedChangeListener(this);
-        rb_Q1418_9.setOnCheckedChangeListener(this);
-        rb_Q1418_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1419_1.setOnCheckedChangeListener(this);
-        rb_Q1419_2.setOnCheckedChangeListener(this);
-        rb_Q1419_3.setOnCheckedChangeListener(this);
-        rb_Q1419_4.setOnCheckedChangeListener(this);
-        rb_Q1419_5.setOnCheckedChangeListener(this);
-        rb_Q1419_6.setOnCheckedChangeListener(this);
-        rb_Q1419_7.setOnCheckedChangeListener(this);
-        rb_Q1419_8.setOnCheckedChangeListener(this);
-        rb_Q1419_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1420_1.setOnCheckedChangeListener(this);
-        rb_Q1420_2.setOnCheckedChangeListener(this);
-        rb_Q1420_3.setOnCheckedChangeListener(this);
-        rb_Q1420_4.setOnCheckedChangeListener(this);
-        rb_Q1420_5.setOnCheckedChangeListener(this);
-        rb_Q1420_6.setOnCheckedChangeListener(this);
-        rb_Q1420_7.setOnCheckedChangeListener(this);
-        rb_Q1420_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1421_1.setOnCheckedChangeListener(this);
-        rb_Q1421_2.setOnCheckedChangeListener(this);
-        rb_Q1421_3.setOnCheckedChangeListener(this);
-        rb_Q1421_4.setOnCheckedChangeListener(this);
-        rb_Q1421_5.setOnCheckedChangeListener(this);
-        rb_Q1421_6.setOnCheckedChangeListener(this);
-        rb_Q1421_7.setOnCheckedChangeListener(this);
-        rb_Q1421_8.setOnCheckedChangeListener(this);
-        rb_Q1421_9.setOnCheckedChangeListener(this);
-        rb_Q1421_10.setOnCheckedChangeListener(this);
-        rb_Q1421_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1503_1.setOnCheckedChangeListener(this);
-        rb_Q1503_2.setOnCheckedChangeListener(this);
-        rb_Q1503_3.setOnCheckedChangeListener(this);
-        rb_Q1503_4.setOnCheckedChangeListener(this);
-        rb_Q1503_5.setOnCheckedChangeListener(this);
-        rb_Q1503_6.setOnCheckedChangeListener(this);
-        rb_Q1503_7.setOnCheckedChangeListener(this);
-        rb_Q1503_8.setOnCheckedChangeListener(this);
-        rb_Q1503_9.setOnCheckedChangeListener(this);
-        rb_Q1503_10.setOnCheckedChangeListener(this);
-        rb_Q1503_11.setOnCheckedChangeListener(this);
-        rb_Q1503_12.setOnCheckedChangeListener(this);
-        rb_Q1503_13.setOnCheckedChangeListener(this);
-        rb_Q1503_14.setOnCheckedChangeListener(this);
-
-        rb_Q1604_1.setOnCheckedChangeListener(this);
-        rb_Q1604_2.setOnCheckedChangeListener(this);
-        rb_Q1604_3.setOnCheckedChangeListener(this);
-        rb_Q1604_4.setOnCheckedChangeListener(this);
-        rb_Q1604_5.setOnCheckedChangeListener(this);
-        rb_Q1604_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1405_1.setOnCheckedChangeListener(this);
-        rb_Q1405_2.setOnCheckedChangeListener(this);
-        rb_Q1407_1.setOnCheckedChangeListener(this);
-        rb_Q1407_2.setOnCheckedChangeListener(this);
-        rb_Q1407_DK.setOnCheckedChangeListener(this);
-        rb_Q1501_1.setOnCheckedChangeListener(this);
-        rb_Q1501_2.setOnCheckedChangeListener(this);
-        rb_Q1602_1.setOnCheckedChangeListener(this);
-        rb_Q1602_2.setOnCheckedChangeListener(this);
-        rb_Q1602_DK.setOnCheckedChangeListener(this);
-        rb_Q1605_1.setOnCheckedChangeListener(this);
-        rb_Q1605_2.setOnCheckedChangeListener(this);
-        rb_Q1609_1.setOnCheckedChangeListener(this);
-        rb_Q1609_2.setOnCheckedChangeListener(this);
-        rb_Q1609_3.setOnCheckedChangeListener(this);
-        rb_Q1609_4.setOnCheckedChangeListener(this);
-        rb_Q1609_5.setOnCheckedChangeListener(this);
+        return !s.trim().equals("") && !s.trim().equals("99/99/9999");
     }
 
     @Override
@@ -1281,80 +1154,331 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         }
     }
 
+    @Override
+    public void onClick(View view) {
+
+        if (validateField() == false) {
+            Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        value_assignment();
+        insert_data();
+
+        DBHelper db = new DBHelper(this);
+        Cursor res = db.getData("Q1101_Q1610");
+
+        if (res.getCount() > 0) {
+
+            res.moveToFirst();
+
+            //if (parseInt(res.getString(78)) == 5) {
+
+            //  Intent c = new Intent(this, A4001_A4014.class);
+            //startActivity(c);
+
+            //} else if (parseInt(res.getString(78)) == 1) {
+
+            //  Intent c = new Intent(this, N2001_N2011.class);
+            //startActivity(c);
+
+            //}
+
+            if (parseInt(res.getString(78)) == 2) {
+
+                Intent c = new Intent(this, C3001_C3011.class);
+                startActivity(c);
+
+            } else {
+
+                //C3001_C3011.value_assignment();
+
+                Intent c = new Intent(this, C3012_C3022.class);
+                startActivity(c);
+            }
+        }
+    }
+
+    void events_call() {
+
+        rb_Q1403_1.setOnCheckedChangeListener(this);
+        rb_Q1403_2.setOnCheckedChangeListener(this);
+        rb_Q1403_3.setOnCheckedChangeListener(this);
+        rb_Q1403_4.setOnCheckedChangeListener(this);
+        rb_Q1403_5.setOnCheckedChangeListener(this);
+        rb_Q1403_6.setOnCheckedChangeListener(this);
+        rb_Q1403_7.setOnCheckedChangeListener(this);
+        rb_Q1403_8.setOnCheckedChangeListener(this);
+        rb_Q1403_9.setOnCheckedChangeListener(this);
+        rb_Q1403_10.setOnCheckedChangeListener(this);
+        rb_Q1403_11.setOnCheckedChangeListener(this);
+        rb_Q1403_12.setOnCheckedChangeListener(this);
+        rb_Q1403_13.setOnCheckedChangeListener(this);
+        rb_Q1403_14.setOnCheckedChangeListener(this);
+
+        rb_Q1416_1.setOnCheckedChangeListener(this);
+        rb_Q1416_2.setOnCheckedChangeListener(this);
+        rb_Q1416_3.setOnCheckedChangeListener(this);
+        rb_Q1416_4.setOnCheckedChangeListener(this);
+        rb_Q1416_5.setOnCheckedChangeListener(this);
+        rb_Q1416_6.setOnCheckedChangeListener(this);
+        rb_Q1416_7.setOnCheckedChangeListener(this);
+        rb_Q1416_8.setOnCheckedChangeListener(this);
+        rb_Q1416_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1417_1.setOnCheckedChangeListener(this);
+        rb_Q1417_2.setOnCheckedChangeListener(this);
+        rb_Q1417_3.setOnCheckedChangeListener(this);
+        rb_Q1417_4.setOnCheckedChangeListener(this);
+        rb_Q1417_5.setOnCheckedChangeListener(this);
+        rb_Q1417_6.setOnCheckedChangeListener(this);
+        rb_Q1417_7.setOnCheckedChangeListener(this);
+        rb_Q1417_8.setOnCheckedChangeListener(this);
+        rb_Q1417_9.setOnCheckedChangeListener(this);
+        rb_Q1417_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1418_1.setOnCheckedChangeListener(this);
+        rb_Q1418_2.setOnCheckedChangeListener(this);
+        rb_Q1418_3.setOnCheckedChangeListener(this);
+        rb_Q1418_4.setOnCheckedChangeListener(this);
+        rb_Q1418_5.setOnCheckedChangeListener(this);
+        rb_Q1418_6.setOnCheckedChangeListener(this);
+        rb_Q1418_7.setOnCheckedChangeListener(this);
+        rb_Q1418_8.setOnCheckedChangeListener(this);
+        rb_Q1418_9.setOnCheckedChangeListener(this);
+        rb_Q1418_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1419_1.setOnCheckedChangeListener(this);
+        rb_Q1419_2.setOnCheckedChangeListener(this);
+        rb_Q1419_3.setOnCheckedChangeListener(this);
+        rb_Q1419_4.setOnCheckedChangeListener(this);
+        rb_Q1419_5.setOnCheckedChangeListener(this);
+        rb_Q1419_6.setOnCheckedChangeListener(this);
+        rb_Q1419_7.setOnCheckedChangeListener(this);
+        rb_Q1419_8.setOnCheckedChangeListener(this);
+        rb_Q1419_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1420_1.setOnCheckedChangeListener(this);
+        rb_Q1420_2.setOnCheckedChangeListener(this);
+        rb_Q1420_3.setOnCheckedChangeListener(this);
+        rb_Q1420_4.setOnCheckedChangeListener(this);
+        rb_Q1420_5.setOnCheckedChangeListener(this);
+        rb_Q1420_6.setOnCheckedChangeListener(this);
+        rb_Q1420_7.setOnCheckedChangeListener(this);
+        rb_Q1420_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1421_1.setOnCheckedChangeListener(this);
+        rb_Q1421_2.setOnCheckedChangeListener(this);
+        rb_Q1421_3.setOnCheckedChangeListener(this);
+        rb_Q1421_4.setOnCheckedChangeListener(this);
+        rb_Q1421_5.setOnCheckedChangeListener(this);
+        rb_Q1421_6.setOnCheckedChangeListener(this);
+        rb_Q1421_7.setOnCheckedChangeListener(this);
+        rb_Q1421_8.setOnCheckedChangeListener(this);
+        rb_Q1421_9.setOnCheckedChangeListener(this);
+        rb_Q1421_10.setOnCheckedChangeListener(this);
+        rb_Q1421_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1503_1.setOnCheckedChangeListener(this);
+        rb_Q1503_2.setOnCheckedChangeListener(this);
+        rb_Q1503_3.setOnCheckedChangeListener(this);
+        rb_Q1503_4.setOnCheckedChangeListener(this);
+        rb_Q1503_5.setOnCheckedChangeListener(this);
+        rb_Q1503_6.setOnCheckedChangeListener(this);
+        rb_Q1503_7.setOnCheckedChangeListener(this);
+        rb_Q1503_8.setOnCheckedChangeListener(this);
+        rb_Q1503_9.setOnCheckedChangeListener(this);
+        rb_Q1503_10.setOnCheckedChangeListener(this);
+        rb_Q1503_11.setOnCheckedChangeListener(this);
+        rb_Q1503_12.setOnCheckedChangeListener(this);
+        rb_Q1503_13.setOnCheckedChangeListener(this);
+        rb_Q1503_14.setOnCheckedChangeListener(this);
+
+        rb_Q1604_1.setOnCheckedChangeListener(this);
+        rb_Q1604_2.setOnCheckedChangeListener(this);
+        rb_Q1604_3.setOnCheckedChangeListener(this);
+        rb_Q1604_4.setOnCheckedChangeListener(this);
+        rb_Q1604_5.setOnCheckedChangeListener(this);
+        rb_Q1604_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1405_1.setOnCheckedChangeListener(this);
+        rb_Q1405_2.setOnCheckedChangeListener(this);
+        rb_Q1407_1.setOnCheckedChangeListener(this);
+        rb_Q1407_2.setOnCheckedChangeListener(this);
+        rb_Q1407_DK.setOnCheckedChangeListener(this);
+        rb_Q1501_1.setOnCheckedChangeListener(this);
+        rb_Q1501_2.setOnCheckedChangeListener(this);
+        rb_Q1602_1.setOnCheckedChangeListener(this);
+        rb_Q1602_2.setOnCheckedChangeListener(this);
+        rb_Q1602_DK.setOnCheckedChangeListener(this);
+        rb_Q1605_1.setOnCheckedChangeListener(this);
+        rb_Q1605_2.setOnCheckedChangeListener(this);
+        rb_Q1609_1.setOnCheckedChangeListener(this);
+        rb_Q1609_2.setOnCheckedChangeListener(this);
+        rb_Q1609_3.setOnCheckedChangeListener(this);
+        rb_Q1609_4.setOnCheckedChangeListener(this);
+        rb_Q1609_5.setOnCheckedChangeListener(this);
+
+        ed_Q1204.addTextChangedListener(this);
+        ed_Q1205.addTextChangedListener(this);
+
+        ed_Q1603.addTextChangedListener(this);
+        ed_Q1606.addTextChangedListener(this);
+
+
+        TextWatcher txtWatcher = new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                if (!ed_Q1206_d.getText().toString().isEmpty()
+                        && !ed_Q1206_m.getText().toString().isEmpty()
+                        && !ed_Q1206_y.getText().toString().isEmpty()) {
+
+                    if (Integer.valueOf(ed_Q1206_y.getText().toString()) > 12 ||
+                            (Integer.valueOf(ed_Q1206_y.getText().toString()) == 12 &&
+                                    (Integer.valueOf(ed_Q1206_d.getText().toString()) > 0 || Integer.valueOf(ed_Q1206_m.getText().toString()) > 0))) {
+
+                        ClearAllcontrol.ClearAll(ll_Q1207);
+                        ClearAllcontrol.ClearAll(ll_Q1208);
+
+                        ll_Q1207.setVisibility(View.GONE);
+                        ll_Q1208.setVisibility(View.GONE);
+
+                    } else if ((Integer.valueOf(ed_Q1206_y.getText().toString()) > 0 &&
+                            Integer.valueOf(ed_Q1206_y.getText().toString()) < 12) ||
+                            Integer.valueOf(ed_Q1206_m.getText().toString()) > 0 ||
+                            Integer.valueOf(ed_Q1206_d.getText().toString()) > 0) {
+
+                        ClearAllcontrol.ClearAll(ll_Q1207);
+                        ll_Q1207.setVisibility(View.GONE);
+
+                        ll_Q1208.setVisibility(View.VISIBLE);
+
+                    } else if ((Integer.valueOf(ed_Q1206_d.getText().toString().trim()) == 0 &&
+                            Integer.valueOf(ed_Q1206_m.getText().toString().trim()) == 0 &&
+                            Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 0) ||
+                            (Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 99 ||
+                                    Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 99 ||
+                                    Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 9999)) {
+
+                        ll_Q1207.setVisibility(View.VISIBLE);
+                        ll_Q1208.setVisibility(View.VISIBLE);
+                    }
+                }
+
+                if (!ed_Q1409.getText().toString().isEmpty()) {
+
+                    if (Integer.valueOf(ed_Q1409.getText().toString()) > 6) {
+
+                        ll_Q1410.setVisibility(View.GONE);
+                    } else {
+
+                        ll_Q1410.setVisibility(View.VISIBLE);
+                    }
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        };
+
+        ed_Q1206_d.addTextChangedListener(txtWatcher);
+        ed_Q1206_m.addTextChangedListener(txtWatcher);
+        ed_Q1206_y.addTextChangedListener(txtWatcher);
+
+        ed_Q1409.addTextChangedListener(txtWatcher);
+    }
+
     void value_assignment() {
 
         study_id = "0";
-        Q1101 = "000";
-        Q1102 = "000";
-        Q1103 = "000";
-        Q1202 = "000";
-        Q1203 = "000";
-        Q1204 = "000";
-        Q1205 = "000";
-        Q1206_d = "000";
-        Q1206_m = "000";
-        Q1206_y = "000";
-        Q1207 = "000";
-        Q1208 = "000";
-        Q1209 = "000";
-        Q1301 = "000";
-        Q1302 = "000";
-        Q1307 = "000";
-        Q1308 = "000";
-        Q1309 = "000";
-        Q1310 = "000";
-        Q1311 = "000";
-        Q1312 = "000";
-        Q1313 = "000";
-        Q1401 = "000";
-        Q1402 = "000";
-        Q1403 = "000";
-        Q1404 = "000";
-        Q1405 = "000";
-        Q1406 = "000";
-        Q1407 = "000";
-        Q1408 = "000";
-        Q1409 = "000";
-        Q1410 = "000";
-        Q1411 = "000";
-        Q1412 = "000";
-        Q1413 = "000";
-        Q1414_1 = "000";
-        Q1414_2 = "000";
-        Q1414_3 = "000";
-        Q1414_4 = "000";
-        Q1414_5 = "000";
-        Q1414_6 = "000";
-        Q1414_7 = "000";
-        Q1414_8 = "000";
-        Q1414_9 = "000";
-        Q1414_10 = "000";
-        Q1415 = "000";
-        Q1416 = "000";
-        Q1417 = "000";
-        Q1418 = "000";
-        Q1419 = "000";
-        Q1420 = "000";
-        Q1421 = "000";
-        Q1501 = "000";
-        Q1502 = "000";
-        Q1503 = "000";
-        Q1601 = "000";
-        Q1602 = "000";
-        Q1603 = "000";
-        Q1604 = "000";
-        Q1605 = "000";
-        Q1606 = "000";
-        Q1607_1 = "000";
-        Q1607_2 = "000";
-        Q1607_3 = "000";
-        Q1608_1 = "000";
-        Q1608_2 = "000";
-        Q1608_3 = "000";
-        Q1609 = "000";
-        Q1610_1 = "000";
-        Q1610_2 = "000";
-        Q1610_3 = "000";
+        Q1101 = "-1";
+        Q1102 = "-1";
+        Q1103 = "-1";
+        Q1202 = "-1";
+        Q1203 = "-1";
+        Q1204 = "-1";
+        Q1205 = "-1";
+        Q1206_d = -1;
+        Q1206_m = -1;
+        Q1206_y = -1;
+        Q1207 = "-1";
+        Q1208 = "-1";
+        Q1209 = "-1";
+        Q1301 = "-1";
+        Q1302 = "-1";
+        Q1307 = "-1";
+        Q1308 = "-1";
+        Q1309 = "-1";
+        Q1310 = "-1";
+        Q1311 = "-1";
+        Q1312 = "-1";
+        Q1313 = "-1";
+        Q1401 = "-1";
+        Q1402 = "-1";
+        Q1403 = "-1";
+        Q1403_OT = "-1";
+        Q1404 = "-1";
+        Q1405 = "-1";
+        Q1406 = "-1";
+        Q1407 = "-1";
+        Q1408 = "-1";
+        Q1409 = "-1";
+        Q1410 = "-1";
+        Q1411 = "-1";
+        Q1412 = "-1";
+        Q1413 = "-1";
+        Q1414_1 = "-1";
+        Q1414_2 = "-1";
+        Q1414_3 = "-1";
+        Q1414_4 = "-1";
+        Q1414_5 = "-1";
+        Q1414_6 = "-1";
+        Q1414_7 = "-1";
+        Q1414_8 = "-1";
+        Q1414_9 = "-1";
+        Q1414_10 = "-1";
+        Q1415 = "-1";
+        Q1416 = "-1";
+        Q1416_OT = "-1";
+        Q1417 = "-1";
+        Q1417_OT = "-1";
+        Q1418 = "-1";
+        Q1418_OT = "-1";
+        Q1419 = "-1";
+        Q1419_OT = "-1";
+        Q1420 = "-1";
+        Q1420_OT = "-1";
+        Q1421 = "-1";
+        Q1421_OT = "-1";
+        Q1501 = "-1";
+        Q1502 = "-1";
+        Q1503 = "-1";
+        Q1503_OT = "-1";
+        Q1601 = "-1";
+        Q1602 = "-1";
+        Q1603 = "-1";
+        Q1604 = "-1";
+        Q1604_OT = "-1";
+        Q1605 = "-1";
+        Q1606 = "-1";
+        Q1607_1 = -1;
+        Q1607_2 = -1;
+        Q1607_3 = -1;
+        Q1608_1 = "-1";
+        Q1608_2 = "-1";
+        Q1608_3 = "-1";
+        Q1609 = "-1";
+        Q1610_1 = "-1";
+        Q1610_2 = "-1";
+        Q1610_3 = "-1";
         STATUS = "0";
 
         if (rb_Q1101_1.isChecked()) {
@@ -1391,6 +1515,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             Q1203 = "2";
         }
 
+
         if (ed_Q1204.getText().toString().trim().length() > 0) {
             Q1204 = ed_Q1204.getText().toString().trim();
         }
@@ -1400,16 +1525,15 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         }
 
         if (ed_Q1206_d.getText().toString().trim().length() > 0) {
-            Q1206_d = ed_Q1206_d.getText().toString().trim();
+            Q1206_d = parseInt(ed_Q1206_d.getText().toString().trim());
         }
-
         if (ed_Q1206_m.getText().toString().trim().length() > 0) {
-            Q1206_m = ed_Q1206_m.getText().toString().trim();
+            Q1206_m = parseInt(ed_Q1206_m.getText().toString().trim());
+        }
+        if (ed_Q1206_y.getText().toString().trim().length() > 0) {
+            Q1206_y = parseInt(ed_Q1206_y.getText().toString().trim());
         }
 
-        if (ed_Q1206_y.getText().toString().trim().length() > 0) {
-            Q1206_y = ed_Q1206_y.getText().toString().trim();
-        }
 
         if (rb_Q1207_1.isChecked()) {
             Q1207 = "1";
@@ -1897,10 +2021,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             Q1602 = "9";
         }
 
-        if (ed_Q1603.getText().toString().trim().length() > 0) {
-            Q1603 = ed_Q1603.getText().toString().trim();
-        }
-
         if (rb_Q1604_1.isChecked()) {
             Q1604 = "1";
         } else if (rb_Q1604_2.isChecked()) {
@@ -1922,21 +2042,24 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             Q1605 = "2";
         }
 
+        if (ed_Q1603.getText().toString().trim().length() > 0) {
+            Q1603 = ed_Q1603.getText().toString().trim();
+        }
+
         if (ed_Q1606.getText().toString().trim().length() > 0) {
             Q1606 = ed_Q1606.getText().toString().trim();
         }
 
         if (ed_Q1607_1.getText().toString().trim().length() > 0) {
-            Q1607_1 = ed_Q1607_1.getText().toString().trim();
+            Q1607_1 = parseInt(ed_Q1607_1.getText().toString().trim());
         }
-
         if (ed_Q1607_2.getText().toString().trim().length() > 0) {
-            Q1607_2 = ed_Q1607_2.getText().toString().trim();
+            Q1607_2 = parseInt(ed_Q1607_2.getText().toString().trim());
+        }
+        if (ed_Q1607_3.getText().toString().trim().length() > 0) {
+            Q1607_3 = parseInt(ed_Q1607_3.getText().toString().trim());
         }
 
-        if (ed_Q1607_3.getText().toString().trim().length() > 0) {
-            Q1607_3 = ed_Q1607_3.getText().toString().trim();
-        }
 
         if (ed_Q1608_1.getText().toString().trim().length() > 0) {
             Q1608_1 = ed_Q1608_1.getText().toString().trim();
@@ -2155,305 +2278,467 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         Toast.makeText(this, "General Section", Toast.LENGTH_SHORT).show();
     }
 
+    public int[] calculateAge(String dob, String dod) {
+
+        String[] dob_sep = dob.split("/");
+        String[] dod_sep = dod.split("/");
+
+        String dob_day = dob_sep[0];
+        String dob_month = dob_sep[1];
+        String dob_year = dob_sep[2];
+
+        String dod_day = dod_sep[0];
+        String dod_month = dod_sep[1];
+        String dod_year = dod_sep[2];
+
+
+        int mYearDiff = parseInt(dod_year) - parseInt(dob_year);
+        int mMonDiff = parseInt(dod_month) - parseInt(dob_month);
+
+        if (mMonDiff < 0) {
+            mYearDiff = mYearDiff - 1;
+            mMonDiff = mMonDiff + 12;
+        }
+
+        int mDayDiff = parseInt(dod_day) - parseInt(dob_day);
+
+        if (mDayDiff < 0) {
+            if (mMonDiff > 0) {
+                mMonDiff = mMonDiff - 1;
+                mDayDiff = mDayDiff + MonthsToDays(parseInt(dod_month) - 1, parseInt(dod_year));
+            } else {
+                mYearDiff = mYearDiff - 1;
+                mMonDiff = 11;
+                mDayDiff = mDayDiff + MonthsToDays(parseInt(dod_month) - 1, parseInt(dod_year));
+            }
+
+        }
+
+        int[] Age = new int[]{mDayDiff, mMonDiff, mYearDiff};
+
+        return Age;
+    }
+
     boolean validateField() {
 
-        //if (Gothrough.IamHiden(ll_Q1101) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1102) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1103) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1202) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1203) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1204) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1205) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1206_d) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1206_m) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1206_y) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1207) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1208) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1209) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1301) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1302) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1307) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1308) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1309) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1310) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1311) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1312) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1313) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1401) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1402) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1403) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1403_OT) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1404) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1405) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1406) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1407) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1408) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1409) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1410) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1411) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1412) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1413) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1414_1) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1414_2) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1414_3) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1414_4) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1414_5) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1414_6) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1414_7) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1414_8) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1414_9) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1414_10) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1415) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1416) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1416_OT) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1417) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1417_OT) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1418) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1418_OT) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1419) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1419_OT) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1420) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1420_OT) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1421) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1421_OT) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1501) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1502) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1503) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1503_OT) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1601) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1602) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1603) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1604) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1604_OT) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1605) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1606) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1607) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1608) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1609) == false){
-        //    return false;
-        //}
-//
-        //if (Gothrough.IamHiden(ll_Q1610) == false){
-        //    return false;
-        //}
+        /*if (Gothrough.IamHiden(ll_Q1101) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1102) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1103) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1202) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1203) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1204) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1205) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1206_d) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1206_m) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1206_y) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1207) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1208) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1209) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1301) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1302) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1307) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1308) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1309) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1310) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1311) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1312) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1313) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1401) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1402) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1403) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1403_OT) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1404) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1405) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1406) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1407) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1408) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1409) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1410) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1411) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1412) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1413) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1414_1) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1414_2) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1414_3) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1414_4) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1414_5) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1414_6) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1414_7) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1414_8) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1414_9) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1414_10) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1415) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1416) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1416_OT) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1417) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1417_OT) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1418) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1418_OT) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1419) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1419_OT) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1420) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1420_OT) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1421) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1421_OT) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1501) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1502) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1503) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1503_OT) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1601) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1602) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1603) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1604) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1604_OT) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1605) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1606) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1607) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1608) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1609) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_Q1610) == false) {
+            return false;
+        }*/
 
         return true;
     }
 
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        ed_Q1206_d.setEnabled(false);
+        ed_Q1206_m.setEnabled(false);
+        ed_Q1206_y.setEnabled(false);
+
+        ed_Q1607_1.setEnabled(false);
+        ed_Q1607_2.setEnabled(false);
+        ed_Q1607_3.setEnabled(false);
+
+    }
+
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+        if (ed_Q1204.getText().toString().length() == 10 && ed_Q1205.getText().toString().length() == 10) {
+
+            if (isValid(ed_Q1204.getText().toString()) && isValid(ed_Q1205.getText().toString())) {
+
+                String dob, dod;
+
+                dob = ed_Q1204.getText().toString().trim();
+                dod = ed_Q1205.getText().toString().trim();
+
+                int[] Age = calculateAge(dob, dod);
+
+                int days = Age[0];
+                int months = Age[1];
+                int years = Age[2];
+
+                ed_Q1206_d.setText(String.valueOf(days));
+                ed_Q1206_m.setText(String.valueOf(months));
+                ed_Q1206_y.setText(String.valueOf(years));
+
+                ed_Q1206_d.setEnabled(false);
+                ed_Q1206_m.setEnabled(false);
+                ed_Q1206_y.setEnabled(false);
+
+
+            } else {
+
+                ed_Q1206_d.setText(null);
+                ed_Q1206_m.setText(null);
+                ed_Q1206_y.setText(null);
+
+                ed_Q1206_d.setEnabled(true);
+                ed_Q1206_m.setEnabled(true);
+                ed_Q1206_y.setEnabled(true);
+            }
+        } else {
+
+            ed_Q1206_d.setText(null);
+            ed_Q1206_m.setText(null);
+            ed_Q1206_y.setText(null);
+
+            ed_Q1206_d.setEnabled(true);
+            ed_Q1206_m.setEnabled(true);
+            ed_Q1206_y.setEnabled(true);
+        }
+
+        if (ed_Q1603.getText().toString().length() == 10 && ed_Q1606.getText().toString().length() == 10) {
+
+            if (isValid(ed_Q1603.getText().toString()) && isValid(ed_Q1606.getText().toString())) {
+
+                String dob, dod;
+
+                dob = ed_Q1603.getText().toString().trim();
+                dod = ed_Q1606.getText().toString().trim();
+
+                int[] Age = calculateAge(dob, dod);
+
+                int days = Age[0];
+                int months = Age[1];
+                int years = Age[2];
+
+                ed_Q1607_1.setText(String.valueOf(days));
+                ed_Q1607_2.setText(String.valueOf(months));
+                ed_Q1607_3.setText(String.valueOf(years));
+
+                ed_Q1607_1.setEnabled(false);
+                ed_Q1607_2.setEnabled(false);
+                ed_Q1607_3.setEnabled(false);
+
+            } else {
+
+                ed_Q1607_1.setText(null);
+                ed_Q1607_2.setText(null);
+                ed_Q1607_3.setText(null);
+
+                ed_Q1607_1.setEnabled(true);
+                ed_Q1607_2.setEnabled(true);
+                ed_Q1607_3.setEnabled(true);
+
+            }
+        } else {
+
+            ed_Q1607_1.setText(null);
+            ed_Q1607_2.setText(null);
+            ed_Q1607_3.setText(null);
+
+            ed_Q1607_1.setEnabled(true);
+            ed_Q1607_2.setEnabled(true);
+            ed_Q1607_3.setEnabled(true);
+        }
+    }
+
+    @Override
+    public void afterTextChanged(Editable s) {
+
+        /*if (isValid(ed_Q1204.getText().toString()) || isValid(ed_Q1205.getText().toString())) {
+
+            ed_Q1206_d.setEnabled(false);
+            ed_Q1206_m.setEnabled(false);
+            ed_Q1206_y.setEnabled(false);
+
+            ed_Q1206_d.setText(null);
+            ed_Q1206_m.setText(null);
+            ed_Q1206_y.setText(null);
+        }*/
+    }
 }

@@ -221,7 +221,7 @@
 
                     <EditText
                         android:id="@+id/ed_Q1204"
-                        style="@style/EditText_number"
+                        style="@style/EditText_date"
                         android:hint="@string/txt_Q1204" />
 
                 </LinearLayout>
@@ -243,7 +243,7 @@
 
                     <EditText
                         android:id="@+id/ed_Q1205"
-                        style="@style/EditText_number"
+                        style="@style/EditText_varchar"
                         android:hint="@string/txt_Q1205" />
 
 
@@ -353,7 +353,7 @@
                         <RadioButton
                             android:id="@+id/rb_Q1207_DK"
                             style="@style/RadioButton"
-                            android:text="@string/rb_Q1207_9" />
+                            android:text="@string/rb_Q1207_3" />
 
                     </RadioGroup>
 
@@ -563,7 +563,6 @@
             <!-- Radio Buttons Q1311 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_Q1311"
                     style="@style/Q_Linerlayout_v">
@@ -571,69 +570,69 @@
                     <TextView
                         android:id="@+id/txt_Q1311"
                         style="@style/TextView"
-                        android:text="Q1311" />
+                        android:text="@string/txt_Q1311" />
 
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/rb_Q1311_1"
                             style="@style/RadioButton"
-                            android:text="Completed" />
+                            android:text="@string/rb_Q1311_1" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1311_2"
                             style="@style/RadioButton"
-                            android:text="Completed" />
+                            android:text="@string/rb_Q1311_2" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1311_3"
                             style="@style/RadioButton"
-                            android:text="Completed" />
+                            android:text="@string/rb_Q1311_3" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1311_4"
                             style="@style/RadioButton"
-                            android:text="Completed" />
+                            android:text="@string/rb_Q1311_4" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1311_5"
                             style="@style/RadioButton"
-                            android:text="Completed" />
+                            android:text="@string/rb_Q1311_5" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1311_6"
                             style="@style/RadioButton"
-                            android:text="Completed" />
+                            android:text="@string/rb_Q1311_6" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1311_7"
                             style="@style/RadioButton"
-                            android:text="Completed" />
+                            android:text="@string/rb_Q1311_7" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1311_8"
                             style="@style/RadioButton"
-                            android:text="Completed" />
+                            android:text="@string/rb_Q1311_8" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1311_9"
                             style="@style/RadioButton"
-                            android:text="Completed" />
+                            android:text="@string/rb_Q1311_9" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1311_10"
                             style="@style/RadioButton"
-                            android:text="Completed" />
+                            android:text="@string/rb_Q1311_10" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1311_11"
                             style="@style/RadioButton"
-                            android:text="Completed" />
+                            android:text="@string/rb_Q1311_11" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1311_12"
                             style="@style/RadioButton"
-                            android:text="Completed" />
+                            android:text="@string/rb_Q1311_12" />
 
                     </RadioGroup>
 
@@ -2415,7 +2414,6 @@
                         android:id="@+id/txt_Q1603"
                         style="@style/TextView"
                         android:text="@string/txt_Q1603" />
-
 
                     <EditText
                         android:id="@+id/ed_Q1603"

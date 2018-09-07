@@ -52,17 +52,12 @@
     <!-- EditText Acept Varchar  Starts. -->
 
     <style name="EditText_varchar">
+
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">20sp</item>
-        <item name="android:inputType">textEmailAddress</item>
         <item name="android:imeOptions">actionDone</item>
         <item name="android:singleLine">true</item>
-        <!--  <item name="android:digits">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</item> -->
-
-        <item name="android:digits">[a-zA-Z
-            ]+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
-        </item>
 
     </style>
 
@@ -284,8 +279,8 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">20sp</item>
-        <item name="android:focusable">false</item>
-        <item name="android:clickable">true</item>
+        <item name="android:inputType">datetime</item>
+        <item name="android:maxLength">10</item>
     </style>
 
     <style name="Button_date">

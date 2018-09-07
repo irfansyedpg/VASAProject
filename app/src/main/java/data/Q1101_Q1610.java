@@ -100,9 +100,9 @@ public class Q1101_Q1610 {
                 data.Q1101_Q1610.Q1203 + " TEXT," +
                 data.Q1101_Q1610.Q1204 + " TEXT," +
                 data.Q1101_Q1610.Q1205 + " TEXT," +
-                data.Q1101_Q1610.Q1206_d + " TEXT," +
-                data.Q1101_Q1610.Q1206_m + " TEXT," +
-                data.Q1101_Q1610.Q1206_y + " TEXT," +
+                data.Q1101_Q1610.Q1206_d + " INTEGER," +
+                data.Q1101_Q1610.Q1206_m + " INTEGER," +
+                data.Q1101_Q1610.Q1206_y + " INTEGER," +
                 data.Q1101_Q1610.Q1207 + " TEXT," +
                 data.Q1101_Q1610.Q1208 + " TEXT," +
                 data.Q1101_Q1610.Q1209 + " TEXT," +

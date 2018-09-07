@@ -1,6 +1,7 @@
 package com.irfansyed.VAS.VASMonitring.C;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -12,9 +13,14 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import com.irfansyed.VAS.VASMonitring.Gothrough;
 import com.irfansyed.VAS.VASMonitring.R;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
+import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 
@@ -365,16 +371,51 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             STATUS,
             study_id;
 
+    int ageInDays;
+
     //endregion
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3051_c3099);
 
+        DBHelper db = new DBHelper(this);
+        Cursor res = db.getData("Q1101_Q1610");
+
+        if (res.getCount() > 0) {
+
+            res.moveToFirst();
+
+            String dob = res.getString(67);
+            String dod = res.getString(71);
+
+            ageInDays = numOfDays(dob, dod);
+        }
+
         Initialization();
         events_call();
 
         btn_next.setOnClickListener(this);
+    }
+
+    public int numOfDays(String dob, String dod) {
+
+        SimpleDateFormat myFormat = new SimpleDateFormat("dd/mm/yyyy");
+
+        int numOfDays = 0;
+
+        try {
+            Date date1 = myFormat.parse(dob);
+            Date date2 = myFormat.parse(dod);
+            long diff = date2.getTime() - date1.getTime();
+
+            numOfDays = (int) TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        return numOfDays;
     }
 
     @Override
@@ -955,12 +996,17 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3057_DK
                 || compoundButton.getId() == R.id.rb_C3057_RA) {
 
-            if (rb_C3057_2.isChecked() || rb_C3057_DK.isChecked() || rb_C3057_RA.isChecked()) {
+            ClearAllcontrol.ClearAll(ll_C3058);
+            ll_C3058.setVisibility(View.GONE);
+
+            if (rb_C3057_1.isChecked()) {
+
+                ll_C3058.setVisibility(View.VISIBLE);
+
+            } else {
 
                 ClearAllcontrol.ClearAll(ll_C3058);
                 ll_C3058.setVisibility(View.GONE);
-            } else {
-                ll_C3058.setVisibility(View.VISIBLE);
             }
         }
 
@@ -970,12 +1016,17 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3059_DK
                 || compoundButton.getId() == R.id.rb_C3059_RA) {
 
-            if (rb_C3059_2.isChecked() || rb_C3059_DK.isChecked() || rb_C3059_RA.isChecked()) {
+            ClearAllcontrol.ClearAll(ll_C3060);
+            ll_C3060.setVisibility(View.GONE);
+
+            if (rb_C3059_1.isChecked()) {
+
+                ll_C3060.setVisibility(View.VISIBLE);
+
+            } else {
 
                 ClearAllcontrol.ClearAll(ll_C3060);
                 ll_C3060.setVisibility(View.GONE);
-            } else {
-                ll_C3060.setVisibility(View.VISIBLE);
             }
         }
 
@@ -2013,7 +2064,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_C3051) == false) {
+        /*if (Gothrough.IamHiden(ll_C3051) == false) {
             return false;
         }
 
@@ -2121,7 +2172,11 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3097) != false;
+        if(Gothrough.IamHiden(ll_C3097) != false){
+            return false;
+        }*/
+
+        return true;
     }
 
 }

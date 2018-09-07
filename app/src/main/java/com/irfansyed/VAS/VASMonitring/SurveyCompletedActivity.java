@@ -22,8 +22,8 @@ import data.UploadHouseInfoAsync;
 
 public class SurveyCompletedActivity extends AppCompatActivity {
 
-    RecyclerView mRecyclerView;
-    RecyclerView.Adapter mAdapter;
+    RecyclerView               mRecyclerView;
+    RecyclerView.Adapter       mAdapter;
     RecyclerView.LayoutManager mLayoutManager;
 
 
@@ -35,7 +35,7 @@ public class SurveyCompletedActivity extends AppCompatActivity {
         List<String> list = new LocalDataManager(this).getLogList("0");
 
 
-        if(list == null)
+        if (list == null)
             return;
 
         Collections.sort(list);
@@ -51,11 +51,12 @@ public class SurveyCompletedActivity extends AppCompatActivity {
 }
 
 
-class  SurveyCompletedCustomAdapter extends RecyclerView.Adapter{
+class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
-    Context mContext;
+    Context      mContext;
     List<String> mList;
-    public SurveyCompletedCustomAdapter(Context context, List<String> list){
+
+    public SurveyCompletedCustomAdapter(Context context, List<String> list) {
         mContext = context;
         mList = list;
     }
@@ -74,12 +75,12 @@ class  SurveyCompletedCustomAdapter extends RecyclerView.Adapter{
         final ViewHolder vh = (ViewHolder) holder;
 
         //rejected items..
-        if(mList.get(position).contains("--00")) {
-          vh.itemView.setBackgroundColor(Color.parseColor("#FFB7BC"));
+        if (mList.get(position).contains("--00")) {
+            vh.itemView.setBackgroundColor(Color.parseColor("#FFB7BC"));
         }
 
         vh.textName.setText(mList.get(position).split("--")[0]);
-        vh.textId.setText(position+1 +"");
+        vh.textId.setText(position + 1 + "");
 
         vh.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,13 +95,12 @@ class  SurveyCompletedCustomAdapter extends RecyclerView.Adapter{
                         String memberId = vh.textName.getText().toString();
 
 
-                        String[] arrr=memberId.split("/");
+                        String[] arrr = memberId.split("/");
 
                         // col_A.data_upload_id=arrr[1];
 
                         new UploadHouseInfoAsync(mContext).execute();
-                    //    new UploadSectionEAsync(mContext, "3").execute(); // irfan
-
+                        //    new UploadSectionEAsync(mContext, "3").execute(); // irfan
 
 
                     }
@@ -108,9 +108,9 @@ class  SurveyCompletedCustomAdapter extends RecyclerView.Adapter{
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
-                       // Intent intent = null;
+                        // Intent intent = null;
 
-                     //   intent = new Intent(this, SurveyCompletedActivity.class);
+                        //   intent = new Intent(this, SurveyCompletedActivity.class);
                     }
                 }).show();
             }
