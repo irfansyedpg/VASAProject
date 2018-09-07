@@ -366,56 +366,56 @@
                         </android.support.v7.widget.CardView>
                         <!-- Radio Buttons N2198 Ends -->
 
-                        <!-- Radio Buttons N2199 Starts -->
-                        <android.support.v7.widget.CardView style="@style/Q_CardView">
-
-                            <LinearLayout
-                                android:id="@+id/ll_N2199"
-                                style="@style/Q_Linerlayout_v">
-
-                                <TextView
-                                    android:id="@+id/txt_N2199"
-                                    style="@style/TextView"
-                                    android:text="@string/txt_N2199" />
-
-                                <RadioGroup
-                                    android:id="@+id/rg_N2199"
-                                    style="@style/RadioGroup">
-
-                                    <RadioButton
-                                        android:id="@+id/rb_N2199_1"
-                                        style="@style/RadioButton"
-                                        android:text="@string/yes" />
-
-                                    <RadioButton
-                                        android:id="@+id/rb_N2199_2"
-                                        style="@style/RadioButton"
-                                        android:text="@string/no" />
-
-                                    <RadioButton
-                                        android:id="@+id/rb_N2199_DK"
-                                        style="@style/RadioButton"
-                                        android:text="@string/dnt" />
-
-                                </RadioGroup>
-
-                            </LinearLayout>
-
-                        </android.support.v7.widget.CardView>
-
                     </LinearLayout>
                 </LinearLayout>
-                <!-- Radio Buttons N2199 Ends -->
 
-                <!-- Radio Buttons N2200 Starts -->
 
+                <!-- Radio Buttons N2199 Starts -->
                 <LinearLayout
                     android:id="@+id/ll_N2194_N2110_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:visibility="@{rbN21931.checked ? View.VISIBLE : View.GONE}">
+                    android:visibility="@{rbN21931.checked &amp;&amp; !rbN21921.checked ? View.VISIBLE : View.GONE}">
 
+                    <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                        <LinearLayout
+                            android:id="@+id/ll_N2199"
+                            style="@style/Q_Linerlayout_v">
+
+                            <TextView
+                                android:id="@+id/txt_N2199"
+                                style="@style/TextView"
+                                android:text="@string/txt_N2199" />
+
+                            <RadioGroup
+                                android:id="@+id/rg_N2199"
+                                style="@style/RadioGroup">
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2199_1"
+                                    style="@style/RadioButton"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2199_2"
+                                    style="@style/RadioButton"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2199_DK"
+                                    style="@style/RadioButton"
+                                    android:text="@string/dnt" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <!-- Radio Buttons N2199 Ends -->
+
+                    <!-- Radio Buttons N2200 Starts -->
                     <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                         <LinearLayout

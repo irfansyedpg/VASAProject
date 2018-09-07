@@ -12,7 +12,10 @@ import android.widget.Toast;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.N2211N2248CBinding;
 
+import java.util.Collection;
+
 import Global.N.N2211_N2248_A_C;
+import Global.N.N2211_N2248_B;
 import data.DBHelper;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -22,7 +25,7 @@ import static com.irfansyed.VAS.VASMonitring.N.N2211_N2248_A.n2211A_ID;
 public class N2211_N2248_C extends AppCompatActivity {
 
     N2211N2248CBinding bi;
-    boolean N2241Flag = true, flag_n2212 = true;
+    boolean N2241Flag = true, flag_n2212 = true, flag_n2098_n2106 = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,10 @@ public class N2211_N2248_C extends AppCompatActivity {
         if (Integer.valueOf(n2212) == 2) {
             flag_n2212 = false;
         }
+
+        Collection<N2211_N2248_B> col_n2211 = db.getSec10BData(n2211A_ID);
+
+
 
     }
 

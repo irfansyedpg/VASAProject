@@ -13,6 +13,8 @@ import com.irfansyed.VAS.VASMonitring.databinding.N2211N2248BBinding;
 import data.DBHelper;
 import utils.Gothrough;
 
+import static com.irfansyed.VAS.VASMonitring.N.N2211_N2248_A.n2211A_ID;
+
 public class N2211_N2248_B extends AppCompatActivity {
 
     static int count = 1;
@@ -67,6 +69,7 @@ public class N2211_N2248_B extends AppCompatActivity {
         n2211B.setN22132a(bi.cbN22133E2A.isChecked() ? "1" : "");
         n2211B.setN22134(bi.edN22134.getText().toString());
         n2211B.setACT_COUNT(String.valueOf(count));
+        n2211B.setACT_ID_FK(String.valueOf(n2211A_ID));
 
         n2211B.setSTUDYID("");
         DBHelper db = new DBHelper(this);

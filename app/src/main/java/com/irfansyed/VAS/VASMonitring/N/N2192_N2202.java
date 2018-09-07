@@ -46,7 +46,10 @@ public class N2192_N2202 extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i != bi.rbN21931.getId()) {
                     ClearAllcontrol.ClearAll(bi.llN2194N21101);//ll_N2194_N2110_1
-                    ClearAllcontrol.ClearAll(bi.llN2194N21102);//ll_N2194_N2110_2
+
+                    if (i == bi.rbN21921.getId()) {
+                        ClearAllcontrol.ClearAll(bi.llN2194N21102);//ll_N2194_N2110_2
+                    }
                 }
             }
         });
@@ -180,15 +183,15 @@ public class N2192_N2202 extends AppCompatActivity {
                 if (!Gothrough.IamHiden(bi.llN2198)) {
                     return false;
                 }
-                //ll_N2199
-                if (!Gothrough.IamHiden(bi.llN2199)) {
-                    return false;
-                }
 
             }
         }
 
-        if (bi.rbN21931.isChecked()) {
+        if (bi.rbN21931.isChecked() && !bi.rbN21921.isChecked()) {
+            //ll_N2199
+            if (!Gothrough.IamHiden(bi.llN2199)) {
+                return false;
+            }
             //ll_N2200
             if (!Gothrough.IamHiden(bi.llN2200)) {
                 return false;
