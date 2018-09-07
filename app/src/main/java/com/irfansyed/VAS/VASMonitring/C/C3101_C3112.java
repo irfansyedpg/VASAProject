@@ -1,6 +1,7 @@
 package com.irfansyed.VAS.VASMonitring.C;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,9 +14,14 @@ import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.R;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
+import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 
 
 public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, View.OnFocusChangeListener {
@@ -325,6 +331,8 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             STATUS,
             study_id;
 
+    int Q1102, ageInDays;
+
     //endregion
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -332,6 +340,48 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         setContentView(R.layout.c3101_c3112);
 
         Initialization();
+
+        DBHelper db = new DBHelper(this);
+        Cursor Q1101_Q1610 = db.getData("Q1101_Q1610");
+
+        if (Q1101_Q1610.getCount() > 0) {
+
+            Q1101_Q1610.moveToFirst();
+
+            Q1102 = Integer.parseInt(Q1101_Q1610.getString(3));
+
+            if (Q1102 == 1) {
+
+                ll_C3101.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ll_C3101.setVisibility(View.GONE);
+            }
+
+            String dob = Q1101_Q1610.getString(67);
+            String dod = Q1101_Q1610.getString(71);
+
+            ageInDays = numOfDays(dob, dod);
+
+            if (ageInDays > 1460) {
+
+                ll_C3102.setVisibility(View.GONE);
+                ll_C3103.setVisibility(View.GONE);
+                ll_C3104.setVisibility(View.GONE);
+                ll_C3105.setVisibility(View.GONE);
+                ll_C3106.setVisibility(View.GONE);
+
+            } else {
+
+                ll_C3102.setVisibility(View.VISIBLE);
+                ll_C3103.setVisibility(View.VISIBLE);
+                ll_C3104.setVisibility(View.VISIBLE);
+                ll_C3105.setVisibility(View.VISIBLE);
+                ll_C3106.setVisibility(View.VISIBLE);
+            }
+        }
+
         events_call();
 
         btn_next.setOnClickListener(this);
@@ -348,11 +398,29 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        //Toast.makeText(this, "Section 4 Inserted Successfully...", Toast.LENGTH_LONG).show();
-
         Intent c = new Intent(this, C3121_C3228.class);
 
         startActivity(c);
+    }
+
+    public int numOfDays(String dob, String dod) {
+
+        SimpleDateFormat myFormat = new SimpleDateFormat("dd/mm/yyyy");
+
+        int numOfDays = 0;
+
+        try {
+            Date date1 = myFormat.parse(dob);
+            Date date2 = myFormat.parse(dod);
+            long diff = date2.getTime() - date1.getTime();
+
+            numOfDays = (int) TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        return numOfDays;
     }
 
     void Initialization() {
@@ -856,7 +924,9 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
                 ll_C3105.setVisibility(View.GONE);
                 ll_C3106.setVisibility(View.GONE);
+
             } else {
+
                 ll_C3105.setVisibility(View.VISIBLE);
                 ll_C3106.setVisibility(View.VISIBLE);
             }
@@ -900,6 +970,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3109_13.setVisibility(View.GONE);
                 ll_C3109_14.setVisibility(View.GONE);
                 ll_C3110.setVisibility(View.GONE);
+
             } else {
 
                 ll_C3109_1.setVisibility(View.VISIBLE);
@@ -946,7 +1017,9 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3111_7.setVisibility(View.GONE);
                 ll_C3111_8.setVisibility(View.GONE);
                 ll_C3111_9.setVisibility(View.GONE);
+
             } else {
+
                 ll_C3111_1.setVisibility(View.VISIBLE);
                 ll_C3111_2.setVisibility(View.VISIBLE);
                 ll_C3111_3.setVisibility(View.VISIBLE);
@@ -969,7 +1042,9 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
                 ClearAllcontrol.ClearAll(ll_C3111_2);
 
                 ll_C3111_2.setVisibility(View.GONE);
+
             } else {
+
                 ll_C3111_2.setVisibility(View.VISIBLE);
             }
         }
@@ -984,7 +1059,9 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
                 ClearAllcontrol.ClearAll(ll_C3111_4);
 
                 ll_C3111_4.setVisibility(View.GONE);
+
             } else {
+
                 ll_C3111_4.setVisibility(View.VISIBLE);
             }
         }
@@ -997,9 +1074,10 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_C3111_5_2.isChecked() || rb_C3111_5_DK.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_C3111_6);
-
                 ll_C3111_6.setVisibility(View.GONE);
+
             } else {
+
                 ll_C3111_6.setVisibility(View.VISIBLE);
             }
         }
@@ -1012,14 +1090,13 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_C3111_8_2.isChecked() || rb_C3111_8_DK.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_C3111_9);
-
                 ll_C3111_9.setVisibility(View.GONE);
+
             } else {
+
                 ll_C3111_9.setVisibility(View.VISIBLE);
             }
         }
-
-
     }
 
     @Override
@@ -1684,7 +1761,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_C3101) == false) {
+        /*if (Gothrough.IamHiden(ll_C3101) == false) {
             return false;
         }
 
@@ -1792,7 +1869,11 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3112) != false;
+        if(Gothrough.IamHiden(ll_C3112) != false){
+            return false;
+        }*/
+
+        return true;
     }
 
 }

@@ -1,6 +1,7 @@
 package com.irfansyed.VAS.VASMonitring.C;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -14,9 +15,9 @@ import android.widget.Toast;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import Global.C.C3001_C3011;
+import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 
 public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -302,6 +303,8 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
             C3457,
             STATUS;
 
+    int Q1403;
+
     //endregion
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -309,6 +312,32 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
         setContentView(R.layout.c3401_c3457);
 
         Initialization();
+
+        DBHelper db = new DBHelper(this);
+        Cursor Q1101_Q1610 = db.getData("Q1101_Q1610");
+
+        if (Q1101_Q1610.getCount() > 0) {
+
+            Q1101_Q1610.moveToFirst();
+
+            Q1403 = Integer.parseInt(Q1101_Q1610.getString(26));
+
+            if (Q1403 == 2) {
+
+                ll_C3401.setVisibility(View.GONE);
+                ll_C3402.setVisibility(View.GONE);
+                ll_C3403.setVisibility(View.GONE);
+                ll_C3404.setVisibility(View.GONE);
+
+            } else {
+
+                ll_C3401.setVisibility(View.VISIBLE);
+                ll_C3402.setVisibility(View.VISIBLE);
+                ll_C3403.setVisibility(View.VISIBLE);
+                ll_C3404.setVisibility(View.VISIBLE);
+            }
+        }
+
         events_call();
 
         btn_next.setOnClickListener(this);
@@ -1846,7 +1875,7 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_C3401) == false) {
+        /*if (Gothrough.IamHiden(ll_C3401) == false) {
             return false;
         }
 
@@ -2050,7 +2079,10 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3457) != false;
-    }
+        if(Gothrough.IamHiden(ll_C3457) != false){
+            return false;
+        }*/
 
+        return true;
+    }
 }

@@ -451,21 +451,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         btn_next.setOnClickListener(this);
     }
 
-    public static int MonthsToDays(int tMonth, int tYear) {
-        if (tMonth == 1 || tMonth == 3 || tMonth == 5 || tMonth == 7
-                || tMonth == 8 || tMonth == 10 || tMonth == 12) {
-            return 31;
-        } else if (tMonth == 2) {
-            if (tYear % 4 == 0) {
-                return 29;
-            } else {
-                return 28;
-            }
-        } else {
-            return 30;
-        }
-    }
-
     void Initialization() {
 
         // Button Next
@@ -2318,6 +2303,21 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         int[] Age = new int[]{mDayDiff, mMonDiff, mYearDiff};
 
         return Age;
+    }
+
+    public static int MonthsToDays(int tMonth, int tYear) {
+        if (tMonth == 1 || tMonth == 3 || tMonth == 5 || tMonth == 7
+                || tMonth == 8 || tMonth == 10 || tMonth == 12) {
+            return 31;
+        } else if (tMonth == 2) {
+            if (tYear % 4 == 0) {
+                return 29;
+            } else {
+                return 28;
+            }
+        } else {
+            return 30;
+        }
     }
 
     boolean validateField() {
