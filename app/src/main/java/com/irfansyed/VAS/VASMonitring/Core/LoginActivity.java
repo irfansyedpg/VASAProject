@@ -1,18 +1,20 @@
-package com.irfansyed.VAS.VASMonitring;
+package com.irfansyed.VAS.VASMonitring.Core;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.irfansyed.VAS.VASMonitring.R;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -70,8 +72,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnTouchList
 
 
                             Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-                            ((Activity) LoginActivity.this).startActivity(intent);
-                            ((Activity) LoginActivity.this).finish();
+                            LoginActivity.this.startActivity(intent);
+                            LoginActivity.this.finish();
 
                         }
                         else
@@ -205,7 +207,7 @@ class LoginAsync extends AsyncTask {
 
                 // redirect to another activity from here..
                 Intent intent = new Intent(mContext, HomeActivity.class);
-                ((Activity) mContext).startActivity(intent);
+                mContext.startActivity(intent);
                 ((Activity) mContext).finish();
             }
 

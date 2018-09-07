@@ -1,4 +1,4 @@
-package com.irfansyed.VAS.VASMonitring;
+package com.irfansyed.VAS.VASMonitring.Core;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.irfansyed.VAS.VASMonitring.GS.Q1101_Q1610;
+import com.irfansyed.VAS.VASMonitring.Other.Asection;
+import com.irfansyed.VAS.VASMonitring.Other.Genifno;
+import com.irfansyed.VAS.VASMonitring.R;
+import com.irfansyed.VAS.VASMonitring.Upload.SurveyCompletedActivity;
 
 import utils.MyPreferences;
 
@@ -80,7 +86,7 @@ public class HomeActivity extends AppCompatActivity
         final MyPreferences preferences = new MyPreferences(HomeActivity.this);
 
          if (id == com.irfansyed.VAS.VASMonitring.R.id.upload_date) {
-             intent = new Intent(this, com.irfansyed.VAS.VASMonitring.SurveyCompletedActivity.class);
+             intent = new Intent(this, SurveyCompletedActivity.class);
         }
         if (id == com.irfansyed.VAS.VASMonitring.R.id.stage_1)
         {

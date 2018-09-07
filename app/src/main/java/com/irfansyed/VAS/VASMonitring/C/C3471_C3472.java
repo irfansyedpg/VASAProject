@@ -10,11 +10,11 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import com.irfansyed.VAS.VASMonitring.Gothrough;
-import com.irfansyed.VAS.VASMonitring.HomeActivity;
+import com.irfansyed.VAS.VASMonitring.Core.HomeActivity;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import data.LocalDataManager;
+import utils.Gothrough;
 
 public class C3471_C3472 extends AppCompatActivity implements View.OnClickListener {
 

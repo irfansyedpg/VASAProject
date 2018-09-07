@@ -1031,6 +1031,34 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         }
 
 
+        if (compoundButton.getId() == R.id.rb_C3063_1
+                || compoundButton.getId() == R.id.rb_C3063_2
+                || compoundButton.getId() == R.id.rb_C3063_DK) {
+
+            ClearAllcontrol.ClearAll(ll_C3064);
+            ClearAllcontrol.ClearAll(ll_C3065);
+
+            ll_C3064.setVisibility(View.GONE);
+            ll_C3065.setVisibility(View.GONE);
+
+            if ((rb_C3054_1.isChecked() && rb_C3055_1.isChecked() && rb_C3056_1.isChecked()) &&
+                    (rb_C3057_1.isChecked() || rb_C3058_1.isChecked()) &&
+                    (rb_C3059_1.isChecked() || rb_C3060_1.isChecked())) {
+
+                ll_C3064.setVisibility(View.VISIBLE);
+                ll_C3065.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ClearAllcontrol.ClearAll(ll_C3064);
+                ClearAllcontrol.ClearAll(ll_C3065);
+
+                ll_C3064.setVisibility(View.GONE);
+                ll_C3065.setVisibility(View.GONE);
+            }
+        }
+
+
         if (compoundButton.getId() == R.id.rb_C3064_1
                 || compoundButton.getId() == R.id.rb_C3064_2
                 || compoundButton.getId() == R.id.rb_C3064_DK) {

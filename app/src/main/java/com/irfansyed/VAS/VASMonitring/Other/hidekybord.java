@@ -1,4 +1,4 @@
-package com.irfansyed.VAS.VASMonitring;
+package com.irfansyed.VAS.VASMonitring.Other;
 
 import android.app.Activity;
 import android.content.Context;

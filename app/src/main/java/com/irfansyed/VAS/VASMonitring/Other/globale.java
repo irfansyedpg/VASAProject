@@ -1,6 +1,4 @@
-package com.irfansyed.VAS.VASMonitring;
-
-import java.security.PublicKey;
+package com.irfansyed.VAS.VASMonitring.Other;
 
 /**
  * Created by irfansyed on 12/20/2017.

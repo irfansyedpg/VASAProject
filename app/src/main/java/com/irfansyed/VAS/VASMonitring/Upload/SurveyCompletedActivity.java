@@ -1,4 +1,4 @@
-package com.irfansyed.VAS.VASMonitring;
+package com.irfansyed.VAS.VASMonitring.Upload;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -12,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.irfansyed.VAS.VASMonitring.R;
 
 import java.util.Collections;
 import java.util.List;
