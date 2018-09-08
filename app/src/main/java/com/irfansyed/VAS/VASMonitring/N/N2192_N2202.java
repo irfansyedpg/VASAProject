@@ -184,6 +184,24 @@ public class N2192_N2202 extends AppCompatActivity {
                     return false;
                 }
 
+                if (bi.cbN21981.isChecked()) {
+                    if (!Gothrough.TextHidden(bi.edN21981T)) {
+                        return false;
+                    }
+                    if (!Gothrough.TextHidden(bi.edN21981FV)) {
+                        return false;
+                    }
+                }
+
+                if (bi.cbN21982.isChecked()) {
+                    if (!Gothrough.TextHidden(bi.edN21982T)) {
+                        return false;
+                    }
+                    if (!Gothrough.TextHidden(bi.edN21982FV)) {
+                        return false;
+                    }
+                }
+
             }
         }
 
@@ -201,7 +219,25 @@ public class N2192_N2202 extends AppCompatActivity {
                 return false;
             }
             //ll_N2202
-            return Gothrough.IamHiden(bi.llN2202);
+            if (!Gothrough.IamHiden(bi.llN2202)) {
+                return false;
+            }
+
+            if (bi.cbN22021.isChecked()) {
+                if (!Gothrough.TextHidden(bi.edN22021T)) {
+                    return false;
+                }
+                if (!Gothrough.TextHidden(bi.edN22021FV)) {
+                    return false;
+                }
+            }
+
+            if (bi.cbN22022.isChecked()) {
+                if (!Gothrough.TextHidden(bi.edN22022T)) {
+                    return false;
+                }
+                return Gothrough.TextHidden(bi.edN22022FV);
+            }
 
         }
 
