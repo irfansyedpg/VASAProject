@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -11,12 +12,14 @@ import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.N2291N2304Binding;
 
 import data.DBHelper;
+import data.GS.Q1101_Q1610;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 
 public class N2291_N2304 extends AppCompatActivity {
 
     N2291N2304Binding bi;
+    boolean flag_q1403 = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +28,19 @@ public class N2291_N2304 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2291__n2304);
         bi.setCallback(this);
 
+        GetDataFromDB();
         SetContentUI();
+
+    }
+
+
+    private void GetDataFromDB() {
+
+        DBHelper db = new DBHelper(this);
+        String q1403 = db.getSpecificData(data.GS.Q1101_Q1610.TABLE_NAME, "id", Q1101_Q1610.Q1403);
+        if (Integer.valueOf(q1403) == 2) {
+            flag_q1403 = false;
+        }
 
     }
 
@@ -78,6 +93,12 @@ public class N2291_N2304 extends AppCompatActivity {
             }
         });
 
+        //Conditions
+        if (!flag_q1403) {
+            ClearAllcontrol.ClearAll(bi.llN2291N2294); //ll_N2291_N2294
+            bi.llN2291N2294.setVisibility(View.GONE);
+        }
+
     }
 
     public void BtnContinue() {
@@ -126,24 +147,27 @@ public class N2291_N2304 extends AppCompatActivity {
 
     public Boolean validateField() {
 
-        //ll_N2291
-        if (!Gothrough.IamHiden(bi.llN2291)) {
-            return false;
-        }
-        //ll_N2292
-        if (!Gothrough.IamHiden(bi.llN2292)) {
-            return false;
-        }
+        if (flag_q1403) {
+            //ll_N2291
+            if (!Gothrough.IamHiden(bi.llN2291)) {
+                return false;
+            }
+            //ll_N2292
+            if (!Gothrough.IamHiden(bi.llN2292)) {
+                return false;
+            }
 
-        if (bi.rbN22921.isChecked()) {
-            //ll_N2293
-            if (!Gothrough.IamHiden(bi.llN2293)) {
-                return false;
+            if (bi.rbN22921.isChecked()) {
+                //ll_N2293
+                if (!Gothrough.IamHiden(bi.llN2293)) {
+                    return false;
+                }
+                //ll_N2294
+                if (!Gothrough.IamHiden(bi.llN2294)) {
+                    return false;
+                }
             }
-            //ll_N2294
-            if (!Gothrough.IamHiden(bi.llN2294)) {
-                return false;
-            }
+
         }
 
         //ll_N2295
