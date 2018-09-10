@@ -26,42 +26,46 @@ public class Gothrough {
 
             for (int i = 0, count = lv.getChildCount(); i < count; ++i) {
                 View view = lv.getChildAt(i);
-                if (view instanceof CheckBox) {
-                    ((CheckBox) view).setError(null);
 
-                    if (((CheckBox) view).isChecked()) {
-                        return true;
-                    }
+                if (view.getVisibility() == View.VISIBLE) {
 
-                    if (i == count - 1) {
-                        ((CheckBox) view).setError("Select Atleast One");
-                    }
-                } else if (view instanceof RadioGroup) {
-                    if (((RadioGroup) view).getCheckedRadioButtonId() != -1) {
-                        return true;
-                    }
+                    if (view instanceof CheckBox) {
+                        ((CheckBox) view).setError(null);
 
-                } else if (view instanceof EditText) {
-                    if (view.isEnabled()) {
+                        if (((CheckBox) view).isChecked()) {
+                            return true;
+                        }
 
-                        ((EditText) view).setError(null);
+                        if (i == count - 1) {
+                            ((CheckBox) view).setError("Select Atleast One");
+                        }
+                    } else if (view instanceof RadioGroup) {
+                        if (((RadioGroup) view).getCheckedRadioButtonId() != -1) {
+                            return true;
+                        }
 
-                        if (((EditText) view).getText().toString().trim().length() > 0) {
-                            if (i + 1 == lv.getChildCount()) {
-                                return true;
-                            }
-                        } else {
-                            if (view.isEnabled()) {
-                                ((EditText) view).setError("Enter Text");
-                                return false;
-                            } else {
+                    } else if (view instanceof EditText) {
+                        if (view.isEnabled()) {
+
+                            ((EditText) view).setError(null);
+
+                            if (((EditText) view).getText().toString().trim().length() > 0) {
                                 if (i + 1 == lv.getChildCount()) {
                                     return true;
                                 }
+                            } else {
+                                if (view.isEnabled()) {
+                                    ((EditText) view).setError("Enter Text");
+                                    return false;
+                                } else {
+                                    if (i + 1 == lv.getChildCount()) {
+                                        return true;
+                                    }
+                                }
                             }
+                        } else {
+                            return true;
                         }
-                    } else {
-                        return true;
                     }
                 }
             }

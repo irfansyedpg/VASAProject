@@ -13,13 +13,14 @@ import com.irfansyed.VAS.VASMonitring.databinding.N2051N2078Binding;
 
 import Global.N.N2001_N2011.sub_N2001_N2011;
 import data.DBHelper;
+import data.GS.Q1101_Q1610;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 
 public class N2051_N2078 extends AppCompatActivity {
 
     N2051N2078Binding bi;
-    boolean flag_n2006 = true, flag_n2008 = true;
+    boolean flag_n2006 = true, flag_n2008 = true, flag_q1102 = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +29,8 @@ public class N2051_N2078 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2051__n2078);
         bi.setCallback(this);
 
-        SetContentUI();
         GetDataFromDB();
+        SetContentUI();
 
     }
 
@@ -46,6 +47,9 @@ public class N2051_N2078 extends AppCompatActivity {
         if (n2008.equals("9")) {
             flag_n2008 = false;
         }
+
+        String q1102 = db.getSpecificData(data.GS.Q1101_Q1610.TABLE_NAME, "id", Q1101_Q1610.Q1102);
+        flag_q1102 = q1102.equals("1");
 
 
     }
@@ -88,9 +92,15 @@ public class N2051_N2078 extends AppCompatActivity {
             }
         });
 
+        //conditions
         if (!flag_n2006 && !flag_n2008) {
             ClearAllcontrol.ClearAll(bi.llN2075N2078); //ll_N2075_N2078
             bi.llN2075N2078.setVisibility(View.GONE);
+        }
+
+        if (!flag_q1102) {
+            ClearAllcontrol.ClearAll(bi.llN2063N2065); //ll_N2063_N2065
+            bi.llN2063N2065.setVisibility(View.GONE);
         }
 
     }
@@ -299,21 +309,24 @@ public class N2051_N2078 extends AppCompatActivity {
             }
         }
 
-        //ll_N2063
-        if (!Gothrough.IamHiden(bi.llN2063)) {
-            return false;
-        }
-
-        //ll_N2064
-        if (!Gothrough.IamHiden(bi.llN2064)) {
-            return false;
-        }
-
-        if (bi.rbN20641.isChecked()) {
-            //ll_N2065
-            if (!Gothrough.IamHiden(bi.llN2065)) {
+        if (flag_q1102) {
+            //ll_N2063
+            if (!Gothrough.IamHiden(bi.llN2063)) {
                 return false;
             }
+
+            //ll_N2064
+            if (!Gothrough.IamHiden(bi.llN2064)) {
+                return false;
+            }
+
+            if (bi.rbN20641.isChecked()) {
+                //ll_N2065
+                if (!Gothrough.IamHiden(bi.llN2065)) {
+                    return false;
+                }
+            }
+
         }
 
         //ll_N2066

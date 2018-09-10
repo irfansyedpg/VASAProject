@@ -8,6 +8,9 @@ import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import Global.N.N2001_N2011;
 import Global.N.N2012_N2016;
 import Global.N.N2017_N2022_3;
@@ -751,6 +754,7 @@ public class DBHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
 
         values.put(N2211_N2248_B.sub_N2211_N2248_B.ACT_COUNT, n2211B.getACT_COUNT());
+        values.put(N2211_N2248_B.sub_N2211_N2248_B.ACT_ID_FK, n2211B.getACT_ID_FK());
         values.put(N2211_N2248_B.sub_N2211_N2248_B.N2213, n2211B.getN2213());
         values.put(N2211_N2248_B.sub_N2211_N2248_B.N2213_2A, n2211B.getN22132A());
         values.put(N2211_N2248_B.sub_N2211_N2248_B.N2213_4, n2211B.getN22134());
@@ -1102,6 +1106,49 @@ public class DBHelper extends SQLiteOpenHelper {
             );
             if (c.moveToFirst()) {
                 allFC = c.getString(c.getColumnIndex(column));
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return allFC;
+    }
+
+    public Collection<N2211_N2248_B> getSec10BData(int id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = {
+                Global.N.N2211_N2248_B.sub_N2211_N2248_B.STUDYID,
+                Global.N.N2211_N2248_B.sub_N2211_N2248_B.ACT_ID_FK,
+                Global.N.N2211_N2248_B.sub_N2211_N2248_B.ACT_COUNT,
+                Global.N.N2211_N2248_B.sub_N2211_N2248_B.N2213,
+                Global.N.N2211_N2248_B.sub_N2211_N2248_B.N2213_2A,
+                Global.N.N2211_N2248_B.sub_N2211_N2248_B.N2213_4
+        };
+        String whereClause = Global.N.N2211_N2248_B.sub_N2211_N2248_B.ACT_ID_FK + " =?";
+        String[] whereArgs = {String.valueOf(id)};
+        String groupBy = null;
+        String having = null;
+
+        String orderBy = "id ASC";
+
+        ArrayList<N2211_N2248_B> allFC = null;
+        try {
+            c = db.query(
+                    data.N.N2211_N2248_B.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                allFC.add(new N2211_N2248_B().Cursor_Mov(c));
             }
         } finally {
             if (c != null) {

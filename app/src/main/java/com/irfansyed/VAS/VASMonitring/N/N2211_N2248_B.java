@@ -13,6 +13,8 @@ import com.irfansyed.VAS.VASMonitring.databinding.N2211N2248BBinding;
 import data.DBHelper;
 import utils.Gothrough;
 
+import static com.irfansyed.VAS.VASMonitring.N.N2211_N2248_A.n2211A_ID;
+
 public class N2211_N2248_B extends AppCompatActivity {
 
     static int count = 1;
@@ -63,10 +65,11 @@ public class N2211_N2248_B extends AppCompatActivity {
         Global.N.N2211_N2248_B n2211B = new Global.N.N2211_N2248_B();
 
         n2211B.setN2213(bi.rbN2213A1.isChecked() ? "1" : bi.rbN2213A2.isChecked() ? "2" : bi.rbN2213A3.isChecked() ? "3" : bi.rbN2213A4.isChecked() ? "4"
-                : bi.rbN2213A5.isChecked() ? "5" : bi.rbN2213A6.isChecked() ? "6" : bi.rbN2213A7.isChecked() ? "7" : "");
-        n2211B.setN22132a(bi.cbN22133E2A.isChecked() ? "1" : "");
+                : bi.rbN2213A5.isChecked() ? "5" : bi.rbN2213A6.isChecked() ? "6" : bi.rbN2213A7.isChecked() ? "7" : "0");
+        n2211B.setN22132a(bi.cbN22133E2A.isChecked() ? "1" : "0");
         n2211B.setN22134(bi.edN22134.getText().toString());
         n2211B.setACT_COUNT(String.valueOf(count));
+        n2211B.setACT_ID_FK(String.valueOf(n2211A_ID));
 
         n2211B.setSTUDYID("");
         DBHelper db = new DBHelper(this);

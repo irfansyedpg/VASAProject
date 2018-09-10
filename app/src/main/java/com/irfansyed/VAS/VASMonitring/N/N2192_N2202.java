@@ -46,7 +46,10 @@ public class N2192_N2202 extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i != bi.rbN21931.getId()) {
                     ClearAllcontrol.ClearAll(bi.llN2194N21101);//ll_N2194_N2110_1
-                    ClearAllcontrol.ClearAll(bi.llN2194N21102);//ll_N2194_N2110_2
+
+                    if (i == bi.rbN21921.getId()) {
+                        ClearAllcontrol.ClearAll(bi.llN2194N21102);//ll_N2194_N2110_2
+                    }
                 }
             }
         });
@@ -180,15 +183,33 @@ public class N2192_N2202 extends AppCompatActivity {
                 if (!Gothrough.IamHiden(bi.llN2198)) {
                     return false;
                 }
-                //ll_N2199
-                if (!Gothrough.IamHiden(bi.llN2199)) {
-                    return false;
+
+                if (bi.cbN21981.isChecked()) {
+                    if (!Gothrough.TextHidden(bi.edN21981T)) {
+                        return false;
+                    }
+                    if (!Gothrough.TextHidden(bi.edN21981FV)) {
+                        return false;
+                    }
+                }
+
+                if (bi.cbN21982.isChecked()) {
+                    if (!Gothrough.TextHidden(bi.edN21982T)) {
+                        return false;
+                    }
+                    if (!Gothrough.TextHidden(bi.edN21982FV)) {
+                        return false;
+                    }
                 }
 
             }
         }
 
-        if (bi.rbN21931.isChecked()) {
+        if (bi.rbN21931.isChecked() && !bi.rbN21921.isChecked()) {
+            //ll_N2199
+            if (!Gothrough.IamHiden(bi.llN2199)) {
+                return false;
+            }
             //ll_N2200
             if (!Gothrough.IamHiden(bi.llN2200)) {
                 return false;
@@ -198,7 +219,25 @@ public class N2192_N2202 extends AppCompatActivity {
                 return false;
             }
             //ll_N2202
-            return Gothrough.IamHiden(bi.llN2202);
+            if (!Gothrough.IamHiden(bi.llN2202)) {
+                return false;
+            }
+
+            if (bi.cbN22021.isChecked()) {
+                if (!Gothrough.TextHidden(bi.edN22021T)) {
+                    return false;
+                }
+                if (!Gothrough.TextHidden(bi.edN22021FV)) {
+                    return false;
+                }
+            }
+
+            if (bi.cbN22022.isChecked()) {
+                if (!Gothrough.TextHidden(bi.edN22022T)) {
+                    return false;
+                }
+                return Gothrough.TextHidden(bi.edN22022FV);
+            }
 
         }
 
