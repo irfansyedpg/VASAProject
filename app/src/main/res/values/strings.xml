@@ -4006,6 +4006,36 @@ Examples of statements for the reading test:
     <string name="rb_Q1609_5">12 years or more	</string>
 
     <string name="ref">Ref</string>
+    <string name="A4259"><![CDATA[A4259: After (deciding to seek care / being referred), how long did it take (to reach the <FIRST HEALTH PROVIDER> for the <LAST HEALTH PROVIDER> to reach <NAME>)?]]></string>
+    <string name="A4260"><![CDATA[A4260: Did the <FIRST HEALTH PROVIDER> admit <NAME> to the hospital for his/her problem?]]></string>
+    <string name="A4261"><![CDATA[A4261: Did the <FIRST HEALTH PROVIDER> refer <NAME> to another health provider or facility?]]></string>
+    <string name="A4262"><![CDATA[A4262: To where was <NAME> referred?]]></string>
+    <string name="A4263_1"><![CDATA[A4263_1: Did the <FIRST HEALTH PROVIDER> tell you or <NAME> about illness signs and symptoms for which <NAME> needs to return immediately?]]></string>
+    <string name="A4263_2"><![CDATA[A4263_2: Did the <FIRST HEALTH PROVIDER> tell you or <NAME> about illness signs and symptoms for follow-up if <NAME> did not improve after leaving?]]></string>
+    <string name="A4264"><![CDATA[A4264: Did <NAME> leave the <FIRST HEALTH PROVIDER> alive?]]></string>
+    <string name="rb_A4264_1">Yes, left alive</string>
+    <string name="rb_A4264_2">No, died at this provider</string>
+    <string name="A4266"><![CDATA[A4266: What was the name of the <LAST HEALTH PROVIDER> where <NAME went?]]></string>
+    <string name="A4267"><![CDATA[A4267: For health care at a facility, ask: Did <NAME> reach the <LAST HEALTH PROVIDER> before s/he died?]]></string>
+    <string name="A4268"><![CDATA[A4268: After (deciding to seek care / being referred), how long did it take (to reach the <LAST HEALTH PROVIDER> / for the <LAST HEALTH PROVIDER> to reach <NAME>)?]]></string>
+    <string name="A4269"><![CDATA[A4269: Did the <LAST HEALTH PROVIDER> admit <NAME> to the hospital for his/her problem?]]></string>
+    <string name="A4270"><![CDATA[A4270: Did the <LAST HEALTH PROVIDER> refer <NAME> to another health provider or facility?]]></string>
+    <string name="A4271"><![CDATA[A4271: To where was <NAME> referred?]]></string>
+    <string name="A4272_1"><![CDATA[A4272_1: Did the <LAST HEALTH PROVIDER> tell you or <NAME> about illness signs and symptoms for which <NAME> needs to return immediately?]]></string>
+    <string name="A4272_2"><![CDATA[A4272_2: Did the <LAST HEALTH PROVIDER> tell you or <NAME> about illness signs and symptoms for which To follow-up if <NAME> did not improve after leaving?]]></string>
+    <string name="A4273"><![CDATA[A4273: Did <NAME> leave the <LAST HEALTH PROVIDER> alive?]]></string>
+    <string name="A4069_a">Enter how long s/he had belly (abdominal) pain in hours</string>
+    <string name="A4069_b">Enter how long s/he had belly (abdominal) pain in DAYS</string>
+    <string name="A4069_c">Enter how long s/he had belly (abdominal) pain in months</string>
+    <string name="A4072_a">Enter how long before death s/he had a more than usually protruding belly (abdomen) in days?</string>
+    <string name="A4072_b">Enter how long before death s/he had a more than usually protruding belly (abdomen) in months?</string>
+    <string name="A4075_a">Enter how long (s)he had a mass in the belly (abdomen) in days?</string>
+    <string name="A4075_a_h"><![CDATA[Enter 0-30 days. Less than 1 day or 24 hours = 0 days; 1 week = 7 days & If Don\'t Know Enter 99.]]></string>
+    <string name="A4075_b">Enter how long (s)he had a mass in the belly (abdomen) in months?</string>
+    <string name="A4077_a">Enter how long (s)he had a cough in days?</string>
+    <string name="A4077_a_h"><![CDATA[Enter 0-30 days. Less than 1 day or 24 hours = 0 days; 1 week = 7 days &amp; If Don\'t Know  Enter 99\"]]></string>
+    <string name="A4077_b">Enter how long (s)he had a cough in months?</string>
+    <string name="A4077_b_h"><![CDATA[Enter 1-60 Months & if don\'t know Enter 99]]></string>
 
 
     <!-- E Ends -->

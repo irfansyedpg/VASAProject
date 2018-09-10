@@ -62,4 +62,24 @@ public class validations {
         }
     }
 
+    public static boolean RangeTextBox(Context context, EditText txt, int min, int max, int defaultVal1, int defaultVal2, String type) {
+
+        if (Integer.valueOf(txt.getText().toString()) != defaultVal1 || Integer.valueOf(txt.getText().toString()) != defaultVal2) {
+            if ((Integer.valueOf(txt.getText().toString().trim()) < min || Integer.valueOf(txt.getText().toString().trim()) > max)) {
+                txt.setError("Range is " + min + " to " + max + " or " + defaultVal1 + "||" + defaultVal2 + " " + type + " ... ");    // Set Error on last radio button
+                txt.requestFocus();
+                Log.i(context.getClass().getName(), context.getResources().getResourceEntryName(txt.getId()) + ": Range is " + min + " to " + max + " or " + defaultVal1 + "||" + defaultVal2 + " ...  ");
+                return false;
+            } else {
+                txt.setError(null);
+                txt.clearFocus();
+                return true;
+            }
+        } else {
+            txt.setError(null);
+            txt.clearFocus();
+            return true;
+        }
+    }
+
 }
