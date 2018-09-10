@@ -237,6 +237,7 @@
                     <EditText
                         android:id="@+id/ed_A4005"
                         style="@style/EditText_number"
+                        android:maxLength="2"
                         android:hint="@string/grade_year" />
 
                 </LinearLayout>
@@ -488,7 +489,7 @@
                         <RadioButton
                             android:id="@+id/rb_A4010_4"
                             style="@style/RadioButton"
-                            android:text="other" />
+                            android:text="@string/rb_other" />
 
                         <RadioButton
                             android:id="@+id/rb_A4010_DK"
@@ -519,11 +520,17 @@
                         style="@style/TextView"
                         android:text="@string/A4011" />
 
+                    <TextView
+                        android:id="@+id/A4011_h"
+                        style="@style/TextView"
+                        android:text="For don't know enter 99, For refused enter 88" />
+
 
                     <EditText
                         android:id="@+id/ed_A4011"
                         style="@style/EditText_number"
-                        android:hint="For don't know enter 99, For refused enter 88" />
+                        android:hint="Range 1-99"
+                        android:maxLength="2" />
 
                 </LinearLayout>
 
@@ -532,7 +539,6 @@
 
             <!-- EditText A4012 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
-
 
                 <LinearLayout
                     android:id="@+id/ll_A4012"
@@ -543,10 +549,16 @@
                         style="@style/TextView"
                         android:text="@string/A4012" />
 
+                    <TextView
+                        android:id="@+id/A4012_h"
+                        style="@style/TextView"
+                        android:text="For don't know enter 99, For refused enter 88" />
+
                     <EditText
                         android:id="@+id/ed_A4012"
                         style="@style/EditText_number"
-                        android:hint="For don't know enter 99, For refused enter 88" />
+                        android:hint="Range 1-99"
+                        android:maxLength="2" />
 
                 </LinearLayout>
 
@@ -612,10 +624,16 @@
                         style="@style/TextView"
                         android:text="@string/days" />
 
+                    <TextView
+                        android:id="@+id/A4013d_h"
+                        style="@style/TextView"
+                        android:text="Record days if less than 30 days.\nIf less than 24 hours, record 00 days" />
+
                     <EditText
                         android:id="@+id/ed_A4013d"
                         style="@style/EditText_number"
-                        android:hint="@string/record_days_if_less_than_30_days_if_24_hours_00" />
+                        android:hint="Range 00-29 &amp; don't know = 99"
+                        android:maxLength="2" />
 
                 </LinearLayout>
 
@@ -634,10 +652,16 @@
                         style="@style/TextView"
                         android:text="@string/months" />
 
+                    <TextView
+                        android:id="@+id/A4013m_h"
+                        style="@style/TextView"
+                        android:text="Record months if 1-11 months OR Don't Know = 99" />
+
                     <EditText
                         android:id="@+id/ed_A4013m"
                         style="@style/EditText_number"
-                        android:hint="Record months if 1-11 months" />
+                        android:hint="1-11 or 99"
+                        android:maxLength="2" />
 
                 </LinearLayout>
 
@@ -656,10 +680,16 @@
                         style="@style/TextView"
                         android:text="@string/years" />
 
+                    <TextView
+                        android:id="@+id/A4013y_h"
+                        style="@style/TextView"
+                        android:text="Record years if 1 year or more" />
+
                     <EditText
                         android:id="@+id/ed_A4013y"
                         style="@style/EditText_number"
-                        android:hint="Record years if 1 year or more" />
+                        android:hint="Don't Know = 99"
+                        android:maxLength="2" />
 
                 </LinearLayout>
 
@@ -677,6 +707,11 @@
                         android:id="@+id/A4014"
                         style="@style/TextView"
                         android:text="@string/A4014" />
+
+                    <TextView
+                        android:id="@+id/A4014_h"
+                        style="@style/TextView"
+                        android:text="Suddenly means within 24 hours of being in regular health" />
 
                     <RadioGroup style="@style/RadioGroup">
 

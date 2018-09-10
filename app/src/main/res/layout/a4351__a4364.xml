@@ -153,7 +153,7 @@
 
                     <EditText
                         android:id="@+id/ed_A4354"
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_number"
                         android:hint="Duration" />
 
                 </LinearLayout>
@@ -176,7 +176,7 @@
                     <EditText
                         android:id="@+id/ed_A4355"
                         style="@style/EditText_varchar"
-                        android:hint="Duration" />
+                        android:hint="Cause of Death" />
 
                 </LinearLayout>
 
@@ -197,7 +197,7 @@
 
                     <EditText
                         android:id="@+id/ed_A4356"
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_number"
                         android:hint="Duration" />
 
                 </LinearLayout>
@@ -241,7 +241,7 @@
 
                     <EditText
                         android:id="@+id/ed_A4358"
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_number"
                         android:hint="Duration" />
 
                 </LinearLayout>

@@ -14,6 +14,8 @@ public class C3121_C3228 {
 
                 Global.C.C3121_C3228.C3121 + " TEXT," +
                 Global.C.C3121_C3228.C3122 + " TEXT," +
+                Global.C.C3121_C3228.C3122d + " TEXT," +
+                Global.C.C3121_C3228.C3122m + " TEXT," +
                 Global.C.C3121_C3228.C3123_u + " TEXT," +
                 Global.C.C3121_C3228.C3123_b + " TEXT," +
                 Global.C.C3121_C3228.C3123_c + " TEXT," +
@@ -70,6 +72,8 @@ public class C3121_C3228 {
                 Global.C.C3121_C3228.C3160 + " TEXT," +
                 Global.C.C3121_C3228.C3161 + " TEXT," +
                 Global.C.C3121_C3228.C3162 + " TEXT," +
+                Global.C.C3121_C3228.C3162d + " TEXT," +
+                Global.C.C3121_C3228.C3162m + " TEXT," +
                 Global.C.C3121_C3228.C3163_u + " TEXT," +
                 Global.C.C3121_C3228.C3163_a + " TEXT," +
                 Global.C.C3121_C3228.C3163_b + " TEXT," +

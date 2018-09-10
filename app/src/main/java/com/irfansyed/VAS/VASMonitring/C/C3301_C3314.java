@@ -405,100 +405,26 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3301_2.setOnCheckedChangeListener(this);
         rb_C3301_DK.setOnCheckedChangeListener(this);
         rb_C3301_RA.setOnCheckedChangeListener(this);
-        rb_C3302_1_1.setOnCheckedChangeListener(this);
-        rb_C3302_1_2.setOnCheckedChangeListener(this);
-        rb_C3302_1_DK.setOnCheckedChangeListener(this);
-        rb_C3302_1_RA.setOnCheckedChangeListener(this);
-        rb_C3302_2_1.setOnCheckedChangeListener(this);
-        rb_C3302_2_2.setOnCheckedChangeListener(this);
-        rb_C3302_2_DK.setOnCheckedChangeListener(this);
-        rb_C3302_2_RA.setOnCheckedChangeListener(this);
-        rb_C3302_3_1.setOnCheckedChangeListener(this);
-        rb_C3302_3_2.setOnCheckedChangeListener(this);
-        rb_C3302_3_DK.setOnCheckedChangeListener(this);
-        rb_C3302_3_RA.setOnCheckedChangeListener(this);
-        rb_C3302_4_1.setOnCheckedChangeListener(this);
-        rb_C3302_4_2.setOnCheckedChangeListener(this);
-        rb_C3302_4_DK.setOnCheckedChangeListener(this);
-        rb_C3302_4_RA.setOnCheckedChangeListener(this);
-        rb_C3302_5_1.setOnCheckedChangeListener(this);
-        rb_C3302_5_2.setOnCheckedChangeListener(this);
-        rb_C3302_5_DK.setOnCheckedChangeListener(this);
-        rb_C3302_5_RA.setOnCheckedChangeListener(this);
-        rb_C3302_6_1.setOnCheckedChangeListener(this);
-        rb_C3302_6_2.setOnCheckedChangeListener(this);
-        rb_C3302_6_DK.setOnCheckedChangeListener(this);
-        rb_C3302_6_RA.setOnCheckedChangeListener(this);
+
         rb_C3302_7_1.setOnCheckedChangeListener(this);
         rb_C3302_7_2.setOnCheckedChangeListener(this);
         rb_C3302_7_DK.setOnCheckedChangeListener(this);
         rb_C3302_7_RA.setOnCheckedChangeListener(this);
-        rb_C3303_1.setOnCheckedChangeListener(this);
-        rb_C3303_2.setOnCheckedChangeListener(this);
-        rb_C3303_DK.setOnCheckedChangeListener(this);
-        rb_C3303_RA.setOnCheckedChangeListener(this);
+
         rb_C3304_1.setOnCheckedChangeListener(this);
         rb_C3304_2.setOnCheckedChangeListener(this);
         rb_C3304_DK.setOnCheckedChangeListener(this);
         rb_C3304_RA.setOnCheckedChangeListener(this);
+
         rb_C3305_1.setOnCheckedChangeListener(this);
         rb_C3305_2.setOnCheckedChangeListener(this);
+
         rb_C3306_1check_1.setOnCheckedChangeListener(this);
         rb_C3306_1check_2.setOnCheckedChangeListener(this);
+
         rb_C3306_2check_1.setOnCheckedChangeListener(this);
         rb_C3306_2check_2.setOnCheckedChangeListener(this);
-        rb_C3310_1_1.setOnCheckedChangeListener(this);
-        rb_C3310_1_2.setOnCheckedChangeListener(this);
-        rb_C3310_1_DK.setOnCheckedChangeListener(this);
-        rb_C3310_1_RA.setOnCheckedChangeListener(this);
-        rb_C3310_2_1.setOnCheckedChangeListener(this);
-        rb_C3310_2_2.setOnCheckedChangeListener(this);
-        rb_C3310_2_DK.setOnCheckedChangeListener(this);
-        rb_C3310_2_RA.setOnCheckedChangeListener(this);
-        rb_C3310_3_1.setOnCheckedChangeListener(this);
-        rb_C3310_3_2.setOnCheckedChangeListener(this);
-        rb_C3310_3_DK.setOnCheckedChangeListener(this);
-        rb_C3310_3_RA.setOnCheckedChangeListener(this);
-        rb_C3310_4_1.setOnCheckedChangeListener(this);
-        rb_C3310_4_2.setOnCheckedChangeListener(this);
-        rb_C3310_4_DK.setOnCheckedChangeListener(this);
-        rb_C3310_4_RA.setOnCheckedChangeListener(this);
-        rb_C3310_5_1.setOnCheckedChangeListener(this);
-        rb_C3310_5_2.setOnCheckedChangeListener(this);
-        rb_C3310_5_DK.setOnCheckedChangeListener(this);
-        rb_C3310_5_RA.setOnCheckedChangeListener(this);
-        rb_C3310_6_1.setOnCheckedChangeListener(this);
-        rb_C3310_6_2.setOnCheckedChangeListener(this);
-        rb_C3310_6_DK.setOnCheckedChangeListener(this);
-        rb_C3310_6_RA.setOnCheckedChangeListener(this);
-        rb_C3310_7_1.setOnCheckedChangeListener(this);
-        rb_C3310_7_2.setOnCheckedChangeListener(this);
-        rb_C3310_7_DK.setOnCheckedChangeListener(this);
-        rb_C3310_7_RA.setOnCheckedChangeListener(this);
-        rb_C3310_8_1.setOnCheckedChangeListener(this);
-        rb_C3310_8_2.setOnCheckedChangeListener(this);
-        rb_C3310_8_DK.setOnCheckedChangeListener(this);
-        rb_C3310_8_RA.setOnCheckedChangeListener(this);
-        rb_C3310_9_1.setOnCheckedChangeListener(this);
-        rb_C3310_9_2.setOnCheckedChangeListener(this);
-        rb_C3310_9_DK.setOnCheckedChangeListener(this);
-        rb_C3310_9_RA.setOnCheckedChangeListener(this);
-        rb_C3310_10_1.setOnCheckedChangeListener(this);
-        rb_C3310_10_2.setOnCheckedChangeListener(this);
-        rb_C3310_10_DK.setOnCheckedChangeListener(this);
-        rb_C3310_10_RA.setOnCheckedChangeListener(this);
-        rb_C3310_11_1.setOnCheckedChangeListener(this);
-        rb_C3310_11_2.setOnCheckedChangeListener(this);
-        rb_C3310_11_DK.setOnCheckedChangeListener(this);
-        rb_C3310_11_RA.setOnCheckedChangeListener(this);
-        rb_C3311_1.setOnCheckedChangeListener(this);
-        rb_C3311_2.setOnCheckedChangeListener(this);
-        rb_C3311_DK.setOnCheckedChangeListener(this);
-        rb_C3311_RA.setOnCheckedChangeListener(this);
-        rb_C3312_1.setOnCheckedChangeListener(this);
-        rb_C3312_2.setOnCheckedChangeListener(this);
-        rb_C3312_DK.setOnCheckedChangeListener(this);
-        rb_C3312_RA.setOnCheckedChangeListener(this);
+
         rb_C3313_1.setOnCheckedChangeListener(this);
         rb_C3313_2.setOnCheckedChangeListener(this);
         rb_C3313_DK.setOnCheckedChangeListener(this);
@@ -513,24 +439,6 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3301_2
                 || compoundButton.getId() == R.id.rb_C3301_DK
                 || compoundButton.getId() == R.id.rb_C3301_RA) {
-
-            ClearAllcontrol.ClearAll(ll_C3302_1);
-            ClearAllcontrol.ClearAll(ll_C3302_2);
-            ClearAllcontrol.ClearAll(ll_C3302_3);
-            ClearAllcontrol.ClearAll(ll_C3302_4);
-            ClearAllcontrol.ClearAll(ll_C3302_5);
-            ClearAllcontrol.ClearAll(ll_C3302_6);
-            ClearAllcontrol.ClearAll(ll_C3302_7);
-            ClearAllcontrol.ClearAll(ll_C3303);
-
-            ll_C3302_1.setVisibility(View.GONE);
-            ll_C3302_2.setVisibility(View.GONE);
-            ll_C3302_3.setVisibility(View.GONE);
-            ll_C3302_4.setVisibility(View.GONE);
-            ll_C3302_5.setVisibility(View.GONE);
-            ll_C3302_6.setVisibility(View.GONE);
-            ll_C3302_7.setVisibility(View.GONE);
-            ll_C3303.setVisibility(View.GONE);
 
             if (rb_C3301_1.isChecked()) {
 
@@ -570,9 +478,6 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3302_7_DK
                 || compoundButton.getId() == R.id.rb_C3302_7_RA) {
 
-            ClearAllcontrol.ClearAll(ll_C3303);
-            ll_C3303.setVisibility(View.GONE);
-
             if (rb_C3302_7_1.isChecked()) {
 
                 ll_C3303.setVisibility(View.VISIBLE);
@@ -588,24 +493,6 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3304_2
                 || compoundButton.getId() == R.id.rb_C3304_DK
                 || compoundButton.getId() == R.id.rb_C3304_RA) {
-
-            ClearAllcontrol.ClearAll(ll_C3305);
-            ClearAllcontrol.ClearAll(ll_C3306_1check);
-            ClearAllcontrol.ClearAll(ll_C3306_1);
-            ClearAllcontrol.ClearAll(ll_C3306_2check);
-            ClearAllcontrol.ClearAll(ll_C3306_2);
-            ClearAllcontrol.ClearAll(ll_C3307);
-            ClearAllcontrol.ClearAll(ll_C3308);
-            ClearAllcontrol.ClearAll(ll_C3309);
-
-            ll_C3305.setVisibility(View.GONE);
-            ll_C3306_1check.setVisibility(View.GONE);
-            ll_C3306_1.setVisibility(View.GONE);
-            ll_C3306_2check.setVisibility(View.GONE);
-            ll_C3306_2.setVisibility(View.GONE);
-            ll_C3307.setVisibility(View.GONE);
-            ll_C3308.setVisibility(View.GONE);
-            ll_C3309.setVisibility(View.GONE);
 
             if (rb_C3304_1.isChecked()) {
 
@@ -643,22 +530,6 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_C3305_1
                 || compoundButton.getId() == R.id.rb_C3305_2) {
 
-            ClearAllcontrol.ClearAll(ll_C3306_1check);
-            ClearAllcontrol.ClearAll(ll_C3306_1);
-            ClearAllcontrol.ClearAll(ll_C3306_2check);
-            ClearAllcontrol.ClearAll(ll_C3306_2);
-            ClearAllcontrol.ClearAll(ll_C3307);
-            ClearAllcontrol.ClearAll(ll_C3308);
-            ClearAllcontrol.ClearAll(ll_C3309);
-
-            ll_C3306_1check.setVisibility(View.GONE);
-            ll_C3306_1.setVisibility(View.GONE);
-            ll_C3306_2check.setVisibility(View.GONE);
-            ll_C3306_2.setVisibility(View.GONE);
-            ll_C3307.setVisibility(View.GONE);
-            ll_C3308.setVisibility(View.GONE);
-            ll_C3309.setVisibility(View.GONE);
-
             if (rb_C3305_1.isChecked()) {
 
                 ll_C3306_1check.setVisibility(View.VISIBLE);
@@ -692,9 +563,6 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_C3306_1check_1
                 || compoundButton.getId() == R.id.rb_C3306_1check_2) {
 
-            ClearAllcontrol.ClearAll(ll_C3306_1);
-            ll_C3306_1.setVisibility(View.GONE);
-
             if (rb_C3306_1check_1.isChecked()) {
 
                 ll_C3306_1.setVisibility(View.VISIBLE);
@@ -708,9 +576,6 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
 
         if (compoundButton.getId() == R.id.rb_C3306_2check_1
                 || compoundButton.getId() == R.id.rb_C3306_2check_2) {
-
-            ClearAllcontrol.ClearAll(ll_C3306_2);
-            ll_C3306_2.setVisibility(View.GONE);
 
             if (rb_C3306_2check_1.isChecked()) {
 
@@ -727,9 +592,6 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3313_2
                 || compoundButton.getId() == R.id.rb_C3313_DK
                 || compoundButton.getId() == R.id.rb_C3313_RA) {
-
-            ClearAllcontrol.ClearAll(ll_C3314);
-            ll_C3314.setVisibility(View.GONE);
 
             if (rb_C3313_1.isChecked()) {
 
