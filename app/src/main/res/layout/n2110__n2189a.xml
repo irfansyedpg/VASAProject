@@ -850,6 +850,17 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2126" />
 
+
+                        <LinearLayout
+                            style="@style/Q_Linerlayout_v"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/n2126" />
+                        </LinearLayout>
+
                         <RadioGroup
                             android:id="@+id/rg_N2126"
                             style="@style/RadioGroup">
@@ -1994,6 +2005,17 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2144" />
 
+
+                        <LinearLayout
+                            style="@style/Q_Linerlayout_v"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/n2144" />
+                        </LinearLayout>
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
@@ -2299,6 +2321,16 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2151" />
 
+                        <LinearLayout
+                            style="@style/Q_Linerlayout_v"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/n2151" />
+                        </LinearLayout>
+
                         <RadioGroup
                             android:id="@+id/rg_N2151"
                             style="@style/RadioGroup">
@@ -2386,6 +2418,16 @@
                             android:id="@+id/txt_N2153"
                             style="@style/TextView"
                             android:text="@string/txt_N2153" />
+
+                        <LinearLayout
+                            style="@style/Q_Linerlayout_v"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/n2153" />
+                        </LinearLayout>
 
                         <RadioGroup style="@style/RadioGroup">
 
@@ -3285,6 +3327,16 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2177a" />
 
+                        <LinearLayout
+                            style="@style/Q_Linerlayout_v"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/n2177a" />
+                        </LinearLayout>
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
@@ -3325,6 +3377,16 @@
                             android:id="@+id/txt_N2177"
                             style="@style/TextView"
                             android:text="@string/txt_N2177" />
+
+                        <LinearLayout
+                            style="@style/Q_Linerlayout_v"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/n2177" />
+                        </LinearLayout>
 
                         <RadioGroup style="@style/RadioGroup">
 

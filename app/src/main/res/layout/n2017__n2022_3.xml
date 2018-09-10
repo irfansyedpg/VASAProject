@@ -454,6 +454,16 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2022_2" />
 
+                                <LinearLayout
+                                    style="@style/Q_Linerlayout_v"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/n2022_2" />
+                                </LinearLayout>
+
                                 <RadioGroup
                                     android:id="@+id/rg_N2022_2"
                                     style="@style/RadioGroup">
@@ -503,6 +513,16 @@
                             android:id="@+id/txt_N2022_3"
                             style="@style/TextView"
                             android:text="@string/txt_N2022_3" />
+
+                        <LinearLayout
+                            style="@style/Q_Linerlayout_v"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/n2022_3" />
+                        </LinearLayout>
 
                         <RadioGroup
                             android:id="@+id/rg_N2022_3"

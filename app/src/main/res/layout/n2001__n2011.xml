@@ -597,6 +597,16 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2009_1" />
 
+                        <LinearLayout
+                            style="@style/Q_Linerlayout_v"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/n2009_1" />
+                        </LinearLayout>
+
                         <RadioGroup
                             android:id="@+id/rg_N2009_1"
                             style="@style/RadioGroup">
@@ -647,6 +657,16 @@
                                 android:id="@+id/txt_N2009_2"
                                 style="@style/TextView"
                                 android:text="@string/txt_N2009_2" />
+
+                            <LinearLayout
+                                style="@style/Q_Linerlayout_v"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/n2009_2" />
+                            </LinearLayout>
 
                             <RadioGroup
                                 android:id="@+id/rg_N2009_2"
@@ -699,6 +719,16 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2009_3" />
 
+                                <LinearLayout
+                                    style="@style/Q_Linerlayout_v"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/n2009_3" />
+                                </LinearLayout>
+
                                 <RadioGroup
                                     android:id="@+id/rg_N2009_3"
                                     style="@style/RadioGroup">
@@ -743,6 +773,16 @@
                                     android:id="@+id/txt_N2009_4"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2009_4" />
+
+                                <LinearLayout
+                                    style="@style/Q_Linerlayout_v"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/n2009_4" />
+                                </LinearLayout>
 
                                 <RadioGroup
                                     android:id="@+id/rg_N2009_4"
