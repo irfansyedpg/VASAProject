@@ -951,14 +951,26 @@
                         style="@style/RadioButton"
                         android:text="@string/rb_C3068_DK" />
 
-                    <EditText
-                        android:id="@+id/ed_C3068_OT"
-                        style="@style/EditText_varchar"
-                        android:hint="Other" />
-
                 </LinearLayout>
             </android.support.v7.widget.CardView>
             <!--C3068 Radio Button and Edit text Ends-->
+
+            <!--C3068_OT Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_C3068_OT"
+                    style="@style/Q_Linerlayout_v">
+
+                    <EditText
+                        android:id="@+id/ed_C3068_OT"
+                        style="@style/EditText_varchar"
+                        android:hint="C3068: Other (specify)" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!--C3068_OT Edit text Ends-->
 
             <!--C3069 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">

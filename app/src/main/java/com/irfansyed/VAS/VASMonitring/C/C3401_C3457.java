@@ -596,6 +596,7 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3402_1.setOnCheckedChangeListener(this);
         rb_C3402_2.setOnCheckedChangeListener(this);
         rb_C3402_DK.setOnCheckedChangeListener(this);
+
         rb_C3403_1.setOnCheckedChangeListener(this);
         rb_C3403_2.setOnCheckedChangeListener(this);
         rb_C3403_3.setOnCheckedChangeListener(this);
@@ -610,135 +611,22 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3407_1.setOnCheckedChangeListener(this);
         rb_C3407_2.setOnCheckedChangeListener(this);
         rb_C3407_DK.setOnCheckedChangeListener(this);
+
         rb_C3408_1.setOnCheckedChangeListener(this);
         rb_C3408_2.setOnCheckedChangeListener(this);
         rb_C3408_3.setOnCheckedChangeListener(this);
         rb_C3408_DK.setOnCheckedChangeListener(this);
+
         rb_C3410_1.setOnCheckedChangeListener(this);
         rb_C3410_2.setOnCheckedChangeListener(this);
         rb_C3410_DK.setOnCheckedChangeListener(this);
+
         rb_C3411_1.setOnCheckedChangeListener(this);
         rb_C3411_2.setOnCheckedChangeListener(this);
         rb_C3411_3.setOnCheckedChangeListener(this);
         rb_C3411_4.setOnCheckedChangeListener(this);
         rb_C3411_5.setOnCheckedChangeListener(this);
         rb_C3411_DK.setOnCheckedChangeListener(this);
-        rb_C3451_1_1.setOnCheckedChangeListener(this);
-        rb_C3451_1_2.setOnCheckedChangeListener(this);
-        rb_C3451_1_DK.setOnCheckedChangeListener(this);
-        rb_C3451_2_1.setOnCheckedChangeListener(this);
-        rb_C3451_2_2.setOnCheckedChangeListener(this);
-        rb_C3451_2_DK.setOnCheckedChangeListener(this);
-        rb_C3451_3_1.setOnCheckedChangeListener(this);
-        rb_C3451_3_2.setOnCheckedChangeListener(this);
-        rb_C3451_3_DK.setOnCheckedChangeListener(this);
-        rb_C3451_4_1.setOnCheckedChangeListener(this);
-        rb_C3451_4_2.setOnCheckedChangeListener(this);
-        rb_C3451_4_DK.setOnCheckedChangeListener(this);
-        rb_C3451_5_1.setOnCheckedChangeListener(this);
-        rb_C3451_5_2.setOnCheckedChangeListener(this);
-        rb_C3451_5_DK.setOnCheckedChangeListener(this);
-        rb_C3451_6_1.setOnCheckedChangeListener(this);
-        rb_C3451_6_2.setOnCheckedChangeListener(this);
-        rb_C3451_6_DK.setOnCheckedChangeListener(this);
-        rb_C3451_7_1.setOnCheckedChangeListener(this);
-        rb_C3451_7_2.setOnCheckedChangeListener(this);
-        rb_C3451_7_DK.setOnCheckedChangeListener(this);
-        rb_C3451_8_1.setOnCheckedChangeListener(this);
-        rb_C3451_8_2.setOnCheckedChangeListener(this);
-        rb_C3451_8_DK.setOnCheckedChangeListener(this);
-        rb_C3451_9_1.setOnCheckedChangeListener(this);
-        rb_C3451_9_2.setOnCheckedChangeListener(this);
-        rb_C3451_9_DK.setOnCheckedChangeListener(this);
-        rb_C3451_10_1.setOnCheckedChangeListener(this);
-        rb_C3451_10_2.setOnCheckedChangeListener(this);
-        rb_C3451_10_DK.setOnCheckedChangeListener(this);
-        rb_C3451_11_1.setOnCheckedChangeListener(this);
-        rb_C3451_11_2.setOnCheckedChangeListener(this);
-        rb_C3451_11_DK.setOnCheckedChangeListener(this);
-        rb_C3451_12_1.setOnCheckedChangeListener(this);
-        rb_C3451_12_2.setOnCheckedChangeListener(this);
-        rb_C3451_12_DK.setOnCheckedChangeListener(this);
-        rb_C3451_13_1.setOnCheckedChangeListener(this);
-        rb_C3451_13_2.setOnCheckedChangeListener(this);
-        rb_C3452_1_1.setOnCheckedChangeListener(this);
-        rb_C3452_1_2.setOnCheckedChangeListener(this);
-        rb_C3452_1_DK.setOnCheckedChangeListener(this);
-        rb_C3452_2_1.setOnCheckedChangeListener(this);
-        rb_C3452_2_2.setOnCheckedChangeListener(this);
-        rb_C3452_2_DK.setOnCheckedChangeListener(this);
-        rb_C3452_3_1.setOnCheckedChangeListener(this);
-        rb_C3452_3_2.setOnCheckedChangeListener(this);
-        rb_C3452_3_DK.setOnCheckedChangeListener(this);
-        rb_C3452_4_1.setOnCheckedChangeListener(this);
-        rb_C3452_4_2.setOnCheckedChangeListener(this);
-        rb_C3452_4_DK.setOnCheckedChangeListener(this);
-        rb_C3452_5_1.setOnCheckedChangeListener(this);
-        rb_C3452_5_2.setOnCheckedChangeListener(this);
-        rb_C3452_5_DK.setOnCheckedChangeListener(this);
-        rb_C3452_6_1.setOnCheckedChangeListener(this);
-        rb_C3452_6_2.setOnCheckedChangeListener(this);
-        rb_C3452_6_DK.setOnCheckedChangeListener(this);
-        rb_C3452_7_1.setOnCheckedChangeListener(this);
-        rb_C3452_7_2.setOnCheckedChangeListener(this);
-        rb_C3452_7_DK.setOnCheckedChangeListener(this);
-        rb_C3452_8_1.setOnCheckedChangeListener(this);
-        rb_C3452_8_2.setOnCheckedChangeListener(this);
-        rb_C3452_8_DK.setOnCheckedChangeListener(this);
-        rb_C3452_9_1.setOnCheckedChangeListener(this);
-        rb_C3452_9_2.setOnCheckedChangeListener(this);
-        rb_C3453_1_1.setOnCheckedChangeListener(this);
-        rb_C3453_1_2.setOnCheckedChangeListener(this);
-        rb_C3453_1_DK.setOnCheckedChangeListener(this);
-        rb_C3453_2_1.setOnCheckedChangeListener(this);
-        rb_C3453_2_2.setOnCheckedChangeListener(this);
-        rb_C3453_2_DK.setOnCheckedChangeListener(this);
-        rb_C3453_3_1.setOnCheckedChangeListener(this);
-        rb_C3453_3_2.setOnCheckedChangeListener(this);
-        rb_C3453_3_DK.setOnCheckedChangeListener(this);
-        rb_C3453_4_1.setOnCheckedChangeListener(this);
-        rb_C3453_4_2.setOnCheckedChangeListener(this);
-        rb_C3453_4_DK.setOnCheckedChangeListener(this);
-        rb_C3453_5_1.setOnCheckedChangeListener(this);
-        rb_C3453_5_2.setOnCheckedChangeListener(this);
-        rb_C3453_5_DK.setOnCheckedChangeListener(this);
-        rb_C3453_6_1.setOnCheckedChangeListener(this);
-        rb_C3453_6_2.setOnCheckedChangeListener(this);
-        rb_C3453_6_DK.setOnCheckedChangeListener(this);
-        rb_C3453_7_1.setOnCheckedChangeListener(this);
-        rb_C3453_7_2.setOnCheckedChangeListener(this);
-        rb_C3453_7_DK.setOnCheckedChangeListener(this);
-        rb_C3453_8_1.setOnCheckedChangeListener(this);
-        rb_C3453_8_2.setOnCheckedChangeListener(this);
-        rb_C3453_8_DK.setOnCheckedChangeListener(this);
-        rb_C3453_9_1.setOnCheckedChangeListener(this);
-        rb_C3453_9_2.setOnCheckedChangeListener(this);
-        rb_C3453_9_DK.setOnCheckedChangeListener(this);
-        rb_C3453_10_1.setOnCheckedChangeListener(this);
-        rb_C3453_10_2.setOnCheckedChangeListener(this);
-        rb_C3453_10_DK.setOnCheckedChangeListener(this);
-        rb_C3453_11_1.setOnCheckedChangeListener(this);
-        rb_C3453_11_2.setOnCheckedChangeListener(this);
-        rb_C3453_11_DK.setOnCheckedChangeListener(this);
-        rb_C3453_12_1.setOnCheckedChangeListener(this);
-        rb_C3453_12_2.setOnCheckedChangeListener(this);
-        rb_C3454_1.setOnCheckedChangeListener(this);
-        rb_C3454_2.setOnCheckedChangeListener(this);
-        rb_C3454_DK.setOnCheckedChangeListener(this);
-        rb_C3454_RA.setOnCheckedChangeListener(this);
-        rb_C3455_1.setOnCheckedChangeListener(this);
-        rb_C3455_2.setOnCheckedChangeListener(this);
-        rb_C3455_DK.setOnCheckedChangeListener(this);
-        rb_C3455_RA.setOnCheckedChangeListener(this);
-        rb_C3456_1.setOnCheckedChangeListener(this);
-        rb_C3456_2.setOnCheckedChangeListener(this);
-        rb_C3456_DK.setOnCheckedChangeListener(this);
-        rb_C3456_RA.setOnCheckedChangeListener(this);
-        rb_C3457_1.setOnCheckedChangeListener(this);
-        rb_C3457_2.setOnCheckedChangeListener(this);
-        rb_C3457_DK.setOnCheckedChangeListener(this);
-        rb_C3457_RA.setOnCheckedChangeListener(this);
-
     }
 
     @Override
@@ -747,12 +635,6 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_C3402_1
                 || compoundButton.getId() == R.id.rb_C3402_2
                 || compoundButton.getId() == R.id.rb_C3402_DK) {
-
-            ClearAllcontrol.ClearAll(ll_C3403);
-            ClearAllcontrol.ClearAll(ll_C3404);
-
-            ll_C3403.setVisibility(View.GONE);
-            ll_C3404.setVisibility(View.GONE);
 
             if (rb_C3402_1.isChecked()) {
 
@@ -774,9 +656,6 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3403_3
                 || compoundButton.getId() == R.id.rb_C3403_DK) {
 
-            ClearAllcontrol.ClearAll(ll_C3404);
-            ll_C3404.setVisibility(View.GONE);
-
             if (rb_C3403_1.isChecked() || rb_C3403_2.isChecked() || rb_C3403_3.isChecked()) {
 
                 ll_C3404.setVisibility(View.VISIBLE);
@@ -793,16 +672,6 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3405_3
                 || compoundButton.getId() == R.id.rb_C3405_4
                 || compoundButton.getId() == R.id.rb_C3405_DK) {
-
-            ClearAllcontrol.ClearAll(ll_C3406);
-            ClearAllcontrol.ClearAll(ll_C3407);
-            ClearAllcontrol.ClearAll(ll_C3408);
-            ClearAllcontrol.ClearAll(ll_C3409);
-
-            ll_C3406.setVisibility(View.GONE);
-            ll_C3407.setVisibility(View.GONE);
-            ll_C3408.setVisibility(View.GONE);
-            ll_C3409.setVisibility(View.GONE);
 
             if (rb_C3405_1.isChecked() || rb_C3405_2.isChecked() || rb_C3405_4.isChecked() || rb_C3405_DK.isChecked()) {
 
@@ -829,12 +698,6 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3407_2
                 || compoundButton.getId() == R.id.rb_C3407_DK) {
 
-            ClearAllcontrol.ClearAll(ll_C3408);
-            ClearAllcontrol.ClearAll(ll_C3409);
-
-            ll_C3408.setVisibility(View.GONE);
-            ll_C3409.setVisibility(View.GONE);
-
             if (rb_C3407_1.isChecked()) {
 
                 ll_C3408.setVisibility(View.VISIBLE);
@@ -855,9 +718,6 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3408_3
                 || compoundButton.getId() == R.id.rb_C3408_DK) {
 
-            ClearAllcontrol.ClearAll(ll_C3409);
-            ll_C3409.setVisibility(View.GONE);
-
             if (rb_C3408_1.isChecked() || rb_C3408_2.isChecked() || rb_C3408_3.isChecked()) {
 
                 ll_C3409.setVisibility(View.VISIBLE);
@@ -872,90 +732,6 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_C3410_1
                 || compoundButton.getId() == R.id.rb_C3410_2
                 || compoundButton.getId() == R.id.rb_C3410_DK) {
-
-            ClearAllcontrol.ClearAll(ll_C3411);
-            ClearAllcontrol.ClearAll(ll_C3412);
-            ClearAllcontrol.ClearAll(ll_C3413);
-            ClearAllcontrol.ClearAll(ll_C3414);
-
-            ClearAllcontrol.ClearAll(ll_C3451_1);
-            ClearAllcontrol.ClearAll(ll_C3451_2);
-            ClearAllcontrol.ClearAll(ll_C3451_3);
-            ClearAllcontrol.ClearAll(ll_C3451_4);
-            ClearAllcontrol.ClearAll(ll_C3451_5);
-            ClearAllcontrol.ClearAll(ll_C3451_6);
-            ClearAllcontrol.ClearAll(ll_C3451_7);
-            ClearAllcontrol.ClearAll(ll_C3451_8);
-            ClearAllcontrol.ClearAll(ll_C3451_9);
-            ClearAllcontrol.ClearAll(ll_C3451_10);
-            ClearAllcontrol.ClearAll(ll_C3451_11);
-            ClearAllcontrol.ClearAll(ll_C3451_12);
-            ClearAllcontrol.ClearAll(ll_C3451_13);
-
-            ClearAllcontrol.ClearAll(ll_C3452_1);
-            ClearAllcontrol.ClearAll(ll_C3452_2);
-            ClearAllcontrol.ClearAll(ll_C3452_3);
-            ClearAllcontrol.ClearAll(ll_C3452_4);
-            ClearAllcontrol.ClearAll(ll_C3452_5);
-            ClearAllcontrol.ClearAll(ll_C3452_6);
-            ClearAllcontrol.ClearAll(ll_C3452_7);
-            ClearAllcontrol.ClearAll(ll_C3452_8);
-            ClearAllcontrol.ClearAll(ll_C3452_9);
-
-            ClearAllcontrol.ClearAll(ll_C3453_1);
-            ClearAllcontrol.ClearAll(ll_C3453_2);
-            ClearAllcontrol.ClearAll(ll_C3453_3);
-            ClearAllcontrol.ClearAll(ll_C3453_4);
-            ClearAllcontrol.ClearAll(ll_C3453_5);
-            ClearAllcontrol.ClearAll(ll_C3453_6);
-            ClearAllcontrol.ClearAll(ll_C3453_7);
-            ClearAllcontrol.ClearAll(ll_C3453_8);
-            ClearAllcontrol.ClearAll(ll_C3453_9);
-            ClearAllcontrol.ClearAll(ll_C3453_10);
-            ClearAllcontrol.ClearAll(ll_C3453_11);
-            ClearAllcontrol.ClearAll(ll_C3453_12);
-
-            ll_C3411.setVisibility(View.GONE);
-            ll_C3412.setVisibility(View.GONE);
-            ll_C3413.setVisibility(View.GONE);
-            ll_C3414.setVisibility(View.GONE);
-
-            ll_C3451_1.setVisibility(View.GONE);
-            ll_C3451_2.setVisibility(View.GONE);
-            ll_C3451_3.setVisibility(View.GONE);
-            ll_C3451_4.setVisibility(View.GONE);
-            ll_C3451_5.setVisibility(View.GONE);
-            ll_C3451_6.setVisibility(View.GONE);
-            ll_C3451_7.setVisibility(View.GONE);
-            ll_C3451_8.setVisibility(View.GONE);
-            ll_C3451_9.setVisibility(View.GONE);
-            ll_C3451_10.setVisibility(View.GONE);
-            ll_C3451_11.setVisibility(View.GONE);
-            ll_C3451_12.setVisibility(View.GONE);
-            ll_C3451_13.setVisibility(View.GONE);
-
-            ll_C3452_1.setVisibility(View.GONE);
-            ll_C3452_2.setVisibility(View.GONE);
-            ll_C3452_3.setVisibility(View.GONE);
-            ll_C3452_4.setVisibility(View.GONE);
-            ll_C3452_5.setVisibility(View.GONE);
-            ll_C3452_6.setVisibility(View.GONE);
-            ll_C3452_7.setVisibility(View.GONE);
-            ll_C3452_8.setVisibility(View.GONE);
-            ll_C3452_9.setVisibility(View.GONE);
-
-            ll_C3453_1.setVisibility(View.GONE);
-            ll_C3453_2.setVisibility(View.GONE);
-            ll_C3453_3.setVisibility(View.GONE);
-            ll_C3453_4.setVisibility(View.GONE);
-            ll_C3453_5.setVisibility(View.GONE);
-            ll_C3453_6.setVisibility(View.GONE);
-            ll_C3453_7.setVisibility(View.GONE);
-            ll_C3453_8.setVisibility(View.GONE);
-            ll_C3453_9.setVisibility(View.GONE);
-            ll_C3453_10.setVisibility(View.GONE);
-            ll_C3453_11.setVisibility(View.GONE);
-            ll_C3453_12.setVisibility(View.GONE);
 
             if (rb_C3410_2.isChecked()) {
 
@@ -1047,6 +823,7 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3453_10.setVisibility(View.VISIBLE);
                 ll_C3453_11.setVisibility(View.VISIBLE);
                 ll_C3453_12.setVisibility(View.VISIBLE);
+
             } else {
 
                 ClearAllcontrol.ClearAll(ll_C3411);
@@ -1142,89 +919,11 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3411_5
                 || compoundButton.getId() == R.id.rb_C3411_DK) {
 
-            ClearAllcontrol.ClearAll(ll_C3412);
-            ClearAllcontrol.ClearAll(ll_C3413);
-            ClearAllcontrol.ClearAll(ll_C3414);
-
-            ClearAllcontrol.ClearAll(ll_C3451_1);
-            ClearAllcontrol.ClearAll(ll_C3451_2);
-            ClearAllcontrol.ClearAll(ll_C3451_3);
-            ClearAllcontrol.ClearAll(ll_C3451_4);
-            ClearAllcontrol.ClearAll(ll_C3451_5);
-            ClearAllcontrol.ClearAll(ll_C3451_6);
-            ClearAllcontrol.ClearAll(ll_C3451_7);
-            ClearAllcontrol.ClearAll(ll_C3451_8);
-            ClearAllcontrol.ClearAll(ll_C3451_9);
-            ClearAllcontrol.ClearAll(ll_C3451_10);
-            ClearAllcontrol.ClearAll(ll_C3451_11);
-            ClearAllcontrol.ClearAll(ll_C3451_12);
-            ClearAllcontrol.ClearAll(ll_C3451_13);
-
-            ClearAllcontrol.ClearAll(ll_C3452_1);
-            ClearAllcontrol.ClearAll(ll_C3452_2);
-            ClearAllcontrol.ClearAll(ll_C3452_3);
-            ClearAllcontrol.ClearAll(ll_C3452_4);
-            ClearAllcontrol.ClearAll(ll_C3452_5);
-            ClearAllcontrol.ClearAll(ll_C3452_6);
-            ClearAllcontrol.ClearAll(ll_C3452_7);
-            ClearAllcontrol.ClearAll(ll_C3452_8);
-            ClearAllcontrol.ClearAll(ll_C3452_9);
-
-            ClearAllcontrol.ClearAll(ll_C3453_1);
-            ClearAllcontrol.ClearAll(ll_C3453_2);
-            ClearAllcontrol.ClearAll(ll_C3453_3);
-            ClearAllcontrol.ClearAll(ll_C3453_4);
-            ClearAllcontrol.ClearAll(ll_C3453_5);
-            ClearAllcontrol.ClearAll(ll_C3453_6);
-            ClearAllcontrol.ClearAll(ll_C3453_7);
-            ClearAllcontrol.ClearAll(ll_C3453_8);
-            ClearAllcontrol.ClearAll(ll_C3453_9);
-            ClearAllcontrol.ClearAll(ll_C3453_10);
-            ClearAllcontrol.ClearAll(ll_C3453_11);
-            ClearAllcontrol.ClearAll(ll_C3453_12);
-
-            ll_C3412.setVisibility(View.GONE);
-            ll_C3413.setVisibility(View.GONE);
-            ll_C3414.setVisibility(View.GONE);
-
-            ll_C3451_1.setVisibility(View.GONE);
-            ll_C3451_2.setVisibility(View.GONE);
-            ll_C3451_3.setVisibility(View.GONE);
-            ll_C3451_4.setVisibility(View.GONE);
-            ll_C3451_5.setVisibility(View.GONE);
-            ll_C3451_6.setVisibility(View.GONE);
-            ll_C3451_7.setVisibility(View.GONE);
-            ll_C3451_8.setVisibility(View.GONE);
-            ll_C3451_9.setVisibility(View.GONE);
-            ll_C3451_10.setVisibility(View.GONE);
-            ll_C3451_11.setVisibility(View.GONE);
-            ll_C3451_12.setVisibility(View.GONE);
-            ll_C3451_13.setVisibility(View.GONE);
-
-            ll_C3452_1.setVisibility(View.GONE);
-            ll_C3452_2.setVisibility(View.GONE);
-            ll_C3452_3.setVisibility(View.GONE);
-            ll_C3452_4.setVisibility(View.GONE);
-            ll_C3452_5.setVisibility(View.GONE);
-            ll_C3452_6.setVisibility(View.GONE);
-            ll_C3452_7.setVisibility(View.GONE);
-            ll_C3452_8.setVisibility(View.GONE);
-            ll_C3452_9.setVisibility(View.GONE);
-
-            ll_C3453_1.setVisibility(View.GONE);
-            ll_C3453_2.setVisibility(View.GONE);
-            ll_C3453_3.setVisibility(View.GONE);
-            ll_C3453_4.setVisibility(View.GONE);
-            ll_C3453_5.setVisibility(View.GONE);
-            ll_C3453_6.setVisibility(View.GONE);
-            ll_C3453_7.setVisibility(View.GONE);
-            ll_C3453_8.setVisibility(View.GONE);
-            ll_C3453_9.setVisibility(View.GONE);
-            ll_C3453_10.setVisibility(View.GONE);
-            ll_C3453_11.setVisibility(View.GONE);
-            ll_C3453_12.setVisibility(View.GONE);
-
-            if (rb_C3411_1.isChecked() || rb_C3411_2.isChecked() || rb_C3411_3.isChecked() || rb_C3411_4.isChecked() || rb_C3411_5.isChecked()) {
+            if (rb_C3411_1.isChecked() ||
+                    rb_C3411_2.isChecked() ||
+                    rb_C3411_3.isChecked() ||
+                    rb_C3411_4.isChecked() ||
+                    rb_C3411_5.isChecked()) {
 
                 ll_C3412.setVisibility(View.VISIBLE);
                 ll_C3413.setVisibility(View.VISIBLE);

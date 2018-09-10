@@ -38,6 +38,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             ll_C3103,
             ll_C3104,
             ll_C3105,
+            ll_C3105_OT,
             ll_C3106,
             ll_C3107_1,
             ll_C3107_2,
@@ -263,6 +264,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
     EditText
             ed_study_id,
+            ed_C3105_OT,
             ed_C3107_6_OT,
             ed_C3107_21_OT,
             ed_C3111_2,
@@ -277,6 +279,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             C3103,
             C3104,
             C3105,
+            C3105_OT,
             C3106,
             C3107_1,
             C3107_2,
@@ -434,6 +437,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         ll_C3103 = findViewById(R.id.ll_C3103);
         ll_C3104 = findViewById(R.id.ll_C3104);
         ll_C3105 = findViewById(R.id.ll_C3105);
+        ll_C3105_OT = findViewById(R.id.ll_C3105_OT);
         ll_C3106 = findViewById(R.id.ll_C3106);
         ll_C3107_1 = findViewById(R.id.ll_C3107_1);
         ll_C3107_2 = findViewById(R.id.ll_C3107_2);
@@ -719,6 +723,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         //EditText
 
         //ed_study_id     = (EditText) findViewById(R.id.eb_study_id);
+        ed_C3105_OT = findViewById(R.id.ed_C3105_OT);
         ed_C3107_6_OT = findViewById(R.id.ed_C3107_6_OT);
         ed_C3107_21_OT = findViewById(R.id.ed_C3107_21_OT);
         ed_C3111_2 = findViewById(R.id.ed_C3111_2);
@@ -728,20 +733,6 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     void events_call() {
-
-        rb_C3101_1.setOnCheckedChangeListener(this);
-        rb_C3101_2.setOnCheckedChangeListener(this);
-        rb_C3101_3.setOnCheckedChangeListener(this);
-        rb_C3101_DK.setOnCheckedChangeListener(this);
-
-        rb_C3102_1.setOnCheckedChangeListener(this);
-        rb_C3102_2.setOnCheckedChangeListener(this);
-        rb_C3102_3.setOnCheckedChangeListener(this);
-        rb_C3102_DK.setOnCheckedChangeListener(this);
-
-        rb_C3103_1.setOnCheckedChangeListener(this);
-        rb_C3103_2.setOnCheckedChangeListener(this);
-        rb_C3103_DK.setOnCheckedChangeListener(this);
 
         rb_C3104_1.setOnCheckedChangeListener(this);
         rb_C3104_2.setOnCheckedChangeListener(this);
@@ -753,161 +744,29 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3105_4.setOnCheckedChangeListener(this);
         rb_C3105_DK.setOnCheckedChangeListener(this);
 
-        rb_C3106_1.setOnCheckedChangeListener(this);
-        rb_C3106_2.setOnCheckedChangeListener(this);
-        rb_C3106_DK.setOnCheckedChangeListener(this);
-
-        rb_C3107_1_1.setOnCheckedChangeListener(this);
-        rb_C3107_1_2.setOnCheckedChangeListener(this);
-        rb_C3107_1_DK.setOnCheckedChangeListener(this);
-        rb_C3107_2_1.setOnCheckedChangeListener(this);
-        rb_C3107_2_2.setOnCheckedChangeListener(this);
-        rb_C3107_2_DK.setOnCheckedChangeListener(this);
-        rb_C3107_3_1.setOnCheckedChangeListener(this);
-        rb_C3107_3_2.setOnCheckedChangeListener(this);
-        rb_C3107_3_DK.setOnCheckedChangeListener(this);
-        rb_C3107_4_1.setOnCheckedChangeListener(this);
-        rb_C3107_4_2.setOnCheckedChangeListener(this);
-        rb_C3107_4_DK.setOnCheckedChangeListener(this);
-        rb_C3107_5_1.setOnCheckedChangeListener(this);
-        rb_C3107_5_2.setOnCheckedChangeListener(this);
-        rb_C3107_5_DK.setOnCheckedChangeListener(this);
-        rb_C3107_6_1.setOnCheckedChangeListener(this);
-        rb_C3107_6_2.setOnCheckedChangeListener(this);
-        rb_C3107_6_DK.setOnCheckedChangeListener(this);
-        rb_C3107_7_1.setOnCheckedChangeListener(this);
-        rb_C3107_7_2.setOnCheckedChangeListener(this);
-        rb_C3107_7_DK.setOnCheckedChangeListener(this);
-        rb_C3107_8_1.setOnCheckedChangeListener(this);
-        rb_C3107_8_2.setOnCheckedChangeListener(this);
-        rb_C3107_8_DK.setOnCheckedChangeListener(this);
-        rb_C3107_9_1.setOnCheckedChangeListener(this);
-        rb_C3107_9_2.setOnCheckedChangeListener(this);
-        rb_C3107_9_DK.setOnCheckedChangeListener(this);
-        rb_C3107_10_1.setOnCheckedChangeListener(this);
-        rb_C3107_10_2.setOnCheckedChangeListener(this);
-        rb_C3107_10_DK.setOnCheckedChangeListener(this);
-        rb_C3107_11_1.setOnCheckedChangeListener(this);
-        rb_C3107_11_2.setOnCheckedChangeListener(this);
-        rb_C3107_11_DK.setOnCheckedChangeListener(this);
-        rb_C3107_12_1.setOnCheckedChangeListener(this);
-        rb_C3107_12_2.setOnCheckedChangeListener(this);
-        rb_C3107_12_DK.setOnCheckedChangeListener(this);
-        rb_C3107_13_1.setOnCheckedChangeListener(this);
-        rb_C3107_13_2.setOnCheckedChangeListener(this);
-        rb_C3107_13_DK.setOnCheckedChangeListener(this);
-        rb_C3107_14_1.setOnCheckedChangeListener(this);
-        rb_C3107_14_2.setOnCheckedChangeListener(this);
-        rb_C3107_14_DK.setOnCheckedChangeListener(this);
-        rb_C3107_15_1.setOnCheckedChangeListener(this);
-        rb_C3107_15_2.setOnCheckedChangeListener(this);
-        rb_C3107_15_DK.setOnCheckedChangeListener(this);
-        rb_C3107_16_1.setOnCheckedChangeListener(this);
-        rb_C3107_16_2.setOnCheckedChangeListener(this);
-        rb_C3107_16_DK.setOnCheckedChangeListener(this);
-        rb_C3107_17_1.setOnCheckedChangeListener(this);
-        rb_C3107_17_2.setOnCheckedChangeListener(this);
-        rb_C3107_17_DK.setOnCheckedChangeListener(this);
-        rb_C3107_18_1.setOnCheckedChangeListener(this);
-        rb_C3107_18_2.setOnCheckedChangeListener(this);
-        rb_C3107_18_DK.setOnCheckedChangeListener(this);
-        rb_C3107_19_1.setOnCheckedChangeListener(this);
-        rb_C3107_19_2.setOnCheckedChangeListener(this);
-        rb_C3107_19_DK.setOnCheckedChangeListener(this);
-        rb_C3107_20_1.setOnCheckedChangeListener(this);
-        rb_C3107_20_2.setOnCheckedChangeListener(this);
-        rb_C3107_20_DK.setOnCheckedChangeListener(this);
-        rb_C3107_21_1.setOnCheckedChangeListener(this);
-        rb_C3107_21_2.setOnCheckedChangeListener(this);
-        rb_C3107_21_DK.setOnCheckedChangeListener(this);
-
         rb_C3108_1.setOnCheckedChangeListener(this);
         rb_C3108_2.setOnCheckedChangeListener(this);
         rb_C3108_3.setOnCheckedChangeListener(this);
 
-        rb_C3109_1_1.setOnCheckedChangeListener(this);
-        rb_C3109_1_2.setOnCheckedChangeListener(this);
-        rb_C3109_1_DK.setOnCheckedChangeListener(this);
-        rb_C3109_1_NR.setOnCheckedChangeListener(this);
-        rb_C3109_2_1.setOnCheckedChangeListener(this);
-        rb_C3109_2_2.setOnCheckedChangeListener(this);
-        rb_C3109_2_DK.setOnCheckedChangeListener(this);
-        rb_C3109_2_NR.setOnCheckedChangeListener(this);
-        rb_C3109_3_1.setOnCheckedChangeListener(this);
-        rb_C3109_3_2.setOnCheckedChangeListener(this);
-        rb_C3109_3_DK.setOnCheckedChangeListener(this);
-        rb_C3109_3_NR.setOnCheckedChangeListener(this);
-        rb_C3109_4_1.setOnCheckedChangeListener(this);
-        rb_C3109_4_2.setOnCheckedChangeListener(this);
-        rb_C3109_4_DK.setOnCheckedChangeListener(this);
-        rb_C3109_4_NR.setOnCheckedChangeListener(this);
-        rb_C3109_5_1.setOnCheckedChangeListener(this);
-        rb_C3109_5_2.setOnCheckedChangeListener(this);
-        rb_C3109_5_DK.setOnCheckedChangeListener(this);
-        rb_C3109_5_NR.setOnCheckedChangeListener(this);
-        rb_C3109_6_1.setOnCheckedChangeListener(this);
-        rb_C3109_6_2.setOnCheckedChangeListener(this);
-        rb_C3109_6_DK.setOnCheckedChangeListener(this);
-        rb_C3109_6_NR.setOnCheckedChangeListener(this);
-        rb_C3109_7_1.setOnCheckedChangeListener(this);
-        rb_C3109_7_2.setOnCheckedChangeListener(this);
-        rb_C3109_7_DK.setOnCheckedChangeListener(this);
-        rb_C3109_7_NR.setOnCheckedChangeListener(this);
-        rb_C3109_8_1.setOnCheckedChangeListener(this);
-        rb_C3109_8_2.setOnCheckedChangeListener(this);
-        rb_C3109_8_DK.setOnCheckedChangeListener(this);
-        rb_C3109_8_NR.setOnCheckedChangeListener(this);
-        rb_C3109_9_1.setOnCheckedChangeListener(this);
-        rb_C3109_9_2.setOnCheckedChangeListener(this);
-        rb_C3109_9_DK.setOnCheckedChangeListener(this);
-        rb_C3109_9_NR.setOnCheckedChangeListener(this);
-        rb_C3109_10_1.setOnCheckedChangeListener(this);
-        rb_C3109_10_2.setOnCheckedChangeListener(this);
-        rb_C3109_10_DK.setOnCheckedChangeListener(this);
-        rb_C3109_10_NR.setOnCheckedChangeListener(this);
-        rb_C3109_11_1.setOnCheckedChangeListener(this);
-        rb_C3109_11_2.setOnCheckedChangeListener(this);
-        rb_C3109_11_DK.setOnCheckedChangeListener(this);
-        rb_C3109_11_NR.setOnCheckedChangeListener(this);
-        rb_C3109_12_1.setOnCheckedChangeListener(this);
-        rb_C3109_12_2.setOnCheckedChangeListener(this);
-        rb_C3109_12_DK.setOnCheckedChangeListener(this);
-        rb_C3109_12_NR.setOnCheckedChangeListener(this);
-        rb_C3109_13_1.setOnCheckedChangeListener(this);
-        rb_C3109_13_2.setOnCheckedChangeListener(this);
-        rb_C3109_13_DK.setOnCheckedChangeListener(this);
-        rb_C3109_13_NR.setOnCheckedChangeListener(this);
-        rb_C3109_14_1.setOnCheckedChangeListener(this);
-        rb_C3109_14_2.setOnCheckedChangeListener(this);
-        rb_C3109_14_DK.setOnCheckedChangeListener(this);
-        rb_C3109_14_NR.setOnCheckedChangeListener(this);
-
-        rb_C3110_1.setOnCheckedChangeListener(this);
-        rb_C3110_2.setOnCheckedChangeListener(this);
-        rb_C3110_DK.setOnCheckedChangeListener(this);
-
         rb_C3111_1.setOnCheckedChangeListener(this);
         rb_C3111_2.setOnCheckedChangeListener(this);
         rb_C3111_DK.setOnCheckedChangeListener(this);
+
         rb_C3111_1_1.setOnCheckedChangeListener(this);
         rb_C3111_1_2.setOnCheckedChangeListener(this);
         rb_C3111_1_DK.setOnCheckedChangeListener(this);
+
         rb_C3111_3_1.setOnCheckedChangeListener(this);
         rb_C3111_3_2.setOnCheckedChangeListener(this);
         rb_C3111_3_DK.setOnCheckedChangeListener(this);
+
         rb_C3111_5_1.setOnCheckedChangeListener(this);
         rb_C3111_5_2.setOnCheckedChangeListener(this);
         rb_C3111_5_DK.setOnCheckedChangeListener(this);
-        rb_C3111_7_1.setOnCheckedChangeListener(this);
-        rb_C3111_7_2.setOnCheckedChangeListener(this);
-        rb_C3111_7_DK.setOnCheckedChangeListener(this);
+
         rb_C3111_8_1.setOnCheckedChangeListener(this);
         rb_C3111_8_2.setOnCheckedChangeListener(this);
         rb_C3111_8_DK.setOnCheckedChangeListener(this);
-
-        rb_C3112_1.setOnCheckedChangeListener(this);
-        rb_C3112_2.setOnCheckedChangeListener(this);
-        rb_C3112_DK.setOnCheckedChangeListener(this);
     }
 
     @Override
@@ -929,6 +788,23 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
                 ll_C3105.setVisibility(View.VISIBLE);
                 ll_C3106.setVisibility(View.VISIBLE);
+            }
+        }
+
+        if (compoundButton.getId() == R.id.rb_C3105_1
+                || compoundButton.getId() == R.id.rb_C3105_2
+                || compoundButton.getId() == R.id.rb_C3105_3
+                || compoundButton.getId() == R.id.rb_C3105_4
+                || compoundButton.getId() == R.id.rb_C3105_DK) {
+
+            if (rb_C3105_3.isChecked() || rb_C3105_4.isChecked()) {
+
+                ll_C3105_OT.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ClearAllcontrol.ClearAll(ll_C3105_OT);
+                ll_C3105_OT.setVisibility(View.GONE);
             }
         }
 
@@ -1040,7 +916,6 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_C3111_1_2.isChecked() || rb_C3111_1_DK.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_C3111_2);
-
                 ll_C3111_2.setVisibility(View.GONE);
 
             } else {
@@ -1057,7 +932,6 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_C3111_3_2.isChecked() || rb_C3111_3_DK.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_C3111_4);
-
                 ll_C3111_4.setVisibility(View.GONE);
 
             } else {
@@ -1112,6 +986,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         C3103 = "000";
         C3104 = "000";
         C3105 = "000";
+        C3105_OT = "000";
         C3106 = "000";
         C3107_1 = "000";
         C3107_2 = "000";
@@ -1211,8 +1086,10 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             C3105 = "2";
         } else if (rb_C3105_3.isChecked()) {
             C3105 = "3";
+            C3105_OT = ed_C3105_OT.getText().toString().trim();
         } else if (rb_C3105_4.isChecked()) {
             C3105 = "4";
+            C3105_OT = ed_C3105_OT.getText().toString().trim();
         } else if (rb_C3105_DK.isChecked()) {
             C3105 = "9";
         }
@@ -1638,6 +1515,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
                 + Global.C.C3101_C3112.C3103 + ","
                 + Global.C.C3101_C3112.C3104 + ","
                 + Global.C.C3101_C3112.C3105 + ","
+                + Global.C.C3101_C3112.C3105_OT + ","
                 + Global.C.C3101_C3112.C3106 + ","
                 + Global.C.C3101_C3112.C3107_1 + ","
                 + Global.C.C3101_C3112.C3107_2 + ","
@@ -1696,6 +1574,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
                 C3103 + "','" +
                 C3104 + "','" +
                 C3105 + "','" +
+                C3105_OT + "','" +
                 C3106 + "','" +
                 C3107_1 + "','" +
                 C3107_2 + "','" +
