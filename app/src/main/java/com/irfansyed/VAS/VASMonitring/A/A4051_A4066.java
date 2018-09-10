@@ -16,6 +16,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
+import utils.validations;
 
 public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -277,6 +278,7 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
 
         Initialization();
         events_calls();
+
     }
 
     @Override
@@ -384,7 +386,7 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         {
             if (rb_A4059_u_1.isChecked()) {
                 ll_A4059_a.setVisibility(View.VISIBLE);
-            } else if (rb_A4052_u_2.isChecked()) {
+            } else if (rb_A4059_u_2.isChecked()) {
                 ll_A4059_b.setVisibility(View.VISIBLE);
             }
         }
@@ -873,6 +875,10 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         }
 
         if (Gothrough.IamHiden(ll_A4052_b) == false) {
+            return false;
+        }
+
+        if (validations.RangeTextBox(this, ed_A4052_b, 0, 30, "Months")) {
             return false;
         }
 

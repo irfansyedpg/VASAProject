@@ -132,6 +132,7 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
             STATUS;
 
     // End Region_Declaration
+
     private TextWatcher generalTextWatcher = new TextWatcher() {
 
         @Override
@@ -300,6 +301,7 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_A4004_3
                 || compoundButton.getId() == R.id.rb_A4004_DK
                 || compoundButton.getId() == R.id.rb_A4004_RA) {
+
             if (rb_A4004_DK.isChecked() || rb_A4004_RA.isChecked()) {
                 ll_A4005.setVisibility(View.GONE);
 
@@ -317,11 +319,13 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_A4007_6
                 || compoundButton.getId() == R.id.rb_A4007_DK
                 || compoundButton.getId() == R.id.rb_A4007_RA) {
+
             if (rb_A4007_2.isChecked()) {
+                ll_A4007_1.setVisibility(View.VISIBLE);
+
+            } else {
                 ClearAllcontrol.ClearAll(ll_A4007_1);
                 ll_A4007_1.setVisibility(View.GONE);
-            } else {
-                ll_A4007_1.setVisibility(View.VISIBLE);
             }
         }
 
@@ -352,8 +356,8 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_A4010_RA) {
             if (rb_A4010_2.isChecked() || rb_A4010_3.isChecked() || rb_A4010_4.isChecked()) {
                 ClearAllcontrol.ClearAll(ll_A4011);
-
                 ll_A4011.setVisibility(View.GONE);
+
             } else if (rb_A4010_DK.isChecked() || rb_A4010_RA.isChecked()) {
                 ClearAllcontrol.ClearAll(ll_A4011);
                 ClearAllcontrol.ClearAll(ll_A4012);

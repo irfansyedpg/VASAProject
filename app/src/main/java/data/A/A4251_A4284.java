@@ -31,9 +31,33 @@ public class A4251_A4284 {
                 Global.A.A4251_A4284.A4255_13 + " TEXT," +
                 Global.A.A4251_A4284.A4255_13_OT + " TEXT," +
                 Global.A.A4251_A4284.A4255_DK + " TEXT," +
-                Global.A.A4251_A4284.A4256_minutes + " TEXT," +
-                Global.A.A4251_A4284.A4256_hours + " TEXT," +
                 Global.A.A4251_A4284.A4256_days + " TEXT," +
+                Global.A.A4251_A4284.A4256_hours + " TEXT," +
+                Global.A.A4251_A4284.A4256_minutes + " TEXT," +
+                Global.A.A4251_A4284.A4257 + " TEXT," +
+                Global.A.A4251_A4284.A4257_name + " TEXT," +
+                Global.A.A4251_A4284.A4258 + " TEXT," +
+                Global.A.A4251_A4284.A4259_hours + " TEXT," +
+                Global.A.A4251_A4284.A4259_minutes + " TEXT," +
+                Global.A.A4251_A4284.A4260 + " TEXT," +
+                Global.A.A4251_A4284.A4261 + " TEXT," +
+                Global.A.A4251_A4284.A4262 + " TEXT," +
+                Global.A.A4251_A4284.A4262_name + " TEXT," +
+                Global.A.A4251_A4284.A4263_1 + " TEXT," +
+                Global.A.A4251_A4284.A4263_2 + " TEXT," +
+                Global.A.A4251_A4284.A4264 + " TEXT," +
+                Global.A.A4251_A4284.A4266 + " TEXT," +
+                Global.A.A4251_A4284.A4266_name + " TEXT," +
+                Global.A.A4251_A4284.A4267 + " TEXT," +
+                Global.A.A4251_A4284.A4268_hours + " TEXT," +
+                Global.A.A4251_A4284.A4268_minutes + " TEXT," +
+                Global.A.A4251_A4284.A4269 + " TEXT," +
+                Global.A.A4251_A4284.A4270 + " TEXT," +
+                Global.A.A4251_A4284.A4271 + " TEXT," +
+                Global.A.A4251_A4284.A4271_name + " TEXT," +
+                Global.A.A4251_A4284.A4272_1 + " TEXT," +
+                Global.A.A4251_A4284.A4272_2 + " TEXT," +
+                Global.A.A4251_A4284.A4273 + " TEXT," +
                 Global.A.A4251_A4284.A4274 + " TEXT," +
                 Global.A.A4251_A4284.A4275 + " TEXT," +
                 Global.A.A4251_A4284.A4276_1 + " TEXT," +
