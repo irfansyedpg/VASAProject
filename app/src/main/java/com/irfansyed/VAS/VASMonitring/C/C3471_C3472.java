@@ -177,6 +177,5 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
         }
 
         return Gothrough.IamHiden(ll_C3472) != false;
-
     }
 }

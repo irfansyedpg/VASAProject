@@ -15,7 +15,6 @@ import com.irfansyed.VAS.VASMonitring.R;
 
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 
 public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -366,9 +365,6 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3001_DK
                 || compoundButton.getId() == R.id.rb_C3001_RA) {
 
-            ClearAllcontrol.ClearAll(ll_C3002);
-            ll_C3002.setVisibility(View.GONE);
-
             if (rb_C3001_1.isChecked()) {
 
                 ll_C3002.setVisibility(View.VISIBLE);
@@ -384,18 +380,6 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3003_2
                 || compoundButton.getId() == R.id.rb_C3003_DK
                 || compoundButton.getId() == R.id.rb_C3003_RA) {
-
-            ClearAllcontrol.ClearAll(ll_C3004);
-            ClearAllcontrol.ClearAll(ll_C3005u);
-            ClearAllcontrol.ClearAll(ll_C3005d);
-            ClearAllcontrol.ClearAll(ll_C3005w);
-            ClearAllcontrol.ClearAll(ll_C3005m);
-
-            ll_C3004.setVisibility(View.GONE);
-            ll_C3005u.setVisibility(View.GONE);
-            ll_C3005d.setVisibility(View.GONE);
-            ll_C3005w.setVisibility(View.GONE);
-            ll_C3005m.setVisibility(View.GONE);
 
             if (rb_C3003_2.isChecked() || rb_C3003_DK.isChecked() || rb_C3003_RA.isChecked()) {
 
@@ -427,16 +411,6 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3004_DK
                 || compoundButton.getId() == R.id.rb_C3004_RA) {
 
-            ClearAllcontrol.ClearAll(ll_C3005u);
-            ClearAllcontrol.ClearAll(ll_C3005d);
-            ClearAllcontrol.ClearAll(ll_C3005w);
-            ClearAllcontrol.ClearAll(ll_C3005m);
-
-            ll_C3005u.setVisibility(View.GONE);
-            ll_C3005d.setVisibility(View.GONE);
-            ll_C3005w.setVisibility(View.GONE);
-            ll_C3005m.setVisibility(View.GONE);
-
             if (rb_C3004_3.isChecked()) {
 
                 ll_C3005u.setVisibility(View.VISIBLE);
@@ -463,13 +437,6 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3005u_3
                 || compoundButton.getId() == R.id.rb_C3005u_DK
                 || compoundButton.getId() == R.id.rb_C3005u_RA) {
-
-            ClearAllcontrol.ClearAll(ll_C3005d);
-            ClearAllcontrol.ClearAll(ll_C3005w);
-            ClearAllcontrol.ClearAll(ll_C3005m);
-            ll_C3005d.setVisibility(View.GONE);
-            ll_C3005w.setVisibility(View.GONE);
-            ll_C3005m.setVisibility(View.GONE);
 
             if (rb_C3005u_1.isChecked()) {
 
@@ -524,9 +491,6 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3006_DK
                 || compoundButton.getId() == R.id.rb_C3006_RA) {
 
-            ClearAllcontrol.ClearAll(ll_C3006_OT);
-            ll_C3006_OT.setVisibility(View.GONE);
-
             if (rb_C3006_6.isChecked() || rb_C3006_10.isChecked() || rb_C3006_12.isChecked()) {
 
                 ll_C3006_OT.setVisibility(View.VISIBLE);
@@ -548,9 +512,6 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3008_8
                 || compoundButton.getId() == R.id.rb_C3008_9) {
 
-            ClearAllcontrol.ClearAll(ll_C3008_OT);
-            ll_C3008_OT.setVisibility(View.GONE);
-
             if (rb_C3008_7.isChecked()) {
 
                 ll_C3008_OT.setVisibility(View.VISIBLE);
@@ -566,14 +527,6 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3009_1_2
                 || compoundButton.getId() == R.id.rb_C3009_1_DK
                 || compoundButton.getId() == R.id.rb_C3009_1_RA) {
-
-            ClearAllcontrol.ClearAll(ll_C3009_2);
-            ClearAllcontrol.ClearAll(ll_C3009_3);
-            ClearAllcontrol.ClearAll(ll_C3009_4);
-
-            ll_C3009_2.setVisibility(View.GONE);
-            ll_C3009_3.setVisibility(View.GONE);
-            ll_C3009_4.setVisibility(View.GONE);
 
             if (rb_C3009_1_2.isChecked() || rb_C3009_1_DK.isChecked() || rb_C3009_1_RA.isChecked()) {
 
@@ -598,12 +551,6 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3009_2_DK
                 || compoundButton.getId() == R.id.rb_C3009_2_RA) {
 
-            ClearAllcontrol.ClearAll(ll_C3009_3);
-            ClearAllcontrol.ClearAll(ll_C3009_4);
-
-            ll_C3009_3.setVisibility(View.GONE);
-            ll_C3009_4.setVisibility(View.GONE);
-
             if (rb_C3009_2_2.isChecked() || rb_C3009_2_DK.isChecked() || rb_C3009_2_RA.isChecked()) {
 
                 ll_C3009_3.setVisibility(View.VISIBLE);
@@ -623,9 +570,6 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3009_3_2
                 || compoundButton.getId() == R.id.rb_C3009_3_DK
                 || compoundButton.getId() == R.id.rb_C3009_3_RA) {
-
-            ClearAllcontrol.ClearAll(ll_C3009_4);
-            ll_C3009_4.setVisibility(View.GONE);
 
             if (rb_C3009_3_2.isChecked() || rb_C3009_3_DK.isChecked() || rb_C3009_3_RA.isChecked()) {
 
@@ -889,7 +833,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_C3001) == false) {
+        /*if (Gothrough.IamHiden(ll_C3001) == false) {
             return false;
         }
 
@@ -957,7 +901,11 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3011) != false;
+        if(Gothrough.IamHiden(ll_C3011) != false == ){
+            return false;
+        }*/
+
+        return true;
     }
 
 }

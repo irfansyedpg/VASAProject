@@ -151,6 +151,9 @@ public class N2080_N2107 extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == bi.rbN20893.getId()) {
                     ClearAllcontrol.ClearAll(bi.llN2090N2192); //ll_N2090_N2192
+
+                    ClearAllcontrol.ClearAll(bi.llN2096N2097); //ll_N2096_N2097
+                    ClearAllcontrol.ClearAll(bi.llN2095); //ll_N2095
                 }
             }
         });
@@ -161,6 +164,11 @@ public class N2080_N2107 extends AppCompatActivity {
                 if (i == bi.rbN20901.getId()) {
                     ClearAllcontrol.ClearAll(bi.llN2091N2192); //ll_N2091_N2192
                 }
+
+                if ((bi.rbN20902.isChecked() || bi.rbN2090DK.isChecked()) && (bi.rbN20931.isChecked() || bi.rbN20932.isChecked() || bi.rbN2093OT.isChecked() || bi.rbN2093DK.isChecked())) {
+                    ClearAllcontrol.ClearAll(bi.llN2095N2106); //ll_N2095_N2106
+                }
+
             }
         });
 
@@ -188,6 +196,17 @@ public class N2080_N2107 extends AppCompatActivity {
         bi.cbN20916.setOnCheckedChangeListener(cbx2091);
         bi.cbN2091OT.setOnCheckedChangeListener(cbx2091);
         bi.cbN2091DK.setOnCheckedChangeListener(cbx2091);
+
+        bi.rgN2093.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if ((bi.rbN20902.isChecked() || bi.rbN2090DK.isChecked()) && (bi.rbN20931.isChecked() || bi.rbN20932.isChecked() || bi.rbN2093OT.isChecked() || bi.rbN2093DK.isChecked())) {
+                    ClearAllcontrol.ClearAll(bi.llN2095N2106); //ll_N2095_N2106
+                }
+
+            }
+        });
 
         bi.rgN2095.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -718,76 +737,88 @@ public class N2080_N2107 extends AppCompatActivity {
                 return false;
             }
 
-            //ll_N2095
-            if (!Gothrough.IamHiden(bi.llN2095)) {
-                return false;
-            }
 
-            if (bi.rbN20951.isChecked()) {
-                //ll_N2096
-                if (!Gothrough.IamHiden(bi.llN2096)) {
-                    return false;
-                }
+            if ((!bi.rbN20902.isChecked() || !bi.rbN2090DK.isChecked()) && (!bi.rbN20931.isChecked() || !bi.rbN20932.isChecked() || !bi.rbN2093OT.isChecked() || !bi.rbN2093DK.isChecked())) {
 
-                //ll_N2097
-                if (!Gothrough.IamHiden(bi.llN2097)) {
-                    return false;
-                }
-
-                //ll_N2098
-                if (!Gothrough.IamHiden(bi.llN2098)) {
-                    return false;
-                }
-                if (!Gothrough.TextHidden(
-                        bi.rbN209810.isChecked() ? bi.edN209810 : bi.rbN2098OT.isChecked() ? bi.edN2098OT : null)) {
-                    return false;
-                }
-
-                if (!bi.rbN20981.isChecked() || !bi.rbN20982.isChecked()) {
-                    //ll_N2099
-                    if (!Gothrough.IamHiden(bi.llN2099)) {
+                if (!bi.rbN20893.isChecked()) {
+                    //ll_N2095
+                    if (!Gothrough.IamHiden(bi.llN2095)) {
                         return false;
                     }
+                }
 
-                    if (bi.rbN20991.isChecked()) {
-                        //ll_N2100
-                        if (!Gothrough.IamHiden(bi.llN2100)) {
+                if (bi.rbN20951.isChecked()) {
+
+                    if (!bi.rbN20893.isChecked()) {
+                        //ll_N2096
+                        if (!Gothrough.IamHiden(bi.llN2096)) {
                             return false;
                         }
 
-                        //ll_N2101
-                        if (!Gothrough.IamHiden(bi.llN2101)) {
+                        //ll_N2097
+                        if (!Gothrough.IamHiden(bi.llN2097)) {
+                            return false;
+                        }
+
+                    }
+
+                    //ll_N2098
+                    if (!Gothrough.IamHiden(bi.llN2098)) {
+                        return false;
+                    }
+                    if (!Gothrough.TextHidden(
+                            bi.rbN209810.isChecked() ? bi.edN209810 : bi.rbN2098OT.isChecked() ? bi.edN2098OT : null)) {
+                        return false;
+                    }
+
+                    if (!bi.rbN20981.isChecked() || !bi.rbN20982.isChecked()) {
+                        //ll_N2099
+                        if (!Gothrough.IamHiden(bi.llN2099)) {
+                            return false;
+                        }
+
+                        if (bi.rbN20991.isChecked()) {
+                            //ll_N2100
+                            if (!Gothrough.IamHiden(bi.llN2100)) {
+                                return false;
+                            }
+
+                            //ll_N2101
+                            if (!Gothrough.IamHiden(bi.llN2101)) {
+                                return false;
+                            }
+                        }
+                    }
+
+                    //ll_N2102
+                    if (!Gothrough.IamHiden(bi.llN2102)) {
+                        return false;
+                    }
+
+                    if (bi.rbN21021.isChecked() || bi.rbN21023.isChecked()) {
+                        //ll_N2103
+                        if (!Gothrough.IamHiden(bi.llN2103)) {
+                            return false;
+                        }
+
+                        //ll_N2104
+                        if (!Gothrough.IamHiden(bi.llN2104)) {
+                            return false;
+                        }
+
+                        //ll_N2105
+                        if (!Gothrough.IamHiden(bi.llN2105)) {
+                            return false;
+                        }
+
+                        //ll_N2106
+                        if (!Gothrough.IamHiden(bi.llN2106)) {
                             return false;
                         }
                     }
                 }
 
-                //ll_N2102
-                if (!Gothrough.IamHiden(bi.llN2102)) {
-                    return false;
-                }
 
-                if (bi.rbN21021.isChecked() || bi.rbN21023.isChecked()) {
-                    //ll_N2103
-                    if (!Gothrough.IamHiden(bi.llN2103)) {
-                        return false;
-                    }
-
-                    //ll_N2104
-                    if (!Gothrough.IamHiden(bi.llN2104)) {
-                        return false;
-                    }
-
-                    //ll_N2105
-                    if (!Gothrough.IamHiden(bi.llN2105)) {
-                        return false;
-                    }
-
-                    //ll_N2106
-                    if (!Gothrough.IamHiden(bi.llN2106)) {
-                        return false;
-                    }
-                }
             }
         }
 

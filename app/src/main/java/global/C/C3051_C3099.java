@@ -25,8 +25,8 @@ public class C3051_C3099 {
     public static String C3065_5 = "C3065_5";
     public static String C3065_6 = "C3065_6";
     public static String C3065_7 = "C3065_7";
-    public static String C3065_DK = "C3065_DK";
     public static String C3065_OT = "C3065_OT";
+    public static String C3065_DK = "C3065_DK";
     public static String C3066 = "C3066";
     public static String C3067_1 = "C3067_1";
     public static String C3067_2 = "C3067_2";
@@ -35,8 +35,10 @@ public class C3051_C3099 {
     public static String C3067_5 = "C3067_5";
     public static String C3067_6 = "C3067_6";
     public static String C3067_7 = "C3067_7";
+    public static String C3067_OT = "C3067_OT";
     public static String C3067_DK = "C3067_DK";
     public static String C3068 = "C3068";
+    public static String C3068_OT = "C3068_OT";
     public static String C3069 = "C3069";
     public static String C3070 = "C3070";
     public static String C3071 = "C3071";

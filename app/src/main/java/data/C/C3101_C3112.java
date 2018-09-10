@@ -15,6 +15,7 @@ public class C3101_C3112 {
                 Global.C.C3101_C3112.C3103 + " TEXT," +
                 Global.C.C3101_C3112.C3104 + " TEXT," +
                 Global.C.C3101_C3112.C3105 + " TEXT," +
+                Global.C.C3101_C3112.C3105_OT + " TEXT," +
                 Global.C.C3101_C3112.C3106 + " TEXT," +
                 Global.C.C3101_C3112.C3107_1 + " TEXT," +
                 Global.C.C3101_C3112.C3107_2 + " TEXT," +

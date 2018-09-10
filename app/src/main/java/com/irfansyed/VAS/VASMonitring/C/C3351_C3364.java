@@ -16,7 +16,6 @@ import com.irfansyed.VAS.VASMonitring.R;
 import Global.C.C3001_C3011;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 
 public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -157,8 +156,10 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3351_2.setOnCheckedChangeListener(this);
         rb_C3351_DK.setOnCheckedChangeListener(this);
         rb_C3351_RA.setOnCheckedChangeListener(this);
+
         rb_C3352_1.setOnCheckedChangeListener(this);
         rb_C3352_2.setOnCheckedChangeListener(this);
+
         rb_C3363_1.setOnCheckedChangeListener(this);
         rb_C3363_2.setOnCheckedChangeListener(this);
         rb_C3363_3.setOnCheckedChangeListener(this);
@@ -173,22 +174,6 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3351_2
                 || compoundButton.getId() == R.id.rb_C3351_DK
                 || compoundButton.getId() == R.id.rb_C3351_RA) {
-
-            ClearAllcontrol.ClearAll(ll_C3352);
-            ClearAllcontrol.ClearAll(ll_C3353);
-            ClearAllcontrol.ClearAll(ll_C3354);
-            ClearAllcontrol.ClearAll(ll_C3355);
-            ClearAllcontrol.ClearAll(ll_C3356);
-            ClearAllcontrol.ClearAll(ll_C3357);
-            ClearAllcontrol.ClearAll(ll_C3358);
-
-            ll_C3352.setVisibility(View.GONE);
-            ll_C3353.setVisibility(View.GONE);
-            ll_C3354.setVisibility(View.GONE);
-            ll_C3355.setVisibility(View.GONE);
-            ll_C3356.setVisibility(View.GONE);
-            ll_C3357.setVisibility(View.GONE);
-            ll_C3358.setVisibility(View.GONE);
 
             if (rb_C3351_1.isChecked()) {
 
@@ -223,20 +208,6 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_C3352_1
                 || compoundButton.getId() == R.id.rb_C3352_2) {
 
-            ClearAllcontrol.ClearAll(ll_C3353);
-            ClearAllcontrol.ClearAll(ll_C3354);
-            ClearAllcontrol.ClearAll(ll_C3355);
-            ClearAllcontrol.ClearAll(ll_C3356);
-            ClearAllcontrol.ClearAll(ll_C3357);
-            ClearAllcontrol.ClearAll(ll_C3358);
-
-            ll_C3353.setVisibility(View.GONE);
-            ll_C3354.setVisibility(View.GONE);
-            ll_C3355.setVisibility(View.GONE);
-            ll_C3356.setVisibility(View.GONE);
-            ll_C3357.setVisibility(View.GONE);
-            ll_C3358.setVisibility(View.GONE);
-
             if (rb_C3352_1.isChecked()) {
 
                 ll_C3353.setVisibility(View.VISIBLE);
@@ -269,9 +240,6 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3363_3
                 || compoundButton.getId() == R.id.rb_C3363_DK
                 || compoundButton.getId() == R.id.rb_C3363_RA) {
-
-            ClearAllcontrol.ClearAll(ll_C3364);
-            ll_C3364.setVisibility(View.GONE);
 
             if (rb_C3363_1.isChecked()) {
 
@@ -399,7 +367,7 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_C3351) == false) {
+        /*if (Gothrough.IamHiden(ll_C3351) == false) {
             return false;
         }
 
@@ -435,7 +403,10 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3364) != false;
-    }
+        if (Gothrough.IamHiden(ll_C3364) != false){
+            return false;
+        }*/
 
+        return true;
+    }
 }

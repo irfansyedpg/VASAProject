@@ -36,9 +36,7 @@
                         android:text="@string/txt_C3121" />
 
 
-                    <RadioGroup style="@style/RadioGroup"
-
-                        >
+                    <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
 
@@ -88,6 +86,11 @@
                             android:id="@+id/rb_C3122_2"
                             style="@style/RadioButton"
                             android:text="Months" />
+
+                        <RadioButton
+                            android:id="@+id/rb_C3122_3"
+                            style="@style/RadioButton"
+                            android:text="Both Months and Days" />
 
                         <RadioButton
                             android:id="@+id/rb_C3122_DK"
@@ -2345,6 +2348,11 @@
                             android:id="@+id/rb_C3162_2"
                             style="@style/RadioButton"
                             android:text="Months" />
+
+                        <RadioButton
+                            android:id="@+id/rb_C3162_3"
+                            style="@style/RadioButton"
+                            android:text="Both Months and Days" />
 
                         <RadioButton
                             android:id="@+id/rb_C3162_DK"
@@ -6017,6 +6025,12 @@
 
                         <RadioButton
 
+                            android:id="@+id/rb_C3227_2_6"
+                            style="@style/RadioButton"
+                            android:text="Other"/>
+
+                        <RadioButton
+
                             android:id="@+id/rb_C3227_2_DK"
                             style="@style/RadioButton"
                             android:text="@string/rb_C3227_2_DK" />
@@ -6027,17 +6041,6 @@
                             style="@style/RadioButton"
                             android:text="@string/rb_C3227_2_RA" />
 
-                        <RadioButton
-
-                            android:id="@+id/rb_C3227_2_OT"
-                            style="@style/RadioButton"
-                            android:text="@string/rb_C3227_2_OT" />
-
-
-                        <EditText
-                            android:id="@+id/ed_C3227"
-                            style="@style/EditText_varchar"
-                            android:hint="Other" />
 
                     </RadioGroup>
 
@@ -6098,6 +6101,12 @@
 
                         <RadioButton
 
+                            android:id="@+id/rb_C3227_3_7"
+                            style="@style/RadioButton"
+                            android:text="Other" />
+
+                        <RadioButton
+
                             android:id="@+id/rb_C3227_3_DK"
                             style="@style/RadioButton"
                             android:text="@string/rb_C3227_3_DK" />
@@ -6107,18 +6116,6 @@
                             android:id="@+id/rb_C3227_3_RA"
                             style="@style/RadioButton"
                             android:text="@string/rb_C3227_3_RA" />
-
-                        <RadioButton
-
-                            android:id="@+id/rb_C3227_3_OT"
-                            style="@style/RadioButton"
-                            android:text="@string/rb_C3227_3_OT" />
-
-                        <EditText
-
-                            android:id="@+id/ed_C3227"
-                            style="@style/EditText_varchar"
-                            android:hint="Other" />
 
                     </RadioGroup>
 
@@ -6460,6 +6457,12 @@
 
                         <RadioButton
 
+                            android:id="@+id/rb_C3227_10_4"
+                            style="@style/RadioButton"
+                            android:text="Other" />
+
+                        <RadioButton
+
                             android:id="@+id/rb_C3227_10_DK"
                             style="@style/RadioButton"
                             android:text="@string/rb_C3227_10_DK" />
@@ -6469,18 +6472,6 @@
                             android:id="@+id/rb_C3227_10_RA"
                             style="@style/RadioButton"
                             android:text="@string/rb_C3227_10_RA" />
-
-                        <RadioButton
-
-                            android:id="@+id/rb_C3227_10_OT"
-                            style="@style/RadioButton"
-                            android:text="@string/rb_C3227_10_OT" />
-
-                        <EditText
-
-                            android:id="@+id/ed_C3227"
-                            style="@style/EditText_varchar"
-                            android:hint="Other" />
 
                     </RadioGroup>
 
