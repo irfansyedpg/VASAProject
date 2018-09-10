@@ -30,7 +30,7 @@ public class N2211_N2248_A extends AppCompatActivity {
         if (validateField()) {
             if (SaveData()) {
                 startActivity(new Intent(this, bi.rbN22121.isChecked() ? N2211_N2248_B.class : N2211_N2248_C.class)
-                        .putExtra("valFlag", bi.rbN22122.isChecked()));
+                        .putExtra("valFlag", bi.rbN22122.isChecked() ? 2 : 9));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }

@@ -51,7 +51,7 @@ public class N2321_N2322 extends AppCompatActivity {
         n2321.setN2321(bi.edN2321.getText().toString());
         n2321.setN2322(bi.rbN23221.isChecked() ? "1" : bi.rbN23222.isChecked() ? "2" : bi.rbN23223.isChecked() ? "3"
                 : bi.rbN23224.isChecked() ? "4" : bi.rbN23225.isChecked() ? "5" : bi.rbN23226.isChecked() ? "6"
-                : bi.rbN2322DK.isChecked() ? "9" : "");
+                : bi.rbN2322DK.isChecked() ? "9" : "0");
 
 
         n2321.setSTUDYID("");
