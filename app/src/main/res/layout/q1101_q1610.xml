@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -223,6 +224,14 @@
                         android:id="@+id/ed_Q1204"
                         style="@style/EditText_date"
                         android:hint="@string/txt_Q1204" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Date of birth"
+                        android:inputType="date"
+                        app:met_mask="##/##/####"/>
 
                 </LinearLayout>
 

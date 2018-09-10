@@ -8,6 +8,7 @@ public class C3101_C3112 {
     public static String C3103 = "C3103";
     public static String C3104 = "C3104";
     public static String C3105 = "C3105";
+    public static String C3105_OT = "C3105_OT";
     public static String C3106 = "C3106";
     public static String C3107_1 = "C3107_1";
     public static String C3107_2 = "C3107_2";

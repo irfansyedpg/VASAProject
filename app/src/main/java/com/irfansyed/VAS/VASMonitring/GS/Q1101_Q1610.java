@@ -18,6 +18,13 @@ import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
 import com.irfansyed.VAS.VASMonitring.C.C3012_C3022;
 import com.irfansyed.VAS.VASMonitring.R;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
@@ -26,6 +33,10 @@ import static java.lang.Integer.parseInt;
 
 public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, TextWatcher {
 
+    private Pattern pattern;
+    private Matcher matcher;
+
+    private static final String DATE_PATTERN = "(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/((19|20)\\d\\d)";
 
     //region Declaration
 
@@ -351,7 +362,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ed_Q1608_3,
             ed_Q1610_1,
             ed_Q1610_2,
-            ed_Q1610_3;
+            ed_Q1610_3,
+            ed_dob;
 
     String
             Q1101,
@@ -449,6 +461,59 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         events_call();
 
         btn_next.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+
+        if (validateField() == false) {
+            Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        pattern = Pattern.compile(DATE_PATTERN);
+
+        if(!validate(ed_dob.getText().toString().trim())){
+
+            ed_dob.setError("Kindly proviade a valid date");
+            return;
+        }
+
+        value_assignment();
+        insert_data();
+
+        DBHelper db = new DBHelper(this);
+        Cursor res = db.getData("Q1101_Q1610");
+
+        if (res.getCount() > 0) {
+
+            res.moveToFirst();
+
+            //if (parseInt(res.getString(78)) == 5) {
+
+            //  Intent c = new Intent(this, A4001_A4014.class);
+            //startActivity(c);
+
+            //} else if (parseInt(res.getString(78)) == 1) {
+
+            //  Intent c = new Intent(this, N2001_N2011.class);
+            //startActivity(c);
+
+            //}
+
+            if (parseInt(res.getString(78)) == 2) {
+
+                Intent c = new Intent(this, C3001_C3011.class);
+                startActivity(c);
+
+            } else {
+
+                //C3001_C3011.value_assignment();
+
+                Intent c = new Intent(this, C3012_C3022.class);
+                startActivity(c);
+            }
+        }
     }
 
     void Initialization() {
@@ -781,12 +846,213 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1610_1 = findViewById(R.id.ed_Q1610_1);
         ed_Q1610_2 = findViewById(R.id.ed_Q1610_2);
         ed_Q1610_3 = findViewById(R.id.ed_Q1610_3);
+
+        ed_dob  = findViewById(R.id.ed_dob);
     }
 
     private static boolean isValid(String s) {
 
         return !s.trim().equals("") && !s.trim().equals("99/99/9999");
     }
+
+
+    void events_call() {
+
+        rb_Q1403_1.setOnCheckedChangeListener(this);
+        rb_Q1403_2.setOnCheckedChangeListener(this);
+        rb_Q1403_3.setOnCheckedChangeListener(this);
+        rb_Q1403_4.setOnCheckedChangeListener(this);
+        rb_Q1403_5.setOnCheckedChangeListener(this);
+        rb_Q1403_6.setOnCheckedChangeListener(this);
+        rb_Q1403_7.setOnCheckedChangeListener(this);
+        rb_Q1403_8.setOnCheckedChangeListener(this);
+        rb_Q1403_9.setOnCheckedChangeListener(this);
+        rb_Q1403_10.setOnCheckedChangeListener(this);
+        rb_Q1403_11.setOnCheckedChangeListener(this);
+        rb_Q1403_12.setOnCheckedChangeListener(this);
+        rb_Q1403_13.setOnCheckedChangeListener(this);
+        rb_Q1403_14.setOnCheckedChangeListener(this);
+
+        rb_Q1416_1.setOnCheckedChangeListener(this);
+        rb_Q1416_2.setOnCheckedChangeListener(this);
+        rb_Q1416_3.setOnCheckedChangeListener(this);
+        rb_Q1416_4.setOnCheckedChangeListener(this);
+        rb_Q1416_5.setOnCheckedChangeListener(this);
+        rb_Q1416_6.setOnCheckedChangeListener(this);
+        rb_Q1416_7.setOnCheckedChangeListener(this);
+        rb_Q1416_8.setOnCheckedChangeListener(this);
+        rb_Q1416_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1417_1.setOnCheckedChangeListener(this);
+        rb_Q1417_2.setOnCheckedChangeListener(this);
+        rb_Q1417_3.setOnCheckedChangeListener(this);
+        rb_Q1417_4.setOnCheckedChangeListener(this);
+        rb_Q1417_5.setOnCheckedChangeListener(this);
+        rb_Q1417_6.setOnCheckedChangeListener(this);
+        rb_Q1417_7.setOnCheckedChangeListener(this);
+        rb_Q1417_8.setOnCheckedChangeListener(this);
+        rb_Q1417_9.setOnCheckedChangeListener(this);
+        rb_Q1417_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1418_1.setOnCheckedChangeListener(this);
+        rb_Q1418_2.setOnCheckedChangeListener(this);
+        rb_Q1418_3.setOnCheckedChangeListener(this);
+        rb_Q1418_4.setOnCheckedChangeListener(this);
+        rb_Q1418_5.setOnCheckedChangeListener(this);
+        rb_Q1418_6.setOnCheckedChangeListener(this);
+        rb_Q1418_7.setOnCheckedChangeListener(this);
+        rb_Q1418_8.setOnCheckedChangeListener(this);
+        rb_Q1418_9.setOnCheckedChangeListener(this);
+        rb_Q1418_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1419_1.setOnCheckedChangeListener(this);
+        rb_Q1419_2.setOnCheckedChangeListener(this);
+        rb_Q1419_3.setOnCheckedChangeListener(this);
+        rb_Q1419_4.setOnCheckedChangeListener(this);
+        rb_Q1419_5.setOnCheckedChangeListener(this);
+        rb_Q1419_6.setOnCheckedChangeListener(this);
+        rb_Q1419_7.setOnCheckedChangeListener(this);
+        rb_Q1419_8.setOnCheckedChangeListener(this);
+        rb_Q1419_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1420_1.setOnCheckedChangeListener(this);
+        rb_Q1420_2.setOnCheckedChangeListener(this);
+        rb_Q1420_3.setOnCheckedChangeListener(this);
+        rb_Q1420_4.setOnCheckedChangeListener(this);
+        rb_Q1420_5.setOnCheckedChangeListener(this);
+        rb_Q1420_6.setOnCheckedChangeListener(this);
+        rb_Q1420_7.setOnCheckedChangeListener(this);
+        rb_Q1420_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1421_1.setOnCheckedChangeListener(this);
+        rb_Q1421_2.setOnCheckedChangeListener(this);
+        rb_Q1421_3.setOnCheckedChangeListener(this);
+        rb_Q1421_4.setOnCheckedChangeListener(this);
+        rb_Q1421_5.setOnCheckedChangeListener(this);
+        rb_Q1421_6.setOnCheckedChangeListener(this);
+        rb_Q1421_7.setOnCheckedChangeListener(this);
+        rb_Q1421_8.setOnCheckedChangeListener(this);
+        rb_Q1421_9.setOnCheckedChangeListener(this);
+        rb_Q1421_10.setOnCheckedChangeListener(this);
+        rb_Q1421_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1503_1.setOnCheckedChangeListener(this);
+        rb_Q1503_2.setOnCheckedChangeListener(this);
+        rb_Q1503_3.setOnCheckedChangeListener(this);
+        rb_Q1503_4.setOnCheckedChangeListener(this);
+        rb_Q1503_5.setOnCheckedChangeListener(this);
+        rb_Q1503_6.setOnCheckedChangeListener(this);
+        rb_Q1503_7.setOnCheckedChangeListener(this);
+        rb_Q1503_8.setOnCheckedChangeListener(this);
+        rb_Q1503_9.setOnCheckedChangeListener(this);
+        rb_Q1503_10.setOnCheckedChangeListener(this);
+        rb_Q1503_11.setOnCheckedChangeListener(this);
+        rb_Q1503_12.setOnCheckedChangeListener(this);
+        rb_Q1503_13.setOnCheckedChangeListener(this);
+        rb_Q1503_14.setOnCheckedChangeListener(this);
+
+        rb_Q1604_1.setOnCheckedChangeListener(this);
+        rb_Q1604_2.setOnCheckedChangeListener(this);
+        rb_Q1604_3.setOnCheckedChangeListener(this);
+        rb_Q1604_4.setOnCheckedChangeListener(this);
+        rb_Q1604_5.setOnCheckedChangeListener(this);
+        rb_Q1604_DK.setOnCheckedChangeListener(this);
+
+        rb_Q1405_1.setOnCheckedChangeListener(this);
+        rb_Q1405_2.setOnCheckedChangeListener(this);
+        rb_Q1407_1.setOnCheckedChangeListener(this);
+        rb_Q1407_2.setOnCheckedChangeListener(this);
+        rb_Q1407_DK.setOnCheckedChangeListener(this);
+        rb_Q1501_1.setOnCheckedChangeListener(this);
+        rb_Q1501_2.setOnCheckedChangeListener(this);
+        rb_Q1602_1.setOnCheckedChangeListener(this);
+        rb_Q1602_2.setOnCheckedChangeListener(this);
+        rb_Q1602_DK.setOnCheckedChangeListener(this);
+        rb_Q1605_1.setOnCheckedChangeListener(this);
+        rb_Q1605_2.setOnCheckedChangeListener(this);
+        rb_Q1609_1.setOnCheckedChangeListener(this);
+        rb_Q1609_2.setOnCheckedChangeListener(this);
+        rb_Q1609_3.setOnCheckedChangeListener(this);
+        rb_Q1609_4.setOnCheckedChangeListener(this);
+        rb_Q1609_5.setOnCheckedChangeListener(this);
+
+        ed_Q1204.addTextChangedListener(this);
+        ed_Q1205.addTextChangedListener(this);
+
+        ed_Q1603.addTextChangedListener(this);
+        ed_Q1606.addTextChangedListener(this);
+
+
+        TextWatcher txtWatcher = new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                if (!ed_Q1206_d.getText().toString().isEmpty()
+                        && !ed_Q1206_m.getText().toString().isEmpty()
+                        && !ed_Q1206_y.getText().toString().isEmpty()) {
+
+                    if (Integer.valueOf(ed_Q1206_y.getText().toString()) > 12 ||
+                            (Integer.valueOf(ed_Q1206_y.getText().toString()) == 12 &&
+                                    (Integer.valueOf(ed_Q1206_d.getText().toString()) > 0 || Integer.valueOf(ed_Q1206_m.getText().toString()) > 0))) {
+
+                        ClearAllcontrol.ClearAll(ll_Q1207);
+                        ClearAllcontrol.ClearAll(ll_Q1208);
+
+                        ll_Q1207.setVisibility(View.GONE);
+                        ll_Q1208.setVisibility(View.GONE);
+
+                    } else if ((Integer.valueOf(ed_Q1206_y.getText().toString()) > 0 &&
+                            Integer.valueOf(ed_Q1206_y.getText().toString()) < 12) ||
+                            Integer.valueOf(ed_Q1206_m.getText().toString()) > 0 ||
+                            Integer.valueOf(ed_Q1206_d.getText().toString()) > 0) {
+
+                        ClearAllcontrol.ClearAll(ll_Q1207);
+                        ll_Q1207.setVisibility(View.GONE);
+
+                        ll_Q1208.setVisibility(View.VISIBLE);
+
+                    } else if ((Integer.valueOf(ed_Q1206_d.getText().toString().trim()) == 0 &&
+                            Integer.valueOf(ed_Q1206_m.getText().toString().trim()) == 0 &&
+                            Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 0) ||
+                            (Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 99 ||
+                                    Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 99 ||
+                                    Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 9999)) {
+
+                        ll_Q1207.setVisibility(View.VISIBLE);
+                        ll_Q1208.setVisibility(View.VISIBLE);
+                    }
+                }
+
+                if (!ed_Q1409.getText().toString().isEmpty()) {
+
+                    if (Integer.valueOf(ed_Q1409.getText().toString()) > 6) {
+
+                        ll_Q1410.setVisibility(View.GONE);
+                    } else {
+
+                        ll_Q1410.setVisibility(View.VISIBLE);
+                    }
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        };
+
+        ed_Q1206_d.addTextChangedListener(txtWatcher);
+        ed_Q1206_m.addTextChangedListener(txtWatcher);
+        ed_Q1206_y.addTextChangedListener(txtWatcher);
+
+        ed_Q1409.addTextChangedListener(txtWatcher);
+    }
+
 
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -1140,247 +1406,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         }
     }
 
-    @Override
-    public void onClick(View view) {
-
-        if (validateField() == false) {
-            Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
-            return;
-        }
-
-        value_assignment();
-        insert_data();
-
-        DBHelper db = new DBHelper(this);
-        Cursor res = db.getData("Q1101_Q1610");
-
-        if (res.getCount() > 0) {
-
-            res.moveToFirst();
-
-            //if (parseInt(res.getString(78)) == 5) {
-
-            //  Intent c = new Intent(this, A4001_A4014.class);
-            //startActivity(c);
-
-            //} else if (parseInt(res.getString(78)) == 1) {
-
-            //  Intent c = new Intent(this, N2001_N2011.class);
-            //startActivity(c);
-
-            //}
-
-            if (parseInt(res.getString(78)) == 2) {
-
-                Intent c = new Intent(this, C3001_C3011.class);
-                startActivity(c);
-
-            } else {
-
-                //C3001_C3011.value_assignment();
-
-                Intent c = new Intent(this, C3012_C3022.class);
-                startActivity(c);
-            }
-        }
-    }
-
-    void events_call() {
-
-        rb_Q1403_1.setOnCheckedChangeListener(this);
-        rb_Q1403_2.setOnCheckedChangeListener(this);
-        rb_Q1403_3.setOnCheckedChangeListener(this);
-        rb_Q1403_4.setOnCheckedChangeListener(this);
-        rb_Q1403_5.setOnCheckedChangeListener(this);
-        rb_Q1403_6.setOnCheckedChangeListener(this);
-        rb_Q1403_7.setOnCheckedChangeListener(this);
-        rb_Q1403_8.setOnCheckedChangeListener(this);
-        rb_Q1403_9.setOnCheckedChangeListener(this);
-        rb_Q1403_10.setOnCheckedChangeListener(this);
-        rb_Q1403_11.setOnCheckedChangeListener(this);
-        rb_Q1403_12.setOnCheckedChangeListener(this);
-        rb_Q1403_13.setOnCheckedChangeListener(this);
-        rb_Q1403_14.setOnCheckedChangeListener(this);
-
-        rb_Q1416_1.setOnCheckedChangeListener(this);
-        rb_Q1416_2.setOnCheckedChangeListener(this);
-        rb_Q1416_3.setOnCheckedChangeListener(this);
-        rb_Q1416_4.setOnCheckedChangeListener(this);
-        rb_Q1416_5.setOnCheckedChangeListener(this);
-        rb_Q1416_6.setOnCheckedChangeListener(this);
-        rb_Q1416_7.setOnCheckedChangeListener(this);
-        rb_Q1416_8.setOnCheckedChangeListener(this);
-        rb_Q1416_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1417_1.setOnCheckedChangeListener(this);
-        rb_Q1417_2.setOnCheckedChangeListener(this);
-        rb_Q1417_3.setOnCheckedChangeListener(this);
-        rb_Q1417_4.setOnCheckedChangeListener(this);
-        rb_Q1417_5.setOnCheckedChangeListener(this);
-        rb_Q1417_6.setOnCheckedChangeListener(this);
-        rb_Q1417_7.setOnCheckedChangeListener(this);
-        rb_Q1417_8.setOnCheckedChangeListener(this);
-        rb_Q1417_9.setOnCheckedChangeListener(this);
-        rb_Q1417_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1418_1.setOnCheckedChangeListener(this);
-        rb_Q1418_2.setOnCheckedChangeListener(this);
-        rb_Q1418_3.setOnCheckedChangeListener(this);
-        rb_Q1418_4.setOnCheckedChangeListener(this);
-        rb_Q1418_5.setOnCheckedChangeListener(this);
-        rb_Q1418_6.setOnCheckedChangeListener(this);
-        rb_Q1418_7.setOnCheckedChangeListener(this);
-        rb_Q1418_8.setOnCheckedChangeListener(this);
-        rb_Q1418_9.setOnCheckedChangeListener(this);
-        rb_Q1418_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1419_1.setOnCheckedChangeListener(this);
-        rb_Q1419_2.setOnCheckedChangeListener(this);
-        rb_Q1419_3.setOnCheckedChangeListener(this);
-        rb_Q1419_4.setOnCheckedChangeListener(this);
-        rb_Q1419_5.setOnCheckedChangeListener(this);
-        rb_Q1419_6.setOnCheckedChangeListener(this);
-        rb_Q1419_7.setOnCheckedChangeListener(this);
-        rb_Q1419_8.setOnCheckedChangeListener(this);
-        rb_Q1419_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1420_1.setOnCheckedChangeListener(this);
-        rb_Q1420_2.setOnCheckedChangeListener(this);
-        rb_Q1420_3.setOnCheckedChangeListener(this);
-        rb_Q1420_4.setOnCheckedChangeListener(this);
-        rb_Q1420_5.setOnCheckedChangeListener(this);
-        rb_Q1420_6.setOnCheckedChangeListener(this);
-        rb_Q1420_7.setOnCheckedChangeListener(this);
-        rb_Q1420_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1421_1.setOnCheckedChangeListener(this);
-        rb_Q1421_2.setOnCheckedChangeListener(this);
-        rb_Q1421_3.setOnCheckedChangeListener(this);
-        rb_Q1421_4.setOnCheckedChangeListener(this);
-        rb_Q1421_5.setOnCheckedChangeListener(this);
-        rb_Q1421_6.setOnCheckedChangeListener(this);
-        rb_Q1421_7.setOnCheckedChangeListener(this);
-        rb_Q1421_8.setOnCheckedChangeListener(this);
-        rb_Q1421_9.setOnCheckedChangeListener(this);
-        rb_Q1421_10.setOnCheckedChangeListener(this);
-        rb_Q1421_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1503_1.setOnCheckedChangeListener(this);
-        rb_Q1503_2.setOnCheckedChangeListener(this);
-        rb_Q1503_3.setOnCheckedChangeListener(this);
-        rb_Q1503_4.setOnCheckedChangeListener(this);
-        rb_Q1503_5.setOnCheckedChangeListener(this);
-        rb_Q1503_6.setOnCheckedChangeListener(this);
-        rb_Q1503_7.setOnCheckedChangeListener(this);
-        rb_Q1503_8.setOnCheckedChangeListener(this);
-        rb_Q1503_9.setOnCheckedChangeListener(this);
-        rb_Q1503_10.setOnCheckedChangeListener(this);
-        rb_Q1503_11.setOnCheckedChangeListener(this);
-        rb_Q1503_12.setOnCheckedChangeListener(this);
-        rb_Q1503_13.setOnCheckedChangeListener(this);
-        rb_Q1503_14.setOnCheckedChangeListener(this);
-
-        rb_Q1604_1.setOnCheckedChangeListener(this);
-        rb_Q1604_2.setOnCheckedChangeListener(this);
-        rb_Q1604_3.setOnCheckedChangeListener(this);
-        rb_Q1604_4.setOnCheckedChangeListener(this);
-        rb_Q1604_5.setOnCheckedChangeListener(this);
-        rb_Q1604_DK.setOnCheckedChangeListener(this);
-
-        rb_Q1405_1.setOnCheckedChangeListener(this);
-        rb_Q1405_2.setOnCheckedChangeListener(this);
-        rb_Q1407_1.setOnCheckedChangeListener(this);
-        rb_Q1407_2.setOnCheckedChangeListener(this);
-        rb_Q1407_DK.setOnCheckedChangeListener(this);
-        rb_Q1501_1.setOnCheckedChangeListener(this);
-        rb_Q1501_2.setOnCheckedChangeListener(this);
-        rb_Q1602_1.setOnCheckedChangeListener(this);
-        rb_Q1602_2.setOnCheckedChangeListener(this);
-        rb_Q1602_DK.setOnCheckedChangeListener(this);
-        rb_Q1605_1.setOnCheckedChangeListener(this);
-        rb_Q1605_2.setOnCheckedChangeListener(this);
-        rb_Q1609_1.setOnCheckedChangeListener(this);
-        rb_Q1609_2.setOnCheckedChangeListener(this);
-        rb_Q1609_3.setOnCheckedChangeListener(this);
-        rb_Q1609_4.setOnCheckedChangeListener(this);
-        rb_Q1609_5.setOnCheckedChangeListener(this);
-
-        ed_Q1204.addTextChangedListener(this);
-        ed_Q1205.addTextChangedListener(this);
-
-        ed_Q1603.addTextChangedListener(this);
-        ed_Q1606.addTextChangedListener(this);
-
-
-        TextWatcher txtWatcher = new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-                if (!ed_Q1206_d.getText().toString().isEmpty()
-                        && !ed_Q1206_m.getText().toString().isEmpty()
-                        && !ed_Q1206_y.getText().toString().isEmpty()) {
-
-                    if (Integer.valueOf(ed_Q1206_y.getText().toString()) > 12 ||
-                            (Integer.valueOf(ed_Q1206_y.getText().toString()) == 12 &&
-                                    (Integer.valueOf(ed_Q1206_d.getText().toString()) > 0 || Integer.valueOf(ed_Q1206_m.getText().toString()) > 0))) {
-
-                        ClearAllcontrol.ClearAll(ll_Q1207);
-                        ClearAllcontrol.ClearAll(ll_Q1208);
-
-                        ll_Q1207.setVisibility(View.GONE);
-                        ll_Q1208.setVisibility(View.GONE);
-
-                    } else if ((Integer.valueOf(ed_Q1206_y.getText().toString()) > 0 &&
-                            Integer.valueOf(ed_Q1206_y.getText().toString()) < 12) ||
-                            Integer.valueOf(ed_Q1206_m.getText().toString()) > 0 ||
-                            Integer.valueOf(ed_Q1206_d.getText().toString()) > 0) {
-
-                        ClearAllcontrol.ClearAll(ll_Q1207);
-                        ll_Q1207.setVisibility(View.GONE);
-
-                        ll_Q1208.setVisibility(View.VISIBLE);
-
-                    } else if ((Integer.valueOf(ed_Q1206_d.getText().toString().trim()) == 0 &&
-                            Integer.valueOf(ed_Q1206_m.getText().toString().trim()) == 0 &&
-                            Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 0) ||
-                            (Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 99 ||
-                                    Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 99 ||
-                                    Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 9999)) {
-
-                        ll_Q1207.setVisibility(View.VISIBLE);
-                        ll_Q1208.setVisibility(View.VISIBLE);
-                    }
-                }
-
-                if (!ed_Q1409.getText().toString().isEmpty()) {
-
-                    if (Integer.valueOf(ed_Q1409.getText().toString()) > 6) {
-
-                        ll_Q1410.setVisibility(View.GONE);
-                    } else {
-
-                        ll_Q1410.setVisibility(View.VISIBLE);
-                    }
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        };
-
-        ed_Q1206_d.addTextChangedListener(txtWatcher);
-        ed_Q1206_m.addTextChangedListener(txtWatcher);
-        ed_Q1206_y.addTextChangedListener(txtWatcher);
-
-        ed_Q1409.addTextChangedListener(txtWatcher);
-    }
 
     void value_assignment() {
 
@@ -2712,19 +2737,60 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     @Override
     public void afterTextChanged(Editable s) {
+    }
 
-        if (ed_Q1204.getText().toString().length() == 10 && ed_Q1205.getText().toString().length() == 10) {
-            if (!isValid(ed_Q1204.getText().toString()) && !isValid(ed_Q1205.getText().toString())) {
 
-                Toast.makeText(this, "Provide a valid date", Toast.LENGTH_LONG).show();
+    public boolean validate(final String date){
+
+        matcher = pattern.matcher(date);
+
+        if(date.equals("99/99/9999")){
+
+            return true;
+
+        } else if(matcher.matches()){
+
+            matcher.reset();
+
+            if(matcher.find()){
+
+                String day = matcher.group(1);
+                String month = matcher.group(2);
+                int year = Integer.parseInt(matcher.group(3));
+
+                if(year > Integer.valueOf(Calendar.getInstance().get(Calendar.YEAR))){
+
+                    return false;
+                }
+
+                if (day.equals("31") &&
+                        (month.equals("4") || month .equals("6") || month.equals("9") ||
+                                month.equals("11") || month.equals("04") || month .equals("06") ||
+                                month.equals("09"))) {
+                    return false; // only 1,3,5,7,8,10,12 has 31 days
+                } else if (month.equals("2") || month.equals("02")) {
+                    //leap year
+                    if(year % 4==0){
+                        if(day.equals("30") || day.equals("31")){
+                            return false;
+                        }else{
+                            return true;
+                        }
+                    }else{
+                        if(day.equals("29")||day.equals("30")||day.equals("31")){
+                            return false;
+                        }else{
+                            return true;
+                        }
+                    }
+                }else{
+                    return true;
+                }
+            }else{
+                return false;
             }
-        }
-
-        if (ed_Q1603.getText().toString().length() == 10 && ed_Q1606.getText().toString().length() == 10) {
-            if (!isValid(ed_Q1603.getText().toString()) && !isValid(ed_Q1606.getText().toString())) {
-
-                Toast.makeText(this, "Provide a valid date", Toast.LENGTH_LONG).show();
-            }
+        }else{
+            return false;
         }
     }
 }

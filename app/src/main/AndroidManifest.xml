@@ -36,11 +36,6 @@
         <activity
             android:name=".Core.SplashScreenActivity"
             android:theme="@style/AppThemeNACB">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Other.templete"
@@ -122,7 +117,14 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".N.N2251_N2260"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".N.N2271_N2284"
             android:screenOrientation="portrait" />

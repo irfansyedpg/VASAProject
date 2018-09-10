@@ -6,6 +6,8 @@ public class C3121_C3228 {
 
     public static String C3121 = "C3121";
     public static String C3122 = "C3122";
+    public static String C3122d = "C3122d";
+    public static String C3122m = "C3122m";
     public static String C3123_u = "C3123_u";
     public static String C3123_b = "C3123_b";
     public static String C3123_c = "C3123_c";
@@ -62,6 +64,8 @@ public class C3121_C3228 {
     public static String C3160 = "C3160";
     public static String C3161 = "C3161";
     public static String C3162 = "C3162";
+    public static String C3162d = "C3162d";
+    public static String C3162m = "C3162m";
     public static String C3163_u = "C3163_u";
     public static String C3163_a = "C3163_a";
     public static String C3163_b = "C3163_b";
