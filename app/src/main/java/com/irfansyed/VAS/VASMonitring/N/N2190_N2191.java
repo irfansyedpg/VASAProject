@@ -25,6 +25,8 @@ public class N2190_N2191 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2190__n2191);
         bi.setCallback(this);
 
+        this.setTitle(getString(R.string.h_n_sec_I_A));
+
         SetContentUI();
 
     }
@@ -295,5 +297,10 @@ public class N2190_N2191 extends AppCompatActivity {
         }
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
     }
 }

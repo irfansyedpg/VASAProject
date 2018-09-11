@@ -35,6 +35,8 @@ public class N2251_N2260 extends AppCompatActivity {
         val_n22552 = new ValidateDate();
         val_n2256 = new ValidateDate();
 
+        this.setTitle(getString(R.string.h_n_sec_11));
+
         SetContentUI();
 
     }
@@ -251,6 +253,11 @@ public class N2251_N2260 extends AppCompatActivity {
         }
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
     }
 
 }

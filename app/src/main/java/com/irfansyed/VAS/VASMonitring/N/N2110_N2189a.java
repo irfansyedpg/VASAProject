@@ -2,11 +2,13 @@ package com.irfansyed.VAS.VASMonitring.N;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -23,6 +25,7 @@ public class N2110_N2189a extends AppCompatActivity {
 
     N2110N2189aBinding bi;
     boolean flag_n2006 = true, flag_n2006_2 = true, flag_n2066 = true, flag_n2067 = true;
+    MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,8 @@ public class N2110_N2189a extends AppCompatActivity {
 
         bi = DataBindingUtil.setContentView(this, R.layout.n2110__n2189a);
         bi.setCallback(this);
+
+        this.setTitle(getString(R.string.h_n_sec_5));
 
         GetDataFromDB();
         SetContentUI();
@@ -41,20 +46,27 @@ public class N2110_N2189a extends AppCompatActivity {
         DBHelper db = new DBHelper(this);
 
         String n2006 = db.getSpecificData(data.N.N2001_N2011.TABLE_NAME, "id", N2001_N2011.sub_N2001_N2011.N2006);
-        if (Integer.valueOf(n2006) >= 3 && Integer.valueOf(n2006) <= 10) {
-            flag_n2006 = false;
-        }
-        if (Integer.valueOf(n2006) == 1 || Integer.valueOf(n2006) == 2 || Integer.valueOf(n2006) == 11 || Integer.valueOf(n2006) == 12 || Integer.valueOf(n2006) == 99) {
-            flag_n2006_2 = false;
+        if (n2006 != null) {
+            if (Integer.valueOf(n2006) >= 3 && Integer.valueOf(n2006) <= 10) {
+                flag_n2006 = false;
+            }
+            if (Integer.valueOf(n2006) == 1 || Integer.valueOf(n2006) == 2 || Integer.valueOf(n2006) == 11 || Integer.valueOf(n2006) == 12 || Integer.valueOf(n2006) == 99) {
+                flag_n2006_2 = false;
+            }
         }
 
         String n2066 = db.getSpecificData(data.N.N2051_N2078.TABLE_NAME, "id", N2051_N2078.sub_N2051_N2078.N2066);
-        if (Integer.valueOf(n2066) != 1) {
-            flag_n2066 = false;
+        if (n2066 != null) {
+            if (Integer.valueOf(n2066) != 1) {
+                flag_n2066 = false;
+            }
         }
+
         String n2067 = db.getSpecificData(data.N.N2051_N2078.TABLE_NAME, "id", N2051_N2078.sub_N2051_N2078.N2067);
-        if (Integer.valueOf(n2067) == 9 || Integer.valueOf(n2067) == 10) {
-            flag_n2067 = false;
+        if (n2067 != null) {
+            if (Integer.valueOf(n2067) == 9 || Integer.valueOf(n2067) == 10) {
+                flag_n2067 = false;
+            }
         }
 
     }
@@ -884,4 +896,76 @@ public class N2110_N2189a extends AppCompatActivity {
         //ll_N2189a
         return Gothrough.IamHiden(bi.llN2189a);
     }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
+    }
+
+    public void BtnChest() {
+        changeMediaUI(bi.btnChest, R.raw.look_chest_i);
+    }
+
+    public void BtnStri() {
+        changeMediaUI(bi.btnStri, R.raw.child_i_s);
+    }
+
+    public void BtnGrunt() {
+        changeMediaUI(bi.btnGrunt, R.raw.grunting);
+    }
+
+    public void BtnWheez() {
+        changeMediaUI(bi.btnWheez, R.raw.breath_sounds_w);
+    }
+
+    private void changeMediaUI(final Button btn, final int resID) {
+
+        if (mediaPlayer != null) {
+            btnDefaultState();
+            mediaPlayer.stop();
+        }
+
+        btn.setBackgroundColor(getResources().getColor(R.color.green2));
+        btn.setTextColor(getResources().getColor(R.color.white));
+
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), resID);
+        mediaPlayer.start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(mediaPlayer.getDuration() + 200);
+
+                    runOnUiThread(new Runnable() {
+
+                        @Override
+                        public void run() {
+                            btn.setBackgroundColor(getResources().getColor(R.color.gray));
+                            btn.setTextColor(getResources().getColor(R.color.black));
+                        }
+                    });
+
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }).start();
+    }
+
+    private void btnDefaultState() {
+        bi.btnChest.setBackgroundColor(getResources().getColor(R.color.gray));
+        bi.btnChest.setTextColor(getResources().getColor(R.color.black));
+
+        bi.btnGrunt.setBackgroundColor(getResources().getColor(R.color.gray));
+        bi.btnGrunt.setTextColor(getResources().getColor(R.color.black));
+
+        bi.btnStri.setBackgroundColor(getResources().getColor(R.color.gray));
+        bi.btnStri.setTextColor(getResources().getColor(R.color.black));
+
+        bi.btnWheez.setBackgroundColor(getResources().getColor(R.color.gray));
+        bi.btnWheez.setTextColor(getResources().getColor(R.color.black));
+    }
+
 }

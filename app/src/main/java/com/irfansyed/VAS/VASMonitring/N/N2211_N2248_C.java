@@ -35,6 +35,8 @@ public class N2211_N2248_C extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2211__n2248_c);
         bi.setCallback(this);
 
+        this.setTitle(getString(R.string.h_n_sec_10));
+
         GetDataFromDB();
         SetContentUI();
 
@@ -904,5 +906,10 @@ public class N2211_N2248_C extends AppCompatActivity {
         }
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
     }
 }
