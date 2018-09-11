@@ -3,6 +3,7 @@ package com.irfansyed.VAS.VASMonitring.C;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -15,6 +16,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.InputFilterMinMax;
 
 public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -355,6 +357,11 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
 
         rb_C3011_1.setOnCheckedChangeListener(this);
         rb_C3011_2.setOnCheckedChangeListener(this);
+
+        ed_C3005d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 6, 99, 99)});
+        ed_C3005w.setFilters(new InputFilter[]{new InputFilterMinMax(1, 7, 99, 99)});
+        ed_C3005d.setFilters(new InputFilter[]{new InputFilterMinMax(2, 60, 99, 99)});
+        ed_C3010.setFilters(new InputFilter[]{new InputFilterMinMax(0, 5000, 9999, 8888)});
     }
 
     @Override

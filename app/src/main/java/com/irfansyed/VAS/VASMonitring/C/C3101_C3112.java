@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -22,6 +23,7 @@ import java.util.concurrent.TimeUnit;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.InputFilterMinMax;
 
 
 public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, View.OnFocusChangeListener {
@@ -767,6 +769,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3111_8_1.setOnCheckedChangeListener(this);
         rb_C3111_8_2.setOnCheckedChangeListener(this);
         rb_C3111_8_DK.setOnCheckedChangeListener(this);
+
     }
 
     @Override

@@ -1029,11 +1029,26 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         ed_Q1204.addTextChangedListener(this);
         ed_Q1205.addTextChangedListener(this);
-
         ed_Q1603.addTextChangedListener(this);
         ed_Q1606.addTextChangedListener(this);
 
-        ed_Q1206_d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 99, 88)});
+        ed_Q1206_d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
+        ed_Q1206_m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
+        ed_Q1206_y.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
+
+        ed_Q1409.setFilters(new InputFilter[]{new InputFilterMinMax(0, 18, 99, 99)});
+
+        ed_Q1607_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
+        ed_Q1607_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
+        ed_Q1607_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
+
+        ed_Q1608_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
+        ed_Q1608_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
+        ed_Q1608_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
+
+        ed_Q1610_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
+        ed_Q1610_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
+        ed_Q1610_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
 
         TextWatcher txtWatcher = new TextWatcher() {
             @Override

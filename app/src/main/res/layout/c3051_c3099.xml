@@ -95,7 +95,6 @@
             </android.support.v7.widget.CardView>
             <!--C3051 Radio Button Ends-->
 
-
             <!--C3052 Edit text Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
@@ -1553,7 +1552,6 @@
             <!--C3079 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_C3079"
                     style="@style/Q_Linerlayout_v">
@@ -1563,10 +1561,7 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3079" />
 
-
-                    <RadioGroup style="@style/RadioGroup"
-
-                        >
+                    <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
 
@@ -1597,8 +1592,26 @@
 
 
                 </LinearLayout>
+
             </android.support.v7.widget.CardView>
             <!--C3079 Radio Button Ends-->
+
+            <!--C3079_OT Edit text Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_C3079_OT"
+                    style="@style/Q_Linerlayout_v">
+
+                    <EditText
+                        android:id="@+id/ed_C3079_OT"
+                        style="@style/EditText_number"
+                        android:hint="C3079: Hours" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!--C3079_OT Edit text Ends-->
 
             <!--C3080 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
