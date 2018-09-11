@@ -1051,7 +1051,6 @@
             <!-- EditText Q1409 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_Q1409"
                     style="@style/Q_Linerlayout_v">
@@ -1061,12 +1060,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_Q1409" />
 
-
                     <EditText
                         android:id="@+id/ed_Q1409"
                         style="@style/EditText_number"
                         android:hint="@string/txt_Q1409" />
-
 
                 </LinearLayout>
 
