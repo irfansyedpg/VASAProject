@@ -3,7 +3,7 @@ package utils;
 import android.text.InputFilter;
 import android.text.Spanned;
 
-public class InputFilterMinMax implements InputFilter {
+private class InputFilterMinMax implements InputFilter {
     private int minimumValue;
     private int maximumValue;
     private int defaultValue;
