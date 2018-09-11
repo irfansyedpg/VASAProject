@@ -3,6 +3,7 @@ package com.irfansyed.VAS.VASMonitring.C;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -16,6 +17,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import Global.C.C3001_C3011;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.InputFilterMinMax;
 
 public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -2008,6 +2010,47 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3227_21_2.setOnCheckedChangeListener(this);
         rb_C3227_21_DK.setOnCheckedChangeListener(this);
         rb_C3227_21_RA.setOnCheckedChangeListener(this);
+
+        ed_C3122d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3122m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3123_b.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3123_c.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3132_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3132_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3144.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 99, 99)});
+        ed_C3144_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3144_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3147_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3150_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3150_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3152_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3152_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3159_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3159_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
+        ed_C3159_c.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
+        ed_C3162d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3162m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3163_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3163_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3165_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3165_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3175_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3175_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3177_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3177_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3179_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 23, 99, 99)});
+        ed_C3179_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 99, 99, 99)});
+        ed_C3193_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3193_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3201_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3201_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3204_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3204_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3208_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3208_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_C3220_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3220_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+
     }
 
     @Override

@@ -25,6 +25,8 @@ public class N2017_N2022_3 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2017__n2022_3);
         bi.setCallback(this);
 
+        this.setTitle(getString(R.string.h_n_sec_2_3));
+
         SetContentUI();
     }
 
@@ -171,5 +173,10 @@ public class N2017_N2022_3 extends AppCompatActivity {
         }
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
     }
 }

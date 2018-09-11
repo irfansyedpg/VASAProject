@@ -3190,6 +3190,64 @@
                         style="@style/Hedaer_textview"
                         android:text="@string/txt_N2173" />
 
+                    <LinearLayout
+                        style="@style/Q_Linerlayout_v"
+                        android:layout_marginTop="45sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            style="@style/Q_Linerlayout_v"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_chest"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:layout_weight="30"
+                                android:background="@color/gray"
+                                android:onClick="@{() -> callback.BtnChest()}"
+                                android:text="Look for chest indrawing" />
+
+                            <Button
+                                android:id="@+id/btn_stri"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:background="@color/gray"
+                                android:onClick="@{() -> callback.BtnStri()}"
+                                android:text="Stridor" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/Q_Linerlayout_v"
+                            android:layout_marginTop="10sp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_grunt"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:layout_weight="30"
+                                android:background="@color/gray"
+                                android:onClick="@{() -> callback.BtnGrunt()}"
+                                android:text="Grunting" />
+
+                            <Button
+                                android:id="@+id/btn_wheez"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:background="@color/gray"
+                                android:onClick="@{() -> callback.BtnWheez()}"
+                                android:text="Wheezing" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView style="@style/Q_CardView">

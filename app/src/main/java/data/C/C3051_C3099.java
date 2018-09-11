@@ -59,6 +59,7 @@ public class C3051_C3099 {
                 Global.C.C3051_C3099.C3077 + " TEXT," +
                 Global.C.C3051_C3099.C3078 + " TEXT," +
                 Global.C.C3051_C3099.C3079 + " TEXT," +
+                Global.C.C3051_C3099.C3079_OT + " TEXT," +
                 Global.C.C3051_C3099.C3080 + " TEXT," +
                 Global.C.C3051_C3099.C3081 + " TEXT," +
                 Global.C.C3051_C3099.C3082 + " TEXT," +

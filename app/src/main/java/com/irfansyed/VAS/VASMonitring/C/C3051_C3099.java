@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -23,6 +24,7 @@ import java.util.concurrent.TimeUnit;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.InputFilterMinMax;
 
 
 public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, View.OnFocusChangeListener {
@@ -67,6 +69,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             ll_C3077,
             ll_C3078,
             ll_C3079,
+            ll_C3079_OT,
             ll_C3080,
             ll_C3081,
             ll_C3082,
@@ -291,6 +294,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             ed_C3065_OT,
             ed_C3067_OT,
             ed_C3068_OT,
+            ed_C3079,
             ed_C3081,
             ed_C3082,
             ed_C3087,
@@ -347,6 +351,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             C3077,
             C3078,
             C3079,
+            C3079_OT,
             C3080,
             C3081,
             C3082,
@@ -843,6 +848,9 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3098_2.setOnCheckedChangeListener(this);
         rb_C3098_DK.setOnCheckedChangeListener(this);
         rb_C3098_RA.setOnCheckedChangeListener(this);
+        ed_C3079.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
+        ed_C3090_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 29, 99, 99)});
+        ed_C3090_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
     }
 
     @Override
@@ -1132,6 +1140,22 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+        if (compoundButton.getId() == R.id.rb_C3079_1
+                || compoundButton.getId() == R.id.rb_C3079_2
+                || compoundButton.getId() == R.id.rb_C3079_3
+                || compoundButton.getId() == R.id.rb_C3079_DK) {
+
+            if (rb_C3079_3.isChecked()) {
+
+                ll_C3079_OT.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ClearAllcontrol.ClearAll(ll_C3079_OT);
+                ll_C3079_OT.setVisibility(View.GONE);
+            }
+        }
+
         if (compoundButton.getId() == R.id.rb_C3084_1
                 || compoundButton.getId() == R.id.rb_C3084_2
                 || compoundButton.getId() == R.id.rb_C3084_DK
@@ -1331,6 +1355,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         C3077 = "000";
         C3078 = "000";
         C3079 = "000";
+        C3079_OT = "000";
         C3080 = "000";
         C3081 = "000";
         C3082 = "000";
@@ -1691,6 +1716,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             C3079 = "2";
         } else if (rb_C3079_3.isChecked()) {
             C3079 = "3";
+            C3079_OT = ed_C3079.getText().toString().trim();
         } else if (rb_C3079_DK.isChecked()) {
             C3079 = "9";
         }
@@ -1927,6 +1953,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 + Global.C.C3051_C3099.C3077 + ","
                 + Global.C.C3051_C3099.C3078 + ","
                 + Global.C.C3051_C3099.C3079 + ","
+                + Global.C.C3051_C3099.C3079_OT + ","
                 + Global.C.C3051_C3099.C3080 + ","
                 + Global.C.C3051_C3099.C3081 + ","
                 + Global.C.C3051_C3099.C3082 + ","
@@ -1999,6 +2026,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 C3077 + "','" +
                 C3078 + "','" +
                 C3079 + "','" +
+                C3079_OT + "','" +
                 C3080 + "','" +
                 C3081 + "','" +
                 C3082 + "','" +

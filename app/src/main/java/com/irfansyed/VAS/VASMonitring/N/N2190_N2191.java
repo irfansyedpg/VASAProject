@@ -25,6 +25,8 @@ public class N2190_N2191 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2190__n2191);
         bi.setCallback(this);
 
+        this.setTitle(getString(R.string.h_n_sec_I_A));
+
         SetContentUI();
 
     }
@@ -45,18 +47,20 @@ public class N2190_N2191 extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i != bi.rbN219011.getId()) {
                     ClearAllcontrol.ClearAll(bi.llN21901N21904);//ll_N2190_1_N2190_4
+                } else {
+                    ClearAllcontrol.ClearAll(bi.llN21903N219020);//ll_N2190_3_N2190_20
                 }
             }
         });
 
-        bi.rgN21903.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        /*bi.rgN21903.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i != bi.rbN21903OT.getId()) {
                     ClearAllcontrol.ClearAll(bi.llN21903N219020);//ll_N2190_3_N2190_20
                 }
             }
-        });
+        });*/
 
         bi.rgN21908.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -194,9 +198,7 @@ public class N2190_N2191 extends AppCompatActivity {
                 if (!Gothrough.IamHiden(bi.llN21903)) {
                     return false;
                 }
-            }
-
-            if (bi.rbN21903OT.isChecked()) {
+            } else {
                 //ll_N2190_4
                 if (!Gothrough.IamHiden(bi.llN21904)) {
                     return false;
@@ -295,5 +297,10 @@ public class N2190_N2191 extends AppCompatActivity {
         }
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
     }
 }

@@ -552,9 +552,7 @@
                                         android:id="@+id/ed_N2255_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:digits="0123456789/"
                                         android:hint="@string/txt_N2255_1"
-                                        android:maxLength="10"
                                         android:text='@{rbN22551check1.checked ? edN22551.getText.toString : ""}'
                                         android:textColor="@android:color/black" />
 
@@ -634,9 +632,7 @@
                                         android:id="@+id/ed_N2255_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:digits="0123456789/"
                                         android:hint="@string/txt_N2255_2"
-                                        android:maxLength="10"
                                         android:text='@{rbN22552check1.checked ? edN22552.getText.toString : ""}'
                                         android:textColor="@android:color/black" />
 
@@ -682,9 +678,7 @@
                                         android:id="@+id/ed_N2256"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:digits="0123456789/"
                                         android:hint="@string/txt_N2256"
-                                        android:maxLength="10"
                                         android:text='@{(rbN22531.checked || rbN22541.checked) ? edN2256.getText.toString : ""}'
                                         android:textColor="@android:color/black" />
 
