@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/cyan"
     android:orientation="vertical"
     tools:context=".A.A4301_A4315">
@@ -529,9 +530,13 @@
                         style="@style/TextView"
                         android:text="@string/A4306_1" />
 
-                    <EditText
+                    <com.santalu.widget.MaskEditText
                         android:id="@+id/ed_A4306_1"
-                        style="@style/EditText_date" />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_A4306_1"
+                        android:inputType="date"
+                        app:met_mask="##/##/####"/>
 
                 </LinearLayout>
 
@@ -581,9 +586,13 @@
                         style="@style/TextView"
                         android:text="@string/A4306_2" />
 
-                    <EditText
+                    <com.santalu.widget.MaskEditText
                         android:id="@+id/ed_A4306_2"
-                        style="@style/EditText_date" />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_A4306_2"
+                        android:inputType="date"
+                        app:met_mask="##/##/####"/>
 
                 </LinearLayout>
 
@@ -602,9 +611,13 @@
                         style="@style/TextView"
                         android:text="@string/A4307" />
 
-                    <EditText
+                    <com.santalu.widget.MaskEditText
                         android:id="@+id/ed_A4307"
-                        style="@style/EditText_date" />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_A4307"
+                        android:inputType="date"
+                        app:met_mask="##/##/####"/>
 
                 </LinearLayout>
 
