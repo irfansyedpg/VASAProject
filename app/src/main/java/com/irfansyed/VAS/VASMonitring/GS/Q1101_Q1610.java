@@ -5,6 +5,8 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
@@ -35,7 +37,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     private Pattern pattern;
     private Matcher matcher;
-
     private static final String DATE_PATTERN = "(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/((19|20)\\d\\d)";
 
     //region Declaration
@@ -473,9 +474,59 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         pattern = Pattern.compile(DATE_PATTERN);
 
-        if(!validate(ed_dob.getText().toString().trim())){
+        if (!validate(ed_Q1204.getText().toString().trim())) {
 
-            ed_dob.setError("Kindly proviade a valid date");
+            ed_Q1204.setError("Kindly enter a valid date");
+            ed_Q1204.requestFocus();
+            return;
+        }
+
+        if (!validate(ed_Q1205.getText().toString().trim())) {
+
+            ed_Q1205.setError("Kindly enter a valid date");
+            ed_Q1205.requestFocus();
+            return;
+        }
+
+        if (!validate(ed_Q1307.getText().toString().trim())) {
+
+            ed_Q1307.setError("Kindly enter a valid date");
+            ed_Q1307.requestFocus();
+            return;
+        }
+
+        if (!validate(ed_Q1309.getText().toString().trim())) {
+
+            ed_Q1309.setError("Kindly enter a valid date");
+            ed_Q1309.requestFocus();
+            return;
+        }
+
+        if (!validate(ed_Q1312.getText().toString().trim())) {
+
+            ed_Q1312.setError("Kindly enter a valid date");
+            ed_Q1312.requestFocus();
+            return;
+        }
+
+        if (!validate(ed_Q1313.getText().toString().trim())) {
+
+            ed_Q1313.setError("Kindly enter a valid date");
+            ed_Q1313.requestFocus();
+            return;
+        }
+
+        if (!validate(ed_Q1603.getText().toString().trim())) {
+
+            ed_Q1603.setError("Kindly enter a valid date");
+            ed_Q1603.requestFocus();
+            return;
+        }
+
+        if (!validate(ed_Q1606.getText().toString().trim())) {
+
+            ed_Q1606.setError("Kindly enter a valid date");
+            ed_Q1606.requestFocus();
             return;
         }
 
@@ -847,7 +898,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1610_2 = findViewById(R.id.ed_Q1610_2);
         ed_Q1610_3 = findViewById(R.id.ed_Q1610_3);
 
-        ed_dob  = findViewById(R.id.ed_dob);
+
+        //ed_Q1206_d.setFilters(new InputFilter[]{ new MinMaxFilter("1", "99")});
     }
 
     private static boolean isValid(String s) {
@@ -2740,57 +2792,84 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
     }
 
 
-    public boolean validate(final String date){
+    public boolean validate(final String date) {
 
         matcher = pattern.matcher(date);
 
-        if(date.equals("99/99/9999")){
+        if (date.equals("99/99/9999")) {
 
             return true;
 
-        } else if(matcher.matches()){
+        } else if (matcher.matches()) {
 
             matcher.reset();
 
-            if(matcher.find()){
+            if (matcher.find()) {
 
                 String day = matcher.group(1);
                 String month = matcher.group(2);
                 int year = Integer.parseInt(matcher.group(3));
 
-                if(year > Integer.valueOf(Calendar.getInstance().get(Calendar.YEAR))){
-
-                    return false;
-                }
-
                 if (day.equals("31") &&
-                        (month.equals("4") || month .equals("6") || month.equals("9") ||
-                                month.equals("11") || month.equals("04") || month .equals("06") ||
+                        (month.equals("4") || month.equals("6") || month.equals("9") ||
+                                month.equals("11") || month.equals("04") || month.equals("06") ||
                                 month.equals("09"))) {
                     return false; // only 1,3,5,7,8,10,12 has 31 days
                 } else if (month.equals("2") || month.equals("02")) {
                     //leap year
-                    if(year % 4==0){
-                        if(day.equals("30") || day.equals("31")){
+                    if (year % 4 == 0) {
+                        if (day.equals("30") || day.equals("31")) {
                             return false;
-                        }else{
+                        } else {
                             return true;
                         }
-                    }else{
-                        if(day.equals("29")||day.equals("30")||day.equals("31")){
+                    } else {
+                        if (day.equals("29") || day.equals("30") || day.equals("31")) {
                             return false;
-                        }else{
+                        } else {
                             return true;
                         }
                     }
-                }else{
+                } else {
                     return true;
                 }
-            }else{
+            } else {
                 return false;
             }
-        }else{
+        } else {
             return false;
         }
     }
+
 }
+
+
+/*
+class MinMaxFilter implements InputFilter {
+
+    private int mIntMin, mIntMax;
+
+    public MinMaxFilter(int minValue, int maxValue) {
+        this.mIntMin = minValue;
+        this.mIntMax = maxValue;
+    }
+
+    public MinMaxFilter(String minValue, String maxValue) {
+        this.mIntMin = Integer.parseInt(minValue);
+        this.mIntMax = Integer.parseInt(maxValue);
+    }
+
+    @Override
+    public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
+        try {
+            int input = Integer.parseInt(dest.toString() + source.toString());
+            if (isInRange(mIntMin, mIntMax, input))
+                return null;
+        } catch (NumberFormatException nfe) { }
+        return "";
+    }
+
+    private boolean isInRange(int a, int b, int c) {
+        return b > a ? c >= a && c <= b : c >= b && c <= a;
+    }
+}*/
