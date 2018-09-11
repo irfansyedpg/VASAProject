@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
 import com.irfansyed.VAS.VASMonitring.C.C3012_C3022;
+
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.text.ParseException;
@@ -30,6 +31,7 @@ import java.util.regex.Pattern;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.InputFilterMinMax;
 
 import static java.lang.Integer.parseInt;
 
@@ -897,9 +899,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1610_1 = findViewById(R.id.ed_Q1610_1);
         ed_Q1610_2 = findViewById(R.id.ed_Q1610_2);
         ed_Q1610_3 = findViewById(R.id.ed_Q1610_3);
-
-
-        //ed_Q1206_d.setFilters(new InputFilter[]{ new MinMaxFilter("1", "99")});
     }
 
     private static boolean isValid(String s) {
@@ -1034,6 +1033,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1603.addTextChangedListener(this);
         ed_Q1606.addTextChangedListener(this);
 
+        ed_Q1206_d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 59, 99)});
 
         TextWatcher txtWatcher = new TextWatcher() {
             @Override
@@ -2733,20 +2733,11 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 ed_Q1206_m.setText(String.valueOf(months));
                 ed_Q1206_y.setText(String.valueOf(years));
 
-                ed_Q1206_d.setEnabled(false);
-                ed_Q1206_m.setEnabled(false);
-                ed_Q1206_y.setEnabled(false);
-
-
             } else {
 
                 ed_Q1206_d.setText(null);
                 ed_Q1206_m.setText(null);
                 ed_Q1206_y.setText(null);
-
-                ed_Q1206_d.setEnabled(true);
-                ed_Q1206_m.setEnabled(true);
-                ed_Q1206_y.setEnabled(true);
             }
         }
 
@@ -2769,20 +2760,11 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 ed_Q1607_2.setText(String.valueOf(months));
                 ed_Q1607_3.setText(String.valueOf(years));
 
-                ed_Q1607_1.setEnabled(false);
-                ed_Q1607_2.setEnabled(false);
-                ed_Q1607_3.setEnabled(false);
-
             } else {
 
                 ed_Q1607_1.setText(null);
                 ed_Q1607_2.setText(null);
                 ed_Q1607_3.setText(null);
-
-                ed_Q1607_1.setEnabled(true);
-                ed_Q1607_2.setEnabled(true);
-                ed_Q1607_3.setEnabled(true);
-
             }
         }
     }
@@ -2842,34 +2824,3 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
     }
 
 }
-
-
-/*
-class MinMaxFilter implements InputFilter {
-
-    private int mIntMin, mIntMax;
-
-    public MinMaxFilter(int minValue, int maxValue) {
-        this.mIntMin = minValue;
-        this.mIntMax = maxValue;
-    }
-
-    public MinMaxFilter(String minValue, String maxValue) {
-        this.mIntMin = Integer.parseInt(minValue);
-        this.mIntMax = Integer.parseInt(maxValue);
-    }
-
-    @Override
-    public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
-        try {
-            int input = Integer.parseInt(dest.toString() + source.toString());
-            if (isInRange(mIntMin, mIntMax, input))
-                return null;
-        } catch (NumberFormatException nfe) { }
-        return "";
-    }
-
-    private boolean isInRange(int a, int b, int c) {
-        return b > a ? c >= a && c <= b : c >= b && c <= a;
-    }
-}*/
