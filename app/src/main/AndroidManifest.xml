@@ -138,8 +138,8 @@
 
         <!--Sajid files-->
         <activity
-            android:name=".A.A4251_A4284"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".A.A4001_A4014"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".A.A4051_A4066"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -166,6 +166,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".A.A4206_A4207"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".A.A4251_A4284"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".A.A4301_A4315"

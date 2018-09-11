@@ -627,12 +627,12 @@
                     <TextView
                         android:id="@+id/A4013d_h"
                         style="@style/TextView"
-                        android:text="Record days if less than 30 days.\nIf less than 24 hours, record 00 days" />
+                        android:text="Record days if less than 30 days.\nIf less than 24 hours, record 00 days\nIf Don't know 99" />
 
                     <EditText
                         android:id="@+id/ed_A4013d"
                         style="@style/EditText_number"
-                        android:hint="Range 00-29 &amp; don't know = 99"
+                        android:hint="0-29 OR 99"
                         android:maxLength="2" />
 
                 </LinearLayout>
@@ -655,7 +655,7 @@
                     <TextView
                         android:id="@+id/A4013m_h"
                         style="@style/TextView"
-                        android:text="Record months if 1-11 months OR Don't Know = 99" />
+                        android:text="Record months if 1-11 months\nIf Don't Know enter 99" />
 
                     <EditText
                         android:id="@+id/ed_A4013m"
@@ -683,12 +683,12 @@
                     <TextView
                         android:id="@+id/A4013y_h"
                         style="@style/TextView"
-                        android:text="Record years if 1 year or more" />
+                        android:text="Record years if 1 year or more\nIf Don't know Enter 99" />
 
                     <EditText
                         android:id="@+id/ed_A4013y"
                         style="@style/EditText_number"
-                        android:hint="Don't Know = 99"
+                        android:hint="1-49 OR 99"
                         android:maxLength="2" />
 
                 </LinearLayout>

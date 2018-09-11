@@ -260,7 +260,6 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
 
         Initialization();
         events_call();
-
     }
 
     public void onClick(View view) {
