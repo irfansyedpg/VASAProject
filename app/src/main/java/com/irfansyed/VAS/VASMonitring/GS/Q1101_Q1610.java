@@ -1033,9 +1033,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1603.addTextChangedListener(this);
         ed_Q1606.addTextChangedListener(this);
 
-        ed_Q1206_d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27)});
-        ed_Q1206_m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23)});
-        ed_Q1206_y.setFilters(new InputFilter[]{new InputFilterMinMax(2, 49, 49)});
+        ed_Q1206_d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 99, 88)});
 
         TextWatcher txtWatcher = new TextWatcher() {
             @Override
