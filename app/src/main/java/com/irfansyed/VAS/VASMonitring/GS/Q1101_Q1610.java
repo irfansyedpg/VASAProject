@@ -1033,7 +1033,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1603.addTextChangedListener(this);
         ed_Q1606.addTextChangedListener(this);
 
-        ed_Q1206_d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 59, 99)});
+        ed_Q1206_d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27)});
+        ed_Q1206_m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23)});
+        ed_Q1206_y.setFilters(new InputFilter[]{new InputFilterMinMax(2, 49, 49)});
 
         TextWatcher txtWatcher = new TextWatcher() {
             @Override
@@ -2701,14 +2703,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
     @Override
     public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
-        ed_Q1206_d.setEnabled(false);
-        ed_Q1206_m.setEnabled(false);
-        ed_Q1206_y.setEnabled(false);
-
-        ed_Q1607_1.setEnabled(false);
-        ed_Q1607_2.setEnabled(false);
-        ed_Q1607_3.setEnabled(false);
-
     }
 
     @Override
@@ -2756,8 +2750,19 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 int months = Age[1];
                 int years = Age[2];
 
-                ed_Q1607_1.setText(String.valueOf(days));
+                if(days > 27){
+
+                    ed_Q1607_1.setText("00");
+                } else {
+                    ed_Q1607_1.setText(String.valueOf(days));
+                }
+
+                if(months > 23){
+
+
+                }
                 ed_Q1607_2.setText(String.valueOf(months));
+
                 ed_Q1607_3.setText(String.valueOf(years));
 
             } else {
