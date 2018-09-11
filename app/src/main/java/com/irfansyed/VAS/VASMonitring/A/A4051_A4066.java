@@ -878,7 +878,7 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (validations.RangeTextBox(this, ed_A4052_b, 0, 30, "Months")) {
+        if (!validations.RangeTextBox(this, ed_A4052_b, 0, 30, "Months")) {
             return false;
         }
 

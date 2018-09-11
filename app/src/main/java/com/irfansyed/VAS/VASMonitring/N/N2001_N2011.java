@@ -201,7 +201,7 @@ public class N2001_N2011 extends AppCompatActivity {
                     if (!Gothrough.IamHiden(bi.llN2005d)) {
                         return false;
                     }
-                    if (validations.RangeTextBox(this, bi.edN2005d, 0, 6, "Days")) {
+                    if (!validations.RangeTextBox(this, bi.edN2005d, 0, 6, "Days")) {
                         return false;
                     }
                 }
@@ -211,7 +211,7 @@ public class N2001_N2011 extends AppCompatActivity {
                     if (!Gothrough.IamHiden(bi.llN2005w)) {
                         return false;
                     }
-                    if (validations.RangeTextBox(this, bi.edN2005w, 1, 7, "Week")) {
+                    if (!validations.RangeTextBox(this, bi.edN2005w, 1, 7, "Week")) {
                         return false;
                     }
 
@@ -222,7 +222,7 @@ public class N2001_N2011 extends AppCompatActivity {
                     if (!Gothrough.IamHiden(bi.llN2005m)) {
                         return false;
                     }
-                    if (validations.RangeTextBox(this, bi.edN2005m, 2, 60, "Months")) {
+                    if (!validations.RangeTextBox(this, bi.edN2005m, 2, 60, "Months")) {
                         return false;
                     }
 
