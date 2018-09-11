@@ -534,7 +534,7 @@
                         android:id="@+id/ed_A4306_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/txt_A4306_1"
+                        android:hint="Date 1"
                         android:inputType="date"
                         app:met_mask="##/##/####"/>
 
@@ -590,7 +590,7 @@
                         android:id="@+id/ed_A4306_2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/txt_A4306_2"
+                        android:hint="Date 2"
                         android:inputType="date"
                         app:met_mask="##/##/####"/>
 
@@ -615,7 +615,7 @@
                         android:id="@+id/ed_A4307"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/txt_A4307"
+                        android:hint="Date 3"
                         android:inputType="date"
                         app:met_mask="##/##/####"/>
 
