@@ -27,6 +27,8 @@ public class N2321_N2322 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2321__n2322);
         bi.setCallback(this);
 
+        this.setTitle(getString(R.string.h_n_sec_15));
+
         GetDataFromDB();
         SetContentUI();
 
@@ -64,7 +66,6 @@ public class N2321_N2322 extends AppCompatActivity {
         }
     }
 
-
     public boolean SaveData() {
 
         Global.N.N2321_N2322 n2321 = new Global.N.N2321_N2322();
@@ -95,5 +96,10 @@ public class N2321_N2322 extends AppCompatActivity {
         }
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
     }
 }

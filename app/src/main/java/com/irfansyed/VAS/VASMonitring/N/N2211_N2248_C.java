@@ -35,6 +35,8 @@ public class N2211_N2248_C extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2211__n2248_c);
         bi.setCallback(this);
 
+        this.setTitle(getString(R.string.h_n_sec_10));
+
         GetDataFromDB();
         SetContentUI();
 
@@ -131,6 +133,8 @@ public class N2211_N2248_C extends AppCompatActivity {
                     if (!bi.rbN22331.isChecked()) {
                         ClearAllcontrol.ClearAll(bi.llN2238N2240); //ll_N2238_N2240
                     }
+                } else {
+                    ClearAllcontrol.ClearAll(bi.llN2225N2225); //ll_N2225_N2225
                 }
             }
         });
@@ -198,6 +202,8 @@ public class N2211_N2248_C extends AppCompatActivity {
                     if (!bi.rbN22231.isChecked()) {
                         ClearAllcontrol.ClearAll(bi.llN2238N2240); //ll_N2238_N2240
                     }
+                } else {
+                    ClearAllcontrol.ClearAll(bi.llN2235N2235); //ll_N2235_N2235
                 }
             }
         });
@@ -728,16 +734,17 @@ public class N2211_N2248_C extends AppCompatActivity {
                                     !bi.rbN22241DK.isChecked() ? bi.edN22242 : null)) {
                                 return false;
                             }
+                        } else {
+                            //ll_N2225_1
+                            if (!Gothrough.IamHiden(bi.llN22251)) {
+                                return false;
+                            }
+                            //ll_N2225_2
+                            if (!Gothrough.IamHiden(bi.llN22252)) {
+                                return false;
+                            }
                         }
 
-                        //ll_N2225_1
-                        if (!Gothrough.IamHiden(bi.llN22251)) {
-                            return false;
-                        }
-                        //ll_N2225_2
-                        if (!Gothrough.IamHiden(bi.llN22252)) {
-                            return false;
-                        }
                         //ll_N2226
                         if (!Gothrough.IamHiden(bi.llN2226)) {
                             return false;
@@ -805,15 +812,17 @@ public class N2211_N2248_C extends AppCompatActivity {
                                         !bi.rbN22341DK.isChecked() ? bi.edN22342 : null)) {
                                     return false;
                                 }
+                            } else {
+                                //ll_N2235_1
+                                if (!Gothrough.IamHiden(bi.llN22351)) {
+                                    return false;
+                                }
+                                //ll_N2235_2
+                                if (!Gothrough.IamHiden(bi.llN22352)) {
+                                    return false;
+                                }
                             }
-                            //ll_N2235_1
-                            if (!Gothrough.IamHiden(bi.llN22351)) {
-                                return false;
-                            }
-                            //ll_N2235_2
-                            if (!Gothrough.IamHiden(bi.llN22352)) {
-                                return false;
-                            }
+
                             //ll_N2236
                             if (!Gothrough.IamHiden(bi.llN2236)) {
                                 return false;
@@ -904,5 +913,10 @@ public class N2211_N2248_C extends AppCompatActivity {
         }
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
     }
 }

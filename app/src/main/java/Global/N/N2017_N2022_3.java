@@ -9,7 +9,7 @@ public class N2017_N2022_3 {
     public String N2019d = "N2019d";
     public String N2020 = "N2020";
     public String N2021 = "N2021";
-    public String N2022 = "N2022 ";
+    public String N2022 = "N2022";
     public String N2022_1 = "N2022_1";
     public String N2022_2 = "N2022_2";
     public String N2022_3 = "N2022_3";
@@ -119,7 +119,7 @@ public class N2017_N2022_3 {
         String N2019d = "N2019d";
         String N2020 = "N2020";
         String N2021 = "N2021";
-        String N2022 = "N2022 ";
+        String N2022 = "N2022";
         String N2022_1 = "N2022_1";
         String N2022_2 = "N2022_2";
         String N2022_3 = "N2022_3";

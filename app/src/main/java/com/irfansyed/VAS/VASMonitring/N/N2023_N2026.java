@@ -23,6 +23,8 @@ public class N2023_N2026 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2023__n2026);
         bi.setCallback(this);
 
+        this.setTitle(getString(R.string.h_n_sec_2_4));
+
     }
 
     public void BtnContinue() {
@@ -36,7 +38,6 @@ public class N2023_N2026 extends AppCompatActivity {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
         }
     }
-
 
     public boolean SaveData() {
 
@@ -89,5 +90,10 @@ public class N2023_N2026 extends AppCompatActivity {
 
         //ll_N2026
         return Gothrough.IamHiden(bi.llN2026);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
     }
 }

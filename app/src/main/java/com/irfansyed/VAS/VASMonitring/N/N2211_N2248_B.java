@@ -27,6 +27,8 @@ public class N2211_N2248_B extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2211__n2248_b);
         bi.setCallback(this);
 
+        this.setTitle(getString(R.string.h_n_sec_10));
+
         SetContentUI();
 
     }
@@ -102,5 +104,10 @@ public class N2211_N2248_B extends AppCompatActivity {
 
         //ll_ll_N2213_4
         return Gothrough.IamHiden(bi.llN22134);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
     }
 }

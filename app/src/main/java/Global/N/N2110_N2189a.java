@@ -95,7 +95,7 @@ public class N2110_N2189a {
     public String N2175 = "N2175";
     public String N2176 = "N2176";
     public String N2177 = "N2177";
-    public String N2177A = "N2177A ";
+    public String N2177A = "N2177A";
     public String N2178 = "N2178";
     public String N2179 = "N2179";
     public String N2180 = "N2180";

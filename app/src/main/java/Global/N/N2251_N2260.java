@@ -13,9 +13,9 @@ public class N2251_N2260 {
     public String N2253 = "N2253";
     public String N2254 = "N2254";
     public String N2255_1CHECK = "N2255_1check";
-    public String N2255_1 = "N2255_1 ";
+    public String N2255_1 = "N2255_1";
     public String N2255_2CHECK = "N2255_2check";
-    public String N2255_2 = "N2255_2 ";
+    public String N2255_2 = "N2255_2";
     public String N2256 = "N2256";
     public String N2257 = "N2257";
     public String N2258 = "N2258";
@@ -196,9 +196,9 @@ public class N2251_N2260 {
         String N2253 = "N2253";
         String N2254 = "N2254";
         String N2255_1CHECK = "N2255_1check";
-        String N2255_1 = "N2255_1 ";
+        String N2255_1 = "N2255_1";
         String N2255_2CHECK = "N2255_2check";
-        String N2255_2 = "N2255_2 ";
+        String N2255_2 = "N2255_2";
         String N2256 = "N2256";
         String N2257 = "N2257";
         String N2258 = "N2258";
