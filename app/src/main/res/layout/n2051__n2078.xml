@@ -905,6 +905,25 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2069_1" />
 
+                        <LinearLayout
+                            style="@style/Q_Linerlayout_v"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="50"
+                                android:src="@drawable/n2069_1" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:src="@drawable/n2069__1" />
+                        </LinearLayout>
+
                         <RadioGroup
                             android:id="@+id/rg_N2069_1"
                             style="@style/RadioGroup">

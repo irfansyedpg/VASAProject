@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <ScrollView
@@ -573,7 +574,6 @@
             <!-- EditText C3306_1 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_C3306_1"
                     style="@style/Q_Linerlayout_v">
@@ -583,10 +583,13 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3306_1" />
 
-                    <EditText
+                    <com.santalu.widget.MaskEditText
                         android:id="@+id/ed_C3306_1"
-                        style="@style/EditText_varchar"
-                        android:hint="@string/txt_C3306_1" />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_C3306_1"
+                        android:inputType="date"
+                        app:met_mask="##/##/####"/>
 
                 </LinearLayout>
 
@@ -632,7 +635,6 @@
             <!-- EditText C3306_2 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_C3306_2"
                     style="@style/Q_Linerlayout_v">
@@ -642,10 +644,13 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3306_2" />
 
-                    <EditText
+                    <com.santalu.widget.MaskEditText
                         android:id="@+id/ed_C3306_2"
-                        style="@style/EditText_varchar"
-                        android:hint="@string/txt_C3306_2" />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_C3306_2"
+                        android:inputType="date"
+                        app:met_mask="##/##/####"/>
 
                 </LinearLayout>
 
@@ -665,10 +670,13 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3307" />
 
-                    <EditText
+                    <com.santalu.widget.MaskEditText
                         android:id="@+id/ed_C3307"
-                        style="@style/EditText_varchar"
-                        android:hint="@string/txt_C3307" />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_C3307"
+                        android:inputType="date"
+                        app:met_mask="##/##/####"/>
 
                 </LinearLayout>
 

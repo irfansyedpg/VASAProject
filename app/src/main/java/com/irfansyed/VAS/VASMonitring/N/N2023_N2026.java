@@ -45,11 +45,11 @@ public class N2023_N2026 extends AppCompatActivity {
         n2023.setN2023(bi.edN2023.getText().toString());
         n2023.setN2024(bi.edN2024.getText().toString());
         n2023.setN20241(bi.rbN202411.isChecked() ? "1" : bi.rbN202412.isChecked() ? "2" : bi.rbN20241DK.isChecked() ? "9"
-                : bi.rbN20241RA.isChecked() ? "8" : "");
-        n2023.setN2025U(bi.rbN2025u1.isChecked() ? "1" : bi.rbN2025uDK.isChecked() ? "9" : bi.rbN2025uRA.isChecked() ? "8" : "");
+                : bi.rbN20241RA.isChecked() ? "8" : "0");
+        n2023.setN2025U(bi.rbN2025u1.isChecked() ? "1" : bi.rbN2025uDK.isChecked() ? "9" : bi.rbN2025uRA.isChecked() ? "8" : "0");
         n2023.setN2025D(bi.edN2025d.getText().toString());
         n2023.setN2026(bi.rbN20261.isChecked() ? "1" : bi.rbN20262.isChecked() ? "2" : bi.rbN2026DK.isChecked() ? "9"
-                : bi.rbN2026RA.isChecked() ? "8" : "");
+                : bi.rbN2026RA.isChecked() ? "8" : "0");
 
         n2023.setSTUDYID("");
         DBHelper db = new DBHelper(this);

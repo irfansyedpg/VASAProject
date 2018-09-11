@@ -1136,7 +1136,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         String orderBy = "id ASC";
 
-        ArrayList<N2211_N2248_B> allFC = null;
+        ArrayList<N2211_N2248_B> allFC = new ArrayList<>();
         try {
             c = db.query(
                     data.N.N2211_N2248_B.TABLE_NAME,  // The table to query
