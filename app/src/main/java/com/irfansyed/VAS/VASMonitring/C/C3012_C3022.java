@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -23,6 +24,7 @@ import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
+import utils.InputFilterMinMax;
 
 public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -345,6 +347,15 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3021u_3.setOnCheckedChangeListener(this);
         rb_C3021u_DK.setOnCheckedChangeListener(this);
         rb_C3021u_RA.setOnCheckedChangeListener(this);
+
+
+        ed_C3019_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_C3019_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
+        ed_C3019_c.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
+
+        ed_C3021d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 6, 99, 99)});
+        ed_C3021m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
+        ed_C3021y.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
     }
 
     @Override
