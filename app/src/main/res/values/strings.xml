@@ -3663,8 +3663,8 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="rb_A4151_2">Liquids</string>
     <string name="rb_A4151_3">Both</string>
 
-    <string name="rb_A4178_2_1">Yes (SHE WAS NOT PREGNANT; AND SHE DID NOT RECENTLY DELIVER, HAVE ABORTION, OR MISCARRY)</string>
-    <string name="rb_A4178_2_2">No (SHE WAS PREGNANT OR SHE RECENTLY DELIVERED, HAD AN ABORTION, OR MISCARRIED)</string>
+    <string name="rb_A4178_2_1">Yes (She was not pregnant, and she did not recently deliver, have abortion, or miscarry)</string>
+    <string name="rb_A4178_2_2">No (She was pregnant or she recently delivered, had an abortion, or miscarried)</string>
 
     <string name="rb_A4193_1_1">Oral medicine</string>
     <string name="rb_A4193_1_2">Traditional vaginal herbal application</string>
@@ -4059,9 +4059,9 @@ Examples of statements for the reading test:
     <string name="rb_Q1605_1">Yes	</string>
     <string name="rb_Q1605_2">No	</string>
     <string name="rb_Q1609_1">Less than 28 days old	</string>
-    <string name="rb_Q1609_2">1-11 months old	</string>
+    <string name="rb_Q1609_2">1-11 months old</string>
     <string name="rb_Q1609_3">12 months-4 years old	</string>
-    <string name="rb_Q1609_4">5-11 years old	</string>
+    <string name="rb_Q1609_4">5-11 years old</string>
     <string name="rb_Q1609_5">12 years or more	</string>
 
     <string name="ref">Ref</string>
@@ -4095,6 +4095,15 @@ Examples of statements for the reading test:
     <string name="A4077_a_h"><![CDATA[Enter 0-30 days. Less than 1 day or 24 hours = 0 days; 1 week = 7 days &amp; If Don\'t Know  Enter 99\"]]></string>
     <string name="A4077_b">Enter how long (s)he had a cough in months?</string>
     <string name="A4077_b_h"><![CDATA[Enter 1-60 Months & if don\'t know Enter 99]]></string>
+    <string name="A4005_h">If completed less than 1 year at that level, record 0</string>
+    <string name="A4006_h">Record “yes” if both or either reading or writing is known to the respondent.</string>
+    <string name="A4052_b">A4052_b: Enter how long the fever lasted in days?</string>
+    <string name="A4052_c">A4052_c: Enter how long the fever lasted in months?</string>
+    <string name="A4059_a">A4059_a: Enter how long the loose or liquid stools lasted in days?</string>
+    <string name="A4059_b">A4059_b: Enter how long the loose or liquid stools lasted in months?</string>
+    <string name="A4064_a">A4064_a: Enter how long before death she vomited in days?</string>
+    <string name="A4064_b">A4064_b: Enter how long before death she vomited in months?</string>
+    <string name="days_h">Enter 0-29 days. Less than 1 day or 24 hours = 0 days. 1 week = 7 days. Don\'t know = 99</string>
 
 
     <!-- E Ends -->

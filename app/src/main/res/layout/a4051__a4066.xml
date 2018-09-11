@@ -7,27 +7,7 @@
     android:orientation="vertical"
     tools:context=".A.A4051_A4066">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:text="@string/app_name"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:textStyle="bold|italic" />
-
-        <ImageView
-            android:layout_width="90dp"
-            android:layout_height="60sp"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/unwhite" />
-
-    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -97,6 +77,11 @@
                         style="@style/TextView"
                         android:text="@string/A4052_u" />
 
+                    <TextView
+                        android:id="@+id/A4052_u_h"
+                        style="@style/TextView_Hint"
+                        android:text="Enter 1 unit only: 0-30 days or 1-60 months. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days." />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -136,17 +121,17 @@
                     <TextView
                         android:id="@+id/A4052_b"
                         style="@style/TextView"
-                        android:text="@string/days" />
+                        android:text="@string/A4052_b" />
 
                     <TextView
                         android:id="@+id/A4052_b_h"
-                        style="@style/TextView"
-                        android:text="Enter 0-30 days. Less than 1 day or 24 hours = 0 days; 1 week = 7 days &amp; if don't know 99" />
+                        style="@style/TextView_Hint"
+                        android:text="Enter 0-29 days. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days. \n Don't know = 99" />
 
                     <EditText
                         android:id="@+id/ed_A4052_b"
                         style="@style/EditText_number"
-                        android:hint="Range 0-30 OR 99"
+                        android:hint="0-29 or 99"
                         android:maxLength="2" />
 
                 </LinearLayout>
@@ -162,14 +147,19 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4052_c"
-                        style="@style/TextView"
-                        android:text="@string/months" />
+                    android:id="@+id/A4052_c"
+                    style="@style/TextView"
+                    android:text="@string/A4052_c" />
+
+                    <TextView
+                        android:id="@+id/A4052_c_h"
+                        style="@style/TextView_Hint"
+                        android:text="Enter 1-60 months. \nDon't know = 99" />
 
                     <EditText
                         android:id="@+id/ed_A4052_c"
                         style="@style/EditText_number"
-                        android:hint="1-60 OR 99"
+                        android:hint="1-60 or 99"
                         android:maxLength="2" />
 
                 </LinearLayout>
@@ -445,6 +435,11 @@
                         style="@style/TextView"
                         android:text="@string/A4059_u" />
 
+                    <TextView
+                        android:id="@+id/A4059_u_h"
+                        style="@style/TextView_Hint"
+                        android:text="Enter 1 unit only: 0-29 days or 1-60 months. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days." />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -484,17 +479,17 @@
                     <TextView
                         android:id="@+id/A4059_a"
                         style="@style/TextView"
-                        android:text="@string/days" />
+                        android:text="@string/A4059_a" />
 
                     <TextView
                         android:id="@+id/A4059_a_h"
-                        style="@style/TextView"
-                        android:text="Enter 0-30 days. Less than 1 day or 24 hours = 0 days; 1 week = 7 days &amp; if don't know Enter 99" />
+                        style="@style/TextView_Hint"
+                        android:text="Enter 0-29 days. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days. \nDon't know = 99" />
 
                     <EditText
                         android:id="@+id/ed_A4059_a"
                         style="@style/EditText_number"
-                        android:hint="1-30 OR 99"
+                        android:hint="0-29 or 99"
                         android:maxLength="2" />
 
                 </LinearLayout>
@@ -512,17 +507,17 @@
                     <TextView
                         android:id="@+id/A4059_b"
                         style="@style/TextView"
-                        android:text="@string/months" />
+                        android:text="@string/A4059_b" />
 
                     <TextView
                         android:id="@+id/A4059_b_h"
-                        style="@style/TextView"
-                        android:text="Enter 1-60 months &amp; If don't know Enter 99" />
+                        style="@style/TextView_Hint"
+                        android:text="Enter 1-60 months. \nDon't know = 99" />
 
                     <EditText
                         android:id="@+id/ed_A4059_b"
                         style="@style/EditText_number"
-                        android:hint="1-60 OR 99"
+                        android:hint="1-60 or 99"
                         android:maxLength="2" />
 
                 </LinearLayout>
@@ -707,6 +702,11 @@
                         style="@style/TextView"
                         android:text="@string/A4064_u" />
 
+                    <TextView
+                        android:id="@+id/A4064_u_h"
+                        style="@style/TextView_Hint"
+                        android:text="Enter 1 unit only: 0-29 days or 1-60 months. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days." />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -746,17 +746,17 @@
                     <TextView
                         android:id="@+id/A4064_a"
                         style="@style/TextView"
-                        android:text="@string/days" />
+                        android:text="@string/A4064_a" />
 
                     <TextView
                         android:id="@+id/A4064_a_h"
-                        style="@style/TextView"
-                        android:text="Enter 0-30 days. Less than 1 day or 24 hours = 0 days; 1 week = 7 days &amp; If don't know Enter 99" />
+                        style="@style/TextView_Hint"
+                        android:text="Enter 0-29 days. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days. \n Dont' know = 99" />
 
                     <EditText
                         android:id="@+id/ed_A4064_a"
                         style="@style/EditText_number"
-                        android:hint="0-30 OR 99"
+                        android:hint="0-29 or 99"
                         android:maxLength="2" />
 
                 </LinearLayout>
@@ -774,17 +774,17 @@
                     <TextView
                         android:id="@+id/A4064_b"
                         style="@style/TextView"
-                        android:text="@string/months" />
+                        android:text="@string/A4064_b" />
 
                     <TextView
                         android:id="@+id/A4064_b_h"
-                        style="@style/TextView"
-                        android:text="Enter 1-60 months &amp; If don't know Enter 99" />
+                        style="@style/TextView_Hint"
+                        android:text="Enter 1-60 months. \nDon't know = 99" />
 
                     <EditText
                         android:id="@+id/ed_A4064_b"
                         style="@style/EditText_number"
-                        android:hint="1-60 OR 99"
+                        android:hint="1-60 or 99"
                         android:maxLength="2" />
 
                 </LinearLayout>

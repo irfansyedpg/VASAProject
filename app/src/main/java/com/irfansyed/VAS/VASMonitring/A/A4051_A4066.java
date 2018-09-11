@@ -3,6 +3,7 @@ package com.irfansyed.VAS.VASMonitring.A;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -16,6 +17,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
+import utils.InputFilterMinMax;
 import utils.validations;
 
 public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
@@ -492,6 +494,13 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         rb_A4064_u_DK.setOnCheckedChangeListener(this);
         rb_A4064_u_RA.setOnCheckedChangeListener(this);
 
+        ed_A4052_b.setFilters(new InputFilter[]{new InputFilterMinMax(0, 29, 99, 99)});
+        ed_A4052_c.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_A4059_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 29, 99, 99)});
+        ed_A4059_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_A4064_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 29, 99, 99)});
+        ed_A4064_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+
     }
 
     void value_assignment() {
@@ -875,10 +884,6 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         }
 
         if (Gothrough.IamHiden(ll_A4052_b) == false) {
-            return false;
-        }
-
-        if (!validations.RangeTextBox(this, ed_A4052_b, 0, 30, "Months")) {
             return false;
         }
 
