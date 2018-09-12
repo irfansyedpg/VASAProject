@@ -26,6 +26,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     // LinerLayouts
     LinearLayout
+            ll_study_id,
             ll_C3471,
             ll_C3472;
 
@@ -44,6 +45,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
             rb_C3472_DK;
 
     EditText
+            ed_study_id,
             ed_C3471;
 
     String
@@ -57,6 +59,13 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3471_c3472);
+
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
 
         Initialization();
 
@@ -75,7 +84,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
         insert_data();
 
         Intent c = new Intent(this, HomeActivity.class);
-
+        c.putExtra("study_id", study_id);
         startActivity(c);
 
         Toast.makeText(this, "Interview Completted...", Toast.LENGTH_LONG).show();
@@ -110,13 +119,16 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     }
 
-
     void value_assignment() {
 
-        study_id = "0";
         C3471 = "000";
         C3472 = "000";
         STATUS = "0";
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         if (ed_C3471.getText().toString().trim().length() > 0) {
             C3471 = ed_C3471.getText().toString().trim();

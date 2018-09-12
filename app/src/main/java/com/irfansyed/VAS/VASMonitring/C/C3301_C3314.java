@@ -34,6 +34,7 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
 
     // LinerLayouts
     LinearLayout
+            ll_study_id,
             ll_C3301,
             ll_C3302_1,
             ll_C3302_2,
@@ -175,6 +176,7 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
     //CheckBox
 
     EditText
+            ed_study_id,
             ed_C3306_1,
             ed_C3306_2,
             ed_C3307,
@@ -226,6 +228,13 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3301_c3314);
 
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
+
         Initialization();
         events_call();
 
@@ -243,7 +252,7 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
 
         pattern = Pattern.compile(DATE_PATTERN);
 
-        if (!validate(ed_C3306_1.getText().toString().trim())) {
+        /*if (!validate(ed_C3306_1.getText().toString().trim())) {
 
             ed_C3306_1.setError("Kindly enter a valid date");
             ed_C3306_1.requestFocus();
@@ -262,13 +271,13 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
             ed_C3307.setError("Kindly enter a valid date");
             ed_C3307.requestFocus();
             return;
-        }
+        }*/
 
         value_assignment();
         insert_data();
 
         Intent c = new Intent(this, C3351_C3364.class);
-
+        c.putExtra("study_id", study_id);
         startActivity(c);
     }
 
@@ -639,8 +648,6 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        study_id = "0";
-
         C3301 = "000";
         C3302_1 = "000";
         C3302_2 = "000";
@@ -675,6 +682,11 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
         C3313 = "000";
         C3314 = "000";
         STATUS = "0";
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         if (rb_C3301_1.isChecked()) {
             C3301 = "1";

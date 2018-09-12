@@ -37,6 +37,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     // LinerLayouts
     LinearLayout
+            ll_study_id,
             ll_C3051,
             ll_C3052,
             ll_C3053,
@@ -290,6 +291,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             cb_C3067_DK;
 
     EditText
+            ed_study_id,
             ed_C3052,
             ed_C3062,
             ed_C3065_OT,
@@ -386,8 +388,15 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3051_c3099);
 
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
+
         DBHelper db = new DBHelper(this);
-        Cursor Q1101_Q1610 = db.getData("Q1101_Q1610");
+        Cursor Q1101_Q1610 = db.getData("Q1101_Q1610", study_id);
 
         if (Q1101_Q1610.getCount() > 0) {
 
@@ -401,7 +410,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
         Initialization();
 
-        Cursor C3001_C3011 = db.getData("C3001_C3011");
+        Cursor C3001_C3011 = db.getData("C3001_C3011", study_id);
 
         if (C3001_C3011.getCount() > 0) {
 
@@ -448,7 +457,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         insert_data();
 
         Intent c = new Intent(this, C3101_C3112.class);
-
+        c.putExtra("study_id", study_id);
         startActivity(c);
     }
 
@@ -850,6 +859,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3098_2.setOnCheckedChangeListener(this);
         rb_C3098_DK.setOnCheckedChangeListener(this);
         rb_C3098_RA.setOnCheckedChangeListener(this);
+
         ed_C3079.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
         ed_C3090_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 29, 99, 99)});
         ed_C3090_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
@@ -1307,7 +1317,6 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        study_id = "0";
         C3051 = "000";
         C3052 = "000";
         C3053 = "000";
@@ -1381,6 +1390,10 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         C3099 = "000";
         STATUS = "0";
 
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         if (rb_C3051_1.isChecked()) {
             C3051 = "1";

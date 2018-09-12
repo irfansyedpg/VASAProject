@@ -146,11 +146,11 @@ public class DBHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
-    public Cursor getData(String tableName) {
+    public Cursor getData(String tableName, String study_id) {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
-        Cursor res = db.rawQuery("select * from " + tableName + " order by id DESC LIMIT 1", null);
+        Cursor res = db.rawQuery("select * from " + tableName + " where study_id = " + "'" + study_id + "'", null);
         return res;
     }
 

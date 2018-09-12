@@ -142,7 +142,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
         ed_study_id.setEnabled(false);
 
         DBHelper db = new DBHelper(this);
-        Cursor res = db.getData("Q1101_Q1610");
+        Cursor res = db.getData("Q1101_Q1610", study_id);
 
         if (res.getCount() > 0) {
 
@@ -235,7 +235,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
         if (ageInDays < 334) {
 
             Intent c = new Intent(this, C3051_C3099.class);
-            c.putExtra("study_id", ed_study_id.getText().toString().trim());
+            c.putExtra("study_id", study_id);
             startActivity(c);
 
         } else {
@@ -244,7 +244,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             this.insert_data();
 
             Intent c = new Intent(this, C3101_C3112.class);
-            c.putExtra("study_id", ed_study_id.getText().toString().trim());
+            c.putExtra("study_id", study_id);
             startActivity(c);
         }
     }

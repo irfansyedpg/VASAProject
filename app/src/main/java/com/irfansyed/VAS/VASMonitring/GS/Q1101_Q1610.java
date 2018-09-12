@@ -15,8 +15,10 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.A.A4001_A4014;
 import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
 import com.irfansyed.VAS.VASMonitring.C.C3012_C3022;
+import com.irfansyed.VAS.VASMonitring.N.N2001_N2011;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.util.regex.Matcher;
@@ -508,35 +510,38 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         insert_data();
 
         DBHelper db = new DBHelper(this);
-        Cursor res = db.getData("Q1101_Q1610");
+        Cursor res = db.getData("Q1101_Q1610", study_id);
 
         if (res.getCount() > 0) {
 
             res.moveToFirst();
 
-            //if (parseInt(res.getString(78)) == 5) {
+            //Toast.makeText(this, res.getString(78), Toast.LENGTH_SHORT).show();
 
-            //  Intent c = new Intent(this, A4001_A4014.class);
-            //startActivity(c);
+            if (parseInt(res.getString(78)) == 5) {
 
-            //} else if (parseInt(res.getString(78)) == 1) {
+                Intent c = new Intent(this, A4001_A4014.class);
+                c.putExtra("study_id", study_id);
+                startActivity(c);
 
-            //  Intent c = new Intent(this, N2001_N2011.class);
-            //startActivity(c);
+            } else if (parseInt(res.getString(78)) == 1) {
 
-            //}
+                Intent c = new Intent(this, N2001_N2011.class);
+                c.putExtra("study_id", study_id);
+                startActivity(c);
 
-            if (parseInt(res.getString(78)) == 2) {
+            } else if (parseInt(res.getString(78)) == 2) {
 
                 Intent c = new Intent(this, C3001_C3011.class);
-                c.putExtra("study_id", ed_study_id.getText().toString().trim());
+                c.putExtra("study_id", study_id);
                 startActivity(c);
 
             } else {
 
-                //C3001_C3011.value_assignment();
+                // In case of empty insertion call functions here
+
                 Intent c = new Intent(this, C3012_C3022.class);
-                c.putExtra("study_id", ed_study_id.getText().toString().trim());
+                c.putExtra("study_id", study_id);
                 startActivity(c);
             }
         }
@@ -2618,14 +2623,14 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 int months = Age[1];
                 int years = Age[2];
 
-                if(days > 27){
+                if (days > 27) {
 
                     ed_Q1607_1.setText("00");
                 } else {
                     ed_Q1607_1.setText(String.valueOf(days));
                 }
 
-                if(months > 23){
+                if (months > 23) {
 
 
                 }

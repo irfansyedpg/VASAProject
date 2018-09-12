@@ -27,6 +27,7 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
 
     // LinerLayouts
     LinearLayout
+            ll_study_id,
             ll_C3351,
             ll_C3352,
             ll_C3353,
@@ -54,6 +55,7 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
     //CheckBox
 
     EditText
+            ed_study_id,
             ed_C3353,
             ed_C3354,
             ed_C3355,
@@ -83,6 +85,13 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3351_c3364);
 
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
+
         Initialization();
         events_call();
 
@@ -101,7 +110,7 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
         insert_data();
 
         Intent c = new Intent(this, C3401_C3457.class);
-
+        c.putExtra("study_id", study_id);
         startActivity(c);
     }
 
@@ -257,7 +266,6 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        study_id = "0";
         C3351 = "000";
         C3352 = "000";
         C3353 = "000";
@@ -269,6 +277,11 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
         C3363 = "000";
         C3364 = "000";
         STATUS = "0";
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         if (rb_C3351_1.isChecked()) {
             C3351 = "1";

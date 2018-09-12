@@ -182,7 +182,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
         insert_data();
 
         Intent c = new Intent(this, C3012_C3022.class);
-        c.putExtra("study_id", ed_study_id.getText().toString().trim());
+        c.putExtra("study_id", study_id);
         startActivity(c);
     }
 

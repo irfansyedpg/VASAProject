@@ -28,6 +28,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
     // LinerLayouts
     LinearLayout
+            ll_study_id,
             ll_C3121,
             ll_C3122,
             ll_C3122d,
@@ -959,6 +960,13 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3121_c3228);
 
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
+
         Initialization();
         events_call();
 
@@ -977,7 +985,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         insert_data();
 
         Intent c = new Intent(this, C3301_C3314.class);
-
+        c.putExtra("study_id", study_id);
         startActivity(c);
     }
 
@@ -3587,7 +3595,6 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        study_id = "000";
         C3121 = "000";
         C3122 = "000";
         C3122d = "000";
@@ -3762,6 +3769,10 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         C3228 = "000";
         STATUS = "0";
 
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         if (rb_C3121_1.isChecked()) {
             C3121 = "1";
