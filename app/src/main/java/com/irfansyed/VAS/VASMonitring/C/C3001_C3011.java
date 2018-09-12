@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import data.LocalDataManager;
@@ -52,54 +53,54 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             rb_C3001_DK,
             rb_C3001_RA,
 
-            rb_C3002_1,
+    rb_C3002_1,
             rb_C3002_2,
             rb_C3002_DK,
             rb_C3002_RA,
 
-            rb_C3003_1,
+    rb_C3003_1,
             rb_C3003_2,
             rb_C3003_DK,
             rb_C3003_RA,
 
-            rb_C3004_1,
+    rb_C3004_1,
             rb_C3004_2,
             rb_C3004_3,
             rb_C3004_DK,
             rb_C3004_RA,
 
-            rb_C3005u_1,
+    rb_C3005u_1,
             rb_C3005u_2,
             rb_C3005u_3,
             rb_C3005u_DK,
             rb_C3005u_RA,
 
-            rb_C3006_1,
+    rb_C3006_1,
             rb_C3006_2,
             rb_C3006_3,
             rb_C3006_4,
             rb_C3006_5,
-                    rb_C3006_6,
+            rb_C3006_6,
             rb_C3006_7,
             rb_C3006_8,
             rb_C3006_9,
-                    rb_C3006_10,
+            rb_C3006_10,
             rb_C3006_11,
-                    rb_C3006_12,
+            rb_C3006_12,
             rb_C3006_DK,
             rb_C3006_RA,
 
-            rb_C3008_1,
+    rb_C3008_1,
             rb_C3008_2,
             rb_C3008_3,
             rb_C3008_4,
             rb_C3008_5,
             rb_C3008_6,
-                    rb_C3008_7,
+            rb_C3008_7,
             rb_C3008_8,
             rb_C3008_9,
 
-            rb_C3009_1_1,
+    rb_C3009_1_1,
             rb_C3009_1_2,
             rb_C3009_1_DK,
             rb_C3009_1_RA,
@@ -915,4 +916,8 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
         return true;
     }
 
+    @Override
+    public void onBackPressed() {
+        globale.interviewExit(this, this);
+    }
 }

@@ -3779,7 +3779,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         } else if (rb_C3122_3.isChecked()) {
             C3122 = "3";
             C3122d = ed_C3122d.getText().toString().trim();
-            C3122m = ed_C3122m.getText().toString().trim();;
+            C3122m = ed_C3122m.getText().toString().trim();
         } else if (rb_C3122_DK.isChecked()) {
             C3122 = "99";
             C3122d = "99";
@@ -6258,5 +6258,72 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
         return true;
     }
+
+
+/*    public void BtnChest() {
+        changeMediaUI(bi.btnChest, R.raw.look_chest_i);
+    }
+
+    public void BtnStri() {
+        changeMediaUI(bi.btnStri, R.raw.child_i_s);
+    }
+
+    public void BtnGrunt() {
+        changeMediaUI(bi.btnGrunt, R.raw.grunting);
+    }
+
+    public void BtnWheez() {
+        changeMediaUI(bi.btnWheez, R.raw.breath_sounds_w);
+    }
+
+    private void changeMediaUI(final Button btn, final int resID) {
+
+        if (mediaPlayer != null) {
+            btnDefaultState();
+            mediaPlayer.stop();
+        }
+
+        btn.setBackgroundColor(getResources().getColor(R.color.green2));
+        btn.setTextColor(getResources().getColor(R.color.white));
+
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), resID);
+        mediaPlayer.start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(mediaPlayer.getDuration() + 200);
+
+                    runOnUiThread(new Runnable() {
+
+                        @Override
+                        public void run() {
+                            btn.setBackgroundColor(getResources().getColor(R.color.gray));
+                            btn.setTextColor(getResources().getColor(R.color.black));
+                        }
+                    });
+
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }).start();
+    }
+
+    private void btnDefaultState() {
+        bi.btnChest.setBackgroundColor(getResources().getColor(R.color.gray));
+        bi.btnChest.setTextColor(getResources().getColor(R.color.black));
+
+        bi.btnGrunt.setBackgroundColor(getResources().getColor(R.color.gray));
+        bi.btnGrunt.setTextColor(getResources().getColor(R.color.black));
+
+        bi.btnStri.setBackgroundColor(getResources().getColor(R.color.gray));
+        bi.btnStri.setTextColor(getResources().getColor(R.color.black));
+
+        bi.btnWheez.setBackgroundColor(getResources().getColor(R.color.gray));
+        bi.btnWheez.setTextColor(getResources().getColor(R.color.black));
+    }*/
 
 }

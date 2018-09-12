@@ -395,10 +395,6 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3019_a" />
 
-                    <TextView
-                        style="@style/TextViewInstructions"
-                        android:text="@string/zero_to_30_days" />
-
                     <EditText
                         android:id="@+id/ed_C3019_a"
                         style="@style/EditText_number"
