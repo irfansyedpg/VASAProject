@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import Global.C.C3001_C3011;
@@ -408,5 +409,10 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
         }*/
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        globale.interviewExit(this, this);
     }
 }

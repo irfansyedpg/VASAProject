@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import Global.C.C3001_C3011;
@@ -6326,4 +6327,8 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         bi.btnWheez.setTextColor(getResources().getColor(R.color.black));
     }*/
 
+    @Override
+    public void onBackPressed() {
+        globale.interviewExit(this, this);
+    }
 }

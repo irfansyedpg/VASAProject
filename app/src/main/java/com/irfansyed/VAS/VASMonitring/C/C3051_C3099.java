@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.text.ParseException;
@@ -421,6 +422,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         int numOfDays = 0;
 
         try {
+
             Date date1 = myFormat.parse(dob);
             Date date2 = myFormat.parse(dod);
             long diff = date2.getTime() - date1.getTime();
@@ -2175,6 +2177,11 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         }*/
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        globale.interviewExit(this, this);
     }
 
 }

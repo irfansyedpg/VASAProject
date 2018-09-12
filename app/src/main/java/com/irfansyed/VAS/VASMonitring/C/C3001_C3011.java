@@ -28,6 +28,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
 
     // LinerLayouts
     LinearLayout
+            ll_study_id,
             ll_C3001,
             ll_C3002,
             ll_C3003,
@@ -156,6 +157,13 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3001_c3011);
 
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
+
         Initialization();
         events_call();
 
@@ -174,7 +182,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
         insert_data();
 
         Intent c = new Intent(this, C3012_C3022.class);
-
+        c.putExtra("study_id", ed_study_id.getText().toString().trim());
         startActivity(c);
     }
 
@@ -184,6 +192,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
         btn_next = findViewById(R.id.btn_next);
 
         // Layouts
+
         ll_C3001 = findViewById(R.id.ll_C3001);
         ll_C3002 = findViewById(R.id.ll_C3002);
         ll_C3003 = findViewById(R.id.ll_C3003);
@@ -593,7 +602,6 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        study_id = "0";
         C3001 = "000";
         C3002 = "000";
         C3003 = "000";
@@ -613,6 +621,12 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
         C3010 = "000";
         C3011 = "000";
         STATUS = "0";
+
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         if (rb_C3001_1.isChecked()) {
             C3001 = "1";
@@ -840,8 +854,12 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     boolean validateField() {
+        /*
+        if (Gothrough.IamHiden(ll_study_id) == false) {
+            return false;
+        }
 
-        /*if (Gothrough.IamHiden(ll_C3001) == false) {
+        if (Gothrough.IamHiden(ll_C3001) == false) {
             return false;
         }
 

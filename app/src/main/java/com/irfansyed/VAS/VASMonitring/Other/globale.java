@@ -34,7 +34,7 @@ public class globale {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 context);
         alertDialogBuilder
-                .setMessage("Do you want to:")
+                .setMessage("Do you want to Cancel Interview:")
                 .setCancelable(false)
                 .setPositiveButton("Pending",
                         new DialogInterface.OnClickListener() {

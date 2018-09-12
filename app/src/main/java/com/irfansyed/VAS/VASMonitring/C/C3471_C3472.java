@@ -11,6 +11,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.Core.HomeActivity;
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import data.LocalDataManager;
@@ -177,5 +178,10 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
         }
 
         return Gothrough.IamHiden(ll_C3472) != false;
+    }
+
+    @Override
+    public void onBackPressed() {
+        globale.interviewExit(this, this);
     }
 }
