@@ -25,6 +25,8 @@ public class N2023_N2026 extends AppCompatActivity {
 
         this.setTitle(getString(R.string.h_n_sec_2_4));
 
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
     }
 
     public void BtnContinue() {
@@ -52,7 +54,7 @@ public class N2023_N2026 extends AppCompatActivity {
         n2023.setN2026(bi.rbN20261.isChecked() ? "1" : bi.rbN20262.isChecked() ? "2" : bi.rbN2026DK.isChecked() ? "9"
                 : bi.rbN2026RA.isChecked() ? "8" : "0");
 
-        n2023.setSTUDYID("");
+        n2023.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2023(n2023);
 
