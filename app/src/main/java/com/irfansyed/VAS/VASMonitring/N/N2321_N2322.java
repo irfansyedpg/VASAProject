@@ -38,8 +38,6 @@ public class N2321_N2322 extends AppCompatActivity {
 
         this.setTitle(getString(R.string.h_n_sec_15));
 
-        count = 1;
-
         GetDataFromDB();
         SetContentUI();
 

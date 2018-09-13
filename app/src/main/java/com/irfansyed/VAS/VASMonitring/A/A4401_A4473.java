@@ -10,9 +10,12 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.R;
+
+import java.io.File;
 
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
@@ -20,9 +23,10 @@ import utils.Gothrough;
 
 public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
+    private static final int CONTENT_REQUEST = 1337;
     //  Region_Declaration
     Button
-            btn_next14;
+            btn_next14, btn_imgCapture;
 
     LinearLayout
             ll_A4401,
@@ -343,10 +347,16 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             STATUS;
 
     // End Region_Declaration
+    TextView
+            txt_cap_count;
+    int count = 1;
+    private File output = null;
 
     void Initialization() {
 
         btn_next14 = findViewById(R.id.btn_next14);
+        btn_imgCapture = findViewById(R.id.btn_imgCapture);
+        txt_cap_count = findViewById(R.id.txt_cap_count);
 
         ll_A4401 = findViewById(R.id.ll_A4401);
         ll_A4402 = findViewById(R.id.ll_A4402);
@@ -597,6 +607,46 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
 
         Initialization();
         events_call();
+
+        btn_next14.setEnabled(false);
+        btn_imgCapture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                /*String RootDir = Environment.getExternalStorageDirectory()
+                        + File.separator + "VASA" + File.separator + ed_study_id.getText().toString();
+                File RootFile = new File(RootDir);
+                boolean success = true;
+                if (!RootFile.exists()) {
+                    success = RootFile.mkdir();
+                }
+                if (success) {
+                    Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                    output = new File(RootDir, "A4471_" + count + ".jpeg");
+
+                    i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
+                    startActivityForResult(i, CONTENT_REQUEST);
+                } else {
+                    Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
+                }*/
+
+            }
+        });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == CONTENT_REQUEST) {
+            if (resultCode == RESULT_OK) {
+
+                txt_cap_count.setText("Pictures Attached: " + String.valueOf(count));
+
+                Toast.makeText(this, "Image capture done!!", Toast.LENGTH_SHORT).show();
+                btn_next14.setEnabled(true);
+
+                count++;
+            }
+        }
     }
 
     @Override

@@ -1,18 +1,24 @@
 package com.irfansyed.VAS.VASMonitring.C;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.Core.HomeActivity;
 import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
+
+import java.io.File;
 
 import data.LocalDataManager;
 
@@ -21,7 +27,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     //region Declaration
 
-    Button btn_next;
+    private static final int CONTENT_REQUEST = 1337;
 
     // LinerLayouts
     LinearLayout
@@ -46,6 +52,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
     EditText
             ed_study_id,
             ed_C3471;
+    Button btn_next, btn_imgCapture;
 
     String
             study_id,
@@ -54,6 +61,10 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
             STATUS;
 
     int currentSection;
+    TextView
+            txt_cap_count;
+    int count = 1;
+    private File output = null;
 
     //endregion
 
@@ -71,6 +82,46 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
         Initialization();
 
         btn_next.setOnClickListener(this);
+
+        btn_next.setEnabled(false);
+        btn_imgCapture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String RootDir = Environment.getExternalStorageDirectory()
+                        + File.separator + "VASA" + File.separator + ed_study_id.getText().toString();
+                File RootFile = new File(RootDir);
+                boolean success = true;
+                if (!RootFile.exists()) {
+                    success = RootFile.mkdir();
+                }
+                if (success) {
+                    Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                    output = new File(RootDir, "C3471_" + count + ".jpeg");
+
+                    i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
+                    startActivityForResult(i, CONTENT_REQUEST);
+                } else {
+                    Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == CONTENT_REQUEST) {
+            if (resultCode == RESULT_OK) {
+
+                txt_cap_count.setText("Pictures Attached: " + String.valueOf(count));
+
+                Toast.makeText(this, "Image capture done!!", Toast.LENGTH_SHORT).show();
+                btn_next.setEnabled(true);
+
+                count++;
+            }
+        }
     }
 
     @Override
@@ -95,6 +146,8 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
         // Button Next
         btn_next = findViewById(R.id.btn_next);
+        btn_imgCapture = findViewById(R.id.btn_imgCapture);
+        txt_cap_count = findViewById(R.id.txt_cap_count);
 
         // Layouts
         ll_C3471 = findViewById(R.id.ll_C3471);
