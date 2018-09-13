@@ -92,9 +92,9 @@ public class HomeActivity extends AppCompatActivity
             intent = new Intent(this, SurveyCompletedActivity.class);
         }
         if (id == com.irfansyed.VAS.VASMonitring.R.id.stage_1) {
-            intent = new Intent(this, Q1101_Q1610.class);
+            intent = new Intent(this, A4251_A4284.class);
             put_extr = 1;
-        }
+        }/*
 
         if (id == R.id.stage_2) {
             intent = new Intent(this, N2001_N2011.class);
@@ -111,7 +111,7 @@ public class HomeActivity extends AppCompatActivity
             intent = new Intent(this, A4251_A4284.class);
             put_extr = 1;
 
-        } else if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_e) {
+        } else*/ if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_e) {
             preferences.setlanguage("en", "US");
             Toast.makeText(this, "Application Language Changed to English", Toast.LENGTH_LONG).show();
 
