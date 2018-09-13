@@ -71,19 +71,21 @@ public class Q1101_Q1610 {
     public static String Q1603 = "Q1603";
     public static String Q1604 = "Q1604";
     public static String Q1604_OT = "Q1604_OT";
-    public static String Q1605 = "Q1605";
-    public static String Q1606 = "Q1606";
-    public static String Q1607_1 = "Q1607_1";
-    public static String Q1607_2 = "Q1607_2";
-    public static String Q1607_3 = "Q1607_3";
-    public static String Q1608_1 = "Q1608_1";
-    public static String Q1608_2 = "Q1608_2";
-    public static String Q1608_3 = "Q1608_3";
-    public static String Q1609 = "Q1609";
-    public static String Q1610_1 = "Q1610_1";
-    public static String Q1610_2 = "Q1610_2";
-    public static String Q1610_3 = "Q1610_3";
-    public static String STATUS = "STATUS";
+    public static String Q1605          = "Q1605";
+    public static String Q1606          = "Q1606";
+    public static String Q1607_1        = "Q1607_1";
+    public static String Q1607_2        = "Q1607_2";
+    public static String Q1607_3        = "Q1607_3";
+    public static String Q1608_1        = "Q1608_1";
+    public static String Q1608_2        = "Q1608_2";
+    public static String Q1608_3        = "Q1608_3";
+    public static String Q1609          = "Q1609";
+    public static String Q1610_1        = "Q1610_1";
+    public static String Q1610_2        = "Q1610_2";
+    public static String Q1610_3        = "Q1610_3";
+    public static String interviewType  = "interviewType";
+    public static String currentSection = "currentSection";
+    public static String STATUS         = "STATUS";
 
     public static String TABLE_NAME = "Q1101_Q1610";
 
@@ -173,6 +175,8 @@ public class Q1101_Q1610 {
                 Q1101_Q1610.Q1610_1 + " TEXT," +
                 Q1101_Q1610.Q1610_2 + " TEXT," +
                 Q1101_Q1610.Q1610_3 + " TEXT," +
+                Q1101_Q1610.interviewType + " INTEGER," +
+                Q1101_Q1610.currentSection + " INTEGER," +
                 Q1101_Q1610.STATUS + " TEXT" +
                 ')';
 

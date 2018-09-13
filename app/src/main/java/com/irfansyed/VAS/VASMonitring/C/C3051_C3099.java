@@ -2077,7 +2077,12 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_C3051) == false) {
+        /*
+        if (Gothrough.IamHiden(ll_study_id) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_C3051) == false) {
             return false;
         }
 
@@ -2194,7 +2199,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this);
+        globale.interviewExit(this, this, study_id);
     }
 
 }

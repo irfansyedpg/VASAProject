@@ -58,8 +58,8 @@ import data.GS.Q1101_Q1610;
  */
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final String DB_NAME = "vasa.db";
-    private static final int VERSION = 1;
+    public static final  String DB_NAME = "vasa.db";
+    private static final int    VERSION = 1;
 
     Context mContext;
 
@@ -154,6 +154,24 @@ public class DBHelper extends SQLiteOpenHelper {
 
         Cursor res = db.rawQuery("select * from " + tableName + " where study_id = " + "'" + study_id + "'", null);
         return res;
+    }
+
+
+    public long updateData(String tableName, String Q1311, String study_id) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+
+        values.put(Q1101_Q1610.Q1311, Q1311);
+
+        // Insert the new row, returning the primary key value of the new row
+        long newRowId;
+
+        newRowId = db.update(tableName, values, Q1101_Q1610.study_id + " = ?", new String[]{study_id});
+
+        return newRowId;
     }
 
 
