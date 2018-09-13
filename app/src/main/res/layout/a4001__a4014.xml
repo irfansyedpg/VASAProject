@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cyan"
     android:orientation="vertical"
     tools:context=".A.A4001_A4014">
 
@@ -220,7 +219,7 @@
                         android:id="@+id/ed_A4005"
                         style="@style/EditText_number"
                         android:maxLength="2"
-                        android:hint="@string/grade_year" />
+                        android:hint="0-22 or 99" />
 
                 </LinearLayout>
 

@@ -336,7 +336,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             STATUS,
             study_id;
 
-    int Q1102, ageInDays;
+    int Q1102, ageInDays, currentSection;
 
     //endregion
 
@@ -1654,7 +1654,12 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_C3101) == false) {
+        /*
+        if (Gothrough.IamHiden(ll_study_id) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_C3101) == false) {
             return false;
         }
 
@@ -1771,7 +1776,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this);
+        globale.interviewExit(this, this, study_id, currentSection = 5);
     }
 
 }

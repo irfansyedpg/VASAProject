@@ -3256,7 +3256,6 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="months">Months</string>
     <string name="years">Years</string>
     <string name="days_hint">Enter days &amp; if you don\'t know enter \'99\'</string>
-    <string name="grade_year">Grade/Year</string>
     <string name="kg">Kilograms</string>
 
     <!-- HINTS STARTS -->
@@ -3525,7 +3524,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4252_2">Include any health care provider (NAME) was on route to but did not reach before dying.</string>
     <string name="A4252_3">For pregnancy-related deaths: Mark any provider where the woman had an abortion (spontaneous or induced) or delivered.</string>
     <string name="A4252_4">For all adults: If the illness lasted 3 months or more, ask about the first three actions taken at the start of the illness and the middle of the illness, and about the last three actions at the end of the illness. Circle ‘S’ (Start), ‘M’ (Middle) or ‘E’ (End) for each action.</string>
-    <string name="A4252_5">(1) If the illness lasted 3 months or more, circle ‘S’ (Start), ‘M’ (Middle) or ‘E’ (End) for each action. (2) Check one other care or health care provider box for each action row. Check ‘Trained CHW, nurse or midwife’ only if the provider was seen outside a facility. (3) For pregnancy-related deaths only: Mark any provider where the woman aborted or delivered. (4) Mark the symptom(s) that were present when each action was taken.</string>
+    <string name="A4252_5">1 - If the illness lasted 3 months or more, circle ‘S’ (Start), ‘M’ (Middle) or ‘E’ (End) for each action. \n\n2 - Check one other care or health care provider box for each action row. Check ‘Trained CHW, nurse or midwife’ only if the provider was seen outside a facility. \n\n3 - For pregnancy-related deaths only: Mark any provider where the woman aborted or delivered. \n\n4 - Mark the symptom(s) that were present when each action was taken.</string>
     <string name="A4253">A4253: Who decided to seek care for (NAME)’s illness from the (FIRST FORMAL PROVIDER)</string>
     <string name="A4254">A4254: Did you or (NAME) have any concerns or problems that kept him/her from going to a health provider during the illness?</string>
     <string name="A4255">A4255: What concerns or problems did you or (NAME) have?</string>
@@ -4097,7 +4096,7 @@ Examples of statements for the reading test:
     <string name="A4077_a_h"><![CDATA[Enter 0-30 days. Less than 1 day or 24 hours = 0 days; 1 week = 7 days &amp; If Don\'t Know  Enter 99\"]]></string>
     <string name="A4077_b">Enter how long (s)he had a cough in months?</string>
     <string name="A4077_b_h"><![CDATA[Enter 1-60 Months & if don\'t know Enter 99]]></string>
-    <string name="A4005_h">If completed less than 1 year at that level, record 0</string>
+    <string name="A4005_h">If completed less than 1 year at that level, record 0 \nDon't know = 99</string>
     <string name="A4006_h">Record “yes” if both or either reading or writing is known to the respondent.</string>
     <string name="A4052_b">A4052_b: Enter how long the fever lasted in days?</string>
     <string name="A4052_c">A4052_c: Enter how long the fever lasted in months?</string>

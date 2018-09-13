@@ -15,7 +15,6 @@ import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import data.LocalDataManager;
-import utils.Gothrough;
 
 public class C3471_C3472 extends AppCompatActivity implements View.OnClickListener {
 
@@ -53,6 +52,8 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
             C3471,
             C3472,
             STATUS;
+
+    int currentSection;
 
     //endregion
 
@@ -185,15 +186,23 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     boolean validateField() {
 
+        /*if (Gothrough.IamHiden(ll_study_id) == false) {
+            return false;
+        }
+
         if (Gothrough.IamHiden(ll_C3471) == false) {
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3472) != false;
+        if(Gothrough.IamHiden(ll_C3472) != false) {
+            return false;
+        }*/
+
+        return true;
     }
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this);
+        globale.interviewExit(this, this, study_id, currentSection = 11);
     }
 }

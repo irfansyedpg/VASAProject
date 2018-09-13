@@ -429,7 +429,8 @@
                     <EditText
                         android:id="@+id/ed_A4164"
                         style="@style/EditText_number"
-                        android:hint="Enter Weeks" />
+                        android:maxLength="2"
+                        android:hint="Enter Weeks or 99" />
 
                 </LinearLayout>
 
@@ -772,13 +773,19 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4178_1"
-                        style="@style/TextView"
-                        android:text="@string/A4178_1" />
+                    android:id="@+id/A4178_1"
+                    style="@style/TextView"
+                    android:text="@string/A4178_1" />
+
+                    <TextView
+                        android:id="@+id/A4178_1_h"
+                        style="@style/TextView_Hint"
+                        android:text="Don't know = 99" />
 
                     <EditText
                         android:id="@+id/ed_A4178_1"
                         style="@style/EditText_number"
+                        android:maxLength="2"
                         android:hint="number of months" />
 
                 </LinearLayout>
@@ -921,9 +928,15 @@
                         style="@style/TextView"
                         android:text="@string/A4180" />
 
+                    <TextView
+                        android:id="@+id/A4180_h"
+                        style="@style/TextView_Hint"
+                        android:text="Don't know = 99"/>
+
                     <EditText
                         android:id="@+id/ed_A4180"
                         style="@style/EditText_number"
+                        android:maxLength="2"
                         android:hint="Total Number of Pregnancies" />
 
                 </LinearLayout>
@@ -1435,10 +1448,16 @@
                         style="@style/TextView"
                         android:text="@string/A4192" />
 
+                    <TextView
+                        android:id="@+id/A4192_h"
+                        style="@style/TextView_Hint"
+                        android:text="Less Than 60 minutes = 00 hours \n Don't know = 99" />
+
                     <EditText
                         android:id="@+id/ed_A4192"
                         style="@style/EditText_number"
-                        android:hint="60 minutes = 00 hours" />
+                        android:maxLength="2"
+                        android:hint="Hours or 99" />
 
                 </LinearLayout>
 

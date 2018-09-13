@@ -380,7 +380,8 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             study_id;
 
     int ageInDays;
-    int C3006;
+    int C3006,
+            currentSection;
 
     //endregion
 
@@ -467,7 +468,6 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         btn_next = findViewById(R.id.btn_next);
 
         // Layouts
-
         ll_C3051 = findViewById(R.id.ll_C3051);
         ll_C3052 = findViewById(R.id.ll_C3052);
         ll_C3053 = findViewById(R.id.ll_C3053);
@@ -763,13 +763,12 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
 
         // Edittexts
-
         ed_C3052 = findViewById(R.id.ed_C3052);
         ed_C3062 = findViewById(R.id.ed_C3062);
         ed_C3065_OT = findViewById(R.id.ed_C3065_OT);
         ed_C3067_OT = findViewById(R.id.ed_C3067_OT);
         ed_C3068_OT = findViewById(R.id.ed_C3068_OT);
-        ed_C3067_OT = findViewById(R.id.ed_C3067_OT);
+        ed_C3079 = findViewById(R.id.ed_C3079_OT);
         ed_C3081 = findViewById(R.id.ed_C3081);
         ed_C3082 = findViewById(R.id.ed_C3082);
         ed_C3087 = findViewById(R.id.ed_C3087);
@@ -2077,7 +2076,12 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_C3051) == false) {
+        /*
+        if (Gothrough.IamHiden(ll_study_id) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_C3051) == false) {
             return false;
         }
 
@@ -2194,7 +2198,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this);
+        globale.interviewExit(this, this, study_id, currentSection = 4);
     }
 
 }

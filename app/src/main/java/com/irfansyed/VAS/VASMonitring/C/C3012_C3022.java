@@ -126,7 +126,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             C3022,
             STATUS;
 
-    int ageInDays;
+    int ageInDays, currentSection;
     //endregion
 
     @Override
@@ -231,6 +231,8 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
         value_assignment();
         insert_data();
+
+        currentSection = 3;
 
         if (ageInDays < 334) {
 
@@ -764,6 +766,6 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this);
+        globale.interviewExit(this, this, study_id, currentSection = 3);
     }
 }

@@ -3,6 +3,7 @@ package com.irfansyed.VAS.VASMonitring.A;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -16,6 +17,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
+import utils.InputFilterMinMax;
 
 public class A4067_A4080 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -507,6 +509,19 @@ public class A4067_A4080 extends AppCompatActivity implements RadioButton.OnChec
         rb_A4077_u_2.setOnCheckedChangeListener(this);
         rb_A4077_u_DK.setOnCheckedChangeListener(this);
         rb_A4077_u_RA.setOnCheckedChangeListener(this);
+
+        ed_A4069_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 23, 99, 99)});
+        ed_A4069_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 30, 99, 99)});
+        ed_A4069_c.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+
+        ed_A4072_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_A4072_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+
+        ed_A4075_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_A4075_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+
+        ed_A4077_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_A4077_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
 
     }
 

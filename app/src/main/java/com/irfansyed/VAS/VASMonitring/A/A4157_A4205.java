@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
+import android.text.InputFilter;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
+import utils.InputFilterMinMax;
 
 public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -888,6 +890,36 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+        if (compoundButton.getId() == R.id.rb_A4200_1
+                || compoundButton.getId() == R.id.rb_A4200_2
+                || compoundButton.getId() == R.id.rb_A4200_3
+                || compoundButton.getId() == R.id.rb_A4200_4
+                || compoundButton.getId() == R.id.rb_A4200_5
+                || compoundButton.getId() == R.id.rb_A4200_6
+                || compoundButton.getId() == R.id.rb_A4200_7
+                || compoundButton.getId() == R.id.rb_A4200_DK
+                || compoundButton.getId() == R.id.rb_A4200_RA)
+
+        {
+            if (rb_A4194_1.isChecked()  || rb_A4195_1.isChecked() || rb_A4196_1.isChecked() || rb_A4197_1.isChecked()) {
+                ClearAllcontrol.ClearAll(ll_A4202);
+                ClearAllcontrol.ClearAll(ll_A4203);
+                ClearAllcontrol.ClearAll(ll_A4204);
+                ClearAllcontrol.ClearAll(ll_A4205);
+
+                ll_A4202.setVisibility(View.GONE);
+                ll_A4203.setVisibility(View.GONE);
+                ll_A4204.setVisibility(View.GONE);
+                ll_A4205.setVisibility(View.GONE);
+
+            } else {
+                ll_A4202.setVisibility(View.VISIBLE);
+                ll_A4203.setVisibility(View.VISIBLE);
+                ll_A4204.setVisibility(View.VISIBLE);
+                ll_A4205.setVisibility(View.VISIBLE);
+            }
+        }
+
         if (compoundButton.getId() == R.id.rb_A4202_1
                 || compoundButton.getId() == R.id.rb_A4202_2
                 || compoundButton.getId() == R.id.rb_A4202_DK
@@ -1024,6 +1056,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
         rb_A4203_RA.setOnCheckedChangeListener(this);
 
         ed_A4178_1.addTextChangedListener(generalTextWatcher);
+
+        ed_A4178_1.setFilters(new InputFilter[]{new InputFilterMinMax(1, 10, 99, 99)});
 
     }
 
