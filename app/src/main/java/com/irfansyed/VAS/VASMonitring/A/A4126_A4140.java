@@ -3,6 +3,7 @@ package com.irfansyed.VAS.VASMonitring.A;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -16,6 +17,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
+import utils.InputFilterMinMax;
 
 public class A4126_A4140 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -393,6 +395,15 @@ public class A4126_A4140 extends AppCompatActivity implements RadioButton.OnChec
         rb_A4134_u_2.setOnCheckedChangeListener(this);
         rb_A4134_u_DK.setOnCheckedChangeListener(this);
         rb_A4134_u_RA.setOnCheckedChangeListener(this);
+
+        ed_A4127_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_A4127_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+
+        ed_A4130_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_A4130_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+
+        ed_A4134_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_A4134_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
 
     }
 

@@ -712,6 +712,7 @@
                     <EditText
                         android:id="@+id/ed_A4093"
                         style="@style/EditText_number"
+                        android:maxLength="2"
                         android:hint="Less than 1 day = “00” days" />
 
                 </LinearLayout>

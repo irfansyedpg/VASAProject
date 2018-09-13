@@ -95,4 +95,9 @@ public class A4251_A4284 {
     public static String A4284 = "A4284";
     public static String STATUS = "STATUS";
 
+    public  static  String A4252_1="A4252_1";
+    public  static  String A4252_2="A4252_2";
+    public  static  String A4252_3="A4252_3";
+    public  static  String A4252_4="A4252_4";
+
 }

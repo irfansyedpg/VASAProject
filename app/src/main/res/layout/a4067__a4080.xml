@@ -417,7 +417,7 @@
                     <TextView
                         android:id="@+id/A4072_b_h"
                         style="@style/TextView_Hint"
-                        android:text="@string/months_hint" />
+                        android:text="Enter 1-60 months. \nDon't know 99" />
 
                     <EditText
                         android:id="@+id/ed_A4072_b"
