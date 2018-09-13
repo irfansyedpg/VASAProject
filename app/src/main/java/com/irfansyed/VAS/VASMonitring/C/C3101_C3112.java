@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -13,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.text.ParseException;
@@ -23,7 +23,6 @@ import java.util.concurrent.TimeUnit;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.InputFilterMinMax;
 
 
 public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, View.OnFocusChangeListener {
@@ -35,6 +34,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
     // LinerLayouts
     LinearLayout
+            ll_study_id,
             ll_C3101,
             ll_C3102,
             ll_C3103,
@@ -344,10 +344,17 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3101_c3112);
 
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
+
         Initialization();
 
         DBHelper db = new DBHelper(this);
-        Cursor Q1101_Q1610 = db.getData("Q1101_Q1610");
+        Cursor Q1101_Q1610 = db.getData("Q1101_Q1610", study_id);
 
         if (Q1101_Q1610.getCount() > 0) {
 
@@ -404,7 +411,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         insert_data();
 
         Intent c = new Intent(this, C3121_C3228.class);
-
+        c.putExtra("study_id", study_id);
         startActivity(c);
     }
 
@@ -983,7 +990,6 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        study_id = "0";
         C3101 = "000";
         C3102 = "000";
         C3103 = "000";
@@ -1042,6 +1048,11 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         C3111_9 = "000";
         C3112 = "000";
         STATUS = "0";
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         if (rb_C3101_1.isChecked()) {
             C3101 = "1";
@@ -1756,6 +1767,11 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         }*/
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        globale.interviewExit(this, this);
     }
 
 }

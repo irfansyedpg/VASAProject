@@ -1,6 +1,8 @@
 ﻿<resources>
     <string name="app_name"> VASA NEONATAL DEATH </string>
 
+    <string name="txt_study_id">Study ID</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
@@ -3518,7 +3520,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4206_22">A4206_22: Was the injury intentionally inflicted by someone else?</string>
     <string name="A4207">A4207: How long did (NAME) survive after the injury?</string>
     <string name="A4251">A4251: Did (NAME) receive, or did you give or seek, any care or treatment for the fatal illness?</string>
-    <string name="A4252_1">Please tell me everything that was done for (NAME)’s fatal illness inside the home and all the places outside the home (he / she) went or was taken for health care. Start with the first care or treatment (NAME) received and then, in order, tell me all the other care and treatments s/he received. Also tell me what symptoms were present when each action was taken.</string>
+    <string name="A4252_1">A4252: Please tell me everything that was done for (NAME)’s fatal illness inside the home and all the places outside the home (he / she) went or was taken for health care. Start with the first care or treatment (NAME) received and then, in order, tell me all the other care and treatments s/he received. Also tell me what symptoms were present when each action was taken.</string>
     <string name="A4252_2">Include any health care provider (NAME) was on route to but did not reach before dying.</string>
     <string name="A4252_3">For pregnancy-related deaths: Mark any provider where the woman had an abortion (spontaneous or induced) or delivered.</string>
     <string name="A4252_4">For all adults: If the illness lasted 3 months or more, ask about the first three actions taken at the start of the illness and the middle of the illness, and about the last three actions at the end of the illness. Circle ‘S’ (Start), ‘M’ (Middle) or ‘E’ (End) for each action.</string>

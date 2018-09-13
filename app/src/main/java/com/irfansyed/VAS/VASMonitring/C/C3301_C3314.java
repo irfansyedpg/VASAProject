@@ -3,7 +3,6 @@ package com.irfansyed.VAS.VASMonitring.C;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -12,7 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import com.irfansyed.VAS.VASMonitring.GS.Q1101_Q1610;
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.util.regex.Matcher;
@@ -21,7 +20,6 @@ import java.util.regex.Pattern;
 import Global.C.C3001_C3011;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.InputFilterMinMax;
 
 public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -36,6 +34,7 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
 
     // LinerLayouts
     LinearLayout
+            ll_study_id,
             ll_C3301,
             ll_C3302_1,
             ll_C3302_2,
@@ -177,6 +176,7 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
     //CheckBox
 
     EditText
+            ed_study_id,
             ed_C3306_1,
             ed_C3306_2,
             ed_C3307,
@@ -228,6 +228,13 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3301_c3314);
 
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
+
         Initialization();
         events_call();
 
@@ -245,7 +252,7 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
 
         pattern = Pattern.compile(DATE_PATTERN);
 
-        if (!validate(ed_C3306_1.getText().toString().trim())) {
+        /*if (!validate(ed_C3306_1.getText().toString().trim())) {
 
             ed_C3306_1.setError("Kindly enter a valid date");
             ed_C3306_1.requestFocus();
@@ -264,13 +271,13 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
             ed_C3307.setError("Kindly enter a valid date");
             ed_C3307.requestFocus();
             return;
-        }
+        }*/
 
         value_assignment();
         insert_data();
 
         Intent c = new Intent(this, C3351_C3364.class);
-
+        c.putExtra("study_id", study_id);
         startActivity(c);
     }
 
@@ -641,8 +648,6 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        study_id = "0";
-
         C3301 = "000";
         C3302_1 = "000";
         C3302_2 = "000";
@@ -677,6 +682,11 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
         C3313 = "000";
         C3314 = "000";
         STATUS = "0";
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         if (rb_C3301_1.isChecked()) {
             C3301 = "1";
@@ -1186,8 +1196,6 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
         return true;
     }
 
-
-
     public boolean validate(final String date) {
 
         matcher = pattern.matcher(date);
@@ -1214,17 +1222,9 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
                 } else if (month.equals("2") || month.equals("02")) {
                     //leap year
                     if (year % 4 == 0) {
-                        if (day.equals("30") || day.equals("31")) {
-                            return false;
-                        } else {
-                            return true;
-                        }
+                        return !day.equals("30") && !day.equals("31");
                     } else {
-                        if (day.equals("29") || day.equals("30") || day.equals("31")) {
-                            return false;
-                        } else {
-                            return true;
-                        }
+                        return !day.equals("29") && !day.equals("30") && !day.equals("31");
                     }
                 } else {
                     return true;
@@ -1235,5 +1235,10 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
         } else {
             return false;
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        globale.interviewExit(this, this);
     }
 }

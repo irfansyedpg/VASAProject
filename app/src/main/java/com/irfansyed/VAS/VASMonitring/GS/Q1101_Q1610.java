@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.InputFilter;
-import android.text.Spanned;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
@@ -16,15 +15,12 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.A.A4001_A4014;
 import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
 import com.irfansyed.VAS.VASMonitring.C.C3012_C3022;
-
+import com.irfansyed.VAS.VASMonitring.N.N2001_N2011;
 import com.irfansyed.VAS.VASMonitring.R;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -47,6 +43,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     // LinerLayouts
     LinearLayout
+            ll_study_id,
             ll_Q1101,
             ll_Q1102,
             ll_Q1103,
@@ -66,7 +63,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ll_Q1308,
             ll_Q1309,
             ll_Q1310,
-            ll_Q1311,
             ll_Q1312,
             ll_Q1313,
             ll_Q1401,
@@ -137,18 +133,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             rb_Q1207_1,
             rb_Q1207_2,
             rb_Q1207_DK,
-            rb_Q1311_1,
-            rb_Q1311_2,
-            rb_Q1311_3,
-            rb_Q1311_4,
-            rb_Q1311_5,
-            rb_Q1311_6,
-            rb_Q1311_7,
-            rb_Q1311_8,
-            rb_Q1311_9,
-            rb_Q1311_10,
-            rb_Q1311_11,
-            rb_Q1311_12,
             rb_Q1402_1,
             rb_Q1402_2,
             rb_Q1402_DK,
@@ -365,10 +349,10 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ed_Q1608_3,
             ed_Q1610_1,
             ed_Q1610_2,
-            ed_Q1610_3,
-            ed_dob;
+            ed_Q1610_3;
 
     String
+            study_id,
             Q1101,
             Q1102,
             Q1103,
@@ -443,8 +427,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             Q1610_1,
             Q1610_2,
             Q1610_3,
-            STATUS,
-            study_id;
+            STATUS;
 
     int
             Q1206_d,
@@ -461,6 +444,38 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         setContentView(R.layout.q1101_q1610);
 
         Initialization();
+
+        rb_Q1101_1.setEnabled(false);
+        rb_Q1101_2.setEnabled(false);
+        rb_Q1101_3.setEnabled(false);
+        rb_Q1102_1.setEnabled(false);
+        rb_Q1102_2.setEnabled(false);
+        rb_Q1102_3.setEnabled(false);
+        rb_Q1103_1.setEnabled(false);
+        rb_Q1103_2.setEnabled(false);
+        rb_Q1103_DK.setEnabled(false);
+        ed_Q1202.setEnabled(false);
+        rb_Q1203_1.setEnabled(false);
+        rb_Q1203_2.setEnabled(false);
+        ed_Q1204.setEnabled(false);
+        ed_Q1205.setEnabled(false);
+        ed_Q1206_d.setEnabled(false);
+        ed_Q1206_m.setEnabled(false);
+        ed_Q1206_y.setEnabled(false);
+        rb_Q1207_1.setEnabled(false);
+        rb_Q1207_2.setEnabled(false);
+        rb_Q1207_DK.setEnabled(false);
+        ed_Q1208.setEnabled(false);
+        ed_Q1209.setEnabled(false);
+        ed_Q1301.setEnabled(false);
+        ed_Q1302.setEnabled(false);
+        ed_Q1307.setEnabled(false);
+        ed_Q1308.setEnabled(false);
+        ed_Q1309.setEnabled(false);
+        ed_Q1310.setEnabled(false);
+        ed_Q1312.setEnabled(false);
+        ed_Q1313.setEnabled(false);
+
         events_call();
 
         btn_next.setOnClickListener(this);
@@ -476,48 +491,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         pattern = Pattern.compile(DATE_PATTERN);
 
-        if (!validate(ed_Q1204.getText().toString().trim())) {
-
-            ed_Q1204.setError("Kindly enter a valid date");
-            ed_Q1204.requestFocus();
-            return;
-        }
-
-        if (!validate(ed_Q1205.getText().toString().trim())) {
-
-            ed_Q1205.setError("Kindly enter a valid date");
-            ed_Q1205.requestFocus();
-            return;
-        }
-
-        if (!validate(ed_Q1307.getText().toString().trim())) {
-
-            ed_Q1307.setError("Kindly enter a valid date");
-            ed_Q1307.requestFocus();
-            return;
-        }
-
-        if (!validate(ed_Q1309.getText().toString().trim())) {
-
-            ed_Q1309.setError("Kindly enter a valid date");
-            ed_Q1309.requestFocus();
-            return;
-        }
-
-        if (!validate(ed_Q1312.getText().toString().trim())) {
-
-            ed_Q1312.setError("Kindly enter a valid date");
-            ed_Q1312.requestFocus();
-            return;
-        }
-
-        if (!validate(ed_Q1313.getText().toString().trim())) {
-
-            ed_Q1313.setError("Kindly enter a valid date");
-            ed_Q1313.requestFocus();
-            return;
-        }
-
+        /*
         if (!validate(ed_Q1603.getText().toString().trim())) {
 
             ed_Q1603.setError("Kindly enter a valid date");
@@ -530,40 +504,44 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ed_Q1606.setError("Kindly enter a valid date");
             ed_Q1606.requestFocus();
             return;
-        }
+        }*/
 
         value_assignment();
         insert_data();
 
         DBHelper db = new DBHelper(this);
-        Cursor res = db.getData("Q1101_Q1610");
+        Cursor res = db.getData("Q1101_Q1610", study_id);
 
         if (res.getCount() > 0) {
 
             res.moveToFirst();
 
-            //if (parseInt(res.getString(78)) == 5) {
+            //Toast.makeText(this, res.getString(78), Toast.LENGTH_SHORT).show();
 
-            //  Intent c = new Intent(this, A4001_A4014.class);
-            //startActivity(c);
+            if (parseInt(res.getString(78)) == 5) {
 
-            //} else if (parseInt(res.getString(78)) == 1) {
+                Intent c = new Intent(this, A4001_A4014.class);
+                c.putExtra("study_id", study_id);
+                startActivity(c);
 
-            //  Intent c = new Intent(this, N2001_N2011.class);
-            //startActivity(c);
+            } else if (parseInt(res.getString(78)) == 1) {
 
-            //}
+                Intent c = new Intent(this, N2001_N2011.class);
+                c.putExtra("study_id", study_id);
+                startActivity(c);
 
-            if (parseInt(res.getString(78)) == 2) {
+            } else if (parseInt(res.getString(78)) == 2) {
 
                 Intent c = new Intent(this, C3001_C3011.class);
+                c.putExtra("study_id", study_id);
                 startActivity(c);
 
             } else {
 
-                //C3001_C3011.value_assignment();
+                // In case of empty insertion call functions here
 
                 Intent c = new Intent(this, C3012_C3022.class);
+                c.putExtra("study_id", study_id);
                 startActivity(c);
             }
         }
@@ -575,6 +553,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         btn_next = findViewById(R.id.btn_next);
 
         // Layouts
+
+        ll_study_id = findViewById(R.id.ll_study_id);
 
         ll_Q1101 = findViewById(R.id.ll_Q1101);
         ll_Q1102 = findViewById(R.id.ll_Q1102);
@@ -595,7 +575,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ll_Q1308 = findViewById(R.id.ll_Q1308);
         ll_Q1309 = findViewById(R.id.ll_Q1309);
         ll_Q1310 = findViewById(R.id.ll_Q1310);
-        ll_Q1311 = findViewById(R.id.ll_Q1311);
         ll_Q1312 = findViewById(R.id.ll_Q1312);
         ll_Q1313 = findViewById(R.id.ll_Q1313);
         ll_Q1401 = findViewById(R.id.ll_Q1401);
@@ -670,18 +649,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         rb_Q1207_1 = findViewById(R.id.rb_Q1207_1);
         rb_Q1207_2 = findViewById(R.id.rb_Q1207_2);
         rb_Q1207_DK = findViewById(R.id.rb_Q1207_DK);
-        rb_Q1311_1 = findViewById(R.id.rb_Q1311_1);
-        rb_Q1311_2 = findViewById(R.id.rb_Q1311_2);
-        rb_Q1311_3 = findViewById(R.id.rb_Q1311_3);
-        rb_Q1311_4 = findViewById(R.id.rb_Q1311_4);
-        rb_Q1311_5 = findViewById(R.id.rb_Q1311_5);
-        rb_Q1311_6 = findViewById(R.id.rb_Q1311_6);
-        rb_Q1311_7 = findViewById(R.id.rb_Q1311_7);
-        rb_Q1311_8 = findViewById(R.id.rb_Q1311_8);
-        rb_Q1311_9 = findViewById(R.id.rb_Q1311_9);
-        rb_Q1311_10 = findViewById(R.id.rb_Q1311_10);
-        rb_Q1311_11 = findViewById(R.id.rb_Q1311_11);
-        rb_Q1311_12 = findViewById(R.id.rb_Q1311_12);
         rb_Q1402_1 = findViewById(R.id.rb_Q1402_1);
         rb_Q1402_2 = findViewById(R.id.rb_Q1402_2);
         rb_Q1402_DK = findViewById(R.id.rb_Q1402_DK);
@@ -857,6 +824,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         rb_Q1609_5 = findViewById(R.id.rb_Q1609_5);
 
 
+        ed_study_id = findViewById(R.id.ed_study_id);
+
         ed_Q1202 = findViewById(R.id.ed_Q1202);
         ed_Q1204 = findViewById(R.id.ed_Q1204);
         ed_Q1205 = findViewById(R.id.ed_Q1205);
@@ -905,7 +874,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         return !s.trim().equals("") && !s.trim().equals("99/99/9999");
     }
-
 
     void events_call() {
 
@@ -1119,7 +1087,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         ed_Q1409.addTextChangedListener(txtWatcher);
     }
-
 
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -1473,10 +1440,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         }
     }
 
-
     void value_assignment() {
 
-        study_id = "0";
         Q1101 = "-1";
         Q1102 = "-1";
         Q1103 = "-1";
@@ -1558,6 +1523,11 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         Q1610_2 = "-1";
         Q1610_3 = "-1";
         STATUS = "0";
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         if (rb_Q1101_1.isChecked()) {
             Q1101 = "1";
@@ -1651,32 +1621,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         if (ed_Q1310.getText().toString().trim().length() > 0) {
             Q1310 = ed_Q1310.getText().toString().trim();
-        }
-
-        if (rb_Q1311_1.isChecked()) {
-            Q1311 = "1";
-        } else if (rb_Q1311_2.isChecked()) {
-            Q1311 = "2";
-        } else if (rb_Q1311_3.isChecked()) {
-            Q1311 = "3";
-        } else if (rb_Q1311_4.isChecked()) {
-            Q1311 = "4";
-        } else if (rb_Q1311_5.isChecked()) {
-            Q1311 = "5";
-        } else if (rb_Q1311_6.isChecked()) {
-            Q1311 = "6";
-        } else if (rb_Q1311_7.isChecked()) {
-            Q1311 = "7";
-        } else if (rb_Q1311_8.isChecked()) {
-            Q1311 = "8";
-        } else if (rb_Q1311_9.isChecked()) {
-            Q1311 = "9";
-        } else if (rb_Q1311_10.isChecked()) {
-            Q1311 = "10";
-        } else if (rb_Q1311_11.isChecked()) {
-            Q1311 = "11";
-        } else if (rb_Q1311_12.isChecked()) {
-            Q1311 = "12";
         }
 
         if (ed_Q1312.getText().toString().trim().length() > 0) {
@@ -2413,92 +2357,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     boolean validateField() {
-
-        /*if (Gothrough.IamHiden(ll_Q1101) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1102) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1103) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1202) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1203) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1204) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1205) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1206_d) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1206_m) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1206_y) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1207) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1208) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1209) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1301) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1302) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1307) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1308) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1309) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1310) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1311) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1312) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1313) == false) {
+        /*
+        if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -2763,14 +2623,14 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 int months = Age[1];
                 int years = Age[2];
 
-                if(days > 27){
+                if (days > 27) {
 
                     ed_Q1607_1.setText("00");
                 } else {
                     ed_Q1607_1.setText(String.valueOf(days));
                 }
 
-                if(months > 23){
+                if (months > 23) {
 
 
                 }
@@ -2790,7 +2650,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
     @Override
     public void afterTextChanged(Editable s) {
     }
-
 
     public boolean validate(final String date) {
 
@@ -2818,17 +2677,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 } else if (month.equals("2") || month.equals("02")) {
                     //leap year
                     if (year % 4 == 0) {
-                        if (day.equals("30") || day.equals("31")) {
-                            return false;
-                        } else {
-                            return true;
-                        }
+                        return !day.equals("30") && !day.equals("31");
                     } else {
-                        if (day.equals("29") || day.equals("30") || day.equals("31")) {
-                            return false;
-                        } else {
-                            return true;
-                        }
+                        return !day.equals("29") && !day.equals("30") && !day.equals("31");
                     }
                 } else {
                     return true;

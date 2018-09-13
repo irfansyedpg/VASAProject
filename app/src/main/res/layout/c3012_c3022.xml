@@ -2,9 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginTop="10dp"
     android:background="#EEEEEE"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".C.C3012_C3022">
 
 
     <ScrollView
@@ -27,6 +30,30 @@
             android:orientation="vertical">
 
 
+            <!-- EditText study_id Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_study_id"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/txt_study_id" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_study_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_study_id"
+                        android:inputType="date"
+                        app:met_mask="####-###-##" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText study_id Ends -->
+
             <!--C3012 Edit text Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
@@ -48,7 +75,6 @@
                 </LinearLayout>
             </android.support.v7.widget.CardView>
             <!--C3012 Radio Button Ends-->
-
 
             <LinearLayout
                 android:id="@+id/ll_c3013_c3018"
@@ -394,10 +420,6 @@
                         android:id="@+id/txt_C3019_a"
                         style="@style/TextView"
                         android:text="@string/txt_C3019_a" />
-
-                    <TextView
-                        style="@style/TextViewInstructions"
-                        android:text="@string/zero_to_30_days" />
 
                     <EditText
                         android:id="@+id/ed_C3019_a"
