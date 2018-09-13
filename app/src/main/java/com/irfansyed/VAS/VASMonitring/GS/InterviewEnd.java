@@ -1,5 +1,6 @@
 package com.irfansyed.VAS.VASMonitring.GS;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import com.irfansyed.VAS.VASMonitring.Core.HomeActivity;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import data.DBHelper;
+import data.GS.Q1101_Q1610;
 
 public class InterviewEnd extends AppCompatActivity implements View.OnClickListener {
 
@@ -44,6 +46,8 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
             study_id,
             Q1311;
 
+    int currentSection;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +58,7 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();
         study_id = getStudyId.getExtras().getString("study_id");
+        currentSection = getStudyId.getExtras().getInt("currentSection");
         ed_study_id.setText(study_id);
         ed_study_id.setEnabled(false);
 
@@ -76,7 +81,12 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
 
 
         DBHelper db = new DBHelper(this);
-        Long res = db.updateData("Q1101_Q1610", Q1311, study_id);
+
+        ContentValues values = new ContentValues();
+        values.put(Q1101_Q1610.Q1311, Q1311);
+        values.put(Q1101_Q1610.currentSection, currentSection);
+
+        Long res = db.updateData("Q1101_Q1610", values, study_id);
 
 
         if (res > 0) {

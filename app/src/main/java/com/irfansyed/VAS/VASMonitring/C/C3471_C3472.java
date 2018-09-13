@@ -53,6 +53,8 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
             C3472,
             STATUS;
 
+    int currentSection;
+
     //endregion
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -201,6 +203,6 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this, study_id);
+        globale.interviewExit(this, this, study_id, currentSection = 11);
     }
 }

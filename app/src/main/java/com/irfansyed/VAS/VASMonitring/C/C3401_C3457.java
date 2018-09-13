@@ -306,7 +306,7 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
             C3457,
             STATUS;
 
-    int Q1403;
+    int Q1403, currentSection;
 
     //endregion
 
@@ -1808,6 +1808,6 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this, study_id);
+        globale.interviewExit(this, this, study_id, currentSection = 10);
     }
 }

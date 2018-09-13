@@ -154,8 +154,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return res;
     }
 
-
-    public long updateData(String tableName, String Q1311, String study_id) {
+    /*public long updateData(String tableName, String Q1311, String study_id) {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -163,6 +162,19 @@ public class DBHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
 
         values.put(Q1101_Q1610.Q1311, Q1311);
+
+        // Insert the new row, returning the primary key value of the new row
+        long newRowId;
+
+        newRowId = db.update(tableName, values, Q1101_Q1610.study_id + " = ?", new String[]{study_id});
+
+        return newRowId;
+    }*/
+
+
+    public long updateData(String tableName, ContentValues values, String study_id) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
