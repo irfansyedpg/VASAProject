@@ -435,7 +435,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             Q1206_y,
             Q1607_1,
             Q1607_2,
-            Q1607_3;
+            Q1607_3,
+            interviewType,
+            currentSection;
 
     //endregion
 
@@ -1521,6 +1523,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         Q1610_2 = "-1";
         Q1610_3 = "-1";
         STATUS = "0";
+        interviewType = 1;
+        currentSection = 1;
 
         if (ed_study_id.getText().toString().length() > 0) {
 
@@ -2095,14 +2099,19 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         if (rb_Q1609_1.isChecked()) {
             Q1609 = "1";
+            interviewType = 1;
         } else if (rb_Q1609_2.isChecked()) {
             Q1609 = "2";
+            interviewType = 2;
         } else if (rb_Q1609_3.isChecked()) {
             Q1609 = "3";
+            interviewType = 2;
         } else if (rb_Q1609_4.isChecked()) {
             Q1609 = "4";
+            interviewType = 2;
         } else if (rb_Q1609_5.isChecked()) {
             Q1609 = "5";
+            interviewType = 3;
         }
 
         if (ed_Q1610_1.getText().toString().trim().length() > 0) {
@@ -2203,6 +2212,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 + data.GS.Q1101_Q1610.Q1610_1 + ","
                 + data.GS.Q1101_Q1610.Q1610_2 + ","
                 + data.GS.Q1101_Q1610.Q1610_3 + ","
+                + data.GS.Q1101_Q1610.interviewType + ","
+                + data.GS.Q1101_Q1610.currentSection + ","
                 + data.GS.Q1101_Q1610.STATUS + ") values ('" +
 
                 study_id + "','" +
@@ -2286,6 +2297,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 Q1610_1 + "','" +
                 Q1610_2 + "','" +
                 Q1610_3 + "','" +
+                interviewType + "','" +
+                currentSection + "','" +
                 STATUS + "')";
 
 
@@ -2295,7 +2308,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         LocalDataManager.database.execSQL(query);
 
-        Toast.makeText(this, "General Section", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "General Section inserted successfully", Toast.LENGTH_SHORT).show();
     }
 
     public int[] calculateAge(String dob, String dod) {

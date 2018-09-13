@@ -83,6 +83,7 @@ public class Q1101_Q1610 {
     public static String Q1610_1        = "Q1610_1";
     public static String Q1610_2        = "Q1610_2";
     public static String Q1610_3        = "Q1610_3";
+    public static String interviewType  = "interviewType";
     public static String currentSection = "currentSection";
     public static String STATUS         = "STATUS";
 
@@ -174,7 +175,8 @@ public class Q1101_Q1610 {
                 Q1101_Q1610.Q1610_1 + " TEXT," +
                 Q1101_Q1610.Q1610_2 + " TEXT," +
                 Q1101_Q1610.Q1610_3 + " TEXT," +
-                Q1101_Q1610.currentSection + " TEXT," +
+                Q1101_Q1610.interviewType + " INTEGER," +
+                Q1101_Q1610.currentSection + " INTEGER," +
                 Q1101_Q1610.STATUS + " TEXT" +
                 ')';
 
