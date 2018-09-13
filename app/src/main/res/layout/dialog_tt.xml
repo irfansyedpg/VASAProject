@@ -107,7 +107,7 @@
                                 <RadioButton
                                     android:id="@+id/rb_A4252_2_7"
                                     style="@style/RadioButton"
-                                    android:text="Hospitall"/>
+                                    android:text="Hospital"/>
 
                             </RadioGroup>
 
