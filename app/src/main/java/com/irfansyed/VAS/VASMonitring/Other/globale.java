@@ -15,7 +15,7 @@ import com.irfansyed.VAS.VASMonitring.GS.InterviewEnd;
 public class globale {
 
 
-    public static void interviewExit(final Context context, final Activity activity, final String study_id) {
+    public static void interviewExit(final Context context, final Activity activity, final String study_id, final int currentSection) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 context);
         alertDialogBuilder
@@ -28,6 +28,7 @@ public class globale {
                                 activity.finish();
                                 Intent end_intent = new Intent(context, InterviewEnd.class);
                                 end_intent.putExtra("study_id", study_id);
+                                end_intent.putExtra("currentSection", currentSection);
                                 context.startActivity(end_intent);
                             }
                         });
