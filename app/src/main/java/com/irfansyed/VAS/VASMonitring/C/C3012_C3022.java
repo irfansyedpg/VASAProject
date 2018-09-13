@@ -764,6 +764,6 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this);
+        globale.interviewExit(this, this, study_id);
     }
 }

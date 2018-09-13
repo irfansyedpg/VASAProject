@@ -15,38 +15,23 @@ import com.irfansyed.VAS.VASMonitring.GS.InterviewEnd;
 public class globale {
 
 
-    public static String db_pk = "";
-
-// hi globale
-
-    // hey
-// aduld jaidsadd
-// abdu sjadd
-    // abdu sajid
-
-    // sajid changes yaha hai a
-
-    // sajid made changes here
-    // irfan commit
-    // sajid made changes here
-
-    public static void interviewExit(final Context context, final Activity activity) {
+    public static void interviewExit(final Context context, final Activity activity, final String study_id) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 context);
         alertDialogBuilder
-                .setMessage("Do you want to Cancel Interview:")
+                .setMessage("Do you want to End Interview?")
                 .setCancelable(false)
-                .setPositiveButton("Pending",
+                .setPositiveButton("Yes",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,
                                                 int id) {
                                 activity.finish();
                                 Intent end_intent = new Intent(context, InterviewEnd.class);
-                                end_intent.putExtra("complete", false);
+                                end_intent.putExtra("study_id", study_id);
                                 context.startActivity(end_intent);
                             }
                         });
-        alertDialogBuilder.setNegativeButton("Cancel",
+        alertDialogBuilder.setNegativeButton("No",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();

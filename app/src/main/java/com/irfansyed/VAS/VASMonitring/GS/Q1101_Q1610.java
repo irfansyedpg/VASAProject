@@ -516,8 +516,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
             res.moveToFirst();
 
-            //Toast.makeText(this, res.getString(78), Toast.LENGTH_SHORT).show();
-
             if (parseInt(res.getString(78)) == 5) {
 
                 Intent c = new Intent(this, A4001_A4014.class);
