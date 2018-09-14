@@ -831,6 +831,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(C3251_C3288_B.sub_C3251_C3288_B.ACT_COUNT, c3251B.getACT_COUNT());
         values.put(C3251_C3288_B.sub_C3251_C3288_B.ACT_ID_FK, c3251B.getACT_ID_FK());
         values.put(C3251_C3288_B.sub_C3251_C3288_B.C3253, c3251B.getC3253());
+        values.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_1, c3251B.getC32531());
         values.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_2A, c3251B.getC32532A());
         values.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_4, c3251B.getC32534());
 
@@ -1362,6 +1363,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 Global.C.C3251_C3288_B.sub_C3251_C3288_B.ACT_ID_FK,
                 Global.C.C3251_C3288_B.sub_C3251_C3288_B.ACT_COUNT,
                 Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253,
+                Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_1,
                 Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_2A,
                 Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_4
         };

@@ -5,6 +5,7 @@ import android.database.Cursor;
 public class C3251_C3288_B {
 
     public String C3253 = "C3253";
+    public String C3253_1 = "C3253_1";
     public String C3253_2A = "C3253_2A";
     public String C3253_4 = "C3253_4";
     public String ACT_COUNT = "ACT_COUNT";
@@ -60,9 +61,18 @@ public class C3251_C3288_B {
         C3253_4 = C32534;
     }
 
+    public String getC32531() {
+        return C3253_1;
+    }
+
+    public void setC32531(String c3253_1) {
+        C3253_1 = c3253_1;
+    }
+
     public C3251_C3288_B Cursor_Mov(Cursor cursor) {
 
         this.C3253 = cursor.getString(cursor.getColumnIndex(sub_C3251_C3288_B.C3253));
+        this.C3253_1 = cursor.getString(cursor.getColumnIndex(sub_C3251_C3288_B.C3253_1));
         this.C3253_2A = cursor.getString(cursor.getColumnIndex(sub_C3251_C3288_B.C3253_2A));
         this.C3253_4 = cursor.getString(cursor.getColumnIndex(sub_C3251_C3288_B.C3253_4));
         this.ACT_COUNT = cursor.getString(cursor.getColumnIndex(sub_C3251_C3288_B.ACT_COUNT));
@@ -74,6 +84,7 @@ public class C3251_C3288_B {
 
     public interface sub_C3251_C3288_B {
         String C3253 = "C3253";
+        String C3253_1 = "C3253_1";
         String C3253_2A = "C3253_2A";
         String C3253_4 = "C3253_4";
         String ACT_COUNT = "ACT_COUNT";

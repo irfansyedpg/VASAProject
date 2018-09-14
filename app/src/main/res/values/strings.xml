@@ -2000,6 +2000,10 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="txt_C3252">C3252: Did (NAME) receive, or did you give or seek, any care or treatment for the fatal illness?	</string>
 
     <string name="txt_C3253">C3253: Please tell me everything that was done for &lt;NAME>’s fatal illness inside the home and all the places outside the home (he / she) went or was taken for health care. Start with the first care or treatment ?NAME? received and then, in order, tell me all the other care and treatments s/he received. Also tell me what symptoms were present when each action was taken. </string>
+    <string name="txt_C3253_1">Action</string>
+    <string name="rb_C3253_1_1">Start</string>
+    <string name="rb_C3253_1_2">Mid</string>
+    <string name="rb_C3253_1_3">End</string>
     <string name="txt_C3253_2">C3253_2: Other care</string>
     <string name="txt_C3253_3">C3253_3: Health care providers</string>
     <string name="txt_C3253_4">C3253_4: What symptoms were present when the action was taken?</string>

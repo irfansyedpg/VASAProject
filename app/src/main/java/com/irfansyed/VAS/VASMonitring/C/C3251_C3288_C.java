@@ -417,8 +417,7 @@ public class C3251_C3288_C extends AppCompatActivity {
         bi.cbC3280DK.setOnCheckedChangeListener(cbx_2240);
 
         // Get intent
-        skip_flag = getIntent().getIntExtra("valFlag", 0);
-/*
+    /*    skip_flag = getIntent().getIntExtra("valFlag", 0);
         if (skip_flag == 2) {
             ClearAllcontrol.ClearAll(bi.llC3254); //ll_C3254
             bi.llC3254.setVisibility(View.GONE);
