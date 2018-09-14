@@ -9,7 +9,6 @@ import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import com.irfansyed.VAS.VASMonitring.N.N2251_N2260;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.C3251C3288CBinding;
 
@@ -37,6 +36,9 @@ public class C3251_C3288_C extends AppCompatActivity {
         bi.setCallback(this);
 
         this.setTitle(getString(R.string.h_c_sec_10));
+
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
 
         GetDataFromDB();
         SetContentUI();
@@ -417,20 +419,20 @@ public class C3251_C3288_C extends AppCompatActivity {
         bi.cbC3280DK.setOnCheckedChangeListener(cbx_2240);
 
         // Get intent
-    /*    skip_flag = getIntent().getIntExtra("valFlag", 0);
+        skip_flag = getIntent().getIntExtra("valFlag", 0);
         if (skip_flag == 2) {
             ClearAllcontrol.ClearAll(bi.llC3254); //ll_C3254
             bi.llC3254.setVisibility(View.GONE);
         } else if (skip_flag == 9) {
-            ClearAllcontrol.ClearAll(bi.llC32614C3287); //ll_C32614_C3287
-            bi.llC32614C3287.setVisibility(View.GONE);
+            ClearAllcontrol.ClearAll(bi.llC3254C3287); //ll_C3254_C3287
+            bi.llC3254C3287.setVisibility(View.GONE);
         }
 
 
         //conditions
         if (!flag_c3252) {
-            ClearAllcontrol.ClearAll(bi.llC32617C3288); //ll_C32617_C3288
-            bi.llC32617C3288.setVisibility(View.GONE);
+            ClearAllcontrol.ClearAll(bi.llC3257C3288); //ll_C3257_C3288
+            bi.llC3257C3288.setVisibility(View.GONE);
 
             ClearAllcontrol.ClearAll(bi.llC3288); //ll_C3288
             bi.llC3288.setVisibility(View.GONE);
@@ -440,25 +442,25 @@ public class C3251_C3288_C extends AppCompatActivity {
             ClearAllcontrol.ClearAll(bi.llC3254); //ll_C3254
             bi.llC3254.setVisibility(View.GONE);
 
-            ClearAllcontrol.ClearAll(bi.llC32617C3286); //ll_C32617_C3286
-            bi.llC32617C3286.setVisibility(View.GONE);
+            ClearAllcontrol.ClearAll(bi.llC3257C3286); //ll_C3257_C3286
+            bi.llC3257C3286.setVisibility(View.GONE);
         }
 
         if (!flag_n2090 || !flag_n2093) {
-            ClearAllcontrol.ClearAll(bi.llC32614C3258A); //ll_C32614_C3258_A
-            ClearAllcontrol.ClearAll(bi.llC32614C3258B); //ll_C32614_C3258_B
+            ClearAllcontrol.ClearAll(bi.llC3254C3258A); //ll_C3254_C3258_A
+            ClearAllcontrol.ClearAll(bi.llC3254C3258B); //ll_C3254_C3258_B
 
-            bi.llC32614C3258A.setVisibility(View.GONE);
-            bi.llC32614C3258B.setVisibility(View.GONE);
+            bi.llC3254C3258A.setVisibility(View.GONE);
+            bi.llC3254C3258B.setVisibility(View.GONE);
         }
 
         if (!flag_n2093) {
-            ClearAllcontrol.ClearAll(bi.llC32614C3263A); //ll_C32614_C3263_A
-            ClearAllcontrol.ClearAll(bi.llC32614C3263B); //ll_C32614_C3263_B
+            ClearAllcontrol.ClearAll(bi.llC3259C3263A); //ll_C3259_C3263_A
+            ClearAllcontrol.ClearAll(bi.llC3254C3263B); //ll_C3254_C3263_B
 
-            bi.llC32614C3263A.setVisibility(View.GONE);
-            bi.llC32614C3263B.setVisibility(View.GONE);
-        }*/
+            bi.llC3259C3263A.setVisibility(View.GONE);
+            bi.llC3254C3263B.setVisibility(View.GONE);
+        }
 
     }
 
@@ -466,7 +468,8 @@ public class C3251_C3288_C extends AppCompatActivity {
         if (validateField()) {
             if (SaveData()) {
 
-                startActivity(new Intent(this, flag_c3252 || flag_c3253 ? N2251_N2260.class : N2251_N2260.class));
+                startActivity(new Intent(this, flag_c3252 || flag_c3253 ? C3301_C3314.class : C3351_C3364.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -615,7 +618,7 @@ public class C3251_C3288_C extends AppCompatActivity {
 
         C3251C.setC3288(bi.edC3288.getText().toString());
 
-        C3251C.setSTUDYID("0");
+        C3251C.setSTUDYID(bi.edStudyId.getText().toString());
 
         DBHelper db = new DBHelper(this);
         Long row = db.update_C3251C(C3251C, c3251A_ID);

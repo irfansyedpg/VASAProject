@@ -284,7 +284,8 @@ public class N2080_N2107 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, bi.rbN21061.isChecked() ? N2271_N2284.class : N2110_N2189a.class));
+                startActivity(new Intent(this, bi.rbN21061.isChecked() ? N2271_N2284.class : N2110_N2189a.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }

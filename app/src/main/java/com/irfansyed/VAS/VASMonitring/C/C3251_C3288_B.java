@@ -29,6 +29,9 @@ public class C3251_C3288_B extends AppCompatActivity {
 
         this.setTitle(getString(R.string.h_c_sec_10));
 
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
+
         SetContentUI();
 
     }
@@ -53,7 +56,8 @@ public class C3251_C3288_B extends AppCompatActivity {
 
                 count = 1;
 
-                startActivity(new Intent(this, C3251_C3288_C.class));
+                startActivity(new Intent(this, C3251_C3288_C.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -74,7 +78,7 @@ public class C3251_C3288_B extends AppCompatActivity {
         c3251B.setACT_COUNT(String.valueOf(count));
         c3251B.setACT_ID_FK(String.valueOf(c3251A_ID));
 
-        c3251B.setSTUDYID("");
+        c3251B.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
         Long row = db.add_C3251_B(c3251B);
 

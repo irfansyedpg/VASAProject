@@ -46,8 +46,10 @@ public class N2211_N2248_C extends AppCompatActivity {
 
         DBHelper db = new DBHelper(this);
         String n2212 = db.getSpecificData(data.N.N2211_N2248_A_C.TABLE_NAME, "id", N2211_N2248_A_C.sub_N2211_N2248_A_C.N2212);
-        if (Integer.valueOf(n2212) == 2) {
-            flag_n2212 = false;
+        if (n2212 != null) {
+            if (Integer.valueOf(n2212) == 2) {
+                flag_n2212 = false;
+            }
         }
 
         Collection<N2211_N2248_B> col_n2211 = db.getSec10BData(n2211A_ID);
@@ -56,13 +58,15 @@ public class N2211_N2248_C extends AppCompatActivity {
 
                 String n2090 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, "id", Global.N.N2080_N2107.sub_N2080_N2107.N2090);
                 String n2093 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, "id", Global.N.N2080_N2107.sub_N2080_N2107.N2093);
-                if (Integer.valueOf(n2090) != 1 &&
-                        (Integer.valueOf(n2093) == 1 || Integer.valueOf(n2093) == 2 || Integer.valueOf(n2093) == 14 || Integer.valueOf(n2093) == 99)) {
-                    flag_n2090 = false;
-                    break;
-                } else {
-                    flag_n2093 = false;
-                    break;
+                if (n2090 != null && n2093 != null) {
+                    if (Integer.valueOf(n2090) != 1 &&
+                            (Integer.valueOf(n2093) == 1 || Integer.valueOf(n2093) == 2 || Integer.valueOf(n2093) == 14 || Integer.valueOf(n2093) == 99)) {
+                        flag_n2090 = false;
+                        break;
+                    } else {
+                        flag_n2093 = false;
+                        break;
+                    }
                 }
             }
         }
@@ -468,7 +472,8 @@ public class N2211_N2248_C extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, flag_n2212 || flag_n2213 ? N2251_N2260.class : N2271_N2284.class));
+                startActivity(new Intent(this, flag_n2212 || flag_n2213 ? N2251_N2260.class : N2271_N2284.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -620,7 +625,7 @@ public class N2211_N2248_C extends AppCompatActivity {
 
         n2211C.setN2248(bi.edN2248.getText().toString());
 
-        n2211C.setSTUDYID("0");
+        n2211C.setSTUDYID(bi.edStudyId.getText().toString());
 
         DBHelper db = new DBHelper(this);
         Long row = db.update_N2211C(n2211C, n2211A_ID);
