@@ -26,6 +26,8 @@ public class N2211_N2248_A extends AppCompatActivity {
 
         this.setTitle(getString(R.string.h_n_sec_10));
 
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
     }
 
     public void BtnContinue() {

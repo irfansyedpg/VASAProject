@@ -80,7 +80,10 @@ public class N2211_N2248_C extends AppCompatActivity {
 
     }
 
-    public void SetContentUI() {
+    private void SetContentUI() {
+
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
 
         bi.rgN2215.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

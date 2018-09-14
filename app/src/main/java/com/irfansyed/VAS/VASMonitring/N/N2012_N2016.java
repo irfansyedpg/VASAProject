@@ -25,6 +25,8 @@ public class N2012_N2016 extends AppCompatActivity {
 
         this.setTitle(getString(R.string.h_n_sec_2_2));
 
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
     }
 
     public void BtnContinue() {
@@ -54,7 +56,7 @@ public class N2012_N2016 extends AppCompatActivity {
                 : bi.rbN2015RA.isChecked() ? "8" : "0");
         n2012.setN2016(bi.rbN20161.isChecked() ? "1" : bi.rbN20162.isChecked() ? "2" : "0");
 
-        n2012.setSTUDYID("");
+        n2012.setSTUDYID(bi.edStudyId.getText().toString());
 
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2012(n2012);

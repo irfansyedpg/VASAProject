@@ -1677,6 +1677,29 @@
             </android.support.v7.widget.CardView>
             <!-- EditText A4471 Ends -->
 
+            <!-- EditText BTN Capture Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_cap_count"
+                        style="@style/TextViewInstructions"
+                        android:text="Pictures Attached: 0" />
+
+                    <Button
+                        android:id="@+id/btn_imgCapture"
+                        style="@style/Button_collder"
+                        android:layout_margin="10dp"
+                        android:background="@color/green1"
+                        android:onClick="@{() -> callback.BtnCapture()}"
+                        android:text="CAPTURE IMAGE" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText BTN Capture Ends -->
+
             <!-- CheckBox A4472 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 

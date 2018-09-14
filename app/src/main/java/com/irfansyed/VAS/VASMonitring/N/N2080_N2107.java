@@ -33,7 +33,10 @@ public class N2080_N2107 extends AppCompatActivity {
 
     }
 
-    public void SetContentUI() {
+    private void SetContentUI() {
+
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
 
         bi.cbN208016.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -451,7 +454,7 @@ public class N2080_N2107 extends AppCompatActivity {
         n2080.setN21072(bi.rbN210721.isChecked() ? "1" : bi.rbN210722.isChecked() ? "2" : bi.rbN21072DK.isChecked() ? "9" : "0");
         n2080.setN21073(bi.rbN210731.isChecked() ? "1" : bi.rbN210732.isChecked() ? "2" : bi.rbN21073DK.isChecked() ? "9" : "0");
 
-        n2080.setSTUDYID("");
+        n2080.setSTUDYID(bi.edStudyId.getText().toString());
 
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2080(n2080);
