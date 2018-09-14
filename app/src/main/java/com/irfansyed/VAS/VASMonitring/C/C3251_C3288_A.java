@@ -1,0 +1,81 @@
+package com.irfansyed.VAS.VASMonitring.C;
+
+import android.content.Intent;
+import android.databinding.DataBindingUtil;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
+
+import com.irfansyed.VAS.VASMonitring.R;
+import com.irfansyed.VAS.VASMonitring.databinding.C3251C3288ABinding;
+
+import data.DBHelper;
+import utils.Gothrough;
+
+public class C3251_C3288_A extends AppCompatActivity {
+
+    public static int c3251A_ID = 0;
+    C3251C3288ABinding bi;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        bi = DataBindingUtil.setContentView(this, R.layout.c3251_c3288_a);
+        bi.setCallback(this);
+
+        this.setTitle(getString(R.string.h_c_sec_10));
+
+    }
+
+    public void BtnContinue() {
+        if (validateField()) {
+            if (SaveData()) {
+                startActivity(new Intent(this, bi.rbC32521.isChecked() ? C3251_C3288_B.class : C3251_C3288_C.class)
+                        .putExtra("valFlag", bi.rbC32522.isChecked() ? 2 : 9));
+            } else {
+                Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public boolean SaveData() {
+
+        Global.C.C3251_C3288_A_C c3251 = new Global.C.C3251_C3288_A_C();
+
+        c3251.setC32511(bi.rbC325111.isChecked() ? "1" : bi.rbC325112.isChecked() ? "2" : bi.rbC325113.isChecked() ? "3" : bi.rbC32511DK.isChecked() ? "9" : "0");
+        c3251.setC32512(bi.rbC325121.isChecked() ? "1" : bi.rbC325122.isChecked() ? "2" : bi.rbC325123.isChecked() ? "3" : bi.rbC32512DK.isChecked() ? "9" : "0");
+        c3251.setC3252(bi.rbC32521.isChecked() ? "1" : bi.rbC32522.isChecked() ? "2" : bi.rbC3252DK.isChecked() ? "9" : "0");
+
+        c3251.setSTUDYID("0");
+        DBHelper db = new DBHelper(this);
+        Long row = db.add_C3251_A_C(c3251);
+
+        c3251A_ID = row.intValue();
+
+        return row != 0;
+    }
+
+    public Boolean validateField() {
+
+        //ll_C3251_1
+        if (!Gothrough.IamHiden(bi.llC32511)) {
+            return false;
+        }
+
+        //ll_C3251_2
+        if (!Gothrough.IamHiden(bi.llC32512)) {
+            return false;
+        }
+
+        //ll_C3252
+        return Gothrough.IamHiden(bi.llC3252);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
+    }
+}
