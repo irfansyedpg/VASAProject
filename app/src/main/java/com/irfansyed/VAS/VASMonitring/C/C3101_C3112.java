@@ -2,7 +2,10 @@ package com.irfansyed.VAS.VASMonitring.C;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -10,11 +13,13 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
+import java.io.File;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -30,68 +35,9 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
     // Region Declaration
 
-    Button btn_next;
-
-    // LinerLayouts
-    LinearLayout
-            ll_study_id,
-            ll_C3101,
-            ll_C3102,
-            ll_C3103,
-            ll_C3104,
-            ll_C3105,
-            ll_C3105_OT,
-            ll_C3106,
-            ll_C3107_1,
-            ll_C3107_2,
-            ll_C3107_3,
-            ll_C3107_4,
-            ll_C3107_5,
-            ll_C3107_6,
-            ll_C3107_6_OT,
-            ll_C3107_7,
-            ll_C3107_8,
-            ll_C3107_9,
-            ll_C3107_10,
-            ll_C3107_11,
-            ll_C3107_12,
-            ll_C3107_13,
-            ll_C3107_14,
-            ll_C3107_15,
-            ll_C3107_16,
-            ll_C3107_17,
-            ll_C3107_18,
-            ll_C3107_19,
-            ll_C3107_20,
-            ll_C3107_21,
-            ll_C3107_21_OT,
-            ll_C3108,
-            ll_C3109_1,
-            ll_C3109_2,
-            ll_C3109_3,
-            ll_C3109_4,
-            ll_C3109_5,
-            ll_C3109_6,
-            ll_C3109_7,
-            ll_C3109_8,
-            ll_C3109_9,
-            ll_C3109_10,
-            ll_C3109_11,
-            ll_C3109_12,
-            ll_C3109_13,
-            ll_C3109_14,
-            ll_C3110,
-            ll_C3111,
-            ll_C3111_1,
-            ll_C3111_2,
-            ll_C3111_3,
-            ll_C3111_4,
-            ll_C3111_5,
-            ll_C3111_6,
-            ll_C3111_7,
-            ll_C3111_8,
-            ll_C3111_9,
-            ll_C3112;
+    private static final int CONTENT_REQUEST = 1337;
+    Button btn_next, btn_imgCapture;
+    TextView txt_cap_count;
 
     RadioButton
             rb_C3101_1,
@@ -339,6 +285,68 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
     int Q1102, ageInDays, currentSection;
 
     //endregion
+    // LinerLayouts
+    LinearLayout
+            ll_study_id,
+            ll_C3101,
+            ll_C3102,
+            ll_C3103,
+            ll_C3104,
+            ll_C3105,
+            ll_C3105_OT,
+            ll_C3106,
+            ll_C3107_1,
+            ll_C3107_2,
+            ll_C3107_3,
+            ll_C3107_4,
+            ll_C3107_5,
+            ll_C3107_6,
+            ll_C3107_6_OT,
+            ll_C3107_7,
+            ll_C3107_8,
+            ll_C3107_9,
+            ll_C3107_10,
+            ll_C3107_11,
+            ll_C3107_12,
+            ll_C3107_13,
+            ll_C3107_14,
+            ll_C3107_15,
+            ll_C3107_16,
+            ll_C3107_17,
+            ll_C3107_18,
+            ll_C3107_19,
+            ll_C3107_20,
+            ll_C3107_21,
+            ll_C3107_21_OT,
+            ll_C3108,
+            ll_C3108_A,
+            ll_C3109_1,
+            ll_C3109_2,
+            ll_C3109_3,
+            ll_C3109_4,
+            ll_C3109_5,
+            ll_C3109_6,
+            ll_C3109_7,
+            ll_C3109_8,
+            ll_C3109_9,
+            ll_C3109_10,
+            ll_C3109_11,
+            ll_C3109_12,
+            ll_C3109_13,
+            ll_C3109_14,
+            ll_C3110,
+            ll_C3111,
+            ll_C3111_1,
+            ll_C3111_2,
+            ll_C3111_3,
+            ll_C3111_4,
+            ll_C3111_5,
+            ll_C3111_6,
+            ll_C3111_7,
+            ll_C3111_8,
+            ll_C3111_9,
+            ll_C3112;
+    private File output = null;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -397,6 +405,41 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         events_call();
 
         btn_next.setOnClickListener(this);
+        btn_imgCapture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String RootDir = Environment.getExternalStorageDirectory()
+                        + File.separator + "VASA" + File.separator + ed_study_id.getText().toString();
+                File RootFile = new File(RootDir);
+                boolean success = true;
+                if (!RootFile.exists()) {
+                    success = RootFile.mkdir();
+                }
+                if (success) {
+                    Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                    output = new File(RootDir, "C3108.jpeg");
+
+                    i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
+                    startActivityForResult(i, CONTENT_REQUEST);
+                } else {
+                    Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == CONTENT_REQUEST) {
+            if (resultCode == RESULT_OK) {
+
+                txt_cap_count.setText("Picture Attached");
+                txt_cap_count.setTextColor(getResources().getColor(R.color.orange));
+
+                Toast.makeText(this, "Image capture done!!", Toast.LENGTH_SHORT).show();
+                btn_next.setEnabled(true);
+            }
+        }
     }
 
     @Override
@@ -439,6 +482,8 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
         // Button Next
         btn_next = findViewById(R.id.btn_next);
+        btn_imgCapture = findViewById(R.id.btn_imgCapture);
+        txt_cap_count = findViewById(R.id.txt_cap_count);
 
         // Layouts
         ll_C3101 = findViewById(R.id.ll_C3101);
@@ -472,6 +517,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         ll_C3107_21 = findViewById(R.id.ll_C3107_21);
         ll_C3107_21_OT = findViewById(R.id.ll_C3107_21_OT);
         ll_C3108 = findViewById(R.id.ll_C3108);
+        ll_C3108_A = findViewById(R.id.ll_C3108_A);
         ll_C3109_1 = findViewById(R.id.ll_C3109_1);
         ll_C3109_2 = findViewById(R.id.ll_C3109_2);
         ll_C3109_3 = findViewById(R.id.ll_C3109_3);
@@ -857,6 +903,9 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3109_14.setVisibility(View.GONE);
                 ll_C3110.setVisibility(View.GONE);
 
+                ll_C3108_A.setVisibility(View.GONE);
+                btn_next.setEnabled(true);
+
             } else {
 
                 ll_C3109_1.setVisibility(View.VISIBLE);
@@ -874,6 +923,11 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3109_13.setVisibility(View.VISIBLE);
                 ll_C3109_14.setVisibility(View.VISIBLE);
                 ll_C3110.setVisibility(View.VISIBLE);
+
+                ll_C3108_A.setVisibility(View.VISIBLE);
+                txt_cap_count.setText("Picture not Attached");
+                txt_cap_count.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
+                btn_next.setEnabled(false);
             }
         }
 
