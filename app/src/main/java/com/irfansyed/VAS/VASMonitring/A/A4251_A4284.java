@@ -42,6 +42,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             btn_addd;
 
     LinearLayout
+            ll_study_id,
             ll_A4251,
             ll_A4252,
         //    ll_A4252_1,
@@ -200,7 +201,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             rb_A4283_DK,
             rb_A4283_RA;
 
-    EditText
+    EditText ed_study_id,
             ed_A4253_3,
             ed_A4255_4,
             ed_A4255_13,
@@ -390,6 +391,13 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4251__a4284);
+
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
 
         Initialization();
         events_call();
@@ -1993,6 +2001,10 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
 
     boolean validateField() {
+
+        if (Gothrough.IamHiden(ll_study_id) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_A4251) == false) {
             return false;
         }

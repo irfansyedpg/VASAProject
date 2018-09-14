@@ -25,7 +25,10 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             btn_next14;
 
     LinearLayout
+            ll_study_id,
             ll_A4401,
+            ll_A4401_DK,
+            ll_A4402_DK,
             ll_A4402,
             ll_A4403,
             ll_A4404,
@@ -77,170 +80,171 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             rb_A4401_2,
             rb_A4401_DK,
 
-    rb_A4402_1,
+            rb_A4402_1,
             rb_A4402_2,
             rb_A4402_3,
             rb_A4402_4,
             rb_A4402_5,
             rb_A4402_DK,
 
-    rb_A4451_1_1,
+            rb_A4451_1_1,
             rb_A4451_1_2,
             rb_A4451_1_DK,
 
-    rb_A4451_2_1,
+            rb_A4451_2_1,
             rb_A4451_2_2,
             rb_A4451_2_DK,
 
-    rb_A4451_3_1,
+            rb_A4451_3_1,
             rb_A4451_3_2,
             rb_A4451_3_DK,
 
-    rb_A4451_4_1,
+            rb_A4451_4_1,
             rb_A4451_4_2,
             rb_A4451_4_DK,
 
-    rb_A4451_5_1,
+            rb_A4451_5_1,
             rb_A4451_5_2,
             rb_A4451_5_DK,
 
-    rb_A4451_6_1,
+            rb_A4451_6_1,
             rb_A4451_6_2,
             rb_A4451_6_DK,
 
-    rb_A4451_7_1,
+            rb_A4451_7_1,
             rb_A4451_7_2,
             rb_A4451_7_DK,
 
-    rb_A4451_8_1,
+            rb_A4451_8_1,
             rb_A4451_8_2,
             rb_A4451_8_DK,
 
-    rb_A4451_9_1,
+            rb_A4451_9_1,
             rb_A4451_9_2,
             rb_A4451_9_DK,
 
-    rb_A4451_10_1,
+            rb_A4451_10_1,
             rb_A4451_10_2,
             rb_A4451_10_DK,
 
-    rb_A4451_11_1,
+            rb_A4451_11_1,
             rb_A4451_11_2,
             rb_A4451_11_DK,
 
-    rb_A4451_12_1,
+            rb_A4451_12_1,
             rb_A4451_12_2,
             rb_A4451_12_DK,
 
-    rb_A4451_13_1,
+            rb_A4451_13_1,
             rb_A4451_13_2,
             rb_A4451_13_DK,
 
-    rb_A4452_1_1,
+            rb_A4452_1_1,
             rb_A4452_1_2,
             rb_A4452_1_DK,
 
-    rb_A4452_2_1,
+            rb_A4452_2_1,
             rb_A4452_2_2,
             rb_A4452_2_DK,
 
-    rb_A4452_3_1,
+            rb_A4452_3_1,
             rb_A4452_3_2,
             rb_A4452_3_DK,
 
-    rb_A4452_4_1,
+            rb_A4452_4_1,
             rb_A4452_4_2,
             rb_A4452_4_DK,
 
-    rb_A4452_5_1,
+            rb_A4452_5_1,
             rb_A4452_5_2,
             rb_A4452_5_DK,
 
-    rb_A4452_6_1,
+            rb_A4452_6_1,
             rb_A4452_6_2,
             rb_A4452_6_DK,
 
-    rb_A4452_7_1,
+            rb_A4452_7_1,
             rb_A4452_7_2,
             rb_A4452_7_DK,
 
-    rb_A4452_8_1,
+            rb_A4452_8_1,
             rb_A4452_8_2,
             rb_A4452_8_DK,
 
-    rb_A4452_9_1,
+            rb_A4452_9_1,
             rb_A4452_9_2,
             rb_A4452_9_DK,
 
-    rb_A4453_1_1,
+            rb_A4453_1_1,
             rb_A4453_1_2,
             rb_A4453_1_DK,
 
-    rb_A4453_2_1,
+            rb_A4453_2_1,
             rb_A4453_2_2,
             rb_A4453_2_DK,
 
-    rb_A4453_3_1,
+            rb_A4453_3_1,
             rb_A4453_3_2,
             rb_A4453_3_DK,
 
-    rb_A4453_4_1,
+            rb_A4453_4_1,
             rb_A4453_4_2,
             rb_A4453_4_DK,
 
-    rb_A4453_5_1,
+            rb_A4453_5_1,
             rb_A4453_5_2,
             rb_A4453_5_DK,
 
-    rb_A4453_6_1,
+            rb_A4453_6_1,
             rb_A4453_6_2,
             rb_A4453_6_DK,
 
-    rb_A4453_7_1,
+            rb_A4453_7_1,
             rb_A4453_7_2,
             rb_A4453_7_DK,
 
-    rb_A4453_8_1,
+            rb_A4453_8_1,
             rb_A4453_8_2,
             rb_A4453_8_DK,
 
-    rb_A4453_9_1,
+            rb_A4453_9_1,
             rb_A4453_9_2,
             rb_A4453_9_DK,
 
-    rb_A4453_10_1,
+            rb_A4453_10_1,
             rb_A4453_10_2,
             rb_A4453_10_DK,
 
-    rb_A4453_11_1,
+            rb_A4453_11_1,
             rb_A4453_11_2,
             rb_A4453_11_DK,
 
-    rb_A4453_12_1,
+            rb_A4453_12_1,
             rb_A4453_12_2,
             rb_A4453_12_DK,
 
-    rb_A4454_1,
+            rb_A4454_1,
             rb_A4454_2,
             rb_A4454_DK,
             rb_A4454_RA,
 
-    rb_A4455_1,
+            rb_A4455_1,
             rb_A4455_2,
             rb_A4455_DK,
             rb_A4455_RA,
 
-    rb_A4456_1,
+            rb_A4456_1,
             rb_A4456_2,
             rb_A4456_DK,
             rb_A4456_RA,
 
-    rb_A4457_1,
+            rb_A4457_1,
             rb_A4457_2,
             rb_A4457_DK,
             rb_A4457_RA;
 
     EditText
+            ed_study_id,
             ed_A4402_5,
             ed_A4403_province,
             ed_A4403_district,
@@ -349,6 +353,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         btn_next14 = findViewById(R.id.btn_next14);
 
         ll_A4401 = findViewById(R.id.ll_A4401);
+        ll_A4401_DK = findViewById(R.id.ll_A4401_DK);
+        ll_A4402_DK = findViewById(R.id.ll_A4402_DK);
         ll_A4402 = findViewById(R.id.ll_A4402);
         ll_A4403 = findViewById(R.id.ll_A4403);
         ll_A4404 = findViewById(R.id.ll_A4404);
@@ -595,6 +601,13 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4401_a4473);
 
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
+
         Initialization();
         events_call();
     }
@@ -628,16 +641,11 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
 
                 ll_A4402.setVisibility(View.GONE);
                 ll_A4403.setVisibility(View.GONE);
-            } else if (rb_A4401_DK.isChecked()) {
-                ClearAllcontrol.ClearAll(ll_A4402);
-                ClearAllcontrol.ClearAll(ll_A4403);
-                ClearAllcontrol.ClearAll(ll_A4404);
-                ClearAllcontrol.ClearAll(ll_A4405);
+            }
+            else if (rb_A4401_DK.isChecked()) {
+                ClearAllcontrol.ClearAll(ll_A4401_DK);
 
-                ll_A4402.setVisibility(View.GONE);
-                ll_A4403.setVisibility(View.GONE);
-                ll_A4404.setVisibility(View.GONE);
-                ll_A4405.setVisibility(View.GONE);
+                ll_A4401_DK.setVisibility(View.GONE);
             }
         }
 
@@ -1458,6 +1466,15 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     boolean validateField() {
+
+        if (Gothrough.IamHiden(ll_study_id) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_study_id) == false) {
+            return false;
+        }
+
         if (Gothrough.IamHiden(ll_A4401) == false) {
             return false;
         }
