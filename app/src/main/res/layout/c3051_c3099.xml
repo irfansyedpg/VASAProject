@@ -2,7 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".C.C3051_C3099">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -44,6 +47,30 @@
 
         <LinearLayout style="@style/Q_Linerlayout_v">
 
+
+            <!-- EditText study_id Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_study_id"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/txt_study_id" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_study_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_study_id"
+                        android:inputType="date"
+                        app:met_mask="####-###-##" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText study_id Ends -->
 
             <!--C3051 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
@@ -2035,7 +2062,6 @@
             <!--C3090 Edit text Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_C3090"
                     style="@style/Q_Linerlayout_v">
@@ -2055,8 +2081,8 @@
                         style="@style/EditText_number"
                         android:hint="Months" />
 
-
                 </LinearLayout>
+
             </android.support.v7.widget.CardView>
             <!--C3090 Edit text Ends-->
 

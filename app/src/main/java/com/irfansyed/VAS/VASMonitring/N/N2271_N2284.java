@@ -31,7 +31,10 @@ public class N2271_N2284 extends AppCompatActivity {
 
     }
 
-    public void SetContentUI() {
+    private void SetContentUI() {
+
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
 
         bi.rgN2271.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -82,7 +85,7 @@ public class N2271_N2284 extends AppCompatActivity {
                 : bi.rbN2283DK.isChecked() ? "9" : bi.rbN2283RA.isChecked() ? "8" : "0");
         n2271.setN2284(bi.edN2284.getText().toString());
 
-        n2271.setSTUDYID("");
+        n2271.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2271(n2271);
 

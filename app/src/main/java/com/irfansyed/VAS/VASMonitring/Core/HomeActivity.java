@@ -13,10 +13,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.irfansyed.VAS.VASMonitring.A.A4001_A4014;
 import com.irfansyed.VAS.VASMonitring.GS.Q1101_Q1610;
-import com.irfansyed.VAS.VASMonitring.N.N2001_N2011;
-import com.irfansyed.VAS.VASMonitring.Other.Genifno;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.Upload.SurveyCompletedActivity;
 
@@ -93,7 +90,7 @@ public class HomeActivity extends AppCompatActivity
         if (id == com.irfansyed.VAS.VASMonitring.R.id.stage_1) {
             intent = new Intent(this, Q1101_Q1610.class);
             put_extr = 1;
-        }
+        }/*
 
         if (id == R.id.stage_2) {
             intent = new Intent(this, N2001_N2011.class);
@@ -107,10 +104,10 @@ public class HomeActivity extends AppCompatActivity
         }
 
         if (id == R.id.stage_4) {
-            intent = new Intent(this, A4001_A4014.class);
+            intent = new Intent(this, A4251_A4284.class);
             put_extr = 1;
 
-        } else if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_e) {
+        } else*/ if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_e) {
             preferences.setlanguage("en", "US");
             Toast.makeText(this, "Application Language Changed to English", Toast.LENGTH_LONG).show();
 

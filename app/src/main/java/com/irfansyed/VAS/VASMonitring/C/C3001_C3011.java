@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import data.LocalDataManager;
@@ -27,6 +28,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
 
     // LinerLayouts
     LinearLayout
+            ll_study_id,
             ll_C3001,
             ll_C3002,
             ll_C3003,
@@ -52,54 +54,54 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             rb_C3001_DK,
             rb_C3001_RA,
 
-            rb_C3002_1,
+    rb_C3002_1,
             rb_C3002_2,
             rb_C3002_DK,
             rb_C3002_RA,
 
-            rb_C3003_1,
+    rb_C3003_1,
             rb_C3003_2,
             rb_C3003_DK,
             rb_C3003_RA,
 
-            rb_C3004_1,
+    rb_C3004_1,
             rb_C3004_2,
             rb_C3004_3,
             rb_C3004_DK,
             rb_C3004_RA,
 
-            rb_C3005u_1,
+    rb_C3005u_1,
             rb_C3005u_2,
             rb_C3005u_3,
             rb_C3005u_DK,
             rb_C3005u_RA,
 
-            rb_C3006_1,
+    rb_C3006_1,
             rb_C3006_2,
             rb_C3006_3,
             rb_C3006_4,
             rb_C3006_5,
-                    rb_C3006_6,
+            rb_C3006_6,
             rb_C3006_7,
             rb_C3006_8,
             rb_C3006_9,
-                    rb_C3006_10,
+            rb_C3006_10,
             rb_C3006_11,
-                    rb_C3006_12,
+            rb_C3006_12,
             rb_C3006_DK,
             rb_C3006_RA,
 
-            rb_C3008_1,
+    rb_C3008_1,
             rb_C3008_2,
             rb_C3008_3,
             rb_C3008_4,
             rb_C3008_5,
             rb_C3008_6,
-                    rb_C3008_7,
+            rb_C3008_7,
             rb_C3008_8,
             rb_C3008_9,
 
-            rb_C3009_1_1,
+    rb_C3009_1_1,
             rb_C3009_1_2,
             rb_C3009_1_DK,
             rb_C3009_1_RA,
@@ -149,11 +151,20 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             STATUS,
             study_id;
 
+    int currentSection;
+
     //endregion
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3001_c3011);
+
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
 
         Initialization();
         events_call();
@@ -173,7 +184,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
         insert_data();
 
         Intent c = new Intent(this, C3012_C3022.class);
-
+        c.putExtra("study_id", study_id);
         startActivity(c);
     }
 
@@ -183,6 +194,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
         btn_next = findViewById(R.id.btn_next);
 
         // Layouts
+
         ll_C3001 = findViewById(R.id.ll_C3001);
         ll_C3002 = findViewById(R.id.ll_C3002);
         ll_C3003 = findViewById(R.id.ll_C3003);
@@ -592,7 +604,6 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        study_id = "0";
         C3001 = "000";
         C3002 = "000";
         C3003 = "000";
@@ -612,6 +623,12 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
         C3010 = "000";
         C3011 = "000";
         STATUS = "0";
+
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         if (rb_C3001_1.isChecked()) {
             C3001 = "1";
@@ -839,8 +856,12 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     boolean validateField() {
+        /*
+        if (Gothrough.IamHiden(ll_study_id) == false) {
+            return false;
+        }
 
-        /*if (Gothrough.IamHiden(ll_C3001) == false) {
+        if (Gothrough.IamHiden(ll_C3001) == false) {
             return false;
         }
 
@@ -915,4 +936,8 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
         return true;
     }
 
+    @Override
+    public void onBackPressed() {
+        globale.interviewExit(this, this, study_id, currentSection = 2);
+    }
 }

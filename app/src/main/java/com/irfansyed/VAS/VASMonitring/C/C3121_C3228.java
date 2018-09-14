@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import Global.C.C3001_C3011;
@@ -27,6 +28,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
     // LinerLayouts
     LinearLayout
+            ll_study_id,
             ll_C3121,
             ll_C3122,
             ll_C3122d,
@@ -951,12 +953,21 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
             C3228,
             STATUS;
 
+    int currentSection;
+
 
     //endregion
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3121_c3228);
+
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
 
         Initialization();
         events_call();
@@ -976,7 +987,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         insert_data();
 
         Intent c = new Intent(this, C3301_C3314.class);
-
+        c.putExtra("study_id", study_id);
         startActivity(c);
     }
 
@@ -3586,7 +3597,6 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        study_id = "000";
         C3121 = "000";
         C3122 = "000";
         C3122d = "000";
@@ -3761,6 +3771,10 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         C3228 = "000";
         STATUS = "0";
 
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         if (rb_C3121_1.isChecked()) {
             C3121 = "1";
@@ -3779,7 +3793,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         } else if (rb_C3122_3.isChecked()) {
             C3122 = "3";
             C3122d = ed_C3122d.getText().toString().trim();
-            C3122m = ed_C3122m.getText().toString().trim();;
+            C3122m = ed_C3122m.getText().toString().trim();
         } else if (rb_C3122_DK.isChecked()) {
             C3122 = "99";
             C3122d = "99";
@@ -5572,7 +5586,12 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_C3121) == false) {
+        /*
+        if (Gothrough.IamHiden(ll_study_id) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_C3121) == false) {
             return false;
         }
 
@@ -6259,4 +6278,75 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         return true;
     }
 
+
+/*    public void BtnChest() {
+        changeMediaUI(bi.btnChest, R.raw.look_chest_i);
+    }
+
+    public void BtnStri() {
+        changeMediaUI(bi.btnStri, R.raw.child_i_s);
+    }
+
+    public void BtnGrunt() {
+        changeMediaUI(bi.btnGrunt, R.raw.grunting);
+    }
+
+    public void BtnWheez() {
+        changeMediaUI(bi.btnWheez, R.raw.breath_sounds_w);
+    }
+
+    private void changeMediaUI(final Button btn, final int resID) {
+
+        if (mediaPlayer != null) {
+            btnDefaultState();
+            mediaPlayer.stop();
+        }
+
+        btn.setBackgroundColor(getResources().getColor(R.color.green2));
+        btn.setTextColor(getResources().getColor(R.color.white));
+
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), resID);
+        mediaPlayer.start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(mediaPlayer.getDuration() + 200);
+
+                    runOnUiThread(new Runnable() {
+
+                        @Override
+                        public void run() {
+                            btn.setBackgroundColor(getResources().getColor(R.color.gray));
+                            btn.setTextColor(getResources().getColor(R.color.black));
+                        }
+                    });
+
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }).start();
+    }
+
+    private void btnDefaultState() {
+        bi.btnChest.setBackgroundColor(getResources().getColor(R.color.gray));
+        bi.btnChest.setTextColor(getResources().getColor(R.color.black));
+
+        bi.btnGrunt.setBackgroundColor(getResources().getColor(R.color.gray));
+        bi.btnGrunt.setTextColor(getResources().getColor(R.color.black));
+
+        bi.btnStri.setBackgroundColor(getResources().getColor(R.color.gray));
+        bi.btnStri.setTextColor(getResources().getColor(R.color.black));
+
+        bi.btnWheez.setBackgroundColor(getResources().getColor(R.color.gray));
+        bi.btnWheez.setTextColor(getResources().getColor(R.color.black));
+    }*/
+
+    @Override
+    public void onBackPressed() {
+        globale.interviewExit(this, this, study_id, currentSection = 6);
+    }
 }

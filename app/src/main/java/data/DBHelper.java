@@ -40,6 +40,7 @@ import data.A.A4144_A4156;
 import data.A.A4157_A4205;
 import data.A.A4206_A4207;
 import data.A.A4251_A4284;
+import data.A.A4252_atributes;
 import data.A.A4301_A4315;
 import data.A.A4351_A4364;
 import data.A.A4401_A4473;
@@ -50,8 +51,8 @@ import data.GS.Q1101_Q1610;
  */
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final String DB_NAME = "vasa.db";
-    private static final int VERSION = 1;
+    public static final  String DB_NAME = "vasa.db";
+    private static final int    VERSION = 1;
 
     Context mContext;
 
@@ -109,6 +110,7 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(A4157_A4205.getCreateQuery()); // A4157_A4205 created here
         db.execSQL(A4206_A4207.getCreateQuery()); // A4206_A4207 created here
         db.execSQL(A4251_A4284.getCreateQuery()); // A4251_A4284 created here
+        db.execSQL(A4252_atributes.getCreateQuery()); // A4251_A4284 created here
         db.execSQL(A4301_A4315.getCreateQuery()); // A4301_A4315 created here
         db.execSQL(A4351_A4364.getCreateQuery()); // A4351_A4364 created here
         db.execSQL(A4401_A4473.getCreateQuery()); // A4401_A4405 created here
@@ -141,12 +143,42 @@ public class DBHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
-    public Cursor getData(String tableName) {
+    public Cursor getData(String tableName, String study_id) {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
-        Cursor res = db.rawQuery("select * from " + tableName + " order by id DESC LIMIT 1", null);
+        Cursor res = db.rawQuery("select * from " + tableName + " where study_id = " + "'" + study_id + "'", null);
         return res;
+    }
+
+    /*public long updateData(String tableName, String Q1311, String study_id) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+
+        values.put(Q1101_Q1610.Q1311, Q1311);
+
+        // Insert the new row, returning the primary key value of the new row
+        long newRowId;
+
+        newRowId = db.update(tableName, values, Q1101_Q1610.study_id + " = ?", new String[]{study_id});
+
+        return newRowId;
+    }*/
+
+
+    public long updateData(String tableName, ContentValues values, String study_id) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // Insert the new row, returning the primary key value of the new row
+        long newRowId;
+
+        newRowId = db.update(tableName, values, Q1101_Q1610.study_id + " = ?", new String[]{study_id});
+
+        return newRowId;
     }
 
 

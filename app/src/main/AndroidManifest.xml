@@ -138,44 +138,47 @@
 
         <!--Sajid files-->
         <activity
-            android:name=".A.A4251_A4284"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".A.A4001_A4014"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4051_A4066"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4067_A4080"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4081_A4094"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4095_A4108"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4109_A4125"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4126_A4140"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4144_A4156"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4157_A4205"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4206_A4207"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".A.A4251_A4284"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4301_A4315"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4351_A4364"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4401_A4473"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
 
 
     </application>

@@ -13,36 +13,7 @@
             <item
                 android:id="@+id/stage_1"
                 android:icon="@drawable/pregnancy"
-                android:title="C Section" />
-
-            <item
-                android:id="@+id/stage_2"
-                android:icon="@drawable/delivery"
-                android:title="N section" />
-
-            <item
-                android:id="@+id/stage_3"
-                android:icon="@drawable/pills"
-                android:title="Gen Info" />
-            <item
-                android:id="@+id/stage_4"
-                android:icon="@drawable/babygirl"
-                android:title=" A section" />
-            <item
-                android:id="@+id/stage_5"
-                android:icon="@drawable/syringe"
-                android:title="Immunization" />
-            <item
-                android:id="@+id/stage_6"
-                android:icon="@drawable/labmicroscope"
-                android:title="Pneumonia " />
-            <item
-                android:id="@+id/stage_7"
-                android:icon="@drawable/sick"
-                android:title="Diarrhea" />
-
-
-
+                android:title="Start Interview" />
 
         </menu>
     </item>
@@ -55,6 +26,13 @@
                 android:id="@+id/upload_date"
                 android:icon="@drawable/upload_interview"
                 android:title="Upload Data" />
+
+            <item
+                android:id="@+id/pending_interviews"
+                android:icon="@drawable/upload_interview"
+                android:title="Pending Interviews" />
+
+
             <item
                 android:id="@+id/nav_lang_e"
                 android:icon="@drawable/english"

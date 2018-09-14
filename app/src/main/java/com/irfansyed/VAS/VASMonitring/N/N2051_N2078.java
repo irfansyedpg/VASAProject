@@ -60,6 +60,9 @@ public class N2051_N2078 extends AppCompatActivity {
 
     private void SetContentUI() {
 
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
+
         bi.rgN2052.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -209,7 +212,7 @@ public class N2051_N2078 extends AppCompatActivity {
         n2051.setN2078OTx(bi.edN2078OT.getText().toString());
         n2051.setN2078DK(bi.cbN2078DK.isChecked() ? "99" : "0");
 
-        n2051.setSTUDYID("");
+        n2051.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2051(n2051);
 

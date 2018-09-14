@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
+import android.text.InputFilter;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
+import utils.InputFilterMinMax;
 
 public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -27,6 +29,7 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
             btn_next1;
 
     LinearLayout
+            ll_study_id,
             ll_A4001,
             ll_A4002,
             ll_A4003,
@@ -100,6 +103,7 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
             rb_A4014_DK;
 
     EditText
+            ed_study_id,
             ed_A4001,
             ed_A4005,
             ed_A4007_1,
@@ -253,14 +257,23 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
 
     }
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4001__a4014);
 
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
+
         Initialization();
         events_call();
-
     }
 
     public void onClick(View view) {
@@ -439,6 +452,12 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
 
         ed_A4005.addTextChangedListener(generalTextWatcher);
         ed_A4011.addTextChangedListener(generalTextWatcher);
+
+
+        ed_A4005.setFilters(new InputFilter[]{new InputFilterMinMax(0, 22, 99, 99)});
+        ed_A4013d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 29, 99, 99)});
+        ed_A4013m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
+        ed_A4013y.setFilters(new InputFilter[]{new InputFilterMinMax(1, 49, 99, 99)});
 
     }
 
@@ -738,6 +757,11 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     boolean validateField() {
+
+        if (Gothrough.IamHiden(ll_study_id) == false) {
+            return false;
+        }
+
         if (Gothrough.IamHiden(ll_A4001) == false) {
             return false;
         }

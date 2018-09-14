@@ -41,7 +41,10 @@ public class N2251_N2260 extends AppCompatActivity {
 
     }
 
-    public void SetContentUI() {
+    private void SetContentUI() {
+
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
 
         //Initializing datepickers
 
@@ -133,7 +136,7 @@ public class N2251_N2260 extends AppCompatActivity {
                 : bi.rbN2259RA.isChecked() ? "8" : "0");
         n2251.setN2260(bi.edN2260.getText().toString());
 
-        n2251.setSTUDYID("");
+        n2251.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2251(n2251);
 
