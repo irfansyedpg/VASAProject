@@ -802,6 +802,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     void insert_data() {
+
         String query = "insert into   C3001_C3011("
                 + Global.C.C3001_C3011.study_id + ","
                 + Global.C.C3001_C3011.C3001 + ","

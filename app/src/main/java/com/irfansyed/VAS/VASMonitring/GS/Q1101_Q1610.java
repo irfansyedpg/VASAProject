@@ -1523,7 +1523,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         Q1610_2 = "-1";
         Q1610_3 = "-1";
         STATUS = "0";
-        interviewType = 1;
+        interviewType = -1;
         currentSection = 1;
 
         if (ed_study_id.getText().toString().length() > 0) {

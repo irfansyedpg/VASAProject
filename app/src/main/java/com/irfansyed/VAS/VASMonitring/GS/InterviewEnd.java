@@ -46,7 +46,7 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
             study_id,
             Q1311;
 
-    int currentSection;
+    int currentSection, bCurrentSection;
 
 
     @Override
@@ -58,7 +58,18 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();
         study_id = getStudyId.getExtras().getString("study_id");
-        currentSection = getStudyId.getExtras().getInt("currentSection");
+
+        bCurrentSection = getStudyId.getExtras().getInt("currentSection");
+
+        if(bCurrentSection > 0){
+
+            currentSection = bCurrentSection;
+
+        } else {
+
+            currentSection = 111;
+        }
+
         ed_study_id.setText(study_id);
         ed_study_id.setEnabled(false);
 
@@ -78,7 +89,6 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
         value_assignment();
 
         Toast.makeText(this, Q1311, Toast.LENGTH_LONG).show();
-
 
         DBHelper db = new DBHelper(this);
 
