@@ -2,10 +2,10 @@ package Global.N;
 
 public class N2001_N2011 {
 
-    public String N2001 = "N2001";
-    public String N2002 = "N2002";
-    public String N2003 = "N2003";
-    public String N2004 = "N2004";
+    public String N2001  = "N2001";
+    public String N2002  = "N2002";
+    public String N2003  = "N2003";
+    public String N2004  = "N2004";
     public String N2005u = "N2005u";
     public String N2005d = "N2005d";
     public String N2005w = "N2005w";
@@ -175,24 +175,25 @@ public class N2001_N2011 {
     }
 
     public interface sub_N2001_N2011 {
-        String N2001 = "N2001";
-        String N2002 = "N2002";
-        String N2003 = "N2003";
-        String N2004 = "N2004";
-        String N2005u = "N2005u";
-        String N2005d = "N2005d";
-        String N2005w = "N2005w";
-        String N2005m = "N2005m";
-        String N2006 = "N2006";
-        String N2006x = "N2006x";
-        String N2008 = "N2008";
-        String N2008x = "N2008x";
+        String N2001   = "N2001";
+        String N2002   = "N2002";
+        String N2003   = "N2003";
+        String N2004   = "N2004";
+        String N2005u  = "N2005u";
+        String N2005d  = "N2005d";
+        String N2005w  = "N2005w";
+        String N2005m  = "N2005m";
+        String N2006   = "N2006";
+        String N2006x  = "N2006x";
+        String N2008   = "N2008";
+        String N2008x  = "N2008x";
         String N2009_1 = "N2009_1";
         String N2009_2 = "N2009_2";
         String N2009_3 = "N2009_3";
         String N2009_4 = "N2009_4";
-        String N2010 = "N2010";
-        String N2011 = "N2011";
+        String N2010   = "N2010";
+        String N2011   = "N2011";
+
         String STUDYID = "study_id";
     }
 }

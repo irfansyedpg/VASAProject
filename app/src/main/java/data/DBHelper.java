@@ -169,6 +169,14 @@ public class DBHelper extends SQLiteOpenHelper {
     }*/
 
 
+    public Cursor getPendingInterviews(String tableName){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor res = db.rawQuery("select * from " + tableName + " where currentSection != 11", null);
+        return res;
+    }
+
     public long updateData(String tableName, ContentValues values, String study_id) {
 
         SQLiteDatabase db = this.getWritableDatabase();

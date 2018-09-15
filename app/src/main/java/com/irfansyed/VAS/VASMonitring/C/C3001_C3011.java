@@ -17,6 +17,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
@@ -804,6 +805,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     void insert_data() {
+
         String query = "insert into   C3001_C3011("
                 + Global.C.C3001_C3011.study_id + ","
                 + Global.C.C3001_C3011.C3001 + ","
@@ -858,7 +860,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     boolean validateField() {
-        /*
+
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
@@ -931,11 +933,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if(Gothrough.IamHiden(ll_C3011) != false == ){
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_C3011) != false;
     }
 
     @Override

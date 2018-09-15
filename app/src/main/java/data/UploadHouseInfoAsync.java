@@ -18,8 +18,22 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 
+import Global.A.A4001_A4014;
+import Global.A.A4051_A4066;
+import Global.A.A4067_A4080;
+import Global.A.A4081_A4094;
+import Global.A.A4095_A4108;
+import Global.A.A4109_A4125;
+import Global.A.A4126_A4140;
+import Global.A.A4144_A4156;
+import Global.A.A4157_A4205;
+import Global.A.A4206_A4207;
+import Global.A.A4251_A4284;
+import Global.A.A4301_A4315;
+import Global.A.A4351_A4364;
+import Global.A.A4401_A4473;
 import Global.C.C3001_C3011;
-import Global.C.C3012_C3022;
+import data.GS.Q1101_Q1610;
 import utils.MyPreferences;
 import utils.PostRequestData;
 import utils.QuestionModel;
@@ -57,61 +71,84 @@ public class UploadHouseInfoAsync extends AsyncTask {
         HashMap<String, List<String>> map = QuestionModel.quest.get("a");
 
         //region Query
-        String query = "select * from C3001_C3011 where id = '%s' order by id  desc LIMIT 1";
-        String query2 = "select * from c3012_c3022 where id = '%s' order by id  desc LIMIT 1";
+        String query1 = "select * from Q1101_Q1610 where study_id = '%s' order by id  desc LIMIT 1";
+        String query2 = "select * from A4001_A4014 where study_id = '%s' order by id  desc LIMIT 1";
+        String query3 = "select * from A4051_A4066 where study_id = '%s' order by id  desc LIMIT 1";
+        String query4 = "select * from A4067_A4080 where study_id = '%s' order by id  desc LIMIT 1";
+        String query5 = "select * from A4081_A4094 where study_id = '%s' order by id  desc LIMIT 1";
+        String query6 = "select * from A4095_A4108 where study_id = '%s' order by id  desc LIMIT 1";
+        String query7 = "select * from A4109_A4125 where study_id = '%s' order by id  desc LIMIT 1";
+        String query8 = "select * from A4126_A4140 where study_id = '%s' order by id  desc LIMIT 1";
+        String query9 = "select * from A4144_A4156 where study_id = '%s' order by id  desc LIMIT 1";
+        String query10 = "select * from A4157_A4205 where study_id = '%s' order by id  desc LIMIT 1";
+        String query11 = "select * from A4206_A4207 where study_id = '%s' order by id  desc LIMIT 1";
+        String query12 = "select * from A4251_A4284 where study_id = '%s' order by id  desc LIMIT 1";
+        String query13 = "select * from A4301_A4315 where study_id = '%s' order by id  desc LIMIT 1";
+        String query14 = "select * from A4351_A4364 where study_id = '%s' order by id  desc LIMIT 1";
+        String query15 = "select * from A4401_A4473 where study_id = '%s' order by id  desc LIMIT 1";
+        String query16 = "select * from C3001_C3011 where study_id = '%s'  order by id  desc LIMIT 1";
 
-        query = String.format(query, 1);
-        query2 = String.format(query2, 1);
+        query1 = String.format(query1, Q1101_Q1610.study_id);
+        query2 = String.format(query2, A4001_A4014.study_id);
+        query3 = String.format(query3, A4051_A4066.study_id);
+        query4 = String.format(query4, A4067_A4080.study_id);
+        query5 = String.format(query5, A4081_A4094.study_id);
+        query6 = String.format(query6, A4095_A4108.study_id);
+        query7 = String.format(query7, A4109_A4125.study_id);
+        query8 = String.format(query8, A4126_A4140.study_id);
+        query9 = String.format(query9, A4144_A4156.study_id);
+        query10 = String.format(query10, A4157_A4205.study_id);
+        query11 = String.format(query11, A4206_A4207.study_id);
+        query12 = String.format(query12, A4251_A4284.study_id);
+        query13 = String.format(query13, A4301_A4315.study_id);
+        query14 = String.format(query14, A4351_A4364.study_id);
+        query15 = String.format(query15, A4401_A4473.study_id);
+        query16 = String.format(query16, C3001_C3011.study_id);
 
         LocalDataManager Lm = new LocalDataManager(mContext);
 
-        Cursor c = LocalDataManager.database.rawQuery(query, null);
+        //Cursor c = LocalDataManager.database.rawQuery(query, null);
+        Cursor c1 = LocalDataManager.database.rawQuery(query1, null);
         Cursor c2 = LocalDataManager.database.rawQuery(query2, null);
+        Cursor c3 = LocalDataManager.database.rawQuery(query3, null);
+        Cursor c4 = LocalDataManager.database.rawQuery(query4, null);
+        Cursor c5 = LocalDataManager.database.rawQuery(query5, null);
+        Cursor c6 = LocalDataManager.database.rawQuery(query6, null);
+        Cursor c7 = LocalDataManager.database.rawQuery(query7, null);
+        Cursor c8 = LocalDataManager.database.rawQuery(query8, null);
+        Cursor c9 = LocalDataManager.database.rawQuery(query9, null);
+        Cursor c10 = LocalDataManager.database.rawQuery(query10, null);
+        Cursor c11 = LocalDataManager.database.rawQuery(query11, null);
+        Cursor c12 = LocalDataManager.database.rawQuery(query12, null);
+        Cursor c13 = LocalDataManager.database.rawQuery(query13, null);
+        Cursor c14 = LocalDataManager.database.rawQuery(query14, null);
+        Cursor c15 = LocalDataManager.database.rawQuery(query15, null);
+        Cursor c16 = LocalDataManager.database.rawQuery(query16, null);
 
-        if (c != null) {
-            if (c.moveToFirst()) {
-                param.put("id", c.getString(0));
-                param.put(C3001_C3011.study_id, "1");
-                param.put(C3001_C3011.C3001, c.getString(2));
-                param.put(C3001_C3011.C3002, c.getString(3));
-                param.put(C3001_C3011.C3003, c.getString(4));
-                param.put(C3001_C3011.C3004, c.getString(5));
-                param.put(C3001_C3011.C3005u, c.getString(6));
-                param.put(C3001_C3011.C3005d, c.getString(7));
-                param.put(C3001_C3011.C3005w, c.getString(8));
-                param.put(C3001_C3011.C3005m, c.getString(9));
-                param.put(C3001_C3011.C3006, c.getString(10));
-                param.put(C3001_C3011.C3008, c.getString(11));
-                param.put(C3001_C3011.C3009_1, c.getString(12));
-                param.put(C3001_C3011.C3009_2, c.getString(13));
-                param.put(C3001_C3011.C3009_3, c.getString(14));
-                param.put(C3001_C3011.C3009_4, c.getString(15));
-                param.put(C3001_C3011.C3010, c.getString(16));
-                param.put(C3001_C3011.C3011, c.getString(17));
-            }
-        }
+        if (c16 != null) {
+            if (c16.moveToFirst()) {
 
-        if (c2 != null) {
-            if (c2.moveToFirst()) {
-                param.put("id2", c2.getString(0));
-                param.put(C3012_C3022.study_id, "1");
-                param.put(C3012_C3022.C3012, c2.getString(2));
-                param.put(C3012_C3022.C3013, c2.getString(3));
-                param.put(C3012_C3022.C3015, c2.getString(4));
-                param.put(C3012_C3022.C3016, c2.getString(5));
-                param.put(C3012_C3022.C3017, c2.getString(6));
-                param.put(C3012_C3022.C3018, c2.getString(7));
-                param.put(C3012_C3022.C3018_1, c2.getString(8));
-                param.put(C3012_C3022.C3019_u, c2.getString(9));
-                param.put(C3012_C3022.C3019_a, c2.getString(10));
-                param.put(C3012_C3022.C3019_b, c2.getString(11));
-                param.put(C3012_C3022.C3019_c, c2.getString(12));
-                param.put(C3012_C3022.C3020, c2.getString(13));
-                param.put(C3012_C3022.C3021u, c2.getString(14));
-                param.put(C3012_C3022.C3021d, c2.getString(15));
-                param.put(C3012_C3022.C3021m, c2.getString(16));
-                param.put(C3012_C3022.C3021y, c2.getString(17));
-                param.put(C3012_C3022.C3022, c2.getString(18));
+                param.put("tableName", "c3001_c3011");
+                param.put("id", c16.getString(0));
+                param.put(C3001_C3011.study_id, c16.getString(1));
+                param.put(C3001_C3011.C3001, c16.getString(2));
+                param.put(C3001_C3011.C3002, c16.getString(3));
+                param.put(C3001_C3011.C3003, c16.getString(4));
+                param.put(C3001_C3011.C3004, c16.getString(5));
+                param.put(C3001_C3011.C3005u, c16.getString(6));
+                param.put(C3001_C3011.C3005d, c16.getString(7));
+                param.put(C3001_C3011.C3005w, c16.getString(8));
+                param.put(C3001_C3011.C3005m, c16.getString(9));
+                param.put(C3001_C3011.C3006, c16.getString(10));
+                param.put(C3001_C3011.C3006_OT, c16.getString(11));
+                param.put(C3001_C3011.C3008, c16.getString(12));
+                param.put(C3001_C3011.C3008_OT, c16.getString(13));
+                param.put(C3001_C3011.C3009_1, c16.getString(14));
+                param.put(C3001_C3011.C3009_2, c16.getString(15));
+                param.put(C3001_C3011.C3009_3, c16.getString(16));
+                param.put(C3001_C3011.C3009_4, c16.getString(17));
+                param.put(C3001_C3011.C3010, c16.getString(18));
+                param.put(C3001_C3011.C3011, c16.getString(19));
             }
         }
 
