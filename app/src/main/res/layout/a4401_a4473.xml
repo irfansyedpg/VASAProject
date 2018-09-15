@@ -105,10 +105,6 @@
             </android.support.v7.widget.CardView>
             <!-- Radio Buttons A4401 Ends -->
 
-        <LinearLayout
-            android:id="@+id/ll_A4401_DK"
-            style="@style/Q_Linerlayout_v">
-
             <!-- Radio Buttons A4402 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
@@ -151,6 +147,7 @@
                         <EditText
                             android:id="@+id/ed_A4402_5"
                             style="@style/RadioButton"
+                            android:visibility="gone"
                             android:hint="@string/ot_other" />
 
                         <RadioButton
@@ -164,10 +161,6 @@
 
             </android.support.v7.widget.CardView>
             <!-- Radio Buttons A4402 Ends -->
-
-            <LinearLayout
-                android:id="@+id/ll_A4402_DK"
-                style="@style/Q_Linerlayout_v">
 
             <!-- EditText A4403 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
@@ -244,6 +237,12 @@
 
             </android.support.v7.widget.CardView>
             <!-- EditText A4405 Ends -->
+
+            <LinearLayout
+                android:id="@+id/ll_51_52_53"
+                style="@style/Q_Linerlayout_v"
+                android:layout_margin="0dp"
+                android:padding="0dp">
 
             <!-- Radio Buttons A4451_1 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
@@ -712,6 +711,7 @@
                     <EditText
                         android:id="@+id/ed_A4451_13"
                         style="@style/EditText_varchar"
+                        android:visibility="gone"
                         android:hint="Please Specify Other" />
 
                 </LinearLayout>
@@ -1042,6 +1042,7 @@
                     <EditText
                         android:id="@+id/ed_A4452_9"
                         style="@style/EditText_varchar"
+                        android:visibility="gone"
                         android:hint="Please Specify Other" />
 
                 </LinearLayout>
@@ -1480,6 +1481,7 @@
                     <EditText
                         android:id="@+id/ed_A4453_12"
                         style="@style/EditText_varchar"
+                        android:visibility="gone"
                         android:hint="Please Specify Other" />
 
                 </LinearLayout>
@@ -1488,8 +1490,6 @@
             <!-- Radio Buttons A4453_12 with Other Ends -->
 
             </LinearLayout>
-
-        </LinearLayout>
 
             <!-- Radio Buttons A4454 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
