@@ -26,13 +26,16 @@ public class N2211_N2248_A extends AppCompatActivity {
 
         this.setTitle(getString(R.string.h_n_sec_10));
 
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
     }
 
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
                 startActivity(new Intent(this, bi.rbN22121.isChecked() ? N2211_N2248_B.class : N2211_N2248_C.class)
-                        .putExtra("valFlag", bi.rbN22122.isChecked() ? 2 : 9));
+                        .putExtra("valFlag", bi.rbN22122.isChecked() ? 2 : 9)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -49,7 +52,7 @@ public class N2211_N2248_A extends AppCompatActivity {
         n2211.setN22112(bi.rbN221121.isChecked() ? "1" : bi.rbN221122.isChecked() ? "2" : bi.rbN221123.isChecked() ? "3" : bi.rbN22112DK.isChecked() ? "9" : "0");
         n2211.setN2212(bi.rbN22121.isChecked() ? "1" : bi.rbN22122.isChecked() ? "2" : bi.rbN2212DK.isChecked() ? "9" : "0");
 
-        n2211.setSTUDYID("0");
+        n2211.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2211_A_C(n2211);
 

@@ -33,6 +33,9 @@ public class N2001_N2011 extends AppCompatActivity {
 
     private void SetContentUI() {
 
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
+
         bi.rgN2001.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -101,7 +104,8 @@ public class N2001_N2011 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, N2012_N2016.class));
+                startActivity(new Intent(this, N2012_N2016.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -156,7 +160,7 @@ public class N2001_N2011 extends AppCompatActivity {
         n2001.setN2010(bi.edN2010.getText().toString());
         n2001.setN2011(bi.rbN20111.isChecked() ? "1" : bi.rbN20112.isChecked() ? "2" : "0");
 
-        n2001.setSTUDYID("");
+        n2001.setSTUDYID(bi.edStudyId.getText().toString());
 
 
         DBHelper db = new DBHelper(this);

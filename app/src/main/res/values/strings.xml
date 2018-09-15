@@ -1990,22 +1990,80 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="txt_C3227_21">C3227_21: Was the injury self-inflicted?	</string>
     <string name="txt_C3227_22">C3227_22: Was the injury intentionally inflicted by someone else?	</string>
     <string name="txt_C3228">C3228: How long did (NAME) survive after the injury?	</string>
+
+    <string name="txt_C3251">C3251: When it was first noticed that &lt;NAME> was ill, was s/he Read the choices for each condition.</string>
+
+    <string name="txt_C3251_1">C3251_1:	Feeding normally, feeding poorly, or not feeding at all?	</string>
+    <string name="txt_C3251_2">C3251_2:	Normally active, less active than normal, or not moving?	</string>
+
+
     <string name="txt_C3252">C3252: Did (NAME) receive, or did you give or seek, any care or treatment for the fatal illness?	</string>
-    <string name="txt_C3254">C3254: If any formal care given or sought, ask: Who decided to seek care for (NAME)’s illness from the (FIRST FORMAL PROVIDER) 	</string>
-    <string name="txt_C3255">C3255: If never taken to a health provider, ask: Did you have any concerns or problems that kept you from taking (NAME) to a health provider during the illness? 	</string>
-    <string name="txt_C3256">C3256: What concerns or problems did (you / you or (NAME)) have?	</string>
-    <string name="txt_C3257">C3257: You mentioned that you took (NAME) to the (first) health provider, I mean the (FIRST HEALTH PROVIDER) with (SYMPTOM(S)>. How long had (NAME) had (this / these) symptom(s) when it was decided to go to the (FIRST HEALTH PROVIDER)	</string>
-    <string name="txt_C3278">C3278: Did you take the child to (all) the health provider(s) where s/he was referred?	</string>
-    <string name="txt_C3279">C3279: Did you have any concerns or problems that kept you from taking (NAME) to a health provider where s/he was referred?	</string>
-    <string name="txt_C3280">C3280: What concerns or problems did you have?	</string>
-    <string name="txt_C3281">C3281: Did you have to pay any money to travel to (the / any) health provider?	</string>
-    <string name="txt_C3282">C3282: How did you arrange for the money to travel?	</string>
-    <string name="txt_C3283">C3283: What transportation method was used to go to the health provider(s)?	</string>
-    <string name="txt_C3284">C3284: Were there any problems during admission to the hospital or health facility?	</string>
-    <string name="txt_C3285">C3285: Were there any problems with the way (s)he was treated (medical treatment, procedures, interpersonal attitudes, respect, dignity) in the hospital or health facility?	</string>
-    <string name="txt_C3286">C3286: Were there any problems getting medications, or diagnostic tests in the hospital or health facility?	</string>
-    <string name="txt_C3287">C3287: In the final days before death, did anyone use a telephone or cell phone to call for help?	</string>
-    <string name="txt_C3288">C3288: How many days after (first noticing the illness / (LAST ACTION C3253) / leaving the first/last health provider) did (NAME) die?	</string>
+
+    <string name="txt_C3253">C3253: Please tell me everything that was done for &lt;NAME>’s fatal illness inside the home and all the places outside the home (he / she) went or was taken for health care. Start with the first care or treatment ?NAME? received and then, in order, tell me all the other care and treatments s/he received. Also tell me what symptoms were present when each action was taken. </string>
+    <string name="txt_C3253_1">Action</string>
+    <string name="rb_C3253_1_1">Start</string>
+    <string name="rb_C3253_1_2">Mid</string>
+    <string name="rb_C3253_1_3">End</string>
+    <string name="txt_C3253_2">C3253_2: Other care</string>
+    <string name="txt_C3253_3">C3253_3: Health care providers</string>
+    <string name="txt_C3253_4">C3253_4: What symptoms were present when the action was taken?</string>
+
+
+    <string name="txt_C3254">C3254: If any formal care given or sought, ask: Who decided to seek care for (NAME)’s illness from the (FIRST FORMAL PROVIDER)?  </string>
+
+    <string name="txt_C3255">C3254: Did you have any concerns or problems that kept you from taking (NAME) to a health provider during the illness?  </string>
+
+    <string name="txt_C3256">C3256: What concerns or problems did you have?</string>
+
+    <string name="txt_C3257">C3257: Refer to C3253 for the first health provider and related symptoms:
+You mentioned that you took (NAME) to the (first) health provider, I mean the (FIRST HEALTH PROVIDER) with (SYMPTOM). How long had (NAME) had (this / these) symptom(s) when it was decided to go to the (FIRST HEALTH PROVIDER)?
+</string>
+
+    <string name="txt_C3258_1">C3258_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all 	</string>
+    <string name="txt_C3258_2">C3258_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
+    <string name="txt_C3259">C3259:	What was the name of the &lt;FIRST/LAST HEALTH PROVIDER> where you took &lt;NAME>?	</string>
+    <string name="txt_C3259_2">C3259_2:	Name of Provider/Facility	</string>
+    <string name="txt_C3260">C3258:	Did &lt;NAME> reach the &lt;FIRST/LAST HEALTH PROVIDER> before s/he died?	</string>
+    <string name="txt_C3261_1">C3261_1:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
+    <string name="txt_C3261_2">C3261_2:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
+    <string name="txt_C3262">C3262:	Did the &lt;FIRST/LAST HEALTH PROVIDER> admit &lt;NAME> to the hospital for his/her problem?	</string>
+    <string name="txt_C3263">C3263:	Did the &lt;FIRST/LAST HEALTH PROVIDER> refer &lt;NAME> to another health provider or facility?	</string>
+    <string name="txt_C3264">N2224:	To where was &lt;NAME> referred?	</string>
+    <string name="txt_C3264_2">N2224_2:	Name of Provider/Facility	</string>
+    <string name="txt_C3265_1">N2225_1:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which &lt;NAME> needs to return immediately?	</string>
+    <string name="txt_C3265_2">N2225_2:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which To follow-up if &lt;NAME> did not improve after leaving?	</string>
+    <string name="txt_C3266">N2226:	Did &lt;NAME> leave the &lt;FIRST/LAST HEALTH PROVIDER> alive?	</string>
+    <string name="txt_C3267_1">N2227_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all.	</string>
+    <string name="txt_C3267_2">N2227_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
+    <string name="txt_C3268_1">N2228_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all 	</string>
+    <string name="txt_C3268_2">N2228_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
+    <string name="txt_C3269">N2229:	What was the name of the &lt;FIRST/LAST HEALTH PROVIDER> where you took &lt;NAME>?	</string>
+    <string name="txt_C3269_2">N2229_2:	Name of Provider/Facility	</string>
+    <string name="txt_C3270">N2230:	Did &lt;NAME> reach the &lt;FIRST/LAST HEALTH PROVIDER> before s/he died?	</string>
+    <string name="txt_C3271_1">N2231_1:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
+    <string name="txt_C3271_2">N2231_2:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
+    <string name="txt_C3272">N2232:	Did the &lt;FIRST/LAST HEALTH PROVIDER> admit &lt;NAME> to the hospital for his/her problem?	</string>
+    <string name="txt_C3273">N2233:	Did the &lt;FIRST/LAST HEALTH PROVIDER> refer &lt;NAME> to another health provider or facility?	</string>
+    <string name="txt_C3274">N2234:	To where was &lt;NAME> referred?	</string>
+    <string name="txt_C3274_2">N2234_2:	Name of Provider/Facility	</string>
+    <string name="txt_C3275_1">N2235_1:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which &lt;NAME> needs to return immediately?	</string>
+    <string name="txt_C3275_2">N2235_2:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which To follow-up if &lt;NAME> did not improve after leaving?	</string>
+    <string name="txt_C3276">N2236:	Did &lt;NAME> leave the &lt;FIRST/LAST HEALTH PROVIDER> alive?	</string>
+    <string name="txt_C3277_1">N2237_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all.	</string>
+    <string name="txt_C3277_2">N2237_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
+
+    <string name="txt_C3278">N2238: Did you take the child to (all) the health provider(s) where s/he was referred?</string>
+    <string name="txt_C3279">N2239: Did you have any concerns or problems that kept you from taking (NAME) to a health provider where s/he was referred</string>
+    <string name="txt_C3280">N2240: What concerns or problems did you have?</string>
+    <string name="txt_C3281">N2241: Did you have to pay any money to travel to (the / any) health provider?</string>
+    <string name="txt_C3282">N2242: How did you arrange for the money to travel?</string>
+    <string name="txt_C3283">N2243: What transportation method was used to go to the health provider(s)?</string>
+    <string name="txt_C3284">N2244: Were there any problems during admission to the hospital or health facility?</string>
+    <string name="txt_C3285">N2245: Were there any problems with the way (s)he was treated (medical treatment, procedures, interpersonal attitudes, respect, dignity) in the hospital or health facility?</string>
+    <string name="txt_C3286">N2246: Were there any problems getting medications, or diagnostic tests in the hospital or health facility?</string>
+    <string name="txt_C3287">N2247: In the final days before death, did anyone use a telephone or cell phone to call for help? </string>
+    <string name="txt_C3288">N2248: How many days after (first noticing the illness   leaving the first/last health provider) did (NAME) die? </string>
+
     <string name="txt_C3301">C3301: Did (NAME) receive any treatment for the illness that led to death?	</string>
     <string name="txt_C3302_1">C3302_1: Did (s)he receive oral rehydration salts?	</string>
     <string name="txt_C3302_2">C3302_2: Did (s)he receive intravenous fluids (drip) treatment?	</string>
@@ -2989,11 +3047,21 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="rb_C3254_3">Child’s mother and father, jointly	</string>
     <string name="rb_C3254_4">Child’s maternal grandmother	</string>
     <string name="rb_C3254_5">Child’s paternal grandmother	</string>
-    <string name="rb_C3254_6">Someone else (specify)	</string>
+    <string name="rb_C3254_OT">Someone else (specify)	</string>
     <string name="rb_C3254_DK">Don’t know	</string>
     <string name="rb_C3255_1">Yes	</string>
     <string name="rb_C3255_2">No	</string>
     <string name="rb_C3255_DK">Don’t know	</string>
+
+    <string name="rb_C3253_2A">Home care (own, relative, neighbor, friend) </string>
+    <string name="rb_C3253_2B">Tra-ditional or non-formal provider </string>
+    <string name="rb_C3253_2C">Phar-macist or drug seller </string>
+    <string name="rb_C3253_3A">Trained community health worker (CHW), nurse, or midwife </string>
+    <string name="rb_C3253_3B">Private doctor or clinic(formal/unsure)</string>
+    <string name="rb_C3253_3C">NGO or govern-ment clinic</string>
+    <string name="rb_C3253_3D">Hospital</string>
+    <string name="cb_C3253_3E_2A">Illness began at provider where child was delivered</string>
+
     <string name="cb_C3256_1">Did not think child/adult was sick enough to need health care	</string>
     <string name="cb_C3256_2">No one available to accompany	</string>
     <string name="cb_C3256_3">Too much time from caregiver’s duties	</string>
@@ -3008,6 +3076,125 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="cb_C3256_12">Was late at night (transportation or provider not available)	</string>
     <string name="cb_C3256_DK">Do not know</string>
     <string name="cb_C3256_14">Don’t know	</string>
+
+
+    <string name="rb_C3258_1_1">Normal	</string>
+    <string name="rb_C3258_1_2">Modern	</string>
+    <string name="rb_C3258_1_3">Svr	</string>
+    <string name="rb_C3258_1_DK">Don\'t Know	</string>
+    <string name="rb_C3258_2_1">Normal	</string>
+    <string name="rb_C3258_2_2">Modern	</string>
+    <string name="rb_C3258_2_3">Svr	</string>
+    <string name="rb_C3258_2_DK">Don\'t Know	</string>
+    <string name="rb_C3259_1_1">Government hospital	</string>
+    <string name="rb_C3259_1_2">Government health center	</string>
+    <string name="rb_C3259_1_3">Government health post	</string>
+    <string name="rb_C3259_1_4">Mobile clinic	</string>
+    <string name="rb_C3259_1_5">Trained CHW, nurse or midwife (outside a health facility)	</string>
+    <string name="rb_C3259_1_6">Other public sector	</string>
+    <string name="rb_C3259_1_7">Private hospital	</string>
+    <string name="rb_C3259_1_8">Private doctor/clinic	</string>
+    <string name="rb_C3259_1_9">Mobile clinic	</string>
+    <string name="rb_C3259_1_10">Trained CHW, nurse or midwife (outside a health facility)	</string>
+    <string name="rb_C3259_1_11">Other private medical sector	</string>
+    <string name="rb_C3259_1_DK">Don’t know	</string>
+    <string name="rb_C3260_1">Yes, reached before died	</string>
+    <string name="rb_C3260_2">No, died on route to this provider / before this provider reached the deceased	</string>
+    <string name="rb_C3260_3">No, could not reach this provider, so returned home or took other action	</string>
+    <string name="rb_C3260_DK">Don’t know	</string>
+    <string name="rb_C3262_1">Yes	</string>
+    <string name="rb_C3262_2">No	</string>
+    <string name="rb_C3262_DK">Don’t know	</string>
+    <string name="rb_C3263_1">Yes	</string>
+    <string name="rb_C3263_2">No	</string>
+    <string name="rb_C3263_DK">Don’t know	</string>
+    <string name="rb_C3264_1_1">Government hospital	</string>
+    <string name="rb_C3264_1_2">Government health center	</string>
+    <string name="rb_C3264_1_3">Government health post	</string>
+    <string name="rb_C3264_1_4">Mobile clinic	</string>
+    <string name="rb_C3264_1_5">Trained CHW, nurse or midwife (outside a health facility)	</string>
+    <string name="rb_C3264_1_6">Other public sector	</string>
+    <string name="rb_C3264_1_7">Private hospital	</string>
+    <string name="rb_C3264_1_8">Private doctor/clinic	</string>
+    <string name="rb_C3264_1_9">Mobile clinic	</string>
+    <string name="rb_C3264_1_10">Trained CHW, nurse or midwife (outside a health facility)	</string>
+    <string name="rb_C3264_1_11">Other private medical sector	</string>
+    <string name="rb_C3264_1_DK">Don’t know	</string>
+    <string name="rb_C3265_1_1">Yes	</string>
+    <string name="rb_C3265_1_2">No	</string>
+    <string name="rb_C3265_1_DK">Don\'t Know	</string>
+    <string name="rb_C3265_2_1">Yes	</string>
+    <string name="rb_C3265_2_2">No	</string>
+    <string name="rb_C3265_2_DK">Don\'t Know	</string>
+    <string name="rb_C3266_1">Yes, left alive	</string>
+    <string name="rb_C3266_2">No, died at this provider	</string>
+    <string name="rb_C3267_1_1">Normal	</string>
+    <string name="rb_C3267_1_2">Modern	</string>
+    <string name="rb_C3267_1_3">Svr	</string>
+    <string name="rb_C3267_1_DK">Don\'t Know	</string>
+    <string name="rb_C3267_2_1">Normal	</string>
+    <string name="rb_C3267_2_2">Modern	</string>
+    <string name="rb_C3267_2_3">Svr	</string>
+    <string name="rb_C3267_2_DK">Don\'t Know	</string>
+    <string name="rb_C3268_1_1">Normal	</string>
+    <string name="rb_C3268_1_2">Modern	</string>
+    <string name="rb_C3268_1_3">Svr	</string>
+    <string name="rb_C3268_1_DK">Don\'t Know	</string>
+    <string name="rb_C3268_2_1">Normal	</string>
+    <string name="rb_C3268_2_2">Modern	</string>
+    <string name="rb_C3268_2_3">Svr	</string>
+    <string name="rb_C3268_2_DK">Don\'t Know	</string>
+    <string name="rb_C3269_1_1">Government hospital	</string>
+    <string name="rb_C3269_1_2">Government health center	</string>
+    <string name="rb_C3269_1_3">Government health post	</string>
+    <string name="rb_C3269_1_4">Mobile clinic	</string>
+    <string name="rb_C3269_1_5">Trained CHW, nurse or midwife (outside a health facility)	</string>
+    <string name="rb_C3269_1_6">Other public sector	</string>
+    <string name="rb_C3269_1_7">Private hospital	</string>
+    <string name="rb_C3269_1_8">Private doctor/clinic	</string>
+    <string name="rb_C3269_1_9">Mobile clinic	</string>
+    <string name="rb_C3269_1_10">Trained CHW, nurse or midwife (outside a health facility)	</string>
+    <string name="rb_C3269_1_11">Other private medical sector	</string>
+    <string name="rb_C3269_1_DK">Don’t know	</string>
+    <string name="rb_C3270_1">Yes, reached before died	</string>
+    <string name="rb_C3270_2">No, died on route to this provider / before this provider reached the deceased	</string>
+    <string name="rb_C3270_3">No, could not reach this provider, so returned home or took other action	</string>
+    <string name="rb_C3270_DK">Don’t know	</string>
+    <string name="rb_C3272_1">Yes	</string>
+    <string name="rb_C3272_2">No	</string>
+    <string name="rb_C3272_DK">Don’t know	</string>
+    <string name="rb_C3273_1">Yes	</string>
+    <string name="rb_C3273_2">No	</string>
+    <string name="rb_C3273_DK">Don’t know	</string>
+    <string name="rb_C3274_1_1">Government hospital	</string>
+    <string name="rb_C3274_1_2">Government health center	</string>
+    <string name="rb_C3274_1_3">Government health post	</string>
+    <string name="rb_C3274_1_4">Mobile clinic	</string>
+    <string name="rb_C3274_1_5">Trained CHW, nurse or midwife (outside a health facility)	</string>
+    <string name="rb_C3274_1_6">Other public sector	</string>
+    <string name="rb_C3274_1_7">Private hospital	</string>
+    <string name="rb_C3274_1_8">Private doctor/clinic	</string>
+    <string name="rb_C3274_1_9">Mobile clinic	</string>
+    <string name="rb_C3274_1_10">Trained CHW, nurse or midwife (outside a health facility)	</string>
+    <string name="rb_C3274_1_11">Other private medical sector	</string>
+    <string name="rb_C3274_1_DK">Don’t know	</string>
+    <string name="rb_C3275_1_1">Yes	</string>
+    <string name="rb_C3275_1_2">No	</string>
+    <string name="rb_C3275_1_DK">Don\'t Know	</string>
+    <string name="rb_C3275_2_1">Yes	</string>
+    <string name="rb_C3275_2_2">No	</string>
+    <string name="rb_C3275_2_DK">Don\'t Know	</string>
+    <string name="rb_C3276_1">Yes, left alive	</string>
+    <string name="rb_C3276_2">No, died at this provider	</string>
+    <string name="rb_C3277_1_1">Normal	</string>
+    <string name="rb_C3277_1_2">Modern	</string>
+    <string name="rb_C3277_1_3">Svr	</string>
+    <string name="rb_C3277_1_DK">Don\'t Know	</string>
+    <string name="rb_C3277_2_1">Normal	</string>
+    <string name="rb_C3277_2_2">Modern	</string>
+    <string name="rb_C3277_2_3">Svr	</string>
+    <string name="rb_C3277_2_DK">Don\'t Know	</string>
+
     <string name="rb_C3278_1">Yes	</string>
     <string name="rb_C3278_2">No	</string>
     <string name="rb_C3278_DK">Don’t know	</string>
@@ -3029,8 +3216,10 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="cb_C3280_13">Thought s/he will die despite care	</string>
     <string name="cb_C3280_14">Was late at night	</string>
     <string name="cb_C3280_15">The child/adult died before going	</string>
-
     <string name="cb_C3280_DK">Don’t know	</string>
+    <string name="cb_C3280_OT">Other	</string>
+
+
     <string name="rb_C3281_1">Yes	</string>
     <string name="rb_C3281_2">No	</string>
     <string name="rb_C3281_DK">Don’t know	</string>

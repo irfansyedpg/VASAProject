@@ -2,13 +2,19 @@ package com.irfansyed.VAS.VASMonitring.N;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.GS.InterviewEnd;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.N2321N2322Binding;
+
+import java.io.File;
 
 import Global.N.N2012_N2016;
 import data.DBHelper;
@@ -19,6 +25,10 @@ public class N2321_N2322 extends AppCompatActivity {
 
     N2321N2322Binding bi;
     boolean flag_n2016 = true;
+
+    private static final int CONTENT_REQUEST = 1337;
+    int count = 1;
+    private File output = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,12 +49,18 @@ public class N2321_N2322 extends AppCompatActivity {
         DBHelper db = new DBHelper(this);
 
         String n2016 = db.getSpecificData(data.N.N2012_N2016.TABLE_NAME, "id", N2012_N2016.sub_N2012_N2016.N2016);
-        if (Integer.valueOf(n2016) == 1) {
-            flag_n2016 = false;
+        if (n2016 != null) {
+            if (Integer.valueOf(n2016) == 1) {
+                flag_n2016 = false;
+            }
         }
     }
 
     public void SetContentUI() {
+
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
+        bi.btnContinue.setEnabled(false);
 
         //Conditions
         if (!flag_n2016) {
@@ -57,12 +73,47 @@ public class N2321_N2322 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, N2001_N2011.class));
+                startActivity(new Intent(this, InterviewEnd.class));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void BtnCapture() {
+
+        String RootDir = Environment.getExternalStorageDirectory()
+                + File.separator + "VASA" + File.separator + bi.edStudyId.getText().toString();
+        File RootFile = new File(RootDir);
+        boolean success = true;
+        if (!RootFile.exists()) {
+            success = RootFile.mkdir();
+        }
+        if (success) {
+            Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            output = new File(RootDir, "N2321_" + count + ".jpeg");
+
+            i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
+            startActivityForResult(i, CONTENT_REQUEST);
+        } else {
+            Toast.makeText(this, "Can't create folder!!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == CONTENT_REQUEST) {
+            if (resultCode == RESULT_OK) {
+
+                bi.txtCapCount.setText("Pictures Attached: " + String.valueOf(count));
+
+                Toast.makeText(this, "Image capture done!!", Toast.LENGTH_SHORT).show();
+                bi.btnContinue.setEnabled(true);
+
+                count++;
+            }
         }
     }
 
@@ -76,7 +127,7 @@ public class N2321_N2322 extends AppCompatActivity {
                 : bi.rbN2322DK.isChecked() ? "9" : "0");
 
 
-        n2321.setSTUDYID("");
+        n2321.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2321(n2321);
 

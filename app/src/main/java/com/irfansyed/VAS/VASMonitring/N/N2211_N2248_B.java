@@ -33,7 +33,10 @@ public class N2211_N2248_B extends AppCompatActivity {
 
     }
 
-    public void SetContentUI() {
+    private void SetContentUI() {
+
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
 
         if (count == 1) {
             bi.llN22133E2A.setVisibility(View.VISIBLE); //ll_N2213_3E_2A
@@ -53,7 +56,8 @@ public class N2211_N2248_B extends AppCompatActivity {
 
                 count = 1;
 
-                startActivity(new Intent(this, N2211_N2248_C.class));
+                startActivity(new Intent(this, N2211_N2248_C.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -73,7 +77,7 @@ public class N2211_N2248_B extends AppCompatActivity {
         n2211B.setACT_COUNT(String.valueOf(count));
         n2211B.setACT_ID_FK(String.valueOf(n2211A_ID));
 
-        n2211B.setSTUDYID("");
+        n2211B.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2211_B(n2211B);
 
@@ -86,7 +90,8 @@ public class N2211_N2248_B extends AppCompatActivity {
             if (SaveData()) {
                 count++;
                 finish();
-                startActivity(new Intent(this, N2211_N2248_B.class));
+                startActivity(new Intent(this, N2211_N2248_B.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }

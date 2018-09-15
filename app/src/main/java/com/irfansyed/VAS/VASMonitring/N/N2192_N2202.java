@@ -32,7 +32,10 @@ public class N2192_N2202 extends AppCompatActivity {
 
     }
 
-    public void SetContentUI() {
+    private void SetContentUI() {
+
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
 
         bi.rgN2192.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -99,7 +102,8 @@ public class N2192_N2202 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, N2211_N2248_A.class));
+                startActivity(new Intent(this, N2211_N2248_A.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -143,7 +147,7 @@ public class N2192_N2202 extends AppCompatActivity {
         n2192.setN2202_DK(bi.cbN2202DK.isChecked() ? "9" : "0");
 
 
-        n2192.setSTUDYID("");
+        n2192.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2192(n2192);
 
