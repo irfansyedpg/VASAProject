@@ -93,7 +93,7 @@ public class Q1101_Q1610 {
 
         String query;
 
-        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' INTEGER,   " +
+        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' TEXT,   " +
 
                 Q1101_Q1610.Q1101 + " TEXT," +
                 Q1101_Q1610.Q1102 + " TEXT," +

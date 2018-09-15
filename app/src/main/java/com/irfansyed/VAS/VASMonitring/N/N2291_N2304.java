@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.N2291N2304Binding;
 
@@ -108,7 +109,9 @@ public class N2291_N2304 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, N2311_N2317.class).putExtra("valFlag", bi.rbN2300DK.isChecked()));
+                startActivity(new Intent(this, N2311_N2317.class)
+                        .putExtra("valFlag", bi.rbN2300DK.isChecked())
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -241,7 +244,7 @@ public class N2291_N2304 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), 14);
     }
 
 }

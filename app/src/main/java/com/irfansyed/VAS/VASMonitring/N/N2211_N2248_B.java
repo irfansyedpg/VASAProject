@@ -56,7 +56,8 @@ public class N2211_N2248_B extends AppCompatActivity {
 
                 count = 1;
 
-                startActivity(new Intent(this, N2211_N2248_C.class));
+                startActivity(new Intent(this, N2211_N2248_C.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -89,7 +90,8 @@ public class N2211_N2248_B extends AppCompatActivity {
             if (SaveData()) {
                 count++;
                 finish();
-                startActivity(new Intent(this, N2211_N2248_B.class));
+                startActivity(new Intent(this, N2211_N2248_B.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }

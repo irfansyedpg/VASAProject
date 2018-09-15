@@ -8,6 +8,7 @@ import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.N2192N2202Binding;
 
@@ -102,7 +103,8 @@ public class N2192_N2202 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, N2211_N2248_A.class));
+                startActivity(new Intent(this, N2211_N2248_A.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -251,6 +253,6 @@ public class N2192_N2202 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), 10);
     }
 }

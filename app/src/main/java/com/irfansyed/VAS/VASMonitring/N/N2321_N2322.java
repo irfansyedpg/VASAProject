@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.GS.InterviewEnd;
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.N2321N2322Binding;
 
@@ -72,7 +74,7 @@ public class N2321_N2322 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, N2001_N2011.class));
+                startActivity(new Intent(this, InterviewEnd.class));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -150,6 +152,6 @@ public class N2321_N2322 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), 16);
     }
 }

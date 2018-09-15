@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -13,6 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
+import com.irfansyed.VAS.VASMonitring.C.C3471_C3472;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.util.Collections;
@@ -88,8 +91,8 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder b = new AlertDialog.Builder(mContext);
-                b.setTitle("Upload Interview");
-                b.setMessage("Do you want to upload this interview ");
+                b.setTitle("Load Pending Interview");
+                b.setMessage("Do you want to reload this interview ");
                 b.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -99,7 +102,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
                         String[] arrr = memberId.split("/");
 
-                        // col_A.data_upload_id=arrr[1];
+                         Global.C.C3001_C3011.study_id = arrr[0];
 
                         new UploadHouseInfoAsync(mContext).execute();
                         //    new UploadSectionEAsync(mContext, "3").execute(); // irfan
@@ -110,9 +113,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
-                        // Intent intent = null;
 
-                        //   intent = new Intent(this, SurveyCompletedActivity.class);
                     }
                 }).show();
             }

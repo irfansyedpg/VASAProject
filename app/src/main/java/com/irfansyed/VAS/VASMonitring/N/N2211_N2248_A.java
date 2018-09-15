@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.N2211N2248ABinding;
 
@@ -34,7 +35,8 @@ public class N2211_N2248_A extends AppCompatActivity {
         if (validateField()) {
             if (SaveData()) {
                 startActivity(new Intent(this, bi.rbN22121.isChecked() ? N2211_N2248_B.class : N2211_N2248_C.class)
-                        .putExtra("valFlag", bi.rbN22122.isChecked() ? 2 : 9));
+                        .putExtra("valFlag", bi.rbN22122.isChecked() ? 2 : 9)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -51,7 +53,7 @@ public class N2211_N2248_A extends AppCompatActivity {
         n2211.setN22112(bi.rbN221121.isChecked() ? "1" : bi.rbN221122.isChecked() ? "2" : bi.rbN221123.isChecked() ? "3" : bi.rbN22112DK.isChecked() ? "9" : "0");
         n2211.setN2212(bi.rbN22121.isChecked() ? "1" : bi.rbN22122.isChecked() ? "2" : bi.rbN2212DK.isChecked() ? "9" : "0");
 
-        n2211.setSTUDYID("0");
+        n2211.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2211_A_C(n2211);
 
@@ -78,6 +80,6 @@ public class N2211_N2248_A extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), 11);
     }
 }

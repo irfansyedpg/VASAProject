@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.Core.HomeActivity;
+import com.irfansyed.VAS.VASMonitring.GS.InterviewEnd;
 import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
@@ -135,7 +136,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
         value_assignment();
         insert_data();
 
-        Intent c = new Intent(this, HomeActivity.class);
+        Intent c = new Intent(this, InterviewEnd.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
 

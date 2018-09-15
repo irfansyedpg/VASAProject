@@ -29,7 +29,7 @@ public class SplashScreenActivity extends AppCompatActivity {
          //  preferences.setReq1("http://43.245.131.159/umeed/Monitoring");
 
 
-        preferences.setReq1("http://10.198.96.203/sm/welcome/collect_upload_data");
+        preferences.setReq1("http://10.199.16.13/sm/Welcome/collect_upload_data");
 
 
      //   preferences.setReqLogin("http://10.198.96.124:61259/Testing/check_user_id");
@@ -56,7 +56,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                     SplashScreenActivity.this.startActivity(mainIntent);
                     SplashScreenActivity.this.finish();
             }
-        }, 2000);
+        }, 1000);
     }
 
 
