@@ -23,7 +23,58 @@ public class LocationHelper {
     LocationResult locationResult;
     boolean gps_enabled = false;
     boolean network_enabled = false;
+    LocationListener locationListenerGps = new LocationListener() {
 
+        public void onLocationChanged(Location location) {
+
+            // gave a location, cancel the timer
+            timer1.cancel();
+
+            // put the location value
+            locationResult.gotLocation(location);
+
+            // if you want to stop listening to gps location updates, un-comment the code below
+
+            // lm.removeUpdates(this);
+            // lm.removeUpdates(locationListenerNetwork);
+
+        }
+
+        public void onProviderDisabled(String provider) {
+        }
+
+        public void onProviderEnabled(String provider) {
+        }
+
+        public void onStatusChanged(String provider, int status, Bundle extras) {
+        }
+    };
+    LocationListener locationListenerNetwork = new LocationListener() {
+
+        public void onLocationChanged(Location location) {
+
+            // gave a location, cancel the timer
+            timer1.cancel();
+
+            // put the location value
+            locationResult.gotLocation(location);
+
+            // if you want to stop listening to network location updates, un-comment the code below
+
+            // lm.removeUpdates(this);
+            // lm.removeUpdates(locationListenerGps);
+
+        }
+
+        public void onProviderDisabled(String provider) {
+        }
+
+        public void onProviderEnabled(String provider) {
+        }
+
+        public void onStatusChanged(String provider, int status, Bundle extras) {
+        }
+    };
 
     public boolean getLocation(Context context, LocationResult result) {
 
@@ -72,61 +123,10 @@ public class LocationHelper {
         return true;
     }
 
-    LocationListener locationListenerGps = new LocationListener() {
-
-        public void onLocationChanged(Location location) {
-
-            // gave a location, cancel the timer
-            timer1.cancel();
-
-            // put the location value
-            locationResult.gotLocation(location);
-
-            // if you want to stop listening to gps location updates, un-comment the code below
-
-            // lm.removeUpdates(this);
-            // lm.removeUpdates(locationListenerNetwork);
-
-        }
-
-        public void onProviderDisabled(String provider) {}
-
-        public void onProviderEnabled(String provider) {}
-
-        public void onStatusChanged(String provider, int status, Bundle extras) {}
-    };
-
-    LocationListener locationListenerNetwork = new LocationListener() {
-
-        public void onLocationChanged(Location location) {
-
-            // gave a location, cancel the timer
-            timer1.cancel();
-
-            // put the location value
-            locationResult.gotLocation(location);
-
-            // if you want to stop listening to network location updates, un-comment the code below
-
-            // lm.removeUpdates(this);
-            // lm.removeUpdates(locationListenerGps);
-
-        }
-
-        public void onProviderDisabled(String provider) {
-        }
-
-        public void onProviderEnabled(String provider) {
-        }
-
-        public void onStatusChanged(String provider, int status, Bundle extras) {
-        }
-    };
-
     // stop listening to location updates
-    public void stopGettingLocationUpdates(){
+    public void stopGettingLocationUpdates() {
 
-        try{
+        try {
 
             lm.removeUpdates(locationListenerGps);
             lm.removeUpdates(locationListenerNetwork);
@@ -134,6 +134,10 @@ public class LocationHelper {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public static abstract class LocationResult {
+        public abstract void gotLocation(Location location);
     }
 
     class GetLastLocation extends TimerTask {
@@ -180,10 +184,6 @@ public class LocationHelper {
 
             locationResult.gotLocation(null);
         }
-    }
-
-    public static abstract class LocationResult {
-        public abstract void gotLocation(Location location);
     }
 
 }

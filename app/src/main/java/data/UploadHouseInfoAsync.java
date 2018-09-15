@@ -18,14 +18,25 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 
-
+import Global.A.A4001_A4014;
+import Global.A.A4051_A4066;
+import Global.A.A4067_A4080;
+import Global.A.A4081_A4094;
+import Global.A.A4095_A4108;
+import Global.A.A4109_A4125;
+import Global.A.A4126_A4140;
+import Global.A.A4144_A4156;
+import Global.A.A4157_A4205;
+import Global.A.A4206_A4207;
+import Global.A.A4251_A4284;
+import Global.A.A4301_A4315;
+import Global.A.A4351_A4364;
+import Global.A.A4401_A4473;
+import Global.C.C3001_C3011;
+import data.GS.Q1101_Q1610;
 import utils.MyPreferences;
 import utils.PostRequestData;
 import utils.QuestionModel;
-
-
-
-import static data.LocalDataManager.database;
 
 /**
  * Created by Umeed-e-Nau on 12/28/2016.
@@ -57,319 +68,243 @@ public class UploadHouseInfoAsync extends AsyncTask {
         dialog.setCancelable(false);
         dialog.show();
 
+        HashMap<String, List<String>> map = QuestionModel.quest.get("a");
+
+        //region Query
+        String query1 = "select * from Q1101_Q1610 where study_id = '%s' order by id  desc LIMIT 1";
+        String query2 = "select * from A4001_A4014 where study_id = '%s' order by id  desc LIMIT 1";
+        String query3 = "select * from A4051_A4066 where study_id = '%s' order by id  desc LIMIT 1";
+        String query4 = "select * from A4067_A4080 where study_id = '%s' order by id  desc LIMIT 1";
+        String query5 = "select * from A4081_A4094 where study_id = '%s' order by id  desc LIMIT 1";
+        String query6 = "select * from A4095_A4108 where study_id = '%s' order by id  desc LIMIT 1";
+        String query7 = "select * from A4109_A4125 where study_id = '%s' order by id  desc LIMIT 1";
+        String query8 = "select * from A4126_A4140 where study_id = '%s' order by id  desc LIMIT 1";
+        String query9 = "select * from A4144_A4156 where study_id = '%s' order by id  desc LIMIT 1";
+        String query10 = "select * from A4157_A4205 where study_id = '%s' order by id  desc LIMIT 1";
+        String query11 = "select * from A4206_A4207 where study_id = '%s' order by id  desc LIMIT 1";
+        String query12 = "select * from A4251_A4284 where study_id = '%s' order by id  desc LIMIT 1";
+        String query13 = "select * from A4301_A4315 where study_id = '%s' order by id  desc LIMIT 1";
+        String query14 = "select * from A4351_A4364 where study_id = '%s' order by id  desc LIMIT 1";
+        String query15 = "select * from A4401_A4473 where study_id = '%s' order by id  desc LIMIT 1";
+        String query16 = "select * from C3001_C3011 where study_id = '%s'  order by id  desc LIMIT 1";
+
+        query1 = String.format(query1, Q1101_Q1610.study_id);
+        query2 = String.format(query2, A4001_A4014.study_id);
+        query3 = String.format(query3, A4051_A4066.study_id);
+        query4 = String.format(query4, A4067_A4080.study_id);
+        query5 = String.format(query5, A4081_A4094.study_id);
+        query6 = String.format(query6, A4095_A4108.study_id);
+        query7 = String.format(query7, A4109_A4125.study_id);
+        query8 = String.format(query8, A4126_A4140.study_id);
+        query9 = String.format(query9, A4144_A4156.study_id);
+        query10 = String.format(query10, A4157_A4205.study_id);
+        query11 = String.format(query11, A4206_A4207.study_id);
+        query12 = String.format(query12, A4251_A4284.study_id);
+        query13 = String.format(query13, A4301_A4315.study_id);
+        query14 = String.format(query14, A4351_A4364.study_id);
+        query15 = String.format(query15, A4401_A4473.study_id);
+        query16 = String.format(query16, C3001_C3011.study_id);
+
+        LocalDataManager Lm = new LocalDataManager(mContext);
+
+        //Cursor c = LocalDataManager.database.rawQuery(query, null);
+        Cursor c1 = LocalDataManager.database.rawQuery(query1, null);
+        Cursor c2 = LocalDataManager.database.rawQuery(query2, null);
+        Cursor c3 = LocalDataManager.database.rawQuery(query3, null);
+        Cursor c4 = LocalDataManager.database.rawQuery(query4, null);
+        Cursor c5 = LocalDataManager.database.rawQuery(query5, null);
+        Cursor c6 = LocalDataManager.database.rawQuery(query6, null);
+        Cursor c7 = LocalDataManager.database.rawQuery(query7, null);
+        Cursor c8 = LocalDataManager.database.rawQuery(query8, null);
+        Cursor c9 = LocalDataManager.database.rawQuery(query9, null);
+        Cursor c10 = LocalDataManager.database.rawQuery(query10, null);
+        Cursor c11 = LocalDataManager.database.rawQuery(query11, null);
+        Cursor c12 = LocalDataManager.database.rawQuery(query12, null);
+        Cursor c13 = LocalDataManager.database.rawQuery(query13, null);
+        Cursor c14 = LocalDataManager.database.rawQuery(query14, null);
+        Cursor c15 = LocalDataManager.database.rawQuery(query15, null);
+        Cursor c16 = LocalDataManager.database.rawQuery(query16, null);
 
 
-          HashMap<String, List<String>> map = QuestionModel.quest.get("a");
+        if (c1 != null) {
+            if (c1.moveToFirst()) {
+                param.put("tableName", "q1101_q1610");
+                param.put("id", c1.getString(0));
+                param.put(Q1101_Q1610.study_id, c1.getString(1));
+                param.put(Q1101_Q1610.Q1101, c1.getString(2));
+                param.put(Q1101_Q1610.Q1102, c1.getString(3));
+                param.put(Q1101_Q1610.Q1103, c1.getString(4));
+                param.put(Q1101_Q1610.Q1202, c1.getString(5));
+                param.put(Q1101_Q1610.Q1202, c1.getString(6));
+                param.put(Q1101_Q1610.Q1203, c1.getString(7));
+                param.put(Q1101_Q1610.Q1204, c1.getString(8));
+                param.put(Q1101_Q1610.Q1205, c1.getString(9));
+                param.put(Q1101_Q1610.Q1206_d, c1.getString(10));
+                param.put(Q1101_Q1610.Q1206_m, c1.getString(11));
+                param.put(Q1101_Q1610.Q1206_y, c1.getString(12));
+                param.put(Q1101_Q1610.Q1207, c1.getString(13));
+                param.put(Q1101_Q1610.Q1208, c1.getString(14));
+                param.put(Q1101_Q1610.Q1209, c1.getString(15));
+                param.put(Q1101_Q1610.Q1301, c1.getString(16));
+                param.put(Q1101_Q1610.Q1302, c1.getString(17));
+                param.put(Q1101_Q1610.Q1307, c1.getString(18));
+                param.put(Q1101_Q1610.Q1308, c1.getString(19));
+                param.put(Q1101_Q1610.Q1309, c1.getString(20));
+                param.put(Q1101_Q1610.Q1310, c1.getString(21));
+                param.put(Q1101_Q1610.Q1311, c1.getString(22));
+                param.put(Q1101_Q1610.Q1312, c1.getString(23));
+                param.put(Q1101_Q1610.Q1313, c1.getString(24));
+                param.put(Q1101_Q1610.Q1401, c1.getString(25));
+                param.put(Q1101_Q1610.Q1402, c1.getString(26));
+                param.put(Q1101_Q1610.Q1403, c1.getString(27));
+                param.put(Q1101_Q1610.Q1403_OT, c1.getString(28));
+                param.put(Q1101_Q1610.Q1404, c1.getString(29));
+                param.put(Q1101_Q1610.Q1405, c1.getString(30));
+                param.put(Q1101_Q1610.Q1406, c1.getString(31));
+                param.put(Q1101_Q1610.Q1407, c1.getString(32));
+                param.put(Q1101_Q1610.Q1408, c1.getString(33));
+                param.put(Q1101_Q1610.Q1409, c1.getString(34));
+                param.put(Q1101_Q1610.Q1410, c1.getString(35));
+                param.put(Q1101_Q1610.Q1411, c1.getString(36));
+                param.put(Q1101_Q1610.Q1412, c1.getString(37));
+                param.put(Q1101_Q1610.Q1413, c1.getString(38));
+                param.put(Q1101_Q1610.Q1414_1, c1.getString(39));
+                param.put(Q1101_Q1610.Q1414_2, c1.getString(40));
+                param.put(Q1101_Q1610.Q1414_3, c1.getString(41));
+                param.put(Q1101_Q1610.Q1414_4, c1.getString(42));
+                param.put(Q1101_Q1610.Q1414_5, c1.getString(43));
+                param.put(Q1101_Q1610.Q1414_6, c1.getString(44));
+                param.put(Q1101_Q1610.Q1414_7, c1.getString(45));
+                param.put(Q1101_Q1610.Q1414_8, c1.getString(46));
+                param.put(Q1101_Q1610.Q1414_9, c1.getString(47));
+                param.put(Q1101_Q1610.Q1414_10, c1.getString(48));
+                param.put(Q1101_Q1610.Q1415, c1.getString(49));
+                param.put(Q1101_Q1610.Q1416, c1.getString(50));
+                param.put(Q1101_Q1610.Q1416_OT, c1.getString(51));
+                param.put(Q1101_Q1610.Q1417, c1.getString(52));
+                param.put(Q1101_Q1610.Q1417_OT, c1.getString(53));
+                param.put(Q1101_Q1610.Q1418, c1.getString(54));
+                param.put(Q1101_Q1610.Q1418_OT, c1.getString(55));
+                param.put(Q1101_Q1610.Q1419, c1.getString(56));
+                param.put(Q1101_Q1610.Q1419_OT, c1.getString(57));
+                param.put(Q1101_Q1610.Q1420, c1.getString(58));
+                param.put(Q1101_Q1610.Q1420_OT, c1.getString(59));
+                param.put(Q1101_Q1610.Q1421, c1.getString(60));
+                param.put(Q1101_Q1610.Q1421_OT, c1.getString(61));
+                param.put(Q1101_Q1610.Q1501, c1.getString(62));
+                param.put(Q1101_Q1610.Q1502, c1.getString(63));
+                param.put(Q1101_Q1610.Q1503, c1.getString(64));
+                param.put(Q1101_Q1610.Q1503_OT, c1.getString(65));
+                param.put(Q1101_Q1610.Q1601, c1.getString(66));
+                param.put(Q1101_Q1610.Q1602, c1.getString(67));
+                param.put(Q1101_Q1610.Q1603, c1.getString(68));
+                param.put(Q1101_Q1610.Q1604, c1.getString(69));
+                param.put(Q1101_Q1610.Q1604_OT, c1.getString(70));
+                param.put(Q1101_Q1610.Q1605, c1.getString(71));
+                param.put(Q1101_Q1610.Q1606, c1.getString(72));
+                param.put(Q1101_Q1610.Q1607_1, c1.getString(73));
+                param.put(Q1101_Q1610.Q1607_2, c1.getString(74));
+                param.put(Q1101_Q1610.Q1607_3, c1.getString(75));
+                param.put(Q1101_Q1610.Q1608_1, c1.getString(76));
+                param.put(Q1101_Q1610.Q1608_2, c1.getString(77));
+                param.put(Q1101_Q1610.Q1608_3, c1.getString(78));
+                param.put(Q1101_Q1610.Q1609, c1.getString(79));
+                param.put(Q1101_Q1610.Q1610_1, c1.getString(80));
+                param.put(Q1101_Q1610.Q1610_2, c1.getString(81));
+                param.put(Q1101_Q1610.Q1610_3, c1.getString(82));
+                param.put(Q1101_Q1610.interviewType, c1.getString(83));
+                param.put(Q1101_Q1610.currentSection, c1.getString(84));
+                param.put(Q1101_Q1610.STATUS, c1.getString(85));
+            }
+        }
 
 
+        if (c2 != null) {
+            if (c2.moveToFirst()) {
+                param.put("tableName", "a4001_a4014");
+                param.put("id", c2.getString(0));
+                param.put(A4001_A4014.study_id, c2.getString(1));
+                param.put(A4001_A4014.A4001, c2.getString(2));
+                param.put(A4001_A4014.A4002, c2.getString(3));
+                param.put(A4001_A4014.A4003, c2.getString(4));
+                param.put(A4001_A4014.A4004, c2.getString(5));
+                param.put(A4001_A4014.A4005, c2.getString(6));
+                param.put(A4001_A4014.A4006, c2.getString(7));
+                param.put(A4001_A4014.A4007, c2.getString(8));
+                param.put(A4001_A4014.A4007_1, c2.getString(9));
+                param.put(A4001_A4014.A4008, c2.getString(10));
+                param.put(A4001_A4014.A4009a, c2.getString(11));
+                param.put(A4001_A4014.A4010, c2.getString(12));
+                param.put(A4001_A4014.A4011, c2.getString(13));
+                param.put(A4001_A4014.A4012, c2.getString(14));
+                param.put(A4001_A4014.A4013u, c2.getString(15));
+                param.put(A4001_A4014.A4013d, c2.getString(16));
+                param.put(A4001_A4014.A4013m, c2.getString(17));
+                param.put(A4001_A4014.A4013y, c2.getString(18));
+                param.put(A4001_A4014.STATUS, c2.getString(19));
+            }
+        }
 
+        if (c3 != null) {
+            if (c3.moveToFirst()) {
+                param.put("tableName", "a4051_a4066");
+                param.put("id", c3.getString(0));
+                param.put(A4051_A4066.study_id, c3.getString(1));
+                param.put(A4051_A4066.A4051, c3.getString(2));
+                param.put(A4051_A4066.A4052_u, c3.getString(3));
+                param.put(A4051_A4066.A4052_b, c3.getString(4));
+                param.put(A4051_A4066.A4052_c, c3.getString(5));
+                param.put(A4051_A4066.A4053, c3.getString(6));
+                param.put(A4051_A4066.A4054, c3.getString(7));
+                param.put(A4051_A4066.A4055, c3.getString(8));
+                param.put(A4051_A4066.A4056, c3.getString(9));
+                param.put(A4051_A4066.A4057, c3.getString(10));
+                param.put(A4051_A4066.A4058, c3.getString(11));
+                param.put(A4051_A4066.A4059_u, c3.getString(12));
+                param.put(A4051_A4066.A4059_a, c3.getString(13));
+                param.put(A4051_A4066.A4059_b, c3.getString(14));
+                param.put(A4051_A4066.A4060, c3.getString(15));
+                param.put(A4051_A4066.A4061, c3.getString(16));
+                param.put(A4051_A4066.A4062, c3.getString(17));
+                param.put(A4051_A4066.A4063, c3.getString(18));
+                param.put(A4051_A4066.A4064_u, c3.getString(19));
+                param.put(A4051_A4066.A4064_a, c3.getString(20));
+                param.put(A4051_A4066.A4064_b, c3.getString(21));
+                param.put(A4051_A4066.A4064_1, c3.getString(22));
+                param.put(A4051_A4066.A4065, c3.getString(23));
+                param.put(A4051_A4066.A4066, c3.getString(24));
+                param.put(A4051_A4066.STATUS, c3.getString(25));
+            }
+        }
 
-          //region Query
+        if (c16 != null) {
+            if (c16.moveToFirst()) {
 
-        String  query = "select * from ttable where id = '%s' order by id  desc LIMIT 1";
+                param.put("tableName", "c3001_c3011");
+                param.put("id", c16.getString(0));
+                param.put(C3001_C3011.study_id, c16.getString(1));
+                param.put(C3001_C3011.C3001, c16.getString(2));
+                param.put(C3001_C3011.C3002, c16.getString(3));
+                param.put(C3001_C3011.C3003, c16.getString(4));
+                param.put(C3001_C3011.C3004, c16.getString(5));
+                param.put(C3001_C3011.C3005u, c16.getString(6));
+                param.put(C3001_C3011.C3005d, c16.getString(7));
+                param.put(C3001_C3011.C3005w, c16.getString(8));
+                param.put(C3001_C3011.C3005m, c16.getString(9));
+                param.put(C3001_C3011.C3006, c16.getString(10));
+                param.put(C3001_C3011.C3006_OT, c16.getString(11));
+                param.put(C3001_C3011.C3008, c16.getString(12));
+                param.put(C3001_C3011.C3008_OT, c16.getString(13));
+                param.put(C3001_C3011.C3009_1, c16.getString(14));
+                param.put(C3001_C3011.C3009_2, c16.getString(15));
+                param.put(C3001_C3011.C3009_3, c16.getString(16));
+                param.put(C3001_C3011.C3009_4, c16.getString(17));
+                param.put(C3001_C3011.C3010, c16.getString(18));
+                param.put(C3001_C3011.C3011, c16.getString(19));
+            }
+        }
 
-
-
-      //  query="select * from hfa h join tbllog lg on h.id=lg.hfa_id  where h.id = %s ORDER BY h.id desc LIMIT 1";
-          query = String.format(query, col_A.data_upload_id);
-
-        LocalDataManager Lm=  new  LocalDataManager(mContext);
-          Cursor c = Lm.database.rawQuery(query, null);
-
-
-
-
-          if (c != null) {
-              if (c.moveToFirst())
-              {
-                  param.put("app_id", c.getString(0));
-                  param.put("Q1_1", c.getString(	1	));
-              /*    param.put("Q1", c.getString(	2	));
-                  param.put("Q2", c.getString(	3	));
-                  param.put("Q3", c.getString(	4	));
-                  param.put("Q4", c.getString(	5	));
-                  param.put("Q5", c.getString(	6	));
-                  param.put("Q6", c.getString(	7	));
-                  param.put("Q6_1", c.getString(	8	));
-                  param.put("Q7", c.getString(	9	));
-                  param.put("Q8", c.getString(	10	));
-                  param.put("Q9", c.getString(	11	));
-                  param.put("Q10", c.getString(	12	));
-                  param.put("Q10_1 ", c.getString(	13	));
-                  param.put("Q11", c.getString(	14	));
-                  param.put("Q12", c.getString(	15	));
-                  param.put("P1", c.getString(	16	));
-                  param.put("P2", c.getString(	17	));
-                  param.put("P3", c.getString(	18	));
-                  param.put("P4", c.getString(	19	));
-                  param.put("P5", c.getString(	20	));
-                  param.put("P6", c.getString(	21	));
-                  param.put("P7", c.getString(	22	));
-                  param.put("P8", c.getString(	23	));
-                  param.put("P9", c.getString(	24	));
-                  param.put("P10", c.getString(	25	));
-                  param.put("P11", c.getString(	26	));
-                  param.put("P12", c.getString(	27	));
-                  param.put("P13", c.getString(	28	));
-                  param.put("P14", c.getString(	29	));
-                  param.put("P15", c.getString(	30	));
-                  param.put("P16", c.getString(	31	));
-                  param.put("P17", c.getString(	32	));
-                  param.put("P18", c.getString(	33	));
-                  param.put("P19", c.getString(	34	));
-                  param.put("P20", c.getString(	35	));
-                  param.put("P21", c.getString(	36	));
-                  param.put("P22", c.getString(	37	));
-                  param.put("P23", c.getString(	38	));
-                  param.put("P24", c.getString(	39	));
-                  param.put("P25", c.getString(	40	));
-                  param.put("P26", c.getString(	41	));
-                  param.put("P27", c.getString(	42	));
-                  param.put("txt_P1", c.getString(	43	));
-                  param.put("txt_P2", c.getString(	44	));
-                  param.put("txt_P3", c.getString(	45	));
-                  param.put("txt_P4", c.getString(	46	));
-                  param.put("txt_P5", c.getString(	47	));
-                  param.put("txt_P6", c.getString(	48	));
-                  param.put("txt_P7", c.getString(	49	));
-                  param.put("txt_P8", c.getString(	50	));
-                  param.put("txt_P9", c.getString(	51	));
-                  param.put("txt_P10", c.getString(	52	));
-                  param.put("txt_P11", c.getString(	53	));
-                  param.put("txt_P12", c.getString(	54	));
-                  param.put("txt_P13", c.getString(	55	));
-                  param.put("txt_P14", c.getString(	56	));
-                  param.put("txt_P15", c.getString(	57	));
-                  param.put("txt_P16", c.getString(	58	));
-                  param.put("txt_P17", c.getString(	59	));
-                  param.put("txt_P18", c.getString(	60	));
-                  param.put("txt_P19", c.getString(	61	));
-                  param.put("txt_P20", c.getString(	62	));
-                  param.put("txt_P21", c.getString(	63	));
-                  param.put("txt_P22", c.getString(	64	));
-                  param.put("txt_P23", c.getString(	65	));
-                  param.put("txt_P24", c.getString(	66	));
-                  param.put("txt_P25", c.getString(	67	));
-                  param.put("txt_P26", c.getString(	68	));
-                  param.put("txt_P27", c.getString(	69	));
-                  param.put("D1", c.getString(	70	));
-                  param.put("D2", c.getString(	71	));
-                  param.put("D3", c.getString(	72	));
-                  param.put("D4", c.getString(	73	));
-                  param.put("D5", c.getString(	74	));
-                  param.put("D6", c.getString(	75	));
-                  param.put("D7", c.getString(	76	));
-                  param.put("D8", c.getString(	77	));
-                  param.put("D9", c.getString(	78	));
-                  param.put("D10", c.getString(	79	));
-                  param.put("D11", c.getString(	80	));
-                  param.put("D12", c.getString(	81	));
-                  param.put("D13", c.getString(	82	));
-                  param.put("D14", c.getString(	83	));
-                  param.put("D15", c.getString(	84	));
-                  param.put("D16", c.getString(	85	));
-                  param.put("D17", c.getString(	86	));
-                  param.put("D18", c.getString(	87	));
-                  param.put("D19", c.getString(	88	));
-                  param.put("D20", c.getString(	89	));
-                  param.put("D21", c.getString(	90	));
-                  param.put("D22", c.getString(	91	));
-                  param.put("D23", c.getString(	92	));
-                  param.put("D1_txt ", c.getString(	93	));
-                  param.put("D2_txt", c.getString(	94	));
-                  param.put("D3_txt", c.getString(	95	));
-                  param.put("D4_txt", c.getString(	96	));
-                  param.put("D5_txt", c.getString(	97	));
-                  param.put("D6_txt", c.getString(	98	));
-                  param.put("D7_txt", c.getString(	99	));
-                  param.put("D8_txt", c.getString(	100	));
-                  param.put("D9_txt", c.getString(	101	));
-                  param.put("D10_txt", c.getString(	102	));
-                  param.put("D11_txt", c.getString(	103	));
-                  param.put("D12_txt", c.getString(	104	));
-                  param.put("D13_txt", c.getString(	105	));
-                  param.put("D14_txt", c.getString(	106	));
-                  param.put("D15_txt", c.getString(	107	));
-                  param.put("D16_txt", c.getString(	108	));
-                  param.put("D17_txt", c.getString(	109	));
-                  param.put("D18_txt", c.getString(	110	));
-                  param.put("D19_txt", c.getString(	111	));
-                  param.put("D20_txt", c.getString(	112	));
-                  param.put("D21_txt", c.getString(	113	));
-                  param.put("D22_txt", c.getString(	114	));
-                  param.put("D23_txt", c.getString(	115	));
-                  param.put("PNC1", c.getString(	116	));
-                  param.put("PNC2", c.getString(	117	));
-                  param.put("PNC3", c.getString(	118	));
-                  param.put("PNC4", c.getString(	119	));
-                  param.put("PNC5", c.getString(	120	));
-                  param.put("PNC6", c.getString(	121	));
-                  param.put("PNC7", c.getString(	122	));
-                  param.put("PNC8", c.getString(	123	));
-                  param.put("PNC9", c.getString(	124	));
-                  param.put("PNC10 ", c.getString(	125	));
-                  param.put("PNC11 ", c.getString(	126	));
-                  param.put("PNC12 ", c.getString(	127	));
-                  param.put("txt_PNC1", c.getString(	128	));
-                  param.put("txt_PNC2", c.getString(	129	));
-                  param.put("txt_PNC3", c.getString(	130	));
-                  param.put("txt_PNC4", c.getString(	131	));
-                  param.put("txt_PNC5", c.getString(	132	));
-                  param.put("txt_PNC6", c.getString(	133	));
-                  param.put("txt_PNC7", c.getString(	134	));
-                  param.put("txt_PNC8", c.getString(	135	));
-                  param.put("txt_PNC9", c.getString(	136	));
-                  param.put("txt_PNC10 ", c.getString(	137	));
-                  param.put("txt_PNC11 ", c.getString(	138	));
-                  param.put("txt_PNC12 ", c.getString(	139	));
-                  param.put("N1", c.getString(	140	));
-                  param.put("N2", c.getString(	141	));
-                  param.put("N3", c.getString(	142	));
-                  param.put("N4", c.getString(	143	));
-                  param.put("N5", c.getString(	144	));
-                  param.put("N6", c.getString(	145	));
-                  param.put("N7", c.getString(	146	));
-                  param.put("N8", c.getString(	147	));
-                  param.put("N9", c.getString(	148	));
-                  param.put("N10", c.getString(	149	));
-                  param.put("N11", c.getString(	150	));
-                  param.put("N12", c.getString(	151	));
-                  param.put("N13", c.getString(	152	));
-                  param.put("N14", c.getString(	153	));
-                  param.put("N15", c.getString(	154	));
-                  param.put("N16", c.getString(	155	));
-                  param.put("N17", c.getString(	156	));
-                  param.put("N18", c.getString(	157	));
-                  param.put("N19", c.getString(	158	));
-                  param.put("N20", c.getString(	159	));
-                  param.put("N21", c.getString(	160	));
-                  param.put("N22", c.getString(	161	));
-                  param.put("N23", c.getString(	162	));
-                  param.put("N24", c.getString(	163	));
-                  param.put("txt_N1", c.getString(	164	));
-                  param.put("txt_N2", c.getString(	165	));
-                  param.put("txt_N3", c.getString(	166	));
-                  param.put("txt_N4", c.getString(	167	));
-                  param.put("txt_N5", c.getString(	168	));
-                  param.put("txt_N6", c.getString(	169	));
-                  param.put("txt_N7", c.getString(	170	));
-                  param.put("txt_N8", c.getString(	171	));
-                  param.put("txt_N9", c.getString(	172	));
-                  param.put("txt_N10", c.getString(	173	));
-                  param.put("txt_N11", c.getString(	174	));
-                  param.put("txt_N12", c.getString(	175	));
-                  param.put("txt_N13", c.getString(	176	));
-                  param.put("txt_N14", c.getString(	177	));
-                  param.put("txt_N15", c.getString(	178	));
-                  param.put("txt_N16", c.getString(	179	));
-                  param.put("txt_N17", c.getString(	180	));
-                  param.put("txt_N18", c.getString(	181	));
-                  param.put("txt_N19", c.getString(	182	));
-                  param.put("txt_N20", c.getString(	183	));
-                  param.put("txt_N21", c.getString(	184	));
-                  param.put("txt_N22", c.getString(	185	));
-                  param.put("txt_N23", c.getString(	186	));
-                  param.put("txt_N24", c.getString(	187	));
-                  param.put("I1", c.getString(	188	));
-                  param.put("I2", c.getString(	189	));
-                  param.put("I3", c.getString(	190	));
-                  param.put("I4", c.getString(	191	));
-                  param.put("I5", c.getString(	192	));
-                  param.put("I6", c.getString(	193	));
-                  param.put("I7", c.getString(	194	));
-                  param.put("I8", c.getString(	195	));
-                  param.put("I9", c.getString(	196	));
-                  param.put("I10", c.getString(	197	));
-                  param.put("I11", c.getString(	198	));
-                  param.put("txt_I1", c.getString(	199	));
-                  param.put("txt_I2", c.getString(	200	));
-                  param.put("txt_I3", c.getString(	201	));
-                  param.put("txt_I4", c.getString(	202	));
-                  param.put("txt_I5", c.getString(	203	));
-                  param.put("txt_I6", c.getString(	204	));
-                  param.put("txt_I7", c.getString(	205	));
-                  param.put("txt_I8", c.getString(	206	));
-                  param.put("txt_I9", c.getString(	207	));
-                  param.put("txt_I10", c.getString(	208	));
-                  param.put("txt_I11", c.getString(	209	));
-                  param.put("DI1", c.getString(	210	));
-                  param.put("DI2", c.getString(	211	));
-                  param.put("DI3", c.getString(	212	));
-                  param.put("DI4", c.getString(	213	));
-                  param.put("DI5", c.getString(	214	));
-                  param.put("DI6", c.getString(	215	));
-                  param.put("DI7", c.getString(	216	));
-                  param.put("DI8", c.getString(	217	));
-                  param.put("DI9", c.getString(	218	));
-                  param.put("DI10", c.getString(	219	));
-                  param.put("DI11", c.getString(	220	));
-                  param.put("txt_DI1", c.getString(	221	));
-                  param.put("txt_DI2", c.getString(	222	));
-                  param.put("txt_DI3", c.getString(	223	));
-                  param.put("txt_DI4", c.getString(	224	));
-                  param.put("txt_DI5", c.getString(	225	));
-                  param.put("txt_DI6", c.getString(	226	));
-                  param.put("txt_DI7", c.getString(	227	));
-                  param.put("txt_DI8", c.getString(	228	));
-                  param.put("txt_DI9", c.getString(	229	));
-                  param.put("txt_DI10", c.getString(	230	));
-                  param.put("txt_DI11", c.getString(	231	));
-                  param.put("PN1", c.getString(	232	));
-                  param.put("PN2", c.getString(	233	));
-                  param.put("PN3", c.getString(	234	));
-                  param.put("PN4", c.getString(	235	));
-                  param.put("PN5", c.getString(	236	));
-                  param.put("PN6", c.getString(	237	));
-                  param.put("PN7", c.getString(	238	));
-                  param.put("PN8", c.getString(	239	));
-                  param.put("PN9", c.getString(	240	));
-                  param.put("PN10", c.getString(	241	));
-                  param.put("PN11", c.getString(	242	));
-                  param.put("PN12", c.getString(	243	));
-                  param.put("PN13", c.getString(	244	));
-                  param.put("PN14", c.getString(	245	));
-                  param.put("PN15", c.getString(	246	));
-                  param.put("PN16", c.getString(	247	));
-                  param.put("PN17", c.getString(	248	));
-                  param.put("PN18", c.getString(	249	));
-                  param.put("PN19", c.getString(	250	));
-                  param.put("PN20", c.getString(	251	));
-                  param.put("PN21", c.getString(	252	));
-                  param.put("txt_PN1", c.getString(	253	));
-                  param.put("txt_PN2", c.getString(	254	));
-                  param.put("txt_PN3", c.getString(	255	));
-                  param.put("txt_PN4", c.getString(	256	));
-                  param.put("txt_PN5", c.getString(	257	));
-                  param.put("txt_PN6", c.getString(	258	));
-                  param.put("txt_PN7", c.getString(	259	));
-                  param.put("txt_PN8", c.getString(	260	));
-                  param.put("txt_PN9", c.getString(	261	));
-                  param.put("txt_PN10", c.getString(	262	));
-                  param.put("txt_PN11", c.getString(	263	));
-                  param.put("txt_PN12", c.getString(	264	));
-                  param.put("txt_PN13", c.getString(	265	));
-                  param.put("txt_PN14", c.getString(	266	));
-                  param.put("txt_PN15", c.getString(	267	));
-                  param.put("txt_PN16", c.getString(	268	));
-                  param.put("txt_PN17", c.getString(	269	));
-                  param.put("txt_PN18", c.getString(	270	));
-                  param.put("txt_PN19", c.getString(	271	));
-                  param.put("txt_PN20", c.getString(	272	));
-                  param.put("txt_PN21", c.getString(	273	));
-                  param.put("datee", c.getString(	274	));
-                  param.put("timee", c.getString(	275	));
-                  param.put("userid", c.getString(	276	));
-                  param.put("Interview_status", c.getString(	277	));
-                  */
-
-
-
-              }
-
-          }
-                  //endregion
-
-
+        //endregion
         super.onPreExecute();
     }
 
@@ -421,14 +356,11 @@ public class UploadHouseInfoAsync extends AsyncTask {
                  " and server IP is inserted in settings";
             e.printStackTrace();
         }
-
         return null;
     }
 
     @Override
     protected void onPostExecute(Object o) {
-
-
 
         try {
             dialog.dismiss();
@@ -443,16 +375,13 @@ public class UploadHouseInfoAsync extends AsyncTask {
             String result=(((String) o).replace("\"",""));
 
 
+            Toast.makeText(mContext, "Interivew Has ben Uploaded", Toast.LENGTH_SHORT).show();
+            // new LocalDataManager(mContext).uploadInterview();
 
-              Toast.makeText(mContext,"Interivew Has ben Uploaded", Toast.LENGTH_SHORT).show();
-              // new LocalDataManager(mContext).uploadInterview();
+            // LogtableUpdates.UpdateLogStatusUpload(mContext,Validation.hfauploadid);
 
-          //  LogtableUpdates.UpdateLogStatusUpload(mContext,Validation.hfauploadid);
-
-                thread.start();
-
-
-
+            update_status(param.get("id"));
+            thread.start();
         }
 
         catch (IOException e) {
@@ -483,6 +412,18 @@ public class UploadHouseInfoAsync extends AsyncTask {
     }
 
 
+    void update_status(String id) {
+        String query = "Update C3001_C3011 set STATUS = '1' where id='" + id + "'";
+
+        query = String.format(query);
+
+        LocalDataManager Lm = new LocalDataManager(mContext);
+
+        LocalDataManager.database.execSQL(query);
+
+        Toast.makeText(mContext, "Status updated", Toast.LENGTH_SHORT).show();
+    }
+
    // wait for Toast then kill app
     Thread thread = new Thread(){
         @Override
@@ -495,8 +436,6 @@ public class UploadHouseInfoAsync extends AsyncTask {
                 int pid = android.os.Process.myPid();
                 android.os.Process.killProcess(pid);
                 // getActivity().finish();
-
-
 
 
                 System.exit(0);

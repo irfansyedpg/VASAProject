@@ -6,6 +6,7 @@
 
     <color name="text">#a4a4a4</color>
     <color name="text_hard">#222</color>
+    <color name="gray">#ddd</color>
 
     <color name="back">#eee</color>
 
@@ -20,6 +21,8 @@
     <color name="hitnscolor">#e1e1e1</color>
 
     <color name="black_overlay">#66000000</color>
-
+    <color name="cyan">#46E0C5</color>
+    <color name="green1">#58C86C</color>
+    <color name="green2">#8DC858</color>
 
 </resources>

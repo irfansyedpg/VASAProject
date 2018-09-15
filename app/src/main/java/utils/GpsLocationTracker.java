@@ -1,7 +1,6 @@
 package utils;
 
 import android.Manifest;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
@@ -27,7 +26,7 @@ public class GpsLocationTracker {
     public GpsLocationTracker(Context context) {
         this.mContext = context;
         locationManager = (LocationManager)
-                mContext.getSystemService(mContext.LOCATION_SERVICE);
+                mContext.getSystemService(Context.LOCATION_SERVICE);
     }
 
     private void startTracking() {
@@ -41,7 +40,7 @@ public class GpsLocationTracker {
         // on location receiving
         locationListener = new LocationListener() {
             @Override
-            public void onLocationChanged(android.location.Location location) {
+            public void onLocationChanged(Location location) {
 
                 // New Location
                 mAltitude = location.getAltitude();
@@ -109,7 +108,7 @@ public class GpsLocationTracker {
 
     public String getLocation() {
         startTracking();
-        locationManager = (LocationManager) mContext.getSystemService(mContext.LOCATION_SERVICE);
+        locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
         if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
