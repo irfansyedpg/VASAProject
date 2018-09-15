@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.N2110N2189aBinding;
 
@@ -903,7 +904,7 @@ public class N2110_N2189a extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), 8);
     }
 
     public void BtnChest() {

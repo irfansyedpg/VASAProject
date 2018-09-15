@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.N2051N2078Binding;
 
@@ -439,6 +440,6 @@ public class N2051_N2078 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), 6);
     }
 }
