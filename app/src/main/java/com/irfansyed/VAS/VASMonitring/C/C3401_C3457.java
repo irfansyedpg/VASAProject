@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.GS.InterviewEnd;
 import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
@@ -364,7 +365,8 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c = new Intent(this, C3471_C3472.class);
+       // Intent c = new Intent(this, C3471_C3472.class);
+         Intent c = new Intent(this,    InterviewEnd.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
     }
