@@ -14,7 +14,6 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.irfansyed.VAS.VASMonitring.Core.HomeActivity;
 import com.irfansyed.VAS.VASMonitring.GS.InterviewEnd;
 import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
@@ -22,6 +21,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import java.io.File;
 
 import data.LocalDataManager;
+import utils.Gothrough;
 
 public class C3471_C3472 extends AppCompatActivity implements View.OnClickListener {
 
@@ -240,7 +240,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_study_id) == false) {
+        if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -248,11 +248,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
             return false;
         }
 
-        if(Gothrough.IamHiden(ll_C3472) != false) {
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_C3472) != false;
     }
 
     @Override

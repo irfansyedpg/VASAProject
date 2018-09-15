@@ -19,6 +19,7 @@ import Global.C.C3001_C3011;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 
 public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -1590,7 +1591,6 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
@@ -1799,11 +1799,7 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if(Gothrough.IamHiden(ll_C3457) != false){
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_C3457) != false;
     }
 
     @Override
