@@ -14,7 +14,6 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.irfansyed.VAS.VASMonitring.Core.HomeActivity;
 import com.irfansyed.VAS.VASMonitring.GS.InterviewEnd;
 import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
@@ -22,6 +21,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import java.io.File;
 
 import data.LocalDataManager;
+import utils.Gothrough;
 
 public class C3471_C3472 extends AppCompatActivity implements View.OnClickListener {
 
@@ -72,6 +72,8 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3471_c3472);
+
+        this.setTitle(getString(R.string.h_c_sec_14));
 
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
@@ -240,7 +242,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_study_id) == false) {
+        if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -248,11 +250,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
             return false;
         }
 
-        if(Gothrough.IamHiden(ll_C3472) != false) {
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_C3472) != false;
     }
 
     @Override

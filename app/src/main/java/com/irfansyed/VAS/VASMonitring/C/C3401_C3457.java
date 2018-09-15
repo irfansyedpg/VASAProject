@@ -20,6 +20,7 @@ import Global.C.C3001_C3011;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 
 public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -314,6 +315,8 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3401_c3457);
+
+        this.setTitle(getString(R.string.h_c_sec_13));
 
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
@@ -1592,7 +1595,6 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
@@ -1801,11 +1803,7 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if(Gothrough.IamHiden(ll_C3457) != false){
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_C3457) != false;
     }
 
     @Override

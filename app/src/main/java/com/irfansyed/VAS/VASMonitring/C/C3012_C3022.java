@@ -24,6 +24,7 @@ import java.util.concurrent.TimeUnit;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
@@ -133,6 +134,8 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3012_c3022);
+
+        this.setTitle(getString(R.string.h_c_sec_2_4));
 
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
@@ -712,7 +715,6 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
@@ -757,11 +759,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_C3022) != false) {
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_C3022) != false;
     }
 
     @Override

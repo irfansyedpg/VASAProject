@@ -1,8 +1,12 @@
 package com.irfansyed.VAS.VASMonitring.A;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -10,6 +14,7 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,10 +26,14 @@ import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 
+import static utils.ClearAllcontrol.ClearAll;
+
 public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
     private static final int CONTENT_REQUEST = 1337;
+
     //  Region_Declaration
+
     Button
             btn_next14, btn_imgCapture;
 
@@ -37,6 +46,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             ll_A4403,
             ll_A4404,
             ll_A4405,
+            ll_51_52_53,
             ll_A4451_1,
             ll_A4451_2,
             ll_A4451_3,
@@ -84,165 +94,165 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             rb_A4401_2,
             rb_A4401_DK,
 
-            rb_A4402_1,
+    rb_A4402_1,
             rb_A4402_2,
             rb_A4402_3,
             rb_A4402_4,
             rb_A4402_5,
             rb_A4402_DK,
 
-            rb_A4451_1_1,
+    rb_A4451_1_1,
             rb_A4451_1_2,
             rb_A4451_1_DK,
 
-            rb_A4451_2_1,
+    rb_A4451_2_1,
             rb_A4451_2_2,
             rb_A4451_2_DK,
 
-            rb_A4451_3_1,
+    rb_A4451_3_1,
             rb_A4451_3_2,
             rb_A4451_3_DK,
 
-            rb_A4451_4_1,
+    rb_A4451_4_1,
             rb_A4451_4_2,
             rb_A4451_4_DK,
 
-            rb_A4451_5_1,
+    rb_A4451_5_1,
             rb_A4451_5_2,
             rb_A4451_5_DK,
 
-            rb_A4451_6_1,
+    rb_A4451_6_1,
             rb_A4451_6_2,
             rb_A4451_6_DK,
 
-            rb_A4451_7_1,
+    rb_A4451_7_1,
             rb_A4451_7_2,
             rb_A4451_7_DK,
 
-            rb_A4451_8_1,
+    rb_A4451_8_1,
             rb_A4451_8_2,
             rb_A4451_8_DK,
 
-            rb_A4451_9_1,
+    rb_A4451_9_1,
             rb_A4451_9_2,
             rb_A4451_9_DK,
 
-            rb_A4451_10_1,
+    rb_A4451_10_1,
             rb_A4451_10_2,
             rb_A4451_10_DK,
 
-            rb_A4451_11_1,
+    rb_A4451_11_1,
             rb_A4451_11_2,
             rb_A4451_11_DK,
 
-            rb_A4451_12_1,
+    rb_A4451_12_1,
             rb_A4451_12_2,
             rb_A4451_12_DK,
 
-            rb_A4451_13_1,
+    rb_A4451_13_1,
             rb_A4451_13_2,
             rb_A4451_13_DK,
 
-            rb_A4452_1_1,
+    rb_A4452_1_1,
             rb_A4452_1_2,
             rb_A4452_1_DK,
 
-            rb_A4452_2_1,
+    rb_A4452_2_1,
             rb_A4452_2_2,
             rb_A4452_2_DK,
 
-            rb_A4452_3_1,
+    rb_A4452_3_1,
             rb_A4452_3_2,
             rb_A4452_3_DK,
 
-            rb_A4452_4_1,
+    rb_A4452_4_1,
             rb_A4452_4_2,
             rb_A4452_4_DK,
 
-            rb_A4452_5_1,
+    rb_A4452_5_1,
             rb_A4452_5_2,
             rb_A4452_5_DK,
 
-            rb_A4452_6_1,
+    rb_A4452_6_1,
             rb_A4452_6_2,
             rb_A4452_6_DK,
 
-            rb_A4452_7_1,
+    rb_A4452_7_1,
             rb_A4452_7_2,
             rb_A4452_7_DK,
 
-            rb_A4452_8_1,
+    rb_A4452_8_1,
             rb_A4452_8_2,
             rb_A4452_8_DK,
 
-            rb_A4452_9_1,
+    rb_A4452_9_1,
             rb_A4452_9_2,
             rb_A4452_9_DK,
 
-            rb_A4453_1_1,
+    rb_A4453_1_1,
             rb_A4453_1_2,
             rb_A4453_1_DK,
 
-            rb_A4453_2_1,
+    rb_A4453_2_1,
             rb_A4453_2_2,
             rb_A4453_2_DK,
 
-            rb_A4453_3_1,
+    rb_A4453_3_1,
             rb_A4453_3_2,
             rb_A4453_3_DK,
 
-            rb_A4453_4_1,
+    rb_A4453_4_1,
             rb_A4453_4_2,
             rb_A4453_4_DK,
 
-            rb_A4453_5_1,
+    rb_A4453_5_1,
             rb_A4453_5_2,
             rb_A4453_5_DK,
 
-            rb_A4453_6_1,
+    rb_A4453_6_1,
             rb_A4453_6_2,
             rb_A4453_6_DK,
 
-            rb_A4453_7_1,
+    rb_A4453_7_1,
             rb_A4453_7_2,
             rb_A4453_7_DK,
 
-            rb_A4453_8_1,
+    rb_A4453_8_1,
             rb_A4453_8_2,
             rb_A4453_8_DK,
 
-            rb_A4453_9_1,
+    rb_A4453_9_1,
             rb_A4453_9_2,
             rb_A4453_9_DK,
 
-            rb_A4453_10_1,
+    rb_A4453_10_1,
             rb_A4453_10_2,
             rb_A4453_10_DK,
 
-            rb_A4453_11_1,
+    rb_A4453_11_1,
             rb_A4453_11_2,
             rb_A4453_11_DK,
 
-            rb_A4453_12_1,
+    rb_A4453_12_1,
             rb_A4453_12_2,
             rb_A4453_12_DK,
 
-            rb_A4454_1,
+    rb_A4454_1,
             rb_A4454_2,
             rb_A4454_DK,
             rb_A4454_RA,
 
-            rb_A4455_1,
+    rb_A4455_1,
             rb_A4455_2,
             rb_A4455_DK,
             rb_A4455_RA,
 
-            rb_A4456_1,
+    rb_A4456_1,
             rb_A4456_2,
             rb_A4456_DK,
             rb_A4456_RA,
 
-            rb_A4457_1,
+    rb_A4457_1,
             rb_A4457_2,
             rb_A4457_DK,
             rb_A4457_RA;
@@ -363,8 +373,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         txt_cap_count = findViewById(R.id.txt_cap_count);
 
         ll_A4401 = findViewById(R.id.ll_A4401);
-        ll_A4401_DK = findViewById(R.id.ll_A4401_DK);
-        ll_A4402_DK = findViewById(R.id.ll_A4402_DK);
+        ll_51_52_53 = findViewById(R.id.ll_51_52_53);
         ll_A4402 = findViewById(R.id.ll_A4402);
         ll_A4403 = findViewById(R.id.ll_A4403);
         ll_A4404 = findViewById(R.id.ll_A4404);
@@ -626,7 +635,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             @Override
             public void onClick(View view) {
 
-                /*String RootDir = Environment.getExternalStorageDirectory()
+                String RootDir = Environment.getExternalStorageDirectory()
                         + File.separator + "VASA" + File.separator + ed_study_id.getText().toString();
                 File RootFile = new File(RootDir);
                 boolean success = true;
@@ -641,7 +650,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
                     startActivityForResult(i, CONTENT_REQUEST);
                 } else {
                     Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
-                }*/
+                }
 
             }
         });
@@ -680,49 +689,163 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 
-        if (compoundButton.getId() == R.id.rb_A4401_1
-                || compoundButton.getId() == R.id.rb_A4401_2
-                || compoundButton.getId() == R.id.rb_A4401_DK)
-
-        {
+        if (compoundButton.getId() == R.id.rb_A4401_1) {
             if (rb_A4401_1.isChecked()) {
-                ClearAllcontrol.ClearAll(ll_A4402);
-                ClearAllcontrol.ClearAll(ll_A4403);
+                ClearAll(ll_A4402);
+                ClearAll(ll_A4403);
 
                 ll_A4402.setVisibility(View.GONE);
                 ll_A4403.setVisibility(View.GONE);
-            }
-            else if (rb_A4401_DK.isChecked()) {
-                ClearAllcontrol.ClearAll(ll_A4401_DK);
+            } else {
 
-                ll_A4401_DK.setVisibility(View.GONE);
+                ll_A4402.setVisibility(View.VISIBLE);
+                ll_A4403.setVisibility(View.VISIBLE);
             }
         }
 
-        if (compoundButton.getId() == R.id.rb_A4402_1
-                || compoundButton.getId() == R.id.rb_A4402_2
-                || compoundButton.getId() == R.id.rb_A4402_3
-                || compoundButton.getId() == R.id.rb_A4402_4
-                || compoundButton.getId() == R.id.rb_A4402_5
-                || compoundButton.getId() == R.id.rb_A4401_DK)
-
-        {
+        if (compoundButton.getId() == R.id.rb_A4401_DK) {
             if (rb_A4401_DK.isChecked()) {
-                ClearAllcontrol.ClearAll(ll_A4403);
-                ClearAllcontrol.ClearAll(ll_A4404);
-                ClearAllcontrol.ClearAll(ll_A4405);
+                ClearAll(ll_A4402);
+                ClearAll(ll_A4403);
+                ClearAll(ll_A4404);
+                ClearAll(ll_A4405);
+                ClearAll(ll_51_52_53);
+
+                ll_A4402.setVisibility(View.GONE);
+                ll_A4403.setVisibility(View.GONE);
+                ll_A4404.setVisibility(View.GONE);
+                ll_A4405.setVisibility(View.GONE);
+                ll_51_52_53.setVisibility(View.GONE);
+            } else {
+
+                ll_A4402.setVisibility(View.VISIBLE);
+                ll_A4403.setVisibility(View.VISIBLE);
+                ll_A4404.setVisibility(View.VISIBLE);
+                ll_A4405.setVisibility(View.VISIBLE);
+                ll_51_52_53.setVisibility(View.VISIBLE);
+            }
+        }
+
+
+        if (compoundButton.getId() == R.id.rb_A4402_5) {
+            if (rb_A4402_5.isChecked()) {
+
+                ed_A4402_5.setVisibility(View.VISIBLE);
+            }
+            else {
+                ClearAll(ll_A4402);
+                ed_A4402_5.setVisibility(View.GONE);
+            }
+        }
+
+        if (compoundButton.getId() == R.id.rb_A4402_DK) {
+            if (rb_A4402_DK.isChecked()) {
+
+                ClearAll(ll_A4403);
+                ClearAll(ll_A4404);
+                ClearAll(ll_A4405);
+                ClearAll(ll_51_52_53);
 
                 ll_A4403.setVisibility(View.GONE);
                 ll_A4404.setVisibility(View.GONE);
                 ll_A4405.setVisibility(View.GONE);
+                ll_51_52_53.setVisibility(View.GONE);
             } else {
+
                 ll_A4403.setVisibility(View.VISIBLE);
                 ll_A4404.setVisibility(View.VISIBLE);
                 ll_A4405.setVisibility(View.VISIBLE);
+                ll_51_52_53.setVisibility(View.VISIBLE);
             }
         }
 
+        if (compoundButton.getId() == R.id.rb_A4451_13_1
+                || compoundButton.getId() == R.id.rb_A4451_13_2
+                || compoundButton.getId() == R.id.rb_A4451_13_DK) {
+            if (rb_A4451_13_1.isChecked()) {
+
+                ed_A4451_13.setVisibility(View.VISIBLE);
+            }
+            else {
+                ClearAll(ll_A4451_13);
+                ed_A4451_13.setVisibility(View.GONE);
+            }
+        }
+
+        if (compoundButton.getId() == R.id.rb_A4452_9_1
+                || compoundButton.getId() == R.id.rb_A4452_9_2
+                || compoundButton.getId() == R.id.rb_A4452_9_DK)
+        {
+            if (rb_A4452_9_1.isChecked()) {
+
+                ed_A4452_9.setVisibility(View.VISIBLE);
+            }
+            else {
+                ClearAll(ll_A4452_9);
+                ed_A4452_9.setVisibility(View.GONE);
+            }
+        }
+
+        if (compoundButton.getId() == R.id.rb_A4453_12_1
+                || compoundButton.getId() == R.id.rb_A4453_12_2
+                || compoundButton.getId() == R.id.rb_A4453_12_DK)
+        {
+            if (rb_A4453_12_1.isChecked()) {
+
+                ed_A4453_12.setVisibility(View.VISIBLE);
+            }
+            else {
+                ClearAll(ll_A4453_12);
+                ed_A4453_12.setVisibility(View.GONE);
+            }
+        }
+
+        if (compoundButton.getId() == R.id.cb_A4472_DK) {
+            if (cb_A4472_DK.isChecked()) {
+                cb_A4472_1.setChecked(false);
+                cb_A4472_2.setChecked(false);
+                cb_A4472_3.setChecked(false);
+                cb_A4472_4.setChecked(false);
+                cb_A4472_5.setChecked(false);
+                cb_A4472_6.setChecked(false);
+                cb_A4472_7.setChecked(false);
+                cb_A4472_8.setChecked(false);
+                cb_A4472_9.setChecked(false);
+                cb_A4472_10.setChecked(false);
+                cb_A4472_11.setChecked(false);
+                cb_A4472_12.setChecked(false);
+            } else {
+                cb_A4472_DK.setChecked(false);
+            }
+        } else {
+
+            cb_A4472_DK.setChecked(false);
+        }
+
+        if (compoundButton.getId() == R.id.cb_A4472_12) {
+            if (cb_A4472_12.isChecked()) {
+                cb_A4472_1.setChecked(false);
+                cb_A4472_2.setChecked(false);
+                cb_A4472_3.setChecked(false);
+                cb_A4472_4.setChecked(false);
+                cb_A4472_5.setChecked(false);
+                cb_A4472_6.setChecked(false);
+                cb_A4472_7.setChecked(false);
+                cb_A4472_8.setChecked(false);
+                cb_A4472_9.setChecked(false);
+                cb_A4472_10.setChecked(false);
+                cb_A4472_11.setChecked(false);
+                cb_A4472_DK.setChecked(false);
+            } else {
+                cb_A4472_12.setChecked(false);
+            }
+        } else {
+
+            cb_A4472_12.setChecked(false);
+        }
     }
+
+
 
     void events_call() {
 
@@ -738,6 +861,33 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         rb_A4402_4.setOnCheckedChangeListener(this);
         rb_A4402_5.setOnCheckedChangeListener(this);
         rb_A4402_DK.setOnCheckedChangeListener(this);
+
+        rb_A4451_13_1.setOnCheckedChangeListener(this);
+        rb_A4451_13_2.setOnCheckedChangeListener(this);
+        rb_A4451_13_DK.setOnCheckedChangeListener(this);
+
+        rb_A4452_9_1.setOnCheckedChangeListener(this);
+        rb_A4452_9_2.setOnCheckedChangeListener(this);
+        rb_A4452_9_DK.setOnCheckedChangeListener(this);
+
+        rb_A4453_12_1.setOnCheckedChangeListener(this);
+        rb_A4453_12_2.setOnCheckedChangeListener(this);
+        rb_A4453_12_DK.setOnCheckedChangeListener(this);
+
+       // cb_A4472_1.setOnCheckedChangeListener(this);
+       // cb_A4472_2.setOnCheckedChangeListener(this);
+       // cb_A4472_3.setOnCheckedChangeListener(this);
+       // cb_A4472_4.setOnCheckedChangeListener(this);
+       // cb_A4472_5.setOnCheckedChangeListener(this);
+       // cb_A4472_6.setOnCheckedChangeListener(this);
+       // cb_A4472_7.setOnCheckedChangeListener(this);
+       // cb_A4472_8.setOnCheckedChangeListener(this);
+       // cb_A4472_9.setOnCheckedChangeListener(this);
+       // cb_A4472_10.setOnCheckedChangeListener(this);
+       // cb_A4472_11.setOnCheckedChangeListener(this);
+       // cb_A4472_12.setOnCheckedChangeListener(this);
+       // cb_A4472_DK.setOnCheckedChangeListener(this);
+        smart(ll_A4472);
 
     }
 
@@ -1706,5 +1856,17 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         }
 
         return Gothrough.IamHiden(ll_A4473) != false;
+    }
+
+
+    void smart(LinearLayout lv)
+    {
+        for (int i = 0, count = lv.getChildCount(); i < count; ++i) {
+            View view = lv.getChildAt(i);
+            if (view instanceof CheckBox) {
+                ((CheckBox) view).setOnCheckedChangeListener(this);
+            }
+
+        }
     }
 }

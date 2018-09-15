@@ -17,8 +17,8 @@ import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.A.A4001_A4014;
 import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
-import com.irfansyed.VAS.VASMonitring.C.C3012_C3022;
 import com.irfansyed.VAS.VASMonitring.N.N2001_N2011;
+import com.irfansyed.VAS.VASMonitring.N.N2211_N2248_A;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.util.regex.Matcher;
@@ -27,6 +27,7 @@ import java.util.regex.Pattern;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 import static java.lang.Integer.parseInt;
@@ -493,7 +494,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         pattern = Pattern.compile(DATE_PATTERN);
 
-        /*
         if (!validate(ed_Q1603.getText().toString().trim())) {
 
             ed_Q1603.setError("Kindly enter a valid date");
@@ -506,7 +506,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ed_Q1606.setError("Kindly enter a valid date");
             ed_Q1606.requestFocus();
             return;
-        }*/
+        }
 
         value_assignment();
         insert_data();
@@ -540,7 +540,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
                 // In case of empty insertion call functions here
 
-                Intent c = new Intent(this, C3012_C3022.class);
+                Intent c = new Intent(this, N2211_N2248_A.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
             }
@@ -2368,7 +2368,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     boolean validateField() {
-        /*
+
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
@@ -2577,11 +2577,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_Q1610) == false) {
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_Q1610) != false;
     }
 
     @Override
