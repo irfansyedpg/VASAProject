@@ -25,6 +25,7 @@ import java.util.concurrent.TimeUnit;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 
@@ -2076,7 +2077,6 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
@@ -2189,11 +2189,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if(Gothrough.IamHiden(ll_C3097) != false){
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_C3097) == false;
     }
 
     @Override

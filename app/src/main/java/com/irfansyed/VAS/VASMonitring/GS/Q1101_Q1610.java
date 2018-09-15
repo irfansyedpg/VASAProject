@@ -27,6 +27,7 @@ import java.util.regex.Pattern;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 import static java.lang.Integer.parseInt;
@@ -493,7 +494,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         pattern = Pattern.compile(DATE_PATTERN);
 
-        /*
         if (!validate(ed_Q1603.getText().toString().trim())) {
 
             ed_Q1603.setError("Kindly enter a valid date");
@@ -506,7 +506,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ed_Q1606.setError("Kindly enter a valid date");
             ed_Q1606.requestFocus();
             return;
-        }*/
+        }
 
         value_assignment();
         insert_data();
@@ -2368,7 +2368,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     boolean validateField() {
-        /*
+
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
@@ -2577,11 +2577,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_Q1610) == false) {
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_Q1610) != false;
     }
 
     @Override
