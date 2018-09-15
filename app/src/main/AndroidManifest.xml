@@ -82,6 +82,15 @@
         <activity
             android:name=".GS.Q1101_Q1610"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".C.C3251_C3288_A"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".C.C3251_C3288_B"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".C.C3251_C3288_C"
+            android:screenOrientation="portrait" />
 
         <!--Ali files-->
         <activity

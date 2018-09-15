@@ -272,6 +272,8 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
         ed_study_id.setText(study_id);
         ed_study_id.setEnabled(false);
 
+        this.setTitle(getString(R.string.h_n_sec_2_1));
+
         Initialization();
         events_call();
     }

@@ -72,6 +72,8 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3471_c3472);
 
+        this.setTitle(getString(R.string.h_c_sec_14));
+
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();

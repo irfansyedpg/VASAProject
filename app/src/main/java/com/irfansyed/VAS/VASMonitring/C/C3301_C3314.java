@@ -230,6 +230,8 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3301_c3314);
 
+        this.setTitle(getString(R.string.h_c_sec_11));
+
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();
