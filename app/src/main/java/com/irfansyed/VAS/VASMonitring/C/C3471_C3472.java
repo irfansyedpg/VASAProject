@@ -91,18 +91,29 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
             @Override
             public void onClick(View view) {
                 String RootDir = Environment.getExternalStorageDirectory()
-                        + File.separator + "VASA" + File.separator + ed_study_id.getText().toString();
+                        + File.separator + "VASA";
                 File RootFile = new File(RootDir);
                 boolean success = true;
                 if (!RootFile.exists()) {
                     success = RootFile.mkdir();
                 }
                 if (success) {
-                    Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    output = new File(RootDir, "C3471_" + count + ".jpeg");
+                    RootDir = RootDir + File.separator + ed_study_id.getText().toString();
+                    RootFile = new File(RootDir);
+                    success = true;
+                    if (!RootFile.exists()) {
+                        success = RootFile.mkdir();
+                    }
 
-                    i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
-                    startActivityForResult(i, CONTENT_REQUEST);
+                    if (success) {
+                        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                        output = new File(RootDir, "C3471_" + count + ".jpeg");
+
+                        i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
+                        startActivityForResult(i, CONTENT_REQUEST);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
+                    }
                 } else {
                     Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
                 }
