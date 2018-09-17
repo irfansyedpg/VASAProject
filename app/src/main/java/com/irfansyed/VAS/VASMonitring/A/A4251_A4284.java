@@ -392,6 +392,8 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4251__a4284);
 
+        this.setTitle(getString(R.string.h_a_sec_10));
+
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();
@@ -449,14 +451,14 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             b.setCancelable(false);
             b.show();
 
-            Button btnsbt = (Button) v.findViewById(R.id.btn_sbt);
-            Button btnCancel = (Button) v.findViewById(R.id.btn_cncl);
+            Button btnsbt = v.findViewById(R.id.btn_sbt);
+            Button btnCancel = v.findViewById(R.id.btn_cncl);
 
-            LinearLayout ll4_A4252 = (LinearLayout) v.findViewById(R.id.ll4_A4252);
+            LinearLayout ll4_A4252 = v.findViewById(R.id.ll4_A4252);
 
-          final   LinearLayout ll5_A4252 = (LinearLayout) v.findViewById(R.id.ll5_A4252);
-          final   LinearLayout ll2_A4252 = (LinearLayout) v.findViewById(R.id.ll2_A4252);
-          final   LinearLayout ll3_A4252 = (LinearLayout) v.findViewById(R.id.ll3_A4252);
+            final LinearLayout ll5_A4252 = v.findViewById(R.id.ll5_A4252);
+            final LinearLayout ll2_A4252 = v.findViewById(R.id.ll2_A4252);
+            final LinearLayout ll3_A4252 = v.findViewById(R.id.ll3_A4252);
 
 
             final RadioButton
@@ -472,20 +474,20 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
                     rb_A4252_2_6,
                     rb_A4252_2_7;
 
-            rb_A4252_1_1 = (RadioButton) v.findViewById(R.id.rb_A4252_1_1);
-            rb_A4252_1_2 = (RadioButton) v.findViewById(R.id.rb_A4252_1_2);
-            rb_A4252_1_3 = (RadioButton) v.findViewById(R.id.rb_A4252_1_3);
-            rb_A4252_2_1 = (RadioButton) v.findViewById(R.id.rb_A4252_2_1);
-            rb_A4252_2_2 = (RadioButton) v.findViewById(R.id.rb_A4252_2_2);
-            rb_A4252_2_3 = (RadioButton) v.findViewById(R.id.rb_A4252_2_3);
-            rb_A4252_2_4 = (RadioButton) v.findViewById(R.id.rb_A4252_2_4);
-            rb_A4252_2_5 = (RadioButton) v.findViewById(R.id.rb_A4252_2_5);
-            rb_A4252_2_6 = (RadioButton) v.findViewById(R.id.rb_A4252_2_6);
-            rb_A4252_2_7 = (RadioButton) v.findViewById(R.id.rb_A4252_2_7);
+            rb_A4252_1_1 = v.findViewById(R.id.rb_A4252_1_1);
+            rb_A4252_1_2 = v.findViewById(R.id.rb_A4252_1_2);
+            rb_A4252_1_3 = v.findViewById(R.id.rb_A4252_1_3);
+            rb_A4252_2_1 = v.findViewById(R.id.rb_A4252_2_1);
+            rb_A4252_2_2 = v.findViewById(R.id.rb_A4252_2_2);
+            rb_A4252_2_3 = v.findViewById(R.id.rb_A4252_2_3);
+            rb_A4252_2_4 = v.findViewById(R.id.rb_A4252_2_4);
+            rb_A4252_2_5 = v.findViewById(R.id.rb_A4252_2_5);
+            rb_A4252_2_6 = v.findViewById(R.id.rb_A4252_2_6);
+            rb_A4252_2_7 = v.findViewById(R.id.rb_A4252_2_7);
 
-            final CheckBox cb_place = (CheckBox) v.findViewById(R.id.cb_A4252_2_8);
+            final CheckBox cb_place = v.findViewById(R.id.cb_A4252_2_8);
 
-            final EditText ed_symt = (EditText) v.findViewById(R.id.ed_A4252);
+            final EditText ed_symt = v.findViewById(R.id.ed_A4252);
 
 
             if (b_place_where == true) {
@@ -707,9 +709,9 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
     void Initialization() {
 
-        A4252_start = (TextView) findViewById(R.id.A4252_start);
-        A4252_mid = (TextView) findViewById(R.id.A4252_Mid);
-        A4252_End = (TextView) findViewById(R.id.A4252_End);
+        A4252_start = findViewById(R.id.A4252_start);
+        A4252_mid = findViewById(R.id.A4252_Mid);
+        A4252_End = findViewById(R.id.A4252_End);
 
         btn_next11 = findViewById(R.id.btn_next11);
         btn_addd = findViewById(R.id.btn_addd);

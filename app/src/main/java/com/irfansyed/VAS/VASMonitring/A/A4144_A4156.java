@@ -221,6 +221,8 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4144__a4156);
 
+        this.setTitle(getString(R.string.h_a_sec_9));
+
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();

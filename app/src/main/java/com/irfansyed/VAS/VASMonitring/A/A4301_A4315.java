@@ -429,6 +429,8 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4301__a4315);
 
+        this.setTitle(getString(R.string.h_a_sec_11));
+
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();
@@ -1477,17 +1479,9 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
                 } else if (month.equals("2") || month.equals("02")) {
                     //leap year
                     if (year % 4 == 0) {
-                        if (day.equals("30") || day.equals("31")) {
-                            return false;
-                        } else {
-                            return true;
-                        }
+                        return !day.equals("30") && !day.equals("31");
                     } else {
-                        if (day.equals("29") || day.equals("30") || day.equals("31")) {
-                            return false;
-                        } else {
-                            return true;
-                        }
+                        return !day.equals("29") && !day.equals("30") && !day.equals("31");
                     }
                 } else {
                     return true;

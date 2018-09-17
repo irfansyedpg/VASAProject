@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -14,7 +13,6 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,7 +21,6 @@ import com.irfansyed.VAS.VASMonitring.R;
 import java.io.File;
 
 import data.LocalDataManager;
-import utils.ClearAllcontrol;
 import utils.Gothrough;
 
 import static utils.ClearAllcontrol.ClearAll;
@@ -619,6 +616,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4401_a4473);
+
+        this.setTitle(getString(R.string.h_a_sec_13));
 
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
