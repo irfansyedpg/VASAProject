@@ -1,5 +1,5 @@
 ﻿<resources>
-    <string name="app_name"> VASA NEONATAL DEATH </string>
+    <string name="app_name">V A S A</string>
 
     <string name="txt_study_id">Study ID</string>
 
@@ -3512,7 +3512,8 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="rb_A4258_1">Yes, reached before died</string>
     <string name="rb_A4258_2">No, died on route to this provider / before this provider reached the deceased</string>
     <string name="rb_A4258_3">No, could not reach this provider, so returned home or took other action</string>
-    <string name="A4258">A4258: For health care at a facility, ask: Did NAME reach the FIRST HEALTH PROVIDER before s/he died?</string>
+    <string name="A4258_1">A4258_1: For health care at a facility, \nask: \nDid NAME reach the FIRST HEALTH PROVIDER before s/he died?</string>
+    <string name="A4258_2">A4258_2: For health care outside a facility, \nask: \nDid the FIRST HEALTH PROVIDER reach (NAME) before s/he died?</string>
 
     <!-- HINTS ENDS -->
 

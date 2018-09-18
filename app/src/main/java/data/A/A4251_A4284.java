@@ -37,7 +37,8 @@ public class A4251_A4284 {
                 Global.A.A4251_A4284.A4256_minutes + " TEXT," +
                 Global.A.A4251_A4284.A4257 + " TEXT," +
                 Global.A.A4251_A4284.A4257_name + " TEXT," +
-                Global.A.A4251_A4284.A4258 + " TEXT," +
+                Global.A.A4251_A4284.A4258_1 + " TEXT," +
+                Global.A.A4251_A4284.A4258_2 + " TEXT," +
                 Global.A.A4251_A4284.A4259_hours + " TEXT," +
                 Global.A.A4251_A4284.A4259_minutes + " TEXT," +
                 Global.A.A4251_A4284.A4260 + " TEXT," +
