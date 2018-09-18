@@ -1315,9 +1315,11 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
             ClearAllcontrol.ClearAll(ll_Q1502);
             ClearAllcontrol.ClearAll(ll_Q1503);
+            ClearAllcontrol.ClearAll(ll_Q1503_OT);
 
             ll_Q1502.setVisibility(View.GONE);
             ll_Q1503.setVisibility(View.GONE);
+            ll_Q1503_OT.setVisibility(View.GONE);
 
             if (rb_Q1501_1.isChecked()) {
 
@@ -1328,9 +1330,11 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
                 ClearAllcontrol.ClearAll(ll_Q1502);
                 ClearAllcontrol.ClearAll(ll_Q1503);
+                ClearAllcontrol.ClearAll(ll_Q1503_OT);
 
                 ll_Q1502.setVisibility(View.GONE);
                 ll_Q1503.setVisibility(View.GONE);
+                ll_Q1503_OT.setVisibility(View.GONE);
             }
         }
 

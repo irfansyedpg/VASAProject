@@ -32,13 +32,12 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
     //  Region_Declaration
 
     Button
-            btn_next14, btn_imgCapture;
+            btn_next14,
+            btn_imgCapture;
 
     LinearLayout
             ll_study_id,
             ll_A4401,
-            ll_A4401_DK,
-            ll_A4402_DK,
             ll_A4402,
             ll_A4403,
             ll_A4404,
@@ -90,55 +89,43 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             rb_A4401_1,
             rb_A4401_2,
             rb_A4401_DK,
-
-    rb_A4402_1,
+            rb_A4402_1,
             rb_A4402_2,
             rb_A4402_3,
             rb_A4402_4,
             rb_A4402_5,
             rb_A4402_DK,
-
-    rb_A4451_1_1,
+            rb_A4451_1_1,
             rb_A4451_1_2,
             rb_A4451_1_DK,
-
-    rb_A4451_2_1,
+            rb_A4451_2_1,
             rb_A4451_2_2,
             rb_A4451_2_DK,
-
-    rb_A4451_3_1,
+            rb_A4451_3_1,
             rb_A4451_3_2,
             rb_A4451_3_DK,
-
-    rb_A4451_4_1,
+            rb_A4451_4_1,
             rb_A4451_4_2,
             rb_A4451_4_DK,
-
-    rb_A4451_5_1,
+            rb_A4451_5_1,
             rb_A4451_5_2,
             rb_A4451_5_DK,
-
-    rb_A4451_6_1,
+            rb_A4451_6_1,
             rb_A4451_6_2,
             rb_A4451_6_DK,
-
-    rb_A4451_7_1,
+            rb_A4451_7_1,
             rb_A4451_7_2,
             rb_A4451_7_DK,
-
-    rb_A4451_8_1,
+            rb_A4451_8_1,
             rb_A4451_8_2,
             rb_A4451_8_DK,
-
-    rb_A4451_9_1,
+            rb_A4451_9_1,
             rb_A4451_9_2,
             rb_A4451_9_DK,
-
-    rb_A4451_10_1,
+            rb_A4451_10_1,
             rb_A4451_10_2,
             rb_A4451_10_DK,
-
-    rb_A4451_11_1,
+            rb_A4451_11_1,
             rb_A4451_11_2,
             rb_A4451_11_DK,
 
@@ -288,8 +275,6 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             A4401,
             A4402,
             A4403,
-            A4404,
-            A4405,
             A4402_5_OT,
             A4403_province,
             A4403_district,
@@ -634,32 +619,19 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             @Override
             public void onClick(View view) {
 
-                String RootDir = Environment.getExternalStorageDirectory()
-                        + File.separator + "VASA";
+                String RootDir = Environment.getExternalStorageDirectory().getAbsolutePath()
+                        + File.separator + "VASA" + File.separator + ed_study_id.getText().toString();
                 File RootFile = new File(RootDir);
                 boolean success = true;
                 if (!RootFile.exists()) {
                     success = RootFile.mkdir();
                 }
                 if (success) {
+                    Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                    output = new File(RootDir, "A4471_" + count + ".jpeg");
 
-                    RootDir = RootDir + File.separator + ed_study_id.getText().toString();
-                    RootFile = new File(RootDir);
-                    success = true;
-                    if (!RootFile.exists()) {
-                        success = RootFile.mkdir();
-                    }
-
-                    if (success) {
-                        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                        output = new File(RootDir, "A4471_" + count + ".jpeg");
-
-                        i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
-                        startActivityForResult(i, CONTENT_REQUEST);
-                    } else {
-                        Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
-                    }
-
+                    i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
+                    startActivityForResult(i, CONTENT_REQUEST);
                 } else {
                     Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
                 }
@@ -743,7 +715,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_A4402_5.isChecked()) {
 
                 ed_A4402_5.setVisibility(View.VISIBLE);
-            } else {
+            }
+            else {
                 ClearAll(ll_A4402);
                 ed_A4402_5.setVisibility(View.GONE);
             }
@@ -776,7 +749,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_A4451_13_1.isChecked()) {
 
                 ed_A4451_13.setVisibility(View.VISIBLE);
-            } else {
+            }
+            else {
                 ClearAll(ll_A4451_13);
                 ed_A4451_13.setVisibility(View.GONE);
             }
@@ -784,11 +758,13 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
 
         if (compoundButton.getId() == R.id.rb_A4452_9_1
                 || compoundButton.getId() == R.id.rb_A4452_9_2
-                || compoundButton.getId() == R.id.rb_A4452_9_DK) {
+                || compoundButton.getId() == R.id.rb_A4452_9_DK)
+        {
             if (rb_A4452_9_1.isChecked()) {
 
                 ed_A4452_9.setVisibility(View.VISIBLE);
-            } else {
+            }
+            else {
                 ClearAll(ll_A4452_9);
                 ed_A4452_9.setVisibility(View.GONE);
             }
@@ -796,11 +772,13 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
 
         if (compoundButton.getId() == R.id.rb_A4453_12_1
                 || compoundButton.getId() == R.id.rb_A4453_12_2
-                || compoundButton.getId() == R.id.rb_A4453_12_DK) {
+                || compoundButton.getId() == R.id.rb_A4453_12_DK)
+        {
             if (rb_A4453_12_1.isChecked()) {
 
                 ed_A4453_12.setVisibility(View.VISIBLE);
-            } else {
+            }
+            else {
                 ClearAll(ll_A4453_12);
                 ed_A4453_12.setVisibility(View.GONE);
             }
@@ -852,6 +830,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
     }
 
 
+
     void events_call() {
 
         btn_next14.setOnClickListener(this);
@@ -879,19 +858,19 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         rb_A4453_12_2.setOnCheckedChangeListener(this);
         rb_A4453_12_DK.setOnCheckedChangeListener(this);
 
-        // cb_A4472_1.setOnCheckedChangeListener(this);
-        // cb_A4472_2.setOnCheckedChangeListener(this);
-        // cb_A4472_3.setOnCheckedChangeListener(this);
-        // cb_A4472_4.setOnCheckedChangeListener(this);
-        // cb_A4472_5.setOnCheckedChangeListener(this);
-        // cb_A4472_6.setOnCheckedChangeListener(this);
-        // cb_A4472_7.setOnCheckedChangeListener(this);
-        // cb_A4472_8.setOnCheckedChangeListener(this);
-        // cb_A4472_9.setOnCheckedChangeListener(this);
-        // cb_A4472_10.setOnCheckedChangeListener(this);
-        // cb_A4472_11.setOnCheckedChangeListener(this);
-        // cb_A4472_12.setOnCheckedChangeListener(this);
-        // cb_A4472_DK.setOnCheckedChangeListener(this);
+       // cb_A4472_1.setOnCheckedChangeListener(this);
+       // cb_A4472_2.setOnCheckedChangeListener(this);
+       // cb_A4472_3.setOnCheckedChangeListener(this);
+       // cb_A4472_4.setOnCheckedChangeListener(this);
+       // cb_A4472_5.setOnCheckedChangeListener(this);
+       // cb_A4472_6.setOnCheckedChangeListener(this);
+       // cb_A4472_7.setOnCheckedChangeListener(this);
+       // cb_A4472_8.setOnCheckedChangeListener(this);
+       // cb_A4472_9.setOnCheckedChangeListener(this);
+       // cb_A4472_10.setOnCheckedChangeListener(this);
+       // cb_A4472_11.setOnCheckedChangeListener(this);
+       // cb_A4472_12.setOnCheckedChangeListener(this);
+       // cb_A4472_DK.setOnCheckedChangeListener(this);
         smart(ll_A4472);
 
     }
@@ -1864,7 +1843,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
     }
 
 
-    void smart(LinearLayout lv) {
+    void smart(LinearLayout lv)
+    {
         for (int i = 0, count = lv.getChildCount(); i < count; ++i) {
             View view = lv.getChildAt(i);
             if (view instanceof CheckBox) {

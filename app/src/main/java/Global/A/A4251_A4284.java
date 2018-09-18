@@ -6,7 +6,8 @@ public class A4251_A4284 {
     public static String A4251 = "A4251";
     public static String A4253 = "A4253";
     public static String A4253_3 = "A4253_3";
-    public static String A4254 = "A4254";
+    public static String A4254_1 = "A4254_1";
+    public static String A4254_2 = "A4254_2";
     public static String A4255_1 = "A4255_1";
     public static String A4255_2 = "A4255_2";
     public static String A4255_3 = "A4255_3";

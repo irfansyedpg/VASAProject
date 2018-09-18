@@ -1484,8 +1484,8 @@
 
                     <EditText
                         android:id="@+id/ed_A4315"
-                        style="@style/EditText_varchar"
-                        android:hint="@string/A4315" />
+                        style="@style/EditText_multi"
+                        android:hint="Write health care worker Narrative" />
 
                 </LinearLayout>
 
