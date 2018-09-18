@@ -412,18 +412,31 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             @Override
             public void onClick(View view) {
                 String RootDir = Environment.getExternalStorageDirectory()
-                        + File.separator + "VASA" + File.separator + ed_study_id.getText().toString();
+                        + File.separator + "VASA";
                 File RootFile = new File(RootDir);
                 boolean success = true;
                 if (!RootFile.exists()) {
                     success = RootFile.mkdir();
                 }
                 if (success) {
-                    Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    output = new File(RootDir, "C3108.jpeg");
 
-                    i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
-                    startActivityForResult(i, CONTENT_REQUEST);
+                    RootDir = RootDir + File.separator + ed_study_id.getText().toString();
+                    RootFile = new File(RootDir);
+                    success = true;
+                    if (!RootFile.exists()) {
+                        success = RootFile.mkdir();
+                    }
+
+                    if (success) {
+                        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                        output = new File(RootDir, "C3108.jpeg");
+
+                        i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
+                        startActivityForResult(i, CONTENT_REQUEST);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
+                    }
+
                 } else {
                     Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
                 }
@@ -1823,7 +1836,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3112) == false;
+        return Gothrough.IamHiden(ll_C3112) != false;
     }
 
     @Override

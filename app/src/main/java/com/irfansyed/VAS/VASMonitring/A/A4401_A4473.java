@@ -635,18 +635,31 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             public void onClick(View view) {
 
                 String RootDir = Environment.getExternalStorageDirectory()
-                        + File.separator + "VASA" + File.separator + ed_study_id.getText().toString();
+                        + File.separator + "VASA";
                 File RootFile = new File(RootDir);
                 boolean success = true;
                 if (!RootFile.exists()) {
                     success = RootFile.mkdir();
                 }
                 if (success) {
-                    Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    output = new File(RootDir, "A4471_" + count + ".jpeg");
 
-                    i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
-                    startActivityForResult(i, CONTENT_REQUEST);
+                    RootDir = RootDir + File.separator + ed_study_id.getText().toString();
+                    RootFile = new File(RootDir);
+                    success = true;
+                    if (!RootFile.exists()) {
+                        success = RootFile.mkdir();
+                    }
+
+                    if (success) {
+                        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                        output = new File(RootDir, "A4471_" + count + ".jpeg");
+
+                        i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
+                        startActivityForResult(i, CONTENT_REQUEST);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
+                    }
+
                 } else {
                     Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
                 }
@@ -730,8 +743,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_A4402_5.isChecked()) {
 
                 ed_A4402_5.setVisibility(View.VISIBLE);
-            }
-            else {
+            } else {
                 ClearAll(ll_A4402);
                 ed_A4402_5.setVisibility(View.GONE);
             }
@@ -764,8 +776,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_A4451_13_1.isChecked()) {
 
                 ed_A4451_13.setVisibility(View.VISIBLE);
-            }
-            else {
+            } else {
                 ClearAll(ll_A4451_13);
                 ed_A4451_13.setVisibility(View.GONE);
             }
@@ -773,13 +784,11 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
 
         if (compoundButton.getId() == R.id.rb_A4452_9_1
                 || compoundButton.getId() == R.id.rb_A4452_9_2
-                || compoundButton.getId() == R.id.rb_A4452_9_DK)
-        {
+                || compoundButton.getId() == R.id.rb_A4452_9_DK) {
             if (rb_A4452_9_1.isChecked()) {
 
                 ed_A4452_9.setVisibility(View.VISIBLE);
-            }
-            else {
+            } else {
                 ClearAll(ll_A4452_9);
                 ed_A4452_9.setVisibility(View.GONE);
             }
@@ -787,13 +796,11 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
 
         if (compoundButton.getId() == R.id.rb_A4453_12_1
                 || compoundButton.getId() == R.id.rb_A4453_12_2
-                || compoundButton.getId() == R.id.rb_A4453_12_DK)
-        {
+                || compoundButton.getId() == R.id.rb_A4453_12_DK) {
             if (rb_A4453_12_1.isChecked()) {
 
                 ed_A4453_12.setVisibility(View.VISIBLE);
-            }
-            else {
+            } else {
                 ClearAll(ll_A4453_12);
                 ed_A4453_12.setVisibility(View.GONE);
             }
@@ -845,7 +852,6 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
     }
 
 
-
     void events_call() {
 
         btn_next14.setOnClickListener(this);
@@ -873,19 +879,19 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         rb_A4453_12_2.setOnCheckedChangeListener(this);
         rb_A4453_12_DK.setOnCheckedChangeListener(this);
 
-       // cb_A4472_1.setOnCheckedChangeListener(this);
-       // cb_A4472_2.setOnCheckedChangeListener(this);
-       // cb_A4472_3.setOnCheckedChangeListener(this);
-       // cb_A4472_4.setOnCheckedChangeListener(this);
-       // cb_A4472_5.setOnCheckedChangeListener(this);
-       // cb_A4472_6.setOnCheckedChangeListener(this);
-       // cb_A4472_7.setOnCheckedChangeListener(this);
-       // cb_A4472_8.setOnCheckedChangeListener(this);
-       // cb_A4472_9.setOnCheckedChangeListener(this);
-       // cb_A4472_10.setOnCheckedChangeListener(this);
-       // cb_A4472_11.setOnCheckedChangeListener(this);
-       // cb_A4472_12.setOnCheckedChangeListener(this);
-       // cb_A4472_DK.setOnCheckedChangeListener(this);
+        // cb_A4472_1.setOnCheckedChangeListener(this);
+        // cb_A4472_2.setOnCheckedChangeListener(this);
+        // cb_A4472_3.setOnCheckedChangeListener(this);
+        // cb_A4472_4.setOnCheckedChangeListener(this);
+        // cb_A4472_5.setOnCheckedChangeListener(this);
+        // cb_A4472_6.setOnCheckedChangeListener(this);
+        // cb_A4472_7.setOnCheckedChangeListener(this);
+        // cb_A4472_8.setOnCheckedChangeListener(this);
+        // cb_A4472_9.setOnCheckedChangeListener(this);
+        // cb_A4472_10.setOnCheckedChangeListener(this);
+        // cb_A4472_11.setOnCheckedChangeListener(this);
+        // cb_A4472_12.setOnCheckedChangeListener(this);
+        // cb_A4472_DK.setOnCheckedChangeListener(this);
         smart(ll_A4472);
 
     }
@@ -1858,8 +1864,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
     }
 
 
-    void smart(LinearLayout lv)
-    {
+    void smart(LinearLayout lv) {
         for (int i = 0, count = lv.getChildCount(); i < count; ++i) {
             View view = lv.getChildAt(i);
             if (view instanceof CheckBox) {

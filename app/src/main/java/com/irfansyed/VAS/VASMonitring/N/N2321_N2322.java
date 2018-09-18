@@ -86,18 +86,32 @@ public class N2321_N2322 extends AppCompatActivity {
     public void BtnCapture() {
 
         String RootDir = Environment.getExternalStorageDirectory()
-                + File.separator + "VASA" + File.separator + bi.edStudyId.getText().toString();
+                + File.separator + "VASA";
         File RootFile = new File(RootDir);
         boolean success = true;
         if (!RootFile.exists()) {
             success = RootFile.mkdir();
         }
         if (success) {
-            Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            output = new File(RootDir, "N2321_" + count + ".jpeg");
 
-            i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
-            startActivityForResult(i, CONTENT_REQUEST);
+            RootDir = RootDir + File.separator + bi.edStudyId.getText().toString();
+            RootFile = new File(RootDir);
+            success = true;
+            if (!RootFile.exists()) {
+                success = RootFile.mkdir();
+            }
+
+            if (success) {
+
+                Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                output = new File(RootDir, "N2321_" + count + ".jpeg");
+
+                i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
+                startActivityForResult(i, CONTENT_REQUEST);
+            } else {
+                Toast.makeText(this, "Can't create folder!!", Toast.LENGTH_SHORT).show();
+            }
+
         } else {
             Toast.makeText(this, "Can't create folder!!", Toast.LENGTH_SHORT).show();
         }
