@@ -18,7 +18,6 @@ import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 import utils.InputFilterMinMax;
-import utils.validations;
 
 public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -279,6 +278,8 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4051__a4066);
+
+        this.setTitle(getString(R.string.h_a_sec_9));
 
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);

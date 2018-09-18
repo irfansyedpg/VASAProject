@@ -164,12 +164,12 @@
     <string name="txt_N2057">N2057:	As part of (your / the mother’s) antenatal care during this pregnancy, were any of the following done at least once:	</string>
 
 
-    <string name="txt_N2057_1">N2057_1: Was your blood pressure measured? </string>
-    <string name="txt_N2057_2">N2057_2: Did you give a urine sample? </string>
-    <string name="txt_N2057_3">N2057_3: Did you give a blood sample? </string>
-    <string name="txt_N2057_4">N2057_4: Did the provider tell (you / her) to eat more high energy foods like (HIGH ENERGY FOODS) and high protein foods like (HIGH PROTEIN FOODS) than when not pregnant? </string>
-    <string name="txt_N2057_5">N2057_5: Did the provider tell (you / her) about the danger signs during pregnancy? </string>
-    <string name="txt_N2057_6">N2057_6: Did the provider tell (you / her) where to go if (you / she) had any danger signs? </string>
+    <string name="txt_N2057_1">N2057_1: As part of (your / the mother’s) antenatal care during this pregnancy, were Was your blood pressure measured done at least once ? </string>
+    <string name="txt_N2057_2">N2057_2: As part of (your / the mother’s) antenatal care during this pregnancy, were Did you give a urine sample done at least once ? </string>
+    <string name="txt_N2057_3">N2057_3: As part of (your / the mother’s) antenatal care during this pregnancy, were Did you give a blood sample done at least once ? </string>
+    <string name="txt_N2057_4">N2057_4: As part of (your / the mother’s) antenatal care during this pregnancy, were Did the provider tell (you / her) to eat more high energy foods like (HIGH ENERGY FOODS) and high protein foods like (HIGH PROTEIN FOODS) than when not pregnant done at least once ? </string>
+    <string name="txt_N2057_5">N2057_5: As part of (your / the mother’s) antenatal care during this pregnancy, were Did the provider tell (you / her) about the danger signs during pregnancy done at least once ? </string>
+    <string name="txt_N2057_6">N2057_6: As part of (your / the mother’s) antenatal care during this pregnancy, were Did the provider tell (you / her) where to go if (you / she) had any danger signs done at least once ? </string>
 
     <string name="txt_N2058">N2058:	Please tell me the danger signs during pregnancy or labor and delivery that you should seek care for immediately.	</string>
     <string name="txt_N2059">N2059:	During this pregnancy, (were you / was the mother) given an injection in the arm to prevent the baby from getting tetanus, that is, convulsions after birth?	</string>
@@ -198,22 +198,22 @@
 
     <string name="txt_N2080">N2080: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by any of the following symptoms that started before labor?"></string>
 
-    <string name="txt_N2080_1">N2080_1: Convulsions? </string>
-    <string name="txt_N2080_2">N2080_2: High blood pressure? </string>
-    <string name="txt_N2080_3">N2080_3: Severe anemia or pallor and shortness of breath? </string>
-    <string name="txt_N2080_4">N2080_4: Diabetes mellitus? </string>
-    <string name="txt_N2080_5">N2080_5: Severe headache? </string>
-    <string name="txt_N2080_6">N2080_6: Blurred vision? </string>
-    <string name="txt_N2080_7">N2080_7: Too weak to get out of bed? </string>
-    <string name="txt_N2080_8">N2080_8: Severe abdominal pain? (before labor, not labor pain) </string>
-    <string name="txt_N2080_9">N2080_9: Fast or difficult breathing? </string>
-    <string name="txt_N2080_10">N2080_10: Puffy face? </string>
-    <string name="txt_N2080_11">N2080_11: Any vaginal bleeding before labor? </string>
-    <string name="txt_N2080_12">N2080_12: Fever? </string>
-    <string name="txt_N2080_13">N2080_13: Foul smelling vaginal discharge? </string>
-    <string name="txt_N2080_14">N2080_14: Water broke 6 hours or more before labor </string>
-    <string name="txt_N2080_15">N2080_15: Any other symptom? </string>
-    <string name="txt_N2080_16">N2080_16: No symptoms before labor </string>
+    <string name="txt_N2080_1">N2080_1: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Convulsions symptoms that started before labor? </string>
+    <string name="txt_N2080_2">N2080_2: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by High blood pressure symptoms that started before labor? </string>
+    <string name="txt_N2080_3">N2080_3: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Severe anemia or pallor and shortness of breath symptoms that started before labor? </string>
+    <string name="txt_N2080_4">N2080_4: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Diabetes mellitus symptoms that started before labor? </string>
+    <string name="txt_N2080_5">N2080_5: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Severe headache symptoms that started before labor? </string>
+    <string name="txt_N2080_6">N2080_6: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Blurred vision symptoms that started before labor? </string>
+    <string name="txt_N2080_7">N2080_7: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Too weak to get out of bed symptoms that started before labor? </string>
+    <string name="txt_N2080_8">N2080_8: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Severe abdominal pain? (before labor, not labor pain) symptoms that started before labor? </string>
+    <string name="txt_N2080_9">N2080_9: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Fast or difficult breathing symptoms that started before labor? </string>
+    <string name="txt_N2080_10">N2080_10: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Puffy face symptoms that started before labor? </string>
+    <string name="txt_N2080_11">N2080_11: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Any vaginal bleeding before labor symptoms that started before labor? </string>
+    <string name="txt_N2080_12">N2080_12: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Fever symptoms that started before labor? </string>
+    <string name="txt_N2080_13">N2080_13: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Foul smelling vaginal discharge symptoms that started before labor? </string>
+    <string name="txt_N2080_14">N2080_14: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Water broke 6 hours or more before labor symptoms that started before labor? </string>
+    <string name="txt_N2080_15">N2080_15: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by Any other symptom that started before labor?? </string>
+    <string name="txt_N2080_16">N2080_16: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by No symptoms before labor that started before labor? </string>
 
     <string name="txt_N2081">N2081:	Did (you / the mother) seek care from any person or health facility for (any of) the pregnancy symptom(s) that started before labor?	</string>
     <string name="txt_N2082">N2082:	Where did (you / she) seek this care?	</string>
@@ -226,25 +226,25 @@
 
     <string name="txt_N2088">N2088: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have any of the following symptoms during labor or delivery?"></string>
 
-    <string name="txt_N2088_1">N2088_1: Convulsions? </string>
-    <string name="txt_N2088_2">N2088_2: High blood pressure? </string>
-    <string name="txt_N2088_3">N2088_3: Severe anemia or pallor and shortness of breath? </string>
-    <string name="txt_N2088_4">N2088_4: Severe headache? </string>
-    <string name="txt_N2088_5">N2088_5: Blurred vision? </string>
-    <string name="txt_N2088_6">N2088_6: Too weak to get out of bed? </string>
-    <string name="txt_N2088_7">N2088_7: Severe abdominal pain? (not labor pain, between contractions) </string>
-    <string name="txt_N2088_8">N2088_8: Fast or difficult breathing? </string>
-    <string name="txt_N2088_9">N2088_9: Puffy face? </string>
-    <string name="txt_N2088_10">N2088_10: Excessive bleeding during labor or delivery </string>
-    <string name="txt_N2088_11">N2088_11: Fever? </string>
-    <string name="txt_N2088_12">N2088_12: Foul smelling vaginal discharge? </string>
-    <string name="txt_N2088_13">N2088_13: Early/preterm labor (before 9 months) </string>
-    <string name="txt_N2088_14">N2088_14: Labor that lasted 12 hours or more </string>
-    <string name="txt_N2088_15">N2088_15: Baby’s bottom, feet, arm or hand delivered before its head? </string>
-    <string name="txt_N2088_16">N2088_16: The umbilical cord delivered first? </string>
-    <string name="txt_N2088_17">N2088_17: The umbilical cord wrapped more than once around the neck of the child at birth? </string>
-    <string name="txt_N2088_18">N2088_18: Any other symptom? </string>
-    <string name="txt_N2088_19">N2088_19: No symptoms during labor/delivery </string>
+    <string name="txt_N2088_1">N2088_1: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Convulsions symptoms during labor or delivery? </string>
+    <string name="txt_N2088_2">N2088_2: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have High blood pressure symptoms during labor or delivery? </string>
+    <string name="txt_N2088_3">N2088_3: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Severe anemia or pallor and shortness of breath symptoms during labor or delivery? </string>
+    <string name="txt_N2088_4">N2088_4: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Severe headache symptoms during labor or delivery? </string>
+    <string name="txt_N2088_5">N2088_5: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Blurred vision symptoms during labor or delivery? </string>
+    <string name="txt_N2088_6">N2088_6: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Too weak to get out of bed symptoms during labor or delivery? </string>
+    <string name="txt_N2088_7">N2088_7: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Severe abdominal pain? (not labor pain, between contractions) symptoms during labor or delivery? </string>
+    <string name="txt_N2088_8">N2088_8: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Fast or difficult breathing symptoms during labor or delivery? </string>
+    <string name="txt_N2088_9">N2088_9: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Puffy face symptoms during labor or delivery? </string>
+    <string name="txt_N2088_10">N2088_10: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Excessive bleeding during labor or delivery symptoms during labor or delivery? </string>
+    <string name="txt_N2088_11">N2088_11: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Fever symptoms during labor or delivery? </string>
+    <string name="txt_N2088_12">N2088_12: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Foul smelling vaginal discharge symptoms during labor or delivery? </string>
+    <string name="txt_N2088_13">N2088_13: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Early/preterm labor (before 9 months) symptoms during labor or delivery? </string>
+    <string name="txt_N2088_14">N2088_14: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Labor that lasted 12 hours or more symptoms during labor or delivery? </string>
+    <string name="txt_N2088_15">N2088_15: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Baby’s bottom, feet, arm or hand delivered before its head symptoms during labor or delivery? </string>
+    <string name="txt_N2088_16">N2088_16: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have The umbilical cord delivered first symptoms during labor or delivery? </string>
+    <string name="txt_N2088_17">N2088_17: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have The umbilical cord wrapped more than once around the neck of the child at birth symptoms during labor or delivery? </string>
+    <string name="txt_N2088_18">N2088_18: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have Any other symptom during labor or delivery? </string>
+    <string name="txt_N2088_19">N2088_19: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have No symptoms during labor/delivery during labor or delivery? </string>
 
     <string name="txt_N2089">N2089:	Where (were you / was the mother) when (this / the first) symptom began?	</string>
     <string name="txt_N2090">N2090:	Did (you / she) ever receive or seek any care or treatment for (any of) the labor or delivery symptom(s) including any care or treatment at home?	</string>
@@ -268,9 +268,9 @@
 
     <string name="txt_N2107">N2107: Now, I’d like to ask about symptoms after the delivery of the baby. Did (you / the mother) have any of the following symptoms that started within 6 weeks after the delivery?"></string>
 
-    <string name="txt_N2107_1">N2107_1: Convulsions? </string>
-    <string name="txt_N2107_2">N2107_2: Heavy bleeding? </string>
-    <string name="txt_N2107_3">N2107_3: Fever with smelly vaginal discharge or abdominal pain? </string>
+    <string name="txt_N2107_1">N2107_1: Now, I’d like to ask about symptoms after the delivery of the baby. Did (you / the mother) have Convulsions symptoms that started within 6 weeks after the delivery? </string>
+    <string name="txt_N2107_2">N2107_2: Now, I’d like to ask about symptoms after the delivery of the baby. Did (you / the mother) have Heavy bleeding symptoms that started within 6 weeks after the delivery? </string>
+    <string name="txt_N2107_3">N2107_3: Now, I’d like to ask about symptoms after the delivery of the baby. Did (you / the mother) have Fever with smelly vaginal discharge or abdominal pain symptoms that started within 6 weeks after the delivery? </string>
 
     <!-- Responces starts  .....................  -->
 
@@ -417,6 +417,24 @@
     <string name="cb_N2053_OT">Other (specify) </string>
     <string name="cb_N2053_DK">Don’t know </string>
 
+    <string name="rb_N2057_1_1">Yes</string>
+    <string name="rb_N2057_1_2">No</string>
+    <string name="rb_N2057_1_DK">Don’t know</string>
+    <string name="rb_N2057_2_1">Yes</string>
+    <string name="rb_N2057_2_2">No</string>
+    <string name="rb_N2057_2_DK">Don’t know</string>
+    <string name="rb_N2057_3_1">Yes</string>
+    <string name="rb_N2057_3_2">No</string>
+    <string name="rb_N2057_3_DK">Don’t know</string>
+    <string name="rb_N2057_4_1">Yes</string>
+    <string name="rb_N2057_4_2">No</string>
+    <string name="rb_N2057_4_DK">Don’t know</string>
+    <string name="rb_N2057_5_1">Yes</string>
+    <string name="rb_N2057_5_2">No</string>
+    <string name="rb_N2057_5_DK">Don’t know</string>
+    <string name="rb_N2057_6_1">Yes</string>
+    <string name="rb_N2057_6_2">No</string>
+    <string name="rb_N2057_6_DK">Don’t know</string>
     <string name="cb_N2058_1">Vaginal bleeding </string>
     <string name="cb_N2058_2">Convulsions/fits </string>
     <string name="cb_N2058_3">Severe headache with blurred vision </string>
@@ -503,6 +521,71 @@
     <string name="cb_N2078_OT">Other (specify) </string>
     <string name="cb_N2078_DK">Don’t know </string>
 
+    <string name="rb_N2080_1_1">Yes</string>
+    <string name="rb_N2080_1_2">No</string>
+    <string name="rb_N2080_1_DK">Don’t know</string>
+    <string name="rb_N2080_1_RA">Refused to answer</string>
+    <string name="rb_N2080_2_1">Yes</string>
+    <string name="rb_N2080_2_2">No</string>
+    <string name="rb_N2080_2_DK">Don’t know</string>
+    <string name="rb_N2080_2_RA">Refused to answer</string>
+    <string name="rb_N2080_3_1">Yes</string>
+    <string name="rb_N2080_3_2">No</string>
+    <string name="rb_N2080_3_DK">Don’t know</string>
+    <string name="rb_N2080_3_RA">Refused to answer</string>
+    <string name="rb_N2080_4_1">Yes</string>
+    <string name="rb_N2080_4_2">No</string>
+    <string name="rb_N2080_4_DK">Don’t know</string>
+    <string name="rb_N2080_4_RA">Refused to answer</string>
+    <string name="rb_N2080_5_1">Yes</string>
+    <string name="rb_N2080_5_2">No</string>
+    <string name="rb_N2080_5_DK">Don’t know</string>
+    <string name="rb_N2080_5_RA">Refused to answer</string>
+    <string name="rb_N2080_6_1">Yes</string>
+    <string name="rb_N2080_6_2">No</string>
+    <string name="rb_N2080_6_DK">Don’t know</string>
+    <string name="rb_N2080_6_RA">Refused to answer</string>
+    <string name="rb_N2080_7_1">Yes</string>
+    <string name="rb_N2080_7_2">No</string>
+    <string name="rb_N2080_7_DK">Don’t know</string>
+    <string name="rb_N2080_7_RA">Refused to answer</string>
+    <string name="rb_N2080_8_1">Yes</string>
+    <string name="rb_N2080_8_2">No</string>
+    <string name="rb_N2080_8_DK">Don’t know</string>
+    <string name="rb_N2080_8_RA">Refused to answer</string>
+    <string name="rb_N2080_9_1">Yes</string>
+    <string name="rb_N2080_9_2">No</string>
+    <string name="rb_N2080_9_DK">Don’t know</string>
+    <string name="rb_N2080_9_RA">Refused to answer</string>
+    <string name="rb_N2080_10_1">Yes</string>
+    <string name="rb_N2080_10_2">No</string>
+    <string name="rb_N2080_10_DK">Don’t know</string>
+    <string name="rb_N2080_10_RA">Refused to answer</string>
+    <string name="rb_N2080_11_1">Yes</string>
+    <string name="rb_N2080_11_2">No</string>
+    <string name="rb_N2080_11_DK">Don’t know</string>
+    <string name="rb_N2080_11_RA">Refused to answer</string>
+    <string name="rb_N2080_12_1">Yes</string>
+    <string name="rb_N2080_12_2">No</string>
+    <string name="rb_N2080_12_DK">Don’t know</string>
+    <string name="rb_N2080_12_RA">Refused to answer</string>
+    <string name="rb_N2080_13_1">Yes</string>
+    <string name="rb_N2080_13_2">No</string>
+    <string name="rb_N2080_13_DK">Don’t know</string>
+    <string name="rb_N2080_13_RA">Refused to answer</string>
+    <string name="rb_N2080_14_1">Yes</string>
+    <string name="rb_N2080_14_2">No</string>
+    <string name="rb_N2080_14_DK">Don’t know</string>
+    <string name="rb_N2080_14_RA">Refused to answer</string>
+    <string name="rb_N2080_15_1">Yes</string>
+    <string name="rb_N2080_15_2">No</string>
+    <string name="rb_N2080_15_DK">Don’t know</string>
+    <string name="rb_N2080_15_RA">Refused to answer</string>
+    <string name="rb_N2080_16_1">Yes</string>
+    <string name="rb_N2080_16_2">No</string>
+    <string name="rb_N2080_16_DK">Don’t know</string>
+    <string name="rb_N2080_16_RA">Refused to answer</string>
+
     <string name="rb_N2081_1">Yes</string>
     <string name="rb_N2081_2">No</string>
     <string name="rb_N2081_DK">Don’t know</string>
@@ -552,6 +635,83 @@
     <string name="rb_N2087_1">Yes</string>
     <string name="rb_N2087_2">No</string>
     <string name="rb_N2087_DK">Don’t know</string>
+
+    <string name="rb_N2088_1_1">Yes</string>
+    <string name="rb_N2088_1_2">No</string>
+    <string name="rb_N2088_1_DK">Don’t know</string>
+    <string name="rb_N2088_1_RA">Refused to answer</string>
+    <string name="rb_N2088_2_1">Yes</string>
+    <string name="rb_N2088_2_2">No</string>
+    <string name="rb_N2088_2_DK">Don’t know</string>
+    <string name="rb_N2088_2_RA">Refused to answer</string>
+    <string name="rb_N2088_3_1">Yes</string>
+    <string name="rb_N2088_3_2">No</string>
+    <string name="rb_N2088_3_DK">Don’t know</string>
+    <string name="rb_N2088_3_RA">Refused to answer</string>
+    <string name="rb_N2088_4_1">Yes</string>
+    <string name="rb_N2088_4_2">No</string>
+    <string name="rb_N2088_4_DK">Don’t know</string>
+    <string name="rb_N2088_4_RA">Refused to answer</string>
+    <string name="rb_N2088_5_1">Yes</string>
+    <string name="rb_N2088_5_2">No</string>
+    <string name="rb_N2088_5_DK">Don’t know</string>
+    <string name="rb_N2088_5_RA">Refused to answer</string>
+    <string name="rb_N2088_6_1">Yes</string>
+    <string name="rb_N2088_6_2">No</string>
+    <string name="rb_N2088_6_DK">Don’t know</string>
+    <string name="rb_N2088_6_RA">Refused to answer</string>
+    <string name="rb_N2088_7_1">Yes</string>
+    <string name="rb_N2088_7_2">No</string>
+    <string name="rb_N2088_7_DK">Don’t know</string>
+    <string name="rb_N2088_7_RA">Refused to answer</string>
+    <string name="rb_N2088_8_1">Yes</string>
+    <string name="rb_N2088_8_2">No</string>
+    <string name="rb_N2088_8_DK">Don’t know</string>
+    <string name="rb_N2088_8_RA">Refused to answer</string>
+    <string name="rb_N2088_9_1">Yes</string>
+    <string name="rb_N2088_9_2">No</string>
+    <string name="rb_N2088_9_DK">Don’t know</string>
+    <string name="rb_N2088_9_RA">Refused to answer</string>
+    <string name="rb_N2088_10_1">Yes</string>
+    <string name="rb_N2088_10_2">No</string>
+    <string name="rb_N2088_10_DK">Don’t know</string>
+    <string name="rb_N2088_10_RA">Refused to answer</string>
+    <string name="rb_N2088_11_1">Yes</string>
+    <string name="rb_N2088_11_2">No</string>
+    <string name="rb_N2088_11_DK">Don’t know</string>
+    <string name="rb_N2088_11_RA">Refused to answer</string>
+    <string name="rb_N2088_12_1">Yes</string>
+    <string name="rb_N2088_12_2">No</string>
+    <string name="rb_N2088_12_DK">Don’t know</string>
+    <string name="rb_N2088_12_RA">Refused to answer</string>
+    <string name="rb_N2088_13_1">Yes</string>
+    <string name="rb_N2088_13_2">No</string>
+    <string name="rb_N2088_13_DK">Don’t know</string>
+    <string name="rb_N2088_13_RA">Refused to answer</string>
+    <string name="rb_N2088_14_1">Yes</string>
+    <string name="rb_N2088_14_2">No</string>
+    <string name="rb_N2088_14_DK">Don’t know</string>
+    <string name="rb_N2088_14_RA">Refused to answer</string>
+    <string name="rb_N2088_15_1">Yes</string>
+    <string name="rb_N2088_15_2">No</string>
+    <string name="rb_N2088_15_DK">Don’t know</string>
+    <string name="rb_N2088_15_RA">Refused to answer</string>
+    <string name="rb_N2088_16_1">Yes</string>
+    <string name="rb_N2088_16_2">No</string>
+    <string name="rb_N2088_16_DK">Don’t know</string>
+    <string name="rb_N2088_16_RA">Refused to answer</string>
+    <string name="rb_N2088_17_1">Yes</string>
+    <string name="rb_N2088_17_2">No</string>
+    <string name="rb_N2088_17_DK">Don’t know</string>
+    <string name="rb_N2088_17_RA">Refused to answer</string>
+    <string name="rb_N2088_18_1">Yes</string>
+    <string name="rb_N2088_18_2">No</string>
+    <string name="rb_N2088_18_DK">Don’t know</string>
+    <string name="rb_N2088_18_RA">Refused to answer</string>
+    <string name="rb_N2088_19_1">Yes</string>
+    <string name="rb_N2088_19_2">No</string>
+    <string name="rb_N2088_19_DK">Don’t know</string>
+    <string name="rb_N2088_19_RA">Refused to answer</string>
 
     <string name="rb_N2089_1">Home (without a trained community nurse or midwife)</string>
     <string name="rb_N2089_2">On route to a health provider or facility</string>
@@ -658,6 +818,18 @@
     <string name="rb_N2106_2">No</string>
     <string name="rb_N2106_DK">Don’t know</string>
 
+    <string name="rb_N2107_1_1">Yes</string>
+    <string name="rb_N2107_1_2">No</string>
+    <string name="rb_N2107_1_DK">Don’t know</string>
+    <string name="rb_N2107_1_RA">Refused to answer</string>
+    <string name="rb_N2107_2_1">Yes</string>
+    <string name="rb_N2107_2_2">No</string>
+    <string name="rb_N2107_2_DK">Don’t know</string>
+    <string name="rb_N2107_2_RA">Refused to answer</string>
+    <string name="rb_N2107_3_1">Yes</string>
+    <string name="rb_N2107_3_2">No</string>
+    <string name="rb_N2107_3_DK">Don’t know</string>
+
 
     <!-- Questions starts  .....................  -->
 
@@ -709,30 +881,32 @@
     <string name="txt_N2311">N2311: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on any of the following issues that affect the entire community or part of the community?</string>
 
 
-    <string name="txt_N2311_1">N2311_1: Education/schools</string>
-    <string name="txt_N2311_2">N2311_2: Health services/clinics</string>
-    <string name="txt_N2311_3">N2311_3: Paid job opportunities</string>
-    <string name="txt_N2311_4">N2311_4: Credit/finance</string>
-    <string name="txt_N2311_5">N2311_5: Roads</string>
-    <string name="txt_N2311_6">N2311_6: Public transportation</string>
-    <string name="txt_N2311_7">N2311_7: Water distribution</string>
-    <string name="txt_N2311_8">N2311_8: Sanitation services</string>
-    <string name="txt_N2311_9">N2311_9: Agriculture</string>
-    <string name="txt_N2311_10">N2311_10: Justice/conflict resolution</string>
-    <string name="txt_N2311_11">N2311_11: Security/police services</string>
-    <string name="txt_N2311_12">N2311_12: Mosque/church/temple</string>
-    <string name="txt_N2311_OT">N2311_OT: Other (specify)</string>
+    <string name="txt_N2311_1">N2311_1: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Education/schools issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2311_2">N2311_2: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Health services/clinics issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2311_3">N2311_3: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Paid job opportunities issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2311_4">N2311_4: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Credit/finance issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2311_5">N2311_5: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Roads issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2311_6">N2311_6: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Public transportation issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2311_7">N2311_7: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Water distribution issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2311_8">N2311_8: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Sanitation services issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2311_9">N2311_9: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Agriculture issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2311_10">N2311_10: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Justice/conflict resolution issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2311_11">N2311_11: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Security/police services issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2311_12">N2311_12: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Mosque/church/temple issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2311_OT">N2311_OT: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Other (specify) issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2311_14">N2311_14: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on any of the following issues that affect the entire community or part of the community?</string>
 
 
-    <string name="txt_N2312_1">N2312_1: Vocational training group</string>
-    <string name="txt_N2312_2">N2312_2: Savings group or microcredit program</string>
-    <string name="txt_N2312_3">N2312_3: Community cooperative, such as an agricultural cooperative</string>
-    <string name="txt_N2312_4">N2312_4: Political group</string>
-    <string name="txt_N2312_5">N2312_5: Religious group</string>
-    <string name="txt_N2312_6">N2312_6: Sports club</string>
-    <string name="txt_N2312_7">N2312_7: Youth / student club</string>
-    <string name="txt_N2312_8">N2312_8: Women’s group</string>
-    <string name="txt_N2312_OT">N2312_OT: Other (specify)</string>
+    <string name="txt_N2312_1">N2312_1: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Vocational training group issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2312_2">N2312_2: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Savings group or microcredit program issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2312_3">N2312_3: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Community cooperative, such as an agricultural cooperative issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2312_4">N2312_4: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Political group issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2312_5">N2312_5: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Religious group issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2312_6">N2312_6: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Sports club issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2312_7">N2312_7: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Youth / student club issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2312_8">N2312_8: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Women’s group issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2312_OT">N2312_OT: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on Other (specify) issues that affect the entire community or part of the community?</string>
+    <string name="txt_N2312_10">N2312_10: In the 12 months before (s) death, did the people in the (village / neighborhood) work together on any of the following issues that affect the entire community or part of the community?</string>
 
 
     <string name="txt_N231_1">N231_1: Religious group</string>
@@ -752,18 +926,18 @@
     <string name="txt_N2313">N2313: Did (you / she) turn to any of the following people or groups in the community for help during (the pregnancy / (or) the child’s fatal illness )?</string>
 
 
-    <string name="txt_N2313_1">N2313_1: Religious group</string>
-    <string name="txt_N2313_2">N2313_2: Women’s group</string>
-    <string name="txt_N2313_3">N2313_3: Savings group or microcredit program</string>
-    <string name="txt_N2313_4">N2313_4: Any other community group, such as a vocational training group, community cooperative, political group, sports club, youth or student group</string>
-    <string name="txt_N2313_5">N2313_5: Community or political leader</string>
-    <string name="txt_N2313_6">N2313_6: Religious leader</string>
-    <string name="txt_N2313_7">N2313_7: Family</string>
-    <string name="txt_N2313_8">N2313_8: Neighbors</string>
-    <string name="txt_N2313_9">N2313_9: Friends</string>
-    <string name="txt_N2313_10">N2313_10: Patron/employer/benefactor</string>
-    <string name="txt_N2313_11">N2313_11: Police</string>
-    <string name="txt_N2313_OT">N2313_OT: Other (specify)</string>
+    <string name="txt_N2313_1">N2313_1: Did (you / she) turn to any of the following people or groups in the community for help during (the pregnancy / (or) the child’s fatal illness )?Religious group</string>
+    <string name="txt_N2313_2">N2313_2: Did (you / she) turn to any of the following people or groups in the community for help during (the pregnancy / (or) the child’s fatal illness )?Women’s group</string>
+    <string name="txt_N2313_3">N2313_3: Did (you / she) turn to any of the following people or groups in the community for help during (the pregnancy / (or) the child’s fatal illness )?Savings group or microcredit program</string>
+    <string name="txt_N2313_4">N2313_4: Did (you / she) turn to any of the following people or groups in the community for help during (the pregnancy / (or) the child’s fatal illness )?Any other community group, such as a vocational training group, community cooperative, political group, sports club, youth or student group</string>
+    <string name="txt_N2313_5">N2313_5: Did (you / she) turn to any of the following people or groups in the community for help during (the pregnancy / (or) the child’s fatal illness )?Community or political leader</string>
+    <string name="txt_N2313_6">N2313_6: Did (you / she) turn to any of the following people or groups in the community for help during (the pregnancy / (or) the child’s fatal illness )?Religious leader</string>
+    <string name="txt_N2313_7">N2313_7: Did (you / she) turn to any of the following people or groups in the community for help during (the pregnancy / (or) the child’s fatal illness )?Family</string>
+    <string name="txt_N2313_8">N2313_8: Did (you / she) turn to any of the following people or groups in the community for help during (the pregnancy / (or) the child’s fatal illness )?Neighbors</string>
+    <string name="txt_N2313_9">N2313_9: Did (you / she) turn to any of the following people or groups in the community for help during (the pregnancy / (or) the child’s fatal illness )?Friends</string>
+    <string name="txt_N2313_10">N2313_10: Did (you / she) turn to any of the following people or groups in the community for help during (the pregnancy / (or) the child’s fatal illness )?Patron/employer/benefactor</string>
+    <string name="txt_N2313_11">N2313_11: Did (you / she) turn to any of the following people or groups in the community for help during (the pregnancy / (or) the child’s fatal illness )?Police</string>
+    <string name="txt_N2313_OT">N2313_OT: Did (you / she) turn to any of the following people or groups in the community for help during (the pregnancy / (or) the child’s fatal illness )?Other (specify)</string>
 
 
     <string name="txt_N2314">N2314:	Did the child ever have a positive HIV test?	</string>
@@ -862,6 +1036,82 @@
     <string name="ed_N2301_OT">Other (specify) </string>
     <string name="rb_N2301_DK">Don’t know</string>
 
+    <string name="rb_N2311_1_1">Yes</string>
+    <string name="rb_N2311_1_2">No</string>
+    <string name="rb_N2311_1_DK">Don’t know</string>
+    <string name="rb_N2311_2_1">Yes</string>
+    <string name="rb_N2311_2_2">No</string>
+    <string name="rb_N2311_2_DK">Don’t know</string>
+    <string name="rb_N2311_3_1">Yes</string>
+    <string name="rb_N2311_3_2">No</string>
+    <string name="rb_N2311_3_DK">Don’t know</string>
+    <string name="rb_N2311_4_1">Yes</string>
+    <string name="rb_N2311_4_2">No</string>
+    <string name="rb_N2311_4_DK">Don’t know</string>
+    <string name="rb_N2311_5_1">Yes</string>
+    <string name="rb_N2311_5_2">No</string>
+    <string name="rb_N2311_5_DK">Don’t know</string>
+    <string name="rb_N2311_6_1">Yes</string>
+    <string name="rb_N2311_6_2">No</string>
+    <string name="rb_N2311_6_DK">Don’t know</string>
+    <string name="rb_N2311_7_1">Yes</string>
+    <string name="rb_N2311_7_2">No</string>
+    <string name="rb_N2311_7_DK">Don’t know</string>
+    <string name="rb_N2311_8_1">Yes</string>
+    <string name="rb_N2311_8_2">No</string>
+    <string name="rb_N2311_8_DK">Don’t know</string>
+    <string name="rb_N2311_9_1">Yes</string>
+    <string name="rb_N2311_9_2">No</string>
+    <string name="rb_N2311_9_DK">Don’t know</string>
+    <string name="rb_N2311_10_1">Yes</string>
+    <string name="rb_N2311_10_2">No</string>
+    <string name="rb_N2311_10_DK">Don’t know</string>
+    <string name="rb_N2311_11_1">Yes</string>
+    <string name="rb_N2311_11_2">No</string>
+    <string name="rb_N2311_11_DK">Don’t know</string>
+    <string name="rb_N2311_12_1">Yes</string>
+    <string name="rb_N2311_12_2">No</string>
+    <string name="rb_N2311_12_DK">Don’t know</string>
+    <string name="rb_N2311_OT_1">Yes</string>
+    <string name="rb_N2311_OT_2">No</string>
+    <string name="rb_N2311_OT_DK">Don’t know</string>
+    <string name="ed_N2311_OT">Other (Specify)</string>
+    <string name="rb_N2311_14_1">One or more issues identified</string>
+    <string name="rb_N2311_14_2">No issue identified</string>
+
+    <string name="rb_N2312_1_1">Yes</string>
+    <string name="rb_N2312_1_2">No</string>
+    <string name="rb_N2312_1_DK">Don’t know</string>
+    <string name="rb_N2312_2_1">Yes</string>
+    <string name="rb_N2312_2_2">No</string>
+    <string name="rb_N2312_2_DK">Don’t know</string>
+    <string name="rb_N2312_3_1">Yes</string>
+    <string name="rb_N2312_3_2">No</string>
+    <string name="rb_N2312_3_DK">Don’t know</string>
+    <string name="rb_N2312_4_1">Yes</string>
+    <string name="rb_N2312_4_2">No</string>
+    <string name="rb_N2312_4_DK">Don’t know</string>
+    <string name="rb_N2312_5_1">Yes</string>
+    <string name="rb_N2312_5_2">No</string>
+    <string name="rb_N2312_5_DK">Don’t know</string>
+    <string name="rb_N2312_6_1">Yes</string>
+    <string name="rb_N2312_6_2">No</string>
+    <string name="rb_N2312_6_DK">Don’t know</string>
+    <string name="rb_N2312_7_1">Yes</string>
+    <string name="rb_N2312_7_2">No</string>
+    <string name="rb_N2312_7_DK">Don’t know</string>
+    <string name="rb_N2312_8_1">Yes</string>
+    <string name="rb_N2312_8_2">No</string>
+    <string name="rb_N2312_8_DK">Don’t know</string>
+    <string name="rb_N2312_OT_1">Yes</string>
+    <string name="rb_N2312_OT_2">No</string>
+    <string name="rb_N2312_OT_DK">Don’t know</string>
+    <string name="ed_N2312_OT">Other (Specify)</string>
+    <string name="rb_N2312_10_1">Yes</string>
+    <string name="rb_N2312_10_2">No</string>
+    <string name="rb_N2312_10_DK">Don’t know</string>
+
+
     <!-- quesiotn txt_starts-->
 
     <string name="txt_N2110">N2110:	What tool was used for cutting the cord?	</string>
@@ -895,18 +1145,18 @@
 
     <string name="txt_N2135">N2135: On the day before the illness began, was the baby given any…? </string>
 
-    <string name="txt_N2135_1">N2135_1: Milk (other than breast milk) </string>
-    <string name="txt_N2135_2">N2135_2: Plain water </string>
-    <string name="txt_N2135_3">N2135_3: Sugar or glucose water </string>
-    <string name="txt_N2135_4">N2135_4: Gripe water </string>
-    <string name="txt_N2135_5">N2135_5: Sugar-salt-water solution </string>
-    <string name="txt_N2135_6">N2135_6: Fruit juice </string>
-    <string name="txt_N2135_7">N2135_7: Infant formula </string>
-    <string name="txt_N2135_8">N2135_8: Tea / Infusions </string>
-    <string name="txt_N2135_9">N2135_9: Honey </string>
-    <string name="txt_N2135_10">N2135_10: Semisolid or soft foods such as yogurt, cereal or mashed vegetables </string>
-    <string name="txt_N2135_11">N2135_11: Any other liquid or semisolid or soft food </string>
-    <string name="txt_N2135_12">N2135_12: (Specify other liquid, semisolid, soft food) </string>
+    <string name="txt_N2135_1">N2135_1: On the day before the illness began, was the baby given Milk (other than breast milk) </string>
+    <string name="txt_N2135_2">N2135_2: On the day before the illness began, was the baby given Plain water </string>
+    <string name="txt_N2135_3">N2135_3: On the day before the illness began, was the baby given Sugar or glucose water </string>
+    <string name="txt_N2135_4">N2135_4: On the day before the illness began, was the baby given Gripe water </string>
+    <string name="txt_N2135_5">N2135_5: On the day before the illness began, was the baby given Sugar-salt-water solution </string>
+    <string name="txt_N2135_6">N2135_6: On the day before the illness began, was the baby given Fruit juice </string>
+    <string name="txt_N2135_7">N2135_7: On the day before the illness began, was the baby given Infant formula </string>
+    <string name="txt_N2135_8">N2135_8: On the day before the illness began, was the baby given Tea / Infusions </string>
+    <string name="txt_N2135_9">N2135_9: On the day before the illness began, was the baby given Honey </string>
+    <string name="txt_N2135_10">N2135_10: On the day before the illness began, was the baby given Semisolid or soft foods such as yogurt, cereal or mashed vegetables </string>
+    <string name="txt_N2135_11">N2135_11: On the day before the illness began, was the baby given Any other liquid or semisolid or soft food </string>
+    <string name="txt_N2135_12">N2135_12: On the day before the illness began, was the baby given (Specify other liquid, semisolid, soft food) </string>
 
     <string name="txt_N2136">N2136:	Was the baby able to suckle or bottle-feed in a normal way during the first day of life?	</string>
     <string name="txt_N2137">N2137:	Did the baby ever suckle in a normal way? 	</string>
@@ -1099,6 +1349,43 @@
     <string name="rb_N2134_2">No</string>
     <string name="rb_N2134_DK">Don’t know</string>
 
+    <string name="rb_N2135_1_1">Yes</string>
+    <string name="rb_N2135_1_2">No</string>
+    <string name="rb_N2135_1_DK">Don’t know</string>
+    <string name="rb_N2135_2_1">Yes</string>
+    <string name="rb_N2135_2_2">No</string>
+    <string name="rb_N2135_2_DK">Don’t know</string>
+    <string name="rb_N2135_3_1">Yes</string>
+    <string name="rb_N2135_3_2">No</string>
+    <string name="rb_N2135_3_DK">Don’t know</string>
+    <string name="rb_N2135_4_1">Yes</string>
+    <string name="rb_N2135_4_2">No</string>
+    <string name="rb_N2135_4_DK">Don’t know</string>
+    <string name="rb_N2135_5_1">Yes</string>
+    <string name="rb_N2135_5_2">No</string>
+    <string name="rb_N2135_5_DK">Don’t know</string>
+    <string name="rb_N2135_6_1">Yes</string>
+    <string name="rb_N2135_6_2">No</string>
+    <string name="rb_N2135_6_DK">Don’t know</string>
+    <string name="rb_N2135_7_1">Yes</string>
+    <string name="rb_N2135_7_2">No</string>
+    <string name="rb_N2135_7_DK">Don’t know</string>
+    <string name="rb_N2135_8_1">Yes</string>
+    <string name="rb_N2135_8_2">No</string>
+    <string name="rb_N2135_8_DK">Don’t know</string>
+    <string name="rb_N2135_9_1">Yes</string>
+    <string name="rb_N2135_9_2">No</string>
+    <string name="rb_N2135_9_DK">Don’t know</string>
+    <string name="rb_N2135_10_1">Yes</string>
+    <string name="rb_N2135_10_2">No</string>
+    <string name="rb_N2135_10_DK">Don’t know</string>
+    <string name="rb_N2135_11_1">Yes</string>
+    <string name="rb_N2135_11_2">No</string>
+    <string name="rb_N2135_11_DK">Don’t know</string>
+    <string name="rb_N2135_12_1">Yes</string>
+    <string name="rb_N2135_12_2">No</string>
+    <string name="rb_N2135_12_DK">Don’t know</string>
+
     <string name="rb_N2136_1">Yes</string>
     <string name="rb_N2136_2">No</string>
     <string name="rb_N2136_DK">Don’t know</string>
@@ -1272,6 +1559,8 @@
     <string name="rb_N2189a_DK">Don’t know</string>
     <string name="rb_N2189a_RA">Refused</string>
 
+    <string name="rb_N2190_1">Yes</string>
+    <string name="rb_N2190_2">No</string>
     <string name="rb_N2190_DK">Don’t know</string>
     <string name="rb_N2190_RA">Refused to answer</string>
     <string name="rb_N2190_1_1">Yes</string>
@@ -2028,41 +2317,41 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="txt_C3261_2">C3261_2:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
     <string name="txt_C3262">C3262:	Did the &lt;FIRST/LAST HEALTH PROVIDER> admit &lt;NAME> to the hospital for his/her problem?	</string>
     <string name="txt_C3263">C3263:	Did the &lt;FIRST/LAST HEALTH PROVIDER> refer &lt;NAME> to another health provider or facility?	</string>
-    <string name="txt_C3264">N2224:	To where was &lt;NAME> referred?	</string>
-    <string name="txt_C3264_2">N2224_2:	Name of Provider/Facility	</string>
-    <string name="txt_C3265_1">N2225_1:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which &lt;NAME> needs to return immediately?	</string>
-    <string name="txt_C3265_2">N2225_2:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which To follow-up if &lt;NAME> did not improve after leaving?	</string>
-    <string name="txt_C3266">N2226:	Did &lt;NAME> leave the &lt;FIRST/LAST HEALTH PROVIDER> alive?	</string>
-    <string name="txt_C3267_1">N2227_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all.	</string>
-    <string name="txt_C3267_2">N2227_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
-    <string name="txt_C3268_1">N2228_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all 	</string>
-    <string name="txt_C3268_2">N2228_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
-    <string name="txt_C3269">N2229:	What was the name of the &lt;FIRST/LAST HEALTH PROVIDER> where you took &lt;NAME>?	</string>
-    <string name="txt_C3269_2">N2229_2:	Name of Provider/Facility	</string>
-    <string name="txt_C3270">N2230:	Did &lt;NAME> reach the &lt;FIRST/LAST HEALTH PROVIDER> before s/he died?	</string>
-    <string name="txt_C3271_1">N2231_1:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
-    <string name="txt_C3271_2">N2231_2:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
-    <string name="txt_C3272">N2232:	Did the &lt;FIRST/LAST HEALTH PROVIDER> admit &lt;NAME> to the hospital for his/her problem?	</string>
-    <string name="txt_C3273">N2233:	Did the &lt;FIRST/LAST HEALTH PROVIDER> refer &lt;NAME> to another health provider or facility?	</string>
-    <string name="txt_C3274">N2234:	To where was &lt;NAME> referred?	</string>
-    <string name="txt_C3274_2">N2234_2:	Name of Provider/Facility	</string>
-    <string name="txt_C3275_1">N2235_1:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which &lt;NAME> needs to return immediately?	</string>
-    <string name="txt_C3275_2">N2235_2:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which To follow-up if &lt;NAME> did not improve after leaving?	</string>
-    <string name="txt_C3276">N2236:	Did &lt;NAME> leave the &lt;FIRST/LAST HEALTH PROVIDER> alive?	</string>
-    <string name="txt_C3277_1">N2237_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all.	</string>
-    <string name="txt_C3277_2">N2237_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
+    <string name="txt_C3264">C3264:	To where was &lt;NAME> referred?	</string>
+    <string name="txt_C3264_2">C3264_2:	Name of Provider/Facility	</string>
+    <string name="txt_C3265_1">C3265_1:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which &lt;NAME> needs to return immediately?	</string>
+    <string name="txt_C3265_2">C3265_2:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which To follow-up if &lt;NAME> did not improve after leaving?	</string>
+    <string name="txt_C3266">C3266:	Did &lt;NAME> leave the &lt;FIRST/LAST HEALTH PROVIDER> alive?	</string>
+    <string name="txt_C3267_1">C3267_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all.	</string>
+    <string name="txt_C3267_2">C3267_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
+    <string name="txt_C3268_1">C3268_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all 	</string>
+    <string name="txt_C3268_2">C3268_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
+    <string name="txt_C3269">C3269:	What was the name of the &lt;FIRST/LAST HEALTH PROVIDER> where you took &lt;NAME>?	</string>
+    <string name="txt_C3269_2">C3269_2:	Name of Provider/Facility	</string>
+    <string name="txt_C3270">C3270:	Did &lt;NAME> reach the &lt;FIRST/LAST HEALTH PROVIDER> before s/he died?	</string>
+    <string name="txt_C3271_1">C3271_1:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
+    <string name="txt_C3271_2">C3271_2:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
+    <string name="txt_C3272">C3272:	Did the &lt;FIRST/LAST HEALTH PROVIDER> admit &lt;NAME> to the hospital for his/her problem?	</string>
+    <string name="txt_C3273">C3273:	Did the &lt;FIRST/LAST HEALTH PROVIDER> refer &lt;NAME> to another health provider or facility?	</string>
+    <string name="txt_C3274">C3274:	To where was &lt;NAME> referred?	</string>
+    <string name="txt_C3274_2">C3274_2:	Name of Provider/Facility	</string>
+    <string name="txt_C3275_1">C3275_1:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which &lt;NAME> needs to return immediately?	</string>
+    <string name="txt_C3275_2">C3275_2:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which To follow-up if &lt;NAME> did not improve after leaving?	</string>
+    <string name="txt_C3276">C3276:	Did &lt;NAME> leave the &lt;FIRST/LAST HEALTH PROVIDER> alive?	</string>
+    <string name="txt_C3277_1">C3277_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all.	</string>
+    <string name="txt_C3277_2">C3277_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
 
-    <string name="txt_C3278">N2238: Did you take the child to (all) the health provider(s) where s/he was referred?</string>
-    <string name="txt_C3279">N2239: Did you have any concerns or problems that kept you from taking (NAME) to a health provider where s/he was referred</string>
-    <string name="txt_C3280">N2240: What concerns or problems did you have?</string>
-    <string name="txt_C3281">N2241: Did you have to pay any money to travel to (the / any) health provider?</string>
-    <string name="txt_C3282">N2242: How did you arrange for the money to travel?</string>
-    <string name="txt_C3283">N2243: What transportation method was used to go to the health provider(s)?</string>
-    <string name="txt_C3284">N2244: Were there any problems during admission to the hospital or health facility?</string>
-    <string name="txt_C3285">N2245: Were there any problems with the way (s)he was treated (medical treatment, procedures, interpersonal attitudes, respect, dignity) in the hospital or health facility?</string>
-    <string name="txt_C3286">N2246: Were there any problems getting medications, or diagnostic tests in the hospital or health facility?</string>
-    <string name="txt_C3287">N2247: In the final days before death, did anyone use a telephone or cell phone to call for help? </string>
-    <string name="txt_C3288">N2248: How many days after (first noticing the illness   leaving the first/last health provider) did (NAME) die? </string>
+    <string name="txt_C3278">C3278: Did you take the child to (all) the health provider(s) where s/he was referred?</string>
+    <string name="txt_C3279">C3279: Did you have any concerns or problems that kept you from taking (NAME) to a health provider where s/he was referred</string>
+    <string name="txt_C3280">C3280: What concerns or problems did you have?</string>
+    <string name="txt_C3281">C3281: Did you have to pay any money to travel to (the / any) health provider?</string>
+    <string name="txt_C3282">C3282: How did you arrange for the money to travel?</string>
+    <string name="txt_C3283">C3283: What transportation method was used to go to the health provider(s)?</string>
+    <string name="txt_C3284">C3284: Were there any problems during admission to the hospital or health facility?</string>
+    <string name="txt_C3285">C3285: Were there any problems with the way (s)he was treated (medical treatment, procedures, interpersonal attitudes, respect, dignity) in the hospital or health facility?</string>
+    <string name="txt_C3286">C3286: Were there any problems getting medications, or diagnostic tests in the hospital or health facility?</string>
+    <string name="txt_C3287">C3287: In the final days before death, did anyone use a telephone or cell phone to call for help? </string>
+    <string name="txt_C3288">C3288: How many days after (first noticing the illness   leaving the first/last health provider) did (NAME) die? </string>
 
     <string name="txt_C3301">C3301: Did (NAME) receive any treatment for the illness that led to death?	</string>
     <string name="txt_C3302_1">C3302_1: Did (s)he receive oral rehydration salts?	</string>
@@ -4130,6 +4419,8 @@ Examples of statements for the reading test:
     <string name="rb_Q1403_12">Birth attendant (specify type) 	</string>
     <string name="rb_Q1403_OTM">Other male (specify) 	</string>
     <string name="rb_Q1403_OTF">Other female (specify) 	</string>
+    <string name="ed_Q1403_OT">Other (specify) 	</string>
+
     <string name="rb_Q1404_1">Yes	</string>
     <string name="rb_Q1404_2">No	</string>
     <string name="rb_Q1404_DK">Don’t know	</string>
@@ -4169,7 +4460,7 @@ Examples of statements for the reading test:
     <string name="rb_Q1416_5">Improved traditional latrine	</string>
     <string name="rb_Q1416_6">Unimproved latrine	</string>
     <string name="rb_Q1416_7">No latrine/toilet	</string>
-    <string name="rb_Q1416_OT">Other (specify) 	</string>
+    <string name="ed_Q1416_OT">Other (specify) 	</string>
     <string name="rb_Q1416_DK">Don’t know	</string>
     <string name="rb_Q1417_1">Electricity	</string>
     <string name="rb_Q1417_2">Natural gas	</string>
