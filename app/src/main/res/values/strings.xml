@@ -3436,7 +3436,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="ecn">Enter Complete Name</string>
     <string name="ra">Refused to Answer</string>
     <string name="ot_someone">Someone else (specify)</string>
-    <string name="ot_other">Other (specify)</string>
+    <string name="ot_other">Other (Specify)</string>
     <string name="other">Other (specify)</string>
     <string name="minutes">Minutes</string>
     <string name="hours">Hours</string>
@@ -3444,7 +3444,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="weeks">Weeks</string>
     <string name="months">Months</string>
     <string name="years">Years</string>
-    <string name="days_hint">Enter days &amp; if you don\'t know enter \'99\'</string>
+    <string name="days_hint">1-99</string>
     <string name="kg">Kilograms</string>
 
     <!-- HINTS STARTS -->
@@ -3497,7 +3497,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4471"><![CDATA[4471: Note: This is an optional question, to be asked or not as determined by the study site.  Read: Thank you for answering the many questions that I’ve asked. Would you like to tell me about <NAME>’s illness in your own words? Also, is there anything else about her/his illness that I did not ask and you would like to tell me about?  After the respondent(s) finishes, ask: Is there anything else?  Write the respondent’s exact words. After s/he has finished, read this back and ask her to correct any errors in what you wrote.]]></string>
     <string name="A4473">4473:   Interviewer: Use this space to write down your comments and observations about the interview.</string>
     <string name="kilograms_kg">Kilograms Kg &amp; DK = 999</string>
-    <string name="A4257"><![CDATA[A4257: What was the name of the <FIRST HEALTH PROVIDER> where <NAME went?]]></string>
+    <string name="A4257">A4257: What was the name of the FIRST HEALTH PROVIDER where NAME went?</string>
     <string name="rb_A4257_1">Government hospital</string>
     <string name="rb_A4257_2">Government health center</string>
     <string name="rb_A4257_3">Government health post</string>
@@ -3512,7 +3512,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="rb_A4258_1">Yes, reached before died</string>
     <string name="rb_A4258_2">No, died on route to this provider / before this provider reached the deceased</string>
     <string name="rb_A4258_3">No, could not reach this provider, so returned home or took other action</string>
-    <string name="A4258"><![CDATA[A4258: For health care at a facility, ask: Did <NAME> reach the <FIRST HEALTH PROVIDER> before s/he died?]]></string>
+    <string name="A4258">A4258: For health care at a facility, ask: Did NAME reach the FIRST HEALTH PROVIDER before s/he died?</string>
 
     <!-- HINTS ENDS -->
 
@@ -3714,8 +3714,9 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4252_3">For pregnancy-related deaths: Mark any provider where the woman had an abortion (spontaneous or induced) or delivered.</string>
     <string name="A4252_4">For all adults: If the illness lasted 3 months or more, ask about the first three actions taken at the start of the illness and the middle of the illness, and about the last three actions at the end of the illness. Circle ‘S’ (Start), ‘M’ (Middle) or ‘E’ (End) for each action.</string>
     <string name="A4252_5">1 - If the illness lasted 3 months or more, circle ‘S’ (Start), ‘M’ (Middle) or ‘E’ (End) for each action. \n\n2 - Check one other care or health care provider box for each action row. Check ‘Trained CHW, nurse or midwife’ only if the provider was seen outside a facility. \n\n3 - For pregnancy-related deaths only: Mark any provider where the woman aborted or delivered. \n\n4 - Mark the symptom(s) that were present when each action was taken.</string>
-    <string name="A4253">A4253: Who decided to seek care for (NAME)’s illness from the (FIRST FORMAL PROVIDER)</string>
-    <string name="A4254">A4254: Did you or (NAME) have any concerns or problems that kept him/her from going to a health provider during the illness?</string>
+    <string name="A4253">A4253: If any formal care given or sought, \nask: \nWho decided to seek care for (NAME)’s illness from the (FIRST FORMAL PROVIDER)</string>
+    <string name="A4254_1">A4254_1: If never taken to a health provider, \nask: \nDid you or (NAME) have any concerns or problems that kept him/her from going to a health provider during the illness?</string>
+    <string name="A4254_2">A4254_2: If taken to a health provider, \nask: \nDid you or (NAME) have to overcome any concerns or problems for him/her to go the (first) health provider?</string>
     <string name="A4255">A4255: What concerns or problems did you or (NAME) have?</string>
     <string name="A4256">A4256: You mentioned that (NAME) went to the (first) health provider, I mean the (FIRST HEALTH PROVIDER) with (SYMPTOM(S)). How long had (NAME) had (this / these) symptom(s) when it was decided to go to the (FIRST HEALTH PROVIDER)</string>
     <string name="A4274">A4274: Did (NAME) go to (all) the health provider(s) where s/he was referred?</string>
@@ -4255,24 +4256,24 @@ Examples of statements for the reading test:
     <string name="rb_Q1609_5">12 years or more	</string>
 
     <string name="ref">Ref</string>
-    <string name="A4259"><![CDATA[A4259: After (deciding to seek care / being referred), how long did it take (to reach the <FIRST HEALTH PROVIDER> for the <LAST HEALTH PROVIDER> to reach <NAME>)?]]></string>
-    <string name="A4260"><![CDATA[A4260: Did the <FIRST HEALTH PROVIDER> admit <NAME> to the hospital for his/her problem?]]></string>
-    <string name="A4261"><![CDATA[A4261: Did the <FIRST HEALTH PROVIDER> refer <NAME> to another health provider or facility?]]></string>
-    <string name="A4262"><![CDATA[A4262: To where was <NAME> referred?]]></string>
-    <string name="A4263_1"><![CDATA[A4263_1: Did the <FIRST HEALTH PROVIDER> tell you or <NAME> about illness signs and symptoms for which <NAME> needs to return immediately?]]></string>
-    <string name="A4263_2"><![CDATA[A4263_2: Did the <FIRST HEALTH PROVIDER> tell you or <NAME> about illness signs and symptoms for follow-up if <NAME> did not improve after leaving?]]></string>
-    <string name="A4264"><![CDATA[A4264: Did <NAME> leave the <FIRST HEALTH PROVIDER> alive?]]></string>
+    <string name="A4259">A4259: After (deciding to seek care / being referred), how long did it take (to reach the FIRST HEALTH PROVIDER for the LAST HEALTH PROVIDER to reach NAME?</string>
+    <string name="A4260">A4260: Did the FIRST HEALTH PROVIDER admit NAME to the hospital for his/her problem?</string>
+    <string name="A4261">A4261: Did the FIRST HEALTH PROVIDER refer NAME to another health provider or facility?</string>
+    <string name="A4262">A4262: To where was NAME referred?</string>
+    <string name="A4263_1">A4263_1: Did the FIRST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for which NAME needs to return immediately?</string>
+    <string name="A4263_2">A4263_2: Did the FIRST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for follow-up if NAME did not improve after leaving?</string>
+    <string name="A4264">A4264: Did NAME leave the FIRST HEALTH PROVIDER alive?</string>
     <string name="rb_A4264_1">Yes, left alive</string>
     <string name="rb_A4264_2">No, died at this provider</string>
-    <string name="A4266"><![CDATA[A4266: What was the name of the <LAST HEALTH PROVIDER> where <NAME went?]]></string>
-    <string name="A4267"><![CDATA[A4267: For health care at a facility, ask: Did <NAME> reach the <LAST HEALTH PROVIDER> before s/he died?]]></string>
-    <string name="A4268"><![CDATA[A4268: After (deciding to seek care / being referred), how long did it take (to reach the <LAST HEALTH PROVIDER> / for the <LAST HEALTH PROVIDER> to reach <NAME>)?]]></string>
-    <string name="A4269"><![CDATA[A4269: Did the <LAST HEALTH PROVIDER> admit <NAME> to the hospital for his/her problem?]]></string>
-    <string name="A4270"><![CDATA[A4270: Did the <LAST HEALTH PROVIDER> refer <NAME> to another health provider or facility?]]></string>
-    <string name="A4271"><![CDATA[A4271: To where was <NAME> referred?]]></string>
-    <string name="A4272_1"><![CDATA[A4272_1: Did the <LAST HEALTH PROVIDER> tell you or <NAME> about illness signs and symptoms for which <NAME> needs to return immediately?]]></string>
-    <string name="A4272_2"><![CDATA[A4272_2: Did the <LAST HEALTH PROVIDER> tell you or <NAME> about illness signs and symptoms for which To follow-up if <NAME> did not improve after leaving?]]></string>
-    <string name="A4273"><![CDATA[A4273: Did <NAME> leave the <LAST HEALTH PROVIDER> alive?]]></string>
+    <string name="A4266">A4266: What was the name of the LAST HEALTH PROVIDER where NAME went?</string>
+    <string name="A4267">A4267: For health care at a facility, ask: Did NAME reach the LAST HEALTH PROVIDER before s/he died?</string>
+    <string name="A4268">A4268: After (deciding to seek care / being referred), how long did it take (to reach the LAST HEALTH PROVIDER / for the LAST HEALTH PROVIDER to reach NAME?</string>
+    <string name="A4269">A4269: Did the LAST HEALTH PROVIDER admit NAME to the hospital for his/her problem?</string>
+    <string name="A4270">A4270: Did the LAST HEALTH PROVIDER refer NAME to another health provider or facility?</string>
+    <string name="A4271">A4271: To where was NAME referred?</string>
+    <string name="A4272_1">A4272_1: Did the LAST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for which NAME needs to return immediately?</string>
+    <string name="A4272_2">A4272_2: Did the LAST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for which To follow-up if NAME did not improve after leaving?</string>
+    <string name="A4273">A4273: Did NAME leave the LAST HEALTH PROVIDER alive?</string>
     <string name="A4069_a">Enter how long s/he had belly (abdominal) pain in hours</string>
     <string name="A4069_b">Enter how long s/he had belly (abdominal) pain in DAYS</string>
     <string name="A4069_c">Enter how long s/he had belly (abdominal) pain in months</string>

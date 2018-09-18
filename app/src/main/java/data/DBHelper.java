@@ -151,6 +151,14 @@ public class DBHelper extends SQLiteOpenHelper {
         return res;
     }
 
+    public Cursor getData2(String tableName, String study_id) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor res = db.rawQuery("select * from " + tableName + " where study_id = " + "'" + study_id + "'" + "AND " + Global.A.A4251_A4284.A4252_2 + " IN('4', '5', '6', '7')", null);
+        return res;
+    }
+
     /*public long updateData(String tableName, String Q1311, String study_id) {
 
         SQLiteDatabase db = this.getWritableDatabase();

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -14,7 +13,6 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,7 +21,6 @@ import com.irfansyed.VAS.VASMonitring.R;
 import java.io.File;
 
 import data.LocalDataManager;
-import utils.ClearAllcontrol;
 import utils.Gothrough;
 
 import static utils.ClearAllcontrol.ClearAll;
@@ -35,13 +32,12 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
     //  Region_Declaration
 
     Button
-            btn_next14, btn_imgCapture;
+            btn_next14,
+            btn_imgCapture;
 
     LinearLayout
             ll_study_id,
             ll_A4401,
-            ll_A4401_DK,
-            ll_A4402_DK,
             ll_A4402,
             ll_A4403,
             ll_A4404,
@@ -93,55 +89,43 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             rb_A4401_1,
             rb_A4401_2,
             rb_A4401_DK,
-
-    rb_A4402_1,
+            rb_A4402_1,
             rb_A4402_2,
             rb_A4402_3,
             rb_A4402_4,
             rb_A4402_5,
             rb_A4402_DK,
-
-    rb_A4451_1_1,
+            rb_A4451_1_1,
             rb_A4451_1_2,
             rb_A4451_1_DK,
-
-    rb_A4451_2_1,
+            rb_A4451_2_1,
             rb_A4451_2_2,
             rb_A4451_2_DK,
-
-    rb_A4451_3_1,
+            rb_A4451_3_1,
             rb_A4451_3_2,
             rb_A4451_3_DK,
-
-    rb_A4451_4_1,
+            rb_A4451_4_1,
             rb_A4451_4_2,
             rb_A4451_4_DK,
-
-    rb_A4451_5_1,
+            rb_A4451_5_1,
             rb_A4451_5_2,
             rb_A4451_5_DK,
-
-    rb_A4451_6_1,
+            rb_A4451_6_1,
             rb_A4451_6_2,
             rb_A4451_6_DK,
-
-    rb_A4451_7_1,
+            rb_A4451_7_1,
             rb_A4451_7_2,
             rb_A4451_7_DK,
-
-    rb_A4451_8_1,
+            rb_A4451_8_1,
             rb_A4451_8_2,
             rb_A4451_8_DK,
-
-    rb_A4451_9_1,
+            rb_A4451_9_1,
             rb_A4451_9_2,
             rb_A4451_9_DK,
-
-    rb_A4451_10_1,
+            rb_A4451_10_1,
             rb_A4451_10_2,
             rb_A4451_10_DK,
-
-    rb_A4451_11_1,
+            rb_A4451_11_1,
             rb_A4451_11_2,
             rb_A4451_11_DK,
 
@@ -291,8 +275,6 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             A4401,
             A4402,
             A4403,
-            A4404,
-            A4405,
             A4402_5_OT,
             A4403_province,
             A4403_district,
@@ -635,7 +617,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             @Override
             public void onClick(View view) {
 
-                String RootDir = Environment.getExternalStorageDirectory()
+                String RootDir = Environment.getExternalStorageDirectory().getAbsolutePath()
                         + File.separator + "VASA" + File.separator + ed_study_id.getText().toString();
                 File RootFile = new File(RootDir);
                 boolean success = true;

@@ -529,7 +529,6 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_A4302_7_2.isChecked() || rb_A4302_7_DK.isChecked() || rb_A4302_7_RA.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_A4303);
-
                 ll_A4303.setVisibility(View.GONE);
 
             } else {
@@ -642,7 +641,7 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_A4314_RA)
 
         {
-            if (rb_A4306_2check_2.isChecked() || rb_A4314_DK.isChecked() || rb_A4314_RA.isChecked()) {
+            if (rb_A4314_2.isChecked() || rb_A4314_DK.isChecked() || rb_A4314_RA.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_A4315);
                 ll_A4315.setVisibility(View.GONE);
@@ -1477,17 +1476,9 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
                 } else if (month.equals("2") || month.equals("02")) {
                     //leap year
                     if (year % 4 == 0) {
-                        if (day.equals("30") || day.equals("31")) {
-                            return false;
-                        } else {
-                            return true;
-                        }
+                        return !day.equals("30") && !day.equals("31");
                     } else {
-                        if (day.equals("29") || day.equals("30") || day.equals("31")) {
-                            return false;
-                        } else {
-                            return true;
-                        }
+                        return !day.equals("29") && !day.equals("30") && !day.equals("31");
                     }
                 } else {
                     return true;

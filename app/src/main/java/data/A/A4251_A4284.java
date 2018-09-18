@@ -14,7 +14,8 @@ public class A4251_A4284 {
                 Global.A.A4251_A4284.A4251 + " TEXT," +
                 Global.A.A4251_A4284.A4253 + " TEXT," +
                 Global.A.A4251_A4284.A4253_3 + " TEXT," +
-                Global.A.A4251_A4284.A4254 + " TEXT," +
+                Global.A.A4251_A4284.A4254_1 + " TEXT," +
+                Global.A.A4251_A4284.A4254_2 + " TEXT," +
                 Global.A.A4251_A4284.A4255_1 + " TEXT," +
                 Global.A.A4251_A4284.A4255_2 + " TEXT," +
                 Global.A.A4251_A4284.A4255_3 + " TEXT," +
