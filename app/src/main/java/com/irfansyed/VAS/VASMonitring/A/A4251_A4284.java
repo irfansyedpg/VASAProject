@@ -63,7 +63,8 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             ll_A4263_2,
             ll_A4264,
             ll_A4266,
-            ll_A4267,
+            ll_A4267_1,
+            ll_A4267_2,
             ll_A4268,
             ll_A4269,
             ll_A4270,
@@ -155,10 +156,14 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             rb_A4266_10,
             rb_A4266_11,
             rb_A4266_DK,
-            rb_A4267_1,
-            rb_A4267_2,
-            rb_A4267_3,
-            rb_A4267_DK,
+            rb_A4267_1_1,
+            rb_A4267_1_2,
+            rb_A4267_1_3,
+            rb_A4267_1_DK,
+            rb_A4267_2_1,
+            rb_A4267_2_2,
+            rb_A4267_2_3,
+            rb_A4267_2_DK,
             rb_A4269_1,
             rb_A4269_2,
             rb_A4269_DK,
@@ -326,7 +331,8 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             A4264,
             A4266,
             A4266_name,
-            A4267,
+            A4267_1,
+            A4267_2,
             A4268_hours,
             A4268_minutes,
             A4269,
@@ -430,7 +436,8 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         ll_A4263_2 = findViewById(R.id.ll_A4263_2);
         ll_A4264 = findViewById(R.id.ll_A4264);
         ll_A4266 = findViewById(R.id.ll_A4266);
-        ll_A4267 = findViewById(R.id.ll_A4267);
+        ll_A4267_1 = findViewById(R.id.ll_A4267_1);
+        ll_A4267_2 = findViewById(R.id.ll_A4267_2);
         ll_A4268 = findViewById(R.id.ll_A4268);
         ll_A4269 = findViewById(R.id.ll_A4269);
         ll_A4270 = findViewById(R.id.ll_A4270);
@@ -521,10 +528,14 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         rb_A4266_10 = findViewById(R.id.rb_A4266_10);
         rb_A4266_11 = findViewById(R.id.rb_A4266_11);
         rb_A4266_DK = findViewById(R.id.rb_A4266_DK);
-        rb_A4267_1 = findViewById(R.id.rb_A4267_1);
-        rb_A4267_2 = findViewById(R.id.rb_A4267_2);
-        rb_A4267_3 = findViewById(R.id.rb_A4267_3);
-        rb_A4267_DK = findViewById(R.id.rb_A4267_DK);
+        rb_A4267_1_1 = findViewById(R.id.rb_A4267_1_1);
+        rb_A4267_1_2 = findViewById(R.id.rb_A4267_1_2);
+        rb_A4267_1_3 = findViewById(R.id.rb_A4267_1_3);
+        rb_A4267_1_DK = findViewById(R.id.rb_A4267_1_DK);
+        rb_A4267_2_1 = findViewById(R.id.rb_A4267_2_1);
+        rb_A4267_2_2 = findViewById(R.id.rb_A4267_2_2);
+        rb_A4267_2_3 = findViewById(R.id.rb_A4267_2_3);
+        rb_A4267_2_DK = findViewById(R.id.rb_A4267_2_DK);
         rb_A4269_1 = findViewById(R.id.rb_A4269_1);
         rb_A4269_2 = findViewById(R.id.rb_A4269_2);
         rb_A4269_DK = findViewById(R.id.rb_A4269_DK);
@@ -1123,7 +1134,8 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         A4264 = "000";
         A4266 = "000";
         A4266_name = "000";
-        A4267 = "000";
+        A4267_1 = "000";
+        A4267_2 = "000";
         A4268_hours = "000";
         A4268_minutes = "000";
         A4269 = "000";
@@ -1503,18 +1515,32 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             A4266_name = ed_A4266_name.getText().toString().trim();
         }
 
-        //A4267
-        if (rb_A4267_1.isChecked()) {
-            A4267 = "1";
+        //A4267_1
+        if (rb_A4267_1_1.isChecked()) {
+            A4267_1 = "1";
         }
-        if (rb_A4267_2.isChecked()) {
-            A4267 = "2";
+        if (rb_A4267_1_2.isChecked()) {
+            A4267_1 = "2";
         }
-        if (rb_A4267_3.isChecked()) {
-            A4267 = "3";
+        if (rb_A4267_1_3.isChecked()) {
+            A4267_1 = "3";
         }
-        if (rb_A4267_DK.isChecked()) {
-            A4267 = "9";
+        if (rb_A4267_1_DK.isChecked()) {
+            A4267_1 = "9";
+        }
+
+        //A4267_2
+        if (rb_A4267_2_1.isChecked()) {
+            A4267_2 = "1";
+        }
+        if (rb_A4267_2_2.isChecked()) {
+            A4267_2 = "2";
+        }
+        if (rb_A4267_2_3.isChecked()) {
+            A4267_2 = "3";
+        }
+        if (rb_A4267_2_DK.isChecked()) {
+            A4267_2 = "9";
         }
 
         //A4268
@@ -1875,7 +1901,8 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
                 + Global.A.A4251_A4284.A4264 + ","
                 + Global.A.A4251_A4284.A4266 + ","
                 + Global.A.A4251_A4284.A4266_name + ","
-                + Global.A.A4251_A4284.A4267 + ","
+                + Global.A.A4251_A4284.A4267_1 + ","
+                + Global.A.A4251_A4284.A4267_2 + ","
                 + Global.A.A4251_A4284.A4268_hours + ","
                 + Global.A.A4251_A4284.A4268_minutes + ","
                 + Global.A.A4251_A4284.A4269 + ","
@@ -1973,7 +2000,8 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
                 A4264 + "','" +
                 A4266 + "','" +
                 A4266_name + "','" +
-                A4267 + "','" +
+                A4267_1 + "','" +
+                A4267_2 + "','" +
                 A4268_hours + "','" +
                 A4268_minutes + "','" +
                 A4269 + "','" +
@@ -2162,7 +2190,11 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4267) == false) {
+        if (Gothrough.IamHiden(ll_A4267_1) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_A4267_2) == false) {
             return false;
         }
 

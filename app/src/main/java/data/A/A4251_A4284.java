@@ -50,7 +50,8 @@ public class A4251_A4284 {
                 Global.A.A4251_A4284.A4264 + " TEXT," +
                 Global.A.A4251_A4284.A4266 + " TEXT," +
                 Global.A.A4251_A4284.A4266_name + " TEXT," +
-                Global.A.A4251_A4284.A4267 + " TEXT," +
+                Global.A.A4251_A4284.A4267_1 + " TEXT," +
+                Global.A.A4251_A4284.A4267_2 + " TEXT," +
                 Global.A.A4251_A4284.A4268_hours + " TEXT," +
                 Global.A.A4251_A4284.A4268_minutes + " TEXT," +
                 Global.A.A4251_A4284.A4269 + " TEXT," +

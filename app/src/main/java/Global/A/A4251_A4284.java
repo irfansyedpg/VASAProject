@@ -42,7 +42,8 @@ public class A4251_A4284 {
     public static String A4264 = "A4264";
     public static String A4266 = "A4266";
     public static String A4266_name = "A4266_name";
-    public static String A4267 = "A4267";
+    public static String A4267_1 = "A4267_1";
+    public static String A4267_2 = "A4267_2";
     public static String A4268_hours = "A4268_hours";
     public static String A4268_minutes = "A4268_minutes";
     public static String A4269 = "A4269";
