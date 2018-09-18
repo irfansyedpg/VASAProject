@@ -121,6 +121,8 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4351__a4364);
 
+        this.setTitle(getString(R.string.h_a_sec_12));
+
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();

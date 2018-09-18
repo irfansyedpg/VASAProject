@@ -253,7 +253,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_study_id) == false) {
+        /*if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -261,7 +261,9 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3472) != false;
+        return Gothrough.IamHiden(ll_C3472) != false;*/
+
+        return true;
     }
 
     @Override

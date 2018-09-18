@@ -14,6 +14,9 @@ import android.widget.Toast;
 import com.irfansyed.VAS.VASMonitring.Core.HomeActivity;
 import com.irfansyed.VAS.VASMonitring.R;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 import data.DBHelper;
 import data.GS.Q1101_Q1610;
 
@@ -88,11 +91,19 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
 
         value_assignment();
 
-        Toast.makeText(this, Q1311, Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, Q1311, Toast.LENGTH_LONG).show();
+
+
+        Calendar cdt = Calendar.getInstance();
+        SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
+        String formattedDate = dt.format(cdt.getTime());
+        String[] dtf = formattedDate.split(" ");
 
         DBHelper db = new DBHelper(this);
 
         ContentValues values = new ContentValues();
+        Q1101_Q1610.Q1309 = dtf[0];
+        Q1101_Q1610.Q1310 = dtf[1];
         values.put(Q1101_Q1610.Q1311, Q1311);
         values.put(Q1101_Q1610.currentSection, currentSection);
 

@@ -1066,7 +1066,7 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_study_id) == false) {
+        /*if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -1198,7 +1198,9 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3314) != false;
+        return Gothrough.IamHiden(ll_C3314) != false;*/
+
+        return true;
     }
 
     public boolean validate(final String date) {

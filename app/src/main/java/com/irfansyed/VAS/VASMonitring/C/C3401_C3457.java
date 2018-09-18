@@ -368,8 +368,8 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-       // Intent c = new Intent(this, C3471_C3472.class);
-         Intent c = new Intent(this,    InterviewEnd.class);
+        // Intent c = new Intent(this, C3471_C3472.class);
+        Intent c = new Intent(this, InterviewEnd.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
     }
@@ -1595,7 +1595,7 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_study_id) == false) {
+        /*if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -1803,7 +1803,9 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3457) != false;
+        return Gothrough.IamHiden(ll_C3457) != false;*/
+
+        return true;
     }
 
     @Override

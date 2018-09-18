@@ -51,10 +51,10 @@ public class N2051_N2078 extends AppCompatActivity {
             flag_n2008 = false;
         }
 
-        String q1102 = db.getSpecificData(data.GS.Q1101_Q1610.TABLE_NAME, "id", Q1101_Q1610.Q1102);
-        if (q1102 != null) {
-            flag_q1102 = q1102.equals("1");
-        }
+        //String q1102 = db.getSpecificData(data.GS.Q1101_Q1610.TABLE_NAME, "id", Q1101_Q1610.Q1102);
+        //if (q1102 != null) {
+            //flag_q1102 = q1102.equals("1");
+        //}
 
 
     }
