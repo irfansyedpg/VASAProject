@@ -3,9 +3,6 @@ package data.GS;
 public class Q1101_Q1610 {
 
     public static String study_id = "study_id";
-    public static String Q1101 = "Q1101";
-    public static String Q1102 = "Q1102";
-    public static String Q1103 = "Q1103";
     public static String Q1202 = "Q1202";
     public static String Q1203 = "Q1203";
     public static String Q1204 = "Q1204";
@@ -95,16 +92,13 @@ public class Q1101_Q1610 {
 
         query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' TEXT,   " +
 
-                Q1101_Q1610.Q1101 + " TEXT," +
-                Q1101_Q1610.Q1102 + " TEXT," +
-                Q1101_Q1610.Q1103 + " TEXT," +
                 Q1101_Q1610.Q1202 + " TEXT," +
                 Q1101_Q1610.Q1203 + " TEXT," +
                 Q1101_Q1610.Q1204 + " TEXT," +
                 Q1101_Q1610.Q1205 + " TEXT," +
-                Q1101_Q1610.Q1206_d + " INTEGER," +
-                Q1101_Q1610.Q1206_m + " INTEGER," +
-                Q1101_Q1610.Q1206_y + " INTEGER," +
+                Q1101_Q1610.Q1206_d + " TEXT," +
+                Q1101_Q1610.Q1206_m + " TEXT," +
+                Q1101_Q1610.Q1206_y + " TEXT," +
                 Q1101_Q1610.Q1207 + " TEXT," +
                 Q1101_Q1610.Q1208 + " TEXT," +
                 Q1101_Q1610.Q1209 + " TEXT," +

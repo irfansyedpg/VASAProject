@@ -131,9 +131,9 @@ public class UploadHouseInfoAsync extends AsyncTask {
                 param.put("tableName", "q1101_q1610");
                 param.put("id", c1.getString(0));
                 param.put(Q1101_Q1610.study_id, c1.getString(1));
-                param.put(Q1101_Q1610.Q1101, c1.getString(2));
-                param.put(Q1101_Q1610.Q1102, c1.getString(3));
-                param.put(Q1101_Q1610.Q1103, c1.getString(4));
+                //param.put(Q1101_Q1610.Q1101, c1.getString(2));
+                //param.put(Q1101_Q1610.Q1102, c1.getString(3));
+                //param.put(Q1101_Q1610.Q1103, c1.getString(4));
                 param.put(Q1101_Q1610.Q1202, c1.getString(5));
                 param.put(Q1101_Q1610.Q1202, c1.getString(6));
                 param.put(Q1101_Q1610.Q1203, c1.getString(7));

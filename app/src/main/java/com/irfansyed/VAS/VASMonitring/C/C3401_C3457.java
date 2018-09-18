@@ -1595,7 +1595,7 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_study_id) == false) {
+        /*if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -1803,7 +1803,9 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3457) != false;
+        return Gothrough.IamHiden(ll_C3457) != false;*/
+
+        return true;
     }
 
     @Override
