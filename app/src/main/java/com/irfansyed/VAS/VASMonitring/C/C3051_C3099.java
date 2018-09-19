@@ -936,7 +936,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3065.setVisibility(View.GONE);
             }
 
-            if ((rb_C3051_1.isChecked() && (Integer.valueOf(ed_C3052.getText().toString()) < 9 || Integer.valueOf(ed_C3052.getText().toString()) > 10)) &&
+            if ((rb_C3051_1.isChecked() && (Integer.valueOf(ed_C3052.getText().toString()) == 9 || Integer.valueOf(ed_C3052.getText().toString()) == 10)) &&
                     (rb_C3057_1.isChecked() || rb_C3058_2.isChecked()) &&
                     (rb_C3059_1.isChecked() || rb_C3060_2.isChecked()) &&
                     rb_C3061_1.isChecked() && Integer.valueOf(ed_C3052.getText().toString()) < 12 &&
@@ -1161,8 +1161,8 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             }
 
             if ((rb_C3051_1.isChecked() &&
-                    (Integer.valueOf(ed_C3052.getText().toString()) < 9 ||
-                            Integer.valueOf(ed_C3052.getText().toString()) > 10)) ||
+                    (Integer.valueOf(ed_C3052.getText().toString()) != 9 ||
+                            Integer.valueOf(ed_C3052.getText().toString()) != 10)) ||
                     (C3006 != 1 || C3006 != 2 || C3006 != 11 || C3006 != 12 || C3006 != 99)) {
 
                 //Toast.makeText(this, "" + C3006, Toast.LENGTH_LONG).show();
