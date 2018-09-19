@@ -829,8 +829,6 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         }
     }
 
-
-
     void events_call() {
 
         btn_next14.setOnClickListener(this);
