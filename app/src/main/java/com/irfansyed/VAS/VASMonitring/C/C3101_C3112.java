@@ -368,6 +368,8 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         ll_C3107_6_OT.setVisibility(View.GONE);
         ll_C3107_21_OT.setVisibility(View.GONE);
 
+        ll_C3108_A.setVisibility(View.GONE);
+
 
         DBHelper db = new DBHelper(this);
         Cursor Q1101_Q1610 = db.getData("Q1101_Q1610", study_id);

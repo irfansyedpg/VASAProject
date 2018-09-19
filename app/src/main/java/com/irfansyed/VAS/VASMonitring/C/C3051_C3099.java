@@ -413,6 +413,10 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         Initialization();
 
         ed_C3065_OT.setVisibility(View.GONE);
+        ed_C3067_OT.setVisibility(View.GONE);
+
+        ll_C3068_OT.setVisibility(View.GONE);
+        ll_C3079_OT.setVisibility(View.GONE);
 
         Cursor C3001_C3011 = db.getData("C3001_C3011", study_id);
 
@@ -504,6 +508,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         ll_C3077 = findViewById(R.id.ll_C3077);
         ll_C3078 = findViewById(R.id.ll_C3078);
         ll_C3079 = findViewById(R.id.ll_C3079);
+        ll_C3079_OT = findViewById(R.id.ll_C3079_OT);
         ll_C3080 = findViewById(R.id.ll_C3080);
         ll_C3081 = findViewById(R.id.ll_C3081);
         ll_C3082 = findViewById(R.id.ll_C3082);
@@ -994,6 +999,29 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 ClearAllcontrol.ClearAll(ll_C3065);
                 ll_C3065.setVisibility(View.GONE);
             }
+
+
+            if (cb_C3065_DK.isChecked()){
+
+                ed_C3065_OT.setText("");
+
+                cb_C3065_1.setChecked(false);
+                cb_C3065_2.setChecked(false);
+                cb_C3065_3.setChecked(false);
+                cb_C3065_4.setChecked(false);
+                cb_C3065_5.setChecked(false);
+                cb_C3065_6.setChecked(false);
+                cb_C3065_7.setChecked(false);
+            }
+
+            if (cb_C3065_7.isChecked()) {
+
+                ed_C3065_OT.setVisibility(View.VISIBLE);
+            } else {
+
+                ed_C3065_OT.setText("");
+                ed_C3065_OT.setVisibility(View.GONE);
+            }
         }
 
 
@@ -1032,32 +1060,26 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.cb_C3067_DK) {
 
 
-            if (cb_C3067_5.isChecked() || cb_C3067_6.isChecked() || cb_C3067_7.isChecked() || cb_C3067_DK.isChecked()) {
+            if (cb_C3067_DK.isChecked()) {
 
-                ClearAllcontrol.ClearAll(ll_C3068);
-                ClearAllcontrol.ClearAll(ll_C3069);
-                ClearAllcontrol.ClearAll(ll_C3070);
+                ed_C3067_OT.setText("");
 
-                ll_C3068.setVisibility(View.GONE);
-                ll_C3069.setVisibility(View.GONE);
-                ll_C3070.setVisibility(View.GONE);
+                cb_C3067_1.setChecked(false);
+                cb_C3067_2.setChecked(false);
+                cb_C3067_3.setChecked(false);
+                cb_C3067_4.setChecked(false);
+                cb_C3067_5.setChecked(false);
+                cb_C3067_6.setChecked(false);
+                cb_C3067_7.setChecked(false);
+            }
 
-                if (cb_C3067_DK.isChecked()) {
+            if (cb_C3067_7.isChecked()) {
 
-                    cb_C3067_1.setChecked(false);
-                    cb_C3067_2.setChecked(false);
-                    cb_C3067_3.setChecked(false);
-                    cb_C3067_4.setChecked(false);
-                    cb_C3067_5.setChecked(false);
-                    cb_C3067_6.setChecked(false);
-                    cb_C3067_7.setChecked(false);
-                }
-
+                ed_C3067_OT.setVisibility(View.VISIBLE);
             } else {
 
-                ll_C3068.setVisibility(View.VISIBLE);
-                ll_C3069.setVisibility(View.VISIBLE);
-                ll_C3070.setVisibility(View.VISIBLE);
+                ed_C3067_OT.setText("");
+                ed_C3067_OT.setVisibility(View.GONE);
             }
         }
 
