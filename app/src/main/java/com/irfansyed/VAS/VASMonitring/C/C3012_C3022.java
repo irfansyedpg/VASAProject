@@ -24,7 +24,6 @@ import java.util.concurrent.TimeUnit;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
@@ -158,6 +157,15 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
         }
 
         this.Initialization();
+
+        ll_C3019_a.setVisibility(View.GONE);
+        ll_C3019_b.setVisibility(View.GONE);
+        ll_C3019_c.setVisibility(View.GONE);
+        ll_C3021d.setVisibility(View.GONE);
+        ll_C3021m.setVisibility(View.GONE);
+        ll_C3021y.setVisibility(View.GONE);
+
+
 
         if (ageInDays > 1460) {
 

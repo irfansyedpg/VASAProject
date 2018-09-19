@@ -25,12 +25,10 @@ import java.util.concurrent.TimeUnit;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 
 public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, View.OnFocusChangeListener {
-
 
     //region Declaration
 
@@ -413,6 +411,8 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         }
 
         Initialization();
+
+        ed_C3065_OT.setVisibility(View.GONE);
 
         Cursor C3001_C3011 = db.getData("C3001_C3011", study_id);
 
@@ -800,6 +800,15 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3064_2.setOnCheckedChangeListener(this);
         rb_C3064_DK.setOnCheckedChangeListener(this);
 
+        cb_C3065_1.setOnCheckedChangeListener(this);
+        cb_C3065_2.setOnCheckedChangeListener(this);
+        cb_C3065_3.setOnCheckedChangeListener(this);
+        cb_C3065_4.setOnCheckedChangeListener(this);
+        cb_C3065_5.setOnCheckedChangeListener(this);
+        cb_C3065_6.setOnCheckedChangeListener(this);
+        cb_C3065_7.setOnCheckedChangeListener(this);
+        cb_C3065_DK.setOnCheckedChangeListener(this);
+
         rb_C3066_1.setOnCheckedChangeListener(this);
         rb_C3066_2.setOnCheckedChangeListener(this);
         rb_C3066_DK.setOnCheckedChangeListener(this);
@@ -964,6 +973,29 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3065.setVisibility(View.GONE);
             }
         }
+
+
+
+        if (compoundButton.getId() == R.id.cb_C3065_1
+                || compoundButton.getId() == R.id.cb_C3065_2
+                || compoundButton.getId() == R.id.cb_C3065_3
+                || compoundButton.getId() == R.id.cb_C3065_4
+                || compoundButton.getId() == R.id.cb_C3065_5
+                || compoundButton.getId() == R.id.cb_C3065_6
+                || compoundButton.getId() == R.id.cb_C3065_7
+                || compoundButton.getId() == R.id.cb_C3065_DK) {
+
+            if (rb_C3064_1.isChecked()) {
+
+                ll_C3065.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ClearAllcontrol.ClearAll(ll_C3065);
+                ll_C3065.setVisibility(View.GONE);
+            }
+        }
+
 
         if (compoundButton.getId() == R.id.rb_C3066_1
                 || compoundButton.getId() == R.id.rb_C3066_2

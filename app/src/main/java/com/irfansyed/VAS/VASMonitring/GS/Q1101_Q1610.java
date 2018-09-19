@@ -19,7 +19,6 @@ import com.irfansyed.VAS.VASMonitring.A.A4001_A4014;
 import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
 import com.irfansyed.VAS.VASMonitring.C.C3012_C3022;
 import com.irfansyed.VAS.VASMonitring.N.N2001_N2011;
-import com.irfansyed.VAS.VASMonitring.N.N2211_N2248_A;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.text.SimpleDateFormat;
@@ -30,7 +29,6 @@ import java.util.regex.Pattern;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 import static java.lang.Integer.parseInt;
@@ -451,7 +449,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         //ed_Q1209.setEnabled(false);
         //ed_Q1301.setEnabled(false);
         //ed_Q1302.setEnabled(false);
-//
+
         //ed_Q1312.setEnabled(false);
         //ed_Q1313.setEnabled(false);
 

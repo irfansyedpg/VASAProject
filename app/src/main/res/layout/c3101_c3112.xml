@@ -1928,12 +1928,12 @@
                     <TextView
                         android:id="@+id/txt_C3111_2"
                         style="@style/TextView"
-                        android:text="Other" />
+                        android:text="@string/txt_C3111_2" />
 
                     <EditText
                         android:id="@+id/ed_C3111_2"
                         style="@style/EditText_varchar"
-                        android:hint="Other" />
+                        android:hint="@string/txt_C3111_2" />
 
                 </LinearLayout>
 
@@ -1992,12 +1992,12 @@
                     <TextView
                         android:id="@+id/txt_C3111_4"
                         style="@style/TextView"
-                        android:text="Other" />
+                        android:text="@string/txt_C3111_4" />
 
                     <EditText
                         android:id="@+id/ed_C3111_4"
                         style="@style/EditText_varchar"
-                        android:hint="Other" />
+                        android:hint="@string/txt_C3111_4" />
 
                 </LinearLayout>
 
@@ -2056,12 +2056,12 @@
                     <TextView
                         android:id="@+id/txt_C3111_6"
                         style="@style/TextView"
-                        android:text="Other" />
+                        android:text="@string/txt_C3111_6" />
 
                     <EditText
                         android:id="@+id/ed_C3111_6"
                         style="@style/EditText_varchar"
-                        android:hint="Other" />
+                        android:hint="@string/txt_C3111_6" />
 
                 </LinearLayout>
 
@@ -2162,12 +2162,12 @@
                     <TextView
                         android:id="@+id/txt_C3111_9"
                         style="@style/TextView"
-                        android:text="Other" />
+                        android:text="@string/txt_C3111_9" />
 
                     <EditText
                         android:id="@+id/ed_C3111_9"
                         style="@style/EditText_varchar"
-                        android:hint="Other" />
+                        android:hint="txt_C3111_9" />
 
                 </LinearLayout>
 
@@ -2177,7 +2177,6 @@
             <!--C3112 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_C3112"
                     style="@style/Q_Linerlayout_v">
@@ -2186,7 +2185,6 @@
                         android:id="@+id/txt_C3112"
                         style="@style/TextView"
                         android:text="@string/txt_C3112" />
-
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -2213,6 +2211,7 @@
                     </RadioGroup>
 
                 </LinearLayout>
+
             </android.support.v7.widget.CardView>
             <!--C3112 Radio Button Ends-->
 

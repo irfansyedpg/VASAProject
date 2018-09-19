@@ -47,12 +47,6 @@ public class N2051_N2078 {
                 Global.N.N2051_N2078.sub_N2051_N2078.N2065 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2066 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2067 + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2057_1 + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2057_2 + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2057_3 + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2057_4 + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2057_5 + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2057_6 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2068 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2069_1 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2069_2 + " TEXT," +
