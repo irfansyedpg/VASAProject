@@ -37,7 +37,8 @@ public class A4251_A4284 {
                 Global.A.A4251_A4284.A4256_minutes + " TEXT," +
                 Global.A.A4251_A4284.A4257 + " TEXT," +
                 Global.A.A4251_A4284.A4257_name + " TEXT," +
-                Global.A.A4251_A4284.A4258 + " TEXT," +
+                Global.A.A4251_A4284.A4258_1 + " TEXT," +
+                Global.A.A4251_A4284.A4258_2 + " TEXT," +
                 Global.A.A4251_A4284.A4259_hours + " TEXT," +
                 Global.A.A4251_A4284.A4259_minutes + " TEXT," +
                 Global.A.A4251_A4284.A4260 + " TEXT," +
@@ -49,7 +50,8 @@ public class A4251_A4284 {
                 Global.A.A4251_A4284.A4264 + " TEXT," +
                 Global.A.A4251_A4284.A4266 + " TEXT," +
                 Global.A.A4251_A4284.A4266_name + " TEXT," +
-                Global.A.A4251_A4284.A4267 + " TEXT," +
+                Global.A.A4251_A4284.A4267_1 + " TEXT," +
+                Global.A.A4251_A4284.A4267_2 + " TEXT," +
                 Global.A.A4251_A4284.A4268_hours + " TEXT," +
                 Global.A.A4251_A4284.A4268_minutes + " TEXT," +
                 Global.A.A4251_A4284.A4269 + " TEXT," +

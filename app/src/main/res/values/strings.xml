@@ -1,5 +1,5 @@
 ﻿<resources>
-    <string name="app_name"> VASA NEONATAL DEATH </string>
+    <string name="app_name">V A S A</string>
 
     <string name="txt_study_id">Study ID</string>
 
@@ -3801,7 +3801,9 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="rb_A4258_1">Yes, reached before died</string>
     <string name="rb_A4258_2">No, died on route to this provider / before this provider reached the deceased</string>
     <string name="rb_A4258_3">No, could not reach this provider, so returned home or took other action</string>
-    <string name="A4258">A4258: For health care at a facility, ask: Did NAME reach the FIRST HEALTH PROVIDER before s/he died?</string>
+    <string name="A4258_1">A4258_1: For health care at a facility, \nask: \nDid NAME reach the FIRST HEALTH PROVIDER before s/he died?</string>
+    <string name="A4258_Hint">If “No,” discuss with respondent to determine correct response: 2 or 3.</string>
+    <string name="A4258_2">A4258_2: For health care outside a facility, \nask: \nDid the FIRST HEALTH PROVIDER reach (NAME) before s/he died?</string>
 
     <!-- HINTS ENDS -->
 
@@ -4557,7 +4559,8 @@ Examples of statements for the reading test:
     <string name="rb_A4264_1">Yes, left alive</string>
     <string name="rb_A4264_2">No, died at this provider</string>
     <string name="A4266">A4266: What was the name of the LAST HEALTH PROVIDER where NAME went?</string>
-    <string name="A4267">A4267: For health care at a facility, ask: Did NAME reach the LAST HEALTH PROVIDER before s/he died?</string>
+    <string name="A4267_1">A4267_1: For health care at a facility, \nask: \nDid NAME reach the LAST HEALTH PROVIDER before s/he died?</string>
+    <string name="A4267_2">A4267_2: For health care outside a facility, \nask: \nDid NAME reach the LAST HEALTH PROVIDER before s/he died?</string>
     <string name="A4268">A4268: After (deciding to seek care / being referred), how long did it take (to reach the LAST HEALTH PROVIDER / for the LAST HEALTH PROVIDER to reach NAME?</string>
     <string name="A4269">A4269: Did the LAST HEALTH PROVIDER admit NAME to the hospital for his/her problem?</string>
     <string name="A4270">A4270: Did the LAST HEALTH PROVIDER refer NAME to another health provider or facility?</string>
