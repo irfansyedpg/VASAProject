@@ -17,7 +17,6 @@ import com.irfansyed.VAS.VASMonitring.R;
 
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
@@ -55,29 +54,29 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             rb_C3001_DK,
             rb_C3001_RA,
 
-    rb_C3002_1,
+            rb_C3002_1,
             rb_C3002_2,
             rb_C3002_DK,
             rb_C3002_RA,
 
-    rb_C3003_1,
+            rb_C3003_1,
             rb_C3003_2,
             rb_C3003_DK,
             rb_C3003_RA,
 
-    rb_C3004_1,
+            rb_C3004_1,
             rb_C3004_2,
             rb_C3004_3,
             rb_C3004_DK,
             rb_C3004_RA,
 
-    rb_C3005u_1,
+            rb_C3005u_1,
             rb_C3005u_2,
             rb_C3005u_3,
             rb_C3005u_DK,
             rb_C3005u_RA,
 
-    rb_C3006_1,
+            rb_C3006_1,
             rb_C3006_2,
             rb_C3006_3,
             rb_C3006_4,
@@ -92,7 +91,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             rb_C3006_DK,
             rb_C3006_RA,
 
-    rb_C3008_1,
+            rb_C3008_1,
             rb_C3008_2,
             rb_C3008_3,
             rb_C3008_4,
@@ -102,7 +101,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             rb_C3008_8,
             rb_C3008_9,
 
-    rb_C3009_1_1,
+            rb_C3009_1_1,
             rb_C3009_1_2,
             rb_C3009_1_DK,
             rb_C3009_1_RA,
@@ -170,6 +169,13 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
         ed_study_id.setEnabled(false);
 
         Initialization();
+
+        ll_C3005d.setVisibility(View.GONE);
+        ll_C3005w.setVisibility(View.GONE);
+        ll_C3005m.setVisibility(View.GONE);
+        ll_C3006_OT.setVisibility(View.GONE);
+        ll_C3008_OT.setVisibility(View.GONE);
+
         events_call();
 
         btn_next.setOnClickListener(this);

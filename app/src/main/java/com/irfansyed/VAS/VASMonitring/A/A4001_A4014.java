@@ -257,9 +257,6 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
 
     }
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -290,8 +287,9 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c2 = new Intent(A4001_A4014.this, A4051_A4066.class);
-        startActivity(c2);
+        Intent c = new Intent(A4001_A4014.this, A4051_A4066.class);
+        c.putExtra("study_id", study_id);
+        startActivity(c);
     }
 
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -488,6 +486,11 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
         A4014 = "000";
         STATUS = "0";
 
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         //A4001
         if (ed_A4001.getText().toString().trim().length() > 0) {
