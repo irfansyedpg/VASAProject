@@ -1458,6 +1458,7 @@
                     <EditText
                         android:id="@+id/ed_A4276_5"
                         style="@style/EditText_varchar"
+                        android:visibility="gone"
                         android:hint="@string/ot_someone" />
 
                     <CheckBox
@@ -1518,6 +1519,7 @@
                     <EditText
                         android:id="@+id/ed_A4276_16"
                         style="@style/EditText_varchar"
+                        android:visibility="gone"
                         android:hint="@string/ot_other" />
 
                     <CheckBox
