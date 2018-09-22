@@ -135,7 +135,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3252(String C3252) {
-        C3252 = C3252;
+        this.C3252 = C3252;
     }
 
     public String getC3254() {
@@ -143,7 +143,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3254(String C3254) {
-        C3254 = C3254;
+        this.C3254 = C3254;
     }
 
     public String getC3255() {
@@ -151,7 +151,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3255(String C3255) {
-        C3255 = C3255;
+        this.C3255 = C3255;
     }
 
     public String getC32561() {
@@ -311,7 +311,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3259(String C3259) {
-        C3259 = C3259;
+        this.C3259 = C3259;
     }
 
     public String getC32592() {
@@ -327,7 +327,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3260(String C3260) {
-        C3260 = C3260;
+        this.C3260 = C3260;
     }
 
     public String getC32611() {
@@ -351,7 +351,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3262(String C3262) {
-        C3262 = C3262;
+        this.C3262 = C3262;
     }
 
     public String getC3263() {
@@ -359,7 +359,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3263(String C3263) {
-        C3263 = C3263;
+        this.C3263 = C3263;
     }
 
     public String getC3264() {
@@ -367,7 +367,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3264(String C3264) {
-        C3264 = C3264;
+        this.C3264 = C3264;
     }
 
     public String getC32642() {
@@ -399,7 +399,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3266(String C3266) {
-        C3266 = C3266;
+        this.C3266 = C3266;
     }
 
     public String getC32671() {
@@ -439,7 +439,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3269(String C3269) {
-        C3269 = C3269;
+        this.C3269 = C3269;
     }
 
     public String getC32692() {
@@ -455,7 +455,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3270(String C3270) {
-        C3270 = C3270;
+        this.C3270 = C3270;
     }
 
     public String getC32711() {
@@ -479,7 +479,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3272(String C3272) {
-        C3272 = C3272;
+        this.C3272 = C3272;
     }
 
     public String getC3273() {
@@ -487,7 +487,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3273(String C3273) {
-        C3273 = C3273;
+        this.C3273 = C3273;
     }
 
     public String getC3274() {
@@ -495,7 +495,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3274(String C3274) {
-        C3274 = C3274;
+        this.C3274 = C3274;
     }
 
     public String getC32742() {
@@ -527,7 +527,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3276(String C3276) {
-        C3276 = C3276;
+        this.C3276 = C3276;
     }
 
     public String getC32771() {
@@ -551,7 +551,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3278(String C3278) {
-        C3278 = C3278;
+        this.C3278 = C3278;
     }
 
     public String getC3279() {
@@ -559,7 +559,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3279(String C3279) {
-        C3279 = C3279;
+        this.C3279 = C3279;
     }
 
     public String getC32801() {
@@ -703,7 +703,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3281(String C3281) {
-        C3281 = C3281;
+        this.C3281 = C3281;
     }
 
     public String getC32821() {
@@ -839,7 +839,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3284(String C3284) {
-        C3284 = C3284;
+        this.C3284 = C3284;
     }
 
     public String getC3285() {
@@ -847,7 +847,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3285(String C3285) {
-        C3285 = C3285;
+        this.C3285 = C3285;
     }
 
     public String getC3286() {
@@ -855,7 +855,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3286(String C3286) {
-        C3286 = C3286;
+        this.C3286 = C3286;
     }
 
     public String getC3287() {
@@ -863,7 +863,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3287(String C3287) {
-        C3287 = C3287;
+        this.C3287 = C3287;
     }
 
     public String getC3288() {
@@ -871,7 +871,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3288(String C3288) {
-        C3288 = C3288;
+        this.C3288 = C3288;
     }
 
     public String getC3254x() {
@@ -879,7 +879,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3254x(String C3254x) {
-        C3254x = C3254x;
+        this.C3254x = C3254x;
     }
 
     public String getC32564x() {
@@ -887,7 +887,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC32564x(String C3256_4x) {
-        C3256_4x = C3256_4x;
+        this.C3256_4x = C3256_4x;
     }
 
     public String getC3256OTx() {
@@ -895,7 +895,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3256OTx(String C3256_OTx) {
-        C3256_OTx = C3256_OTx;
+        this.C3256_OTx = C3256_OTx;
     }
 
     public String getC32805x() {
@@ -911,7 +911,7 @@ public class C3251_C3288_A_C {
     }
 
     public void setC3280OTx(String C3280_OTx) {
-        C3280_OTx = C3280_OTx;
+        this.C3280_OTx = C3280_OTx;
     }
 
     public interface sub_C3251_C3288_A_C {
