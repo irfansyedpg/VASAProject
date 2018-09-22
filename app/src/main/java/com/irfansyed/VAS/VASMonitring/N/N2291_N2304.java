@@ -13,7 +13,6 @@ import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.N2291N2304Binding;
 
 import data.DBHelper;
-import data.GS.Q1101_Q1610;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 
@@ -39,7 +38,7 @@ public class N2291_N2304 extends AppCompatActivity {
     private void GetDataFromDB() {
 
         DBHelper db = new DBHelper(this);
-        String q1403 = db.getSpecificData(data.GS.Q1101_Q1610.TABLE_NAME, "id", Q1101_Q1610.Q1403);
+        String q1403 = db.getSpecificData(data.GS.Q1101_Q1610.TABLE_NAME, "id", Global.GS.Q1101_Q1610.Q1403);
         if (Integer.valueOf(q1403) == 2) {
             flag_q1403 = false;
         }

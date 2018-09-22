@@ -44,7 +44,6 @@ import data.A.A4252_atributes;
 import data.A.A4301_A4315;
 import data.A.A4351_A4364;
 import data.A.A4401_A4473;
-import data.GS.Q1101_Q1610;
 
 /**
  * Created by Umeed-e-Nau on 12/21/2016.
@@ -67,7 +66,7 @@ public class DBHelper extends SQLiteOpenHelper {
         db.beginTransaction();
 
         /*Waseem's File creation*/
-        db.execSQL(Q1101_Q1610.getCreateQuery()); // Q1101_Q1610 created here
+        db.execSQL(data.GS.Q1101_Q1610.getCreateQuery()); // Q1101_Q1610 created here
         db.execSQL(data.C.C3001_C3011.getCreateQuery()); // C3001_C3011 created here
         db.execSQL(data.C.C3012_C3022.getCreateQuery()); // C3012_C3022 created here
         db.execSQL(data.C.C3051_C3099.getCreateQuery()); // C3051_C3099 created here
@@ -192,7 +191,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
 
-        newRowId = db.update(tableName, values, Q1101_Q1610.study_id + " = ?", new String[]{study_id});
+        newRowId = db.update(tableName, values, Global.GS.Q1101_Q1610.study_id + " = ?", new String[]{study_id});
 
         return newRowId;
     }

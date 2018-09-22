@@ -64,7 +64,7 @@ public class C3251_C3288_A extends AppCompatActivity {
 
     public Boolean validateField() {
 
-        /*//ll_C3251_1
+        //ll_C3251_1
         if (!Gothrough.IamHiden(bi.llC32511)) {
             return false;
         }
@@ -76,9 +76,7 @@ public class C3251_C3288_A extends AppCompatActivity {
 
         //ll_C3252
         return Gothrough.IamHiden(bi.llC3252);
-        */
 
-        return true;
     }
 
     @Override

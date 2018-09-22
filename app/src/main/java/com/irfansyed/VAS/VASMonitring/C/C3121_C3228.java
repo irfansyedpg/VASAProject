@@ -1,6 +1,7 @@
 package com.irfansyed.VAS.VASMonitring.C;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputFilter;
@@ -22,9 +23,10 @@ import utils.InputFilterMinMax;
 
 public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
+    MediaPlayer mediaPlayer;
 
     // Region Declaration
-    Button btn_next;
+    Button btn_next, btn_chest, btn_stridor, btn_grunt, btn_wheez;
 
     // LinerLayouts
     LinearLayout
@@ -1019,6 +1021,35 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         events_call();
 
         btn_next.setOnClickListener(this);
+
+        btn_chest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeMediaUI(btn_chest, R.raw.look_chest_i);
+            }
+        });
+
+        btn_stridor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeMediaUI(btn_stridor, R.raw.child_i_s);
+            }
+        });
+
+        btn_grunt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeMediaUI(btn_grunt, R.raw.grunting);
+            }
+        });
+
+        btn_wheez.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeMediaUI(btn_wheez, R.raw.breath_sounds_w);
+            }
+        });
+
     }
 
     @Override
@@ -1041,6 +1072,10 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
         // Button Next
         btn_next = findViewById(R.id.btn_next);
+        btn_chest = findViewById(R.id.btn_chest);
+        btn_stridor = findViewById(R.id.btn_stri);
+        btn_grunt = findViewById(R.id.btn_grunt);
+        btn_wheez = findViewById(R.id.btn_wheez);
 
         // Layouts
 
@@ -6218,23 +6253,6 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         return true;
     }
 
-
-/*    public void BtnChest() {
-        changeMediaUI(bi.btnChest, R.raw.look_chest_i);
-    }
-
-    public void BtnStri() {
-        changeMediaUI(bi.btnStri, R.raw.child_i_s);
-    }
-
-    public void BtnGrunt() {
-        changeMediaUI(bi.btnGrunt, R.raw.grunting);
-    }
-
-    public void BtnWheez() {
-        changeMediaUI(bi.btnWheez, R.raw.breath_sounds_w);
-    }
-
     private void changeMediaUI(final Button btn, final int resID) {
 
         if (mediaPlayer != null) {
@@ -6272,18 +6290,18 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     private void btnDefaultState() {
-        bi.btnChest.setBackgroundColor(getResources().getColor(R.color.gray));
-        bi.btnChest.setTextColor(getResources().getColor(R.color.black));
+        btn_chest.setBackgroundColor(getResources().getColor(R.color.gray));
+        btn_chest.setTextColor(getResources().getColor(R.color.black));
 
-        bi.btnGrunt.setBackgroundColor(getResources().getColor(R.color.gray));
-        bi.btnGrunt.setTextColor(getResources().getColor(R.color.black));
+        btn_grunt.setBackgroundColor(getResources().getColor(R.color.gray));
+        btn_grunt.setTextColor(getResources().getColor(R.color.black));
 
-        bi.btnStri.setBackgroundColor(getResources().getColor(R.color.gray));
-        bi.btnStri.setTextColor(getResources().getColor(R.color.black));
+        btn_stridor.setBackgroundColor(getResources().getColor(R.color.gray));
+        btn_stridor.setTextColor(getResources().getColor(R.color.black));
 
-        bi.btnWheez.setBackgroundColor(getResources().getColor(R.color.gray));
-        bi.btnWheez.setTextColor(getResources().getColor(R.color.black));
-    }*/
+        btn_wheez.setBackgroundColor(getResources().getColor(R.color.gray));
+        btn_wheez.setTextColor(getResources().getColor(R.color.black));
+    }
 
     @Override
     public void onBackPressed() {

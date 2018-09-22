@@ -9,7 +9,7 @@ public class C3251_C3288_A_C {
         query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT,   " +
 
 
-                Global.C.C3251_C3288_A_C.sub_C3251_C3288_A_C.STUDYID + " INTEGER," +
+                Global.C.C3251_C3288_A_C.sub_C3251_C3288_A_C.STUDYID + " TEXT," +
                 Global.C.C3251_C3288_A_C.sub_C3251_C3288_A_C.C3251_1 + " TEXT," +
                 Global.C.C3251_C3288_A_C.sub_C3251_C3288_A_C.C3251_2 + " TEXT," +
                 Global.C.C3251_C3288_A_C.sub_C3251_C3288_A_C.C3252 + " TEXT," +

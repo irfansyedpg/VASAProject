@@ -2591,6 +2591,61 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3167" />
 
+
+                    <LinearLayout
+                        style="@style/Q_Linerlayout_v"
+                        android:layout_marginTop="45sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            style="@style/Q_Linerlayout_v"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_chest"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:layout_weight="30"
+                                android:background="@color/gray"
+                                android:text="Look for chest indrawing" />
+
+                            <Button
+                                android:id="@+id/btn_stri"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:background="@color/gray"
+                                android:text="Stridor" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/Q_Linerlayout_v"
+                            android:layout_marginTop="10sp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_grunt"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:layout_weight="30"
+                                android:background="@color/gray"
+                                android:text="Grunting" />
+
+                            <Button
+                                android:id="@+id/btn_wheez"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:background="@color/gray"
+                                android:text="Wheezing" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
                 </LinearLayout>
             </android.support.v7.widget.CardView>
             <!--C3067 Text Ends-->

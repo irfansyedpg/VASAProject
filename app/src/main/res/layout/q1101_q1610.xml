@@ -48,7 +48,8 @@
 
 
             <!-- EditText study_id Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView android:id="@+id/cv_study_id"
+                style="@style/Q_CardView">
 
                 <LinearLayout
                     android:id="@+id/ll_study_id"
@@ -72,7 +73,7 @@
             <!-- EditText study_id Ends -->
 
             <!-- Radio Buttons Q1101 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <!--<android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
                     android:id="@+id/ll_Q1101"
@@ -104,11 +105,11 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>-->
             <!-- Radio Buttons Q1101 Ends -->
 
             <!-- Radio Buttons Q1102 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <!--<android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
                     android:id="@+id/ll_Q1102"
@@ -140,11 +141,11 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>-->
             <!-- Radio Buttons Q1102 Ends -->
 
             <!-- Radio Buttons Q1103 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <!--<android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
                     android:id="@+id/ll_Q1103"
@@ -176,7 +177,7 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>-->
             <!-- Radio Buttons Q1103 Ends -->
 
             <!-- EditText Q1202 Starts -->
@@ -203,7 +204,8 @@
             <!-- EditText Q1202 Ends -->
 
             <!-- Radio Buttons Q1203 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView android:id="@+id/cv_Q1402"
+                style="@style/Q_CardView">
 
                 <LinearLayout
                     android:id="@+id/ll_Q1203"
@@ -287,7 +289,6 @@
             <!-- EditText Q1206_d Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_Q1206_d"
                     style="@style/Q_Linerlayout_v">
@@ -297,11 +298,10 @@
                         style="@style/TextView"
                         android:text="Days" />
 
-
                     <EditText
                         android:id="@+id/ed_Q1206_d"
                         style="@style/EditText_number"
-                        android:hint="Days" />
+                        android:hint="Days"/>
 
 
                 </LinearLayout>
@@ -495,7 +495,7 @@
             <!-- EditText Q1302 Ends -->
 
             <!-- EditText Q1307 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <!--<android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
                     android:id="@+id/ll_Q1307"
@@ -517,11 +517,11 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>-->
             <!-- EditText Q1307 Ends -->
 
             <!-- EditText Q1308 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <!--<android.support.v7.widget.CardView style="@style/Q_CardView">
 
 
                 <LinearLayout
@@ -542,11 +542,11 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>-->
             <!-- EditText Q1308 Ends -->
 
             <!-- EditText Q1309 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <!--<android.support.v7.widget.CardView style="@style/Q_CardView">
 
 
                 <LinearLayout
@@ -569,11 +569,11 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>-->
             <!-- EditText Q1309 Ends -->
 
-            <!-- EditText Q1310 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <!-- EditText Q1310 Start -->
+            <!--<android.support.v7.widget.CardView style="@style/Q_CardView">
 
 
                 <LinearLayout
@@ -594,10 +594,11 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>-->
+            <!-- EditText Q1310 End -->
 
             <!-- EditText Q1312 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <!--<android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
                     android:id="@+id/ll_Q1312"
@@ -619,11 +620,11 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>-->
             <!-- EditText Q1312 Ends -->
 
             <!-- EditText Q1313 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <!--<android.support.v7.widget.CardView style="@style/Q_CardView">
 
 
                 <LinearLayout
@@ -646,7 +647,7 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>-->
             <!-- EditText Q1313 Ends -->
 
             <!-- EditText Q1401 Starts -->

@@ -18,7 +18,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import data.DBHelper;
-import data.GS.Q1101_Q1610;
 
 public class InterviewEnd extends AppCompatActivity implements View.OnClickListener {
 
@@ -102,10 +101,10 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
         DBHelper db = new DBHelper(this);
 
         ContentValues values = new ContentValues();
-        Q1101_Q1610.Q1309 = dtf[0];
-        Q1101_Q1610.Q1310 = dtf[1];
-        values.put(Q1101_Q1610.Q1311, Q1311);
-        values.put(Q1101_Q1610.currentSection, currentSection);
+        Global.GS.Q1101_Q1610.Q1309 = dtf[0];
+        Global.GS.Q1101_Q1610.Q1310 = dtf[1];
+        values.put(Global.GS.Q1101_Q1610.Q1311, Q1311);
+        values.put(Global.GS.Q1101_Q1610.currentSection, currentSection);
 
         Long res = db.updateData("Q1101_Q1610", values, study_id);
 
