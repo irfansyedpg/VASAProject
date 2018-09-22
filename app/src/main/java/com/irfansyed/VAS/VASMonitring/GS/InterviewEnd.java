@@ -70,6 +70,7 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
         } else {
 
             currentSection = 111;
+            rb_Q1311_1.setEnabled(false);
         }
 
         ed_study_id.setText(study_id);
