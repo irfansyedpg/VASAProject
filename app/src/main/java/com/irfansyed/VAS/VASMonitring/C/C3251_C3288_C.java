@@ -50,7 +50,7 @@ public class C3251_C3288_C extends AppCompatActivity {
     private void GetDataFromDB() {
 
         DBHelper db = new DBHelper(this);
-        String c3252 = db.getSpecificData(data.C.C3251_C3288_A_C.TABLE_NAME, "id", C3251_C3288_A_C.sub_C3251_C3288_A_C.C3252);
+        String c3252 = db.getSpecificData(data.C.C3251_C3288_A_C.TABLE_NAME, bi.edStudyId.getText().toString(), C3251_C3288_A_C.sub_C3251_C3288_A_C.C3252);
         if (Integer.valueOf(c3252) == 2) {
             flag_c3252 = false;
         }
@@ -59,8 +59,8 @@ public class C3251_C3288_C extends AppCompatActivity {
         for (C3251_C3288_B col_data : col_c3251) {
             if (col_data.getC32532A().equals("1")) {
 
-                String n2090 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, "id", Global.N.N2080_N2107.sub_N2080_N2107.N2090);
-                String n2093 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, "id", Global.N.N2080_N2107.sub_N2080_N2107.N2093);
+                String n2090 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, bi.edStudyId.getText().toString(), Global.N.N2080_N2107.sub_N2080_N2107.N2090);
+                String n2093 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, bi.edStudyId.getText().toString(), Global.N.N2080_N2107.sub_N2080_N2107.N2093);
                 if (Integer.valueOf(n2090) != 1 &&
                         (Integer.valueOf(n2093) == 1 || Integer.valueOf(n2093) == 2 || Integer.valueOf(n2093) == 14 || Integer.valueOf(n2093) == 99)) {
                     flag_n2090 = false;
@@ -920,6 +920,6 @@ public class C3251_C3288_C extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this, bi.edStudyId, currentSection = 9);
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), currentSection = 9);
     }
 }

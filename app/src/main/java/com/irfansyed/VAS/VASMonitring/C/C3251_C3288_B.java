@@ -122,6 +122,6 @@ public class C3251_C3288_B extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this, bi.edStudyId, currentSection = 8);
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), currentSection = 8);
     }
 }

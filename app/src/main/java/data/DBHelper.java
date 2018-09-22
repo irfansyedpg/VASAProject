@@ -50,8 +50,8 @@ import data.A.A4401_A4473;
  */
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final  String DB_NAME = "vasa.db";
-    private static final int    VERSION = 1;
+    public static final String DB_NAME = "vasa.db";
+    private static final int VERSION = 1;
 
     Context mContext;
 
@@ -176,7 +176,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }*/
 
 
-    public Cursor getPendingInterviews(String tableName){
+    public Cursor getPendingInterviews(String tableName) {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -1287,20 +1287,18 @@ public class DBHelper extends SQLiteOpenHelper {
         return newRowId;
     }
 
-    public String getSpecificData(String table_name, String id, String column) {
+    public String getSpecificData(String table_name, String study_id, String column) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                column,
-                "MAX(" + id + ") as " + id
+                column
         };
-        String whereClause = null;
-        String[] whereArgs = null;
+        String whereClause = "study_id =?";
+        String[] whereArgs = {study_id};
         String groupBy = null;
         String having = null;
 
-        String orderBy =
-                id + " DESC LIMIT 1";
+        String orderBy = "study_id DESC LIMIT 1";
 
         String allFC = null;
         try {
