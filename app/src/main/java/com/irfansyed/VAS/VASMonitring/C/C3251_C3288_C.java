@@ -26,6 +26,8 @@ public class C3251_C3288_C extends AppCompatActivity {
 
     int currentSection;
 
+    String study_id;
+
     C3251C3288CBinding bi;
     boolean C3281Flag = true, flag_c3252 = true, flag_n2090 = true, flag_n2093 = true, flag_c3253 = true;
     int skip_flag;
@@ -38,6 +40,8 @@ public class C3251_C3288_C extends AppCompatActivity {
         bi.setCallback(this);
 
         this.setTitle(getString(R.string.h_c_sec_10));
+
+        study_id = getIntent().getExtras().getString("study_id");
 
         bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
         bi.edStudyId.setEnabled(false);

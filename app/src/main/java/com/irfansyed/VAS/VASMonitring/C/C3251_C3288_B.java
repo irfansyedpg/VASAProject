@@ -20,6 +20,8 @@ public class C3251_C3288_B extends AppCompatActivity {
 
     int currentSection;
 
+    String study_id;
+
     static int count = 1;
     C3251C3288BBinding bi;
 
@@ -31,6 +33,8 @@ public class C3251_C3288_B extends AppCompatActivity {
         bi.setCallback(this);
 
         this.setTitle(getString(R.string.h_c_sec_10));
+
+        study_id = getIntent().getExtras().getString("study_id");
 
         bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
         bi.edStudyId.setEnabled(false);
