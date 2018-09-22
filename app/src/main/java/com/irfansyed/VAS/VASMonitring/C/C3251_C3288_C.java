@@ -9,6 +9,7 @@ import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.C3251C3288CBinding;
 
@@ -18,11 +19,12 @@ import Global.C.C3251_C3288_A_C;
 import Global.C.C3251_C3288_B;
 import data.DBHelper;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 
 import static com.irfansyed.VAS.VASMonitring.C.C3251_C3288_A.c3251A_ID;
 
 public class C3251_C3288_C extends AppCompatActivity {
+
+    int currentSection;
 
     C3251C3288CBinding bi;
     boolean C3281Flag = true, flag_c3252 = true, flag_n2090 = true, flag_n2093 = true, flag_c3253 = true;
@@ -918,6 +920,6 @@ public class C3251_C3288_C extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
+        globale.interviewExit(this, this, bi.edStudyId, currentSection = 9);
     }
 }

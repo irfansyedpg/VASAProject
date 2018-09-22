@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.C3251C3288BBinding;
 
@@ -16,6 +17,8 @@ import utils.Gothrough;
 import static com.irfansyed.VAS.VASMonitring.C.C3251_C3288_A.c3251A_ID;
 
 public class C3251_C3288_B extends AppCompatActivity {
+
+    int currentSection;
 
     static int count = 1;
     C3251C3288BBinding bi;
@@ -119,6 +122,6 @@ public class C3251_C3288_B extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
+        globale.interviewExit(this, this, bi.edStudyId, currentSection = 8);
     }
 }

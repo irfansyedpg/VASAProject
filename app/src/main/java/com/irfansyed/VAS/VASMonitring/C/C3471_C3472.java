@@ -269,6 +269,6 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this, study_id, currentSection = 11);
+        globale.interviewExit(this, this, study_id, currentSection = 13);
     }
 }
