@@ -7,7 +7,7 @@ public class N2017_N2022_3 {
         String query;
         query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT,    " +
 
-                Global.N.N2017_N2022_3.sub_N2017_N2022_3.STUDYID + " INTEGER," +
+                Global.N.N2017_N2022_3.sub_N2017_N2022_3.STUDYID + " TEXT," +
                 Global.N.N2017_N2022_3.sub_N2017_N2022_3.N2017 + " TEXT," +
                 Global.N.N2017_N2022_3.sub_N2017_N2022_3.N2018 + " TEXT," +
                 Global.N.N2017_N2022_3.sub_N2017_N2022_3.N2019u + " TEXT," +
