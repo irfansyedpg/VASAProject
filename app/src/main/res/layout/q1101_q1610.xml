@@ -1294,7 +1294,7 @@
                         <RadioButton
                             android:id="@+id/rb_Q1414_3_2"
                             style="@style/RadioButton"
-                            android:text="Yes" />
+                            android:text="No" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_3_DK"

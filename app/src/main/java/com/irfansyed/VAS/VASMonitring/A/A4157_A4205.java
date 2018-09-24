@@ -341,29 +341,6 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             STATUS;
 
     //End DECLARATION
-    private TextWatcher generalTextWatcher = new TextWatcher() {
-
-        @Override
-        public void onTextChanged(CharSequence s, int start, int before, int count) {
-        }
-
-        @Override
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-        }
-
-        @Override
-        public void afterTextChanged(Editable s) {
-            if (ed_A4178_1.getText().hashCode() == s.hashCode()) {
-                if (ed_A4178_1.getText().toString().trim().length() > 0 && Integer.parseInt(ed_A4178_1.getText().toString().trim()) > 0) {
-                    ClearAllcontrol.ClearAll(ll_A4178_2);
-                    ll_A4178_2.setVisibility(View.GONE);
-                } else {
-                    ll_A4178_2.setVisibility(View.VISIBLE);
-                }
-            }
-        }
-
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -1132,6 +1109,39 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
         }
 
     }
+
+    private TextWatcher generalTextWatcher = new TextWatcher() {
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            if (ed_A4178_1.getText().hashCode() == s.hashCode()) {
+                if (ed_A4178_1.getText().toString().trim().length() > 0 && Integer.parseInt(ed_A4178_1.getText().toString().trim()) > 0) {
+                    ClearAllcontrol.ClearAll(ll_A4178_2);
+                    ll_A4178_2.setVisibility(View.GONE);
+                } else {
+                    ll_A4178_2.setVisibility(View.VISIBLE);
+                }
+            }
+
+            if (ed_A4180.getText().hashCode() == s.hashCode()) {
+                if (ed_A4180.getText().toString().trim().length() > 0 && Integer.parseInt(ed_A4180.getText().toString().trim()) < 1) {
+                    ClearAllcontrol.ClearAll(ll_A4181);
+                    ll_A4181.setVisibility(View.GONE);
+                } else {
+                    ll_A4181.setVisibility(View.VISIBLE);
+                }
+            }
+        }
+
+    };
 
     private void events_calls() {
 
