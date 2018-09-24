@@ -63,10 +63,15 @@ public class C3251_C3288_C extends AppCompatActivity {
         for (C3251_C3288_B col_data : col_c3251) {
             if (col_data.getC32532A().equals("1")) {
 
-                String n2090 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, bi.edStudyId.getText().toString(), Global.N.N2080_N2107.sub_N2080_N2107.N2090);
+                String n2090 = db.getSpecificData(data.C.C3051_C3099.TABLE_NAME, bi.edStudyId.getText().toString(), Global.N.N2080_N2107.sub_N2080_N2107.N2090);
                 String n2093 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, bi.edStudyId.getText().toString(), Global.N.N2080_N2107.sub_N2080_N2107.N2093);
+
                 if (Integer.valueOf(n2090) != 1 &&
-                        (Integer.valueOf(n2093) == 1 || Integer.valueOf(n2093) == 2 || Integer.valueOf(n2093) == 14 || Integer.valueOf(n2093) == 99)) {
+                        (Integer.valueOf(n2093) == 1 ||
+                                Integer.valueOf(n2093) == 2 ||
+                                Integer.valueOf(n2093) == 14 ||
+                                Integer.valueOf(n2093) == 99)) {
+
                     flag_c3064 = false;
                     break;
                 } else {

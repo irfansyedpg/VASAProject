@@ -1,10 +1,11 @@
-﻿<resources>
-    <!--&lt;!&ndash;<string name="app_name"> VASA NEONATAL DEATH </string>-->
+﻿
+<resources>
+ <!--   &lt;!&ndash;&lt;!&ndash;<string name="app_name"> VASA NEONATAL DEATH </string>&ndash;&gt;
 
     <string name="navigation_dRAwer_open">Open navigation dRAwer</string>
     <string name="navigation_dRAwer_close">Close navigation dRAwer</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    &lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;
     <string name="hello_blank_fRAgment">Hello blank fRAgment</string>
 
     <string name="title_new_survey">New Survey</string>
@@ -21,9 +22,9 @@
     <string name="rb_DK">معلوم نہیں </string>
     <string name="rb_RA">جواب دینے سے انکار کردیا</string>
 
-    <!--HEADINGS-->
+    &lt;!&ndash;HEADINGS&ndash;&gt;
 
-    <!--Neonates-->
+    &lt;!&ndash;Neonates&ndash;&gt;
     <string name="h_n_sec_2">SECTION 2: BACKGROUND</string>
     <string name="h_n_sec_2_1">2.1 GENERAL DELIVERY CONTEXT (for 0-27 day olds) </string>
     <string name="h_n_sec_2_2">2.2 STILLBIRTH / NEONATAL DEATH DETERMINATION (for 0-27 day olds) </string>
@@ -41,7 +42,7 @@
     <string name="h_n_sec_14">SECTION 14: SOCIAL CAPITAL AND HIV/AIDS QUESTIONS (FOR STILLBIRTHS, NEONATAL) </string>
     <string name="h_n_sec_15">SECTION 15: OPEN ENDED RESPONSE &amp; INTERVIEWER COMMENTS/OBSERVATIONS (FOR STILLBIRTHS, NEONATAL) </string>
 
-    <!--Adult-->
+    &lt;!&ndash;Adult&ndash;&gt;
     <string name="h_a_sec_2_4">2.4 BACKGROUND and GENERAL SIGNS AND SYMPTOMS </string>
     <string name="h_a_sec_9">SECTION 9: SIGNS AND SYMPTOMS FOR ADULTS DEATHS (12 years and above)</string>
     <string name="h_a_sec_I_A">Injuries and Accidents</string>
@@ -52,7 +53,7 @@
     <string name="h_a_sec_14">SECTION 14: SOCIAL CAPITAL AND HIV/AIDS QUESTIONS</string>
     <string name="h_a_sec_15">SECTION 15: OPEN ENDED RESPONSE &amp; INTERVIEWER COMMENTS/OBSERVATIONS</string>
 
-    <!--GeneRAl Section-->
+    &lt;!&ndash;GeneRAl Section&ndash;&gt;
     <string name="h_g_sec_1">SECTION 1: GENERAL INFORMATION</string>
     <string name="h_g_sec_1.1">1.1 Information about the prevalence of HIV and malaria</string>
     <string name="h_g_sec_1.2">1.2 Information about the deceased</string>
@@ -62,7 +63,7 @@
     <string name="h_g_sec_1.5">1.5 Information about others at the interview</string>
     <string name="h_g_sec_1.6">1.6 Deceased child or adults sex and age at death</string>
 
-    <!--Child-->
+    &lt;!&ndash;Child&ndash;&gt;
     <string name="h_c_sec_2">SECTION 2: BACKGROUND</string>
     <string name="h_c_sec_2_1">2.1 GENERAL DELIVERY CONTEXT (for 28 day-11 month olds)</string>
     <string name="h_c_sec_2_4">2.4 BACKGROUND (CHILD DEATHS)</string>
@@ -78,7 +79,7 @@
     <string name="h_c_sec_15">SECTION 15: OPEN ENDED RESPONSE &amp; INTERVIEWER COMMENTS/OBSERVATIONS (CHILD DEATHS)</string>
 
 
-    <!--NEW FROM IRFAN-->
+    &lt;!&ndash;NEW FROM IRFAN&ndash;&gt;
 
     <string name="action_settings">Settings</string>
     <string name="hint_name">Full Name</string>
@@ -110,13 +111,13 @@
     <string name="date_text">date_text</string>
 
 
-    <!-- GenRAl Info File starts  -->
+    &lt;!&ndash; GenRAl Info File starts  &ndash;&gt;
 
 
-    <!-- GenRAl Info File Ends   -->
+    &lt;!&ndash; GenRAl Info File Ends   &ndash;&gt;
 
 
-    <!-- GeneRAl Section Urdu Text STARTS -->
+    &lt;!&ndash; GeneRAl Section Urdu Text STARTS &ndash;&gt;
 
     <string name="txt_Q1101">	کیا یہ ایچ آئی وی /ایڈز سے متاثر  علاقہ ہے ؟	:	Q1101	</string>
     <string name="txt_Q1102">	کیا یہ ملیریا سے متاثر  علاقہ ہے؟	:	Q1102	</string>
@@ -174,9 +175,9 @@
     <string name="txt_Q1609">	وفات کے وقت مرنے والے کی عمر کے گروپ یہ نشان لگائیں ۔	:	Q1609	</string>
     <string name="txt_Q1610">	اگر وفات کے وقت کی عمر  28 دن سے کم عمر ہے تو عمر دنوں ،گھنٹے یا منٹس میں ریکارڈ کریں	:	Q1610	</string>
 
-    <!-- GeneRAl Section Urdu Text ENDS -->
+    &lt;!&ndash; GeneRAl Section Urdu Text ENDS &ndash;&gt;
 
-    <!-- GeneRAl Section Urdu Responses STARTS -->
+    &lt;!&ndash; GeneRAl Section Urdu Responses STARTS &ndash;&gt;
 
     <string name="rb_Q1101_1">	 زیادہ	</string>
     <string name="rb_Q1101_2">	 کم	</string>
@@ -366,9 +367,9 @@
     <string name="rb_Q1609_4">	سال5-11	</string>
     <string name="rb_Q1609_5">	سال یا اس سے زیادہ-12	</string>
 
-    <!-- GeneRAl Section Urdu Responses ENDS -->
+    &lt;!&ndash; GeneRAl Section Urdu Responses ENDS &ndash;&gt;
 
-    <!-- GeneRAl Section Urdu HINT's STARTS -->
+    &lt;!&ndash; GeneRAl Section Urdu HINT's STARTS &ndash;&gt;
 
     <string name="C1204_h">	 مرنے والے ،والی کا دن، مہینہ اور پیداش کا سال نقل کریں 	</string>
     <string name="C1205_h">	مرنے والے ،والی کا دن، مہینہ اور مرنے کا سال نقل کریں	</string>
@@ -390,9 +391,9 @@
     <string name="C1606_h">	بیان کردہ تاریخ اگر ریکارڈ کی گئی تاریخ سے  متضاد ہے تو جواب دہندہ سے صحیح وفات کی تاریخ کی تصدیق کر کے  درج کریں ۔ (آپ ریکارڈ  میں دی ہوئی تاریخ (س1205)   کو تبدیلی نہیں کرسکتے )	</string>
     <string name="C1609_h">	اگر معلوم ہو تو حساب کی ہو ئی  (س1602-س1604) ،یا بتائی ہوئی عمر (س1606) استعمال کریں۔	</string>
 
-    <!-- GeneRAl Section Urdu HINT's ENDS -->
+    &lt;!&ndash; GeneRAl Section Urdu HINT's ENDS &ndash;&gt;
 
-    <!-- Adult Urdu Text STARTS -->
+    &lt;!&ndash; Adult Urdu Text STARTS &ndash;&gt;
 
     <string name="A4001">	وفات پانے والے کا پہلا نام کیا تھا ؟	:	A4001	</string>
     <string name="A4002">	اس کی ازدواجی حیثیت کیا تھی؟	:	A4002	</string>
@@ -767,9 +768,9 @@
     <string name="A4472">	کیا اوپر دے گے وضاحتی بیانیے  میں   مندرجہ زیل میں سے کوئی بھی  الفاظ جو ہماری دلچسپی کے ہوں   بیان  ہوئے ہیں ؟	:	A4472	</string>
     <string name="A4473">		انٹرویور: انٹرویو کو بارے میں اپنا تبصرہ اور مشاہدہ لکھیں:	A4473	</string>
 
-    <!-- Adult Urdu Text ENDS -->
+    &lt;!&ndash; Adult Urdu Text ENDS &ndash;&gt;
 
-    <!-- Adult Urdu Responses STARTS -->
+    &lt;!&ndash; Adult Urdu Responses STARTS &ndash;&gt;
 
     <string name="rb_A4002_1">	 سنگل	</string>
     <string name="rb_A4002_2">	 شادی شدہ	</string>
@@ -1548,7 +1549,7 @@
     <string name="rb_A4206_22_DK">	معلوم نہیں 	</string>
     <string name="rb_A4206_22_RA">	جواب دینے سے انکار کردیا	</string>
     <string name="rb_A4251_1">	                                         ہاں 	</string>
-    <string name="rb_A4251_2">	نہیں ،.-------دیکھ بھال کی ضرورت نہیں تھی،نہ ہی تلاش کی	</string>
+    <string name="rb_A4251_2">	نہیں ،.-&#45;&#45;&#45;&#45;&#45;&#45;دیکھ بھال کی ضرورت نہیں تھی،نہ ہی تلاش کی	</string>
     <string name="rb_A4251_DK">	معلوم نہیں 	</string>
     <string name="rb_A4253_1">	مرنےوالا  (بذات خود)	</string>
     <string name="rb_A4253_2">	مرنے والے کا شوہر، ساتھی	</string>
@@ -1925,9 +1926,9 @@
     <string name="cb_A4472_12">	اوپر  میں سے کوئی لفظ موجود نہیں	</string>
     <string name="cb_A4472_DK">	معلوم نہیں 	</string>
 
-    <!-- Adult Urdu Responses ENDS -->
+    &lt;!&ndash; Adult Urdu Responses ENDS &ndash;&gt;
 
-    <!-- Adult Urdu HINT's STARTS -->
+    &lt;!&ndash; Adult Urdu HINT's STARTS &ndash;&gt;
 
     <string name="A4005_h">	اگر  ایک سال سے کم مکمل ہے تو 00 لکھیں	</string>
     <string name="A4006_h">	"ہاں" لکھیں  اگر جواب دہندہ کو معلوم ہے کہ (نام) کو دونوں لکھنا پڑھنا یا صرف لکھنا یا صرف پڑھنا آتا  تھا  ۔	</string>
@@ -2042,9 +2043,9 @@
     <string name="A4453_h">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
     <string name="A4473_h">	انٹرویور: انٹرویو کو بارے میں اپنا تبصرہ اور مشاہدہ لکھیں	</string>
 
-    <!-- Adult Urdu Hint's ENDS -->
+    &lt;!&ndash; Adult Urdu Hint's ENDS &ndash;&gt;
 
-    <!-- Neonate Urdu Text STARTS -->
+    &lt;!&ndash; Neonate Urdu Text STARTS &ndash;&gt;
 
     <string name="txt_N2001">	کیا ایک سے زیادہ بچوں کی پیدائش ہوئی تھی ؟	:	N2001	</string>
     <string name="txt_N2002">	ترتیب پیدائش میں بچے کا نمبر پہلا،دوسرا یا  اس کے بعد  کا  تھا؟	:	N2002	</string>
@@ -2465,9 +2466,9 @@
     <string name="txt_N2247">	انتقال سے پہلے کے آخری دنوں میں ،کیا کسی نے مدد مانگنے کے لیے ٹیلیفون یا موبائل فون  کا استعمال کیا تھا	:	N2247	</string>
     <string name="txt_N2248">	اس (نام) کی موت ( بیماری /علامت کی شناخت / (آخری   کاروا ئی N2213 ) / پہلے یا آخری صحت فراہم کنندہ کو چھوڑنے )کے کتنے دنوں کے  بعد واقع ہوئی؟ 	:	N2248	</string>
 
-    <!-- Neonate Urdu Text ENDS -->
+    &lt;!&ndash; Neonate Urdu Text ENDS &ndash;&gt;
 
-    <!-- Neonate Urdu Responses STARtS -->
+    &lt;!&ndash; Neonate Urdu Responses STARtS &ndash;&gt;
 
     <string name="rb_N2001_1">	ہاں	</string>
     <string name="rb_N2001_2">	نہیں	</string>
@@ -3736,7 +3737,7 @@
     <string name="rb_N2211_2_3">	غیر معمولی	</string>
     <string name="rb_N2211_2_DK">	معلوم نہیں	</string>
     <string name="rb_N2212_1">	 ہاں	</string>
-    <string name="rb_N2212_2">	نہیں ،.-------دیکھ بھال کی ضرورت نہیں تھی،نہ ہی تلاش کی	</string>
+    <string name="rb_N2212_2">	نہیں ،.-&#45;&#45;&#45;&#45;&#45;&#45;دیکھ بھال کی ضرورت نہیں تھی،نہ ہی تلاش کی	</string>
     <string name="rb_N2212_DK">	معلوم نہیں	</string>
     <string name="rb_N2214_1">	بچہ کی ماں	</string>
     <string name="rb_N2214_2">	بچہ کا والد	</string>
@@ -3880,9 +3881,9 @@
     <string name="rb_N2247_DK">	معلوم نہیں	</string>
     <string name="rb_N2247_RA">	جواب دینے سے انکار کردیا	</string>
 
-    <!-- Neonate Urdu Responses ENDS -->
+    &lt;!&ndash; Neonate Urdu Responses ENDS &ndash;&gt;
 
-    <!-- Neonate Urdu Text HINT's STARTS -->
+    &lt;!&ndash; Neonate Urdu Text HINT's STARTS &ndash;&gt;
 
     <string name="N2003_h">	اگر ماں  انٹرویو میں موجود ہے تو   یہ سوال پوچھے بغیر  "ہاں"  پر نشان لگائیں 	</string>
     <string name="N2005u_h">	صرف ایک یونٹ یا جواب لکھیں	</string>
@@ -3977,9 +3978,9 @@
     <string name="N2321_h">	یہ ایک اختیار ی سوال ہے جس کو پوچھنے کا فیصلہ اسٹیڈی کی جگہ کے مطابق کیا جائیگا 	</string>
     <string name="N2323_h">	انٹرویور: انٹرویو کو بارے میں اپنا تبصرہ اور مشاہدہ لکھیں	</string>
 
-    <!-- Neonate Urdu Text HINT's ENDS -->
+    &lt;!&ndash; Neonate Urdu Text HINT's ENDS &ndash;&gt;
 
-    <!-- Child Urdu Text STARTS -->
+    &lt;!&ndash; Child Urdu Text STARTS &ndash;&gt;
     <string name="txt_C3001">	کیا ایک سے زیادہ بچوں کی پیدائش ہوئی تھی ؟	:	C3001	</string>
     <string name="txt_C3002">	ترتیب پیدائش میں بچے کا نمبر پہلا،دوسرا یا  اس کے بعد  کا  تھا؟	:	C3002	</string>
     <string name="txt_C3003">	کیا ماں ابھی زندہ ہے؟	:	C3003	</string>
@@ -4455,9 +4456,9 @@
     <string name="txt_C3471">	پڑھیں: آپ کا بہت شکریہ کہ آپ  نے میرے پوچھے گئے سوالات کا جواب دیا ۔کیا آپ مجھے (نام) کی بیماری کے بارے میں اپنے الفاظ میں کچھ بتائیں گی/گے؟ اس کے علاوہ کیا (نام) کی بیماری کے بارے میں کچھ ایسی معلومات ہیں جو میں نے نہ پوچھی ہوں اور آپ اس  کے  بارے میں مزید  بتانا چاہیں ؟	:	C3471 	</string>
     <string name="txt_C3472">	کیا اوپر دے گے وضاحتی بیانیے  میں   مندرجہ زیل میں سے کوئی بھی  الفاظ جو ہماری دلچسپی کے ہوں   بیان  ہوئے ہیں ؟	:	C3472	</string>
 
-    <!-- Child Urdu Text ENDS -->
+    &lt;!&ndash; Child Urdu Text ENDS &ndash;&gt;
 
-    <!-- Child Urdu Responses STARTS -->
+    &lt;!&ndash; Child Urdu Responses STARTS &ndash;&gt;
     <string name="rb_C3001_1">	                                         ہاں 	</string>
     <string name="rb_C3001_2">	                                                     نہیں 	</string>
     <string name="rb_C3001_DK">	معلوم نہیں 	</string>
@@ -6031,9 +6032,9 @@
     <string name="rb_C3472_11">	اوپر  میں سے کوئی لفظ موجود نہیں 	</string>
     <string name="rb_C3472_DK">	معلوم نہیں 	</string>
 
-    <!-- Child Urdu Responses ENDS -->
+    &lt;!&ndash; Child Urdu Responses ENDS &ndash;&gt;
 
-    <!-- Child Urdu TEXT HINT's STARTS -->
+    &lt;!&ndash; Child Urdu TEXT HINT's STARTS &ndash;&gt;
     <string name="C3001_h">	اگر ایک ہی وقت میں دو یا اس سے زیادہ بچے پیدا ہوئے ہیں تو یہ ایک سے زیادہ پیدائش کی حیثیت میں شمار ہوں گی چاہیے ایک یا ایک سے زیادہ بچوں کی وفات ہوئی ہو	</string>
     <string name="C3003_h">	اگر ماں  انٹرویو میں موجود ہے تو   یہ سوال پوچھے بغیر  "ہاں"  پر نشان لگائیں	</string>
     <string name="C3005u_h">	صرف ایک یونٹ یا جواب لکھیں	
@@ -6185,7 +6186,7 @@
     <string name="C3473_h">	انٹرویور: انٹرویو کے بارے میں اپنا تبصرہ اور مشاہدہ لکھیں	</string>
 
 
-    <!-- Child Urdu TEXT HINT's ENDS -->
+    &lt;!&ndash; Child Urdu TEXT HINT's ENDS &ndash;&gt;
 
     <string name="txt_W201">	آپ/ماں کی تاریخ پیدائش کیا ہے ؟	:W201	</string>
     <string name="ed_W201_d">	دن	</string>
@@ -6241,6 +6242,6 @@
 
     <string name="txt_W213">	پہلےبچے کی پیدائش کے وقت آپ کی عمر کیاتھی؟	:W213	</string>
     <string name="ed_W213">	عمر سالوں میں</string>
-
+-->
 
 </resources>
