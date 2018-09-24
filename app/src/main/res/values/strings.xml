@@ -1733,38 +1733,38 @@
 You mentioned that you took (NAME) to the (first) health provider, I mean the (FIRST HEALTH PROVIDER) with (SYMPTOM). How long had (NAME) had (this / these) symptom(s) when it was decided to go to the (FIRST HEALTH PROVIDER)?
 </string>
 
-    <string name="txt_N2218_1">N2218_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all 	</string>
-    <string name="txt_N2218_2">N2218_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
-    <string name="txt_N2219">N2219:	What was the name of the &lt;FIRST/LAST HEALTH PROVIDER> where you took &lt;NAME>?	</string>
+    <string name="txt_N2218_1">N2218_1:	At the time of leaving the (&lt;FIRST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all 	</string>
+    <string name="txt_N2218_2">N2218_2:	At the time of leaving the (&lt;FIRST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
+    <string name="txt_N2219">N2219:	What was the name of the &lt;FIRST HEALTH PROVIDER> where you took &lt;NAME>?	</string>
     <string name="txt_N2219_2">N2219_2:	Name of Provider/Facility	</string>
-    <string name="txt_N2220">N2220:	Did &lt;NAME> reach the &lt;FIRST/LAST HEALTH PROVIDER> before s/he died?	</string>
-    <string name="txt_N2221_1">N2221_1:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
-    <string name="txt_N2221_2">N2221_2:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
-    <string name="txt_N2222">N2222:	Did the &lt;FIRST/LAST HEALTH PROVIDER> admit &lt;NAME> to the hospital for his/her problem?	</string>
-    <string name="txt_N2223">N2223:	Did the &lt;FIRST/LAST HEALTH PROVIDER> refer &lt;NAME> to another health provider or facility?	</string>
+    <string name="txt_N2220">N2220:	Did &lt;NAME> reach the &lt;FIRST HEALTH PROVIDER> before s/he died?	</string>
+    <string name="txt_N2221_1">N2221_1:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST HEALTH PROVIDER> / for the &lt;FIRST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
+    <string name="txt_N2221_2">N2221_2:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST HEALTH PROVIDER> / for the &lt;FIRST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
+    <string name="txt_N2222">N2222:	Did the &lt;FIRST HEALTH PROVIDER> admit &lt;NAME> to the hospital for his/her problem?	</string>
+    <string name="txt_N2223">N2223:	Did the &lt;FIRST HEALTH PROVIDER> refer &lt;NAME> to another health provider or facility?	</string>
     <string name="txt_N2224">N2224:	To where was &lt;NAME> referred?	</string>
     <string name="txt_N2224_2">N2224_2:	Name of Provider/Facility	</string>
-    <string name="txt_N2225_1">N2225_1:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which &lt;NAME> needs to return immediately?	</string>
-    <string name="txt_N2225_2">N2225_2:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which To follow-up if &lt;NAME> did not improve after leaving?	</string>
+    <string name="txt_N2225_1">N2225_1:	Did the &lt;FIRST HEALTH PROVIDER> tell you about illness signs and symptoms for which &lt;NAME> needs to return immediately?	</string>
+    <string name="txt_N2225_2">N2225_2:	Did the &lt;FIRST HEALTH PROVIDER> tell you about illness signs and symptoms for which To follow-up if &lt;NAME> did not improve after leaving?	</string>
     <string name="txt_N2226">N2226:	Did &lt;NAME> leave the &lt;FIRST/LAST HEALTH PROVIDER> alive?	</string>
-    <string name="txt_N2227_1">N2227_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all.	</string>
-    <string name="txt_N2227_2">N2227_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
-    <string name="txt_N2228_1">N2228_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all 	</string>
-    <string name="txt_N2228_2">N2228_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
-    <string name="txt_N2229">N2229:	What was the name of the &lt;FIRST/LAST HEALTH PROVIDER> where you took &lt;NAME>?	</string>
+    <string name="txt_N2227_1">N2227_1:	At the time of leaving the (&lt;FIRST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all.	</string>
+    <string name="txt_N2227_2">N2227_2:	At the time of leaving the (&lt;FIRST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
+    <string name="txt_N2228_1">N2228_1:	At the time of leaving the (&lt;LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all 	</string>
+    <string name="txt_N2228_2">N2228_2:	At the time of leaving the (&lt;LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
+    <string name="txt_N2229">N2229:	What was the name of the &lt;LAST HEALTH PROVIDER> where you took &lt;NAME>?	</string>
     <string name="txt_N2229_2">N2229_2:	Name of Provider/Facility	</string>
-    <string name="txt_N2230">N2230:	Did &lt;NAME> reach the &lt;FIRST/LAST HEALTH PROVIDER> before s/he died?	</string>
-    <string name="txt_N2231_1">N2231_1:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
-    <string name="txt_N2231_2">N2231_2:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
-    <string name="txt_N2232">N2232:	Did the &lt;FIRST/LAST HEALTH PROVIDER> admit &lt;NAME> to the hospital for his/her problem?	</string>
-    <string name="txt_N2233">N2233:	Did the &lt;FIRST/LAST HEALTH PROVIDER> refer &lt;NAME> to another health provider or facility?	</string>
+    <string name="txt_N2230">N2230:	Did &lt;NAME> reach the &lt;LAST HEALTH PROVIDER> before s/he died?	</string>
+    <string name="txt_N2231_1">N2231_1:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;LAST HEALTH PROVIDER> / for the &lt;LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
+    <string name="txt_N2231_2">N2231_2:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;LAST HEALTH PROVIDER> / for the &lt;LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
+    <string name="txt_N2232">N2232:	Did the &lt;LAST HEALTH PROVIDER> admit &lt;NAME> to the hospital for his/her problem?	</string>
+    <string name="txt_N2233">N2233:	Did the &lt;LAST HEALTH PROVIDER> refer &lt;NAME> to another health provider or facility?	</string>
     <string name="txt_N2234">N2234:	To where was &lt;NAME> referred?	</string>
     <string name="txt_N2234_2">N2234_2:	Name of Provider/Facility	</string>
-    <string name="txt_N2235_1">N2235_1:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which &lt;NAME> needs to return immediately?	</string>
-    <string name="txt_N2235_2">N2235_2:	Did the &lt;FIRST/LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which To follow-up if &lt;NAME> did not improve after leaving?	</string>
-    <string name="txt_N2236">N2236:	Did &lt;NAME> leave the &lt;FIRST/LAST HEALTH PROVIDER> alive?	</string>
-    <string name="txt_N2237_1">N2237_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all.	</string>
-    <string name="txt_N2237_2">N2237_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
+    <string name="txt_N2235_1">N2235_1:	Did the &lt;LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which &lt;NAME> needs to return immediately?	</string>
+    <string name="txt_N2235_2">N2235_2:	Did the &lt;LAST HEALTH PROVIDER> tell you about illness signs and symptoms for which To follow-up if &lt;NAME> did not improve after leaving?	</string>
+    <string name="txt_N2236">N2236:	Did &lt;NAME> leave the &lt;LAST HEALTH PROVIDER> alive?	</string>
+    <string name="txt_N2237_1">N2237_1:	At the time of leaving the (&lt;LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all.	</string>
+    <string name="txt_N2237_2">N2237_2:	At the time of leaving the (&lt;LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
 
     <string name="rb_N2218_1_1">Normal	</string>
     <string name="rb_N2218_1_2">Modern	</string>
@@ -2312,7 +2312,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="txt_C3258_2">C3258_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
     <string name="txt_C3259">C3259:	What was the name of the &lt;FIRST/LAST HEALTH PROVIDER> where you took &lt;NAME>?	</string>
     <string name="txt_C3259_2">C3259_2:	Name of Provider/Facility	</string>
-    <string name="txt_C3260">C3258:	Did &lt;NAME> reach the &lt;FIRST/LAST HEALTH PROVIDER> before s/he died?	</string>
+    <string name="txt_C3260">C3260:	Did &lt;NAME> reach the &lt;FIRST/LAST HEALTH PROVIDER> before s/he died?	</string>
     <string name="txt_C3261_1">C3261_1:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
     <string name="txt_C3261_2">C3261_2:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
     <string name="txt_C3262">C3262:	Did the &lt;FIRST/LAST HEALTH PROVIDER> admit &lt;NAME> to the hospital for his/her problem?	</string>
@@ -4589,6 +4589,36 @@ Examples of statements for the reading test:
     <string name="A4064_a">A4064_a: Enter how long before death she vomited in days?</string>
     <string name="A4064_b">A4064_b: Enter how long before death she vomited in months?</string>
     <string name="days_h">Enter 0-29 days. Less than 1 day or 24 hours = 0 days. 1 week = 7 days. Don\'t know = 99</string>
+
+    <string name="txt_W214">W214: DATE OF OUTCOME	</string>
+    <string name="ed_W214_d">Day</string>
+    <string name="ed_W214_m">Month</string>
+    <string name="ed_W214_y">Year</string>
+
+    <string name="txt_W215">W215: OUTCOME </string>
+    <string name="rb_W215_1">MISCARRIAGES</string>
+    <string name="rb_W215_2">STILL BIRTH</string>
+    <string name="rb_W215_3">LIVE BIRTH</string>
+    <string name="rb_W215_4">TWIN BIRTH ALIVE</string>
+    <string name="rb_W215_5">TWIN STILL BIRTH</string>
+    <string name="rb_W215_6">ONE STILL BIRTH and ONE LIVE BIRTH</string>
+
+    <string name="txt_W216">W216: CHILD #	</string>
+    <string name="ed_W216">Child</string>
+
+    <string name="txt_W217">W217: STATUS OF CHILD </string>
+    <string name="rb_W217_1">ALIVE</string>
+    <string name="rb_W217_2">DIED</string>
+
+    <string name="txt_W218">W218: AGE OF ALIVE CHILD	</string>
+    <string name="ed_W218_y">Year</string>
+    <string name="ed_W218_m">Month</string>
+    <string name="ed_W218_d">Day</string>
+
+    <string name="txt_W219">W219: AGE AT TIME OF DEATH	</string>
+    <string name="ed_W219_y">Year</string>
+    <string name="ed_W219_m">Month</string>
+    <string name="ed_W219_d">Day</string>
 
 
     <!-- E Ends -->

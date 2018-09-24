@@ -624,7 +624,7 @@ public class C3251_C3288_C extends AppCompatActivity {
 
         C3251C.setC3288(bi.edC3288.getText().toString());
 
-        C3251C.setSTUDYID(bi.edStudyId.getText().toString());
+//        C3251C.setSTUDYID(bi.edStudyId.getText().toString());
 
         DBHelper db = new DBHelper(this);
         Long row = db.update_C3251C(C3251C, c3251A_ID);
