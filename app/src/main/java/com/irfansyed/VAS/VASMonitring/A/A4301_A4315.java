@@ -429,6 +429,8 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4301__a4315);
 
+        this.setTitle(getString(R.string.h_a_sec_11));
+
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();
@@ -474,8 +476,9 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c2 = new Intent(A4301_A4315.this, A4351_A4364.class);
-        startActivity(c2);
+        Intent c = new Intent(A4301_A4315.this, A4351_A4364.class);
+        c.putExtra("study_id", study_id);
+        startActivity(c);
 
     }
 
@@ -529,7 +532,6 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_A4302_7_2.isChecked() || rb_A4302_7_DK.isChecked() || rb_A4302_7_RA.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_A4303);
-
                 ll_A4303.setVisibility(View.GONE);
 
             } else {
@@ -642,7 +644,7 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_A4314_RA)
 
         {
-            if (rb_A4306_2check_2.isChecked() || rb_A4314_DK.isChecked() || rb_A4314_RA.isChecked()) {
+            if (rb_A4314_2.isChecked() || rb_A4314_DK.isChecked() || rb_A4314_RA.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_A4315);
                 ll_A4315.setVisibility(View.GONE);
@@ -692,46 +694,51 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
     void value_assignment() {
 
         study_id = "0";
-        A4301 = "000";
-        A4302_1 = "000";
-        A4302_2 = "000";
-        A4302_3 = "000";
-        A4302_4 = "000";
-        A4302_5 = "000";
-        A4302_6 = "000";
-        A4302_7 = "000";
-        A4303 = "000";
-        A4304 = "000";
-        A4305 = "000";
-        A4306_1check = "000";
-        A4306_1 = "000";
-        A4306_2check = "000";
-        A4306_2 = "000";
-        A4307 = "000";
-        A4308 = "000";
-        A4309 = "000";
-        A4310_1 = "000";
-        A4310_2 = "000";
-        A4310_3 = "000";
-        A4310_4 = "000";
-        A4310_5 = "000";
-        A4310_6 = "000";
-        A4310_7 = "000";
-        A4310_8 = "000";
-        A4310_9 = "000";
-        A4310_10 = "000";
-        A4310_11 = "000";
-        A4311_1 = "000";
-        A4311_2 = "000";
-        A4311_3 = "000";
-        A4311_4 = "000";
-        A4311_5 = "000";
-        A4312 = "000";
-        A4313 = "000";
-        A4314 = "000";
-        A4315 = "000";
+        A4301 = "-1";
+        A4302_1 = "-1";
+        A4302_2 = "-1";
+        A4302_3 = "-1";
+        A4302_4 = "-1";
+        A4302_5 = "-1";
+        A4302_6 = "-1";
+        A4302_7 = "-1";
+        A4303 = "-1";
+        A4304 = "-1";
+        A4305 = "-1";
+        A4306_1check = "-1";
+        A4306_1 = "-1";
+        A4306_2check = "-1";
+        A4306_2 = "-1";
+        A4307 = "-1";
+        A4308 = "-1";
+        A4309 = "-1";
+        A4310_1 = "-1";
+        A4310_2 = "-1";
+        A4310_3 = "-1";
+        A4310_4 = "-1";
+        A4310_5 = "-1";
+        A4310_6 = "-1";
+        A4310_7 = "-1";
+        A4310_8 = "-1";
+        A4310_9 = "-1";
+        A4310_10 = "-1";
+        A4310_11 = "-1";
+        A4311_1 = "-1";
+        A4311_2 = "-1";
+        A4311_3 = "-1";
+        A4311_4 = "-1";
+        A4311_5 = "-1";
+        A4312 = "-1";
+        A4313 = "-1";
+        A4314 = "-1";
+        A4315 = "-1";
         STATUS = "0";
 
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         //A4301
         if (rb_A4301_1.isChecked()) {
@@ -1477,17 +1484,9 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
                 } else if (month.equals("2") || month.equals("02")) {
                     //leap year
                     if (year % 4 == 0) {
-                        if (day.equals("30") || day.equals("31")) {
-                            return false;
-                        } else {
-                            return true;
-                        }
+                        return !day.equals("30") && !day.equals("31");
                     } else {
-                        if (day.equals("29") || day.equals("30") || day.equals("31")) {
-                            return false;
-                        } else {
-                            return true;
-                        }
+                        return !day.equals("29") && !day.equals("30") && !day.equals("31");
                     }
                 } else {
                     return true;

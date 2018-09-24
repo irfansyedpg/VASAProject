@@ -24,10 +24,12 @@ public class ClearAllcontrol {
                 View view = lv.getChildAt(i);
                 if (view instanceof CheckBox) {
                     ((CheckBox) view).setChecked(false);
+
                 } else if (view instanceof RadioGroup) {
                     ((RadioGroup) view).clearCheck();
                 } else if (view instanceof EditText) {
                     ((EditText) view).setText("");
+
                 } else if (view instanceof CardView) {
                     for (int j = 0; j < ((CardView) view).getChildCount(); j++) {
                         View view1 = ((CardView) view).getChildAt(j);

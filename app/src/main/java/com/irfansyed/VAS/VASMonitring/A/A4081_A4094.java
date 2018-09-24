@@ -260,6 +260,8 @@ public class A4081_A4094 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4081__a4094);
 
+        this.setTitle(getString(R.string.h_a_sec_9));
+
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();
@@ -281,8 +283,9 @@ public class A4081_A4094 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c2 = new Intent(A4081_A4094.this, A4095_A4108.class);
-        startActivity(c2);
+        Intent c = new Intent(A4081_A4094.this, A4095_A4108.class);
+        c.putExtra("study_id", study_id);
+        startActivity(c);
     }
 
     @Override
@@ -542,31 +545,36 @@ public class A4081_A4094 extends AppCompatActivity implements RadioButton.OnChec
     void value_assignment() {
 
         study_id = "0";
-        A4081 = "000";
-        A4082_u = "000";
-        A4082_a = "000";
-        A4082_b = "000";
-        A4082_c = "000";
-        A4083 = "000";
-        A4084 = "000";
-        A4085_u = "000";
-        A4085_a = "000";
-        A4085_b = "000";
-        A4086 = "000";
-        A4087_u = "000";
-        A4087_a = "000";
-        A4087_b = "000";
-        A4088 = "000";
-        A4089 = "000";
-        A4090 = "000";
-        A4091 = "000";
-        A4092 = "000";
-        A4093 = "000";
-        A4094_u = "000";
-        A4094_a = "000";
-        A4094_b = "000";
-        A4094_c = "000";
+        A4081 = "-1";
+        A4082_u = "-1";
+        A4082_a = "-1";
+        A4082_b = "-1";
+        A4082_c = "-1";
+        A4083 = "-1";
+        A4084 = "-1";
+        A4085_u = "-1";
+        A4085_a = "-1";
+        A4085_b = "-1";
+        A4086 = "-1";
+        A4087_u = "-1";
+        A4087_a = "-1";
+        A4087_b = "-1";
+        A4088 = "-1";
+        A4089 = "-1";
+        A4090 = "-1";
+        A4091 = "-1";
+        A4092 = "-1";
+        A4093 = "-1";
+        A4094_u = "-1";
+        A4094_a = "-1";
+        A4094_b = "-1";
+        A4094_c = "-1";
         STATUS = "0";
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         //A4081
         if (rb_A4081_1.isChecked()) {

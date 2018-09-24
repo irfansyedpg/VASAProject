@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.C3251C3288ABinding;
 
@@ -13,6 +14,10 @@ import data.DBHelper;
 import utils.Gothrough;
 
 public class C3251_C3288_A extends AppCompatActivity {
+
+    int currentSection;
+
+    String study_id;
 
     public static int c3251A_ID = 0;
     C3251C3288ABinding bi;
@@ -25,6 +30,8 @@ public class C3251_C3288_A extends AppCompatActivity {
         bi.setCallback(this);
 
         this.setTitle(getString(R.string.h_c_sec_10));
+
+        study_id = getIntent().getExtras().getString("study_id");
 
         bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
         bi.edStudyId.setEnabled(false);
@@ -76,10 +83,11 @@ public class C3251_C3288_A extends AppCompatActivity {
 
         //ll_C3252
         return Gothrough.IamHiden(bi.llC3252);
+
     }
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), currentSection = 7);
     }
 }

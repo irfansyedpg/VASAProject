@@ -18,7 +18,6 @@ import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 import utils.InputFilterMinMax;
-import utils.validations;
 
 public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -280,6 +279,8 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4051__a4066);
 
+        this.setTitle(getString(R.string.h_a_sec_9));
+
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();
@@ -302,8 +303,9 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c2 = new Intent(A4051_A4066.this, A4067_A4080.class);
-        startActivity(c2);
+        Intent c = new Intent(A4051_A4066.this, A4067_A4080.class);
+        c.putExtra("study_id", study_id);
+        startActivity(c);
     }
 
     @Override
@@ -515,31 +517,35 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
     void value_assignment() {
 
         study_id = "0";
-        A4051 = "000";
-        A4052_u = "000";
-        A4052_b = "000";
-        A4052_c = "000";
-        A4053 = "000";
-        A4054 = "000";
-        A4055 = "000";
-        A4056 = "000";
-        A4057 = "000";
-        A4058 = "000";
-        A4059_u = "000";
-        A4059_a = "000";
-        A4059_b = "000";
-        A4060 = "000";
-        A4061 = "000";
-        A4062 = "000";
-        A4063 = "000";
-        A4064_u = "000";
-        A4064_a = "000";
-        A4064_b = "000";
-        A4064_1 = "000";
-        A4065 = "000";
-        A4066 = "000";
+        A4051 = "-1";
+        A4052_u = "-1";
+        A4052_b = "-1";
+        A4052_c = "-1";
+        A4053 = "-1";
+        A4054 = "-1";
+        A4055 = "-1";
+        A4056 = "-1";
+        A4057 = "-1";
+        A4058 = "-1";
+        A4059_u = "-1";
+        A4059_a = "-1";
+        A4059_b = "-1";
+        A4060 = "-1";
+        A4061 = "-1";
+        A4062 = "-1";
+        A4063 = "-1";
+        A4064_u = "-1";
+        A4064_a = "-1";
+        A4064_b = "-1";
+        A4064_1 = "-1";
+        A4065 = "-1";
+        A4066 = "-1";
         STATUS = "0";
 
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         //A4051
         if (rb_A4051_1.isChecked()) {

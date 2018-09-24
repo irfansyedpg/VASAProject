@@ -9,7 +9,7 @@ public class N2192_N2202 {
         query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT,   " +
 
 
-                Global.N.N2192_N2202.sub_N2192_N2202.STUDYID    + " INTEGER," +
+                Global.N.N2192_N2202.sub_N2192_N2202.STUDYID    + " TEXT," +
                 Global.N.N2192_N2202.sub_N2192_N2202.N2192      + " TEXT," +
                 Global.N.N2192_N2202.sub_N2192_N2202.N2193      + " TEXT," +
                 Global.N.N2192_N2202.sub_N2192_N2202.N2194_1    + " TEXT," +

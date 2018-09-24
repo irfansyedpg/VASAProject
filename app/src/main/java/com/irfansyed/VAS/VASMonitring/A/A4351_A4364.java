@@ -121,6 +121,8 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4351__a4364);
 
+        this.setTitle(getString(R.string.h_a_sec_12));
+
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();
@@ -142,8 +144,9 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c2 = new Intent(A4351_A4364.this, A4401_A4473.class);
-        startActivity(c2);
+        Intent c = new Intent(A4351_A4364.this, A4401_A4473.class);
+        c.putExtra("study_id", study_id);
+        startActivity(c);
 
     }
 
@@ -219,8 +222,8 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
 
         {
             if (rb_A4363_2.isChecked() || rb_A4363_3.isChecked() || rb_A4363_DK.isChecked() || rb_A4363_RA.isChecked()) {
-                ClearAllcontrol.ClearAll(ll_A4364);
 
+                ClearAllcontrol.ClearAll(ll_A4364);
                 ll_A4364.setVisibility(View.GONE);
             } else {
                 ll_A4364.setVisibility(View.VISIBLE);
@@ -264,6 +267,11 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
         A4364 = "-1";
         STATUS = "0";
 
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         //A4351
         if (rb_A4351_1.isChecked()) {

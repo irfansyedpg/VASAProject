@@ -28,7 +28,6 @@ import java.util.concurrent.TimeUnit;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 
 
 public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, View.OnFocusChangeListener {
@@ -347,6 +346,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             ll_C3111_8,
             ll_C3111_9,
             ll_C3112;
+
     private File output = null;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -363,6 +363,13 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         ed_study_id.setEnabled(false);
 
         Initialization();
+
+        ll_C3105_OT.setVisibility(View.GONE);
+        ll_C3107_6_OT.setVisibility(View.GONE);
+        ll_C3107_21_OT.setVisibility(View.GONE);
+
+        ll_C3108_A.setVisibility(View.GONE);
+
 
         DBHelper db = new DBHelper(this);
         Cursor Q1101_Q1610 = db.getData("Q1101_Q1610", study_id);
@@ -412,18 +419,31 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             @Override
             public void onClick(View view) {
                 String RootDir = Environment.getExternalStorageDirectory()
-                        + File.separator + "VASA" + File.separator + ed_study_id.getText().toString();
+                        + File.separator + "VASA";
                 File RootFile = new File(RootDir);
                 boolean success = true;
                 if (!RootFile.exists()) {
                     success = RootFile.mkdir();
                 }
                 if (success) {
-                    Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    output = new File(RootDir, "C3108.jpeg");
 
-                    i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
-                    startActivityForResult(i, CONTENT_REQUEST);
+                    RootDir = RootDir + File.separator + ed_study_id.getText().toString();
+                    RootFile = new File(RootDir);
+                    success = true;
+                    if (!RootFile.exists()) {
+                        success = RootFile.mkdir();
+                    }
+
+                    if (success) {
+                        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                        output = new File(RootDir, "C3108.jpeg");
+
+                        i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
+                        startActivityForResult(i, CONTENT_REQUEST);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
+                    }
+
                 } else {
                     Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
                 }
@@ -802,6 +822,14 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3105_4.setOnCheckedChangeListener(this);
         rb_C3105_DK.setOnCheckedChangeListener(this);
 
+        rb_C3107_6_1.setOnCheckedChangeListener(this);
+        rb_C3107_6_2.setOnCheckedChangeListener(this);
+        rb_C3107_6_DK.setOnCheckedChangeListener(this);
+
+        rb_C3107_21_1.setOnCheckedChangeListener(this);
+        rb_C3107_21_2.setOnCheckedChangeListener(this);
+        rb_C3107_21_DK.setOnCheckedChangeListener(this);
+
         rb_C3108_1.setOnCheckedChangeListener(this);
         rb_C3108_2.setOnCheckedChangeListener(this);
         rb_C3108_3.setOnCheckedChangeListener(this);
@@ -864,6 +892,38 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
                 ClearAllcontrol.ClearAll(ll_C3105_OT);
                 ll_C3105_OT.setVisibility(View.GONE);
+            }
+        }
+
+
+        if (compoundButton.getId() == R.id.rb_C3107_6_1
+                || compoundButton.getId() == R.id.rb_C3107_6_2
+                || compoundButton.getId() == R.id.rb_C3107_6_DK) {
+
+            if (rb_C3107_6_1.isChecked()) {
+
+                ll_C3107_6_OT.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ClearAllcontrol.ClearAll(ll_C3107_6_OT);
+                ll_C3107_6_OT.setVisibility(View.GONE);
+            }
+        }
+
+
+        if (compoundButton.getId() == R.id.rb_C3107_21_1
+                || compoundButton.getId() == R.id.rb_C3107_21_2
+                || compoundButton.getId() == R.id.rb_C3107_21_DK) {
+
+            if (rb_C3107_21_1.isChecked()) {
+
+                ll_C3107_21_OT.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ClearAllcontrol.ClearAll(ll_C3107_21_OT);
+                ll_C3107_21_OT.setVisibility(View.GONE);
             }
         }
 
@@ -1711,7 +1771,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_study_id) == false) {
+        /*if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -1823,7 +1883,11 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3112) != false;
+        if(Gothrough.IamHiden(ll_C3112) == false){
+            return false;
+        }*/
+
+        return true;
     }
 
     @Override

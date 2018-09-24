@@ -49,7 +49,7 @@ public class N2321_N2322 extends AppCompatActivity {
 
         DBHelper db = new DBHelper(this);
 
-        String n2016 = db.getSpecificData(data.N.N2012_N2016.TABLE_NAME, "id", N2012_N2016.sub_N2012_N2016.N2016);
+        String n2016 = db.getSpecificData(data.N.N2012_N2016.TABLE_NAME, bi.edStudyId.getText().toString(), N2012_N2016.sub_N2012_N2016.N2016);
         if (n2016 != null) {
             if (Integer.valueOf(n2016) == 1) {
                 flag_n2016 = false;
@@ -86,18 +86,32 @@ public class N2321_N2322 extends AppCompatActivity {
     public void BtnCapture() {
 
         String RootDir = Environment.getExternalStorageDirectory()
-                + File.separator + "VASA" + File.separator + bi.edStudyId.getText().toString();
+                + File.separator + "VASA";
         File RootFile = new File(RootDir);
         boolean success = true;
         if (!RootFile.exists()) {
             success = RootFile.mkdir();
         }
         if (success) {
-            Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            output = new File(RootDir, "N2321_" + count + ".jpeg");
 
-            i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
-            startActivityForResult(i, CONTENT_REQUEST);
+            RootDir = RootDir + File.separator + bi.edStudyId.getText().toString();
+            RootFile = new File(RootDir);
+            success = true;
+            if (!RootFile.exists()) {
+                success = RootFile.mkdir();
+            }
+
+            if (success) {
+
+                Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                output = new File(RootDir, "N2321_" + count + ".jpeg");
+
+                i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
+                startActivityForResult(i, CONTENT_REQUEST);
+            } else {
+                Toast.makeText(this, "Can't create folder!!", Toast.LENGTH_SHORT).show();
+            }
+
         } else {
             Toast.makeText(this, "Can't create folder!!", Toast.LENGTH_SHORT).show();
         }

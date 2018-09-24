@@ -71,6 +71,11 @@
                                 style="@style/TextView"
                                 android:text="What ACTION was taken?" />
 
+                            <TextView
+                                android:id="@+id/A4252_81"
+                                style="@style/TextView"
+                                android:text="Other Care" />
+
                             <RadioGroup
                                 style="@style/RadioGroup" >
 
@@ -88,6 +93,11 @@
                                     android:id="@+id/rb_A4252_2_3"
                                     style="@style/RadioButton"
                                     android:text="Pharmacist or drug seller"/>
+
+                                <TextView
+                                    android:id="@+id/A4252_82"
+                                    style="@style/TextView"
+                                    android:text="Health Care Providers" />
 
                                 <RadioButton
                                     android:id="@+id/rb_A4252_2_4"

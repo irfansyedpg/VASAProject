@@ -259,6 +259,8 @@ public class A4109_A4125 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4109__a4125);
 
+        this.setTitle(getString(R.string.h_a_sec_9));
+
         ll_study_id = findViewById(R.id.ll_study_id);
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();
@@ -280,8 +282,9 @@ public class A4109_A4125 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c2 = new Intent(A4109_A4125.this, A4126_A4140.class);
-        startActivity(c2);
+        Intent c = new Intent(A4109_A4125.this, A4126_A4140.class);
+        c.putExtra("study_id", study_id);
+        startActivity(c);
     }
 
     @Override
@@ -456,26 +459,31 @@ public class A4109_A4125 extends AppCompatActivity implements RadioButton.OnChec
     void value_assignment() {
 
         study_id = "0";
-        A4109 = "000";
-        A4110 = "000";
-        A4111 = "000";
-        A4112 = "000";
-        A4113 = "000";
-        A4114 = "000";
-        A4115 = "000";
-        A4116 = "000";
-        A4117_u = "000";
-        A4117_a = "000";
-        A4117_b = "000";
-        A4118 = "000";
-        A4119 = "000";
-        A4120 = "000";
-        A4121 = "000";
-        A4122 = "000";
-        A4123 = "000";
-        A4124 = "000";
-        A4125 = "000";
+        A4109 = "-1";
+        A4110 = "-1";
+        A4111 = "-1";
+        A4112 = "-1";
+        A4113 = "-1";
+        A4114 = "-1";
+        A4115 = "-1";
+        A4116 = "-1";
+        A4117_u = "-1";
+        A4117_a = "-1";
+        A4117_b = "-1";
+        A4118 = "-1";
+        A4119 = "-1";
+        A4120 = "-1";
+        A4121 = "-1";
+        A4122 = "-1";
+        A4123 = "-1";
+        A4124 = "-1";
+        A4125 = "-1";
         STATUS = "0";
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         //A4109
         if (rb_A4109_1.isChecked()) {

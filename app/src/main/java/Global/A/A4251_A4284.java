@@ -6,7 +6,8 @@ public class A4251_A4284 {
     public static String A4251 = "A4251";
     public static String A4253 = "A4253";
     public static String A4253_3 = "A4253_3";
-    public static String A4254 = "A4254";
+    public static String A4254_1 = "A4254_1";
+    public static String A4254_2 = "A4254_2";
     public static String A4255_1 = "A4255_1";
     public static String A4255_2 = "A4255_2";
     public static String A4255_3 = "A4255_3";
@@ -28,7 +29,8 @@ public class A4251_A4284 {
     public static String A4256_minutes = "A4256_minutes";
     public static String A4257 = "A4257";
     public static String A4257_name = "A4257_name";
-    public static String A4258 = "A4258";
+    public static String A4258_1 = "A4258_1";
+    public static String A4258_2 = "A4258_2";
     public static String A4259_hours = "A4259_hours";
     public static String A4259_minutes = "A4259_minutes";
     public static String A4260 = "A4260";
@@ -40,7 +42,8 @@ public class A4251_A4284 {
     public static String A4264 = "A4264";
     public static String A4266 = "A4266";
     public static String A4266_name = "A4266_name";
-    public static String A4267 = "A4267";
+    public static String A4267_1 = "A4267_1";
+    public static String A4267_2 = "A4267_2";
     public static String A4268_hours = "A4268_hours";
     public static String A4268_minutes = "A4268_minutes";
     public static String A4269 = "A4269";

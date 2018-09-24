@@ -7,28 +7,6 @@
     android:orientation="vertical"
     tools:context=".A.A4206_A4207">
 
-    <!--<RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:text="@string/app_name"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:textStyle="bold|italic" />
-
-        <ImageView
-            android:layout_width="90dp"
-            android:layout_height="60sp"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/unwhite" />
-
-    </RelativeLayout>-->
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -1079,20 +1057,22 @@
                         style="@style/TextView"
                         android:text="@string/A4207" />
 
+                    <TextView
+                        android:id="@+id/A4207_h"
+                        style="@style/TextView_Hint"
+                        android:text="Record hours if less than 24 hours. \nLess than 1 hour = 00 hours. \nRecord Days if 1 day or more. \nDon't know = 99" />
+
                     <EditText
                         android:id="@+id/ed_A4207_hour"
                         style="@style/EditText_number"
+                        android:maxLength="2"
                         android:hint="@string/hours" />
 
                     <EditText
                         android:id="@+id/ed_A4207_day"
                         style="@style/EditText_number"
+                        android:maxLength="3"
                         android:hint="@string/days" />
-
-                    <CheckBox
-                        android:id="@+id/cb_A4207_DK"
-                        style="@style/CheckBox"
-                        android:text="@string/dnt" />
 
                 </LinearLayout>
 

@@ -39,7 +39,7 @@ public class N2311_N2317 extends AppCompatActivity {
     private void GetDataFromDB() {
 
         DBHelper db = new DBHelper(this);
-        String n2016 = db.getSpecificData(data.N.N2012_N2016.TABLE_NAME, "id", N2012_N2016.sub_N2012_N2016.N2016);
+        String n2016 = db.getSpecificData(data.N.N2012_N2016.TABLE_NAME, bi.edStudyId.getText().toString(), N2012_N2016.sub_N2012_N2016.N2016);
         if (Integer.valueOf(n2016) == 1) {
             flag_n2016 = false;
         }

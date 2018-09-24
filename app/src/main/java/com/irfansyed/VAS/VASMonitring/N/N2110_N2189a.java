@@ -46,7 +46,7 @@ public class N2110_N2189a extends AppCompatActivity {
 
         DBHelper db = new DBHelper(this);
 
-        String n2006 = db.getSpecificData(data.N.N2001_N2011.TABLE_NAME, "id", N2001_N2011.sub_N2001_N2011.N2006);
+        String n2006 = db.getSpecificData(data.N.N2001_N2011.TABLE_NAME, bi.edStudyId.getText().toString(), N2001_N2011.sub_N2001_N2011.N2006);
         if (n2006 != null) {
             if (Integer.valueOf(n2006) >= 3 && Integer.valueOf(n2006) <= 10) {
                 flag_n2006 = false;
@@ -56,14 +56,14 @@ public class N2110_N2189a extends AppCompatActivity {
             }
         }
 
-        String n2066 = db.getSpecificData(data.N.N2051_N2078.TABLE_NAME, "id", N2051_N2078.sub_N2051_N2078.N2066);
+        String n2066 = db.getSpecificData(data.N.N2051_N2078.TABLE_NAME, bi.edStudyId.getText().toString(), N2051_N2078.sub_N2051_N2078.N2066);
         if (n2066 != null) {
             if (Integer.valueOf(n2066) != 1) {
                 flag_n2066 = false;
             }
         }
 
-        String n2067 = db.getSpecificData(data.N.N2051_N2078.TABLE_NAME, "id", N2051_N2078.sub_N2051_N2078.N2067);
+        String n2067 = db.getSpecificData(data.N.N2051_N2078.TABLE_NAME, bi.edStudyId.getText().toString(), N2051_N2078.sub_N2051_N2078.N2067);
         if (n2067 != null) {
             if (Integer.valueOf(n2067) == 9 || Integer.valueOf(n2067) == 10) {
                 flag_n2067 = false;

@@ -8,7 +8,7 @@ public class N2190_N2191 {
         String query;
         query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT,    " +
 
-                Global.N.N2190_N2191.sub_N2190_N2191.STUDYID  + " INTEGER," +
+                Global.N.N2190_N2191.sub_N2190_N2191.STUDYID  + " TEXT," +
                 Global.N.N2190_N2191.sub_N2190_N2191.N2190    + " TEXT," +
                 Global.N.N2190_N2191.sub_N2190_N2191.N2190_1  + " TEXT," +
                 Global.N.N2190_N2191.sub_N2190_N2191.N2190_2  + " TEXT," +
