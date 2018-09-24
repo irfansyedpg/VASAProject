@@ -9,6 +9,7 @@ import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.C3251C3288CBinding;
 
@@ -18,11 +19,14 @@ import Global.C.C3251_C3288_A_C;
 import Global.C.C3251_C3288_B;
 import data.DBHelper;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 
 import static com.irfansyed.VAS.VASMonitring.C.C3251_C3288_A.c3251A_ID;
 
 public class C3251_C3288_C extends AppCompatActivity {
+
+    int currentSection;
+
+    String study_id;
 
     C3251C3288CBinding bi;
     boolean C3281Flag = true, flag_c3252 = true, flag_n2090 = true, flag_n2093 = true, flag_c3253 = true;
@@ -37,6 +41,8 @@ public class C3251_C3288_C extends AppCompatActivity {
 
         this.setTitle(getString(R.string.h_c_sec_10));
 
+        study_id = getIntent().getExtras().getString("study_id");
+
         bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
         bi.edStudyId.setEnabled(false);
 
@@ -48,7 +54,7 @@ public class C3251_C3288_C extends AppCompatActivity {
     private void GetDataFromDB() {
 
         DBHelper db = new DBHelper(this);
-        String c3252 = db.getSpecificData(data.C.C3251_C3288_A_C.TABLE_NAME, "id", C3251_C3288_A_C.sub_C3251_C3288_A_C.C3252);
+        String c3252 = db.getSpecificData(data.C.C3251_C3288_A_C.TABLE_NAME, bi.edStudyId.getText().toString(), C3251_C3288_A_C.sub_C3251_C3288_A_C.C3252);
         if (Integer.valueOf(c3252) == 2) {
             flag_c3252 = false;
         }
@@ -57,8 +63,8 @@ public class C3251_C3288_C extends AppCompatActivity {
         for (C3251_C3288_B col_data : col_c3251) {
             if (col_data.getC32532A().equals("1")) {
 
-                String n2090 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, "id", Global.N.N2080_N2107.sub_N2080_N2107.N2090);
-                String n2093 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, "id", Global.N.N2080_N2107.sub_N2080_N2107.N2093);
+                String n2090 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, bi.edStudyId.getText().toString(), Global.N.N2080_N2107.sub_N2080_N2107.N2090);
+                String n2093 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, bi.edStudyId.getText().toString(), Global.N.N2080_N2107.sub_N2080_N2107.N2093);
                 if (Integer.valueOf(n2090) != 1 &&
                         (Integer.valueOf(n2093) == 1 || Integer.valueOf(n2093) == 2 || Integer.valueOf(n2093) == 14 || Integer.valueOf(n2093) == 99)) {
                     flag_n2090 = false;
@@ -628,7 +634,7 @@ public class C3251_C3288_C extends AppCompatActivity {
 
     public Boolean validateField() {
 
-        if (skip_flag != 9) {
+        /*if (skip_flag != 9) {
 
             if (skip_flag != 2) {
 
@@ -911,13 +917,13 @@ public class C3251_C3288_C extends AppCompatActivity {
         if (flag_c3252) {
             //ll_C3288
             return Gothrough.IamHiden(bi.llC3288);
-        }
+        }*/
 
         return true;
     }
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), currentSection = 9);
     }
 }

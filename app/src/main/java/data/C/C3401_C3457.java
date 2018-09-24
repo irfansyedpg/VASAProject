@@ -7,7 +7,7 @@ public class C3401_C3457 {
 
         String query;
 
-        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' INTEGER,   " +
+        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' TEXT,   " +
 
                 Global.C.C3401_C3457.C3401 + " TEXT," +
                 Global.C.C3401_C3457.C3402 + " TEXT," +

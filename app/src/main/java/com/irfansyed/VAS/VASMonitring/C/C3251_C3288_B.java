@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.C3251C3288BBinding;
 
@@ -16,6 +17,10 @@ import utils.Gothrough;
 import static com.irfansyed.VAS.VASMonitring.C.C3251_C3288_A.c3251A_ID;
 
 public class C3251_C3288_B extends AppCompatActivity {
+
+    int currentSection;
+
+    String study_id;
 
     static int count = 1;
     C3251C3288BBinding bi;
@@ -28,6 +33,8 @@ public class C3251_C3288_B extends AppCompatActivity {
         bi.setCallback(this);
 
         this.setTitle(getString(R.string.h_c_sec_10));
+
+        study_id = getIntent().getExtras().getString("study_id");
 
         bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
         bi.edStudyId.setEnabled(false);
@@ -91,7 +98,8 @@ public class C3251_C3288_B extends AppCompatActivity {
             if (SaveData()) {
                 count++;
                 finish();
-                startActivity(new Intent(this, C3251_C3288_B.class));
+                startActivity(new Intent(this, C3251_C3288_B.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -113,10 +121,11 @@ public class C3251_C3288_B extends AppCompatActivity {
 
         //ll_ll_C3253_4
         return Gothrough.IamHiden(bi.llC32534);
+
     }
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "You Can't go back..", Toast.LENGTH_SHORT).show();
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), currentSection = 8);
     }
 }

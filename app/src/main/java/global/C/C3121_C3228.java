@@ -5,7 +5,6 @@ public class C3121_C3228 {
     public static String study_id = "study_id";
 
     public static String C3121     = "C3121";
-    public static String C3122     = "C3122";
     public static String C3122d    = "C3122d";
     public static String C3122m    = "C3122m";
     public static String C3123_u   = "C3123_u";
@@ -63,7 +62,6 @@ public class C3121_C3228 {
     public static String C3159_c   = "C3159_c";
     public static String C3160     = "C3160";
     public static String C3161     = "C3161";
-    public static String C3162     = "C3162";
     public static String C3162d    = "C3162d";
     public static String C3162m    = "C3162m";
     public static String C3163_u   = "C3163_u";
@@ -142,6 +140,7 @@ public class C3121_C3228 {
     public static String C3216     = "C3216";
     public static String C3217     = "C3217";
     public static String C3218     = "C3218";
+    public static String C3218_OT  = "C3218_OT";
     public static String C3219     = "C3219";
     public static String C3220_u   = "C3220_u";
     public static String C3220_a   = "C3220_a ";

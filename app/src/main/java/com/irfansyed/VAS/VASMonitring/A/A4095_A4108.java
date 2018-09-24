@@ -259,8 +259,9 @@ public class A4095_A4108 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c2 = new Intent(A4095_A4108.this, A4109_A4125.class);
-        startActivity(c2);
+        Intent c = new Intent(A4095_A4108.this, A4109_A4125.class);
+        c.putExtra("study_id", study_id);
+        startActivity(c);
     }
 
     @Override
@@ -485,27 +486,32 @@ public class A4095_A4108 extends AppCompatActivity implements RadioButton.OnChec
     void value_assignment() {
 
         study_id = "0";
-        A4095 = "000";
-        A4096 = "000";
-        A4097_u = "000";
-        A4097_a = "000";
-        A4097_b = "000";
-        A4098 = "000";
-        A4099_u = "000";
-        A4099_a = "000";
-        A4099_b = "000";
-        A4100 = "000";
-        A4101_u = "000";
-        A4101_a = "000";
-        A4101_b = "000";
-        A4102 = "000";
-        A4103 = "000";
-        A4104 = "000";
-        A4105 = "000";
-        A4106 = "000";
-        A4107 = "000";
-        A4108 = "000";
+        A4095 = "-1";
+        A4096 = "-1";
+        A4097_u = "-1";
+        A4097_a = "-1";
+        A4097_b = "-1";
+        A4098 = "-1";
+        A4099_u = "-1";
+        A4099_a = "-1";
+        A4099_b = "-1";
+        A4100 = "-1";
+        A4101_u = "-1";
+        A4101_a = "-1";
+        A4101_b = "-1";
+        A4102 = "-1";
+        A4103 = "-1";
+        A4104 = "-1";
+        A4105 = "-1";
+        A4106 = "-1";
+        A4107 = "-1";
+        A4108 = "-1";
         STATUS = "0";
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         //A4095
         if (rb_A4095_1.isChecked()) {

@@ -14,7 +14,6 @@ import com.irfansyed.VAS.VASMonitring.databinding.N2051N2078Binding;
 
 import Global.N.N2001_N2011.sub_N2001_N2011;
 import data.DBHelper;
-import data.GS.Q1101_Q1610;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 
@@ -41,20 +40,20 @@ public class N2051_N2078 extends AppCompatActivity {
 
         DBHelper db = new DBHelper(this);
 
-        String n2006 = db.getSpecificData(data.N.N2001_N2011.TABLE_NAME, "id", sub_N2001_N2011.N2006);
+        String n2006 = db.getSpecificData(data.N.N2001_N2011.TABLE_NAME, bi.edStudyId.getText().toString(), sub_N2001_N2011.N2006);
         if (n2006.equals("99") || n2006.equals("1") || n2006.equals("2")) {
             flag_n2006 = false;
         }
 
-        String n2008 = db.getSpecificData(data.N.N2001_N2011.TABLE_NAME, "id", sub_N2001_N2011.N2008);
+        String n2008 = db.getSpecificData(data.N.N2001_N2011.TABLE_NAME, bi.edStudyId.getText().toString(), sub_N2001_N2011.N2008);
         if (n2008.equals("9")) {
             flag_n2008 = false;
         }
 
-        String q1102 = db.getSpecificData(data.GS.Q1101_Q1610.TABLE_NAME, "id", Q1101_Q1610.Q1102);
-        if (q1102 != null) {
-            flag_q1102 = q1102.equals("1");
-        }
+        //String q1102 = db.getSpecificData(data.GS.Q1101_Q1610.TABLE_NAME, bi.edStudyId.getText().toString(), Q1101_Q1610.Q1102);
+        //if (q1102 != null) {
+            //flag_q1102 = q1102.equals("1");
+        //}
 
 
     }

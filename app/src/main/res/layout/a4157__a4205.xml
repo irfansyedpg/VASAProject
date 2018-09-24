@@ -402,6 +402,7 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4163"
+                    android:focusable="true"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -409,7 +410,9 @@
                         style="@style/TextView"
                         android:text="@string/A4163" />
 
-                    <RadioGroup style="@style/RadioGroup">
+                    <RadioGroup
+                        android:id="@+id/Group_A4163"
+                        style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/rb_A4163_1"

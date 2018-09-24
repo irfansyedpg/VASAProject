@@ -42,7 +42,7 @@ public class C3251_C3288_B {
     }
 
     public void setC3253(String C3253) {
-        C3253 = C3253;
+        this.C3253 = C3253;
     }
 
     public String getC32532A() {

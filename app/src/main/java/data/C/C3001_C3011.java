@@ -8,8 +8,10 @@ public class C3001_C3011 {
     public static String TABLE_NAME = "C3001_C3011";
 
     public static String getCreateQuery() {
+
         String query;
-        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' INTEGER,   " +
+
+        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' TEXT,   " +
 
                 Global.C.C3001_C3011.C3001 + " TEXT," +
                 Global.C.C3001_C3011.C3002 + " TEXT," +

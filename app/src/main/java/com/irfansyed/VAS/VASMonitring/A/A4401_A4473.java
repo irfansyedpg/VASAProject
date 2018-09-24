@@ -665,8 +665,9 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c2 = new Intent(A4401_A4473.this, A4001_A4014.class);
-        startActivity(c2);
+        Intent c = new Intent(A4401_A4473.this, A4001_A4014.class);
+        c.putExtra("study_id", study_id);
+        startActivity(c);
 
     }
 
@@ -829,8 +830,6 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         }
     }
 
-
-
     void events_call() {
 
         btn_next14.setOnClickListener(this);
@@ -947,6 +946,11 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         A4473 = "-1";
         STATUS = "0";
 
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         //A4401
         if (rb_A4401_1.isChecked()) {
