@@ -29,7 +29,7 @@ public class C3251_C3288_C extends AppCompatActivity {
     String study_id;
 
     C3251C3288CBinding bi;
-    boolean C3281Flag = true, flag_c3252 = true, flag_n2090 = true, flag_n2093 = true, flag_c3253 = true;
+    boolean C3281Flag = true, flag_c3252 = true, flag_c3064 = true, flag_c3070 = true, flag_c3253 = true;
     int skip_flag;
 
     @Override
@@ -67,10 +67,10 @@ public class C3251_C3288_C extends AppCompatActivity {
                 String n2093 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, bi.edStudyId.getText().toString(), Global.N.N2080_N2107.sub_N2080_N2107.N2093);
                 if (Integer.valueOf(n2090) != 1 &&
                         (Integer.valueOf(n2093) == 1 || Integer.valueOf(n2093) == 2 || Integer.valueOf(n2093) == 14 || Integer.valueOf(n2093) == 99)) {
-                    flag_n2090 = false;
+                    flag_c3064 = false;
                     break;
                 } else {
-                    flag_n2093 = false;
+                    flag_c3070 = false;
                     break;
                 }
             }
@@ -452,7 +452,7 @@ public class C3251_C3288_C extends AppCompatActivity {
             bi.llC3257C3286.setVisibility(View.GONE);
         }
 
-        if (!flag_n2090 || !flag_n2093) {
+        if (!flag_c3064 || !flag_c3070) {
             ClearAllcontrol.ClearAll(bi.llC3254C3258A); //ll_C3254_C3258_A
             ClearAllcontrol.ClearAll(bi.llC3254C3258B); //ll_C3254_C3258_B
 
@@ -460,7 +460,7 @@ public class C3251_C3288_C extends AppCompatActivity {
             bi.llC3254C3258B.setVisibility(View.GONE);
         }
 
-        if (!flag_n2093) {
+        if (!flag_c3070) {
             ClearAllcontrol.ClearAll(bi.llC3259C3263A); //ll_C3259_C3263_A
             ClearAllcontrol.ClearAll(bi.llC3254C3263B); //ll_C3254_C3263_B
 
@@ -638,7 +638,7 @@ public class C3251_C3288_C extends AppCompatActivity {
 
             if (skip_flag != 2) {
 
-                if (flag_n2090 && flag_n2093) {
+                if (flag_c3064 && flag_c3070) {
                     if (flag_c3253) {
                         //ll_C3254
                         if (!Gothrough.IamHiden(bi.llC3254)) {
@@ -653,7 +653,7 @@ public class C3251_C3288_C extends AppCompatActivity {
                 }
             }
 
-            if (flag_n2090 && flag_n2093) {
+            if (flag_c3064 && flag_c3070) {
                 //ll_C3255
                 if (!Gothrough.IamHiden(bi.llC3255)) {
                     return false;
@@ -675,7 +675,7 @@ public class C3251_C3288_C extends AppCompatActivity {
 
                 if (flag_c3253) {
 
-                    if (flag_n2090 && flag_n2093) {
+                    if (flag_c3064 && flag_c3070) {
                         //ll_C3257
                         if (!Gothrough.IamHiden(bi.llC3257)) {
                             return false;
@@ -691,7 +691,7 @@ public class C3251_C3288_C extends AppCompatActivity {
                         }
                     }
 
-                    if (flag_n2093) {
+                    if (flag_c3070) {
                         //ll_C3259
                         if (!Gothrough.IamHiden(bi.llC3259)) {
                             return false;
@@ -709,7 +709,7 @@ public class C3251_C3288_C extends AppCompatActivity {
 
                     if (bi.rbC32601.isChecked()) {
 
-                        if (flag_n2093) {
+                        if (flag_c3070) {
                             //ll_C3261_1
                             if (!Gothrough.IamHiden(bi.llC32611)) {
                                 return false;
