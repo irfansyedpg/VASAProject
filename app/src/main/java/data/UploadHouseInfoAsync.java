@@ -582,9 +582,9 @@ public class UploadHouseInfoAsync extends AsyncTask {
                 param.put(A4251_A4284.A4255_13, c12.getString(20));
                 param.put(A4251_A4284.A4255_13_OT, c12.getString(21));
                 param.put(A4251_A4284.A4255_DK, c12.getString(22));
-                param.put(A4251_A4284.A4256_minutes, c12.getString(23));
+                param.put(A4251_A4284.A4256_days, c12.getString(23));
                 param.put(A4251_A4284.A4256_hours, c12.getString(24));
-                param.put(A4251_A4284.A4256_days, c12.getString(25));
+                param.put(A4251_A4284.A4256_minutes, c12.getString(25));
                 param.put(A4251_A4284.A4257, c12.getString(26));
                 param.put(A4251_A4284.A4257_name, c12.getString(27));
                 param.put(A4251_A4284.A4258_1, c12.getString(28));
