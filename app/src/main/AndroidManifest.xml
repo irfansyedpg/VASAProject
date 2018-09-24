@@ -131,7 +131,6 @@
         <activity
             android:name=".N.N2251_N2260"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".Pending.SurveyPendingActivity"
             android:screenOrientation="portrait" />
