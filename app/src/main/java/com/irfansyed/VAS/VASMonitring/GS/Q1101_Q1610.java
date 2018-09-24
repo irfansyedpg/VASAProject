@@ -425,14 +425,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.q1101_q1610);
 
-        Calendar cdt = Calendar.getInstance();
-        SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
-        String formattedDate = dt.format(cdt.getTime());
-        String[] dtf = formattedDate.split(" ");
-
-        Q1307 = dtf[0];
-        Q1308 = dtf[1];
-
         Initialization();
 
         //ed_Q1202.setEnabled(false);
@@ -1554,6 +1546,22 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             Q1302 = ed_Q1302.getText().toString().trim();
         }
 
+
+        Calendar cdt = Calendar.getInstance();
+        SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
+        String formattedDate = dt.format(cdt.getTime());
+        String[] dtf = formattedDate.split(" ");
+
+        if (dtf[0].length() > 0){
+
+            Q1307 = dtf[0].trim();
+        }
+
+        if (dtf[1].length() > 0){
+
+            Q1308 = dtf[1].trim();
+        }
+
         /*if (ed_Q1312.getText().toString().trim().length() > 0) {
             Q1312 = ed_Q1312.getText().toString().trim();
         }
@@ -2059,7 +2067,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     void insert_data() {
 
-        String query = "insert into   Q1101_Q1610("
+        String query = "insert into Q1101_Q1610("
                 + Global.GS.Q1101_Q1610.study_id + ","
                 + Global.GS.Q1101_Q1610.Q1202 + ","
                 + Global.GS.Q1101_Q1610.Q1203 + ","

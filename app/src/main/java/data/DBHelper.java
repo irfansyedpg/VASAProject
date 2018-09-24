@@ -180,7 +180,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
-        Cursor res = db.rawQuery("select * from " + tableName + " where currentSection != 11", null);
+        Cursor res = db.rawQuery("select * from " + tableName + " where currentSection != 111", null);
         return res;
     }
 
