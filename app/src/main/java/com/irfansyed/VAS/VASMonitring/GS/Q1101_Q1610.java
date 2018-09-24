@@ -5,7 +5,6 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
-import android.text.InputFilter;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
@@ -30,7 +29,6 @@ import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
-import utils.InputFilterMinMax;
 
 import static java.lang.Integer.parseInt;
 
@@ -47,6 +45,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
     // LinerLayouts
     LinearLayout
             ll_study_id,
+            ll_Q1201,
             ll_Q1202,
             ll_Q1203,
             ll_Q1204,
@@ -295,6 +294,12 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     EditText
             ed_study_id,
+            ed_Q1201_1,
+            ed_Q1201_2,
+            ed_Q1201_3,
+            ed_Q1201_4,
+            ed_Q1201_5,
+            ed_Q1201_6,
             ed_Q1202,
             ed_Q1204,
             ed_Q1205,
@@ -336,6 +341,12 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     String
             study_id,
+            Q1201_1,
+            Q1201_2,
+            Q1201_3,
+            Q1201_4,
+            Q1201_5,
+            Q1201_6,
             Q1202,
             Q1203,
             Q1204,
@@ -501,25 +512,25 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
             res.moveToFirst();
 
-            if (parseInt(res.getString(75)) == 5) {
+            if (parseInt(res.getString(81)) == 5) {
 
                 Intent c = new Intent(this, A4001_A4014.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            }  else if (parseInt(res.getString(75)) == 2) {
+            }  else if (parseInt(res.getString(81)) == 2) {
 
                 Intent c = new Intent(this, C3001_C3011.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            } else if (parseInt(res.getString(75)) == 3 || parseInt(res.getString(75)) == 4){
+            } else if (parseInt(res.getString(81)) == 3 || parseInt(res.getString(81)) == 4){
 
                 Intent c = new Intent(this, C3012_C3022.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            } else if (parseInt(res.getString(75)) == 1){
+            } else if (parseInt(res.getString(81)) == 1){
 
                 Intent c = new Intent(this, N2001_N2011.class);
                 c.putExtra("study_id", study_id);
@@ -537,6 +548,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         // Layouts
 
         ll_study_id = findViewById(R.id.ll_study_id);
+        ll_Q1201 = findViewById(R.id.ll_Q1201);
         ll_Q1202 = findViewById(R.id.ll_Q1202);
         ll_Q1203 = findViewById(R.id.ll_Q1203);
         ll_Q1204 = findViewById(R.id.ll_Q1204);
@@ -790,7 +802,12 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
 
         ed_study_id = findViewById(R.id.ed_study_id);
-
+        ed_Q1201_1 = findViewById(R.id.ed_Q1201_1);
+        ed_Q1201_2 = findViewById(R.id.ed_Q1201_2);
+        ed_Q1201_3 = findViewById(R.id.ed_Q1201_3);
+        ed_Q1201_4 = findViewById(R.id.ed_Q1201_4);
+        ed_Q1201_5 = findViewById(R.id.ed_Q1201_5);
+        ed_Q1201_6 = findViewById(R.id.ed_Q1201_6);
         ed_Q1202 = findViewById(R.id.ed_Q1202);
         ed_Q1204 = findViewById(R.id.ed_Q1204);
         ed_Q1205 = findViewById(R.id.ed_Q1205);
@@ -965,19 +982,19 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         //ed_Q1206_m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
         //ed_Q1206_y.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
 
-        ed_Q1409.setFilters(new InputFilter[]{new InputFilterMinMax(0, 18, 99, 99)});
+        //ed_Q1409.setFilters(new InputFilter[]{new InputFilterMinMax(0, 18, 99, 99)});
 
         //ed_Q1607_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
         //ed_Q1607_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
         //ed_Q1607_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
 
-        ed_Q1608_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
-        ed_Q1608_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
-        ed_Q1608_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
+        //ed_Q1608_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
+        //ed_Q1608_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
+        //ed_Q1608_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
 
-        ed_Q1610_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
-        ed_Q1610_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
-        ed_Q1610_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
+        //ed_Q1610_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
+        //ed_Q1610_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
+        //ed_Q1610_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
 
         TextWatcher txtWatcher = new TextWatcher() {
             @Override
@@ -1407,89 +1424,122 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        Q1202 = "-1";
-        Q1203 = "-1";
-        Q1204 = "-1";
-        Q1205 = "-1";
-        Q1206_d = "-1";
-        Q1206_m = "-1";
-        Q1206_y = "-1";
-        Q1207 = "-1";
-        Q1208 = "-1";
-        Q1209 = "-1";
-        Q1301 = "-1";
-        Q1302 = "-1";
-        Q1309 = "-1";
-        Q1310 = "-1";
-        Q1311 = "-1";
-        Q1312 = "-1";
-        Q1313 = "-1";
-        Q1401 = "-1";
-        Q1402 = "-1";
-        Q1403 = "-1";
-        Q1403_OT = "-1";
-        Q1404 = "-1";
-        Q1405 = "-1";
-        Q1406 = "-1";
-        Q1407 = "-1";
-        Q1408 = "-1";
-        Q1409 = "-1";
-        Q1410 = "-1";
-        Q1411 = "-1";
-        Q1412 = "-1";
-        Q1413 = "-1";
-        Q1414_1 = "-1";
-        Q1414_2 = "-1";
-        Q1414_3 = "-1";
-        Q1414_4 = "-1";
-        Q1414_5 = "-1";
-        Q1414_6 = "-1";
-        Q1414_7 = "-1";
-        Q1414_8 = "-1";
-        Q1414_9 = "-1";
-        Q1414_10 = "-1";
-        Q1415 = "-1";
-        Q1416 = "-1";
-        Q1416_OT = "-1";
-        Q1417 = "-1";
-        Q1417_OT = "-1";
-        Q1418 = "-1";
-        Q1418_OT = "-1";
-        Q1419 = "-1";
-        Q1419_OT = "-1";
-        Q1420 = "-1";
-        Q1420_OT = "-1";
-        Q1421 = "-1";
-        Q1421_OT = "-1";
-        Q1501 = "-1";
-        Q1502 = "-1";
-        Q1503 = "-1";
-        Q1503_OT = "-1";
-        Q1601 = "-1";
-        Q1602 = "-1";
-        Q1603 = "-1";
-        Q1604 = "-1";
-        Q1604_OT = "-1";
-        Q1605 = "-1";
-        Q1606 = "-1";
-        Q1607_1 = "-1";
-        Q1607_2 = "-1";
-        Q1607_3 = "-1";
-        Q1608_1 = "-1";
-        Q1608_2 = "-1";
-        Q1608_3 = "-1";
-        Q1609 = "-1";
-        Q1610_1 = "-1";
-        Q1610_2 = "-1";
-        Q1610_3 = "-1";
-        STATUS = "0";
-        interviewType = -1;
+        Q1201_1        = "-1";
+        Q1201_2        = "-1";
+        Q1201_3        = "-1";
+        Q1201_4        = "-1";
+        Q1201_5        = "-1";
+        Q1201_6        = "-1";
+        Q1202          = "-1";
+        Q1203          = "-1";
+        Q1204          = "-1";
+        Q1205          = "-1";
+        Q1206_d        = "-1";
+        Q1206_m        = "-1";
+        Q1206_y        = "-1";
+        Q1207          = "-1";
+        Q1208          = "-1";
+        Q1209          = "-1";
+        Q1301          = "-1";
+        Q1302          = "-1";
+        Q1309          = "-1";
+        Q1310          = "-1";
+        Q1311          = "-1";
+        Q1312          = "-1";
+        Q1313          = "-1";
+        Q1401          = "-1";
+        Q1402          = "-1";
+        Q1403          = "-1";
+        Q1403_OT       = "-1";
+        Q1404          = "-1";
+        Q1405          = "-1";
+        Q1406          = "-1";
+        Q1407          = "-1";
+        Q1408          = "-1";
+        Q1409          = "-1";
+        Q1410          = "-1";
+        Q1411          = "-1";
+        Q1412          = "-1";
+        Q1413          = "-1";
+        Q1414_1        = "-1";
+        Q1414_2        = "-1";
+        Q1414_3        = "-1";
+        Q1414_4        = "-1";
+        Q1414_5        = "-1";
+        Q1414_6        = "-1";
+        Q1414_7        = "-1";
+        Q1414_8        = "-1";
+        Q1414_9        = "-1";
+        Q1414_10       = "-1";
+        Q1415          = "-1";
+        Q1416          = "-1";
+        Q1416_OT       = "-1";
+        Q1417          = "-1";
+        Q1417_OT       = "-1";
+        Q1418          = "-1";
+        Q1418_OT       = "-1";
+        Q1419          = "-1";
+        Q1419_OT       = "-1";
+        Q1420          = "-1";
+        Q1420_OT       = "-1";
+        Q1421          = "-1";
+        Q1421_OT       = "-1";
+        Q1501          = "-1";
+        Q1502          = "-1";
+        Q1503          = "-1";
+        Q1503_OT       = "-1";
+        Q1601          = "-1";
+        Q1602          = "-1";
+        Q1603          = "-1";
+        Q1604          = "-1";
+        Q1604_OT       = "-1";
+        Q1605          = "-1";
+        Q1606          = "-1";
+        Q1607_1        = "-1";
+        Q1607_2        = "-1";
+        Q1607_3        = "-1";
+        Q1608_1        = "-1";
+        Q1608_2        = "-1";
+        Q1608_3        = "-1";
+        Q1609          = "-1";
+        Q1610_1        = "-1";
+        Q1610_2        = "-1";
+        Q1610_3        = "-1";
+        STATUS         = "0";
+        interviewType  = -1;
         currentSection = 1;
 
         if (ed_study_id.getText().toString().length() > 0) {
 
             study_id = ed_study_id.getText().toString().trim();
         }
+
+
+        if (ed_Q1201_1.getText().toString().trim().length() > 0) {
+            Q1201_1 = ed_Q1201_1.getText().toString().trim();
+        }
+
+        if (ed_Q1201_2.getText().toString().trim().length() > 0) {
+            Q1201_2 = ed_Q1201_2.getText().toString().trim();
+        }
+
+        if (ed_Q1201_3.getText().toString().trim().length() > 0) {
+            Q1201_3 = ed_Q1201_3.getText().toString().trim();
+        }
+
+        if (ed_Q1201_4.getText().toString().trim().length() > 0) {
+            Q1201_4 = ed_Q1201_4.getText().toString().trim();
+        }
+
+        if (ed_Q1201_5.getText().toString().trim().length() > 0) {
+            Q1201_5 = ed_Q1201_5.getText().toString().trim();
+        }
+
+        if (ed_Q1201_6.getText().toString().trim().length() > 0) {
+            Q1201_6 = ed_Q1201_6.getText().toString().trim();
+        }
+
+
 
 
         if (ed_Q1202.getText().toString().trim().length() > 0) {
@@ -2069,6 +2119,12 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         String query = "insert into Q1101_Q1610("
                 + Global.GS.Q1101_Q1610.study_id + ","
+                + Global.GS.Q1101_Q1610.Q1201_1 + ","
+                + Global.GS.Q1101_Q1610.Q1201_2 + ","
+                + Global.GS.Q1101_Q1610.Q1201_3 + ","
+                + Global.GS.Q1101_Q1610.Q1201_4 + ","
+                + Global.GS.Q1101_Q1610.Q1201_5 + ","
+                + Global.GS.Q1101_Q1610.Q1201_6 + ","
                 + Global.GS.Q1101_Q1610.Q1202 + ","
                 + Global.GS.Q1101_Q1610.Q1203 + ","
                 + Global.GS.Q1101_Q1610.Q1204 + ","
@@ -2151,6 +2207,12 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 + Global.GS.Q1101_Q1610.STATUS + ") values ('" +
 
                 study_id + "','" +
+                Q1201_1 + "','" +
+                Q1201_2 + "','" +
+                Q1201_3 + "','" +
+                Q1201_4 + "','" +
+                Q1201_5 + "','" +
+                Q1201_6 + "','" +
                 Q1202 + "','" +
                 Q1203 + "','" +
                 Q1204 + "','" +
@@ -2305,224 +2367,10 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             //CardView cv = findViewById(R.id.cv_study_id);
             //cv.requestFocus();
             //cv.setBackgroundColor(0xFFFF0000);
-
-            return false;
-
-        }
-
-        return Gothrough.IamHiden(ll_Q1402) != false;
-
-       /* if (Gothrough.IamHiden(ll_Q1401) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_Q1402) == false) {
-            ll_Q1402.requestFocus();
-            ll_Q1402.setBackgroundColor(0xFF00FF00);
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1403) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1403_OT) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1404) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1405) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1406) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1407) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1408) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1409) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1410) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1411) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1412) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1413) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1414_1) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1414_2) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1414_3) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1414_4) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1414_5) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1414_6) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1414_7) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1414_8) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1414_9) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1414_10) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1415) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1416) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1416_OT) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1417) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1417_OT) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1418) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1418_OT) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1419) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1419_OT) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1420) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1420_OT) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1421) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1421_OT) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1501) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1502) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1503) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1503_OT) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1601) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1602) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1603) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1604) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1604_OT) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1605) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1606) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1607) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1608) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_Q1609) == false) {
-            return false;
-        }
-
-        if( Gothrough.IamHiden(ll_Q1610) == false){
-            return false;
-        }
-
-        return true;*/
+        return Gothrough.IamHiden(ll_Q1201) != false;
     }
 
     @Override
@@ -2552,11 +2400,19 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 ed_Q1206_m.setText(String.valueOf(months));
                 ed_Q1206_y.setText(String.valueOf(years));
 
+                ed_Q1206_d.setEnabled(false);
+                ed_Q1206_m.setEnabled(false);
+                ed_Q1206_y.setEnabled(false);
+
             } else {
 
                 ed_Q1206_d.setText(null);
                 ed_Q1206_m.setText(null);
                 ed_Q1206_y.setText(null);
+
+                ed_Q1206_d.setEnabled(true);
+                ed_Q1206_m.setEnabled(true);
+                ed_Q1206_y.setEnabled(true);
             }
         }
 
@@ -2575,26 +2431,23 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 int months = Age[1];
                 int years = Age[2];
 
-                if (days > 27) {
-
-                    ed_Q1607_1.setText("00");
-                } else {
-                    ed_Q1607_1.setText(String.valueOf(days));
-                }
-
-                if (months > 23) {
-
-
-                }
+                ed_Q1607_1.setText(String.valueOf(days));
                 ed_Q1607_2.setText(String.valueOf(months));
-
                 ed_Q1607_3.setText(String.valueOf(years));
+
+                ed_Q1607_1.setEnabled(false);
+                ed_Q1607_2.setEnabled(false);
+                ed_Q1607_3.setEnabled(false);
 
             } else {
 
                 ed_Q1607_1.setText(null);
                 ed_Q1607_2.setText(null);
                 ed_Q1607_3.setText(null);
+
+                ed_Q1607_1.setEnabled(true);
+                ed_Q1607_2.setEnabled(true);
+                ed_Q1607_3.setEnabled(true);
             }
         }
     }

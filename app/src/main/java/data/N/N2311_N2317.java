@@ -50,7 +50,7 @@ public class N2311_N2317 {
                 Global.N.N2311_N2317.sub_N2311_N2317.N2315      + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2316      + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2317      + " TEXT," +
-                Global.N.N2311_N2317.sub_N2311_N2317.STUDYID    + " INTEGER" +
+                Global.N.N2311_N2317.sub_N2311_N2317.STUDYID    + " TEXT" +
 
                 ')';
 

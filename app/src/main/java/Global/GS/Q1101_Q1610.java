@@ -3,6 +3,13 @@ package Global.GS;
 public class Q1101_Q1610 {
 
     public static String study_id       = "study_id";
+
+    public static String Q1201_1        = "Q1201_1";
+    public static String Q1201_2        = "Q1201_2";
+    public static String Q1201_3        = "Q1201_3";
+    public static String Q1201_4        = "Q1201_4";
+    public static String Q1201_5        = "Q1201_5";
+    public static String Q1201_6        = "Q1201_6";
     public static String Q1202          = "Q1202";
     public static String Q1203          = "Q1203";
     public static String Q1204          = "Q1204";

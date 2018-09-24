@@ -10,6 +10,12 @@ public class Q1101_Q1610 {
 
         query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' TEXT,   " +
 
+                Global.GS.Q1101_Q1610.Q1201_1          + " TEXT," +
+                Global.GS.Q1101_Q1610.Q1201_2          + " TEXT," +
+                Global.GS.Q1101_Q1610.Q1201_3          + " TEXT," +
+                Global.GS.Q1101_Q1610.Q1201_4          + " TEXT," +
+                Global.GS.Q1101_Q1610.Q1201_5          + " TEXT," +
+                Global.GS.Q1101_Q1610.Q1201_6          + " TEXT," +
                 Global.GS.Q1101_Q1610.Q1202            + " TEXT," +
                 Global.GS.Q1101_Q1610.Q1203            + " TEXT," +
                 Global.GS.Q1101_Q1610.Q1204            + " TEXT," +

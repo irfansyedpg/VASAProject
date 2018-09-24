@@ -225,6 +225,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2001_N2011.sub_N2001_N2011.N2009_4, n2001.getN20094());
         values.put(N2001_N2011.sub_N2001_N2011.N2010, n2001.getN2010());
         values.put(N2001_N2011.sub_N2001_N2011.N2011, n2001.getN2011());
+        values.put(N2001_N2011.sub_N2001_N2011.STUDYID, n2001.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -250,6 +251,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2012_N2016.sub_N2012_N2016.N2014, n2012.getN2014());
         values.put(N2012_N2016.sub_N2012_N2016.N2015, n2012.getN2015());
         values.put(N2012_N2016.sub_N2012_N2016.N2016, n2012.getN2016());
+        values.put(N2012_N2016.sub_N2012_N2016.STUDYID, n2012.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -281,6 +283,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2017_N2022_3.sub_N2017_N2022_3.N2022_1, n2017.getN20221());
         values.put(N2017_N2022_3.sub_N2017_N2022_3.N2022_2, n2017.getN20222());
         values.put(N2017_N2022_3.sub_N2017_N2022_3.N2022_3, n2017.getN20223());
+        values.put(N2017_N2022_3.sub_N2017_N2022_3.STUDYID, n2017.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -307,6 +310,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2023_N2026.sub_N2023_N2026.N2025U, n2023.getN2025U());
         values.put(N2023_N2026.sub_N2023_N2026.N2025D, n2023.getN2025D());
         values.put(N2023_N2026.sub_N2023_N2026.N2026, n2023.getN2026());
+        values.put(N2023_N2026.sub_N2023_N2026.STUDYID, n2023.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -396,6 +400,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2051_N2078.sub_N2051_N2078.N2078_DK, n2051.getN2078DK());
         values.put(N2051_N2078.sub_N2051_N2078.N2078_OT, n2051.getN2078OT());
         values.put(N2051_N2078.sub_N2051_N2078.N2078_OTx, n2051.getN2078OTx());
+        values.put(N2051_N2078.sub_N2051_N2078.STUDYID, n2051.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -533,6 +538,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2080_N2107.sub_N2080_N2107.N2107_1, n2080.getN21071());
         values.put(N2080_N2107.sub_N2080_N2107.N2107_2, n2080.getN21072());
         values.put(N2080_N2107.sub_N2080_N2107.N2107_3, n2080.getN21073());
+        values.put(N2080_N2107.sub_N2080_N2107.STUDYID, n2080.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -660,6 +666,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2110_N2189a.sub_N2110_N2189a.N2188, n2110.getN2188());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2189, n2110.getN2189());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2189A, n2110.getN2189A());
+        values.put(N2110_N2189a.sub_N2110_N2189a.STUDYID, n2110.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -705,6 +712,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2190_N2191.sub_N2190_N2191.N2190_22, n2190.getN219022());
         values.put(N2190_N2191.sub_N2190_N2191.N2191_1, n2190.getN21911());
         values.put(N2190_N2191.sub_N2190_N2191.N2191_2, n2190.getN21912());
+        values.put(N2190_N2191.sub_N2190_N2191.STUDYID, n2190.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -752,6 +760,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2192_N2202.sub_N2192_N2202.N2202_2_FV, n2192.getN2202_2_FV());
         values.put(N2192_N2202.sub_N2192_N2202.N2202_3, n2192.getN2202_3());
         values.put(N2192_N2202.sub_N2192_N2202.N2202_DK, n2192.getN2202_DK());
+        values.put(N2192_N2202.sub_N2192_N2202.STUDYID, n2192.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -775,6 +784,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2211_1, n2211A.getN22111());
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2211_2, n2211A.getN22112());
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2212, n2211A.getN2212());
+        values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.STUDYID, n2211A.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -798,6 +808,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3251_1, c3251A.getC32511());
         values.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3251_2, c3251A.getC32512());
         values.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3252, c3251A.getC3252());
+        values.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.STUDYID, c3251A.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -823,6 +834,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2211_N2248_B.sub_N2211_N2248_B.N2213, n2211B.getN2213());
         values.put(N2211_N2248_B.sub_N2211_N2248_B.N2213_2A, n2211B.getN22132A());
         values.put(N2211_N2248_B.sub_N2211_N2248_B.N2213_4, n2211B.getN22134());
+        values.put(N2211_N2248_B.sub_N2211_N2248_B.STUDYID, n2211B.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -849,6 +861,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_1, c3251B.getC32531());
         values.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_2A, c3251B.getC32532A());
         values.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_4, c3251B.getC32534());
+        values.put(C3251_C3288_B.sub_C3251_C3288_B.STUDYID, c3251B.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -1124,6 +1137,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2251_N2260.sub_N2251_N2260.N2258, n2251.getN2258());
         values.put(N2251_N2260.sub_N2251_N2260.N2259, n2251.getN2259());
         values.put(N2251_N2260.sub_N2251_N2260.N2260, n2251.getN2260());
+        values.put(N2251_N2260.sub_N2251_N2260.STUDYID, n2251.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -1154,6 +1168,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2271_N2284.sub_N2271_N2284.N2278, n2271.getN2278());
         values.put(N2271_N2284.sub_N2271_N2284.N2283, n2271.getN2283());
         values.put(N2271_N2284.sub_N2271_N2284.N2284, n2271.getN2284());
+        values.put(N2271_N2284.sub_N2271_N2284.STUDYID, n2271.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -1191,6 +1206,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2291_N2304.sub_N2291_N2304.N2303, n2291.getN2303());
         values.put(N2291_N2304.sub_N2291_N2304.N2304_1, n2291.getN2304_1());
         values.put(N2291_N2304.sub_N2291_N2304.N2304_2, n2291.getN2304_2());
+        values.put(N2291_N2304.sub_N2291_N2304.STUDYID, n2291.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -1276,6 +1292,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         values.put(N2321_N2322.sub_N2321_N2322.N2321, n2321.getN2321());
         values.put(N2321_N2322.sub_N2321_N2322.N2322, n2321.getN2322());
+        values.put(N2321_N2322.sub_N2321_N2322.STUDYID, n2321.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -1298,7 +1315,7 @@ public class DBHelper extends SQLiteOpenHelper {
         String groupBy = null;
         String having = null;
 
-        String orderBy = "study_id DESC LIMIT 1";
+        String orderBy = "'study_id'  DESC LIMIT 1";
 
         String allFC = null;
         try {
