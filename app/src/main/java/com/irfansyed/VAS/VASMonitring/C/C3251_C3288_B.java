@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.Other.globale;
@@ -24,6 +25,8 @@ public class C3251_C3288_B extends AppCompatActivity {
 
     static int count = 1;
     C3251C3288BBinding bi;
+
+    static int start = 0, mid = 0, end = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +57,45 @@ public class C3251_C3288_B extends AppCompatActivity {
         if (count == 9) {
             bi.btnAddMore.setVisibility(View.GONE);
         }
+
+        DBHelper db = new DBHelper(this);
+
+        switch (count) {
+
+            case 1:
+                bi.rbC325312.setEnabled(false);
+                bi.rbC325313.setEnabled(false);
+                break;
+            case 2:
+                bi.rbC325313.setEnabled(false);
+                break;
+            case 3:
+                String c32531 = db.getSpecificData(data.C.C3251_C3288_B.TABLE_NAME, bi.edStudyId.getText().toString(), Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_1);
+                if (Integer.valueOf(c32531) == 2) {
+                    bi.rbC325311.setEnabled(false);
+                } else {
+                    bi.rbC325313.setEnabled(false);
+                }
+                break;
+            case 4:
+                bi.rbC325311.setEnabled(false);
+                break;
+            case 7:
+                bi.rbC325311.setEnabled(false);
+                bi.rbC325312.setEnabled(false);
+                break;
+        }
+
+        bi.rgC32531.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.rbC325313.getId()) {
+                    bi.btnContinue.setEnabled(true);
+                } else {
+                    bi.btnContinue.setEnabled(false);
+                }
+            }
+        });
 
     }
 
@@ -88,6 +130,20 @@ public class C3251_C3288_B extends AppCompatActivity {
         c3251B.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
         Long row = db.add_C3251_B(c3251B);
+
+        /*switch (bi.rgC32531.getCheckedRadioButtonId()) {
+
+            case 1:
+                start++;
+                break;
+            case 2:
+                mid++;
+                break;
+            case 3:
+                end++;
+                break;
+
+        }*/
 
         return row != 0;
     }
