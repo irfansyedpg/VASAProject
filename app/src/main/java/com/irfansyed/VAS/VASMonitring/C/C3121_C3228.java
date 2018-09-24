@@ -1063,7 +1063,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c = new Intent(this, C3251_C3288_A.class);
+        Intent c = new Intent(this, C3301_C3314.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
     }
