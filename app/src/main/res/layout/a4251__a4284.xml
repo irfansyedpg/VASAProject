@@ -383,6 +383,11 @@
                         style="@style/TextView"
                         android:text="@string/A4256" />
 
+                    <TextView
+                        android:id="@+id/tv_A4256_h"
+                        style="@style/TextView_Hint"
+                        android:text="Read “…to the first…” if took or tried to take to more than one health provider. \nMark days, hours &amp;/or minutes as needed: e.g. 00 day, 02 hours, 10 minutes" />
+
                     <EditText
                         android:id="@+id/ed_A4256_days"
                         style="@style/EditText_number"

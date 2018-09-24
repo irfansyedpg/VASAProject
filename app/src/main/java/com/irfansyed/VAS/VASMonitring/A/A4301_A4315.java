@@ -452,7 +452,7 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
 
         pattern = Pattern.compile(DATE_PATTERN);
 
-        if (!validate(ed_A4306_1.getText().toString().trim())) {
+        /*if (!validate(ed_A4306_1.getText().toString().trim())) {
 
             ed_A4306_1.setError("Kindly enter a valid date");
             ed_A4306_1.requestFocus();
@@ -471,7 +471,7 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
             ed_A4307.setError("Kindly enter a valid date");
             ed_A4307.requestFocus();
             return;
-        }
+        }*/
 
         value_assignment();
         insert_data();
