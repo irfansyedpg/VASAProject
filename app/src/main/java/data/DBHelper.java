@@ -1315,7 +1315,7 @@ public class DBHelper extends SQLiteOpenHelper {
         String groupBy = null;
         String having = null;
 
-        String orderBy = "study_id DESC LIMIT 1";
+        String orderBy = "'study_id'  DESC LIMIT 1";
 
         String allFC = null;
         try {
