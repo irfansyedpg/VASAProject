@@ -958,13 +958,13 @@
                     <TextView
                         android:id="@+id/A4180_h"
                         style="@style/TextView_Hint"
-                        android:text="Don't know = 99"/>
+                        android:text="if ‘0’ → A4182 \nDon't know = 99" />
 
                     <EditText
                         android:id="@+id/ed_A4180"
                         style="@style/EditText_number"
                         android:maxLength="2"
-                        android:hint="Total Number of Pregnancies" />
+                        android:hint="" />
 
                 </LinearLayout>
 
