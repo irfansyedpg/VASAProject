@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.irfansyed.VAS.VASMonitring.A.A4157_A4205;
+import com.irfansyed.VAS.VASMonitring.GS.Q1101_Q1610;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.Upload.SurveyCompletedActivity;
 
@@ -88,7 +88,7 @@ public class HomeActivity extends AppCompatActivity
             intent = new Intent(this, SurveyCompletedActivity.class);
         }
         if (id == com.irfansyed.VAS.VASMonitring.R.id.stage_1) {
-            intent = new Intent(this, A4157_A4205.class);
+            intent = new Intent(this, Q1101_Q1610.class);
             put_extr = 1;
         }/*
 
