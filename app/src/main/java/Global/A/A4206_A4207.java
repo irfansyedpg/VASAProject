@@ -28,7 +28,6 @@ public class A4206_A4207 {
     public static String A4206_22 = "A4206_22";
     public static String A4207_hour = "A4207_hour";
     public static String A4207_day = "A4207_day";
-    public static String A4207 = "A4207";
     public static String STATUS = "STATUS";
 
 }

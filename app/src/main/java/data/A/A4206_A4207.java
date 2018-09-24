@@ -36,7 +36,6 @@ public class A4206_A4207 {
                 Global.A.A4206_A4207.A4206_22 + " TEXT," +
                 Global.A.A4206_A4207.A4207_hour + " TEXT," +
                 Global.A.A4206_A4207.A4207_day + " TEXT," +
-                Global.A.A4206_A4207.A4207 + " TEXT," +
                 Global.A.A4206_A4207.STATUS + " TEXT" +
 
                 ')';

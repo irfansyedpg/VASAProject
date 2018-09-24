@@ -3,9 +3,9 @@ package com.irfansyed.VAS.VASMonitring.A;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -17,6 +17,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
+import utils.InputFilterMinMax;
 
 public class A4206_A4207 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -161,9 +162,6 @@ public class A4206_A4207 extends AppCompatActivity implements RadioButton.OnChec
             ed_A4207_day,
             ed_A4207_hour;
 
-    CheckBox
-            cb_4207_DK;
-
     String
             study_id,
             A4206,
@@ -189,7 +187,6 @@ public class A4206_A4207 extends AppCompatActivity implements RadioButton.OnChec
             A4206_20,
             A4206_21,
             A4206_22,
-            A4207,
             A4207_hour,
             A4207_day,
             STATUS;
@@ -335,9 +332,6 @@ public class A4206_A4207 extends AppCompatActivity implements RadioButton.OnChec
         // Edit Text
         ed_A4207_day = findViewById(R.id.ed_A4207_day);
         ed_A4207_hour = findViewById(R.id.ed_A4207_hour);
-
-        // Check Box
-        cb_4207_DK = findViewById(R.id.cb_A4207_DK);
 
     }
 
@@ -580,6 +574,8 @@ public class A4206_A4207 extends AppCompatActivity implements RadioButton.OnChec
         rb_A4206_21_DK.setOnCheckedChangeListener(this);
         rb_A4206_21_RA.setOnCheckedChangeListener(this);
 
+        ed_A4207_hour.setFilters(new InputFilter[]{new InputFilterMinMax(0, 23, 99, 99)});
+
     }
 
     void value_assignment() {
@@ -608,7 +604,8 @@ public class A4206_A4207 extends AppCompatActivity implements RadioButton.OnChec
         A4206_20 = "-1";
         A4206_21 = "-1";
         A4206_22 = "-1";
-        A4207 = "-1";
+        A4207_hour = "-1";
+        A4207_day = "-1";
         STATUS = "0";
 
         if (ed_study_id.getText().toString().length() > 0) {
@@ -981,12 +978,6 @@ public class A4206_A4207 extends AppCompatActivity implements RadioButton.OnChec
             A4207_day = ed_A4207_day.getText().toString().trim();
         }
 
-        //A4207_DK
-        if (cb_4207_DK.isChecked()) {
-            A4207 = "99";
-        }
-
-
     }
 
     void insert_data() {
@@ -1019,7 +1010,6 @@ public class A4206_A4207 extends AppCompatActivity implements RadioButton.OnChec
                 + Global.A.A4206_A4207.A4206_22 + ","
                 + Global.A.A4206_A4207.A4207_hour + ","
                 + Global.A.A4206_A4207.A4207_day + ","
-                + Global.A.A4206_A4207.A4207 + ","
                 + Global.A.A4206_A4207.STATUS + ")" +
 
                 " values ('" +
@@ -1050,7 +1040,6 @@ public class A4206_A4207 extends AppCompatActivity implements RadioButton.OnChec
                 A4206_22 + "','" +
                 A4207_hour + "','" +
                 A4207_day + "','" +
-                A4207 + "','" +
                 STATUS + "')";
 
         query = String.format(query);
