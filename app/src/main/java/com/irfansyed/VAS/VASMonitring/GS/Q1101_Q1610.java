@@ -5,7 +5,6 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
-import android.text.InputFilter;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
@@ -30,7 +29,6 @@ import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
-import utils.InputFilterMinMax;
 
 import static java.lang.Integer.parseInt;
 
@@ -514,25 +512,25 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
             res.moveToFirst();
 
-            if (parseInt(res.getString(75)) == 5) {
+            if (parseInt(res.getString(81)) == 5) {
 
                 Intent c = new Intent(this, A4001_A4014.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            }  else if (parseInt(res.getString(75)) == 2) {
+            }  else if (parseInt(res.getString(81)) == 2) {
 
                 Intent c = new Intent(this, C3001_C3011.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            } else if (parseInt(res.getString(75)) == 3 || parseInt(res.getString(75)) == 4){
+            } else if (parseInt(res.getString(81)) == 3 || parseInt(res.getString(81)) == 4){
 
                 Intent c = new Intent(this, C3012_C3022.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            } else if (parseInt(res.getString(75)) == 1){
+            } else if (parseInt(res.getString(81)) == 1){
 
                 Intent c = new Intent(this, N2001_N2011.class);
                 c.putExtra("study_id", study_id);
@@ -984,19 +982,19 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         //ed_Q1206_m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
         //ed_Q1206_y.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
 
-        ed_Q1409.setFilters(new InputFilter[]{new InputFilterMinMax(0, 18, 99, 99)});
+        //ed_Q1409.setFilters(new InputFilter[]{new InputFilterMinMax(0, 18, 99, 99)});
 
         //ed_Q1607_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
         //ed_Q1607_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
         //ed_Q1607_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
 
-        ed_Q1608_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
-        ed_Q1608_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
-        ed_Q1608_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
+        //ed_Q1608_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
+        //ed_Q1608_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
+        //ed_Q1608_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
 
-        ed_Q1610_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
-        ed_Q1610_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
-        ed_Q1610_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
+        //ed_Q1610_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
+        //ed_Q1610_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
+        //ed_Q1610_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
 
         TextWatcher txtWatcher = new TextWatcher() {
             @Override
@@ -2402,11 +2400,19 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 ed_Q1206_m.setText(String.valueOf(months));
                 ed_Q1206_y.setText(String.valueOf(years));
 
+                ed_Q1206_d.setEnabled(false);
+                ed_Q1206_m.setEnabled(false);
+                ed_Q1206_y.setEnabled(false);
+
             } else {
 
                 ed_Q1206_d.setText(null);
                 ed_Q1206_m.setText(null);
                 ed_Q1206_y.setText(null);
+
+                ed_Q1206_d.setEnabled(true);
+                ed_Q1206_m.setEnabled(true);
+                ed_Q1206_y.setEnabled(true);
             }
         }
 
@@ -2425,26 +2431,23 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 int months = Age[1];
                 int years = Age[2];
 
-                if (days > 27) {
-
-                    ed_Q1607_1.setText("00");
-                } else {
-                    ed_Q1607_1.setText(String.valueOf(days));
-                }
-
-                if (months > 23) {
-
-
-                }
+                ed_Q1607_1.setText(String.valueOf(days));
                 ed_Q1607_2.setText(String.valueOf(months));
-
                 ed_Q1607_3.setText(String.valueOf(years));
+
+                ed_Q1607_1.setEnabled(false);
+                ed_Q1607_2.setEnabled(false);
+                ed_Q1607_3.setEnabled(false);
 
             } else {
 
                 ed_Q1607_1.setText(null);
                 ed_Q1607_2.setText(null);
                 ed_Q1607_3.setText(null);
+
+                ed_Q1607_1.setEnabled(true);
+                ed_Q1607_2.setEnabled(true);
+                ed_Q1607_3.setEnabled(true);
             }
         }
     }
