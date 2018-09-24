@@ -137,40 +137,6 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
 
     // End Region_Declaration
 
-    private TextWatcher generalTextWatcher = new TextWatcher() {
-
-        @Override
-        public void onTextChanged(CharSequence s, int start, int before, int count) {
-        }
-
-        @Override
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-        }
-
-        @Override
-        public void afterTextChanged(Editable s) {
-            if (ed_A4005.getText().hashCode() == s.hashCode()) {
-                if (ed_A4005.getText().toString().trim().length() > 0 && Integer.parseInt(ed_A4005.getText().toString().trim()) > 7) {
-                    ll_A4006.setVisibility(View.GONE);
-                    ClearAllcontrol.ClearAll(ll_A4006);
-                } else {
-                    ll_A4006.setVisibility(View.VISIBLE);
-                }
-            }
-
-            if (ed_A4011.getText().hashCode() == s.hashCode()) {
-                if (ed_A4011.getText().toString().trim().length() > 0 && Integer.parseInt(ed_A4011.getText().toString().trim()) >= 1) {
-                    ll_A4012.setVisibility(View.GONE);
-                    ClearAllcontrol.ClearAll(ll_A4012);
-                } else {
-                    ll_A4012.setVisibility(View.VISIBLE);
-                }
-            }
-
-        }
-
-    };
-
     void Initialization() {
 
         btn_next1 = findViewById(R.id.btn_next1);
@@ -292,6 +258,40 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
         startActivity(c);
     }
 
+    private TextWatcher generalTextWatcher = new TextWatcher() {
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
+
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            if (ed_A4005.getText().hashCode() == s.hashCode()) {
+                if (ed_A4005.getText().toString().trim().length() > 0 && Integer.parseInt(ed_A4005.getText().toString().trim()) > 7) {
+                    ll_A4006.setVisibility(View.GONE);
+                    ClearAllcontrol.ClearAll(ll_A4006);
+                } else {
+                    ll_A4006.setVisibility(View.VISIBLE);
+                }
+            }
+
+            if (ed_A4011.getText().hashCode() == s.hashCode()) {
+                if (ed_A4011.getText().toString().trim().length() > 0 && Integer.parseInt(ed_A4011.getText().toString().trim()) >= 1) {
+                    ll_A4012.setVisibility(View.GONE);
+                    ClearAllcontrol.ClearAll(ll_A4012);
+                } else {
+                    ll_A4012.setVisibility(View.VISIBLE);
+                }
+            }
+
+        }
+
+    };
+
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
         if (compoundButton.getId() == R.id.rb_A4003_1
                 || compoundButton.getId() == R.id.rb_A4003_2
@@ -348,14 +348,16 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_A4009a_2
                 || compoundButton.getId() == R.id.rb_A4009a_DK
                 || compoundButton.getId() == R.id.rb_A4009a_RA) {
+
             if (rb_A4009a_2.isChecked() || rb_A4009a_DK.isChecked() || rb_A4009a_RA.isChecked()) {
-                ll_A4010.setVisibility(View.GONE);
-                ll_A4011.setVisibility(View.GONE);
-                ll_A4012.setVisibility(View.GONE);
 
                 ClearAllcontrol.ClearAll(ll_A4010);
                 ClearAllcontrol.ClearAll(ll_A4011);
                 ClearAllcontrol.ClearAll(ll_A4012);
+
+                ll_A4010.setVisibility(View.GONE);
+                ll_A4011.setVisibility(View.GONE);
+                ll_A4012.setVisibility(View.GONE);
             } else {
                 ll_A4010.setVisibility(View.VISIBLE);
                 ll_A4011.setVisibility(View.VISIBLE);
@@ -369,6 +371,8 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_A4010_4
                 || compoundButton.getId() == R.id.rb_A4010_DK
                 || compoundButton.getId() == R.id.rb_A4010_RA) {
+
+
             if (rb_A4010_2.isChecked() || rb_A4010_3.isChecked() || rb_A4010_4.isChecked()) {
                 ClearAllcontrol.ClearAll(ll_A4011);
                 ll_A4011.setVisibility(View.GONE);
