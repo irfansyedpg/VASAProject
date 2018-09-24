@@ -20,7 +20,7 @@ import utils.Gothrough;
 public class N2051_N2078 extends AppCompatActivity {
 
     N2051N2078Binding bi;
-    boolean flag_n2006 = true, flag_n2008 = true, flag_q1102 = true;
+    boolean flag_n2006 = true, flag_n2008 = true, flag_q1102 = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -848,11 +848,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1610_3 = findViewById(R.id.ed_Q1610_3);
     }
 
-    private static boolean isValid(String s) {
-
-        return !s.trim().equals("") && !s.trim().equals("99/99/9999");
-    }
-
     void events_call() {
 
         rb_Q1403_1.setOnCheckedChangeListener(this);
@@ -2304,45 +2299,20 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         Toast.makeText(this, "General Section inserted successfully", Toast.LENGTH_SHORT).show();
     }
 
-    public int[] calculateAge(String dob, String dod) {
+    private static boolean isValid(String s) {
 
-        String[] dob_sep = dob.split("/");
-        String[] dod_sep = dod.split("/");
+        if (!s.trim().equals("")) {
 
-        String dob_day = dob_sep[0];
-        String dob_month = dob_sep[1];
-        String dob_year = dob_sep[2];
+            String[] date_sep = s.split("/");
 
-        String dod_day = dod_sep[0];
-        String dod_month = dod_sep[1];
-        String dod_year = dod_sep[2];
+            int dd = Integer.valueOf(date_sep[0]);
+            int mm = Integer.valueOf(date_sep[1]);
+            int yy = Integer.valueOf(date_sep[2]);
 
-
-        int mYearDiff = parseInt(dod_year) - parseInt(dob_year);
-        int mMonDiff = parseInt(dod_month) - parseInt(dob_month);
-
-        if (mMonDiff < 0) {
-            mYearDiff = mYearDiff - 1;
-            mMonDiff = mMonDiff + 12;
+            return dd != 99 || mm != 99 || yy != 9999;
         }
 
-        int mDayDiff = parseInt(dod_day) - parseInt(dob_day);
-
-        if (mDayDiff < 0) {
-            if (mMonDiff > 0) {
-                mMonDiff = mMonDiff - 1;
-                mDayDiff = mDayDiff + MonthsToDays(parseInt(dod_month) - 1, parseInt(dod_year));
-            } else {
-                mYearDiff = mYearDiff - 1;
-                mMonDiff = 11;
-                mDayDiff = mDayDiff + MonthsToDays(parseInt(dod_month) - 1, parseInt(dod_year));
-            }
-
-        }
-
-        int[] Age = new int[]{mDayDiff, mMonDiff, mYearDiff};
-
-        return Age;
+        return false;
     }
 
     public static int MonthsToDays(int tMonth, int tYear) {
@@ -2378,6 +2348,80 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     }
 
+    public int[] calculateAge(String dob, String dod) {
+
+        String[] dob_sep = dob.split("/");
+        String[] dod_sep = dod.split("/");
+
+        String dob_day = dob_sep[0];
+        String dob_month = dob_sep[1];
+        String dob_year = dob_sep[2];
+
+        String dod_day = dod_sep[0];
+        String dod_month = dod_sep[1];
+        String dod_year = dod_sep[2];
+
+        int mYearDiff, mMonDiff, mDayDiff;
+
+        if (parseInt(dob_year) == 9999 || parseInt(dod_year) == 9999) {
+
+            mYearDiff = 0;
+
+        } else {
+
+            mYearDiff = parseInt(dod_year) - parseInt(dob_year);
+        }
+
+        if (parseInt(dob_month) == 99 || parseInt(dod_month) == 99){
+
+            mMonDiff = 0;
+
+        } else {
+
+            mMonDiff = parseInt(dod_month) - parseInt(dob_month);
+
+            if (mMonDiff < 0) {
+                mYearDiff = mYearDiff - 1;
+                mMonDiff = mMonDiff + 12;
+            }
+        }
+
+        if (parseInt(dob_day) == 99 || parseInt(dod_day) == 99) {
+
+            mDayDiff = 0;
+
+        } else {
+
+            mDayDiff = parseInt(dod_day) - parseInt(dob_day);
+        }
+
+        if (mDayDiff < 0) {
+            if (mMonDiff > 0) {
+                mMonDiff = mMonDiff - 1;
+                mDayDiff = mDayDiff + MonthsToDays(parseInt(dod_month) - 1, parseInt(dod_year));
+
+            } else {
+                mYearDiff = mYearDiff - 1;
+                mMonDiff = 11;
+                mDayDiff = mDayDiff + MonthsToDays(parseInt(dod_month) - 1, parseInt(dod_year));
+            }
+
+        }
+
+        int[] Age = new int[]{mDayDiff, mMonDiff, mYearDiff};
+
+        return Age;
+    }
+
+    @Override
+    public void afterTextChanged(Editable s) {
+    }
+
+    /*private static boolean isValid(String s) {
+
+        return !s.trim().equals("") && !s.trim().equals("99/99/9999");
+    }*/
+
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
 
@@ -2392,13 +2436,50 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
                 int[] Age = calculateAge(dob, dod);
 
-                int days = Age[0];
+                int days   = Age[0];
                 int months = Age[1];
-                int years = Age[2];
+                int years  = Age[2];
 
-                ed_Q1206_d.setText(String.valueOf(days));
-                ed_Q1206_m.setText(String.valueOf(months));
-                ed_Q1206_y.setText(String.valueOf(years));
+
+
+                if (years >= 2) {
+
+                    ed_Q1206_d.setText("0");
+                    ed_Q1206_m.setText("0");
+                    ed_Q1206_y.setText(String.valueOf(years));
+
+                } else {
+
+                    if(months > 0){
+
+                        months = (years * 12) + months;
+
+                        ed_Q1206_d.setText("0");
+                        ed_Q1206_m.setText(String.valueOf(months));
+                        ed_Q1206_y.setText("0");
+
+                    } else if (months == 0){
+
+                        if (days < 28){
+
+                            ed_Q1206_d.setText(String.valueOf(days));
+                            ed_Q1206_m.setText("0");
+                            ed_Q1206_y.setText("0");
+
+                        } else {
+
+                            ed_Q1206_d.setText("0");
+                            ed_Q1206_m.setText("1");
+                            ed_Q1206_y.setText("0");
+                        }
+                    }
+                }
+
+
+
+
+
+
 
                 ed_Q1206_d.setEnabled(false);
                 ed_Q1206_m.setEnabled(false);
@@ -2450,10 +2531,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 ed_Q1607_3.setEnabled(true);
             }
         }
-    }
-
-    @Override
-    public void afterTextChanged(Editable s) {
     }
 
     public boolean validate(final String date) {
