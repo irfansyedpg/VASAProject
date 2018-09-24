@@ -18,7 +18,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import data.DBHelper;
-import data.GS.Q1101_Q1610;
 
 public class InterviewEnd extends AppCompatActivity implements View.OnClickListener {
 
@@ -47,6 +46,8 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
 
     String
             study_id,
+            Q1309,
+            Q1310,
             Q1311;
 
     int currentSection, bCurrentSection;
@@ -64,19 +65,31 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
 
         bCurrentSection = getStudyId.getExtras().getInt("currentSection");
 
-        if(bCurrentSection > 0){
-
-            currentSection = bCurrentSection;
-
-        } else {
-
-            currentSection = 111;
-        }
-
         ed_study_id.setText(study_id);
         ed_study_id.setEnabled(false);
 
         Initialization();
+
+        if(bCurrentSection > 0){
+
+            currentSection = bCurrentSection;
+            rb_Q1311_1.setEnabled(false);
+
+        } else {
+
+            currentSection = 111;
+            rb_Q1311_2.setEnabled(false);
+            rb_Q1311_3.setEnabled(false);
+            rb_Q1311_4.setEnabled(false);
+            rb_Q1311_5.setEnabled(false);
+            rb_Q1311_6.setEnabled(false);
+            rb_Q1311_7.setEnabled(false);
+            rb_Q1311_8.setEnabled(false);
+            rb_Q1311_9.setEnabled(false);
+            rb_Q1311_10.setEnabled(false);
+            rb_Q1311_11.setEnabled(false);
+            rb_Q1311_12.setEnabled(false);
+        }
 
         btn_next.setOnClickListener(this);
     }
@@ -94,18 +107,15 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
         //Toast.makeText(this, Q1311, Toast.LENGTH_LONG).show();
 
 
-        Calendar cdt = Calendar.getInstance();
-        SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
-        String formattedDate = dt.format(cdt.getTime());
-        String[] dtf = formattedDate.split(" ");
+
 
         DBHelper db = new DBHelper(this);
 
         ContentValues values = new ContentValues();
-        Q1101_Q1610.Q1309 = dtf[0];
-        Q1101_Q1610.Q1310 = dtf[1];
-        values.put(Q1101_Q1610.Q1311, Q1311);
-        values.put(Q1101_Q1610.currentSection, currentSection);
+        values.put(Global.GS.Q1101_Q1610.Q1309, Q1309);
+        values.put(Global.GS.Q1101_Q1610.Q1310, Q1310);
+        values.put(Global.GS.Q1101_Q1610.Q1311, Q1311);
+        values.put(Global.GS.Q1101_Q1610.currentSection, currentSection);
 
         Long res = db.updateData("Q1101_Q1610", values, study_id);
 
@@ -147,6 +157,22 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
 
 
     void value_assignment() {
+
+
+        Calendar cdt = Calendar.getInstance();
+        SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
+        String formattedDate = dt.format(cdt.getTime());
+        String[] dtf = formattedDate.split(" ");
+
+        if (dtf[0].length() > 0){
+
+            Q1309 = dtf[0].trim();
+        }
+
+        if (dtf[1].length() > 0){
+
+            Q1310 = dtf[1].trim();
+        }
 
         Q1311 = "-1";
 

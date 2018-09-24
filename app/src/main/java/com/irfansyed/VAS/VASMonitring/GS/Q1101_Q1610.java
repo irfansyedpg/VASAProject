@@ -29,6 +29,7 @@ import java.util.regex.Pattern;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 import static java.lang.Integer.parseInt;
@@ -424,14 +425,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.q1101_q1610);
 
-        Calendar cdt = Calendar.getInstance();
-        SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
-        String formattedDate = dt.format(cdt.getTime());
-        String[] dtf = formattedDate.split(" ");
-
-        Q1307 = dtf[0];
-        Q1308 = dtf[1];
-
         Initialization();
 
         //ed_Q1202.setEnabled(false);
@@ -439,9 +432,23 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         //rb_Q1203_2.setEnabled(false);
         //ed_Q1204.setEnabled(false);
         //ed_Q1205.setEnabled(false);
-        //ed_Q1206_d.setEnabled(false);
-        //ed_Q1206_m.setEnabled(false);
-        //ed_Q1206_y.setEnabled(false);
+        ed_Q1206_d.setEnabled(false);
+        ed_Q1206_m.setEnabled(false);
+        ed_Q1206_y.setEnabled(false);
+        ed_Q1607_1.setEnabled(false);
+        ed_Q1607_2.setEnabled(false);
+        ed_Q1607_3.setEnabled(false);
+
+        ll_Q1403_OT.setVisibility(View.GONE);
+        ll_Q1416_OT.setVisibility(View.GONE);
+        ll_Q1417_OT.setVisibility(View.GONE);
+        ll_Q1418_OT.setVisibility(View.GONE);
+        ll_Q1419_OT.setVisibility(View.GONE);
+        ll_Q1420_OT.setVisibility(View.GONE);
+        ll_Q1421_OT.setVisibility(View.GONE);
+        ll_Q1503_OT.setVisibility(View.GONE);
+        ll_Q1604_OT.setVisibility(View.GONE);
+
         //rb_Q1207_1.setEnabled(false);
         //rb_Q1207_2.setEnabled(false);
         //rb_Q1207_DK.setEnabled(false);
@@ -490,7 +497,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         if (res.getCount() > 0) {
 
-            Toast.makeText(this, ""+ res.getColumnIndex(data.GS.Q1101_Q1610.Q1609), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, ""+ res.getColumnIndex(Global.GS.Q1101_Q1610.Q1609), Toast.LENGTH_LONG).show();
 
             res.moveToFirst();
 
@@ -542,8 +549,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ll_Q1209 = findViewById(R.id.ll_Q1209);
         ll_Q1301 = findViewById(R.id.ll_Q1301);
         ll_Q1302 = findViewById(R.id.ll_Q1302);
-        ll_Q1312 = findViewById(R.id.ll_Q1312);
-        ll_Q1313 = findViewById(R.id.ll_Q1313);
+        //ll_Q1312 = findViewById(R.id.ll_Q1312);
+        //ll_Q1313 = findViewById(R.id.ll_Q1313);
         ll_Q1401 = findViewById(R.id.ll_Q1401);
         ll_Q1402 = findViewById(R.id.ll_Q1402);
         ll_Q1403 = findViewById(R.id.ll_Q1403);
@@ -794,8 +801,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1209 = findViewById(R.id.ed_Q1209);
         ed_Q1301 = findViewById(R.id.ed_Q1301);
         ed_Q1302 = findViewById(R.id.ed_Q1302);
-        ed_Q1312 = findViewById(R.id.ed_Q1312);
-        ed_Q1313 = findViewById(R.id.ed_Q1313);
+        //ed_Q1312 = findViewById(R.id.ed_Q1312);
+        //ed_Q1313 = findViewById(R.id.ed_Q1313);
         ed_Q1401 = findViewById(R.id.ed_Q1401);
         ed_Q1403_OT = findViewById(R.id.ed_Q1403_OT);
         ed_Q1406 = findViewById(R.id.ed_Q1406);
@@ -954,15 +961,15 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1603.addTextChangedListener(this);
         ed_Q1606.addTextChangedListener(this);
 
-        ed_Q1206_d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
-        ed_Q1206_m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
-        ed_Q1206_y.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
+        //ed_Q1206_d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
+        //ed_Q1206_m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
+        //ed_Q1206_y.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
 
         ed_Q1409.setFilters(new InputFilter[]{new InputFilterMinMax(0, 18, 99, 99)});
 
-        ed_Q1607_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
-        ed_Q1607_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
-        ed_Q1607_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
+        //ed_Q1607_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
+        //ed_Q1607_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
+        //ed_Q1607_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 70, 70, 70)});
 
         ed_Q1608_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 27, 27, 27)});
         ed_Q1608_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
@@ -1539,13 +1546,29 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             Q1302 = ed_Q1302.getText().toString().trim();
         }
 
-        if (ed_Q1312.getText().toString().trim().length() > 0) {
+
+        Calendar cdt = Calendar.getInstance();
+        SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
+        String formattedDate = dt.format(cdt.getTime());
+        String[] dtf = formattedDate.split(" ");
+
+        if (dtf[0].length() > 0){
+
+            Q1307 = dtf[0].trim();
+        }
+
+        if (dtf[1].length() > 0){
+
+            Q1308 = dtf[1].trim();
+        }
+
+        /*if (ed_Q1312.getText().toString().trim().length() > 0) {
             Q1312 = ed_Q1312.getText().toString().trim();
         }
 
         if (ed_Q1313.getText().toString().trim().length() > 0) {
             Q1313 = ed_Q1313.getText().toString().trim();
-        }
+        }*/
 
         if (ed_Q1401.getText().toString().trim().length() > 0) {
             Q1401 = ed_Q1401.getText().toString().trim();
@@ -2044,88 +2067,88 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     void insert_data() {
 
-        String query = "insert into   Q1101_Q1610("
-                + data.GS.Q1101_Q1610.study_id + ","
-                + data.GS.Q1101_Q1610.Q1202 + ","
-                + data.GS.Q1101_Q1610.Q1203 + ","
-                + data.GS.Q1101_Q1610.Q1204 + ","
-                + data.GS.Q1101_Q1610.Q1205 + ","
-                + data.GS.Q1101_Q1610.Q1206_d + ","
-                + data.GS.Q1101_Q1610.Q1206_m + ","
-                + data.GS.Q1101_Q1610.Q1206_y + ","
-                + data.GS.Q1101_Q1610.Q1207 + ","
-                + data.GS.Q1101_Q1610.Q1208 + ","
-                + data.GS.Q1101_Q1610.Q1209 + ","
-                + data.GS.Q1101_Q1610.Q1301 + ","
-                + data.GS.Q1101_Q1610.Q1302 + ","
-                + data.GS.Q1101_Q1610.Q1307 + ","
-                + data.GS.Q1101_Q1610.Q1308 + ","
-                + data.GS.Q1101_Q1610.Q1309 + ","
-                + data.GS.Q1101_Q1610.Q1310 + ","
-                + data.GS.Q1101_Q1610.Q1311 + ","
-                + data.GS.Q1101_Q1610.Q1312 + ","
-                + data.GS.Q1101_Q1610.Q1313 + ","
-                + data.GS.Q1101_Q1610.Q1401 + ","
-                + data.GS.Q1101_Q1610.Q1402 + ","
-                + data.GS.Q1101_Q1610.Q1403 + ","
-                + data.GS.Q1101_Q1610.Q1403_OT + ","
-                + data.GS.Q1101_Q1610.Q1404 + ","
-                + data.GS.Q1101_Q1610.Q1405 + ","
-                + data.GS.Q1101_Q1610.Q1406 + ","
-                + data.GS.Q1101_Q1610.Q1407 + ","
-                + data.GS.Q1101_Q1610.Q1408 + ","
-                + data.GS.Q1101_Q1610.Q1409 + ","
-                + data.GS.Q1101_Q1610.Q1410 + ","
-                + data.GS.Q1101_Q1610.Q1411 + ","
-                + data.GS.Q1101_Q1610.Q1412 + ","
-                + data.GS.Q1101_Q1610.Q1413 + ","
-                + data.GS.Q1101_Q1610.Q1414_1 + ","
-                + data.GS.Q1101_Q1610.Q1414_2 + ","
-                + data.GS.Q1101_Q1610.Q1414_3 + ","
-                + data.GS.Q1101_Q1610.Q1414_4 + ","
-                + data.GS.Q1101_Q1610.Q1414_5 + ","
-                + data.GS.Q1101_Q1610.Q1414_6 + ","
-                + data.GS.Q1101_Q1610.Q1414_7 + ","
-                + data.GS.Q1101_Q1610.Q1414_8 + ","
-                + data.GS.Q1101_Q1610.Q1414_9 + ","
-                + data.GS.Q1101_Q1610.Q1414_10 + ","
-                + data.GS.Q1101_Q1610.Q1415 + ","
-                + data.GS.Q1101_Q1610.Q1416 + ","
-                + data.GS.Q1101_Q1610.Q1416_OT + ","
-                + data.GS.Q1101_Q1610.Q1417 + ","
-                + data.GS.Q1101_Q1610.Q1417_OT + ","
-                + data.GS.Q1101_Q1610.Q1418 + ","
-                + data.GS.Q1101_Q1610.Q1418_OT + ","
-                + data.GS.Q1101_Q1610.Q1419 + ","
-                + data.GS.Q1101_Q1610.Q1419_OT + ","
-                + data.GS.Q1101_Q1610.Q1420 + ","
-                + data.GS.Q1101_Q1610.Q1420_OT + ","
-                + data.GS.Q1101_Q1610.Q1421 + ","
-                + data.GS.Q1101_Q1610.Q1421_OT + ","
-                + data.GS.Q1101_Q1610.Q1501 + ","
-                + data.GS.Q1101_Q1610.Q1502 + ","
-                + data.GS.Q1101_Q1610.Q1503 + ","
-                + data.GS.Q1101_Q1610.Q1503_OT + ","
-                + data.GS.Q1101_Q1610.Q1601 + ","
-                + data.GS.Q1101_Q1610.Q1602 + ","
-                + data.GS.Q1101_Q1610.Q1603 + ","
-                + data.GS.Q1101_Q1610.Q1604 + ","
-                + data.GS.Q1101_Q1610.Q1604_OT + ","
-                + data.GS.Q1101_Q1610.Q1605 + ","
-                + data.GS.Q1101_Q1610.Q1606 + ","
-                + data.GS.Q1101_Q1610.Q1607_1 + ","
-                + data.GS.Q1101_Q1610.Q1607_2 + ","
-                + data.GS.Q1101_Q1610.Q1607_3 + ","
-                + data.GS.Q1101_Q1610.Q1608_1 + ","
-                + data.GS.Q1101_Q1610.Q1608_2 + ","
-                + data.GS.Q1101_Q1610.Q1608_3 + ","
-                + data.GS.Q1101_Q1610.Q1609 + ","
-                + data.GS.Q1101_Q1610.Q1610_1 + ","
-                + data.GS.Q1101_Q1610.Q1610_2 + ","
-                + data.GS.Q1101_Q1610.Q1610_3 + ","
-                + data.GS.Q1101_Q1610.interviewType + ","
-                + data.GS.Q1101_Q1610.currentSection + ","
-                + data.GS.Q1101_Q1610.STATUS + ") values ('" +
+        String query = "insert into Q1101_Q1610("
+                + Global.GS.Q1101_Q1610.study_id + ","
+                + Global.GS.Q1101_Q1610.Q1202 + ","
+                + Global.GS.Q1101_Q1610.Q1203 + ","
+                + Global.GS.Q1101_Q1610.Q1204 + ","
+                + Global.GS.Q1101_Q1610.Q1205 + ","
+                + Global.GS.Q1101_Q1610.Q1206_d + ","
+                + Global.GS.Q1101_Q1610.Q1206_m + ","
+                + Global.GS.Q1101_Q1610.Q1206_y + ","
+                + Global.GS.Q1101_Q1610.Q1207 + ","
+                + Global.GS.Q1101_Q1610.Q1208 + ","
+                + Global.GS.Q1101_Q1610.Q1209 + ","
+                + Global.GS.Q1101_Q1610.Q1301 + ","
+                + Global.GS.Q1101_Q1610.Q1302 + ","
+                + Global.GS.Q1101_Q1610.Q1307 + ","
+                + Global.GS.Q1101_Q1610.Q1308 + ","
+                + Global.GS.Q1101_Q1610.Q1309 + ","
+                + Global.GS.Q1101_Q1610.Q1310 + ","
+                + Global.GS.Q1101_Q1610.Q1311 + ","
+                + Global.GS.Q1101_Q1610.Q1312 + ","
+                + Global.GS.Q1101_Q1610.Q1313 + ","
+                + Global.GS.Q1101_Q1610.Q1401 + ","
+                + Global.GS.Q1101_Q1610.Q1402 + ","
+                + Global.GS.Q1101_Q1610.Q1403 + ","
+                + Global.GS.Q1101_Q1610.Q1403_OT + ","
+                + Global.GS.Q1101_Q1610.Q1404 + ","
+                + Global.GS.Q1101_Q1610.Q1405 + ","
+                + Global.GS.Q1101_Q1610.Q1406 + ","
+                + Global.GS.Q1101_Q1610.Q1407 + ","
+                + Global.GS.Q1101_Q1610.Q1408 + ","
+                + Global.GS.Q1101_Q1610.Q1409 + ","
+                + Global.GS.Q1101_Q1610.Q1410 + ","
+                + Global.GS.Q1101_Q1610.Q1411 + ","
+                + Global.GS.Q1101_Q1610.Q1412 + ","
+                + Global.GS.Q1101_Q1610.Q1413 + ","
+                + Global.GS.Q1101_Q1610.Q1414_1 + ","
+                + Global.GS.Q1101_Q1610.Q1414_2 + ","
+                + Global.GS.Q1101_Q1610.Q1414_3 + ","
+                + Global.GS.Q1101_Q1610.Q1414_4 + ","
+                + Global.GS.Q1101_Q1610.Q1414_5 + ","
+                + Global.GS.Q1101_Q1610.Q1414_6 + ","
+                + Global.GS.Q1101_Q1610.Q1414_7 + ","
+                + Global.GS.Q1101_Q1610.Q1414_8 + ","
+                + Global.GS.Q1101_Q1610.Q1414_9 + ","
+                + Global.GS.Q1101_Q1610.Q1414_10 + ","
+                + Global.GS.Q1101_Q1610.Q1415 + ","
+                + Global.GS.Q1101_Q1610.Q1416 + ","
+                + Global.GS.Q1101_Q1610.Q1416_OT + ","
+                + Global.GS.Q1101_Q1610.Q1417 + ","
+                + Global.GS.Q1101_Q1610.Q1417_OT + ","
+                + Global.GS.Q1101_Q1610.Q1418 + ","
+                + Global.GS.Q1101_Q1610.Q1418_OT + ","
+                + Global.GS.Q1101_Q1610.Q1419 + ","
+                + Global.GS.Q1101_Q1610.Q1419_OT + ","
+                + Global.GS.Q1101_Q1610.Q1420 + ","
+                + Global.GS.Q1101_Q1610.Q1420_OT + ","
+                + Global.GS.Q1101_Q1610.Q1421 + ","
+                + Global.GS.Q1101_Q1610.Q1421_OT + ","
+                + Global.GS.Q1101_Q1610.Q1501 + ","
+                + Global.GS.Q1101_Q1610.Q1502 + ","
+                + Global.GS.Q1101_Q1610.Q1503 + ","
+                + Global.GS.Q1101_Q1610.Q1503_OT + ","
+                + Global.GS.Q1101_Q1610.Q1601 + ","
+                + Global.GS.Q1101_Q1610.Q1602 + ","
+                + Global.GS.Q1101_Q1610.Q1603 + ","
+                + Global.GS.Q1101_Q1610.Q1604 + ","
+                + Global.GS.Q1101_Q1610.Q1604_OT + ","
+                + Global.GS.Q1101_Q1610.Q1605 + ","
+                + Global.GS.Q1101_Q1610.Q1606 + ","
+                + Global.GS.Q1101_Q1610.Q1607_1 + ","
+                + Global.GS.Q1101_Q1610.Q1607_2 + ","
+                + Global.GS.Q1101_Q1610.Q1607_3 + ","
+                + Global.GS.Q1101_Q1610.Q1608_1 + ","
+                + Global.GS.Q1101_Q1610.Q1608_2 + ","
+                + Global.GS.Q1101_Q1610.Q1608_3 + ","
+                + Global.GS.Q1101_Q1610.Q1609 + ","
+                + Global.GS.Q1101_Q1610.Q1610_1 + ","
+                + Global.GS.Q1101_Q1610.Q1610_2 + ","
+                + Global.GS.Q1101_Q1610.Q1610_3 + ","
+                + Global.GS.Q1101_Q1610.interviewType + ","
+                + Global.GS.Q1101_Q1610.currentSection + ","
+                + Global.GS.Q1101_Q1610.STATUS + ") values ('" +
 
                 study_id + "','" +
                 Q1202 + "','" +
@@ -2277,15 +2300,25 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_study_id) == false) {
+        if (Gothrough.IamHiden(ll_study_id) == false) {
+
+            //CardView cv = findViewById(R.id.cv_study_id);
+            //cv.requestFocus();
+            //cv.setBackgroundColor(0xFFFF0000);
+
             return false;
+
         }
 
-        if (Gothrough.IamHiden(ll_Q1401) == false) {
+        return Gothrough.IamHiden(ll_Q1402) != false;
+
+       /* if (Gothrough.IamHiden(ll_Q1401) == false) {
             return false;
         }
 
         if (Gothrough.IamHiden(ll_Q1402) == false) {
+            ll_Q1402.requestFocus();
+            ll_Q1402.setBackgroundColor(0xFF00FF00);
             return false;
         }
 
@@ -2485,9 +2518,11 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_Q1610) != false;*/
+        if( Gothrough.IamHiden(ll_Q1610) == false){
+            return false;
+        }
 
-        return true;
+        return true;*/
     }
 
     @Override

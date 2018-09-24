@@ -20,7 +20,6 @@ import java.util.regex.Pattern;
 import Global.C.C3001_C3011;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 
 public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -1246,6 +1245,6 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this, study_id, currentSection = 8);
+        globale.interviewExit(this, this, study_id, currentSection = 10);
     }
 }

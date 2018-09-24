@@ -44,15 +44,14 @@ import data.A.A4252_atributes;
 import data.A.A4301_A4315;
 import data.A.A4351_A4364;
 import data.A.A4401_A4473;
-import data.GS.Q1101_Q1610;
 
 /**
  * Created by Umeed-e-Nau on 12/21/2016.
  */
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final  String DB_NAME = "vasa.db";
-    private static final int    VERSION = 1;
+    public static final String DB_NAME = "vasa.db";
+    private static final int VERSION = 1;
 
     Context mContext;
 
@@ -67,7 +66,7 @@ public class DBHelper extends SQLiteOpenHelper {
         db.beginTransaction();
 
         /*Waseem's File creation*/
-        db.execSQL(Q1101_Q1610.getCreateQuery()); // Q1101_Q1610 created here
+        db.execSQL(data.GS.Q1101_Q1610.getCreateQuery()); // Q1101_Q1610 created here
         db.execSQL(data.C.C3001_C3011.getCreateQuery()); // C3001_C3011 created here
         db.execSQL(data.C.C3012_C3022.getCreateQuery()); // C3012_C3022 created here
         db.execSQL(data.C.C3051_C3099.getCreateQuery()); // C3051_C3099 created here
@@ -177,11 +176,11 @@ public class DBHelper extends SQLiteOpenHelper {
     }*/
 
 
-    public Cursor getPendingInterviews(String tableName){
+    public Cursor getPendingInterviews(String tableName) {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
-        Cursor res = db.rawQuery("select * from " + tableName + " where currentSection != 11", null);
+        Cursor res = db.rawQuery("select * from " + tableName + " where currentSection != 111", null);
         return res;
     }
 
@@ -192,7 +191,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
 
-        newRowId = db.update(tableName, values, Q1101_Q1610.study_id + " = ?", new String[]{study_id});
+        newRowId = db.update(tableName, values, Global.GS.Q1101_Q1610.study_id + " = ?", new String[]{study_id});
 
         return newRowId;
     }
@@ -1288,20 +1287,18 @@ public class DBHelper extends SQLiteOpenHelper {
         return newRowId;
     }
 
-    public String getSpecificData(String table_name, String id, String column) {
+    public String getSpecificData(String table_name, String study_id, String column) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                column,
-                "MAX(" + id + ") as " + id
+                column
         };
-        String whereClause = null;
-        String[] whereArgs = null;
+        String whereClause = "study_id =?";
+        String[] whereArgs = {study_id};
         String groupBy = null;
         String having = null;
 
-        String orderBy =
-                id + " DESC LIMIT 1";
+        String orderBy = "study_id DESC LIMIT 1";
 
         String allFC = null;
         try {

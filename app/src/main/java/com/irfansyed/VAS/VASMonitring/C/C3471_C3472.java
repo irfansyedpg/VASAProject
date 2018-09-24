@@ -21,7 +21,6 @@ import com.irfansyed.VAS.VASMonitring.R;
 import java.io.File;
 
 import data.LocalDataManager;
-import utils.Gothrough;
 
 public class C3471_C3472 extends AppCompatActivity implements View.OnClickListener {
 
@@ -261,13 +260,15 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3472) != false;*/
+        if (Gothrough.IamHiden(ll_C3472) == false) {
+            return false;
+        }*/
 
         return true;
     }
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this, study_id, currentSection = 11);
+        globale.interviewExit(this, this, study_id, currentSection = 13);
     }
 }

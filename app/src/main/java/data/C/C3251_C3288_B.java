@@ -8,7 +8,7 @@ public class C3251_C3288_B {
         String query;
         query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT,  " +
 
-                Global.C.C3251_C3288_B.sub_C3251_C3288_B.STUDYID + " INTEGER," +
+                Global.C.C3251_C3288_B.sub_C3251_C3288_B.STUDYID + " TEXT," +
                 Global.C.C3251_C3288_B.sub_C3251_C3288_B.ACT_ID_FK + " TEXT," +
                 Global.C.C3251_C3288_B.sub_C3251_C3288_B.ACT_COUNT + " TEXT," +
                 Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253 + " TEXT," +
