@@ -180,6 +180,54 @@
             </android.support.v7.widget.CardView>-->
             <!-- Radio Buttons Q1103 Ends -->
 
+            <!-- EditText Q1201 Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_Q1201"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_Q1201"
+                        style="@style/TextView"
+                        android:text="@string/txt_Q1201" />
+
+                    <EditText
+                        android:id="@+id/ed_Q1201_1"
+                        style="@style/EditText_number"
+                        android:hint="Province" />
+
+                    <EditText
+                        android:id="@+id/ed_Q1201_2"
+                        style="@style/EditText_number"
+                        android:hint="District" />
+
+                    <EditText
+                        android:id="@+id/ed_Q1201_3"
+                        style="@style/EditText_number"
+                        android:hint="Admin Post" />
+
+                    <EditText
+                        android:id="@+id/ed_Q1201_4"
+                        style="@style/EditText_number"
+                        android:hint="Locality" />
+
+                    <EditText
+                        android:id="@+id/ed_Q1201_5"
+                        style="@style/EditText_number"
+                        android:hint="Community" />
+
+                    <EditText
+                        android:id="@+id/ed_Q1201_6"
+                        style="@style/EditText_number"
+                        android:hint="EA" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText Q1201 Ends -->
+
             <!-- EditText Q1202 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
