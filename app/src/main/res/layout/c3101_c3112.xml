@@ -347,6 +347,10 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
+                        style="@style/TextView"
+                        android:text="On the day before the illness began was <NAME> being given any?" />
+
+                    <TextView
                         android:id="@+id/txt_C3107_1"
                         style="@style/TextView"
                         android:text="@string/txt_C3107_1" />
