@@ -18,8 +18,10 @@ import com.irfansyed.VAS.VASMonitring.R;
 import java.util.Collections;
 import java.util.List;
 
+import Global.GS.Q1101_Q1610;
 import data.LocalDataManager;
-import data.UploadHouseInfoAsync;
+
+import static java.lang.Integer.parseInt;
 
 
 public class SurveyCompletedActivity extends AppCompatActivity {
@@ -88,20 +90,22 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder b = new AlertDialog.Builder(mContext);
-                b.setTitle("Load Pending Interview");
-                b.setMessage("Do you want to reload this interview ");
+                b.setTitle("Upload Interview");
+                b.setMessage("Do you want to upload this interview ");
                 b.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
-                        String memberId = vh.textName.getText().toString();
+                        String memberId = vh.textName.getText().toString().trim();
 
 
                         String[] arrr = memberId.split("/");
 
-                        Global.C.C3001_C3011.study_id = arrr[0];
+                        Q1101_Q1610.study_id_upload      = arrr[0];
+                        Q1101_Q1610.interviewType_upload = parseInt(arrr[1]);
 
-                        new UploadHouseInfoAsync(mContext).execute();
+
+                        new Upload_Q1101_Q1610(mContext).execute();
 
                         //    new UploadSectionEAsync(mContext, "3").execute(); // irfan
 

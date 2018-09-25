@@ -2,8 +2,10 @@ package Global.GS;
 
 public class Q1101_Q1610 {
 
-    public static String study_id       = "study_id";
 
+    public static String study_id_upload;
+    public static int interviewType_upload;
+    public static String study_id       = "study_id";
     public static String Q1201_1        = "Q1201_1";
     public static String Q1201_2        = "Q1201_2";
     public static String Q1201_3        = "Q1201_3";

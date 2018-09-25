@@ -61,7 +61,7 @@ public class Upload_A4001_A4014 extends AsyncTask {
         String query1 = "select * from A4001_A4014 where study_id = '%s' order by id  desc LIMIT 1";
 
 
-        query1 = String.format(query1, Q1101_Q1610.study_id);
+        query1 = String.format(query1, Q1101_Q1610.study_id_upload);
 
         LocalDataManager Lm = new LocalDataManager(mContext);
 
@@ -176,7 +176,7 @@ public class Upload_A4001_A4014 extends AsyncTask {
             Toast.makeText(mContext, "Q section Uploaded", Toast.LENGTH_SHORT).show();
 
 
-            // new LocalDataManager(mContext).uploadInterview();
+             new Upload_A4051_A4066(mContext);
 
             // LogtableUpdates.UpdateLogStatusUpload(mContext,Validation.hfauploadid);
 

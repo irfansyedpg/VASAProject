@@ -18,16 +18,9 @@ public class LocalDataManager {
 
 
     public LocalDataManager(Context context) {
-       // try {
+
             this.mContext = context;
             database = new DBHelper(context).getWritableDatabase();
-
-
-      /*  } catch (Exception e) {
-             Toast.makeText(context,"Error in Localdata Mangager",Toast.LENGTH_LONG).show();
-        }
-
-        */
     }
 
 
@@ -37,7 +30,7 @@ public class LocalDataManager {
 
         try {
 
-            String query = "select study_id, interviewType, currentSection from Q1101_Q1610 where currentSection = 111 and STATUS = '%s' order by id ASC";
+            String query = "select study_id, interviewType from Q1101_Q1610 where currentSection = 111 and STATUS = '%s' order by id ASC";
             query = String.format(query, status);
 
             database.beginTransaction();
