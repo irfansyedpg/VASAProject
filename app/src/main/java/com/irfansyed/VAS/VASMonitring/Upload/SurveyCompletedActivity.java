@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,8 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
-import com.irfansyed.VAS.VASMonitring.C.C3471_C3472;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.util.Collections;
@@ -45,7 +42,7 @@ public class SurveyCompletedActivity extends AppCompatActivity {
 
         Collections.sort(list);
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.list_survey_completed);
+        mRecyclerView = findViewById(R.id.list_survey_completed);
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
@@ -102,9 +99,10 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
                         String[] arrr = memberId.split("/");
 
-                         Global.C.C3001_C3011.study_id = arrr[0];
+                        Global.C.C3001_C3011.study_id = arrr[0];
 
                         new UploadHouseInfoAsync(mContext).execute();
+
                         //    new UploadSectionEAsync(mContext, "3").execute(); // irfan
 
 
@@ -131,8 +129,8 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
         public ViewHolder(View v) {
             super(v);
-            textName = (TextView) v.findViewById(R.id.text_item_survey_pending_name);
-            textId = (TextView) v.findViewById(R.id.text_item_survey_pending_id);
+            textName = v.findViewById(R.id.text_item_survey_pending_name);
+            textId = v.findViewById(R.id.text_item_survey_pending_id);
         }
     }
 

@@ -19,8 +19,6 @@ import java.util.HashMap;
 import java.util.List;
 
 import Global.A.A4001_A4014;
-
-
 import Global.GS.Q1101_Q1610;
 import data.LocalDataManager;
 import utils.MyPreferences;
@@ -176,6 +174,8 @@ public class Upload_A4001_A4014 extends AsyncTask {
 
 
             Toast.makeText(mContext, "Q section Uploaded", Toast.LENGTH_SHORT).show();
+
+
             // new LocalDataManager(mContext).uploadInterview();
 
             // LogtableUpdates.UpdateLogStatusUpload(mContext,Validation.hfauploadid);

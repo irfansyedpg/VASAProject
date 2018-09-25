@@ -46,6 +46,8 @@ public class C3251_C3288_B extends AppCompatActivity {
 
     public void SetContentUI() {
 
+        bi.btnContinue.setEnabled(false);
+
         DBHelper db = new DBHelper(this);
 
         if (count == 1) {
@@ -92,8 +94,6 @@ public class C3251_C3288_B extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == bi.rbC325313.getId()) {
                     bi.btnContinue.setEnabled(true);
-                } else {
-                    bi.btnContinue.setEnabled(false);
                 }
             }
         });
