@@ -641,6 +641,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 
+
+        //A4159
         if (compoundButton.getId() == R.id.rb_A4159_1
                 || compoundButton.getId() == R.id.rb_A4159_2
                 || compoundButton.getId() == R.id.rb_A4159_DK
@@ -675,6 +677,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        //A4160
         if (compoundButton.getId() == R.id.rb_A4160_1
                 || compoundButton.getId() == R.id.rb_A4160_2
                 || compoundButton.getId() == R.id.rb_A4160_DK
@@ -691,6 +695,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        //A4162
         if (compoundButton.getId() == R.id.rb_A4162_1
                 || compoundButton.getId() == R.id.rb_A4162_2
                 || compoundButton.getId() == R.id.rb_A4162_DK
@@ -707,6 +713,151 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        //A4163_1  
+        if (compoundButton.getId() == R.id.rb_A4163_1_1
+                || compoundButton.getId() == R.id.rb_A4163_1_2
+                || compoundButton.getId() == R.id.rb_A4163_1_DK
+                || compoundButton.getId() == R.id.rb_A4163_1_RA)
+
+        {
+            if (rb_A4163_1_1.isChecked() || rb_A4163_1_2.isChecked() || rb_A4163_1_DK.isChecked() || rb_A4163_1_RA.isChecked()) {
+
+                ClearAllcontrol.ClearAll(ll_A4163);
+                ClearAllcontrol.ClearAll(ll_A4164);
+                ClearAllcontrol.ClearAll(ll_A4166);
+                ClearAllcontrol.ClearAll(ll_A4167);
+                ClearAllcontrol.ClearAll(ll_A4168_1);
+                ClearAllcontrol.ClearAll(ll_A4168_3);
+                ClearAllcontrol.ClearAll(ll_A4168);
+                ClearAllcontrol.ClearAll(ll_A4173_1);
+                ClearAllcontrol.ClearAll(ll_A4173);
+                ClearAllcontrol.ClearAll(ll_A4173_2);
+                ClearAllcontrol.ClearAll(ll_A4178_1);
+                ClearAllcontrol.ClearAll(ll_A4178_2);
+                ClearAllcontrol.ClearAll(ll_A4178);
+                ClearAllcontrol.ClearAll(ll_A4179);
+                ClearAllcontrol.ClearAll(ll_A4180);
+                ClearAllcontrol.ClearAll(ll_A4181);
+                ClearAllcontrol.ClearAll(ll_A4182);
+                ClearAllcontrol.ClearAll(ll_A4183);
+                ClearAllcontrol.ClearAll(ll_A4184);
+                ClearAllcontrol.ClearAll(ll_A4185);
+                ClearAllcontrol.ClearAll(ll_A4186);
+                ClearAllcontrol.ClearAll(ll_A4186_1);
+                ClearAllcontrol.ClearAll(ll_A4187);
+                ClearAllcontrol.ClearAll(ll_A4188);
+                ClearAllcontrol.ClearAll(ll_A4189);
+                ClearAllcontrol.ClearAll(ll_A4190);
+                ClearAllcontrol.ClearAll(ll_A4191);
+                ClearAllcontrol.ClearAll(ll_A4192);
+                ClearAllcontrol.ClearAll(ll_A4193);
+                ClearAllcontrol.ClearAll(ll_A4193_1);
+                ClearAllcontrol.ClearAll(ll_A4194);
+                ClearAllcontrol.ClearAll(ll_A4195);
+                ClearAllcontrol.ClearAll(ll_A4196);
+                ClearAllcontrol.ClearAll(ll_A4197);
+                ClearAllcontrol.ClearAll(ll_A4198_1);
+                ClearAllcontrol.ClearAll(ll_A4198);
+                ClearAllcontrol.ClearAll(ll_A4200);
+                ClearAllcontrol.ClearAll(ll_A4202);
+                ClearAllcontrol.ClearAll(ll_A4203);
+                ClearAllcontrol.ClearAll(ll_A4204);
+                ClearAllcontrol.ClearAll(ll_A4205);
+                ClearAllcontrol.ClearAll(ll_A4205_1);
+
+                ll_A4163.setVisibility(View.GONE);
+                ll_A4164.setVisibility(View.GONE);
+                ll_A4166.setVisibility(View.GONE);
+                ll_A4167.setVisibility(View.GONE);
+                ll_A4168_1.setVisibility(View.GONE);
+                ll_A4168_3.setVisibility(View.GONE);
+                ll_A4168.setVisibility(View.GONE);
+                ll_A4173_1.setVisibility(View.GONE);
+                ll_A4173.setVisibility(View.GONE);
+                ll_A4173_2.setVisibility(View.GONE);
+                ll_A4178_1.setVisibility(View.GONE);
+                ll_A4178_2.setVisibility(View.GONE);
+                ll_A4178.setVisibility(View.GONE);
+                ll_A4179.setVisibility(View.GONE);
+                ll_A4180.setVisibility(View.GONE);
+                ll_A4181.setVisibility(View.GONE);
+                ll_A4182.setVisibility(View.GONE);
+                ll_A4183.setVisibility(View.GONE);
+                ll_A4184.setVisibility(View.GONE);
+                ll_A4185.setVisibility(View.GONE);
+                ll_A4186.setVisibility(View.GONE);
+                ll_A4186_1.setVisibility(View.GONE);
+                ll_A4187.setVisibility(View.GONE);
+                ll_A4188.setVisibility(View.GONE);
+                ll_A4189.setVisibility(View.GONE);
+                ll_A4190.setVisibility(View.GONE);
+                ll_A4191.setVisibility(View.GONE);
+                ll_A4192.setVisibility(View.GONE);
+                ll_A4193.setVisibility(View.GONE);
+                ll_A4193_1.setVisibility(View.GONE);
+                ll_A4194.setVisibility(View.GONE);
+                ll_A4195.setVisibility(View.GONE);
+                ll_A4196.setVisibility(View.GONE);
+                ll_A4197.setVisibility(View.GONE);
+                ll_A4198_1.setVisibility(View.GONE);
+                ll_A4198.setVisibility(View.GONE);
+                ll_A4200.setVisibility(View.GONE);
+                ll_A4202.setVisibility(View.GONE);
+                ll_A4203.setVisibility(View.GONE);
+                ll_A4204.setVisibility(View.GONE);
+                ll_A4205.setVisibility(View.GONE);
+                ll_A4205_1.setVisibility(View.GONE);
+
+
+            } else {
+                ll_A4163.setVisibility(View.VISIBLE);
+                ll_A4164.setVisibility(View.VISIBLE);
+                ll_A4166.setVisibility(View.VISIBLE);
+                ll_A4167.setVisibility(View.VISIBLE);
+                ll_A4168_1.setVisibility(View.VISIBLE);
+                ll_A4168_3.setVisibility(View.VISIBLE);
+                ll_A4168.setVisibility(View.VISIBLE);
+                ll_A4173_1.setVisibility(View.VISIBLE);
+                ll_A4173.setVisibility(View.VISIBLE);
+                ll_A4173_2.setVisibility(View.VISIBLE);
+                ll_A4178_1.setVisibility(View.VISIBLE);
+                ll_A4178_2.setVisibility(View.VISIBLE);
+                ll_A4178.setVisibility(View.VISIBLE);
+                ll_A4179.setVisibility(View.VISIBLE);
+                ll_A4180.setVisibility(View.VISIBLE);
+                ll_A4181.setVisibility(View.VISIBLE);
+                ll_A4182.setVisibility(View.VISIBLE);
+                ll_A4183.setVisibility(View.VISIBLE);
+                ll_A4184.setVisibility(View.VISIBLE);
+                ll_A4185.setVisibility(View.VISIBLE);
+                ll_A4186.setVisibility(View.VISIBLE);
+                ll_A4186_1.setVisibility(View.VISIBLE);
+                ll_A4187.setVisibility(View.VISIBLE);
+                ll_A4188.setVisibility(View.VISIBLE);
+                ll_A4189.setVisibility(View.VISIBLE);
+                ll_A4190.setVisibility(View.VISIBLE);
+                ll_A4191.setVisibility(View.VISIBLE);
+                ll_A4192.setVisibility(View.VISIBLE);
+                ll_A4193.setVisibility(View.VISIBLE);
+                ll_A4193_1.setVisibility(View.VISIBLE);
+                ll_A4194.setVisibility(View.VISIBLE);
+                ll_A4195.setVisibility(View.VISIBLE);
+                ll_A4196.setVisibility(View.VISIBLE);
+                ll_A4197.setVisibility(View.VISIBLE);
+                ll_A4198_1.setVisibility(View.VISIBLE);
+                ll_A4198.setVisibility(View.VISIBLE);
+                ll_A4200.setVisibility(View.VISIBLE);
+                ll_A4202.setVisibility(View.VISIBLE);
+                ll_A4203.setVisibility(View.VISIBLE);
+                ll_A4204.setVisibility(View.VISIBLE);
+                ll_A4205.setVisibility(View.VISIBLE);
+                ll_A4205_1.setVisibility(View.VISIBLE);
+            }
+        }
+
+
+        //A4163
         if (compoundButton.getId() == R.id.rb_A4163_1
                 || compoundButton.getId() == R.id.rb_A4163_2
                 || compoundButton.getId() == R.id.rb_A4163_DK
@@ -723,6 +874,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        //A4167
         if (compoundButton.getId() == R.id.rb_A4167_1
                 || compoundButton.getId() == R.id.rb_A4167_2
                 || compoundButton.getId() == R.id.rb_A4167_DK
@@ -754,6 +907,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        //A4168_1
         if (compoundButton.getId() == R.id.rb_A4168_1_1
                 || compoundButton.getId() == R.id.rb_A4168_1_2
                 || compoundButton.getId() == R.id.rb_A4168_1_DK
@@ -773,6 +928,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        //A4168_3
         if (compoundButton.getId() == R.id.rb_A4168_3_1
                 || compoundButton.getId() == R.id.rb_A4168_3_2
                 || compoundButton.getId() == R.id.rb_A4168_3_DK
@@ -789,6 +946,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        //A4168
         if (compoundButton.getId() == R.id.rb_A4168_1
                 || compoundButton.getId() == R.id.rb_A4168_2
                 || compoundButton.getId() == R.id.rb_A4168_DK
@@ -805,6 +964,7 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
         }
 
 
+        //A4173_1
         if (compoundButton.getId() == R.id.rb_A4173_1_1
                 || compoundButton.getId() == R.id.rb_A4173_1_2
                 || compoundButton.getId() == R.id.rb_A4173_1_DK
@@ -830,6 +990,7 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
         }
 
 
+        //A4173
         if (compoundButton.getId() == R.id.rb_A4173_1
                 || compoundButton.getId() == R.id.rb_A4173_2
                 || compoundButton.getId() == R.id.rb_A4173_DK
@@ -850,6 +1011,7 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
         }
 
 
+        //A4173_2
         if (compoundButton.getId() == R.id.rb_A4173_2_1
                 || compoundButton.getId() == R.id.rb_A4173_2_2
                 || compoundButton.getId() == R.id.rb_A4173_2_DK
@@ -868,6 +1030,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        //A4178_2
         if (compoundButton.getId() == R.id.rb_A4178_2_1
                 || compoundButton.getId() == R.id.rb_A4178_2_2
                 || compoundButton.getId() == R.id.rb_A4178_2_DK
@@ -983,6 +1147,102 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
         }
 
 
+        //A4178
+        if (compoundButton.getId() == R.id.rb_A4178_1
+                || compoundButton.getId() == R.id.rb_A4178_2
+                || compoundButton.getId() == R.id.rb_A4178_DK
+                || compoundButton.getId() == R.id.rb_A4178_RA)
+
+        {
+            if (rb_A4167_1.isChecked() || rb_A4168_1_1.isChecked() || rb_A4168_3_1.isChecked() || !rb_A4173_1_1.isChecked() || !rb_A4173_2_1.isChecked()) {
+                ClearAllcontrol.ClearAll(ll_A4179);
+                ll_A4179.setVisibility(View.GONE);
+
+            } else {
+                ll_A4179.setVisibility(View.VISIBLE);
+            }
+        }
+
+
+        //A4186
+        if (compoundButton.getId() == R.id.rb_A4186_1
+                || compoundButton.getId() == R.id.rb_A4186_2
+                || compoundButton.getId() == R.id.rb_A4186_DK
+                || compoundButton.getId() == R.id.rb_A4186_RA) {
+
+            if (rb_A4186_2.isChecked() || rb_A4186_DK.isChecked() || rb_A4186_RA.isChecked()) {
+                ClearAllcontrol.ClearAll(ll_A4186_1);
+                ClearAllcontrol.ClearAll(ll_A4187);
+
+                ll_A4186_1.setVisibility(View.GONE);
+                ll_A4187.setVisibility(View.GONE);
+
+            } else {
+                ll_A4186_1.setVisibility(View.VISIBLE);
+                ll_A4187.setVisibility(View.VISIBLE);
+            }
+
+            if ((rb_A4186_2.isChecked() || rb_A4186_DK.isChecked() || rb_A4186_RA.isChecked()) && rb_A4167_1.isChecked()) {
+                ClearAllcontrol.ClearAll(ll_A4188);
+                ClearAllcontrol.ClearAll(ll_A4189);
+                ClearAllcontrol.ClearAll(ll_A4190);
+                ClearAllcontrol.ClearAll(ll_A4191);
+                ClearAllcontrol.ClearAll(ll_A4192);
+
+                ll_A4188.setVisibility(View.GONE);
+                ll_A4189.setVisibility(View.GONE);
+                ll_A4190.setVisibility(View.GONE);
+                ll_A4191.setVisibility(View.GONE);
+                ll_A4192.setVisibility(View.GONE);
+
+            } else {
+                ll_A4188.setVisibility(View.VISIBLE);
+                ll_A4189.setVisibility(View.VISIBLE);
+                ll_A4190.setVisibility(View.VISIBLE);
+                ll_A4191.setVisibility(View.VISIBLE);
+                ll_A4192.setVisibility(View.VISIBLE);
+            }
+        }
+
+
+        //A4193
+        if (compoundButton.getId() == R.id.rb_A4193_1
+                || compoundButton.getId() == R.id.rb_A4193_2
+                || compoundButton.getId() == R.id.rb_A4193_DK
+                || compoundButton.getId() == R.id.rb_A4193_RA) {
+
+            if (rb_A4193_2.isChecked() || rb_A4193_DK.isChecked() || rb_A4193_RA.isChecked()) {
+                ClearAllcontrol.ClearAll(ll_A4193_1);
+                ll_A4193_1.setVisibility(View.GONE);
+
+            } else {
+                ll_A4193_1.setVisibility(View.VISIBLE);
+            }
+
+            if ((rb_A4193_2.isChecked() || rb_A4193_DK.isChecked() || rb_A4193_RA.isChecked()) && (rb_A4173_1_1.isChecked() || rb_A4173_2_1.isChecked())) {
+                ClearAllcontrol.ClearAll(ll_A4194);
+                ClearAllcontrol.ClearAll(ll_A4195);
+                ClearAllcontrol.ClearAll(ll_A4196);
+                ClearAllcontrol.ClearAll(ll_A4197);
+                ClearAllcontrol.ClearAll(ll_A4198_1);
+
+                ll_A4194.setVisibility(View.GONE);
+                ll_A4195.setVisibility(View.GONE);
+                ll_A4196.setVisibility(View.GONE);
+                ll_A4197.setVisibility(View.GONE);
+                ll_A4198_1.setVisibility(View.GONE);
+
+            } else {
+                ll_A4194.setVisibility(View.VISIBLE);
+                ll_A4195.setVisibility(View.VISIBLE);
+                ll_A4196.setVisibility(View.VISIBLE);
+                ll_A4197.setVisibility(View.VISIBLE);
+                ll_A4198_1.setVisibility(View.VISIBLE);
+            }
+        }
+
+
+        //A4194
         if (compoundButton.getId() == R.id.rb_A4194_1
                 || compoundButton.getId() == R.id.rb_A4194_2
                 || compoundButton.getId() == R.id.rb_A4194_DK
@@ -1008,6 +1268,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        //A4195
         if (compoundButton.getId() == R.id.rb_A4195_1
                 || compoundButton.getId() == R.id.rb_A4195_2
                 || compoundButton.getId() == R.id.rb_A4195_DK
@@ -1027,6 +1289,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        //A4196
         if (compoundButton.getId() == R.id.rb_A4196_1
                 || compoundButton.getId() == R.id.rb_A4196_2
                 || compoundButton.getId() == R.id.rb_A4196_DK
@@ -1043,6 +1307,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        //A4200
         if (compoundButton.getId() == R.id.rb_A4200_1
                 || compoundButton.getId() == R.id.rb_A4200_2
                 || compoundButton.getId() == R.id.rb_A4200_3
@@ -1073,6 +1339,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        //A4202
         if (compoundButton.getId() == R.id.rb_A4202_1
                 || compoundButton.getId() == R.id.rb_A4202_2
                 || compoundButton.getId() == R.id.rb_A4202_DK
@@ -1092,6 +1360,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        //A4203
         if (compoundButton.getId() == R.id.rb_A4203_1
                 || compoundButton.getId() == R.id.rb_A4203_2
                 || compoundButton.getId() == R.id.rb_A4203_DK
@@ -1151,78 +1421,97 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
         rb_A4159_2.setOnCheckedChangeListener(this);
         rb_A4159_DK.setOnCheckedChangeListener(this);
         rb_A4159_RA.setOnCheckedChangeListener(this);
+
         rb_A4160_1.setOnCheckedChangeListener(this);
         rb_A4160_2.setOnCheckedChangeListener(this);
         rb_A4160_DK.setOnCheckedChangeListener(this);
         rb_A4160_RA.setOnCheckedChangeListener(this);
+
         rb_A4162_1.setOnCheckedChangeListener(this);
         rb_A4162_2.setOnCheckedChangeListener(this);
         rb_A4162_DK.setOnCheckedChangeListener(this);
         rb_A4162_RA.setOnCheckedChangeListener(this);
+
         rb_A4163_1_1.setOnCheckedChangeListener(this);
         rb_A4163_1_2.setOnCheckedChangeListener(this);
         rb_A4163_1_DK.setOnCheckedChangeListener(this);
         rb_A4163_1_RA.setOnCheckedChangeListener(this);
+
         rb_A4163_1.setOnCheckedChangeListener(this);
         rb_A4163_2.setOnCheckedChangeListener(this);
         rb_A4163_DK.setOnCheckedChangeListener(this);
         rb_A4163_RA.setOnCheckedChangeListener(this);
+
         rb_A4167_1.setOnCheckedChangeListener(this);
         rb_A4167_2.setOnCheckedChangeListener(this);
         rb_A4167_DK.setOnCheckedChangeListener(this);
         rb_A4167_RA.setOnCheckedChangeListener(this);
+
         rb_A4168_1_1.setOnCheckedChangeListener(this);
         rb_A4168_1_2.setOnCheckedChangeListener(this);
         rb_A4168_1_DK.setOnCheckedChangeListener(this);
         rb_A4168_1_RA.setOnCheckedChangeListener(this);
+
         rb_A4168_3_1.setOnCheckedChangeListener(this);
         rb_A4168_3_2.setOnCheckedChangeListener(this);
         rb_A4168_3_DK.setOnCheckedChangeListener(this);
         rb_A4168_3_RA.setOnCheckedChangeListener(this);
+
         rb_A4168_1.setOnCheckedChangeListener(this);
         rb_A4168_2.setOnCheckedChangeListener(this);
         rb_A4168_DK.setOnCheckedChangeListener(this);
         rb_A4168_RA.setOnCheckedChangeListener(this);
+
         rb_A4173_1_1.setOnCheckedChangeListener(this);
         rb_A4173_1_2.setOnCheckedChangeListener(this);
         rb_A4173_1_DK.setOnCheckedChangeListener(this);
         rb_A4173_1_RA.setOnCheckedChangeListener(this);
+
         rb_A4173_1.setOnCheckedChangeListener(this);
         rb_A4173_2.setOnCheckedChangeListener(this);
         rb_A4173_DK.setOnCheckedChangeListener(this);
         rb_A4173_RA.setOnCheckedChangeListener(this);
+
         rb_A4173_2_1.setOnCheckedChangeListener(this);
         rb_A4173_2_2.setOnCheckedChangeListener(this);
         rb_A4173_2_DK.setOnCheckedChangeListener(this);
         rb_A4173_2_RA.setOnCheckedChangeListener(this);
+
         rb_A4178_2_1.setOnCheckedChangeListener(this);
         rb_A4178_2_2.setOnCheckedChangeListener(this);
         rb_A4178_2_DK.setOnCheckedChangeListener(this);
         rb_A4178_2_RA.setOnCheckedChangeListener(this);
+
         rb_A4178_1.setOnCheckedChangeListener(this);
         rb_A4178_2.setOnCheckedChangeListener(this);
         rb_A4178_DK.setOnCheckedChangeListener(this);
         rb_A4178_RA.setOnCheckedChangeListener(this);
+
         rb_A4186_1.setOnCheckedChangeListener(this);
         rb_A4186_2.setOnCheckedChangeListener(this);
         rb_A4186_DK.setOnCheckedChangeListener(this);
         rb_A4186_RA.setOnCheckedChangeListener(this);
+
         rb_A4193_1.setOnCheckedChangeListener(this);
         rb_A4193_2.setOnCheckedChangeListener(this);
         rb_A4193_DK.setOnCheckedChangeListener(this);
         rb_A4193_RA.setOnCheckedChangeListener(this);
+
         rb_A4194_1.setOnCheckedChangeListener(this);
         rb_A4194_2.setOnCheckedChangeListener(this);
         rb_A4194_DK.setOnCheckedChangeListener(this);
         rb_A4194_RA.setOnCheckedChangeListener(this);
+
         rb_A4195_1.setOnCheckedChangeListener(this);
         rb_A4195_2.setOnCheckedChangeListener(this);
         rb_A4195_DK.setOnCheckedChangeListener(this);
         rb_A4195_RA.setOnCheckedChangeListener(this);
+
         rb_A4196_1.setOnCheckedChangeListener(this);
         rb_A4196_2.setOnCheckedChangeListener(this);
         rb_A4196_DK.setOnCheckedChangeListener(this);
         rb_A4196_RA.setOnCheckedChangeListener(this);
+
         rb_A4200_1.setOnCheckedChangeListener(this);
         rb_A4200_2.setOnCheckedChangeListener(this);
         rb_A4200_3.setOnCheckedChangeListener(this);
@@ -1232,10 +1521,12 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
         rb_A4200_7.setOnCheckedChangeListener(this);
         rb_A4200_DK.setOnCheckedChangeListener(this);
         rb_A4200_RA.setOnCheckedChangeListener(this);
+
         rb_A4202_1.setOnCheckedChangeListener(this);
         rb_A4202_2.setOnCheckedChangeListener(this);
         rb_A4202_DK.setOnCheckedChangeListener(this);
         rb_A4202_RA.setOnCheckedChangeListener(this);
+
         rb_A4203_1.setOnCheckedChangeListener(this);
         rb_A4203_2.setOnCheckedChangeListener(this);
         rb_A4203_DK.setOnCheckedChangeListener(this);
