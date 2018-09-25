@@ -1063,7 +1063,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c = new Intent(this, C3251_C3288_A.class);
+        Intent c = new Intent(this, C3301_C3314.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
     }
@@ -2500,7 +2500,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3151_2
                 || compoundButton.getId() == R.id.rb_C3151_DK) {
 
-            if (rb_C3151_2.isChecked() || rb_C3151_DK.isChecked()) {
+            if (rb_C3151_1.isChecked()) {
 
                 ll_C3152_u.setVisibility(View.VISIBLE);
                 ll_C3152_a.setVisibility(View.VISIBLE);
@@ -2644,12 +2644,21 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_C3161_1.isChecked()) {
 
                 ll_C3162.setVisibility(View.VISIBLE);
+                ll_C3163_u.setVisibility(View.VISIBLE);
+                ll_C3163_a.setVisibility(View.VISIBLE);
+                ll_C3163_b.setVisibility(View.VISIBLE);
 
             } else {
 
                 ClearAllcontrol.ClearAll(ll_C3162);
+                ClearAllcontrol.ClearAll(ll_C3163_u);
+                ClearAllcontrol.ClearAll(ll_C3163_a);
+                ClearAllcontrol.ClearAll(ll_C3163_b);
 
                 ll_C3162.setVisibility(View.GONE);
+                ll_C3163_u.setVisibility(View.GONE);
+                ll_C3163_a.setVisibility(View.GONE);
+                ll_C3163_b.setVisibility(View.GONE);
             }
         }
 

@@ -8,9 +8,9 @@ import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,19 +35,19 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
             ll_C3471,
             ll_C3472;
 
-    RadioButton
-            rb_C3472_1,
-            rb_C3472_2,
-            rb_C3472_3,
-            rb_C3472_4,
-            rb_C3472_5,
-            rb_C3472_6,
-            rb_C3472_7,
-            rb_C3472_8,
-            rb_C3472_9,
-            rb_C3472_10,
-            rb_C3472_11,
-            rb_C3472_DK;
+    CheckBox
+            cb_C3472_1,
+            cb_C3472_2,
+            cb_C3472_3,
+            cb_C3472_4,
+            cb_C3472_5,
+            cb_C3472_6,
+            cb_C3472_7,
+            cb_C3472_8,
+            cb_C3472_9,
+            cb_C3472_10,
+            cb_C3472_11,
+            cb_C3472_DK;
 
     EditText
             ed_study_id,
@@ -57,7 +57,18 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
     String
             study_id,
             C3471,
-            C3472,
+            C3472_1,
+            C3472_2,
+            C3472_3,
+            C3472_4,
+            C3472_5,
+            C3472_6,
+            C3472_7,
+            C3472_8,
+            C3472_9,
+            C3472_10,
+            C3472_11,
+            C3472_DK,
             STATUS;
 
     int currentSection;
@@ -168,18 +179,18 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
         // Radio Buttons
 
-        rb_C3472_1 = findViewById(R.id.rb_C3472_1);
-        rb_C3472_2 = findViewById(R.id.rb_C3472_2);
-        rb_C3472_3 = findViewById(R.id.rb_C3472_3);
-        rb_C3472_4 = findViewById(R.id.rb_C3472_4);
-        rb_C3472_5 = findViewById(R.id.rb_C3472_5);
-        rb_C3472_6 = findViewById(R.id.rb_C3472_6);
-        rb_C3472_7 = findViewById(R.id.rb_C3472_7);
-        rb_C3472_8 = findViewById(R.id.rb_C3472_8);
-        rb_C3472_9 = findViewById(R.id.rb_C3472_9);
-        rb_C3472_10 = findViewById(R.id.rb_C3472_10);
-        rb_C3472_11 = findViewById(R.id.rb_C3472_11);
-        rb_C3472_DK = findViewById(R.id.rb_C3472_DK);
+        cb_C3472_1 = findViewById(R.id.cb_C3472_1);
+        cb_C3472_2 = findViewById(R.id.cb_C3472_2);
+        cb_C3472_3 = findViewById(R.id.cb_C3472_3);
+        cb_C3472_4 = findViewById(R.id.cb_C3472_4);
+        cb_C3472_5 = findViewById(R.id.cb_C3472_5);
+        cb_C3472_6 = findViewById(R.id.cb_C3472_6);
+        cb_C3472_7 = findViewById(R.id.cb_C3472_7);
+        cb_C3472_8 = findViewById(R.id.cb_C3472_8);
+        cb_C3472_9 = findViewById(R.id.cb_C3472_9);
+        cb_C3472_10 = findViewById(R.id.cb_C3472_10);
+        cb_C3472_11 = findViewById(R.id.cb_C3472_11);
+        cb_C3472_DK = findViewById(R.id.cb_C3472_DK);
 
 
         ed_C3471 = findViewById(R.id.ed_C3471);
@@ -188,8 +199,20 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     void value_assignment() {
 
-        C3471 = "000";
-        C3472 = "000";
+        C3471   = "000";
+        C3472_1 = "000";
+        C3472_2 = "000";
+        C3472_3 = "000";
+        C3472_4 = "000";
+        C3472_5 = "000";
+        C3472_6 = "000";
+        C3472_7 = "000";
+        C3472_8 = "000";
+        C3472_9 = "000";
+        C3472_10 = "000";
+        C3472_11 = "000";
+        C3472_DK = "000";
+
         STATUS = "0";
 
         if (ed_study_id.getText().toString().length() > 0) {
@@ -201,30 +224,52 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
             C3471 = ed_C3471.getText().toString().trim();
         }
 
-        if (rb_C3472_1.isChecked()) {
-            C3472 = "1";
-        } else if (rb_C3472_2.isChecked()) {
-            C3472 = "2";
-        } else if (rb_C3472_3.isChecked()) {
-            C3472 = "3";
-        } else if (rb_C3472_4.isChecked()) {
-            C3472 = "4";
-        } else if (rb_C3472_5.isChecked()) {
-            C3472 = "5";
-        } else if (rb_C3472_6.isChecked()) {
-            C3472 = "6";
-        } else if (rb_C3472_7.isChecked()) {
-            C3472 = "7";
-        } else if (rb_C3472_8.isChecked()) {
-            C3472 = "8";
-        } else if (rb_C3472_9.isChecked()) {
-            C3472 = "9";
-        } else if (rb_C3472_10.isChecked()) {
-            C3472 = "10";
-        } else if (rb_C3472_11.isChecked()) {
-            C3472 = "11";
-        } else if (rb_C3472_DK.isChecked()) {
-            C3472 = "99";
+        if (cb_C3472_1.isChecked()) {
+            C3472_1 = "1";
+        }
+
+        if (cb_C3472_2.isChecked()) {
+            C3472_2 = "1";
+        }
+
+        if (cb_C3472_3.isChecked()) {
+            C3472_3 = "1";
+        }
+
+        if (cb_C3472_4.isChecked()) {
+            C3472_4 = "1";
+        }
+
+        if (cb_C3472_5.isChecked()) {
+            C3472_5 = "1";
+        }
+
+        if (cb_C3472_6.isChecked()) {
+            C3472_6 = "1";
+        }
+
+        if (cb_C3472_7.isChecked()) {
+            C3472_7 = "1";
+        }
+
+        if (cb_C3472_8.isChecked()) {
+            C3472_8 = "1";
+        }
+
+        if (cb_C3472_9.isChecked()) {
+            C3472_9 = "1";
+        }
+
+        if (cb_C3472_10.isChecked()) {
+            C3472_10 = "1";
+        }
+
+        if (cb_C3472_11.isChecked()) {
+            C3472_11 = "1";
+        }
+
+        if (cb_C3472_DK.isChecked()) {
+            C3472_DK = "1";
         }
     }
 
@@ -232,12 +277,34 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
         String query = "insert into   C3471_C3472("
                 + Global.C.C3471_C3472.study_id + ","
                 + Global.C.C3471_C3472.C3471 + ","
-                + Global.C.C3471_C3472.C3472 + ","
+                + Global.C.C3471_C3472.C3472_1 + ","
+                + Global.C.C3471_C3472.C3472_2 + ","
+                + Global.C.C3471_C3472.C3472_3 + ","
+                + Global.C.C3471_C3472.C3472_4 + ","
+                + Global.C.C3471_C3472.C3472_5 + ","
+                + Global.C.C3471_C3472.C3472_6 + ","
+                + Global.C.C3471_C3472.C3472_7 + ","
+                + Global.C.C3471_C3472.C3472_8 + ","
+                + Global.C.C3471_C3472.C3472_9 + ","
+                + Global.C.C3471_C3472.C3472_10 + ","
+                + Global.C.C3471_C3472.C3472_11 + ","
+                + Global.C.C3471_C3472.C3472_DK + ","
                 + Global.C.C3471_C3472.STATUS + ") values ('" +
 
                 study_id + "','" +
                 C3471 + "','" +
-                C3472 + "','" +
+                C3472_1 + "','" +
+                C3472_2 + "','" +
+                C3472_3 + "','" +
+                C3472_4 + "','" +
+                C3472_5 + "','" +
+                C3472_6 + "','" +
+                C3472_7 + "','" +
+                C3472_8 + "','" +
+                C3472_9 + "','" +
+                C3472_10 + "','" +
+                C3472_11 + "','" +
+                C3472_DK + "','" +
                 STATUS + "')";
 
 

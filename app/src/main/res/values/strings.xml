@@ -2412,7 +2412,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="txt_C3414">C3414: In an emergency, how long would it take to reach the nearest health facility from (this / that) location?	</string>
     <string name="txt_C3451">C3451: In the 12 months before (NAME) death, did the people in the (village / neighborhood) work together on any of the following issues that affect the entire community or part of the community?	</string>
 
-    <string name="txt_C3451_1">C3451_1: Education/schools 	</string>
+    <string name="txt_C3451_1">C3451_1: Education/schools</string>
     <string name="txt_C3451_2">C3451_2: Health services/clinics 	</string>
     <string name="txt_C3451_3">C3451_3: Paid job opportunities 	</string>
     <string name="txt_C3451_4">C3451_4: Credit/finance 	</string>
@@ -3705,18 +3705,18 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="rb_C3457_2">No	</string>
     <string name="rb_C3457_DK">Don’t know	</string>
     <string name="rb_C3457_RA">Refused to answer	</string>
-    <string name="rb_C3472_1">Abdomen 	</string>
-    <string name="rb_C3472_2">Cancer 	</string>
-    <string name="rb_C3472_3">Dehydration 	</string>
-    <string name="rb_C3472_4">Dengue fever 	</string>
-    <string name="rb_C3472_5">Diarrhea 	</string>
-    <string name="rb_C3472_6">Fever 	</string>
-    <string name="rb_C3472_7">Heart problems 	</string>
-    <string name="rb_C3472_8">Jaundice (yellow skin or eyes) 	</string>
-    <string name="rb_C3472_9">Pneumonia 	</string>
-    <string name="rb_C3472_10">Rash 	</string>
-    <string name="rb_C3472_11">None of the above words were mentioned 	</string>
-    <string name="rb_C3472_DK">DK 	</string>
+    <string name="cb_C3472_1">Abdomen 	</string>
+    <string name="cb_C3472_2">Cancer 	</string>
+    <string name="cb_C3472_3">Dehydration 	</string>
+    <string name="cb_C3472_4">Dengue fever 	</string>
+    <string name="cb_C3472_5">Diarrhea 	</string>
+    <string name="cb_C3472_6">Fever 	</string>
+    <string name="cb_C3472_7">Heart problems 	</string>
+    <string name="cb_C3472_8">Jaundice (yellow skin or eyes) 	</string>
+    <string name="cb_C3472_9">Pneumonia 	</string>
+    <string name="cb_C3472_10">Rash 	</string>
+    <string name="cb_C3472_11">None of the above words were mentioned 	</string>
+    <string name="cb_C3472_DK">DK 	</string>
 
 
     <string name="yes">Yes</string>
