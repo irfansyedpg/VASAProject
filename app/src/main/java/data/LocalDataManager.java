@@ -37,7 +37,7 @@ public class LocalDataManager {
 
         try {
 
-            String query = "select study_id, currentSection from Q1101_Q1610 where currentSection = 111 and STATUS = '%s' order by id ASC";
+            String query = "select study_id, interviewType, currentSection from Q1101_Q1610 where currentSection = 111 and STATUS = '%s' order by id ASC";
             query = String.format(query, status);
 
             database.beginTransaction();

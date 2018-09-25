@@ -1258,6 +1258,11 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         STATUS = "0";
 
 
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
+
         //A4251
         if (rb_A4251_1.isChecked()) {
             A4251 = "1";

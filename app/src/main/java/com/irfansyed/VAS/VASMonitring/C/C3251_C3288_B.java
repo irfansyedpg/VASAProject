@@ -23,10 +23,8 @@ public class C3251_C3288_B extends AppCompatActivity {
 
     String study_id;
 
-    static int count = 1;
+    static int count = 1, counter = 1;
     C3251C3288BBinding bi;
-
-    static int start = 0, mid = 0, end = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,42 +46,47 @@ public class C3251_C3288_B extends AppCompatActivity {
 
     public void SetContentUI() {
 
-        if (count == 1) {
-            bi.llC32533E2A.setVisibility(View.VISIBLE); //ll_C3253_3E_2A
-        } else {
-            bi.llC32533E2A.setVisibility(View.GONE); //ll_C3253_3E_2A
-        }
-
-        if (count == 9) {
-            bi.btnAddMore.setVisibility(View.GONE);
-        }
+        bi.btnContinue.setEnabled(false);
 
         DBHelper db = new DBHelper(this);
 
-        switch (count) {
+        if (count == 1) {
+            bi.llC32533E2A.setVisibility(View.VISIBLE); //ll_C3253_3E_2A
 
-            case 1:
-                bi.rbC325312.setEnabled(false);
-                bi.rbC325313.setEnabled(false);
-                break;
-            case 2:
-                bi.rbC325313.setEnabled(false);
-                break;
-            case 3:
-                String c32531 = db.getSpecificData(data.C.C3251_C3288_B.TABLE_NAME, bi.edStudyId.getText().toString(), Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_1);
-                if (Integer.valueOf(c32531) == 2) {
-                    bi.rbC325311.setEnabled(false);
-                } else {
+            bi.rbC325312.setEnabled(false);
+            bi.rbC325313.setEnabled(false);
+        } else {
+            bi.llC32533E2A.setVisibility(View.GONE); //ll_C3253_3E_2A
+
+            if (count == 9) {
+                bi.btnAddMore.setVisibility(View.GONE);
+            }
+
+            String c32531 = db.getSpecificData(data.C.C3251_C3288_B.TABLE_NAME, bi.edStudyId.getText().toString(), Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_1);
+            switch (Integer.valueOf(c32531)) {
+                case 1:
                     bi.rbC325313.setEnabled(false);
-                }
-                break;
-            case 4:
-                bi.rbC325311.setEnabled(false);
-                break;
-            case 7:
-                bi.rbC325311.setEnabled(false);
-                bi.rbC325312.setEnabled(false);
-                break;
+
+                    if (count == 4){
+                        bi.rbC325311.setEnabled(false);
+                    }
+
+                    break;
+                case 2:
+                    bi.rbC325311.setEnabled(false);
+
+                    if (count == 7){
+                        bi.rbC325312.setEnabled(false);
+                    }
+
+                    break;
+                case 3:
+                    count = 8;
+                    bi.rbC325311.setEnabled(false);
+                    bi.rbC325312.setEnabled(false);
+                    break;
+
+            }
         }
 
         bi.rgC32531.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -91,8 +94,6 @@ public class C3251_C3288_B extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == bi.rbC325313.getId()) {
                     bi.btnContinue.setEnabled(true);
-                } else {
-                    bi.btnContinue.setEnabled(false);
                 }
             }
         });
@@ -104,6 +105,7 @@ public class C3251_C3288_B extends AppCompatActivity {
             if (SaveData()) {
 
                 count = 1;
+                counter = 1;
 
                 startActivity(new Intent(this, C3251_C3288_C.class)
                         .putExtra("study_id", bi.edStudyId.getText().toString()));
@@ -124,26 +126,12 @@ public class C3251_C3288_B extends AppCompatActivity {
                 : bi.rbC3253A5.isChecked() ? "5" : bi.rbC3253A6.isChecked() ? "6" : bi.rbC3253A7.isChecked() ? "7" : "0");
         c3251B.setC32532a(bi.cbC32533E2A.isChecked() ? "1" : "0");
         c3251B.setC32534(bi.edC32534.getText().toString());
-        c3251B.setACT_COUNT(String.valueOf(count));
+        c3251B.setACT_COUNT(String.valueOf(counter));
         c3251B.setACT_ID_FK(String.valueOf(c3251A_ID));
 
         c3251B.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
         Long row = db.add_C3251_B(c3251B);
-
-        /*switch (bi.rgC32531.getCheckedRadioButtonId()) {
-
-            case 1:
-                start++;
-                break;
-            case 2:
-                mid++;
-                break;
-            case 3:
-                end++;
-                break;
-
-        }*/
 
         return row != 0;
     }
@@ -153,6 +141,7 @@ public class C3251_C3288_B extends AppCompatActivity {
 
             if (SaveData()) {
                 count++;
+                counter++;
                 finish();
                 startActivity(new Intent(this, C3251_C3288_B.class)
                         .putExtra("study_id", bi.edStudyId.getText().toString()));
