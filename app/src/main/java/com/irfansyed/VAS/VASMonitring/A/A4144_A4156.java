@@ -255,11 +255,11 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
 
         if (res.getCount() > 0) {
 
-            Toast.makeText(this, "" + parseInt(res.getString(62)), Toast.LENGTH_LONG).show();
+            //Toast.makeText(this, "" + parseInt(res.getString(68)), Toast.LENGTH_LONG).show();
 
             res.moveToFirst();
 
-            if (parseInt(res.getString(62)) == 1) {
+            if (parseInt(res.getString(68)) == 1) {
 
                 Intent c = new Intent(this, A4206_A4207.class);
                 c.putExtra("study_id", study_id);
