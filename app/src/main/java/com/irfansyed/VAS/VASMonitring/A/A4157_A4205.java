@@ -1536,6 +1536,8 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
 
         ed_A4178_1.setFilters(new InputFilter[]{new InputFilterMinMax(1, 10, 99, 99)});
 
+        ed_A4180.addTextChangedListener(generalTextWatcher);
+
     }
 
     void value_assignment() {
