@@ -2102,10 +2102,10 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="txt_C3111">C3111: Did (NAME) ever receive any vaccinations to prevent her/him from getting diseases, including vaccinations received in a national immunization day campaign?	</string>
     <string name="txt_C3111_1">C3111_1: A DPT vaccination, that is, an injection in the thighs or buttocks, sometimes given at the same time as polio drops or a Hep B vaccination?	</string>
     <string name="txt_C3111_2">C3111_2: How many times was a DPT vaccination received?	</string>
-    <string name="txt_C3111_3">C3111_3: How many times was a PENTA vaccination received?	</string>
-    <string name="txt_C3111_4">C3111_4: A Pneumococcal (PCV) vaccination, that is, an injection in the shoulder or thigh at the age of 6 weeks or older?	</string>
-    <string name="txt_C3111_5">C3111_5: How many times was a PCV vaccination received?	</string>
-    <string name="txt_C3111_6">C3111_6: A rotavirus vaccination, that is, a liquid medication given by putting drops in the baby’s mouth, sometimes given around the same time as polio drops or a Hep B vaccination?	</string>
+    <string name="txt_C3111_3">C3111_3: A PENTA vaccination, that is, an injection in the thighs or buttocks instead of a Hep B or DPT vaccination, sometimes given at the same time as polio drops?</string>
+    <string name="txt_C3111_4">C3111_4: How many times was a PENTA vaccination received?</string>
+    <string name="txt_C3111_5">C3111_5: A Pneumococcal (PCV) vaccination, that is, an injection in the shoulder or thigh at the age of 6 weeks or older?</string>
+    <string name="txt_C3111_6">C3111_6: How many times was a PCV vaccination received?</string>
     <string name="txt_C3111_7">C3111_7: A measles or MMR injection, that is, a shot in the arm at the age of 9 months or older, to prevent measles?</string>
     <string name="txt_C3111_8">C3111_8: A rotavirus vaccination, that is, a liquid medication given by putting drops in the baby’s mouth, sometimes given around the same time as polio drops or a Hep B vaccination?	</string>
     <string name="txt_C3111_9">C3111_9: How many times was a rotavirus vaccination received?</string>
