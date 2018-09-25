@@ -8,6 +8,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -292,6 +293,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             rb_Q1609_4,
             rb_Q1609_5;
 
+    CheckBox cb_Q1607_conflict;
+
     EditText
             ed_study_id,
             ed_Q1201_1,
@@ -460,6 +463,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ll_Q1503_OT.setVisibility(View.GONE);
         ll_Q1604_OT.setVisibility(View.GONE);
 
+        ll_Q1608.setVisibility(View.GONE);
+
         //rb_Q1207_1.setEnabled(false);
         //rb_Q1207_2.setEnabled(false);
         //rb_Q1207_DK.setEnabled(false);
@@ -508,7 +513,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         if (res.getCount() > 0) {
 
-            Toast.makeText(this, ""+ res.getColumnIndex(Global.GS.Q1101_Q1610.Q1609), Toast.LENGTH_LONG).show();
+            //String Q1609_value = Global.GS.Q1101_Q1610.Q1609;
+
+            //Toast.makeText(this, "" + res.getColumnIndex("Q1609"), Toast.LENGTH_LONG).show();
 
             res.moveToFirst();
 
@@ -518,19 +525,19 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            }  else if (parseInt(res.getString(81)) == 2) {
+            } else if (parseInt(res.getString(81)) == 2) {
 
                 Intent c = new Intent(this, C3001_C3011.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            } else if (parseInt(res.getString(81)) == 3 || parseInt(res.getString(81)) == 4){
+            } else if (parseInt(res.getString(81)) == 3 || parseInt(res.getString(81)) == 4) {
 
                 Intent c = new Intent(this, C3012_C3022.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            } else if (parseInt(res.getString(81)) == 1){
+            } else if (parseInt(res.getString(81)) == 1) {
 
                 Intent c = new Intent(this, N2001_N2011.class);
                 c.putExtra("study_id", study_id);
@@ -794,11 +801,15 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         rb_Q1604_DK = findViewById(R.id.rb_Q1604_DK);
         rb_Q1605_1 = findViewById(R.id.rb_Q1605_1);
         rb_Q1605_2 = findViewById(R.id.rb_Q1605_2);
+
         rb_Q1609_1 = findViewById(R.id.rb_Q1609_1);
         rb_Q1609_2 = findViewById(R.id.rb_Q1609_2);
         rb_Q1609_3 = findViewById(R.id.rb_Q1609_3);
         rb_Q1609_4 = findViewById(R.id.rb_Q1609_4);
         rb_Q1609_5 = findViewById(R.id.rb_Q1609_5);
+
+
+        cb_Q1607_conflict = findViewById(R.id.cb_Q1607_conflict);
 
 
         ed_study_id = findViewById(R.id.ed_study_id);
@@ -962,6 +973,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         rb_Q1602_DK.setOnCheckedChangeListener(this);
         rb_Q1605_1.setOnCheckedChangeListener(this);
         rb_Q1605_2.setOnCheckedChangeListener(this);
+
+        cb_Q1607_conflict.setOnCheckedChangeListener(this);
+
         rb_Q1609_1.setOnCheckedChangeListener(this);
         rb_Q1609_2.setOnCheckedChangeListener(this);
         rb_Q1609_3.setOnCheckedChangeListener(this);
@@ -1000,47 +1014,54 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
-                if (!ed_Q1206_d.getText().toString().isEmpty()
-                        && !ed_Q1206_m.getText().toString().isEmpty()
-                        && !ed_Q1206_y.getText().toString().isEmpty()) {
 
-                    if (Integer.valueOf(ed_Q1206_y.getText().toString()) > 12 ||
-                            (Integer.valueOf(ed_Q1206_y.getText().toString()) == 12 &&
-                                    (Integer.valueOf(ed_Q1206_d.getText().toString()) > 0 || Integer.valueOf(ed_Q1206_m.getText().toString()) > 0))) {
+                if (ed_Q1204.getText().toString().length() == 10 && ed_Q1205.getText().toString().length() == 10) {
 
-                        ClearAllcontrol.ClearAll(ll_Q1207);
-                        ClearAllcontrol.ClearAll(ll_Q1208);
+                    if (!ed_Q1206_d.getText().toString().isEmpty()
+                            || !ed_Q1206_m.getText().toString().isEmpty()
+                            || !ed_Q1206_y.getText().toString().isEmpty()) {
 
-                        ll_Q1207.setVisibility(View.GONE);
-                        ll_Q1208.setVisibility(View.GONE);
+                        if (!ed_Q1206_y.getText().toString().isEmpty()
+                                && Integer.valueOf(ed_Q1206_y.getText().toString().trim()) >= 12) {
 
-                    } else if ((Integer.valueOf(ed_Q1206_y.getText().toString()) > 0 &&
-                            Integer.valueOf(ed_Q1206_y.getText().toString()) < 12) ||
-                            Integer.valueOf(ed_Q1206_m.getText().toString()) > 0 ||
-                            Integer.valueOf(ed_Q1206_d.getText().toString()) > 0) {
+                            ClearAllcontrol.ClearAll(ll_Q1207);
+                            ClearAllcontrol.ClearAll(ll_Q1208);
 
-                        ClearAllcontrol.ClearAll(ll_Q1207);
-                        ll_Q1207.setVisibility(View.GONE);
+                            ll_Q1207.setVisibility(View.GONE);
+                            ll_Q1208.setVisibility(View.GONE);
 
-                        ll_Q1208.setVisibility(View.VISIBLE);
+                        } else if ((!ed_Q1206_y.getText().toString().isEmpty()
+                                && Integer.valueOf(ed_Q1206_y.getText().toString().trim()) > 0
+                                && Integer.valueOf(ed_Q1206_y.getText().toString().trim()) < 12)
+                                || ((!ed_Q1206_d.getText().toString().isEmpty()
+                                && parseInt(ed_Q1206_d.getText().toString().trim()) > 0)
+                                || (!ed_Q1206_m.getText().toString().isEmpty()
+                                && parseInt(ed_Q1206_m.getText().toString().trim()) > 0))) {
 
-                    } else if ((Integer.valueOf(ed_Q1206_d.getText().toString().trim()) == 0 &&
-                            Integer.valueOf(ed_Q1206_m.getText().toString().trim()) == 0 &&
-                            Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 0) ||
-                            (Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 99 ||
-                                    Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 99 ||
-                                    Integer.valueOf(ed_Q1206_y.getText().toString().trim()) == 9999)) {
+                            ClearAllcontrol.ClearAll(ll_Q1207);
+                            ll_Q1207.setVisibility(View.GONE);
+
+                            ll_Q1208.setVisibility(View.VISIBLE);
+
+                        } else {
+
+                            ll_Q1207.setVisibility(View.VISIBLE);
+                            ll_Q1208.setVisibility(View.VISIBLE);
+                        }
+                    } else {
 
                         ll_Q1207.setVisibility(View.VISIBLE);
                         ll_Q1208.setVisibility(View.VISIBLE);
                     }
                 }
 
+
                 if (!ed_Q1409.getText().toString().isEmpty()) {
 
                     if (Integer.valueOf(ed_Q1409.getText().toString()) > 6) {
 
                         ll_Q1410.setVisibility(View.GONE);
+
                     } else {
 
                         ll_Q1410.setVisibility(View.VISIBLE);
@@ -1059,6 +1080,10 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1206_y.addTextChangedListener(txtWatcher);
 
         ed_Q1409.addTextChangedListener(txtWatcher);
+
+        ed_Q1206_d.addTextChangedListener(txtWatcher);
+        ed_Q1206_m.addTextChangedListener(txtWatcher);
+        ed_Q1206_y.addTextChangedListener(txtWatcher);
     }
 
     @Override
@@ -1415,93 +1440,107 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 ll_Q1610.setVisibility(View.GONE);
             }
         }
+
+
+        if (compoundButton.getId() == R.id.cb_Q1607_conflict) {
+
+            if (cb_Q1607_conflict.isChecked()) {
+
+                ll_Q1608.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ClearAllcontrol.ClearAll(ll_Q1608);
+                ll_Q1608.setVisibility(View.GONE);
+            }
+        }
     }
 
     void value_assignment() {
 
-        Q1201_1        = "-1";
-        Q1201_2        = "-1";
-        Q1201_3        = "-1";
-        Q1201_4        = "-1";
-        Q1201_5        = "-1";
-        Q1201_6        = "-1";
-        Q1202          = "-1";
-        Q1203          = "-1";
-        Q1204          = "-1";
-        Q1205          = "-1";
-        Q1206_d        = "-1";
-        Q1206_m        = "-1";
-        Q1206_y        = "-1";
-        Q1207          = "-1";
-        Q1208          = "-1";
-        Q1209          = "-1";
-        Q1301          = "-1";
-        Q1302          = "-1";
-        Q1309          = "-1";
-        Q1310          = "-1";
-        Q1311          = "-1";
-        Q1312          = "-1";
-        Q1313          = "-1";
-        Q1401          = "-1";
-        Q1402          = "-1";
-        Q1403          = "-1";
-        Q1403_OT       = "-1";
-        Q1404          = "-1";
-        Q1405          = "-1";
-        Q1406          = "-1";
-        Q1407          = "-1";
-        Q1408          = "-1";
-        Q1409          = "-1";
-        Q1410          = "-1";
-        Q1411          = "-1";
-        Q1412          = "-1";
-        Q1413          = "-1";
-        Q1414_1        = "-1";
-        Q1414_2        = "-1";
-        Q1414_3        = "-1";
-        Q1414_4        = "-1";
-        Q1414_5        = "-1";
-        Q1414_6        = "-1";
-        Q1414_7        = "-1";
-        Q1414_8        = "-1";
-        Q1414_9        = "-1";
-        Q1414_10       = "-1";
-        Q1415          = "-1";
-        Q1416          = "-1";
-        Q1416_OT       = "-1";
-        Q1417          = "-1";
-        Q1417_OT       = "-1";
-        Q1418          = "-1";
-        Q1418_OT       = "-1";
-        Q1419          = "-1";
-        Q1419_OT       = "-1";
-        Q1420          = "-1";
-        Q1420_OT       = "-1";
-        Q1421          = "-1";
-        Q1421_OT       = "-1";
-        Q1501          = "-1";
-        Q1502          = "-1";
-        Q1503          = "-1";
-        Q1503_OT       = "-1";
-        Q1601          = "-1";
-        Q1602          = "-1";
-        Q1603          = "-1";
-        Q1604          = "-1";
-        Q1604_OT       = "-1";
-        Q1605          = "-1";
-        Q1606          = "-1";
-        Q1607_1        = "-1";
-        Q1607_2        = "-1";
-        Q1607_3        = "-1";
-        Q1608_1        = "-1";
-        Q1608_2        = "-1";
-        Q1608_3        = "-1";
-        Q1609          = "-1";
-        Q1610_1        = "-1";
-        Q1610_2        = "-1";
-        Q1610_3        = "-1";
-        STATUS         = "0";
-        interviewType  = -1;
+        Q1201_1 = "-1";
+        Q1201_2 = "-1";
+        Q1201_3 = "-1";
+        Q1201_4 = "-1";
+        Q1201_5 = "-1";
+        Q1201_6 = "-1";
+        Q1202 = "-1";
+        Q1203 = "-1";
+        Q1204 = "-1";
+        Q1205 = "-1";
+        Q1206_d = "-1";
+        Q1206_m = "-1";
+        Q1206_y = "-1";
+        Q1207 = "-1";
+        Q1208 = "-1";
+        Q1209 = "-1";
+        Q1301 = "-1";
+        Q1302 = "-1";
+        Q1309 = "-1";
+        Q1310 = "-1";
+        Q1311 = "-1";
+        Q1312 = "-1";
+        Q1313 = "-1";
+        Q1401 = "-1";
+        Q1402 = "-1";
+        Q1403 = "-1";
+        Q1403_OT = "-1";
+        Q1404 = "-1";
+        Q1405 = "-1";
+        Q1406 = "-1";
+        Q1407 = "-1";
+        Q1408 = "-1";
+        Q1409 = "-1";
+        Q1410 = "-1";
+        Q1411 = "-1";
+        Q1412 = "-1";
+        Q1413 = "-1";
+        Q1414_1 = "-1";
+        Q1414_2 = "-1";
+        Q1414_3 = "-1";
+        Q1414_4 = "-1";
+        Q1414_5 = "-1";
+        Q1414_6 = "-1";
+        Q1414_7 = "-1";
+        Q1414_8 = "-1";
+        Q1414_9 = "-1";
+        Q1414_10 = "-1";
+        Q1415 = "-1";
+        Q1416 = "-1";
+        Q1416_OT = "-1";
+        Q1417 = "-1";
+        Q1417_OT = "-1";
+        Q1418 = "-1";
+        Q1418_OT = "-1";
+        Q1419 = "-1";
+        Q1419_OT = "-1";
+        Q1420 = "-1";
+        Q1420_OT = "-1";
+        Q1421 = "-1";
+        Q1421_OT = "-1";
+        Q1501 = "-1";
+        Q1502 = "-1";
+        Q1503 = "-1";
+        Q1503_OT = "-1";
+        Q1601 = "-1";
+        Q1602 = "-1";
+        Q1603 = "-1";
+        Q1604 = "-1";
+        Q1604_OT = "-1";
+        Q1605 = "-1";
+        Q1606 = "-1";
+        Q1607_1 = "-1";
+        Q1607_2 = "-1";
+        Q1607_3 = "-1";
+        Q1608_1 = "-1";
+        Q1608_2 = "-1";
+        Q1608_3 = "-1";
+        Q1609 = "-1";
+        Q1610_1 = "-1";
+        Q1610_2 = "-1";
+        Q1610_3 = "-1";
+        STATUS = "0";
+        interviewType = -1;
         currentSection = 1;
 
         if (ed_study_id.getText().toString().length() > 0) {
@@ -1533,8 +1572,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         if (ed_Q1201_6.getText().toString().trim().length() > 0) {
             Q1201_6 = ed_Q1201_6.getText().toString().trim();
         }
-
-
 
 
         if (ed_Q1202.getText().toString().trim().length() > 0) {
@@ -1597,12 +1634,12 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         String formattedDate = dt.format(cdt.getTime());
         String[] dtf = formattedDate.split(" ");
 
-        if (dtf[0].length() > 0){
+        if (dtf[0].length() > 0) {
 
             Q1307 = dtf[0].trim();
         }
 
-        if (dtf[1].length() > 0){
+        if (dtf[1].length() > 0) {
 
             Q1308 = dtf[1].trim();
         }
@@ -2063,7 +2100,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             Q1607_2 = ed_Q1607_2.getText().toString().trim();
         }
         if (ed_Q1607_3.getText().toString().trim().length() > 0) {
-            Q1607_3 =  ed_Q1607_3.getText().toString().trim();
+            Q1607_3 = ed_Q1607_3.getText().toString().trim();
         }
 
 
@@ -2372,7 +2409,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             mYearDiff = parseInt(dod_year) - parseInt(dob_year);
         }
 
-        if (parseInt(dob_month) == 99 || parseInt(dod_month) == 99){
+        if (parseInt(dob_month) == 99 || parseInt(dod_month) == 99) {
 
             mMonDiff = 0;
 
@@ -2436,12 +2473,11 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
                 int[] Age = calculateAge(dob, dod);
 
-                int days   = Age[0];
+                int days = Age[0];
                 int months = Age[1];
-                int years  = Age[2];
+                int years = Age[2];
 
-
-
+                // Force assigning values from here start
                 if (years >= 2) {
 
                     ed_Q1206_d.setText("0");
@@ -2450,17 +2486,17 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
                 } else {
 
-                    if(months > 0){
+                    months = (years * 12) + months;
 
-                        months = (years * 12) + months;
+                    if (months > 0 && months <= 24) {
 
                         ed_Q1206_d.setText("0");
                         ed_Q1206_m.setText(String.valueOf(months));
                         ed_Q1206_y.setText("0");
 
-                    } else if (months == 0){
+                    } else if (months == 0) {
 
-                        if (days < 28){
+                        if (days < 28) {
 
                             ed_Q1206_d.setText(String.valueOf(days));
                             ed_Q1206_m.setText("0");
@@ -2474,12 +2510,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                         }
                     }
                 }
-
-
-
-
-
-
+                // Force assigning values end
 
                 ed_Q1206_d.setEnabled(false);
                 ed_Q1206_m.setEnabled(false);
@@ -2512,13 +2543,40 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 int months = Age[1];
                 int years = Age[2];
 
-                ed_Q1607_1.setText(String.valueOf(days));
-                ed_Q1607_2.setText(String.valueOf(months));
-                ed_Q1607_3.setText(String.valueOf(years));
+                // Force assigning values from here start
+                if (years >= 2) {
 
-                ed_Q1607_1.setEnabled(false);
-                ed_Q1607_2.setEnabled(false);
-                ed_Q1607_3.setEnabled(false);
+                    ed_Q1607_1.setText("0");
+                    ed_Q1607_2.setText("0");
+                    ed_Q1607_3.setText(String.valueOf(years));
+
+                } else {
+
+                    months = (years * 12) + months;
+
+                    if (months > 0 && months <= 24) {
+
+                        ed_Q1607_1.setText("0");
+                        ed_Q1607_2.setText(String.valueOf(months));
+                        ed_Q1607_3.setText("0");
+
+                    } else if (months == 0) {
+
+                        if (days < 28) {
+
+                            ed_Q1607_1.setText(String.valueOf(days));
+                            ed_Q1607_2.setText("0");
+                            ed_Q1607_3.setText("0");
+
+                        } else {
+
+                            ed_Q1607_1.setText("0");
+                            ed_Q1607_2.setText("1");
+                            ed_Q1607_3.setText("0");
+                        }
+                    }
+                }
+                // Force assigning values end
 
             } else {
 
