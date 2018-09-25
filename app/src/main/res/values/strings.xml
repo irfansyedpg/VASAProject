@@ -2057,7 +2057,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="txt_C3104">C3104: Was (NAME) ever breastfed? 	</string>
     <string name="txt_C3105">C3105: How long after birth was the baby first put to the breast?	</string>
     <string name="txt_C3106">C3106: Was (NAME) being breastfed on the day before the fatal illness began?	</string>
-    <string name="txt_C3107_1">C3107_1:	Plain water ?	</string>
+    <string name="txt_C3107_1">C3107_1:	On the day before the illness began was NAME being given any, Plain water?</string>
     <string name="txt_C3107_2">C3107_2:	Fruit juice or juice drinks ?	</string>
     <string name="txt_C3107_3">C3107_3:	Clear broth ?	</string>
     <string name="txt_C3107_4">C3107_4:	Milk (other than breast milk) ?	</string>
