@@ -1405,7 +1405,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         C3067_6 = "000";
         C3067_7 = "000";
         C3067_OT = "000";
-        C3065_DK = "000";
+        C3067_DK = "000";
         C3066 = "000";
         C3068 = "000";
         C3068_OT = "000";
