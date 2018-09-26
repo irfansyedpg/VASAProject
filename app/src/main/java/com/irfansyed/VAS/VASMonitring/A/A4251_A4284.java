@@ -29,8 +29,6 @@ import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 
-import static java.lang.Integer.parseInt;
-
 public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
     //Declaration Region
@@ -295,7 +293,8 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             cb_A4279_7,
             cb_A4279_DK;
 
-    String
+    String A4013m_flag,
+            A4013y_flag,
             study_id,
             A4251,
             A4253,
@@ -659,6 +658,23 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
         Initialization();
         events_call();
+
+        DBHelper db = new DBHelper(this);
+        Cursor res = db.getData("A4001_A4014", study_id);
+
+        if (res.getCount() > 0) {
+
+            //Toast.makeText(this, "" + res.getString(res.getColumnIndex("study_id")), Toast.LENGTH_LONG).show();
+            res.moveToFirst();
+            A4013m_flag = res.getString(16);
+            A4013y_flag = res.getString(17);
+
+            Toast.makeText(this, A4013y_flag, Toast.LENGTH_LONG).show();
+
+            Toast.makeText(this, A4013y_flag, Toast.LENGTH_LONG).show();
+
+
+        }
     }
 
     @Override
@@ -942,41 +958,33 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
             if (rb_A4251_1.isChecked()) {
 
-                DBHelper db = new DBHelper(this);
-                Cursor res = db.getData("A4001_A4014", study_id);
 
-                if (res.getCount() > 0) {
+                //Toast.makeText(this, "" + res.getString(res.getColumnIndex("study_id")), Toast.LENGTH_LONG).show();
 
-                    //Toast.makeText(this, "" + parseInt(res.getString(68)), Toast.LENGTH_LONG).show();
 
-                    res.moveToFirst();
+                if (Integer.valueOf(A4013m_flag) >= 11 || Integer.valueOf(A4013y_flag) >= 12) {
 
-                    if ((parseInt(res.getString(17)) >= 3) || (parseInt(res.getString(18)) >= 1)) {
+                    ll_A4252.setVisibility(View.VISIBLE);
 
-                        ll_A4252.setVisibility(View.VISIBLE);
+                } else {
 
-                    } else {
+                    ClearAllcontrol.ClearAll(ll_A4252);
 
-                        ClearAllcontrol.ClearAll(ll_A4252);
+                    lst_phase.clear();
+                    lst_action.clear();
+                    lst_symtomps.clear();
+                    lst_place.clear();
+                    b_place_where = false;
 
-                        lst_phase.clear();
-                        lst_action.clear();
-                        lst_symtomps.clear();
-                        lst_place.clear();
-                        b_place_where = false;
+                    A4252_start.setText("Start");
+                    A4252_mid.setText("Mid");
+                    A4252_End.setText("End");
+                    btn_addd.setText("Add");
 
-                        A4252_start.setText("Start");
-                        A4252_mid.setText("Mid");
-                        A4252_End.setText("End");
-                        btn_addd.setText("Add");
+                    ll_A4252.setVisibility(View.GONE);
 
-                        ll_A4252.setVisibility(View.GONE);
-
-                    }
                 }
-
-                ll_A4252.setVisibility(View.VISIBLE);
-                //   ll_A4252_1.setVisibility(View.VISIBLE);
+                //ll_A4252_1.setVisibility(View.VISIBLE);
                 ll_A4253.setVisibility(View.VISIBLE);
                 ll_A4254_2.setVisibility(View.VISIBLE);
                 ll_A4255.setVisibility(View.VISIBLE);
@@ -2193,8 +2201,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         A4252_3 = "0";
         A4252_4 = "0";
 
-        for (int i = 0; i < lst_phase.size(); i++)
-        {
+        for (int i = 0; i < lst_phase.size(); i++) {
             A4252_1 = lst_phase.get(i);
             A4252_2 = lst_action.get(i);
             A4252_3 = lst_place.get(i);
