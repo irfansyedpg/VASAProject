@@ -1,6 +1,7 @@
 package com.irfansyed.VAS.VASMonitring.A;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -23,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -30,6 +32,7 @@ import utils.Gothrough;
 public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
     //Declaration Region
+
     Boolean A4252_check;
 
     List<String> lst_phase = new ArrayList();
@@ -290,7 +293,8 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             cb_A4279_7,
             cb_A4279_DK;
 
-    String
+    String A4013m_flag,
+            A4013y_flag,
             study_id,
             A4251,
             A4253,
@@ -387,25 +391,9 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             A4284,
             STATUS;
 
-    //EndRegion Declaration
+    //Declaration
+
     Boolean b_place_where = false;
-    private TextWatcher generalTextWatcher = new TextWatcher() {
-
-        @Override
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-        }
-
-        @Override
-        public void onTextChanged(CharSequence s, int start, int count, int after) {
-
-        }
-
-        @Override
-        public void afterTextChanged(Editable s) {
-
-        }
-    };
 
     void Initialization() {
 
@@ -670,6 +658,23 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
         Initialization();
         events_call();
+
+        DBHelper db = new DBHelper(this);
+        Cursor res = db.getData("A4001_A4014", study_id);
+
+        if (res.getCount() > 0) {
+
+            //Toast.makeText(this, "" + res.getString(res.getColumnIndex("study_id")), Toast.LENGTH_LONG).show();
+            res.moveToFirst();
+            A4013m_flag = res.getString(16);
+            A4013y_flag = res.getString(17);
+
+            Toast.makeText(this, A4013y_flag, Toast.LENGTH_LONG).show();
+
+            Toast.makeText(this, A4013y_flag, Toast.LENGTH_LONG).show();
+
+
+        }
     }
 
     @Override
@@ -878,6 +883,24 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
     }
 
+    private TextWatcher generalTextWatcher = new TextWatcher() {
+
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+
+        }
+    };
+
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 
@@ -936,10 +959,36 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             ll_A4282.setVisibility(View.GONE);
             ll_A4283.setVisibility(View.GONE);
 
+
             if (rb_A4251_1.isChecked()) {
 
-                ll_A4252.setVisibility(View.VISIBLE);
-                //   ll_A4252_1.setVisibility(View.VISIBLE);
+
+                //Toast.makeText(this, "" + res.getString(res.getColumnIndex("study_id")), Toast.LENGTH_LONG).show();
+
+
+                if (Integer.valueOf(A4013m_flag) >= 11 || Integer.valueOf(A4013y_flag) >= 12) {
+
+                    ll_A4252.setVisibility(View.VISIBLE);
+
+                } else {
+
+                    ClearAllcontrol.ClearAll(ll_A4252);
+
+                    lst_phase.clear();
+                    lst_action.clear();
+                    lst_symtomps.clear();
+                    lst_place.clear();
+                    b_place_where = false;
+
+                    A4252_start.setText("Start");
+                    A4252_mid.setText("Mid");
+                    A4252_End.setText("End");
+                    btn_addd.setText("Add");
+
+                    ll_A4252.setVisibility(View.GONE);
+
+                }
+                //ll_A4252_1.setVisibility(View.VISIBLE);
                 ll_A4253.setVisibility(View.VISIBLE);
                 ll_A4254_2.setVisibility(View.VISIBLE);
                 ll_A4255.setVisibility(View.VISIBLE);
@@ -1261,6 +1310,11 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         A4284 = "-1";
         STATUS = "0";
 
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         //A4251
         if (rb_A4251_1.isChecked()) {
@@ -2151,8 +2205,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         A4252_3 = "0";
         A4252_4 = "0";
 
-        for (int i = 0; i < lst_phase.size(); i++)
-        {
+        for (int i = 0; i < lst_phase.size(); i++) {
             A4252_1 = lst_phase.get(i);
             A4252_2 = lst_action.get(i);
             A4252_3 = lst_place.get(i);

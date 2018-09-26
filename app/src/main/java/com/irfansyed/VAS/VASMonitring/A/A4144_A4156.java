@@ -1,6 +1,7 @@
 package com.irfansyed.VAS.VASMonitring.A;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputFilter;
@@ -14,10 +15,13 @@ import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.R;
 
+import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 import utils.InputFilterMinMax;
+
+import static java.lang.Integer.parseInt;
 
 public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -244,9 +248,36 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c = new Intent(A4144_A4156.this, A4157_A4205.class);
+        DBHelper db = new DBHelper(this);
+        Cursor res = db.getData("Q1101_Q1610", study_id);
+
+
+
+        if (res.getCount() > 0) {
+
+            //Toast.makeText(this, "" + parseInt(res.getString(68)), Toast.LENGTH_LONG).show();
+
+            res.moveToFirst();
+
+            if (parseInt(res.getString(68)) == 1) {
+
+                Intent c = new Intent(this, A4206_A4207.class);
+                c.putExtra("study_id", study_id);
+                startActivity(c);
+
+            } else {
+
+                Intent c = new Intent(this, A4157_A4205.class);
+                c.putExtra("study_id", study_id);
+                startActivity(c);
+
+            }
+        }
+
+
+        /*Intent c = new Intent(A4144_A4156.this, A4157_A4205.class);
         c.putExtra("study_id", study_id);
-        startActivity(c);
+        startActivity(c);*/
     }
 
     @Override

@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,15 +13,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
-import com.irfansyed.VAS.VASMonitring.C.C3471_C3472;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.util.Collections;
 import java.util.List;
 
+import Global.GS.Q1101_Q1610;
 import data.LocalDataManager;
-import data.UploadHouseInfoAsync;
+
+import static java.lang.Integer.parseInt;
 
 
 public class SurveyCompletedActivity extends AppCompatActivity {
@@ -45,7 +44,7 @@ public class SurveyCompletedActivity extends AppCompatActivity {
 
         Collections.sort(list);
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.list_survey_completed);
+        mRecyclerView = findViewById(R.id.list_survey_completed);
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
@@ -91,20 +90,23 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder b = new AlertDialog.Builder(mContext);
-                b.setTitle("Load Pending Interview");
-                b.setMessage("Do you want to reload this interview ");
+                b.setTitle("Upload Interview");
+                b.setMessage("Do you want to upload this interview ");
                 b.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
-                        String memberId = vh.textName.getText().toString();
+                        String memberId = vh.textName.getText().toString().trim();
 
 
                         String[] arrr = memberId.split("/");
 
-                         Global.C.C3001_C3011.study_id = arrr[0];
+                        Q1101_Q1610.study_id_upload      = arrr[0];
+                        Q1101_Q1610.interviewType_upload = parseInt(arrr[1]);
 
-                        new UploadHouseInfoAsync(mContext).execute();
+
+                        new Upload_Q1101_Q1610(mContext).execute();
+
                         //    new UploadSectionEAsync(mContext, "3").execute(); // irfan
 
 
@@ -131,8 +133,8 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
         public ViewHolder(View v) {
             super(v);
-            textName = (TextView) v.findViewById(R.id.text_item_survey_pending_name);
-            textId = (TextView) v.findViewById(R.id.text_item_survey_pending_id);
+            textName = v.findViewById(R.id.text_item_survey_pending_name);
+            textId = v.findViewById(R.id.text_item_survey_pending_id);
         }
     }
 

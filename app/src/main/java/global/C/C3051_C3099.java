@@ -76,5 +76,3 @@ public class C3051_C3099 {
     public static String C3099    = "C3099";
     public static String STATUS   = "STATUS";
 }
-
-

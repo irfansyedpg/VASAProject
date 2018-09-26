@@ -2588,6 +2588,11 @@
                         style="@style/EditText_number"
                         android:hint="@string/years" />
 
+                    <CheckBox
+                        android:id="@+id/cb_Q1607_conflict"
+                        style="@style/CheckBox"
+                        android:text="Conflict" />
+
 
                 </LinearLayout>
 
@@ -2622,7 +2627,6 @@
                         android:id="@+id/ed_Q1608_3"
                         style="@style/EditText_number"
                         android:hint="@string/years" />
-
 
                 </LinearLayout>
 
