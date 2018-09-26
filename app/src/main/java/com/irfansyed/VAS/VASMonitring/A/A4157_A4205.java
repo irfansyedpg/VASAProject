@@ -342,39 +342,6 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
 
     //End DECLARATION
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.a4157__a4205);
-
-        this.setTitle(getString(R.string.h_a_sec_9));
-
-        ll_study_id = findViewById(R.id.ll_study_id);
-        ed_study_id = findViewById(R.id.ed_study_id);
-        Intent getStudyId = getIntent();
-        study_id = getStudyId.getExtras().getString("study_id");
-        ed_study_id.setText(study_id);
-        ed_study_id.setEnabled(false);
-
-        Initialization();
-        events_calls();
-    }
-
-    @Override
-    public void onClick(View view) {
-        if (validateField() == false) {
-            Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
-            return;
-        }
-
-        value_assignment();
-        insert_data();
-
-        Intent c = new Intent(A4157_A4205.this, A4206_A4207.class);
-        c.putExtra("study_id", study_id);
-        startActivity(c);
-    }
-
     void Initialization() {
 
         //Button
@@ -637,6 +604,41 @@ public class A4157_A4205 extends AppCompatActivity implements RadioButton.OnChec
         ed_A4192 = findViewById(R.id.ed_A4192);
 
     }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.a4157__a4205);
+
+        this.setTitle(getString(R.string.h_a_sec_9));
+
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
+
+        Initialization();
+        events_calls();
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (validateField() == false) {
+            Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        value_assignment();
+        insert_data();
+
+        Intent c = new Intent(A4157_A4205.this, A4206_A4207.class);
+        c.putExtra("study_id", study_id);
+        startActivity(c);
+    }
+
+
 
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {

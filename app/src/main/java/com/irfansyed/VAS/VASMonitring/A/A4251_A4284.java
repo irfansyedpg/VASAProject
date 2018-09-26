@@ -1,6 +1,7 @@
 package com.irfansyed.VAS.VASMonitring.A;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -23,13 +24,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 
+import static java.lang.Integer.parseInt;
+
 public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
     //Declaration Region
+
     Boolean A4252_check;
 
     List<String> lst_phase = new ArrayList();
@@ -387,25 +392,9 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             A4284,
             STATUS;
 
-    //EndRegion Declaration
+    //Declaration
+
     Boolean b_place_where = false;
-    private TextWatcher generalTextWatcher = new TextWatcher() {
-
-        @Override
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-        }
-
-        @Override
-        public void onTextChanged(CharSequence s, int start, int count, int after) {
-
-        }
-
-        @Override
-        public void afterTextChanged(Editable s) {
-
-        }
-    };
 
     void Initialization() {
 
@@ -874,6 +863,24 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
     }
 
+    private TextWatcher generalTextWatcher = new TextWatcher() {
+
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+
+        }
+    };
+
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 
@@ -932,7 +939,41 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             ll_A4282.setVisibility(View.GONE);
             ll_A4283.setVisibility(View.GONE);
 
+
             if (rb_A4251_1.isChecked()) {
+
+                DBHelper db = new DBHelper(this);
+                Cursor res = db.getData("A4001_A4014", study_id);
+
+                if (res.getCount() > 0) {
+
+                    //Toast.makeText(this, "" + parseInt(res.getString(68)), Toast.LENGTH_LONG).show();
+
+                    res.moveToFirst();
+
+                    if ((parseInt(res.getString(17)) >= 3) || (parseInt(res.getString(18)) >= 1)) {
+
+                        ll_A4252.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_A4252);
+
+                        lst_phase.clear();
+                        lst_action.clear();
+                        lst_symtomps.clear();
+                        lst_place.clear();
+                        b_place_where = false;
+
+                        A4252_start.setText("Start");
+                        A4252_mid.setText("Mid");
+                        A4252_End.setText("End");
+                        btn_addd.setText("Add");
+
+                        ll_A4252.setVisibility(View.GONE);
+
+                    }
+                }
 
                 ll_A4252.setVisibility(View.VISIBLE);
                 //   ll_A4252_1.setVisibility(View.VISIBLE);
