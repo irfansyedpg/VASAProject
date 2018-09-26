@@ -332,7 +332,7 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
 
             Q1101_Q1610.moveToFirst();
 
-            Q1403 = Integer.parseInt(Q1101_Q1610.getString(26));
+            Q1403 = Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1403")));
 
             if (Q1403 == 2) {
 

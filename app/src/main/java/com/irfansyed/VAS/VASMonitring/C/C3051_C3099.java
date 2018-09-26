@@ -404,8 +404,8 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
             Q1101_Q1610.moveToFirst();
 
-            String dob = Q1101_Q1610.getString(67);
-            String dod = Q1101_Q1610.getString(71);
+            String dob = Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1603"));
+            String dod = Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1606"));
 
             ageInDays = numOfDays(dob, dod);
         }
@@ -424,7 +424,9 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
             C3001_C3011.moveToFirst();
 
-            C3006 = Integer.parseInt(C3001_C3011.getString(10));
+            //C3006 = Integer.parseInt(C3001_C3011.getString(10));
+
+            C3006 = Integer.valueOf(C3001_C3011.getString(C3001_C3011.getColumnIndex("C3006")));
         }
 
         events_call();

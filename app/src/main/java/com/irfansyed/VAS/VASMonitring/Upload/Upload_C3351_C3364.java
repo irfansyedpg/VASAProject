@@ -18,6 +18,7 @@ import java.net.URL;
 import java.util.HashMap;
 
 import Global.C.C3001_C3011;
+import Global.C.C3351_C3364;
 import Global.GS.Q1101_Q1610;
 import data.LocalDataManager;
 import utils.MyPreferences;
@@ -26,7 +27,7 @@ import utils.PostRequestData;
 /**
  * Created by Umeed-e-Nau on 12/28/2016.
  */
-public class Upload_C3001_C3011 extends AsyncTask {
+public class Upload_C3351_C3364 extends AsyncTask {
 
     public static ProgressDialog dialog;
     Context mContext;
@@ -55,7 +56,7 @@ public class Upload_C3001_C3011 extends AsyncTask {
         }
     };
 
-    public Upload_C3001_C3011(Context context) {
+    public Upload_C3351_C3364(Context context) {
 
         //stop interview
         // if(InterviewUploadingStatus.status<2)
@@ -75,7 +76,7 @@ public class Upload_C3001_C3011 extends AsyncTask {
         dialog.show();
 
         //region Query
-        String query = "select * from C3001_C3011 where study_id = '"+ Q1101_Q1610.study_id_upload +"' order by id  desc LIMIT 1";
+        String query = "select * from C3351_C3364 where study_id = '"+ Q1101_Q1610.study_id_upload +"' order by id  desc LIMIT 1";
 
 
         query = String.format(query, Q1101_Q1610.study_id_upload);
@@ -89,28 +90,25 @@ public class Upload_C3001_C3011 extends AsyncTask {
         if (c != null) {
             if (c.moveToFirst()) {
 
-                param.put("tableName", "c3001_c3011");
+                param.put("tableName", "c3351_c3364");
                 param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
                 param.put(C3001_C3011.study_id, c.getString(c.getColumnIndex("study_id")));
 
-                param.put(C3001_C3011.C3001, c.getString(c.getColumnIndex("C3001")));
-                param.put(C3001_C3011.C3002, c.getString(c.getColumnIndex("C3002")));
-                param.put(C3001_C3011.C3003, c.getString(c.getColumnIndex("C3003")));
-                param.put(C3001_C3011.C3004, c.getString(c.getColumnIndex("C3004")));
-                param.put(C3001_C3011.C3005u, c.getString(c.getColumnIndex("C3005u")));
-                param.put(C3001_C3011.C3005d, c.getString(c.getColumnIndex("C3005d")));
-                param.put(C3001_C3011.C3005w, c.getString(c.getColumnIndex("C3005w")));
-                param.put(C3001_C3011.C3005m, c.getString(c.getColumnIndex("C3005m")));
-                param.put(C3001_C3011.C3006, c.getString(c.getColumnIndex("C3006")));
-                param.put(C3001_C3011.C3006_OT, c.getString(c.getColumnIndex("C3006_OT")));
-                param.put(C3001_C3011.C3008, c.getString(c.getColumnIndex("C3008")));
-                param.put(C3001_C3011.C3008_OT, c.getString(c.getColumnIndex("C3008_OT")));
-                param.put(C3001_C3011.C3009_1, c.getString(c.getColumnIndex("C3009_1")));
-                param.put(C3001_C3011.C3009_2, c.getString(c.getColumnIndex("C3009_2")));
-                param.put(C3001_C3011.C3009_3, c.getString(c.getColumnIndex("C3009_3")));
-                param.put(C3001_C3011.C3009_4, c.getString(c.getColumnIndex("C3009_4")));
-                param.put(C3001_C3011.C3010, c.getString(c.getColumnIndex("C3010")));
-                param.put(C3001_C3011.C3011, c.getString(c.getColumnIndex("C3011")));
+
+                param.put(C3351_C3364.C3351 , c.getString(c.getColumnIndex("C3351")));
+                param.put(C3351_C3364.C3352 , c.getString(c.getColumnIndex("C3352")));
+                param.put(C3351_C3364.C3353 , c.getString(c.getColumnIndex("C3353")));
+                param.put(C3351_C3364.C3354 , c.getString(c.getColumnIndex("C3354")));
+                param.put(C3351_C3364.C3355 , c.getString(c.getColumnIndex("C3355")));
+                param.put(C3351_C3364.C3356 , c.getString(c.getColumnIndex("C3356")));
+                param.put(C3351_C3364.C3357 , c.getString(c.getColumnIndex("C3357")));
+                param.put(C3351_C3364.C3358 , c.getString(c.getColumnIndex("C3358")));
+                param.put(C3351_C3364.C3363 , c.getString(c.getColumnIndex("C3363")));
+                param.put(C3351_C3364.C3364 , c.getString(c.getColumnIndex("C3364")));
+
+
+
+
             }
         }
 
@@ -178,7 +176,7 @@ public class Upload_C3001_C3011 extends AsyncTask {
 
             Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
 
-            //new Upload_A4051_A4066(mContext);
+            new Upload_C3401_C3457(mContext).execute();
 
             thread.start();
         } catch (IOException e) {
