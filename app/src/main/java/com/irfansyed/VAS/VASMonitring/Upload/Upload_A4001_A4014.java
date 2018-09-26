@@ -73,9 +73,9 @@ public class Upload_A4001_A4014 extends AsyncTask {
         if (c1 != null) {
             if (c1.moveToFirst()) {
                 param.put("tableName", "a4001_a4014");
-                param.put(A4001_A4014.study_id, c1.getString(0));
-                param.put(A4001_A4014.A4001, c1.getString(1));
-                param.put(A4001_A4014.A4002, c1.getString(2));
+                param.put(A4001_A4014.study_id, c1.getString(1));
+                param.put(A4001_A4014.A4001, c1.getString(2));
+                param.put(A4001_A4014.A4002, c1.getString(3));
                 param.put(A4001_A4014.A4003, c1.getString(3));
                 param.put(A4001_A4014.A4004, c1.getString(4));
                 param.put(A4001_A4014.A4005, c1.getString(5));

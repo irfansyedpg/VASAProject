@@ -35,10 +35,10 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
     Boolean A4252_check;
 
-    List<String> lst_phase = new ArrayList();
-    List<String> lst_action = new ArrayList();
-    List<String> lst_symtomps = new ArrayList();
-    List<String> lst_place = new ArrayList();
+    List<String> phase = new ArrayList();
+    List<String> care = new ArrayList();
+    List<String> symtomps = new ArrayList();
+    List<String> place = new ArrayList();
 
 
     Button
@@ -654,7 +654,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         Intent getStudyId = getIntent();
         study_id = getStudyId.getExtras().getString("study_id");
         ed_study_id.setText(study_id);
-        ed_study_id.setEnabled(true);
+        ed_study_id.setEnabled(false);
 
         Initialization();
         events_call();
@@ -666,13 +666,13 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
             //Toast.makeText(this, "" + res.getString(res.getColumnIndex("study_id")), Toast.LENGTH_LONG).show();
             res.moveToFirst();
-            A4013m_flag = res.getString(16);
-            A4013y_flag = res.getString(17);
 
-            Toast.makeText(this, A4013y_flag, Toast.LENGTH_LONG).show();
+            A4013m_flag = res.getString(res.getColumnIndex("A4013m"));
+            A4013y_flag = res.getString(res.getColumnIndex("A4013y"));
 
-            Toast.makeText(this, A4013y_flag, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Illness Lasted  " + A4013m_flag + "  Months", Toast.LENGTH_LONG).show();
 
+            Toast.makeText(this, "Illness Lasted  " + A4013y_flag + "  Years", Toast.LENGTH_LONG).show();
 
         }
     }
@@ -687,8 +687,8 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             }
 
 
-            if (rb_A4251_1.isChecked() && lst_phase.size() == 0) {
-                Toast.makeText(this, "Please add upar wala addd", Toast.LENGTH_LONG).show();
+            if (rb_A4251_1.isChecked() && phase.size() == 0) {
+                Toast.makeText(this, "Please Attempt All", Toast.LENGTH_LONG).show();
                 return;
             }
 
@@ -696,7 +696,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             insert_data();
 
 
-            if (rb_A4251_1.isChecked() && lst_phase.size() > 0) {
+            if (rb_A4251_1.isChecked() && phase.size() > 0) {
                 insert_A4252();
             }
 
@@ -708,7 +708,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
         if (view.getId() == R.id.btn_addd) {
 
-            if (lst_phase.size() > 8) {
+            if (phase.size() > 8) {
                 Toast.makeText(A4251_A4284.this, "Cannot be more then 9 ", Toast.LENGTH_LONG).show();
                 return;
             }
@@ -722,6 +722,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             b.show();
 
             Button btnsbt = v.findViewById(R.id.btn_sbt);
+
             Button btnCancel = v.findViewById(R.id.btn_cncl);
 
             LinearLayout ll4_A4252 = v.findViewById(R.id.ll4_A4252);
@@ -794,32 +795,32 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
                     if (rb_A4252_1_1.isChecked()) {
 
-                        if (Collections.frequency(lst_phase, "1") > 2) {
+                        if (Collections.frequency(phase, "1") > 2) {
                             Toast.makeText(A4251_A4284.this, "Cannot be more then 3 ", Toast.LENGTH_LONG).show();
 
                             return;
                         }
-                        lst_phase.add("1");
+                        phase.add("1");
 
                     } else if (rb_A4252_1_2.isChecked()) {
 
 
-                        if (Collections.frequency(lst_phase, "2") > 2) {
+                        if (Collections.frequency(phase, "2") > 2) {
                             Toast.makeText(A4251_A4284.this, "Cannot be more then 3 ", Toast.LENGTH_LONG).show();
 
                             return;
                         }
 
-                        lst_phase.add("2");
+                        phase.add("2");
                     } else if (rb_A4252_1_3.isChecked()) {
 
-                        if (Collections.frequency(lst_phase, "3") > 2) {
+                        if (Collections.frequency(phase, "3") > 2) {
                             Toast.makeText(A4251_A4284.this, "Cannot be more then 3 ", Toast.LENGTH_LONG).show();
 
                             return;
                         }
 
-                        lst_phase.add("3");
+                        phase.add("3");
                     } else {
                         Toast.makeText(A4251_A4284.this, "Please select from Illness Phase options", Toast.LENGTH_LONG).show();
 
@@ -828,19 +829,19 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
 
                     if (rb_A4252_2_1.isChecked()) {
-                        lst_action.add("1");
+                        care.add("1");
                     } else if (rb_A4252_2_2.isChecked()) {
-                        lst_action.add("2");
+                        care.add("2");
                     } else if (rb_A4252_2_3.isChecked()) {
-                        lst_action.add("3");
+                        care.add("3");
                     } else if (rb_A4252_2_4.isChecked()) {
-                        lst_action.add("4");
+                        care.add("4");
                     } else if (rb_A4252_2_5.isChecked()) {
-                        lst_action.add("5");
+                        care.add("5");
                     } else if (rb_A4252_2_6.isChecked()) {
-                        lst_action.add("6");
+                        care.add("6");
                     } else if (rb_A4252_2_7.isChecked()) {
-                        lst_action.add("7");
+                        care.add("7");
                     } else {
                         // toast
 
@@ -850,14 +851,14 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
                     if (cb_place.isChecked()) {
                         b_place_where = true;
 
-                        lst_place.add("1");
+                        place.add("1");
                         cb_place.setChecked(false);
                     } else {
-                        lst_place.add("0");
+                        place.add("0");
                     }
 
                     if (ed_symt.getText().toString().trim().length() > 0) {
-                        lst_symtomps.add(ed_symt.getText().toString().trim());
+                        symtomps.add(ed_symt.getText().toString().trim());
                     } else {
                         ed_symt.requestFocus();
                         ed_symt.setError("Enter Symtoms");
@@ -865,13 +866,37 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
                     }
 
 
-                    A4252_start.setText("Start (" + Collections.frequency(lst_phase, "1") + ")");
-                    A4252_mid.setText("Mid (" + Collections.frequency(lst_phase, "2") + ")");
-                    A4252_End.setText("End (" + Collections.frequency(lst_phase, "3") + ")");
-                    btn_addd.setText("ADD  (" + lst_phase.size() + ")");
+                    A4252_start.setText("Start (" + Collections.frequency(phase, "1") + ")");
+                    A4252_mid.setText("Mid (" + Collections.frequency(phase, "2") + ")");
+                    A4252_End.setText("End (" + Collections.frequency(phase, "3") + ")");
+                    btn_addd.setText("ADD  (" + phase.size() + ")");
+
+
+                    List careL = new ArrayList();
+                    careL.add("4");
+                    careL.add("5");
+                    careL.add("6");
+                    careL.add("7");
+
+                    if (care.contains(careL)) {
+                        ll_A4253.setVisibility(View.VISIBLE);
+                        ll_A4254_2.setVisibility(View.VISIBLE);
+                        ClearAllcontrol.ClearAll(ll_A4254_1);
+                        ll_A4254_1.setVisibility(View.GONE);
+                    } else {
+                        ClearAllcontrol.ClearAll(ll_A4253);
+                        ClearAllcontrol.ClearAll(ll_A4254_2);
+
+                        ll_A4253.setVisibility(View.GONE);
+                        ll_A4254_2.setVisibility(View.GONE);
+                        ll_A4254_1.setVisibility(View.VISIBLE);
+                    }
+
                     b.cancel();
 
                 }
+
+
             });
 
 
@@ -905,10 +930,10 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_A4251_DK) {
 
 
-            lst_phase.clear();
-            lst_action.clear();
-            lst_symtomps.clear();
-            lst_place.clear();
+            phase.clear();
+            care.clear();
+            symtomps.clear();
+            place.clear();
             b_place_where = false;
 
             A4252_start.setText("Start");
@@ -918,7 +943,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
 
             ClearAllcontrol.ClearAll(ll_A4252);
-            //   ClearAllcontrol.ClearAll(ll_A4252_1);
+            //ClearAllcontrol.ClearAll(ll_A4252_1);
             ClearAllcontrol.ClearAll(ll_A4253);
             ClearAllcontrol.ClearAll(ll_A4254_1);
             ClearAllcontrol.ClearAll(ll_A4254_2);
@@ -937,7 +962,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             ClearAllcontrol.ClearAll(ll_A4283);
 
             ll_A4252.setVisibility(View.GONE);
-            //      ll_A4252_1.setVisibility(View.GONE);
+            //ll_A4252_1.setVisibility(View.GONE);
             ll_A4253.setVisibility(View.GONE);
             ll_A4254_1.setVisibility(View.GONE);
             ll_A4254_2.setVisibility(View.GONE);
@@ -958,11 +983,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
             if (rb_A4251_1.isChecked()) {
 
-
-                //Toast.makeText(this, "" + res.getString(res.getColumnIndex("study_id")), Toast.LENGTH_LONG).show();
-
-
-                if (Integer.valueOf(A4013m_flag) >= 11 || Integer.valueOf(A4013y_flag) >= 12) {
+                if (Integer.valueOf(A4013m_flag) >= 3 || Integer.valueOf(A4013y_flag) >= 1) {
 
                     ll_A4252.setVisibility(View.VISIBLE);
 
@@ -970,10 +991,10 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
                     ClearAllcontrol.ClearAll(ll_A4252);
 
-                    lst_phase.clear();
-                    lst_action.clear();
-                    lst_symtomps.clear();
-                    lst_place.clear();
+                    phase.clear();
+                    care.clear();
+                    symtomps.clear();
+                    place.clear();
                     b_place_where = false;
 
                     A4252_start.setText("Start");
@@ -984,8 +1005,10 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
                     ll_A4252.setVisibility(View.GONE);
 
                 }
+
                 //ll_A4252_1.setVisibility(View.VISIBLE);
                 ll_A4253.setVisibility(View.VISIBLE);
+                ll_A4254_1.setVisibility(View.VISIBLE);
                 ll_A4254_2.setVisibility(View.VISIBLE);
                 ll_A4255.setVisibility(View.VISIBLE);
                 ll_A4256.setVisibility(View.VISIBLE);
@@ -1033,6 +1056,204 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
                 ed_A4253_3.setVisibility(View.GONE);
             }
         }
+
+        //A4254_1
+        if (compoundButton.getId() == R.id.rb_A4254_1_1
+                || compoundButton.getId() == R.id.rb_A4254_1_2
+                || compoundButton.getId() == R.id.rb_A4254_1_DK) {
+
+            if (rb_A4254_1_2.isChecked() || rb_A4254_1_DK.isChecked()) {
+
+                ClearAllcontrol.ClearAll(ll_A4255);
+                ll_A4255.setVisibility(View.GONE);
+            } else {
+                ll_A4255.setVisibility(View.VISIBLE);
+            }
+
+            if ((rb_A4254_1_2.isChecked() || rb_A4254_1_DK.isChecked()) && rb_A4251_2.isChecked()) {
+
+                ClearAllcontrol.ClearAll(ll_A4256);
+                ClearAllcontrol.ClearAll(ll_257_273);
+                ClearAllcontrol.ClearAll(ll_A4274);
+                ClearAllcontrol.ClearAll(ll_A4275);
+                ClearAllcontrol.ClearAll(ll_A4276);
+                ClearAllcontrol.ClearAll(ll_A4277);
+                ClearAllcontrol.ClearAll(ll_A4278);
+                ClearAllcontrol.ClearAll(ll_A4279);
+                ClearAllcontrol.ClearAll(ll_A4280);
+                ClearAllcontrol.ClearAll(ll_A4281);
+                ClearAllcontrol.ClearAll(ll_A4282);
+                ClearAllcontrol.ClearAll(ll_A4283);
+                ClearAllcontrol.ClearAll(ll_A4284);
+
+                ll_A4256.setVisibility(View.GONE);
+                ll_257_273.setVisibility(View.GONE);
+                ll_A4274.setVisibility(View.GONE);
+                ll_A4275.setVisibility(View.GONE);
+                ll_A4276.setVisibility(View.GONE);
+                ll_A4277.setVisibility(View.GONE);
+                ll_A4278.setVisibility(View.GONE);
+                ll_A4279.setVisibility(View.GONE);
+                ll_A4280.setVisibility(View.GONE);
+                ll_A4281.setVisibility(View.GONE);
+                ll_A4282.setVisibility(View.GONE);
+                ll_A4283.setVisibility(View.GONE);
+                ll_A4284.setVisibility(View.GONE);
+            } else {
+                ll_A4256.setVisibility(View.VISIBLE);
+                ll_257_273.setVisibility(View.VISIBLE);
+                ll_A4274.setVisibility(View.VISIBLE);
+                ll_A4275.setVisibility(View.VISIBLE);
+                ll_A4276.setVisibility(View.VISIBLE);
+                ll_A4277.setVisibility(View.VISIBLE);
+                ll_A4278.setVisibility(View.VISIBLE);
+                ll_A4279.setVisibility(View.VISIBLE);
+                ll_A4280.setVisibility(View.VISIBLE);
+                ll_A4281.setVisibility(View.VISIBLE);
+                ll_A4282.setVisibility(View.VISIBLE);
+                ll_A4283.setVisibility(View.VISIBLE);
+                ll_A4284.setVisibility(View.VISIBLE);
+            }
+
+            if ((rb_A4254_1_2.isChecked() || rb_A4254_1_DK.isChecked()) && (care.contains("4") || care.contains("5") || care.contains("6") || care.contains("7"))) {
+
+                ClearAllcontrol.ClearAll(ll_A4256);
+                ClearAllcontrol.ClearAll(ll_257_273);
+                ClearAllcontrol.ClearAll(ll_A4274);
+                ClearAllcontrol.ClearAll(ll_A4275);
+                ClearAllcontrol.ClearAll(ll_A4276);
+                ClearAllcontrol.ClearAll(ll_A4277);
+                ClearAllcontrol.ClearAll(ll_A4278);
+                ClearAllcontrol.ClearAll(ll_A4279);
+                ClearAllcontrol.ClearAll(ll_A4280);
+                ClearAllcontrol.ClearAll(ll_A4281);
+                ClearAllcontrol.ClearAll(ll_A4282);
+
+                ll_A4256.setVisibility(View.GONE);
+                ll_257_273.setVisibility(View.GONE);
+                ll_A4274.setVisibility(View.GONE);
+                ll_A4275.setVisibility(View.GONE);
+                ll_A4276.setVisibility(View.GONE);
+                ll_A4277.setVisibility(View.GONE);
+                ll_A4278.setVisibility(View.GONE);
+                ll_A4279.setVisibility(View.GONE);
+                ll_A4280.setVisibility(View.GONE);
+                ll_A4281.setVisibility(View.GONE);
+                ll_A4282.setVisibility(View.GONE);
+            } else {
+                ll_A4256.setVisibility(View.VISIBLE);
+                ll_257_273.setVisibility(View.VISIBLE);
+                ll_A4274.setVisibility(View.VISIBLE);
+                ll_A4275.setVisibility(View.VISIBLE);
+                ll_A4276.setVisibility(View.VISIBLE);
+                ll_A4277.setVisibility(View.VISIBLE);
+                ll_A4278.setVisibility(View.VISIBLE);
+                ll_A4279.setVisibility(View.VISIBLE);
+                ll_A4280.setVisibility(View.VISIBLE);
+                ll_A4281.setVisibility(View.VISIBLE);
+                ll_A4282.setVisibility(View.VISIBLE);
+            }
+        }
+
+
+        //A4254_2
+        if (compoundButton.getId() == R.id.rb_A4254_2_1
+                || compoundButton.getId() == R.id.rb_A4254_2_2
+                || compoundButton.getId() == R.id.rb_A4254_2_DK) {
+
+            if (rb_A4254_2_2.isChecked() || rb_A4254_2_DK.isChecked()) {
+
+                ClearAllcontrol.ClearAll(ll_A4255);
+                ll_A4255.setVisibility(View.GONE);
+            } else {
+                ll_A4255.setVisibility(View.VISIBLE);
+            }
+
+            if ((rb_A4254_2_2.isChecked() || rb_A4254_2_DK.isChecked()) && rb_A4251_2.isChecked()) {
+
+                ClearAllcontrol.ClearAll(ll_A4256);
+                ClearAllcontrol.ClearAll(ll_257_273);
+                ClearAllcontrol.ClearAll(ll_A4274);
+                ClearAllcontrol.ClearAll(ll_A4275);
+                ClearAllcontrol.ClearAll(ll_A4276);
+                ClearAllcontrol.ClearAll(ll_A4277);
+                ClearAllcontrol.ClearAll(ll_A4278);
+                ClearAllcontrol.ClearAll(ll_A4279);
+                ClearAllcontrol.ClearAll(ll_A4280);
+                ClearAllcontrol.ClearAll(ll_A4281);
+                ClearAllcontrol.ClearAll(ll_A4282);
+                ClearAllcontrol.ClearAll(ll_A4283);
+                ClearAllcontrol.ClearAll(ll_A4284);
+
+                ll_A4256.setVisibility(View.GONE);
+                ll_257_273.setVisibility(View.GONE);
+                ll_A4274.setVisibility(View.GONE);
+                ll_A4275.setVisibility(View.GONE);
+                ll_A4276.setVisibility(View.GONE);
+                ll_A4277.setVisibility(View.GONE);
+                ll_A4278.setVisibility(View.GONE);
+                ll_A4279.setVisibility(View.GONE);
+                ll_A4280.setVisibility(View.GONE);
+                ll_A4281.setVisibility(View.GONE);
+                ll_A4282.setVisibility(View.GONE);
+                ll_A4283.setVisibility(View.GONE);
+                ll_A4284.setVisibility(View.GONE);
+            } else {
+                ll_A4256.setVisibility(View.VISIBLE);
+                ll_257_273.setVisibility(View.VISIBLE);
+                ll_A4274.setVisibility(View.VISIBLE);
+                ll_A4275.setVisibility(View.VISIBLE);
+                ll_A4276.setVisibility(View.VISIBLE);
+                ll_A4277.setVisibility(View.VISIBLE);
+                ll_A4278.setVisibility(View.VISIBLE);
+                ll_A4279.setVisibility(View.VISIBLE);
+                ll_A4280.setVisibility(View.VISIBLE);
+                ll_A4281.setVisibility(View.VISIBLE);
+                ll_A4282.setVisibility(View.VISIBLE);
+                ll_A4283.setVisibility(View.VISIBLE);
+                ll_A4284.setVisibility(View.VISIBLE);
+            }
+
+            if ((rb_A4254_2_2.isChecked() || rb_A4254_2_DK.isChecked()) && (care.contains("4") || care.contains("5") || care.contains("6") || care.contains("7"))) {
+
+                ClearAllcontrol.ClearAll(ll_A4256);
+                ClearAllcontrol.ClearAll(ll_257_273);
+                ClearAllcontrol.ClearAll(ll_A4274);
+                ClearAllcontrol.ClearAll(ll_A4275);
+                ClearAllcontrol.ClearAll(ll_A4276);
+                ClearAllcontrol.ClearAll(ll_A4277);
+                ClearAllcontrol.ClearAll(ll_A4278);
+                ClearAllcontrol.ClearAll(ll_A4279);
+                ClearAllcontrol.ClearAll(ll_A4280);
+                ClearAllcontrol.ClearAll(ll_A4281);
+                ClearAllcontrol.ClearAll(ll_A4282);
+
+                ll_A4256.setVisibility(View.GONE);
+                ll_257_273.setVisibility(View.GONE);
+                ll_A4274.setVisibility(View.GONE);
+                ll_A4275.setVisibility(View.GONE);
+                ll_A4276.setVisibility(View.GONE);
+                ll_A4277.setVisibility(View.GONE);
+                ll_A4278.setVisibility(View.GONE);
+                ll_A4279.setVisibility(View.GONE);
+                ll_A4280.setVisibility(View.GONE);
+                ll_A4281.setVisibility(View.GONE);
+                ll_A4282.setVisibility(View.GONE);
+            } else {
+                ll_A4256.setVisibility(View.VISIBLE);
+                ll_257_273.setVisibility(View.VISIBLE);
+                ll_A4274.setVisibility(View.VISIBLE);
+                ll_A4275.setVisibility(View.VISIBLE);
+                ll_A4276.setVisibility(View.VISIBLE);
+                ll_A4277.setVisibility(View.VISIBLE);
+                ll_A4278.setVisibility(View.VISIBLE);
+                ll_A4279.setVisibility(View.VISIBLE);
+                ll_A4280.setVisibility(View.VISIBLE);
+                ll_A4281.setVisibility(View.VISIBLE);
+                ll_A4282.setVisibility(View.VISIBLE);
+            }
+        }
+
 
         if (compoundButton.getId() == R.id.cb_A4255_1
                 || compoundButton.getId() == R.id.cb_A4255_2
@@ -2201,11 +2422,11 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         A4252_3 = "0";
         A4252_4 = "0";
 
-        for (int i = 0; i < lst_phase.size(); i++) {
-            A4252_1 = lst_phase.get(i);
-            A4252_2 = lst_action.get(i);
-            A4252_3 = lst_place.get(i);
-            A4252_4 = lst_symtomps.get(i);
+        for (int i = 0; i < phase.size(); i++) {
+            A4252_1 = phase.get(i);
+            A4252_2 = care.get(i);
+            A4252_3 = place.get(i);
+            A4252_4 = symtomps.get(i);
 
 
             String query = "insert into A4252_atributes("
