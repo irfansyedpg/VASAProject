@@ -378,7 +378,9 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
             Q1101_Q1610.moveToFirst();
 
-            Q1102 = Integer.parseInt(Q1101_Q1610.getString(3));
+            //Q1102 = Integer.parseInt(Q1101_Q1610.getString(3));
+
+            /*Q1102 = Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1102")));
 
             if (Q1102 == 1) {
 
@@ -387,10 +389,10 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             } else {
 
                 ll_C3101.setVisibility(View.GONE);
-            }
+            }*/
 
-            String dob = Q1101_Q1610.getString(67);
-            String dod = Q1101_Q1610.getString(71);
+            String dob = Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1603"));
+            String dod = Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1606"));
 
             ageInDays = numOfDays(dob, dod);
 

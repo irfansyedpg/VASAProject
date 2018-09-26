@@ -513,31 +513,29 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         if (res.getCount() > 0) {
 
-            //String Q1609_value = Global.GS.Q1101_Q1610.Q1609;
-
-            //Toast.makeText(this, "" + res.getColumnIndex("Q1609"), Toast.LENGTH_LONG).show();
-
             res.moveToFirst();
 
-            if (parseInt(res.getString(81)) == 5) {
+            //Toast.makeText(this, "" + parseInt(res.getString(res.getColumnIndex("Q1609"))), Toast.LENGTH_LONG).show();
+
+            if (parseInt(res.getString(res.getColumnIndex("Q1609"))) == 5) {
 
                 Intent c = new Intent(this, A4144_A4156.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            } else if (parseInt(res.getString(81)) == 2) {
+            } else if (parseInt(res.getString(res.getColumnIndex("Q1609"))) == 2) {
 
                 Intent c = new Intent(this, C3001_C3011.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            } else if (parseInt(res.getString(81)) == 3 || parseInt(res.getString(81)) == 4) {
+            } else if (parseInt(res.getString(res.getColumnIndex("Q1609"))) == 3 || parseInt(res.getString(res.getColumnIndex("Q1609"))) == 4) {
 
                 Intent c = new Intent(this, C3012_C3022.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            } else if (parseInt(res.getString(81)) == 1) {
+            } else if (parseInt(res.getString(res.getColumnIndex("Q1609"))) == 1) {
 
                 Intent c = new Intent(this, N2001_N2011.class);
                 c.putExtra("study_id", study_id);

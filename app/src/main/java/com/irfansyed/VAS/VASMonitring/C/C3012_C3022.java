@@ -150,8 +150,8 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
             res.moveToFirst();
 
-            String dob = res.getString(67);
-            String dod = res.getString(71);
+            String dob = res.getString(res.getColumnIndex("Q1603"));
+            String dod = res.getString(res.getColumnIndex("Q1606"));
 
             ageInDays = numOfDays(dob, dod);
         }
@@ -252,9 +252,6 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             startActivity(c);
 
         } else {
-
-            this.value_assignment();
-            this.insert_data();
 
             Intent c = new Intent(this, C3101_C3112.class);
             c.putExtra("study_id", study_id);
@@ -374,9 +371,9 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
         ed_C3019_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
         ed_C3019_c.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
 
-        ed_C3021d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 6, 99, 99)});
-        ed_C3021m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
-        ed_C3021y.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
+        //ed_C3021d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 6, 99, 99)});
+        //ed_C3021m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
+        //ed_C3021y.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
     }
 
     @Override
