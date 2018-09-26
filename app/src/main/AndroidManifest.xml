@@ -32,6 +32,12 @@
             android:name=".Core.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".RP.w204_w222"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".Core.SplashScreenActivity"
             android:theme="@style/AppThemeNACB">

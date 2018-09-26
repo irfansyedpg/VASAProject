@@ -114,6 +114,9 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(A4351_A4364.getCreateQuery()); // A4351_A4364 created here
         db.execSQL(A4401_A4473.getCreateQuery()); // A4401_A4405 created here
 
+        db.execSQL(data.RP.w204_w215.getCreateQuery());
+        db.execSQL(data.RP.w216_w222.getCreateQuery());
+
         db.setTransactionSuccessful();
         db.endTransaction();
     }

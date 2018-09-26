@@ -4590,35 +4590,103 @@ Examples of statements for the reading test:
     <string name="A4064_b">A4064_b: Enter how long before death she vomited in months?</string>
     <string name="days_h">Enter 0-29 days. Less than 1 day or 24 hours = 0 days. 1 week = 7 days. Don\'t know = 99</string>
 
-    <string name="txt_W214">W214: DATE OF OUTCOME	</string>
-    <string name="ed_W214_d">Day</string>
-    <string name="ed_W214_m">Month</string>
-    <string name="ed_W214_y">Year</string>
 
-    <string name="txt_W215">W215: OUTCOME </string>
-    <string name="rb_W215_1">MISCARRIAGES</string>
-    <string name="rb_W215_2">STILL BIRTH</string>
-    <string name="rb_W215_3">LIVE BIRTH</string>
-    <string name="rb_W215_4">TWIN BIRTH ALIVE</string>
-    <string name="rb_W215_5">TWIN STILL BIRTH</string>
-    <string name="rb_W215_6">ONE STILL BIRTH and ONE LIVE BIRTH</string>
 
-    <string name="txt_W216">W216: CHILD #	</string>
-    <string name="ed_W216">Child</string>
 
-    <string name="txt_W217">W217: STATUS OF CHILD </string>
-    <string name="rb_W217_1">ALIVE</string>
-    <string name="rb_W217_2">DIED</string>
 
-    <string name="txt_W218">W218: AGE OF ALIVE CHILD	</string>
-    <string name="ed_W218_y">Year</string>
-    <string name="ed_W218_m">Month</string>
-    <string name="ed_W218_d">Day</string>
 
-    <string name="txt_W219">W219: AGE AT TIME OF DEATH	</string>
-    <string name="ed_W219_y">Year</string>
-    <string name="ed_W219_m">Month</string>
-    <string name="ed_W219_d">Day</string>
+
+    <string name="txt_W217">DATE OF OUTCOME	</string>
+    <string name="ed_W217_d">Day</string>
+    <string name="ed_W217_m">Month</string>
+    <string name="ed_W217_y">Year</string>
+
+    <string name="txt_W218">OUTCOME </string>
+    <string name="rb_W218_1">MISCARRIAGES</string>
+    <string name="rb_W218_2">STILL BIRTH</string>
+    <string name="rb_W218_3">LIVE BIRTH</string>
+    <string name="rb_W218_4">TWIN BIRTH ALIVE</string>
+    <string name="rb_W218_5">TWIN STILL BIRTH</string>
+    <string name="rb_W218_6">ONE STILL BIRTH and ONE LIVE BIRTH</string>
+
+
+    <string name="txt_W219"> STATUS OF CHILD </string>
+    <string name="rb_W219_1">ALIVE</string>
+    <string name="rb_W219_2">DIED</string>
+
+    <string name="txt_W221">AGE OF ALIVE CHILD	</string>
+    <string name="Year">Year</string>
+    <string name="Month">Month</string>
+    <string name="Day">Day</string>
+
+    <string name="txt_W22">AGE AT TIME OF DEATH	</string>
+
+
+
+
+    <string name="txt_W201">	آپ/ماں کی تاریخ پیدائش کیا ہے ؟	:W201	</string>
+    <string name="ed_W201_d">	دن	</string>
+    <string name="ed_W201_m">	مہینہ	</string>
+    <string name="ed_W201_y">	سال	</string>
+    <string name="txt_W201_d_h">	اگر دن معلوم نہیں تو 98 لکھیں</string>
+    <string name="txt_W201_m_h">	اگر مہینہ معلوم نہیں تو 98 لکھیں</string>
+    <string name="txt_W201_y_h">	سال معلوم نہیں تو 9998 لکھیں</string>
+
+    <string name="txt_W202">	برائے مہربانی اپنی عمر بتایئے ۔ آپکی گزشتہ سالگرہ پر آپ /ماں کی عمر کتنی تھی ؟	:W202	</string>
+    <string name="ed_W202">	مکمل عمر سالوں میں لکھیں</string>
+
+    <string name="txt_W203">	اطمینان کیجئے کہ جوابدہندہ کی عمر 49-12 سال ہے ؟	:W203	</string>
+    <string name="rb_W203_1">ہاں</string>
+    <string name="rb_W203_2">نہیں</string>
+
+    <string name="txt_W204">	کیا اس وقت آپ/ماں  شادی شدہ ہیں ؟	:W204	</string>
+    <string name="rb_W204_1">ہاں</string>
+    <string name="rb_W204_2">نہیں</string>
+
+    <string name="txt_W205">	کیا کبھی آپ/ماں کی شادی ہوئی  ؟	:W205	</string>
+    <string name="rb_W205_1">ہاں</string>
+    <string name="rb_W205_2">نہیں</string>
+
+    <string name="txt_W206">	شادی کے وقت آپ/ماں کی عمر کیا تھی ؟	:W206	</string>
+    <string name="rb_W206_1">ہاں</string>
+    <string name="rb_W206_2">نہیں</string>
+
+    <string name="txt_W207">	کیا آپ/ماں کبھی حاملہ ہوئی ہیں ؟	:W207	</string>
+    <string name="rb_W207_1">ہاں</string>
+    <string name="rb_W207_2">نہیں</string>
+
+    <string name="txt_W208">	کیا آپ/ماں ابھی حاملہ ہیں ؟	:W208	</string>
+    <string name="rb_W208_1">ہاں</string>
+    <string name="rb_W208_2">نہیں</string>
+
+    <string name="txt_W209">	موجودہ حمل کے دوران ،کیا آپ کو فولاد کی گولیا ں یا وٹامن کی گولیاں جس میں فولاد شامل ہو دی گئیں یا آپ نے خریدیں ؟	:W209	</string>
+    <string name="rb_W209_1">ہاں</string>
+    <string name="rb_W209_2">نہیں</string>
+
+    <string name="txt_W210">	اگر ہاں ،خریدی یا فراہم کی گئیں ؟	:W210	</string>
+    <string name="cb_W210_1">کلینک پر ملی</string>
+    <string name="cb_W210_2">خریدی</string>
+    <string name="cb_W210_3">ملی نہ خریدی</string>
+    <string name="cb_W210_DK">معلوم نہیں</string>
+    <string name="cb_W210_RA">جواب نہیں دیا</string>
+
+    <string name="txt_W211">	آپ/ماں اپنی زندگی میں کتنی مرتبہ حاملہ ہوئیں؟	:W211	</string>
+    <string name="ed_W211">	حمل کی تعداد</string>
+
+    <string name="txt_W212">	آپ کی زندگی میں کل کتنی زچگیاں ہوئیں؟	:W212	</string>
+    <string name="ed_W212">	زچگیوں کی تعداد</string>
+
+    <string name="txt_W213">	پہلےبچے کی پیدائش کے وقت آپ کی عمر کیاتھی؟	:W213	</string>
+    <string name="ed_W213">	عمر سالوں میں</string>
+
+
+    <string name="txt_W214">	آپ/ماں پچھلے پانچ سال میں کتنی مرتبہ حاملہ ہوئیں؟	:W214	</string>
+
+
+    <string name="txt_W215">	آپ کی پچھلے پانچ سال کل کتنی زچگیاں ہوئیں؟	:W215	</string>
+
+
+
 
 
     <!-- E Ends -->

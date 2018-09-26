@@ -18,9 +18,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 
-
 import Global.A.A4051_A4066;
-
 import Global.GS.Q1101_Q1610;
 import data.LocalDataManager;
 import utils.MyPreferences;
@@ -75,6 +73,10 @@ public class Upload_A4051_A4066 extends AsyncTask {
         if (c1 != null) {
             if (c1.moveToFirst()) {
                 param.put("tableName", "a4051_a4066");
+
+
+
+
 
                 param.put(A4051_A4066.study_id, c1.getString(0));
                 param.put(A4051_A4066.A4051, c1.getString(1));

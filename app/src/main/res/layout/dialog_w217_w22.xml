@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="90"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                style="@style/Q_Linerlayout_v"
+
+                android:layout_marginBottom="60dp"
+                >
+                <!--W217 Edit text Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                    <LinearLayout
+                        android:id="@+id/ll_ggg"
+                        style="@style/Q_Linerlayout_v">
+
+
+                        <TextView
+                            android:id="@+id/txt_pregno"
+                            style="@style/TextView"
+                            android:text="Enter Detail of Pregnancy No:(1) "
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--W217 Edit text Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                    <LinearLayout
+                        android:id="@+id/ll_W217"
+                        style="@style/Q_Linerlayout_v">
+
+
+                        <TextView
+                            style="@style/TextView"
+                            android:text="@string/txt_W217" />
+
+                        <com.santalu.widget.MaskEditText
+                            android:id="@+id/ed_w217"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                           
+                            android:inputType="date"
+                            app:met_mask="####-##-##" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+
+                <!--W218 Radio Button Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                    <LinearLayout
+                        android:id="@+id/ll_W218"
+                        style="@style/Q_Linerlayout_v">
+
+                        <TextView
+                            android:id="@+id/txt_W218"
+                            style="@style/TextView"
+                            android:text="@string/txt_W218" />
+
+
+                        <RadioGroup style="@style/RadioGroup">
+
+                            <RadioButton
+                                android:id="@+id/rb_W218_1"
+                                style="@style/RadioButton"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/rb_W218_2"
+                                style="@style/RadioButton"
+                                android:text="@string/no" />
+
+                            <RadioButton
+                                android:id="@+id/rb_W218_3"
+                                style="@style/RadioButton"
+                                android:text="@string/rb_W218_3" />
+
+                            <RadioButton
+                                android:id="@+id/rb_W218_4"
+                                style="@style/RadioButton"
+                                android:text="@string/rb_W218_4" />
+
+                            <RadioButton
+                                android:id="@+id/rb_W218_5"
+                                style="@style/RadioButton"
+                                android:text="@string/rb_W218_5" />
+
+                            <RadioButton
+                                android:id="@+id/rb_W218_6"
+                                style="@style/RadioButton"
+                                android:text="@string/rb_W218_6" />
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <!--W218 Radio Button Ends-->
+
+
+                <!--W219 Radio Button Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                    <LinearLayout
+                        android:id="@+id/ll_W219"
+                        style="@style/Q_Linerlayout_v">
+
+                        <TextView
+                            android:id="@+id/txt_W219"
+                            style="@style/TextView"
+                            android:text="@string/txt_W219" />
+
+
+                        <RadioGroup style="@style/RadioGroup">
+
+                            <RadioButton
+                                android:id="@+id/rb_W219_1"
+                                style="@style/RadioButton"
+                                android:text="@string/rb_W219_1" />
+
+                            <RadioButton
+                                android:id="@+id/rb_W219_2"
+                                style="@style/RadioButton"
+                                android:text="@string/rb_W219_2" />
+                            
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <!--W219 Radio Button Ends-->
+
+                <!--W221 Edit text Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                    <LinearLayout
+                        android:id="@+id/ll_W221"
+                        style="@style/Q_Linerlayout_v">
+
+                        <TextView
+                            android:id="@+id/txt_W221"
+                            style="@style/TextView"
+                            android:text="@string/txt_W221" />
+
+                        <EditText
+                            android:id="@+id/ed_W221_1"
+                            style="@style/EditText_number"
+                            android:hint="year" />
+                        <EditText
+                            android:id="@+id/ed_W221_2"
+                            style="@style/EditText_number"
+                            android:hint="Month" />
+                        <EditText
+                            android:id="@+id/ed_W221_3"
+                            style="@style/EditText_number"
+                            android:hint="Day" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <!--W221 Edit text Ends-->
+
+
+
+                <!--W222 Edit text Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                    <LinearLayout
+                        android:id="@+id/ll_W222"
+                        style="@style/Q_Linerlayout_v">
+
+                        <TextView
+                            android:id="@+id/txt_W222"
+                            style="@style/TextView"
+                            android:text="txt_W222" />
+
+                        <EditText
+                            android:id="@+id/ed_W222_1"
+                            style="@style/EditText_number"
+                            android:hint="year" />
+                        <EditText
+                            android:id="@+id/ed_W222_2"
+                            style="@style/EditText_number"
+                            android:hint="Month" />
+                        <EditText
+                            android:id="@+id/ed_W222_3"
+                            style="@style/EditText_number"
+                            android:hint="Day" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <!--W222 Edit text Ends-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+
+        android:weightSum="1"
+        >
+
+        <Button
+            android:id="@+id/btn_add"
+            style="@style/Button_collder"
+
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:text="Add Pregnancy"
+
+            android:textSize="14sp"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>
