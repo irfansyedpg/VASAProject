@@ -515,27 +515,27 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
             res.moveToFirst();
 
-            //Toast.makeText(this, "" + parseInt(res.getString(res.getColumnIndex("Q1609"))), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "" + Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))), Toast.LENGTH_LONG).show();
 
-            if (parseInt(res.getString(res.getColumnIndex("Q1609"))) == 5) {
+            if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(5)) {
 
                 Intent c = new Intent(this, A4001_A4014.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            } else if (parseInt(res.getString(res.getColumnIndex("Q1609"))) == 2) {
+            } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(2)) {
 
                 Intent c = new Intent(this, C3001_C3011.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            } else if (parseInt(res.getString(res.getColumnIndex("Q1609"))) == 3 || parseInt(res.getString(res.getColumnIndex("Q1609"))) == 4) {
+            } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(3) || Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(4)) {
 
                 Intent c = new Intent(this, C3012_C3022.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            } else if (parseInt(res.getString(res.getColumnIndex("Q1609"))) == 1) {
+            } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(1)) {
 
                 Intent c = new Intent(this, N2001_N2011.class);
                 c.putExtra("study_id", study_id);
