@@ -47,6 +47,10 @@ public class N2321_N2322 extends AppCompatActivity {
 
     private void GetDataFromDB() {
 
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
+        bi.btnContinue.setEnabled(false);
+
         DBHelper db = new DBHelper(this);
 
         String n2016 = db.getSpecificData(data.N.N2012_N2016.TABLE_NAME, bi.edStudyId.getText().toString(), N2012_N2016.sub_N2012_N2016.N2016);
@@ -59,10 +63,6 @@ public class N2321_N2322 extends AppCompatActivity {
 
     public void SetContentUI() {
 
-        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
-        bi.edStudyId.setEnabled(false);
-        bi.btnContinue.setEnabled(false);
-
         //Conditions
         if (!flag_n2016) {
             ClearAllcontrol.ClearAll(bi.llN2322); //ll_N2322
@@ -74,7 +74,8 @@ public class N2321_N2322 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, InterviewEnd.class));
+                startActivity(new Intent(this, InterviewEnd.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }

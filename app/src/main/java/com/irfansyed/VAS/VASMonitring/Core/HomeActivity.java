@@ -88,7 +88,9 @@ public class HomeActivity extends AppCompatActivity
             intent = new Intent(this, SurveyCompletedActivity.class);
         }
         if (id == com.irfansyed.VAS.VASMonitring.R.id.stage_1) {
-            intent = new Intent(this, Q1101_Q1610.class);
+          intent = new Intent(this, Q1101_Q1610.class);
+
+           // intent = new Intent(this, com.irfansyed.VAS.VASMonitring.RP.w204_w222.class);
             put_extr = 1;
         }/*
 
