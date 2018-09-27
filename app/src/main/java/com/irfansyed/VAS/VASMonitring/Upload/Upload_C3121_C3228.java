@@ -333,11 +333,11 @@ public class Upload_C3121_C3228 extends AsyncTask {
 
             String result = (((String) o).replace("\"", ""));
 
-            Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
 
             new Upload_C3301_C3314(mContext).execute();
 
-            thread.start();
+            //thread.start();
         } catch (IOException e) {
             //if connection was available via connecting but
             //we can't get data from server..

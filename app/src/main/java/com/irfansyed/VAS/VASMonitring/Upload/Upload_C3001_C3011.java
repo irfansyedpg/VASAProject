@@ -29,9 +29,9 @@ import utils.PostRequestData;
 public class Upload_C3001_C3011 extends AsyncTask {
 
     public static ProgressDialog dialog;
-    Context mContext;
+    Context                 mContext;
     HashMap<String, String> param;
-    String[]                interviewLogData;
+    //String[]                interviewLogData;
     String                  mUserMsg;
     // wait for Toast then kill app
     Thread thread = new Thread() {
@@ -70,13 +70,12 @@ public class Upload_C3001_C3011 extends AsyncTask {
     @Override
     protected void onPreExecute() {
 
-        dialog.setMessage("Uploading interview Please wait ....");
-        dialog.setCancelable(false);
-        dialog.show();
+        //dialog.setMessage("Uploading interview Please wait ....");
+        //dialog.setCancelable(false);
+        //dialog.show();
 
         //region Query
-        String query = "select * from C3001_C3011 where study_id = '"+ Q1101_Q1610.study_id_upload +"' order by id  desc LIMIT 1";
-
+        String query = "select * from C3001_C3011 where study_id = '" + Q1101_Q1610.study_id_upload + "' order by id  desc LIMIT 1";
 
         query = String.format(query, Q1101_Q1610.study_id_upload);
 
@@ -92,7 +91,6 @@ public class Upload_C3001_C3011 extends AsyncTask {
                 param.put("tableName", "c3001_c3011");
                 param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
                 param.put(C3001_C3011.study_id, c.getString(c.getColumnIndex("study_id")));
-
                 param.put(C3001_C3011.C3001, c.getString(c.getColumnIndex("C3001")));
                 param.put(C3001_C3011.C3002, c.getString(c.getColumnIndex("C3002")));
                 param.put(C3001_C3011.C3003, c.getString(c.getColumnIndex("C3003")));
@@ -169,18 +167,16 @@ public class Upload_C3001_C3011 extends AsyncTask {
     protected void onPostExecute(Object o) {
 
         try {
-            dialog.dismiss();
+          //  dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();
 
-            String result = (((String) o).replace("\"", ""));
+            //String result = (((String) o).replace("\"", ""));
 
-            Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
+            new Upload_C3012_C3022(mContext).execute();
 
-            //new Upload_A4051_A4066(mContext);
-
-            thread.start();
+            //thread.start();
         } catch (IOException e) {
             //if connection was available via connecting but
             //we can't get data from server..
@@ -193,7 +189,7 @@ public class Upload_C3001_C3011 extends AsyncTask {
             mUserMsg = e.getMessage();
             dialog.dismiss();
         } catch (Exception e) {
-            Toast.makeText(mContext, "Uploading failed at request a4001_a4014 section", Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, "Uploading failed at request C3001_C3011 section", Toast.LENGTH_SHORT).show();
             dialog.dismiss();
             return;
         } finally {
@@ -205,7 +201,7 @@ public class Upload_C3001_C3011 extends AsyncTask {
         super.onPostExecute(o);
     }
 
-    void update_status(String id) {
+    /*void update_status(String id) {
         String query = "Update C3001_C3011 set STATUS = '1' where id='" + id + "'";
 
         query = String.format(query);
@@ -215,5 +211,5 @@ public class Upload_C3001_C3011 extends AsyncTask {
         LocalDataManager.database.execSQL(query);
 
         Toast.makeText(mContext, "Status updated", Toast.LENGTH_SHORT).show();
-    }
+    }*/
 }

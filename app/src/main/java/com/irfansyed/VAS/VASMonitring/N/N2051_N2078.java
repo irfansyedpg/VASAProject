@@ -31,8 +31,8 @@ public class N2051_N2078 extends AppCompatActivity {
 
         this.setTitle(getString(R.string.h_n_sec_3));
 
-        GetDataFromDB();
         SetContentUI();
+        GetDataFromDB();
 
     }
 

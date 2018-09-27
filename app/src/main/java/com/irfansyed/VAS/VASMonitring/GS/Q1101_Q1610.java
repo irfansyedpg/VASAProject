@@ -29,7 +29,6 @@ import java.util.regex.Pattern;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
-import utils.Gothrough;
 
 import static java.lang.Integer.parseInt;
 
@@ -2367,7 +2366,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_study_id) == false) {
+        /*if (Gothrough.IamHiden(ll_study_id) == false) {
 
             //CardView cv = findViewById(R.id.cv_study_id);
             //cv.requestFocus();
@@ -2375,7 +2374,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_Q1201) != false;
+        return Gothrough.IamHiden(ll_Q1201) != false;*/
+
+        return true;
     }
 
     @Override

@@ -37,8 +37,8 @@ public class N2110_N2189a extends AppCompatActivity {
 
         this.setTitle(getString(R.string.h_n_sec_5));
 
-        GetDataFromDB();
         SetContentUI();
+        GetDataFromDB();
 
     }
 

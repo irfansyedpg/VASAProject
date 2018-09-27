@@ -71,9 +71,9 @@ public class Upload_C3101_C3112 extends AsyncTask {
     @Override
     protected void onPreExecute() {
 
-        dialog.setMessage("Uploading interview Please wait ....");
-        dialog.setCancelable(false);
-        dialog.show();
+        //dialog.setMessage("Uploading interview Please wait ....");
+        //dialog.setCancelable(false);
+        //dialog.show();
 
         //region Query
         String query = "select * from C3101_C3112 where study_id = '"+ Q1101_Q1610.study_id_upload +"' order by id  desc LIMIT 1";
@@ -218,11 +218,11 @@ public class Upload_C3101_C3112 extends AsyncTask {
 
             String result = (((String) o).replace("\"", ""));
 
-            Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
 
             new Upload_C3121_C3228(mContext).execute();
 
-            thread.start();
+            //thread.start();
         } catch (IOException e) {
             //if connection was available via connecting but
             //we can't get data from server..
