@@ -1,5 +1,6 @@
 package com.irfansyed.VAS.VASMonitring.RP;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +21,6 @@ import com.santalu.widget.MaskEditText;
 import java.util.ArrayList;
 import java.util.List;
 
-import Global.GS.Q1101_Q1610;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -105,15 +105,17 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
             w19,
             w21,
             w22;
-
+    String section;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.w204_w215);
 
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        section = getStudyId.getExtras().getString("section");
 
 
-        study_id=Q1101_Q1610.study_id;
         this.initialize();
         this.event_call();
 
@@ -169,6 +171,27 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
     void event_call() {
         btn_next.setOnClickListener(this);
+
+
+
+                rb_W204_1.setOnCheckedChangeListener(this);
+                rb_W204_2.setOnCheckedChangeListener(this);
+                rb_W205_1.setOnCheckedChangeListener(this);
+                rb_W205_2.setOnCheckedChangeListener(this);
+                rb_W206_1.setOnCheckedChangeListener(this);
+                rb_W206_2.setOnCheckedChangeListener(this);
+                rb_W207_1.setOnCheckedChangeListener(this);
+                rb_W207_2.setOnCheckedChangeListener(this);
+                rb_W208_1.setOnCheckedChangeListener(this);
+                rb_W208_2.setOnCheckedChangeListener(this);
+                rb_W209_1.setOnCheckedChangeListener(this);
+                rb_W209_2.setOnCheckedChangeListener(this);
+
+                cb_W210_1.setOnCheckedChangeListener(this);
+        cb_W210_2.setOnCheckedChangeListener(this);
+        cb_W210_3.setOnCheckedChangeListener(this);
+        cb_W210_RA.setOnCheckedChangeListener(this);
+        cb_W210_dk.setOnCheckedChangeListener(this);
     }
 
     void show_dailuge() {
@@ -784,7 +807,14 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
 
 
-            int number_preg=Integer.parseInt(ed_W215.getText().toString());
+
+                int number_preg =0;
+
+            if(ed_W215.getText().toString().length()>0) {
+                number_preg = Integer.parseInt(ed_W215.getText().toString());
+            }
+
+
 
 
             if(lst_w17.size()<number_preg) {
@@ -802,6 +832,50 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
 
 
+            Intent c=new Intent() ;
+
+            if(section.equals("C3001_C3011")) {
+
+
+              c=  new Intent(this,com.irfansyed.VAS.VASMonitring.C.C3001_C3011.class);
+
+                c.putExtra("study_id", study_id);
+
+                startActivity(c);
+            }
+           else if(section.equals("C3012_C3022")) {
+
+
+              c=  new Intent(this, com.irfansyed.VAS.VASMonitring.C. C3012_C3022.class);
+
+                c.putExtra("study_id", study_id);
+
+                startActivity(c);
+            }
+           else if(section.equals("N2001_N2011")) {
+
+
+               c= new Intent(this, com.irfansyed.VAS.VASMonitring.N. N2001_N2011.class);
+
+                c.putExtra("study_id", study_id);
+
+                startActivity(c);
+            }
+            else
+            {
+              c=  new Intent(this, com.irfansyed.VAS.VASMonitring.A.A4001_A4014.class);
+
+                c.putExtra("study_id", study_id);
+
+                startActivity(c);
+            }
+
+
+
+
+
+
+
 
 
         }
@@ -813,6 +887,175 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
 
     {
+
+        if(buttonView.getId()==R.id.rb_W204_1 || buttonView.getId()==R.id.rb_W204_2)
+        {
+            if(rb_W204_1.isChecked())
+            {
+                ll_W205.setVisibility(View.GONE);
+                ClearAllcontrol.ClearAll(ll_W205);
+            }
+            else
+            {
+
+                ll_W205.setVisibility(View.VISIBLE);
+
+
+            }
+
+        }
+
+        if(buttonView.getId()==R.id.rb_W207_1 || buttonView.getId()==R.id.rb_W207_2)
+        {
+            if(rb_W207_2.isChecked())
+            {
+
+                ll_W208.setVisibility(View.GONE);
+                ll_W209.setVisibility(View.GONE);
+                ll_W210.setVisibility(View.GONE);
+                ll_W211.setVisibility(View.GONE);
+                ll_W212.setVisibility(View.GONE);
+                ll_W213.setVisibility(View.GONE);
+                ll_W214.setVisibility(View.GONE);
+                ll_W215.setVisibility(View.GONE);
+
+
+                ClearAllcontrol.ClearAll(ll_W208);
+                ClearAllcontrol.ClearAll(ll_W209);
+                ClearAllcontrol.ClearAll(ll_W210);
+                ClearAllcontrol.ClearAll(ll_W211);
+                ClearAllcontrol.ClearAll(ll_W212);
+                ClearAllcontrol.ClearAll(ll_W213);
+                ClearAllcontrol.ClearAll(ll_W214);
+                ClearAllcontrol.ClearAll(ll_W215);
+            }
+            else
+            {
+
+
+                ll_W208.setVisibility(View.VISIBLE);
+                ll_W209.setVisibility(View.VISIBLE);
+                ll_W210.setVisibility(View.VISIBLE);
+                ll_W211.setVisibility(View.VISIBLE);
+                ll_W212.setVisibility(View.VISIBLE);
+                ll_W213.setVisibility(View.VISIBLE);
+                ll_W214.setVisibility(View.VISIBLE);
+                ll_W215.setVisibility(View.VISIBLE);
+
+
+            }
+
+        }
+
+
+        if(buttonView.getId()==R.id.rb_W205_1 || buttonView.getId()==R.id.rb_W205_2)
+        {
+            if(rb_W205_2.isChecked())
+            {
+                ll_W206.setVisibility(View.GONE);
+                ll_W207.setVisibility(View.GONE);
+                ll_W208.setVisibility(View.GONE);
+                ll_W209.setVisibility(View.GONE);
+                ll_W210.setVisibility(View.GONE);
+                ll_W211.setVisibility(View.GONE);
+                ll_W212.setVisibility(View.GONE);
+                ll_W213.setVisibility(View.GONE);
+                ll_W214.setVisibility(View.GONE);
+                ll_W215.setVisibility(View.GONE);
+
+                ClearAllcontrol.ClearAll(ll_W206);
+                ClearAllcontrol.ClearAll(ll_W207);
+                ClearAllcontrol.ClearAll(ll_W208);
+                ClearAllcontrol.ClearAll(ll_W209);
+                ClearAllcontrol.ClearAll(ll_W210);
+                ClearAllcontrol.ClearAll(ll_W211);
+                ClearAllcontrol.ClearAll(ll_W212);
+                ClearAllcontrol.ClearAll(ll_W213);
+                ClearAllcontrol.ClearAll(ll_W214);
+                ClearAllcontrol.ClearAll(ll_W215);
+            }
+            else
+            {
+
+                ll_W206.setVisibility(View.VISIBLE);
+                ll_W207.setVisibility(View.VISIBLE);
+                ll_W208.setVisibility(View.VISIBLE);
+                ll_W209.setVisibility(View.VISIBLE);
+                ll_W210.setVisibility(View.VISIBLE);
+                ll_W211.setVisibility(View.VISIBLE);
+                ll_W212.setVisibility(View.VISIBLE);
+                ll_W213.setVisibility(View.VISIBLE);
+                ll_W214.setVisibility(View.VISIBLE);
+                ll_W215.setVisibility(View.VISIBLE);
+
+
+            }
+
+        }
+
+
+        if(buttonView.getId()==R.id.rb_W208_1 || buttonView.getId()==R.id.rb_W208_2)
+        {
+            if(rb_W208_2.isChecked())
+            {
+                ll_W209.setVisibility(View.GONE);
+                ClearAllcontrol.ClearAll(ll_W209);
+            }
+            else
+            {
+
+                ll_W209.setVisibility(View.VISIBLE);
+
+
+            }
+
+        }
+
+        if(     buttonView.getId()==R.id.cb_W210_1 ||
+                buttonView.getId()==R.id.cb_W210_2 ||
+                buttonView.getId()==R.id.cb_W210_3 ||
+                buttonView.getId()==R.id.cb_W210_dk ||
+                buttonView.getId()==R.id.cb_W210_RA )
+        {
+            if(buttonView.getId()==R.id.cb_W210_dk)
+            {
+                if(cb_W210_dk.isChecked())
+                {
+                    cb_W210_1.setChecked(false);
+                    cb_W210_2.setChecked(false);
+                    cb_W210_3.setChecked(false);
+                    cb_W210_RA.setChecked(false);
+
+                }
+            }
+
+            if(buttonView.getId()==R.id.cb_W210_RA)
+            {
+                if(cb_W210_RA.isChecked())
+                {
+                    cb_W210_1.setChecked(false);
+                    cb_W210_2.setChecked(false);
+                    cb_W210_3.setChecked(false);
+                    cb_W210_dk.setChecked(false);
+
+                }
+            }
+            if(buttonView.getId()==R.id.cb_W210_1 ||
+                    buttonView.getId()==R.id.cb_W210_2 ||
+                    buttonView.getId()==R.id.cb_W210_3)
+            {
+
+                if(cb_W210_1.isChecked() || cb_W210_2.isChecked() || cb_W210_3.isChecked() )
+                {
+                    cb_W210_dk.setChecked(false);
+                    cb_W210_RA.setChecked(false);
+                }
+
+
+            }
+
+
+        }
 
 
     }

@@ -199,7 +199,7 @@
                         <TextView
                             android:id="@+id/txt_W222"
                             style="@style/TextView"
-                            android:text="txt_W222" />
+                            android:text="@string/txt_W222" />
 
                         <EditText
                             android:id="@+id/ed_W222_1"

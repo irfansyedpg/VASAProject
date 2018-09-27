@@ -16,10 +16,8 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.A.A4001_A4014;
-import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
-import com.irfansyed.VAS.VASMonitring.C.C3012_C3022;
-import com.irfansyed.VAS.VASMonitring.N.N2001_N2011;
 import com.irfansyed.VAS.VASMonitring.R;
+import com.irfansyed.VAS.VASMonitring.RP.w204_w222;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -486,7 +484,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         if (validateField() == false) {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
-            return;
+           // return;
         }
 
         pattern = Pattern.compile(DATE_PATTERN);
@@ -506,6 +504,15 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         }*/
 
         value_assignment();
+
+        if (if_study_id_exsist() == true) {
+            Toast.makeText(this, "Study ID Already Exist", Toast.LENGTH_LONG).show();
+
+            ed_study_id.requestFocus();
+            ed_study_id.setError("This ID Already Exist");
+             return;
+        }
+
         insert_data();
 
         DBHelper db = new DBHelper(this);
@@ -515,30 +522,34 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
             res.moveToFirst();
 
-            //Toast.makeText(this, "" + parseInt(res.getString(res.getColumnIndex("Q1609"))), Toast.LENGTH_LONG).show();
+            String aa=res.getString(res.getColumnIndex("Q1609"));
+            Toast.makeText(this, "" + parseInt(res.getString(res.getColumnIndex("Q1609"))), Toast.LENGTH_LONG).show();
 
-            if (parseInt(res.getString(res.getColumnIndex("Q1609"))) == 5) {
+            if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(5)) {
 
                 Intent c = new Intent(this, A4001_A4014.class);
                 c.putExtra("study_id", study_id);
                 startActivity(c);
 
-            } else if (parseInt(res.getString(res.getColumnIndex("Q1609"))) == 2) {
+            } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(2)) {
 
-                Intent c = new Intent(this, C3001_C3011.class);
+                Intent c = new Intent(this, w204_w222.class);
                 c.putExtra("study_id", study_id);
+                c.putExtra("section", "C3001_C3011");
                 startActivity(c);
 
-            } else if (parseInt(res.getString(res.getColumnIndex("Q1609"))) == 3 || parseInt(res.getString(res.getColumnIndex("Q1609"))) == 4) {
+            } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(3) || Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(4)) {
 
-                Intent c = new Intent(this, C3012_C3022.class);
+                Intent c = new Intent(this, w204_w222.class);
                 c.putExtra("study_id", study_id);
+                c.putExtra("section", "C3012_C3022");
                 startActivity(c);
 
-            } else if (parseInt(res.getString(res.getColumnIndex("Q1609"))) == 1) {
+            } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(1)) {
 
-                Intent c = new Intent(this, N2001_N2011.class);
+                Intent c = new Intent(this, w204_w222.class);
                 c.putExtra("study_id", study_id);
+                c.putExtra("section", "N2001_N2011");
                 startActivity(c);
 
             }
@@ -2628,6 +2639,16 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         } else {
             return false;
         }
+    }
+
+
+    boolean if_study_id_exsist()
+    {
+        DBHelper db = new DBHelper(this);
+        Cursor res = db.getData("Q1101_Q1610", study_id);
+
+        return res.getCount() > 0;
+
     }
 
 }
