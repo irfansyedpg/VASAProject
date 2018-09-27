@@ -126,9 +126,8 @@ public class Upload_C3051_C3099 extends AsyncTask {
                 param.put(C3051_C3099.C3067_5, c.getString(c.getColumnIndex("C3067_5")));
                 param.put(C3051_C3099.C3067_6, c.getString(c.getColumnIndex("C3067_6")));
                 param.put(C3051_C3099.C3067_7, c.getString(c.getColumnIndex("C3067_7")));
-               // param.put(C3051_C3099.C3067_OT, c.getString(c.getColumnIndex("C3067_OT")));
+                param.put(C3051_C3099.C3067_OT, c.getString(c.getColumnIndex("C3067_OT")));
 
-                param.put(C3051_C3099.C3067_OT, "ddd");
                 param.put(C3051_C3099.C3067_DK, c.getString(c.getColumnIndex("C3067_DK")));
                 param.put(C3051_C3099.C3068, c.getString(c.getColumnIndex("C3068")));
                 param.put(C3051_C3099.C3068_OT, c.getString(c.getColumnIndex("C3068_OT")));
@@ -226,7 +225,7 @@ public class Upload_C3051_C3099 extends AsyncTask {
     protected void onPostExecute(Object o) {
 
         try {
-           // dialog.dismiss();
+          //  dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();

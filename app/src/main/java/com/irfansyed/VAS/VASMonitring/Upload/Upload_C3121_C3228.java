@@ -94,7 +94,6 @@ public class Upload_C3121_C3228 extends AsyncTask {
                 param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
                 param.put(C3001_C3011.study_id, c.getString(c.getColumnIndex("study_id")));
 
-
                 param.put(C3121_C3228.C3121 , c.getString(c.getColumnIndex("C3121")));
                 param.put(C3121_C3228.C3122d , c.getString(c.getColumnIndex("C3122d")));
                 param.put(C3121_C3228.C3122m , c.getString(c.getColumnIndex("C3122m")));
@@ -362,7 +361,7 @@ public class Upload_C3121_C3228 extends AsyncTask {
         super.onPostExecute(o);
     }
 
-    void update_status(String id) {
+    /*void update_status(String id) {
         String query = "Update C3001_C3011 set STATUS = '1' where id='" + id + "'";
 
         query = String.format(query);
@@ -372,5 +371,5 @@ public class Upload_C3121_C3228 extends AsyncTask {
         LocalDataManager.database.execSQL(query);
 
         Toast.makeText(mContext, "Status updated", Toast.LENGTH_SHORT).show();
-    }
+    }*/
 }

@@ -108,7 +108,7 @@ public class Upload_C3101_C3112 extends AsyncTask {
                         param.put(C3101_C3112.C3107_4 , c.getString(c.getColumnIndex("C3107_4")));
                         param.put(C3101_C3112.C3107_5 , c.getString(c.getColumnIndex("C3107_5")));
                         param.put(C3101_C3112.C3107_6 , c.getString(c.getColumnIndex("C3107_6")));
-                        param.put(C3101_C3112.C3107_6_OT , c.getString(c.getColumnIndex("C3107_6_")));
+                        param.put(C3101_C3112.C3107_6_OT , c.getString(c.getColumnIndex("C3107_6_OT")));
                         param.put(C3101_C3112.C3107_7 , c.getString(c.getColumnIndex("C3107_7")));
                         param.put(C3101_C3112.C3107_8 , c.getString(c.getColumnIndex("C3107_8")));
                         param.put(C3101_C3112.C3107_9 , c.getString(c.getColumnIndex("C3107_9")));

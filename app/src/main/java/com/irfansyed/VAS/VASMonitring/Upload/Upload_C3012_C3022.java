@@ -169,7 +169,7 @@ public class Upload_C3012_C3022 extends AsyncTask {
     protected void onPostExecute(Object o) {
 
         try {
-          //  dialog.dismiss();
+            dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();
@@ -205,7 +205,7 @@ public class Upload_C3012_C3022 extends AsyncTask {
         super.onPostExecute(o);
     }
 
-    void update_status(String id) {
+    /*void update_status(String id) {
         String query = "Update C3001_C3011 set STATUS = '1' where id='" + id + "'";
 
         query = String.format(query);
@@ -215,5 +215,5 @@ public class Upload_C3012_C3022 extends AsyncTask {
         LocalDataManager.database.execSQL(query);
 
         Toast.makeText(mContext, "Status updated", Toast.LENGTH_SHORT).show();
-    }
+    }*/
 }

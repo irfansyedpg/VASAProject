@@ -167,7 +167,7 @@ public class Upload_C3001_C3011 extends AsyncTask {
     protected void onPostExecute(Object o) {
 
         try {
-          //  dialog.dismiss();
+            dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();

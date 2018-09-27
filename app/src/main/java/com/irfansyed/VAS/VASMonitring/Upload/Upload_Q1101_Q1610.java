@@ -243,7 +243,7 @@ public class Upload_Q1101_Q1610 extends AsyncTask {
     protected void onPostExecute(Object o) {
 
         try {
-           // dialog.dismiss();
+            dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();
