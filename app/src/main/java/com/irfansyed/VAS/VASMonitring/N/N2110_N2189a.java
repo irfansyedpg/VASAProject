@@ -44,6 +44,9 @@ public class N2110_N2189a extends AppCompatActivity {
 
     private void GetDataFromDB() {
 
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
+
         DBHelper db = new DBHelper(this);
 
         String n2006 = db.getSpecificData(data.N.N2001_N2011.TABLE_NAME, bi.edStudyId.getText().toString(), N2001_N2011.sub_N2001_N2011.N2006);
@@ -73,9 +76,6 @@ public class N2110_N2189a extends AppCompatActivity {
     }
 
     private void SetContentUI() {
-
-        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
-        bi.edStudyId.setEnabled(false);
 
         bi.rgN2112.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

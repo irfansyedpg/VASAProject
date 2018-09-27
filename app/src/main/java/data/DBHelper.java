@@ -222,10 +222,10 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2001_N2011.sub_N2001_N2011.N2006x, n2001.getN2006x());
         values.put(N2001_N2011.sub_N2001_N2011.N2008, n2001.getN2008());
         values.put(N2001_N2011.sub_N2001_N2011.N2008x, n2001.getN2008x());
-        values.put(N2001_N2011.sub_N2001_N2011.N2009_1, n2001.getN20091());
-        values.put(N2001_N2011.sub_N2001_N2011.N2009_2, n2001.getN20092());
-        values.put(N2001_N2011.sub_N2001_N2011.N2009_3, n2001.getN20093());
-        values.put(N2001_N2011.sub_N2001_N2011.N2009_4, n2001.getN20094());
+        values.put(N2001_N2011.sub_N2001_N2011.N2009_1, n2001.getN2009_1());
+        values.put(N2001_N2011.sub_N2001_N2011.N2009_2, n2001.getN2009_2());
+        values.put(N2001_N2011.sub_N2001_N2011.N2009_3, n2001.getN2009_3());
+        values.put(N2001_N2011.sub_N2001_N2011.N2009_4, n2001.getN2009_4());
         values.put(N2001_N2011.sub_N2001_N2011.N2010, n2001.getN2010());
         values.put(N2001_N2011.sub_N2001_N2011.N2011, n2001.getN2011());
         values.put(N2001_N2011.sub_N2001_N2011.STUDYID, n2001.getSTUDYID());

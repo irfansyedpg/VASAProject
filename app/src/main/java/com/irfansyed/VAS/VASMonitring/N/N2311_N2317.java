@@ -38,6 +38,9 @@ public class N2311_N2317 extends AppCompatActivity {
 
     private void GetDataFromDB() {
 
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
+
         DBHelper db = new DBHelper(this);
         String n2016 = db.getSpecificData(data.N.N2012_N2016.TABLE_NAME, bi.edStudyId.getText().toString(), N2012_N2016.sub_N2012_N2016.N2016);
         if (Integer.valueOf(n2016) == 1) {
@@ -47,9 +50,6 @@ public class N2311_N2317 extends AppCompatActivity {
     }
 
     private void SetContentUI() {
-
-        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
-        bi.edStudyId.setEnabled(false);
 
         // Validation Flag
         valFlag = getIntent().getBooleanExtra("valFlag", false);

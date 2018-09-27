@@ -93,8 +93,6 @@ public class Upload_C3401_C3457 extends AsyncTask {
                 param.put("tableName", "c3401_C3457");
                 param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
                 param.put(C3001_C3011.study_id, c.getString(c.getColumnIndex("study_id")));
-
-
                 param.put(C3401_C3457.C3401 , c.getString(c.getColumnIndex(" C3401")));
                 param.put(C3401_C3457.C3402 , c.getString(c.getColumnIndex(" C3402")));
                 param.put(C3401_C3457.C3403 , c.getString(c.getColumnIndex(" C3403")));
@@ -152,9 +150,6 @@ public class Upload_C3401_C3457 extends AsyncTask {
                 param.put(C3401_C3457.C3455 , c.getString(c.getColumnIndex(" C3455")));
                 param.put(C3401_C3457.C3456 , c.getString(c.getColumnIndex(" C3456")));
                 param.put(C3401_C3457.C3457 , c.getString(c.getColumnIndex(" C3457")));
-
-
-
             }
         }
 
@@ -220,7 +215,7 @@ public class Upload_C3401_C3457 extends AsyncTask {
 
             String result = (((String) o).replace("\"", ""));
 
-            Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, "Interview Uploaded", Toast.LENGTH_SHORT).show();
 
             //new Upload_C3401_C3457(mContext).execute();
 

@@ -30,7 +30,8 @@ public class Upload_Q1101_Q1610 extends AsyncTask {
     Context mContext;
     public static ProgressDialog dialog;
     HashMap<String, String> param;
-    String[]                interviewLogData;
+
+    //String[]                interviewLogData;
     String                  mUserMsg;
     // wait for Toast then kill app
     Thread thread = new Thread() {
@@ -44,7 +45,6 @@ public class Upload_Q1101_Q1610 extends AsyncTask {
                 int pid = android.os.Process.myPid();
                 android.os.Process.killProcess(pid);
                 // getActivity().finish();
-
 
                 System.exit(0);
 
@@ -69,13 +69,12 @@ public class Upload_Q1101_Q1610 extends AsyncTask {
     @Override
     protected void onPreExecute() {
 
-        dialog.setMessage("Uploading interview Please wait ....");
+        dialog.setMessage("Uploading Interview  Please wait ....");
         dialog.setCancelable(false);
         dialog.show();
 
         //region Query
         String query = "select * from Q1101_Q1610 where study_id = '"+ Q1101_Q1610.study_id_upload +"' order by id  desc LIMIT 1";
-
 
         query = String.format(query, Q1101_Q1610.study_id_upload);
 
@@ -174,10 +173,8 @@ public class Upload_Q1101_Q1610 extends AsyncTask {
                 param.put(Q1101_Q1610.Q1610_3, c.getString(c.getColumnIndex("Q1610_3")));
                 param.put(Q1101_Q1610.interviewType, c.getString(c.getColumnIndex("interviewType")));
                 param.put(Q1101_Q1610.currentSection, c.getString(c.getColumnIndex("currentSection")));
-
             }
         }
-
 
         //endregion
         super.onPreExecute();
@@ -196,7 +193,7 @@ public class Upload_Q1101_Q1610 extends AsyncTask {
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             // connection.setRequestMethod("GET");
-            connection.setConnectTimeout(1000);
+            connection.setConnectTimeout(20000);
 
             OutputStream os = connection.getOutputStream();
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
@@ -230,7 +227,7 @@ public class Upload_Q1101_Q1610 extends AsyncTask {
     }
 
 
-    void update_status(String id) {
+    /*void update_status(String id) {
         String query = "Update C3001_C3011 set STATUS = '1' where id='" + id + "'";
 
         query = String.format(query);
@@ -240,21 +237,18 @@ public class Upload_Q1101_Q1610 extends AsyncTask {
         LocalDataManager.database.execSQL(query);
 
         Toast.makeText(mContext, "Status updated", Toast.LENGTH_SHORT).show();
-    }
+    }*/
 
     @Override
     protected void onPostExecute(Object o) {
 
         try {
-            dialog.dismiss();
+           // dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();
 
-            String result = (((String) o).replace("\"", ""));
-
-            Toast.makeText(mContext, "Q section Uploaded", Toast.LENGTH_SHORT).show();
-
+            //String result = (((String) o).replace("\"", ""));
             // call another table upload here
 
             if (Q1101_Q1610.interviewType_upload == 1) {
