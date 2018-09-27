@@ -680,6 +680,10 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
     @Override
     public void onClick(View view) {
 
+
+
+
+
         if (view.getId() == R.id.btn_next11) {
             if (validateField() == false) {
                 Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();

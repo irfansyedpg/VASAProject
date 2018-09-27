@@ -32,7 +32,7 @@ public class Upload_C3051_C3099 extends AsyncTask {
     public static ProgressDialog dialog;
     Context mContext;
     HashMap<String, String> param;
-    String[]                interviewLogData;
+//    String[]                interviewLogData;
     String                  mUserMsg;
     // wait for Toast then kill app
     Thread thread = new Thread() {
@@ -71,9 +71,10 @@ public class Upload_C3051_C3099 extends AsyncTask {
     @Override
     protected void onPreExecute() {
 
-        dialog.setMessage("Uploading interview Please wait ....");
-        dialog.setCancelable(false);
-        dialog.show();
+        //dialog.setMessage("Uploading interview Please wait ....");
+        //dialog.setCancelable(false);
+        //dialog.show();
+
 
         //region Query
         String query = "select * from C3051_C3099 where study_id = '"+ Q1101_Q1610.study_id_upload +"' order by id  desc LIMIT 1";
@@ -93,11 +94,6 @@ public class Upload_C3051_C3099 extends AsyncTask {
                 param.put("tableName", "c3051_c3099");
                 param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
                 param.put(C3001_C3011.study_id, c.getString(c.getColumnIndex("study_id")));
-
-
-
-
-
                 param.put(C3051_C3099.C3051, c.getString(c.getColumnIndex("C3051")));
                 param.put(C3051_C3099.C3052, c.getString(c.getColumnIndex("C3052")));
                 param.put(C3051_C3099.C3053, c.getString(c.getColumnIndex("C3053")));
@@ -131,6 +127,7 @@ public class Upload_C3051_C3099 extends AsyncTask {
                 param.put(C3051_C3099.C3067_6, c.getString(c.getColumnIndex("C3067_6")));
                 param.put(C3051_C3099.C3067_7, c.getString(c.getColumnIndex("C3067_7")));
                 param.put(C3051_C3099.C3067_OT, c.getString(c.getColumnIndex("C3067_OT")));
+
                 param.put(C3051_C3099.C3067_DK, c.getString(c.getColumnIndex("C3067_DK")));
                 param.put(C3051_C3099.C3068, c.getString(c.getColumnIndex("C3068")));
                 param.put(C3051_C3099.C3068_OT, c.getString(c.getColumnIndex("C3068_OT")));
@@ -228,18 +225,16 @@ public class Upload_C3051_C3099 extends AsyncTask {
     protected void onPostExecute(Object o) {
 
         try {
-            dialog.dismiss();
+          //  dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();
 
-            String result = (((String) o).replace("\"", ""));
-
-            Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
+            //String result = (((String) o).replace("\"", ""));
 
             new Upload_C3101_C3112(mContext).execute();
 
-            thread.start();
+            //thread.start();
         } catch (IOException e) {
             //if connection was available via connecting but
             //we can't get data from server..
@@ -252,7 +247,7 @@ public class Upload_C3051_C3099 extends AsyncTask {
             mUserMsg = e.getMessage();
             dialog.dismiss();
         } catch (Exception e) {
-            Toast.makeText(mContext, "Uploading failed at request a4001_a4014 section", Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, "Uploading failed at request C3051_C3099 section", Toast.LENGTH_SHORT).show();
             dialog.dismiss();
             return;
         } finally {

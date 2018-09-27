@@ -93,8 +93,6 @@ public class Upload_C3351_C3364 extends AsyncTask {
                 param.put("tableName", "c3351_c3364");
                 param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
                 param.put(C3001_C3011.study_id, c.getString(c.getColumnIndex("study_id")));
-
-
                 param.put(C3351_C3364.C3351 , c.getString(c.getColumnIndex("C3351")));
                 param.put(C3351_C3364.C3352 , c.getString(c.getColumnIndex("C3352")));
                 param.put(C3351_C3364.C3353 , c.getString(c.getColumnIndex("C3353")));
@@ -105,10 +103,6 @@ public class Upload_C3351_C3364 extends AsyncTask {
                 param.put(C3351_C3364.C3358 , c.getString(c.getColumnIndex("C3358")));
                 param.put(C3351_C3364.C3363 , c.getString(c.getColumnIndex("C3363")));
                 param.put(C3351_C3364.C3364 , c.getString(c.getColumnIndex("C3364")));
-
-
-
-
             }
         }
 
@@ -174,11 +168,11 @@ public class Upload_C3351_C3364 extends AsyncTask {
 
             String result = (((String) o).replace("\"", ""));
 
-            Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
 
             new Upload_C3401_C3457(mContext).execute();
 
-            thread.start();
+            //thread.start();
         } catch (IOException e) {
             //if connection was available via connecting but
             //we can't get data from server..
@@ -201,17 +195,5 @@ public class Upload_C3351_C3364 extends AsyncTask {
 
 
         super.onPostExecute(o);
-    }
-
-    void update_status(String id) {
-        String query = "Update C3001_C3011 set STATUS = '1' where id='" + id + "'";
-
-        query = String.format(query);
-
-        LocalDataManager Lm = new LocalDataManager(mContext);
-
-        LocalDataManager.database.execSQL(query);
-
-        Toast.makeText(mContext, "Status updated", Toast.LENGTH_SHORT).show();
     }
 }

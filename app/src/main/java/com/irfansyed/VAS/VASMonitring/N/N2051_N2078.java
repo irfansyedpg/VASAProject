@@ -38,6 +38,9 @@ public class N2051_N2078 extends AppCompatActivity {
 
     private void GetDataFromDB() {
 
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
+
         DBHelper db = new DBHelper(this);
 
         String n2006 = db.getSpecificData(data.N.N2001_N2011.TABLE_NAME, bi.edStudyId.getText().toString(), sub_N2001_N2011.N2006);
@@ -59,9 +62,6 @@ public class N2051_N2078 extends AppCompatActivity {
     }
 
     private void SetContentUI() {
-
-        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
-        bi.edStudyId.setEnabled(false);
 
         bi.rgN2052.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

@@ -197,11 +197,11 @@ public class Upload_C3301_C3314 extends AsyncTask {
 
             String result = (((String) o).replace("\"", ""));
 
-            Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
 
             new Upload_C3351_C3364(mContext).execute();
 
-            thread.start();
+            //thread.start();
         } catch (IOException e) {
             //if connection was available via connecting but
             //we can't get data from server..
@@ -226,7 +226,7 @@ public class Upload_C3301_C3314 extends AsyncTask {
         super.onPostExecute(o);
     }
 
-    void update_status(String id) {
+    /*void update_status(String id) {
         String query = "Update C3001_C3011 set STATUS = '1' where id='" + id + "'";
 
         query = String.format(query);
@@ -236,5 +236,5 @@ public class Upload_C3301_C3314 extends AsyncTask {
         LocalDataManager.database.execSQL(query);
 
         Toast.makeText(mContext, "Status updated", Toast.LENGTH_SHORT).show();
-    }
+    }*/
 }

@@ -37,6 +37,9 @@ public class N2291_N2304 extends AppCompatActivity {
 
     private void GetDataFromDB() {
 
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
+
         DBHelper db = new DBHelper(this);
         String q1403 = db.getSpecificData(data.GS.Q1101_Q1610.TABLE_NAME, bi.edStudyId.getText().toString(), Global.GS.Q1101_Q1610.Q1403);
         if (Integer.valueOf(q1403) == 2) {
@@ -46,9 +49,6 @@ public class N2291_N2304 extends AppCompatActivity {
     }
 
     private void SetContentUI() {
-
-        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
-        bi.edStudyId.setEnabled(false);
 
         bi.rgN2292.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
