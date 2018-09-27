@@ -18,9 +18,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 
-
 import Global.A.A4051_A4066;
-
 import Global.GS.Q1101_Q1610;
 import data.LocalDataManager;
 import utils.MyPreferences;
@@ -60,47 +58,47 @@ public class Upload_A4051_A4066 extends AsyncTask {
         HashMap<String, List<String>> map = QuestionModel.quest.get("a");
 
         //region Query
-        String query1 = "select * from A4051_A4066 where study_id = '%s' order by id  desc LIMIT 1";
+        String query = "select * from A4051_A4066 where study_id = '%s' order by id  desc LIMIT 1";
 
 
-        query1 = String.format(query1, Q1101_Q1610.study_id);
+        query = String.format(query, Q1101_Q1610.study_id);
 
         LocalDataManager Lm = new LocalDataManager(mContext);
 
 
-        Cursor c1 = LocalDataManager.database.rawQuery(query1, null);
+        Cursor c = LocalDataManager.database.rawQuery(query, null);
 
 
+        if (c != null) {
+            if (c.moveToFirst()) {
+                param.put("tableName", "A4051_A4066");
+                param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
+                param.put(A4051_A4066.study_id, c.getString(c.getColumnIndex("study_id")));
+                param.put(A4051_A4066.A4051, c.getString(c.getColumnIndex("A4051")));
+                param.put(A4051_A4066.A4052_u, c.getString(c.getColumnIndex("A4052_u")));
+                param.put(A4051_A4066.A4052_b, c.getString(c.getColumnIndex("A4052_b")));
+                param.put(A4051_A4066.A4052_c, c.getString(c.getColumnIndex("A4052_c")));
+                param.put(A4051_A4066.A4053, c.getString(c.getColumnIndex("A4053")));
+                param.put(A4051_A4066.A4054, c.getString(c.getColumnIndex("A4054")));
+                param.put(A4051_A4066.A4055, c.getString(c.getColumnIndex("A4055")));
+                param.put(A4051_A4066.A4056, c.getString(c.getColumnIndex("A4056")));
+                param.put(A4051_A4066.A4057, c.getString(c.getColumnIndex("A4057")));
+                param.put(A4051_A4066.A4058, c.getString(c.getColumnIndex("A4058")));
+                param.put(A4051_A4066.A4059_u, c.getString(c.getColumnIndex("A4059_u")));
+                param.put(A4051_A4066.A4059_a, c.getString(c.getColumnIndex("A4059_a")));
+                param.put(A4051_A4066.A4059_b, c.getString(c.getColumnIndex("A4059_b")));
+                param.put(A4051_A4066.A4060, c.getString(c.getColumnIndex("A4060")));
+                param.put(A4051_A4066.A4061, c.getString(c.getColumnIndex("A4061")));
+                param.put(A4051_A4066.A4062, c.getString(c.getColumnIndex("A4062")));
+                param.put(A4051_A4066.A4063, c.getString(c.getColumnIndex("A4063")));
+                param.put(A4051_A4066.A4064_u, c.getString(c.getColumnIndex("A4064_u")));
+                param.put(A4051_A4066.A4064_a, c.getString(c.getColumnIndex("A4064_a")));
+                param.put(A4051_A4066.A4064_b, c.getString(c.getColumnIndex("A4064_b")));
+                param.put(A4051_A4066.A4064_1, c.getString(c.getColumnIndex("A4064_1")));
+                param.put(A4051_A4066.A4065, c.getString(c.getColumnIndex("A4065")));
+                param.put(A4051_A4066.A4066, c.getString(c.getColumnIndex("A4066")));
+                param.put(A4051_A4066.STATUS, c.getString(c.getColumnIndex("STATUS")));
 
-        if (c1 != null) {
-            if (c1.moveToFirst()) {
-                param.put("tableName", "a4051_a4066");
-
-                param.put(A4051_A4066.study_id, c1.getString(0));
-                param.put(A4051_A4066.A4051, c1.getString(1));
-                param.put(A4051_A4066.A4052_u, c1.getString(2));
-                param.put(A4051_A4066.A4052_b, c1.getString(3));
-                param.put(A4051_A4066.A4052_c, c1.getString(4));
-                param.put(A4051_A4066.A4053, c1.getString(5));
-                param.put(A4051_A4066.A4054, c1.getString(6));
-                param.put(A4051_A4066.A4055, c1.getString(7));
-                param.put(A4051_A4066.A4056, c1.getString(8));
-                param.put(A4051_A4066.A4057, c1.getString(9));
-                param.put(A4051_A4066.A4058, c1.getString(10));
-                param.put(A4051_A4066.A4059_u, c1.getString(11));
-                param.put(A4051_A4066.A4059_a, c1.getString(12));
-                param.put(A4051_A4066.A4059_b, c1.getString(13));
-                param.put(A4051_A4066.A4060, c1.getString(14));
-                param.put(A4051_A4066.A4061, c1.getString(15));
-                param.put(A4051_A4066.A4062, c1.getString(16));
-                param.put(A4051_A4066.A4063, c1.getString(17));
-                param.put(A4051_A4066.A4064_u, c1.getString(18));
-                param.put(A4051_A4066.A4064_a, c1.getString(19));
-                param.put(A4051_A4066.A4064_b, c1.getString(20));
-                param.put(A4051_A4066.A4064_1, c1.getString(21));
-                param.put(A4051_A4066.A4065, c1.getString(22));
-                param.put(A4051_A4066.A4066, c1.getString(23));
-                param.put(A4051_A4066.STATUS, c1.getString(24));
             }
         }
 
