@@ -4,13 +4,13 @@ import android.database.Cursor;
 
 public class N2211_N2248_B {
 
-    public String N2213 = "N2213";
-    public String N2213_2A = "N2213_2A";
-    public String N2213_4 = "N2213_4";
-    public String ACT_COUNT = "ACT_COUNT";
-    public String ACT_ID_FK = "ACT_ID_FK";
+    public String N2213 = "";
+    public String N2213_2A = "";
+    public String N2213_4 = "";
+    public String ACT_COUNT = "";
+    public String ACT_ID_FK = "";
 
-    public String STUDYID = "STUDYID";
+    public String STUDYID = "";
 
     public String getSTUDYID() {
         return STUDYID;

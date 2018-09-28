@@ -1,13 +1,13 @@
 package Global.N;
 
 public class N2012_N2016 {
-    public String N2012 = "N2012";
-    public String N2013 = "N2013";
-    public String N2014 = "N2014";
-    public String N2015 = "N2015";
-    public String N2016 = "N2016";
+    public String N2012 = "";
+    public String N2013 = "";
+    public String N2014 = "";
+    public String N2015 = "";
+    public String N2016 = "";
 
-    public String STUDYID = "STUDYID";
+    public String STUDYID = "";
 
     public String getSTUDYID() {
         return STUDYID;
