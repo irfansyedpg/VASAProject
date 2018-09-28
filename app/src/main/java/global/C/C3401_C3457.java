@@ -60,6 +60,5 @@ public class C3401_C3457 {
     public static String C3455       = "C3455";
     public static String C3456       = "C3456";
     public static String C3457       = "C3457";
-
     public static String STATUS      = "STATUS";
 }

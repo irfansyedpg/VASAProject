@@ -71,9 +71,9 @@ public class Upload_C3351_C3364 extends AsyncTask {
     @Override
     protected void onPreExecute() {
 
-        dialog.setMessage("Uploading interview Please wait ....");
-        dialog.setCancelable(false);
-        dialog.show();
+        //dialog.setMessage("Uploading interview Please wait ....");
+        //dialog.setCancelable(false);
+        //dialog.show();
 
         //region Query
         String query = "select * from C3351_C3364 where study_id = '"+ Q1101_Q1610.study_id_upload +"' order by id  desc LIMIT 1";
@@ -161,7 +161,7 @@ public class Upload_C3351_C3364 extends AsyncTask {
     protected void onPostExecute(Object o) {
 
         try {
-            dialog.dismiss();
+            //dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();

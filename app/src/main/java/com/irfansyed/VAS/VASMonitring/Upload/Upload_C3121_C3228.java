@@ -71,9 +71,9 @@ public class Upload_C3121_C3228 extends AsyncTask {
     @Override
     protected void onPreExecute() {
 
-        dialog.setMessage("Uploading interview Please wait ....");
-        dialog.setCancelable(false);
-        dialog.show();
+        //dialog.setMessage("Uploading interview Please wait ....");
+        //dialog.setCancelable(false);
+        //dialog.show();
 
         //region Query
         String query = "select * from C3121_C3228 where study_id = '"+ Q1101_Q1610.study_id_upload +"' order by id  desc LIMIT 1";
@@ -93,7 +93,6 @@ public class Upload_C3121_C3228 extends AsyncTask {
                 param.put("tableName", "c3121_c3228");
                 param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
                 param.put(C3001_C3011.study_id, c.getString(c.getColumnIndex("study_id")));
-
                 param.put(C3121_C3228.C3121 , c.getString(c.getColumnIndex("C3121")));
                 param.put(C3121_C3228.C3122d , c.getString(c.getColumnIndex("C3122d")));
                 param.put(C3121_C3228.C3122m , c.getString(c.getColumnIndex("C3122m")));
@@ -325,12 +324,12 @@ public class Upload_C3121_C3228 extends AsyncTask {
     protected void onPostExecute(Object o) {
 
         try {
-            dialog.dismiss();
+            //dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();
 
-            String result = (((String) o).replace("\"", ""));
+            //String result = (((String) o).replace("\"", ""));
 
             //Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
 
