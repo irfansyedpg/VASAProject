@@ -124,7 +124,8 @@ public class Upload_A4251_A4284 extends AsyncTask {
                 param.put(A4251_A4284.A4272_2, c.getString(c.getColumnIndex("A4272_2")));
                 param.put(A4251_A4284.A4273, c.getString(c.getColumnIndex("A4273")));
                 param.put(A4251_A4284.A4274, c.getString(c.getColumnIndex("A4274")));
-                param.put(A4251_A4284.A4275, c.getString(c.getColumnIndex("A4275")));
+                param.put(A4251_A4284.A4275_1, c.getString(c.getColumnIndex("A4275_1")));
+                param.put(A4251_A4284.A4275_2, c.getString(c.getColumnIndex("A4275_2")));
                 param.put(A4251_A4284.A4276_1, c.getString(c.getColumnIndex("A4276_1")));
                 param.put(A4251_A4284.A4276_2, c.getString(c.getColumnIndex("A4276_2")));
                 param.put(A4251_A4284.A4276_3, c.getString(c.getColumnIndex("A4276_3")));
