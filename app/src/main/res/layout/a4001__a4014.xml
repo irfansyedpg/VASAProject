@@ -146,6 +146,11 @@
                         style="@style/TextView"
                         android:text="@string/A4003" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4006" />
+
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -187,6 +192,10 @@
                         android:id="@+id/A4004"
                         style="@style/TextView"
                         android:text="@string/A4004" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Don't know or \n Refused to answer → A4006" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -239,6 +248,10 @@
                         android:id="@+id/A4005_h"
                         style="@style/TextView_Hint"
                         android:text="@string/A4005_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Grade/Year > = 8  → A4007" />
 
                     <EditText
                         android:id="@+id/ed_A4005"
@@ -310,6 +323,10 @@
                         android:id="@+id/A4007"
                         style="@style/TextView"
                         android:text="@string/A4007" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="≠ 2 → A4007" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -439,6 +456,11 @@
                         style="@style/TextView"
                         android:text="@string/A4009a" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4013u" />
+
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -479,6 +501,10 @@
                         android:id="@+id/A4010"
                         style="@style/TextView"
                         android:text="@string/A4010" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Pipe or \n Chewing tobacco or \n other → A4012 \n Don't know or \n Refused to answer → A4013u" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -536,6 +562,10 @@
                         style="@style/TextView_Hint"
                         android:text="For don't know enter 99.\nFor refused enter 88." />
 
+                    <TextView
+                    style="@style/TextView_Hint"
+                    android:text="Cigarettes → A4013u" />
+
 
                     <EditText
                         android:id="@+id/ed_A4011"
@@ -587,6 +617,10 @@
                         android:id="@+id/A4013u"
                         style="@style/TextView"
                         android:text="@string/A4013u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Months → A4013m \n Years → A4013y \n Don't know \n Refused to answer → A4014 " />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -640,6 +674,10 @@
                         style="@style/TextView_Hint"
                         android:text="@string/days_h" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Days → A4014" />
+
                     <EditText
                         android:id="@+id/ed_A4013d"
                         style="@style/EditText_number"
@@ -662,6 +700,10 @@
                         android:id="@+id/A4013m"
                         style="@style/TextView"
                         android:text="@string/months" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Days → A4014" />
 
                     <TextView
                         android:id="@+id/A4013m_h"
