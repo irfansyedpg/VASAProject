@@ -43,4 +43,6 @@ dependencies {
 
     implementation 'com.github.santalu:mask-edittext:1.0.9'
 
+    implementation 'com.android.volley:volley:1.0.0'
+
 }

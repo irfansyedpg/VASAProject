@@ -2,34 +2,34 @@ package Global.N;
 
 public class N2192_N2202 {
 
-    public String N2192 = "N2192";
-    public String N2193 = "N2193";
-    public String N2194_1 = "N2194_1";
-    public String N2194_2 = "N2194_2";
-    public String N2195 = "N2195";
-    public String N2196 = "N2196";
-    public String N2197 = "N2197";
-    public String N2198_1 = "N2198_1";
-    public String N2198_1_T = "N2198_1_t";
-    public String N2198_1_FV = "N2198_1_fv";
-    public String N2198_2 = "N2198_2";
-    public String N2198_2_T = "N2198_2_t";
-    public String N2198_2_FV = "N2198_2_fv";
-    public String N2198_3 = "N2198_3";
-    public String N2198_DK = "N2198_9";
-    public String N2199 = "N2199";
-    public String N2200 = "N2200";
-    public String N2201 = "N2201";
-    public String N2202_1 = "N2202_1";
-    public String N2202_1_T = "N2202_1_t";
-    public String N2202_1_FV = "N2202_1_fv";
-    public String N2202_2 = "N2202_2";
-    public String N2202_2_T = "N2202_2_t";
-    public String N2202_2_FV = "N2202_2_fv";
-    public String N2202_3 = "N2202_3";
-    public String N2202_DK = "N2202_9";
+    public String N2192 = "";
+    public String N2193 = "";
+    public String N2194_1 = "";
+    public String N2194_2 = "";
+    public String N2195 = "";
+    public String N2196 = "";
+    public String N2197 = "";
+    public String N2198_1 = "";
+    public String N2198_1_T = "";
+    public String N2198_1_FV = "";
+    public String N2198_2 = "";
+    public String N2198_2_T = "";
+    public String N2198_2_FV = "";
+    public String N2198_3 = "";
+    public String N2198_DK = "";
+    public String N2199 = "";
+    public String N2200 = "";
+    public String N2201 = "";
+    public String N2202_1 = "";
+    public String N2202_1_T = "";
+    public String N2202_1_FV = "";
+    public String N2202_2 = "";
+    public String N2202_2_T = "";
+    public String N2202_2_FV = "";
+    public String N2202_3 = "";
+    public String N2202_DK = "";
 
-    public String STUDYID = "STUDYID";
+    public String STUDYID = "";
 
     public String getSTUDYID() {
         return STUDYID;

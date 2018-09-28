@@ -4,14 +4,14 @@ import android.database.Cursor;
 
 public class C3251_C3288_B {
 
-    public String C3253 = "C3253";
-    public String C3253_1 = "C3253_1";
-    public String C3253_2A = "C3253_2A";
-    public String C3253_4 = "C3253_4";
-    public String ACT_COUNT = "ACT_COUNT";
-    public String ACT_ID_FK = "ACT_ID_FK";
+    public String C3253 = "";
+    public String C3253_1 = "";
+    public String C3253_2A = "";
+    public String C3253_4 = "";
+    public String ACT_COUNT = "";
+    public String ACT_ID_FK = "";
 
-    public String STUDYID = "STUDYID";
+    public String STUDYID = "";
 
     public String getSTUDYID() {
         return STUDYID;

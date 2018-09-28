@@ -375,7 +375,7 @@ public class N2080_N2107 extends AppCompatActivity {
         n2080.setN208818x(bi.edN208818.getText().toString());
         n2080.setN208819(bi.cbN208819.isChecked() ? "1" : "0");
         n2080.setN2089(bi.rbN20891.isChecked() ? "1" : bi.rbN20892.isChecked() ? "2" : bi.rbN20893.isChecked() ? "3" : bi.rbN2089OT.isChecked() ? "4" : bi.rbN2089DK.isChecked() ? "9" : "0");
-        n2080.setN2089(bi.edN2089OT.getText().toString());
+        n2080.setN2089x(bi.edN2089OT.getText().toString());
         n2080.setN2090(bi.rbN20901.isChecked() ? "1" : bi.rbN20902.isChecked() ? "2" : bi.rbN2090DK.isChecked() ? "9" : "0");
 
         n2080.setN20911(bi.cbN20911.isChecked() ? "1" : "0");

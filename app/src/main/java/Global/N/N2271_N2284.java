@@ -2,18 +2,18 @@ package Global.N;
 
 public class N2271_N2284 {
 
-    public String N2271 = "N2271";
-    public String N2272 = "N2272";
-    public String N2273 = "N2273";
-    public String N2274 = "N2274";
-    public String N2275 = "N2275";
-    public String N2276 = "N2276";
-    public String N2277 = "N2277";
-    public String N2278 = "N2278";
-    public String N2283 = "N2283";
-    public String N2284 = "N2284";
+    public String N2271 = "";
+    public String N2272 = "";
+    public String N2273 = "";
+    public String N2274 = "";
+    public String N2275 = "";
+    public String N2276 = "";
+    public String N2277 = "";
+    public String N2278 = "";
+    public String N2283 = "";
+    public String N2284 = "";
 
-    public String STUDYID = "STUDYID";
+    public String STUDYID = "";
 
     public String getSTUDYID() {
         return STUDYID;

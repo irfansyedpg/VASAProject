@@ -94,6 +94,8 @@ public class Upload_C3051_C3099 extends AsyncTask {
                 param.put("tableName", "c3051_c3099");
                 param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
                 param.put(C3001_C3011.study_id, c.getString(c.getColumnIndex("study_id")));
+
+
                 param.put(C3051_C3099.C3051, c.getString(c.getColumnIndex("C3051")));
                 param.put(C3051_C3099.C3052, c.getString(c.getColumnIndex("C3052")));
                 param.put(C3051_C3099.C3053, c.getString(c.getColumnIndex("C3053")));
@@ -127,7 +129,6 @@ public class Upload_C3051_C3099 extends AsyncTask {
                 param.put(C3051_C3099.C3067_6, c.getString(c.getColumnIndex("C3067_6")));
                 param.put(C3051_C3099.C3067_7, c.getString(c.getColumnIndex("C3067_7")));
                 param.put(C3051_C3099.C3067_OT, c.getString(c.getColumnIndex("C3067_OT")));
-
                 param.put(C3051_C3099.C3067_DK, c.getString(c.getColumnIndex("C3067_DK")));
                 param.put(C3051_C3099.C3068, c.getString(c.getColumnIndex("C3068")));
                 param.put(C3051_C3099.C3068_OT, c.getString(c.getColumnIndex("C3068_OT")));
@@ -257,17 +258,5 @@ public class Upload_C3051_C3099 extends AsyncTask {
 
 
         super.onPostExecute(o);
-    }
-
-    void update_status(String id) {
-        String query = "Update C3001_C3011 set STATUS = '1' where id='" + id + "'";
-
-        query = String.format(query);
-
-        LocalDataManager Lm = new LocalDataManager(mContext);
-
-        LocalDataManager.database.execSQL(query);
-
-        Toast.makeText(mContext, "Status updated", Toast.LENGTH_SHORT).show();
     }
 }

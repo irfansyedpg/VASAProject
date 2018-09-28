@@ -71,9 +71,9 @@ public class Upload_C3301_C3314 extends AsyncTask {
     @Override
     protected void onPreExecute() {
 
-        dialog.setMessage("Uploading interview Please wait ....");
-        dialog.setCancelable(false);
-        dialog.show();
+        //dialog.setMessage("Uploading interview Please wait ....");
+        //dialog.setCancelable(false);
+        //dialog.show();
 
         //region Query
         String query = "select * from C3301_C3314 where study_id = '"+ Q1101_Q1610.study_id_upload +"' order by id  desc LIMIT 1";
@@ -93,8 +93,6 @@ public class Upload_C3301_C3314 extends AsyncTask {
                 param.put("tableName", "c3301_c3314");
                 param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
                 param.put(C3001_C3011.study_id, c.getString(c.getColumnIndex("study_id")));
-
-
                 param.put(C3301_C3314.C3301 ,c.getString(c.getColumnIndex("C3301")));
                 param.put(C3301_C3314.C3302_1 ,c.getString(c.getColumnIndex("C3302_1")));
                 param.put(C3301_C3314.C3302_2 ,c.getString(c.getColumnIndex("C3302_2")));
@@ -128,10 +126,6 @@ public class Upload_C3301_C3314 extends AsyncTask {
                 param.put(C3301_C3314.C3312 ,c.getString(c.getColumnIndex("C3312")));
                 param.put(C3301_C3314.C3313 ,c.getString(c.getColumnIndex("C3313")));
                 param.put(C3301_C3314.C3314 ,c.getString(c.getColumnIndex("C3314")));
-
-
-
-
             }
         }
 
@@ -190,7 +184,7 @@ public class Upload_C3301_C3314 extends AsyncTask {
     protected void onPostExecute(Object o) {
 
         try {
-            dialog.dismiss();
+            //dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();
