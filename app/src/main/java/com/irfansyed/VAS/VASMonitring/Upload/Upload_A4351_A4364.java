@@ -58,51 +58,33 @@ public class Upload_A4351_A4364 extends AsyncTask {
         HashMap<String, List<String>> map = QuestionModel.quest.get("a");
 
         //region Query
-        String query1 = "select * from A4351_A4364 where study_id = '%s' order by id  desc LIMIT 1";
+        String query = "select * from A4351_A4364 where study_id = '%s' order by id  desc LIMIT 1";
 
-
-        query1 = String.format(query1, Q1101_Q1610.study_id);
+        query = String.format(query, Q1101_Q1610.study_id);
 
         LocalDataManager Lm = new LocalDataManager(mContext);
 
+        Cursor c = LocalDataManager.database.rawQuery(query, null);
 
-        Cursor c1 = LocalDataManager.database.rawQuery(query1, null);
-
-
-
-        if (c1 != null) {
-            if (c1.moveToFirst()) {
-                param.put("tableName", "a4351_a4364");
-
-
-                param.put(A4351_A4364.	study_id 	, c1.getString(	0	));
-                param.put(A4351_A4364.	A4351 	, c1.getString(	1	));
-                param.put(A4351_A4364.	A4352 	, c1.getString(	2	));
-                param.put(A4351_A4364.	A4353 	, c1.getString(	3	));
-                param.put(A4351_A4364.	A4354 	, c1.getString(	4	));
-                param.put(A4351_A4364.	A4355 	, c1.getString(	5	));
-                param.put(A4351_A4364.	A4356 	, c1.getString(	6	));
-                param.put(A4351_A4364.	A4357 	, c1.getString(	7	));
-                param.put(A4351_A4364.	A4358 	, c1.getString(	8	));
-                param.put(A4351_A4364.	A4363 	, c1.getString(	9	));
-                param.put(A4351_A4364.	A4364 	, c1.getString(	10	));
-                param.put(A4351_A4364.	STATUS 	, c1.getString(	11));
-
-
-
-
-
-
+        if (c != null) {
+            if (c.moveToFirst()) {
+                param.put("tableName", "A4351_A4364");
+                param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
+                param.put(A4351_A4364.study_id, c.getString(c.getColumnIndex("study_id")));
+                param.put(A4351_A4364.A4351, c.getString(c.getColumnIndex("A4351")));
+                param.put(A4351_A4364.A4352, c.getString(c.getColumnIndex("A4352")));
+                param.put(A4351_A4364.A4353, c.getString(c.getColumnIndex("A4353")));
+                param.put(A4351_A4364.A4354, c.getString(c.getColumnIndex("A4354")));
+                param.put(A4351_A4364.A4355, c.getString(c.getColumnIndex("A4355")));
+                param.put(A4351_A4364.A4356, c.getString(c.getColumnIndex("A4356")));
+                param.put(A4351_A4364.A4357, c.getString(c.getColumnIndex("A4357")));
+                param.put(A4351_A4364.A4358, c.getString(c.getColumnIndex("A4358")));
+                param.put(A4351_A4364.A4363, c.getString(c.getColumnIndex("A4363")));
+                param.put(A4351_A4364.A4364, c.getString(c.getColumnIndex("A4364")));
+                param.put(A4351_A4364.STATUS, c.getString(c.getColumnIndex("STATUS")));
 
             }
         }
-
-
-
-
-
-
-
 
         //endregion
         super.onPreExecute();

@@ -58,40 +58,40 @@ public class Upload_A4001_A4014 extends AsyncTask {
         HashMap<String, List<String>> map = QuestionModel.quest.get("a");
 
         //region Query
-        String query1 = "select * from A4001_A4014 where study_id = '%s' order by id  desc LIMIT 1";
+        String query = "select * from A4001_A4014 where study_id = '%s' order by id  desc LIMIT 1";
 
 
-        query1 = String.format(query1, Q1101_Q1610.study_id_upload);
+        query = String.format(query, Q1101_Q1610.study_id_upload);
 
         LocalDataManager Lm = new LocalDataManager(mContext);
 
 
-        Cursor c1 = LocalDataManager.database.rawQuery(query1, null);
+        Cursor c = LocalDataManager.database.rawQuery(query, null);
 
 
-
-        if (c1 != null) {
-            if (c1.moveToFirst()) {
-                param.put("tableName", "a4001_a4014");
-                param.put(A4001_A4014.study_id, c1.getString(1));
-                param.put(A4001_A4014.A4001, c1.getString(2));
-                param.put(A4001_A4014.A4002, c1.getString(3));
-                param.put(A4001_A4014.A4003, c1.getString(3));
-                param.put(A4001_A4014.A4004, c1.getString(4));
-                param.put(A4001_A4014.A4005, c1.getString(5));
-                param.put(A4001_A4014.A4006, c1.getString(6));
-                param.put(A4001_A4014.A4007, c1.getString(7));
-                param.put(A4001_A4014.A4007_1, c1.getString(8));
-                param.put(A4001_A4014.A4008, c1.getString(9));
-                param.put(A4001_A4014.A4009a, c1.getString(10));
-                param.put(A4001_A4014.A4010, c1.getString(11));
-                param.put(A4001_A4014.A4011, c1.getString(12));
-                param.put(A4001_A4014.A4012, c1.getString(13));
-                param.put(A4001_A4014.A4013u, c1.getString(14));
-                param.put(A4001_A4014.A4013d, c1.getString(15));
-                param.put(A4001_A4014.A4013m, c1.getString(16));
-                param.put(A4001_A4014.A4013y, c1.getString(17));
-                param.put(A4001_A4014.STATUS, c1.getString(18));
+        if (c != null) {
+            if (c.moveToFirst()) {
+                param.put("tableName", "A4001_A4014");
+                param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
+                param.put(A4001_A4014.study_id, c.getString(c.getColumnIndex("study_id")));
+                param.put(A4001_A4014.A4001, c.getString(c.getColumnIndex("A4001")));
+                param.put(A4001_A4014.A4002, c.getString(c.getColumnIndex("A4002")));
+                param.put(A4001_A4014.A4003, c.getString(c.getColumnIndex("A4003")));
+                param.put(A4001_A4014.A4004, c.getString(c.getColumnIndex("A4004")));
+                param.put(A4001_A4014.A4005, c.getString(c.getColumnIndex("A4005")));
+                param.put(A4001_A4014.A4006, c.getString(c.getColumnIndex("A4006")));
+                param.put(A4001_A4014.A4007, c.getString(c.getColumnIndex("A4007")));
+                param.put(A4001_A4014.A4007_1, c.getString(c.getColumnIndex("A4007_1")));
+                param.put(A4001_A4014.A4008, c.getString(c.getColumnIndex("A4008")));
+                param.put(A4001_A4014.A4009a, c.getString(c.getColumnIndex("A4009a")));
+                param.put(A4001_A4014.A4010, c.getString(c.getColumnIndex("A4010")));
+                param.put(A4001_A4014.A4011, c.getString(c.getColumnIndex("A4011")));
+                param.put(A4001_A4014.A4012, c.getString(c.getColumnIndex("A4012")));
+                param.put(A4001_A4014.A4013u, c.getString(c.getColumnIndex("A4013u")));
+                param.put(A4001_A4014.A4013d, c.getString(c.getColumnIndex("A4013d")));
+                param.put(A4001_A4014.A4013m, c.getString(c.getColumnIndex("A4013m")));
+                param.put(A4001_A4014.A4013y, c.getString(c.getColumnIndex("A4013y")));
+                param.put(A4001_A4014.STATUS, c.getString(c.getColumnIndex("STATUS")));
             }
         }
 

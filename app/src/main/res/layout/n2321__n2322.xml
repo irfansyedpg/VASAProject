@@ -102,6 +102,31 @@
                 </android.support.v7.widget.CardView>
                 <!-- EditText N2321 Ends -->
 
+                <!-- EditText BTN Capture Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                    <LinearLayout
+                        android:id="@+id/ll_N2255_1"
+                        style="@style/Q_Linerlayout_v">
+
+                        <TextView
+                            android:id="@+id/txt_cap_count"
+                            style="@style/TextViewInstructions"
+                            android:text="Pictures Attached: 0" />
+
+                        <Button
+                            android:id="@+id/btn_imgCapture"
+                            style="@style/Button_collder"
+                            android:layout_margin="10dp"
+                            android:background="@color/green1"
+                            android:onClick="@{() -> callback.BtnCapture()}"
+                            android:text="CAPTURE IMAGE" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <!-- EditText BTN Capture Ends -->
+
                 <!-- Radio Buttons N2322 Starts -->
                 <android.support.v7.widget.CardView style="@style/Q_CardView">
 
@@ -119,17 +144,17 @@
                             <RadioButton
                                 android:id="@+id/rb_N2322_1"
                                 style="@style/RadioButton"
-                                android:text="@string/rb_yes" />
+                                android:text="@string/rb_N2322_1" />
 
                             <RadioButton
                                 android:id="@+id/rb_N2322_2"
                                 style="@style/RadioButton"
-                                android:text="@string/rb_no" />
+                                android:text="@string/rb_N2322_2" />
 
                             <RadioButton
                                 android:id="@+id/rb_N2322_3"
                                 style="@style/RadioButton"
-                                android:text="@string/rb_dk" />
+                                android:text="@string/rb_N2322_3" />
 
                             <RadioButton
                                 android:id="@+id/rb_N2322_4"
@@ -157,31 +182,6 @@
 
                 </android.support.v7.widget.CardView>
                 <!-- Radio Buttons N2322 Ends -->
-
-                <!-- EditText BTN Capture Starts -->
-                <android.support.v7.widget.CardView style="@style/Q_CardView">
-
-                    <LinearLayout
-                        android:id="@+id/ll_N2255_1"
-                        style="@style/Q_Linerlayout_v">
-
-                        <TextView
-                            android:id="@+id/txt_cap_count"
-                            style="@style/TextViewInstructions"
-                            android:text="Pictures Attached: 0" />
-
-                        <Button
-                            android:id="@+id/btn_imgCapture"
-                            style="@style/Button_collder"
-                            android:layout_margin="10dp"
-                            android:background="@color/green1"
-                            android:onClick="@{() -> callback.BtnCapture()}"
-                            android:text="CAPTURE IMAGE" />
-
-                    </LinearLayout>
-
-                </android.support.v7.widget.CardView>
-                <!-- EditText BTN Capture Ends -->
 
                 <!--  = = = = =  END OF FORM FIELDS  = = = = = -->
                 <!-- Next Buttons Starts -->

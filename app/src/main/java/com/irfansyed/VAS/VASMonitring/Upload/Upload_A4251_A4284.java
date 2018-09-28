@@ -58,128 +58,118 @@ public class Upload_A4251_A4284 extends AsyncTask {
         HashMap<String, List<String>> map = QuestionModel.quest.get("a");
 
         //region Query
-        String query1 = "select * from A4251_A4284 where study_id = '%s' order by id  desc LIMIT 1";
+        String query = "select * from A4251_A4284 where study_id = '%s' order by id  desc LIMIT 1";
 
 
-        query1 = String.format(query1, Q1101_Q1610.study_id);
+        query = String.format(query, Q1101_Q1610.study_id);
 
         LocalDataManager Lm = new LocalDataManager(mContext);
 
 
-        Cursor c1 = LocalDataManager.database.rawQuery(query1, null);
+        Cursor c = LocalDataManager.database.rawQuery(query, null);
 
-
-
-        if (c1 != null) {
-            if (c1.moveToFirst()) {
-                param.put("tableName", "a4251_a4284");
-
-                param.put(A4251_A4284.	study_id 	, c1.getString(	0	));
-                param.put(A4251_A4284.	A4251	, c1.getString(	1	));
-                param.put(A4251_A4284.	A4253	, c1.getString(	2	));
-                param.put(A4251_A4284.	A4253_3 	, c1.getString(	3	));
-              //  param.put(A4251_A4284.	A4254	, c1.getString(	4	));
-                param.put(A4251_A4284.	A4255_1 	, c1.getString(	5	));
-                param.put(A4251_A4284.	A4255_2 	, c1.getString(	6	));
-                param.put(A4251_A4284.	A4255_3 	, c1.getString(	7	));
-                param.put(A4251_A4284.	A4255_4 	, c1.getString(	8	));
-                param.put(A4251_A4284.	A4255_4_OT 	, c1.getString(	9	));
-                param.put(A4251_A4284.	A4255_5	, c1.getString(	10	));
-                param.put(A4251_A4284.	A4255_6	, c1.getString(	11	));
-                param.put(A4251_A4284.	A4255_7	, c1.getString(	12	));
-                param.put(A4251_A4284.	A4255_8	, c1.getString(	13	));
-                param.put(A4251_A4284.	A4255_9	, c1.getString(	14	));
-                param.put(A4251_A4284.	A4255_10 	, c1.getString(	15	));
-                param.put(A4251_A4284.	A4255_11 	, c1.getString(	16	));
-                param.put(A4251_A4284.	A4255_12 	, c1.getString(	17	));
-                param.put(A4251_A4284.	A4255_13 	, c1.getString(	18	));
-                param.put(A4251_A4284.	A4255_13_OT 	, c1.getString(	19	));
-                param.put(A4251_A4284.	A4255_DK 	, c1.getString(	20	));
-                param.put(A4251_A4284.	A4256_days 	, c1.getString(	21	));
-                param.put(A4251_A4284.	A4256_hours 	, c1.getString(	22	));
-                param.put(A4251_A4284.	A4256_minutes 	, c1.getString(	23	));
-                param.put(A4251_A4284.	A4257 	, c1.getString(	24	));
-                param.put(A4251_A4284.	A4257_name 	, c1.getString(	25	));
-              //  param.put(A4251_A4284.	A4258 	, c1.getString(	26	));
-                param.put(A4251_A4284.	A4259_hours 	, c1.getString(	27	));
-                param.put(A4251_A4284.	A4259_minutes 	, c1.getString(	28	));
-                param.put(A4251_A4284.	A4260 	, c1.getString(	29	));
-                param.put(A4251_A4284.	A4261 	, c1.getString(	30	));
-                param.put(A4251_A4284.	A4262 	, c1.getString(	31	));
-                param.put(A4251_A4284.	A4262_name	, c1.getString(	32	));
-                param.put(A4251_A4284.	A4263_1 	, c1.getString(	33	));
-                param.put(A4251_A4284.	A4263_2 	, c1.getString(	34	));
-                param.put(A4251_A4284.	A4264 	, c1.getString(	35	));
-                param.put(A4251_A4284.	A4266 	, c1.getString(	36	));
-                param.put(A4251_A4284.	A4266_name 	, c1.getString(	37	));
-             //   param.put(A4251_A4284.	A4267 	, c1.getString(	38	));
-                param.put(A4251_A4284.	A4268_hours 	, c1.getString(	39	));
-                param.put(A4251_A4284.	A4268_minutes 	, c1.getString(	40	));
-                param.put(A4251_A4284.	A4269 	, c1.getString(	41	));
-                param.put(A4251_A4284.	A4270 	, c1.getString(	42	));
-                param.put(A4251_A4284.	A4271 	, c1.getString(	43	));
-                param.put(A4251_A4284.	A4271_name 	, c1.getString(	44	));
-                param.put(A4251_A4284.	A4272_1 	, c1.getString(	45	));
-                param.put(A4251_A4284.	A4272_2 	, c1.getString(	46	));
-                param.put(A4251_A4284.	A4273 	, c1.getString(	47	));
-                param.put(A4251_A4284.	A4274 	, c1.getString(	48	));
-                param.put(A4251_A4284.	A4275 	, c1.getString(	49	));
-                param.put(A4251_A4284.	A4276_1  	, c1.getString(	50	));
-                param.put(A4251_A4284.	A4276_2  	, c1.getString(	51	));
-                param.put(A4251_A4284.	A4276_3  	, c1.getString(	52	));
-                param.put(A4251_A4284.	A4276_4  	, c1.getString(	53	));
-                param.put(A4251_A4284.	A4276_5  	, c1.getString(	54	));
-                param.put(A4251_A4284.	A4276_5_OT 	, c1.getString(	55	));
-                param.put(A4251_A4284.	A4276_6	, c1.getString(	56	));
-                param.put(A4251_A4284.	A4276_7	, c1.getString(	57	));
-                param.put(A4251_A4284.	A4276_8	, c1.getString(	58	));
-                param.put(A4251_A4284.	A4276_9	, c1.getString(	59	));
-                param.put(A4251_A4284.	A4276_10 	, c1.getString(	60	));
-                param.put(A4251_A4284.	A4276_11 	, c1.getString(	61	));
-                param.put(A4251_A4284.	A4276_12 	, c1.getString(	62	));
-                param.put(A4251_A4284.	A4276_13 	, c1.getString(	63	));
-                param.put(A4251_A4284.	A4276_14 	, c1.getString(	64	));
-                param.put(A4251_A4284.	A4276_15 	, c1.getString(	65	));
-                param.put(A4251_A4284.	A4276_16 	, c1.getString(	66	));
-                param.put(A4251_A4284.	A4276_16_OT 	, c1.getString(	67	));
-                param.put(A4251_A4284.	A4276_DK 	, c1.getString(	68	));
-                param.put(A4251_A4284.	A4277 	, c1.getString(	69	));
-                param.put(A4251_A4284.	A4278_1 	, c1.getString(	70	));
-                param.put(A4251_A4284.	A4278_2 	, c1.getString(	71	));
-                param.put(A4251_A4284.	A4278_3 	, c1.getString(	72	));
-                param.put(A4251_A4284.	A4278_4 	, c1.getString(	73	));
-                param.put(A4251_A4284.	A4278_5 	, c1.getString(	74	));
-                param.put(A4251_A4284.	A4278_6 	, c1.getString(	75	));
-                param.put(A4251_A4284.	A4278_7 	, c1.getString(	76	));
-                param.put(A4251_A4284.	A4278_DK 	, c1.getString(	77	));
-                param.put(A4251_A4284.	A4279_1	, c1.getString(	78	));
-                param.put(A4251_A4284.	A4279_2	, c1.getString(	79	));
-                param.put(A4251_A4284.	A4279_3	, c1.getString(	80	));
-                param.put(A4251_A4284.	A4279_4	, c1.getString(	81	));
-                param.put(A4251_A4284.	A4279_5	, c1.getString(	82	));
-                param.put(A4251_A4284.	A4279_6	, c1.getString(	83	));
-                param.put(A4251_A4284.	A4279_7	, c1.getString(	84	));
-                param.put(A4251_A4284.	A4279_DK 	, c1.getString(	85	));
-                param.put(A4251_A4284.	A4280 	, c1.getString(	86	));
-                param.put(A4251_A4284.	A4281 	, c1.getString(	87	));
-                param.put(A4251_A4284.	A4282 	, c1.getString(	88	));
-                param.put(A4251_A4284.	A4283 	, c1.getString(	89	));
-                param.put(A4251_A4284.	A4284 	, c1.getString(	90	));
-                param.put(A4251_A4284.	STATUS	, c1.getString(	91	));
-
-
-
-
+        if (c != null) {
+            if (c.moveToFirst()) {
+                param.put("tableName", "A4251_A4284");
+                param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
+                param.put(A4251_A4284.study_id, c.getString(c.getColumnIndex("study_id")));
+                param.put(A4251_A4284.A4251, c.getString(c.getColumnIndex("A4251")));
+                param.put(A4251_A4284.A4253, c.getString(c.getColumnIndex("A4253")));
+                param.put(A4251_A4284.A4253_3, c.getString(c.getColumnIndex("A4253_3")));
+                param.put(A4251_A4284.A4254_1, c.getString(c.getColumnIndex("A4254_1")));
+                param.put(A4251_A4284.A4254_2, c.getString(c.getColumnIndex("A4254_2")));
+                param.put(A4251_A4284.A4255_1, c.getString(c.getColumnIndex("A4255_1")));
+                param.put(A4251_A4284.A4255_2, c.getString(c.getColumnIndex("A4255_2")));
+                param.put(A4251_A4284.A4255_3, c.getString(c.getColumnIndex("A4255_3")));
+                param.put(A4251_A4284.A4255_4, c.getString(c.getColumnIndex("A4255_4")));
+                param.put(A4251_A4284.A4255_4_OT, c.getString(c.getColumnIndex("A4255_4_OT")));
+                param.put(A4251_A4284.A4255_5, c.getString(c.getColumnIndex("A4255_5")));
+                param.put(A4251_A4284.A4255_6, c.getString(c.getColumnIndex("A4255_6")));
+                param.put(A4251_A4284.A4255_7, c.getString(c.getColumnIndex("A4255_7")));
+                param.put(A4251_A4284.A4255_8, c.getString(c.getColumnIndex("A4255_8")));
+                param.put(A4251_A4284.A4255_9, c.getString(c.getColumnIndex("A4255_9")));
+                param.put(A4251_A4284.A4255_10, c.getString(c.getColumnIndex("A4255_10")));
+                param.put(A4251_A4284.A4255_11, c.getString(c.getColumnIndex("A4255_11")));
+                param.put(A4251_A4284.A4255_12, c.getString(c.getColumnIndex("A4255_12")));
+                param.put(A4251_A4284.A4255_13, c.getString(c.getColumnIndex("A4255_13")));
+                param.put(A4251_A4284.A4255_13_OT, c.getString(c.getColumnIndex("A4255_13_OT")));
+                param.put(A4251_A4284.A4255_DK, c.getString(c.getColumnIndex("A4255_DK")));
+                param.put(A4251_A4284.A4256_days, c.getString(c.getColumnIndex("A4256_days")));
+                param.put(A4251_A4284.A4256_hours, c.getString(c.getColumnIndex("A4256_hours")));
+                param.put(A4251_A4284.A4256_minutes, c.getString(c.getColumnIndex("A4256_minutes")));
+                param.put(A4251_A4284.A4257, c.getString(c.getColumnIndex("A4257")));
+                param.put(A4251_A4284.A4257_name, c.getString(c.getColumnIndex("A4257_name")));
+                param.put(A4251_A4284.A4258_1, c.getString(c.getColumnIndex("A4258_1")));
+                param.put(A4251_A4284.A4258_2, c.getString(c.getColumnIndex("A4258_2")));
+                param.put(A4251_A4284.A4259_hours, c.getString(c.getColumnIndex("A4259_hours")));
+                param.put(A4251_A4284.A4259_minutes, c.getString(c.getColumnIndex("A4259_minutes")));
+                param.put(A4251_A4284.A4260, c.getString(c.getColumnIndex("A4260")));
+                param.put(A4251_A4284.A4261, c.getString(c.getColumnIndex("A4261")));
+                param.put(A4251_A4284.A4262, c.getString(c.getColumnIndex("A4262")));
+                param.put(A4251_A4284.A4262_name, c.getString(c.getColumnIndex("A4262_name")));
+                param.put(A4251_A4284.A4263_1, c.getString(c.getColumnIndex("A4263_1")));
+                param.put(A4251_A4284.A4263_2, c.getString(c.getColumnIndex("A4263_2")));
+                param.put(A4251_A4284.A4264, c.getString(c.getColumnIndex("A4264")));
+                param.put(A4251_A4284.A4266, c.getString(c.getColumnIndex("A4266")));
+                param.put(A4251_A4284.A4266_name, c.getString(c.getColumnIndex("A4266_name")));
+                param.put(A4251_A4284.A4267_1, c.getString(c.getColumnIndex("A4267_1")));
+                param.put(A4251_A4284.A4267_2, c.getString(c.getColumnIndex("A4267_2")));
+                param.put(A4251_A4284.A4268_hours, c.getString(c.getColumnIndex("A4268_hours")));
+                param.put(A4251_A4284.A4268_minutes, c.getString(c.getColumnIndex("A4268_minutes")));
+                param.put(A4251_A4284.A4269, c.getString(c.getColumnIndex("A4269")));
+                param.put(A4251_A4284.A4270, c.getString(c.getColumnIndex("A4270")));
+                param.put(A4251_A4284.A4271, c.getString(c.getColumnIndex("A4271")));
+                param.put(A4251_A4284.A4271_name, c.getString(c.getColumnIndex("A4271_name")));
+                param.put(A4251_A4284.A4272_1, c.getString(c.getColumnIndex("A4272_1")));
+                param.put(A4251_A4284.A4272_2, c.getString(c.getColumnIndex("A4272_2")));
+                param.put(A4251_A4284.A4273, c.getString(c.getColumnIndex("A4273")));
+                param.put(A4251_A4284.A4274, c.getString(c.getColumnIndex("A4274")));
+                param.put(A4251_A4284.A4275, c.getString(c.getColumnIndex("A4275")));
+                param.put(A4251_A4284.A4276_1, c.getString(c.getColumnIndex("A4276_1")));
+                param.put(A4251_A4284.A4276_2, c.getString(c.getColumnIndex("A4276_2")));
+                param.put(A4251_A4284.A4276_3, c.getString(c.getColumnIndex("A4276_3")));
+                param.put(A4251_A4284.A4276_4, c.getString(c.getColumnIndex("A4276_4")));
+                param.put(A4251_A4284.A4276_5, c.getString(c.getColumnIndex("A4276_5")));
+                param.put(A4251_A4284.A4276_5_OT, c.getString(c.getColumnIndex("A4276_5_OT")));
+                param.put(A4251_A4284.A4276_6, c.getString(c.getColumnIndex("A4276_6")));
+                param.put(A4251_A4284.A4276_7, c.getString(c.getColumnIndex("A4276_7")));
+                param.put(A4251_A4284.A4276_8, c.getString(c.getColumnIndex("A4276_8")));
+                param.put(A4251_A4284.A4276_9, c.getString(c.getColumnIndex("A4276_9")));
+                param.put(A4251_A4284.A4276_10, c.getString(c.getColumnIndex("A4276_10")));
+                param.put(A4251_A4284.A4276_11, c.getString(c.getColumnIndex("A4276_11")));
+                param.put(A4251_A4284.A4276_12, c.getString(c.getColumnIndex("A4276_12")));
+                param.put(A4251_A4284.A4276_13, c.getString(c.getColumnIndex("A4276_13")));
+                param.put(A4251_A4284.A4276_14, c.getString(c.getColumnIndex("A4276_14")));
+                param.put(A4251_A4284.A4276_15, c.getString(c.getColumnIndex("A4276_15")));
+                param.put(A4251_A4284.A4276_16, c.getString(c.getColumnIndex("A4276_16")));
+                param.put(A4251_A4284.A4276_16_OT, c.getString(c.getColumnIndex("A4276_16_OT")));
+                param.put(A4251_A4284.A4276_DK, c.getString(c.getColumnIndex("A4276_DK")));
+                param.put(A4251_A4284.A4277, c.getString(c.getColumnIndex("A4277")));
+                param.put(A4251_A4284.A4278_1, c.getString(c.getColumnIndex("A4278_1")));
+                param.put(A4251_A4284.A4278_2, c.getString(c.getColumnIndex("A4278_2")));
+                param.put(A4251_A4284.A4278_3, c.getString(c.getColumnIndex("A4278_3")));
+                param.put(A4251_A4284.A4278_4, c.getString(c.getColumnIndex("A4278_4")));
+                param.put(A4251_A4284.A4278_5, c.getString(c.getColumnIndex("A4278_5")));
+                param.put(A4251_A4284.A4278_6, c.getString(c.getColumnIndex("A4278_6")));
+                param.put(A4251_A4284.A4278_7, c.getString(c.getColumnIndex("A4278_7")));
+                param.put(A4251_A4284.A4278_DK, c.getString(c.getColumnIndex("A4278_DK")));
+                param.put(A4251_A4284.A4279_1, c.getString(c.getColumnIndex("A4279_1")));
+                param.put(A4251_A4284.A4279_2, c.getString(c.getColumnIndex("A4279_2")));
+                param.put(A4251_A4284.A4279_3, c.getString(c.getColumnIndex("A4279_3")));
+                param.put(A4251_A4284.A4279_4, c.getString(c.getColumnIndex("A4279_4")));
+                param.put(A4251_A4284.A4279_5, c.getString(c.getColumnIndex("A4279_5")));
+                param.put(A4251_A4284.A4279_6, c.getString(c.getColumnIndex("A4279_6")));
+                param.put(A4251_A4284.A4279_7, c.getString(c.getColumnIndex("A4279_7")));
+                param.put(A4251_A4284.A4279_DK, c.getString(c.getColumnIndex("A4279_DK")));
+                param.put(A4251_A4284.A4280, c.getString(c.getColumnIndex("A4280")));
+                param.put(A4251_A4284.A4281, c.getString(c.getColumnIndex("A4281")));
+                param.put(A4251_A4284.A4282, c.getString(c.getColumnIndex("A4282")));
+                param.put(A4251_A4284.A4283, c.getString(c.getColumnIndex("A4283")));
+                param.put(A4251_A4284.A4284, c.getString(c.getColumnIndex("A4284")));
+                param.put(A4251_A4284.STATUS, c.getString(c.getColumnIndex("STATUS")));
 
             }
         }
-
-
-
-
-
-
-
 
         //endregion
         super.onPreExecute();

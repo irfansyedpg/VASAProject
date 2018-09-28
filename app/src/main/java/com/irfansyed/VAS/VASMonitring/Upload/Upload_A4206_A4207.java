@@ -19,7 +19,6 @@ import java.util.HashMap;
 import java.util.List;
 
 import Global.A.A4206_A4207;
-
 import Global.GS.Q1101_Q1610;
 import data.LocalDataManager;
 import utils.MyPreferences;
@@ -59,62 +58,49 @@ public class Upload_A4206_A4207 extends AsyncTask {
         HashMap<String, List<String>> map = QuestionModel.quest.get("a");
 
         //region Query
-        String query1 = "select * from A4206_A4207 where study_id = '%s' order by id  desc LIMIT 1";
+        String query = "select * from A4206_A4207 where study_id = '%s' order by id  desc LIMIT 1";
 
-
-        query1 = String.format(query1, Q1101_Q1610.study_id);
+        query = String.format(query, Q1101_Q1610.study_id);
 
         LocalDataManager Lm = new LocalDataManager(mContext);
 
+        Cursor c = LocalDataManager.database.rawQuery(query, null);
 
-        Cursor c1 = LocalDataManager.database.rawQuery(query1, null);
-
-
-
-        if (c1 != null) {
-            if (c1.moveToFirst()) {
-                param.put("tableName", "a4206_a4207");
-
-                param.put(A4206_A4207.	study_id 	, c1.getString(	0	));
-                param.put(A4206_A4207.	A4206	, c1.getString(	1	));
-                param.put(A4206_A4207.	A4206_1	, c1.getString(	2	));
-                param.put(A4206_A4207.	A4206_2	, c1.getString(	3	));
-                param.put(A4206_A4207.	A4206_3	, c1.getString(	4	));
-                param.put(A4206_A4207.	A4206_4	, c1.getString(	5	));
-                param.put(A4206_A4207.	A4206_5	, c1.getString(	6	));
-                param.put(A4206_A4207.	A4206_6	, c1.getString(	7	));
-                param.put(A4206_A4207.	A4206_7	, c1.getString(	8	));
-                param.put(A4206_A4207.	A4206_8	, c1.getString(	9	));
-                param.put(A4206_A4207.	A4206_9	, c1.getString(	10	));
-                param.put(A4206_A4207.	A4206_10 	, c1.getString(	11	));
-                param.put(A4206_A4207.	A4206_11 	, c1.getString(	12	));
-                param.put(A4206_A4207.	A4206_12 	, c1.getString(	13	));
-                param.put(A4206_A4207.	A4206_13 	, c1.getString(	14	));
-                param.put(A4206_A4207.	A4206_14 	, c1.getString(	15	));
-                param.put(A4206_A4207.	A4206_15 	, c1.getString(	16	));
-                param.put(A4206_A4207.	A4206_16 	, c1.getString(	17	));
-                param.put(A4206_A4207.	A4206_17 	, c1.getString(	18	));
-                param.put(A4206_A4207.	A4206_18 	, c1.getString(	19	));
-                param.put(A4206_A4207.	A4206_19 	, c1.getString(	20	));
-                param.put(A4206_A4207.	A4206_20 	, c1.getString(	21	));
-                param.put(A4206_A4207.	A4206_21 	, c1.getString(	22	));
-                param.put(A4206_A4207.	A4206_22 	, c1.getString(	23	));
-                param.put(A4206_A4207.	A4207_hour 	, c1.getString(	24	));
-                param.put(A4206_A4207.	A4207_day	, c1.getString(	25	));
-             //   param.put(A4206_A4207.	A4207	, c1.getString(	26	));
-                param.put(A4206_A4207.	STATUS 	, c1.getString(	27	));
-
-
+        if (c != null) {
+            if (c.moveToFirst()) {
+                param.put("tableName", "A4206_A4207");
+                param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
+                param.put(A4206_A4207.study_id, c.getString(c.getColumnIndex("study_id")));
+                param.put(A4206_A4207.A4206, c.getString(c.getColumnIndex("A4206")));
+                param.put(A4206_A4207.A4206_1, c.getString(c.getColumnIndex("A4206_1")));
+                param.put(A4206_A4207.A4206_2, c.getString(c.getColumnIndex("A4206_2")));
+                param.put(A4206_A4207.A4206_3, c.getString(c.getColumnIndex("A4206_3")));
+                param.put(A4206_A4207.A4206_4, c.getString(c.getColumnIndex("A4206_4")));
+                param.put(A4206_A4207.A4206_5, c.getString(c.getColumnIndex("A4206_5")));
+                param.put(A4206_A4207.A4206_6, c.getString(c.getColumnIndex("A4206_6")));
+                param.put(A4206_A4207.A4206_7, c.getString(c.getColumnIndex("A4206_7")));
+                param.put(A4206_A4207.A4206_8, c.getString(c.getColumnIndex("A4206_8")));
+                param.put(A4206_A4207.A4206_9, c.getString(c.getColumnIndex("A4206_9")));
+                param.put(A4206_A4207.A4206_10, c.getString(c.getColumnIndex("A4206_10")));
+                param.put(A4206_A4207.A4206_11, c.getString(c.getColumnIndex("A4206_11")));
+                param.put(A4206_A4207.A4206_12, c.getString(c.getColumnIndex("A4206_12")));
+                param.put(A4206_A4207.A4206_13, c.getString(c.getColumnIndex("A4206_13")));
+                param.put(A4206_A4207.A4206_14, c.getString(c.getColumnIndex("A4206_14")));
+                param.put(A4206_A4207.A4206_15, c.getString(c.getColumnIndex("A4206_15")));
+                param.put(A4206_A4207.A4206_16, c.getString(c.getColumnIndex("A4206_16")));
+                param.put(A4206_A4207.A4206_17, c.getString(c.getColumnIndex("A4206_17")));
+                param.put(A4206_A4207.A4206_18, c.getString(c.getColumnIndex("A4206_18")));
+                param.put(A4206_A4207.A4206_19, c.getString(c.getColumnIndex("A4206_19")));
+                param.put(A4206_A4207.A4206_20, c.getString(c.getColumnIndex("A4206_20")));
+                param.put(A4206_A4207.A4206_21, c.getString(c.getColumnIndex("A4206_21")));
+                param.put(A4206_A4207.A4206_22, c.getString(c.getColumnIndex("A4206_22")));
+                param.put(A4206_A4207.A4207_hour, c.getString(c.getColumnIndex("A4207_hour")));
+                param.put(A4206_A4207.A4207_day, c.getString(c.getColumnIndex("A4207_day")));
+                param.put(A4206_A4207.STATUS, c.getString(c.getColumnIndex("STATUS")));
 
 
             }
         }
-
-
-
-
-
-
 
 
         //endregion

@@ -2,25 +2,25 @@ package Global.N;
 
 public class N2291_N2304 {
 
-    public String N2291 = "N2291";
-    public String N2292 = "N2292";
-    public String N2293 = "N2293";
-    public String N2294 = "N2294";
-    public String N2295 = "N2295";
-    public String N2296 = "N2296";
-    public String N2297 = "N2297";
-    public String N2298 = "N2298";
-    public String N2299 = "N2299";
-    public String N2300 = "N2300";
-    public String N2301 = "N2301";
-    public String N2301x = "N2301x";
-    public String N2302_1 = "N2302_1";
-    public String N2302_2 = "N2302_2";
-    public String N2303 = "N2303";
-    public String N2304_1 = "N2304_1";
-    public String N2304_2 = "N2304_2";
+    public String N2291 = "";
+    public String N2292 = "";
+    public String N2293 = "";
+    public String N2294 = "";
+    public String N2295 = "";
+    public String N2296 = "";
+    public String N2297 = "";
+    public String N2298 = "";
+    public String N2299 = "";
+    public String N2300 = "";
+    public String N2301 = "";
+    public String N2301x = "";
+    public String N2302_1 = "";
+    public String N2302_2 = "";
+    public String N2303 = "";
+    public String N2304_1 = "";
+    public String N2304_2 = "";
 
-    public String STUDYID = "STUDYID";
+    public String STUDYID = "";
 
     public String getSTUDYID() {
         return STUDYID;

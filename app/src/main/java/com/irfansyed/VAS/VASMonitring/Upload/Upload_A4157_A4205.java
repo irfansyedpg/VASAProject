@@ -58,86 +58,74 @@ public class Upload_A4157_A4205 extends AsyncTask {
         HashMap<String, List<String>> map = QuestionModel.quest.get("a");
 
         //region Query
-        String query1 = "select * from A4157_A4205 where study_id = '%s' order by id  desc LIMIT 1";
+        String query = "select * from A4157_A4205 where study_id = '%s' order by id  desc LIMIT 1";
 
 
-        query1 = String.format(query1, Q1101_Q1610.study_id);
+        query = String.format(query, Q1101_Q1610.study_id);
 
         LocalDataManager Lm = new LocalDataManager(mContext);
 
+        Cursor c = LocalDataManager.database.rawQuery(query, null);
 
-        Cursor c1 = LocalDataManager.database.rawQuery(query1, null);
-
-
-
-        if (c1 != null) {
-            if (c1.moveToFirst()) {
-                param.put("tableName", "a4157_a4205");
-
-                param.put(A4157_A4205.	study_id 	, c1.getString(	0	));
-                param.put(A4157_A4205.	A4157	, c1.getString(	1	));
-                param.put(A4157_A4205.	A4158	, c1.getString(	2	));
-                param.put(A4157_A4205.	A4159	, c1.getString(	3	));
-                param.put(A4157_A4205.	A4160	, c1.getString(	4	));
-                param.put(A4157_A4205.	A4161	, c1.getString(	5	));
-                param.put(A4157_A4205.	A4161_1 	, c1.getString(	6	));
-                param.put(A4157_A4205.	A4162	, c1.getString(	7	));
-                param.put(A4157_A4205.	A4163_1 	, c1.getString(	8	));
-                param.put(A4157_A4205.	A4163	, c1.getString(	9	));
-                param.put(A4157_A4205.	A4164	, c1.getString(	10	));
-                param.put(A4157_A4205.	A4166	, c1.getString(	11	));
-                param.put(A4157_A4205.	A4167	, c1.getString(	12	));
-                param.put(A4157_A4205.	A4168_1 	, c1.getString(	13	));
-                param.put(A4157_A4205.	A4168_3 	, c1.getString(	14	));
-                param.put(A4157_A4205.	A4168	, c1.getString(	15	));
-                param.put(A4157_A4205.	A4173_1 	, c1.getString(	16	));
-                param.put(A4157_A4205.	A4173	, c1.getString(	17	));
-                param.put(A4157_A4205.	A4173_2 	, c1.getString(	18	));
-                param.put(A4157_A4205.	A4178_1 	, c1.getString(	19	));
-                param.put(A4157_A4205.	A4178_2 	, c1.getString(	20	));
-                param.put(A4157_A4205.	A4178	, c1.getString(	21	));
-                param.put(A4157_A4205.	A4179	, c1.getString(	22	));
-                param.put(A4157_A4205.	A4180	, c1.getString(	23	));
-                param.put(A4157_A4205.	A4181 	, c1.getString(	24	));
-                param.put(A4157_A4205.	A4182 	, c1.getString(	25	));
-                param.put(A4157_A4205.	A4183 	, c1.getString(	26	));
-                param.put(A4157_A4205.	A4184 	, c1.getString(	27	));
-                param.put(A4157_A4205.	A4185 	, c1.getString(	28	));
-                param.put(A4157_A4205.	A4186 	, c1.getString(	29	));
-                param.put(A4157_A4205.	A4186_1 	, c1.getString(	30	));
-                param.put(A4157_A4205.	A4187 	, c1.getString(	31	));
-                param.put(A4157_A4205.	A4188 	, c1.getString(	32	));
-                param.put(A4157_A4205.	A4189 	, c1.getString(	33	));
-                param.put(A4157_A4205.	A4190 	, c1.getString(	34	));
-                param.put(A4157_A4205.	A4191 	, c1.getString(	35	));
-                param.put(A4157_A4205.	A4192 	, c1.getString(	36	));
-                param.put(A4157_A4205.	A4193 	, c1.getString(	37	));
-                param.put(A4157_A4205.	A4193_1 	, c1.getString(	38	));
-                param.put(A4157_A4205.	A4194 	, c1.getString(	39	));
-                param.put(A4157_A4205.	A4195 	, c1.getString(	40	));
-                param.put(A4157_A4205.	A4196 	, c1.getString(	41	));
-                param.put(A4157_A4205.	A4197 	, c1.getString(	42	));
-                param.put(A4157_A4205.	A4198_1 	, c1.getString(	43	));
-                param.put(A4157_A4205.	A4198 	, c1.getString(	44	));
-                param.put(A4157_A4205.	A4200 	, c1.getString(	45	));
-                param.put(A4157_A4205.	A4202 	, c1.getString(	46	));
-                param.put(A4157_A4205.	A4203 	, c1.getString(	47	));
-                param.put(A4157_A4205.	A4204 	, c1.getString(	48	));
-                param.put(A4157_A4205.	A4205 	, c1.getString(	49	));
-                param.put(A4157_A4205.	A4205_1 	, c1.getString(	50	));
-                param.put(A4157_A4205.	STATUS 	, c1.getString(	51	));
-
-
+        if (c != null) {
+            if (c.moveToFirst()) {
+                param.put("tableName", "A4157_A4205");
+                param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
+                param.put(A4157_A4205.study_id, c.getString(c.getColumnIndex("study_id")));
+                param.put(A4157_A4205.A4157, c.getString(c.getColumnIndex("A4157")));
+                param.put(A4157_A4205.A4158, c.getString(c.getColumnIndex("A4158")));
+                param.put(A4157_A4205.A4159, c.getString(c.getColumnIndex("A4159")));
+                param.put(A4157_A4205.A4160, c.getString(c.getColumnIndex("A4160")));
+                param.put(A4157_A4205.A4161, c.getString(c.getColumnIndex("A4161")));
+                param.put(A4157_A4205.A4161_1, c.getString(c.getColumnIndex("A4161_1")));
+                param.put(A4157_A4205.A4162, c.getString(c.getColumnIndex("A4162")));
+                param.put(A4157_A4205.A4163, c.getString(c.getColumnIndex("A4163")));
+                param.put(A4157_A4205.A4163, c.getString(c.getColumnIndex("A4163")));
+                param.put(A4157_A4205.A4164, c.getString(c.getColumnIndex("A4164")));
+                param.put(A4157_A4205.A4166, c.getString(c.getColumnIndex("A4166")));
+                param.put(A4157_A4205.A4167, c.getString(c.getColumnIndex("A4167")));
+                param.put(A4157_A4205.A4168_1, c.getString(c.getColumnIndex("A4168_1")));
+                param.put(A4157_A4205.A4168_3, c.getString(c.getColumnIndex("A4168_3")));
+                param.put(A4157_A4205.A4168, c.getString(c.getColumnIndex("A4168")));
+                param.put(A4157_A4205.A4173_1, c.getString(c.getColumnIndex("A4173_1")));
+                param.put(A4157_A4205.A4173, c.getString(c.getColumnIndex("A4173")));
+                param.put(A4157_A4205.A4173_2, c.getString(c.getColumnIndex("A4173_2")));
+                param.put(A4157_A4205.A4178_1, c.getString(c.getColumnIndex("A4178_1")));
+                param.put(A4157_A4205.A4178_2, c.getString(c.getColumnIndex("A4178_2")));
+                param.put(A4157_A4205.A4178, c.getString(c.getColumnIndex("A4178")));
+                param.put(A4157_A4205.A4179, c.getString(c.getColumnIndex("A4179")));
+                param.put(A4157_A4205.A4180, c.getString(c.getColumnIndex("A4180")));
+                param.put(A4157_A4205.A4181, c.getString(c.getColumnIndex("A4181")));
+                param.put(A4157_A4205.A4182, c.getString(c.getColumnIndex("A4182")));
+                param.put(A4157_A4205.A4183, c.getString(c.getColumnIndex("A4183")));
+                param.put(A4157_A4205.A4184, c.getString(c.getColumnIndex("A4184")));
+                param.put(A4157_A4205.A4185, c.getString(c.getColumnIndex("A4185")));
+                param.put(A4157_A4205.A4186, c.getString(c.getColumnIndex("A4186")));
+                param.put(A4157_A4205.A4186_1, c.getString(c.getColumnIndex("A4186_1")));
+                param.put(A4157_A4205.A4187, c.getString(c.getColumnIndex("A4187")));
+                param.put(A4157_A4205.A4188, c.getString(c.getColumnIndex("A4188")));
+                param.put(A4157_A4205.A4189, c.getString(c.getColumnIndex("A4189")));
+                param.put(A4157_A4205.A4190, c.getString(c.getColumnIndex("A4190")));
+                param.put(A4157_A4205.A4191, c.getString(c.getColumnIndex("A4191")));
+                param.put(A4157_A4205.A4192, c.getString(c.getColumnIndex("A4192")));
+                param.put(A4157_A4205.A4193, c.getString(c.getColumnIndex("A4193")));
+                param.put(A4157_A4205.A4193_1, c.getString(c.getColumnIndex("A4193_1")));
+                param.put(A4157_A4205.A4194, c.getString(c.getColumnIndex("A4194")));
+                param.put(A4157_A4205.A4195, c.getString(c.getColumnIndex("A4195")));
+                param.put(A4157_A4205.A4196, c.getString(c.getColumnIndex("A4196")));
+                param.put(A4157_A4205.A4197, c.getString(c.getColumnIndex("A4197")));
+                param.put(A4157_A4205.A4198_1, c.getString(c.getColumnIndex("A4198_1")));
+                param.put(A4157_A4205.A4198, c.getString(c.getColumnIndex("A4198")));
+                param.put(A4157_A4205.A4200, c.getString(c.getColumnIndex("A4200")));
+                param.put(A4157_A4205.A4202, c.getString(c.getColumnIndex("A4202")));
+                param.put(A4157_A4205.A4203, c.getString(c.getColumnIndex("A4203")));
+                param.put(A4157_A4205.A4204, c.getString(c.getColumnIndex("A4204")));
+                param.put(A4157_A4205.A4205, c.getString(c.getColumnIndex("A4205")));
+                param.put(A4157_A4205.A4205_1, c.getString(c.getColumnIndex("A4205_1")));
+                param.put(A4157_A4205.STATUS, c.getString(c.getColumnIndex("STATUS")));
 
             }
         }
-
-
-
-
-
-
-
 
         //endregion
         super.onPreExecute();
