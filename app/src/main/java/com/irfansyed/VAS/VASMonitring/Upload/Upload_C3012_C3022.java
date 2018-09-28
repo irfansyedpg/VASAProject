@@ -90,8 +90,6 @@ public class Upload_C3012_C3022 extends AsyncTask {
         if (c != null) {
 
             if (c.moveToFirst()) {
-
-                param.put("tableName", "c3012_c3022");
                 param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
                 param.put(C3001_C3011.study_id, c.getString(c.getColumnIndex("study_id")));
                 param.put(C3012_C3022.C3012,    c.getString(c.getColumnIndex("C3012")));
@@ -169,7 +167,7 @@ public class Upload_C3012_C3022 extends AsyncTask {
     protected void onPostExecute(Object o) {
 
         try {
-            dialog.dismiss();
+          //  dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();
