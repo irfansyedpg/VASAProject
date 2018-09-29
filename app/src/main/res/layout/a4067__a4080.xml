@@ -441,7 +441,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="Days → A4073 " />
+                        android:text="Days → A4073" />
 
                     <EditText
                         android:id="@+id/ed_A4072_a"
