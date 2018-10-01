@@ -214,7 +214,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="(<1 = 00; DK  =99)" />
+                        android:text="less than 1 = 00 \nDK  =99" />
 
 
                     <EditText
