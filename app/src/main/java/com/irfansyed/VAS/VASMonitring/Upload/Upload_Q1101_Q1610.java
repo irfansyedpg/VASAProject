@@ -251,7 +251,7 @@ public class Upload_Q1101_Q1610 extends AsyncTask {
             // call another table upload here
             if (Q1101_Q1610.interviewType_upload == 1) {
 
-                new Upload_A4001_A4014(mContext).execute();
+                //new Upload_A4001_A4014(mContext).execute();
 
             } else if (Q1101_Q1610.interviewType_upload == 2) {
 
