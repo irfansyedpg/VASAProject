@@ -54,7 +54,8 @@ public class A4251_A4284 {
     public static String A4272_2 = "A4272_2";
     public static String A4273 = "A4273";
     public static String A4274 = "A4274";
-    public static String A4275 = "A4275";
+    public static String A4275_1 = "A4275_1";
+    public static String A4275_2 = "A4275_2";
     public static String A4276_1 = "A4276_1";
     public static String A4276_2 = "A4276_2";
     public static String A4276_3 = "A4276_3";

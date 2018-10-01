@@ -61,6 +61,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/txt_study_id"
+                        android:clickable="false"
+                        android:focusable="false"
                         android:inputType="date"
                         app:met_mask="####-###-##" />
 
@@ -80,6 +82,10 @@
                         android:id="@+id/A4126"
                         style="@style/TextView"
                         android:text="@string/A4126" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4129" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -122,6 +128,10 @@
                         style="@style/TextView"
                         android:text="@string/A4127_u" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Months → A4127_b \n  Don't know \n Refused to answer → A4128 " />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -162,6 +172,11 @@
                         android:id="@+id/A4127_a"
                         style="@style/TextView"
                         android:text="@string/days" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Days → A4128" />
+
 
                     <EditText
                         android:id="@+id/ed_A4127_a"
@@ -248,6 +263,10 @@
                         style="@style/TextView"
                         android:text="@string/A4129" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4131" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -289,6 +308,10 @@
                         style="@style/TextView"
                         android:text="@string/A4130_u" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Months → A4130_b \n  Don't know \n Refused to answer → A4131" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -329,6 +352,11 @@
                         android:id="@+id/A4130_a"
                         style="@style/TextView"
                         android:text="@string/days" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Days → A4131" />
+
 
                     <EditText
                         android:id="@+id/ed_A4130_a"
@@ -456,6 +484,10 @@
                         style="@style/TextView"
                         android:text="@string/A4133" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4135" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -497,6 +529,10 @@
                         style="@style/TextView"
                         android:text="@string/A4134_u" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Months → A4134_b \n  Don't know \n Refused to answer → A4135 " />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -537,6 +573,11 @@
                         android:id="@+id/A4134_a"
                         style="@style/TextView"
                         android:text="@string/days" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Days → A4135" />
+
 
                     <EditText
                         android:id="@+id/ed_A4134_a"

@@ -3787,6 +3787,8 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4473">4473:   Interviewer: Use this space to write down your comments and observations about the interview.</string>
     <string name="kilograms_kg">Kilograms Kg &amp; DK = 999</string>
     <string name="A4257">A4257: What was the name of the FIRST HEALTH PROVIDER where NAME went?</string>
+    <string name="public_sector">Public sector:</string>
+    <string name="private_sector">Private Medical sector:</string>
     <string name="rb_A4257_1">Government hospital</string>
     <string name="rb_A4257_2">Government health center</string>
     <string name="rb_A4257_3">Government health post</string>
@@ -4011,7 +4013,8 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4255">A4255: What concerns or problems did you or (NAME) have?</string>
     <string name="A4256">A4256: You mentioned that (NAME) went to the (first) health provider, I mean the (FIRST HEALTH PROVIDER) with (SYMPTOM(S)). How long had (NAME) had (this / these) symptom(s) when it was decided to go to the (FIRST HEALTH PROVIDER)</string>
     <string name="A4274">A4274: Did (NAME) go to (all) the health provider(s) where s/he was referred?</string>
-    <string name="A4275">A4275: Did you or (NAME) have any concerns or problems that kept him/her from going to a health provider where s/he was refrered?</string>
+    <string name="A4275_1">A4275_1: If NOT taken to (all) the referral provider(s), \nask: \nDid you or NAME have any concerns or problems that kept him/her from going to a health provider where s/he was refrered?</string>
+    <string name="A4275_2">A4275_2: If taken to (all) the referral provider(s), \nask: \nDid you or NAME have to overcome any concerns or problems for him/her to go to a health provider where s/he was referred?</string>
     <string name="A4276">A4276: What concerns or problems did you or (NAME) have?</string>
     <string name="A4277">A4277: Did you or (NAME) have to pay any money to travel to (the / any) health provider?</string>
     <string name="A4278">A4278: How did you or (NAME) arrange for the money to travel?</string>
