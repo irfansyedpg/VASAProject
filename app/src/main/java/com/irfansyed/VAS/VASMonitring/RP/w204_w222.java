@@ -51,8 +51,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
             rb_W204_2,
             rb_W205_1,
             rb_W205_2,
-            rb_W206_1,
-            rb_W206_2,
+
             rb_W207_1,
             rb_W207_2,
             rb_W208_1,
@@ -68,7 +67,9 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
             cb_W210_dk,
             cb_W210_RA;
 
-    EditText ed_W211,
+    EditText
+            ed_W206,
+            ed_W211,
             ed_W212,
             ed_W213,
             ed_W214,
@@ -145,8 +146,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
         rb_W204_2 = findViewById(R.id.rb_W204_2);
         rb_W205_1 = findViewById(R.id.rb_W205_1);
         rb_W205_2 = findViewById(R.id.rb_W205_2);
-        rb_W206_1 = findViewById(R.id.rb_W206_1);
-        rb_W206_2 = findViewById(R.id.rb_W206_2);
+
         rb_W207_1 = findViewById(R.id.rb_W207_1);
         rb_W207_2 = findViewById(R.id.rb_W207_2);
         rb_W208_1 = findViewById(R.id.rb_W208_1);
@@ -161,6 +161,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
         cb_W210_dk = findViewById(R.id.cb_W210_dk);
         cb_W210_RA = findViewById(R.id.cb_W210_RA);
 
+        ed_W206 = findViewById(R.id.ed_w206);
         ed_W211 = findViewById(R.id.ed_W211);
         ed_W212 = findViewById(R.id.ed_W212);
         ed_W213 = findViewById(R.id.ed_W213);
@@ -178,8 +179,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                 rb_W204_2.setOnCheckedChangeListener(this);
                 rb_W205_1.setOnCheckedChangeListener(this);
                 rb_W205_2.setOnCheckedChangeListener(this);
-                rb_W206_1.setOnCheckedChangeListener(this);
-                rb_W206_2.setOnCheckedChangeListener(this);
+
                 rb_W207_1.setOnCheckedChangeListener(this);
                 rb_W207_2.setOnCheckedChangeListener(this);
                 rb_W208_1.setOnCheckedChangeListener(this);
@@ -622,12 +622,6 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
         }
 
 
-        if (rb_W206_1.isChecked()) {
-            W206 = "1";
-        }
-        if (rb_W206_2.isChecked()) {
-            W206 = "2";
-        }
 
         if (rb_W207_1.isChecked()) {
             W207 = "1";
@@ -666,6 +660,10 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
         }
         if (cb_W210_RA.isChecked()) {
             W210_5 = "1";
+        }
+
+        if (ed_W206.getText().toString().trim().length() > 0) {
+            W206 = ed_W206.getText().toString().trim();
         }
 
         if (ed_W211.getText().toString().trim().length() > 0) {
@@ -1001,7 +999,8 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                 ll_W209.setVisibility(View.GONE);
                 ClearAllcontrol.ClearAll(ll_W209);
             }
-            else
+            else if(rb_W208_1.isChecked())
+
             {
 
                 ll_W209.setVisibility(View.VISIBLE);
@@ -1055,8 +1054,17 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
             }
 
 
+
+
+
+
+
         }
 
 
     }
 }
+
+
+
+

@@ -118,24 +118,11 @@
                         style="@style/TextView"
                         android:text="@string/txt_W206" />
 
+                    <EditText
+                        android:id="@+id/ed_w206"
+                        style="@style/EditText_number"
+                        />
 
-                    <RadioGroup style="@style/RadioGroup">
-
-                        <RadioButton
-                            android:id="@+id/rb_W206_1"
-                            style="@style/RadioButton"
-                            android:text="@string/rb_W206_1" />
-
-                        <RadioButton
-                            android:id="@+id/rb_W206_2"
-                            style="@style/RadioButton"
-                            android:text="@string/rb_W206_2" />
-
-                    
-
-                    
-
-                    </RadioGroup>
 
                 </LinearLayout>
 
