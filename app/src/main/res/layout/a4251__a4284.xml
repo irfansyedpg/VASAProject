@@ -2051,7 +2051,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="(<1 = 00; DK = 99)" />
+                        android:text="Less than 1 = 00 \nDon't know = 99)" />
 
 
                     <EditText
