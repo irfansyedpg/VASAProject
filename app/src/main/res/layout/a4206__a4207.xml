@@ -39,6 +39,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/txt_study_id"
+                        android:clickable="false"
+                        android:focusable="false"
                         android:inputType="date"
                         app:met_mask="####-###-##" />
 
@@ -58,6 +60,10 @@
                         android:id="@+id/A4206"
                         style="@style/TextView"
                         android:text="@string/A4206" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No → A4251"/>
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -99,6 +105,10 @@
                         android:id="@+id/A4206_1"
                         style="@style/TextView"
                         android:text="@string/A4206_1" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4206_4" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -201,6 +211,11 @@
                         android:id="@+id/A4206_3"
                         style="@style/TextView"
                         android:text="@string/A4206_3" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="→ A4206_20" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -432,6 +447,11 @@
                         style="@style/TextView"
                         android:text="@string/A4206_8" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Yes → A4206_10" />
+
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -472,6 +492,10 @@
                         android:id="@+id/A4206_9"
                         style="@style/TextView"
                         android:text="@string/A4206_9" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4206_11" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -975,6 +999,10 @@
                         style="@style/TextView"
                         android:text="@string/A4206_21" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Yes → A4207" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -1016,6 +1044,10 @@
                         style="@style/TextView"
                         android:text="@string/A4206_22" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Yes → A4207" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -1056,6 +1088,10 @@
                         android:id="@+id/A4207"
                         style="@style/TextView"
                         android:text="@string/A4207" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="DK = 99" />
 
                     <TextView
                         android:id="@+id/A4207_h"

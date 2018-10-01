@@ -61,6 +61,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/txt_study_id"
+                        android:clickable="false"
+                        android:focusable="false"
                         android:inputType="date"
                         app:met_mask="####-###-##" />
 
@@ -80,6 +82,10 @@
                         android:id="@+id/A4351"
                         style="@style/TextView"
                         android:text="@string/A4351" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4363" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -121,6 +127,10 @@
                         android:id="@+id/A4352"
                         style="@style/TextView"
                         android:text="@string/A4352" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No  → A4363" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -284,6 +294,10 @@
                         android:id="@+id/A4363"
                         style="@style/TextView"
                         android:text="@string/A4363" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer \n No registration → A4401" />
 
                     <RadioGroup style="@style/RadioGroup">
 

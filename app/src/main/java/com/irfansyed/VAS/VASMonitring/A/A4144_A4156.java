@@ -21,8 +21,6 @@ import utils.ClearAllcontrol;
 import utils.Gothrough;
 import utils.InputFilterMinMax;
 
-import static java.lang.Integer.parseInt;
-
 public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
     //Declaration
@@ -259,7 +257,7 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
 
             res.moveToFirst();
 
-            if (parseInt(res.getString(68)) == 1) {
+            if (Integer.valueOf(res.getString(res.getColumnIndex("Q1601"))).equals(1)) {
 
                 Intent c = new Intent(this, A4206_A4207.class);
                 c.putExtra("study_id", study_id);

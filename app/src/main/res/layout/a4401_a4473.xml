@@ -61,6 +61,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/txt_study_id"
+                        android:clickable="false"
+                        android:focusable="false"
                         android:inputType="date"
                         app:met_mask="####-###-##" />
 
@@ -80,6 +82,11 @@
                         android:id="@+id/A4401"
                         style="@style/TextView"
                         android:text="@string/A4401" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Yes → A4404 \n Don't know → A4454" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -116,6 +123,10 @@
                         android:id="@+id/A4402"
                         style="@style/TextView"
                         android:text="@string/A4402" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Don't know → A4454" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -201,6 +212,11 @@
                         style="@style/TextView"
                         android:text="@string/A4404" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="(<1 = 00; DK  =99)" />
+
+
                     <EditText
                         android:id="@+id/ed_A4404_years"
                         style="@style/EditText_number"
@@ -222,6 +238,16 @@
                         android:id="@+id/tv_A4405"
                         style="@style/TextView"
                         android:text="@string/A4405" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="( DK  =99) Hours" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="(DK  =99) Minutes" />
+
+
 
                     <EditText
                         android:id="@+id/ed_A4405_hours"
