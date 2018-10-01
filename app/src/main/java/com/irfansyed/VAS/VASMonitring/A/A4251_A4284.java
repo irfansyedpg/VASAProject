@@ -2544,6 +2544,24 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             }
 
         }
+
+
+        //A4277
+        if (compoundButton.getId() == R.id.rb_A4277_1
+                || compoundButton.getId() == R.id.rb_A4277_2
+                || compoundButton.getId() == R.id.rb_A4277_DK)
+
+        {
+            if (rb_A4277_2.isChecked() || rb_A4277_DK.isChecked())
+            {
+                ClearAllcontrol.ClearAll(ll_A4278);
+                ll_A4278.setVisibility(View.GONE);
+            }
+            else
+                {
+                    ll_A4278.setVisibility(View.VISIBLE);
+                }
+        }
     }
 
     private void events_call() {
