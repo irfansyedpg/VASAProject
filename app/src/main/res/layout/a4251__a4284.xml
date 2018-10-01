@@ -60,6 +60,11 @@
                         style="@style/TextView"
                         android:text="@string/A4251" />
 
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No - car not needed , given or sought → A4254 \n Don't know → A4284" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -214,6 +219,11 @@
                         style="@style/TextView"
                         android:text="@string/A4254_1" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → Inst_3 \n Inst_3: If A4251 = 2 (No care given or sought) → A4351." />
+
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -249,6 +259,10 @@
                         android:id="@+id/A4254_2"
                         style="@style/TextView"
                         android:text="@string/A4254_2" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → Inst_3 \n Inst_3: If A4251 = 2 (No care given or sought) → A4351." />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -390,6 +404,20 @@
                         style="@style/TextView_Hint"
                         android:text="Read “…to the first…” if took or tried to take to more than one health provider. \nMark days, hours &amp;/or minutes as needed: e.g. 00 day, 02 hours, 10 minutes" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="(DK =99 Days)" />
+
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="(DK =99 Hours)" />
+
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="(DK =99 Minutes)" />
+
                     <EditText
                         android:id="@+id/ed_A4256_days"
                         style="@style/EditText_number"
@@ -526,6 +554,11 @@
                             style="@style/TextView_Hint"
                             android:text="@string/A4258_Hint" />
 
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="No, died on route to this provider / before this provider reached the deceased → A4283 \n  3, 9 → Inst_5 \n Inst_5: Check A4252→ If taken to another health provider…  " />
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
@@ -572,6 +605,11 @@
                             style="@style/TextView_Hint"
                             android:text="@string/A4258_Hint" />
 
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="No, died on route to this provider / before this provider reached the deceased → A4283 \n  3, 9 → Inst_5 \n Inst_5: Check A4252→ If taken to another health provider…  " />
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
@@ -612,6 +650,16 @@
                             android:id="@+id/tv_A4259"
                             style="@style/TextView"
                             android:text="@string/A4259" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="(DK 99) Hours" />
+
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="(DK 99) Minutes" />
+
 
                         <EditText
                             android:id="@+id/ed_A4259_hours"
@@ -676,6 +724,11 @@
                             style="@style/TextView"
                             android:text="@string/A4261" />
 
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="No or \n Don't know → A4263" />
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
@@ -711,6 +764,11 @@
                             android:id="@+id/A4262"
                             style="@style/TextView"
                             android:text="@string/A4262" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="→ A4264" />
+
 
                         <RadioGroup style="@style/RadioGroup">
 
@@ -880,6 +938,11 @@
                             style="@style/TextView"
                             android:text="@string/A4264" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="1 → Inst_5 \n Inst_5: Check A4252→ If taken to another health provider… \n 2 → Inst_6 \n Inst_6: If A4261 = 1 (referred) or A4270 = 1 (referred) → continue with A4274. " />
+
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
@@ -1012,6 +1075,11 @@
                             style="@style/TextView_Hint"
                             android:text="@string/A4258_Hint" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="2-9 → Inst_6 \n Inst_6: If A4261 = 1 (referred) or A4270 = 1 (referred) → continue with A4274" />
+
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
@@ -1058,6 +1126,10 @@
                             style="@style/TextView_Hint"
                             android:text="@string/A4258_Hint" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="2-9 → Inst_6 \n Inst_6: If A4261 = 1 (referred) or A4270 = 1 (referred) → continue with A4274" />
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
@@ -1103,6 +1175,18 @@
                             android:id="@+id/ed_A4268_hours"
                             style="@style/EditText_number"
                             android:hint="@string/hours" />
+
+                        <TextView
+                        style="@style/TextView_Hint"
+                        android:text="(DK = 99) Hours" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="(DK = 99) Minutes" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="If A4266 ≠ 1, 7 (Hospital) → A4270" />
 
                         <EditText
                             android:id="@+id/ed_A4268_minutes"
@@ -1162,6 +1246,10 @@
                             style="@style/TextView"
                             android:text="@string/A4270" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="No or \n Don't know → A4272" />
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
@@ -1197,6 +1285,10 @@
                             android:id="@+id/A4271"
                             style="@style/TextView"
                             android:text="@string/A4271" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="→ A4274" />
 
                         <RadioGroup style="@style/RadioGroup">
 
@@ -1366,6 +1458,10 @@
                             style="@style/TextView"
                             android:text="@string/A4273" />
 
+                        <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → Inst_5 \n Inst_5: Check A4252→ If taken to another health provider… \n 2 → Inst_6 \n Inst_6: If A4261 = 1 (referred) or A4270 = 1 (referred) → continue with A4274. " />
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
@@ -1478,6 +1574,11 @@
                         android:id="@+id/A4275_2_h"
                         style="@style/TextView_Hint"
                         android:text="If NO or Don't Know → A4279" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 or 9 → Inst_7 \n Inst_7: If A4257, A4266, A4262 or A4271 = 1-4, 6-9 or 11 (seen at any health facility) → continue with A4277;" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -1628,6 +1729,11 @@
                         android:id="@+id/A4277"
                         style="@style/TextView"
                         android:text="@string/A4277" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \ n Don't know → A4279" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -1942,6 +2048,11 @@
                         android:id="@+id/tv_A4284"
                         style="@style/TextView"
                         android:text="@string/A4284" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="(<1 = 00; DK = 99)" />
+
 
                     <EditText
                         android:id="@+id/ed_A4284_days"

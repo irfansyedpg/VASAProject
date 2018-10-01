@@ -60,7 +60,11 @@
                     <TextView
                         android:id="@+id/A4051"
                         style="@style/TextView"
-                        android:text="@string/A4051" />
+                        android:text="@string/A4051"/>
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4047" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -108,6 +112,10 @@
                         style="@style/TextView_Hint"
                         android:text="Enter 1 unit only: 0-30 days or 1-60 months. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days." />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Months → A4052_c \n  Don't know \n Refused to answer → A4053 " />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -153,6 +161,10 @@
                         android:id="@+id/A4052_b_h"
                         style="@style/TextView_Hint"
                         android:text="Enter 0-29 days. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days. \n Don't know = 99" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Days → A4053" />
 
                     <EditText
                         android:id="@+id/ed_A4052_b"
@@ -418,7 +430,11 @@
                     <TextView
                         android:id="@+id/A4058"
                         style="@style/TextView"
-                        android:text="@string/A4058" />
+                        android:text="During the illness that led to death, did <NAME> have more frequent loose or liquid stools than usual?"/>
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4060" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -466,6 +482,10 @@
                         style="@style/TextView_Hint"
                         android:text="Enter 1 unit only: 0-29 days or 1-60 months. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days." />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Months → A4059_b \n Don't know \n Refused to answer → A4060 " />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -506,6 +526,10 @@
                         android:id="@+id/A4059_a"
                         style="@style/TextView"
                         android:text="@string/A4059_a" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Days → A4060" />
 
                     <TextView
                         android:id="@+id/A4059_a_h"
@@ -562,6 +586,10 @@
                         android:id="@+id/A4060"
                         style="@style/TextView"
                         android:text="@string/A4060" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4062" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -644,6 +672,10 @@
                         android:id="@+id/A4062"
                         style="@style/TextView"
                         android:text="@string/A4062" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4066" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -733,6 +765,10 @@
                         style="@style/TextView_Hint"
                         android:text="Enter 1 unit only: 0-29 days or 1-60 months. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days." />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Months → A4064_b \n  Don't know \n Refused to answer → A4065 " />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -778,6 +814,10 @@
                         android:id="@+id/A4064_a_h"
                         style="@style/TextView_Hint"
                         android:text="Enter 0-29 days. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days. \n Dont' know = 99" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Days → A4064_1" />
 
                     <EditText
                         android:id="@+id/ed_A4064_a"

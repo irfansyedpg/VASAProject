@@ -165,6 +165,10 @@
                         style="@style/TextView"
                         android:text="@string/A4146" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4149" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -318,6 +322,10 @@
                         style="@style/TextView"
                         android:text="@string/A4149" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4152" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -359,6 +367,10 @@
                         style="@style/TextView"
                         android:text="@string/A4150_u" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Months → A4150_b \n  Don't know \n Refused to answer → A4151" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -399,6 +411,11 @@
                         android:id="@+id/A4150_a"
                         style="@style/TextView"
                         android:text="@string/days" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Days → A4151" />
+
 
                     <EditText
                         android:id="@+id/ed_A4150_a"
@@ -561,6 +578,10 @@
                         android:id="@+id/A4154"
                         style="@style/TextView"
                         android:text="@string/A4154" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4156" />
 
                     <RadioGroup style="@style/RadioGroup">
 
