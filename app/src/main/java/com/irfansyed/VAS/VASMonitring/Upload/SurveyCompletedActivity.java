@@ -203,7 +203,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_N(final String study_id) {
 
-        final String ROOT_URL = "http://192.168.1.15/sm/Welcome/collect_N";
+        final String ROOT_URL = "http://10.199.13.112/sm/Welcome/collect_N";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -1305,7 +1305,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_C(final String study_id) {
 
-        final String ROOT_URL = "http://192.168.1.15/sm/Welcome/collect_C";
+        final String ROOT_URL = "http://10.199.13.112/sm/Welcome/collect_C";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -2432,7 +2432,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_A(final String study_id) {
 
-        final String ROOT_URL = "http://192.168.1.15/sm/Welcome/collect_A";
+        final String ROOT_URL = "http://10.199.13.112/sm/Welcome/collect_A";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -2961,7 +2961,8 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4251_A4284.A4272_2, c12.getString(c12.getColumnIndex("A4272_2")));
                         params.put(A4251_A4284.A4273, c12.getString(c12.getColumnIndex("A4273")));
                         params.put(A4251_A4284.A4274, c12.getString(c12.getColumnIndex("A4274")));
-                        params.put(A4251_A4284.A4275, c12.getString(c12.getColumnIndex("A4275")));
+                        params.put(A4251_A4284.A4275_1, c12.getString(c12.getColumnIndex("A4275_1")));
+                        params.put(A4251_A4284.A4275_2, c12.getString(c12.getColumnIndex("A4275_2")));
                         params.put(A4251_A4284.A4276_1, c12.getString(c12.getColumnIndex("A4276_1")));
                         params.put(A4251_A4284.A4276_2, c12.getString(c12.getColumnIndex("A4276_2")));
                         params.put(A4251_A4284.A4276_3, c12.getString(c12.getColumnIndex("A4276_3")));
