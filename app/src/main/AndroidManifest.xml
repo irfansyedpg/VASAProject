@@ -49,15 +49,15 @@
         </activity>
         <activity
             android:name=".Other.templete"
-            android:label="@string/title_activity_main2"
+
             android:screenOrientation="portrait" />
         <activity
             android:name=".Other.Genifno"
-            android:label="@string/title_activity_main2"
+
             android:screenOrientation="portrait" />
         <activity
             android:name=".C.C3001_C3011"
-            android:label="@string/title_activity_main2"
+
             android:screenOrientation="portrait" />
         <activity
             android:name=".C.C3012_C3022"

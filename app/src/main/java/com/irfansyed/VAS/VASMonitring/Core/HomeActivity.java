@@ -86,10 +86,18 @@ public class HomeActivity extends AppCompatActivity
 
         if (id == com.irfansyed.VAS.VASMonitring.R.id.upload_date) {
             intent = new Intent(this, SurveyCompletedActivity.class);
+
+            intent.putExtra("put_extra", put_extr);
+            if (intent != null)
+                startActivity(intent);
         }
         if (id == com.irfansyed.VAS.VASMonitring.R.id.stage_1) {
           intent = new Intent(this, Q1101_Q1610.class);
 
+
+            intent.putExtra("put_extra", put_extr);
+            if (intent != null)
+                startActivity(intent);
            // intent = new Intent(this, com.irfansyed.VAS.VASMonitring.RP.w204_w222.class);
             put_extr = 1;
         }/*
@@ -114,14 +122,11 @@ public class HomeActivity extends AppCompatActivity
             Toast.makeText(this, "Application Language Changed to English", Toast.LENGTH_LONG).show();
 
         } else if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_u) {
-            preferences.setlanguage("en", "GB");
+            preferences.setlanguage("ur","PK");
             Toast.makeText(this, "Application Language Changed to Urdu", Toast.LENGTH_LONG).show();
         }
 
 
-        intent.putExtra("put_extra", put_extr);
-        if (intent != null)
-            startActivity(intent);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

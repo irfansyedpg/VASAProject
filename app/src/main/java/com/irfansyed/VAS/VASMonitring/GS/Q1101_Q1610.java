@@ -1,6 +1,7 @@
 package com.irfansyed.VAS.VASMonitring.GS;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +22,7 @@ import com.irfansyed.VAS.VASMonitring.RP.w204_w222;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -28,6 +30,7 @@ import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
+import utils.MyPreferences;
 
 import static java.lang.Integer.parseInt;
 
@@ -435,6 +438,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+        change_langua();
         setContentView(R.layout.q1101_q1610);
 
         Initialization();
@@ -2651,4 +2657,24 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     }
 
+
+   void change_langua()
+    {
+
+        final MyPreferences preferences = new MyPreferences(this);
+
+        String lang = preferences.getlanguage();
+
+//create a string for country
+        String country = preferences.getcountry();
+//use constructor with country
+        Locale locale = new Locale(lang, country);
+
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        this.getResources().updateConfiguration(config,
+                this.getResources().getDisplayMetrics());
+
+    }
 }
