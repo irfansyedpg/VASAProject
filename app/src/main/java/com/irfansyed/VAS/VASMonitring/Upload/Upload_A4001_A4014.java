@@ -74,6 +74,7 @@ public class Upload_A4001_A4014 extends AsyncTask {
                 param.put("tableName", "A4001_A4014");
                 param.put(Q1101_Q1610.interviewType, String.valueOf(Q1101_Q1610.interviewType_upload));
                 param.put(A4001_A4014.study_id, c.getString(c.getColumnIndex("study_id")));
+
                 param.put(A4001_A4014.A4001, c.getString(c.getColumnIndex("A4001")));
                 param.put(A4001_A4014.A4002, c.getString(c.getColumnIndex("A4002")));
                 param.put(A4001_A4014.A4003, c.getString(c.getColumnIndex("A4003")));
@@ -91,6 +92,7 @@ public class Upload_A4001_A4014 extends AsyncTask {
                 param.put(A4001_A4014.A4013d, c.getString(c.getColumnIndex("A4013d")));
                 param.put(A4001_A4014.A4013m, c.getString(c.getColumnIndex("A4013m")));
                 param.put(A4001_A4014.A4013y, c.getString(c.getColumnIndex("A4013y")));
+
                 param.put(A4001_A4014.STATUS, c.getString(c.getColumnIndex("STATUS")));
             }
         }

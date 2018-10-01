@@ -2133,13 +2133,13 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             interviewType = 2;
         } else if (rb_Q1609_3.isChecked()) {
             Q1609 = "3";
-            interviewType = 2;
+            interviewType = 3;
         } else if (rb_Q1609_4.isChecked()) {
             Q1609 = "4";
-            interviewType = 2;
+            interviewType = 4;
         } else if (rb_Q1609_5.isChecked()) {
             Q1609 = "5";
-            interviewType = 3;
+            interviewType = 5;
         }
 
         if (ed_Q1610_1.getText().toString().trim().length() > 0) {
