@@ -339,7 +339,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text=" ( If woman was < 40, do not ask and just click ' No '.)" />
+                        android:text=" ( If woman was less than 40, do not ask and just click ' No '.)" />
 
 
                     <TextView
@@ -389,7 +389,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text=" ( If woman was < 40, do not ask and just click ' No '.)" />
+                        android:text=" ( If woman was less than 40, do not ask and just click ' No '.)" />
 
                     <TextView
                         style="@style/TextView_Hint"
