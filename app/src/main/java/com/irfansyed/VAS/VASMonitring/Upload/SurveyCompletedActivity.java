@@ -31,18 +31,46 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import Global.A.A4001_A4014;
+import Global.A.A4051_A4066;
+import Global.A.A4067_A4080;
+import Global.A.A4081_A4094;
+import Global.A.A4095_A4108;
+import Global.A.A4109_A4125;
+import Global.A.A4126_A4140;
+import Global.A.A4144_A4156;
+import Global.A.A4157_A4205;
+import Global.A.A4206_A4207;
+import Global.A.A4251_A4284;
+import Global.A.A4301_A4315;
+import Global.A.A4351_A4364;
+import Global.A.A4401_A4473;
 import Global.C.C3001_C3011;
 import Global.C.C3012_C3022;
 import Global.C.C3051_C3099;
 import Global.C.C3101_C3112;
 import Global.C.C3121_C3228;
 import Global.C.C3251_C3288_A_C;
-import Global.C.C3251_C3288_B;
 import Global.C.C3301_C3314;
 import Global.C.C3351_C3364;
 import Global.C.C3401_C3457;
 import Global.C.C3471_C3472;
 import Global.GS.Q1101_Q1610;
+import Global.N.N2001_N2011;
+import Global.N.N2012_N2016;
+import Global.N.N2017_N2022_3;
+import Global.N.N2023_N2026;
+import Global.N.N2051_N2078;
+import Global.N.N2080_N2107;
+import Global.N.N2110_N2189a;
+import Global.N.N2190_N2191;
+import Global.N.N2192_N2202;
+import Global.N.N2211_N2248_A_C;
+import Global.N.N2251_N2260;
+import Global.N.N2271_N2284;
+import Global.N.N2291_N2304;
+import Global.N.N2311_N2317;
+import Global.N.N2321_N2322;
 import data.DBHelper;
 import data.LocalDataManager;
 
@@ -127,15 +155,23 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         String[] arrr = memberId.split("/");
 
                         Q1101_Q1610.study_id_upload = arrr[0];
-                        Q1101_Q1610.interviewType_upload = parseInt(arrr[1]);
+                        int interviewType = parseInt(arrr[1]);
 
 
                         //new Upload_Q1101_Q1610(mContext).execute();
 
-                        uploadQ1101_Q1610(Q1101_Q1610.study_id_upload);
-                        //uploadC3001_C3011(Q1101_Q1610.study_id_upload);
+                        if (interviewType == 1) {
 
-                        //Toast.makeText(mContext, "All is well", Toast.LENGTH_LONG).show();
+                            upload_N(Q1101_Q1610.study_id_upload);
+
+                        } else if (interviewType == 2) {
+
+                            upload_C(Q1101_Q1610.study_id_upload);
+
+                        } else if (interviewType == 3) {
+
+                            upload_A(Q1101_Q1610.study_id_upload);
+                        }
 
                     }
                 }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -165,20 +201,21 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
         }
     }
 
+    public void upload_N(final String study_id) {
 
-    public void uploadQ1101_Q1610(final String study_id) {
+        final String ROOT_URL = "http://10.199.13.112/sm/Welcome/collect_N";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
-        StringRequest sendMyRequest = new StringRequest(Request.Method.POST, Constants.ROOT_URL,
+        StringRequest sendMyRequest = new StringRequest(Request.Method.POST, ROOT_URL,
                 new Response.Listener<String>() {
 
                     @Override
                     public void onResponse(String response) {
 
                         Toast.makeText(mContext, response, Toast.LENGTH_LONG).show();
-
                         myRequestQueue.getCache().clear();
+                        //upload2(study_id);
 
                         try {
 
@@ -202,6 +239,1110 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
             protected Map<String, String> getParams() {
 
                 Map<String, String> params = new HashMap<>();
+
+                //ArrayList<String> loopResponse = new ArrayList();
+
+                DBHelper db = new DBHelper(mContext);
+
+                Cursor c = db.getData("Q1101_Q1610", study_id);
+                Cursor c2 = db.getData("N2001_N2011", study_id);
+                Cursor c3 = db.getData("N2012_N2016", study_id);
+                Cursor c4 = db.getData("N2017_N2022_3", study_id);
+                Cursor c5 = db.getData("N2023_N2026", study_id);
+                Cursor c6 = db.getData("N2051_N2078", study_id);
+                Cursor c7 = db.getData("N2080_N2107", study_id);
+                Cursor c8 = db.getData("N2110_N2189a", study_id);
+                Cursor c9 = db.getData("N2190_N2191", study_id);
+                Cursor c10 = db.getData("N2192_N2202", study_id);
+                Cursor c11 = db.getData("N2211_N2248_A_C", study_id);
+                Cursor c12 = db.getData("N2251_N2260", study_id);
+                Cursor c13 = db.getData("N2271_N2284", study_id);
+                Cursor c14 = db.getData("N2291_N2304", study_id);
+                Cursor c15 = db.getData("N2311_N2317", study_id);
+                Cursor c16 = db.getData("N2321_N2322", study_id);
+                Cursor c17 = db.getData("N2211_N2248_B", study_id);
+
+                params.put("table1", "q1101_q1610");
+                params.put("table2", "n2001_n2011");
+                params.put("table3", "n2012_n2016");
+                params.put("table4", "n2017_n2022_3");
+                params.put("table5", "n2023_n2026");
+                params.put("table6", "n2051_n2078");
+                params.put("table7", "n2080_n2107");
+                params.put("table8", "n2110_n2189a");
+                params.put("table9", "n2190_n2191");
+                params.put("table10", "n2192_n2202");
+                params.put("table11", "n2211_n2248_a_c");
+                params.put("table12", "n2251_n2260");
+                params.put("table13", "n2271_n2284");
+                params.put("table14", "n2291_n2304");
+                params.put("table15", "n2311_n2317");
+                params.put("table16", "n2321_n2322");
+                params.put("table17", "n2211_n2248_b");
+
+                if (c != null) {
+
+                    if (c.moveToFirst()) {
+
+                        params.put(Q1101_Q1610.study_id, c.getString(c.getColumnIndex("study_id")));
+                        params.put(Q1101_Q1610.Q1201_1, c.getString(c.getColumnIndex("Q1201_1")));
+                        params.put(Q1101_Q1610.Q1201_2, c.getString(c.getColumnIndex("Q1201_2")));
+                        params.put(Q1101_Q1610.Q1201_3, c.getString(c.getColumnIndex("Q1201_3")));
+                        params.put(Q1101_Q1610.Q1201_4, c.getString(c.getColumnIndex("Q1201_4")));
+                        params.put(Q1101_Q1610.Q1201_5, c.getString(c.getColumnIndex("Q1201_5")));
+                        params.put(Q1101_Q1610.Q1201_6, c.getString(c.getColumnIndex("Q1201_6")));
+                        params.put(Q1101_Q1610.Q1202, c.getString(c.getColumnIndex("Q1202")));
+                        params.put(Q1101_Q1610.Q1203, c.getString(c.getColumnIndex("Q1203")));
+                        params.put(Q1101_Q1610.Q1204, c.getString(c.getColumnIndex("Q1204")));
+                        params.put(Q1101_Q1610.Q1205, c.getString(c.getColumnIndex("Q1205")));
+                        params.put(Q1101_Q1610.Q1206_d, c.getString(c.getColumnIndex("Q1206_d")));
+                        params.put(Q1101_Q1610.Q1206_m, c.getString(c.getColumnIndex("Q1206_m")));
+                        params.put(Q1101_Q1610.Q1206_y, c.getString(c.getColumnIndex("Q1206_y")));
+                        params.put(Q1101_Q1610.Q1207, c.getString(c.getColumnIndex("Q1207")));
+                        params.put(Q1101_Q1610.Q1208, c.getString(c.getColumnIndex("Q1208")));
+                        params.put(Q1101_Q1610.Q1209, c.getString(c.getColumnIndex("Q1209")));
+                        params.put(Q1101_Q1610.Q1301, c.getString(c.getColumnIndex("Q1301")));
+                        params.put(Q1101_Q1610.Q1302, c.getString(c.getColumnIndex("Q1302")));
+                        params.put(Q1101_Q1610.Q1307, c.getString(c.getColumnIndex("Q1307")));
+                        params.put(Q1101_Q1610.Q1308, c.getString(c.getColumnIndex("Q1308")));
+                        params.put(Q1101_Q1610.Q1309, c.getString(c.getColumnIndex("Q1309")));
+                        params.put(Q1101_Q1610.Q1310, c.getString(c.getColumnIndex("Q1310")));
+                        params.put(Q1101_Q1610.Q1311, c.getString(c.getColumnIndex("Q1311")));
+                        params.put(Q1101_Q1610.Q1312, c.getString(c.getColumnIndex("Q1312")));
+                        params.put(Q1101_Q1610.Q1313, c.getString(c.getColumnIndex("Q1313")));
+                        params.put(Q1101_Q1610.Q1401, c.getString(c.getColumnIndex("Q1401")));
+                        params.put(Q1101_Q1610.Q1402, c.getString(c.getColumnIndex("Q1402")));
+                        params.put(Q1101_Q1610.Q1403, c.getString(c.getColumnIndex("Q1403")));
+                        params.put(Q1101_Q1610.Q1403_OT, c.getString(c.getColumnIndex("Q1403_OT")));
+                        params.put(Q1101_Q1610.Q1404, c.getString(c.getColumnIndex("Q1404")));
+                        params.put(Q1101_Q1610.Q1405, c.getString(c.getColumnIndex("Q1405")));
+                        params.put(Q1101_Q1610.Q1406, c.getString(c.getColumnIndex("Q1406")));
+                        params.put(Q1101_Q1610.Q1407, c.getString(c.getColumnIndex("Q1407")));
+                        params.put(Q1101_Q1610.Q1408, c.getString(c.getColumnIndex("Q1408")));
+                        params.put(Q1101_Q1610.Q1409, c.getString(c.getColumnIndex("Q1409")));
+                        params.put(Q1101_Q1610.Q1410, c.getString(c.getColumnIndex("Q1410")));
+                        params.put(Q1101_Q1610.Q1411, c.getString(c.getColumnIndex("Q1411")));
+                        params.put(Q1101_Q1610.Q1412, c.getString(c.getColumnIndex("Q1412")));
+                        params.put(Q1101_Q1610.Q1413, c.getString(c.getColumnIndex("Q1413")));
+                        params.put(Q1101_Q1610.Q1414_1, c.getString(c.getColumnIndex("Q1414_1")));
+                        params.put(Q1101_Q1610.Q1414_2, c.getString(c.getColumnIndex("Q1414_2")));
+                        params.put(Q1101_Q1610.Q1414_3, c.getString(c.getColumnIndex("Q1414_3")));
+                        params.put(Q1101_Q1610.Q1414_4, c.getString(c.getColumnIndex("Q1414_4")));
+                        params.put(Q1101_Q1610.Q1414_5, c.getString(c.getColumnIndex("Q1414_5")));
+                        params.put(Q1101_Q1610.Q1414_6, c.getString(c.getColumnIndex("Q1414_6")));
+                        params.put(Q1101_Q1610.Q1414_7, c.getString(c.getColumnIndex("Q1414_7")));
+                        params.put(Q1101_Q1610.Q1414_8, c.getString(c.getColumnIndex("Q1414_8")));
+                        params.put(Q1101_Q1610.Q1414_9, c.getString(c.getColumnIndex("Q1414_9")));
+                        params.put(Q1101_Q1610.Q1414_10, c.getString(c.getColumnIndex("Q1414_10")));
+                        params.put(Q1101_Q1610.Q1415, c.getString(c.getColumnIndex("Q1415")));
+                        params.put(Q1101_Q1610.Q1416, c.getString(c.getColumnIndex("Q1416")));
+                        params.put(Q1101_Q1610.Q1416_OT, c.getString(c.getColumnIndex("Q1416_OT")));
+                        params.put(Q1101_Q1610.Q1417, c.getString(c.getColumnIndex("Q1417")));
+                        params.put(Q1101_Q1610.Q1417_OT, c.getString(c.getColumnIndex("Q1417_OT")));
+                        params.put(Q1101_Q1610.Q1418, c.getString(c.getColumnIndex("Q1418")));
+                        params.put(Q1101_Q1610.Q1418_OT, c.getString(c.getColumnIndex("Q1418_OT")));
+                        params.put(Q1101_Q1610.Q1419, c.getString(c.getColumnIndex("Q1419")));
+                        params.put(Q1101_Q1610.Q1419_OT, c.getString(c.getColumnIndex("Q1419_OT")));
+                        params.put(Q1101_Q1610.Q1420, c.getString(c.getColumnIndex("Q1420")));
+                        params.put(Q1101_Q1610.Q1420_OT, c.getString(c.getColumnIndex("Q1420_OT")));
+                        params.put(Q1101_Q1610.Q1421, c.getString(c.getColumnIndex("Q1421")));
+                        params.put(Q1101_Q1610.Q1421_OT, c.getString(c.getColumnIndex("Q1421_OT")));
+                        params.put(Q1101_Q1610.Q1501, c.getString(c.getColumnIndex("Q1501")));
+                        params.put(Q1101_Q1610.Q1502, c.getString(c.getColumnIndex("Q1502")));
+                        params.put(Q1101_Q1610.Q1503, c.getString(c.getColumnIndex("Q1503")));
+                        params.put(Q1101_Q1610.Q1503_OT, c.getString(c.getColumnIndex("Q1503_OT")));
+                        params.put(Q1101_Q1610.Q1601, c.getString(c.getColumnIndex("Q1601")));
+                        params.put(Q1101_Q1610.Q1602, c.getString(c.getColumnIndex("Q1602")));
+                        params.put(Q1101_Q1610.Q1603, c.getString(c.getColumnIndex("Q1603")));
+                        params.put(Q1101_Q1610.Q1604, c.getString(c.getColumnIndex("Q1604")));
+                        params.put(Q1101_Q1610.Q1604_OT, c.getString(c.getColumnIndex("Q1604_OT")));
+                        params.put(Q1101_Q1610.Q1605, c.getString(c.getColumnIndex("Q1605")));
+                        params.put(Q1101_Q1610.Q1606, c.getString(c.getColumnIndex("Q1606")));
+                        params.put(Q1101_Q1610.Q1607_1, c.getString(c.getColumnIndex("Q1607_1")));
+                        params.put(Q1101_Q1610.Q1607_2, c.getString(c.getColumnIndex("Q1607_2")));
+                        params.put(Q1101_Q1610.Q1607_3, c.getString(c.getColumnIndex("Q1607_3")));
+                        params.put(Q1101_Q1610.Q1608_1, c.getString(c.getColumnIndex("Q1608_1")));
+                        params.put(Q1101_Q1610.Q1608_2, c.getString(c.getColumnIndex("Q1608_2")));
+                        params.put(Q1101_Q1610.Q1608_3, c.getString(c.getColumnIndex("Q1608_3")));
+                        params.put(Q1101_Q1610.Q1609, c.getString(c.getColumnIndex("Q1609")));
+                        params.put(Q1101_Q1610.Q1610_1, c.getString(c.getColumnIndex("Q1610_1")));
+                        params.put(Q1101_Q1610.Q1610_2, c.getString(c.getColumnIndex("Q1610_2")));
+                        params.put(Q1101_Q1610.Q1610_3, c.getString(c.getColumnIndex("Q1610_3")));
+                        params.put(Q1101_Q1610.interviewType, c.getString(c.getColumnIndex("interviewType")));
+                        params.put(Q1101_Q1610.currentSection, c.getString(c.getColumnIndex("currentSection")));
+                    }
+                }
+
+                if (c2 != null) {
+
+                    if (c2.moveToFirst()) {
+
+                        params.put(N2001_N2011.sub_N2001_N2011.N2001, c2.getString(c2.getColumnIndex("N2001")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2002, c2.getString(c2.getColumnIndex("N2002")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2003, c2.getString(c2.getColumnIndex("N2003")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2004, c2.getString(c2.getColumnIndex("N2004")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2005u, c2.getString(c2.getColumnIndex("N2005u")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2005d, c2.getString(c2.getColumnIndex("N2005d")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2005w, c2.getString(c2.getColumnIndex("N2005w")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2005m, c2.getString(c2.getColumnIndex("N2005m")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2006, c2.getString(c2.getColumnIndex("N2006")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2006x, c2.getString(c2.getColumnIndex("N2006x")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2008, c2.getString(c2.getColumnIndex("N2008")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2008x, c2.getString(c2.getColumnIndex("N2008x")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2009_1, c2.getString(c2.getColumnIndex("N2009_1")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2009_2, c2.getString(c2.getColumnIndex("N2009_2")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2009_3, c2.getString(c2.getColumnIndex("N2009_3")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2009_4, c2.getString(c2.getColumnIndex("N2009_4")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2010, c2.getString(c2.getColumnIndex("N2010")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2011, c2.getString(c2.getColumnIndex("N2011")));
+                    }
+                }
+
+                if (c3 != null) {
+
+                    if (c3.moveToFirst()) {
+
+                        params.put(N2012_N2016.sub_N2012_N2016.N2012, c3.getString(c3.getColumnIndex("N2012")));
+                        params.put(N2012_N2016.sub_N2012_N2016.N2013, c3.getString(c3.getColumnIndex("N2013")));
+                        params.put(N2012_N2016.sub_N2012_N2016.N2014, c3.getString(c3.getColumnIndex("N2014")));
+                        params.put(N2012_N2016.sub_N2012_N2016.N2015, c3.getString(c3.getColumnIndex("N2015")));
+                        params.put(N2012_N2016.sub_N2012_N2016.N2016, c3.getString(c3.getColumnIndex("N2016")));
+                    }
+                }
+
+                if (c4 != null) {
+
+                    if (c4.moveToFirst()) {
+
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2017, c4.getString(c4.getColumnIndex("N2017")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2018, c4.getString(c4.getColumnIndex("N2018")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2019u, c4.getString(c4.getColumnIndex("N2019u")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2019h, c4.getString(c4.getColumnIndex("N2019h")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2019d, c4.getString(c4.getColumnIndex("N2019d")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2020, c4.getString(c4.getColumnIndex("N2020")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2021, c4.getString(c4.getColumnIndex("N2021")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2022, c4.getString(c4.getColumnIndex("N2022")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2022_1, c4.getString(c4.getColumnIndex("N2022_1")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2022_2, c4.getString(c4.getColumnIndex("N2022_2")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2022_3, c4.getString(c4.getColumnIndex("N2022_3")));
+                    }
+                }
+
+                if (c5 != null) {
+
+                    if (c5.moveToFirst()) {
+
+                        params.put(N2023_N2026.sub_N2023_N2026.N2023, c5.getString(c5.getColumnIndex("N2023")));
+                        params.put(N2023_N2026.sub_N2023_N2026.N2024, c5.getString(c5.getColumnIndex("N2024")));
+                        params.put(N2023_N2026.sub_N2023_N2026.N2024_1, c5.getString(c5.getColumnIndex("N2024_1")));
+                        params.put(N2023_N2026.sub_N2023_N2026.N2025U, c5.getString(c5.getColumnIndex("N2025U")));
+                        params.put(N2023_N2026.sub_N2023_N2026.N2026, c5.getString(c5.getColumnIndex("N2026")));
+                    }
+                }
+
+                if (c6 != null) {
+
+                    if (c6.moveToFirst()) {
+
+                        params.put(N2051_N2078.sub_N2051_N2078.N2051, c6.getString(c6.getColumnIndex("N2051")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2052, c6.getString(c6.getColumnIndex("N2052")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2053_1, c6.getString(c6.getColumnIndex("N2053_1")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2053_2, c6.getString(c6.getColumnIndex("N2053_2")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2053_3, c6.getString(c6.getColumnIndex("N2053_3")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2053_4, c6.getString(c6.getColumnIndex("N2053_4")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2053_5, c6.getString(c6.getColumnIndex("N2053_5")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2053_DK, c6.getString(c6.getColumnIndex("N2053_DK")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2053_OT, c6.getString(c6.getColumnIndex("N2053_OT")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2053_OTx, c6.getString(c6.getColumnIndex("N2053_OTx")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2054, c6.getString(c6.getColumnIndex("N2054")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2055, c6.getString(c6.getColumnIndex("N2055")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2056, c6.getString(c6.getColumnIndex("N2056")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2057, c6.getString(c6.getColumnIndex("N2057")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2057_1, c6.getString(c6.getColumnIndex("N2057_1")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2057_2, c6.getString(c6.getColumnIndex("N2057_2")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2057_3, c6.getString(c6.getColumnIndex("N2057_3")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2057_4, c6.getString(c6.getColumnIndex("N2057_4")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2057_5, c6.getString(c6.getColumnIndex("N2057_5")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2057_6, c6.getString(c6.getColumnIndex("N2057_6")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2058_1, c6.getString(c6.getColumnIndex("N2058_1")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2058_2, c6.getString(c6.getColumnIndex("N2058_2")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2058_3, c6.getString(c6.getColumnIndex("N2058_3")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2058_4, c6.getString(c6.getColumnIndex("N2058_4")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2058_5, c6.getString(c6.getColumnIndex("N2058_5")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2058_6, c6.getString(c6.getColumnIndex("N2058_6")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2058_7, c6.getString(c6.getColumnIndex("N2058_7")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2058_8, c6.getString(c6.getColumnIndex("N2058_8")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2058_9, c6.getString(c6.getColumnIndex("N2058_9")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2058_10, c6.getString(c6.getColumnIndex("N2058_10")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2059, c6.getString(c6.getColumnIndex("N2059")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2060, c6.getString(c6.getColumnIndex("N2060")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2061, c6.getString(c6.getColumnIndex("N2061")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2062, c6.getString(c6.getColumnIndex("N2062")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2063, c6.getString(c6.getColumnIndex("N2063")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2064, c6.getString(c6.getColumnIndex("N2064")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2065, c6.getString(c6.getColumnIndex("N2065")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2066, c6.getString(c6.getColumnIndex("N2066")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2067, c6.getString(c6.getColumnIndex("N2067")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2068, c6.getString(c6.getColumnIndex("N2068")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2069_1, c6.getString(c6.getColumnIndex("N2069_1")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2069_2, c6.getString(c6.getColumnIndex("N2069_2")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2069_3, c6.getString(c6.getColumnIndex("N2069_3")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2070, c6.getString(c6.getColumnIndex("N2070")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2071, c6.getString(c6.getColumnIndex("N2071")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2072, c6.getString(c6.getColumnIndex("N2072")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2073, c6.getString(c6.getColumnIndex("N2073")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2074, c6.getString(c6.getColumnIndex("N2074")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2074x, c6.getString(c6.getColumnIndex("N2074x")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2075, c6.getString(c6.getColumnIndex("N2075")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2076, c6.getString(c6.getColumnIndex("N2076")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2076x, c6.getString(c6.getColumnIndex("N2076x")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2077, c6.getString(c6.getColumnIndex("N2077")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_1, c6.getString(c6.getColumnIndex("N2078_1")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_2, c6.getString(c6.getColumnIndex("N2078_2")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_3, c6.getString(c6.getColumnIndex("N2078_3")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_4, c6.getString(c6.getColumnIndex("N2078_4")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_4x, c6.getString(c6.getColumnIndex("N2078_4x")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_5, c6.getString(c6.getColumnIndex("N2078_5")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_6, c6.getString(c6.getColumnIndex("N2078_6")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_7, c6.getString(c6.getColumnIndex("N2078_7")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_8, c6.getString(c6.getColumnIndex("N2078_8")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_9, c6.getString(c6.getColumnIndex("N2078_9")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_10, c6.getString(c6.getColumnIndex("N2078_10")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_11, c6.getString(c6.getColumnIndex("N2078_11")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_12, c6.getString(c6.getColumnIndex("N2078_12")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_13, c6.getString(c6.getColumnIndex("N2078_13")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_DK, c6.getString(c6.getColumnIndex("N2078_DK")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_OT, c6.getString(c6.getColumnIndex("N2078_OT")));
+                        params.put(N2051_N2078.sub_N2051_N2078.N2078_OTx, c6.getString(c6.getColumnIndex("N2078_OTx")));
+                    }
+                }
+
+                if (c7 != null) {
+
+                    if (c7.moveToFirst()) {
+
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_1, c7.getString(c7.getColumnIndex("N2080_1")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_2, c7.getString(c7.getColumnIndex("N2080_2")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_3, c7.getString(c7.getColumnIndex("N2080_3")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_4, c7.getString(c7.getColumnIndex("N2080_4")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_5, c7.getString(c7.getColumnIndex("N2080_5")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_6, c7.getString(c7.getColumnIndex("N2080_6")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_7, c7.getString(c7.getColumnIndex("N2080_7")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_8, c7.getString(c7.getColumnIndex("N2080_8")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_9, c7.getString(c7.getColumnIndex("N2080_9")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_10, c7.getString(c7.getColumnIndex("N2080_10")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_11, c7.getString(c7.getColumnIndex("N2080_11")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_12, c7.getString(c7.getColumnIndex("N2080_12")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_13, c7.getString(c7.getColumnIndex("N2080_13")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_14, c7.getString(c7.getColumnIndex("N2080_14")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_15, c7.getString(c7.getColumnIndex("N2080_15")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_15x, c7.getString(c7.getColumnIndex("N2080_15x")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2080_16, c7.getString(c7.getColumnIndex("N2080_16")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2081, c7.getString(c7.getColumnIndex("N2081")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2082_1, c7.getString(c7.getColumnIndex("N2082_1")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2082_2, c7.getString(c7.getColumnIndex("N2082_2")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2082_3, c7.getString(c7.getColumnIndex("N2082_3")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2082_4, c7.getString(c7.getColumnIndex("N2082_4")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2082_5, c7.getString(c7.getColumnIndex("N2082_5")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2082_6, c7.getString(c7.getColumnIndex("N2082_6")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2082_DK, c7.getString(c7.getColumnIndex("N2082_DK")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2082_OT, c7.getString(c7.getColumnIndex("N2082_OT")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2082_OTx, c7.getString(c7.getColumnIndex("N2082_OTx")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2083, c7.getString(c7.getColumnIndex("N2083")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084, c7.getString(c7.getColumnIndex("N2084")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2085, c7.getString(c7.getColumnIndex("N2085")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_1, c7.getString(c7.getColumnIndex("N2086_1")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_2, c7.getString(c7.getColumnIndex("N2086_2")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_3, c7.getString(c7.getColumnIndex("N2086_3")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_4, c7.getString(c7.getColumnIndex("N2086_4")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_4x, c7.getString(c7.getColumnIndex("N2086_4x")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_5, c7.getString(c7.getColumnIndex("N2086_5")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_6, c7.getString(c7.getColumnIndex("N2086_6")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_7, c7.getString(c7.getColumnIndex("N2086_7")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_8, c7.getString(c7.getColumnIndex("N2086_8")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_9, c7.getString(c7.getColumnIndex("N2086_9")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_10, c7.getString(c7.getColumnIndex("N2086_10")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_11, c7.getString(c7.getColumnIndex("N2086_11")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_12, c7.getString(c7.getColumnIndex("N2086_12")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_OT, c7.getString(c7.getColumnIndex("N2086_OT")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_OTx, c7.getString(c7.getColumnIndex("N2086_OTx")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2086_DK, c7.getString(c7.getColumnIndex("N2086_DK")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2087, c7.getString(c7.getColumnIndex("N2087")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_1, c7.getString(c7.getColumnIndex("N2088_1")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_2, c7.getString(c7.getColumnIndex("N2088_2")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_3, c7.getString(c7.getColumnIndex("N2088_3")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_4, c7.getString(c7.getColumnIndex("N2088_4")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_5, c7.getString(c7.getColumnIndex("N2088_5")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_6, c7.getString(c7.getColumnIndex("N2088_6")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_7, c7.getString(c7.getColumnIndex("N2088_7")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_8, c7.getString(c7.getColumnIndex("N2088_8")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_9, c7.getString(c7.getColumnIndex("N2088_9")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_10, c7.getString(c7.getColumnIndex("N2088_10")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_11, c7.getString(c7.getColumnIndex("N2088_11")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_12, c7.getString(c7.getColumnIndex("N2088_12")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_13, c7.getString(c7.getColumnIndex("N2088_13")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_14, c7.getString(c7.getColumnIndex("N2088_14")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_15, c7.getString(c7.getColumnIndex("N2088_15")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_16, c7.getString(c7.getColumnIndex("N2088_16")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_17, c7.getString(c7.getColumnIndex("N2088_17")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_18, c7.getString(c7.getColumnIndex("N2088_18")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_18x, c7.getString(c7.getColumnIndex("N2088_18x")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2088_19, c7.getString(c7.getColumnIndex("N2088_19")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2089, c7.getString(c7.getColumnIndex("N2089")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2089x, c7.getString(c7.getColumnIndex("N2089x")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2090, c7.getString(c7.getColumnIndex("N2090")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2091_1, c7.getString(c7.getColumnIndex("N2091_1")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2091_2, c7.getString(c7.getColumnIndex("N2091_2")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2091_3, c7.getString(c7.getColumnIndex("N2091_3")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2091_4, c7.getString(c7.getColumnIndex("N2091_4")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2091_5, c7.getString(c7.getColumnIndex("N2091_5")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2091_6, c7.getString(c7.getColumnIndex("N2091_6")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2091_OT, c7.getString(c7.getColumnIndex("N2091_OT")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2091_OTx, c7.getString(c7.getColumnIndex("N2091_OTx")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2091_DK, c7.getString(c7.getColumnIndex("N2091_DK")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2092, c7.getString(c7.getColumnIndex("N2092")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2092x, c7.getString(c7.getColumnIndex("N2092x")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2093, c7.getString(c7.getColumnIndex("N2093")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2093x, c7.getString(c7.getColumnIndex("N2093x")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2094, c7.getString(c7.getColumnIndex("N2094")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2095, c7.getString(c7.getColumnIndex("N2095")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096, c7.getString(c7.getColumnIndex("N2096")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2097_1, c7.getString(c7.getColumnIndex("N2097_1")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2097_2, c7.getString(c7.getColumnIndex("N2097_2")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2097_3, c7.getString(c7.getColumnIndex("N2097_3")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2098, c7.getString(c7.getColumnIndex("N2098")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2098x, c7.getString(c7.getColumnIndex("N2098x")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2099, c7.getString(c7.getColumnIndex("N2099")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2100_1, c7.getString(c7.getColumnIndex("N2100_1")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2100_2, c7.getString(c7.getColumnIndex("N2100_2")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2100_3, c7.getString(c7.getColumnIndex("N2100_3")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2100_4, c7.getString(c7.getColumnIndex("N2100_4")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2100_5, c7.getString(c7.getColumnIndex("N2100_5")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2100_6, c7.getString(c7.getColumnIndex("N2100_6")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2100_7, c7.getString(c7.getColumnIndex("N2100_7")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2100_DK, c7.getString(c7.getColumnIndex("N2100_DK")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2101_1, c7.getString(c7.getColumnIndex("N2101_1")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2101_2, c7.getString(c7.getColumnIndex("N2101_2")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2101_3, c7.getString(c7.getColumnIndex("N2101_3")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2101_4, c7.getString(c7.getColumnIndex("N2101_4")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2101_5, c7.getString(c7.getColumnIndex("N2101_5")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2101_6, c7.getString(c7.getColumnIndex("N2101_6")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2101_7, c7.getString(c7.getColumnIndex("N2101_7")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2101_DK, c7.getString(c7.getColumnIndex("N2101_DK")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2102, c7.getString(c7.getColumnIndex("N2102")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2103_1, c7.getString(c7.getColumnIndex("N2103_1")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2103_2, c7.getString(c7.getColumnIndex("N2103_2")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2104, c7.getString(c7.getColumnIndex("N2104")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2105, c7.getString(c7.getColumnIndex("N2105")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2106, c7.getString(c7.getColumnIndex("N2106")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2107_1, c7.getString(c7.getColumnIndex("N2107_1")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2107_2, c7.getString(c7.getColumnIndex("N2107_2")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2107_3, c7.getString(c7.getColumnIndex("N2107_3")));
+                    }
+                }
+
+                if (c8 != null) {
+
+                    if (c8.moveToFirst()) {
+
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2110, c8.getString(c8.getColumnIndex("N2110")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2110x, c8.getString(c8.getColumnIndex("N2110x")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2111, c8.getString(c8.getColumnIndex("N2111")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2111x, c8.getString(c8.getColumnIndex("N2111x")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2112, c8.getString(c8.getColumnIndex("N2112")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2113_1, c8.getString(c8.getColumnIndex("N2113_1")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2113_2, c8.getString(c8.getColumnIndex("N2113_2")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2113_3, c8.getString(c8.getColumnIndex("N2113_3")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2113_4, c8.getString(c8.getColumnIndex("N2113_4")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2113_OT, c8.getString(c8.getColumnIndex("N2113_OT")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2113_OTx, c8.getString(c8.getColumnIndex("N2113_OTx")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2113_DK, c8.getString(c8.getColumnIndex("N2113_DK")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2114, c8.getString(c8.getColumnIndex("N2114")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2115, c8.getString(c8.getColumnIndex("N2115")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2116_1, c8.getString(c8.getColumnIndex("N2116_1")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2116_2, c8.getString(c8.getColumnIndex("N2116_2")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2116_3, c8.getString(c8.getColumnIndex("N2116_3")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2117, c8.getString(c8.getColumnIndex("N2117")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2118, c8.getString(c8.getColumnIndex("N2118")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2119, c8.getString(c8.getColumnIndex("N2119")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2120, c8.getString(c8.getColumnIndex("N2120")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2121, c8.getString(c8.getColumnIndex("N2121")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2122, c8.getString(c8.getColumnIndex("N2122")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2123, c8.getString(c8.getColumnIndex("N2123")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2124, c8.getString(c8.getColumnIndex("N2124")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2125, c8.getString(c8.getColumnIndex("N2125")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2126, c8.getString(c8.getColumnIndex("N2126")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2127, c8.getString(c8.getColumnIndex("N2127")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2127h, c8.getString(c8.getColumnIndex("N2127h")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2128, c8.getString(c8.getColumnIndex("N2128")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2129, c8.getString(c8.getColumnIndex("N2129")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2130, c8.getString(c8.getColumnIndex("N2130")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2131, c8.getString(c8.getColumnIndex("N2131")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2132, c8.getString(c8.getColumnIndex("N2132")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2133, c8.getString(c8.getColumnIndex("N2133")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2133d, c8.getString(c8.getColumnIndex("N2133d")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2133h, c8.getString(c8.getColumnIndex("N2133h")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2134, c8.getString(c8.getColumnIndex("N2134")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2135_1, c8.getString(c8.getColumnIndex("N2135_1")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2135_2, c8.getString(c8.getColumnIndex("N2135_2")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2135_3, c8.getString(c8.getColumnIndex("N2135_3")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2135_4, c8.getString(c8.getColumnIndex("N2135_4")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2135_5, c8.getString(c8.getColumnIndex("N2135_5")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2135_6, c8.getString(c8.getColumnIndex("N2135_6")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2135_7, c8.getString(c8.getColumnIndex("N2135_7")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2135_8, c8.getString(c8.getColumnIndex("N2135_8")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2135_9, c8.getString(c8.getColumnIndex("N2135_9")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2135_10, c8.getString(c8.getColumnIndex("N2135_10")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2135_11, c8.getString(c8.getColumnIndex("N2135_11")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2135_11x, c8.getString(c8.getColumnIndex("N2135_11x")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2136, c8.getString(c8.getColumnIndex("N2136")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2137, c8.getString(c8.getColumnIndex("N2137")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2138, c8.getString(c8.getColumnIndex("N2138")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2139, c8.getString(c8.getColumnIndex("N2139")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2140, c8.getString(c8.getColumnIndex("N2140")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2141, c8.getString(c8.getColumnIndex("N2141")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2142, c8.getString(c8.getColumnIndex("N2142")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2143, c8.getString(c8.getColumnIndex("N2143")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2144, c8.getString(c8.getColumnIndex("N2144")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2145, c8.getString(c8.getColumnIndex("N2145")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2146, c8.getString(c8.getColumnIndex("N2146")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2147, c8.getString(c8.getColumnIndex("N2147")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2148, c8.getString(c8.getColumnIndex("N2148")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2149, c8.getString(c8.getColumnIndex("N2149")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2150, c8.getString(c8.getColumnIndex("N2150")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2151, c8.getString(c8.getColumnIndex("N2151")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2152, c8.getString(c8.getColumnIndex("N2152")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2153, c8.getString(c8.getColumnIndex("N2153")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2154, c8.getString(c8.getColumnIndex("N2154")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2155, c8.getString(c8.getColumnIndex("N2155")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2156, c8.getString(c8.getColumnIndex("N2156")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2157, c8.getString(c8.getColumnIndex("N2157")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2158, c8.getString(c8.getColumnIndex("N2158")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2159, c8.getString(c8.getColumnIndex("N2159")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2160, c8.getString(c8.getColumnIndex("N2160")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2161, c8.getString(c8.getColumnIndex("N2161")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2162, c8.getString(c8.getColumnIndex("N2162")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2163, c8.getString(c8.getColumnIndex("N2163")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2164, c8.getString(c8.getColumnIndex("N2164")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2165, c8.getString(c8.getColumnIndex("N2165")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2166, c8.getString(c8.getColumnIndex("N2166")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2166_1, c8.getString(c8.getColumnIndex("N2166_1")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2167, c8.getString(c8.getColumnIndex("N2167")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2168, c8.getString(c8.getColumnIndex("N2168")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2169, c8.getString(c8.getColumnIndex("N2169")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2170, c8.getString(c8.getColumnIndex("N2170")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2171, c8.getString(c8.getColumnIndex("N2171")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2172, c8.getString(c8.getColumnIndex("N2172")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2173, c8.getString(c8.getColumnIndex("N2173")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2174, c8.getString(c8.getColumnIndex("N2174")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2175, c8.getString(c8.getColumnIndex("N2175")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2176, c8.getString(c8.getColumnIndex("N2176")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2177, c8.getString(c8.getColumnIndex("N2177")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2177A, c8.getString(c8.getColumnIndex("N2177A")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2178, c8.getString(c8.getColumnIndex("N2178")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2179, c8.getString(c8.getColumnIndex("N2179")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2180, c8.getString(c8.getColumnIndex("N2180")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2181, c8.getString(c8.getColumnIndex("N2181")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2182, c8.getString(c8.getColumnIndex("N2182")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2183, c8.getString(c8.getColumnIndex("N2183")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2184, c8.getString(c8.getColumnIndex("N2184")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2185, c8.getString(c8.getColumnIndex("N2185")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2186, c8.getString(c8.getColumnIndex("N2186")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2187, c8.getString(c8.getColumnIndex("N2187")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2188, c8.getString(c8.getColumnIndex("N2188")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2189, c8.getString(c8.getColumnIndex("N2189")));
+                        params.put(N2110_N2189a.sub_N2110_N2189a.N2189A, c8.getString(c8.getColumnIndex("N2189A")));
+                    }
+                }
+
+                if (c9 != null) {
+
+                    if (c9.moveToFirst()) {
+
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190, c9.getString(c9.getColumnIndex("N2190")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_1, c9.getString(c9.getColumnIndex("N2190_1")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_2, c9.getString(c9.getColumnIndex("N2190_2")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_3, c9.getString(c9.getColumnIndex("N2190_3")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_4, c9.getString(c9.getColumnIndex("N2190_4")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_5, c9.getString(c9.getColumnIndex("N2190_5")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_6, c9.getString(c9.getColumnIndex("N2190_6")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_7, c9.getString(c9.getColumnIndex("N2190_7")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_8, c9.getString(c9.getColumnIndex("N2190_8")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_9, c9.getString(c9.getColumnIndex("N2190_9")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_10, c9.getString(c9.getColumnIndex("N2190_10")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_11, c9.getString(c9.getColumnIndex("N2190_11")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_12, c9.getString(c9.getColumnIndex("N2190_12")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_13, c9.getString(c9.getColumnIndex("N2190_13")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_14, c9.getString(c9.getColumnIndex("N2190_14")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_15, c9.getString(c9.getColumnIndex("N2190_15")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_16, c9.getString(c9.getColumnIndex("N2190_16")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_17, c9.getString(c9.getColumnIndex("N2190_17")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_18, c9.getString(c9.getColumnIndex("N2190_18")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_19, c9.getString(c9.getColumnIndex("N2190_19")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_20, c9.getString(c9.getColumnIndex("N2190_20")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_21, c9.getString(c9.getColumnIndex("N2190_21")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2190_22, c9.getString(c9.getColumnIndex("N2190_22")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2191_1, c9.getString(c9.getColumnIndex("N2191_1")));
+                        params.put(N2190_N2191.sub_N2190_N2191.N2191_2, c9.getString(c9.getColumnIndex("N2191_2")));
+                    }
+                }
+
+                if (c10 != null) {
+
+                    if (c10.moveToFirst()) {
+
+                        params.put(N2192_N2202.sub_N2192_N2202.N2192, c10.getString(c10.getColumnIndex("N2192")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2193, c10.getString(c10.getColumnIndex("N2193")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2194_1, c10.getString(c10.getColumnIndex("N2194_1")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2194_2, c10.getString(c10.getColumnIndex("N2194_2")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2195, c10.getString(c10.getColumnIndex("N2195")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2196, c10.getString(c10.getColumnIndex("N2196")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2197, c10.getString(c10.getColumnIndex("N2197")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2198_1, c10.getString(c10.getColumnIndex("N2198_1")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2198_1_T, c10.getString(c10.getColumnIndex("N2198_1_T")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2198_1_FV, c10.getString(c10.getColumnIndex("N2198_1_FV")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2198_2, c10.getString(c10.getColumnIndex("N2198_2")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2198_2_T, c10.getString(c10.getColumnIndex("N2198_2_T")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2198_2_FV, c10.getString(c10.getColumnIndex("N2198_2_FV")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2198_3, c10.getString(c10.getColumnIndex("N2198_3")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2198_DK, c10.getString(c10.getColumnIndex("N2198_DK")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2199, c10.getString(c10.getColumnIndex("N2199")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2200, c10.getString(c10.getColumnIndex("N2200")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2201, c10.getString(c10.getColumnIndex("N2201")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2202_1, c10.getString(c10.getColumnIndex("N2202_1")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2202_1_T, c10.getString(c10.getColumnIndex("N2202_1_T")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2202_1_FV, c10.getString(c10.getColumnIndex("N2202_1_FV")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2202_2, c10.getString(c10.getColumnIndex("N2202_2")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2202_2_T, c10.getString(c10.getColumnIndex("N2202_2_T")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2202_2_FV, c10.getString(c10.getColumnIndex("N2202_2_FV")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2202_3, c10.getString(c10.getColumnIndex("N2202_3")));
+                        params.put(N2192_N2202.sub_N2192_N2202.N2202_DK, c10.getString(c10.getColumnIndex("N2202_DK")));
+                    }
+                }
+
+                if (c11 != null) {
+
+                    if (c11.moveToFirst()) {
+
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2211_1, c11.getString(c11.getColumnIndex("N2211_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2211_2, c11.getString(c11.getColumnIndex("N2211_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2212, c11.getString(c11.getColumnIndex("N2212")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2214, c11.getString(c11.getColumnIndex("N2214")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2214x, c11.getString(c11.getColumnIndex("N2214x")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2215, c11.getString(c11.getColumnIndex("N2215")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_1, c11.getString(c11.getColumnIndex("N2216_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_2, c11.getString(c11.getColumnIndex("N2216_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_3, c11.getString(c11.getColumnIndex("N2216_3")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_4, c11.getString(c11.getColumnIndex("N2216_4")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_4x, c11.getString(c11.getColumnIndex("N2216_4x")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_5, c11.getString(c11.getColumnIndex("N2216_5")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_6, c11.getString(c11.getColumnIndex("N2216_6")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_7, c11.getString(c11.getColumnIndex("N2216_7")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_8, c11.getString(c11.getColumnIndex("N2216_8")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_9, c11.getString(c11.getColumnIndex("N2216_9")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_10, c11.getString(c11.getColumnIndex("N2216_10")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_11, c11.getString(c11.getColumnIndex("N2216_11")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_12, c11.getString(c11.getColumnIndex("N2216_12")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_OT, c11.getString(c11.getColumnIndex("N2216_OT")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_OTx, c11.getString(c11.getColumnIndex("N2216_OTx")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_DK, c11.getString(c11.getColumnIndex("N2216_DK")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2217_1, c11.getString(c11.getColumnIndex("N2217_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2217_2, c11.getString(c11.getColumnIndex("N2217_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2217_3, c11.getString(c11.getColumnIndex("N2217_3")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2218_1, c11.getString(c11.getColumnIndex("N2218_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2218_2, c11.getString(c11.getColumnIndex("N2218_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2219, c11.getString(c11.getColumnIndex("N2219")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2219_2, c11.getString(c11.getColumnIndex("N2219_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2220, c11.getString(c11.getColumnIndex("N2220")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2221_1, c11.getString(c11.getColumnIndex("N2221_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2221_2, c11.getString(c11.getColumnIndex("N2221_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2222, c11.getString(c11.getColumnIndex("N2222")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2223, c11.getString(c11.getColumnIndex("N2223")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2224, c11.getString(c11.getColumnIndex("N2224")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2224_2, c11.getString(c11.getColumnIndex("N2224_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2225_1, c11.getString(c11.getColumnIndex("N2225_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2225_2, c11.getString(c11.getColumnIndex("N2225_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2226, c11.getString(c11.getColumnIndex("N2226")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2227_1, c11.getString(c11.getColumnIndex("N2227_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2227_2, c11.getString(c11.getColumnIndex("N2227_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2228_1, c11.getString(c11.getColumnIndex("N2228_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2228_2, c11.getString(c11.getColumnIndex("N2228_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2229, c11.getString(c11.getColumnIndex("N2229")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2229_2, c11.getString(c11.getColumnIndex("N2229_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2230, c11.getString(c11.getColumnIndex("N2230")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2231_1, c11.getString(c11.getColumnIndex("N2231_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2231_2, c11.getString(c11.getColumnIndex("N2231_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2232, c11.getString(c11.getColumnIndex("N2232")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2233, c11.getString(c11.getColumnIndex("N2233")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2234, c11.getString(c11.getColumnIndex("N2234")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2234_2, c11.getString(c11.getColumnIndex("N2234_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2235_1, c11.getString(c11.getColumnIndex("N2235_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2235_2, c11.getString(c11.getColumnIndex("N2235_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2236, c11.getString(c11.getColumnIndex("N2236")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2237_1, c11.getString(c11.getColumnIndex("N2237_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2237_2, c11.getString(c11.getColumnIndex("N2237_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2238, c11.getString(c11.getColumnIndex("N2238")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2239, c11.getString(c11.getColumnIndex("N2239")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_1, c11.getString(c11.getColumnIndex("N2240_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_2, c11.getString(c11.getColumnIndex("N2240_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_3, c11.getString(c11.getColumnIndex("N2240_3")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_4, c11.getString(c11.getColumnIndex("N2240_4")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_5x, c11.getString(c11.getColumnIndex("N2240_5x")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_5, c11.getString(c11.getColumnIndex("N2240_5")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_6, c11.getString(c11.getColumnIndex("N2240_6")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_7, c11.getString(c11.getColumnIndex("N2240_7")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_8, c11.getString(c11.getColumnIndex("N2240_8")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_9, c11.getString(c11.getColumnIndex("N2240_9")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_10, c11.getString(c11.getColumnIndex("N2240_10")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_11, c11.getString(c11.getColumnIndex("N2240_11")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_12, c11.getString(c11.getColumnIndex("N2240_12")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_13, c11.getString(c11.getColumnIndex("N2240_13")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_14, c11.getString(c11.getColumnIndex("N2240_14")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_15, c11.getString(c11.getColumnIndex("N2240_15")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_OT, c11.getString(c11.getColumnIndex("N2240_OT")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_OTx, c11.getString(c11.getColumnIndex("N2240_OTx")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_DK, c11.getString(c11.getColumnIndex("N2240_DK")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2241, c11.getString(c11.getColumnIndex("N2241")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_1, c11.getString(c11.getColumnIndex("N2242_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_2, c11.getString(c11.getColumnIndex("N2242_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_3, c11.getString(c11.getColumnIndex("N2242_3")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_4, c11.getString(c11.getColumnIndex("N2242_4")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_5, c11.getString(c11.getColumnIndex("N2242_5")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_6, c11.getString(c11.getColumnIndex("N2242_6")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_7, c11.getString(c11.getColumnIndex("N2242_7")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_DK, c11.getString(c11.getColumnIndex("N2242_DK")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_1, c11.getString(c11.getColumnIndex("N2243_1")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_2, c11.getString(c11.getColumnIndex("N2243_2")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_3, c11.getString(c11.getColumnIndex("N2243_3")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_4, c11.getString(c11.getColumnIndex("N2243_4")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_5, c11.getString(c11.getColumnIndex("N2243_5")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_6, c11.getString(c11.getColumnIndex("N2243_6")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_7, c11.getString(c11.getColumnIndex("N2243_7")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_DK, c11.getString(c11.getColumnIndex("N2243_DK")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2244, c11.getString(c11.getColumnIndex("N2244")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2245, c11.getString(c11.getColumnIndex("N2245")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2246, c11.getString(c11.getColumnIndex("N2246")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2247, c11.getString(c11.getColumnIndex("N2247")));
+                        params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2248, c11.getString(c11.getColumnIndex("N2248")));
+                    }
+                }
+
+                if (c12 != null) {
+
+                    if (c12.moveToFirst()) {
+
+                        params.put(N2251_N2260.sub_N2251_N2260.N2251, c12.getString(c12.getColumnIndex("N2251")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2252_1, c12.getString(c12.getColumnIndex("N2252_1")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2252_2, c12.getString(c12.getColumnIndex("N2252_2")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2252_3, c12.getString(c12.getColumnIndex("N2252_3")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2252_4, c12.getString(c12.getColumnIndex("N2252_4")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2252_5, c12.getString(c12.getColumnIndex("N2252_5")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2252_6, c12.getString(c12.getColumnIndex("N2252_6")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2252_7, c12.getString(c12.getColumnIndex("N2252_7")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2253, c12.getString(c12.getColumnIndex("N2253")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2254, c12.getString(c12.getColumnIndex("N2254")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2255_1CHECK, c12.getString(c12.getColumnIndex("N2255_1CHECK")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2255_1, c12.getString(c12.getColumnIndex("N2255_1")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2255_2CHECK, c12.getString(c12.getColumnIndex("N2255_2CHECK")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2255_2, c12.getString(c12.getColumnIndex("N2255_2")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2256, c12.getString(c12.getColumnIndex("N2256")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2257, c12.getString(c12.getColumnIndex("N2257")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2258, c12.getString(c12.getColumnIndex("N2258")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2259, c12.getString(c12.getColumnIndex("N2259")));
+                        params.put(N2251_N2260.sub_N2251_N2260.N2260, c12.getString(c12.getColumnIndex("N2260")));
+                    }
+                }
+
+                if (c13 != null) {
+
+                    if (c13.moveToFirst()) {
+
+                        params.put(N2271_N2284.sub_N2271_N2284.N2271, c13.getString(c13.getColumnIndex("N2271")));
+                        params.put(N2271_N2284.sub_N2271_N2284.N2272, c13.getString(c13.getColumnIndex("N2272")));
+                        params.put(N2271_N2284.sub_N2271_N2284.N2273, c13.getString(c13.getColumnIndex("N2273")));
+                        params.put(N2271_N2284.sub_N2271_N2284.N2274, c13.getString(c13.getColumnIndex("N2274")));
+                        params.put(N2271_N2284.sub_N2271_N2284.N2275, c13.getString(c13.getColumnIndex("N2275")));
+                        params.put(N2271_N2284.sub_N2271_N2284.N2276, c13.getString(c13.getColumnIndex("N2276")));
+                        params.put(N2271_N2284.sub_N2271_N2284.N2277, c13.getString(c13.getColumnIndex("N2277")));
+                        params.put(N2271_N2284.sub_N2271_N2284.N2278, c13.getString(c13.getColumnIndex("N2278")));
+                        params.put(N2271_N2284.sub_N2271_N2284.N2283, c13.getString(c13.getColumnIndex("N2283")));
+                        params.put(N2271_N2284.sub_N2271_N2284.N2284, c13.getString(c13.getColumnIndex("N2284")));
+                    }
+                }
+
+                if (c14 != null) {
+
+                    if (c14.moveToFirst()) {
+
+                        params.put(N2291_N2304.sub_N2291_N2304.N2291, c14.getString(c14.getColumnIndex("N2291")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2292, c14.getString(c14.getColumnIndex("N2292")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2293, c14.getString(c14.getColumnIndex("N2293")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2294, c14.getString(c14.getColumnIndex("N2294")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2295, c14.getString(c14.getColumnIndex("N2295")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2296, c14.getString(c14.getColumnIndex("N2296")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2297, c14.getString(c14.getColumnIndex("N2297")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2298, c14.getString(c14.getColumnIndex("N2298")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2299, c14.getString(c14.getColumnIndex("N2299")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2300, c14.getString(c14.getColumnIndex("N2300")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2301, c14.getString(c14.getColumnIndex("N2301")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2301x, c14.getString(c14.getColumnIndex("N2301x")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2302_1, c14.getString(c14.getColumnIndex("N2302_1")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2302_2, c14.getString(c14.getColumnIndex("N2302_2")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2303, c14.getString(c14.getColumnIndex("N2303")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2304_1, c14.getString(c14.getColumnIndex("N2304_1")));
+                        params.put(N2291_N2304.sub_N2291_N2304.N2304_2, c14.getString(c14.getColumnIndex("N2304_2")));
+                    }
+                }
+
+                if (c15 != null) {
+
+                    if (c15.moveToFirst()) {
+
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311, c15.getString(c15.getColumnIndex("N2311")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_1, c15.getString(c15.getColumnIndex("N2311_1")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_2, c15.getString(c15.getColumnIndex("N2311_2")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_3, c15.getString(c15.getColumnIndex("N2311_3")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_4, c15.getString(c15.getColumnIndex("N2311_4")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_5, c15.getString(c15.getColumnIndex("N2311_5")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_6, c15.getString(c15.getColumnIndex("N2311_6")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_7, c15.getString(c15.getColumnIndex("N2311_7")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_8, c15.getString(c15.getColumnIndex("N2311_8")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_9, c15.getString(c15.getColumnIndex("N2311_9")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_10, c15.getString(c15.getColumnIndex("N2311_10")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_11, c15.getString(c15.getColumnIndex("N2311_11")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_12, c15.getString(c15.getColumnIndex("N2311_12")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_13, c15.getString(c15.getColumnIndex("N2311_13")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2311_13x, c15.getString(c15.getColumnIndex("N2311_13x")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2312_1, c15.getString(c15.getColumnIndex("N2312_1")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2312_2, c15.getString(c15.getColumnIndex("N2312_2")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2312_3, c15.getString(c15.getColumnIndex("N2312_3")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2312_4, c15.getString(c15.getColumnIndex("N2312_4")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2312_5, c15.getString(c15.getColumnIndex("N2312_5")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2312_6, c15.getString(c15.getColumnIndex("N2312_6")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2312_7, c15.getString(c15.getColumnIndex("N2312_7")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2312_8, c15.getString(c15.getColumnIndex("N2312_8")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2312_9, c15.getString(c15.getColumnIndex("N2312_9")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2312_9x, c15.getString(c15.getColumnIndex("N2312_9x")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2313_1, c15.getString(c15.getColumnIndex("N2313_1")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2313_2, c15.getString(c15.getColumnIndex("N2313_2")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2313_3, c15.getString(c15.getColumnIndex("N2313_3")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2313_4, c15.getString(c15.getColumnIndex("N2313_4")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2313_5, c15.getString(c15.getColumnIndex("N2313_5")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2313_6, c15.getString(c15.getColumnIndex("N2313_6")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2313_7, c15.getString(c15.getColumnIndex("N2313_7")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2313_8, c15.getString(c15.getColumnIndex("N2313_8")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2313_9, c15.getString(c15.getColumnIndex("N2313_9")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2313_10, c15.getString(c15.getColumnIndex("N2313_10")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2313_11, c15.getString(c15.getColumnIndex("N2313_11")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2313_12, c15.getString(c15.getColumnIndex("N2313_12")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2313_12x, c15.getString(c15.getColumnIndex("N2313_12x")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2314, c15.getString(c15.getColumnIndex("N2314")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2315, c15.getString(c15.getColumnIndex("N2315")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2316, c15.getString(c15.getColumnIndex("N2316")));
+                        params.put(N2311_N2317.sub_N2311_N2317.N2317, c15.getString(c15.getColumnIndex("N2317")));
+                    }
+                }
+
+                if (c16 != null) {
+
+                    if (c16.moveToFirst()) {
+
+                        params.put(N2321_N2322.sub_N2321_N2322.N2321, c17.getString(c17.getColumnIndex("N2321")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322, c17.getString(c17.getColumnIndex("N2322")));
+                    }
+                }
+
+                if (c17 != null) {
+
+                    if (c17.moveToFirst()) {
+
+                        for (int i = 0; i < c17.getCount(); i++) {
+
+                            if (i == 0) {
+                                try {
+
+                                    JSONObject round_one = new JSONObject();
+                                    String ACT_COUNT_a, N2213_a, N2213_2A_a, N2213_4_a;
+
+                                    ACT_COUNT_a = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                    N2213_a = c17.getString(c17.getColumnIndex("N2213"));
+                                    N2213_2A_a = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                    N2213_4_a = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                    round_one.put("ACT_COUNT", ACT_COUNT_a);
+                                    round_one.put("N2213", N2213_a);
+                                    round_one.put("N2213_2A", N2213_2A_a);
+                                    round_one.put("N2213_4", N2213_4_a);
+
+                                    params.put("round_one", String.valueOf(round_one));
+                                    c17.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 1) {
+                                try {
+
+                                    JSONObject round_two = new JSONObject();
+                                    String ACT_COUNT_b, N2213_b, N2213_2A_b, N2213_4_b;
+
+                                    ACT_COUNT_b = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                    N2213_b = c17.getString(c17.getColumnIndex("N2213"));
+                                    N2213_2A_b = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                    N2213_4_b = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                    round_two.put("ACT_COUNT", ACT_COUNT_b);
+                                    round_two.put("N2213", N2213_b);
+                                    round_two.put("N2213_2A", N2213_2A_b);
+                                    round_two.put("N2213_4", N2213_4_b);
+
+                                    params.put("round_two", String.valueOf(round_two));
+                                    c17.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 2) {
+                                try {
+
+                                    JSONObject round_three = new JSONObject();
+                                    String ACT_COUNT_c, N2213_c, N2213_2A_c, N2213_4_c;
+
+                                    ACT_COUNT_c = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                    N2213_c = c17.getString(c17.getColumnIndex("N2213"));
+                                    N2213_2A_c = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                    N2213_4_c = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                    round_three.put("ACT_COUNT", ACT_COUNT_c);
+                                    round_three.put("N2213", N2213_c);
+                                    round_three.put("N2213_2A", N2213_2A_c);
+                                    round_three.put("N2213_4", N2213_4_c);
+
+                                    params.put("round_three", String.valueOf(round_three));
+                                    c17.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 3) {
+                                try {
+
+                                    JSONObject round_four = new JSONObject();
+                                    String ACT_COUNT_d, N2213_d, N2213_2A_d, N2213_4_d;
+
+                                    ACT_COUNT_d = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                    N2213_d = c17.getString(c17.getColumnIndex("N2213"));
+                                    N2213_2A_d = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                    N2213_4_d = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                    round_four.put("ACT_COUNT", ACT_COUNT_d);
+                                    round_four.put("N2213", N2213_d);
+                                    round_four.put("N2213_2A", N2213_2A_d);
+                                    round_four.put("N2213_4", N2213_4_d);
+
+                                    params.put("round_four", String.valueOf(round_four));
+                                    c17.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 4) {
+                                try {
+
+                                    JSONObject round_five = new JSONObject();
+                                    String ACT_COUNT_e, N2213_e, N2213_2A_e, N2213_4_e;
+
+                                    ACT_COUNT_e = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                    N2213_e = c17.getString(c17.getColumnIndex("N2213"));
+                                    N2213_2A_e = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                    N2213_4_e = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                    round_five.put("ACT_COUNT", ACT_COUNT_e);
+                                    round_five.put("N2213", N2213_e);
+                                    round_five.put("N2213_2A", N2213_2A_e);
+                                    round_five.put("N2213_4", N2213_4_e);
+
+                                    params.put("round_five", String.valueOf(round_five));
+                                    c17.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 5) {
+                                try {
+
+                                    JSONObject round_six = new JSONObject();
+                                    String ACT_COUNT_f, N2213_f, N2213_2A_f, N2213_4_f;
+
+                                    ACT_COUNT_f = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                    N2213_f = c17.getString(c17.getColumnIndex("N2213"));
+                                    N2213_2A_f = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                    N2213_4_f = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                    round_six.put("ACT_COUNT", ACT_COUNT_f);
+                                    round_six.put("N2213", N2213_f);
+                                    round_six.put("N2213_2A", N2213_2A_f);
+                                    round_six.put("N2213_4", N2213_4_f);
+
+                                    params.put("round_six", String.valueOf(round_six));
+                                    c17.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 6) {
+                                try {
+
+                                    JSONObject round_seven = new JSONObject();
+                                    String ACT_COUNT_g, N2213_g, N2213_2A_g, N2213_4_g;
+
+                                    ACT_COUNT_g = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                    N2213_g = c17.getString(c17.getColumnIndex("N2213"));
+                                    N2213_2A_g = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                    N2213_4_g = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                    round_seven.put("ACT_COUNT", ACT_COUNT_g);
+                                    round_seven.put("N2213", N2213_g);
+                                    round_seven.put("N2213_2A", N2213_2A_g);
+                                    round_seven.put("N2213_4", N2213_4_g);
+
+                                    params.put("round_seven", String.valueOf(round_seven));
+                                    c17.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 7) {
+                                try {
+
+                                    JSONObject round_eight = new JSONObject();
+                                    String ACT_COUNT_h, N2213_h, N2213_2A_h, N2213_4_h;
+
+                                    ACT_COUNT_h = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                    N2213_h = c17.getString(c17.getColumnIndex("N2213"));
+                                    N2213_2A_h = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                    N2213_4_h = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                    round_eight.put("ACT_COUNT", ACT_COUNT_h);
+                                    round_eight.put("N2213", N2213_h);
+                                    round_eight.put("N2213_2A", N2213_2A_h);
+                                    round_eight.put("N2213_4", N2213_4_h);
+
+                                    params.put("round_eight", String.valueOf(round_eight));
+                                    c17.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 8) {
+                                try {
+
+                                    JSONObject round_nine = new JSONObject();
+                                    String ACT_COUNT_i, N2213_i, N2213_2A_i, N2213_4_i;
+
+                                    ACT_COUNT_i = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                    N2213_i = c17.getString(c17.getColumnIndex("N2213"));
+                                    N2213_2A_i = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                    N2213_4_i = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                    round_nine.put("ACT_COUNT", ACT_COUNT_i);
+                                    round_nine.put("N2213", N2213_i);
+                                    round_nine.put("N2213_2A", N2213_2A_i);
+                                    round_nine.put("N2213_4", N2213_4_i);
+
+                                    params.put("round_nine", String.valueOf(round_nine));
+                                    c17.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                return params;
+            }
+        };
+
+        myRequestQueue.add(sendMyRequest);
+    }
+
+    public void upload_C(final String study_id) {
+
+        final String ROOT_URL = "http://10.199.13.112/sm/Welcome/collect_C";
+
+        final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
+
+        StringRequest sendMyRequest = new StringRequest(Request.Method.POST, ROOT_URL,
+                new Response.Listener<String>() {
+
+                    @Override
+                    public void onResponse(String response) {
+
+                        Toast.makeText(mContext, response, Toast.LENGTH_LONG).show();
+                        myRequestQueue.getCache().clear();
+                        //upload2(study_id);
+
+                        try {
+
+                            JSONObject JSONObject = new JSONObject(response);
+
+                        } catch (JSONException e) {
+
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                        Toast.makeText(mContext, error.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+
+                Map<String, String> params = new HashMap<>();
+
+                //ArrayList<String> loopResponse = new ArrayList();
 
 
                 DBHelper db = new DBHelper(mContext);
@@ -474,7 +1615,6 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     }
                 }
 
-
                 if (c5 != null) {
 
                     if (c5.moveToFirst()) {
@@ -538,7 +1678,6 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(C3101_C3112.C3112, c5.getString(c5.getColumnIndex("C3112")));
                     }
                 }
-
 
                 if (c6 != null) {
 
@@ -966,17 +2105,321 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     }
                 }
 
-
                 if (c12 != null) {
+
+                    //ArrayList loopResponse = new ArrayList();
 
                     if (c12.moveToFirst()) {
 
-                        params.put(C3251_C3288_B.sub_C3251_C3288_B.C3253, c12.getString(c12.getColumnIndex("C3253")));
-                        params.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_1, c12.getString(c12.getColumnIndex("C3253_1")));
-                        params.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_2A, c12.getString(c12.getColumnIndex("C3253_2A")));
-                        params.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_4, c12.getString(c12.getColumnIndex("C3253_4")));
-                        params.put(C3251_C3288_B.sub_C3251_C3288_B.ACT_COUNT, c12.getString(c12.getColumnIndex("ACT_COUNT")));
-                        params.put(C3251_C3288_B.sub_C3251_C3288_B.ACT_ID_FK, c12.getString(c12.getColumnIndex("ACT_ID_FK")));
+                        for (int i = 0; i < c12.getCount(); i++) {
+
+                            if (i == 0) {
+                                try {
+
+                                    JSONObject round_one = new JSONObject();
+                                    String  C3253_a, C3253_1_a, C3253_2A_a, C3253_4_a;
+
+                                    C3253_a = c12.getString(c12.getColumnIndex("C3253"));
+                                    C3253_1_a = c12.getString(c12.getColumnIndex("C3253_1"));
+                                    C3253_2A_a = c12.getString(c12.getColumnIndex("C3253_2A"));
+                                    C3253_4_a = c12.getString(c12.getColumnIndex("C3253_4"));
+
+                                    round_one.put("C3253_a", C3253_a);
+                                    round_one.put("C3253_1_a", C3253_1_a);
+                                    round_one.put("C3253_2A_a", C3253_2A_a);
+                                    round_one.put("C3253_4_a", C3253_4_a);
+
+                                    params.put("round_one", String.valueOf(round_one));
+                                    c12.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 1) {
+                                try {
+
+                                    JSONObject round_two = new JSONObject();
+                                    String  C3253_b, C3253_1_b, C3253_2A_b, C3253_4_b;
+
+                                    C3253_b = c12.getString(c12.getColumnIndex("C3253"));
+                                    C3253_1_b = c12.getString(c12.getColumnIndex("C3253_1"));
+                                    C3253_2A_b = c12.getString(c12.getColumnIndex("C3253_2A"));
+                                    C3253_4_b = c12.getString(c12.getColumnIndex("C3253_4"));
+
+                                    round_two.put("C3253_b", C3253_b);
+                                    round_two.put("C3253_1_b", C3253_1_b);
+                                    round_two.put("C3253_2A_b", C3253_2A_b);
+                                    round_two.put("C3253_4_b", C3253_4_b);
+
+                                    params.put("round_two", String.valueOf(round_two));
+                                    c12.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 2) {
+                                try {
+
+                                    JSONObject round_three = new JSONObject();
+                                    String  C3253_c, C3253_1_c, C3253_2A_c, C3253_4_c;
+
+                                    C3253_c = c12.getString(c12.getColumnIndex("C3253"));
+                                    C3253_1_c = c12.getString(c12.getColumnIndex("C3253_1"));
+                                    C3253_2A_c = c12.getString(c12.getColumnIndex("C3253_2A"));
+                                    C3253_4_c = c12.getString(c12.getColumnIndex("C3253_4"));
+
+                                    round_three.put("C3253_c", C3253_c);
+                                    round_three.put("C3253_1_c", C3253_1_c);
+                                    round_three.put("C3253_2A_c", C3253_2A_c);
+                                    round_three.put("C3253_4_c", C3253_4_c);
+
+                                    params.put("round_three", String.valueOf(round_three));
+                                    c12.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 3) {
+                                try {
+
+                                    JSONObject round_four = new JSONObject();
+                                    String  C3253_d, C3253_1_d, C3253_2A_d, C3253_4_d;
+
+                                    C3253_d = c12.getString(c12.getColumnIndex("C3253"));
+                                    C3253_1_d = c12.getString(c12.getColumnIndex("C3253_1"));
+                                    C3253_2A_d = c12.getString(c12.getColumnIndex("C3253_2A"));
+                                    C3253_4_d = c12.getString(c12.getColumnIndex("C3253_4"));
+
+                                    round_four.put("C3253_d", C3253_d);
+                                    round_four.put("C3253_1_d", C3253_1_d);
+                                    round_four.put("C3253_2A_d", C3253_2A_d);
+                                    round_four.put("C3253_4_d", C3253_4_d);
+
+                                    params.put("round_four", String.valueOf(round_four));
+                                    c12.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 4) {
+                                try {
+
+                                    JSONObject round_five = new JSONObject();
+                                    String  C3253_e, C3253_1_e, C3253_2A_e, C3253_4_e;
+
+                                    C3253_e = c12.getString(c12.getColumnIndex("C3253"));
+                                    C3253_1_e = c12.getString(c12.getColumnIndex("C3253_1"));
+                                    C3253_2A_e = c12.getString(c12.getColumnIndex("C3253_2A"));
+                                    C3253_4_e = c12.getString(c12.getColumnIndex("C3253_4"));
+
+                                    round_five.put("C3253_e", C3253_e);
+                                    round_five.put("C3253_1_e", C3253_1_e);
+                                    round_five.put("C3253_2A_e", C3253_2A_e);
+                                    round_five.put("C3253_4_e", C3253_4_e);
+
+                                    params.put("round_five", String.valueOf(round_five));
+                                    c12.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+                                }
+                            }
+
+                            if (i == 5) {
+                                try {
+
+                                    JSONObject round_six = new JSONObject();
+                                    String  C3253_f, C3253_1_f, C3253_2A_f, C3253_4_f;
+
+                                    C3253_f = c12.getString(c12.getColumnIndex("C3253"));
+                                    C3253_1_f = c12.getString(c12.getColumnIndex("C3253_1"));
+                                    C3253_2A_f = c12.getString(c12.getColumnIndex("C3253_2A"));
+                                    C3253_4_f = c12.getString(c12.getColumnIndex("C3253_4"));
+
+                                    round_six.put("C3253_f", C3253_f);
+                                    round_six.put("C3253_1_f", C3253_1_f);
+                                    round_six.put("C3253_2A_f", C3253_2A_f);
+                                    round_six.put("C3253_4_f", C3253_4_f);
+
+                                    params.put("round_six", String.valueOf(round_six));
+                                    c12.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+                                }
+                            }
+
+                            if (i == 6) {
+                                try {
+
+                                    JSONObject round_seven = new JSONObject();
+                                    String  C3253_g, C3253_1_g, C3253_2A_g, C3253_4_g;
+
+                                    C3253_g = c12.getString(c12.getColumnIndex("C3253"));
+                                    C3253_1_g = c12.getString(c12.getColumnIndex("C3253_1"));
+                                    C3253_2A_g = c12.getString(c12.getColumnIndex("C3253_2A"));
+                                    C3253_4_g = c12.getString(c12.getColumnIndex("C3253_4"));
+
+                                    round_seven.put("C3253_g", C3253_g);
+                                    round_seven.put("C3253_1_g", C3253_1_g);
+                                    round_seven.put("C3253_2A_g", C3253_2A_g);
+                                    round_seven.put("C3253_4_g", C3253_4_g);
+
+                                    params.put("round_seven", String.valueOf(round_seven));
+                                    c12.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+                                }
+                            }
+
+                            if (i == 7) {
+                                try {
+
+                                    JSONObject round_eight = new JSONObject();
+                                    String  C3253_h, C3253_1_h, C3253_2A_h, C3253_4_h;
+
+                                    C3253_h = c12.getString(c12.getColumnIndex("C3253"));
+                                    C3253_1_h = c12.getString(c12.getColumnIndex("C3253_1"));
+                                    C3253_2A_h = c12.getString(c12.getColumnIndex("C3253_2A"));
+                                    C3253_4_h = c12.getString(c12.getColumnIndex("C3253_4"));
+
+                                    round_eight.put("C3253_h", C3253_h);
+                                    round_eight.put("C3253_1_h", C3253_1_h);
+                                    round_eight.put("C3253_2A_h", C3253_2A_h);
+                                    round_eight.put("C3253_4_h", C3253_4_h);
+
+                                    params.put("round_eight", String.valueOf(round_eight));
+                                    c12.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+                                }
+                            }
+
+                            if (i == 8) {
+                                try {
+
+                                    JSONObject round_nine = new JSONObject();
+                                    String  C3253_i, C3253_1_i, C3253_2A_i, C3253_4_i;
+
+                                    C3253_i = c12.getString(c12.getColumnIndex("C3253"));
+                                    C3253_1_i = c12.getString(c12.getColumnIndex("C3253_1"));
+                                    C3253_2A_i = c12.getString(c12.getColumnIndex("C3253_2A"));
+                                    C3253_4_i = c12.getString(c12.getColumnIndex("C3253_4"));
+
+                                    round_nine.put("C3253_i", C3253_i);
+                                    round_nine.put("C3253_1_i", C3253_1_i);
+                                    round_nine.put("C3253_2A_i", C3253_2A_i);
+                                    round_nine.put("C3253_4_i", C3253_4_i);
+
+                                    params.put("round_nine", String.valueOf(round_nine));
+                                    c12.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+                                }
+                            }
+
+                            //c12.moveToNext();
+
+                            /*if (i == 1) {
+                                try {
+
+                                    C3253 = c12.getString(c12.getColumnIndex("C3253"));
+                                    C3253_1 = c12.getString(c12.getColumnIndex("C3253_1"));
+                                    C3253_2A = c12.getString(c12.getColumnIndex("C3253_2A"));
+                                    C3253_4 = c12.getString(c12.getColumnIndex("C3253_4"));
+
+                                    two.put(C3251_C3288_B.sub_C3251_C3288_B.C3253, C3253);
+                                    two.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_1, C3253_1);
+                                    two.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_2A, C3253_2A);
+                                    two.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_4, C3253_4);
+
+                                    params.put("round_two", String.valueOf(two));
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }*/
+
+                            /*if (i == 1) {
+                                try {
+
+                                    C3253    = c12.getString(c12.getColumnIndex("C3253"));
+                                    C3253_1  = c12.getString(c12.getColumnIndex("C3253_1"));
+                                    C3253_2A = c12.getString(c12.getColumnIndex("C3253_2A"));
+                                    C3253_4  = c12.getString(c12.getColumnIndex("C3253_4"));
+
+                                    two.put(C3251_C3288_B.sub_C3251_C3288_B.C3253, C3253);
+                                    two.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_1, C3253_1);
+                                    two.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_2A, C3253_2A);
+                                    two.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_4, C3253_4);
+
+                                    params.put("round_two", String.valueOf(two));
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 2) {
+                                try {
+
+                                    C3253    = c12.getString(c12.getColumnIndex("C3253"));
+                                    C3253_1  = c12.getString(c12.getColumnIndex("C3253_1"));
+                                    C3253_2A = c12.getString(c12.getColumnIndex("C3253_2A"));
+                                    C3253_4  = c12.getString(c12.getColumnIndex("C3253_4"));
+
+                                    three.put(C3251_C3288_B.sub_C3251_C3288_B.C3253, C3253);
+                                    three.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_1, C3253_1);
+                                    three.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_2A, C3253_2A);
+                                    three.put(C3251_C3288_B.sub_C3251_C3288_B.C3253_4, C3253_4);
+
+
+                                    params.put("round_three", String.valueOf(three));
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }*/
+
+                            //loopResponse.put(C3253);
+                            //loopResponse.put(C3253_1);
+                            //loopResponse.put(C3253_2A);
+                            //loopResponse.put(C3253_4);
+
+                            //c12.moveToNext();
+                        }
+
+                        //params.put("loop_C", String.valueOf(loopResponse));
                     }
                 }
 
@@ -986,4 +2429,968 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
         myRequestQueue.add(sendMyRequest);
     }
+
+    public void upload_A(final String study_id) {
+
+        final String ROOT_URL = "http://10.199.13.112/sm/Welcome/collect_A";
+
+        final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
+
+        StringRequest sendMyRequest = new StringRequest(Request.Method.POST, ROOT_URL,
+                new Response.Listener<String>() {
+
+                    @Override
+                    public void onResponse(String response) {
+
+                        Toast.makeText(mContext, response, Toast.LENGTH_LONG).show();
+                        myRequestQueue.getCache().clear();
+                        //upload2(study_id);
+
+                        try {
+
+                            JSONObject JSONObject = new JSONObject(response);
+
+                        } catch (JSONException e) {
+
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                        Toast.makeText(mContext, error.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+
+                Map<String, String> params = new HashMap<>();
+
+                //ArrayList<String> loopResponse = new ArrayList();
+
+                DBHelper db = new DBHelper(mContext);
+
+                Cursor c = db.getData("Q1101_Q1610", study_id);
+                Cursor c2 = db.getData("A4001_A4014", study_id);
+                Cursor c3 = db.getData("A4051_A4066", study_id);
+                Cursor c4 = db.getData("A4067_A4080", study_id);
+                Cursor c5 = db.getData("A4081_A4094", study_id);
+                Cursor c6 = db.getData("A4095_A4108", study_id);
+                Cursor c7 = db.getData("A4109_A4125", study_id);
+                Cursor c8 = db.getData("A4126_A4140", study_id);
+                Cursor c9 = db.getData("A4144_A4156", study_id);
+                Cursor c10 = db.getData("A4157_A4205", study_id);
+                Cursor c11 = db.getData("A4206_A4207", study_id);
+                Cursor c12 = db.getData("A4251_A4284", study_id);
+                Cursor c13 = db.getData("A4301_A4315", study_id);
+                Cursor c14 = db.getData("A4351_A4364", study_id);
+                Cursor c15 = db.getData("A4401_A4473", study_id);
+                Cursor c16 = db.getData("A4252_atributes", study_id);
+
+                params.put("table1", "q1101_q1610");
+                params.put("table2", "a4001_a4014");
+                params.put("table3", "a4051_a4066");
+                params.put("table4", "a4067_a4080");
+                params.put("table5", "a4081_a4094");
+                params.put("table6", "a4095_a4108");
+                params.put("table7", "a4109_a4125");
+                params.put("table8", "a4126_a4140");
+                params.put("table9", "a4144_a4156");
+                params.put("table10", "a4157_a4205");
+                params.put("table11", "a4206_a4207");
+                params.put("table12", "a4251_a4284");
+                params.put("table13", "a4301_a4315");
+                params.put("table14", "a4351_a4364");
+                params.put("table15", "a4401_a4473");
+                params.put("table16", "a4252_atributes");
+
+                if (c != null) {
+
+                    if (c.moveToFirst()) {
+
+                        params.put(Q1101_Q1610.study_id, c.getString(c.getColumnIndex("study_id")));
+                        params.put(Q1101_Q1610.Q1201_1, c.getString(c.getColumnIndex("Q1201_1")));
+                        params.put(Q1101_Q1610.Q1201_2, c.getString(c.getColumnIndex("Q1201_2")));
+                        params.put(Q1101_Q1610.Q1201_3, c.getString(c.getColumnIndex("Q1201_3")));
+                        params.put(Q1101_Q1610.Q1201_4, c.getString(c.getColumnIndex("Q1201_4")));
+                        params.put(Q1101_Q1610.Q1201_5, c.getString(c.getColumnIndex("Q1201_5")));
+                        params.put(Q1101_Q1610.Q1201_6, c.getString(c.getColumnIndex("Q1201_6")));
+                        params.put(Q1101_Q1610.Q1202, c.getString(c.getColumnIndex("Q1202")));
+                        params.put(Q1101_Q1610.Q1203, c.getString(c.getColumnIndex("Q1203")));
+                        params.put(Q1101_Q1610.Q1204, c.getString(c.getColumnIndex("Q1204")));
+                        params.put(Q1101_Q1610.Q1205, c.getString(c.getColumnIndex("Q1205")));
+                        params.put(Q1101_Q1610.Q1206_d, c.getString(c.getColumnIndex("Q1206_d")));
+                        params.put(Q1101_Q1610.Q1206_m, c.getString(c.getColumnIndex("Q1206_m")));
+                        params.put(Q1101_Q1610.Q1206_y, c.getString(c.getColumnIndex("Q1206_y")));
+                        params.put(Q1101_Q1610.Q1207, c.getString(c.getColumnIndex("Q1207")));
+                        params.put(Q1101_Q1610.Q1208, c.getString(c.getColumnIndex("Q1208")));
+                        params.put(Q1101_Q1610.Q1209, c.getString(c.getColumnIndex("Q1209")));
+                        params.put(Q1101_Q1610.Q1301, c.getString(c.getColumnIndex("Q1301")));
+                        params.put(Q1101_Q1610.Q1302, c.getString(c.getColumnIndex("Q1302")));
+                        params.put(Q1101_Q1610.Q1307, c.getString(c.getColumnIndex("Q1307")));
+                        params.put(Q1101_Q1610.Q1308, c.getString(c.getColumnIndex("Q1308")));
+                        params.put(Q1101_Q1610.Q1309, c.getString(c.getColumnIndex("Q1309")));
+                        params.put(Q1101_Q1610.Q1310, c.getString(c.getColumnIndex("Q1310")));
+                        params.put(Q1101_Q1610.Q1311, c.getString(c.getColumnIndex("Q1311")));
+                        params.put(Q1101_Q1610.Q1312, c.getString(c.getColumnIndex("Q1312")));
+                        params.put(Q1101_Q1610.Q1313, c.getString(c.getColumnIndex("Q1313")));
+                        params.put(Q1101_Q1610.Q1401, c.getString(c.getColumnIndex("Q1401")));
+                        params.put(Q1101_Q1610.Q1402, c.getString(c.getColumnIndex("Q1402")));
+                        params.put(Q1101_Q1610.Q1403, c.getString(c.getColumnIndex("Q1403")));
+                        params.put(Q1101_Q1610.Q1403_OT, c.getString(c.getColumnIndex("Q1403_OT")));
+                        params.put(Q1101_Q1610.Q1404, c.getString(c.getColumnIndex("Q1404")));
+                        params.put(Q1101_Q1610.Q1405, c.getString(c.getColumnIndex("Q1405")));
+                        params.put(Q1101_Q1610.Q1406, c.getString(c.getColumnIndex("Q1406")));
+                        params.put(Q1101_Q1610.Q1407, c.getString(c.getColumnIndex("Q1407")));
+                        params.put(Q1101_Q1610.Q1408, c.getString(c.getColumnIndex("Q1408")));
+                        params.put(Q1101_Q1610.Q1409, c.getString(c.getColumnIndex("Q1409")));
+                        params.put(Q1101_Q1610.Q1410, c.getString(c.getColumnIndex("Q1410")));
+                        params.put(Q1101_Q1610.Q1411, c.getString(c.getColumnIndex("Q1411")));
+                        params.put(Q1101_Q1610.Q1412, c.getString(c.getColumnIndex("Q1412")));
+                        params.put(Q1101_Q1610.Q1413, c.getString(c.getColumnIndex("Q1413")));
+                        params.put(Q1101_Q1610.Q1414_1, c.getString(c.getColumnIndex("Q1414_1")));
+                        params.put(Q1101_Q1610.Q1414_2, c.getString(c.getColumnIndex("Q1414_2")));
+                        params.put(Q1101_Q1610.Q1414_3, c.getString(c.getColumnIndex("Q1414_3")));
+                        params.put(Q1101_Q1610.Q1414_4, c.getString(c.getColumnIndex("Q1414_4")));
+                        params.put(Q1101_Q1610.Q1414_5, c.getString(c.getColumnIndex("Q1414_5")));
+                        params.put(Q1101_Q1610.Q1414_6, c.getString(c.getColumnIndex("Q1414_6")));
+                        params.put(Q1101_Q1610.Q1414_7, c.getString(c.getColumnIndex("Q1414_7")));
+                        params.put(Q1101_Q1610.Q1414_8, c.getString(c.getColumnIndex("Q1414_8")));
+                        params.put(Q1101_Q1610.Q1414_9, c.getString(c.getColumnIndex("Q1414_9")));
+                        params.put(Q1101_Q1610.Q1414_10, c.getString(c.getColumnIndex("Q1414_10")));
+                        params.put(Q1101_Q1610.Q1415, c.getString(c.getColumnIndex("Q1415")));
+                        params.put(Q1101_Q1610.Q1416, c.getString(c.getColumnIndex("Q1416")));
+                        params.put(Q1101_Q1610.Q1416_OT, c.getString(c.getColumnIndex("Q1416_OT")));
+                        params.put(Q1101_Q1610.Q1417, c.getString(c.getColumnIndex("Q1417")));
+                        params.put(Q1101_Q1610.Q1417_OT, c.getString(c.getColumnIndex("Q1417_OT")));
+                        params.put(Q1101_Q1610.Q1418, c.getString(c.getColumnIndex("Q1418")));
+                        params.put(Q1101_Q1610.Q1418_OT, c.getString(c.getColumnIndex("Q1418_OT")));
+                        params.put(Q1101_Q1610.Q1419, c.getString(c.getColumnIndex("Q1419")));
+                        params.put(Q1101_Q1610.Q1419_OT, c.getString(c.getColumnIndex("Q1419_OT")));
+                        params.put(Q1101_Q1610.Q1420, c.getString(c.getColumnIndex("Q1420")));
+                        params.put(Q1101_Q1610.Q1420_OT, c.getString(c.getColumnIndex("Q1420_OT")));
+                        params.put(Q1101_Q1610.Q1421, c.getString(c.getColumnIndex("Q1421")));
+                        params.put(Q1101_Q1610.Q1421_OT, c.getString(c.getColumnIndex("Q1421_OT")));
+                        params.put(Q1101_Q1610.Q1501, c.getString(c.getColumnIndex("Q1501")));
+                        params.put(Q1101_Q1610.Q1502, c.getString(c.getColumnIndex("Q1502")));
+                        params.put(Q1101_Q1610.Q1503, c.getString(c.getColumnIndex("Q1503")));
+                        params.put(Q1101_Q1610.Q1503_OT, c.getString(c.getColumnIndex("Q1503_OT")));
+                        params.put(Q1101_Q1610.Q1601, c.getString(c.getColumnIndex("Q1601")));
+                        params.put(Q1101_Q1610.Q1602, c.getString(c.getColumnIndex("Q1602")));
+                        params.put(Q1101_Q1610.Q1603, c.getString(c.getColumnIndex("Q1603")));
+                        params.put(Q1101_Q1610.Q1604, c.getString(c.getColumnIndex("Q1604")));
+                        params.put(Q1101_Q1610.Q1604_OT, c.getString(c.getColumnIndex("Q1604_OT")));
+                        params.put(Q1101_Q1610.Q1605, c.getString(c.getColumnIndex("Q1605")));
+                        params.put(Q1101_Q1610.Q1606, c.getString(c.getColumnIndex("Q1606")));
+                        params.put(Q1101_Q1610.Q1607_1, c.getString(c.getColumnIndex("Q1607_1")));
+                        params.put(Q1101_Q1610.Q1607_2, c.getString(c.getColumnIndex("Q1607_2")));
+                        params.put(Q1101_Q1610.Q1607_3, c.getString(c.getColumnIndex("Q1607_3")));
+                        params.put(Q1101_Q1610.Q1608_1, c.getString(c.getColumnIndex("Q1608_1")));
+                        params.put(Q1101_Q1610.Q1608_2, c.getString(c.getColumnIndex("Q1608_2")));
+                        params.put(Q1101_Q1610.Q1608_3, c.getString(c.getColumnIndex("Q1608_3")));
+                        params.put(Q1101_Q1610.Q1609, c.getString(c.getColumnIndex("Q1609")));
+                        params.put(Q1101_Q1610.Q1610_1, c.getString(c.getColumnIndex("Q1610_1")));
+                        params.put(Q1101_Q1610.Q1610_2, c.getString(c.getColumnIndex("Q1610_2")));
+                        params.put(Q1101_Q1610.Q1610_3, c.getString(c.getColumnIndex("Q1610_3")));
+                        params.put(Q1101_Q1610.interviewType, c.getString(c.getColumnIndex("interviewType")));
+                        params.put(Q1101_Q1610.currentSection, c.getString(c.getColumnIndex("currentSection")));
+                    }
+                }
+
+                if (c2 != null) {
+
+                    if (c2.moveToFirst()) {
+
+                        params.put(A4001_A4014.A4001, c2.getString(c2.getColumnIndex("A4001")));
+                        params.put(A4001_A4014.A4002, c2.getString(c2.getColumnIndex("A4002")));
+                        params.put(A4001_A4014.A4003, c2.getString(c2.getColumnIndex("A4003")));
+                        params.put(A4001_A4014.A4004, c2.getString(c2.getColumnIndex("A4004")));
+                        params.put(A4001_A4014.A4005, c2.getString(c2.getColumnIndex("A4005")));
+                        params.put(A4001_A4014.A4006, c2.getString(c2.getColumnIndex("A4006")));
+                        params.put(A4001_A4014.A4007, c2.getString(c2.getColumnIndex("A4007")));
+                        params.put(A4001_A4014.A4007_1, c2.getString(c2.getColumnIndex("A4007_1")));
+                        params.put(A4001_A4014.A4008, c2.getString(c2.getColumnIndex("A4008")));
+                        params.put(A4001_A4014.A4009a, c2.getString(c2.getColumnIndex("A4009a")));
+                        params.put(A4001_A4014.A4010, c2.getString(c2.getColumnIndex("A4010")));
+                        params.put(A4001_A4014.A4011, c2.getString(c2.getColumnIndex("A4011")));
+                        params.put(A4001_A4014.A4012, c2.getString(c2.getColumnIndex("A4012")));
+                        params.put(A4001_A4014.A4013u, c2.getString(c2.getColumnIndex("A4013u")));
+                        params.put(A4001_A4014.A4013d, c2.getString(c2.getColumnIndex("A4013d")));
+                        params.put(A4001_A4014.A4013m, c2.getString(c2.getColumnIndex("A4013m")));
+                        params.put(A4001_A4014.A4013y, c2.getString(c2.getColumnIndex("A4013y")));
+                    }
+                }
+
+                if (c3 != null) {
+
+                    if (c3.moveToFirst()) {
+
+                        params.put(A4051_A4066.A4051, c3.getString(c3.getColumnIndex("A4051")));
+                        params.put(A4051_A4066.A4052_u, c3.getString(c3.getColumnIndex("A4052_u")));
+                        params.put(A4051_A4066.A4052_b, c3.getString(c3.getColumnIndex("A4052_b")));
+                        params.put(A4051_A4066.A4052_c, c3.getString(c3.getColumnIndex("A4052_c")));
+                        params.put(A4051_A4066.A4053, c3.getString(c3.getColumnIndex("A4053")));
+                        params.put(A4051_A4066.A4054, c3.getString(c3.getColumnIndex("A4054")));
+                        params.put(A4051_A4066.A4055, c3.getString(c3.getColumnIndex("A4055")));
+                        params.put(A4051_A4066.A4056, c3.getString(c3.getColumnIndex("A4056")));
+                        params.put(A4051_A4066.A4057, c3.getString(c3.getColumnIndex("A4057")));
+                        params.put(A4051_A4066.A4058, c3.getString(c3.getColumnIndex("A4058")));
+                        params.put(A4051_A4066.A4059_u, c3.getString(c3.getColumnIndex("A4059_u")));
+                        params.put(A4051_A4066.A4059_a, c3.getString(c3.getColumnIndex("A4059_a")));
+                        params.put(A4051_A4066.A4059_b, c3.getString(c3.getColumnIndex("A4059_b")));
+                        params.put(A4051_A4066.A4060, c3.getString(c3.getColumnIndex("A4060")));
+                        params.put(A4051_A4066.A4061, c3.getString(c3.getColumnIndex("A4061")));
+                        params.put(A4051_A4066.A4062, c3.getString(c3.getColumnIndex("A4062")));
+                        params.put(A4051_A4066.A4063, c3.getString(c3.getColumnIndex("A4063")));
+                        params.put(A4051_A4066.A4064_u, c3.getString(c3.getColumnIndex("A4064_u")));
+                        params.put(A4051_A4066.A4064_a, c3.getString(c3.getColumnIndex("A4064_a")));
+                        params.put(A4051_A4066.A4064_b, c3.getString(c3.getColumnIndex("A4064_b")));
+                        params.put(A4051_A4066.A4064_1, c3.getString(c3.getColumnIndex("A4064_1")));
+                        params.put(A4051_A4066.A4065, c3.getString(c3.getColumnIndex("A4065")));
+                        params.put(A4051_A4066.A4066, c3.getString(c3.getColumnIndex("A4066")));
+                    }
+                }
+
+                if (c4 != null) {
+
+                    if (c4.moveToFirst()) {
+
+                        params.put(A4067_A4080.A4067, c4.getString(c4.getColumnIndex("A4067")));
+                        params.put(A4067_A4080.A4068, c4.getString(c4.getColumnIndex("A4068")));
+                        params.put(A4067_A4080.A4069_u, c4.getString(c4.getColumnIndex("A4069_u")));
+                        params.put(A4067_A4080.A4069_a, c4.getString(c4.getColumnIndex("A4069_a")));
+                        params.put(A4067_A4080.A4069_b, c4.getString(c4.getColumnIndex("A4069_b")));
+                        params.put(A4067_A4080.A4069_c, c4.getString(c4.getColumnIndex("A4069_c")));
+                        params.put(A4067_A4080.A4070, c4.getString(c4.getColumnIndex("A4070")));
+                        params.put(A4067_A4080.A4071, c4.getString(c4.getColumnIndex("A4071")));
+                        params.put(A4067_A4080.A4072_u, c4.getString(c4.getColumnIndex("A4072_u")));
+                        params.put(A4067_A4080.A4072_a, c4.getString(c4.getColumnIndex("A4072_a")));
+                        params.put(A4067_A4080.A4072_b, c4.getString(c4.getColumnIndex("A4072_b")));
+                        params.put(A4067_A4080.A4073, c4.getString(c4.getColumnIndex("A4073")));
+                        params.put(A4067_A4080.A4074, c4.getString(c4.getColumnIndex("A4074")));
+                        params.put(A4067_A4080.A4075_u, c4.getString(c4.getColumnIndex("A4075_u")));
+                        params.put(A4067_A4080.A4075_a, c4.getString(c4.getColumnIndex("A4075_a")));
+                        params.put(A4067_A4080.A4075_b, c4.getString(c4.getColumnIndex("A4075_b")));
+                        params.put(A4067_A4080.A4076, c4.getString(c4.getColumnIndex("A4076")));
+                        params.put(A4067_A4080.A4077_u, c4.getString(c4.getColumnIndex("A4077_u")));
+                        params.put(A4067_A4080.A4077_a, c4.getString(c4.getColumnIndex("A4077_a")));
+                        params.put(A4067_A4080.A4077_b, c4.getString(c4.getColumnIndex("A4077_b")));
+                        params.put(A4067_A4080.A4078, c4.getString(c4.getColumnIndex("A4078")));
+                        params.put(A4067_A4080.A4079, c4.getString(c4.getColumnIndex("A4079")));
+                        params.put(A4067_A4080.A4080, c4.getString(c4.getColumnIndex("A4080")));
+                    }
+                }
+
+                if (c5 != null) {
+
+                    if (c5.moveToFirst()) {
+
+                        params.put(A4081_A4094.A4081, c5.getString(c5.getColumnIndex("A4081")));
+                        params.put(A4081_A4094.A4082_u, c5.getString(c5.getColumnIndex("A4082_u")));
+                        params.put(A4081_A4094.A4082_a, c5.getString(c5.getColumnIndex("A4082_a")));
+                        params.put(A4081_A4094.A4082_b, c5.getString(c5.getColumnIndex("A4082_b")));
+                        params.put(A4081_A4094.A4082_c, c5.getString(c5.getColumnIndex("A4082_c")));
+                        params.put(A4081_A4094.A4083, c5.getString(c5.getColumnIndex("A4083")));
+                        params.put(A4081_A4094.A4084, c5.getString(c5.getColumnIndex("A4084")));
+                        params.put(A4081_A4094.A4085_u, c5.getString(c5.getColumnIndex("A4085_u")));
+                        params.put(A4081_A4094.A4085_a, c5.getString(c5.getColumnIndex("A4085_a")));
+                        params.put(A4081_A4094.A4085_b, c5.getString(c5.getColumnIndex("A4085_b")));
+                        params.put(A4081_A4094.A4086, c5.getString(c5.getColumnIndex("A4086")));
+                        params.put(A4081_A4094.A4087_u, c5.getString(c5.getColumnIndex("A4087_u")));
+                        params.put(A4081_A4094.A4087_a, c5.getString(c5.getColumnIndex("A4087_a")));
+                        params.put(A4081_A4094.A4087_b, c5.getString(c5.getColumnIndex("A4087_b")));
+                        params.put(A4081_A4094.A4088, c5.getString(c5.getColumnIndex("A4088")));
+                        params.put(A4081_A4094.A4089, c5.getString(c5.getColumnIndex("A4089")));
+                        params.put(A4081_A4094.A4090, c5.getString(c5.getColumnIndex("A4090")));
+                        params.put(A4081_A4094.A4091, c5.getString(c5.getColumnIndex("A4091")));
+                        params.put(A4081_A4094.A4092, c5.getString(c5.getColumnIndex("A4092")));
+                        params.put(A4081_A4094.A4093, c5.getString(c5.getColumnIndex("A4093")));
+                        params.put(A4081_A4094.A4094_u, c5.getString(c5.getColumnIndex("A4094_u")));
+                        params.put(A4081_A4094.A4094_a, c5.getString(c5.getColumnIndex("A4094_a")));
+                        params.put(A4081_A4094.A4094_b, c5.getString(c5.getColumnIndex("A4094_b")));
+                        params.put(A4081_A4094.A4094_c, c5.getString(c5.getColumnIndex("A4094_c")));
+                    }
+                }
+
+                if (c6 != null) {
+
+                    if (c6.moveToFirst()) {
+
+                        params.put(A4095_A4108.A4095, c6.getString(c6.getColumnIndex("A4095")));
+                        params.put(A4095_A4108.A4096, c6.getString(c6.getColumnIndex("A4096")));
+                        params.put(A4095_A4108.A4097_u, c6.getString(c6.getColumnIndex("A4097_u")));
+                        params.put(A4095_A4108.A4097_a, c6.getString(c6.getColumnIndex("A4097_a")));
+                        params.put(A4095_A4108.A4097_b, c6.getString(c6.getColumnIndex("A4097_b")));
+                        params.put(A4095_A4108.A4098, c6.getString(c6.getColumnIndex("A4098")));
+                        params.put(A4095_A4108.A4099_u, c6.getString(c6.getColumnIndex("A4099_u")));
+                        params.put(A4095_A4108.A4099_a, c6.getString(c6.getColumnIndex("A4099_a")));
+                        params.put(A4095_A4108.A4099_b, c6.getString(c6.getColumnIndex("A4099_b")));
+                        params.put(A4095_A4108.A4100, c6.getString(c6.getColumnIndex("A4100")));
+                        params.put(A4095_A4108.A4101_u, c6.getString(c6.getColumnIndex("A4101_u")));
+                        params.put(A4095_A4108.A4101_a, c6.getString(c6.getColumnIndex("A4101_a")));
+                        params.put(A4095_A4108.A4101_b, c6.getString(c6.getColumnIndex("A4101_b")));
+                        params.put(A4095_A4108.A4102, c6.getString(c6.getColumnIndex("A4102")));
+                        params.put(A4095_A4108.A4103, c6.getString(c6.getColumnIndex("A4103")));
+                        params.put(A4095_A4108.A4104, c6.getString(c6.getColumnIndex("A4104")));
+                        params.put(A4095_A4108.A4105, c6.getString(c6.getColumnIndex("A4105")));
+                        params.put(A4095_A4108.A4106, c6.getString(c6.getColumnIndex("A4106")));
+                        params.put(A4095_A4108.A4107, c6.getString(c6.getColumnIndex("A4107")));
+                        params.put(A4095_A4108.A4108, c6.getString(c6.getColumnIndex("A4108")));
+                    }
+                }
+
+                if (c7 != null) {
+
+                    if (c7.moveToFirst()) {
+
+                        params.put(A4109_A4125.A4109, c7.getString(c7.getColumnIndex("A4109")));
+                        params.put(A4109_A4125.A4110, c7.getString(c7.getColumnIndex("A4110")));
+                        params.put(A4109_A4125.A4111, c7.getString(c7.getColumnIndex("A4111")));
+                        params.put(A4109_A4125.A4112, c7.getString(c7.getColumnIndex("A4112")));
+                        params.put(A4109_A4125.A4113, c7.getString(c7.getColumnIndex("A4113")));
+                        params.put(A4109_A4125.A4114, c7.getString(c7.getColumnIndex("A4114")));
+                        params.put(A4109_A4125.A4115, c7.getString(c7.getColumnIndex("A4115")));
+                        params.put(A4109_A4125.A4116, c7.getString(c7.getColumnIndex("A4116")));
+                        params.put(A4109_A4125.A4117_u, c7.getString(c7.getColumnIndex("A4117_u")));
+                        params.put(A4109_A4125.A4117_a, c7.getString(c7.getColumnIndex("A4117_a")));
+                        params.put(A4109_A4125.A4117_b, c7.getString(c7.getColumnIndex("A4117_b")));
+                        params.put(A4109_A4125.A4118, c7.getString(c7.getColumnIndex("A4118")));
+                        params.put(A4109_A4125.A4119, c7.getString(c7.getColumnIndex("A4119")));
+                        params.put(A4109_A4125.A4120, c7.getString(c7.getColumnIndex("A4120")));
+                        params.put(A4109_A4125.A4121, c7.getString(c7.getColumnIndex("A4121")));
+                        params.put(A4109_A4125.A4122, c7.getString(c7.getColumnIndex("A4122")));
+                        params.put(A4109_A4125.A4123, c7.getString(c7.getColumnIndex("A4123")));
+                        params.put(A4109_A4125.A4124, c7.getString(c7.getColumnIndex("A4124")));
+                        params.put(A4109_A4125.A4125, c7.getString(c7.getColumnIndex("A4125")));
+                    }
+                }
+
+                if (c8 != null) {
+
+                    if (c8.moveToFirst()) {
+
+                        params.put(A4126_A4140.A4126, c8.getString(c8.getColumnIndex("A4126")));
+                        params.put(A4126_A4140.A4127_u, c8.getString(c8.getColumnIndex("A4127_u")));
+                        params.put(A4126_A4140.A4127_a, c8.getString(c8.getColumnIndex("A4127_a")));
+                        params.put(A4126_A4140.A4127_b, c8.getString(c8.getColumnIndex("A4127_b")));
+                        params.put(A4126_A4140.A4128, c8.getString(c8.getColumnIndex("A4128")));
+                        params.put(A4126_A4140.A4129, c8.getString(c8.getColumnIndex("A4129")));
+                        params.put(A4126_A4140.A4130_u, c8.getString(c8.getColumnIndex("A4130_u")));
+                        params.put(A4126_A4140.A4130_a, c8.getString(c8.getColumnIndex("A4130_a")));
+                        params.put(A4126_A4140.A4130_b, c8.getString(c8.getColumnIndex("A4130_b")));
+                        params.put(A4126_A4140.A4131, c8.getString(c8.getColumnIndex("A4131")));
+                        params.put(A4126_A4140.A4132, c8.getString(c8.getColumnIndex("A4132")));
+                        params.put(A4126_A4140.A4133, c8.getString(c8.getColumnIndex("A4133")));
+                        params.put(A4126_A4140.A4134_u, c8.getString(c8.getColumnIndex("A4134_u")));
+                        params.put(A4126_A4140.A4134_a, c8.getString(c8.getColumnIndex("A4134_a")));
+                        params.put(A4126_A4140.A4134_b, c8.getString(c8.getColumnIndex("A4134_b")));
+                        params.put(A4126_A4140.A4135, c8.getString(c8.getColumnIndex("A4135")));
+                        params.put(A4126_A4140.A4136, c8.getString(c8.getColumnIndex("A4136")));
+                        params.put(A4126_A4140.A4138, c8.getString(c8.getColumnIndex("A4138")));
+                        params.put(A4126_A4140.A4139, c8.getString(c8.getColumnIndex("A4139")));
+                        params.put(A4126_A4140.A4140, c8.getString(c8.getColumnIndex("A4140")));
+                    }
+                }
+
+                if (c9 != null) {
+
+                    if (c9.moveToFirst()) {
+
+                        params.put(A4144_A4156.A4144, c9.getString(c9.getColumnIndex("A4144")));
+                        params.put(A4144_A4156.A4145, c9.getString(c9.getColumnIndex("A4145")));
+                        params.put(A4144_A4156.A4146, c9.getString(c9.getColumnIndex("A4146")));
+                        params.put(A4144_A4156.A4147, c9.getString(c9.getColumnIndex("A4147")));
+                        params.put(A4144_A4156.A4148, c9.getString(c9.getColumnIndex("A4148")));
+                        params.put(A4144_A4156.A4149, c9.getString(c9.getColumnIndex("A4149")));
+                        params.put(A4144_A4156.A4150_u, c9.getString(c9.getColumnIndex("A4150_u")));
+                        params.put(A4144_A4156.A4150_a, c9.getString(c9.getColumnIndex("A4150_a")));
+                        params.put(A4144_A4156.A4150_b, c9.getString(c9.getColumnIndex("A4150_b")));
+                        params.put(A4144_A4156.A4151, c9.getString(c9.getColumnIndex("A4151")));
+                        params.put(A4144_A4156.A4152, c9.getString(c9.getColumnIndex("A4152")));
+                        params.put(A4144_A4156.A4153, c9.getString(c9.getColumnIndex("A4153")));
+                        params.put(A4144_A4156.A4154, c9.getString(c9.getColumnIndex("A4154")));
+                        params.put(A4144_A4156.A4155, c9.getString(c9.getColumnIndex("A4155")));
+                        params.put(A4144_A4156.A4156, c9.getString(c9.getColumnIndex("A4156")));
+                    }
+                }
+
+                if (c10 != null) {
+
+                    if (c10.moveToFirst()) {
+
+                        params.put(A4157_A4205.A4157, c10.getString(c10.getColumnIndex("A4157")));
+                        params.put(A4157_A4205.A4158, c10.getString(c10.getColumnIndex("A4158")));
+                        params.put(A4157_A4205.A4159, c10.getString(c10.getColumnIndex("A4159")));
+                        params.put(A4157_A4205.A4160, c10.getString(c10.getColumnIndex("A4160")));
+                        params.put(A4157_A4205.A4161, c10.getString(c10.getColumnIndex("A4161")));
+                        params.put(A4157_A4205.A4161_1, c10.getString(c10.getColumnIndex("A4161_1")));
+                        params.put(A4157_A4205.A4162, c10.getString(c10.getColumnIndex("A4162")));
+                        params.put(A4157_A4205.A4163, c10.getString(c10.getColumnIndex("A4163")));
+                        params.put(A4157_A4205.A4163, c10.getString(c10.getColumnIndex("A4163")));
+                        params.put(A4157_A4205.A4164, c10.getString(c10.getColumnIndex("A4164")));
+                        params.put(A4157_A4205.A4166, c10.getString(c10.getColumnIndex("A4166")));
+                        params.put(A4157_A4205.A4167, c10.getString(c10.getColumnIndex("A4167")));
+                        params.put(A4157_A4205.A4168_1, c10.getString(c10.getColumnIndex("A4168_1")));
+                        params.put(A4157_A4205.A4168_3, c10.getString(c10.getColumnIndex("A4168_3")));
+                        params.put(A4157_A4205.A4168, c10.getString(c10.getColumnIndex("A4168")));
+                        params.put(A4157_A4205.A4173_1, c10.getString(c10.getColumnIndex("A4173_1")));
+                        params.put(A4157_A4205.A4173, c10.getString(c10.getColumnIndex("A4173")));
+                        params.put(A4157_A4205.A4173_2, c10.getString(c10.getColumnIndex("A4173_2")));
+                        params.put(A4157_A4205.A4178_1, c10.getString(c10.getColumnIndex("A4178_1")));
+                        params.put(A4157_A4205.A4178_2, c10.getString(c10.getColumnIndex("A4178_2")));
+                        params.put(A4157_A4205.A4178, c10.getString(c10.getColumnIndex("A4178")));
+                        params.put(A4157_A4205.A4179, c10.getString(c10.getColumnIndex("A4179")));
+                        params.put(A4157_A4205.A4180, c10.getString(c10.getColumnIndex("A4180")));
+                        params.put(A4157_A4205.A4181, c10.getString(c10.getColumnIndex("A4181")));
+                        params.put(A4157_A4205.A4182, c10.getString(c10.getColumnIndex("A4182")));
+                        params.put(A4157_A4205.A4183, c10.getString(c10.getColumnIndex("A4183")));
+                        params.put(A4157_A4205.A4184, c10.getString(c10.getColumnIndex("A4184")));
+                        params.put(A4157_A4205.A4185, c10.getString(c10.getColumnIndex("A4185")));
+                        params.put(A4157_A4205.A4186, c10.getString(c10.getColumnIndex("A4186")));
+                        params.put(A4157_A4205.A4186_1, c10.getString(c10.getColumnIndex("A4186_1")));
+                        params.put(A4157_A4205.A4187, c10.getString(c10.getColumnIndex("A4187")));
+                        params.put(A4157_A4205.A4188, c10.getString(c10.getColumnIndex("A4188")));
+                        params.put(A4157_A4205.A4189, c10.getString(c10.getColumnIndex("A4189")));
+                        params.put(A4157_A4205.A4190, c10.getString(c10.getColumnIndex("A4190")));
+                        params.put(A4157_A4205.A4191, c10.getString(c10.getColumnIndex("A4191")));
+                        params.put(A4157_A4205.A4192, c10.getString(c10.getColumnIndex("A4192")));
+                        params.put(A4157_A4205.A4193, c10.getString(c10.getColumnIndex("A4193")));
+                        params.put(A4157_A4205.A4193_1, c10.getString(c10.getColumnIndex("A4193_1")));
+                        params.put(A4157_A4205.A4194, c10.getString(c10.getColumnIndex("A4194")));
+                        params.put(A4157_A4205.A4195, c10.getString(c10.getColumnIndex("A4195")));
+                        params.put(A4157_A4205.A4196, c10.getString(c10.getColumnIndex("A4196")));
+                        params.put(A4157_A4205.A4197, c10.getString(c10.getColumnIndex("A4197")));
+                        params.put(A4157_A4205.A4198_1, c10.getString(c10.getColumnIndex("A4198_1")));
+                        params.put(A4157_A4205.A4198, c10.getString(c10.getColumnIndex("A4198")));
+                        params.put(A4157_A4205.A4200, c10.getString(c10.getColumnIndex("A4200")));
+                        params.put(A4157_A4205.A4202, c10.getString(c10.getColumnIndex("A4202")));
+                        params.put(A4157_A4205.A4203, c10.getString(c10.getColumnIndex("A4203")));
+                        params.put(A4157_A4205.A4204, c10.getString(c10.getColumnIndex("A4204")));
+                        params.put(A4157_A4205.A4205, c10.getString(c10.getColumnIndex("A4205")));
+                        params.put(A4157_A4205.A4205_1, c10.getString(c10.getColumnIndex("A4205_1")));
+                    }
+                }
+
+                if (c11 != null) {
+
+                    if (c11.moveToFirst()) {
+
+                        params.put(A4206_A4207.A4206, c11.getString(c11.getColumnIndex("A4206")));
+                        params.put(A4206_A4207.A4206_1, c11.getString(c11.getColumnIndex("A4206_1")));
+                        params.put(A4206_A4207.A4206_2, c11.getString(c11.getColumnIndex("A4206_2")));
+                        params.put(A4206_A4207.A4206_3, c11.getString(c11.getColumnIndex("A4206_3")));
+                        params.put(A4206_A4207.A4206_4, c11.getString(c11.getColumnIndex("A4206_4")));
+                        params.put(A4206_A4207.A4206_5, c11.getString(c11.getColumnIndex("A4206_5")));
+                        params.put(A4206_A4207.A4206_6, c11.getString(c11.getColumnIndex("A4206_6")));
+                        params.put(A4206_A4207.A4206_7, c11.getString(c11.getColumnIndex("A4206_7")));
+                        params.put(A4206_A4207.A4206_8, c11.getString(c11.getColumnIndex("A4206_8")));
+                        params.put(A4206_A4207.A4206_9, c11.getString(c11.getColumnIndex("A4206_9")));
+                        params.put(A4206_A4207.A4206_10, c11.getString(c11.getColumnIndex("A4206_10")));
+                        params.put(A4206_A4207.A4206_11, c11.getString(c11.getColumnIndex("A4206_11")));
+                        params.put(A4206_A4207.A4206_12, c11.getString(c11.getColumnIndex("A4206_12")));
+                        params.put(A4206_A4207.A4206_13, c11.getString(c11.getColumnIndex("A4206_13")));
+                        params.put(A4206_A4207.A4206_14, c11.getString(c11.getColumnIndex("A4206_14")));
+                        params.put(A4206_A4207.A4206_15, c11.getString(c11.getColumnIndex("A4206_15")));
+                        params.put(A4206_A4207.A4206_16, c11.getString(c11.getColumnIndex("A4206_16")));
+                        params.put(A4206_A4207.A4206_17, c11.getString(c11.getColumnIndex("A4206_17")));
+                        params.put(A4206_A4207.A4206_18, c11.getString(c11.getColumnIndex("A4206_18")));
+                        params.put(A4206_A4207.A4206_19, c11.getString(c11.getColumnIndex("A4206_19")));
+                        params.put(A4206_A4207.A4206_20, c11.getString(c11.getColumnIndex("A4206_20")));
+                        params.put(A4206_A4207.A4206_21, c11.getString(c11.getColumnIndex("A4206_21")));
+                        params.put(A4206_A4207.A4206_22, c11.getString(c11.getColumnIndex("A4206_22")));
+                        params.put(A4206_A4207.A4207_hour, c11.getString(c11.getColumnIndex("A4207_hour")));
+                        params.put(A4206_A4207.A4207_day, c11.getString(c11.getColumnIndex("A4207_day")));
+                    }
+                }
+
+                if (c12 != null) {
+
+                    if (c12.moveToFirst()) {
+
+                        params.put(A4251_A4284.A4251, c12.getString(c12.getColumnIndex("A4251")));
+                        params.put(A4251_A4284.A4253, c12.getString(c12.getColumnIndex("A4253")));
+                        params.put(A4251_A4284.A4253_3, c12.getString(c12.getColumnIndex("A4253_3")));
+                        params.put(A4251_A4284.A4254_1, c12.getString(c12.getColumnIndex("A4254_1")));
+                        params.put(A4251_A4284.A4254_2, c12.getString(c12.getColumnIndex("A4254_2")));
+                        params.put(A4251_A4284.A4255_1, c12.getString(c12.getColumnIndex("A4255_1")));
+                        params.put(A4251_A4284.A4255_2, c12.getString(c12.getColumnIndex("A4255_2")));
+                        params.put(A4251_A4284.A4255_3, c12.getString(c12.getColumnIndex("A4255_3")));
+                        params.put(A4251_A4284.A4255_4, c12.getString(c12.getColumnIndex("A4255_4")));
+                        params.put(A4251_A4284.A4255_4_OT, c12.getString(c12.getColumnIndex("A4255_4_OT")));
+                        params.put(A4251_A4284.A4255_5, c12.getString(c12.getColumnIndex("A4255_5")));
+                        params.put(A4251_A4284.A4255_6, c12.getString(c12.getColumnIndex("A4255_6")));
+                        params.put(A4251_A4284.A4255_7, c12.getString(c12.getColumnIndex("A4255_7")));
+                        params.put(A4251_A4284.A4255_8, c12.getString(c12.getColumnIndex("A4255_8")));
+                        params.put(A4251_A4284.A4255_9, c12.getString(c12.getColumnIndex("A4255_9")));
+                        params.put(A4251_A4284.A4255_10, c12.getString(c12.getColumnIndex("A4255_10")));
+                        params.put(A4251_A4284.A4255_11, c12.getString(c12.getColumnIndex("A4255_11")));
+                        params.put(A4251_A4284.A4255_12, c12.getString(c12.getColumnIndex("A4255_12")));
+                        params.put(A4251_A4284.A4255_13, c12.getString(c12.getColumnIndex("A4255_13")));
+                        params.put(A4251_A4284.A4255_13_OT, c12.getString(c12.getColumnIndex("A4255_13_OT")));
+                        params.put(A4251_A4284.A4255_DK, c12.getString(c12.getColumnIndex("A4255_DK")));
+                        params.put(A4251_A4284.A4256_days, c12.getString(c12.getColumnIndex("A4256_days")));
+                        params.put(A4251_A4284.A4256_hours, c12.getString(c12.getColumnIndex("A4256_hours")));
+                        params.put(A4251_A4284.A4256_minutes, c12.getString(c12.getColumnIndex("A4256_minutes")));
+                        params.put(A4251_A4284.A4257, c12.getString(c12.getColumnIndex("A4257")));
+                        params.put(A4251_A4284.A4257_name, c12.getString(c12.getColumnIndex("A4257_name")));
+                        params.put(A4251_A4284.A4258_1, c12.getString(c12.getColumnIndex("A4258_1")));
+                        params.put(A4251_A4284.A4258_2, c12.getString(c12.getColumnIndex("A4258_2")));
+                        params.put(A4251_A4284.A4259_hours, c12.getString(c12.getColumnIndex("A4259_hours")));
+                        params.put(A4251_A4284.A4259_minutes, c12.getString(c12.getColumnIndex("A4259_minutes")));
+                        params.put(A4251_A4284.A4260, c12.getString(c12.getColumnIndex("A4260")));
+                        params.put(A4251_A4284.A4261, c12.getString(c12.getColumnIndex("A4261")));
+                        params.put(A4251_A4284.A4262, c12.getString(c12.getColumnIndex("A4262")));
+                        params.put(A4251_A4284.A4262_name, c12.getString(c12.getColumnIndex("A4262_name")));
+                        params.put(A4251_A4284.A4263_1, c12.getString(c12.getColumnIndex("A4263_1")));
+                        params.put(A4251_A4284.A4263_2, c12.getString(c12.getColumnIndex("A4263_2")));
+                        params.put(A4251_A4284.A4264, c12.getString(c12.getColumnIndex("A4264")));
+                        params.put(A4251_A4284.A4266, c12.getString(c12.getColumnIndex("A4266")));
+                        params.put(A4251_A4284.A4266_name, c12.getString(c12.getColumnIndex("A4266_name")));
+                        params.put(A4251_A4284.A4267_1, c12.getString(c12.getColumnIndex("A4267_1")));
+                        params.put(A4251_A4284.A4267_2, c12.getString(c12.getColumnIndex("A4267_2")));
+                        params.put(A4251_A4284.A4268_hours, c12.getString(c12.getColumnIndex("A4268_hours")));
+                        params.put(A4251_A4284.A4268_minutes, c12.getString(c12.getColumnIndex("A4268_minutes")));
+                        params.put(A4251_A4284.A4269, c12.getString(c12.getColumnIndex("A4269")));
+                        params.put(A4251_A4284.A4270, c12.getString(c12.getColumnIndex("A4270")));
+                        params.put(A4251_A4284.A4271, c12.getString(c12.getColumnIndex("A4271")));
+                        params.put(A4251_A4284.A4271_name, c12.getString(c12.getColumnIndex("A4271_name")));
+                        params.put(A4251_A4284.A4272_1, c12.getString(c12.getColumnIndex("A4272_1")));
+                        params.put(A4251_A4284.A4272_2, c12.getString(c12.getColumnIndex("A4272_2")));
+                        params.put(A4251_A4284.A4273, c12.getString(c12.getColumnIndex("A4273")));
+                        params.put(A4251_A4284.A4274, c12.getString(c12.getColumnIndex("A4274")));
+                        params.put(A4251_A4284.A4275, c12.getString(c12.getColumnIndex("A4275_1")));
+                        params.put(A4251_A4284.A4276_1, c12.getString(c12.getColumnIndex("A4276_1")));
+                        params.put(A4251_A4284.A4276_2, c12.getString(c12.getColumnIndex("A4276_2")));
+                        params.put(A4251_A4284.A4276_3, c12.getString(c12.getColumnIndex("A4276_3")));
+                        params.put(A4251_A4284.A4276_4, c12.getString(c12.getColumnIndex("A4276_4")));
+                        params.put(A4251_A4284.A4276_5, c12.getString(c12.getColumnIndex("A4276_5")));
+                        params.put(A4251_A4284.A4276_5_OT, c12.getString(c12.getColumnIndex("A4276_5_OT")));
+                        params.put(A4251_A4284.A4276_6, c12.getString(c12.getColumnIndex("A4276_6")));
+                        params.put(A4251_A4284.A4276_7, c12.getString(c12.getColumnIndex("A4276_7")));
+                        params.put(A4251_A4284.A4276_8, c12.getString(c12.getColumnIndex("A4276_8")));
+                        params.put(A4251_A4284.A4276_9, c12.getString(c12.getColumnIndex("A4276_9")));
+                        params.put(A4251_A4284.A4276_10, c12.getString(c12.getColumnIndex("A4276_10")));
+                        params.put(A4251_A4284.A4276_11, c12.getString(c12.getColumnIndex("A4276_11")));
+                        params.put(A4251_A4284.A4276_12, c12.getString(c12.getColumnIndex("A4276_12")));
+                        params.put(A4251_A4284.A4276_13, c12.getString(c12.getColumnIndex("A4276_13")));
+                        params.put(A4251_A4284.A4276_14, c12.getString(c12.getColumnIndex("A4276_14")));
+                        params.put(A4251_A4284.A4276_15, c12.getString(c12.getColumnIndex("A4276_15")));
+                        params.put(A4251_A4284.A4276_16, c12.getString(c12.getColumnIndex("A4276_16")));
+                        params.put(A4251_A4284.A4276_16_OT, c12.getString(c12.getColumnIndex("A4276_16_OT")));
+                        params.put(A4251_A4284.A4276_DK, c12.getString(c12.getColumnIndex("A4276_DK")));
+                        params.put(A4251_A4284.A4277, c12.getString(c12.getColumnIndex("A4277")));
+                        params.put(A4251_A4284.A4278_1, c12.getString(c12.getColumnIndex("A4278_1")));
+                        params.put(A4251_A4284.A4278_2, c12.getString(c12.getColumnIndex("A4278_2")));
+                        params.put(A4251_A4284.A4278_3, c12.getString(c12.getColumnIndex("A4278_3")));
+                        params.put(A4251_A4284.A4278_4, c12.getString(c12.getColumnIndex("A4278_4")));
+                        params.put(A4251_A4284.A4278_5, c12.getString(c12.getColumnIndex("A4278_5")));
+                        params.put(A4251_A4284.A4278_6, c12.getString(c12.getColumnIndex("A4278_6")));
+                        params.put(A4251_A4284.A4278_7, c12.getString(c12.getColumnIndex("A4278_7")));
+                        params.put(A4251_A4284.A4278_DK, c12.getString(c12.getColumnIndex("A4278_DK")));
+                        params.put(A4251_A4284.A4279_1, c12.getString(c12.getColumnIndex("A4279_1")));
+                        params.put(A4251_A4284.A4279_2, c12.getString(c12.getColumnIndex("A4279_2")));
+                        params.put(A4251_A4284.A4279_3, c12.getString(c12.getColumnIndex("A4279_3")));
+                        params.put(A4251_A4284.A4279_4, c12.getString(c12.getColumnIndex("A4279_4")));
+                        params.put(A4251_A4284.A4279_5, c12.getString(c12.getColumnIndex("A4279_5")));
+                        params.put(A4251_A4284.A4279_6, c12.getString(c12.getColumnIndex("A4279_6")));
+                        params.put(A4251_A4284.A4279_7, c12.getString(c12.getColumnIndex("A4279_7")));
+                        params.put(A4251_A4284.A4279_DK, c12.getString(c12.getColumnIndex("A4279_DK")));
+                        params.put(A4251_A4284.A4280, c12.getString(c12.getColumnIndex("A4280")));
+                        params.put(A4251_A4284.A4281, c12.getString(c12.getColumnIndex("A4281")));
+                        params.put(A4251_A4284.A4282, c12.getString(c12.getColumnIndex("A4282")));
+                        params.put(A4251_A4284.A4283, c12.getString(c12.getColumnIndex("A4283")));
+                        params.put(A4251_A4284.A4284, c12.getString(c12.getColumnIndex("A4284")));
+                    }
+                }
+
+                if (c13 != null) {
+
+                    if (c13.moveToFirst()) {
+
+                        params.put(A4301_A4315.A4301, c13.getString(c13.getColumnIndex("A4301")));
+                        params.put(A4301_A4315.A4302_1, c13.getString(c13.getColumnIndex("A4302_1")));
+                        params.put(A4301_A4315.A4302_2, c13.getString(c13.getColumnIndex("A4302_2")));
+                        params.put(A4301_A4315.A4302_3, c13.getString(c13.getColumnIndex("A4302_3")));
+                        params.put(A4301_A4315.A4302_4, c13.getString(c13.getColumnIndex("A4302_4")));
+                        params.put(A4301_A4315.A4302_5, c13.getString(c13.getColumnIndex("A4302_5")));
+                        params.put(A4301_A4315.A4302_6, c13.getString(c13.getColumnIndex("A4302_6")));
+                        params.put(A4301_A4315.A4302_7, c13.getString(c13.getColumnIndex("A4302_7")));
+                        params.put(A4301_A4315.A4303, c13.getString(c13.getColumnIndex("A4303")));
+                        params.put(A4301_A4315.A4304, c13.getString(c13.getColumnIndex("A4304")));
+                        params.put(A4301_A4315.A4305, c13.getString(c13.getColumnIndex("A4305")));
+                        params.put(A4301_A4315.A4306_1check, c13.getString(c13.getColumnIndex("A4306_1check")));
+                        params.put(A4301_A4315.A4306_1, c13.getString(c13.getColumnIndex("A4306_1")));
+                        params.put(A4301_A4315.A4306_2check, c13.getString(c13.getColumnIndex("A4306_2check")));
+                        params.put(A4301_A4315.A4306_2, c13.getString(c13.getColumnIndex("A4306_2")));
+                        params.put(A4301_A4315.A4307, c13.getString(c13.getColumnIndex("A4307")));
+                        params.put(A4301_A4315.A4308, c13.getString(c13.getColumnIndex("A4308")));
+                        params.put(A4301_A4315.A4309, c13.getString(c13.getColumnIndex("A4309")));
+                        params.put(A4301_A4315.A4310_1, c13.getString(c13.getColumnIndex("A4310_1")));
+                        params.put(A4301_A4315.A4310_2, c13.getString(c13.getColumnIndex("A4310_2")));
+                        params.put(A4301_A4315.A4310_3, c13.getString(c13.getColumnIndex("A4310_3")));
+                        params.put(A4301_A4315.A4310_4, c13.getString(c13.getColumnIndex("A4310_4")));
+                        params.put(A4301_A4315.A4310_5, c13.getString(c13.getColumnIndex("A4310_5")));
+                        params.put(A4301_A4315.A4310_6, c13.getString(c13.getColumnIndex("A4310_6")));
+                        params.put(A4301_A4315.A4310_7, c13.getString(c13.getColumnIndex("A4310_7")));
+                        params.put(A4301_A4315.A4310_8, c13.getString(c13.getColumnIndex("A4310_8")));
+                        params.put(A4301_A4315.A4310_9, c13.getString(c13.getColumnIndex("A4310_9")));
+                        params.put(A4301_A4315.A4310_10, c13.getString(c13.getColumnIndex("A4310_10")));
+                        params.put(A4301_A4315.A4310_11, c13.getString(c13.getColumnIndex("A4310_11")));
+                        params.put(A4301_A4315.A4311_1, c13.getString(c13.getColumnIndex("A4311_1")));
+                        params.put(A4301_A4315.A4311_2, c13.getString(c13.getColumnIndex("A4311_2")));
+                        params.put(A4301_A4315.A4311_3, c13.getString(c13.getColumnIndex("A4311_3")));
+                        params.put(A4301_A4315.A4311_4, c13.getString(c13.getColumnIndex("A4311_4")));
+                        params.put(A4301_A4315.A4311_5, c13.getString(c13.getColumnIndex("A4311_5")));
+                        params.put(A4301_A4315.A4312, c13.getString(c13.getColumnIndex("A4312")));
+                        params.put(A4301_A4315.A4313, c13.getString(c13.getColumnIndex("A4313")));
+                        params.put(A4301_A4315.A4314, c13.getString(c13.getColumnIndex("A4314")));
+                        params.put(A4301_A4315.A4315, c13.getString(c13.getColumnIndex("A4315")));
+                    }
+                }
+
+                if (c14 != null) {
+
+                    if (c14.moveToFirst()) {
+
+                        params.put(A4351_A4364.A4351, c14.getString(c14.getColumnIndex("A4351")));
+                        params.put(A4351_A4364.A4352, c14.getString(c14.getColumnIndex("A4352")));
+                        params.put(A4351_A4364.A4353, c14.getString(c14.getColumnIndex("A4353")));
+                        params.put(A4351_A4364.A4354, c14.getString(c14.getColumnIndex("A4354")));
+                        params.put(A4351_A4364.A4355, c14.getString(c14.getColumnIndex("A4355")));
+                        params.put(A4351_A4364.A4356, c14.getString(c14.getColumnIndex("A4356")));
+                        params.put(A4351_A4364.A4357, c14.getString(c14.getColumnIndex("A4357")));
+                        params.put(A4351_A4364.A4358, c14.getString(c14.getColumnIndex("A4358")));
+                        params.put(A4351_A4364.A4363, c14.getString(c14.getColumnIndex("A4363")));
+                        params.put(A4351_A4364.A4364, c14.getString(c14.getColumnIndex("A4364")));
+                    }
+                }
+
+                if (c15 != null) {
+
+                    if (c15.moveToFirst()) {
+
+                        params.put(A4401_A4473.A4401, c15.getString(c15.getColumnIndex("A4401")));
+                        params.put(A4401_A4473.A4402, c15.getString(c15.getColumnIndex("A4402")));
+                        params.put(A4401_A4473.A4402_5_OT, c15.getString(c15.getColumnIndex("A4402_5_OT")));
+                        params.put(A4401_A4473.A4403_province, c15.getString(c15.getColumnIndex("A4403_provi")));
+                        params.put(A4401_A4473.A4403_district, c15.getString(c15.getColumnIndex("A4403_distr")));
+                        params.put(A4401_A4473.A4404_years, c15.getString(c15.getColumnIndex("A4404_years")));
+                        params.put(A4401_A4473.A4405_hours, c15.getString(c15.getColumnIndex("A4405_hours")));
+                        params.put(A4401_A4473.A4405_minutes, c15.getString(c15.getColumnIndex("A4405_minut")));
+                        params.put(A4401_A4473.A4451_1, c15.getString(c15.getColumnIndex("A4451_1")));
+                        params.put(A4401_A4473.A4451_2, c15.getString(c15.getColumnIndex("A4451_2")));
+                        params.put(A4401_A4473.A4451_3, c15.getString(c15.getColumnIndex("A4451_3")));
+                        params.put(A4401_A4473.A4451_4, c15.getString(c15.getColumnIndex("A4451_4")));
+                        params.put(A4401_A4473.A4451_5, c15.getString(c15.getColumnIndex("A4451_5")));
+                        params.put(A4401_A4473.A4451_6, c15.getString(c15.getColumnIndex("A4451_6")));
+                        params.put(A4401_A4473.A4451_7, c15.getString(c15.getColumnIndex("A4451_7")));
+                        params.put(A4401_A4473.A4451_8, c15.getString(c15.getColumnIndex("A4451_8")));
+                        params.put(A4401_A4473.A4451_9, c15.getString(c15.getColumnIndex("A4451_9")));
+                        params.put(A4401_A4473.A4451_10, c15.getString(c15.getColumnIndex("A4451_10")));
+                        params.put(A4401_A4473.A4451_11, c15.getString(c15.getColumnIndex("A4451_11")));
+                        params.put(A4401_A4473.A4451_12, c15.getString(c15.getColumnIndex("A4451_12")));
+                        params.put(A4401_A4473.A4451_13, c15.getString(c15.getColumnIndex("A4451_13")));
+                        params.put(A4401_A4473.A4451_13_OT, c15.getString(c15.getColumnIndex("A4451_13_OT")));
+                        params.put(A4401_A4473.A4451_code, c15.getString(c15.getColumnIndex("A4451_code")));
+                        params.put(A4401_A4473.A4452_1, c15.getString(c15.getColumnIndex("A4452_1")));
+                        params.put(A4401_A4473.A4452_2, c15.getString(c15.getColumnIndex("A4452_2")));
+                        params.put(A4401_A4473.A4452_3, c15.getString(c15.getColumnIndex("A4452_3")));
+                        params.put(A4401_A4473.A4452_4, c15.getString(c15.getColumnIndex("A4452_4")));
+                        params.put(A4401_A4473.A4452_5, c15.getString(c15.getColumnIndex("A4452_5")));
+                        params.put(A4401_A4473.A4452_6, c15.getString(c15.getColumnIndex("A4452_6")));
+                        params.put(A4401_A4473.A4452_7, c15.getString(c15.getColumnIndex("A4452_7")));
+                        params.put(A4401_A4473.A4452_8, c15.getString(c15.getColumnIndex("A4452_8")));
+                        params.put(A4401_A4473.A4452_9, c15.getString(c15.getColumnIndex("A4452_9")));
+                        params.put(A4401_A4473.A4452_9_OT, c15.getString(c15.getColumnIndex("A4452_9_OT")));
+                        params.put(A4401_A4473.A4452_code, c15.getString(c15.getColumnIndex("A4452_code")));
+                        params.put(A4401_A4473.A4453_1, c15.getString(c15.getColumnIndex("A4453_1")));
+                        params.put(A4401_A4473.A4453_2, c15.getString(c15.getColumnIndex("A4453_2")));
+                        params.put(A4401_A4473.A4453_3, c15.getString(c15.getColumnIndex("A4453_3")));
+                        params.put(A4401_A4473.A4453_4, c15.getString(c15.getColumnIndex("A4453_4")));
+                        params.put(A4401_A4473.A4453_5, c15.getString(c15.getColumnIndex("A4453_5")));
+                        params.put(A4401_A4473.A4453_6, c15.getString(c15.getColumnIndex("A4453_6")));
+                        params.put(A4401_A4473.A4453_7, c15.getString(c15.getColumnIndex("A4453_7")));
+                        params.put(A4401_A4473.A4453_8, c15.getString(c15.getColumnIndex("A4453_8")));
+                        params.put(A4401_A4473.A4453_9, c15.getString(c15.getColumnIndex("A4453_9")));
+                        params.put(A4401_A4473.A4453_10, c15.getString(c15.getColumnIndex("A4453_10")));
+                        params.put(A4401_A4473.A4453_11, c15.getString(c15.getColumnIndex("A4453_11")));
+                        params.put(A4401_A4473.A4453_12, c15.getString(c15.getColumnIndex("A4453_12")));
+                        params.put(A4401_A4473.A4453_12_OT, c15.getString(c15.getColumnIndex("A4453_12_OT")));
+                        params.put(A4401_A4473.A4453_code, c15.getString(c15.getColumnIndex("A4453_code")));
+                        params.put(A4401_A4473.A4454, c15.getString(c15.getColumnIndex("A4454")));
+                        params.put(A4401_A4473.A4455, c15.getString(c15.getColumnIndex("A4455")));
+                        params.put(A4401_A4473.A4456, c15.getString(c15.getColumnIndex("A4456")));
+                        params.put(A4401_A4473.A4457, c15.getString(c15.getColumnIndex("A4457")));
+                        params.put(A4401_A4473.A4471, c15.getString(c15.getColumnIndex("A4471")));
+                        params.put(A4401_A4473.A4472_1, c15.getString(c15.getColumnIndex("A4472_1")));
+                        params.put(A4401_A4473.A4472_2, c15.getString(c15.getColumnIndex("A4472_2")));
+                        params.put(A4401_A4473.A4472_3, c15.getString(c15.getColumnIndex("A4472_3")));
+                        params.put(A4401_A4473.A4472_4, c15.getString(c15.getColumnIndex("A4472_4")));
+                        params.put(A4401_A4473.A4472_5, c15.getString(c15.getColumnIndex("A4472_5")));
+                        params.put(A4401_A4473.A4472_6, c15.getString(c15.getColumnIndex("A4472_6")));
+                        params.put(A4401_A4473.A4472_7, c15.getString(c15.getColumnIndex("A4472_7")));
+                        params.put(A4401_A4473.A4472_8, c15.getString(c15.getColumnIndex("A4472_8")));
+                        params.put(A4401_A4473.A4472_9, c15.getString(c15.getColumnIndex("A4472_9")));
+                        params.put(A4401_A4473.A4472_10, c15.getString(c15.getColumnIndex("A4472_10")));
+                        params.put(A4401_A4473.A4472_11, c15.getString(c15.getColumnIndex("A4472_11")));
+                        params.put(A4401_A4473.A4472_12, c15.getString(c15.getColumnIndex("A4472_12")));
+                        params.put(A4401_A4473.A4472_DK, c15.getString(c15.getColumnIndex("A4472_DK")));
+                        params.put(A4401_A4473.A4473, c15.getString(c15.getColumnIndex("A4473")));
+                    }
+                }
+
+                if (c16 != null) {
+
+                    if (c16.moveToFirst()) {
+
+                        for (int i = 0; i < c16.getCount(); i++) {
+
+                            if (i == 0) {
+                                try {
+
+                                    JSONObject round_one = new JSONObject();
+                                    String A4252_1_a, A4252_2_a, A4252_3_a, A4252_4_a;
+
+                                    A4252_1_a = c12.getString(c12.getColumnIndex("C3252_1"));
+                                    A4252_2_a = c12.getString(c12.getColumnIndex("C3252_2"));
+                                    A4252_3_a = c12.getString(c12.getColumnIndex("C3252_3"));
+                                    A4252_4_a = c12.getString(c12.getColumnIndex("C3252_4"));
+
+                                    round_one.put("C3252_1", A4252_1_a);
+                                    round_one.put("A4252_2", A4252_2_a);
+                                    round_one.put("A4252_3", A4252_3_a);
+                                    round_one.put("A4252_4", A4252_4_a);
+
+                                    params.put("round_one", String.valueOf(round_one));
+                                    c16.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 1) {
+                                try {
+
+                                    JSONObject round_two = new JSONObject();
+                                    String A4252_1_b, A4252_2_b, A4252_3_b, A4252_4_b;
+
+                                    A4252_1_b = c12.getString(c12.getColumnIndex("C3252_1"));
+                                    A4252_2_b = c12.getString(c12.getColumnIndex("C3252_2"));
+                                    A4252_3_b = c12.getString(c12.getColumnIndex("C3252_3"));
+                                    A4252_4_b = c12.getString(c12.getColumnIndex("C3252_4"));
+
+                                    round_two.put("C3252_1", A4252_1_b);
+                                    round_two.put("A4252_2", A4252_2_b);
+                                    round_two.put("A4252_3", A4252_3_b);
+                                    round_two.put("A4252_4", A4252_4_b);
+
+                                    params.put("round_two", String.valueOf(round_two));
+                                    c16.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 2) {
+                                try {
+
+                                    JSONObject round_three = new JSONObject();
+                                    String A4252_1_c, A4252_2_c, A4252_3_c, A4252_4_c;
+
+                                    A4252_1_c = c12.getString(c12.getColumnIndex("C3252_1"));
+                                    A4252_2_c = c12.getString(c12.getColumnIndex("C3252_2"));
+                                    A4252_3_c = c12.getString(c12.getColumnIndex("C3252_3"));
+                                    A4252_4_c = c12.getString(c12.getColumnIndex("C3252_4"));
+
+                                    round_three.put("C3252_1", A4252_1_c);
+                                    round_three.put("A4252_2", A4252_2_c);
+                                    round_three.put("A4252_3", A4252_3_c);
+                                    round_three.put("A4252_4", A4252_4_c);
+
+                                    params.put("round_three", String.valueOf(round_three));
+                                    c16.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 3) {
+                                try {
+
+                                    JSONObject round_four = new JSONObject();
+                                    String A4252_1_d, A4252_2_d, A4252_3_d, A4252_4_d;
+
+                                    A4252_1_d = c12.getString(c12.getColumnIndex("C3252_1"));
+                                    A4252_2_d = c12.getString(c12.getColumnIndex("C3252_2"));
+                                    A4252_3_d = c12.getString(c12.getColumnIndex("C3252_3"));
+                                    A4252_4_d = c12.getString(c12.getColumnIndex("C3252_4"));
+
+                                    round_four.put("C3252_1", A4252_1_d);
+                                    round_four.put("A4252_2", A4252_2_d);
+                                    round_four.put("A4252_3", A4252_3_d);
+                                    round_four.put("A4252_4", A4252_4_d);
+
+                                    params.put("round_four", String.valueOf(round_four));
+                                    c16.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 4) {
+                                try {
+
+                                    JSONObject round_five = new JSONObject();
+                                    String A4252_1_e, A4252_2_e, A4252_3_e, A4252_4_e;
+
+                                    A4252_1_e = c12.getString(c12.getColumnIndex("C3252_1"));
+                                    A4252_2_e = c12.getString(c12.getColumnIndex("C3252_2"));
+                                    A4252_3_e = c12.getString(c12.getColumnIndex("C3252_3"));
+                                    A4252_4_e = c12.getString(c12.getColumnIndex("C3252_4"));
+
+                                    round_five.put("C3252_1", A4252_1_e);
+                                    round_five.put("A4252_2", A4252_2_e);
+                                    round_five.put("A4252_3", A4252_3_e);
+                                    round_five.put("A4252_4", A4252_4_e);
+
+                                    params.put("round_five", String.valueOf(round_five));
+                                    c16.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 5) {
+                                try {
+
+                                    JSONObject round_six = new JSONObject();
+                                    String A4252_1_f, A4252_2_f, A4252_3_f, A4252_4_f;
+
+                                    A4252_1_f = c12.getString(c12.getColumnIndex("C3252_1"));
+                                    A4252_2_f = c12.getString(c12.getColumnIndex("C3252_2"));
+                                    A4252_3_f = c12.getString(c12.getColumnIndex("C3252_3"));
+                                    A4252_4_f = c12.getString(c12.getColumnIndex("C3252_4"));
+
+                                    round_six.put("C3252_1", A4252_1_f);
+                                    round_six.put("A4252_2", A4252_2_f);
+                                    round_six.put("A4252_3", A4252_3_f);
+                                    round_six.put("A4252_4", A4252_4_f);
+
+                                    params.put("round_six", String.valueOf(round_six));
+                                    c16.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 6) {
+                                try {
+
+                                    JSONObject round_seven = new JSONObject();
+                                    String A4252_1_g, A4252_2_g, A4252_3_g, A4252_4_g;
+
+                                    A4252_1_g = c12.getString(c12.getColumnIndex("C3252_1"));
+                                    A4252_2_g = c12.getString(c12.getColumnIndex("C3252_2"));
+                                    A4252_3_g = c12.getString(c12.getColumnIndex("C3252_3"));
+                                    A4252_4_g = c12.getString(c12.getColumnIndex("C3252_4"));
+
+                                    round_seven.put("C3252_1", A4252_1_g);
+                                    round_seven.put("A4252_2", A4252_2_g);
+                                    round_seven.put("A4252_3", A4252_3_g);
+                                    round_seven.put("A4252_4", A4252_4_g);
+
+                                    params.put("round_seven", String.valueOf(round_seven));
+                                    c16.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 7) {
+                                try {
+
+                                    JSONObject round_eight = new JSONObject();
+                                    String A4252_1_h, A4252_2_h, A4252_3_h, A4252_4_h;
+
+                                    A4252_1_h = c12.getString(c12.getColumnIndex("C3252_1"));
+                                    A4252_2_h = c12.getString(c12.getColumnIndex("C3252_2"));
+                                    A4252_3_h = c12.getString(c12.getColumnIndex("C3252_3"));
+                                    A4252_4_h = c12.getString(c12.getColumnIndex("C3252_4"));
+
+                                    round_eight.put("C3252_1", A4252_1_h);
+                                    round_eight.put("A4252_2", A4252_2_h);
+                                    round_eight.put("A4252_3", A4252_3_h);
+                                    round_eight.put("A4252_4", A4252_4_h);
+
+                                    params.put("round_eight", String.valueOf(round_eight));
+                                    c16.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                            if (i == 8) {
+                                try {
+
+                                    JSONObject round_nine = new JSONObject();
+                                    String A4252_1_i, A4252_2_i, A4252_3_i, A4252_4_i;
+
+                                    A4252_1_i = c12.getString(c12.getColumnIndex("C3252_1"));
+                                    A4252_2_i = c12.getString(c12.getColumnIndex("C3252_2"));
+                                    A4252_3_i = c12.getString(c12.getColumnIndex("C3252_3"));
+                                    A4252_4_i = c12.getString(c12.getColumnIndex("C3252_4"));
+
+                                    round_nine.put("C3252_1", A4252_1_i);
+                                    round_nine.put("A4252_2", A4252_2_i);
+                                    round_nine.put("A4252_3", A4252_3_i);
+                                    round_nine.put("A4252_4", A4252_4_i);
+
+                                    params.put("round_nine", String.valueOf(round_nine));
+                                    c16.moveToNext();
+
+                                } catch (JSONException e) {
+
+                                    e.printStackTrace();
+
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                return params;
+            }
+        };
+
+        myRequestQueue.add(sendMyRequest);
+    }
+
 }
