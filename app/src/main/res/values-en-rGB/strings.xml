@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="public_sector">Public sector:</string>
+    <string name="private_sector">Private medical sector:</string>
+    <string name="A4275_1">A4275_1: If not taken to (all) the referral provider(s), \\nask:   \\nDid you or NAME have any concerns or problems that kept him/her from going to a health provider where s/he was refrered?</string>
+    <string name="A4275_2">A4275_2: If taken to (all) the referral provider(s), \\nask:   \\nDid you or NAME have to overcome any concerns or problems for him/her to go to a health provider where s/he was referred?</string>
+</resources>
