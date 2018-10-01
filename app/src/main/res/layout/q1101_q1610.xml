@@ -1208,6 +1208,10 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
+                        style="@style/TextView"
+                        android:text="@string/txt_Q1414" />
+
+                    <TextView
                         android:id="@+id/txt_Q1414_1"
                         style="@style/TextView"
                         android:text="@string/txt_Q1414_1" />

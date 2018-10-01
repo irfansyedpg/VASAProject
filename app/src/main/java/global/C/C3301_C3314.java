@@ -15,9 +15,9 @@ public class C3301_C3314 {
     public static String C3304        = "C3304";
     public static String C3305        = "C3305";
     public static String C3306_1check = "C3306_1check";
-    public static String C3306_1      = "C3306_1 ";
+    public static String C3306_1      = "C3306_1";
     public static String C3306_2check = "C3306_2check";
-    public static String C3306_2      = "C3306_2 ";
+    public static String C3306_2      = "C3306_2";
     public static String C3307        = "C3307";
     public static String C3308        = "C3308";
     public static String C3309        = "C3309";

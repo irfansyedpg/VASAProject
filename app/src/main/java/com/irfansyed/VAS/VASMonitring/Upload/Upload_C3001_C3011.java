@@ -29,9 +29,9 @@ import utils.PostRequestData;
 public class Upload_C3001_C3011 extends AsyncTask {
 
     public static ProgressDialog dialog;
-    Context                 mContext;
+    Context mContext;
     HashMap<String, String> param;
-    //String[]                interviewLogData;
+    //    String[]                interviewLogData;
     String                  mUserMsg;
     // wait for Toast then kill app
     Thread thread = new Thread() {
@@ -75,7 +75,8 @@ public class Upload_C3001_C3011 extends AsyncTask {
         //dialog.show();
 
         //region Query
-        String query = "select * from C3001_C3011 where study_id = '" + Q1101_Q1610.study_id_upload + "' order by id  desc LIMIT 1";
+        String query = "select * from C3001_C3011 where study_id = '"+ Q1101_Q1610.study_id_upload +"' order by id  desc LIMIT 1";
+
 
         query = String.format(query, Q1101_Q1610.study_id_upload);
 
@@ -86,6 +87,7 @@ public class Upload_C3001_C3011 extends AsyncTask {
 
 
         if (c != null) {
+
             if (c.moveToFirst()) {
 
                 param.put("tableName", "c3001_c3011");
@@ -167,12 +169,14 @@ public class Upload_C3001_C3011 extends AsyncTask {
     protected void onPostExecute(Object o) {
 
         try {
-            dialog.dismiss();
+            //  dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();
 
             //String result = (((String) o).replace("\"", ""));
+
+            //Toast.makeText(mContext, "C3001 to C3011 is Uploaded", Toast.LENGTH_SHORT).show();
 
             new Upload_C3012_C3022(mContext).execute();
 
@@ -189,7 +193,7 @@ public class Upload_C3001_C3011 extends AsyncTask {
             mUserMsg = e.getMessage();
             dialog.dismiss();
         } catch (Exception e) {
-            Toast.makeText(mContext, "Uploading failed at request C3001_C3011 section", Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, "Uploading failed at request C3012_C3022 section", Toast.LENGTH_SHORT).show();
             dialog.dismiss();
             return;
         } finally {
@@ -200,16 +204,4 @@ public class Upload_C3001_C3011 extends AsyncTask {
 
         super.onPostExecute(o);
     }
-
-    /*void update_status(String id) {
-        String query = "Update C3001_C3011 set STATUS = '1' where id='" + id + "'";
-
-        query = String.format(query);
-
-        LocalDataManager Lm = new LocalDataManager(mContext);
-
-        LocalDataManager.database.execSQL(query);
-
-        Toast.makeText(mContext, "Status updated", Toast.LENGTH_SHORT).show();
-    }*/
 }

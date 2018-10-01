@@ -522,7 +522,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
             res.moveToFirst();
 
-            String aa=res.getString(res.getColumnIndex("Q1609"));
+            String aa =res.getString(res.getColumnIndex("Q1609"));
             Toast.makeText(this, "" + parseInt(res.getString(res.getColumnIndex("Q1609"))), Toast.LENGTH_LONG).show();
 
             if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(5)) {

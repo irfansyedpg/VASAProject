@@ -248,9 +248,7 @@ public class Upload_Q1101_Q1610 extends AsyncTask {
             if (mUserMsg != null)
                 throw new IOException();
 
-            //String result = (((String) o).replace("\"", ""));
             // call another table upload here
-
             if (Q1101_Q1610.interviewType_upload == 1) {
 
                 new Upload_A4001_A4014(mContext).execute();
