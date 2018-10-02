@@ -214,13 +214,13 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="less than 1 = 00 \nDK  =99" />
+                        android:text="less than 1 = 00 \nDon't know  = 99" />
 
 
                     <EditText
                         android:id="@+id/ed_A4404_years"
                         style="@style/EditText_number"
-                        android:hint="other_hint" />
+                        android:hint="@string/years" />
 
                 </LinearLayout>
 
@@ -241,11 +241,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="( DK  =99) Hours" />
-
-                    <TextView
-                        style="@style/TextView_Hint"
-                        android:text="(DK  =99) Minutes" />
+                        android:text="Mark hours &amp;/or minutes as needed: \ne.g. 01 hour, 30 minutes. \nDon't know = 99" />
 
 
 

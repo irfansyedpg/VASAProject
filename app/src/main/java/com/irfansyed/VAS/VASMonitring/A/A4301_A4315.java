@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.util.regex.Matcher;
@@ -245,6 +246,8 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
             A4314,
             A4315,
             STATUS;
+
+    int currentSection;
 
     //EndRegion Declaration
 
@@ -1497,5 +1500,9 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
         } else {
             return false;
         }
+    }
+
+    public void onBackPressed() {
+        globale.interviewExit(this, this, study_id, currentSection = 13);
     }
 }

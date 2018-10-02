@@ -16,6 +16,8 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.GS.InterviewEnd;
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.io.File;
@@ -342,6 +344,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             A4473,
             STATUS;
 
+    int currentSection;
+
     // End Region_Declaration
     TextView
             txt_cap_count;
@@ -665,7 +669,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c = new Intent(A4401_A4473.this, A4001_A4014.class);
+        Intent c = new Intent(A4401_A4473.this, InterviewEnd.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
 
@@ -1659,10 +1663,6 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_study_id) == false) {
-            return false;
-        }
-
         if (Gothrough.IamHiden(ll_A4401) == false) {
             return false;
         }
@@ -1843,6 +1843,10 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
+        if (Gothrough.IamHiden(ll_A4473) == false) {
+            return false;
+        }
+
         return Gothrough.IamHiden(ll_A4473) != false;
     }
 
@@ -1856,5 +1860,9 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             }
 
         }
+    }
+
+    public void onBackPressed() {
+        globale.interviewExit(this, this, study_id, currentSection = 15);
     }
 }

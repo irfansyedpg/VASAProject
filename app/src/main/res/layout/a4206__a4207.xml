@@ -558,7 +558,7 @@
                         <RadioButton
                             android:id="@+id/rb_A4206_10_4"
                             style="@style/RadioButton"
-                            android:text="@string/rb_other" />
+                            android:text="@string/ot" />
 
                         <RadioButton
                             android:id="@+id/rb_A4206_10_DK"

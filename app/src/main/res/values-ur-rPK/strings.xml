@@ -182,8 +182,8 @@
     <string  name="txt_Q1603"  translatable="false">	وفات پانے والا /والی کب پیدا ہوا /ہوئی  ؟	:	Q1603	</string>
     <string  name="txt_Q1604"  translatable="false">	 وفات پانے والے کی موت کہاں ہوئی  ؟	:	Q1604	</string>
     <string  name="txt_Q1605"  translatable="false">	کیا وفات پانے والی/والے کی وفات کی تاریخ معلوم ہے ؟	:	Q1605	</string>
-    <string  name="txt_Q1606"  translatable="false">	  وفات کی تاریخ کیاتھی 	:	Q1606	</string>
-    <string  name="txt_Q1607"  translatable="false">	وفات کے وقت عمر  کا حساب لگا ئیں	:	Q1607	</string>
+    <string  name="txt_Q1606"  translatable="false">	وفات کی تاریخ کیاتھی؟ 	:	Q1606	</string>
+    <string  name="txt_Q1607"  translatable="false">	وفات کے وقت عمر  کا حساب لگا ئیں؟	:	Q1607	</string>
     <string  name="txt_Q1608"  translatable="false">	وفات کے وقت مرنے والے کی عمر کتنی تھی؟	:	Q1608	</string>
     <string  name="txt_Q1609"  translatable="false">	وفات کے وقت مرنے والے کی عمر کے گروپ یہ نشان لگائیں ۔	:	Q1609	</string>
     <string  name="txt_Q1610"  translatable="false">	اگر وفات کے وقت کی عمر  28 دن سے کم عمر ہے تو عمر دنوں ،گھنٹے یا منٹس میں ریکارڈ کریں	:	Q1610	</string>
@@ -1610,7 +1610,7 @@
     <string  name="cb_A4276_2"  translatable="false">	2.    سوچا کہ مزید علاج کی ضرورت نہیں	</string>
     <string  name="cb_A4276_3"  translatable="false">	3.    ساتھ چلنے کے لیے کوئی موجود نہیں تھا	</string>
     <string  name="cb_A4276_4"  translatable="false">	4.    دیکھ بھال کرنے والے کی  اوربہت ذمہ داریاں	</string>
-    <string  name="cb_A4276_5"  translatable="false">	5.    کسی اور نے فیصلہ کیا (وضاحت کریں )	</string>
+    <string  name="cb_A4276_5"  translatable="false">	5.    کسی اور نے فیصلہ کیا</string>
     <string  name="cb_A4276_6"  translatable="false">	6.    بہت دور سفر کرنا	</string>
     <string  name="cb_A4276_7"  translatable="false">	7.    کوئی  ٹرانسپورٹ یا سواری  دستیاب  نہیں	</string>
     <string  name="cb_A4276_8"  translatable="false">	8.    لاگت یا  خرچہ  ( ٹرانسپوڑٹ،صحت کی دیکھ بھال ،دیگر	</string>
@@ -1621,7 +1621,7 @@
     <string  name="cb_A4276_13"  translatable="false">	13.    سوچا کہ علاج کے باوجود ہی موت واقع ہوجائیگی	</string>
     <string  name="cb_A4276_14"  translatable="false">	14.    رات میں بہت دیر ہوگئی تھی	</string>
     <string  name="cb_A4276_15"  translatable="false">	15.    جانے  سے پہلے ہی بچہ /بڑا انتقال کرگئے	</string>
-    <string  name="rb_A4276_OT"  translatable="false">	16.    کچھ اور (وضاحت کریں)	</string>
+    <string  name="rb_A4276_OT"  translatable="false">	16.    کچھ اور	</string>
     <string  name="cb_A4276_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_A4277_1"  translatable="false">	                                         ہاں 	</string>
     <string  name="rb_A4277_2"  translatable="false">	                                                     نہیں 	</string>
@@ -2130,7 +2130,9 @@
     <string  name="txt_N2076"  translatable="false">	جیسا کہ آپ نے مجھے شروع میں بتایا کہ بچہ   "جائے پیدائش نام ۔۔۔۔۔۔۔۔۔"  میں  پیدا ہو ا  تھا؟تو کس نے   فیصلہ کیا کہ یہ (ہیلتھ   پروائڈریا ہسپتال)  بچے کی پیدائش  کی  صحیح جگہ ہے ؟	:	N2076	</string>
     <string  name="txt_N2077"  translatable="false">	اگر اس کی زچگی نہیں ہو ئی  یا اس نے ہیلتھ مہیا کرنے والے  کے پاس یا مرکز صحت میں زچگی کروانے کی کوشش نہیں کی    (N2006=12 or N2006=1-2 and N2008≠1-3). تو  پوچھو : کیا (آپ / ماں ( کو  کوئی تشویش/مسئلہ تھا جس کی وجہ سے (آپ /اس) نے ہیلتھ مہیا کرنے والے یا  مرکز صحت پر زچگی کروانے سے روکا ۔	:	N2077	</string>
     <string  name="txt_N2078"  translatable="false">	وہ کیا خدشات یا مشکلات  تھیں جو  (آپ/وہ) رکھتی تھیں؟	:	N2078	</string>
-    <string  name="txt_N2080"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد  مندرجہ ذیل میں سے کسی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080	</string>
+    <string  name="txt_N2080"  translatable="false">	اب میں آپ سے کسی بھی علامات کے بارے میں پوچھوں گی جو ہوسکتا ہے (آپ/ماں) کو   حمل کے آخری حصہ میں پیش آ ئی ہو۔ کیا زچگی شروع ہونے سے پہلے حمل کے آخری تین مہینوں میں مندرجہ ذیل  کسی علامت  کی وجہ سے حمل میں پیچیدگی رونما ہوئی تھی؟	:	N2080	</string>
+    <string  name="txt_N2080_h"  translatable="false">	جواب دہندہ کو وضاحت کریں کہ لیبر(زچگی )  شروع ہوتی ہے جب درد زہ کی وجہ سے اینٹھن کی لہریں ہر  20 منٹ   یا اس سے کم وقت میں   اٹھتی ہیں۔--پڑھیں  "ماں " ، اگر جوابدہندہ ماں نہیں ہے
+اس کے بعد ہر علامت کو پڑہیں  اور ہر ایک کے لئے "ہاں" ،   "نہیں"،   "معلوم نہیں "  پر نشان لگا ئیں</string>
     <string  name="txt_N2080_1"  translatable="false">	  جھٹکے؟	:	N2080_1	</string>
     <string  name="txt_N2080_2"  translatable="false">	 بلندفشار خون ؟	:	N2080_2	</string>
     <string  name="txt_N2080_3"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد   شدید خون کی کمی اور سانس لینے میں مشکل   ؟	:	N2080_3	</string>
@@ -2546,7 +2548,7 @@
     <string  name="rb_N2009_4_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2009_4_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="rb_N2011_1"  translatable="false">	بچے کی صحت کا کارڈ  	</string>
-    <string  name="rb_N2011_2"  translatable="false">	جواب دہندہ کی یاد  کرکے بتایا       	</string>
+    <string  name="rb_N2011_2"  translatable="false">	جواب دہندہ نے یاد  کرکے بتایا       	</string>
     <string  name="rb_N2012_1"  translatable="false">	 زندہ 	</string>
     <string  name="rb_N2012_2"  translatable="false">	مردہ	</string>
     <string  name="rb_N2012_DK"  translatable="false">	معلوم نہیں	</string>
@@ -6257,8 +6259,8 @@
 
     <string  name="txt_W213"  translatable="false">	پہلےبچے کی پیدائش کے وقت آپ کی عمر کیاتھی؟	:W213	</string>
     <string  name="ed_W213"  translatable="false">	عمر سالوں میں</string>
-    <string name="public_sector">Public sector:</string>
-    <string name="private_sector">Private medical sector:</string>
+    <string name="public_sector">عوامی سیکٹر</string>
+    <string name="private_sector">نجی صحت کے سیکٹر</string>
     <string name="A4275_1">A4275_1: If not taken to (all) the referral provider(s), \\nask:   \\nDid you or NAME have any concerns or problems that kept him/her from going to a health provider where s/he was refrered?</string>
     <string name="A4275_2">A4275_2: If taken to (all) the referral provider(s), \\nask:   \\nDid you or NAME have to overcome any concerns or problems for him/her to go to a health provider where s/he was referred?</string>
 

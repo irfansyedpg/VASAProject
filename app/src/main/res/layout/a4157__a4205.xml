@@ -1936,7 +1936,7 @@
                         <RadioButton
                             android:id="@+id/rb_A4198_5"
                             style="@style/RadioButton"
-                            android:text="@string/rb_other" />
+                            android:text="@string/ot" />
 
                         <RadioButton
                             android:id="@+id/rb_A4198_DK"
@@ -2007,7 +2007,7 @@
                         <RadioButton
                             android:id="@+id/rb_A4200_7"
                             style="@style/RadioButton"
-                            android:text="@string/rb_other" />
+                            android:text="@string/ot" />
 
                         <RadioButton
                             android:id="@+id/rb_A4200_DK"

@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import data.LocalDataManager;
@@ -193,6 +194,8 @@ public class A4206_A4207 extends AppCompatActivity implements RadioButton.OnChec
             A4207_hour,
             A4207_day,
             STATUS;
+
+    int currentSection;
 
     //End DECLARATION
 
@@ -1241,5 +1244,9 @@ public class A4206_A4207 extends AppCompatActivity implements RadioButton.OnChec
         }
 
         return Gothrough.IamHiden(ll_A4207) != false;
+    }
+
+    public void onBackPressed() {
+        globale.interviewExit(this, this, study_id, currentSection = 11);
     }
 }
