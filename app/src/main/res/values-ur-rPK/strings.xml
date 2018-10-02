@@ -26,6 +26,8 @@
     <string  name="dnt"  translatable="false">معلوم نہیں</string>
     <string  name="ra"  translatable="false">جواب دینے سے انکار کردیا</string>
     <string  name="ot"  translatable="false">دیگر</string>
+    <string  name="minutes"  translatable="false">منٹ 	</string>
+    <string  name="hours"  translatable="false">گھنٹے</string>
 
     <!--HEADINGS-->
 
@@ -1018,8 +1020,7 @@
     <string  name="rb_A4092_2"  translatable="false">	                                                     نہیں 	</string>
     <string  name="rb_A4092_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_A4092_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
-    <string  name="rb_A4094_u_1"  translatable="false">	منٹ 	</string>
-    <string  name="rb_A4094_u_2"  translatable="false">	گھنٹے             	</string>
+
     <string  name="rb_A4094_u_3"  translatable="false">	دن	</string>
     <string  name="rb_A4094_u_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_A4094_u_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
