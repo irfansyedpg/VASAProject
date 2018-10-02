@@ -2668,7 +2668,17 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 //create a string for country
         String country = preferences.getcountry();
 //use constructor with country
+
+
+        if(lang==null)
+        {
+            lang="ur";
+            country="PK";
+
+        }
         Locale locale = new Locale(lang, country);
+
+
 
         Locale.setDefault(locale);
         Configuration config = new Configuration();
