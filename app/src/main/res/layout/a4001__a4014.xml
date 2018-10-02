@@ -360,7 +360,7 @@
                         <RadioButton
                             android:id="@+id/rb_A4007_6"
                             style="@style/RadioButton"
-                            android:text="Other" />
+                            android:text="@string/ot" />
 
                         <RadioButton
                             android:id="@+id/rb_A4007_DK"

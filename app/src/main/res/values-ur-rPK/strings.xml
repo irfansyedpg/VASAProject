@@ -21,6 +21,12 @@
     <string  name="rb_DK"  translatable="false">معلوم نہیں</string>
     <string  name="rb_RA"  translatable="false">جواب دینے سے انکار کردیا</string>
 
+    <string  name="yes"  translatable="false">ہاں</string>
+    <string  name="no"  translatable="false">نہیں</string>
+    <string  name="dnt"  translatable="false">معلوم نہیں</string>
+    <string  name="ra"  translatable="false">جواب دینے سے انکار کردیا</string>
+    <string  name="ot"  translatable="false">دیگر</string>
+
     <!--HEADINGS-->
 
     <!--Neonates-->
@@ -394,8 +400,8 @@
 
     <!-- Adult Urdu Text STARTS -->
 
-    <string  name="A4001"  translatable="false">	وفات پانے والے کا پہلا نام کیا تھا ؟	:	A4001	</string>
-    <string  name="A4002"  translatable="false">	اس کی ازدواجی حیثیت کیا تھی؟	:	A4002	</string>
+    <string  name="A4001"  translatable="false">	وفات پانے والے کا پہلا نام کیا تھا ؟	:A4001</string>
+    <string  name="A4002"  translatable="false">	اس کی ازدواجی حیثیت کیا تھی؟:A4002</string>
     <string  name="A4003"  translatable="false">	 کیا وہ کبھی اسکول گیاتھا/ گئی تھی ؟	:	A4003	</string>
     <string  name="A4004"  translatable="false">	اس کی زیادہ سے زیادہ تعلیم کی تھی ؟ پرا ئمری،  سیکنڈری،  یا  ہا ئیر (اعلیٰ تعلیم )	:	A4004	</string>
     <string  name="A4005"  translatable="false">	اس کی  اب تک کی مکمل تعلیم /گریڈ/سال  کیا ہے ؟	:	A4005	</string>
@@ -818,9 +824,9 @@
     <string  name="rb_A4010_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="ed_A4011"  translatable="false">		</string>
     <string  name="ed_A4012"  translatable="false">		</string>
-    <string  name="rb_A4013u_1"  translatable="false">	دن	</string>
-    <string  name="rb_A4013u_2"  translatable="false">	مہینہ 	</string>
-    <string  name="rb_A4013u_3"  translatable="false">	سال	</string>
+    <string  name="day"  translatable="false">دن</string>
+    <string  name="month"  translatable="false">	مہینہ 	</string>
+    <string  name="year"  translatable="false">	سال	</string>
     <string  name="rb_A4013u_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_A4013u_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="ed_A4013d"  translatable="false">		</string>
