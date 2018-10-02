@@ -26,8 +26,14 @@
     <string  name="dnt"  translatable="false">معلوم نہیں</string>
     <string  name="ra"  translatable="false">جواب دینے سے انکار کردیا</string>
     <string  name="ot"  translatable="false">دیگر</string>
-    <string  name="minutes"  translatable="false">منٹ 	</string>
+    <string  name="explain"  translatable="false">وضاحت کریں</string>
+    <string  name="minutes"  translatable="false">منٹ</string>
     <string  name="hours"  translatable="false">گھنٹے</string>
+    <string  name="days"  translatable="false">دن</string>
+    <string  name="months"  translatable="false">مہینہ</string>
+    <string  name="years"  translatable="false">سال</string>
+    <string  name="conflict"  translatable="false">تضاد</string>
+    <string  name="next"  translatable="false">اگلا</string>
 
     <!--HEADINGS-->
 
@@ -83,7 +89,7 @@
     <string  name="h_c_sec_12"  translatable="false">SECTION 12: DEATH CERTIFICATE AND CIVIL REGISTRATION (CHILD DEATHS)</string>
     <string  name="h_c_sec_13"  translatable="false">SECTION 13: THE HOUSEHOLD</string>
     <string  name="h_c_sec_14"  translatable="false">SECTION 14: SOCIAL CAPITAL AND HIV/AIDS QUESTIONS (CHILD DEATHS)</string>
-    <string  name="h_c_sec_15"  translatable="false">SECTION 15: OPEN ENDED RESPONSE &amp; INTERVIEWER COMMENTS/OBSERVATIONS (CHILD DEATHS)</string>
+    <string  name="h_c_sec_15"  translatable="false">SECTION 15: OPEN ENDED RESPONSE &amp;amp; INTERVIEWER COMMENTS/OBSERVATIONS (CHILD DEATHS)</string>
 
 
     <!--NEW FROM IRFAN-->
@@ -129,7 +135,7 @@
     <string  name="txt_Q1101"  translatable="false">	کیا یہ ایچ آئی وی /ایڈز سے متاثر  علاقہ ہے ؟	:	Q1101	</string>
     <string  name="txt_Q1102"  translatable="false">	کیا یہ ملیریا سے متاثر  علاقہ ہے؟	:	Q1102	</string>
     <string  name="txt_Q1103"  translatable="false">	کس موسم کے دوران لڑکا /لڑکی کی وفات ہوئی ؟	:	Q1103	</string>
-    <string  name="txt_Q1201"  translatable="false">	گھرانے کا پتہ:	:	Q1201	</string>
+    <string  name="txt_Q1201"  translatable="false">گھرانے کا پتہ  :	Q1201</string>
     <string  name="txt_Q1202"  translatable="false">	مرنے والے کا نام (اگر معلوم ہے)	:	Q1202	</string>
     <string  name="txt_Q1203"  translatable="false">	مرنے والے کی جنس	:	Q1203	</string>
     <string  name="txt_Q1204"  translatable="false">	مرنے والے کی تاریخ پیدائش	:	Q1204	</string>
@@ -257,16 +263,16 @@
     <string  name="rb_Q1413_1"  translatable="false">	ہاں	</string>
     <string  name="rb_Q1413_2"  translatable="false">	نہیں	</string>
     <string  name="rb_Q1413_DK"  translatable="false">	معلوم نہیں 	</string>
-    <string  name="rb_Q1414_1"  translatable="false">	(بجلی)	</string>
-    <string  name="rb_Q1414_2"  translatable="false">	(ریڈی)	</string>
-    <string  name="rb_Q1414_3"  translatable="false">	(ٹیلی وژن)	</string>
-    <string  name="rb_Q1414_4"  translatable="false">	(ریفرجیٹر)	</string>
-    <string  name="rb_Q1414_5"  translatable="false">	(ٹیلی فون)	</string>
-    <string  name="rb_Q1414_6"  translatable="false">	(موبائل)	</string>
-    <string  name="rb_Q1414_7"  translatable="false">	(کمپیوٹر)	</string>
-    <string  name="rb_Q1414_8"  translatable="false">	(سائیکل)	</string>
-    <string  name="rb_Q1414_9"  translatable="false">	(موٹر سائیکل)	</string>
-    <string  name="rb_Q1414_10"  translatable="false">	(گاڑی یا ٹرک)	</string>
+    <string  name="rb_Q1414_1"  translatable="false">بجلی</string>
+    <string  name="rb_Q1414_2"  translatable="false">ریڈیو</string>
+    <string  name="rb_Q1414_3"  translatable="false">ٹیلی وژن</string>
+    <string  name="rb_Q1414_4"  translatable="false">ریفرجیٹر</string>
+    <string  name="rb_Q1414_5"  translatable="false">ٹیلی فون</string>
+    <string  name="rb_Q1414_6"  translatable="false">موبائل</string>
+    <string  name="rb_Q1414_7"  translatable="false">کمپیوٹر</string>
+    <string  name="rb_Q1414_8"  translatable="false">سائیکل</string>
+    <string  name="rb_Q1414_9"  translatable="false">موٹر سائیکل</string>
+    <string  name="rb_Q1414_10"  translatable="false">گاڑی یا ٹرک</string>
     <string  name="rb_Q1415_1"  translatable="false">	 گھر میں میونسپل کمیٹی کا نلکا	</string>
     <string  name="rb_Q1415_2"  translatable="false">	صحن/گھر کے باہر میونسپل کمیٹی کا نلکا	</string>
     <string  name="rb_Q1415_3"  translatable="false">	پڑوسی کے گھر میونسپل کمیٹی کا نلکا	</string>
@@ -353,7 +359,7 @@
     <string  name="rb_Q1503_12"  translatable="false">	پیدائش کروانے میں مددگار(وضاحت کریں)	</string>
     <string  name="rb_Q1503_OTM"  translatable="false">	کوئی اور مرد (وضاحت کریں)	</string>
     <string  name="rb_Q1503_OTF"  translatable="false">	کوئی اور عورت(وضاحت کریں) 	</string>
-    <string  name="rb_Q1503_OT"  translatable="false">	کوئی اور عورت(وضاحت کریں) 	</string>
+    <string  name="rb_Q1503_OT"  translatable="false">	کوئی اور عورت/مرد (وضاحت کریں) 	</string>
     <string  name="rb_Q1601_1"  translatable="false">	مرد	</string>
     <string  name="rb_Q1601_2"  translatable="false">	عورت	</string>
     <string  name="rb_Q1601_DK"  translatable="false">	معلوم نہیں	</string>
@@ -826,9 +832,7 @@
     <string  name="rb_A4010_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="ed_A4011"  translatable="false">		</string>
     <string  name="ed_A4012"  translatable="false">		</string>
-    <string  name="day"  translatable="false">دن</string>
-    <string  name="month"  translatable="false">	مہینہ 	</string>
-    <string  name="year"  translatable="false">	سال	</string>
+
     <string  name="rb_A4013u_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_A4013u_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="ed_A4013d"  translatable="false">		</string>
@@ -2126,21 +2130,22 @@
     <string  name="txt_N2076"  translatable="false">	جیسا کہ آپ نے مجھے شروع میں بتایا کہ بچہ   "جائے پیدائش نام ۔۔۔۔۔۔۔۔۔"  میں  پیدا ہو ا  تھا؟تو کس نے   فیصلہ کیا کہ یہ (ہیلتھ   پروائڈریا ہسپتال)  بچے کی پیدائش  کی  صحیح جگہ ہے ؟	:	N2076	</string>
     <string  name="txt_N2077"  translatable="false">	اگر اس کی زچگی نہیں ہو ئی  یا اس نے ہیلتھ مہیا کرنے والے  کے پاس یا مرکز صحت میں زچگی کروانے کی کوشش نہیں کی    (N2006=12 or N2006=1-2 and N2008≠1-3). تو  پوچھو : کیا (آپ / ماں ( کو  کوئی تشویش/مسئلہ تھا جس کی وجہ سے (آپ /اس) نے ہیلتھ مہیا کرنے والے یا  مرکز صحت پر زچگی کروانے سے روکا ۔	:	N2077	</string>
     <string  name="txt_N2078"  translatable="false">	وہ کیا خدشات یا مشکلات  تھیں جو  (آپ/وہ) رکھتی تھیں؟	:	N2078	</string>
-    <string  name="txt_N2080_1"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد  جھٹکے کی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_1	</string>
-    <string  name="txt_N2080_2"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد   خ بلندفشار خون کی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_2	</string>
-    <string  name="txt_N2080_3"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد   شدید خون کی کمی اور سانس لینے میں مشکل   کی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_3	</string>
-    <string  name="txt_N2080_4"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد   شوگر کی بیماری  کی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_4	</string>
-    <string  name="txt_N2080_5"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد     شدید سرکادرد کی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_5	</string>
-    <string  name="txt_N2080_6"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعددھندلا   پن  کی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_6	</string>
-    <string  name="txt_N2080_7"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعداتنی کمزوری کہ بستر سے نہ اٹھ سکنا  کی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_7	</string>
-    <string  name="txt_N2080_8"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعدپیٹ میں شدید درد ((لیبر یا زچگی کے  درد نہیں )  کی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_8	</string>
-    <string  name="txt_N2080_9"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد تیز یا سانس لینے میں تکلیف ہونا کی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_9	</string>
-    <string  name="txt_N2080_10"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد منہ پر سوجن  کی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_10	</string>
-    <string  name="txt_N2080_11"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد لیبر   یا زچگی شروع ہونے سے پہلے  اندام نہانی سے خون کا خارج ہونا کی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_11	</string>
-    <string  name="txt_N2080_12"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد بخار  کی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_12	</string>
-    <string  name="txt_N2080_13"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد  بچے دانی سے گندا اور بدبودار مواد کا خارج ہوناکی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_13	</string>
-    <string  name="txt_N2080_14"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد  زچگی شروع ہونے سے  6 گھنٹہ یا اس سے زیادہ  پہلے پانی کی تھیلی کا پھٹنا کی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_14	</string>
-    <string  name="txt_N2080_15"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد دیگر علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080_15	</string>
+    <string  name="txt_N2080"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد  مندرجہ ذیل میں سے کسی علامات بچہ کی پیدائش کے بعد    3 ماہ کے اندر شروع ہوئی تھی؟	:	N2080	</string>
+    <string  name="txt_N2080_1"  translatable="false">	  جھٹکے؟	:	N2080_1	</string>
+    <string  name="txt_N2080_2"  translatable="false">	 بلندفشار خون ؟	:	N2080_2	</string>
+    <string  name="txt_N2080_3"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد   شدید خون کی کمی اور سانس لینے میں مشکل   ؟	:	N2080_3	</string>
+    <string  name="txt_N2080_4"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد   شوگر کی بیماری  ؟	:	N2080_4	</string>
+    <string  name="txt_N2080_5"  translatable="false">	 شدید سرکادرد ؟	:	N2080_5	</string>
+    <string  name="txt_N2080_6"  translatable="false">	دھندلاپن  ؟	:	N2080_6	</string>
+    <string  name="txt_N2080_7"  translatable="false">	اتنی کمزوری کہ بستر سے نہ اٹھ سکنا  ؟	:	N2080_7	</string>
+    <string  name="txt_N2080_8"  translatable="false">	پیٹ میں شدید درد ((لیبر یا زچگی کے  درد نہیں ) ؟	:	N2080_8	</string>
+    <string  name="txt_N2080_9"  translatable="false">	 تیز یا سانس لینے میں تکلیف ہونا  ؟	:	N2080_9	</string>
+    <string  name="txt_N2080_10"  translatable="false">	منہ پر سوجن؟	:	N2080_10	</string>
+    <string  name="txt_N2080_11"  translatable="false">	 لیبر   یا زچگی شروع ہونے سے پہلے  اندام نہانی سے خون کا خارج ہونا؟	:	N2080_11	</string>
+    <string  name="txt_N2080_12"  translatable="false">	بخار؟	:	N2080_12	</string>
+    <string  name="txt_N2080_13"  translatable="false">	بچے دانی سے گندا اور بدبودار مواد کا خارج ہونا؟	:	N2080_13	</string>
+    <string  name="txt_N2080_14"  translatable="false">	زچگی شروع ہونے سے  6 گھنٹہ یا اس سے زیادہ  پہلے پانی کی تھیلی کا پھٹنا؟	:	N2080_14	</string>
+    <string  name="txt_N2080_15"  translatable="false">	 دیگر علامات ؟	:	N2080_15	</string>
     <string  name="txt_N2081"  translatable="false">	کیا ( آپ /ماں )  نے  کسی بھی شخص یا صحت مرکز سے    حمل کی کسی بھی علامت یا نشانیوں کی دیکھ بھال کے بارے میں مشورہ کیا تھا  جو   زچگی شروع ہونے  سے پہلے رونما ہو ئی ہوں؟	:	N2081	</string>
     <string  name="txt_N2082"  translatable="false">	کہاں سے ( آپ /ماں )  نے یہ مدد حاصل کی  ؟	:	N2082	</string>
     <string  name="txt_N2083"  translatable="false">	کیا زچگی کا عمل شروع ہونے سے پہلے کو ئی مخصوص علامت یا علامتیں رونما    ہو ئیں جس کے لئے   (آپ /ماں ) صحت مہیا کرنے والے(پہلے) کے پاس گئیں  تھی؟	:	N2083	</string>
@@ -2361,43 +2366,46 @@
     <string  name="txt_N2302"  translatable="false">	گھر کا پتہ کیا ہے  جہاں (آپ /ماں ) رہتے تھے ؟	:	N2302	</string>
     <string  name="txt_N2303"  translatable="false">	جب بیماری شروع ہوئی تو کتنے عرصے سے (آپ/ماں/آپ کے رشتہ دار /ماں کے رشتہ دار) (نام) (نام کے رشتہ دار ) مسلسل اسی کمیونٹی میں رہ  رہے تھے؟	:	N2303	</string>
     <string  name="txt_N2304"  translatable="false">	ہنگامی صورتحال میں  اس  مقام سے قریبی صحت کی سہولت تک پہنچے کے لیے کتنا وقت لگتا ہے؟	:	N2304	</string>
-    <string  name="txt_N2311_1"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے تعلیم /اسکول میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_1	</string>
-    <string  name="txt_N2311_2"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے  صحت کی سہولتات /کلینک میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_2	</string>
-    <string  name="txt_N2311_3"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے  ملازمت کے مواقع میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_3	</string>
-    <string  name="txt_N2311_4"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے  کریڈٹ فنانس  میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_4	</string>
-    <string  name="txt_N2311_5"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے  سڑک میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_5	</string>
-    <string  name="txt_N2311_6"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے عوامی نقل و حمل  میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_6	</string>
-    <string  name="txt_N2311_7"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے  پانی کی تقسیم  میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_7	</string>
-    <string  name="txt_N2311_8"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے  صفائی کی خدمات میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_8	</string>
-    <string  name="txt_N2311_9"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے  زراعت  میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_9	</string>
-    <string  name="txt_N2311_10"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے  جسٹس/تصادم حل  میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_10	</string>
-    <string  name="txt_N2311_11"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے  سیکٹرٹری/پولیس کی خدمات  میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_11	</string>
-    <string  name="txt_N2311_12"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے  مسجد/گر جا گھر /مند میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_12	</string>
-    <string  name="txt_N2311_OT"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے   دیگر میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_13	</string>
-    <string  name="txt_N2311_14"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے   دیگر وضاحت میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311_14	</string>
-    <string  name="txt_N2312_1"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نےپیشہ وارانہ تربیتی گروپ  میں سرگرمی سے حصہ لیا تھا؟	:	N2312_1	</string>
-    <string  name="txt_N2312_2"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے بچت گروپ یا مائیکرو کریڈٹ پروگرام میں سرگرمی سے حصہ لیا تھا؟	:	N2312_2	</string>
-    <string  name="txt_N2312_3"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے کمیونٹی کا تعاون جیسے زراعی تعاون میں سرگرمی سے حصہ لیا تھا؟	:	N2312_3	</string>
-    <string  name="txt_N2312_4"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے سیاسی گروپ میں سرگرمی سے حصہ لیا تھا؟	:	N2312_4	</string>
-    <string  name="txt_N2312_5"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے مذہبی گروپ میں سرگرمی سے حصہ لیا تھا؟	:	N2312_5	</string>
-    <string  name="txt_N2312_6"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے کھیل کا کلب میں سرگرمی سے حصہ لیا تھا؟	:	N2312_6	</string>
-    <string  name="txt_N2312_7"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے نوجوان /طلب علم کلب میں سرگرمی سے حصہ لیا تھا؟	:	N2312_7	</string>
-    <string  name="txt_N2312_8"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے خواتین کے گروپ میں سرگرمی سے حصہ لیا تھا؟	:	N2312_8	</string>
-    <string  name="txt_N2312_OT"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے دیگر گروپس میں سرگرمی سے حصہ لیا تھا؟	:	N2312_9	</string>
-    <string  name="txt_N2312_10"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے مندرجہ ذیل کوڈگروپس میں سرگرمی سے حصہ لیا تھا؟	:	N2312_10	</string>
-    <string  name="txt_N2313_1"  translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں  مذہبی گروپ لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_1	</string>
-    <string  name="txt_N2313_2"  translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں  عوتوں کا گروپ لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_2	</string>
-    <string  name="txt_N2313_3"  translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں  بچت کا گروپ یا مائیکرو کریڈٹ پروگر لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_3	</string>
-    <string  name="txt_N2313_4"  translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں  کوئی  اورکمیونٹی گروپ جیسا کہ پیشہ ورانہ تربیت کا گروپ کمیونٹی تعاون ،سیاسی گروپ ،کھیلوں کا کلب, نوجوانوں یا طالب علموں کا گروپ لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_4	</string>
-    <string  name="txt_N2313_5"  translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں  کمیونٹی      یاسیاسی لیڈر لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_5	</string>
-    <string  name="txt_N2313_6"  translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں مذہبی لیڈر  لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_6	</string>
-    <string  name="txt_N2313_7"  translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں  خاندان  لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_7	</string>
-    <string  name="txt_N2313_8"  translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں  پڑوسی  لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_8	</string>
-    <string  name="txt_N2313_9"  translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں  دوست  لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_9	</string>
-    <string  name="txt_N2313_10"  translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں  سرپرست /مالک محسن  لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_10	</string>
-    <string  name="txt_N2313_11"  translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں  پولیس  لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_11	</string>
-    <string  name="txt_N2313_OT"  translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں  دیگر  لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_OT	</string>
-    <string  name="txt_N2313_13"  translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں مندرجہ ذیل   کوڈ لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_13	</string>
+    <string  name="txt_N2311"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے تعلیم /اسکول میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311	</string>
+    <string  name="txt_N2311_1"  translatable="false">	تعلیم /اسکول؟	:	N2311_1	</string>
+    <string  name="txt_N2311_2"  translatable="false">	صحت کی سہولتات /کلینک؟	:	N2311_2	</string>
+    <string  name="txt_N2311_3"  translatable="false">	ملازمت کے مواقع؟	:	N2311_3	</string>
+    <string  name="txt_N2311_4"  translatable="false">	کریڈٹ فنانس؟	:	N2311_4	</string>
+    <string  name="txt_N2311_5"  translatable="false">	سڑک؟	:	N2311_5	</string>
+    <string  name="txt_N2311_6"  translatable="false">	عوامی نقل و حمل؟	:	N2311_6	</string>
+    <string  name="txt_N2311_7"  translatable="false">	پانی کی تقسیم؟	:	N2311_7	</string>
+    <string  name="txt_N2311_8"  translatable="false">	صفائی کی خدمات؟	:	N2311_8	</string>
+    <string  name="txt_N2311_9"  translatable="false">	زراعت؟	:	N2311_9	</string>
+    <string  name="txt_N2311_10"  translatable="false">	جسٹس/تصادم حل؟	:	N2311_10	</string>
+    <string  name="txt_N2311_11"  translatable="false">	سیکٹرٹری/پولیس کی خدمات؟	:	N2311_11	</string>
+    <string  name="txt_N2311_12"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے  مسجد/ گرجا گھر /مندر؟	:	N2311_12	</string>
+    <string  name="txt_N2311_OT"  translatable="false">	دیگر؟	:	N2311_13	</string>
+    <string  name="txt_N2311_14"  translatable="false">	دیگر وضاحت؟	:	N2311_14	</string>
+    <string  name="txt_N2312"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نےپیشہ وارانہ تربیتی گروپ  میں سرگرمی سے حصہ لیا تھا؟	:	N2312_1	</string>
+    <string  name="txt_N2312_1"  translatable="false">	پیشہ وارانہ تربیتی گروپ؟	:	N2312_1	</string>
+    <string  name="txt_N2312_2"  translatable="false">	 بچت گروپ یا مائیکرو کریڈٹ پروگرام؟	:	N2312_2	</string>
+    <string  name="txt_N2312_3"  translatable="false">	کمیونٹی کا تعاون جیسے زراعی تعاون؟	:	N2312_3	</string>
+    <string  name="txt_N2312_4"  translatable="false">	سیاسی گروپ؟	:	N2312_4	</string>
+    <string  name="txt_N2312_5"  translatable="false">	  مذہبی گروپ؟	:	N2312_5	</string>
+    <string  name="txt_N2312_6"  translatable="false">	  کھیل کا کلب ؟	:	N2312_6	</string>
+    <string  name="txt_N2312_7"  translatable="false">	  نوجوان /طلب علم کلب؟	:	N2312_7	</string>
+    <string  name="txt_N2312_8"  translatable="false">	  خواتین کے گروپ؟	:	N2312_8	</string>
+    <string  name="txt_N2312_OT"  translatable="false">	  دیگر گروپس؟	:	N2312_9	</string>
+    <string  name="txt_N2312_10"  translatable="false">	  مندرجہ ذیل کوڈگروپس؟	:	N2312_10	</string>
+    <string  name="txt_N2313"  translatable="false">	مذہبی گروپ ؟	:	N2313	</string>
+    <string  name="txt_N2313_1"  translatable="false">	مذہبی گروپ ؟	:	N2313_1	</string>
+    <string  name="txt_N2313_2"  translatable="false">	عوتوں کا گروپ ؟	:	N2313_2	</string>
+    <string  name="txt_N2313_3"  translatable="false">	بچت کا گروپ یا مائیکرو کریڈٹ پروگر ؟	:	N2313_3	</string>
+    <string  name="txt_N2313_4"  translatable="false">	کوئی  اور کمیونٹی گروپ جیسا کہ پیشہ ورانہ تربیت کا گروپ کمیونٹی تعاون ،سیاسی گروپ ،کھیلوں کا کلب, نوجوانوں یا طالب علموں کا گروپ ؟	:	N2313_4	</string>
+    <string  name="txt_N2313_5"  translatable="false">	کمیونٹی یا سیاسی لیڈر؟	:	N2313_5	</string>
+    <string  name="txt_N2313_6"  translatable="false">	مذہبی لیڈر  ؟	:	N2313_6	</string>
+    <string  name="txt_N2313_7"  translatable="false">	خاندان  ؟	:	N2313_7	</string>
+    <string  name="txt_N2313_8"  translatable="false">	پڑوسی  ؟	:	N2313_8	</string>
+    <string  name="txt_N2313_9"  translatable="false">	دوست ؟	:	N2313_9	</string>
+    <string  name="txt_N2313_10"  translatable="false">	سرپرست /مالک محسن  ؟	:	N2313_10	</string>
+    <string  name="txt_N2313_11"  translatable="false">	پولیس  ؟	:	N2313_11	</string>
+    <string  name="txt_N2313_OT"  translatable="false">	دیگر  ؟	:	N2313_OT	</string>
+    <string  name="txt_N2313_13"  translatable="false">	مندرجہ ذیل   کوڈ ؟	:	N2313_13	</string>
     <string  name="txt_N2314"  translatable="false">	کیاکبھی بچہ کا HIV ٹیسٹ مثبت(ve+) آیا تھا؟	:	N2314	</string>
     <string  name="txt_N2315"  translatable="false">	کیا کسی ماہر صحت کنندہ نے بچہ کو ایڈز کی  بیماری تشخیص کی تھی ؟	:	N2315	</string>
     <string  name="txt_N2316"  translatable="false">	کیا (آپ /بچہ کی حقیقی ماں) کا کبھی ایڈز کا ٹیسٹ مثبت (+ve) آیا تھا؟	:	N2316	</string>

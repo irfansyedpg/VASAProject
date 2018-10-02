@@ -344,12 +344,12 @@
                     <TextView
                         android:id="@+id/txt_Q1206_d"
                         style="@style/TextView"
-                        android:text="Days" />
+                        android:text="@string/days" />
 
                     <EditText
                         android:id="@+id/ed_Q1206_d"
                         style="@style/EditText_number"
-                        android:hint="Days"/>
+                        android:hint="@string/days"/>
 
 
                 </LinearLayout>
@@ -368,13 +368,13 @@
                     <TextView
                         android:id="@+id/txt_Q1206_m"
                         style="@style/TextView"
-                        android:text="Months" />
+                        android:text="@string/months" />
 
 
                     <EditText
                         android:id="@+id/ed_Q1206_m"
                         style="@style/EditText_number"
-                        android:hint="Months" />
+                        android:hint="@string/months" />
 
 
                 </LinearLayout>
@@ -392,13 +392,13 @@
                     <TextView
                         android:id="@+id/txt_Q1206_y"
                         style="@style/TextView"
-                        android:text="Year" />
+                        android:text="@string/years" />
 
 
                     <EditText
                         android:id="@+id/ed_Q1206_y"
                         style="@style/EditText_number"
-                        android:hint="Year" />
+                        android:hint="@string/years" />
 
 
                 </LinearLayout>
@@ -837,12 +837,12 @@
                         <RadioButton
                             android:id="@+id/rb_Q1403_13"
                             style="@style/RadioButton"
-                            android:text="Other Male (specify)" />
+                            android:text="@string/rb_Q1403_OTM" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1403_14"
                             style="@style/RadioButton"
-                            android:text="Other Female (specify)" />
+                            android:text="@string/rb_Q1403_OTF" />
 
                     </RadioGroup>
 
@@ -861,7 +861,7 @@
                     <EditText
                         android:id="@+id/ed_Q1403_OT"
                         style="@style/EditText_varchar"
-                        android:hint="Q1403: Other (specify)" />
+                        android:hint="@string/ed_Q1403_OT" />
 
                 </LinearLayout>
 
@@ -1212,24 +1212,24 @@
                     <TextView
                         android:id="@+id/txt_Q1414_1"
                         style="@style/TextView"
-                        android:text="@string/txt_Q1414_1" />
+                        android:text="@string/rb_Q1414_1" />
 
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_1_1"
                             style="@style/RadioButton"
-                            android:text="Yes" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_1_2"
                             style="@style/RadioButton"
-                            android:text="No" />
+                            android:text="@string/no" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_1_DK"
                             style="@style/RadioButton"
-                            android:text="Don't Know" />
+                            android:text="@string/dnt" />
 
                     </RadioGroup>
 
@@ -1249,24 +1249,24 @@
                     <TextView
                         android:id="@+id/txt_Q1414_2"
                         style="@style/TextView"
-                        android:text="@string/txt_Q1414_2" />
+                        android:text="@string/rb_Q1414_2" />
 
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_2_1"
                             style="@style/RadioButton"
-                            android:text="Yes" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_2_2"
                             style="@style/RadioButton"
-                            android:text="No" />
+                            android:text="@string/no" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_2_DK"
                             style="@style/RadioButton"
-                            android:text="Don't Know" />
+                            android:text="@string/dnt" />
 
                     </RadioGroup>
 
@@ -1286,24 +1286,24 @@
                     <TextView
                         android:id="@+id/txt_Q1414_3"
                         style="@style/TextView"
-                        android:text="@string/txt_Q1414_3" />
+                        android:text="@string/rb_Q1414_3" />
 
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_3_1"
                             style="@style/RadioButton"
-                            android:text="Yes" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_3_2"
                             style="@style/RadioButton"
-                            android:text="No" />
+                            android:text="@string/no" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_3_DK"
                             style="@style/RadioButton"
-                            android:text="Don't Know" />
+                            android:text="@string/dnt" />
 
                     </RadioGroup>
 
@@ -1323,24 +1323,24 @@
                     <TextView
                         android:id="@+id/txt_Q1414_4"
                         style="@style/TextView"
-                        android:text="@string/txt_Q1414_4" />
+                        android:text="@string/rb_Q1414_4" />
 
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_4_1"
                             style="@style/RadioButton"
-                            android:text="Yes" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_4_2"
                             style="@style/RadioButton"
-                            android:text="No" />
+                            android:text="@string/no" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_4_DK"
                             style="@style/RadioButton"
-                            android:text="Don't Know" />
+                            android:text="@string/dnt" />
 
                     </RadioGroup>
 
@@ -1360,24 +1360,24 @@
                     <TextView
                         android:id="@+id/txt_Q1414_5"
                         style="@style/TextView"
-                        android:text="@string/txt_Q1414_5" />
+                        android:text="@string/rb_Q1414_5" />
 
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_5_1"
                             style="@style/RadioButton"
-                            android:text="Yes" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_5_2"
                             style="@style/RadioButton"
-                            android:text="No" />
+                            android:text="@string/no" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_5_DK"
                             style="@style/RadioButton"
-                            android:text="Don't Know" />
+                            android:text="@string/dnt" />
 
                     </RadioGroup>
 
@@ -1397,24 +1397,24 @@
                     <TextView
                         android:id="@+id/txt_Q1414_6"
                         style="@style/TextView"
-                        android:text="@string/txt_Q1414_6" />
+                        android:text="@string/rb_Q1414_6" />
 
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_6_1"
                             style="@style/RadioButton"
-                            android:text="Yes" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_6_2"
                             style="@style/RadioButton"
-                            android:text="No" />
+                            android:text="@string/no" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_6_DK"
                             style="@style/RadioButton"
-                            android:text="Don't Know" />
+                            android:text="@string/dnt" />
 
                     </RadioGroup>
 
@@ -1434,24 +1434,24 @@
                     <TextView
                         android:id="@+id/txt_Q1414_7"
                         style="@style/TextView"
-                        android:text="@string/txt_Q1414_7" />
+                        android:text="@string/rb_Q1414_7" />
 
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_7_1"
                             style="@style/RadioButton"
-                            android:text="Yes" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_7_2"
                             style="@style/RadioButton"
-                            android:text="No" />
+                            android:text="@string/no" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_7_DK"
                             style="@style/RadioButton"
-                            android:text="Don't Know" />
+                            android:text="@string/dnt" />
 
                     </RadioGroup>
 
@@ -1470,24 +1470,24 @@
                     <TextView
                         android:id="@+id/txt_Q1414_8"
                         style="@style/TextView"
-                        android:text="@string/txt_Q1414_8" />
+                        android:text="@string/rb_Q1414_8" />
 
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_8_1"
                             style="@style/RadioButton"
-                            android:text="Yes" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_8_2"
                             style="@style/RadioButton"
-                            android:text="No" />
+                            android:text="@string/no" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_8_DK"
                             style="@style/RadioButton"
-                            android:text="Don't Know" />
+                            android:text="@string/dnt" />
 
                     </RadioGroup>
 
@@ -1507,24 +1507,24 @@
                     <TextView
                         android:id="@+id/txt_Q1414_9"
                         style="@style/TextView"
-                        android:text="@string/txt_Q1414_9" />
+                        android:text="@string/rb_Q1414_9" />
 
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_9_1"
                             style="@style/RadioButton"
-                            android:text="Yes" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_9_2"
                             style="@style/RadioButton"
-                            android:text="No" />
+                            android:text="@string/no" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_9_DK"
                             style="@style/RadioButton"
-                            android:text="Don't Know" />
+                            android:text="@string/dnt" />
 
                     </RadioGroup>
 
@@ -1544,24 +1544,24 @@
                     <TextView
                         android:id="@+id/txt_Q1414_10"
                         style="@style/TextView"
-                        android:text="@string/txt_Q1414_10" />
+                        android:text="@string/rb_Q1414_10" />
 
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_10_1"
                             style="@style/RadioButton"
-                            android:text="Yes" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_10_2"
                             style="@style/RadioButton"
-                            android:text="No" />
+                            android:text="@string/no" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1414_10_DK"
                             style="@style/RadioButton"
-                            android:text="Don't Know" />
+                            android:text="@string/dnt" />
 
                     </RadioGroup>
 
@@ -1710,7 +1710,7 @@
                         <RadioButton
                             android:id="@+id/rb_Q1416_8"
                             style="@style/RadioButton"
-                            android:text="Other (specify)" />
+                            android:text="@string/ed_Q1416_OT" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1416_DK"
@@ -1734,7 +1734,7 @@
                     <EditText
                         android:id="@+id/ed_Q1416_OT"
                         style="@style/EditText_varchar"
-                        android:hint="Q1416 : Other (specify)" />
+                        android:hint="@string/ed_Q1416_OT" />
 
                 </LinearLayout>
 
@@ -1798,7 +1798,7 @@
                         <RadioButton
                             android:id="@+id/rb_Q1417_9"
                             style="@style/RadioButton"
-                            android:text="Other (specify)" />
+                            android:text="@string/rb_Q1417_OT" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1417_DK"
@@ -1822,7 +1822,7 @@
                     <EditText
                         android:id="@+id/ed_Q1417_OT"
                         style="@style/EditText_varchar"
-                        android:hint="Q1417 : Other (specify)" />
+                        android:hint="@string/rb_Q1417_OT" />
 
                 </LinearLayout>
 
@@ -1886,7 +1886,7 @@
                         <RadioButton
                             android:id="@+id/rb_Q1418_9"
                             style="@style/RadioButton"
-                            android:text="Other (specify)" />
+                            android:text="@string/ot" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1418_DK"
@@ -1910,7 +1910,7 @@
                     <EditText
                         android:id="@+id/ed_Q1418_OT"
                         style="@style/EditText_varchar"
-                        android:hint="Q1418 : Other (specify)" />
+                        android:hint="@string/explain" />
 
                 </LinearLayout>
 
@@ -1969,7 +1969,7 @@
                         <RadioButton
                             android:id="@+id/rb_Q1419_8"
                             style="@style/RadioButton"
-                            android:text="Other (specify)" />
+                            android:text="@string/ot"/>
 
                         <RadioButton
                             android:id="@+id/rb_Q1419_DK"
@@ -1993,7 +1993,7 @@
                     <EditText
                         android:id="@+id/ed_Q1419_OT"
                         style="@style/EditText_varchar"
-                        android:hint="Q1419 : Other (specify)" />
+                        android:hint="@string/explain" />
 
                 </LinearLayout>
 
@@ -2048,7 +2048,7 @@
                         <RadioButton
                             android:id="@+id/rb_Q1420_7"
                             style="@style/EditText_varchar"
-                            android:text="Other (specify)" />
+                            android:text="@string/ot" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1420_DK"
@@ -2072,7 +2072,7 @@
                     <EditText
                         android:id="@+id/ed_Q1420_OT"
                         style="@style/EditText_varchar"
-                        android:hint="Q1420 : Other (specify)" />
+                        android:hint="@string/explain" />
 
                 </LinearLayout>
 
@@ -2142,7 +2142,7 @@
                         <RadioButton
                             android:id="@+id/rb_Q1421_10"
                             style="@style/RadioButton"
-                            android:hint="Other (specify)" />
+                            android:hint="@string/ot" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1421_DK"
@@ -2166,7 +2166,7 @@
                     <EditText
                         android:id="@+id/ed_Q1421_OT"
                         style="@style/EditText_varchar"
-                        android:hint="Q1421 : Other (specify)" />
+                        android:hint="@string/explain" />
 
                 </LinearLayout>
 
@@ -2191,12 +2191,12 @@
                         <RadioButton
                             android:id="@+id/rb_Q1501_1"
                             style="@style/RadioButton"
-                            android:text="@string/rb_Q1501_1" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1501_2"
                             style="@style/RadioButton"
-                            android:text="@string/rb_Q1501_2" />
+                            android:text="@string/no" />
 
                     </RadioGroup>
 
@@ -2305,12 +2305,12 @@
                         <RadioButton
                             android:id="@+id/rb_Q1503_13"
                             style="@style/RadioButton"
-                            android:text="Other Male (specify)" />
+                            android:text="@string/rb_Q1503_OTM" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1503_14"
                             style="@style/RadioButton"
-                            android:text="Other Female (specify)" />
+                            android:text="@string/rb_Q1503_OTF" />
 
                     </RadioGroup>
 
@@ -2329,7 +2329,7 @@
                     <EditText
                         android:id="@+id/ed_Q1503_OT"
                         style="@style/EditText_varchar"
-                        android:hint="Q1503 : Other (specify)" />
+                        android:hint="@string/rb_Q1503_OT" />
 
                 </LinearLayout>
 
@@ -2364,7 +2364,7 @@
                         <RadioButton
                             android:id="@+id/rb_Q1601_DK"
                             style="@style/RadioButton"
-                            android:text="@string/rb_Q1601_DK" />
+                            android:text="@string/dnt"/>
 
                     </RadioGroup>
 
@@ -2391,17 +2391,17 @@
                         <RadioButton
                             android:id="@+id/rb_Q1602_1"
                             style="@style/RadioButton"
-                            android:text="@string/rb_Q1602_1" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1602_2"
                             style="@style/RadioButton"
-                            android:text="@string/rb_Q1602_2" />
+                            android:text="@string/no" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1602_DK"
                             style="@style/RadioButton"
-                            android:text="@string/rb_Q1602_DK" />
+                            android:text="@string/dnt" />
 
                     </RadioGroup>
 
@@ -2474,7 +2474,7 @@
                         <RadioButton
                             android:id="@+id/rb_Q1604_5"
                             style="@style/RadioButton"
-                            android:text="Other (specify)" />
+                            android:text="@string/ot" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1604_DK"
@@ -2498,7 +2498,7 @@
                     <EditText
                         android:id="@+id/ed_Q1604_OT"
                         style="@style/EditText_varchar"
-                        android:hint="Q1604 : Other (specify)" />
+                        android:hint="@string/explain" />
 
                 </LinearLayout>
 
@@ -2523,12 +2523,12 @@
                         <RadioButton
                             android:id="@+id/rb_Q1605_1"
                             style="@style/RadioButton"
-                            android:text="@string/rb_Q1605_1" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1605_2"
                             style="@style/RadioButton"
-                            android:text="@string/rb_Q1605_2" />
+                            android:text="@string/no" />
 
                     </RadioGroup>
 
@@ -2595,7 +2595,7 @@
                     <CheckBox
                         android:id="@+id/cb_Q1607_conflict"
                         style="@style/CheckBox"
-                        android:text="Conflict" />
+                        android:text="@string/conflict" />
 
 
                 </LinearLayout>
@@ -2724,7 +2724,7 @@
                 android:id="@+id/btn_next"
                 style="@style/Button_collder"
                 android:layout_margin="10dp"
-                android:text="Next" />
+                android:text="@string/next"/>
 
         </LinearLayout>
 
