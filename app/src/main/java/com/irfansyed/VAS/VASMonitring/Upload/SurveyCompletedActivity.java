@@ -2164,7 +2164,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
                                 }
                             }
-                            
+
                             if (i == 2) {
                                 try {
 
@@ -2241,7 +2241,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                     e.printStackTrace();
                                 }
                             }
-                            
+
                             if (i == 5) {
                                 try {
 
@@ -2266,7 +2266,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                     e.printStackTrace();
                                 }
                             }
-                            
+
                             if (i == 6) {
                                 try {
 
@@ -2291,7 +2291,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                     e.printStackTrace();
                                 }
                             }
-                            
+
                             if (i == 7) {
                                 try {
 
