@@ -194,32 +194,32 @@
 
                     <EditText
                         android:id="@+id/ed_Q1201_1"
-                        style="@style/EditText_number"
+                        style="@style/EditText_varchar"
                         android:hint="Province" />
 
                     <EditText
                         android:id="@+id/ed_Q1201_2"
-                        style="@style/EditText_number"
+                        style="@style/EditText_varchar"
                         android:hint="District" />
 
                     <EditText
                         android:id="@+id/ed_Q1201_3"
-                        style="@style/EditText_number"
+                        style="@style/EditText_varchar"
                         android:hint="Admin Post" />
 
                     <EditText
                         android:id="@+id/ed_Q1201_4"
-                        style="@style/EditText_number"
+                        style="@style/EditText_varchar"
                         android:hint="Locality" />
 
                     <EditText
                         android:id="@+id/ed_Q1201_5"
-                        style="@style/EditText_number"
+                        style="@style/EditText_varchar"
                         android:hint="Community" />
 
                     <EditText
                         android:id="@+id/ed_Q1201_6"
-                        style="@style/EditText_number"
+                        style="@style/EditText_varchar"
                         android:hint="EA" />
 
 

@@ -49,14 +49,14 @@ public class N2012_N2016 extends AppCompatActivity {
         Global.N.N2012_N2016 n2012 = new Global.N.N2012_N2016();
 
         n2012.setN2012(bi.rbN20121.isChecked() ? "1" : bi.rbN20122.isChecked() ? "2" : bi.rbN2012DK.isChecked() ? "9"
-                : bi.rbN2012RA.isChecked() ? "8" : "0");
+                : bi.rbN2012RA.isChecked() ? "8" : "-1");
         n2012.setN2013(bi.rbN20131.isChecked() ? "1" : bi.rbN20132.isChecked() ? "2" : bi.rbN2013DK.isChecked() ? "9"
-                : bi.rbN2013RA.isChecked() ? "8" : "0");
+                : bi.rbN2013RA.isChecked() ? "8" : "-1");
         n2012.setN2014(bi.rbN20141.isChecked() ? "1" : bi.rbN20142.isChecked() ? "2" : bi.rbN2014DK.isChecked() ? "9"
-                : bi.rbN2014RA.isChecked() ? "8" : "0");
+                : bi.rbN2014RA.isChecked() ? "8" : "-1");
         n2012.setN2015(bi.rbN20151.isChecked() ? "1" : bi.rbN20152.isChecked() ? "2" : bi.rbN2015DK.isChecked() ? "9"
-                : bi.rbN2015RA.isChecked() ? "8" : "0");
-        n2012.setN2016(bi.rbN20161.isChecked() ? "1" : bi.rbN20162.isChecked() ? "2" : "0");
+                : bi.rbN2015RA.isChecked() ? "8" : "-1");
+        n2012.setN2016(bi.rbN20161.isChecked() ? "1" : bi.rbN20162.isChecked() ? "2" : "-1");
 
         n2012.setSTUDYID(bi.edStudyId.getText().toString());
 
