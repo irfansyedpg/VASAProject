@@ -195,7 +195,7 @@
                         style="@style/Button_collder"
                         android:layout_margin="10dp"
                         android:onClick="@{() -> callback.BtnContinue()}"
-                        android:text="NEXT SECTION" />
+                        android:text="@string/next" />
 
 
                 </android.support.v7.widget.CardView>

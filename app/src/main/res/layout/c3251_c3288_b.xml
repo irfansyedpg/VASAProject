@@ -226,7 +226,7 @@
                         android:layout_weight="1"
                         android:background="@color/black_overlay"
                         android:onClick="@{() -> callback.BtnContinue()}"
-                        android:text="NEXT SECTION"
+                        android:text="@string/next" />
                         android:textColor="@color/white" />
 
                 </LinearLayout>

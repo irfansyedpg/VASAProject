@@ -203,7 +203,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_N(final String study_id) {
 
-        final String ROOT_URL = "http://10.199.13.112/sm/Welcome/collect_N";
+        final String ROOT_URL = "http://192.168.1.12/sm/Welcome/collect_N";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 

@@ -89,6 +89,10 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2080" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/txt_N2080_h" />
+
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -3247,7 +3251,7 @@
                         style="@style/Button_collder"
                         android:layout_margin="10dp"
                         android:onClick="@{() -> callback.BtnContinue()}"
-                        android:text="NEXT SECTION" />
+                        android:text="@string/next" />
 
 
                 </android.support.v7.widget.CardView>

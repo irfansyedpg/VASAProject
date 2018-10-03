@@ -2706,12 +2706,12 @@
                     <EditText
                         android:id="@+id/ed_Q1610_2"
                         style="@style/EditText_number"
-                        android:hint="@string/months" />
+                        android:hint="@string/hours" />
 
                     <EditText
                         android:id="@+id/ed_Q1610_3"
                         style="@style/EditText_number"
-                        android:hint="@string/years" />
+                        android:hint="@string/minutes" />
 
 
                 </LinearLayout>

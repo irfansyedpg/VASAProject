@@ -4693,7 +4693,8 @@ Examples of statements for the reading test:
     <string name="A4275_2">A4275_2: If taken to (all) the referral provider(s), \\nask:   \\nDid you or NAME have to overcome any concerns or problems for him/her to go to a health provider where s/he was referred?</string>
     <string name="ot">Other</string>
     <string name="conflict">Conflict</string>
-    <string name="next">Next</string>
+    <string name="next">NEXT SECTION</string>
+    <string name="no_car_not_needed_given_or_sought_a4254_n_don_t_know_a4284">No - car not needed , given or sought → A4254   Don\'t know → A4284</string>
 
     <!-- Reproductive Urdu TEXT & RESPONSE ENDS -->
 

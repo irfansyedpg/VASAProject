@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import data.LocalDataManager;
@@ -149,6 +150,8 @@ public class A4067_A4080 extends AppCompatActivity implements RadioButton.OnChec
             A4079,
             A4080,
             STATUS;
+
+    int currentSection;
 
     //End DECLARATION
 
@@ -982,5 +985,9 @@ public class A4067_A4080 extends AppCompatActivity implements RadioButton.OnChec
         }
 
         return Gothrough.IamHiden(ll_A4080) != false;
+    }
+
+    public void onBackPressed() {
+        globale.interviewExit(this, this, study_id, currentSection = 4);
     }
 }

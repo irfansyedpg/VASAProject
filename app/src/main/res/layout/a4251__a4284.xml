@@ -63,7 +63,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="No - car not needed , given or sought → A4254 \n Don't know → A4284" />
+                        android:text="@string/no_car_not_needed_given_or_sought_a4254_n_don_t_know_a4284" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -1639,13 +1639,13 @@
                     <CheckBox
                         android:id="@+id/cb_A4276_5"
                         style="@style/CheckBox"
-                        android:text="@string/ot_someone" />
+                        android:text="@string/cb_A4276_5" />
 
                     <EditText
                         android:id="@+id/ed_A4276_5"
                         style="@style/EditText_varchar"
                         android:visibility="gone"
-                        android:hint="@string/ot_someone" />
+                        android:hint="@string/explain" />
 
                     <CheckBox
                         android:id="@+id/cb_A4276_6"
@@ -1700,13 +1700,13 @@
                     <CheckBox
                         android:id="@+id/cb_A4276_16"
                         style="@style/CheckBox"
-                        android:text="@string/ot_other" />
+                        android:text="@string/rb_A4276_OT" />
 
                     <EditText
                         android:id="@+id/ed_A4276_16"
                         style="@style/EditText_varchar"
                         android:visibility="gone"
-                        android:hint="@string/ot_other" />
+                        android:hint="@string/explain" />
 
                     <CheckBox
                         android:id="@+id/cb_A4276_DK"
@@ -2071,7 +2071,7 @@
                     android:id="@+id/btn_next11"
                     style="@style/Button_collder"
                     android:layout_margin="10dp"
-                    android:text="NEXT" />
+                    android:text="@string/next" />
 
             </android.support.v7.widget.CardView>
 

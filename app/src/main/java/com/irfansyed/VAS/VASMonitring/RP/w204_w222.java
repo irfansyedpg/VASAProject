@@ -997,13 +997,16 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
             if(rb_W208_2.isChecked())
             {
                 ll_W209.setVisibility(View.GONE);
+                ll_W210.setVisibility(View.GONE);
                 ClearAllcontrol.ClearAll(ll_W209);
+                ClearAllcontrol.ClearAll(ll_W210);
             }
             else if(rb_W208_1.isChecked())
 
             {
 
                 ll_W209.setVisibility(View.VISIBLE);
+                ll_W210.setVisibility(View.VISIBLE);
 
 
             }

@@ -88,12 +88,12 @@
                             <RadioButton
                                 android:id="@+id/rb_W218_1"
                                 style="@style/RadioButton"
-                                android:text="@string/yes" />
+                                android:text="@string/rb_W218_1" />
 
                             <RadioButton
                                 android:id="@+id/rb_W218_2"
                                 style="@style/RadioButton"
-                                android:text="@string/no" />
+                                android:text="@string/rb_W218_2" />
 
                             <RadioButton
                                 android:id="@+id/rb_W218_3"
