@@ -56,9 +56,9 @@ public class C3251_C3288_A extends AppCompatActivity {
 
         Global.C.C3251_C3288_A_C c3251 = new Global.C.C3251_C3288_A_C();
 
-        c3251.setC32511(bi.rbC325111.isChecked() ? "1" : bi.rbC325112.isChecked() ? "2" : bi.rbC325113.isChecked() ? "3" : bi.rbC32511DK.isChecked() ? "9" : "0");
-        c3251.setC32512(bi.rbC325121.isChecked() ? "1" : bi.rbC325122.isChecked() ? "2" : bi.rbC325123.isChecked() ? "3" : bi.rbC32512DK.isChecked() ? "9" : "0");
-        c3251.setC3252(bi.rbC32521.isChecked() ? "1" : bi.rbC32522.isChecked() ? "2" : bi.rbC3252DK.isChecked() ? "9" : "0");
+        c3251.setC32511(bi.rbC325111.isChecked() ? "1" : bi.rbC325112.isChecked() ? "2" : bi.rbC325113.isChecked() ? "3" : bi.rbC32511DK.isChecked() ? "9" : "-1");
+        c3251.setC32512(bi.rbC325121.isChecked() ? "1" : bi.rbC325122.isChecked() ? "2" : bi.rbC325123.isChecked() ? "3" : bi.rbC32512DK.isChecked() ? "9" : "-1");
+        c3251.setC3252(bi.rbC32521.isChecked() ? "1" : bi.rbC32522.isChecked() ? "2" : bi.rbC3252DK.isChecked() ? "9" : "-1");
 
         c3251.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);

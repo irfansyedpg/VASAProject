@@ -121,10 +121,10 @@ public class C3251_C3288_B extends AppCompatActivity {
 
         Global.C.C3251_C3288_B c3251B = new Global.C.C3251_C3288_B();
 
-        c3251B.setC32531(bi.rbC325311.isChecked() ? "1" : bi.rbC325312.isChecked() ? "2" : bi.rbC325313.isChecked() ? "3" : "0");
+        c3251B.setC32531(bi.rbC325311.isChecked() ? "1" : bi.rbC325312.isChecked() ? "2" : bi.rbC325313.isChecked() ? "3" : "-1");
         c3251B.setC3253(bi.rbC3253A1.isChecked() ? "1" : bi.rbC3253A2.isChecked() ? "2" : bi.rbC3253A3.isChecked() ? "3" : bi.rbC3253A4.isChecked() ? "4"
-                : bi.rbC3253A5.isChecked() ? "5" : bi.rbC3253A6.isChecked() ? "6" : bi.rbC3253A7.isChecked() ? "7" : "0");
-        c3251B.setC32532a(bi.cbC32533E2A.isChecked() ? "1" : "0");
+                : bi.rbC3253A5.isChecked() ? "5" : bi.rbC3253A6.isChecked() ? "6" : bi.rbC3253A7.isChecked() ? "7" : "-1");
+        c3251B.setC32532a(bi.cbC32533E2A.isChecked() ? "1" : "-1");
         c3251B.setC32534(bi.edC32534.getText().toString());
         c3251B.setACT_COUNT(String.valueOf(counter));
         c3251B.setACT_ID_FK(String.valueOf(c3251A_ID));
