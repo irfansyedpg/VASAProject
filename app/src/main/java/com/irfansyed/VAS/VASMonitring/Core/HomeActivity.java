@@ -93,7 +93,10 @@ public class HomeActivity extends AppCompatActivity
                 startActivity(intent);
         }
         if (id == com.irfansyed.VAS.VASMonitring.R.id.stage_1) {
-          intent = new Intent(this, Q1101_Q1610.class);
+
+
+          //intent = new Intent(this, Q1101_Q1610.class);
+            intent = new Intent(this, A4251_A4284.class);
 
 
             intent.putExtra("put_extra", put_extr);
