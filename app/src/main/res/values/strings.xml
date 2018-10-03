@@ -3747,42 +3747,42 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="years_hint"  translatable="false">Enter 1 or more years &amp; don\'t know \'99\'</string>
     <string name="record_days_if_less_than_30_days_if_24_hours_00"  translatable="false"><![CDATA[Record < 30 days, if < 24 hours,  Record 00]]></string>
     <string name="rb_other"  translatable="false">Other</string>
-    <string name="A4451_1"  translatable="false"><![CDATA[A4451_1: In the 12 months before <NAME>\'s death, did the people in the (village / neighborhood) work together on <b>Education/Schools</b> issues that affect the entire community or part of the community?]]></string>
-    <string name="A4451_2"  translatable="false"><![CDATA[A4451_2: In the 12 months before <NAME>\'s death, did the people in the (village / neighborhood) work together on <b>Health Services/Clinics</b> issues that affect the entire community or part of the community?]]></string>
-    <string name="A4451_3"  translatable="false"><![CDATA[A4451_3: In the 12 months before <NAME>\'s death, did the people in the (village / neighborhood) work together on <b>Paid job Opportunities</b> issues that affect the entire community or part of the community?]]></string>
-    <string name="A4451_4"  translatable="false"><![CDATA[A4451_4: In the 12 months before <NAME>\'s death, did the people in the (village / neighbourhood) work together on <b>Credit/Finance</b> issues that affect the entire community or part of the community?]]></string>
-    <string name="A4451_5"  translatable="false"><![CDATA[A4451_5: In the 12 months before <NAME>\'s death, did the people in the (village / neighbourhood) work together on <b>Roads</b> issues that affect the entire community or part of the community?]]></string>
-    <string name="A4451_6"  translatable="false"><![CDATA[A4451_6: In the 12 months before <NAME>\'s death, did the people in the (village / neighbourhood) work together on <b>Public Transportation</b> issues that affect the entire community or part of the community?]]></string>
-    <string name="A4451_7"  translatable="false"><![CDATA[A4451_7: In the 12 months before <NAME>\'s death, did the people in the (village / neighbourhood) work together on <b>Water Distribution</b> issues that affect the entire community or part of the community?]]></string>
-    <string name="A4451_8"  translatable="false"><![CDATA[A4451_8: In the 12 months before <NAME>\'s death, did the people in the (village / neighbourhood) work together on <b>Sanitation Services</b> issues that affect the entire community or part of the community?]]></string>
-    <string name="A4451_9"  translatable="false"><![CDATA[A4451_9: In the 12 months before <NAME>\'s death, did the people in the (village / neighbourhood) work together on <b>Agriculture</b> issues that affect the entire community or part of the community?]]></string>
-    <string name="A4451_10"  translatable="false"><![CDATA[A4451_10: In the 12 months before <NAME>\'s death, did the people in the (village / neighbourhood) work together on <b>Justice/Conflict Resolution</b> issues that affect the entire community or part of the community?]]></string>
-    <string name="A4451_11"  translatable="false"><![CDATA[A4451_11: In the 12 months before <NAME>\'s death, did the people in the (village / neighbourhood) work together on <b>Security/Police services</b> issues that affect the entire community or part of the community?]]></string>
-    <string name="A4451_12"  translatable="false"><![CDATA[A4451_12: In the 12 months before <NAME>\'s death, did the people in the (village / neighbourhood) work together on <b>Mosque/Church/Temple</b> issues that affect the entire community or part of the community?]]></string>
-    <string name="A4451_13"  translatable="false"><![CDATA[A4451_13: In the 12 months before <NAME>\'s death, did the people in the (village / neighbourhood) work together on any <b>OTHER</b> issues that affect the entire community or part of the community?]]></string>
+    <string name="A4451_1"  translatable="false"><![CDATA[A4451_1: Education/Schools?]]></string>
+    <string name="A4451_2"  translatable="false"><![CDATA[A4451_2: Health Services/Clinics?]]></string>
+    <string name="A4451_3"  translatable="false"><![CDATA[A4451_3: Paid job Opportunities?]]></string>
+    <string name="A4451_4"  translatable="false"><![CDATA[A4451_4: Credit/Finance?]]></string>
+    <string name="A4451_5"  translatable="false"><![CDATA[A4451_5: Roads?]]></string>
+    <string name="A4451_6"  translatable="false"><![CDATA[A4451_6: Public Transportation?]]></string>
+    <string name="A4451_7"  translatable="false"><![CDATA[A4451_7: Water Distribution?]]></string>
+    <string name="A4451_8"  translatable="false"><![CDATA[A4451_8: Sanitation Services?]]></string>
+    <string name="A4451_9"  translatable="false"><![CDATA[A4451_9: Agriculture?]]></string>
+    <string name="A4451_10"  translatable="false"><![CDATA[A4451_10: Justice/Conflict Resolution?]]></string>
+    <string name="A4451_11"  translatable="false"><![CDATA[A4451_11: Security/Police services?]]></string>
+    <string name="A4451_12"  translatable="false"><![CDATA[A4451_12: Mosque/Church/Temple?]]></string>
+    <string name="A4451_13"  translatable="false"><![CDATA[A4451_13: Any OTHER?]]></string>
 
-    <string name="A4452_1"  translatable="false"><![CDATA[A4452_1: In the 12 months before <NAME>’s death, was <NAME> an active participant in <u>Vocational training</u> group in the community?]]></string>
-    <string name="A4452_2"  translatable="false"><![CDATA[A4452_2: In the 12 months before <NAME>’s death, was <NAME> an active participant in <u>Savings group or microcredit program groups</u> in the community?]]></string>
-    <string name="A4452_3"  translatable="false"><![CDATA[A4452_3: In the 12 months before <NAME>’s death, was <NAME> an active participant in <u>Community cooperative, such as an agricultural cooperative groups</u> in the community?]]></string>
-    <string name="A4452_4"  translatable="false"><![CDATA[A4452_4: In the 12 months before <NAME>’s death, was <NAME> an active participant in <u>Political groups</u> in the community?]]></string>
-    <string name="A4452_5"  translatable="false"><![CDATA[A4452_5: In the 12 months before <NAME>’s death, was <NAME> an active participant in <u>Religious group</u> in the community?]]></string>
-    <string name="A4452_6"  translatable="false"><![CDATA[A4452_6: In the 12 months before <NAME>’s death, was <NAME> an active participant in <u>Sports Club</u> in the community?]]></string>
-    <string name="A4452_7"  translatable="false"><![CDATA[A4452_7: In the 12 months before <NAME>’s death, was <NAME> an active participant in <u>Youth / Student Club</u> in the community?]]></string>
-    <string name="A4452_8"  translatable="false"><![CDATA[A4452_8: In the 12 months before <NAME>’s death, was <NAME> an active participant in <u>Women’s Group</u> in the community?]]></string>
-    <string name="A4452_9"  translatable="false"><![CDATA[A4452_9: In the 12 months before <NAME>’s death, was <NAME> an active participant in any <u>OTHER</u> types of groups in the community?]]></string>
+    <string name="A4452_1"  translatable="false"><![CDATA[A4452_1: Vocational training?]]></string>
+    <string name="A4452_2"  translatable="false"><![CDATA[A4452_2: Savings group or microcredit program groups?]]></string>
+    <string name="A4452_3"  translatable="false"><![CDATA[A4452_3: Community cooperative, such as an agricultural cooperative groups?]]></string>
+    <string name="A4452_4"  translatable="false"><![CDATA[A4452_4: Political groups?]]></string>
+    <string name="A4452_5"  translatable="false"><![CDATA[A4452_5: Religious group?]]></string>
+    <string name="A4452_6"  translatable="false"><![CDATA[A4452_6: Sports Club?]]></string>
+    <string name="A4452_7"  translatable="false"><![CDATA[A4452_7: Youth / Student Club?]]></string>
+    <string name="A4452_8"  translatable="false"><![CDATA[A4452_8: Women’s Group?]]></string>
+    <string name="A4452_9"  translatable="false"><![CDATA[A4452_9: Any OTHER?]]></string>
 
-    <string name="A4453_1"  translatable="false"><![CDATA[A4453_1:  Did <NAME> turn to RELIGIOUS people or groups in the community for help during her/his illness?]]></string>
-    <string name="A4453_2"  translatable="false"><![CDATA[A4453_2:  Did <NAME> turn to WOMEN\'S people or groups in the community for help during her/his illness?]]></string>
-    <string name="A4453_3"  translatable="false"><![CDATA[A4453_3:  Did <NAME> turn to SAVINGS or MICROCREDIT PROGRAM people or groups in the community for help during her/his illness?]]></string>
-    <string name="A4453_4"  translatable="false"><![CDATA[A4453_4:  Did <NAME> turn to <u>Any other community group, such as a vocational training group, community cooperative, political group, sports club, youth or student group</u> people or groups in the community for help during her/his illness?]]></string>
-    <string name="A4453_5"  translatable="false"><![CDATA[A4453_5:  Did <NAME> turn to <u>Community or Political Leader</u> in the community for help during her/his illness?]]></string>
-    <string name="A4453_6"  translatable="false"><![CDATA[A4453_6:  Did <NAME> turn to <u>Religious Leader</u> in the community for help during her/his illness?]]></string>
-    <string name="A4453_7"  translatable="false"><![CDATA[A4453_7:  Did <NAME> turn to <u>Any Family</u> in the community for help during her/his illness?]]></string>
-    <string name="A4453_8"  translatable="false"><![CDATA[A4453_8:  Did <NAME> turn to <u>Neighbors</u> in the community for help during her/his illness?]]></string>
-    <string name="A4453_9"  translatable="false"><![CDATA[A4453_9:  Did <NAME> turn to <u>Friends</u> for help during her/his illness?]]></string>
-    <string name="A4453_10"  translatable="false"><![CDATA[A4453_10:  Did <NAME> turn to <u>Patron/Employer/Benefactor</u> in the community for help during her/his illness?]]></string>
-    <string name="A4453_11"  translatable="false"><![CDATA[A4453_11:  Did <NAME> turn to <u>Police</u> for help during her/his illness?]]></string>
-    <string name="A4453_12"  translatable="false"><![CDATA[A4453_12:  Did <NAME> turn to <u>Any OTHER</u> people or groups in the community for help during her/his illness?]]></string>
+    <string name="A4453_1"  translatable="false"><![CDATA[A4453_1:  RELIGIOUS?]]></string>
+    <string name="A4453_2"  translatable="false"><![CDATA[A4453_2:  WOMEN\'S?]]></string>
+    <string name="A4453_3"  translatable="false"><![CDATA[A4453_3:  SAVINGS or MICROCREDIT PROGRAM?]]></string>
+    <string name="A4453_4"  translatable="false"><![CDATA[A4453_4:  Any other community group, such as a vocational training group, community cooperative, political group, sports club, youth or student group?]]></string>
+    <string name="A4453_5"  translatable="false"><![CDATA[A4453_5:  Community or Political Leader?]]></string>
+    <string name="A4453_6"  translatable="false"><![CDATA[A4453_6:  Religious Leader?]]></string>
+    <string name="A4453_7"  translatable="false"><![CDATA[A4453_7:  Any Family?]]></string>
+    <string name="A4453_8"  translatable="false"><![CDATA[A4453_8:  Neighbors?]]></string>
+    <string name="A4453_9"  translatable="false"><![CDATA[A4453_9:  Friends?]]></string>
+    <string name="A4453_10"  translatable="false"><![CDATA[A4453_10:  Patron/Employer/Benefactor in the community?]]></string>
+    <string name="A4453_11"  translatable="false"><![CDATA[A4453_11:  Police?]]></string>
+    <string name="A4453_12"  translatable="false"><![CDATA[A4453_12:  Any OTHER people or groups in the community?]]></string>
     <string name="A4471"  translatable="false"><![CDATA[4471: Note: This is an optional question, to be asked or not as determined by the study site.  Read: Thank you for answering the many questions that I’ve asked. Would you like to tell me about <NAME>’s illness in your own words? Also, is there anything else about her/his illness that I did not ask and you would like to tell me about?  After the respondent(s) finishes, ask: Is there anything else?  Write the respondent’s exact words. After s/he has finished, read this back and ask her to correct any errors in what you wrote.]]></string>
     <string name="A4473"  translatable="false">4473:   Interviewer: Use this space to write down your comments and observations about the interview.</string>
     <string name="kilograms_kg"  translatable="false">Kilograms Kg &amp; DK = 999</string>
@@ -3980,6 +3980,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4206_2"  translatable="false">A4206_2: What was her/his role in the road traffic accident?</string>
     <string name="A4206_3"  translatable="false">A4206_3: What was the counterpart that was hit during the road traffic accident?</string>
     <string name="A4206_4"  translatable="false">A4206_4: Was (s)he injured in a non-road transport accident?</string>
+    <string name="A4206_4_h"  translatable="false">This includes accidents and cases where it is unknown if it was an accident or whether there was   intentional violence</string>
     <string name="A4206_5"  translatable="false">A4206_5: Was (s)he injured in a fall?</string>
     <string name="A4206_6"  translatable="false">A4206_6: Was there any poisoning?</string>
     <string name="A4206_7"  translatable="false">A4206_7: Did (s)he die of drowning?</string>

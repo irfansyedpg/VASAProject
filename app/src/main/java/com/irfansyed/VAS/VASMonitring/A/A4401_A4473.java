@@ -1011,9 +1011,13 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             A4405_minutes = ed_A4405_minutes.getText().toString().trim();
         }
 
+
+        int temp_A4451 = 0;
         //A4451_1
         if (rb_A4451_1_1.isChecked()) {
             A4451_1 = "1";
+            temp_A4451 = temp_A4451+1;
+
         }
         if (rb_A4451_1_2.isChecked()) {
             A4451_1 = "2";
@@ -1025,6 +1029,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4451_2
         if (rb_A4451_2_1.isChecked()) {
             A4451_2 = "1";
+            temp_A4451 = temp_A4451+1;
+
         }
         if (rb_A4451_2_2.isChecked()) {
             A4451_2 = "2";
@@ -1036,6 +1042,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4451_3
         if (rb_A4451_3_1.isChecked()) {
             A4451_3 = "1";
+            temp_A4451 = temp_A4451+1;
+
         }
         if (rb_A4451_3_2.isChecked()) {
             A4451_3 = "2";
@@ -1047,6 +1055,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4451_4
         if (rb_A4451_4_1.isChecked()) {
             A4451_4 = "1";
+            temp_A4451 = temp_A4451+1;
+
         }
         if (rb_A4451_4_2.isChecked()) {
             A4451_4 = "2";
@@ -1058,6 +1068,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4451_5
         if (rb_A4451_5_1.isChecked()) {
             A4451_5 = "1";
+            temp_A4451 = temp_A4451+1;
+
         }
         if (rb_A4451_5_2.isChecked()) {
             A4451_5 = "2";
@@ -1069,6 +1081,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4451_6
         if (rb_A4451_6_1.isChecked()) {
             A4451_6 = "1";
+            temp_A4451 = temp_A4451+1;
+
         }
         if (rb_A4451_6_2.isChecked()) {
             A4451_6 = "2";
@@ -1080,6 +1094,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4451_7
         if (rb_A4451_7_1.isChecked()) {
             A4451_7 = "1";
+            temp_A4451 = temp_A4451+1;
+
         }
         if (rb_A4451_7_2.isChecked()) {
             A4451_7 = "2";
@@ -1091,6 +1107,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4451_8
         if (rb_A4451_8_1.isChecked()) {
             A4451_8 = "1";
+            temp_A4451 = temp_A4451+1;
+
         }
         if (rb_A4451_8_2.isChecked()) {
             A4451_8 = "2";
@@ -1102,6 +1120,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4451_9
         if (rb_A4451_9_1.isChecked()) {
             A4451_9 = "1";
+            temp_A4451 = temp_A4451+1;
+
         }
         if (rb_A4451_9_2.isChecked()) {
             A4451_9 = "2";
@@ -1113,6 +1133,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4451_10
         if (rb_A4451_10_1.isChecked()) {
             A4451_10 = "1";
+            temp_A4451 = temp_A4451+1;
+
         }
         if (rb_A4451_10_2.isChecked()) {
             A4451_10 = "2";
@@ -1124,6 +1146,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4451_11
         if (rb_A4451_11_1.isChecked()) {
             A4451_11 = "1";
+            temp_A4451 = temp_A4451+1;
+
         }
         if (rb_A4451_11_2.isChecked()) {
             A4451_11 = "2";
@@ -1135,6 +1159,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4451_12
         if (rb_A4451_12_1.isChecked()) {
             A4451_12 = "1";
+            temp_A4451 = temp_A4451+1;
+
         }
         if (rb_A4451_12_2.isChecked()) {
             A4451_12 = "2";
@@ -1146,6 +1172,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4451_13
         if (rb_A4451_13_1.isChecked()) {
             A4451_13 = "1";
+            temp_A4451 = temp_A4451+1;
+
         }
         if (rb_A4451_13_2.isChecked()) {
             A4451_13 = "2";
@@ -1157,9 +1185,28 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             A4451_13_OT = ed_A4451_13.getText().toString().trim();
         }
 
+
+        if (temp_A4451 == 1)
+        {
+            A4451_code = "1";
+        }
+        else if (temp_A4451 > 1)
+        {
+            A4451_code = "2";
+        }
+        else
+            {
+                A4451_code = "3";
+            }
+
+
+
+
+        int temp_A4452 = 0;
         //A4452_1
         if (rb_A4452_1_1.isChecked()) {
             A4452_1 = "1";
+            temp_A4452 = temp_A4452+1;
         }
         if (rb_A4452_1_2.isChecked()) {
             A4452_1 = "2";
@@ -1171,6 +1218,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4452_2
         if (rb_A4452_2_1.isChecked()) {
             A4452_2 = "1";
+            temp_A4452 = temp_A4452+1;
+
         }
         if (rb_A4452_2_2.isChecked()) {
             A4452_2 = "2";
@@ -1182,6 +1231,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4452_3
         if (rb_A4452_3_1.isChecked()) {
             A4452_3 = "1";
+            temp_A4452 = temp_A4452+1;
+
         }
         if (rb_A4452_3_2.isChecked()) {
             A4452_3 = "2";
@@ -1193,6 +1244,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4452_4
         if (rb_A4452_4_1.isChecked()) {
             A4452_4 = "1";
+            temp_A4452 = temp_A4452+1;
+
         }
         if (rb_A4452_4_2.isChecked()) {
             A4452_4 = "2";
@@ -1204,6 +1257,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4452_5
         if (rb_A4452_5_1.isChecked()) {
             A4452_5 = "1";
+            temp_A4452 = temp_A4452+1;
+
         }
         if (rb_A4452_5_2.isChecked()) {
             A4452_5 = "2";
@@ -1215,6 +1270,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4452_6
         if (rb_A4452_6_1.isChecked()) {
             A4452_6 = "1";
+            temp_A4452 = temp_A4452+1;
+
         }
         if (rb_A4452_6_2.isChecked()) {
             A4452_6 = "2";
@@ -1226,6 +1283,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4452_7
         if (rb_A4452_7_1.isChecked()) {
             A4452_7 = "1";
+            temp_A4452 = temp_A4452+1;
+
         }
         if (rb_A4452_7_2.isChecked()) {
             A4452_7 = "2";
@@ -1237,6 +1296,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4452_8
         if (rb_A4452_8_1.isChecked()) {
             A4452_8 = "1";
+            temp_A4452 = temp_A4452+1;
+
         }
         if (rb_A4452_8_2.isChecked()) {
             A4452_8 = "2";
@@ -1248,6 +1309,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4452_9
         if (rb_A4452_9_1.isChecked()) {
             A4452_9 = "1";
+            temp_A4452 = temp_A4452+1;
+
         }
         if (rb_A4452_9_2.isChecked()) {
             A4452_9 = "2";
@@ -1259,9 +1322,29 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             A4452_9_OT = ed_A4452_9.getText().toString().trim();
         }
 
+
+        if(temp_A4452==1)
+        {
+            A4452_code="1";
+        }
+        else if(temp_A4452>1)
+        {
+            A4452_code="2";
+        }
+        else
+        {
+            A4452_code="3";
+        }
+
+
+
+
+        int temp_a4453=0;
         //A4453_1
         if (rb_A4453_1_1.isChecked()) {
             A4453_1 = "1";
+            temp_a4453=temp_a4453+1;
+
         }
         if (rb_A4453_1_2.isChecked()) {
             A4453_1 = "2";
@@ -1273,6 +1356,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4453_2
         if (rb_A4453_2_1.isChecked()) {
             A4453_2 = "1";
+            temp_a4453=temp_a4453+1;
         }
         if (rb_A4453_2_2.isChecked()) {
             A4453_2 = "2";
@@ -1284,6 +1368,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4453_3
         if (rb_A4453_3_1.isChecked()) {
             A4453_3 = "1";
+            temp_a4453=temp_a4453+1;
+
         }
         if (rb_A4453_3_2.isChecked()) {
             A4453_3 = "2";
@@ -1295,6 +1381,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4453_4
         if (rb_A4453_4_1.isChecked()) {
             A4453_4 = "1";
+            temp_a4453=temp_a4453+1;
+
         }
         if (rb_A4453_4_2.isChecked()) {
             A4453_4 = "2";
@@ -1306,6 +1394,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4453_5
         if (rb_A4453_5_1.isChecked()) {
             A4453_5 = "1";
+            temp_a4453=temp_a4453+1;
+
         }
         if (rb_A4453_5_2.isChecked()) {
             A4453_5 = "2";
@@ -1317,6 +1407,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4453_6
         if (rb_A4453_6_1.isChecked()) {
             A4453_6 = "1";
+            temp_a4453=temp_a4453+1;
+
         }
         if (rb_A4453_6_2.isChecked()) {
             A4453_6 = "2";
@@ -1328,6 +1420,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4453_7
         if (rb_A4453_7_1.isChecked()) {
             A4453_7 = "1";
+            temp_a4453=temp_a4453+1;
+
         }
         if (rb_A4453_7_2.isChecked()) {
             A4453_7 = "2";
@@ -1339,6 +1433,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4453_8
         if (rb_A4453_8_1.isChecked()) {
             A4453_8 = "1";
+            temp_a4453=temp_a4453+1;
+
         }
         if (rb_A4453_8_2.isChecked()) {
             A4453_8 = "2";
@@ -1350,6 +1446,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4453_9
         if (rb_A4453_9_1.isChecked()) {
             A4453_9 = "1";
+            temp_a4453=temp_a4453+1;
+
         }
         if (rb_A4453_9_2.isChecked()) {
             A4453_9 = "2";
@@ -1361,6 +1459,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4453_10
         if (rb_A4453_10_1.isChecked()) {
             A4453_10 = "1";
+            temp_a4453=temp_a4453+1;
+
         }
         if (rb_A4453_10_2.isChecked()) {
             A4453_10 = "2";
@@ -1372,6 +1472,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4453_11
         if (rb_A4453_11_1.isChecked()) {
             A4453_11 = "1";
+            temp_a4453=temp_a4453+1;
+
         }
         if (rb_A4453_11_2.isChecked()) {
             A4453_11 = "2";
@@ -1383,6 +1485,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         //A4453_12
         if (rb_A4453_12_1.isChecked()) {
             A4453_12 = "1";
+            temp_a4453=temp_a4453+1;
+
         }
         if (rb_A4453_12_2.isChecked()) {
             A4453_12 = "2";
@@ -1394,7 +1498,22 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             A4453_12_OT = ed_A4453_12.getText().toString().trim();
         }
 
-        //A4454
+
+        if(temp_a4453==1)
+        {
+            A4453_code="1";
+        }
+        else if(temp_a4453>1)
+        {
+            A4453_code="2";
+        }
+        else
+            {
+                A4453_code="3";
+            }
+
+
+            //A4454
         if (rb_A4454_1.isChecked()) {
             A4454 = "1";
         }
