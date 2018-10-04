@@ -753,36 +753,20 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
             DBHelper db = new DBHelper(this);
             Cursor res1 = db.getData("A4251_A4284", study_id);
-            Cursor res2 = db.getData("A4252_atributes", study_id);
 
 
             if (res1.getCount() > 0) {
 
                 res1.moveToFirst();
 
-                if ((Integer.valueOf(res1.getString(res1.getColumnIndex("A4254_1"))).equals(2)
+                if (((Integer.valueOf(res1.getString(res1.getColumnIndex("A4254_1"))).equals(2)
                         || Integer.valueOf(res1.getString(res1.getColumnIndex("A4254_1"))).equals(9)
                         || Integer.valueOf(res1.getString(res1.getColumnIndex("A4254_2"))).equals(2)
-                        || Integer.valueOf(res1.getString(res1.getColumnIndex("A4254_2"))).equals(9))
-                        && Integer.valueOf(res1.getString(res1.getColumnIndex("A4251"))).equals(2)) {
+                        || Integer.valueOf(res1.getString(res1.getColumnIndex("A4254_2"))).equals(9)
 
-                    Intent c = new Intent(this, A4351_A4364.class);
-                    c.putExtra("study_id", study_id);
-                    startActivity(c);
-
-                } else {
-
-                    Intent c = new Intent(A4251_A4284.this, A4301_A4315.class);
-                    c.putExtra("study_id", study_id);
-                    startActivity(c);
-
-                }
-
-                if (Integer.valueOf(res1.getString(res1.getColumnIndex("A4251"))).equals(2)
-                        || Integer.valueOf(res2.getString(res2.getColumnIndex("A4252_2"))).equals(4)
-                        || Integer.valueOf(res2.getString(res2.getColumnIndex("A4252_2"))).equals(5)
-                        || Integer.valueOf(res2.getString(res2.getColumnIndex("A4252_2"))).equals(6)
-                        || Integer.valueOf(res2.getString(res2.getColumnIndex("A4252_2"))).equals(7)) {
+                )
+                        && Integer.valueOf(res1.getString(res1.getColumnIndex("A4251"))).equals(2))
+                    || ((!care.contains("4") || !care.contains("5") || !care.contains("6") || !care.contains("7")  ) && Integer.valueOf(res1.getString(res1.getColumnIndex("A4251"))).equals(1))){
 
                     Intent c = new Intent(this, A4351_A4364.class);
                     c.putExtra("study_id", study_id);
@@ -2666,17 +2650,8 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
 
         //A4278
-        if (compoundButton.getId() == R.id.cb_A4278_1
-                || compoundButton.getId() == R.id.cb_A4278_2
-                || compoundButton.getId() == R.id.cb_A4278_3
-                || compoundButton.getId() == R.id.cb_A4278_4
-                || compoundButton.getId() == R.id.cb_A4278_5
-                || compoundButton.getId() == R.id.cb_A4278_6
-                || compoundButton.getId() == R.id.cb_A4278_7
-                || compoundButton.getId() == R.id.cb_A4278_DK) {
-
-            if (cb_A4276_DK.isChecked()) {
-
+        if (compoundButton.getId() == R.id.cb_A4278_DK) {
+            if (cb_A4278_DK.isChecked()) {
                 cb_A4278_1.setChecked(false);
                 cb_A4278_2.setChecked(false);
                 cb_A4278_3.setChecked(false);
@@ -2684,27 +2659,18 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
                 cb_A4278_5.setChecked(false);
                 cb_A4278_6.setChecked(false);
                 cb_A4278_7.setChecked(false);
-
             } else {
-
                 cb_A4278_DK.setChecked(false);
             }
+        } else {
 
+            cb_A4278_DK.setChecked(false);
         }
 
 
         //A4279
-        if (compoundButton.getId() == R.id.cb_A4279_1
-                || compoundButton.getId() == R.id.cb_A4279_2
-                || compoundButton.getId() == R.id.cb_A4279_3
-                || compoundButton.getId() == R.id.cb_A4279_4
-                || compoundButton.getId() == R.id.cb_A4279_5
-                || compoundButton.getId() == R.id.cb_A4279_6
-                || compoundButton.getId() == R.id.cb_A4279_7
-                || compoundButton.getId() == R.id.cb_A4279_DK) {
-
-            if (cb_A4276_DK.isChecked()) {
-
+        if (compoundButton.getId() == R.id.cb_A4279_DK) {
+            if (cb_A4279_DK.isChecked()) {
                 cb_A4279_1.setChecked(false);
                 cb_A4279_2.setChecked(false);
                 cb_A4279_3.setChecked(false);
@@ -2712,12 +2678,12 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
                 cb_A4279_5.setChecked(false);
                 cb_A4279_6.setChecked(false);
                 cb_A4279_7.setChecked(false);
-
             } else {
-
                 cb_A4279_DK.setChecked(false);
             }
+        } else {
 
+            cb_A4279_DK.setChecked(false);
         }
     }
 

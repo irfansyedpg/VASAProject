@@ -651,6 +651,20 @@
     <string  name="A4252_3"  translatable="false">	حمل سے متعلقہ  اموات کے لئے: کسی بھی صحت کی دیکھ بھال فراہم کرنے والے  کی نشان دہی  کریں۔جہاں عورت کا اسقاط حمل ہواہو(خود بخود  یا جان بوجھ کراسقاط حمل کرانا) یا زچگی ہوئی ہو۔</string>
     <string  name="A4252_4"  translatable="false">	بالغ افراد کی اموات کے لئے: : اگر بیماری تین ماہ یا اس سے زیادہ سے  موجود ہے ، تو علاج کے سلسلے میں پہلی  تین کاروائیوں یا اقدامات  کے بارے  میں پوجھیں  جو بیماری کے آغاز اور بیماری کے وسط میں کئے گئے ۔  اسی طرح آخری تین اقدامات کے بارے میں پوچھیں جو بیماری کے ختم ہونے پر  کئے گئے۔</string>
     <string  name="A4252_5"  translatable="false">	1) اگر بیماری 3 ماہ یا اس سے زیادہ تھی تو ہرعمل کے لیے دائرہ سرکل کریں S(آغاز) M    (وسط) یا (E) اختتام. (2ہرصحت کی سہولت یا صحت  فراہم کنندہ  کے باکس کو دئی گئی قطار  میں چیک کرو ۔ اسی طرح اگر صحت کی سہولت کے باہر دیکھ بھال کی گئ ہے تو  تربیت یا فتہ CHW  ،نرس یا مڈوائف پر چیک لگائیں. 3) صرف حمل سے متعلقہ  اموات کے لئے: کو ئی بھی صحت  فراہم کنندہ  پر نشان لگائیں جہاں عورت کا اسقاط حمل یا زچگی ہوئی ہو۔</string>
+    <string  name="action"  translatable="false"> : نمبر اور بیماری کا مرحلہ؟</string>
+    <string  name="start"  translatable="false">شروع؟</string>
+    <string  name="mid"  translatable="false">درمیان؟</string>
+    <string  name="end"  translatable="false">اختتام؟</string>
+    <string  name="add"  translatable="false">جمع</string>
+    <string name="rb_care1"  translatable="false">گھر پر دیکھ بھال( خود سے ،رشتہ دار پڑوسی ،دوست احباب)</string>
+    <string name="rb_care2"  translatable="false">روایتی اور غیر رسمی صحت فراہم کنندہ</string>
+    <string name="rb_care3"  translatable="false">فارمسٹ یا ادویات فروخت کرنے والا</string>
+    <string name="rb_care4"  translatable="false">تربیت یافتہ CHW  نرس یا مڈوائف</string>
+    <string name="rb_care5"  translatable="false">پرائیوٹ ڈاکٹر یا کلینک (رسمی/ یقین نہیں)</string>
+    <string name="rb_care6"  translatable="false">این جی اوز گورنمٹ کلینک</string>
+    <string name="rb_care7"  translatable="false">سپتال</string>
+    <string name="cb_place"  translatable="false">عورت کی زچگی یا اسقاط حمل کرائی فراہم کنندہ نے</string>
+    <string name="ed_symptoms"  translatable="false">کیا علامات موجود تھی جب  ہر کاروائی  یا عمل کیا جا رہا تھا?</string>
     <string  name="A4253"  translatable="false">	اگر کوئی باقاعدگی  سے  علاج کیا یا دیکھ بھال  کی کوشش کی تو پوچھیں:(نام)  کی بیماری کی  دیکھ بھال کے لئے   پہلے صحت فراہم کنندہ کے  پاس جانے کا فیصلہ کس نے کیا؟	:	A4253	</string>
     <string  name="A4254"  translatable="false">	کیا تم (نام)   کو  کوئی تشویش/مسئلہ تھا جس کی وجہ سے اس نے اپنے آپ کوبیماری کے دوران صحت فراہم کرنے والے کے پاس لے جانے سے روکا ۔	  گر صحت فراہم کرنے والے کے پاس لیکر نہیں گئے تو پوچھیں:	:A4254	</string>
     <string  name="A4255"  translatable="false">	کیا تشویش/ مشکلات اور دشواریاں آپ کو یا  (نام)  کو پیش آئیں  تھیں؟	:	A4255	</string>
