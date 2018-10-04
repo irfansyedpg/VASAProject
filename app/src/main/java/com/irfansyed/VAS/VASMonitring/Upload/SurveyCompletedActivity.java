@@ -3548,8 +3548,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4401_A4473.A4453_10, c15.getString(c15.getColumnIndex("A4453_10")));
                         params.put(A4401_A4473.A4453_11, c15.getString(c15.getColumnIndex("A4453_11")));
                         params.put(A4401_A4473.A4453_12, c15.getString(c15.getColumnIndex("A4453_12")));
-//  CHANGE IT LATER ON                      params.put(A4401_A4473.A4453_12_OT, c15.getString(c15.getColumnIndex("A4453_12_OT")));
-                        params.put(A4401_A4473.A4453_12_OT, c15.getString(c15.getColumnIndex("A4453_13_OT")));
+                        params.put(A4401_A4473.A4453_12_OT, c15.getString(c15.getColumnIndex("A4453_12_OT")));
                         params.put(A4401_A4473.A4453_code, c15.getString(c15.getColumnIndex("A4453_code")));
                         params.put(A4401_A4473.A4454, c15.getString(c15.getColumnIndex("A4454")));
                         params.put(A4401_A4473.A4455, c15.getString(c15.getColumnIndex("A4455")));

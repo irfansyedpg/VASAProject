@@ -256,7 +256,7 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c = new Intent(A4001_A4014.this, A4051_A4066.class);
+        Intent c = new Intent(A4001_A4014.this, A4251_A4284.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
     }
