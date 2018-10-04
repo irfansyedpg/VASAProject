@@ -2222,12 +2222,21 @@
                         style="@style/EditText_number"
                         android:hint="@string/txt_Q1502" />
 
+                    <Button
+                        style="@style/Button_trasnparnt"
+                        android:text="Add Relatives"
+                        android:id="@+id/btn_Q1502"
+
+                        />
+
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
             <!-- EditText Q1502 Ends -->
 
-            <!-- Radio Buttons Q1503 Starts -->
+
+
+            <!-- Radio Buttons Q1503 Starts
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
 
@@ -2317,7 +2326,7 @@
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
-            <!-- Radio Buttons Q1503 Ends -->
+              Buttons Q1503 Ends -->
 
             <!--Q1503_OT Edit text Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">

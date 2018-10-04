@@ -13,7 +13,6 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.irfansyed.VAS.VASMonitring.A.A4001_A4014;
 import com.irfansyed.VAS.VASMonitring.A.A4251_A4284;
 import com.irfansyed.VAS.VASMonitring.GS.Q1101_Q1610;
 import com.irfansyed.VAS.VASMonitring.R;
@@ -96,8 +95,8 @@ public class HomeActivity extends AppCompatActivity
         if (id == com.irfansyed.VAS.VASMonitring.R.id.stage_1) {
 
 
-          //intent = new Intent(this, Q1101_Q1610.class);
-            intent = new Intent(this, Q1101_Q1610.class);
+          intent = new Intent(this, Q1101_Q1610.class);
+         //   intent = new Intent(this, A4251_A4284.class);
 
 
             intent.putExtra("put_extra", put_extr);
