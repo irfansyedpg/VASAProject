@@ -169,8 +169,8 @@ public class N2190_N2191 extends AppCompatActivity {
                 : bi.rbN219021RA.isChecked() ? "8" : "-1");
         n2190.setN219022(bi.rbN2190221.isChecked() ? "1" : bi.rbN2190222.isChecked() ? "2" : bi.rbN219022DK.isChecked() ? "9"
                 : bi.rbN219022RA.isChecked() ? "8" : "-1");
-        n2190.setN21911(bi.edN21911.getText().toString());
-        n2190.setN21912(bi.edN21912.getText().toString());
+        n2190.setN21911(bi.edN21911.getText().toString().trim().length() > 0 ? bi.edN21911.getText().toString() : "-1");
+        n2190.setN21912(bi.edN21912.getText().toString().trim().length() > 0 ? bi.edN21912.getText().toString() : "-1");
 
 
         n2190.setSTUDYID(bi.edStudyId.getText().toString());
