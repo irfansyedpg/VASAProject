@@ -94,6 +94,10 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2051" />
 
+                        <TextView
+                            style="@style/TextView"
+                            android:hint="@string/N2051_h" />
+
 
                         <EditText
                             android:id="@+id/ed_N2051"
@@ -702,7 +706,7 @@
                         <EditText
                             android:id="@+id/ed_N2062"
                             style="@style/EditText_number"
-                            android:hint="If 7 or more times, record '7'"
+                            android:hint="@string/N2062_h"
                             android:maxLength="1"
                             android:text='@{rbN20611.checked ? edN2062.getText.toString : ""}' />
 

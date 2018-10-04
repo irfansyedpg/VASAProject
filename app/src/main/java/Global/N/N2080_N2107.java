@@ -30,7 +30,21 @@ public class N2080_N2107 {
     public String N2082_OT = "";
     public String N2082_OTx = "";
     public String N2083 = "";
-    public String N2084 = "";
+    public String N2084_1 = "";
+    public String N2084_2 = "";
+    public String N2084_3 = "";
+    public String N2084_4 = "";
+    public String N2084_5 = "";
+    public String N2084_6 = "";
+    public String N2084_7 = "";
+    public String N2084_8 = "";
+    public String N2084_9 = "";
+    public String N2084_10 = "";
+    public String N2084_11 = "";
+    public String N2084_12 = "";
+    public String N2084_13 = "";
+    public String N2084_14 = "";
+    public String N2084_OT = "";
     public String N2085 = "";
     public String N2086_1 = "";
     public String N2086_2 = "";
@@ -87,7 +101,24 @@ public class N2080_N2107 {
     public String N2093x = "";
     public String N2094 = "";
     public String N2095 = "";
-    public String N2096 = "";
+    public String N2096_1 = "";
+    public String N2096_2 = "";
+    public String N2096_3 = "";
+    public String N2096_4 = "";
+    public String N2096_5 = "";
+    public String N2096_6 = "";
+    public String N2096_7 = "";
+    public String N2096_8 = "";
+    public String N2096_9 = "";
+    public String N2096_10 = "";
+    public String N2096_11 = "";
+    public String N2096_12 = "";
+    public String N2096_13 = "";
+    public String N2096_14 = "";
+    public String N2096_15 = "";
+    public String N2096_16 = "";
+    public String N2096_17 = "";
+    public String N2096_OT = "";
     public String N2097_1 = "";
     public String N2097_2 = "";
     public String N2097_3 = "";
@@ -274,12 +305,124 @@ public class N2080_N2107 {
         N2083 = n2083;
     }
 
-    public String getN2084() {
-        return N2084;
+    public String getN20841() {
+        return N2084_1;
     }
 
-    public void setN2084(String n2084) {
-        N2084 = n2084;
+    public void setN20841(String n2084_1) {
+        N2084_1 = n2084_1;
+    }
+
+    public String getN20842() {
+        return N2084_2;
+    }
+
+    public void setN20842(String n2084_2) {
+        N2084_2 = n2084_2;
+    }
+
+    public String getN20843() {
+        return N2084_3;
+    }
+
+    public void setN20843(String n2084_3) {
+        N2084_3 = n2084_3;
+    }
+
+    public String getN20844() {
+        return N2084_4;
+    }
+
+    public void setN20844(String n2084_4) {
+        N2084_4 = n2084_4;
+    }
+
+    public String getN20845() {
+        return N2084_5;
+    }
+
+    public void setN20845(String n2084_5) {
+        N2084_5 = n2084_5;
+    }
+
+    public String getN20846() {
+        return N2084_6;
+    }
+
+    public void setN20846(String n2084_6) {
+        N2084_6 = n2084_6;
+    }
+
+    public String getN20847() {
+        return N2084_7;
+    }
+
+    public void setN20847(String n2084_7) {
+        N2084_7 = n2084_7;
+    }
+
+    public String getN20848() {
+        return N2084_8;
+    }
+
+    public void setN20848(String n2084_8) {
+        N2084_8 = n2084_8;
+    }
+
+    public String getN20849() {
+        return N2084_9;
+    }
+
+    public void setN20849(String n2084_9) {
+        N2084_9 = n2084_9;
+    }
+
+    public String getN208410() {
+        return N2084_10;
+    }
+
+    public void setN208410(String n2084_10) {
+        N2084_10 = n2084_10;
+    }
+
+    public String getN208411() {
+        return N2084_11;
+    }
+
+    public void setN208411(String n2084_11) {
+        N2084_11 = n2084_11;
+    }
+
+    public String getN208412() {
+        return N2084_12;
+    }
+
+    public void setN208412(String n2084_12) {
+        N2084_12 = n2084_12;
+    }
+
+    public String getN208413() {
+        return N2084_13;
+    }
+
+    public void setN208413(String n2084_13) {
+        N2084_13 = n2084_13;
+    }
+
+    public String getN208414() {
+        return N2084_14;
+    }
+
+    public void setN208414(String n2084_14) {
+        N2084_14 = n2084_14;
+    }
+
+    public String getN2084OT() {
+        return N2084_OT;
+    }
+
+    public void setN2084OT(String n2084_OT) {
+        N2084_OT = n2084_OT;
     }
 
     public String getN2085() {
@@ -498,12 +641,148 @@ public class N2080_N2107 {
         N2095 = n2095;
     }
 
-    public String getN2096() {
-        return N2096;
+    public String getN20961() {
+        return N2096_1;
     }
 
-    public void setN2096(String n2096) {
-        N2096 = n2096;
+    public void setN20961(String n2096_1) {
+        N2096_1 = n2096_1;
+    }
+
+    public String getN20962() {
+        return N2096_2;
+    }
+
+    public void setN20962(String n2096_2) {
+        N2096_2 = n2096_2;
+    }
+
+    public String getN20963() {
+        return N2096_3;
+    }
+
+    public void setN20963(String n2096_3) {
+        N2096_3 = n2096_3;
+    }
+
+    public String getN20964() {
+        return N2096_4;
+    }
+
+    public void setN20964(String n2096_4) {
+        N2096_4 = n2096_4;
+    }
+
+    public String getN20965() {
+        return N2096_5;
+    }
+
+    public void setN20965(String n2096_5) {
+        N2096_5 = n2096_5;
+    }
+
+    public String getN20966() {
+        return N2096_6;
+    }
+
+    public void setN20966(String n2096_6) {
+        N2096_6 = n2096_6;
+    }
+
+    public String getN20967() {
+        return N2096_7;
+    }
+
+    public void setN20967(String n2096_7) {
+        N2096_7 = n2096_7;
+    }
+
+    public String getN20968() {
+        return N2096_8;
+    }
+
+    public void setN20968(String n2096_8) {
+        N2096_8 = n2096_8;
+    }
+
+    public String getN20969() {
+        return N2096_9;
+    }
+
+    public void setN20969(String n2096_9) {
+        N2096_9 = n2096_9;
+    }
+
+    public String getN209610() {
+        return N2096_10;
+    }
+
+    public void setN209610(String n2096_10) {
+        N2096_10 = n2096_10;
+    }
+
+    public String getN209611() {
+        return N2096_11;
+    }
+
+    public void setN209611(String n2096_11) {
+        N2096_11 = n2096_11;
+    }
+
+    public String getN209612() {
+        return N2096_12;
+    }
+
+    public void setN209612(String n2096_12) {
+        N2096_12 = n2096_12;
+    }
+
+    public String getN209613() {
+        return N2096_13;
+    }
+
+    public void setN209613(String n2096_13) {
+        N2096_13 = n2096_13;
+    }
+
+    public String getN209614() {
+        return N2096_14;
+    }
+
+    public void setN209614(String n2096_14) {
+        N2096_14 = n2096_14;
+    }
+
+    public String getN209615() {
+        return N2096_15;
+    }
+
+    public void setN209615(String n2096_15) {
+        N2096_15 = n2096_15;
+    }
+
+    public String getN209616() {
+        return N2096_16;
+    }
+
+    public void setN209616(String n2096_16) {
+        N2096_16 = n2096_16;
+    }
+
+    public String getN209617() {
+        return N2096_17;
+    }
+
+    public void setN209617(String n2096_17) {
+        N2096_17 = n2096_17;
+    }
+
+    public String getN2096OT() {
+        return N2096_OT;
+    }
+
+    public void setN2096OT(String n2096_OT) {
+        N2096_OT = n2096_OT;
     }
 
     public String getN20971() {
@@ -1096,7 +1375,22 @@ public class N2080_N2107 {
         String N2082_OTx = "N2082_OTx";
 
         String N2083 = "N2083";
-        String N2084 = "N2084";
+        String N2084_1 = "N2084_1";
+        String N2084_2 = "N2084_2";
+        String N2084_3 = "N2084_3";
+        String N2084_4 = "N2084_4";
+        String N2084_5 = "N2084_5";
+        String N2084_6 = "N2084_6";
+        String N2084_7 = "N2084_7";
+        String N2084_8 = "N2084_8";
+        String N2084_9 = "N2084_9";
+        String N2084_10 = "N2084_10";
+        String N2084_11 = "N2084_11";
+        String N2084_12 = "N2084_12";
+        String N2084_13 = "N2084_13";
+        String N2084_14 = "N2084_14";
+        String N2084_OT = "N2084_OT";
+
         String N2085 = "N2085";
         String N2086_1 = "N2086_1";
         String N2086_2 = "N2086_2";
@@ -1155,7 +1449,26 @@ public class N2080_N2107 {
         String N2093x = "N2093x";
         String N2094 = "N2094";
         String N2095 = "N2095";
-        String N2096 = "N2096";
+
+        String N2096_1 = "N2096_1";
+        String N2096_2 = "N2096_2";
+        String N2096_3 = "N2096_3";
+        String N2096_4 = "N2096_4";
+        String N2096_5 = "N2096_5";
+        String N2096_6 = "N2096_6";
+        String N2096_7 = "N2096_7";
+        String N2096_8 = "N2096_8";
+        String N2096_9 = "N2096_9";
+        String N2096_10 = "N2096_10";
+        String N2096_11 = "N2096_11";
+        String N2096_12 = "N2096_12";
+        String N2096_13 = "N2096_13";
+        String N2096_14 = "N2096_14";
+        String N2096_15 = "N2096_15";
+        String N2096_16 = "N2096_16";
+        String N2096_17 = "N2096_17";
+        String N2096_OT = "N2096_18";
+
         String N2097_1 = "N2097_1";
         String N2097_2 = "N2097_2";
         String N2097_3 = "N2097_3";

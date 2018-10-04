@@ -128,15 +128,15 @@ public class N2251_N2260 extends AppCompatActivity {
                 : bi.rbN2253RA.isChecked() ? "8" : "-1");
         n2251.setN2254(bi.rbN22541.isChecked() ? "1" : bi.rbN22542.isChecked() ? "2" : "-1");
         n2251.setN22551check(bi.rbN22551check1.isChecked() ? "1" : bi.rbN22551check2.isChecked() ? "2" : "-1");
-        n2251.setN22551(bi.edN22551.getText().toString());
+        n2251.setN22551(bi.edN22551.getText().toString().trim().length() > 0 ? bi.edN22551.getText().toString() : "-1");
         n2251.setN22552check(bi.rbN22552check1.isChecked() ? "1" : bi.rbN22552check2.isChecked() ? "2" : "-1");
-        n2251.setN22552(bi.edN22552.getText().toString());
-        n2251.setN2256(bi.edN2256.getText().toString());
-        n2251.setN2257(bi.edN2257.getText().toString());
-        n2251.setN2258(bi.edN2258.getText().toString());
+        n2251.setN22552(bi.edN22552.getText().toString().trim().length() > 0 ? bi.edN22552.getText().toString() : "-1");
+        n2251.setN2256(bi.edN2256.getText().toString().trim().length() > 0 ? bi.edN2256.getText().toString() : "-1");
+        n2251.setN2257(bi.edN2257.getText().toString().trim().length() > 0 ? bi.edN2257.getText().toString() : "-1");
+        n2251.setN2258(bi.edN2258.getText().toString().trim().length() > 0 ? bi.edN2258.getText().toString() : "-1");
         n2251.setN2259(bi.rbN22591.isChecked() ? "1" : bi.rbN22592.isChecked() ? "2" : bi.rbN2259DK.isChecked() ? "9"
                 : bi.rbN2259RA.isChecked() ? "8" : "-1");
-        n2251.setN2260(bi.edN2260.getText().toString());
+        n2251.setN2260(bi.edN2260.getText().toString().trim().length() > 0 ? bi.edN2260.getText().toString() : "-1");
 
         n2251.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);

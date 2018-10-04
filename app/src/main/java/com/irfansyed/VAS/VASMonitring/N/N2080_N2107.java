@@ -130,7 +130,7 @@ public class N2080_N2107 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i != bi.rbN20831.getId()) {
-                    bi.rgN2084.clearCheck();
+                    ClearAllcontrol.ClearAll(bi.llN2084); //ll_N2084
                 }
             }
         });
@@ -330,10 +330,27 @@ public class N2080_N2107 extends AppCompatActivity {
         n2080.setN2082OTx(bi.edN2082OT.getText().toString().trim().length() > 0 ? bi.edN2082OT.getText().toString() : "-1");
 
         n2080.setN2083(bi.rbN20831.isChecked() ? "1" : bi.rbN20832.isChecked() ? "2" : bi.rbN2083DK.isChecked() ? "9" : "-1");
-        n2080.setN2084(bi.rbN20841.isChecked() ? "1" : bi.rbN20842.isChecked() ? "2" : bi.rbN20843.isChecked() ? "3"
+        /*n2080.setN2084(bi.rbN20841.isChecked() ? "1" : bi.rbN20842.isChecked() ? "2" : bi.rbN20843.isChecked() ? "3"
                 : bi.rbN20844.isChecked() ? "4" : bi.rbN20845.isChecked() ? "5" : bi.rbN20846.isChecked() ? "6" : bi.rbN20847.isChecked() ? "7"
                 : bi.rbN20848.isChecked() ? "8" : bi.rbN20849.isChecked() ? "9" : bi.rbN208410.isChecked() ? "10" : bi.rbN208411.isChecked() ? "11"
-                : bi.rbN208412.isChecked() ? "12" : bi.rbN208413.isChecked() ? "13" : bi.rbN208414.isChecked() ? "14" : bi.rbN2084OT.isChecked() ? "15" : "-1");
+                : bi.rbN208412.isChecked() ? "12" : bi.rbN208413.isChecked() ? "13" : bi.rbN208414.isChecked() ? "14" : bi.rbN2084OT.isChecked() ? "15" : "-1");*/
+
+        n2080.setN20841(bi.cbN20841.isChecked() ? "1" : "-1");
+        n2080.setN20842(bi.cbN20842.isChecked() ? "2" : "-1");
+        n2080.setN20843(bi.cbN20843.isChecked() ? "3" : "-1");
+        n2080.setN20844(bi.cbN20844.isChecked() ? "4" : "-1");
+        n2080.setN20845(bi.cbN20845.isChecked() ? "5" : "-1");
+        n2080.setN20846(bi.cbN20846.isChecked() ? "6" : "-1");
+        n2080.setN20847(bi.cbN20847.isChecked() ? "7" : "-1");
+        n2080.setN20848(bi.cbN20848.isChecked() ? "8" : "-1");
+        n2080.setN20849(bi.cbN20849.isChecked() ? "9" : "-1");
+        n2080.setN208410(bi.cbN208410.isChecked() ? "10" : "-1");
+        n2080.setN208411(bi.cbN208411.isChecked() ? "11" : "-1");
+        n2080.setN208412(bi.cbN208412.isChecked() ? "12" : "-1");
+        n2080.setN208413(bi.cbN208413.isChecked() ? "13" : "-1");
+        n2080.setN208414(bi.cbN208414.isChecked() ? "14" : "-1");
+        n2080.setN2084OT(bi.cbN2084OT.isChecked() ? "15" : "-1");
+
         n2080.setN2085(bi.rbN20851.isChecked() ? "1" : bi.rbN20852.isChecked() ? "2" : bi.rbN2085DK.isChecked() ? "9" : "-1");
 
         n2080.setN20861(bi.cbN20861.isChecked() ? "1" : "-1");
@@ -404,11 +421,32 @@ public class N2080_N2107 extends AppCompatActivity {
 
         n2080.setN2094(bi.edN2094.getText().toString().trim().length() > 0 ? bi.edN2094.getText().toString() : "-1");
         n2080.setN2095(bi.rbN20951.isChecked() ? "1" : bi.rbN20952.isChecked() ? "2" : bi.rbN2095DK.isChecked() ? "9" : "-1");
-        n2080.setN2096(bi.rbN20961.isChecked() ? "1" : bi.rbN20962.isChecked() ? "2" : bi.rbN20963.isChecked() ? "3"
+
+        /*n2080.setN2096(bi.rbN20961.isChecked() ? "1" : bi.rbN20962.isChecked() ? "2" : bi.rbN20963.isChecked() ? "3"
                 : bi.rbN20964.isChecked() ? "4" : bi.rbN20965.isChecked() ? "5" : bi.rbN20966.isChecked() ? "6" : bi.rbN20967.isChecked() ? "7"
                 : bi.rbN20968.isChecked() ? "8" : bi.rbN20969.isChecked() ? "9" : bi.rbN209610.isChecked() ? "10" : bi.rbN209611.isChecked() ? "11"
                 : bi.rbN209612.isChecked() ? "12" : bi.rbN209613.isChecked() ? "13" : bi.rbN209614.isChecked() ? "14" : bi.rbN209615.isChecked() ? "15"
-                : bi.rbN209616.isChecked() ? "16" : bi.rbN209617.isChecked() ? "17" : bi.rbN2096OT.isChecked() ? "18" : "-1");
+                : bi.rbN209616.isChecked() ? "16" : bi.rbN209617.isChecked() ? "17" : bi.rbN2096OT.isChecked() ? "18" : "-1");*/
+
+        n2080.setN20961(bi.cbN20961.isChecked() ? "1" : "-1");
+        n2080.setN20962(bi.cbN20962.isChecked() ? "2" : "-1");
+        n2080.setN20963(bi.cbN20963.isChecked() ? "3" : "-1");
+        n2080.setN20964(bi.cbN20964.isChecked() ? "4" : "-1");
+        n2080.setN20965(bi.cbN20965.isChecked() ? "5" : "-1");
+        n2080.setN20966(bi.cbN20966.isChecked() ? "6" : "-1");
+        n2080.setN20967(bi.cbN20967.isChecked() ? "7" : "-1");
+        n2080.setN20968(bi.cbN20968.isChecked() ? "8" : "-1");
+        n2080.setN20969(bi.cbN20969.isChecked() ? "9" : "-1");
+        n2080.setN209610(bi.cbN209610.isChecked() ? "10" : "-1");
+        n2080.setN209611(bi.cbN209611.isChecked() ? "11" : "-1");
+        n2080.setN209612(bi.cbN209612.isChecked() ? "12" : "-1");
+        n2080.setN209613(bi.cbN209613.isChecked() ? "13" : "-1");
+        n2080.setN209614(bi.cbN209614.isChecked() ? "14" : "-1");
+        n2080.setN209615(bi.cbN209615.isChecked() ? "15" : "-1");
+        n2080.setN209616(bi.cbN209616.isChecked() ? "16" : "-1");
+        n2080.setN209617(bi.cbN209617.isChecked() ? "17" : "-1");
+        n2080.setN2096OT(bi.cbN2096OT.isChecked() ? "18" : "-1");
+
         n2080.setN20971(bi.edN20971.getText().toString().trim().length() > 0 ? bi.edN20971.getText().toString() : "-1");
 
         n2080.setN20972(bi.edN20972.getText().toString().trim().length() > 0 ? bi.edN20972.getText().toString() : "-1");

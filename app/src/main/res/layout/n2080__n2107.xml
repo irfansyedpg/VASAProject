@@ -945,91 +945,85 @@
                                         style="@style/TextView"
                                         android:text="@string/txt_N2084" />
 
-                                    <RadioGroup
-                                        android:id="@+id/rg_N2084"
-                                        style="@style/RadioGroup">
-
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_1"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_1"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_1" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_2"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_2"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_2" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_3"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_3"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_3" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_4"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_4"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_4" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_5"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_5"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_5" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_6"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_6"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_6" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_7"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_7"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_7" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_8"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_8"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_8" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_9"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_9"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_9" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_10"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_10"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_10" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_11"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_11"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_11" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_12"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_12"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_12" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_13"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_13"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_13" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_14"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_14"
+                                            style="@style/CheckBox"
                                             android:text="@string/rb_N2084_14" />
 
-                                        <RadioButton
-                                            android:id="@+id/rb_N2084_OT"
-                                            style="@style/RadioButton"
+                                        <CheckBox
+                                            android:id="@+id/cb_N2084_OT"
+                                            style="@style/CheckBox"
                                             android:text="@string/ot_other" />
 
                                         <!--<EditText
                                             android:id="@+id/ed_N2084_OT"
                                             style="@style/EditText_varchar"
                                             android:hint="Other" />-->
-
-                                    </RadioGroup>
 
                                 </LinearLayout>
 
@@ -1059,6 +1053,10 @@
                                     android:id="@+id/txt_N2085"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2085" />
+
+                                <TextView
+                                    style="@style/TextView"
+                                    android:text="@string/N2085_h" />
 
                                 <RadioGroup
                                     android:id="@+id/rg_N2085"
@@ -2233,6 +2231,10 @@
                                         style="@style/TextView"
                                         android:text="@string/txt_N2092" />
 
+                                    <TextView
+                                        style="@style/TextView_Hint"
+                                        android:text="@string/N2092_h" />
+
                                     <RadioGroup
                                         android:id="@+id/rg_N2092"
                                         style="@style/RadioGroup">
@@ -2265,7 +2267,7 @@
                                         <RadioButton
                                             android:id="@+id/rb_N2092_OT"
                                             style="@style/RadioButton"
-                                            android:text="@string/ot_other" />
+                                            android:text="@string/ot" />
 
 
                                         <RadioButton
@@ -2276,7 +2278,7 @@
                                         <EditText
                                             android:id="@+id/ed_N2092_OT"
                                             style="@style/EditText_varchar"
-                                            android:hint="Other"
+                                            android:hint="@string/explain"
                                             android:text='@{rbN2092OT.checked ? edN2092OT.getText.toString : ""}'
                                             android:visibility="@{rbN2092OT.checked ? View.VISIBLE : View.GONE}" />
 
@@ -2506,104 +2508,100 @@
                                             style="@style/TextView"
                                             android:text="@string/txt_N2096" />
 
-                                        <RadioGroup style="@style/RadioGroup">
-
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_1"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_1"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_1" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_2"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_2"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_2" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_3"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_3"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_3" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_4"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_4"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_4" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_5"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_5"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_5" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_6"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_6"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_6" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_7"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_7"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_7" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_8"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_8"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_8" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_9"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_9"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_9" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_10"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_10"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_10" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_11"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_11"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_11" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_12"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_12"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_12" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_13"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_13"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_13" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_14"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_14"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_14" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_15"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_15"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_15" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_16"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_16"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_16" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_17"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_17"
+                                                style="@style/CheckBox"
                                                 android:text="@string/rb_N2096_17" />
 
-                                            <RadioButton
-                                                android:id="@+id/rb_N2096_OT"
-                                                style="@style/RadioButton"
+                                            <CheckBox
+                                                android:id="@+id/cb_N2096_OT"
+                                                style="@style/CheckBox"
                                                 android:text="@string/other" />
 
                                             <!--<EditText-->
                                             <!--android:id="@+id/ed_N2096_OT"-->
                                             <!--style="@style/EditText_varchar"-->
                                             <!--android:hint="Other" />-->
-
-                                        </RadioGroup>
 
                                     </LinearLayout>
 
@@ -2658,6 +2656,15 @@
                                         android:id="@+id/txt_N2098"
                                         style="@style/TextView"
                                         android:text="@string/txt_N2098" />
+
+                                    <TextView
+                                        style="@style/TextView"
+                                        android:text="@string/txt_N2098" />
+
+                                    <TextView
+                                        android:id="@+id/txt_N2098_2"
+                                        style="@style/TextView_Hint"
+                                        android:text="@string/N2098_h" />
 
                                     <RadioGroup
                                         android:id="@+id/rg_N2098"
