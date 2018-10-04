@@ -363,9 +363,11 @@ public class N2051_N2078 extends AppCompatActivity {
                 return false;
             }
 
-            //ll_N2069_3
-            if (!Gothrough.IamHiden(bi.llN20693)) {
-                return false;
+            if(!bi.rbN206921.isChecked()) {
+                //ll_N2069_3
+                if (!Gothrough.IamHiden(bi.llN20693)) {
+                    return false;
+                }
             }
         }
 

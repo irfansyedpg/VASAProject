@@ -433,6 +433,11 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2006" />
 
+                        <TextView
+
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2006_h" />
+
                         <RadioGroup
                             android:id="@+id/rg_N2006"
                             style="@style/RadioGroup">
@@ -547,6 +552,10 @@
                             android:id="@+id/txt_N2008"
                             style="@style/TextView"
                             android:text="@string/txt_N2008" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2008_h" />
 
                         <RadioGroup
                             android:id="@+id/rg_N2008"

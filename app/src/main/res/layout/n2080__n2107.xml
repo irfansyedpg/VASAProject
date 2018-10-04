@@ -1060,6 +1060,10 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2085" />
 
+                                <TextView
+                                    style="@style/TextView"
+                                    android:text="@string/N2085_h" />
+
                                 <RadioGroup
                                     android:id="@+id/rg_N2085"
                                     style="@style/RadioGroup">
@@ -2233,6 +2237,10 @@
                                         style="@style/TextView"
                                         android:text="@string/txt_N2092" />
 
+                                    <TextView
+                                        style="@style/TextView_Hint"
+                                        android:text="@string/N2092_h" />
+
                                     <RadioGroup
                                         android:id="@+id/rg_N2092"
                                         style="@style/RadioGroup">
@@ -2265,7 +2273,7 @@
                                         <RadioButton
                                             android:id="@+id/rb_N2092_OT"
                                             style="@style/RadioButton"
-                                            android:text="@string/ot_other" />
+                                            android:text="@string/ot" />
 
 
                                         <RadioButton
@@ -2276,7 +2284,7 @@
                                         <EditText
                                             android:id="@+id/ed_N2092_OT"
                                             style="@style/EditText_varchar"
-                                            android:hint="Other"
+                                            android:hint="@string/explain"
                                             android:text='@{rbN2092OT.checked ? edN2092OT.getText.toString : ""}'
                                             android:visibility="@{rbN2092OT.checked ? View.VISIBLE : View.GONE}" />
 
@@ -2658,6 +2666,15 @@
                                         android:id="@+id/txt_N2098"
                                         style="@style/TextView"
                                         android:text="@string/txt_N2098" />
+
+                                    <TextView
+                                        style="@style/TextView"
+                                        android:text="@string/txt_N2098" />
+
+                                    <TextView
+                                        android:id="@+id/txt_N2098_2"
+                                        style="@style/TextView_Hint"
+                                        android:text="@string/N2098_h" />
 
                                     <RadioGroup
                                         android:id="@+id/rg_N2098"

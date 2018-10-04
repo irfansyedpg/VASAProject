@@ -3705,7 +3705,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="rb_C3457_2"  translatable="false">No	</string>
     <string name="rb_C3457_DK"  translatable="false">Don’t know	</string>
     <string name="rb_C3457_RA"  translatable="false">Refused to answer	</string>
-    <string name="cb_C3472_1"  translatable="false">Abdomen 	</string>
+    <string name="cb_C3472_1"  translatable="false">Abdomen</string>
     <string name="cb_C3472_2"  translatable="false">Cancer 	</string>
     <string name="cb_C3472_3"  translatable="false">Dehydration 	</string>
     <string name="cb_C3472_4"  translatable="false">Dengue fever 	</string>
