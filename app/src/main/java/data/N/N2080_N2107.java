@@ -38,7 +38,21 @@ public class N2080_N2107 {
                 Global.N.N2080_N2107.sub_N2080_N2107.N2082_OT  + " TEXT," +
                 Global.N.N2080_N2107.sub_N2080_N2107.N2082_OTx + " TEXT," +
                 Global.N.N2080_N2107.sub_N2080_N2107.N2083     + " TEXT," +
-                Global.N.N2080_N2107.sub_N2080_N2107.N2084     + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_1   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_2   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_3   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_4   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_5   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_6   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_7   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_8   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_9   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_10  + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_11  + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_12  + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_13  + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_14  + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2084_OT  + " TEXT," +
                 Global.N.N2080_N2107.sub_N2080_N2107.N2085     + " TEXT," +
                 Global.N.N2080_N2107.sub_N2080_N2107.N2086_1   + " TEXT," +
                 Global.N.N2080_N2107.sub_N2080_N2107.N2086_2   + " TEXT," +
@@ -95,7 +109,26 @@ public class N2080_N2107 {
                 Global.N.N2080_N2107.sub_N2080_N2107.N2093x    + " TEXT," +
                 Global.N.N2080_N2107.sub_N2080_N2107.N2094     + " TEXT," +
                 Global.N.N2080_N2107.sub_N2080_N2107.N2095     + " TEXT," +
-                Global.N.N2080_N2107.sub_N2080_N2107.N2096     + " TEXT," +
+
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_1   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_2   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_3   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_4   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_5   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_6   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_7   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_8   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_9   + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_10  + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_11  + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_12  + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_13  + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_14  + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_15  + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_16  + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_17  + " TEXT," +
+                Global.N.N2080_N2107.sub_N2080_N2107.N2096_OT  + " TEXT," +
+
                 Global.N.N2080_N2107.sub_N2080_N2107.N2097_1   + " TEXT," +
                 Global.N.N2080_N2107.sub_N2080_N2107.N2097_2   + " TEXT," +
                 Global.N.N2080_N2107.sub_N2080_N2107.N2097_3   + " TEXT," +

@@ -3726,7 +3726,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="ra"  translatable="false">Refused to Answer</string>
     <string name="ot_someone"  translatable="false">Someone else (specify)</string>
     <string name="ot_other"  translatable="false">Other (Specify)</string>
-    <string name="other"  translatable="false">Other (specify)</string>
+    <string name="other"  translatable="false">Other</string>
     <string name="minutes"  translatable="false">Minutes</string>
     <string name="hours"  translatable="false">Hours</string>
     <string name="days"  translatable="false">Days</string>

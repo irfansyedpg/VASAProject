@@ -460,7 +460,23 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2080_N2107.sub_N2080_N2107.N2082_OT, n2080.getN2082Ot());
         values.put(N2080_N2107.sub_N2080_N2107.N2082_OTx, n2080.getN2082OTx());
         values.put(N2080_N2107.sub_N2080_N2107.N2083, n2080.getN2083());
-        values.put(N2080_N2107.sub_N2080_N2107.N2084, n2080.getN2084());
+
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_1, n2080.getN20841());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_2, n2080.getN20842());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_3, n2080.getN20843());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_4, n2080.getN20844());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_5, n2080.getN20845());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_6, n2080.getN20846());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_7, n2080.getN20847());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_8, n2080.getN20848());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_9, n2080.getN20849());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_10, n2080.getN208410());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_11, n2080.getN208411());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_12, n2080.getN208412());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_13, n2080.getN208413());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_14, n2080.getN208414());
+        values.put(N2080_N2107.sub_N2080_N2107.N2084_OT, n2080.getN2084OT());
+
         values.put(N2080_N2107.sub_N2080_N2107.N2085, n2080.getN2085());
         values.put(N2080_N2107.sub_N2080_N2107.N2086_1, n2080.getN20861());
         values.put(N2080_N2107.sub_N2080_N2107.N2086_2, n2080.getN20862());
@@ -517,7 +533,26 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2080_N2107.sub_N2080_N2107.N2093x, n2080.getN2093x());
         values.put(N2080_N2107.sub_N2080_N2107.N2094, n2080.getN2094());
         values.put(N2080_N2107.sub_N2080_N2107.N2095, n2080.getN2095());
-        values.put(N2080_N2107.sub_N2080_N2107.N2096, n2080.getN2096());
+
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_1, n2080.getN20961());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_2, n2080.getN20962());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_3, n2080.getN20963());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_4, n2080.getN20964());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_5, n2080.getN20965());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_6, n2080.getN20966());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_7, n2080.getN20967());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_8, n2080.getN20968());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_9, n2080.getN20969());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_10, n2080.getN209610());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_11, n2080.getN209611());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_12, n2080.getN209612());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_13, n2080.getN209613());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_14, n2080.getN209614());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_15, n2080.getN209615());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_16, n2080.getN209616());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_17, n2080.getN209617());
+        values.put(N2080_N2107.sub_N2080_N2107.N2096_OT, n2080.getN2096OT());
+
         values.put(N2080_N2107.sub_N2080_N2107.N2097_1, n2080.getN20971());
         values.put(N2080_N2107.sub_N2080_N2107.N2097_2, n2080.getN20972());
         values.put(N2080_N2107.sub_N2080_N2107.N2097_3, n2080.getN20973());
