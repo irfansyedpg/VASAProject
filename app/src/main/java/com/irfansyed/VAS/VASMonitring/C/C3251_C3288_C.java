@@ -529,139 +529,139 @@ public class C3251_C3288_C extends AppCompatActivity {
 
         C3251_C3288_A_C C3251C = new C3251_C3288_A_C();
 
-        C3251C.setC3254(bi.rbC32541.isChecked() ? "1" : bi.rbC32542.isChecked() ? "2" : bi.rbC32543.isChecked() ? "3" : bi.rbC32544.isChecked() ? "4" : bi.rbC32545.isChecked() ? "5" : bi.rbC3254OT.isChecked() ? "6" : bi.rbC3254DK.isChecked() ? "9" : "0");
+        C3251C.setC3254(bi.rbC32541.isChecked() ? "1" : bi.rbC32542.isChecked() ? "2" : bi.rbC32543.isChecked() ? "3" : bi.rbC32544.isChecked() ? "4" : bi.rbC32545.isChecked() ? "5" : bi.rbC3254OT.isChecked() ? "6" : bi.rbC3254DK.isChecked() ? "9" : "-1");
         C3251C.setC3254x(bi.edC3254OT.getText().toString());
-        C3251C.setC3255(bi.rbC32551.isChecked() ? "1" : bi.rbC32552.isChecked() ? "2" : bi.rbC3255DK.isChecked() ? "9" : "0");
+        C3251C.setC3255(bi.rbC32551.isChecked() ? "1" : bi.rbC32552.isChecked() ? "2" : bi.rbC3255DK.isChecked() ? "9" : "-1");
 
-        C3251C.setC32561(bi.cbC32561.isChecked() ? "1" : "0");
-        C3251C.setC32562(bi.cbC32562.isChecked() ? "2" : "0");
-        C3251C.setC32563(bi.cbC32563.isChecked() ? "3" : "0");
-        C3251C.setC32564(bi.cbC32564.isChecked() ? "4" : "0");
+        C3251C.setC32561(bi.cbC32561.isChecked() ? "1" : "-1");
+        C3251C.setC32562(bi.cbC32562.isChecked() ? "2" : "-1");
+        C3251C.setC32563(bi.cbC32563.isChecked() ? "3" : "-1");
+        C3251C.setC32564(bi.cbC32564.isChecked() ? "4" : "-1");
         C3251C.setC32564x(bi.edC32564.getText().toString());
-        C3251C.setC32565(bi.cbC32565.isChecked() ? "5" : "0");
-        C3251C.setC32566(bi.cbC32566.isChecked() ? "6" : "0");
-        C3251C.setC32567(bi.cbC32567.isChecked() ? "7" : "0");
-        C3251C.setC32568(bi.cbC32568.isChecked() ? "8" : "0");
-        C3251C.setC32569(bi.cbC32569.isChecked() ? "9" : "0");
-        C3251C.setC325610(bi.cbC325610.isChecked() ? "10" : "0");
-        C3251C.setC325611(bi.cbC325611.isChecked() ? "11" : "0");
-        C3251C.setC325612(bi.cbC325612.isChecked() ? "12" : "0");
-        C3251C.setC3256Ot(bi.cbC3256OT.isChecked() ? "13" : "0");
+        C3251C.setC32565(bi.cbC32565.isChecked() ? "5" : "-1");
+        C3251C.setC32566(bi.cbC32566.isChecked() ? "6" : "-1");
+        C3251C.setC32567(bi.cbC32567.isChecked() ? "7" : "-1");
+        C3251C.setC32568(bi.cbC32568.isChecked() ? "8" : "-1");
+        C3251C.setC32569(bi.cbC32569.isChecked() ? "9" : "-1");
+        C3251C.setC325610(bi.cbC325610.isChecked() ? "10" : "-1");
+        C3251C.setC325611(bi.cbC325611.isChecked() ? "11" : "-1");
+        C3251C.setC325612(bi.cbC325612.isChecked() ? "12" : "-1");
+        C3251C.setC3256Ot(bi.cbC3256OT.isChecked() ? "13" : "-1");
         C3251C.setC3256OTx(bi.edC3256OT.getText().toString());
-        C3251C.setC3256Dk(bi.cbC3256DK.isChecked() ? "99" : "0");
+        C3251C.setC3256Dk(bi.cbC3256DK.isChecked() ? "99" : "-1");
 
         C3251C.setC32571(bi.edC32571.getText().toString());
         C3251C.setC32572(bi.edC32572.getText().toString());
         C3251C.setC32573(bi.edC32573.getText().toString());
 
-        C3251C.setC32581(bi.rbC325811.isChecked() ? "1" : bi.rbC325812.isChecked() ? "2" : bi.rbC325813.isChecked() ? "3" : bi.rbC32581DK.isChecked() ? "9" : "0");
-        C3251C.setC32582(bi.rbC325821.isChecked() ? "1" : bi.rbC325822.isChecked() ? "2" : bi.rbC325823.isChecked() ? "3" : bi.rbC32582DK.isChecked() ? "9" : "0");
+        C3251C.setC32581(bi.rbC325811.isChecked() ? "1" : bi.rbC325812.isChecked() ? "2" : bi.rbC325813.isChecked() ? "3" : bi.rbC32581DK.isChecked() ? "9" : "-1");
+        C3251C.setC32582(bi.rbC325821.isChecked() ? "1" : bi.rbC325822.isChecked() ? "2" : bi.rbC325823.isChecked() ? "3" : bi.rbC32582DK.isChecked() ? "9" : "-1");
 
         C3251C.setC3259(bi.rbC325911.isChecked() ? "1" : bi.rbC325912.isChecked() ? "2" : bi.rbC325913.isChecked() ? "3"
                 : bi.rbC325914.isChecked() ? "4" : bi.rbC325915.isChecked() ? "5" : bi.rbC325916.isChecked() ? "6" : bi.rbC325917.isChecked() ? "7"
-                : bi.rbC325918.isChecked() ? "8" : bi.rbC325919.isChecked() ? "9" : bi.rbC3259110.isChecked() ? "10" : bi.rbC3259111.isChecked() ? "11" : bi.rbC32591DK.isChecked() ? "99" : "0");
+                : bi.rbC325918.isChecked() ? "8" : bi.rbC325919.isChecked() ? "9" : bi.rbC3259110.isChecked() ? "10" : bi.rbC3259111.isChecked() ? "11" : bi.rbC32591DK.isChecked() ? "99" : "-1");
         C3251C.setC32592(bi.edC32592.getText().toString());
 
-        C3251C.setC3260(bi.rbC32601.isChecked() ? "1" : bi.rbC32602.isChecked() ? "2" : bi.rbC32603.isChecked() ? "3" : bi.rbC3260DK.isChecked() ? "9" : "0");
+        C3251C.setC3260(bi.rbC32601.isChecked() ? "1" : bi.rbC32602.isChecked() ? "2" : bi.rbC32603.isChecked() ? "3" : bi.rbC3260DK.isChecked() ? "9" : "-1");
 
         C3251C.setC32611(bi.edC32611.getText().toString());
         C3251C.setC32612(bi.edC32612.getText().toString());
 
-        C3251C.setC3262(bi.rbC32621.isChecked() ? "1" : bi.rbC32622.isChecked() ? "2" : bi.rbC3262DK.isChecked() ? "9" : "0");
-        C3251C.setC3263(bi.rbC32631.isChecked() ? "1" : bi.rbC32632.isChecked() ? "2" : bi.rbC3263DK.isChecked() ? "9" : "0");
+        C3251C.setC3262(bi.rbC32621.isChecked() ? "1" : bi.rbC32622.isChecked() ? "2" : bi.rbC3262DK.isChecked() ? "9" : "-1");
+        C3251C.setC3263(bi.rbC32631.isChecked() ? "1" : bi.rbC32632.isChecked() ? "2" : bi.rbC3263DK.isChecked() ? "9" : "-1");
 
         C3251C.setC3264(bi.rbC326411.isChecked() ? "1" : bi.rbC326412.isChecked() ? "2" : bi.rbC326413.isChecked() ? "3"
                 : bi.rbC326414.isChecked() ? "4" : bi.rbC326415.isChecked() ? "5" : bi.rbC326416.isChecked() ? "6" : bi.rbC326417.isChecked() ? "7"
-                : bi.rbC326418.isChecked() ? "8" : bi.rbC326419.isChecked() ? "9" : bi.rbC3264110.isChecked() ? "10" : bi.rbC3264111.isChecked() ? "11" : bi.rbC32641DK.isChecked() ? "99" : "0");
+                : bi.rbC326418.isChecked() ? "8" : bi.rbC326419.isChecked() ? "9" : bi.rbC3264110.isChecked() ? "10" : bi.rbC3264111.isChecked() ? "11" : bi.rbC32641DK.isChecked() ? "99" : "-1");
         C3251C.setC32642(bi.edC32642.getText().toString());
 
-        C3251C.setC32651(bi.rbC326511.isChecked() ? "1" : bi.rbC326512.isChecked() ? "2" : bi.rbC32651DK.isChecked() ? "9" : "0");
-        C3251C.setC32652(bi.rbC326521.isChecked() ? "1" : bi.rbC326522.isChecked() ? "2" : bi.rbC32652DK.isChecked() ? "9" : "0");
+        C3251C.setC32651(bi.rbC326511.isChecked() ? "1" : bi.rbC326512.isChecked() ? "2" : bi.rbC32651DK.isChecked() ? "9" : "-1");
+        C3251C.setC32652(bi.rbC326521.isChecked() ? "1" : bi.rbC326522.isChecked() ? "2" : bi.rbC32652DK.isChecked() ? "9" : "-1");
 
-        C3251C.setC3266(bi.rbC32661.isChecked() ? "1" : bi.rbC32662.isChecked() ? "2" : "0");
+        C3251C.setC3266(bi.rbC32661.isChecked() ? "1" : bi.rbC32662.isChecked() ? "2" : "-1");
 
-        C3251C.setC32671(bi.rbC326711.isChecked() ? "1" : bi.rbC326712.isChecked() ? "2" : bi.rbC326713.isChecked() ? "3" : bi.rbC32671DK.isChecked() ? "9" : "0");
-        C3251C.setC32672(bi.rbC326721.isChecked() ? "1" : bi.rbC326722.isChecked() ? "2" : bi.rbC326723.isChecked() ? "3" : bi.rbC32672DK.isChecked() ? "9" : "0");
+        C3251C.setC32671(bi.rbC326711.isChecked() ? "1" : bi.rbC326712.isChecked() ? "2" : bi.rbC326713.isChecked() ? "3" : bi.rbC32671DK.isChecked() ? "9" : "-1");
+        C3251C.setC32672(bi.rbC326721.isChecked() ? "1" : bi.rbC326722.isChecked() ? "2" : bi.rbC326723.isChecked() ? "3" : bi.rbC32672DK.isChecked() ? "9" : "-1");
 
         /*Repeat*/
 
-        C3251C.setC32681(bi.rbC326811.isChecked() ? "1" : bi.rbC326812.isChecked() ? "2" : bi.rbC326813.isChecked() ? "3" : bi.rbC32681DK.isChecked() ? "9" : "0");
-        C3251C.setC32682(bi.rbC326821.isChecked() ? "1" : bi.rbC326822.isChecked() ? "2" : bi.rbC326823.isChecked() ? "3" : bi.rbC32682DK.isChecked() ? "9" : "0");
+        C3251C.setC32681(bi.rbC326811.isChecked() ? "1" : bi.rbC326812.isChecked() ? "2" : bi.rbC326813.isChecked() ? "3" : bi.rbC32681DK.isChecked() ? "9" : "-1");
+        C3251C.setC32682(bi.rbC326821.isChecked() ? "1" : bi.rbC326822.isChecked() ? "2" : bi.rbC326823.isChecked() ? "3" : bi.rbC32682DK.isChecked() ? "9" : "-1");
 
         C3251C.setC3269(bi.rbC326911.isChecked() ? "1" : bi.rbC326912.isChecked() ? "2" : bi.rbC326913.isChecked() ? "3"
                 : bi.rbC326914.isChecked() ? "4" : bi.rbC326915.isChecked() ? "5" : bi.rbC326916.isChecked() ? "6" : bi.rbC326917.isChecked() ? "7"
-                : bi.rbC326918.isChecked() ? "8" : bi.rbC326919.isChecked() ? "9" : bi.rbC3269110.isChecked() ? "10" : bi.rbC3269111.isChecked() ? "11" : bi.rbC32691DK.isChecked() ? "99" : "0");
+                : bi.rbC326918.isChecked() ? "8" : bi.rbC326919.isChecked() ? "9" : bi.rbC3269110.isChecked() ? "10" : bi.rbC3269111.isChecked() ? "11" : bi.rbC32691DK.isChecked() ? "99" : "-1");
         C3251C.setC32692(bi.edC32692.getText().toString());
 
-        C3251C.setC3270(bi.rbC32701.isChecked() ? "1" : bi.rbC32702.isChecked() ? "2" : bi.rbC32703.isChecked() ? "3" : bi.rbC3270DK.isChecked() ? "9" : "0");
+        C3251C.setC3270(bi.rbC32701.isChecked() ? "1" : bi.rbC32702.isChecked() ? "2" : bi.rbC32703.isChecked() ? "3" : bi.rbC3270DK.isChecked() ? "9" : "-1");
 
         C3251C.setC32711(bi.edC32711.getText().toString());
         C3251C.setC32712(bi.edC32712.getText().toString());
 
-        C3251C.setC3272(bi.rbC32721.isChecked() ? "1" : bi.rbC32722.isChecked() ? "2" : bi.rbC3272DK.isChecked() ? "9" : "0");
-        C3251C.setC3273(bi.rbC32731.isChecked() ? "1" : bi.rbC32732.isChecked() ? "2" : bi.rbC3273DK.isChecked() ? "9" : "0");
+        C3251C.setC3272(bi.rbC32721.isChecked() ? "1" : bi.rbC32722.isChecked() ? "2" : bi.rbC3272DK.isChecked() ? "9" : "-1");
+        C3251C.setC3273(bi.rbC32731.isChecked() ? "1" : bi.rbC32732.isChecked() ? "2" : bi.rbC3273DK.isChecked() ? "9" : "-1");
 
         C3251C.setC3274(bi.rbC327411.isChecked() ? "1" : bi.rbC327412.isChecked() ? "2" : bi.rbC327413.isChecked() ? "3"
                 : bi.rbC327414.isChecked() ? "4" : bi.rbC327415.isChecked() ? "5" : bi.rbC327416.isChecked() ? "6" : bi.rbC327417.isChecked() ? "7"
-                : bi.rbC327418.isChecked() ? "8" : bi.rbC327419.isChecked() ? "9" : bi.rbC3274110.isChecked() ? "10" : bi.rbC3274111.isChecked() ? "11" : bi.rbC32741DK.isChecked() ? "99" : "0");
+                : bi.rbC327418.isChecked() ? "8" : bi.rbC327419.isChecked() ? "9" : bi.rbC3274110.isChecked() ? "10" : bi.rbC3274111.isChecked() ? "11" : bi.rbC32741DK.isChecked() ? "99" : "-1");
         C3251C.setC32742(bi.edC32742.getText().toString());
 
-        C3251C.setC32751(bi.rbC327511.isChecked() ? "1" : bi.rbC327512.isChecked() ? "2" : bi.rbC32751DK.isChecked() ? "9" : "0");
-        C3251C.setC32752(bi.rbC327521.isChecked() ? "1" : bi.rbC327522.isChecked() ? "2" : bi.rbC32752DK.isChecked() ? "9" : "0");
+        C3251C.setC32751(bi.rbC327511.isChecked() ? "1" : bi.rbC327512.isChecked() ? "2" : bi.rbC32751DK.isChecked() ? "9" : "-1");
+        C3251C.setC32752(bi.rbC327521.isChecked() ? "1" : bi.rbC327522.isChecked() ? "2" : bi.rbC32752DK.isChecked() ? "9" : "-1");
 
-        C3251C.setC3276(bi.rbC32761.isChecked() ? "1" : bi.rbC32762.isChecked() ? "2" : "0");
+        C3251C.setC3276(bi.rbC32761.isChecked() ? "1" : bi.rbC32762.isChecked() ? "2" : "-1");
 
-        C3251C.setC32771(bi.rbC327711.isChecked() ? "1" : bi.rbC327712.isChecked() ? "2" : bi.rbC327713.isChecked() ? "3" : bi.rbC32771DK.isChecked() ? "9" : "0");
-        C3251C.setC32772(bi.rbC327721.isChecked() ? "1" : bi.rbC327722.isChecked() ? "2" : bi.rbC327723.isChecked() ? "3" : bi.rbC32772DK.isChecked() ? "9" : "0");
+        C3251C.setC32771(bi.rbC327711.isChecked() ? "1" : bi.rbC327712.isChecked() ? "2" : bi.rbC327713.isChecked() ? "3" : bi.rbC32771DK.isChecked() ? "9" : "-1");
+        C3251C.setC32772(bi.rbC327721.isChecked() ? "1" : bi.rbC327722.isChecked() ? "2" : bi.rbC327723.isChecked() ? "3" : bi.rbC32772DK.isChecked() ? "9" : "-1");
 
-        C3251C.setC3278(bi.rbC32781.isChecked() ? "1" : bi.rbC32782.isChecked() ? "2" : bi.rbC3278DK.isChecked() ? "9" : "0");
-        C3251C.setC3279(bi.rbC32791.isChecked() ? "1" : bi.rbC32792.isChecked() ? "2" : bi.rbC3279DK.isChecked() ? "9" : "0");
+        C3251C.setC3278(bi.rbC32781.isChecked() ? "1" : bi.rbC32782.isChecked() ? "2" : bi.rbC3278DK.isChecked() ? "9" : "-1");
+        C3251C.setC3279(bi.rbC32791.isChecked() ? "1" : bi.rbC32792.isChecked() ? "2" : bi.rbC3279DK.isChecked() ? "9" : "-1");
 
-        C3251C.setC32801(bi.cbC32801.isChecked() ? "1" : "0");
-        C3251C.setC32802(bi.cbC32802.isChecked() ? "2" : "0");
-        C3251C.setC32803(bi.cbC32803.isChecked() ? "3" : "0");
-        C3251C.setC32804(bi.cbC32804.isChecked() ? "4" : "0");
-        C3251C.setC32805(bi.cbC32805.isChecked() ? "5" : "0");
+        C3251C.setC32801(bi.cbC32801.isChecked() ? "1" : "-1");
+        C3251C.setC32802(bi.cbC32802.isChecked() ? "2" : "-1");
+        C3251C.setC32803(bi.cbC32803.isChecked() ? "3" : "-1");
+        C3251C.setC32804(bi.cbC32804.isChecked() ? "4" : "-1");
+        C3251C.setC32805(bi.cbC32805.isChecked() ? "5" : "-1");
         C3251C.setC32805x(bi.edC32805.getText().toString());
-        C3251C.setC32806(bi.cbC32806.isChecked() ? "6" : "0");
-        C3251C.setC32807(bi.cbC32807.isChecked() ? "7" : "0");
-        C3251C.setC32808(bi.cbC32808.isChecked() ? "8" : "0");
-        C3251C.setC32809(bi.cbC32809.isChecked() ? "9" : "0");
-        C3251C.setC328010(bi.cbC328010.isChecked() ? "10" : "0");
-        C3251C.setC328011(bi.cbC328011.isChecked() ? "11" : "0");
-        C3251C.setC328012(bi.cbC328012.isChecked() ? "12" : "0");
-        C3251C.setC328013(bi.cbC328013.isChecked() ? "13" : "0");
-        C3251C.setC328014(bi.cbC328014.isChecked() ? "14" : "0");
-        C3251C.setC328015(bi.cbC328015.isChecked() ? "15" : "0");
-        C3251C.setC3280Ot(bi.cbC3280OT.isChecked() ? "16" : "0");
+        C3251C.setC32806(bi.cbC32806.isChecked() ? "6" : "-1");
+        C3251C.setC32807(bi.cbC32807.isChecked() ? "7" : "-1");
+        C3251C.setC32808(bi.cbC32808.isChecked() ? "8" : "-1");
+        C3251C.setC32809(bi.cbC32809.isChecked() ? "9" : "-1");
+        C3251C.setC328010(bi.cbC328010.isChecked() ? "10" : "-1");
+        C3251C.setC328011(bi.cbC328011.isChecked() ? "11" : "-1");
+        C3251C.setC328012(bi.cbC328012.isChecked() ? "12" : "-1");
+        C3251C.setC328013(bi.cbC328013.isChecked() ? "13" : "-1");
+        C3251C.setC328014(bi.cbC328014.isChecked() ? "14" : "-1");
+        C3251C.setC328015(bi.cbC328015.isChecked() ? "15" : "-1");
+        C3251C.setC3280Ot(bi.cbC3280OT.isChecked() ? "16" : "-1");
         C3251C.setC3280OTx(bi.edC3280OT.getText().toString());
-        C3251C.setC3280Dk(bi.cbC3280DK.isChecked() ? "99" : "0");
+        C3251C.setC3280Dk(bi.cbC3280DK.isChecked() ? "99" : "-1");
 
-        C3251C.setC3281(bi.rbC32811.isChecked() ? "1" : bi.rbC32812.isChecked() ? "2" : bi.rbC3281DK.isChecked() ? "9" : "0");
+        C3251C.setC3281(bi.rbC32811.isChecked() ? "1" : bi.rbC32812.isChecked() ? "2" : bi.rbC3281DK.isChecked() ? "9" : "-1");
 
 
-        C3251C.setC32821(bi.cbC32821.isChecked() ? "1" : "0");
-        C3251C.setC32822(bi.cbC32822.isChecked() ? "2" : "0");
-        C3251C.setC32823(bi.cbC32823.isChecked() ? "3" : "0");
-        C3251C.setC32824(bi.cbC32824.isChecked() ? "4" : "0");
-        C3251C.setC32825(bi.cbC32825.isChecked() ? "5" : "0");
-        C3251C.setC32826(bi.cbC32826.isChecked() ? "6" : "0");
-        C3251C.setC32827(bi.cbC32827.isChecked() ? "7" : "0");
-        C3251C.setC3282Dk(bi.cbC3282Dk.isChecked() ? "99" : "0");
-        C3251C.setC32831(bi.cbC32831.isChecked() ? "1" : "0");
-        C3251C.setC32832(bi.cbC32832.isChecked() ? "2" : "0");
-        C3251C.setC32833(bi.cbC32833.isChecked() ? "3" : "0");
-        C3251C.setC32834(bi.cbC32834.isChecked() ? "4" : "0");
-        C3251C.setC32835(bi.cbC32835.isChecked() ? "5" : "0");
-        C3251C.setC32836(bi.cbC32836.isChecked() ? "6" : "0");
-        C3251C.setC32837(bi.cbC32837.isChecked() ? "7" : "0");
-        C3251C.setC3283Dk(bi.cbC3283DK.isChecked() ? "99" : "0");
+        C3251C.setC32821(bi.cbC32821.isChecked() ? "1" : "-1");
+        C3251C.setC32822(bi.cbC32822.isChecked() ? "2" : "-1");
+        C3251C.setC32823(bi.cbC32823.isChecked() ? "3" : "-1");
+        C3251C.setC32824(bi.cbC32824.isChecked() ? "4" : "-1");
+        C3251C.setC32825(bi.cbC32825.isChecked() ? "5" : "-1");
+        C3251C.setC32826(bi.cbC32826.isChecked() ? "6" : "-1");
+        C3251C.setC32827(bi.cbC32827.isChecked() ? "7" : "-1");
+        C3251C.setC3282Dk(bi.cbC3282Dk.isChecked() ? "99" : "-1");
+        C3251C.setC32831(bi.cbC32831.isChecked() ? "1" : "-1");
+        C3251C.setC32832(bi.cbC32832.isChecked() ? "2" : "-1");
+        C3251C.setC32833(bi.cbC32833.isChecked() ? "3" : "-1");
+        C3251C.setC32834(bi.cbC32834.isChecked() ? "4" : "-1");
+        C3251C.setC32835(bi.cbC32835.isChecked() ? "5" : "-1");
+        C3251C.setC32836(bi.cbC32836.isChecked() ? "6" : "-1");
+        C3251C.setC32837(bi.cbC32837.isChecked() ? "7" : "-1");
+        C3251C.setC3283Dk(bi.cbC3283DK.isChecked() ? "99" : "-1");
 
-        C3251C.setC3284(bi.rbC32841.isChecked() ? "1" : bi.rbC32842.isChecked() ? "2" : bi.rbC3284DK.isChecked() ? "9" : bi.rbC3284RA.isChecked() ? "8" : "0");
-        C3251C.setC3285(bi.rbC32851.isChecked() ? "1" : bi.rbC32852.isChecked() ? "2" : bi.rbC3285DK.isChecked() ? "9" : bi.rbC3285RA.isChecked() ? "8" : "0");
-        C3251C.setC3286(bi.rbC32861.isChecked() ? "1" : bi.rbC32862.isChecked() ? "2" : bi.rbC3286DK.isChecked() ? "9" : bi.rbC3286RA.isChecked() ? "8" : "0");
+        C3251C.setC3284(bi.rbC32841.isChecked() ? "1" : bi.rbC32842.isChecked() ? "2" : bi.rbC3284DK.isChecked() ? "9" : bi.rbC3284RA.isChecked() ? "8" : "-1");
+        C3251C.setC3285(bi.rbC32851.isChecked() ? "1" : bi.rbC32852.isChecked() ? "2" : bi.rbC3285DK.isChecked() ? "9" : bi.rbC3285RA.isChecked() ? "8" : "-1");
+        C3251C.setC3286(bi.rbC32861.isChecked() ? "1" : bi.rbC32862.isChecked() ? "2" : bi.rbC3286DK.isChecked() ? "9" : bi.rbC3286RA.isChecked() ? "8" : "-1");
 
-        C3251C.setC3287(bi.rbC32871.isChecked() ? "1" : bi.rbC32872.isChecked() ? "2" : bi.rbC3287DK.isChecked() ? "9" : bi.rbC3287RA.isChecked() ? "8" : "0");
+        C3251C.setC3287(bi.rbC32871.isChecked() ? "1" : bi.rbC32872.isChecked() ? "2" : bi.rbC3287DK.isChecked() ? "9" : bi.rbC3287RA.isChecked() ? "8" : "-1");
 
         C3251C.setC3288(bi.edC3288.getText().toString());
 

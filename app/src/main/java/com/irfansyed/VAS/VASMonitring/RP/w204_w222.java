@@ -808,8 +808,8 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
                 int number_preg =0;
 
-            if(ed_W215.getText().toString().length()>0) {
-                number_preg = Integer.parseInt(ed_W215.getText().toString());
+            if(ed_W211.getText().toString().length()>0) {
+                number_preg = Integer.parseInt(ed_W211.getText().toString());
             }
 
 
