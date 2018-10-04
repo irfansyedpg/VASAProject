@@ -2598,6 +2598,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(Q1101_Q1610.interviewType, c.getString(c.getColumnIndex("interviewType")));
                         params.put(Q1101_Q1610.currentSection, c.getString(c.getColumnIndex("currentSection")));
                     }
+
                 }
 
                 if (c2 != null) {
@@ -2623,6 +2624,28 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4001_A4014.A4013y, c2.getString(c2.getColumnIndex("A4013y")));
                     }
                 }
+                else
+                    {
+
+                        params.put(A4001_A4014.A4001,"-2");
+                        params.put(A4001_A4014.A4002, "-2");
+                        params.put(A4001_A4014.A4003, "-2");
+                        params.put(A4001_A4014.A4004, "-2");
+                        params.put(A4001_A4014.A4005, "-2");
+                        params.put(A4001_A4014.A4006, "-2");
+                        params.put(A4001_A4014.A4007, "-2");
+                        params.put(A4001_A4014.A4007_1, "-2");
+                        params.put(A4001_A4014.A4008, "-2");
+                        params.put(A4001_A4014.A4009a, "-2");
+                        params.put(A4001_A4014.A4010, "-2");
+                        params.put(A4001_A4014.A4011, "-2");
+                        params.put(A4001_A4014.A4012, "-2");
+                        params.put(A4001_A4014.A4013u, "-2");
+                        params.put(A4001_A4014.A4013d, "-2");
+                        params.put(A4001_A4014.A4013m, "-2");
+                        params.put(A4001_A4014.A4013y, "-2");
+
+                    }
 
                 if (c3 != null) {
 
@@ -2653,6 +2676,32 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4051_A4066.A4066, c3.getString(c3.getColumnIndex("A4066")));
                     }
                 }
+                else
+                    {
+                        params.put(A4051_A4066.A4051, "-2");
+                        params.put(A4051_A4066.A4052_u, "-2");
+                        params.put(A4051_A4066.A4052_b, "-2");
+                        params.put(A4051_A4066.A4052_c, "-2");
+                        params.put(A4051_A4066.A4053, "-2");
+                        params.put(A4051_A4066.A4054, "-2");
+                        params.put(A4051_A4066.A4055, "-2");
+                        params.put(A4051_A4066.A4056, "-2");
+                        params.put(A4051_A4066.A4057, "-2");
+                        params.put(A4051_A4066.A4058, "-2");
+                        params.put(A4051_A4066.A4059_u, "-2");
+                        params.put(A4051_A4066.A4059_a, "-2");
+                        params.put(A4051_A4066.A4059_b, "-2");
+                        params.put(A4051_A4066.A4060, "-2");
+                        params.put(A4051_A4066.A4061, "-2");
+                        params.put(A4051_A4066.A4062, "-2");
+                        params.put(A4051_A4066.A4063, "-2");
+                        params.put(A4051_A4066.A4064_u, "-2");
+                        params.put(A4051_A4066.A4064_a, "-2");
+                        params.put(A4051_A4066.A4064_b, "-2");
+                        params.put(A4051_A4066.A4064_1, "-2");
+                        params.put(A4051_A4066.A4065, "-2");
+                        params.put(A4051_A4066.A4066, "-2");
+                    }
 
                 if (c4 != null) {
 
@@ -2683,8 +2732,36 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4067_A4080.A4080, c4.getString(c4.getColumnIndex("A4080")));
                     }
                 }
+                else
+                    {
+                        params.put(A4067_A4080.A4067, "-2");
+                        params.put(A4067_A4080.A4068, "-2");
+                        params.put(A4067_A4080.A4069_u, "-2");
+                        params.put(A4067_A4080.A4069_a, "-2");
+                        params.put(A4067_A4080.A4069_b, "-2");
+                        params.put(A4067_A4080.A4069_c, "-2");
+                        params.put(A4067_A4080.A4070, "-2");
+                        params.put(A4067_A4080.A4071, "-2");
+                        params.put(A4067_A4080.A4072_u, "-2");
+                        params.put(A4067_A4080.A4072_a, "-2");
+                        params.put(A4067_A4080.A4072_b, "-2");
+                        params.put(A4067_A4080.A4073, "-2");
+                        params.put(A4067_A4080.A4074, "-2");
+                        params.put(A4067_A4080.A4075_u, "-2");
+                        params.put(A4067_A4080.A4075_a, "-2");
+                        params.put(A4067_A4080.A4075_b, "-2");
+                        params.put(A4067_A4080.A4076, "-2");
+                        params.put(A4067_A4080.A4077_u, "-2");
+                        params.put(A4067_A4080.A4077_a, "-2");
+                        params.put(A4067_A4080.A4077_b, "-2");
+                        params.put(A4067_A4080.A4078, "-2");
+                        params.put(A4067_A4080.A4079, "-2");
+                        params.put(A4067_A4080.A4080, "-2");
+                    }
 
-                if (c5 != null) {
+
+
+                    if (c5 != null) {
 
                     if (c5.moveToFirst()) {
 
@@ -2714,6 +2791,33 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4081_A4094.A4094_c, c5.getString(c5.getColumnIndex("A4094_c")));
                     }
                 }
+                else
+                    {
+                        params.put(A4081_A4094.A4081,    "-2");
+                        params.put(A4081_A4094.A4082_u,    "-2");
+                        params.put(A4081_A4094.A4082_a,    "-2");
+                        params.put(A4081_A4094.A4082_b,    "-2");
+                        params.put(A4081_A4094.A4082_c,    "-2");
+                        params.put(A4081_A4094.A4083,    "-2");
+                        params.put(A4081_A4094.A4084,    "-2");
+                        params.put(A4081_A4094.A4085_u,    "-2");
+                        params.put(A4081_A4094.A4085_a,    "-2");
+                        params.put(A4081_A4094.A4085_b,    "-2");
+                        params.put(A4081_A4094.A4086,    "-2");
+                        params.put(A4081_A4094.A4087_u,    "-2");
+                        params.put(A4081_A4094.A4087_a,    "-2");
+                        params.put(A4081_A4094.A4087_b,    "-2");
+                        params.put(A4081_A4094.A4088,    "-2");
+                        params.put(A4081_A4094.A4089,    "-2");
+                        params.put(A4081_A4094.A4090,    "-2");
+                        params.put(A4081_A4094.A4091,    "-2");
+                        params.put(A4081_A4094.A4092,    "-2");
+                        params.put(A4081_A4094.A4093,    "-2");
+                        params.put(A4081_A4094.A4094_u,    "-2");
+                        params.put(A4081_A4094.A4094_a,    "-2");
+                        params.put(A4081_A4094.A4094_b,    "-2");
+                        params.put(A4081_A4094.A4094_c,    "-2");
+                    }
 
                 if (c6 != null) {
 
@@ -2741,6 +2845,32 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4095_A4108.A4108, c6.getString(c6.getColumnIndex("A4108")));
                     }
                 }
+                else
+                    {
+                        params.put(A4095_A4108.A4095, "-2");
+                        params.put(A4095_A4108.A4096, "-2");
+                        params.put(A4095_A4108.A4097_u, "-2");
+                        params.put(A4095_A4108.A4097_a, "-2");
+                        params.put(A4095_A4108.A4097_b, "-2");
+                        params.put(A4095_A4108.A4098, "-2");
+                        params.put(A4095_A4108.A4099_u, "-2");
+                        params.put(A4095_A4108.A4099_a, "-2");
+                        params.put(A4095_A4108.A4099_b, "-2");
+                        params.put(A4095_A4108.A4100, "-2");
+                        params.put(A4095_A4108.A4101_u, "-2");
+                        params.put(A4095_A4108.A4101_a, "-2");
+                        params.put(A4095_A4108.A4101_b, "-2");
+                        params.put(A4095_A4108.A4102, "-2");
+                        params.put(A4095_A4108.A4103, "-2");
+                        params.put(A4095_A4108.A4104, "-2");
+                        params.put(A4095_A4108.A4105, "-2");
+                        params.put(A4095_A4108.A4106, "-2");
+                        params.put(A4095_A4108.A4107, "-2");
+                        params.put(A4095_A4108.A4108, "-2");
+                    }
+
+
+
 
                 if (c7 != null) {
 
@@ -2767,6 +2897,30 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4109_A4125.A4125, c7.getString(c7.getColumnIndex("A4125")));
                     }
                 }
+                else
+                    {
+                        params.put(A4109_A4125.A4109,  "-2");
+                        params.put(A4109_A4125.A4110,  "-2");
+                        params.put(A4109_A4125.A4111,  "-2");
+                        params.put(A4109_A4125.A4112,  "-2");
+                        params.put(A4109_A4125.A4113,  "-2");
+                        params.put(A4109_A4125.A4114,  "-2");
+                        params.put(A4109_A4125.A4115,  "-2");
+                        params.put(A4109_A4125.A4116,  "-2");
+                        params.put(A4109_A4125.A4117_u, "-2");
+                        params.put(A4109_A4125.A4117_a, "-2");
+                        params.put(A4109_A4125.A4117_b, "-2");
+                        params.put(A4109_A4125.A4118,  "-2");
+                        params.put(A4109_A4125.A4119,  "-2");
+                        params.put(A4109_A4125.A4120,  "-2");
+                        params.put(A4109_A4125.A4121,  "-2");
+                        params.put(A4109_A4125.A4122,  "-2");
+                        params.put(A4109_A4125.A4123,  "-2");
+                        params.put(A4109_A4125.A4124,  "-2");
+                        params.put(A4109_A4125.A4125,  "-2");
+                    }
+
+
 
                 if (c8 != null) {
 
@@ -2794,6 +2948,31 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4126_A4140.A4140, c8.getString(c8.getColumnIndex("A4140")));
                     }
                 }
+                else
+                    {
+                        params.put(A4126_A4140.A4126,  "-2");
+                        params.put(A4126_A4140.A4127_u, "-2");
+                        params.put(A4126_A4140.A4127_a, "-2");
+                        params.put(A4126_A4140.A4127_b, "-2");
+                        params.put(A4126_A4140.A4128,  "-2");
+                        params.put(A4126_A4140.A4129,  "-2");
+                        params.put(A4126_A4140.A4130_u, "-2");
+                        params.put(A4126_A4140.A4130_a, "-2");
+                        params.put(A4126_A4140.A4130_b, "-2");
+                        params.put(A4126_A4140.A4131,  "-2");
+                        params.put(A4126_A4140.A4132,  "-2");
+                        params.put(A4126_A4140.A4133,  "-2");
+                        params.put(A4126_A4140.A4134_u, "-2");
+                        params.put(A4126_A4140.A4134_a, "-2");
+                        params.put(A4126_A4140.A4134_b, "-2");
+                        params.put(A4126_A4140.A4135,  "-2");
+                        params.put(A4126_A4140.A4136,  "-2");
+                        params.put(A4126_A4140.A4138,  "-2");
+                        params.put(A4126_A4140.A4139,  "-2");
+                        params.put(A4126_A4140.A4140,  "-2");
+                    }
+
+
 
                 if (c9 != null) {
 
@@ -2816,6 +2995,24 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4144_A4156.A4156, c9.getString(c9.getColumnIndex("A4156")));
                     }
                 }
+                else
+                    {
+                        params.put(A4144_A4156.A4144,  "-2");
+                        params.put(A4144_A4156.A4145,  "-2");
+                        params.put(A4144_A4156.A4146,  "-2");
+                        params.put(A4144_A4156.A4147,  "-2");
+                        params.put(A4144_A4156.A4148,  "-2");
+                        params.put(A4144_A4156.A4149,  "-2");
+                        params.put(A4144_A4156.A4150_u, "-2");
+                        params.put(A4144_A4156.A4150_a, "-2");
+                        params.put(A4144_A4156.A4150_b, "-2");
+                        params.put(A4144_A4156.A4151,  "-2");
+                        params.put(A4144_A4156.A4152,  "-2");
+                        params.put(A4144_A4156.A4153,  "-2");
+                        params.put(A4144_A4156.A4154,  "-2");
+                        params.put(A4144_A4156.A4155,  "-2");
+                        params.put(A4144_A4156.A4156,  "-2");
+                    }
 
                 if (c10 != null) {
 
@@ -2873,6 +3070,59 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4157_A4205.A4205_1, c10.getString(c10.getColumnIndex("A4205_1")));
                     }
                 }
+                else
+                    {
+                        params.put(A4157_A4205.A4157,   "-2");
+                        params.put(A4157_A4205.A4158,   "-2");
+                        params.put(A4157_A4205.A4159,   "-2");
+                        params.put(A4157_A4205.A4160,   "-2");
+                        params.put(A4157_A4205.A4161,   "-2");
+                        params.put(A4157_A4205.A4161_1,  "-2");
+                        params.put(A4157_A4205.A4162,   "-2");
+                        params.put(A4157_A4205.A4163,   "-2");
+                        params.put(A4157_A4205.A4163,   "-2");
+                        params.put(A4157_A4205.A4164,   "-2");
+                        params.put(A4157_A4205.A4166,   "-2");
+                        params.put(A4157_A4205.A4167,   "-2");
+                        params.put(A4157_A4205.A4168_1,  "-2");
+                        params.put(A4157_A4205.A4168_3, "-2");
+                        params.put(A4157_A4205.A4168,   "-2");
+                        params.put(A4157_A4205.A4173_1,  "-2");
+                        params.put(A4157_A4205.A4173,   "-2");
+                        params.put(A4157_A4205.A4173_2,  "-2");
+                        params.put(A4157_A4205.A4178_1,  "-2");
+                        params.put(A4157_A4205.A4178_2,  "-2");
+                        params.put(A4157_A4205.A4178,   "-2");
+                        params.put(A4157_A4205.A4179,   "-2");
+                        params.put(A4157_A4205.A4180,   "-2");
+                        params.put(A4157_A4205.A4181,   "-2");
+                        params.put(A4157_A4205.A4182,   "-2");
+                        params.put(A4157_A4205.A4183,   "-2");
+                        params.put(A4157_A4205.A4184,   "-2");
+                        params.put(A4157_A4205.A4185,   "-2");
+                        params.put(A4157_A4205.A4186,   "-2");
+                        params.put(A4157_A4205.A4186_1,  "-2");
+                        params.put(A4157_A4205.A4187,   "-2");
+                        params.put(A4157_A4205.A4188,   "-2");
+                        params.put(A4157_A4205.A4189,   "-2");
+                        params.put(A4157_A4205.A4190,   "-2");
+                        params.put(A4157_A4205.A4191,   "-2");
+                        params.put(A4157_A4205.A4192,   "-2");
+                        params.put(A4157_A4205.A4193,   "-2");
+                        params.put(A4157_A4205.A4193_1,  "-2");
+                        params.put(A4157_A4205.A4194,   "-2");
+                        params.put(A4157_A4205.A4195,   "-2");
+                        params.put(A4157_A4205.A4196,   "-2");
+                        params.put(A4157_A4205.A4197,   "-2");
+                        params.put(A4157_A4205.A4198_1,  "-2");
+                        params.put(A4157_A4205.A4198,   "-2");
+                        params.put(A4157_A4205.A4200,   "-2");
+                        params.put(A4157_A4205.A4202,   "-2");
+                        params.put(A4157_A4205.A4203,   "-2");
+                        params.put(A4157_A4205.A4204,   "-2");
+                        params.put(A4157_A4205.A4205,   "-2");
+                        params.put(A4157_A4205.A4205_1,  "-2");
+                    }
 
                 if (c11 != null) {
 
@@ -2905,50 +3155,78 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4206_A4207.A4207_day, c11.getString(c11.getColumnIndex("A4207_day")));
                     }
                 }
+                else
+                    {
+                        params.put(A4206_A4207.A4206,      "-2");
+                        params.put(A4206_A4207.A4206_1,    "-2");
+                        params.put(A4206_A4207.A4206_2,    "-2");
+                        params.put(A4206_A4207.A4206_3,    "-2");
+                        params.put(A4206_A4207.A4206_4,    "-2");
+                        params.put(A4206_A4207.A4206_5,    "-2");
+                        params.put(A4206_A4207.A4206_6,    "-2");
+                        params.put(A4206_A4207.A4206_7,    "-2");
+                        params.put(A4206_A4207.A4206_8,    "-2");
+                        params.put(A4206_A4207.A4206_9,    "-2");
+                        params.put(A4206_A4207.A4206_10,   "-2");
+                        params.put(A4206_A4207.A4206_11,   "-2");
+                        params.put(A4206_A4207.A4206_12,   "-2");
+                        params.put(A4206_A4207.A4206_13,   "-2");
+                        params.put(A4206_A4207.A4206_14,   "-2");
+                        params.put(A4206_A4207.A4206_15,   "-2");
+                        params.put(A4206_A4207.A4206_16,   "-2");
+                        params.put(A4206_A4207.A4206_17,   "-2");
+                        params.put(A4206_A4207.A4206_18,   "-2");
+                        params.put(A4206_A4207.A4206_19,   "-2");
+                        params.put(A4206_A4207.A4206_20,   "-2");
+                        params.put(A4206_A4207.A4206_21,   "-2");
+                        params.put(A4206_A4207.A4206_22,   "-2");
+                        params.put(A4206_A4207.A4207_hour, "-2");
+                        params.put(A4206_A4207.A4207_day,  "-2");
+                    }
 
                 if (c12 != null) {
 
                     if (c12.moveToFirst()) {
 
-                        params.put(A4251_A4284.A4251, c12.getString(c12.getColumnIndex("A4251")));
-                        params.put(A4251_A4284.A4253, c12.getString(c12.getColumnIndex("A4253")));
-                        params.put(A4251_A4284.A4253_3, c12.getString(c12.getColumnIndex("A4253_3")));
-                        params.put(A4251_A4284.A4254_1, c12.getString(c12.getColumnIndex("A4254_1")));
-                        params.put(A4251_A4284.A4254_2, c12.getString(c12.getColumnIndex("A4254_2")));
-                        params.put(A4251_A4284.A4255_1, c12.getString(c12.getColumnIndex("A4255_1")));
-                        params.put(A4251_A4284.A4255_2, c12.getString(c12.getColumnIndex("A4255_2")));
-                        params.put(A4251_A4284.A4255_3, c12.getString(c12.getColumnIndex("A4255_3")));
-                        params.put(A4251_A4284.A4255_4, c12.getString(c12.getColumnIndex("A4255_4")));
-                        params.put(A4251_A4284.A4255_4_OT, c12.getString(c12.getColumnIndex("A4255_4_OT")));
-                        params.put(A4251_A4284.A4255_5, c12.getString(c12.getColumnIndex("A4255_5")));
-                        params.put(A4251_A4284.A4255_6, c12.getString(c12.getColumnIndex("A4255_6")));
-                        params.put(A4251_A4284.A4255_7, c12.getString(c12.getColumnIndex("A4255_7")));
-                        params.put(A4251_A4284.A4255_8, c12.getString(c12.getColumnIndex("A4255_8")));
-                        params.put(A4251_A4284.A4255_9, c12.getString(c12.getColumnIndex("A4255_9")));
-                        params.put(A4251_A4284.A4255_10, c12.getString(c12.getColumnIndex("A4255_10")));
-                        params.put(A4251_A4284.A4255_11, c12.getString(c12.getColumnIndex("A4255_11")));
-                        params.put(A4251_A4284.A4255_12, c12.getString(c12.getColumnIndex("A4255_12")));
-                        params.put(A4251_A4284.A4255_13, c12.getString(c12.getColumnIndex("A4255_13")));
-                        params.put(A4251_A4284.A4255_13_OT, c12.getString(c12.getColumnIndex("A4255_13_OT")));
-                        params.put(A4251_A4284.A4255_DK, c12.getString(c12.getColumnIndex("A4255_DK")));
-                        params.put(A4251_A4284.A4256_days, c12.getString(c12.getColumnIndex("A4256_days")));
-                        params.put(A4251_A4284.A4256_hours, c12.getString(c12.getColumnIndex("A4256_hours")));
+                        params.put(A4251_A4284.A4251,         c12.getString(c12.getColumnIndex("A4251")));
+                        params.put(A4251_A4284.A4253,         c12.getString(c12.getColumnIndex("A4253")));
+                        params.put(A4251_A4284.A4253_3,       c12.getString(c12.getColumnIndex("A4253_3")));
+                        params.put(A4251_A4284.A4254_1,       c12.getString(c12.getColumnIndex("A4254_1")));
+                        params.put(A4251_A4284.A4254_2,       c12.getString(c12.getColumnIndex("A4254_2")));
+                        params.put(A4251_A4284.A4255_1,       c12.getString(c12.getColumnIndex("A4255_1")));
+                        params.put(A4251_A4284.A4255_2,       c12.getString(c12.getColumnIndex("A4255_2")));
+                        params.put(A4251_A4284.A4255_3,       c12.getString(c12.getColumnIndex("A4255_3")));
+                        params.put(A4251_A4284.A4255_4,       c12.getString(c12.getColumnIndex("A4255_4")));
+                        params.put(A4251_A4284.A4255_4_OT,    c12.getString(c12.getColumnIndex("A4255_4_OT")));
+                        params.put(A4251_A4284.A4255_5,       c12.getString(c12.getColumnIndex("A4255_5")));
+                        params.put(A4251_A4284.A4255_6,       c12.getString(c12.getColumnIndex("A4255_6")));
+                        params.put(A4251_A4284.A4255_7,       c12.getString(c12.getColumnIndex("A4255_7")));
+                        params.put(A4251_A4284.A4255_8,       c12.getString(c12.getColumnIndex("A4255_8")));
+                        params.put(A4251_A4284.A4255_9,       c12.getString(c12.getColumnIndex("A4255_9")));
+                        params.put(A4251_A4284.A4255_10,      c12.getString(c12.getColumnIndex("A4255_10")));
+                        params.put(A4251_A4284.A4255_11,      c12.getString(c12.getColumnIndex("A4255_11")));
+                        params.put(A4251_A4284.A4255_12,      c12.getString(c12.getColumnIndex("A4255_12")));
+                        params.put(A4251_A4284.A4255_13,      c12.getString(c12.getColumnIndex("A4255_13")));
+                        params.put(A4251_A4284.A4255_13_OT,   c12.getString(c12.getColumnIndex("A4255_13_OT")));
+                        params.put(A4251_A4284.A4255_DK,      c12.getString(c12.getColumnIndex("A4255_DK")));
+                        params.put(A4251_A4284.A4256_days,    c12.getString(c12.getColumnIndex("A4256_days")));
+                        params.put(A4251_A4284.A4256_hours,   c12.getString(c12.getColumnIndex("A4256_hours")));
                         params.put(A4251_A4284.A4256_minutes, c12.getString(c12.getColumnIndex("A4256_minutes")));
-                        params.put(A4251_A4284.A4257, c12.getString(c12.getColumnIndex("A4257")));
-                        params.put(A4251_A4284.A4257_name, c12.getString(c12.getColumnIndex("A4257_name")));
-                        params.put(A4251_A4284.A4258_1, c12.getString(c12.getColumnIndex("A4258_1")));
-                        params.put(A4251_A4284.A4258_2, c12.getString(c12.getColumnIndex("A4258_2")));
-                        params.put(A4251_A4284.A4259_hours, c12.getString(c12.getColumnIndex("A4259_hours")));
+                        params.put(A4251_A4284.A4257,         c12.getString(c12.getColumnIndex("A4257")));
+                        params.put(A4251_A4284.A4257_name,    c12.getString(c12.getColumnIndex("A4257_name")));
+                        params.put(A4251_A4284.A4258_1,       c12.getString(c12.getColumnIndex("A4258_1")));
+                        params.put(A4251_A4284.A4258_2,       c12.getString(c12.getColumnIndex("A4258_2")));
+                        params.put(A4251_A4284.A4259_hours,   c12.getString(c12.getColumnIndex("A4259_hours")));
                         params.put(A4251_A4284.A4259_minutes, c12.getString(c12.getColumnIndex("A4259_minutes")));
-                        params.put(A4251_A4284.A4260, c12.getString(c12.getColumnIndex("A4260")));
-                        params.put(A4251_A4284.A4261, c12.getString(c12.getColumnIndex("A4261")));
-                        params.put(A4251_A4284.A4262, c12.getString(c12.getColumnIndex("A4262")));
-                        params.put(A4251_A4284.A4262_name, c12.getString(c12.getColumnIndex("A4262_name")));
-                        params.put(A4251_A4284.A4263_1, c12.getString(c12.getColumnIndex("A4263_1")));
-                        params.put(A4251_A4284.A4263_2, c12.getString(c12.getColumnIndex("A4263_2")));
-                        params.put(A4251_A4284.A4264, c12.getString(c12.getColumnIndex("A4264")));
-                        params.put(A4251_A4284.A4266, c12.getString(c12.getColumnIndex("A4266")));
-                        params.put(A4251_A4284.A4266_name, c12.getString(c12.getColumnIndex("A4266_name")));
+                        params.put(A4251_A4284.A4260,         c12.getString(c12.getColumnIndex("A4260")));
+                        params.put(A4251_A4284.A4261,         c12.getString(c12.getColumnIndex("A4261")));
+                        params.put(A4251_A4284.A4262,         c12.getString(c12.getColumnIndex("A4262")));
+                        params.put(A4251_A4284.A4262_name,    c12.getString(c12.getColumnIndex("A4262_name")));
+                        params.put(A4251_A4284.A4263_1,       c12.getString(c12.getColumnIndex("A4263_1")));
+                        params.put(A4251_A4284.A4263_2,       c12.getString(c12.getColumnIndex("A4263_2")));
+                        params.put(A4251_A4284.A4264,         c12.getString(c12.getColumnIndex("A4264")));
+                        params.put(A4251_A4284.A4266,         c12.getString(c12.getColumnIndex("A4266")));
+                        params.put(A4251_A4284.A4266_name,    c12.getString(c12.getColumnIndex("A4266_name")));
                         params.put(A4251_A4284.A4267_1, c12.getString(c12.getColumnIndex("A4267_1")));
                         params.put(A4251_A4284.A4267_2, c12.getString(c12.getColumnIndex("A4267_2")));
                         params.put(A4251_A4284.A4268_hours, c12.getString(c12.getColumnIndex("A4268_hours")));
@@ -3006,6 +3284,103 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4251_A4284.A4284, c12.getString(c12.getColumnIndex("A4284")));
                     }
                 }
+                else
+                    {
+                        params.put(A4251_A4284.A4251,         "-2");
+                        params.put(A4251_A4284.A4253,         "-2");
+                        params.put(A4251_A4284.A4253_3,       "-2");
+                        params.put(A4251_A4284.A4254_1,       "-2");
+                        params.put(A4251_A4284.A4254_2,       "-2");
+                        params.put(A4251_A4284.A4255_1,       "-2");
+                        params.put(A4251_A4284.A4255_2,       "-2");
+                        params.put(A4251_A4284.A4255_3,       "-2");
+                        params.put(A4251_A4284.A4255_4,       "-2");
+                        params.put(A4251_A4284.A4255_4_OT,    "-2");
+                        params.put(A4251_A4284.A4255_5,       "-2");
+                        params.put(A4251_A4284.A4255_6,       "-2");
+                        params.put(A4251_A4284.A4255_7,       "-2");
+                        params.put(A4251_A4284.A4255_8,       "-2");
+                        params.put(A4251_A4284.A4255_9,       "-2");
+                        params.put(A4251_A4284.A4255_10,      "-2");
+                        params.put(A4251_A4284.A4255_11,      "-2");
+                        params.put(A4251_A4284.A4255_12,      "-2");
+                        params.put(A4251_A4284.A4255_13,      "-2");
+                        params.put(A4251_A4284.A4255_13_OT,   "-2");
+                        params.put(A4251_A4284.A4255_DK,      "-2");
+                        params.put(A4251_A4284.A4256_days,    "-2");
+                        params.put(A4251_A4284.A4256_hours,   "-2");
+                        params.put(A4251_A4284.A4256_minutes, "-2");
+                        params.put(A4251_A4284.A4257,         "-2");
+                        params.put(A4251_A4284.A4257_name,    "-2");
+                        params.put(A4251_A4284.A4258_1,       "-2");
+                        params.put(A4251_A4284.A4258_2,       "-2");
+                        params.put(A4251_A4284.A4259_hours,   "-2");
+                        params.put(A4251_A4284.A4259_minutes, "-2");
+                        params.put(A4251_A4284.A4260,         "-2");
+                        params.put(A4251_A4284.A4261,         "-2");
+                        params.put(A4251_A4284.A4262,         "-2");
+                        params.put(A4251_A4284.A4262_name,    "-2");
+                        params.put(A4251_A4284.A4263_1,       "-2");
+                        params.put(A4251_A4284.A4263_2,       "-2");
+                        params.put(A4251_A4284.A4264,         "-2");
+                        params.put(A4251_A4284.A4266,         "-2");
+                        params.put(A4251_A4284.A4266_name,    "-2");
+                        params.put(A4251_A4284.A4267_1,       "-2");
+                        params.put(A4251_A4284.A4267_2,       "-2");
+                        params.put(A4251_A4284.A4268_hours,   "-2");
+                        params.put(A4251_A4284.A4268_minutes, "-2");
+                        params.put(A4251_A4284.A4269,         "-2");
+                        params.put(A4251_A4284.A4270,         "-2");
+                        params.put(A4251_A4284.A4271,         "-2");
+                        params.put(A4251_A4284.A4271_name,    "-2");
+                        params.put(A4251_A4284.A4272_1,       "-2");
+                        params.put(A4251_A4284.A4272_2,       "-2");
+                        params.put(A4251_A4284.A4273,         "-2");
+                        params.put(A4251_A4284.A4274,         "-2");
+                        params.put(A4251_A4284.A4275_1,       "-2");
+                        params.put(A4251_A4284.A4275_2,       "-2");
+                        params.put(A4251_A4284.A4276_1,       "-2");
+                        params.put(A4251_A4284.A4276_2,       "-2");
+                        params.put(A4251_A4284.A4276_3,       "-2");
+                        params.put(A4251_A4284.A4276_4,       "-2");
+                        params.put(A4251_A4284.A4276_5,       "-2");
+                        params.put(A4251_A4284.A4276_5_OT,    "-2");
+                        params.put(A4251_A4284.A4276_6,       "-2");
+                        params.put(A4251_A4284.A4276_7,       "-2");
+                        params.put(A4251_A4284.A4276_8,       "-2");
+                        params.put(A4251_A4284.A4276_9,       "-2");
+                        params.put(A4251_A4284.A4276_10,      "-2");
+                        params.put(A4251_A4284.A4276_11,      "-2");
+                        params.put(A4251_A4284.A4276_12,      "-2");
+                        params.put(A4251_A4284.A4276_13,      "-2");
+                        params.put(A4251_A4284.A4276_14,      "-2");
+                        params.put(A4251_A4284.A4276_15,      "-2");
+                        params.put(A4251_A4284.A4276_16,      "-2");
+                        params.put(A4251_A4284.A4276_16_OT,   "-2");
+                        params.put(A4251_A4284.A4276_DK,      "-2");
+                        params.put(A4251_A4284.A4277,         "-2");
+                        params.put(A4251_A4284.A4278_1,       "-2");
+                        params.put(A4251_A4284.A4278_2,       "-2");
+                        params.put(A4251_A4284.A4278_3,       "-2");
+                        params.put(A4251_A4284.A4278_4,       "-2");
+                        params.put(A4251_A4284.A4278_5,       "-2");
+                        params.put(A4251_A4284.A4278_6,       "-2");
+                        params.put(A4251_A4284.A4278_7,       "-2");
+                        params.put(A4251_A4284.A4278_DK,      "-2");
+                        params.put(A4251_A4284.A4279_1,       "-2");
+                        params.put(A4251_A4284.A4279_2,       "-2");
+                        params.put(A4251_A4284.A4279_3,       "-2");
+                        params.put(A4251_A4284.A4279_4,       "-2");
+                        params.put(A4251_A4284.A4279_5,       "-2");
+                        params.put(A4251_A4284.A4279_6,       "-2");
+                        params.put(A4251_A4284.A4279_7,       "-2");
+                        params.put(A4251_A4284.A4279_DK,      "-2");
+                        params.put(A4251_A4284.A4280,         "-2");
+                        params.put(A4251_A4284.A4281,         "-2");
+                        params.put(A4251_A4284.A4282,         "-2");
+                        params.put(A4251_A4284.A4283,         "-2");
+                        params.put(A4251_A4284.A4284,         "-2");
+                    }
 
                 if (c13 != null) {
 
@@ -3051,6 +3426,47 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4301_A4315.A4315, c13.getString(c13.getColumnIndex("A4315")));
                     }
                 }
+                else
+                    {
+                        params.put(A4301_A4315.A4301,        "-2");
+                        params.put(A4301_A4315.A4302_1,      "-2");
+                        params.put(A4301_A4315.A4302_2,      "-2");
+                        params.put(A4301_A4315.A4302_3,      "-2");
+                        params.put(A4301_A4315.A4302_4,      "-2");
+                        params.put(A4301_A4315.A4302_5,      "-2");
+                        params.put(A4301_A4315.A4302_6,      "-2");
+                        params.put(A4301_A4315.A4302_7,      "-2");
+                        params.put(A4301_A4315.A4303,        "-2");
+                        params.put(A4301_A4315.A4304,        "-2");
+                        params.put(A4301_A4315.A4305,        "-2");
+                        params.put(A4301_A4315.A4306_1check, "-2");
+                        params.put(A4301_A4315.A4306_1,      "-2");
+                        params.put(A4301_A4315.A4306_2check, "-2");
+                        params.put(A4301_A4315.A4306_2,      "-2");
+                        params.put(A4301_A4315.A4307,        "-2");
+                        params.put(A4301_A4315.A4308,        "-2");
+                        params.put(A4301_A4315.A4309,        "-2");
+                        params.put(A4301_A4315.A4310_1,      "-2");
+                        params.put(A4301_A4315.A4310_2,      "-2");
+                        params.put(A4301_A4315.A4310_3,      "-2");
+                        params.put(A4301_A4315.A4310_4,      "-2");
+                        params.put(A4301_A4315.A4310_5,      "-2");
+                        params.put(A4301_A4315.A4310_6,      "-2");
+                        params.put(A4301_A4315.A4310_7,      "-2");
+                        params.put(A4301_A4315.A4310_8,      "-2");
+                        params.put(A4301_A4315.A4310_9,      "-2");
+                        params.put(A4301_A4315.A4310_10,     "-2");
+                        params.put(A4301_A4315.A4310_11,     "-2");
+                        params.put(A4301_A4315.A4311_1,      "-2");
+                        params.put(A4301_A4315.A4311_2,      "-2");
+                        params.put(A4301_A4315.A4311_3,      "-2");
+                        params.put(A4301_A4315.A4311_4,      "-2");
+                        params.put(A4301_A4315.A4311_5,      "-2");
+                        params.put(A4301_A4315.A4312,        "-2");
+                        params.put(A4301_A4315.A4313,        "-2");
+                        params.put(A4301_A4315.A4314,        "-2");
+                        params.put(A4301_A4315.A4315,        "-2");
+                    }
 
                 if (c14 != null) {
 
@@ -3068,6 +3484,19 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4351_A4364.A4364, c14.getString(c14.getColumnIndex("A4364")));
                     }
                 }
+                else
+                    {
+                        params.put(A4351_A4364.A4351, "-2");
+                        params.put(A4351_A4364.A4352, "-2");
+                        params.put(A4351_A4364.A4353, "-2");
+                        params.put(A4351_A4364.A4354, "-2");
+                        params.put(A4351_A4364.A4355, "-2");
+                        params.put(A4351_A4364.A4356, "-2");
+                        params.put(A4351_A4364.A4357, "-2");
+                        params.put(A4351_A4364.A4358, "-2");
+                        params.put(A4351_A4364.A4363, "-2");
+                        params.put(A4351_A4364.A4364, "-2");
+                    }
 
                 if (c15 != null) {
 
@@ -3076,11 +3505,11 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4401_A4473.A4401, c15.getString(c15.getColumnIndex("A4401")));
                         params.put(A4401_A4473.A4402, c15.getString(c15.getColumnIndex("A4402")));
                         params.put(A4401_A4473.A4402_5_OT, c15.getString(c15.getColumnIndex("A4402_5_OT")));
-                        params.put(A4401_A4473.A4403_province, c15.getString(c15.getColumnIndex("A4403_provi")));
-                        params.put(A4401_A4473.A4403_district, c15.getString(c15.getColumnIndex("A4403_distr")));
+                        params.put(A4401_A4473.A4403_province, c15.getString(c15.getColumnIndex("A4403_province")));
+                        params.put(A4401_A4473.A4403_district, c15.getString(c15.getColumnIndex("A4403_district")));
                         params.put(A4401_A4473.A4404_years, c15.getString(c15.getColumnIndex("A4404_years")));
                         params.put(A4401_A4473.A4405_hours, c15.getString(c15.getColumnIndex("A4405_hours")));
-                        params.put(A4401_A4473.A4405_minutes, c15.getString(c15.getColumnIndex("A4405_minut")));
+                        params.put(A4401_A4473.A4405_minutes, c15.getString(c15.getColumnIndex("A4405_minutes")));
                         params.put(A4401_A4473.A4451_1, c15.getString(c15.getColumnIndex("A4451_1")));
                         params.put(A4401_A4473.A4451_2, c15.getString(c15.getColumnIndex("A4451_2")));
                         params.put(A4401_A4473.A4451_3, c15.getString(c15.getColumnIndex("A4451_3")));
@@ -3119,7 +3548,8 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4401_A4473.A4453_10, c15.getString(c15.getColumnIndex("A4453_10")));
                         params.put(A4401_A4473.A4453_11, c15.getString(c15.getColumnIndex("A4453_11")));
                         params.put(A4401_A4473.A4453_12, c15.getString(c15.getColumnIndex("A4453_12")));
-                        params.put(A4401_A4473.A4453_12_OT, c15.getString(c15.getColumnIndex("A4453_12_OT")));
+//  CHANGE IT LATER ON                      params.put(A4401_A4473.A4453_12_OT, c15.getString(c15.getColumnIndex("A4453_12_OT")));
+                        params.put(A4401_A4473.A4453_12_OT, c15.getString(c15.getColumnIndex("A4453_13_OT")));
                         params.put(A4401_A4473.A4453_code, c15.getString(c15.getColumnIndex("A4453_code")));
                         params.put(A4401_A4473.A4454, c15.getString(c15.getColumnIndex("A4454")));
                         params.put(A4401_A4473.A4455, c15.getString(c15.getColumnIndex("A4455")));
@@ -3142,6 +3572,76 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4401_A4473.A4473, c15.getString(c15.getColumnIndex("A4473")));
                     }
                 }
+                else
+                    {
+                        params.put(A4401_A4473.A4401,    "-2");
+                        params.put(A4401_A4473.A4402,    "-2");
+                        params.put(A4401_A4473.A4402_5_OT,    "-2");
+                        params.put(A4401_A4473.A4403_province,         "-2");
+                        params.put(A4401_A4473.A4403_district,         "-2");
+                        params.put(A4401_A4473.A4404_years,         "-2");
+                        params.put(A4401_A4473.A4405_hours,         "-2");
+                        params.put(A4401_A4473.A4405_minutes,         "-2");
+                        params.put(A4401_A4473.A4451_1,         "-2");
+                        params.put(A4401_A4473.A4451_2,         "-2");
+                        params.put(A4401_A4473.A4451_3,         "-2");
+                        params.put(A4401_A4473.A4451_4,         "-2");
+                        params.put(A4401_A4473.A4451_5,         "-2");
+                        params.put(A4401_A4473.A4451_6,         "-2");
+                        params.put(A4401_A4473.A4451_7,         "-2");
+                        params.put(A4401_A4473.A4451_8,         "-2");
+                        params.put(A4401_A4473.A4451_9,         "-2");
+                        params.put(A4401_A4473.A4451_10,         "-2");
+                        params.put(A4401_A4473.A4451_11,         "-2");
+                        params.put(A4401_A4473.A4451_12,         "-2");
+                        params.put(A4401_A4473.A4451_13,         "-2");
+                        params.put(A4401_A4473.A4451_13_OT,         "-2");
+                        params.put(A4401_A4473.A4451_code,         "-2");
+                        params.put(A4401_A4473.A4452_1,         "-2");
+                        params.put(A4401_A4473.A4452_2,         "-2");
+                        params.put(A4401_A4473.A4452_3,         "-2");
+                        params.put(A4401_A4473.A4452_4,         "-2");
+                        params.put(A4401_A4473.A4452_5,         "-2");
+                        params.put(A4401_A4473.A4452_6,         "-2");
+                        params.put(A4401_A4473.A4452_7,         "-2");
+                        params.put(A4401_A4473.A4452_8,         "-2");
+                        params.put(A4401_A4473.A4452_9,         "-2");
+                        params.put(A4401_A4473.A4452_9_OT,         "-2");
+                        params.put(A4401_A4473.A4452_code,         "-2");
+                        params.put(A4401_A4473.A4453_1,         "-2");
+                        params.put(A4401_A4473.A4453_2,         "-2");
+                        params.put(A4401_A4473.A4453_3,         "-2");
+                        params.put(A4401_A4473.A4453_4,         "-2");
+                        params.put(A4401_A4473.A4453_5,         "-2");
+                        params.put(A4401_A4473.A4453_6,         "-2");
+                        params.put(A4401_A4473.A4453_7,         "-2");
+                        params.put(A4401_A4473.A4453_8,         "-2");
+                        params.put(A4401_A4473.A4453_9,         "-2");
+                        params.put(A4401_A4473.A4453_10,         "-2");
+                        params.put(A4401_A4473.A4453_11,         "-2");
+                        params.put(A4401_A4473.A4453_12,         "-2");
+                        params.put(A4401_A4473.A4453_12_OT,         "-2");
+                        params.put(A4401_A4473.A4453_code,         "-2");
+                        params.put(A4401_A4473.A4454,         "-2");
+                        params.put(A4401_A4473.A4455,         "-2");
+                        params.put(A4401_A4473.A4456,         "-2");
+                        params.put(A4401_A4473.A4457,         "-2");
+                        params.put(A4401_A4473.A4471,         "-2");
+                        params.put(A4401_A4473.A4472_1,         "-2");
+                        params.put(A4401_A4473.A4472_2,         "-2");
+                        params.put(A4401_A4473.A4472_3,         "-2");
+                        params.put(A4401_A4473.A4472_4,         "-2");
+                        params.put(A4401_A4473.A4472_5,         "-2");
+                        params.put(A4401_A4473.A4472_6,         "-2");
+                        params.put(A4401_A4473.A4472_7,         "-2");
+                        params.put(A4401_A4473.A4472_8,         "-2");
+                        params.put(A4401_A4473.A4472_9,         "-2");
+                        params.put(A4401_A4473.A4472_10,         "-2");
+                        params.put(A4401_A4473.A4472_11,         "-2");
+                        params.put(A4401_A4473.A4472_12,         "-2");
+                        params.put(A4401_A4473.A4472_DK,         "-2");
+                        params.put(A4401_A4473.A4473,         "-2");
+                    }
 
                 if (c16 != null) {
 

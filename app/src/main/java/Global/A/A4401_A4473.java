@@ -49,7 +49,7 @@ public class A4401_A4473 {
     public static String A4453_10 = "A4453_10";
     public static String A4453_11 = "A4453_11";
     public static String A4453_12 = "A4453_12";
-    public static String A4453_12_OT = "A4453_13_OT";
+    public static String A4453_12_OT = "A4453_12_OT";
     public static String A4453_code = "A4453_code";
     public static String A4454 = "A4454";
     public static String A4455 = "A4455";

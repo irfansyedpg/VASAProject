@@ -257,6 +257,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             ed_A4471,
             ed_A4473;
 
+
     CheckBox
             cb_A4472_1,
             cb_A4472_2,
@@ -346,11 +347,15 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
 
     int currentSection;
 
-    // End Region_Declaration
     TextView
             txt_cap_count;
+
     int count = 1;
+
     private File output = null;
+
+    // End Region_Declaration
+
 
     void Initialization() {
 
@@ -359,7 +364,6 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         txt_cap_count = findViewById(R.id.txt_cap_count);
 
         ll_A4401 = findViewById(R.id.ll_A4401);
-        ll_51_52_53 = findViewById(R.id.ll_51_52_53);
         ll_A4402 = findViewById(R.id.ll_A4402);
         ll_A4403 = findViewById(R.id.ll_A4403);
         ll_A4404 = findViewById(R.id.ll_A4404);
@@ -698,20 +702,120 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
                 ClearAll(ll_A4403);
                 ClearAll(ll_A4404);
                 ClearAll(ll_A4405);
-                ClearAll(ll_51_52_53);
+                ClearAll(ll_A4451_1);
+                ClearAll(ll_A4451_2);
+                ClearAll(ll_A4451_3);
+                ClearAll(ll_A4451_4);
+                ClearAll(ll_A4451_5);
+                ClearAll(ll_A4451_6);
+                ClearAll(ll_A4451_7);
+                ClearAll(ll_A4451_8);
+                ClearAll(ll_A4451_9);
+                ClearAll(ll_A4451_10);
+                ClearAll(ll_A4451_11);
+                ClearAll(ll_A4451_12);
+                ClearAll(ll_A4451_13);
+                ClearAll(ll_A4452_1);
+                ClearAll(ll_A4452_2);
+                ClearAll(ll_A4452_3);
+                ClearAll(ll_A4452_4);
+                ClearAll(ll_A4452_5);
+                ClearAll(ll_A4452_6);
+                ClearAll(ll_A4452_7);
+                ClearAll(ll_A4452_8);
+                ClearAll(ll_A4452_9);
+                ClearAll(ll_A4453_1);
+                ClearAll(ll_A4453_2);
+                ClearAll(ll_A4453_3);
+                ClearAll(ll_A4453_4);
+                ClearAll(ll_A4453_5);
+                ClearAll(ll_A4453_6);
+                ClearAll(ll_A4453_7);
+                ClearAll(ll_A4453_8);
+                ClearAll(ll_A4453_9);
+                ClearAll(ll_A4453_10);
+                ClearAll(ll_A4453_11);
+                ClearAll(ll_A4453_12);
 
                 ll_A4402.setVisibility(View.GONE);
                 ll_A4403.setVisibility(View.GONE);
                 ll_A4404.setVisibility(View.GONE);
                 ll_A4405.setVisibility(View.GONE);
-                ll_51_52_53.setVisibility(View.GONE);
+                ll_A4451_1.setVisibility(View.GONE);
+                ll_A4451_2.setVisibility(View.GONE);
+                ll_A4451_3.setVisibility(View.GONE);
+                ll_A4451_4.setVisibility(View.GONE);
+                ll_A4451_5.setVisibility(View.GONE);
+                ll_A4451_6.setVisibility(View.GONE);
+                ll_A4451_7.setVisibility(View.GONE);
+                ll_A4451_8.setVisibility(View.GONE);
+                ll_A4451_9.setVisibility(View.GONE);
+                ll_A4451_10.setVisibility(View.GONE);
+                ll_A4451_11.setVisibility(View.GONE);
+                ll_A4451_12.setVisibility(View.GONE);
+                ll_A4451_13.setVisibility(View.GONE);
+                ll_A4452_1.setVisibility(View.GONE);
+                ll_A4452_2.setVisibility(View.GONE);
+                ll_A4452_3.setVisibility(View.GONE);
+                ll_A4452_4.setVisibility(View.GONE);
+                ll_A4452_5.setVisibility(View.GONE);
+                ll_A4452_6.setVisibility(View.GONE);
+                ll_A4452_7.setVisibility(View.GONE);
+                ll_A4452_8.setVisibility(View.GONE);
+                ll_A4452_9.setVisibility(View.GONE);
+                ll_A4453_1.setVisibility(View.GONE);
+                ll_A4453_2.setVisibility(View.GONE);
+                ll_A4453_3.setVisibility(View.GONE);
+                ll_A4453_4.setVisibility(View.GONE);
+                ll_A4453_5.setVisibility(View.GONE);
+                ll_A4453_6.setVisibility(View.GONE);
+                ll_A4453_7.setVisibility(View.GONE);
+                ll_A4453_8.setVisibility(View.GONE);
+                ll_A4453_9.setVisibility(View.GONE);
+                ll_A4453_10.setVisibility(View.GONE);
+                ll_A4453_11.setVisibility(View.GONE);
+                ll_A4453_12.setVisibility(View.GONE);
+                
             } else {
 
                 ll_A4402.setVisibility(View.VISIBLE);
                 ll_A4403.setVisibility(View.VISIBLE);
                 ll_A4404.setVisibility(View.VISIBLE);
                 ll_A4405.setVisibility(View.VISIBLE);
-                ll_51_52_53.setVisibility(View.VISIBLE);
+                ll_A4451_1.setVisibility(View.VISIBLE);
+                ll_A4451_2.setVisibility(View.VISIBLE);
+                ll_A4451_3.setVisibility(View.VISIBLE);
+                ll_A4451_4.setVisibility(View.VISIBLE);
+                ll_A4451_5.setVisibility(View.VISIBLE);
+                ll_A4451_6.setVisibility(View.VISIBLE);
+                ll_A4451_7.setVisibility(View.VISIBLE);
+                ll_A4451_8.setVisibility(View.VISIBLE);
+                ll_A4451_9.setVisibility(View.VISIBLE);
+                ll_A4451_10.setVisibility(View.VISIBLE);
+                ll_A4451_11.setVisibility(View.VISIBLE);
+                ll_A4451_12.setVisibility(View.VISIBLE);
+                ll_A4451_13.setVisibility(View.VISIBLE);
+                ll_A4452_1.setVisibility(View.VISIBLE);
+                ll_A4452_2.setVisibility(View.VISIBLE);
+                ll_A4452_3.setVisibility(View.VISIBLE);
+                ll_A4452_4.setVisibility(View.VISIBLE);
+                ll_A4452_5.setVisibility(View.VISIBLE);
+                ll_A4452_6.setVisibility(View.VISIBLE);
+                ll_A4452_7.setVisibility(View.VISIBLE);
+                ll_A4452_8.setVisibility(View.VISIBLE);
+                ll_A4452_9.setVisibility(View.VISIBLE);
+                ll_A4453_1.setVisibility(View.VISIBLE);
+                ll_A4453_2.setVisibility(View.VISIBLE);
+                ll_A4453_3.setVisibility(View.VISIBLE);
+                ll_A4453_4.setVisibility(View.VISIBLE);
+                ll_A4453_5.setVisibility(View.VISIBLE);
+                ll_A4453_6.setVisibility(View.VISIBLE);
+                ll_A4453_7.setVisibility(View.VISIBLE);
+                ll_A4453_8.setVisibility(View.VISIBLE);
+                ll_A4453_9.setVisibility(View.VISIBLE);
+                ll_A4453_10.setVisibility(View.VISIBLE);
+                ll_A4453_11.setVisibility(View.VISIBLE);
+                ll_A4453_12.setVisibility(View.VISIBLE);
             }
         }
 
@@ -733,18 +837,114 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
                 ClearAll(ll_A4403);
                 ClearAll(ll_A4404);
                 ClearAll(ll_A4405);
-                ClearAll(ll_51_52_53);
+                ClearAll(ll_A4451_1);
+                ClearAll(ll_A4451_2);
+                ClearAll(ll_A4451_3);
+                ClearAll(ll_A4451_4);
+                ClearAll(ll_A4451_5);
+                ClearAll(ll_A4451_6);
+                ClearAll(ll_A4451_7);
+                ClearAll(ll_A4451_8);
+                ClearAll(ll_A4451_9);
+                ClearAll(ll_A4451_10);
+                ClearAll(ll_A4451_11);
+                ClearAll(ll_A4451_12);
+                ClearAll(ll_A4451_13);
+                ClearAll(ll_A4452_1);
+                ClearAll(ll_A4452_2);
+                ClearAll(ll_A4452_3);
+                ClearAll(ll_A4452_4);
+                ClearAll(ll_A4452_5);
+                ClearAll(ll_A4452_6);
+                ClearAll(ll_A4452_7);
+                ClearAll(ll_A4452_8);
+                ClearAll(ll_A4452_9);
+                ClearAll(ll_A4453_1);
+                ClearAll(ll_A4453_2);
+                ClearAll(ll_A4453_3);
+                ClearAll(ll_A4453_4);
+                ClearAll(ll_A4453_5);
+                ClearAll(ll_A4453_6);
+                ClearAll(ll_A4453_7);
+                ClearAll(ll_A4453_8);
+                ClearAll(ll_A4453_9);
+                ClearAll(ll_A4453_10);
+                ClearAll(ll_A4453_11);
+                ClearAll(ll_A4453_12);
 
                 ll_A4403.setVisibility(View.GONE);
                 ll_A4404.setVisibility(View.GONE);
                 ll_A4405.setVisibility(View.GONE);
-                ll_51_52_53.setVisibility(View.GONE);
+                ll_A4451_1.setVisibility(View.GONE);
+                ll_A4451_2.setVisibility(View.GONE);
+                ll_A4451_3.setVisibility(View.GONE);
+                ll_A4451_4.setVisibility(View.GONE);
+                ll_A4451_5.setVisibility(View.GONE);
+                ll_A4451_6.setVisibility(View.GONE);
+                ll_A4451_7.setVisibility(View.GONE);
+                ll_A4451_8.setVisibility(View.GONE);
+                ll_A4451_9.setVisibility(View.GONE);
+                ll_A4451_10.setVisibility(View.GONE);
+                ll_A4451_11.setVisibility(View.GONE);
+                ll_A4451_12.setVisibility(View.GONE);
+                ll_A4451_13.setVisibility(View.GONE);
+                ll_A4452_1.setVisibility(View.GONE);
+                ll_A4452_2.setVisibility(View.GONE);
+                ll_A4452_3.setVisibility(View.GONE);
+                ll_A4452_4.setVisibility(View.GONE);
+                ll_A4452_5.setVisibility(View.GONE);
+                ll_A4452_6.setVisibility(View.GONE);
+                ll_A4452_7.setVisibility(View.GONE);
+                ll_A4452_8.setVisibility(View.GONE);
+                ll_A4452_9.setVisibility(View.GONE);
+                ll_A4453_1.setVisibility(View.GONE);
+                ll_A4453_2.setVisibility(View.GONE);
+                ll_A4453_3.setVisibility(View.GONE);
+                ll_A4453_4.setVisibility(View.GONE);
+                ll_A4453_5.setVisibility(View.GONE);
+                ll_A4453_6.setVisibility(View.GONE);
+                ll_A4453_7.setVisibility(View.GONE);
+                ll_A4453_8.setVisibility(View.GONE);
+                ll_A4453_9.setVisibility(View.GONE);
+                ll_A4453_10.setVisibility(View.GONE);
+                ll_A4453_11.setVisibility(View.GONE);
+                ll_A4453_12.setVisibility(View.GONE);
             } else {
 
-                ll_A4403.setVisibility(View.VISIBLE);
-                ll_A4404.setVisibility(View.VISIBLE);
-                ll_A4405.setVisibility(View.VISIBLE);
-                ll_51_52_53.setVisibility(View.VISIBLE);
+                ll_A4451_1.setVisibility(View.VISIBLE);
+                ll_A4451_2.setVisibility(View.VISIBLE);
+                ll_A4451_3.setVisibility(View.VISIBLE);
+                ll_A4451_4.setVisibility(View.VISIBLE);
+                ll_A4451_5.setVisibility(View.VISIBLE);
+                ll_A4451_6.setVisibility(View.VISIBLE);
+                ll_A4451_7.setVisibility(View.VISIBLE);
+                ll_A4451_8.setVisibility(View.VISIBLE);
+                ll_A4451_9.setVisibility(View.VISIBLE);
+                ll_A4451_10.setVisibility(View.VISIBLE);
+                ll_A4451_11.setVisibility(View.VISIBLE);
+                ll_A4451_12.setVisibility(View.VISIBLE);
+                ll_A4451_13.setVisibility(View.VISIBLE);
+                ll_A4452_1.setVisibility(View.VISIBLE);
+                ll_A4452_2.setVisibility(View.VISIBLE);
+                ll_A4452_3.setVisibility(View.VISIBLE);
+                ll_A4452_4.setVisibility(View.VISIBLE);
+                ll_A4452_5.setVisibility(View.VISIBLE);
+                ll_A4452_6.setVisibility(View.VISIBLE);
+                ll_A4452_7.setVisibility(View.VISIBLE);
+                ll_A4452_8.setVisibility(View.VISIBLE);
+                ll_A4452_9.setVisibility(View.VISIBLE);
+                ll_A4453_1.setVisibility(View.VISIBLE);
+                ll_A4453_2.setVisibility(View.VISIBLE);
+                ll_A4453_3.setVisibility(View.VISIBLE);
+                ll_A4453_4.setVisibility(View.VISIBLE);
+                ll_A4453_5.setVisibility(View.VISIBLE);
+                ll_A4453_6.setVisibility(View.VISIBLE);
+                ll_A4453_7.setVisibility(View.VISIBLE);
+                ll_A4453_8.setVisibility(View.VISIBLE);
+                ll_A4453_9.setVisibility(View.VISIBLE);
+                ll_A4453_10.setVisibility(View.VISIBLE);
+                ll_A4453_11.setVisibility(View.VISIBLE);
+                ll_A4453_12.setVisibility(View.VISIBLE);
             }
         }
 

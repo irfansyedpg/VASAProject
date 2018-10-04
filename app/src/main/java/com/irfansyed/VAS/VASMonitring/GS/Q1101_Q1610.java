@@ -490,12 +490,12 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         if (validateField() == false) {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
-           // return;
+            return;
         }
 
         pattern = Pattern.compile(DATE_PATTERN);
 
-        /*if (!validate(ed_Q1603.getText().toString().trim())) {
+      if (!validate(ed_Q1603.getText().toString().trim())) {
 
             ed_Q1603.setError("Kindly enter a valid date");
             ed_Q1603.requestFocus();
@@ -507,7 +507,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ed_Q1606.setError("Kindly enter a valid date");
             ed_Q1606.requestFocus();
             return;
-        }*/
+        }
 
         value_assignment();
 
