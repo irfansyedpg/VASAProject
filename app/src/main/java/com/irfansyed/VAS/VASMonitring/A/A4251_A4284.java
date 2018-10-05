@@ -432,7 +432,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
                 if ((ed_A4259_hours.getText().toString().trim().length() > 0
                         || ed_A4259_minutes.getText().toString().trim().length() > 0)
-                        && (!rb_A4257_1.isChecked() || !rb_A4257_7.isChecked())) {
+                        && !(rb_A4257_1.isChecked() || rb_A4257_7.isChecked())) {
 
                     ClearAllcontrol.ClearAll(ll_A4260);
                     ll_A4260.setVisibility(View.GONE);
@@ -447,7 +447,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
                 if ((ed_A4268_hours.getText().toString().trim().length() > 0
                         || ed_A4268_minutes.getText().toString().trim().length() > 0)
-                        && (!rb_A4266_1.isChecked() || !rb_A4266_7.isChecked())) {
+                        && !(rb_A4266_1.isChecked() || rb_A4266_7.isChecked())) {
 
                     ClearAllcontrol.ClearAll(ll_A4269);
                     ll_A4269.setVisibility(View.GONE);
@@ -783,7 +783,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
                 )
                         && Integer.valueOf(res1.getString(res1.getColumnIndex("A4251"))).equals(2))
-                    || ((!care.contains("4") || !care.contains("5") || !care.contains("6") || !care.contains("7")  ) && Integer.valueOf(res1.getString(res1.getColumnIndex("A4251"))).equals(1))){
+                    || (!(care.contains("4") || care.contains("5") || care.contains("6") || care.contains("7")  ) && Integer.valueOf(res1.getString(res1.getColumnIndex("A4251"))).equals(1))){
 
                     Intent c = new Intent(this, A4351_A4364.class);
                     c.putExtra("study_id", study_id);

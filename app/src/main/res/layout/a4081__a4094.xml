@@ -60,9 +60,9 @@
                         android:id="@+id/ed_study_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/txt_study_id"
-                        android:clickable="false"
                         android:focusable="false"
+                        android:clickable="false"
+                        android:hint="@string/txt_study_id"
                         android:inputType="date"
                         app:met_mask="####-###-##" />
 
@@ -179,14 +179,14 @@
                         style="@style/TextView"
                         android:text="@string/days" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Days → A4083" />
+
                     <EditText
                         android:id="@+id/ed_A4082_a"
                         style="@style/EditText_number"
                         android:hint="Enter 0-30 days. Less than 1 day or 24 hours = 0 days; 1 week = 7 days" />
-
-                    <TextView
-                        style="@style/TextView_Hint"
-                        android:text="Days → A4083" />
 
 
                 </LinearLayout>
