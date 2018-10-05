@@ -786,6 +786,10 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2081" />
 
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2081_h" />
+
                             <RadioGroup
                                 android:id="@+id/rg_N2081"
                                 style="@style/RadioGroup">
@@ -903,6 +907,10 @@
                                         android:id="@+id/txt_N2083"
                                         style="@style/TextView"
                                         android:text="@string/txt_N2083" />
+
+                                    <TextView
+                                        style="@style/TextView_Hint"
+                                        android:text="@string/N2083_h" />
 
                                     <RadioGroup
                                         android:id="@+id/rg_N2083"
@@ -1055,8 +1063,16 @@
                                     android:text="@string/txt_N2085" />
 
                                 <TextView
-                                    style="@style/TextView"
+                                    style="@style/TextView_Hint"
                                     android:text="@string/N2085_h" />
+
+                                <TextView
+                                    style="@style/TextView"
+                                    android:text="@string/txt_N2085_h2" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/N2085_h2" />
 
                                 <RadioGroup
                                     android:id="@+id/rg_N2085"
@@ -2400,7 +2416,7 @@
                                 <RadioButton
                                     android:id="@+id/rb_N2093_OT"
                                     style="@style/RadioButton"
-                                    android:text="@string/ot_other" />
+                                    android:text="@string/rb_N2093_OT" />
 
                                 <EditText
                                     android:id="@+id/ed_N2093_OT"
@@ -2465,6 +2481,10 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2095" />
 
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/txt_N2095_h" />
+
                                 <RadioGroup
                                     android:id="@+id/rg_N2095"
                                     style="@style/RadioGroup">
@@ -2520,87 +2540,87 @@
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_1"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_1" />
+                                                android:text="@string/cb_N2096_1" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_2"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_2" />
+                                                android:text="@string/cb_N2096_2" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_3"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_3" />
+                                                android:text="@string/cb_N2096_3" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_4"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_4" />
+                                                android:text="@string/cb_N2096_4" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_5"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_5" />
+                                                android:text="@string/cb_N2096_5" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_6"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_6" />
+                                                android:text="@string/cb_N2096_6" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_7"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_7" />
+                                                android:text="@string/cb_N2096_7" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_8"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_8" />
+                                                android:text="@string/cb_N2096_8" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_9"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_9" />
+                                                android:text="@string/cb_N2096_9" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_10"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_10" />
+                                                android:text="@string/cb_N2096_10" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_11"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_11" />
+                                                android:text="@string/cb_N2096_11" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_12"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_12" />
+                                                android:text="@string/cb_N2096_12" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_13"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_13" />
+                                                android:text="@string/cb_N2096_13" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_14"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_14" />
+                                                android:text="@string/cb_N2096_14" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_15"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_15" />
+                                                android:text="@string/cb_N2096_15" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_16"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_16" />
+                                                android:text="@string/cb_N2096_16" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_17"
                                                 style="@style/CheckBox"
-                                                android:text="@string/rb_N2096_17" />
+                                                android:text="@string/cb_N2096_17" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2096_OT"
@@ -2747,7 +2767,7 @@
                                         <RadioButton
                                             android:id="@+id/rb_N2098_OT"
                                             style="@style/RadioButton"
-                                            android:text="@string/ot_other" />
+                                            android:text="@string/rb_N2098_OT" />
 
                                         <EditText
                                             android:id="@+id/ed_N2098_OT"
@@ -2910,7 +2930,7 @@
                                             <CheckBox
                                                 android:id="@+id/cb_N2101_6"
                                                 style="@style/CheckBox"
-                                                android:text="@string/other" />
+                                                android:text="@string/cb_N2101_OT" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2101_7"
@@ -2991,6 +3011,10 @@
                                             android:id="@+id/txt_N2103"
                                             style="@style/TextView"
                                             android:text="@string/txt_N2103" />
+
+                                        <TextView
+                                            style="@style/TextView_Hint"
+                                            android:text="@string/txt_N2103_h" />
 
                                         <EditText
                                             android:id="@+id/ed_N2103_1"

@@ -2117,10 +2117,10 @@
     <string  name="txt_N2024_1"  translatable="false">	بیماری  شروع ہونے سے پہلے  جو موت کی وجہ بنی سے ،  کیا  بچی/بچہ کی نشوونما  نارمل طریقہ سے ہورہی تھی؟	:	N2024_1	</string>
     <string  name="txt_N2025u"  translatable="false">	وفات پانے کے کتنے عرصے پہلے سے بچی/بچہ  بیمار تھا ؟	:	N2025u	</string>
     <string  name="txt_N2025d"  translatable="false">	دن	:	N2025d	</string>
-    <string  name="txt_N2026"  translatable="false">	کیا اس کی وفات  اچانک ہوئی تھی ؟ ؟	:	N2026	</string>
+    <string  name="txt_N2026"  translatable="false">یا اس کی وفات  اچانک ہوئی تھی ؟	:	N2026	</string>
     <string  name="txt_N2026_h"  translatable="false">	" اچانک " کا مطلب ہے ،  بیماری شروع ہونے کے چوبیس گھنٹوں کے اندر اند ؟	:	N2026_h	</string>
 
-    <string  name="txt_N2051"  translatable="false">	 (  آپ/   بچہ کی ماں) کے یہاں اس بچہ کی   پیدائش سے پہلے   کتنے بچوں کی  پیدائش ہوئی ، مردہ بچوں کو شامل کرکے 	:	N2051 	</string>
+    <string  name="txt_N2051"  translatable="false">	  (  آپ/   بچہ کی ماں) کے یہاں اس بچہ کی   پیدائش سے پہلے   کتنے بچوں کی  پیدائش ہوئی ، مردہ بچوں کو شامل کرکے 	:	N2051 	</string>
     <string  name="txt_N2052"  translatable="false">	اس  حمل کے دوران، کیا  (آپ /ماں) نے دوران حمل کسی سے طبی معائنہ کروایاتھا؟	:	N2052	</string>
     <string  name="txt_N2053"  translatable="false">	    ۔(آپ /ماں)  نے کس سے معائنہ کروایا تھا؟	:	N2053	</string>
     <string  name="txt_N2054"  translatable="false">	اس حمل کے دوران (آپ/ماں) نے کتنی بار اپنا  حمل کا معائنہ کروایاتھا؟	:	N2054	</string>
@@ -2180,12 +2180,15 @@
     <string  name="txt_N2082"  translatable="false">	کہاں سے ( آپ /ماں )  نے یہ مدد حاصل کی  ؟	:	N2082	</string>
     <string  name="txt_N2083"  translatable="false">	کیا زچگی کا عمل شروع ہونے سے پہلے کو ئی مخصوص علامت یا علامتیں رونما    ہو ئیں جس کے لئے   (آپ /ماں ) صحت مہیا کرنے والے(پہلے) کے پاس گئیں  تھی؟	:	N2083	</string>
     <string  name="txt_N2084"  translatable="false">	کن علامات کی بنیاد پر (آپ /ماں ) علاج کے لیے گئی تھیں؟	:	N2084	</string>
-    <string  name="txt_N2085"  translatable="false">	گر  وہ   حمل کی علامات کے حوالے سے کبھی بھی صحت مہیا کرنے والے کے پاس نہیں گئی.  (Q4002 = 2 or Q4003 = only 5-7)  تو     پوچھو : کیا (آپ  / ماں ( کو   ہیلتھ مہیا کرنے والے یا  مرکز صحت  سے کوئی تشویش/مسئلہ تھا جس کی وجہ سے  زچگی  سے پہلے شروع    ہونے والے مسا ئل کے لئے (آپ /اس)   ہیلتھ مہیا کرنے والے   کے پاس یا  مرکز صحت   نہیں گئی تھیں  ؟	:	N2085	</string>
-    <string  name="N2085_h" translatable="false">	اگر  وہ   حمل کی علامات کے حوالے سے کبھی بھی صحت مہیا کرنے والے کے پاس نہیں گئی (Q4002 = 2 or Q4003 = only 5-7)  تو     پوچھو : کیا (آپ  / ماں ( کو   ہیلتھ مہیا کرنے والے یا  مرکز صحت  سے کوئی تشویش/مسئلہ تھا جس کی وجہ سے  زچگی  سے پہلے شروع    ہونے والے مسا ئل کے لئے (آپ /اس)   ہیلتھ مہیا کرنے والے   کے پاس یا  مرکز صحت   نہیں گئی تھیں؟	:	N2085	</string>
+    <string  name="txt_N2085"  translatable="false">	کیا (آپ  / ماں ( کو   ہیلتھ مہیا کرنے والے یا  مرکز صحت  سے کوئی تشویش/مسئلہ تھا جس کی وجہ سے  زچگی  سے پہلے شروع    ہونے والے مسا ئل کے لئے (آپ /اس)   ہیلتھ مہیا کرنے والے   کے پاس یا  مرکز صحت   نہیں گئی تھیں  ؟	:	N2085	</string>
+    <string  name="N2085_h" translatable="false">	اگر  وہ   حمل کی علامات کے حوالے سے کبھی بھی صحت مہیا کرنے والے کے پاس نہیں گئی.  (Q4002 = 2 or Q4003 = only 5-7)  تو     پوچھو : 	:	N2085	</string>
+    <string  name="txt_N2085_h2"  translatable="false">	کیا    (آپ/ ماں(         کوڈلیوری یا زچگی   پہلے شروع  ہونے  والے   مسا ئل کے حوالے سے  صحت مہیا کرنے والے یا  مرکز صحت کے بارے میں جو تشویش/ مسئلہ تھے وہ حل ہوچکے تھے  ؟	:	N2085	</string>
+    <string  name="N2085_h2" translatable="false">	اگر  وہ   حمل کی علامات کے حوالے سے صحت مہیا کرنے والے   کے پاس گئی  تھی تو پوچھو   : (Q4003 = 1-4) 	:	N2085	</string>
+
     <string  name="txt_N2086"  translatable="false">	کیا    مشکلات یا مسائل  تھے    جو( آپ  / ماں (کو پیش آ   ئے تھے ؟	:	N2086	</string>
     <string  name="txt_N2087"  translatable="false">	کیا آپ / ماں) زچگی سے پہلے شروع ہونے والی علامات (کوئی بھی) کے لئے ہسپتال میں داخل ہوگئے	:	N2087	</string>
 
-    <string name="txt_N2088"  translatable="false">N2088: اب میں آپ سے کسی بھی علامات کے بارے میں پوچھوں گی جو ہوسکتا ہے (آپ/ماں) کو   دورانِ زچگی یا  بچہ کی ولادت کے وقت  پیش آ ئی ہوں. کیا بچہ  کو  دورانِ زچگی یا  بچہ کی ولادت کے وقت مندرجہ ذیل میں سے کو  ئی   علامت  رونما ہوئی تھی."></string>
+    <string name="txt_N2088"  translatable="false">N2088: اب میں آپ سے کسی بھی علامات کے بارے میں پوچھوں گی جو ہوسکتا ہے (آپ/ماں) کو   دورانِ زچگی یا  بچہ کی ولادت کے وقت  پیش آ ئی ہوں. کیا بچہ  کو  دورانِ زچگی یا  بچہ کی ولادت کے وقت مندرجہ ذیل میں سے کو  ئی   علامت  رونما ہوئی تھی"></string>
     <string name="N2088_h"  translatable="false">N2088_h: جواب دہندہ ، پڑہیں:  اگر "ماں" نہیں ہے۔ جواب دہندہ کو یاد دلائیں کہ لیبر(زچگی )  شروع ہوتی ہے جب درد زہ کی وجہ سے اینٹھن کی لہریں ہر  20 منٹ   یا اس سے کم وقت میں   اٹھتی ہیں۔."></string>
 
     <string name="txt_N2088_1"  translatable="false">N2088_1: 1.	جھٹکے</string>
@@ -2216,15 +2219,19 @@
     <string  name="txt_N2094_h"  translatable="false">	سوال نمبر(N2091)    میں صحت فراہم  کرنے والے اورصحت کی سہولتوں(4-1)   کو  شامل کریں  جہاں لیبر اور زچگی کی علامات کی دیکھ بھال کی گئی تھی۔ اس کے ساتھ ہی  سوال نمبر(N2093)    میں زچگی کی جگہ/   زچگی میں مدد کرنے والے   (13-3) کو بھی شامل کریں ۔ اس بات کی یقین دہانی کریں  کہ  #13     جواب  سوال نمبر(N2093) میں ہے، اگر عورت کی زچگی صحت فراہم کرنے والے  یا صحت کی سہولت کے راستے میں ہوئی  . دو بار گنتی نہ کریں:   صحت فراہم کرنے والے /صحت کی سہولت   جو(سN2091) اور (سN2093) میں موجود  ہوں تو ان کی دو بار   نہ گنیں ۔   	:	N2094	</string>
 
     <string  name="txt_N2095"  translatable="false">	کیا کوئی خاص علامات موجود تھی جن کے لیے (آپ/ماں) صحت فراہم کرنے والے(پہلے یا فرسٹ) کے پاس گئی تھی؟	:	N2095	</string>
+    <string  name="txt_N2095_h"  translatable="false">	پڑھیں :   "پہلا صحت فراہم کنندہ "  اگر  وہ   ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئی تھی	:	N2095	</string>
+
     <string  name="txt_N2096"  translatable="false">	کس علامات کی وجہ سے (آپ /ماں)  صحت فراہم کنندہ کے پاس گئی تھیں؟	:	N2096	</string>
     <string  name="txt_N2097"  translatable="false">	آپ نے لیبر یا زچگی کی علامات ظاہر  ہونے کے کتنی دیر بعد صحت  فراہم کرنے والے (پہلے) کے پاس جانے کا فیصلہ کیا ؟	:	N2097	</string>
     <string  name="txt_N2098"  translatable="false">	اگر  اس   کی زچگی ہیلتھ   پروائڈر کے پاس یا مرکز صحت میں ہو ئی  یا راستے میں جاتے ہو ئے   ہو ئی  .  (N2006=3-11 or N2006=1-2 ) تو (N2008=1-3),ا ور پڑھیں ، آپ نے پہلے کہا تھا کہ (آپ /ماں)  کی زچگی    پر ہو ئی تھی	:	N2098	</string>
     <string  name="txt_N2098_2" translatable="false">	اگر اس کی زچگی صحت فراہم کنندہ کے پاس یا مرکز صحت جاتے ہو ئے            راستہ میں  نہیں ہوئی ہو     )N2008≠1-3 اور   N2006=1-2     یا       N2006=12(     تو    پڑھو :    آخری  صحت فراہم کنندہ    یا    آخری صحت کی سہولت کونسی تھی جہاں    (آپ /ماں)    لیبر یا زچگی کی علامات کی دیکھ بھال کے لیے گئی تھیں.	:	N2098_2	</string>
-    <string  name="txt_N2099"  translatable="false">	(آپ/ماں ) نے کہاں سے اس  سفر کے لیے  رقم کا انتظام کیا تھا؟	:	N2099	</string>
-    <string  name="txt_N2100"  translatable="false">	کیا    اس صحت فراہم کرنے والے کے پاس سفر کرنے کے لئے (آپ /ماں)   کو کوئی رقم  ادا  کرنی  پڑی تھی؟   	:	N2100	</string>
+    <string  name="txt_N2100"  translatable="false">	(آپ/ماں ) نے کہاں سے اس  سفر کے لیے  رقم کا انتظام کیا تھا؟	:	N2100	</string>
+    <string  name="txt_N2099"  translatable="false">	کیا    اس صحت فراہم کرنے والے کے پاس سفر کرنے کے لئے (آپ /ماں)   کو کوئی رقم  ادا  کرنی  پڑی تھی؟   	:	N2099	</string>
     <string  name="txt_N2101"  translatable="false">	وہاں جانے کے لیے کونسا ذریعہ سفر استعمال کیا گیا تھا؟	:	N2101	</string>
     <string  name="txt_N2102"  translatable="false">	کیا   (آپ /ماں)  بچہ کی پیدائش  ہونے سے پہلے  صحت  فراہم کنندہ کے پاس پہنچ گئی تھیں ؟	:	N2102	</string>
     <string  name="txt_N2103"  translatable="false">	(لیبر /زچگی کی علامات یا  بچہ کی پیدائش   ) کی دیکھ بھا ل کا فیصلہ کرنے کے بعد ،  (آپ /ماں)  کو آخری  صحت  فراہم کنندہ کے پاس پہنچنے میں کتنا وقت  لگا   / یا     آخری  صحت  فراہم کنندہ  (آپ /ماں)  تک  کتنی دیر میں پہنچا  / پہنچی۔	:	N2103	</string>
+    <string  name="txt_N2103_h"  translatable="false">	پڑھیں :    "صحت فراہم کنندہ کا  (آپ /ماں)  تک پہنچنا"  اگر  صحت فراہم کرنے والے نے   ماں کو گھر پر یا مرکز صحت کے باہر کسی اور جگہ دیکھا  	:	N2103	</string>
+
     <string  name="txt_N2104"  translatable="false">	کیا (آپ/ماں) ہسپتال میں داخل ہوگئی تھی؟	:	N2104	</string>
     <string  name="txt_N2105"  translatable="false">	کیا آخری صحت فراہم کرنے والے نے (آپ /ماں) کو کسی اور صحت فراہم کرنے والے یا صحت کی سہولت پر بھیجا تھا؟	:	N2105	</string>
     <string  name="txt_N2106"  translatable="false">	کیا بچہ کی پیدائش آخری صحت  فراہم کنندہ کے ذریعے  ہوئی تھی؟	:	N2106	</string>
@@ -2593,7 +2600,7 @@
     <string  name="rb_N2009_4_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2009_4_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="rb_N2011_1"  translatable="false">	بچے کی صحت کا کارڈ  	</string>
-    <string  name="rb_N2011_2"  translatable="false">اب دہندہ کی یاد  کرکے بتایا       	</string>
+    <string  name="rb_N2011_2"  translatable="false">2.	جواب دہندہ کی یاد  کرکے بتایا      	</string>
     <string  name="rb_N2012_1"  translatable="false">	 زندہ 	</string>
     <string  name="rb_N2012_2"  translatable="false">	مردہ	</string>
     <string  name="rb_N2012_DK"  translatable="false">	معلوم نہیں	</string>
@@ -2667,7 +2674,7 @@
     <string  name="cb_N2053_3"  translatable="false">	دائی	</string>
     <string  name="cb_N2053_4"  translatable="false">	روایتی دائی	</string>
     <string  name="cb_N2053_5"  translatable="false">	کمیونٹی ہیلتھ ورکر	</string>
-    <string  name="ed_N2053_OT"  translatable="false">	دیگر وضاحت کریں	</string>
+    <string  name="cb_N2053_OT"  translatable="false">	دیگر وضاحت کریں	</string>
     <string  name="cb_N2053_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2057_1_1"  translatable="false">	ہاں</string>
     <string  name="rb_N2057_1_2"  translatable="false">	نہیں	</string>
@@ -2871,7 +2878,7 @@
     <string  name="cb_N2086_1"  translatable="false">	 اسکاخیال نہیں تھا کہ    وہ  اتنی بیمار  ہے  کہ  وہ علاج  کے   لئے صحت کے مرکز  جائے   	</string>
     <string  name="cb_N2086_2"  translatable="false">	 کوئی ساتھ لے جانے والا موجود نہیں تھا 	</string>
     <string  name="cb_N2086_3"  translatable="false">	 اپنے روزانہ کے کام کاج میں بہت زیادہ وقت لگنا 	</string>
-    <string  name="rb_N2086_4"  translatable="false">	 کسی اور کو فیصلہ کرنا پڑا (وضاحت کریں)	</string>
+    <string  name="cb_N2086_4"  translatable="false">	 کسی اور کو فیصلہ کرنا پڑا (وضاحت کریں)	</string>
     <string  name="cb_N2086_5"  translatable="false">	 بہت دور سفر کرنا 	</string>
     <string  name="cb_N2086_6"  translatable="false">	 ٹرانسپورٹ ن یا سواری  دستیاب  نہیں	</string>
     <string  name="cb_N2086_7"  translatable="false">	 لاگت یا  خرچہ  ( ٹرانسپوڑٹ،صحت کی دیکھ بھال ،دیگر)	</string>
@@ -2880,7 +2887,7 @@
     <string  name="cb_N2086_10"  translatable="false">	 سوچا  وہ    اتنی کمزور  تھی   کہ سفر نہیں کرسکتی تھی	</string>
     <string  name="cb_N2086_11"  translatable="false">	 سوچا وہ صحت مند ہونے کے  بجائے وہ مر  جائے گی	</string>
     <string  name="cb_N2086_12"  translatable="false">	اندیشہ  تھا کہ ہیلتھ   پروائڈر  مرد ہو	</string>
-    <string  name="rb_N2086_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string  name="cb_N2086_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
     <string  name="cb_N2086_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_N2087_1"  translatable="false">	ہاں	</string>
     <string  name="rb_N2087_2"  translatable="false">	نہیں	</string>
@@ -2995,7 +3002,7 @@
     <string  name="rb_N2093_9"  translatable="false">	پرائیوٹ میڈیکل سیکٹر: نجی ہسپتال	</string>
     <string  name="rb_N2093_10"  translatable="false">	پرائیوٹ میڈیکل سیکٹر: نجی کلینک	</string>
     <string  name="rb_N2093_11"  translatable="false">	پرائیوٹ میڈیکل سیکٹر: نجی میٹرنٹی ہوم	</string>
-    <string  name="rd_N2093_12"  translatable="false">	 پرائیوٹ میڈیکل سیکٹر: دیگر نجی میڈیکل   (وضاحت کریں)	</string>
+    <string  name="rb_N2093_12"  translatable="false">	 پرائیوٹ میڈیکل سیکٹر: دیگر نجی میڈیکل   (وضاحت کریں)	</string>
     <string  name="rb_N2093_13"  translatable="false">	پرائیوٹ میڈیکل سیکٹر: ایک صحت فراہم کنندہ یا سہولت کے راستے پر	</string>
     <string  name="rb_N2093_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
     <string  name="rb_N2093_DK"  translatable="false">	معلوم نہیں 	</string>
@@ -3008,7 +3015,7 @@
     <string  name="cb_N2096_4"  translatable="false">	شدید سرکادرد	</string>
     <string  name="cb_N2096_5"  translatable="false">	دھندلا نظر آنا	</string>
     <string  name="cb_N2096_6"  translatable="false">	اتنی کمزوری کہ بستر سے نہ اٹھ سکنا	</string>
-    <string  name="cb_N2096_7"  translatable="false">	اتنی کمزوری کہ بستر سے نہ اٹھ سکنا	</string>
+    <string  name="cb_N2096_7"  translatable="false">	7.	پیٹ میں شدید درد ((لیبر یا زچگی کے  درد نہیں )	</string>
     <string  name="cb_N2096_8"  translatable="false">	تیز یا سانس لینے میں تکلیف ہونا	</string>
     <string  name="cb_N2096_9"  translatable="false">	منہ پر سوجن	</string>
     <string  name="cb_N2096_10"  translatable="false">	لیبر یا دوران زچگی  یا بچہ کی پیدائش کے وقت  اندام نہانی سے خون کا  زیادہ  خارج ہونا	</string>
@@ -3049,7 +3056,7 @@
     <string  name="cb_N2101_3"  translatable="false">	 بس	</string>
     <string  name="cb_N2101_4"  translatable="false">	ٹیکسی/رکشہ/ٹریکٹر/موٹرسائیکل	</string>
     <string  name="cb_N2101_5"  translatable="false">	ایمبولنس	</string>
-    <string  name="rb_N2101_OT"  translatable="false">	 کوئی اور (وضاحت کریں)	</string>
+    <string  name="cb_N2101_OT"  translatable="false">	 کوئی اور (وضاحت کریں)	</string>
     <string  name="cb_N2101_7"  translatable="false">	کوئی  ذریعہ سفر دستیاب نہیں کرسکے 	</string>
     <string  name="cb_N2101_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_N2102_1"  translatable="false">	ہاں، بچہ کی پیدائش سے پہلے پہنچ گئی تھی.	</string>
@@ -3094,7 +3101,7 @@
     <string  name="cb_N2113_2"  translatable="false">	اینٹی بائیوٹک مرہم/کریم/پاوڈر	</string>
     <string  name="cb_N2113_3"  translatable="false">	ارنڈکا تیل/سرسوں کاتیل یا  مکھن	</string>
     <string  name="cb_N2113_4"  translatable="false">	جانوروں کا گوبر یا گندگی/راکھ	</string>
-    <string  name="rb_N2113_OT"  translatable="false">	دیگروضاحت کریں	</string>
+    <string  name="cb_N2113_OT"  translatable="false">	دیگروضاحت کریں	</string>
     <string  name="cb_N2113_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2114_1"  translatable="false">	ہاں	</string>
     <string  name="rb_N2114_2"  translatable="false">	نہیں	</string>
@@ -4589,7 +4596,7 @@
     <string  name="rb_C3006_9"  translatable="false">	 پرائیوٹ میٹرنٹی ہوم	</string>
     <string  name="rb_C3006_10"  translatable="false">	دیگر پرائیوٹ میڈیکل 	</string>
     <string  name="rb_C3006_11"  translatable="false">	 صحت یا سہولت فراہم کرنے کے راستے پر   	</string>
-    <string  name="rb_C3006_OT"  translatable="false">	دیگر(وضاحت کریں)	</string>
+    <string  name="rb_C3006_12"  translatable="false">	دیگر(وضاحت کریں)	</string>
     <string  name="rb_C3006_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_C3006_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="rb_C3008_1"  translatable="false">	 ڈاکٹر	</string>

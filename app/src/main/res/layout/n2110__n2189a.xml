@@ -275,7 +275,7 @@
                         <CheckBox
                             android:id="@+id/cb_N2113_OT"
                             style="@style/CheckBox"
-                            android:text="@string/ot_other" />
+                            android:text="@string/cb_N2113_OT" />
 
                         <EditText
                             android:id="@+id/ed_N2113_OT"

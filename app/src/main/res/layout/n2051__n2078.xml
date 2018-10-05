@@ -102,7 +102,6 @@
                         <EditText
                             android:id="@+id/ed_N2051"
                             style="@style/EditText_number"
-                            android:hint="For don't know, enter '99'. For refused, enter '88'"
                             android:maxLength="2" />
 
                     </LinearLayout>
@@ -531,6 +530,10 @@
                             android:id="@+id/txt_N2058"
                             style="@style/TextView"
                             android:text="@string/txt_N2058" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2058_h" />
 
                         <CheckBox
                             android:id="@+id/cb_N2058_1"

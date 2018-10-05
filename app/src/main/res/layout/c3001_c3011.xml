@@ -373,7 +373,7 @@
                         <RadioButton
                             android:id="@+id/rb_C3006_6"
                             style="@style/RadioButton"
-                            android:text="Other public (specify)" />
+                            android:text="@string/rb_C3006_6" />
 
                         <RadioButton
                             android:id="@+id/rb_C3006_7"
@@ -393,7 +393,7 @@
                         <RadioButton
                             android:id="@+id/rb_C3006_10"
                             style="@style/RadioButton"
-                            android:text="Other private medical (Specify)" />
+                            android:text="@string/rb_C3006_10" />
 
                         <RadioButton
                             android:id="@+id/rb_C3006_11"
@@ -403,7 +403,7 @@
                         <RadioButton
                             android:id="@+id/rb_C3006_12"
                             style="@style/RadioButton"
-                            android:text="Other (specify)" />
+                            android:text="@string/rb_C3006_12" />
 
                         <RadioButton
                             android:id="@+id/rb_C3006_DK"
