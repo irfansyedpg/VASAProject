@@ -203,7 +203,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_N(final String study_id) {
 
-        final String ROOT_URL = "http://10.1.42.112/sm/Welcome/collect_N";
+        final String ROOT_URL = "http://10.199.29.176/sm/Welcome/collect_N";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -549,7 +549,23 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(N2080_N2107.sub_N2080_N2107.N2082_OT, c7.getString(c7.getColumnIndex("N2082_OT")));
                         params.put(N2080_N2107.sub_N2080_N2107.N2082_OTx, c7.getString(c7.getColumnIndex("N2082_OTx")));
                         params.put(N2080_N2107.sub_N2080_N2107.N2083, c7.getString(c7.getColumnIndex("N2083")));
-                        params.put(N2080_N2107.sub_N2080_N2107.N2084, c7.getString(c7.getColumnIndex("N2084")));
+
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_1, c7.getString(c7.getColumnIndex("N2084_1")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_2, c7.getString(c7.getColumnIndex("N2084_2")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_3, c7.getString(c7.getColumnIndex("N2084_3")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_4, c7.getString(c7.getColumnIndex("N2084_4")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_5, c7.getString(c7.getColumnIndex("N2084_5")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_6, c7.getString(c7.getColumnIndex("N2084_6")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_7, c7.getString(c7.getColumnIndex("N2084_7")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_8, c7.getString(c7.getColumnIndex("N2084_8")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_9, c7.getString(c7.getColumnIndex("N2084_9")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_10, c7.getString(c7.getColumnIndex("N2084_10")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_11, c7.getString(c7.getColumnIndex("N2084_11")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_12, c7.getString(c7.getColumnIndex("N2084_12")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_13, c7.getString(c7.getColumnIndex("N2084_13")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_14, c7.getString(c7.getColumnIndex("N2084_14")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2084_OT, c7.getString(c7.getColumnIndex("N2084_OT")));
+
                         params.put(N2080_N2107.sub_N2080_N2107.N2085, c7.getString(c7.getColumnIndex("N2085")));
                         params.put(N2080_N2107.sub_N2080_N2107.N2086_1, c7.getString(c7.getColumnIndex("N2086_1")));
                         params.put(N2080_N2107.sub_N2080_N2107.N2086_2, c7.getString(c7.getColumnIndex("N2086_2")));
@@ -606,7 +622,26 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(N2080_N2107.sub_N2080_N2107.N2093x, c7.getString(c7.getColumnIndex("N2093x")));
                         params.put(N2080_N2107.sub_N2080_N2107.N2094, c7.getString(c7.getColumnIndex("N2094")));
                         params.put(N2080_N2107.sub_N2080_N2107.N2095, c7.getString(c7.getColumnIndex("N2095")));
-                        params.put(N2080_N2107.sub_N2080_N2107.N2096, c7.getString(c7.getColumnIndex("N2096")));
+
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_1, c7.getString(c7.getColumnIndex("N2096_1")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_2, c7.getString(c7.getColumnIndex("N2096_2")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_3, c7.getString(c7.getColumnIndex("N2096_3")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_4, c7.getString(c7.getColumnIndex("N2096_4")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_5, c7.getString(c7.getColumnIndex("N2096_5")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_6, c7.getString(c7.getColumnIndex("N2096_6")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_7, c7.getString(c7.getColumnIndex("N2096_7")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_8, c7.getString(c7.getColumnIndex("N2096_8")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_9, c7.getString(c7.getColumnIndex("N2096_9")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_10, c7.getString(c7.getColumnIndex("N2096_10")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_11, c7.getString(c7.getColumnIndex("N2096_11")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_12, c7.getString(c7.getColumnIndex("N2096_12")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_13, c7.getString(c7.getColumnIndex("N2096_13")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_14, c7.getString(c7.getColumnIndex("N2096_14")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_15, c7.getString(c7.getColumnIndex("N2096_15")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_16, c7.getString(c7.getColumnIndex("N2096_16")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_17, c7.getString(c7.getColumnIndex("N2096_17")));
+                        params.put(N2080_N2107.sub_N2080_N2107.N2096_OT, c7.getString(c7.getColumnIndex("N2096_OT")));
+
                         params.put(N2080_N2107.sub_N2080_N2107.N2097_1, c7.getString(c7.getColumnIndex("N2097_1")));
                         params.put(N2080_N2107.sub_N2080_N2107.N2097_2, c7.getString(c7.getColumnIndex("N2097_2")));
                         params.put(N2080_N2107.sub_N2080_N2107.N2097_3, c7.getString(c7.getColumnIndex("N2097_3")));
@@ -1305,7 +1340,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_C(final String study_id) {
 
-        final String ROOT_URL = "http://10.1.42.112/sm/Welcome/collect_C";
+        final String ROOT_URL = "http://10.199.29.176/sm/Welcome/collect_C";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -2432,7 +2467,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_A(final String study_id) {
 
-        final String ROOT_URL = "http://10.1.42.112/sm/Welcome/collect_A";
+        final String ROOT_URL = "http://10.199.29.176/sm/Welcome/collect_A";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 

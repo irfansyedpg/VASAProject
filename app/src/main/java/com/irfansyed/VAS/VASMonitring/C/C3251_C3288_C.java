@@ -530,14 +530,14 @@ public class C3251_C3288_C extends AppCompatActivity {
         C3251_C3288_A_C C3251C = new C3251_C3288_A_C();
 
         C3251C.setC3254(bi.rbC32541.isChecked() ? "1" : bi.rbC32542.isChecked() ? "2" : bi.rbC32543.isChecked() ? "3" : bi.rbC32544.isChecked() ? "4" : bi.rbC32545.isChecked() ? "5" : bi.rbC3254OT.isChecked() ? "6" : bi.rbC3254DK.isChecked() ? "9" : "-1");
-        C3251C.setC3254x(bi.edC3254OT.getText().toString());
+        C3251C.setC3254x(bi.edC3254OT.getText().toString().trim().length() > 0 ? bi.edC3254OT.getText().toString() : "-1");
         C3251C.setC3255(bi.rbC32551.isChecked() ? "1" : bi.rbC32552.isChecked() ? "2" : bi.rbC3255DK.isChecked() ? "9" : "-1");
 
         C3251C.setC32561(bi.cbC32561.isChecked() ? "1" : "-1");
         C3251C.setC32562(bi.cbC32562.isChecked() ? "2" : "-1");
         C3251C.setC32563(bi.cbC32563.isChecked() ? "3" : "-1");
         C3251C.setC32564(bi.cbC32564.isChecked() ? "4" : "-1");
-        C3251C.setC32564x(bi.edC32564.getText().toString());
+        C3251C.setC32564x(bi.edC32564.getText().toString().trim().length() > 0 ? bi.edC32564.getText().toString() : "-1");
         C3251C.setC32565(bi.cbC32565.isChecked() ? "5" : "-1");
         C3251C.setC32566(bi.cbC32566.isChecked() ? "6" : "-1");
         C3251C.setC32567(bi.cbC32567.isChecked() ? "7" : "-1");
@@ -547,12 +547,12 @@ public class C3251_C3288_C extends AppCompatActivity {
         C3251C.setC325611(bi.cbC325611.isChecked() ? "11" : "-1");
         C3251C.setC325612(bi.cbC325612.isChecked() ? "12" : "-1");
         C3251C.setC3256Ot(bi.cbC3256OT.isChecked() ? "13" : "-1");
-        C3251C.setC3256OTx(bi.edC3256OT.getText().toString());
+        C3251C.setC3256OTx(bi.edC3256OT.getText().toString().trim().length() > 0 ? bi.edC3256OT.getText().toString() : "-1");
         C3251C.setC3256Dk(bi.cbC3256DK.isChecked() ? "99" : "-1");
 
-        C3251C.setC32571(bi.edC32571.getText().toString());
-        C3251C.setC32572(bi.edC32572.getText().toString());
-        C3251C.setC32573(bi.edC32573.getText().toString());
+        C3251C.setC32571(bi.edC32571.getText().toString().trim().length() > 0 ? bi.edC32571.getText().toString() : "-1");
+        C3251C.setC32572(bi.edC32572.getText().toString().trim().length() > 0 ? bi.edC32572.getText().toString() : "-1");
+        C3251C.setC32573(bi.edC32573.getText().toString().trim().length() > 0 ? bi.edC32573.getText().toString() : "-1");
 
         C3251C.setC32581(bi.rbC325811.isChecked() ? "1" : bi.rbC325812.isChecked() ? "2" : bi.rbC325813.isChecked() ? "3" : bi.rbC32581DK.isChecked() ? "9" : "-1");
         C3251C.setC32582(bi.rbC325821.isChecked() ? "1" : bi.rbC325822.isChecked() ? "2" : bi.rbC325823.isChecked() ? "3" : bi.rbC32582DK.isChecked() ? "9" : "-1");
@@ -560,12 +560,12 @@ public class C3251_C3288_C extends AppCompatActivity {
         C3251C.setC3259(bi.rbC325911.isChecked() ? "1" : bi.rbC325912.isChecked() ? "2" : bi.rbC325913.isChecked() ? "3"
                 : bi.rbC325914.isChecked() ? "4" : bi.rbC325915.isChecked() ? "5" : bi.rbC325916.isChecked() ? "6" : bi.rbC325917.isChecked() ? "7"
                 : bi.rbC325918.isChecked() ? "8" : bi.rbC325919.isChecked() ? "9" : bi.rbC3259110.isChecked() ? "10" : bi.rbC3259111.isChecked() ? "11" : bi.rbC32591DK.isChecked() ? "99" : "-1");
-        C3251C.setC32592(bi.edC32592.getText().toString());
+        C3251C.setC32592(bi.edC32592.getText().toString().trim().length() > 0 ? bi.edC32592.getText().toString() : "-1");
 
         C3251C.setC3260(bi.rbC32601.isChecked() ? "1" : bi.rbC32602.isChecked() ? "2" : bi.rbC32603.isChecked() ? "3" : bi.rbC3260DK.isChecked() ? "9" : "-1");
 
-        C3251C.setC32611(bi.edC32611.getText().toString());
-        C3251C.setC32612(bi.edC32612.getText().toString());
+        C3251C.setC32611(bi.edC32611.getText().toString().trim().length() > 0 ? bi.edC32611.getText().toString() : "-1");
+        C3251C.setC32612(bi.edC32612.getText().toString().trim().length() > 0 ? bi.edC32612.getText().toString() : "-1");
 
         C3251C.setC3262(bi.rbC32621.isChecked() ? "1" : bi.rbC32622.isChecked() ? "2" : bi.rbC3262DK.isChecked() ? "9" : "-1");
         C3251C.setC3263(bi.rbC32631.isChecked() ? "1" : bi.rbC32632.isChecked() ? "2" : bi.rbC3263DK.isChecked() ? "9" : "-1");
@@ -573,7 +573,7 @@ public class C3251_C3288_C extends AppCompatActivity {
         C3251C.setC3264(bi.rbC326411.isChecked() ? "1" : bi.rbC326412.isChecked() ? "2" : bi.rbC326413.isChecked() ? "3"
                 : bi.rbC326414.isChecked() ? "4" : bi.rbC326415.isChecked() ? "5" : bi.rbC326416.isChecked() ? "6" : bi.rbC326417.isChecked() ? "7"
                 : bi.rbC326418.isChecked() ? "8" : bi.rbC326419.isChecked() ? "9" : bi.rbC3264110.isChecked() ? "10" : bi.rbC3264111.isChecked() ? "11" : bi.rbC32641DK.isChecked() ? "99" : "-1");
-        C3251C.setC32642(bi.edC32642.getText().toString());
+        C3251C.setC32642(bi.edC32642.getText().toString().trim().length() > 0 ? bi.edC32642.getText().toString() : "-1");
 
         C3251C.setC32651(bi.rbC326511.isChecked() ? "1" : bi.rbC326512.isChecked() ? "2" : bi.rbC32651DK.isChecked() ? "9" : "-1");
         C3251C.setC32652(bi.rbC326521.isChecked() ? "1" : bi.rbC326522.isChecked() ? "2" : bi.rbC32652DK.isChecked() ? "9" : "-1");
@@ -591,12 +591,12 @@ public class C3251_C3288_C extends AppCompatActivity {
         C3251C.setC3269(bi.rbC326911.isChecked() ? "1" : bi.rbC326912.isChecked() ? "2" : bi.rbC326913.isChecked() ? "3"
                 : bi.rbC326914.isChecked() ? "4" : bi.rbC326915.isChecked() ? "5" : bi.rbC326916.isChecked() ? "6" : bi.rbC326917.isChecked() ? "7"
                 : bi.rbC326918.isChecked() ? "8" : bi.rbC326919.isChecked() ? "9" : bi.rbC3269110.isChecked() ? "10" : bi.rbC3269111.isChecked() ? "11" : bi.rbC32691DK.isChecked() ? "99" : "-1");
-        C3251C.setC32692(bi.edC32692.getText().toString());
+        C3251C.setC32692(bi.edC32692.getText().toString().trim().length() > 0 ? bi.edC32692.getText().toString() : "-1");
 
         C3251C.setC3270(bi.rbC32701.isChecked() ? "1" : bi.rbC32702.isChecked() ? "2" : bi.rbC32703.isChecked() ? "3" : bi.rbC3270DK.isChecked() ? "9" : "-1");
 
-        C3251C.setC32711(bi.edC32711.getText().toString());
-        C3251C.setC32712(bi.edC32712.getText().toString());
+        C3251C.setC32711(bi.edC32711.getText().toString().trim().length() > 0 ? bi.edC32711.getText().toString() : "-1");
+        C3251C.setC32712(bi.edC32712.getText().toString().trim().length() > 0 ? bi.edC32712.getText().toString() : "-1");
 
         C3251C.setC3272(bi.rbC32721.isChecked() ? "1" : bi.rbC32722.isChecked() ? "2" : bi.rbC3272DK.isChecked() ? "9" : "-1");
         C3251C.setC3273(bi.rbC32731.isChecked() ? "1" : bi.rbC32732.isChecked() ? "2" : bi.rbC3273DK.isChecked() ? "9" : "-1");
@@ -604,7 +604,7 @@ public class C3251_C3288_C extends AppCompatActivity {
         C3251C.setC3274(bi.rbC327411.isChecked() ? "1" : bi.rbC327412.isChecked() ? "2" : bi.rbC327413.isChecked() ? "3"
                 : bi.rbC327414.isChecked() ? "4" : bi.rbC327415.isChecked() ? "5" : bi.rbC327416.isChecked() ? "6" : bi.rbC327417.isChecked() ? "7"
                 : bi.rbC327418.isChecked() ? "8" : bi.rbC327419.isChecked() ? "9" : bi.rbC3274110.isChecked() ? "10" : bi.rbC3274111.isChecked() ? "11" : bi.rbC32741DK.isChecked() ? "99" : "-1");
-        C3251C.setC32742(bi.edC32742.getText().toString());
+        C3251C.setC32742(bi.edC32742.getText().toString().trim().length() > 0 ? bi.edC32742.getText().toString() : "-1");
 
         C3251C.setC32751(bi.rbC327511.isChecked() ? "1" : bi.rbC327512.isChecked() ? "2" : bi.rbC32751DK.isChecked() ? "9" : "-1");
         C3251C.setC32752(bi.rbC327521.isChecked() ? "1" : bi.rbC327522.isChecked() ? "2" : bi.rbC32752DK.isChecked() ? "9" : "-1");
@@ -622,7 +622,7 @@ public class C3251_C3288_C extends AppCompatActivity {
         C3251C.setC32803(bi.cbC32803.isChecked() ? "3" : "-1");
         C3251C.setC32804(bi.cbC32804.isChecked() ? "4" : "-1");
         C3251C.setC32805(bi.cbC32805.isChecked() ? "5" : "-1");
-        C3251C.setC32805x(bi.edC32805.getText().toString());
+        C3251C.setC32805x(bi.edC32805.getText().toString().trim().length() > 0 ? bi.edC32805.getText().toString() : "-1");
         C3251C.setC32806(bi.cbC32806.isChecked() ? "6" : "-1");
         C3251C.setC32807(bi.cbC32807.isChecked() ? "7" : "-1");
         C3251C.setC32808(bi.cbC32808.isChecked() ? "8" : "-1");
@@ -634,7 +634,7 @@ public class C3251_C3288_C extends AppCompatActivity {
         C3251C.setC328014(bi.cbC328014.isChecked() ? "14" : "-1");
         C3251C.setC328015(bi.cbC328015.isChecked() ? "15" : "-1");
         C3251C.setC3280Ot(bi.cbC3280OT.isChecked() ? "16" : "-1");
-        C3251C.setC3280OTx(bi.edC3280OT.getText().toString());
+        C3251C.setC3280OTx(bi.edC3280OT.getText().toString().trim().length() > 0 ? bi.edC3280OT.getText().toString() : "-1");
         C3251C.setC3280Dk(bi.cbC3280DK.isChecked() ? "99" : "-1");
 
         C3251C.setC3281(bi.rbC32811.isChecked() ? "1" : bi.rbC32812.isChecked() ? "2" : bi.rbC3281DK.isChecked() ? "9" : "-1");
@@ -663,7 +663,7 @@ public class C3251_C3288_C extends AppCompatActivity {
 
         C3251C.setC3287(bi.rbC32871.isChecked() ? "1" : bi.rbC32872.isChecked() ? "2" : bi.rbC3287DK.isChecked() ? "9" : bi.rbC3287RA.isChecked() ? "8" : "-1");
 
-        C3251C.setC3288(bi.edC3288.getText().toString());
+        C3251C.setC3288(bi.edC3288.getText().toString().trim().length() > 0 ? bi.edC3288.getText().toString() : "-1");
 
 //        C3251C.setSTUDYID(bi.edStudyId.getText().toString());
 

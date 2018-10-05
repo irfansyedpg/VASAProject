@@ -3725,7 +3725,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="ra"  translatable="false">Refused to Answer</string>
     <string name="ot_someone"  translatable="false">Someone else (specify)</string>
     <string name="ot_other"  translatable="false">Other (Specify)</string>
-    <string name="other"  translatable="false">Other (specify)</string>
+    <string name="other"  translatable="false">Other</string>
     <string name="minutes"  translatable="false">Minutes</string>
     <string name="hours"  translatable="false">Hours</string>
     <string name="days"  translatable="false">Days</string>
@@ -4005,6 +4005,20 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4252_3"  translatable="false">For pregnancy-related deaths: Mark any provider where the woman had an abortion (spontaneous or induced) or delivered.</string>
     <string name="A4252_4"  translatable="false">For all adults: If the illness lasted 3 months or more, ask about the first three actions taken at the start of the illness and the middle of the illness, and about the last three actions at the end of the illness. Circle ‘S’ (Start), ‘M’ (Middle) or ‘E’ (End) for each action.</string>
     <string name="A4252_5"  translatable="false">1 - If the illness lasted 3 months or more, circle ‘S’ (Start), ‘M’ (Middle) or ‘E’ (End) for each action. \n\n2 - Check one other care or health care provider box for each action row. Check ‘Trained CHW, nurse or midwife’ only if the provider was seen outside a facility. \n\n3 - For pregnancy-related deaths only: Mark any provider where the woman aborted or delivered. \n\n4 - Mark the symptom(s) that were present when each action was taken.</string>
+    <string name="action"  translatable="false">Illness Phase?</string>
+    <string name="start"  translatable="false">START</string>
+    <string name="mid"  translatable="false">MID</string>
+    <string name="end"  translatable="false">END</string>
+    <string name="add"  translatable="false">ADD</string>
+    <string name="rb_care1"  translatable="false">Home care (own, relative, neighbor, friend)</string>
+    <string name="rb_care2"  translatable="false">Traditional or non-formal provider</string>
+    <string name="rb_care3"  translatable="false">Pharmacist or drug seller</string>
+    <string name="rb_care4"  translatable="false">Trained community health worker (CHW), nurse, or midwife</string>
+    <string name="rb_care5"  translatable="false">Private doctor or clinic (formal/unsure)</string>
+    <string name="rb_care6"  translatable="false">NGO or government clinic</string>
+    <string name="rb_care7"  translatable="false">Hospital</string>
+    <string name="cb_place"  translatable="false">Woman aborted or delivered at this provider</string>
+    <string name="ed_symptoms"  translatable="false">What symptoms were present when the action was taken?</string>
     <string name="A4253"  translatable="false">A4253: If any formal care given or sought, \nask: \nWho decided to seek care for (NAME)’s illness from the (FIRST FORMAL PROVIDER)</string>
     <string name="A4254_1"  translatable="false">A4254_1: If never taken to a health provider, \nask: \nDid you or (NAME) have any concerns or problems that kept him/her from going to a health provider during the illness?</string>
     <string name="A4254_2"  translatable="false">A4254_2: If taken to a health provider, \nask: \nDid you or (NAME) have to overcome any concerns or problems for him/her to go the (first) health provider?</string>
@@ -4186,11 +4200,12 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
 
     <string name="rb_A4253_1"  translatable="false">Adult deceased him/herself</string>
     <string name="rb_A4253_2"  translatable="false">Adult deceased’s spouse/partner</string>
+    <string name="rb_A4253_3"  translatable="false">Someone else</string>
 
     <string name="cb_A4255_1"  translatable="false">Did not think adult was sick enough to need health care</string>
     <string name="cb_A4255_2"  translatable="false">No one available to accompany</string>
     <string name="cb_A4255_3"  translatable="false">Too much time from caregiver’s duties</string>
-    <string name="ed_A4255_4"  translatable="false">Someone else (specify) had to decide</string>
+    <string name="cb_A4255_4"  translatable="false">Someone else (specify) had to decide</string>
     <string name="cb_A4255_5"  translatable="false">Too far to travel</string>
     <string name="cb_A4255_6"  translatable="false">No transportation available</string>
     <string name="cb_A4255_7"  translatable="false">Cost (transport, health care, other)</string>
@@ -4695,6 +4710,7 @@ Examples of statements for the reading test:
     <string name="conflict">Conflict</string>
     <string name="next">NEXT SECTION</string>
     <string name="no_car_not_needed_given_or_sought_a4254_n_don_t_know_a4284">No - car not needed , given or sought → A4254   Don\'t know → A4284</string>
+
 
     <!-- Reproductive Urdu TEXT & RESPONSE ENDS -->
 
