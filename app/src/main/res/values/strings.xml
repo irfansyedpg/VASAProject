@@ -163,7 +163,6 @@
     <string name="txt_N2056"  translatable="false">N2056:	During which month of the pregnancy did (you / the mother) last receive antenatal care?	</string>
     <string name="txt_N2057"  translatable="false">N2057:	As part of (your / the mother’s) antenatal care during this pregnancy, were any of the following done at least once:	</string>
 
-
     <string name="txt_N2057_1"  translatable="false">N2057_1: Was your blood pressure measured?</string>
     <string name="txt_N2057_2"  translatable="false">N2057_2: Did you give a urine sample?</string>
     <string name="txt_N2057_3"  translatable="false">N2057_3: Did you give a blood sample?</string>
@@ -754,24 +753,24 @@
     <string name="rb_N2095_1"  translatable="false">Yes</string>
     <string name="rb_N2095_2"  translatable="false">No</string>
     <string name="rb_N2095_DK"  translatable="false">Don’t know</string>
-    <string name="rb_N2096_1"  translatable="false">Convulsions</string>
-    <string name="rb_N2096_2"  translatable="false">High blood pressure</string>
-    <string name="rb_N2096_3"  translatable="false">Severe anemia or (pallor and SOB)</string>
-    <string name="rb_N2096_4"  translatable="false">Severe headache</string>
-    <string name="rb_N2096_5"  translatable="false">Blurred vision</string>
-    <string name="rb_N2096_6"  translatable="false">Too weak to get out of bed</string>
-    <string name="rb_N2096_7"  translatable="false">Severe abdominal (not labor) pain</string>
-    <string name="rb_N2096_8"  translatable="false">Fast or difficult breathing</string>
-    <string name="rb_N2096_9"  translatable="false">Puffy face</string>
-    <string name="rb_N2096_10"  translatable="false">Excess bleed during L or D</string>
-    <string name="rb_N2096_11"  translatable="false">Fever</string>
-    <string name="rb_N2096_12"  translatable="false">Smelly vaginal discharge</string>
-    <string name="rb_N2096_13"  translatable="false">Early/preterm labor ( less then 9 mnth)</string>
-    <string name="rb_N2096_14"  translatable="false">Labor for 12 hours or more</string>
-    <string name="rb_N2096_15"  translatable="false">Part other than baby’s head coming out first</string>
-    <string name="rb_N2096_16"  translatable="false">Cord delivered first</string>
-    <string name="rb_N2096_17"  translatable="false">Cord around child’s neck more than once</string>
-    <string name="rb_N2096_18"  translatable="false">Other (specified in N2088)</string>
+    <string name="cb_N2096_1"  translatable="false">Convulsions</string>
+    <string name="cb_N2096_2"  translatable="false">High blood pressure</string>
+    <string name="cb_N2096_3"  translatable="false">Severe anemia or (pallor and SOB)</string>
+    <string name="cb_N2096_4"  translatable="false">Severe headache</string>
+    <string name="cb_N2096_5"  translatable="false">Blurred vision</string>
+    <string name="cb_N2096_6"  translatable="false">Too weak to get out of bed</string>
+    <string name="cb_N2096_7"  translatable="false">Severe abdominal (not labor) pain</string>
+    <string name="cb_N2096_8"  translatable="false">Fast or difficult breathing</string>
+    <string name="cb_N2096_9"  translatable="false">Puffy face</string>
+    <string name="cb_N2096_10"  translatable="false">Excess bleed during L or D</string>
+    <string name="cb_N2096_11"  translatable="false">Fever</string>
+    <string name="cb_N2096_12"  translatable="false">Smelly vaginal discharge</string>
+    <string name="cb_N2096_13"  translatable="false">Early/preterm labor ( less then 9 mnth)</string>
+    <string name="cb_N2096_14"  translatable="false">Labor for 12 hours or more</string>
+    <string name="cb_N2096_15"  translatable="false">Part other than baby’s head coming out first</string>
+    <string name="cb_N2096_16"  translatable="false">Cord delivered first</string>
+    <string name="cb_N2096_17"  translatable="false">Cord around child’s neck more than once</string>
+    <string name="cb_N2096_18"  translatable="false">Other (specified in N2088)</string>
     <string name="rb_N2098_1"  translatable="false">Her own home with a doctor, nurse, midwife or auxiliary midwife</string>
     <string name="rb_N2098_2"  translatable="false">Another home with a doctor, nurse, midwife or auxiliary midwife</string>
     <string name="rb_N2098_3"  translatable="false">Government hospital</string>

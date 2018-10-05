@@ -138,6 +138,10 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2193" />
 
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/txt_N2193_h" />
+
                             <RadioGroup
                                 android:id="@+id/rg_N2193"
                                 style="@style/RadioGroup">

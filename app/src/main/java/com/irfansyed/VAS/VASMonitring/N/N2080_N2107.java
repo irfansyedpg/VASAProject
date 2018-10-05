@@ -13,6 +13,7 @@ import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.N2080N2107Binding;
 
+import Global.N.N2012_N2016.sub_N2012_N2016;
 import data.DBHelper;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -20,6 +21,7 @@ import utils.Gothrough;
 public class N2080_N2107 extends AppCompatActivity {
 
     N2080N2107Binding bi;
+    boolean flag_n2016 = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,14 +32,26 @@ public class N2080_N2107 extends AppCompatActivity {
 
         this.setTitle(getString(R.string.h_n_sec_4));
 
+        GetDataFromDB();
         SetContentUI();
 
     }
 
-    private void SetContentUI() {
+    private void GetDataFromDB() {
 
         bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
         bi.edStudyId.setEnabled(false);
+
+        DBHelper db = new DBHelper(this);
+
+        String n2016 = db.getSpecificData(data.N.N2012_N2016.TABLE_NAME, bi.edStudyId.getText().toString(), sub_N2012_N2016.N2016);
+        if (n2016.equals("1")) {
+            flag_n2016 = true;
+        }
+
+    }
+
+    private void SetContentUI() {
 
         bi.cbN208016.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -285,7 +299,7 @@ public class N2080_N2107 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, bi.rbN21061.isChecked() ? N2271_N2284.class : N2110_N2189a.class)
+                startActivity(new Intent(this, flag_n2016 ? N2271_N2284.class : N2110_N2189a.class)
                         .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
