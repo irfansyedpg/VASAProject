@@ -840,6 +840,10 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2125" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/txt_N2125_h" />
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
@@ -3215,6 +3219,10 @@
                         android:id="@+id/txt_N2173"
                         style="@style/Hedaer_textview"
                         android:text="@string/txt_N2173" />
+
+                    <TextView
+                        style="@style/Hedaer_textview"
+                        android:text="@string/N2173_h" />
 
                     <LinearLayout
                         style="@style/Q_Linerlayout_v"

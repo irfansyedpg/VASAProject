@@ -210,7 +210,7 @@ public class N2291_N2304 extends AppCompatActivity {
 
         if (!bi.rbN2300DK.isChecked()) {
 
-            if (bi.rbN23001.isChecked()) {
+            if (!bi.rbN23001.isChecked()) {
                 //ll_N2301
                 if (!Gothrough.IamHiden(bi.llN2301)) {
                     return false;

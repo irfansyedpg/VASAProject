@@ -163,7 +163,6 @@
     <string name="txt_N2056"  translatable="false">N2056:	During which month of the pregnancy did (you / the mother) last receive antenatal care?	</string>
     <string name="txt_N2057"  translatable="false">N2057:	As part of (your / the mother’s) antenatal care during this pregnancy, were any of the following done at least once:	</string>
 
-
     <string name="txt_N2057_1"  translatable="false">N2057_1: Was your blood pressure measured?</string>
     <string name="txt_N2057_2"  translatable="false">N2057_2: Did you give a urine sample?</string>
     <string name="txt_N2057_3"  translatable="false">N2057_3: Did you give a blood sample?</string>
