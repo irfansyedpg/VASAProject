@@ -1249,6 +1249,10 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2088" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2088_h" />
+
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -2430,6 +2434,11 @@
                                 android:id="@+id/txt_N2094"
                                 style="@style/TextView"
                                 android:text="@string/txt_N2094" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/txt_N2094_h" />
+
 
 
                             <EditText

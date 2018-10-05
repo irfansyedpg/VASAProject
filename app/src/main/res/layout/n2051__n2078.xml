@@ -169,6 +169,10 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2053" />
 
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2053_h" />
+
                             <CheckBox
                                 android:id="@+id/cb_N2053_1"
                                 style="@style/CheckBox"

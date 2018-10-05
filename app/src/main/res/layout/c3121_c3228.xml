@@ -4861,6 +4861,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3208_u" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3208_u_h" />
+
                     <RadioGroup style="@style/RadioGroup"
 
                         >

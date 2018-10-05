@@ -80,6 +80,10 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_C3254" />
 
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/C3254_h" />
+
                                 <RadioGroup
                                     android:id="@+id/rg_C3254"
                                     style="@style/RadioGroup">
@@ -144,6 +148,10 @@
                                     android:id="@+id/txt_C3255"
                                     style="@style/TextView"
                                     android:text="@string/txt_C3255" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/C3255_h" />
 
                                 <RadioGroup
                                     android:id="@+id/rg_C3255"
@@ -432,7 +440,11 @@
                                         <TextView
                                             android:id="@+id/txt_C3259"
                                             style="@style/TextView"
-                                            android:text="@string/txt_C3254" />
+                                            android:text="@string/txt_C3259" />
+
+                                        <TextView
+                                            style="@style/TextView_Hint"
+                                            android:text="@string/txt_C3259_h" />
 
                                         <RadioGroup
                                             android:id="@+id/rg_C3259"
@@ -585,6 +597,10 @@
                                                 style="@style/TextView"
                                                 android:text="@string/txt_C3261_1" />
 
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="@string/txt_C3261_h" />
+
 
                                             <EditText
                                                 android:id="@+id/ed_C3261_1"
@@ -609,6 +625,10 @@
                                                 android:id="@+id/txt_C3261_2"
                                                 style="@style/TextView"
                                                 android:text="@string/txt_C3261_2" />
+
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="@string/txt_C3261_h" />
 
 
                                             <EditText
