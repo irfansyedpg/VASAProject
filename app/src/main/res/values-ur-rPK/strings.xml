@@ -164,6 +164,7 @@
     <string  name="txt_Q1409"  translatable="false">	اب تک کی مکمل تعلیم (سال/گریڈ) کیا ہے؟	:	Q1409	</string>
     <string  name="txt_Q1410"  translatable="false">	میں چاہوں گا کہ آپ یہ جملے مجھ کو پڑھ کر سنا ئیں               (جواب دہندہ کو کارڈ دکھا ئیں)	:	Q1410	</string>
     <string  name="txt_Q1411"  translatable="false">	اس گھر میں کتنے لوگ رہتے ہیں ؟	:	Q1411	</string>
+    <string  name="Q1411_h"  translatable="false">	پڑھیں:" اس گھر میں " کتنے افراد  رہتے ہیں ،  اگر آپ خاندان کے گھرکی بات کررہے ہیں؟	:	Q1411	</string>
     <string  name="txt_Q1412"  translatable="false">	اس گھر میں سونے کے لیے کتنے کمرے استعمال ہوتے ہیں ؟	:	Q1412	</string>
     <string  name="txt_Q1413"  translatable="false">	کیا گھر میں کھانا پکانے کے لیے الگ سے کمرہ ہے؟	:	Q1413	</string>
     <string  name="txt_Q1414"  translatable="false">	کیا آپ کے گھر میں ان میں سے کچھ موجود ہے ؟	:	Q1414	</string>
@@ -416,7 +417,7 @@
     <string  name="A4006"  translatable="false">	کیا (نام)  پڑھنے لکھنے کے قابل تھا/ تھی؟	:	A4006	</string>
     <string  name="A4007"  translatable="false">	وفات سے پہلے سال میں اسکی (نام) امعاشی سرگرمی کی حیثیت کیا تھی؟	:	A4007	</string>
     <string  name="A4007_1"  translatable="false">	س کا پیشہ کیا تھا، یعنی کس قسم کا  کام عموما  وہ کرتی تھی ؟	:	A4007_1	</string>
-    <string  name="A4008"  translatable="false">	کیا (نام) نےکیا شراب  پی تھی؟	:	A4008	</string>
+    <string  name="A4008"  translatable="false">	کیا (نام)   شراب  پیتا تھا/ پیتی تھی؟ 	:	A4008	</string>
     <string  name="A4009a"  translatable="false">	کیا (نام)  نے تمباکو (سگریٹ ،پائپ،وغیرہ )استعمال کیا تھا؟	:	A4009a	</string>
     <string  name="A4010"  translatable="false">	اس نے کس قسم کا تمباکو استعمال کیا تھا؟	:	A4010	</string>
     <string  name="A4011"  translatable="false">	وہ   دن میں کتنی سگریٹ  پیتی تھی/پیتا تھا؟	:	A4011	</string>
@@ -426,6 +427,8 @@
     <string  name="A4013m"  translatable="false">	اگر ایک مہینے یا اس سے زیادہ ہو تو سال ریکارڈ کریں	:	A4013m	</string>
     <string  name="A4013y"  translatable="false">	اگر ایک سال یا اس سے زیادہ ہو تو سال ریکارڈ کریں	:	A4013y	</string>
     <string  name="A4014"  translatable="false">	کیا اس کی وفات  اچانک ہوئی تھی ؟  	:	A4014	</string>
+    <string  name="A4014_h"  translatable="false">	" اچانک " کا مطلب ہے ،  بیماری شروع ہونے کے چوبیس گھنٹوں کے اندر اندر انتقال ہوگیا  	:	A4014	</string>
+
     <string  name="A4051"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،    کیا (نام)  کو بخار  ہو ا تھا؟  	:	A4051	</string>
     <string  name="A4052_u"  translatable="false">	بخار کتنے عرصہ  رہا تھا؟	:	A4052_u	</string>
     <string  name="A4052_b"  translatable="false">	بخار کتنے دنوں تک رہا؟	:	A4052_b	</string>
@@ -435,14 +438,14 @@
     <string  name="A4055"  translatable="false">	بخار کی نو عیت کیا تھی؟	:	A4055	</string>
     <string  name="A4056"  translatable="false">	کیا  مرنے والے کو رات میں پسینہ آتا تھا؟	:	A4056	</string>
     <string  name="A4057"  translatable="false">	کیا (اس نے ) معمول سے ذیادہ پانی پیا    تھا ؟	:	A4057	</string>
-    <string  name="A4058"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،   کیا بچہ نے معمول سے زیادہ پتلے یا پانی جیسے پاخانہ  کیے  تھے ؟	:	A4058	</string>
+    <string  name="A4058"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،   کیا (نام) نے معمول سے زیادہ پتلے یا پانی جیسے پاخانہ  کیے  تھے ؟	:	A4058	</string>
     <string  name="A4059_u"  translatable="false">	اس کو کتنے عرصہ   پتلے یا پانی جیسے پاخانہ رہے  تھے ؟	:	A4059_u	</string>
     <string  name="A4059_a"  translatable="false">	اس کو کتنے دن پتلے یا پانی جیسے پاخانہ رہے  تھے ؟	:	A4059_a	</string>
     <string  name="A4059_b"  translatable="false">	اس کو کتنے مہینے پتلے یا پانی جیسے پاخانہ رہے  تھے ؟	:	A4059_b	</string>
     <string  name="A4060"  translatable="false">	مہلک بیماری کے دوران کسی بھی وقت کیا پاخانے میں خون   آیا تھا؟	:	A4060	</string>
     <string  name="A4061"  translatable="false">	کیا انتقال ہونے تک پاخانے میں خون آیا تھا؟	:	A4061	</string>
     <string  name="A4062"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،     کیا مرنے والے نے الٹی کی تھی؟	:	A4062 	</string>
-    <string  name="A4063"  translatable="false">	جس ہفتہ انتقال ہوا  کیا بچہ نے الٹیاں کیں تھی؟	:	A4063 	</string>
+    <string  name="A4063"  translatable="false">	انتقال سے پہلے والے ہفتے میں کیا اس نے الٹیاں کی تھیں ؟	:	A4063 	</string>
     <string  name="A4064_u"  translatable="false">	مرنے سے کتنےعرصہ  پہلے ،اس نے الٹیاں کیں تھی ؟	:	A4064_u	</string>
     <string  name="A4064_a"  translatable="false">	مرنے سے کتنے دن پہلے ،اس نے الٹیاں کیں تھی ؟	:	A4064_a	</string>
     <string  name="A4064_b"  translatable="false">	مرنے سے کتنے مہینےپہلے ،اس نے الٹیاں کیں تھی ؟	:	A4064_b	</string>
@@ -478,15 +481,19 @@
     <string  name="A4082_b"  translatable="false">	سانس لینے میں دشواری کتنے مہینوں تک رہی؟	:	A4082_b	</string>
     <string  name="A4082_c"  translatable="false">	سانس لینے میں دشواری کتنے سالوں تک رہی؟	:	A4082_c	</string>
     <string  name="A4083"  translatable="false">	کیا سانس لینے میں دشواری مسلسل تھی  یا   وقفہ وقفہ سے تھی؟  	:	A4083	</string>
-    <string  name="A4084"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،    کیا بچہ کو سانس لینے میںتیز ی تھی؟	:	A4084	</string>
+    <string  name="A4084"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،   ،    کیا (نام) کی  سانس تیز چل رہی  تھی؟	:	A4084	</string>
     <string  name="A4085_u"  translatable="false">	کتنے   عرصہ تک سانس تیز چل رہی تھی؟	:	A4085_u	</string>
+    <string  name="A4085_u_h"  translatable="false">	کو ئی ایک جواب لکھیں:  مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں	:	A4085_u	</string>
     <string  name="A4085_a"  translatable="false">	کتنے دنوں تک سانس تیز چل رہی تھی؟	:	A4085_a	</string>
+    <string  name="A4085_a_h"  translatable="false">	کو ئی ایک جواب لکھیں:  مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں	:	A4085_u	</string>
     <string  name="A4085_b"  translatable="false">	کتنےمہینوں  تک سانس تیز چل رہی تھی؟	:	A4085_b	</string>
     <string  name="A4086"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،    کیا (اس کی) سانس رک رک کر آرہی تھی   ؟    ( سانس گھٹنا) 	:	A4086	</string>
     <string  name="A4087_u"  translatable="false">	کتنے عرصہ سے  سانس رک رک کر چل رہی تھی؟	:	A4087_u	</string>
     <string  name="A4087_a"  translatable="false">	کتنے دنوں تک سانس رک رک کر چل رہی تھی؟	:	A4087_a	</string>
+    <string  name="A4087_a_h"  translatable="false">	کو ئی ایک جواب لکھیں:  مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں	:	A4085_u	</string>
+
     <string  name="A4087_b"  translatable="false">	کتنے مہینوں  تک سانس رک رک کر چل رہی تھی؟	:	A4087_b	</string>
-    <string  name="A4088"  translatable="false">	کیا وہ سانس لینے میں دشواری  کی وجہ سے معمول کے کام بھی نہیں کرپارہی تھی؟ 	:	A4088	</string>
+    <string  name="A4088"  translatable="false">	کیا وہ سانس لینے میں دشواری  کی وجہ سے وہ روذ مرہ کے کام بھی  نہیں  کرپارہا تھا ؟ / نہیں کرپارہی تھی ؟ 	:	A4088	</string>
     <string  name="A4089"  translatable="false">	کیا سیدھے لیٹنے میں سانس لینے میں دشواری پیداہوتی تھی ؟	:	A4089 	</string>
     <string  name="A4090"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،    کیا    اس  کی سانس  میں سیٹی کی سی آواز  تھی؟	:	A4090	</string>
     <string  name="A4091"  translatable="false">	کیا اس کو سینے میں درد تھا؟	:	A4091	</string>
@@ -509,21 +516,21 @@
     <string  name="A4101_u"  translatable="false">	کتنے عرصے سے وہ ذہنی الجھن کا شکار تھی یا تھا؟ 	:	A4101_u	</string>
     <string  name="A4101_a"  translatable="false">	کتنے دنوں سے وہ ذہنی الجھن کا شکار تھی یا تھا؟	:	A4101_a 	</string>
     <string  name="A4101_b"  translatable="false">	کتنے مہینوں  سے وہ ذہنی الجھن کا شکار تھی یا تھا؟	:	A4101_b 	</string>
-    <string  name="A4102"  translatable="false">	کیا (نام) بے ہوش  ہوا تھا اس بیماری کے دوران جو موت کا سبب بننی ؟	:	A4102	</string>
+    <string  name="A4102"  translatable="false">	کیا اس بیماری کے دوران جو موت کا سبب بننی, کیا (نام) بے ہوش  ہوا تھا/ ہوئی  تھی  ؟	:	A4102	</string>
     <string  name="A4103"  translatable="false">	کیا وہ وفات پانے سے پہلے 24 گھنٹوں سے زیادہ بے ہوش رہاتھا یا رہی تھی ؟	:	A4103	</string>
     <string  name="A4104"  translatable="false">	کیا بیہوشی   اچانک   تیزی سے شروع ہو ئی تھی (زیادہ سے زیادہ  ایک دن کے اندر)	:	A4104	</string>
     <string  name="A4105"  translatable="false">	کیا بیہوشی  انتقال تک جاری رہی تھی؟	:	A4105	</string>
-    <string  name="A4106"  translatable="false">	بیماری کے دوران جو انتقال کا سبب بننی، کیا (نام) کو جھٹکے آ ئے      تھے ؟	:	A4106	</string>
+    <string  name="A4106"  translatable="false">	بیماری کے دوران جو انتقال کا سبب بننی، کیا (نام) کو جھٹکے آ ئے  تھے ؟	:	A4106	</string>
     <string  name="A4107"  translatable="false">	جھٹکے کتنے منٹ تک پڑتے تھے؟	:	A4107	</string>
     <string  name="A4108"  translatable="false">	کیا وہ جھٹکوں کے فوراً بعد بے ہوش ہوگئی تھی یا بے ہوش ہوگیا تھا؟	:	A4108	</string>
-    <string  name="A4109"  translatable="false">	کیا بچہ کوپیشاب کی کوئی شکایت تھی؟	:	A4109	</string>
+    <string  name="A4109"  translatable="false">	کیا اس کو پیشاب کی کوئی شکایت تھی؟	:	A4109	</string>
     <string  name="A4110"  translatable="false">	مہلک بیماری کے دوران کیا (اس کو) کبھی پیشاب میں خون آیا تھا؟	:	A4110	</string>
-    <string  name="A4111"  translatable="false">	کیااس کا  پیشاب آنا    رک گیا تھا؟	:	A4111	</string>
+    <string  name="A4111"  translatable="false">	کیااس کا  پیشاب آنا  رک گیا تھا؟	:	A4111	</string>
     <string  name="A4112"  translatable="false">	کیا (وہ) معمول سے کہیں زیادہ پیشاب کرنے کے لئے جاتی تھی یا جاتابتھا؟	:	A4112	</string>
-    <string  name="A4113"  translatable="false">	کیا  اس کے جسم میں کسی بھی جگہ دکھتے ہو ئے زخم تھے؟	:	A4113	</string>
+    <string  name="A4113"  translatable="false">	کیا  اس کے جسم میں کسی بھی جگہ زخم تھے.  یاناسور (السر) تھے؟	:	A4113	</string>
     <string  name="A4114"  translatable="false">	کیا زخم میں پیپ یا گندا مواد تھا؟	:	A4114	</string>
-    <string  name="A4115"  translatable="false">	کیا بچہ کے پاؤں  میں کھلا زخم یا السر تھا؟(پاؤں  پر چھوٹے چھوٹے سوراخ)	:	A4115	</string>
-    <string  name="A4116"  translatable="false">	کیا بچہ کے پاؤں  میں کھلا زخم یا السر تھا؟(پاؤں  پر چھوٹے چھوٹے سوراخ)	:	A4116	</string>
+    <string  name="A4115"  translatable="false">	کیا اسکے پاؤں  میں کھلا زخم یا السر تھا؟(پاؤں  پر چھوٹے چھوٹے سوراخ)	:	A4115	</string>
+    <string  name="A4116"  translatable="false">	کیا پاؤں  کے زخم یا السر سے پیپ  رستی تھی؟	:	A4116	</string>
     <string  name="A4117_u"  translatable="false">	کتنےعرصے  تک پاؤں سے  پیپ رستی رہی تھی؟	:	A4117_u	</string>
     <string  name="A4117_a"  translatable="false">	کتنےدنوں  تک پاؤں سے  پیپ رستی رہی تھی؟	:	A4117_a 	</string>
     <string  name="A4117_b"  translatable="false">	کتنےمہینوں تک پاؤں سے  پیپ رستی رہی تھی؟	:	A4117_b 	</string>
@@ -666,7 +673,9 @@
     <string name="cb_place"  translatable="false">عورت کی زچگی یا اسقاط حمل کرائی فراہم کنندہ نے</string>
     <string name="ed_symptoms"  translatable="false">کیا علامات موجود تھی جب  ہر کاروائی  یا عمل کیا جا رہا تھا?</string>
     <string  name="A4253"  translatable="false">	اگر کوئی باقاعدگی  سے  علاج کیا یا دیکھ بھال  کی کوشش کی تو پوچھیں:(نام)  کی بیماری کی  دیکھ بھال کے لئے   پہلے صحت فراہم کنندہ کے  پاس جانے کا فیصلہ کس نے کیا؟	:	A4253	</string>
-    <string  name="A4254"  translatable="false">	کیا تم (نام)   کو  کوئی تشویش/مسئلہ تھا جس کی وجہ سے اس نے اپنے آپ کوبیماری کے دوران صحت فراہم کرنے والے کے پاس لے جانے سے روکا ۔	  گر صحت فراہم کرنے والے کے پاس لیکر نہیں گئے تو پوچھیں:	:A4254	</string>
+    <string  name="A4254"  translatable="false">	کیا آپ یا (نام)   کو  کوئی تشویش/مسئلہ تھا جس کی وجہ سے اس نے اپنے آپ کوبیماری کے دوران صحت فراہم کرنے والے کے پاس لے جانے سے روکا ۔	  گر صحت فراہم کرنے والے کے پاس لیکر نہیں گئے تو پوچھیں:	:A4254	</string>
+    <string  name="A4254_h"  translatable="false">	اگر صحت فراہم کرنے والے کے پاس لے کر گئے تو پوچھیں: کیاتم  (نام)کو(پہلا) صحت مہیا کرنے والے کے بارے میں جو تشویش/مسائل تھے وہ حل ہوچکے تھے؟	  گر صحت فراہم کرنے والے کے پاس لیکر نہیں گئے تو پوچھیں:	:A4254	</string>
+
     <string  name="A4255"  translatable="false">	کیا تشویش/ مشکلات اور دشواریاں آپ کو یا  (نام)  کو پیش آئیں  تھیں؟	:	A4255	</string>
     <string  name="A4256"  translatable="false">	 آپ نے اس کا ذکر کیا ہے پہلے صحت فراہم کرنے والے کے پاس آپ (نام)کو لیکر گئے یا (نام)خود گیا ،  میرا مطلب ہے "پہلے صحت فراہم کنندہ" کے پاس "بیماری علامات" کے ساتھ۔ یہ فیصلہ کتنے عرصے کے بعدکیا کہ  (نام) کو ان علامات کے ساتھ پہلے صحت فراہم کنندہ کے پاس علاج کے لئےجانا ہے ؟	:A4256	</string>
     <string  name="A4257"  translatable="false">	کہاں (پہلے صحت فراہم کنندہ ) کانام بتائیں،جہاں (نام) کو لے کر گئے تھے؟	:A4257	</string>
@@ -701,7 +710,9 @@
     <string  name="A4281"  translatable="false">	کیا ہسپتال / مرکز صحت میں   اسے علاج کے سلسلے میں اسے کسی طرح کی دشواری پیش آ ئی   تھی ؟جیسے (میڈیکل علاج،طریقہ کار،آپس کا رویہ ،احترام،وقار وغیرہ	:	A4281	</string>
     <string  name="A4282"  translatable="false">	کیا ہسپتال /مرکز صحت میں تشخیصی ٹیسٹ ،  یا  دوائیاں لینے میں کوئی دشواری پیش آئی تھی	:	A4282	</string>
     <string  name="A4283"  translatable="false">	انتقال سے پہلے کے آخری دنوں میں ،کیا کسی نے مدد مانگنے کے لیے ٹیلیفون یا موبائل فون  کا استعمال کیا تھا	:	A4283	</string>
-    <string  name="A4284"  translatable="false">	کیا(نام) نے بیماری جو موت کی سبب بننی ، اس کےلیے کوئی   علاج حاصل کیا؟	:	A4284	</string>
+    <string  name="A4284"  translatable="false">	اس (نام) کی موت ( بیماری /علامت کی شناخت / (آخری   کاروا ئی C3253 ) / پہلے یا آخری صحت فراہم کنندہ کو چھوڑنے )کے کتنے دنوں کے  بعد واقع ہوئی؟ 	:	A4284	</string>
+    <string  name="A4284_h"  translatable="false">	اگر (کو ئی دیکھ بھال نہیں  کی)  تو  پڑھیں۔۔۔۔۔ "پہلی دفعہ بیماری کو نوٹس کیا" C3252 = 2 . 	:	A4284	</string>
+
     <string  name="A4301"  translatable="false">		:	A4301	</string>
     <string  name="A4302_1"  translatable="false">	کیا اس نے نمکول کا پانی لیا تھا ؟	:	A4302_1	</string>
     <string  name="A4302_2"  translatable="false">	کیا اس نے نس کے ذریعے پانی کی  بوتل لگا ئی    تھی  ؟	:	A4302_2	</string>
@@ -1008,7 +1019,7 @@
     <string  name="rb_A4082_u_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_A4082_u_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="rb_A4083_1"  translatable="false">	 مسلسل	</string>
-    <string  name="rb_A4083_2"  translatable="false">	کبھی تھا کبھی نہیں	</string>
+    <string  name="rb_A4083_2"  translatable="false">	وقفہ وقفہ سے 	</string>
     <string  name="rb_A4083_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_A4083_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="rb_A4084_1"  translatable="false">	                                         ہاں 	</string>
@@ -1993,11 +2004,8 @@
     <string  name="A4082_a_h"  translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
     <string  name="A4082_b_h"  translatable="false">	مہینے         1-60	</string>
     <string  name="A4082_c_h"  translatable="false">	موت کے وقت کی  عمر سے سالوں کا نمبر کم لکھیں 	</string>
-    <string  name="A4085_u_h"  translatable="false">	              مہینے ۔ 1-60 دن یا       0-30اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
-    <string  name="A4085_a_h"  translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
     <string  name="A4085_b_h"  translatable="false">	مہینے         1-60	</string>
     <string  name="A4087_u_h"  translatable="false">	               مہینے ۔ 1-60 دن یا       0-30اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
-    <string  name="A4087_a_h"  translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
     <string  name="A4087_b_h"  translatable="false">	مہینے         1-60	</string>
     <string  name="A4093_h"  translatable="false">	24 گھنٹے سے کم ہو تو 00 دن    	</string>
     <string  name="A4094_u_h"  translatable="false">	             مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛    ایک ہفتہ = 7 لکھیں	</string>
@@ -2046,7 +2054,6 @@
     <string  name="A4206_18_h"  translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
     <string  name="A4207_1_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں :      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
     <string  name="A4207_2_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں :      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
-    <string  name="A4254_h"  translatable="false">	اگر صحت فراہم کرنے والے کے پاس لے کر گئے تو پوچھیں: کیاتم  (نام)کو(پہلا) صحت مہیا کرنے والے کے بارے میں جو تشویش/مسائل تھے وہ حل ہوچکے تھے؟	</string>
     <string  name="A4255_h"  translatable="false">	مزید پوچھیں : کچھ اور   ایک سے زیادہ جوابات کی اجازت ہے.	</string>
     <string  name="A4256_h"  translatable="false">	پڑھیں :"پہلا " اگر ایک یا ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئے. نشان لگائیں  دنوں ،گھنٹوں ،اور منٹوں پر اگر ضرورت ہے مثال کے طور پر 00 دن،   '02  گھنٹے،     '10  منٹس	</string>
     <string  name="A4276_h"  translatable="false">	مزید پوچھیں : کچھ اور   ایک سے زیادہ جوابات کی اجازت ہے.	</string>
@@ -2235,9 +2242,11 @@
     <string  name="txt_N2104"  translatable="false">	کیا (آپ/ماں) ہسپتال میں داخل ہوگئی تھی؟	:	N2104	</string>
     <string  name="txt_N2105"  translatable="false">	کیا آخری صحت فراہم کرنے والے نے (آپ /ماں) کو کسی اور صحت فراہم کرنے والے یا صحت کی سہولت پر بھیجا تھا؟	:	N2105	</string>
     <string  name="txt_N2106"  translatable="false">	کیا بچہ کی پیدائش آخری صحت  فراہم کنندہ کے ذریعے  ہوئی تھی؟	:	N2106	</string>
-    <string  name="txt_N2107_1"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد  جھٹکے کی علامات بچہ کی پیدائش کے بعد    6 ماہ کے اندر شروع ہوئی تھی؟	:	N2107_1	</string>
-    <string  name="txt_N2107_2"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد   خون کا زیادہ خارج ہونا کی علامات بچہ کی پیدائش کے بعد    6 ماہ کے اندر شروع ہوئی تھی؟	:	N2107_2	</string>
-    <string  name="txt_N2107_3"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد   بخار کے ساتھ اندام نہانی سے بدبودار مواد کا خارج ہونا یا  پیٹ میں درد  کی علامات بچہ کی پیدائش کے بعد    6 ماہ کے اندر شروع ہوئی تھی؟	:	N2107_3	</string>
+    <string name="txt_N2107"  translatable="false">N2107: اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد مندرجہ ذیل میں سے کوئی علامات بچہ کی پیدائش کے بعد    6 ماہ کے اندر شروع ہوئی تھی></string>
+
+    <string name="txt_N2107_1"  translatable="false">N2107_1: 1.جھٹکے</string>
+    <string name="txt_N2107_2"  translatable="false">N2107_2: 2.	خون کا زیادہ خارج ہونا</string>
+    <string name="txt_N2107_3"  translatable="false">N2107_3: 3.	بخار کے ساتھ اندام نہانی سے بدبودار مواد کا خارج ہونا یا  پیٹ میں درد </string>
     <string  name="txt_N2110"  translatable="false">	آنول نال کو کاٹنے کے لئے کس  قسم کا  اوزار  استعمال  کیا گیا تھا؟	:	N2110	</string>
     <string  name="txt_N2111"  translatable="false">	آنول نال کو  باندھنے  کے لئے کس   چیز  استعمال  کیا گیا تھا؟	:	N2111	</string>
     <string  name="txt_N2112"  translatable="false">	کیا   پیدا ئش کے بعد    ناڑو  والی جگہ پر کچھ لگایا  تھا؟	:	N2112	</string>
@@ -2982,7 +2991,7 @@
     <string  name="cb_N2091_4"  translatable="false">	 تربیت یافتہ کمیونٹی مڈوائف  نرس (صحت کی سہولت کے بغیر)	</string>
     <string  name="cb_N2091_5"  translatable="false">	 روایتی دائی /گاؤں کا ڈاکٹر /ڈسپینسر /دیگر غیر تربیت یافتہ   اور  روایتی فراہم کنندہ	</string>
     <string  name="cb_N2091_6"  translatable="false">	دوست ،رشتہ دار ،ہمسایہ 	</string>
-    <string  name="rb_N2091_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string  name="cb_N2091_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
     <string  name="cb_N2091_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_N2092_1"  translatable="false">	عورت ،خود سے 	</string>
     <string  name="rb_N2092_2"  translatable="false">	اس کا شوہر /ساتھی	</string>
@@ -4282,7 +4291,7 @@
     <string  name="txt_C3180"  translatable="false">	کیا بے ہوشی اچانک اور تیز ی سے شروع ہوئی تھی ؟ (زیادہ سے زیادہ ایک دن کے اندر)	:	C3180	</string>
     <string  name="txt_C3181"  translatable="false">	کیا بیہوشی  انتقال تک جاری رہی تھی؟	:	C3181	</string>
     <string  name="txt_C3182"  translatable="false">	بیماری کے دوران جو انتقال کا سبب بننی، کیا (نام) کو جھٹکے آ ئے تھے ؟	:	C3182	</string>
-    <string  name="txt_C3183"  translatable="false">	کیا اس کو  کو  ئی عمومی جھٹکے آ ئے تھے اس  بیماری کے دوران جو انتقال کا سبب بننی ؟	:	C3183	</string>
+    <string  name="txt_C3183"  translatable="false">	کیا بیماری کے دوران جو انتقال کی وجہ بننی کیا بچے  پورے جسم میں  جھٹکے آ ئے تھے ؟	:	C3183	</string>
     <string  name="txt_C3184"  translatable="false">	جھٹکے کتنے منٹ تک پڑتے تھے؟	:	C3184	</string>
     <string  name="txt_C3185"  translatable="false">	کیا وہ جھٹکوں کے فوراً بعد بے ہوش ہوگئی تھی یا بے ہوش ہوگیا تھا؟	:	C3185	</string>
     <string  name="txt_C3186_1"  translatable="false">	کیا بچہ کوپیشاب کی کوئی شکایت تھی؟	:	C3186_1	</string>
@@ -4322,7 +4331,7 @@
     <string  name="txt_C3208_h"  translatable="false">	کو ئی ایک جواب لکھیں:  مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛ ایک ہفتہ = 7 لکھی.	:C3208_h 	</string>
     <string  name="txt_C3209"  translatable="false">	کیا (نام) کے بالوں کا رنگ سرخی ما ئل سے پیلاہٹ میں تبدیل ہورہا تھا ؟	:	C3209	</string>
     <string  name="txt_C3210"  translatable="false">	کیا وہ دکھنے میں پیلا لگ رہا تھا/تھی(کمزور/خون کی کمی) یا ہاتھ کی ہتھیلیاں، آنکھیں یا ناخن پیلے ہورہے تھے؟	:	C3210	</string>
-    <string  name="txt_C3212"  translatable="false">	کیا (نام) کی گردن پر کوئی سوجن یا گلٹی  تھی؟	:	C3212	</string>
+    <string  name="txt_C3212"  translatable="false">	کیا (نام) کی گردن پر کوئی گلٹی  تھی؟	:	C3212	</string>
     <string  name="txt_C3213"  translatable="false">	کیا (نام) کی بغل میں کوئی  گلٹی تھی؟	:	C3213	</string>
     <string  name="txt_C3214"  translatable="false">	کیا (نام) کی جانگیہ(  ٹانگوں کے بیچ )میں کوئی  گلٹی تھی؟	:	C3214	</string>
     <string  name="txt_C3215"  translatable="false">	کیا (اس کا) کا پورا جسم اکڑا ہوا تھا اور وہ منہ کھولنے کے قابل نہ تھا؟	:	C3215	</string>
@@ -5054,8 +5063,8 @@
     <string  name="rb_C3121_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3122_1"  translatable="false">		</string>
     <string  name="rb_C3122_2"  translatable="false">		</string>
-    <string  name="rb_C3123_u_1"  translatable="false">	                                         ہاں 	</string>
-    <string  name="rb_C3123_u_2"  translatable="false">	                                                     نہیں 	</string>
+    <string  name="rb_C3123_u_1"  translatable="false">	                                         دن 	</string>
+    <string  name="rb_C3123_u_2"  translatable="false">	                                                     مہینے 	</string>
     <string  name="rb_C3123_u_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3123_u_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="ed_C3123_b"  translatable="false">		</string>
@@ -5217,7 +5226,7 @@
     <string  name="ed_C3159_b"  translatable="false">		</string>
     <string  name="ed_C3159_c"  translatable="false">		</string>
     <string  name="rb_C3160_1"  translatable="false">	مسلسل	</string>
-    <string  name="rb_C3160_2"  translatable="false">	 کبھی تھا کبھی نہیں	</string>
+    <string  name="rb_C3160_2"  translatable="false">	وقفہ وقفہ سے 	</string>
     <string  name="rb_C3160_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3160_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="rb_C3161_1"  translatable="false">	                                         ہاں 	</string>

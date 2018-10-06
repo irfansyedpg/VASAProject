@@ -2187,6 +2187,10 @@
                                         style="@style/TextView"
                                         android:text="@string/txt_N2091" />
 
+                                    <TextView
+                                        style="@style/TextView_Hint"
+                                        android:text="@string/N2091_h" />
+
                                     <CheckBox
                                         android:id="@+id/cb_N2091_1"
                                         style="@style/CheckBox"
@@ -3175,6 +3179,10 @@
                                 android:id="@+id/txt_N2107_1"
                                 style="@style/TextView"
                                 android:text="@string/txt_N2107_1" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2107_h" />
 
                             <RadioGroup style="@style/RadioGroup">
 

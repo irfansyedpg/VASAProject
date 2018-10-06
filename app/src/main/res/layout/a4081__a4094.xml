@@ -346,7 +346,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="Months → A4085_b \n  Don't know \n Refused to answer → A4086 " />
+                        android:text="@string/A4085_u_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -398,7 +398,7 @@
                     <EditText
                         android:id="@+id/ed_A4085_a"
                         style="@style/EditText_number"
-                        android:hint="Enter 0-30 days. Less than 1 day or 24 hours = 0 days; 1 week = 7 days" />
+                        android:text="@string/A4085_a_h" />
 
                 </LinearLayout>
 
@@ -487,7 +487,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="Months → A4087_b \n  Don't know \n Refused to answer → A4088 " />
+                        android:text="@string/A4087_a_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -533,7 +533,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="Days → A4088" />
+                        android:text="@string/A4087_a_h" />
 
                     <EditText
                         android:id="@+id/ed_A4087_a"
