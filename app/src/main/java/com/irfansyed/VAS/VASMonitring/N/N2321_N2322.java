@@ -43,6 +43,8 @@ public class N2321_N2322 extends AppCompatActivity {
         GetDataFromDB();
         SetContentUI();
 
+
+
     }
 
     private void GetDataFromDB() {
@@ -138,9 +140,17 @@ public class N2321_N2322 extends AppCompatActivity {
         Global.N.N2321_N2322 n2321 = new Global.N.N2321_N2322();
 
         n2321.setN2321(bi.edN2321.getText().toString().trim().length() > 0 ? bi.edN2321.getText().toString() : "-1");
-        n2321.setN2322(bi.rbN23221.isChecked() ? "1" : bi.rbN23222.isChecked() ? "2" : bi.rbN23223.isChecked() ? "3"
+        /*n2321.setN2322(bi.rbN23221.isChecked() ? "1" : bi.rbN23222.isChecked() ? "2" : bi.rbN23223.isChecked() ? "3"
                 : bi.rbN23224.isChecked() ? "4" : bi.rbN23225.isChecked() ? "5" : bi.rbN23226.isChecked() ? "6"
-                : bi.rbN2322DK.isChecked() ? "9" : "-1");
+                : bi.rbN2322DK.isChecked() ? "9" : "-1");*/
+
+        n2321.setN23221(bi.cbN23221.isChecked() ? "1" : "-1");
+        n2321.setN23222(bi.cbN23222.isChecked() ? "2" : "-1");
+        n2321.setN23223(bi.cbN23223.isChecked() ? "3" : "-1");
+        n2321.setN23224(bi.cbN23224.isChecked() ? "4" : "-1");
+        n2321.setN23225(bi.cbN23225.isChecked() ? "5" : "-1");
+        n2321.setN23226(bi.cbN23226.isChecked() ? "6" : "-1");
+        n2321.setN2322DK(bi.cbN2322DK.isChecked() ? "9" : "-1");
 
 
         n2321.setSTUDYID(bi.edStudyId.getText().toString());
