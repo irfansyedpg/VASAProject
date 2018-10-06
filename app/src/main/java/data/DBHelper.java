@@ -1394,7 +1394,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return allFC;
     }
 
-    public Collection<N2211_N2248_B> getSec10BData(int id) {
+    public Collection<N2211_N2248_B> getSec10BData(String studyID, int id) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
@@ -1405,8 +1405,8 @@ public class DBHelper extends SQLiteOpenHelper {
                 Global.N.N2211_N2248_B.sub_N2211_N2248_B.N2213_2A,
                 Global.N.N2211_N2248_B.sub_N2211_N2248_B.N2213_4
         };
-        String whereClause = Global.N.N2211_N2248_B.sub_N2211_N2248_B.ACT_ID_FK + " =?";
-        String[] whereArgs = {String.valueOf(id)};
+        String whereClause = N2211_N2248_B.sub_N2211_N2248_B.STUDYID + " =? AND " + N2211_N2248_B.sub_N2211_N2248_B.ACT_ID_FK + " =?";
+        String[] whereArgs = {studyID, String.valueOf(id)};
         String groupBy = null;
         String having = null;
 
@@ -1437,7 +1437,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return allFC;
     }
 
-    public Collection<C3251_C3288_B> getSecC10BData(int id) {
+    public Collection<C3251_C3288_B> getSecC10BData(String studyID, int id) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
@@ -1449,8 +1449,8 @@ public class DBHelper extends SQLiteOpenHelper {
                 Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_2A,
                 Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_4
         };
-        String whereClause = Global.C.C3251_C3288_B.sub_C3251_C3288_B.ACT_ID_FK + " =?";
-        String[] whereArgs = {String.valueOf(id)};
+        String whereClause = C3251_C3288_B.sub_C3251_C3288_B.STUDYID + " =? AND " + C3251_C3288_B.sub_C3251_C3288_B.ACT_ID_FK + " =?";
+        String[] whereArgs = {studyID, String.valueOf(id)};
         String groupBy = null;
         String having = null;
 
