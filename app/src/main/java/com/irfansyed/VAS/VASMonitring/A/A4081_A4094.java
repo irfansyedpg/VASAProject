@@ -294,7 +294,11 @@ public class A4081_A4094 extends AppCompatActivity implements RadioButton.OnChec
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 
-        if (compoundButton.getId() == R.id.rb_A4081_1) {
+        if (compoundButton.getId() == R.id.rb_A4081_1
+                || compoundButton.getId() == R.id.rb_A4081_2
+                || compoundButton.getId() == R.id.rb_A4081_DK
+                || compoundButton.getId() == R.id.rb_A4081_RA) {
+
             if (rb_A4081_1.isChecked()) {
 
                 ll_A4082_u.setVisibility(View.VISIBLE);
@@ -387,7 +391,11 @@ public class A4081_A4094 extends AppCompatActivity implements RadioButton.OnChec
 
 
 
-        if (compoundButton.getId() == R.id.rb_A4086_1) {
+        if (compoundButton.getId() == R.id.rb_A4086_1
+                || compoundButton.getId() == R.id.rb_A4086_2
+                || compoundButton.getId() == R.id.rb_A4086_DK
+                || compoundButton.getId() == R.id.rb_A4086_RA) {
+
             if (rb_A4086_1.isChecked()) {
                 ll_A4087_u.setVisibility(View.VISIBLE);
                 ll_A4088.setVisibility(View.VISIBLE);
@@ -432,7 +440,11 @@ public class A4081_A4094 extends AppCompatActivity implements RadioButton.OnChec
 
 
 
-        if (compoundButton.getId() == R.id.rb_A4091_1) {
+        if (compoundButton.getId() == R.id.rb_A4091_1
+                || compoundButton.getId() == R.id.rb_A4091_2
+                || compoundButton.getId() == R.id.rb_A4091_DK
+                || compoundButton.getId() == R.id.rb_A4091_RA) {
+
             if (rb_A4091_1.isChecked()) {
                 ll_A4092.setVisibility(View.VISIBLE);
                 ll_A4093.setVisibility(View.VISIBLE);
