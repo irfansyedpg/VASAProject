@@ -2235,9 +2235,11 @@
     <string  name="txt_N2104"  translatable="false">	کیا (آپ/ماں) ہسپتال میں داخل ہوگئی تھی؟	:	N2104	</string>
     <string  name="txt_N2105"  translatable="false">	کیا آخری صحت فراہم کرنے والے نے (آپ /ماں) کو کسی اور صحت فراہم کرنے والے یا صحت کی سہولت پر بھیجا تھا؟	:	N2105	</string>
     <string  name="txt_N2106"  translatable="false">	کیا بچہ کی پیدائش آخری صحت  فراہم کنندہ کے ذریعے  ہوئی تھی؟	:	N2106	</string>
-    <string  name="txt_N2107_1"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد  جھٹکے کی علامات بچہ کی پیدائش کے بعد    6 ماہ کے اندر شروع ہوئی تھی؟	:	N2107_1	</string>
-    <string  name="txt_N2107_2"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد   خون کا زیادہ خارج ہونا کی علامات بچہ کی پیدائش کے بعد    6 ماہ کے اندر شروع ہوئی تھی؟	:	N2107_2	</string>
-    <string  name="txt_N2107_3"  translatable="false">	اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد   بخار کے ساتھ اندام نہانی سے بدبودار مواد کا خارج ہونا یا  پیٹ میں درد  کی علامات بچہ کی پیدائش کے بعد    6 ماہ کے اندر شروع ہوئی تھی؟	:	N2107_3	</string>
+    <string name="txt_N2107"  translatable="false">N2107: اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد مندرجہ ذیل میں سے کوئی علامات بچہ کی پیدائش کے بعد    6 ماہ کے اندر شروع ہوئی تھی></string>
+
+    <string name="txt_N2107_1"  translatable="false">N2107_1: 1.جھٹکے</string>
+    <string name="txt_N2107_2"  translatable="false">N2107_2: 2.	خون کا زیادہ خارج ہونا</string>
+    <string name="txt_N2107_3"  translatable="false">N2107_3: 3.	بخار کے ساتھ اندام نہانی سے بدبودار مواد کا خارج ہونا یا  پیٹ میں درد </string>
     <string  name="txt_N2110"  translatable="false">	آنول نال کو کاٹنے کے لئے کس  قسم کا  اوزار  استعمال  کیا گیا تھا؟	:	N2110	</string>
     <string  name="txt_N2111"  translatable="false">	آنول نال کو  باندھنے  کے لئے کس   چیز  استعمال  کیا گیا تھا؟	:	N2111	</string>
     <string  name="txt_N2112"  translatable="false">	کیا   پیدا ئش کے بعد    ناڑو  والی جگہ پر کچھ لگایا  تھا؟	:	N2112	</string>
@@ -2982,7 +2984,7 @@
     <string  name="cb_N2091_4"  translatable="false">	 تربیت یافتہ کمیونٹی مڈوائف  نرس (صحت کی سہولت کے بغیر)	</string>
     <string  name="cb_N2091_5"  translatable="false">	 روایتی دائی /گاؤں کا ڈاکٹر /ڈسپینسر /دیگر غیر تربیت یافتہ   اور  روایتی فراہم کنندہ	</string>
     <string  name="cb_N2091_6"  translatable="false">	دوست ،رشتہ دار ،ہمسایہ 	</string>
-    <string  name="rb_N2091_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string  name="cb_N2091_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
     <string  name="cb_N2091_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_N2092_1"  translatable="false">	عورت ،خود سے 	</string>
     <string  name="rb_N2092_2"  translatable="false">	اس کا شوہر /ساتھی	</string>
