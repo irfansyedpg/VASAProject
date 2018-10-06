@@ -562,11 +562,11 @@
                     <TextView
                         android:id="@+id/A4011_h"
                         style="@style/TextView_Hint"
-                        android:text="For don't know enter 99.\nFor refused enter 88." />
+                        android:text="@string/A4011_h" />
 
                     <TextView
                     style="@style/TextView_Hint"
-                    android:text="Cigarettes → A4013u" />
+                    android:text="سگریٹ → A4013u" />
 
 
                     <EditText
@@ -766,7 +766,7 @@
                     <TextView
                         android:id="@+id/A4014_h"
                         style="@style/TextView_Hint"
-                        android:text="Suddenly means within 24 hours of being in regular health" />
+                        android:text="@string/A4014_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
