@@ -4407,8 +4407,8 @@
 
     <string  name="txt_C3260"  translatable="false">	کیا (نام)  وفات سے پہلے ، (پہلے صحت فراہم کنندہ ) کے پاس پہنچ  گیا تھا؟	:C3260	</string>
     <string  name="txt_C3261_1"  translatable="false">	(دیکھ بھال کا فیصلہ کرنے  یا/ہسپتال بھیجنے کا فیصلہ )  کرنے کے بعد: (نام) کو کتنا وقت لگا (پہلے صحت فراہم کنندہ ) تک پہنچنے میں  یا  (پہلا صحت فراہم کنندہ )  کو بچے تک پہنچنے میں کتنا وقت لگا ؟	:C3261_1	</string>
-    <string  name="txt_C3261_2"  translatable="false">	(دیکھ بھال کا فیصلہ کرنے  یا/ہسپتال بھیجنے کا فیصلہ )  کرنے کے بعد: (نام) کو کتنا وقت لگا (پہلے صحت فراہم کنندہ ) تک پہنچنے میں  یا  (پہلا صحت فراہم کنندہ )  کو بچے تک پہنچنے میں کتنا وقت لگا ؟	:C3261_2	</string>
-    <string  name="txt_C3261_h"  translatable="false">	پڑھیں: " صحت فراہم کنندہ کو (نام ) تک پہنچنے" ، اگر صحت فراہم کنندہ  نے  مرنے والے/والی  کو گھر پر دیکھا یا صحت کی سہولت کے باہر کسی اور جگہ دیکھا ((C3259 = 5, 10. ضرورت  کے مطابق نشان لگائیں گھنٹے اور /یا منٹس: مثال کے طور پر  02 گھنٹے،   10 منٹ . (DK = 99)	:C3261_2	</string>
+    <string  name="txt_C3261_2"  translatable="false">	پڑھیں: " صحت فراہم کنندہ کو (نام ) تک پہنچنے" ، اگر صحت فراہم کنندہ  نے  مرنے والے/والی  کو گھر پر دیکھا یا صحت کی سہولت کے باہر کسی اور جگہ دیکھا ((C3259 = 5, 10.	:C3261_2	</string>
+    <string  name="txt_C3261_h"  translatable="false">	 ضرورت  کے مطابق نشان لگائیں گھنٹے اور /یا منٹس: مثال کے طور پر  02 گھنٹے،   10 منٹ . (DK = 99)	:C3261_2	</string>
 
 
     <string  name="txt_C3262"  translatable="false">	اپہلا " صحت فراہم کنندہ )" نے (نام) کو  بیماری کی وجہ سے ہسپتال میں داخل کیا تھا؟	:C3262	</string>
@@ -4450,8 +4450,8 @@
     <string  name="txt_C3288"  translatable="false">	اس (نام) کی موت ( بیماری /علامت کی شناخت / (آخری   کاروا ئی C3253 ) / پہلے یا آخری صحت فراہم کنندہ کو چھوڑنے )کے کتنے دنوں کے  بعد واقع ہوئی؟ 	:	C3288	</string>
     <string  name="txt_C3301"  translatable="false">	کیا(نام) نے بیماری جو موت کی سبب بننی ، اس کےلیے کوئی   علاج حاصل کیا؟	:	C3301	</string>
     <string  name="txt_C3302_1"  translatable="false">	کیا اس نے نمکول کا پانی لیا تھا ؟	:	C3302_1	</string>
-    <string  name="txt_C3302_2"  translatable="false">	کیا اس نے نس کے ذریعے پانی کی  بوتل لگا ئی    تھی ؟	:	C3302_2	</string>
-    <string  name="txt_C3302_3"  translatable="false">	کیا اس نے خون کی  بوتل لگا ئی    تھی ؟ (بلڈ ٹرانسفیوژن)  	:	C3302_3	</string>
+    <string  name="txt_C3302_2"  translatable="false">	کیا اس نے نس کے ذریعے پانی کی  بوتل لگا ئی  تھی ؟	:	C3302_2	</string>
+    <string  name="txt_C3302_3"  translatable="false">	کیا اس نے خون کی  بوتل لگا ئی  تھی ؟ART (بلڈ ٹرانسفیوژن)  	:	C3302_3	</string>
     <string  name="txt_C3302_4"  translatable="false">	کیا اس نے ناک سے گزاری ہوئی نلکی کے ذریعے دوا /خوارک  حاصل کی تھی؟ 	:	C3302_4	</string>
     <string  name="txt_C3302_5"  translatable="false">	کیا اس نے اینٹی با ئیوٹک دوا ئیں  استعمال کی تھیں؟ 	:	C3302_5	</string>
     <string  name="txt_C3302_6"  translatable="false">	کیا اس نے اینٹی ریٹرو وائرل تھراپی علاج کیا تھا؟	:	C3302_6	</string>
@@ -5660,14 +5660,14 @@
     <string  name="ed_C3257_2"  translatable="false">		</string>
     <string  name="ed_C3257_3"  translatable="false">		</string>
 
-    <string  name="rb_C3258_1_1"  translatable="false">Normal	</string>
-    <string  name="rb_C3258_1_2"  translatable="false">Modern	</string>
-    <string  name="rb_C3258_1_3"  translatable="false">Svr	</string>
-    <string  name="rb_C3258_1_DK"  translatable="false">Don\'t Know	</string>
-    <string  name="rb_C3258_2_1"  translatable="false">Normal	</string>
-    <string  name="rb_C3258_2_2"  translatable="false">Modern	</string>
-    <string  name="rb_C3258_2_3"  translatable="false">Svr	</string>
-    <string  name="rb_C3258_2_DK"  translatable="false">Don\'t Know	</string>
+    <string  name="rb_C3258_1_1"  translatable="false">معمول	</string>
+    <string  name="rb_C3258_1_2"  translatable="false">جدید	</string>
+    <string  name="rb_C3258_1_3"  translatable="false">شدید	</string>
+    <string  name="rb_C3258_1_DK"  translatable="false">معلوم نہیں 	</string>
+    <string  name="rb_C3258_2_1"  translatable="false">معمول	</string>
+    <string  name="rb_C3258_2_2"  translatable="false">جدید	</string>
+    <string  name="rb_C3258_2_3"  translatable="false">شدید	</string>
+    <string  name="rb_C3258_2_DK"  translatable="false">معلوم نہیں 	</string>
     <string  name="rb_C3259_1_1"  translatable="false">سرکاری  ہسپتال</string>
     <string  name="rb_C3259_1_2"  translatable="false">سرکاری مرکز صحت</string>
     <string  name="rb_C3259_1_3"  translatable="false">سرکاری صحت کا ادارہ</string>
@@ -6129,18 +6129,18 @@
     <string  name="rb_C3457_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3457_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="ed_C3471"  translatable="false">		</string>
-    <string  name="rb_C3472_1"  translatable="false">	 پیٹ	</string>
-    <string  name="rb_C3472_2"  translatable="false">	کینسر	</string>
-    <string  name="rb_C3472_3"  translatable="false">	پانی کی کمی	</string>
-    <string  name="rb_C3472_4"  translatable="false">	ڈنگی بخار	</string>
-    <string  name="rb_C3472_5"  translatable="false">	دست	</string>
-    <string  name="rb_C3472_6"  translatable="false">	بخار	</string>
-    <string  name="rb_C3472_7"  translatable="false">	دل کی بیماری 	</string>
-    <string  name="rb_C3472_8"  translatable="false">	پیلیا(پیلی آنکھیں اور پیلی جلد)	</string>
-    <string  name="rb_C3472_9"  translatable="false">	جگر    کی خرابی / فیل ہوجانا 	</string>
-    <string  name="rb_C3472_10"  translatable="false">	  ملیریا	</string>
-    <string  name="rb_C3472_11"  translatable="false">	اوپر  میں سے کوئی لفظ موجود نہیں 	</string>
-    <string  name="rb_C3472_DK"  translatable="false">	معلوم نہیں 	</string>
+    <string  name="cb_C3472_1"  translatable="false">	 پیٹ	</string>
+    <string  name="cb_C3472_2"  translatable="false">	کینسر	</string>
+    <string  name="cb_C3472_3"  translatable="false">	پانی کی کمی	</string>
+    <string  name="cb_C3472_4"  translatable="false">	ڈنگی بخار	</string>
+    <string  name="cb_C3472_5"  translatable="false">	دست	</string>
+    <string  name="cb_C3472_6"  translatable="false">	بخار	</string>
+    <string  name="cb_C3472_7"  translatable="false">	دل کی بیماری 	</string>
+    <string  name="cb_C3472_8"  translatable="false">	پیلیا(پیلی آنکھیں اور پیلی جلد)	</string>
+    <string  name="cb_C3472_9"  translatable="false">	جگر    کی خرابی / فیل ہوجانا 	</string>
+    <string  name="cb_C3472_10"  translatable="false">	  ملیریا	</string>
+    <string  name="cb_C3472_11"  translatable="false">	اوپر  میں سے کوئی لفظ موجود نہیں 	</string>
+    <string  name="cb_C3472_DK"  translatable="false">	معلوم نہیں 	</string>
 
     <!-- Child Urdu Responses ENDS -->
 
