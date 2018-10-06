@@ -2004,11 +2004,8 @@
     <string  name="A4082_a_h"  translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
     <string  name="A4082_b_h"  translatable="false">	مہینے         1-60	</string>
     <string  name="A4082_c_h"  translatable="false">	موت کے وقت کی  عمر سے سالوں کا نمبر کم لکھیں 	</string>
-    <string  name="A4085_u_h"  translatable="false">	              مہینے ۔ 1-60 دن یا       0-30اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
-    <string  name="A4085_a_h"  translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
     <string  name="A4085_b_h"  translatable="false">	مہینے         1-60	</string>
     <string  name="A4087_u_h"  translatable="false">	               مہینے ۔ 1-60 دن یا       0-30اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
-    <string  name="A4087_a_h"  translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
     <string  name="A4087_b_h"  translatable="false">	مہینے         1-60	</string>
     <string  name="A4093_h"  translatable="false">	24 گھنٹے سے کم ہو تو 00 دن    	</string>
     <string  name="A4094_u_h"  translatable="false">	             مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛    ایک ہفتہ = 7 لکھیں	</string>
@@ -2057,7 +2054,6 @@
     <string  name="A4206_18_h"  translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
     <string  name="A4207_1_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں :      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
     <string  name="A4207_2_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں :      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
-    <string  name="A4254_h"  translatable="false">	اگر صحت فراہم کرنے والے کے پاس لے کر گئے تو پوچھیں: کیاتم  (نام)کو(پہلا) صحت مہیا کرنے والے کے بارے میں جو تشویش/مسائل تھے وہ حل ہوچکے تھے؟	</string>
     <string  name="A4255_h"  translatable="false">	مزید پوچھیں : کچھ اور   ایک سے زیادہ جوابات کی اجازت ہے.	</string>
     <string  name="A4256_h"  translatable="false">	پڑھیں :"پہلا " اگر ایک یا ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئے. نشان لگائیں  دنوں ،گھنٹوں ،اور منٹوں پر اگر ضرورت ہے مثال کے طور پر 00 دن،   '02  گھنٹے،     '10  منٹس	</string>
     <string  name="A4276_h"  translatable="false">	مزید پوچھیں : کچھ اور   ایک سے زیادہ جوابات کی اجازت ہے.	</string>
