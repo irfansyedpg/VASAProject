@@ -144,32 +144,32 @@
                         <CheckBox
                             android:id="@+id/cb_N2322_1"
                             style="@style/CheckBox"
-                            android:text="@string/rb_N2322_1" />
+                            android:text="@string/cb_N2322_1" />
 
                         <CheckBox
                             android:id="@+id/cb_N2322_2"
                             style="@style/CheckBox"
-                            android:text="@string/rb_N2322_2" />
+                            android:text="@string/cb_N2322_2" />
 
                         <CheckBox
                             android:id="@+id/cb_N2322_3"
                             style="@style/CheckBox"
-                            android:text="@string/rb_N2322_3" />
+                            android:text="@string/cb_N2322_3" />
 
                         <CheckBox
                             android:id="@+id/cb_N2322_4"
                             style="@style/CheckBox"
-                            android:text="@string/rb_N2322_4" />
+                            android:text="@string/cb_N2322_4" />
 
                         <CheckBox
                             android:id="@+id/cb_N2322_5"
                             style="@style/CheckBox"
-                            android:text="@string/rb_N2322_5" />
+                            android:text="@string/cb_N2322_5" />
 
                         <CheckBox
                             android:id="@+id/cb_N2322_6"
                             style="@style/CheckBox" 
-                            android:text="@string/rb_N2322_6" />
+                            android:text="@string/cb_N2322_6" />
 
                         <CheckBox
                             android:id="@+id/cb_N2322_DK"

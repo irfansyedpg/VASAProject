@@ -3801,13 +3801,13 @@
     <string  name="rb_N2317_2"  translatable="false">	نہیں	</string>
     <string  name="rb_N2317_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2317_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
-    <string  name="rb_N2322_1"  translatable="false">	دم گھٹنا	</string>
-    <string  name="rb_N2322_2"  translatable="false">	انکیو بیٹر	</string>
-    <string  name="rb_N2322_3"  translatable="false">	پھپھڑوں کا مسئلہ	</string>
-    <string  name="rb_N2322_4"  translatable="false">	وقت سے پہلے ڈیلیوری	</string>
-    <string  name="rb_N2322_5"  translatable="false">	سانس میں تکلیف	</string>
-    <string  name="rb_N2322_6"  translatable="false">	ان میں سے کوئی لفظ موجو د نہیں	</string>
-    <string  name="rb_N2322_DK"  translatable="false">	معلوم نہیں	</string>
+    <string  name="cb_N2322_1"  translatable="false">	دم گھٹنا	</string>
+    <string  name="cb_N2322_2"  translatable="false">	انکیو بیٹر	</string>
+    <string  name="cb_N2322_3"  translatable="false">	پھپھڑوں کا مسئلہ	</string>
+    <string  name="cb_N2322_4"  translatable="false">	وقت سے پہلے ڈیلیوری	</string>
+    <string  name="cb_N2322_5"  translatable="false">	سانس میں تکلیف	</string>
+    <string  name="cb_N2322_6"  translatable="false">	ان میں سے کوئی لفظ موجو د نہیں	</string>
+    <string  name="cb_N2322_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2211_1_1"  translatable="false">	معمول	</string>
     <string  name="rb_N2211_1_2"  translatable="false">	درمیانی	</string>
     <string  name="rb_N2211_1_3"  translatable="false">	غیر معمولی	</string>
