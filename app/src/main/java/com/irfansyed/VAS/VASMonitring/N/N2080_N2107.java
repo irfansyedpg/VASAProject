@@ -168,17 +168,17 @@ public class N2080_N2107 extends AppCompatActivity {
                     ClearAllcontrol.ClearAll(bi.llN2089N2106); //ll_N2089_N2106
                     bi.llN2089N2106.setVisibility(View.GONE);
 
-                    bi.llN2095.setVisibility(View.VISIBLE); //ll_N2095
-                    bi.llN2096.setVisibility(View.VISIBLE); //ll_N2096
-                } else {
-                    bi.llN2088N2088.setVisibility(View.VISIBLE);
-                    bi.llN2089N2106.setVisibility(View.VISIBLE);
-
                     ClearAllcontrol.ClearAll(bi.llN2095); //ll_N2095
                     bi.llN2095.setVisibility(View.GONE);
 
                     ClearAllcontrol.ClearAll(bi.llN2096); //ll_N2096
                     bi.llN2096.setVisibility(View.GONE);
+                } else {
+                    bi.llN2088N2088.setVisibility(View.VISIBLE);
+                    bi.llN2089N2106.setVisibility(View.VISIBLE);
+
+                    bi.llN2095.setVisibility(View.VISIBLE); //ll_N2095
+                    bi.llN2096.setVisibility(View.VISIBLE); //ll_N2096
                 }
             }
         });
@@ -190,7 +190,11 @@ public class N2080_N2107 extends AppCompatActivity {
                     ClearAllcontrol.ClearAll(bi.llN2090N2192); //ll_N2090_N2192
 
                     ClearAllcontrol.ClearAll(bi.llN2096N2097); //ll_N2096_N2097
+
                     ClearAllcontrol.ClearAll(bi.llN2095); //ll_N2095
+                    bi.llN2095.setVisibility(View.GONE);
+                } else {
+                    bi.llN2095.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -260,6 +264,7 @@ public class N2080_N2107 extends AppCompatActivity {
                 if (i != bi.rbN20951.getId()) {
                     ClearAllcontrol.ClearAll(bi.llN2096N4017A); //ll_N2096_N4017_A
                     ClearAllcontrol.ClearAll(bi.llN2096N4017B); //ll_N2096_N4017_B
+//                    ClearAllcontrol.ClearAll(bi.llN2096N4017C); //ll_N2096_N4017_C
                 }
             }
         });
@@ -908,7 +913,8 @@ public class N2080_N2107 extends AppCompatActivity {
             }
         }
 
-        if (bi.rbN20951.isChecked()) {
+//        if (bi.rbN20951.isChecked()) {
+
             //ll_N2107_1
             if (!Gothrough.IamHiden(bi.llN21071)) {
                 return false;
@@ -920,8 +926,11 @@ public class N2080_N2107 extends AppCompatActivity {
             }
 
             //ll_N2107_3
-            return Gothrough.IamHiden(bi.llN21073);
-        }
+            if (!Gothrough.IamHiden(bi.llN21073)) {
+                return false;
+            }
+
+//        }
 
         // Condition
         if (!bi.rbN20811.isChecked() || (bi.cbN20825.isChecked() || bi.cbN20826.isChecked() || bi.cbN2082OT.isChecked())) {

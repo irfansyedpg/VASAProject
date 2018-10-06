@@ -221,7 +221,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="8, 2 or 9 → Inst_3 \n Inst_3: If A4251 = 2 (No care given or sought) → A4351." />
+                        android:text="@string/A4254_h" />
 
 
                     <RadioGroup style="@style/RadioGroup">
@@ -258,11 +258,12 @@
                     <TextView
                         android:id="@+id/A4254_2"
                         style="@style/TextView"
-                        android:text="@string/A4254_2" />
+                        android:text="@string/A4254_h" />
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="8, 2 or 9 → Inst_3 \n Inst_3: If A4251 = 2 (No care given or sought) → A4351." />
+                        android:text="@string/A4254_h" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -1530,6 +1531,12 @@
                         android:text="@string/A4275_1" />
 
                     <TextView
+                        android:id="@+id/A4275_2"
+                        style="@style/TextView"
+                        android:text="@string/A4275_2" />
+
+
+                    <TextView
                         android:id="@+id/A4275_1_h"
                         style="@style/TextView_Hint"
                         android:text="If NO or Don't Know → A4279" />
@@ -2051,7 +2058,8 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="Less than 1 = 00 \nDon't know = 99)" />
+                        android:text="@string/A4284_h" />
+
 
 
                     <EditText
