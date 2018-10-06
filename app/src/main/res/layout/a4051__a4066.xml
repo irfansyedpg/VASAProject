@@ -430,7 +430,7 @@
                     <TextView
                         android:id="@+id/A4058"
                         style="@style/TextView"
-                        android:text="During the illness that led to death, did NAME have more frequent loose or liquid stools than usual?"/>
+                        android:text="@string/A4058"/>
 
                     <TextView
                         style="@style/TextView_Hint"

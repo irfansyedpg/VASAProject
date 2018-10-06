@@ -1531,6 +1531,12 @@
                         android:text="@string/A4275_1" />
 
                     <TextView
+                        android:id="@+id/A4275_2"
+                        style="@style/TextView"
+                        android:text="@string/A4275_2" />
+
+
+                    <TextView
                         android:id="@+id/A4275_1_h"
                         style="@style/TextView_Hint"
                         android:text="If NO or Don't Know → A4279" />

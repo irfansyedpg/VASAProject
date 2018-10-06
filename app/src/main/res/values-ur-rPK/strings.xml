@@ -713,7 +713,7 @@
     <string  name="A4284"  translatable="false">	اس (نام) کی موت ( بیماری /علامت کی شناخت / (آخری   کاروا ئی C3253 ) / پہلے یا آخری صحت فراہم کنندہ کو چھوڑنے )کے کتنے دنوں کے  بعد واقع ہوئی؟ 	:	A4284	</string>
     <string  name="A4284_h"  translatable="false">	اگر (کو ئی دیکھ بھال نہیں  کی)  تو  پڑھیں۔۔۔۔۔ "پہلی دفعہ بیماری کو نوٹس کیا" C3252 = 2 . 	:	A4284	</string>
 
-    <string  name="A4301"  translatable="false">		:	A4301	</string>
+    <string  name="A4301"  translatable="false">		کیا(نام) نے بیماری جو موت کی سبب بننی ، اس کےلیے کوئی   علاج حاصل کیا؟	:A4301	</string>
     <string  name="A4302_1"  translatable="false">	کیا اس نے نمکول کا پانی لیا تھا ؟	:	A4302_1	</string>
     <string  name="A4302_2"  translatable="false">	کیا اس نے نس کے ذریعے پانی کی  بوتل لگا ئی    تھی  ؟	:	A4302_2	</string>
     <string  name="A4302_3"  translatable="false">	کیا اس نے خون کی  بوتل لگا ئی    تھی ؟ (بلڈ ٹرانسفیوژن)	:	A4302_3	</string>
@@ -760,7 +760,7 @@
     <string  name="A4357"  translatable="false">	ڈیتھ سرٹیفیکٹ سے موت کی وجہ کادوسرا    بنیادی   سببب ریکارڈ کریں .	:	A4357	</string>
     <string  name="A4358"  translatable="false">	(1c) مدت یا دورانیہ	:	A4358	</string>
     <string  name="A4363"  translatable="false">	کیا آپ کے پاس موت کا رجسٹریشن سرٹیفیکٹ ہے؟	:	A4363	</string>
-    <string  name="A4364"  translatable="false">	مدت کا رجسٹریشن نمبر ریکارڈ کریں۔	:	A4364	</string>
+    <string  name="A4364"  translatable="false">	موت کا رجسٹریشن نمبر ریکارڈ کریں۔	:	A4364	</string>
     <string  name="A4401"  translatable="false">	کیا یہ گھر ہے ( جہاں ابھی ہم موجود ہیں ) یہاں (نام)  مہلک بیماری کے دوران  رہتی تھی یا رہتا تھا   ؟	:	A4401	</string>
     <string  name="A4402"  translatable="false">	(نام)اس وقت کہاں رہتی تھی یا رہتا تھا   ؟	:	A4402	</string>
     <string  name="A4403"  translatable="false">	گھر کا پتہ کیا ہے  جہاں (نام) رہتی تھی یا رہتا تھا   ؟	:	A4403	</string>
@@ -2174,7 +2174,7 @@
     <string name="txt_N2080_5"  translatable="false">N2080_5: 5.	شدید سرکادرد</string>
     <string name="txt_N2080_6"  translatable="false">N2080_6: 6.	دھندلا   پن  /دھندلانظر آنا</string>
     <string name="txt_N2080_7"  translatable="false">N2080_7: 7.	اتنی کمزوری کہ بستر سے نہ اٹھ سکنا</string>
-    <string name="txt_N2080_8"  translatable="false">N2080_8: 8.	پیٹ میں شدید درد ((لیبر یا زچگی کے  درد نہیں )</string>
+    <string name="txt_N2080_8"  translatable="false">N2080_8: 8.	پیٹ میں شدید درد (لیبر یا زچگی کے  درد نہیں )</string>
     <string name="txt_N2080_9"  translatable="false">N2080_9: 9.	تیز یا سانس لینے میں تکلیف ہونا</string>
     <string name="txt_N2080_10"  translatable="false">N2080_10: 10.	منہ پر سوجن</string>
     <string name="txt_N2080_11"  translatable="false">N2080_11: 11.	لیپر یا زچگی شروع ہونے سے پہلے  اندام نہانی سے خون کا خارج ہونا</string>
@@ -2892,7 +2892,7 @@
     <string  name="cb_N2086_6"  translatable="false">	 ٹرانسپورٹ ن یا سواری  دستیاب  نہیں	</string>
     <string  name="cb_N2086_7"  translatable="false">	 لاگت یا  خرچہ  ( ٹرانسپوڑٹ،صحت کی دیکھ بھال ،دیگر)	</string>
     <string  name="cb_N2086_8"  translatable="false">	 موجودہ صحت کی سہولت سے مطمئن نہیں 	</string>
-    <string  name="cb_N2086_9"  translatable="false">	علامات  کا علاج  روایتی طریقہ سے ضروری   مسا ئل کی روایتی دیکھ بھال	</string>
+    <string  name="cb_N2086_9"  translatable="false">	علامات  کا علاج  روایتی طریقہ سے ضروری	</string>
     <string  name="cb_N2086_10"  translatable="false">	 سوچا  وہ    اتنی کمزور  تھی   کہ سفر نہیں کرسکتی تھی	</string>
     <string  name="cb_N2086_11"  translatable="false">	 سوچا وہ صحت مند ہونے کے  بجائے وہ مر  جائے گی	</string>
     <string  name="cb_N2086_12"  translatable="false">	اندیشہ  تھا کہ ہیلتھ   پروائڈر  مرد ہو	</string>
@@ -3801,13 +3801,13 @@
     <string  name="rb_N2317_2"  translatable="false">	نہیں	</string>
     <string  name="rb_N2317_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2317_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
-    <string  name="rb_N2322_1"  translatable="false">	دم گھٹنا	</string>
-    <string  name="rb_N2322_2"  translatable="false">	انکیو بیٹر	</string>
-    <string  name="rb_N2322_3"  translatable="false">	پھپھڑوں کا مسئلہ	</string>
-    <string  name="rb_N2322_4"  translatable="false">	وقت سے پہلے ڈیلیوری	</string>
-    <string  name="rb_N2322_5"  translatable="false">	سانس میں تکلیف	</string>
-    <string  name="rb_N2322_6"  translatable="false">	ان میں سے کوئی لفظ موجو د نہیں	</string>
-    <string  name="rb_N2322_DK"  translatable="false">	معلوم نہیں	</string>
+    <string  name="cb_N2322_1"  translatable="false">	دم گھٹنا	</string>
+    <string  name="cb_N2322_2"  translatable="false">	انکیو بیٹر	</string>
+    <string  name="cb_N2322_3"  translatable="false">	پھپھڑوں کا مسئلہ	</string>
+    <string  name="cb_N2322_4"  translatable="false">	وقت سے پہلے ڈیلیوری	</string>
+    <string  name="cb_N2322_5"  translatable="false">	سانس میں تکلیف	</string>
+    <string  name="cb_N2322_6"  translatable="false">	ان میں سے کوئی لفظ موجو د نہیں	</string>
+    <string  name="cb_N2322_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2211_1_1"  translatable="false">	معمول	</string>
     <string  name="rb_N2211_1_2"  translatable="false">	درمیانی	</string>
     <string  name="rb_N2211_1_3"  translatable="false">	غیر معمولی	</string>
