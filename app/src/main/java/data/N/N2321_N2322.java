@@ -10,7 +10,13 @@ public class N2321_N2322 {
 
                 Global.N.N2321_N2322.sub_N2321_N2322.STUDYID + " TEXT," +
                 Global.N.N2321_N2322.sub_N2321_N2322.N2321 + " TEXT," +
-                Global.N.N2321_N2322.sub_N2321_N2322.N2322 + " TEXT" +
+                Global.N.N2321_N2322.sub_N2321_N2322.N2322_1 + " TEXT," +
+                Global.N.N2321_N2322.sub_N2321_N2322.N2322_2 + " TEXT," +
+                Global.N.N2321_N2322.sub_N2321_N2322.N2322_3 + " TEXT," +
+                Global.N.N2321_N2322.sub_N2321_N2322.N2322_4 + " TEXT," +
+                Global.N.N2321_N2322.sub_N2321_N2322.N2322_5 + " TEXT," +
+                Global.N.N2321_N2322.sub_N2321_N2322.N2322_6 + " TEXT," +
+                Global.N.N2321_N2322.sub_N2321_N2322.N2322_DK + " TEXT" +
 
                 ')';
 
