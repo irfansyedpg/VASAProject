@@ -60,7 +60,7 @@ public class C3251_C3288_C extends AppCompatActivity {
             flag_c3252 = false;
         }
 
-        Collection<C3251_C3288_B> col_c3251 = db.getSecC10BData(c3251A_ID);
+        Collection<C3251_C3288_B> col_c3251 = db.getSecC10BData(bi.edStudyId.getText().toString(), c3251A_ID);
         for (C3251_C3288_B col_data : col_c3251) {
             if (col_data.getC32532A().equals("1")) {
 
