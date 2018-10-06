@@ -481,7 +481,7 @@
     <string  name="A4082_b"  translatable="false">	سانس لینے میں دشواری کتنے مہینوں تک رہی؟	:	A4082_b	</string>
     <string  name="A4082_c"  translatable="false">	سانس لینے میں دشواری کتنے سالوں تک رہی؟	:	A4082_c	</string>
     <string  name="A4083"  translatable="false">	کیا سانس لینے میں دشواری مسلسل تھی  یا   وقفہ وقفہ سے تھی؟  	:	A4083	</string>
-    <string  name="A4084"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،   ،    کیا (نام) کی  سانس تیزتیز چل رہی  تھی؟	:	A4084	</string>
+    <string  name="A4084"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،   ،    کیا (نام) کی  سانس تیز چل رہی  تھی؟	:	A4084	</string>
     <string  name="A4085_u"  translatable="false">	کتنے   عرصہ تک سانس تیز چل رہی تھی؟	:	A4085_u	</string>
     <string  name="A4085_u_h"  translatable="false">	کو ئی ایک جواب لکھیں:  مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں	:	A4085_u	</string>
     <string  name="A4085_a"  translatable="false">	کتنے دنوں تک سانس تیز چل رہی تھی؟	:	A4085_a	</string>
@@ -529,8 +529,8 @@
     <string  name="A4112"  translatable="false">	کیا (وہ) معمول سے کہیں زیادہ پیشاب کرنے کے لئے جاتی تھی یا جاتابتھا؟	:	A4112	</string>
     <string  name="A4113"  translatable="false">	کیا  اس کے جسم میں کسی بھی جگہ زخم تھے.  یاناسور (السر) تھے؟	:	A4113	</string>
     <string  name="A4114"  translatable="false">	کیا زخم میں پیپ یا گندا مواد تھا؟	:	A4114	</string>
-    <string  name="A4115"  translatable="false">	کیا بچہ کے پاؤں  میں کھلا زخم یا السر تھا؟(پاؤں  پر چھوٹے چھوٹے سوراخ)	:	A4115	</string>
-    <string  name="A4116"  translatable="false">	کیا بچہ کے پاؤں  میں کھلا زخم یا السر تھا؟(پاؤں  پر چھوٹے چھوٹے سوراخ)	:	A4116	</string>
+    <string  name="A4115"  translatable="false">	کیا اسکے پاؤں  میں کھلا زخم یا السر تھا؟(پاؤں  پر چھوٹے چھوٹے سوراخ)	:	A4115	</string>
+    <string  name="A4116"  translatable="false">	کیا پاؤں  کے زخم یا السر سے پیپ  رستی تھی؟	:	A4116	</string>
     <string  name="A4117_u"  translatable="false">	کتنےعرصے  تک پاؤں سے  پیپ رستی رہی تھی؟	:	A4117_u	</string>
     <string  name="A4117_a"  translatable="false">	کتنےدنوں  تک پاؤں سے  پیپ رستی رہی تھی؟	:	A4117_a 	</string>
     <string  name="A4117_b"  translatable="false">	کتنےمہینوں تک پاؤں سے  پیپ رستی رہی تھی؟	:	A4117_b 	</string>
@@ -4291,7 +4291,7 @@
     <string  name="txt_C3180"  translatable="false">	کیا بے ہوشی اچانک اور تیز ی سے شروع ہوئی تھی ؟ (زیادہ سے زیادہ ایک دن کے اندر)	:	C3180	</string>
     <string  name="txt_C3181"  translatable="false">	کیا بیہوشی  انتقال تک جاری رہی تھی؟	:	C3181	</string>
     <string  name="txt_C3182"  translatable="false">	بیماری کے دوران جو انتقال کا سبب بننی، کیا (نام) کو جھٹکے آ ئے تھے ؟	:	C3182	</string>
-    <string  name="txt_C3183"  translatable="false">	کیا اس کو  کو  ئی عمومی جھٹکے آ ئے تھے اس  بیماری کے دوران جو انتقال کا سبب بننی ؟	:	C3183	</string>
+    <string  name="txt_C3183"  translatable="false">	کیا بیماری کے دوران جو انتقال کی وجہ بننی کیا بچے  پورے جسم میں  جھٹکے آ ئے تھے ؟	:	C3183	</string>
     <string  name="txt_C3184"  translatable="false">	جھٹکے کتنے منٹ تک پڑتے تھے؟	:	C3184	</string>
     <string  name="txt_C3185"  translatable="false">	کیا وہ جھٹکوں کے فوراً بعد بے ہوش ہوگئی تھی یا بے ہوش ہوگیا تھا؟	:	C3185	</string>
     <string  name="txt_C3186_1"  translatable="false">	کیا بچہ کوپیشاب کی کوئی شکایت تھی؟	:	C3186_1	</string>
@@ -4331,7 +4331,7 @@
     <string  name="txt_C3208_h"  translatable="false">	کو ئی ایک جواب لکھیں:  مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛ ایک ہفتہ = 7 لکھی.	:C3208_h 	</string>
     <string  name="txt_C3209"  translatable="false">	کیا (نام) کے بالوں کا رنگ سرخی ما ئل سے پیلاہٹ میں تبدیل ہورہا تھا ؟	:	C3209	</string>
     <string  name="txt_C3210"  translatable="false">	کیا وہ دکھنے میں پیلا لگ رہا تھا/تھی(کمزور/خون کی کمی) یا ہاتھ کی ہتھیلیاں، آنکھیں یا ناخن پیلے ہورہے تھے؟	:	C3210	</string>
-    <string  name="txt_C3212"  translatable="false">	کیا (نام) کی گردن پر کوئی سوجن یا گلٹی  تھی؟	:	C3212	</string>
+    <string  name="txt_C3212"  translatable="false">	کیا (نام) کی گردن پر کوئی گلٹی  تھی؟	:	C3212	</string>
     <string  name="txt_C3213"  translatable="false">	کیا (نام) کی بغل میں کوئی  گلٹی تھی؟	:	C3213	</string>
     <string  name="txt_C3214"  translatable="false">	کیا (نام) کی جانگیہ(  ٹانگوں کے بیچ )میں کوئی  گلٹی تھی؟	:	C3214	</string>
     <string  name="txt_C3215"  translatable="false">	کیا (اس کا) کا پورا جسم اکڑا ہوا تھا اور وہ منہ کھولنے کے قابل نہ تھا؟	:	C3215	</string>
@@ -5063,8 +5063,8 @@
     <string  name="rb_C3121_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3122_1"  translatable="false">		</string>
     <string  name="rb_C3122_2"  translatable="false">		</string>
-    <string  name="rb_C3123_u_1"  translatable="false">	                                         ہاں 	</string>
-    <string  name="rb_C3123_u_2"  translatable="false">	                                                     نہیں 	</string>
+    <string  name="rb_C3123_u_1"  translatable="false">	                                         دن 	</string>
+    <string  name="rb_C3123_u_2"  translatable="false">	                                                     مہینے 	</string>
     <string  name="rb_C3123_u_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3123_u_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="ed_C3123_b"  translatable="false">		</string>
@@ -5226,7 +5226,7 @@
     <string  name="ed_C3159_b"  translatable="false">		</string>
     <string  name="ed_C3159_c"  translatable="false">		</string>
     <string  name="rb_C3160_1"  translatable="false">	مسلسل	</string>
-    <string  name="rb_C3160_2"  translatable="false">	 کبھی تھا کبھی نہیں	</string>
+    <string  name="rb_C3160_2"  translatable="false">	وقفہ وقفہ سے 	</string>
     <string  name="rb_C3160_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3160_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="rb_C3161_1"  translatable="false">	                                         ہاں 	</string>

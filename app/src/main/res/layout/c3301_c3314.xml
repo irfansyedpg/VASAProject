@@ -772,6 +772,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3310_1" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3310_1_h" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
