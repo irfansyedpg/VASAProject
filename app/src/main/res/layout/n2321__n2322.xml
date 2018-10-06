@@ -168,20 +168,12 @@
 
                         <CheckBox
                             android:id="@+id/cb_N2322_6"
-                            style="@style/CheckBox"
-                            android:checked="@{cb_N2322_1.checked || cb_N2322_2.checked || cb_N2322_3.checked
-                                || cb_N2322_4.checked || cb_N2322_5.checked ? false : false}"
-                            android:enabled="@{cb_N2322_1.checked || cb_N2322_2.checked || cb_N2322_3.checked
-                                || cb_N2322_4.checked || cb_N2322_5.checked ? false : true}"
+                            style="@style/CheckBox" 
                             android:text="@string/rb_N2322_6" />
 
                         <CheckBox
                             android:id="@+id/cb_N2322_DK"
                             style="@style/CheckBox"
-                            android:checked="@{cb_N2322_1.checked || cb_N2322_2.checked || cb_N2322_3.checked
-                                || cb_N2322_4.checked || cb_N2322_5.checked || cb_N2322_6.checked ? false : false}"
-                            android:enabled="@{cb_N2322_1.checked || cb_N2322_2.checked || cb_N2322_3.checked
-                                || cb_N2322_4.checked || cb_N2322_5.checked || cb_N2322_6.checked ? false : true}"
                             android:text="@string/dnt" />
 
                     </LinearLayout>

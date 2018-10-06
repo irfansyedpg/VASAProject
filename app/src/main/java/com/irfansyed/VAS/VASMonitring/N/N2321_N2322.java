@@ -8,6 +8,8 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.GS.InterviewEnd;
@@ -44,7 +46,6 @@ public class N2321_N2322 extends AppCompatActivity {
         SetContentUI();
 
 
-
     }
 
     private void GetDataFromDB() {
@@ -64,6 +65,61 @@ public class N2321_N2322 extends AppCompatActivity {
     }
 
     public void SetContentUI() {
+
+        CheckBox.OnCheckedChangeListener check = new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                if (bi.cbN2322DK.isChecked() || bi.cbN23226.isChecked()) {
+                    bi.cbN23221.setChecked(false);
+                    bi.cbN23222.setChecked(false);
+                    bi.cbN23223.setChecked(false);
+                    bi.cbN23224.setChecked(false);
+                    bi.cbN23225.setChecked(false);
+
+                    bi.cbN23221.setEnabled(false);
+                    bi.cbN23222.setEnabled(false);
+                    bi.cbN23223.setEnabled(false);
+                    bi.cbN23224.setEnabled(false);
+                    bi.cbN23225.setEnabled(false);
+
+                    if (!bi.cbN23226.isChecked()) {
+                        bi.cbN23226.setChecked(false);
+                        bi.cbN23226.setEnabled(false);
+                    }else {
+                        bi.cbN2322DK.setChecked(false);
+                        bi.cbN2322DK.setEnabled(false);
+                    }
+
+                } else {
+                    bi.cbN23221.setEnabled(true);
+                    bi.cbN23222.setEnabled(true);
+                    bi.cbN23223.setEnabled(true);
+                    bi.cbN23224.setEnabled(true);
+                    bi.cbN23225.setEnabled(true);
+                    bi.cbN23226.setEnabled(true);
+                    bi.cbN2322DK.setEnabled(true);
+                }
+
+                if (bi.cbN23221.isChecked() || bi.cbN23222.isChecked() || bi.cbN23223.isChecked() || bi.cbN23224.isChecked() || bi.cbN23225.isChecked()) {
+
+                    bi.cbN23226.setChecked(false);
+                    bi.cbN23226.setEnabled(false);
+
+                    bi.cbN2322DK.setChecked(false);
+                    bi.cbN2322DK.setEnabled(false);
+                }
+
+            }
+        };
+
+        bi.cbN23221.setOnCheckedChangeListener(check);
+        bi.cbN23222.setOnCheckedChangeListener(check);
+        bi.cbN23223.setOnCheckedChangeListener(check);
+        bi.cbN23224.setOnCheckedChangeListener(check);
+        bi.cbN23225.setOnCheckedChangeListener(check);
+        bi.cbN23226.setOnCheckedChangeListener(check);
+        bi.cbN2322DK.setOnCheckedChangeListener(check);
 
         //Conditions
         if (!flag_n2016) {
