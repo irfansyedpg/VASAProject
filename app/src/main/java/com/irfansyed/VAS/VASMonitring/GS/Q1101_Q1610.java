@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -14,6 +16,7 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.A.A4001_A4014;
@@ -21,7 +24,9 @@ import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.RP.w204_w222;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -42,7 +47,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     //region Declaration
 
-    Button btn_next;
+    Button btn_next,btn_Q1502;
 
     // LinerLayouts
     LinearLayout
@@ -101,8 +106,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ll_Q1421_OT,
             ll_Q1501,
             ll_Q1502,
-            ll_Q1503,
-            ll_Q1503_OT,
+
             ll_Q1601,
             ll_Q1602,
             ll_Q1603,
@@ -260,20 +264,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             rb_Q1421_DK,
             rb_Q1501_1,
             rb_Q1501_2,
-            rb_Q1503_1,
-            rb_Q1503_2,
-            rb_Q1503_3,
-            rb_Q1503_4,
-            rb_Q1503_5,
-            rb_Q1503_6,
-            rb_Q1503_7,
-            rb_Q1503_8,
-            rb_Q1503_9,
-            rb_Q1503_10,
-            rb_Q1503_11,
-            rb_Q1503_12,
-            rb_Q1503_13,
-            rb_Q1503_14,
+
             rb_Q1601_1,
             rb_Q1601_2,
             rb_Q1601_DK,
@@ -329,7 +320,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ed_Q1420_OT,
             ed_Q1421_OT,
             ed_Q1502,
-            ed_Q1503_OT,
             ed_Q1603,
             ed_Q1604_OT,
             ed_Q1606,
@@ -464,7 +454,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ll_Q1419_OT.setVisibility(View.GONE);
         ll_Q1420_OT.setVisibility(View.GONE);
         ll_Q1421_OT.setVisibility(View.GONE);
-        ll_Q1503_OT.setVisibility(View.GONE);
+
         ll_Q1604_OT.setVisibility(View.GONE);
 
         ll_Q1608.setVisibility(View.GONE);
@@ -483,19 +473,24 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         events_call();
 
         btn_next.setOnClickListener(this);
+        btn_Q1502.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
 
-        if (validateField() == false) {
-            Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
-            return;
-        }
 
-        pattern = Pattern.compile(DATE_PATTERN);
 
-      if (!validate(ed_Q1603.getText().toString().trim())) {
+        if(view.getId()==R.id.btn_next) {
+
+            if (validateField() == false) {
+                Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
+                // return;
+            }
+
+            pattern = Pattern.compile(DATE_PATTERN);
+
+        /*if (!validate(ed_Q1603.getText().toString().trim())) {
 
             ed_Q1603.setError("Kindly enter a valid date");
             ed_Q1603.requestFocus();
@@ -507,65 +502,558 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ed_Q1606.setError("Kindly enter a valid date");
             ed_Q1606.requestFocus();
             return;
+        }*/
+
+            value_assignment();
+
+            if (if_study_id_exsist() == true) {
+                Toast.makeText(this, "Study ID Already Exist", Toast.LENGTH_LONG).show();
+
+                ed_study_id.requestFocus();
+                ed_study_id.setError("This ID Already Exist");
+                return;
+            }
+
+            insert_data();
+
+            DBHelper db = new DBHelper(this);
+            Cursor res = db.getData("Q1101_Q1610", study_id);
+
+            if (res.getCount() > 0) {
+
+                res.moveToFirst();
+
+                String aa = res.getString(res.getColumnIndex("Q1609"));
+                Toast.makeText(this, "" + parseInt(res.getString(res.getColumnIndex("Q1609"))), Toast.LENGTH_LONG).show();
+
+                if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(5)) {
+
+                    Intent c = new Intent(this, A4001_A4014.class);
+                    c.putExtra("study_id", study_id);
+                    startActivity(c);
+
+                } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(2)) {
+
+                    Intent c = new Intent(this, w204_w222.class);
+                    c.putExtra("study_id", study_id);
+                    c.putExtra("section", "C3001_C3011");
+                    startActivity(c);
+
+                } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(3) || Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(4)) {
+
+                    Intent c = new Intent(this, w204_w222.class);
+                    c.putExtra("study_id", study_id);
+                    c.putExtra("section", "C3012_C3022");
+                    startActivity(c);
+
+                } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(1)) {
+
+                    Intent c = new Intent(this, w204_w222.class);
+                    c.putExtra("study_id", study_id);
+                    c.putExtra("section", "N2001_N2011");
+                    startActivity(c);
+
+                }
+            }
+
         }
 
-        value_assignment();
+        else if(view.getId()==R.id.btn_Q1502)
+        {
 
-        if (if_study_id_exsist() == true) {
-            Toast.makeText(this, "Study ID Already Exist", Toast.LENGTH_LONG).show();
+            if(ed_Q1502.getText().toString().trim().length()>0)
+            {
+                int total=Integer.parseInt(ed_Q1502.getText().toString().trim());
 
-            ed_study_id.requestFocus();
-            ed_study_id.setError("This ID Already Exist");
-             return;
-        }
+                if(total>lst_q1503.size())
+                {
+                    show_dailuge_Q1503();
+                }
+                else
+                {
+                    Toast.makeText(this,"you have reached Maximaum Number",Toast.LENGTH_LONG).show();
+                }
 
-        insert_data();
-
-        DBHelper db = new DBHelper(this);
-        Cursor res = db.getData("Q1101_Q1610", study_id);
-
-        if (res.getCount() > 0) {
-
-            res.moveToFirst();
-
-            String aa =res.getString(res.getColumnIndex("Q1609"));
-            Toast.makeText(this, "" + parseInt(res.getString(res.getColumnIndex("Q1609"))), Toast.LENGTH_LONG).show();
-
-            if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(5)) {
-
-                Intent c = new Intent(this, A4001_A4014.class);
-                c.putExtra("study_id", study_id);
-                startActivity(c);
-
-            } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(2)) {
-
-                Intent c = new Intent(this, w204_w222.class);
-                c.putExtra("study_id", study_id);
-                c.putExtra("section", "C3001_C3011");
-                startActivity(c);
-
-            } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(3) || Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(4)) {
-
-                Intent c = new Intent(this, w204_w222.class);
-                c.putExtra("study_id", study_id);
-                c.putExtra("section", "C3012_C3022");
-                startActivity(c);
-
-            } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(1)) {
-
-                Intent c = new Intent(this, w204_w222.class);
-                c.putExtra("study_id", study_id);
-                c.putExtra("section", "N2001_N2011");
-                startActivity(c);
-
+                btn_Q1502.setText("Add Persion No( "+lst_q1503.size()+")");
             }
         }
     }
+
+
+    List<String> lst_q1503 = new ArrayList();
+    List<String> lst_other = new ArrayList();
+    void show_dailuge_Q1503() {
+
+
+        final AlertDialog b = new AlertDialog.Builder(this).create();
+
+        LayoutInflater layoutInflater = getLayoutInflater();
+        View v = layoutInflater.inflate(R.layout.dialog_q1503, null);
+        b.setCancelable(false);
+        b.setView(v);
+        b.show();
+
+       final LinearLayout    ll_Q1503,
+                ll_Q1503_OT;
+
+        final EditText
+
+                ed_Q1503_OT;
+        final TextView txt_Q1503_header;
+
+        final RadioButton
+                rb_Q1503_1,
+                rb_Q1503_2,
+                rb_Q1503_3,
+                rb_Q1503_4,
+                rb_Q1503_5,
+                rb_Q1503_6,
+                rb_Q1503_7,
+                rb_Q1503_8,
+                rb_Q1503_9,
+                rb_Q1503_10,
+                rb_Q1503_11,
+                rb_Q1503_12,
+                rb_Q1503_13,
+                rb_Q1503_14;
+
+
+        rb_Q1503_1 = v.findViewById(R.id.rb_Q1503_1);
+        rb_Q1503_2 = v.findViewById(R.id.rb_Q1503_2);
+        rb_Q1503_3 = v.findViewById(R.id.rb_Q1503_3);
+        rb_Q1503_4 = v.findViewById(R.id.rb_Q1503_4);
+        rb_Q1503_5 = v.findViewById(R.id.rb_Q1503_5);
+        rb_Q1503_6 = v.findViewById(R.id.rb_Q1503_6);
+        rb_Q1503_7 = v.findViewById(R.id.rb_Q1503_7);
+        rb_Q1503_8 = v.findViewById(R.id.rb_Q1503_8);
+        rb_Q1503_9 = v.findViewById(R.id.rb_Q1503_9);
+        rb_Q1503_10 = v.findViewById(R.id.rb_Q1503_10);
+        rb_Q1503_11 = v.findViewById(R.id.rb_Q1503_11);
+        rb_Q1503_12 = v.findViewById(R.id.rb_Q1503_12);
+        rb_Q1503_13 = v.findViewById(R.id.rb_Q1503_13);
+        rb_Q1503_14 = v.findViewById(R.id.rb_Q1503_14);
+
+
+
+        ed_Q1503_OT = v.findViewById(R.id.ed_Q1503_OT);
+
+        ll_Q1503 =   v. findViewById(R.id.ll_Q1503);
+        ll_Q1503_OT = v. findViewById(R.id.ll_Q1503_OT);
+        txt_Q1503_header=v.findViewById(R.id.txt_Q1503_header);
+
+
+
+        ll_Q1503_OT.setVisibility(View.GONE);
+
+
+
+        Button btn_add = v.findViewById(R.id.btn_add);
+
+        int db=lst_q1503.size()+1;
+
+        txt_Q1503_header.setText("Please Enter Relationship for Person No: " +db );
+
+        btn_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+
+                if (!Gothrough.IamHiden(ll_Q1503)  && !Gothrough.IamHiden(ll_Q1503_OT) ) {
+                    Toast.makeText(Q1101_Q1610.this, "Select Mendatory Field", Toast.LENGTH_LONG).show();
+                    return;
+                }
+
+
+
+
+
+
+
+
+
+
+
+                if (rb_Q1503_1.isChecked()) {
+                    lst_q1503.add("1");
+                } else if (rb_Q1503_2.isChecked()) {
+                    lst_q1503.add("2");
+                } else if (rb_Q1503_3.isChecked()) {
+                    lst_q1503.add("3");
+                } else if (rb_Q1503_4.isChecked()) {
+                    lst_q1503.add("4");
+                } else if (rb_Q1503_5.isChecked()) {
+                    lst_q1503.add("5");
+                } else if (rb_Q1503_6.isChecked()) {
+                    lst_q1503.add("6");
+                } else if (rb_Q1503_7.isChecked()) {
+                    lst_q1503.add("7");
+                } else if (rb_Q1503_8.isChecked()) {
+                    lst_q1503.add("8");
+                } else if (rb_Q1503_9.isChecked()) {
+                    lst_q1503.add("9");
+                } else if (rb_Q1503_10.isChecked()) {
+                    lst_q1503.add("10");
+                } else if (rb_Q1503_11.isChecked()) {
+                    lst_q1503.add("11");
+                } else if (rb_Q1503_12.isChecked()) {
+                    lst_q1503.add("12");
+                    Q1503_OT = ed_Q1503_OT.getText().toString().trim();
+                } else if (rb_Q1503_13.isChecked()) {
+                    lst_q1503.add("13");
+                    Q1503_OT = ed_Q1503_OT.getText().toString().trim();
+                } else if (rb_Q1503_14.isChecked()) {
+                    lst_q1503.add("14");
+                    Q1503_OT = ed_Q1503_OT.getText().toString().trim();
+                }
+
+
+
+
+                b.cancel();
+
+
+            }
+
+
+        });
+
+
+
+
+
+        rb_Q1503_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+            ClearAllcontrol.ClearAll(ll_Q1503_OT);
+            ll_Q1503_OT.setVisibility(View.GONE);
+
+            if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                ll_Q1503_OT.setVisibility(View.GONE);
+            }
+        }
+            }
+        });
+
+
+
+        rb_Q1503_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
+
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+
+
+        rb_Q1503_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
+
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+
+        rb_Q1503_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
+
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+
+        rb_Q1503_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
+
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+
+        rb_Q1503_6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
+
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+
+        rb_Q1503_7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
+
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+        rb_Q1503_8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
+
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+
+        rb_Q1503_9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
+
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+
+        rb_Q1503_10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
+
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+
+        rb_Q1503_11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
+
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+
+        rb_Q1503_12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
+
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+
+        rb_Q1503_13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
+
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+        rb_Q1503_14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((RadioButton) v).isChecked();
+                // Check which radiobutton was pressed
+                if (checked) {
+
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
+
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
+
+                    } else {
+
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+
+
+    }
+
 
     void Initialization() {
 
         // Button Next
         btn_next = findViewById(R.id.btn_next);
+        btn_Q1502 =(Button) findViewById(R.id.btn_Q1502);
 
         // Layouts
 
@@ -627,8 +1115,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ll_Q1421_OT = findViewById(R.id.ll_Q1421_OT);
         ll_Q1501 = findViewById(R.id.ll_Q1501);
         ll_Q1502 = findViewById(R.id.ll_Q1502);
-        ll_Q1503 = findViewById(R.id.ll_Q1503);
-        ll_Q1503_OT = findViewById(R.id.ll_Q1503_OT);
+        ed_Q1502 = findViewById(R.id.ed_Q1502);
+
         ll_Q1601 = findViewById(R.id.ll_Q1601);
         ll_Q1602 = findViewById(R.id.ll_Q1602);
         ll_Q1603 = findViewById(R.id.ll_Q1603);
@@ -788,20 +1276,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         rb_Q1421_DK = findViewById(R.id.rb_Q1421_DK);
         rb_Q1501_1 = findViewById(R.id.rb_Q1501_1);
         rb_Q1501_2 = findViewById(R.id.rb_Q1501_2);
-        rb_Q1503_1 = findViewById(R.id.rb_Q1503_1);
-        rb_Q1503_2 = findViewById(R.id.rb_Q1503_2);
-        rb_Q1503_3 = findViewById(R.id.rb_Q1503_3);
-        rb_Q1503_4 = findViewById(R.id.rb_Q1503_4);
-        rb_Q1503_5 = findViewById(R.id.rb_Q1503_5);
-        rb_Q1503_6 = findViewById(R.id.rb_Q1503_6);
-        rb_Q1503_7 = findViewById(R.id.rb_Q1503_7);
-        rb_Q1503_8 = findViewById(R.id.rb_Q1503_8);
-        rb_Q1503_9 = findViewById(R.id.rb_Q1503_9);
-        rb_Q1503_10 = findViewById(R.id.rb_Q1503_10);
-        rb_Q1503_11 = findViewById(R.id.rb_Q1503_11);
-        rb_Q1503_12 = findViewById(R.id.rb_Q1503_12);
-        rb_Q1503_13 = findViewById(R.id.rb_Q1503_13);
-        rb_Q1503_14 = findViewById(R.id.rb_Q1503_14);
+
         rb_Q1601_1 = findViewById(R.id.rb_Q1601_1);
         rb_Q1601_2 = findViewById(R.id.rb_Q1601_2);
         rb_Q1601_DK = findViewById(R.id.rb_Q1601_DK);
@@ -858,8 +1333,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1419_OT = findViewById(R.id.ed_Q1419_OT);
         ed_Q1420_OT = findViewById(R.id.ed_Q1420_OT);
         ed_Q1421_OT = findViewById(R.id.ed_Q1421_OT);
-        ed_Q1502 = findViewById(R.id.ed_Q1502);
-        ed_Q1503_OT = findViewById(R.id.ed_Q1503_OT);
+
         ed_Q1603 = findViewById(R.id.ed_Q1603);
         ed_Q1604_OT = findViewById(R.id.ed_Q1604_OT);
         ed_Q1606 = findViewById(R.id.ed_Q1606);
@@ -954,20 +1428,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         rb_Q1421_10.setOnCheckedChangeListener(this);
         rb_Q1421_DK.setOnCheckedChangeListener(this);
 
-        rb_Q1503_1.setOnCheckedChangeListener(this);
-        rb_Q1503_2.setOnCheckedChangeListener(this);
-        rb_Q1503_3.setOnCheckedChangeListener(this);
-        rb_Q1503_4.setOnCheckedChangeListener(this);
-        rb_Q1503_5.setOnCheckedChangeListener(this);
-        rb_Q1503_6.setOnCheckedChangeListener(this);
-        rb_Q1503_7.setOnCheckedChangeListener(this);
-        rb_Q1503_8.setOnCheckedChangeListener(this);
-        rb_Q1503_9.setOnCheckedChangeListener(this);
-        rb_Q1503_10.setOnCheckedChangeListener(this);
-        rb_Q1503_11.setOnCheckedChangeListener(this);
-        rb_Q1503_12.setOnCheckedChangeListener(this);
-        rb_Q1503_13.setOnCheckedChangeListener(this);
-        rb_Q1503_14.setOnCheckedChangeListener(this);
+
 
         rb_Q1604_1.setOnCheckedChangeListener(this);
         rb_Q1604_2.setOnCheckedChangeListener(this);
@@ -1327,58 +1788,27 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_Q1501_2) {
 
             ClearAllcontrol.ClearAll(ll_Q1502);
-            ClearAllcontrol.ClearAll(ll_Q1503);
-            ClearAllcontrol.ClearAll(ll_Q1503_OT);
+
 
             ll_Q1502.setVisibility(View.GONE);
-            ll_Q1503.setVisibility(View.GONE);
-            ll_Q1503_OT.setVisibility(View.GONE);
+
 
             if (rb_Q1501_1.isChecked()) {
 
                 ll_Q1502.setVisibility(View.VISIBLE);
-                ll_Q1503.setVisibility(View.VISIBLE);
+
 
             } else {
 
                 ClearAllcontrol.ClearAll(ll_Q1502);
-                ClearAllcontrol.ClearAll(ll_Q1503);
-                ClearAllcontrol.ClearAll(ll_Q1503_OT);
+
 
                 ll_Q1502.setVisibility(View.GONE);
-                ll_Q1503.setVisibility(View.GONE);
-                ll_Q1503_OT.setVisibility(View.GONE);
+
             }
         }
 
-        if (compoundButton.getId() == R.id.rb_Q1503_1
-                || compoundButton.getId() == R.id.rb_Q1503_2
-                || compoundButton.getId() == R.id.rb_Q1503_3
-                || compoundButton.getId() == R.id.rb_Q1503_4
-                || compoundButton.getId() == R.id.rb_Q1503_5
-                || compoundButton.getId() == R.id.rb_Q1503_6
-                || compoundButton.getId() == R.id.rb_Q1503_7
-                || compoundButton.getId() == R.id.rb_Q1503_8
-                || compoundButton.getId() == R.id.rb_Q1503_9
-                || compoundButton.getId() == R.id.rb_Q1503_10
-                || compoundButton.getId() == R.id.rb_Q1503_11
-                || compoundButton.getId() == R.id.rb_Q1503_12
-                || compoundButton.getId() == R.id.rb_Q1503_13
-                || compoundButton.getId() == R.id.rb_Q1503_14) {
 
-            ClearAllcontrol.ClearAll(ll_Q1503_OT);
-            ll_Q1503_OT.setVisibility(View.GONE);
-
-            if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
-
-                ll_Q1503_OT.setVisibility(View.VISIBLE);
-
-            } else {
-
-                ClearAllcontrol.ClearAll(ll_Q1503_OT);
-                ll_Q1503_OT.setVisibility(View.GONE);
-            }
-        }
 
         if (compoundButton.getId() == R.id.rb_Q1602_1
                 || compoundButton.getId() == R.id.rb_Q1602_2
@@ -1557,6 +1987,36 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         STATUS = "0";
         interviewType = -1;
         currentSection = 1;
+
+
+
+
+        for(int i=0;i<lst_q1503.size();i++)
+        {
+            if(i==0) {
+                Q1503 = lst_q1503.get(i);
+            }
+            else
+            {
+                Q1503 =  " andd "+  Q1503 + lst_q1503.get(i);
+            }
+
+        }
+
+
+        for(int i=0;i<lst_other.size();i++)
+        {
+            if(i==0) {
+                Q1503_OT = lst_other.get(i);
+            }
+            else
+            {
+                Q1503_OT =  " andd "+  Q1503_OT + lst_other.get(i);
+            }
+
+        }
+
+
 
         if (ed_study_id.getText().toString().length() > 0) {
 
@@ -2025,43 +2485,11 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         } else if (rb_Q1501_2.isChecked()) {
             Q1501 = "2";
         }
-
         if (ed_Q1502.getText().toString().trim().length() > 0) {
-            Q1502 = ed_Q1502.getText().toString().trim();
+            Q1502=ed_Q1502.getText().toString().trim();
         }
 
-        if (rb_Q1503_1.isChecked()) {
-            Q1503 = "1";
-        } else if (rb_Q1503_2.isChecked()) {
-            Q1503 = "2";
-        } else if (rb_Q1503_3.isChecked()) {
-            Q1503 = "3";
-        } else if (rb_Q1503_4.isChecked()) {
-            Q1503 = "4";
-        } else if (rb_Q1503_5.isChecked()) {
-            Q1503 = "5";
-        } else if (rb_Q1503_6.isChecked()) {
-            Q1503 = "6";
-        } else if (rb_Q1503_7.isChecked()) {
-            Q1503 = "7";
-        } else if (rb_Q1503_8.isChecked()) {
-            Q1503 = "8";
-        } else if (rb_Q1503_9.isChecked()) {
-            Q1503 = "9";
-        } else if (rb_Q1503_10.isChecked()) {
-            Q1503 = "10";
-        } else if (rb_Q1503_11.isChecked()) {
-            Q1503 = "11";
-        } else if (rb_Q1503_12.isChecked()) {
-            Q1503 = "12";
-            Q1503_OT = ed_Q1503_OT.getText().toString().trim();
-        } else if (rb_Q1503_13.isChecked()) {
-            Q1503 = "13";
-            Q1503_OT = ed_Q1503_OT.getText().toString().trim();
-        } else if (rb_Q1503_14.isChecked()) {
-            Q1503 = "14";
-            Q1503_OT = ed_Q1503_OT.getText().toString().trim();
-        }
+
 
         if (rb_Q1601_1.isChecked()) {
             Q1601 = "1";

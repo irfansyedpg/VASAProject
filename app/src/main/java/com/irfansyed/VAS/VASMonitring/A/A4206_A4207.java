@@ -163,8 +163,9 @@ public class A4206_A4207 extends AppCompatActivity implements RadioButton.OnChec
 
     EditText
             ed_study_id,
-            ed_A4207_day,
-            ed_A4207_hour;
+            ed_A4207_hour,
+            ed_A4207_day;
+
 
     String
             study_id,

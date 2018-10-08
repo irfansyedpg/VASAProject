@@ -353,7 +353,10 @@ public class A4081_A4094 extends AppCompatActivity implements RadioButton.OnChec
 
 
 
-        if (compoundButton.getId() == R.id.rb_A4084_1) {
+        if (compoundButton.getId() == R.id.rb_A4084_1
+                || compoundButton.getId() == R.id.rb_A4084_2
+                || compoundButton.getId() == R.id.rb_A4084_DK
+                || compoundButton.getId() == R.id.rb_A4084_RA) {
             if (rb_A4084_1.isChecked()) {
                 ll_A4085_u.setVisibility(View.VISIBLE);
 

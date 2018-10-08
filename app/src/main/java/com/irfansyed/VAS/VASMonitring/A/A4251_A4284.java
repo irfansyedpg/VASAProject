@@ -2050,7 +2050,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         }
 
 
-        //A4262  
+        //A4262
         if (compoundButton.getId() == R.id.rb_A4262_1
                 || compoundButton.getId() == R.id.rb_A4262_2
                 || compoundButton.getId() == R.id.rb_A4262_3
@@ -2204,7 +2204,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
 
 
-        //A4267
+        //A4267_1
         if (compoundButton.getId() == R.id.rb_A4267_1_1
                 || compoundButton.getId() == R.id.rb_A4267_1_2
                 || compoundButton.getId() == R.id.rb_A4267_1_3

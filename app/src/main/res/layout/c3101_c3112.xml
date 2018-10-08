@@ -189,6 +189,12 @@
                             style="@style/RadioButton"
                             android:text="@string/rb_C3103_DK" />
 
+                        <RadioButton
+
+                            android:id="@+id/rb_C3103_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/ra" />
+
                     </RadioGroup>
 
                 </LinearLayout>
@@ -234,6 +240,12 @@
                             android:id="@+id/rb_C3104_DK"
                             style="@style/RadioButton"
                             android:text="@string/rb_C3104_DK" />
+
+                        <RadioButton
+
+                            android:id="@+id/rb_C3104_RA"
+                            style="@style/RadioButton"
+                            android:text="@string/ra" />
 
                     </RadioGroup>
 
