@@ -66,6 +66,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3401" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3401_h" />
+
                     <EditText
                         android:id="@+id/ed_C3401"
                         style="@style/EditText_varchar"
@@ -191,6 +195,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3404" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3404_h" />
+
                     <EditText
                         android:id="@+id/ed_C3404"
                         style="@style/EditText_varchar"
@@ -212,6 +220,10 @@
                         android:id="@+id/txt_C3405"
                         style="@style/TextView"
                         android:text="@string/txt_C3405" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3405_h" />
 
                     <TextView
                         style="@style/TextView_Hint"
@@ -408,6 +420,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/C3410_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="1 → C3413, 9 → C3454" />
 
 
@@ -450,6 +466,10 @@
                         android:id="@+id/txt_C3411"
                         style="@style/TextView"
                         android:text="@string/txt_C3411" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3411_h" />
 
                     <TextView
                         style="@style/TextView_Hint"
@@ -516,6 +536,10 @@
                         android:id="@+id/txt_C3412"
                         style="@style/TextView"
                         android:text="@string/txt_C3412" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3412_1_h" />
 
                     <EditText
                         android:id="@+id/ed_C3412_L1"
