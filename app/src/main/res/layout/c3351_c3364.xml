@@ -67,6 +67,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3351" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3363" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -114,6 +118,10 @@
                         android:id="@+id/txt_C3352"
                         style="@style/TextView"
                         android:text="@string/txt_C3352" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3363" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -278,9 +286,17 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Inst_1: If Q1403 = 2 (Respondent is the child’s mother) → C3405" />
+
+                    <TextView
                         android:id="@+id/txt_C3363"
                         style="@style/TextView"
                         android:text="@string/txt_C3363" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2, 3 or 9 → C3401" />
 
                     <RadioGroup style="@style/RadioGroup">
 

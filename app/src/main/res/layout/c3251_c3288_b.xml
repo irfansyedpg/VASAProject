@@ -63,6 +63,15 @@
                     <LinearLayout style="@style/Q_Linerlayout_v">
 
                         <TextView
+                            style="@style/TextView_Hint"
+                            android:text="Inst_1: (For 28 day-11 month old deaths only) If the illness began at the health provider where
+the child was delivered: A) and did not fill C3064-C3070→ C3259;    B) and filled C3064-C3070 → C3263" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="Inst_2: If C3253 ≠ “Health care provider” (Never took to a health care provider) → C3255" />
+
+                        <TextView
                             style="@style/TextView"
                             android:text="@string/txt_C3253" />
 

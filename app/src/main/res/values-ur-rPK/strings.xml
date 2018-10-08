@@ -26,6 +26,7 @@
     <string  name="dnt"  translatable="false">معلوم نہیں</string>
     <string  name="ra"  translatable="false">جواب دینے سے انکار کردیا</string>
     <string  name="ot"  translatable="false">دیگر</string>
+    <string  name="ot_other"  translatable="false">دیگر (وضاحت کریں)</string>
     <string  name="explain"  translatable="false">وضاحت کریں</string>
     <string  name="minutes"  translatable="false">منٹ</string>
     <string  name="hours"  translatable="false">گھنٹے</string>
@@ -209,8 +210,8 @@
     <string  name="rb_Q1201_5"  translatable="false">	 برادری 	</string>
     <string  name="rb_Q1201_6"  translatable="false">	  ای اے 	</string>
     <string  name="rb_Q1201_7"  translatable="false">	گھرانے کا محل و وقوع	</string>
-    <string  name="rb_Q1203_1"  translatable="false">	مرد	</string>
-    <string  name="rb_Q1203_2"  translatable="false">	عورت	</string>
+    <string  name="rb_Q1203_1"  translatable="false">	لڑکا /مرد	</string>
+    <string  name="rb_Q1203_2"  translatable="false">	لڑکی/عورت	</string>
     <string  name="rb_Q1207_1"  translatable="false">	مردہ	</string>
     <string  name="rb_Q1207_2"  translatable="false">	نوزائیدہ	</string>
     <string  name="rb_Q1207_3"  translatable="false">	ریکارڈ سے معلوم نہیں ہوا	</string>
@@ -330,7 +331,7 @@
     <string  name="rb_Q1420_3"  translatable="false">	زنگ کی چارد	</string>
     <string  name="rb_Q1420_4"  translatable="false">	لوسالائٹ کی چادر	</string>
     <string  name="rb_Q1420_5"  translatable="false">	ٹائلیں	</string>
-    <string  name="rb_Q1420_6"  translatable="false">	پکی اینٹیں/سیمنٹ بلاک	</string>
+    <string  name="rb_Q1420_6"  translatable="false">	 کنکریٹ سیمنٹ کی چھت (پکی چھت)	</string>
     <string  name="rb_Q1420_OT"  translatable="false">	دیگر وضاحت کریں	</string>
     <string  name="rb_Q1420_DK"  translatable="false">	 معلوم نہیں 	</string>
     <string  name="rb_Q1421_1"  translatable="false">	کوئی دیوار نہیں	</string>
@@ -4335,8 +4336,8 @@
     <string  name="txt_C3213"  translatable="false">	کیا (نام) کی بغل میں کوئی  گلٹی تھی؟	:	C3213	</string>
     <string  name="txt_C3214"  translatable="false">	کیا (نام) کی جانگیہ(  ٹانگوں کے بیچ )میں کوئی  گلٹی تھی؟	:	C3214	</string>
     <string  name="txt_C3215"  translatable="false">	کیا (اس کا) کا پورا جسم اکڑا ہوا تھا اور وہ منہ کھولنے کے قابل نہ تھا؟	:	C3215	</string>
-    <string  name="txt_C3216"  translatable="false">	کیا وہ کسی بھی طرح  مفلوج تھا/تھی؟	:	C3216	</string>
-    <string  name="txt_C3217"  translatable="false">	کیا اس کے جسم کا صرف   ایک طرف کا    حصہ مفلوج تھا؟	:	C3217	</string>
+    <string  name="txt_C3216"  translatable="false">	کیا وہ کسی بھی طرح  فالج  تھا/تھی؟	:	C3216	</string>
+    <string  name="txt_C3217"  translatable="false">	کیا اس کے جسم کا صرف ایک طرف کا  حصہ فالج تھا؟	:	C3217	</string>
     <string  name="txt_C3218"  translatable="false">	جسم کا کونسا عضو  باز و یا ٹانگ یا جسم کے حصے مفلوج ہوئےتھے؟	:	C3218	</string>
     <string  name="txt_C3219"  translatable="false">	کیا اس کو   نگلنے میں دشواری تھی؟	:	C3219	</string>
     <string  name="txt_C3220_u"  translatable="false">	انتقال سے کتنے عرصے پہلے اس کو  نگلنے میں دشواری تھی؟	:	C3220_u	</string>
@@ -4505,8 +4506,8 @@
     <string  name="txt_C3412"  translatable="false">	گھر کا پتہ کیا ہے  جہاں آپ رہتی  تھیں؟	:	C3412	</string>
     <string  name="txt_C3413"  translatable="false">	جب بیماری شروع ہوئی تو کتنے عرصے سے (آپ /آپ کے رشتہ دار) مسلسل اسی کمیونٹی میں رہ  رہے تھے؟	:	C3413	</string>
     <string  name="txt_C3414"  translatable="false">	ہنگامی صورتحال میں  اس  مقام سے قریبی صحت کی سہولت تک پہنچے کے لیے کتنا وقت لگتا ہے؟	:	C3414	</string>
-    <string name="txt_C3451"  translatable="false">C3451:  (نام ) کی موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے مندرجہ ذیل مسائل میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا	</string>
-    <string name="txt_C3451_h" translatable="false">C3451:  تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="txt_C3451"  translatable="false">C3451:   (نام ) کی موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے مندرجہ ذیل مسائل میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا	</string>
+    <string name="txt_C3451_h" translatable="false">C3451_h:  تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
 
     <string name="txt_C3451_1"  translatable="false">C3451_1: 1.	تعلیم /اسکول</string>
     <string name="txt_C3451_2"  translatable="false">C3451_2: 2.	صحت کی سہولیات /کلینک 	</string>
@@ -5435,8 +5436,8 @@
     <string  name="rb_C3207_2"  translatable="false">	                                                     نہیں 	</string>
     <string  name="rb_C3207_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3207_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
-    <string  name="rb_C3208_u_0"  translatable="false">	ہاں 	</string>
-    <string  name="rb_C3208_u_1"  translatable="false">	نہیں 	</string>
+    <string  name="rb_C3208_u_0"  translatable="false">	دن 	</string>
+    <string  name="rb_C3208_u_1"  translatable="false">	مہینہ	</string>
     <string  name="rb_C3208_u_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3208_u_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="ed_C3208_a"  translatable="false">		</string>
@@ -5645,7 +5646,7 @@
     <string  name="cb_C3256_1"  translatable="false">	اسکاخیال نہیں تھا کہ   بچہ/بڑا اتنا بیمار نہیں تھاکہ اسکو صحت کی سہولت فراہم کی جائے	</string>
     <string  name="cb_C3256_2"  translatable="false">	 کوئی ساتھ لے جانے والا موجود نہیں تھا	</string>
     <string  name="cb_C3256_3"  translatable="false">	دیکھ بھال کرنے والے کی بہت ذمہ داریاں	</string>
-    <string  name="rb_C3256_OT"  translatable="false">	 کسی اور کو فیصلہ کرنا پڑا (وضاحت کریں)	</string>
+    <string  name="cb_C3256_4"  translatable="false">	 کسی اور کو فیصلہ کرنا پڑا (وضاحت کریں)	</string>
     <string  name="cb_C3256_5"  translatable="false">	بہت دور سفر کرنا	</string>
     <string  name="cb_C3256_6"  translatable="false">	 کوئی  ٹرانسپورٹ یا سواری  دستیاب  نہیں	</string>
     <string  name="cb_C3256_7"  translatable="false">	لاگت یا  خرچہ  ( ٹرانسپوڑٹ،صحت کی دیکھ بھال ،دیگر	</string>
@@ -5654,7 +5655,7 @@
     <string  name="cb_C3256_10"  translatable="false">	سوچا  وہ    اتنی کمزور ہ تھی کہ سفر نہیں کرسکتی تھی	</string>
     <string  name="cb_C3256_11"  translatable="false">	سوچا کہ علاج کے باوجود ہی موت واقع ہوجائیگی	</string>
     <string  name="cb_C3256_12"  translatable="false">	رات کو دیر ہو چکی تھی  (ٹرانسپورٹ  یا   ہیلتھ  مہیا کرنے والا موجود نہیں تھا)	</string>
-    <string  name="ed_C3256_OT2"  translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string  name="cb_C3256_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
     <string  name="cb_C3256_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="ed_C3257_1"  translatable="false">		</string>
     <string  name="ed_C3257_2"  translatable="false">		</string>
@@ -5992,7 +5993,7 @@
     <string  name="rb_C3411_2"  translatable="false">	 اپنے ساس /سسر کے گھر	</string>
     <string  name="rb_C3411_3"  translatable="false">	اپنے والدین کے گھر	</string>
     <string  name="rb_C3411_4"  translatable="false">	اپنے بھائی کے گھر	</string>
-    <string  name="ed_C3411_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string  name="rb_C3411_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
     <string  name="rb_C3411_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3412_L1"  translatable="false">		</string>
     <string  name="rb_C3412_L2"  translatable="false">		</string>
@@ -6038,7 +6039,7 @@
     <string  name="rb_C3451_13_1"  translatable="false">	                                         ہاں 	</string>
     <string  name="rb_C3451_13_2"  translatable="false">	                                                     نہیں 	</string>
     <string  name="rb_C3451_13_DK"  translatable="false">	معلوم نہیں 	</string>
-    <string  name="ed_C3451_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string  name="rb_C3451_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
     <string  name="rb_C3451_14_1"  translatable="false">	 ایک یا ایک سے زیادہ مسائل کی نشاندہی  	</string>
     <string  name="rb_C3451_14_2"  translatable="false">	مسائل کی کوئی نشاندہی نہیں کی گئی	</string>
     <string  name="rb_C3452_1_1"  translatable="false">	                                         ہاں 	</string>
@@ -6068,7 +6069,7 @@
     <string  name="rb_C3452_9_1"  translatable="false">	                                         ہاں 	</string>
     <string  name="rb_C3452_9_2"  translatable="false">	                                                     نہیں 	</string>
     <string  name="rb_C3452_9_DK"  translatable="false">	معلوم نہیں 	</string>
-    <string  name="ed_C3452_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string  name="rb_C3452_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
     <string  name="rb_C3452_10_1"  translatable="false">	ایک گروپ کی شناخت	</string>
     <string  name="rb_C3452_10_2"  translatable="false">	دو یا س سے زائد گروپوں کی شناخت	</string>
     <string  name="rb_C3452_10_3"  translatable="false">	کسی گروپ کی شناخت نہیں ہوئی	</string>
@@ -6108,7 +6109,7 @@
     <string  name="rb_C3453_12_1"  translatable="false">	                                         ہاں 	</string>
     <string  name="rb_C3453_12_2"  translatable="false">	                                                     نہیں 	</string>
     <string  name="rb_C3453_12_DK"  translatable="false">	معلوم نہیں 	</string>
-    <string  name="ed_C3453_OT"  translatable="false">	دیگر (وضاحت کریں) 	</string>
+    <string  name="rb_C3453_OT"  translatable="false">	دیگر (وضاحت کریں) 	</string>
     <string  name="rb_C3453_13_1"  translatable="false">	 ایک گروپ کی شناخت	</string>
     <string  name="rb_C3453_13_2"  translatable="false">	دو یا س سے زائد گروپوں کی شناخت	</string>
     <string  name="rb_C3453_13_3"  translatable="false">	کسی گروپ کی شناخت نہیں ہوئی	</string>

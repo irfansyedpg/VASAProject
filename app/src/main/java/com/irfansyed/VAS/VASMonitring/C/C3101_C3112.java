@@ -51,9 +51,11 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             rb_C3103_1,
             rb_C3103_2,
             rb_C3103_DK,
+            rb_C3103_RA,
             rb_C3104_1,
             rb_C3104_2,
             rb_C3104_DK,
+            rb_C3104_RA,
             rb_C3105_1,
             rb_C3105_2,
             rb_C3105_3,
@@ -587,11 +589,13 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3103_1 = findViewById(R.id.rb_C3103_1);
         rb_C3103_2 = findViewById(R.id.rb_C3103_2);
         rb_C3103_DK = findViewById(R.id.rb_C3103_DK);
+        rb_C3103_RA = findViewById(R.id.rb_C3103_RA);
 
 
         rb_C3104_1 = findViewById(R.id.rb_C3104_1);
         rb_C3104_2 = findViewById(R.id.rb_C3104_2);
         rb_C3104_DK = findViewById(R.id.rb_C3104_DK);
+        rb_C3104_RA = findViewById(R.id.rb_C3104_RA);
 
 
         rb_C3105_1 = findViewById(R.id.rb_C3105_1);
@@ -863,22 +867,26 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
         if (compoundButton.getId() == R.id.rb_C3104_1
                 || compoundButton.getId() == R.id.rb_C3104_2
-                || compoundButton.getId() == R.id.rb_C3104_DK) {
+                || compoundButton.getId() == R.id.rb_C3104_DK
+                || compoundButton.getId() == R.id.rb_C3104_RA) {
 
-            if (rb_C3104_2.isChecked() || rb_C3104_DK.isChecked()) {
-
+            if (rb_C3104_1.isChecked() && ageInDays>334){
                 ClearAllcontrol.ClearAll(ll_C3105);
-                ClearAllcontrol.ClearAll(ll_C3106);
-
                 ll_C3105.setVisibility(View.GONE);
-                ll_C3106.setVisibility(View.GONE);
+                ll_C3106.setVisibility(View.VISIBLE);
 
-            } else {
-
+            }else if (rb_C3104_1.isChecked() && ageInDays<334){
                 ll_C3105.setVisibility(View.VISIBLE);
                 ll_C3106.setVisibility(View.VISIBLE);
+            }else{
+                ClearAllcontrol.ClearAll(ll_C3105);
+                ClearAllcontrol.ClearAll(ll_C3106);
+                ll_C3105.setVisibility(View.GONE);
+                ll_C3106.setVisibility(View.GONE);
             }
         }
+
+
 
         if (compoundButton.getId() == R.id.rb_C3105_1
                 || compoundButton.getId() == R.id.rb_C3105_2
@@ -1201,6 +1209,8 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             C3103 = "2";
         } else if (rb_C3103_DK.isChecked()) {
             C3103 = "9";
+        }else if (rb_C3103_RA.isChecked()) {
+            C3103 = "8";
         }
 
 
@@ -1210,6 +1220,8 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             C3104 = "2";
         } else if (rb_C3104_DK.isChecked()) {
             C3104 = "9";
+        }else if (rb_C3104_RA.isChecked()) {
+            C3104 = "8";
         }
 
 

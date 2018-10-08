@@ -61,6 +61,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3001" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3003" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -143,6 +147,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3003" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3006" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -184,6 +192,10 @@
                         android:id="@+id/txt_C3004"
                         style="@style/TextView"
                         android:text="@string/txt_C3004" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 1, 2,or 9 → C3006" />
 
 
                     <RadioGroup style="@style/RadioGroup">
@@ -231,6 +243,10 @@
                         android:id="@+id/txt_C3005u"
                         style="@style/TextView"
                         android:text="@string/txt_C3005u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8 or 9 →C3006" />
 
 
                     <RadioGroup style="@style/RadioGroup">
@@ -534,6 +550,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3009_1" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3010" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -576,6 +596,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3009_2" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3010" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -617,6 +641,10 @@
                         android:id="@+id/txt_C3009_3"
                         style="@style/TextView"
                         android:text="@string/txt_C3009_3" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3010" />
 
 
                     <RadioGroup style="@style/RadioGroup">

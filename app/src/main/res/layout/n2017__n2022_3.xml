@@ -144,6 +144,10 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2018" />
 
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="  2 → N2020" />
+
                             <RadioGroup
                                 android:id="@+id/rg_N2018"
                                 style="@style/RadioGroup">
@@ -195,6 +199,10 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2019u" />
 
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text=" 2 → N2019d" />
+
                                 <RadioGroup
                                     android:id="@+id/rg_N2019u"
                                     style="@style/RadioGroup">
@@ -240,6 +248,10 @@
                                     android:id="@+id/txt_N2019h"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2019h" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="(DK = 99)→ N2020" />
 
 
                                 <EditText
@@ -385,6 +397,10 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2022" />
 
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="8, 2 or 9 → N2051" />
+
                             <RadioGroup
                                 android:id="@+id/rg_N2022"
                                 style="@style/RadioGroup">
@@ -480,6 +496,10 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2022_2" />
 
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="1 → N2051" />
+
                                 <LinearLayout
                                     style="@style/Q_Linerlayout_v"
                                     android:gravity="center">
@@ -539,6 +559,10 @@
                             android:id="@+id/txt_N2022_3"
                             style="@style/TextView"
                             android:text="@string/txt_N2022_3" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text=" پر جاؤ N2051 مکمل کرنے کے بعد ←N2022_3ھدایت۔1: یہاں رک جاؤ." />
 
                         <LinearLayout
                             style="@style/Q_Linerlayout_v"
