@@ -89,6 +89,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3402" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 or 9 → C3405" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -127,9 +131,17 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Inst_2: Read: Now I would like to ask you some questions about (your / the mother’s) household. Please remember that all information will be kept confidential. " />
+
+                    <TextView
                         android:id="@+id/txt_C3403"
                         style="@style/TextView"
                         android:text="@string/txt_C3403" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="9 → C3405" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -200,6 +212,10 @@
                         android:id="@+id/txt_C3405"
                         style="@style/TextView"
                         android:text="@string/txt_C3405" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text=" 3 → Inst_2" />
 
 
                     <RadioGroup style="@style/RadioGroup">
@@ -275,6 +291,10 @@
                         android:id="@+id/txt_C3407"
                         style="@style/TextView"
                         android:text="@string/txt_C3407" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 or 9 → Inst_2" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -386,6 +406,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3410" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3413, 9 → C3454" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -426,6 +450,10 @@
                         android:id="@+id/txt_C3411"
                         style="@style/TextView"
                         android:text="@string/txt_C3411" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="9 → C3454" />
 
                     <RadioGroup style="@style/RadioGroup">
 
