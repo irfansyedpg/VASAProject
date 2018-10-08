@@ -188,6 +188,10 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2212" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="2 → N2215, 9 → N2248" />
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton

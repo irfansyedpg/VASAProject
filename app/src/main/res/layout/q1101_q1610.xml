@@ -975,6 +975,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_Q1407" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 or 9 → Q1410" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -2190,6 +2194,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_Q1501" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → Q1601" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -2390,6 +2398,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_Q1602" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → Q1604" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -2521,6 +2533,10 @@
                         android:id="@+id/txt_Q1605"
                         style="@style/TextView"
                         android:text="@string/txt_Q1605" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → Q1607" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -2700,6 +2716,10 @@
                         android:id="@+id/txt_Q1610"
                         style="@style/TextView"
                         android:text="@string/txt_Q1610" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text=" Inst_1 → SB/NN form (N2101)" />
 
 
                     <EditText

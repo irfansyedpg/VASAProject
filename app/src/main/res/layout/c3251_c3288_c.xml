@@ -263,7 +263,7 @@
                                 <CheckBox
                                     android:id="@+id/cb_C3256_OT"
                                     style="@style/CheckBox"
-                                    android:text="@string/ot_other" />
+                                    android:text="@string/cb_C3256_OT" />
 
                                 <CheckBox
                                     android:id="@+id/cb_C3256_DK"

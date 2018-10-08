@@ -173,6 +173,10 @@
                                     style="@style/TextView_Hint"
                                     android:text="@string/N2215_h" />
 
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text=" 8, 2 or 9 → Inst_3" />
+
                                 <RadioGroup
                                     android:id="@+id/rg_N2215"
                                     style="@style/RadioGroup">
@@ -212,6 +216,11 @@
                                     android:id="@+id/txt_N2216"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2216" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="Inst_3: If N2212 = 2 (No care given or sought) → N2271
+Inst_4: If N2213 ≠ “Health provider” (Never took to a health provider) → N2247" />
 
                                 <CheckBox
                                     android:id="@+id/cb_N2216_1"
@@ -554,6 +563,10 @@
                                             style="@style/TextView"
                                             android:text="@string/txt_N2220" />
 
+                                        <TextView
+                                            style="@style/TextView_Hint"
+                                            android:text="2 → N2247, 3, 9 → Inst_5" />
+
                                         <RadioGroup
                                             android:id="@+id/rg_N2220"
                                             style="@style/RadioGroup">
@@ -703,6 +716,10 @@
                                             android:id="@+id/txt_N2223"
                                             style="@style/TextView"
                                             android:text="@string/txt_N2223" />
+
+                                        <TextView
+                                            style="@style/TextView_Hint"
+                                            android:text="2 or 9 → N2225" />
 
                                         <RadioGroup
                                             android:id="@+id/rg_N2223"
@@ -919,6 +936,10 @@
                                             android:id="@+id/txt_N2226"
                                             style="@style/TextView"
                                             android:text="@string/txt_N2226" />
+
+                                        <TextView
+                                            style="@style/TextView_Hint"
+                                            android:text="2 → Inst_6" />
 
                                         <RadioGroup
                                             android:id="@+id/rg_N2226"
@@ -1221,6 +1242,10 @@
                                             style="@style/TextView"
                                             android:text="@string/txt_N2230" />
 
+                                        <TextView
+                                            style="@style/TextView_Hint"
+                                            android:text="2-9 → Inst_6" />
+
                                         <RadioGroup
                                             android:id="@+id/rg_N2230"
                                             style="@style/RadioGroup">
@@ -1271,6 +1296,7 @@
                                                 android:id="@+id/txt_N2231_1"
                                                 style="@style/TextView"
                                                 android:text="@string/txt_N2221_1" />
+
 
 
                                             <EditText
@@ -1358,6 +1384,10 @@
                                                 android:id="@+id/txt_N2233"
                                                 style="@style/TextView"
                                                 android:text="@string/txt_N2233" />
+
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text=" 2 or 9 → N2235" />
 
                                             <RadioGroup
                                                 android:id="@+id/rg_N2233"
@@ -1572,6 +1602,10 @@
                                                 style="@style/TextView"
                                                 android:text="@string/txt_N2236" />
 
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="2 → Inst_6" />
+
                                             <RadioGroup
                                                 android:id="@+id/rg_N2236"
                                                 style="@style/RadioGroup">
@@ -1612,6 +1646,11 @@
                                                     android:id="@+id/txt_N2237_1"
                                                     style="@style/TextView"
                                                     android:text="@string/txt_N2237_1" />
+
+                                                <TextView
+                                                    style="@style/TextView_Hint"
+                                                    android:text="Inst_6: If N2223 = 1 (referred) or N2233 = 1 (referred) → continue with N2238.
+Otherwise → Inst_7" />
 
                                                 <RadioGroup style="@style/RadioGroup">
 
@@ -1751,6 +1790,10 @@
                                                 style="@style/TextView"
                                                 android:text="@string/txt_N2239" />
 
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="2 or 9 → Inst_7" />
+
                                             <RadioGroup
                                                 android:id="@+id/rg_N2239"
                                                 style="@style/RadioGroup">
@@ -1790,6 +1833,11 @@
                                                 android:id="@+id/txt_N2240"
                                                 style="@style/TextView"
                                                 android:text="@string/txt_N2240" />
+
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="Inst_7: If N2219, N2229, N2224 or N2234 = 1-4, 6-9 or 11 (seen at any health facility) → continue with N2241;
+Otherwise → N2247" />
 
                                             <CheckBox
 
@@ -1931,6 +1979,10 @@
                                                 android:id="@+id/txt_N2241"
                                                 style="@style/TextView"
                                                 android:text="@string/txt_N2241" />
+
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="2 or 9 → N2243" />
 
                                             <RadioGroup
                                                 android:id="@+id/rg_N2241"
@@ -2260,6 +2312,11 @@
                     <LinearLayout
                         android:id="@+id/ll_N2248"
                         style="@style/Q_Linerlayout_v">
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="Inst_8: If N2212 = 2 (No care given) or
+if N2213 ≠ “Health Provider” (Never took to a health provider) → N2271" />
 
                         <TextView
                             android:id="@+id/txt_N2248"
