@@ -3341,7 +3341,6 @@
                                 android:text="N2271   ← N2016 = 1     ہدایت5:  اگر  (مردہ بچہ" />
 
                             <RadioGroup style="@style/RadioGroup">
-                        <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
                                 android:id="@+id/rb_N2107_3_1"
