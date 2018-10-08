@@ -133,38 +133,38 @@
 
     <!-- GeneRAl Section Urdu Text STARTS -->
 
-    <string  name="txt_Q1101"  translatable="false">	کیا یہ ایچ آئی وی /ایڈز سے متاثر  علاقہ ہے ؟	:	Q1101	</string>
-    <string  name="txt_Q1102"  translatable="false">	کیا یہ ملیریا سے متاثر  علاقہ ہے؟	:	Q1102	</string>
-    <string  name="txt_Q1103"  translatable="false">	کس موسم کے دوران لڑکا /لڑکی کی وفات ہوئی ؟	:	Q1103	</string>
-    <string  name="txt_Q1201"  translatable="false">گھرانے کا پتہ  :	Q1201</string>
-    <string  name="txt_Q1202"  translatable="false">	مرنے والے کا نام (اگر معلوم ہے)	:	Q1202	</string>
-    <string  name="txt_Q1203"  translatable="false">	مرنے والے کی جنس	:	Q1203	</string>
-    <string  name="txt_Q1204"  translatable="false">	مرنے والے کی تاریخ پیدائش	:	Q1204	</string>
-    <string  name="txt_Q1205"  translatable="false">	وفات پانے والے کی موت کی تاریخ	:	Q1205	</string>
-    <string  name="txt_Q1206"  translatable="false">	وفات پانے والے کی عمر 	:	Q1206	</string>
-    <string  name="txt_Q1207"  translatable="false">	کیا یہ مردہ پیدا ہونے والے  یا نوزائیدہ بچہ کی وفات تھی؟	:	Q1207	</string>
-    <string  name="txt_Q1208"  translatable="false">	ماں کانام	:	Q1208	</string>
-    <string  name="txt_Q1209"  translatable="false">	باپ کا نام یا گھرانے کےسربراہ کا نام	:	Q1209	</string>
-    <string  name="txt_Q1301"  translatable="false">	انٹرویو کی زبان	:	Q1301	</string>
-    <string  name="txt_Q1302"  translatable="false">	انٹرویو لینے والے کا  شناخت   نمبر	:	Q1302	</string>
-    <string  name="txt_Q1307"  translatable="false">	انٹرویو شروع ہونے کی تاریخ	:	Q1307	</string>
-    <string  name="txt_Q1308"  translatable="false">	انٹرویو شروع ہونے کا وقت	:	Q1308	</string>
-    <string  name="txt_Q1309"  translatable="false">	انٹرویو  ختم  ہونے کی تاریخ	:	Q1309	</string>
-    <string  name="txt_Q1310"  translatable="false">	انٹرویو اختتام ہونے کا وقت	:	Q1310	</string>
-    <string  name="txt_Q1311"  translatable="false">	انٹرویو کے نتائج کورڈ 	:	Q1311	</string>
-    <string  name="txt_Q1312"  translatable="false">	تاریخ کی جانچ پڑتال سپروائزر کی طرف سے	:	Q1312	</string>
-    <string  name="txt_Q1313"  translatable="false">	کمپیوٹر میں درج کی گئی تاریخ	:	Q1313	</string>
-    <string  name="txt_Q1405"  translatable="false">	کیا جواب دہندہ نے رضامندی یا اجازت  دی؟	:	Q1405	</string>
-    <string  name="txt_Q1401"  translatable="false">	جواب دہندہ کانام کا ہے ؟	:	Q1401	</string>
-    <string  name="txt_Q1402"  translatable="false">	جواب دہندہ کی جنس ریکارڈ کریں	:	Q1402	</string>
-    <string  name="txt_Q1403"  translatable="false">	وفات پانے والے سے جواب دہندہ کا رشتہ کیا ہے  ؟	:	Q1403	</string>
-    <string  name="txt_Q1404"  translatable="false">	کیا جواب دہندہ ،  وفات پانے والے کے ساتھ  اس دوران موجود تھا  جب اسکا انتقال ہوا ؟ 	:	Q1404	</string>
-    <string  name="txt_Q1406"  translatable="false">	آپ کتنے سال کے ہیں؟	:	Q1406	</string>
-    <string  name="txt_Q1407"  translatable="false">	کیا آپ کبھی اسکول گئے ؟	:	Q1407	</string>
-    <string  name="txt_Q1408"  translatable="false">	آپ نے کہاں تک تعلیم حاصل کی ہے ؟	:	Q1408	</string>
-    <string  name="txt_Q1409"  translatable="false">	اب تک کی مکمل تعلیم (سال/گریڈ) کیا ہے؟	:	Q1409	</string>
-    <string  name="txt_Q1410"  translatable="false">	میں چاہوں گا کہ آپ یہ جملے مجھ کو پڑھ کر سنا ئیں               (جواب دہندہ کو کارڈ دکھا ئیں)	:	Q1410	</string>
-    <string  name="txt_Q1411"  translatable="false">	اس گھر میں کتنے لوگ رہتے ہیں ؟	:	Q1411	</string>
+    <string  name="txt_Q1101"  translatable="false">کیا یہ ایچ آئی وی /ایڈز سے متاثر  علاقہ ہے ؟	:	Q1101	</string>
+    <string  name="txt_Q1102"  translatable="false">کیا یہ ملیریا سے متاثر  علاقہ ہے؟	:	Q1102	</string>
+    <string  name="txt_Q1103"  translatable="false">کس موسم کے دوران لڑکا /لڑکی کی وفات ہوئی ؟	:	Q1103	</string>
+    <string  name="txt_Q1201"  translatable="false">گھرانے کا پتہ:	Q1201</string>
+    <string  name="txt_Q1202"  translatable="false">مرنے والے کا نام (اگر معلوم ہے)	:	Q1202	</string>
+    <string  name="txt_Q1203"  translatable="false">مرنے والے کی جنس	:	Q1203	</string>
+    <string  name="txt_Q1204"  translatable="false">مرنے والے کی تاریخ پیدائش	:	Q1204	</string>
+    <string  name="txt_Q1205"  translatable="false">وفات پانے والے کی موت کی تاریخ	:	Q1205	</string>
+    <string  name="txt_Q1206"  translatable="false">وفات پانے والے کی عمر 	:	Q1206	</string>
+    <string  name="txt_Q1207"  translatable="false">کیا یہ مردہ پیدا ہونے والے  یا نوزائیدہ بچہ کی وفات تھی؟	:	Q1207	</string>
+    <string  name="txt_Q1208"  translatable="false">ماں کانام	:	Q1208	</string>
+    <string  name="txt_Q1209"  translatable="false">باپ کا نام یا گھرانے کےسربراہ کا نام	:	Q1209	</string>
+    <string  name="txt_Q1301"  translatable="false">انٹرویو کی زبان	:	Q1301	</string>
+    <string  name="txt_Q1302"  translatable="false">انٹرویو لینے والے کا  شناخت   نمبر	:	Q1302	</string>
+    <string  name="txt_Q1307"  translatable="false">انٹرویو شروع ہونے کی تاریخ	:	Q1307	</string>
+    <string  name="txt_Q1308"  translatable="false">انٹرویو شروع ہونے کا وقت	:	Q1308	</string>
+    <string  name="txt_Q1309"  translatable="false">انٹرویو  ختم  ہونے کی تاریخ	:	Q1309	</string>
+    <string  name="txt_Q1310"  translatable="false">انٹرویو اختتام ہونے کا وقت	:	Q1310	</string>
+    <string  name="txt_Q1311"  translatable="false">انٹرویو کے نتائج کورڈ 	:	Q1311	</string>
+    <string  name="txt_Q1312"  translatable="false">تاریخ کی جانچ پڑتال سپروائزر کی طرف سے	:	Q1312	</string>
+    <string  name="txt_Q1313"  translatable="false">کمپیوٹر میں درج کی گئی تاریخ	:	Q1313	</string>
+    <string  name="txt_Q1405"  translatable="false">کیا جواب دہندہ نے رضامندی یا اجازت  دی؟	:	Q1405	</string>
+    <string  name="txt_Q1401"  translatable="false">جواب دہندہ کا نام کیا ہے ؟	:	Q1401	</string>
+    <string  name="txt_Q1402"  translatable="false">جواب دہندہ کی جنس ریکارڈ کریں	:	Q1402	</string>
+    <string  name="txt_Q1403"  translatable="false">وفات پانے والے سے جواب دہندہ کا رشتہ کیا ہے  ؟	:	Q1403	</string>
+    <string  name="txt_Q1404"  translatable="false">کیا جواب دہندہ ،  وفات پانے والے کے ساتھ  اس دوران موجود تھا  جب اسکا انتقال ہوا ؟ 	:	Q1404	</string>
+    <string  name="txt_Q1406"  translatable="false">آپ کتنے سال کے ہیں؟	:	Q1406	</string>
+    <string  name="txt_Q1407"  translatable="false">کیا آپ کبھی اسکول گئے ؟	:	Q1407	</string>
+    <string  name="txt_Q1408"  translatable="false">آپ نے کہاں تک تعلیم حاصل کی ہے ؟	:	Q1408	</string>
+    <string  name="txt_Q1409"  translatable="false">اب تک کی مکمل تعلیم (سال/گریڈ) کیا ہے؟	:	Q1409	</string>
+    <string  name="txt_Q1410"  translatable="false">میں چاہوں گا کہ آپ یہ جملے مجھ کو پڑھ کر سنا ئیں               (جواب دہندہ کو کارڈ دکھا ئیں)	:	Q1410	</string>
+    <string  name="txt_Q1411"  translatable="false">اس گھر میں کتنے لوگ رہتے ہیں ؟	:	Q1411	</string>
     <string  name="Q1411_h"  translatable="false">	پڑھیں:" اس گھر میں " کتنے افراد  رہتے ہیں ،  اگر آپ خاندان کے گھرکی بات کررہے ہیں؟	:	Q1411	</string>
     <string  name="txt_Q1412"  translatable="false">	اس گھر میں سونے کے لیے کتنے کمرے استعمال ہوتے ہیں ؟	:	Q1412	</string>
     <string  name="txt_Q1413"  translatable="false">	کیا گھر میں کھانا پکانے کے لیے الگ سے کمرہ ہے؟	:	Q1413	</string>
@@ -6357,6 +6357,7 @@
     <string  name="ed_W213"  translatable="false">	عمر سالوں میں</string>
     <string name="public_sector">عوامی سیکٹر</string>
     <string name="private_sector">نجی صحت کے سیکٹر</string>
+    <string name="C3065_hint1"><![CDATA[Inst_2: If no labor/delivery complications: ((C3051≠1 and C3052=9,10) and (C3057≠1 or C3058≠2) and (C3059≠1 or C3060≠2) and C3061≠1 and C3062<12 and C3063≠1) → C3071.]]></string>
 
     <!-- Reproductive Urdu TEXT & RESPONSE ENDS -->
 

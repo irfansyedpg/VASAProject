@@ -50,14 +50,6 @@ public class N2211_N2248_C extends AppCompatActivity {
 
         DBHelper db = new DBHelper(this);
 
-//        Inst_3
-        String n2212 = db.getSpecificData(data.N.N2211_N2248_A_C.TABLE_NAME, bi.edStudyId.getText().toString(), N2211_N2248_A_C.sub_N2211_N2248_A_C.N2212);
-        if (n2212 != null) {
-            if (Integer.valueOf(n2212) == 2) {
-                flag_n2212 = false;
-            }
-        }
-
 //        Inst_1
         Collection<N2211_N2248_B> col_n2211 = db.getSec10BData(bi.edStudyId.getText().toString(), n2211A_ID);
         for (N2211_N2248_B col_data : col_n2211) {
@@ -75,17 +67,31 @@ public class N2211_N2248_C extends AppCompatActivity {
                         break;
                     }
                 }
+
             }
         }
 
-        if (col_n2211 != null) {
-            for (N2211_N2248_B col_data : col_n2211) {
-                if ((Integer.valueOf(col_data.getN2213()) > 0 && Integer.valueOf(col_data.getN2213()) <= 3)
-                        || (Integer.valueOf(col_data.getN22132A()) == 1)) {
-                    flag_n2213 = false;
-                    break;
+        if (flag_n2090 && flag_n2093) {
+
+//        Inst_3
+            String n2212 = db.getSpecificData(data.N.N2211_N2248_A_C.TABLE_NAME, bi.edStudyId.getText().toString(), N2211_N2248_A_C.sub_N2211_N2248_A_C.N2212);
+            if (n2212 != null) {
+                if (Integer.valueOf(n2212) == 2) {
+                    flag_n2212 = false;
                 }
             }
+
+//        Inst_4
+            if (col_n2211 != null) {
+                for (N2211_N2248_B col_data : col_n2211) {
+                    if ((Integer.valueOf(col_data.getN2213()) > 0 && Integer.valueOf(col_data.getN2213()) <= 3)
+                            || (Integer.valueOf(col_data.getN22132A()) == 1)) {
+                        flag_n2213 = false;
+                        break;
+                    }
+                }
+            }
+
         }
 
 
@@ -105,11 +111,22 @@ public class N2211_N2248_C extends AppCompatActivity {
         bi.rgN2220.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i != bi.rbN22201.getId()) {
-                    ClearAllcontrol.ClearAll(bi.llN2221N2237); //ll_N2221_N2237
-                } else if (i == bi.rbN22202.getId()) {
+                if (i == bi.rbN22202.getId()) {
                     ClearAllcontrol.ClearAll(bi.llN2238N2246); //ll_N2238_N2246
+                    bi.llN2238N2246.setVisibility(View.GONE);
+                } else if (i == bi.rbN22203.getId() || i == bi.rbN2220DK.getId()) {
+                    ClearAllcontrol.ClearAll(bi.llN2221N2237A); //ll_N2221_N2237_A
+                    ClearAllcontrol.ClearAll(bi.llN2221N2237B); //ll_N2221_N2237_B
+                    bi.llN2221N2237A.setVisibility(View.GONE);
+                    bi.llN2221N2237B.setVisibility(View.GONE);
+
+                    bi.llN2238N2246.setVisibility(View.VISIBLE);
+                } else {
+                    bi.llN2238N2246.setVisibility(View.VISIBLE);
+                    bi.llN2221N2237A.setVisibility(View.VISIBLE);
+                    bi.llN2221N2237B.setVisibility(View.VISIBLE);
                 }
+
             }
         });
 
@@ -437,11 +454,12 @@ public class N2211_N2248_C extends AppCompatActivity {
             bi.llN22214N2247.setVisibility(View.GONE);
         }
 
-
         //conditions
         if (!flag_n2212) {
-            ClearAllcontrol.ClearAll(bi.llN22217N2248); //ll_N22217_N2248
-            bi.llN22217N2248.setVisibility(View.GONE);
+            ClearAllcontrol.ClearAll(bi.llN22217N2248A); //ll_N22217_N2248_A
+            bi.llN22217N2248A.setVisibility(View.GONE);
+            ClearAllcontrol.ClearAll(bi.llN22217N2248B); //ll_N22217_N2248_B
+            bi.llN22217N2248B.setVisibility(View.GONE);
 
             ClearAllcontrol.ClearAll(bi.llN2248); //ll_N2248
             bi.llN2248.setVisibility(View.GONE);
@@ -451,8 +469,10 @@ public class N2211_N2248_C extends AppCompatActivity {
             ClearAllcontrol.ClearAll(bi.llN2214); //ll_N2214
             bi.llN2214.setVisibility(View.GONE);
 
-            ClearAllcontrol.ClearAll(bi.llN22217N2246); //ll_N22217_N2246
-            bi.llN22217N2246.setVisibility(View.GONE);
+            ClearAllcontrol.ClearAll(bi.llN22217N2246A); //ll_N22217_N2246_A
+            bi.llN22217N2246A.setVisibility(View.GONE);
+            ClearAllcontrol.ClearAll(bi.llN22217N2246B); //ll_N22217_N2246B
+            bi.llN22217N2246B.setVisibility(View.GONE);
         }
 
         if (!flag_n2090 || !flag_n2093) {
@@ -885,10 +905,14 @@ public class N2211_N2248_C extends AppCompatActivity {
                             if (!Gothrough.IamHiden(bi.llN2241)) {
                                 return false;
                             }
-                            //ll_N2242
-                            if (!Gothrough.IamHiden(bi.llN2242)) {
-                                return false;
+
+                            if (bi.rbN22411.isChecked()) {
+                                //ll_N2242
+                                if (!Gothrough.IamHiden(bi.llN2242)) {
+                                    return false;
+                                }
                             }
+
                             //ll_N2243
                             if (!Gothrough.IamHiden(bi.llN2243)) {
                                 return false;
