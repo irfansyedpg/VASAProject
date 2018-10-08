@@ -892,9 +892,11 @@ public class N2080_N2107 extends AppCompatActivity {
                             return false;
                         }
 
-                        //ll_N2104
-                        if (!Gothrough.IamHiden(bi.llN2104)) {
-                            return false;
+                        if (bi.rbN20983.isChecked() || bi.rbN20987.isChecked()) {
+                            //ll_N2104
+                            if (!Gothrough.IamHiden(bi.llN2104)) {
+                                return false;
+                            }
                         }
 
                         //ll_N2105
@@ -915,20 +917,20 @@ public class N2080_N2107 extends AppCompatActivity {
 
 //        if (bi.rbN20951.isChecked()) {
 
-            //ll_N2107_1
-            if (!Gothrough.IamHiden(bi.llN21071)) {
-                return false;
-            }
+        //ll_N2107_1
+        if (!Gothrough.IamHiden(bi.llN21071)) {
+            return false;
+        }
 
-            //ll_N2107_2
-            if (!Gothrough.IamHiden(bi.llN21072)) {
-                return false;
-            }
+        //ll_N2107_2
+        if (!Gothrough.IamHiden(bi.llN21072)) {
+            return false;
+        }
 
-            //ll_N2107_3
-            if (!Gothrough.IamHiden(bi.llN21073)) {
-                return false;
-            }
+        //ll_N2107_3
+        if (!Gothrough.IamHiden(bi.llN21073)) {
+            return false;
+        }
 
 //        }
 
