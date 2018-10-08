@@ -488,6 +488,29 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 // return;
             }
 
+
+
+            if(ed_Q1502.getText().toString().trim().length()>0)
+            {
+                int total=Integer.parseInt(ed_Q1502.getText().toString().trim());
+
+                if(total<lst_q1503.size()) {
+
+
+                    Toast.makeText(this, "Please Enter All relative Q1503", Toast.LENGTH_LONG).show();
+
+
+                    return;
+                }
+
+
+
+
+            }
+
+
+
+
             pattern = Pattern.compile(DATE_PATTERN);
 
         /*if (!validate(ed_Q1603.getText().toString().trim())) {
