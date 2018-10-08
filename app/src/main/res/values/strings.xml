@@ -4720,6 +4720,7 @@ Examples of statements for the reading test:
     <string name="conflict">Conflict</string>
     <string name="next">NEXT SECTION</string>
     <string name="no_car_not_needed_given_or_sought_a4254_n_don_t_know_a4284">No - car not needed , given or sought → A4254   Don\'t know → A4284</string>
+    <string name="C3065_hint1"><![CDATA[Inst_2: If no labor/delivery complications: ((C3051≠1 and C3052=9,10) and (C3057≠1 or C3058≠2) and (C3059≠1 or C3060≠2) and C3061≠1 and C3062<12 and C3063≠1) → C3071.]]></string>
 
 
     <!-- Reproductive Urdu TEXT & RESPONSE ENDS -->
