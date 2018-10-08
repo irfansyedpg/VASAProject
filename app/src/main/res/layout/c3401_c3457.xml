@@ -453,11 +453,6 @@
                             style="@style/RadioButton"
                             android:text="@string/rb_C3411_4" />
 
-                        <RadioButton
-
-                            android:id="@+id/rb_C3411_DK"
-                            style="@style/RadioButton"
-                            android:text="@string/rb_C3411_DK" />
 
                         <RadioButton
                             android:id="@+id/rb_C3411_5"
@@ -1084,7 +1079,7 @@
                     <TextView
                         android:id="@+id/txt_C3451_13"
                         style="@style/TextView"
-                        android:text="C3451_13" />
+                        android:text="@string/txt_C3451_OT" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -1100,10 +1095,16 @@
                             style="@style/RadioButton"
                             android:text="@string/rb_no" />
 
+                        <RadioButton
+
+                            android:id="@+id/rb_C3451_13_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3451_13_DK" />
+
                         <EditText
                             android:id="@+id/ed_C3451_13_OT"
                             style="@style/EditText_varchar"
-                            android:hint="Other" />
+                            android:text="@string/rb_C3451_OT" />
 
                     </RadioGroup>
 
@@ -1477,10 +1478,15 @@
                             style="@style/RadioButton"
                             android:text="@string/rb_no" />
 
+                        <RadioButton
+                            android:id="@+id/rb_C3452_9_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3452_9_DK" />
+
                         <EditText
                             android:id="@+id/ed_C3452_9_OT"
                             style="@style/EditText_varchar"
-                            android:hint="other" />
+                            android:text="@string/rb_C3452_OT" />
 
                     </RadioGroup>
 
@@ -1982,12 +1988,17 @@
                             style="@style/RadioButton"
                             android:text="@string/rb_no" />
 
+                        <RadioButton
+                            android:id="@+id/rb_C3453_12_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_C3453_12_DK" />
+
                     </RadioGroup>
 
                     <EditText
                         android:id="@+id/ed_C3453_12_OT"
                         style="@style/EditText_varchar"
-                        android:hint="Other" />
+                        android:text="@string/rb_C3453_OT" />
 
 
                 </LinearLayout>

@@ -163,6 +163,10 @@
                             style="@style/TextView"
                             android:text="@string/txt_C3252" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="2 → C3255	, 9 → C3288" />
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton

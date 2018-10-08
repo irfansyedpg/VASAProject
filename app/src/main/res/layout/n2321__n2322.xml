@@ -94,6 +94,10 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2321" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="Inst_1: If stillbirth → End interview" />
+
                         <EditText
                             android:id="@+id/ed_N2321"
                             style="@style/EditText_multi"

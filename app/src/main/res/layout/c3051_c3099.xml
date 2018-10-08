@@ -386,6 +386,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3057" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text=" 8, 2 or 9 → C3059" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -478,6 +482,10 @@
                         android:id="@+id/txt_C3059"
                         style="@style/TextView"
                         android:text="@string/txt_C3059" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3061" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -634,6 +642,10 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Inst_1: If no pregnancy complications:  (C3054≠1 and C3055≠1 and C3056≠1 and (C3057≠1 or C3058≠1) and (C3059≠1 or C3060≠1)) →  Inst_2" />
+
+                    <TextView
                         android:id="@+id/txt_C3063"
                         style="@style/TextView"
                         android:text="@string/txt_C3063" />
@@ -681,6 +693,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3064" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 or 9 → Inst_2" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -717,6 +733,10 @@
                 <LinearLayout
                     android:id="@+id/ll_C3065"
                     style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Inst_2: If no labor/delivery complications: ((C3051≠1 and C3052=9,10) and (C3057≠1 or C3058≠2) and (C3059≠1 or C3060≠2) and C3061≠1 and C3062<12 and C3063≠1) → C3071." />
 
                     <TextView
                         android:id="@+id/txt_C3065"
@@ -787,6 +807,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3066" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 or 9 → C3071" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -829,6 +853,10 @@
                         android:id="@+id/txt_C3067"
                         style="@style/TextView"
                         android:text="@string/txt_C3067" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Only 5-9  C3071" />
 
 
                     <CheckBox
@@ -1124,6 +1152,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3072" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text=" 8, 2 or 9 → C3074" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -1221,6 +1253,10 @@
                         android:id="@+id/txt_C3073_2"
                         style="@style/TextView"
                         android:text="@string/txt_C3073_2" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3074" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -1369,6 +1405,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3075" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → Inst_3" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -1412,6 +1452,10 @@
                 <LinearLayout
                     android:id="@+id/ll_C3076"
                     style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Inst_3: If the delivery was not preterm (C3051≠1 and C3052=9,10  )  Or  not in a health facility 3006=1, 2, 11, 12, 99)  C3078." />
 
                     <TextView
                         android:id="@+id/txt_C3076"
@@ -1523,6 +1567,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3078" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3083" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -1625,6 +1673,10 @@
                 <LinearLayout
                     android:id="@+id/ll_C3080"
                     style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Inst_4: If the delivery was not preterm  (C3051≠1 and C3052=9,10) Or  not in a health facility (C3006=1, 2, 11, 12, 99) .   " />
 
                     <TextView
                         android:id="@+id/txt_C3080"
@@ -1777,6 +1829,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3084" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text=" 1 → C3086" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -1827,6 +1883,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3085" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 →C3091" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -1876,6 +1936,10 @@
                         android:id="@+id/txt_C3086"
                         style="@style/TextView"
                         android:text="@string/txt_C3086" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3091" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -2000,6 +2064,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3089" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3091" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -2077,6 +2145,10 @@
                         android:id="@+id/txt_C3091"
                         style="@style/TextView"
                         android:text="@string/txt_C3091" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3093" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -2378,6 +2450,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3097" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3101" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -2427,6 +2503,10 @@
                         android:id="@+id/txt_C3098"
                         style="@style/TextView"
                         android:text="@string/txt_C3098" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3101" />
 
 
                     <RadioGroup style="@style/RadioGroup"

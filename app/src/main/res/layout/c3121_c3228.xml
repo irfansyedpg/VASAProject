@@ -66,6 +66,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3121" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3128" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -132,6 +136,10 @@
                         android:id="@+id/txt_C3123_u"
                         style="@style/TextView"
                         android:text="@string/txt_C3123_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3123_c, 8 or 9 → C3124" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -753,6 +761,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3135" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3137" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -842,6 +854,10 @@
                         android:id="@+id/txt_C3137"
                         style="@style/TextView"
                         android:text="@string/txt_C3137" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3141" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -1088,6 +1104,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3142" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3146" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -1184,6 +1204,10 @@
                         android:id="@+id/txt_C3144_u"
                         style="@style/TextView"
                         android:text="@string/txt_C3144_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3144, 3 → C3144_b" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -1349,6 +1373,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3146" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3149" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -1396,6 +1424,10 @@
                         android:id="@+id/txt_C3147_u"
                         style="@style/TextView"
                         android:text="@string/txt_C3147_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3147_b, 8 or 9 → C3148" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -1530,6 +1562,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3149" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3151" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -1578,6 +1614,10 @@
                         android:id="@+id/txt_C3150_u"
                         style="@style/TextView"
                         android:text="@string/txt_C3150_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3150_b 8, 2 or 9 → C3151" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -1670,6 +1710,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3151" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3158" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -1711,6 +1755,10 @@
                         android:id="@+id/txt_C3152_u"
                         style="@style/TextView"
                         android:text="@string/txt_C3152_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3152_b, 8 or 9 → C3153" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -2052,6 +2100,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3158" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3161" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -2100,6 +2152,10 @@
                         android:id="@+id/txt_C3159_u"
                         style="@style/TextView"
                         android:text="@string/txt_C3159_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3159_b, 3 → C3159_c, 8 or 9 → C3160" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -2268,6 +2324,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3161" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3164" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -2342,6 +2402,10 @@
                         android:id="@+id/txt_C3163_u"
                         style="@style/TextView"
                         android:text="@string/txt_C3163_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3163_b, 8 or 9 → C3164" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -2433,6 +2497,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3164" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3166" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -2472,6 +2540,10 @@
                         android:id="@+id/txt_C3165_u"
                         style="@style/TextView"
                         android:text="@string/txt_C3165_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text=" 2 → C3165_b, 8 or 9 → C3166" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -2638,7 +2710,7 @@
                                 android:layout_marginRight="30dp"
                                 android:layout_weight="30"
                                 android:background="@color/gray"
-                                android:text="Grunting" />
+                                android:text="گھر گھرانا" />
 
                             <Button
                                 android:id="@+id/btn_wheez"
@@ -2646,7 +2718,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="30"
                                 android:background="@color/gray"
-                                android:text="Wheezing" />
+                                android:text="سیٹی کی سی آواز" />
 
                         </LinearLayout>
 
@@ -2793,6 +2865,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3171" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3173" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -2912,6 +2988,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3174" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3176" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -2960,6 +3040,10 @@
                         android:id="@+id/txt_C3175_u"
                         style="@style/TextView"
                         android:text="@string/txt_C3175_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3175_b, 8 or 9 → C3176" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -3052,6 +3136,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3176" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3178" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -3100,6 +3188,10 @@
                         android:id="@+id/txt_C3177_u"
                         style="@style/TextView"
                         android:text="@string/txt_C3177_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3177_b , 8 or 9 → C3178" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -3192,6 +3284,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3178" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3182" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -3240,6 +3336,10 @@
                         android:id="@+id/txt_C3179_u"
                         style="@style/TextView"
                         android:text="@string/txt_C3179_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3179_b, 8 or 9 → C3180"/>
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -3430,6 +3530,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3182" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3185"/>
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -3597,6 +3701,10 @@
                         android:id="@+id/txt_C3186_1"
                         style="@style/TextView"
                         android:text="@string/txt_C3186_1" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3189"/>
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -3794,6 +3902,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3189" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text=" 8, 2 or 9 → C3191"/>
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -3883,6 +3995,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3191" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3194"/>
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -3925,6 +4041,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3192" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3194"/>
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -3965,6 +4085,10 @@
                         android:id="@+id/txt_C3193_u"
                         style="@style/TextView"
                         android:text="@string/txt_C3193_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3193_b, 8 or 9 → C3194"/>
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -4047,6 +4171,10 @@
                         android:id="@+id/txt_C3194"
                         style="@style/TextView"
                         android:text="@string/txt_C3194" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3198"/>
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -4390,6 +4518,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3200" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3203"/>
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -4577,6 +4709,10 @@
                         android:id="@+id/txt_C3203"
                         style="@style/TextView"
                         android:text="@string/txt_C3203" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3206"/>
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -4817,6 +4953,10 @@
                         android:id="@+id/txt_C3207"
                         style="@style/TextView"
                         android:text="@string/txt_C3207" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text=" 8, 2 or 9 → C3210"/>
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -5252,6 +5392,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3216" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text=" 8, 2 or 9 → C3219"/>
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -5431,6 +5575,10 @@
                         android:id="@+id/txt_C3219"
                         style="@style/TextView"
                         android:text="@string/txt_C3219" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text=" 8, 2 or 9 → C3225"/>
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -5722,6 +5870,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3224" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3226"/>
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -5870,6 +6022,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3227" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3251"/>
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -5916,6 +6072,10 @@
                         android:id="@+id/txt_C3227_1"
                         style="@style/TextView"
                         android:text="@string/txt_C3227_1" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9→ C3227_4"/>
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -6038,6 +6198,10 @@
                         android:id="@+id/txt_C3227_3"
                         style="@style/TextView"
                         android:text="@string/txt_C3227_3" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="9→ C3227_20"/>
 
 
                     <RadioGroup style="@style/RadioGroup">
@@ -6326,6 +6490,10 @@
                         android:text="@string/txt_C3227_8" />
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3227_10"/>
+
+                    <TextView
                         style="@style/TextView"
                         android:text="@string/A4206_4_h" />
 
@@ -6378,6 +6546,10 @@
                         android:id="@+id/txt_C3227_9"
                         style="@style/TextView"
                         android:text="@string/txt_C3227_9" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3227_11"/>
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -6941,6 +7113,9 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3227_20" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3228"/>
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -6990,6 +7165,10 @@
                         android:id="@+id/txt_C3227_21"
                         style="@style/TextView"
                         android:text="@string/txt_C3227_21" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3228"/>
 
 
                     <RadioGroup style="@style/RadioGroup"
