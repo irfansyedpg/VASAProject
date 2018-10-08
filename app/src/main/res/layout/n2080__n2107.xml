@@ -788,6 +788,10 @@
 
                             <TextView
                                 style="@style/TextView_Hint"
+                                android:text="2 → N2085,	 9 →" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
                                 android:text="@string/N2081_h" />
 
                             <RadioGroup
@@ -836,6 +840,14 @@
                                     android:id="@+id/txt_N2082"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2082" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="only 5-7 → N2085" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="N2088   ←    9" />
 
                                 <CheckBox
                                     android:id="@+id/cb_N2082_1"
@@ -911,6 +923,10 @@
                                     <TextView
                                         style="@style/TextView_Hint"
                                         android:text="@string/N2083_h" />
+
+                                    <TextView
+                                        style="@style/TextView_Hint"
+                                        android:text="N2088   ←    9" />
 
                                     <RadioGroup
                                         android:id="@+id/rg_N2083"
@@ -1074,6 +1090,10 @@
                                     style="@style/TextView_Hint"
                                     android:text="@string/N2085_h2" />
 
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="2 or 9 → Inst_1" />
+
                                 <RadioGroup
                                     android:id="@+id/rg_N2085"
                                     style="@style/RadioGroup">
@@ -1114,6 +1134,10 @@
                                     android:id="@+id/txt_N2086"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2086" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="N2088(وہ کبھی بھی حمل کی کسی بھی علامت یا نشانی کی وجہ سے صحت فراہم کنندہ کے پاس علاج کے لیے نہیں گئی   ←   N2082 = 5-7 یا   N2081 = 2, 9 اگر ہدایت1 :   " />
 
                                 <CheckBox
                                     android:id="@+id/cb_N2086_1"
@@ -2080,6 +2104,10 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2089" />
 
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="3 → N2093" />
+
                             <RadioGroup
                                 android:id="@+id/rg_N2089"
                                 style="@style/RadioGroup">
@@ -2142,6 +2170,10 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2090" />
 
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="2 or 9 → N2093" />
+
                                 <RadioGroup
                                     android:id="@+id/rg_N2090"
                                     style="@style/RadioGroup">
@@ -2186,6 +2218,11 @@
                                         android:id="@+id/txt_N2091"
                                         style="@style/TextView"
                                         android:text="@string/txt_N2091" />
+
+
+                                    <TextView
+                                        style="@style/TextView_Hint"
+                                        android:text="only 5-9 = N2093" />
 
                                     <TextView
                                         style="@style/TextView_Hint"
@@ -2458,6 +2495,19 @@
                                 android:id="@+id/ed_N2094"
                                 style="@style/EditText_varchar"
                                 android:hint="N2094" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="  N2107  (ڈیلیوری یا علامات کے لیے کسی بھی صحت فراہم کنندہ کو نہیں دکھایا  ← N2093 = 1-2, 14, 99 اور  N2090 = 2, 9 ھدایت۔ 2:  اگر" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="N2098  ( زچگی کی علامات اس صحت فراہم کنندہ کے پاس شروع ہوئیں جہاں وہ نارمل ڈیلیوری کے لیے گئی تھی   ←  N2089 = 3  ھدایت۔ 3:  اگر " />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="  N2097 ←     N2090 = 2 or 9    یا اگر ( علامات کے سلسلے میں کوئی علاج نہیں کیا)N2088 =ڈیلیوری یا زچگی کی ایک علامت  ھدایت۔ 4:  اگر " />
+
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
@@ -2486,6 +2536,10 @@
                                 <TextView
                                     style="@style/TextView_Hint"
                                     android:text="@string/txt_N2095_h" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="8, 2 or 9 → Q4018" />
 
                                 <RadioGroup
                                     android:id="@+id/rg_N2095"
@@ -2706,6 +2760,10 @@
                                         style="@style/TextView_Hint"
                                         android:text="@string/N2098_h" />
 
+                                    <TextView
+                                        style="@style/TextView_Hint"
+                                        android:text="1 or 2 → N2102" />
+
                                     <RadioGroup
                                         android:id="@+id/rg_N2098"
                                         style="@style/RadioGroup">
@@ -2810,6 +2868,10 @@
                                             android:id="@+id/txt_N2099"
                                             style="@style/TextView"
                                             android:text="@string/txt_N2099" />
+
+                                        <TextView
+                                            style="@style/TextView_Hint"
+                                            android:text="• 2 or 9 → N2101" />
 
                                         <RadioGroup
                                             android:id="@+id/rg_N2099"
@@ -2972,6 +3034,10 @@
                                         android:id="@+id/txt_N2102"
                                         style="@style/TextView"
                                         android:text="@string/txt_N2102" />
+
+                                    <TextView
+                                        style="@style/TextView_Hint"
+                                        android:text="2-9 → N2107" />
 
                                     <RadioGroup
                                         android:id="@+id/rg_N2102"
@@ -3265,6 +3331,10 @@
                                 android:id="@+id/txt_N2107_3"
                                 style="@style/TextView"
                                 android:text="@string/txt_N2107_3" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="N2271   ← N2016 = 1     ہدایت5:  اگر  (مردہ بچہ" />
 
                             <RadioGroup style="@style/RadioGroup">
 
