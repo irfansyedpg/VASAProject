@@ -568,6 +568,16 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
+                        android:id="@+id/txt_C3451"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3451" />
+
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/txt_C3451_h" />
+
+                    <TextView
                         android:id="@+id/txt_C3451_1"
                         style="@style/TextView"
                         android:text="@string/txt_C3451_1" />
@@ -697,6 +707,10 @@
                         android:id="@+id/txt_C3451_4"
                         style="@style/TextView"
                         android:text="@string/txt_C3451_4" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/txt_C3451_h" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -1107,9 +1121,18 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
+                        android:id="@+id/txt_C3452"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3452" />
+
+                    <TextView
                         android:id="@+id/txt_C3452_1"
                         style="@style/TextView"
                         android:text="@string/txt_C3452_1" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/txt_C3452_h" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -1475,9 +1498,18 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
+                        android:id="@+id/txt_C3453"
+                        style="@style/TextView"
+                        android:text="@string/txt_C3453" />
+
+                    <TextView
                         android:id="@+id/txt_C3453_1"
                         style="@style/TextView"
                         android:text="@string/txt_C3453_1" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/txt_C3453_h" />
 
 
                     <RadioGroup style="@style/RadioGroup"

@@ -38,8 +38,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/txt_study_id"
-                        android:clickable="false"
                         android:focusable="false"
+                        android:clickable="false"
                         android:inputType="date"
                         app:met_mask="####-###-##" />
 
@@ -149,7 +149,7 @@
                         android:id="@+id/btn_addd"
                         style="@style/Button_collder"
                         android:layout_margin="10dp"
-                        android:text="add" />
+                        android:text="@string/add" />
 
 
 
@@ -187,12 +187,12 @@
                         <RadioButton
                             android:id="@+id/rb_A4253_3"
                             style="@style/RadioButton"
-                            android:text="@string/ot_someone" />
+                            android:text="@string/rb_A4253_3" />
 
                         <EditText
                             android:id="@+id/ed_A4253_3"
                             style="@style/EditText_varchar"
-                            android:hint="Please Specify..."
+                            android:hint="@string/explain"
                             android:visibility="gone" />
 
                         <RadioButton
@@ -221,7 +221,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="8, 2 or 9 → Inst_3 \n Inst_3: If A4251 = 2 (No care given or sought) → A4351." />
+                        android:text="@string/A4254_h" />
 
 
                     <RadioGroup style="@style/RadioGroup">
@@ -258,11 +258,12 @@
                     <TextView
                         android:id="@+id/A4254_2"
                         style="@style/TextView"
-                        android:text="@string/A4254_2" />
+                        android:text="@string/A4254_h" />
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="8, 2 or 9 → Inst_3 \n Inst_3: If A4251 = 2 (No care given or sought) → A4351." />
+                        android:text="@string/A4254_h" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -318,12 +319,12 @@
                     <CheckBox
                         android:id="@+id/cb_A4255_4"
                         style="@style/CheckBox"
-                        android:text="Someone else had to Decide (Specify)" />
+                        android:text="@string/cb_A4255_4" />
 
                     <EditText
                         android:id="@+id/ed_A4255_4"
                         style="@style/EditText_varchar"
-                        android:hint="Please Specify..."
+                        android:hint="@string/explain"
                         android:visibility="gone" />
 
                     <CheckBox
@@ -369,12 +370,12 @@
                     <CheckBox
                         android:id="@+id/cb_A4255_13"
                         style="@style/CheckBox"
-                        android:text="@string/ot_other" />
+                        android:text="@string/ot" />
 
                     <EditText
                         android:id="@+id/ed_A4255_13"
                         style="@style/EditText_varchar"
-                        android:hint="Please Specify..."
+                        android:hint="@string/explain"
                         android:visibility="gone" />
 
                     <CheckBox
@@ -1171,11 +1172,6 @@
                             style="@style/TextView"
                             android:text="@string/A4268" />
 
-                        <EditText
-                            android:id="@+id/ed_A4268_hours"
-                            style="@style/EditText_number"
-                            android:hint="@string/hours" />
-
                         <TextView
                         style="@style/TextView_Hint"
                         android:text="(DK = 99) Hours" />
@@ -1187,6 +1183,11 @@
                         <TextView
                             style="@style/TextView_Hint"
                             android:text="If A4266 ≠ 1, 7 (Hospital) → A4270" />
+
+                        <EditText
+                            android:id="@+id/ed_A4268_hours"
+                            style="@style/EditText_number"
+                            android:hint="@string/hours" />
 
                         <EditText
                             android:id="@+id/ed_A4268_minutes"
@@ -1530,6 +1531,12 @@
                         android:text="@string/A4275_1" />
 
                     <TextView
+                        android:id="@+id/A4275_2"
+                        style="@style/TextView"
+                        android:text="@string/A4275_2" />
+
+
+                    <TextView
                         android:id="@+id/A4275_1_h"
                         style="@style/TextView_Hint"
                         android:text="If NO or Don't Know → A4279" />
@@ -1804,7 +1811,7 @@
                     <CheckBox
                         android:id="@+id/cb_A4278_7"
                         style="@style/CheckBox"
-                        android:text="Other" />
+                        android:text="@string/ot" />
 
                     <CheckBox
                         android:id="@+id/cb_A4278_DK"
@@ -1856,7 +1863,7 @@
                     <CheckBox
                         android:id="@+id/cb_A4279_6"
                         style="@style/CheckBox"
-                        android:text="Other" />
+                        android:text="@string/ot" />
 
                     <CheckBox
                         android:id="@+id/cb_A4279_7"
@@ -2051,7 +2058,8 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="Less than 1 = 00 \nDon't know = 99)" />
+                        android:text="@string/A4284_h" />
+
 
 
                     <EditText

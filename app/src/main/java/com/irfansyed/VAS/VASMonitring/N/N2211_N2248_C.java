@@ -49,6 +49,8 @@ public class N2211_N2248_C extends AppCompatActivity {
         bi.edStudyId.setEnabled(false);
 
         DBHelper db = new DBHelper(this);
+
+//        Inst_3
         String n2212 = db.getSpecificData(data.N.N2211_N2248_A_C.TABLE_NAME, bi.edStudyId.getText().toString(), N2211_N2248_A_C.sub_N2211_N2248_A_C.N2212);
         if (n2212 != null) {
             if (Integer.valueOf(n2212) == 2) {
@@ -56,7 +58,8 @@ public class N2211_N2248_C extends AppCompatActivity {
             }
         }
 
-        Collection<N2211_N2248_B> col_n2211 = db.getSec10BData(n2211A_ID);
+//        Inst_1
+        Collection<N2211_N2248_B> col_n2211 = db.getSec10BData(bi.edStudyId.getText().toString(), n2211A_ID);
         for (N2211_N2248_B col_data : col_n2211) {
             if (col_data.getN22132A().equals("1")) {
 

@@ -203,7 +203,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_N(final String study_id) {
 
-        final String ROOT_URL = "http://10.1.42.112/sm/Welcome/collect_N";
+        final String ROOT_URL = "http://10.199.11.75/sm/Welcome/collect_N";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -1083,7 +1083,13 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     if (c16.moveToFirst()) {
 
                         params.put(N2321_N2322.sub_N2321_N2322.N2321, c17.getString(c17.getColumnIndex("N2321")));
-                        params.put(N2321_N2322.sub_N2321_N2322.N2322, c17.getString(c17.getColumnIndex("N2322")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_1, c17.getString(c17.getColumnIndex("N2322_1")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_2, c17.getString(c17.getColumnIndex("N2322_2")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_3, c17.getString(c17.getColumnIndex("N2322_3")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_4, c17.getString(c17.getColumnIndex("N2322_4")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_5, c17.getString(c17.getColumnIndex("N2322_5")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_6, c17.getString(c17.getColumnIndex("N2322_6")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_DK, c17.getString(c17.getColumnIndex("N2322_DK")));
                     }
                 }
 
@@ -1340,7 +1346,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_C(final String study_id) {
 
-        final String ROOT_URL = "http://10.1.42.112/sm/Welcome/collect_C";
+        final String ROOT_URL = "http://10.199.11.75/sm/Welcome/collect_C";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -2467,7 +2473,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_A(final String study_id) {
 
-        final String ROOT_URL = "http://10.1.42.112/sm/Welcome/collect_A";
+        final String ROOT_URL = "http://10.199.11.75/sm/Welcome/collect_A";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 

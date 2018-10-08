@@ -13,6 +13,7 @@ import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.N2080N2107Binding;
 
+import Global.N.N2012_N2016.sub_N2012_N2016;
 import data.DBHelper;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -20,6 +21,7 @@ import utils.Gothrough;
 public class N2080_N2107 extends AppCompatActivity {
 
     N2080N2107Binding bi;
+    boolean flag_n2016 = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,14 +32,26 @@ public class N2080_N2107 extends AppCompatActivity {
 
         this.setTitle(getString(R.string.h_n_sec_4));
 
+        GetDataFromDB();
         SetContentUI();
 
     }
 
-    private void SetContentUI() {
+    private void GetDataFromDB() {
 
         bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
         bi.edStudyId.setEnabled(false);
+
+        DBHelper db = new DBHelper(this);
+
+        String n2016 = db.getSpecificData(data.N.N2012_N2016.TABLE_NAME, bi.edStudyId.getText().toString(), sub_N2012_N2016.N2016);
+        if (n2016.equals("1")) {
+            flag_n2016 = true;
+        }
+
+    }
+
+    private void SetContentUI() {
 
         bi.cbN208016.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -154,17 +168,17 @@ public class N2080_N2107 extends AppCompatActivity {
                     ClearAllcontrol.ClearAll(bi.llN2089N2106); //ll_N2089_N2106
                     bi.llN2089N2106.setVisibility(View.GONE);
 
-                    bi.llN2095.setVisibility(View.VISIBLE); //ll_N2095
-                    bi.llN2096.setVisibility(View.VISIBLE); //ll_N2096
-                } else {
-                    bi.llN2088N2088.setVisibility(View.VISIBLE);
-                    bi.llN2089N2106.setVisibility(View.VISIBLE);
-
                     ClearAllcontrol.ClearAll(bi.llN2095); //ll_N2095
                     bi.llN2095.setVisibility(View.GONE);
 
                     ClearAllcontrol.ClearAll(bi.llN2096); //ll_N2096
                     bi.llN2096.setVisibility(View.GONE);
+                } else {
+                    bi.llN2088N2088.setVisibility(View.VISIBLE);
+                    bi.llN2089N2106.setVisibility(View.VISIBLE);
+
+                    bi.llN2095.setVisibility(View.VISIBLE); //ll_N2095
+                    bi.llN2096.setVisibility(View.VISIBLE); //ll_N2096
                 }
             }
         });
@@ -176,7 +190,11 @@ public class N2080_N2107 extends AppCompatActivity {
                     ClearAllcontrol.ClearAll(bi.llN2090N2192); //ll_N2090_N2192
 
                     ClearAllcontrol.ClearAll(bi.llN2096N2097); //ll_N2096_N2097
+
                     ClearAllcontrol.ClearAll(bi.llN2095); //ll_N2095
+                    bi.llN2095.setVisibility(View.GONE);
+                } else {
+                    bi.llN2095.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -246,6 +264,7 @@ public class N2080_N2107 extends AppCompatActivity {
                 if (i != bi.rbN20951.getId()) {
                     ClearAllcontrol.ClearAll(bi.llN2096N4017A); //ll_N2096_N4017_A
                     ClearAllcontrol.ClearAll(bi.llN2096N4017B); //ll_N2096_N4017_B
+//                    ClearAllcontrol.ClearAll(bi.llN2096N4017C); //ll_N2096_N4017_C
                 }
             }
         });
@@ -285,7 +304,7 @@ public class N2080_N2107 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, bi.rbN21061.isChecked() ? N2271_N2284.class : N2110_N2189a.class)
+                startActivity(new Intent(this, flag_n2016 ? N2271_N2284.class : N2110_N2189a.class)
                         .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
@@ -894,7 +913,8 @@ public class N2080_N2107 extends AppCompatActivity {
             }
         }
 
-        if (bi.rbN20951.isChecked()) {
+//        if (bi.rbN20951.isChecked()) {
+
             //ll_N2107_1
             if (!Gothrough.IamHiden(bi.llN21071)) {
                 return false;
@@ -906,8 +926,11 @@ public class N2080_N2107 extends AppCompatActivity {
             }
 
             //ll_N2107_3
-            return Gothrough.IamHiden(bi.llN21073);
-        }
+            if (!Gothrough.IamHiden(bi.llN21073)) {
+                return false;
+            }
+
+//        }
 
         // Condition
         if (!bi.rbN20811.isChecked() || (bi.cbN20825.isChecked() || bi.cbN20826.isChecked() || bi.cbN2082OT.isChecked())) {

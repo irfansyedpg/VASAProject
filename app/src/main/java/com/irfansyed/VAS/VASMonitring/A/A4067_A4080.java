@@ -258,7 +258,6 @@ public class A4067_A4080 extends AppCompatActivity implements RadioButton.OnChec
 
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

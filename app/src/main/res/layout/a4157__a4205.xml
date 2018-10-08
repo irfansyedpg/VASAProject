@@ -906,8 +906,11 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="Yes (SHE WAS NOT PREGNANT; AND SHE DID NOT RECENTLY DELIVER, HAVE ABORTION, OR MISCARRY) or \n Refused to answer → A4206 \n
-                        No (SHE WAS PREGNANT OR SHE RECENTLY DELIVERED, HAD AN ABORTION, OR MISCARRIED or \n Don't know → A4163)" />
+                        android:text="1 or RA → A4206" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 or DK → A4163" />
 
 
                     <RadioGroup style="@style/RadioGroup">

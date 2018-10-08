@@ -181,6 +181,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3123_b" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3123_b_h" />
+
                     <EditText
                         android:id="@+id/ed_C3123_b"
                         style="@style/EditText_number" />
@@ -2610,7 +2614,7 @@
                                 android:layout_marginRight="30dp"
                                 android:layout_weight="30"
                                 android:background="@color/gray"
-                                android:text="Look for chest indrawing" />
+                                android:text="ہر آواز کے لیے عملی مظاہرہ کریں" />
 
                             <Button
                                 android:id="@+id/btn_stri"
@@ -2618,7 +2622,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="30"
                                 android:background="@color/gray"
-                                android:text="Stridor" />
+                                android:text="اسٹرائیڈر" />
 
                         </LinearLayout>
 
@@ -4860,6 +4864,10 @@
                         android:id="@+id/txt_C3208_u"
                         style="@style/TextView"
                         android:text="@string/txt_C3208_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3208_u_h" />
 
                     <RadioGroup style="@style/RadioGroup"
 
