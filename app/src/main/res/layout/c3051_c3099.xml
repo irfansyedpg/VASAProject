@@ -736,7 +736,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="Inst_2: If no labor/delivery complications: ((C3051≠1 and C3052=9,10) and (C3057≠1 or C3058≠2) and (C3059≠1 or C3060≠2) and C3061≠1 and C3062<12 and C3063≠1) → C3071." />
+                        android:text="@string/C3065_hint1" />
 
                     <TextView
                         android:id="@+id/txt_C3065"

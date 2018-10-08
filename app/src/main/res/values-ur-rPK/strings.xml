@@ -155,7 +155,7 @@
     <string  name="txt_Q1312"  translatable="false">	تاریخ کی جانچ پڑتال سپروائزر کی طرف سے	:	Q1312	</string>
     <string  name="txt_Q1313"  translatable="false">	کمپیوٹر میں درج کی گئی تاریخ	:	Q1313	</string>
     <string  name="txt_Q1405"  translatable="false">	کیا جواب دہندہ نے رضامندی یا اجازت  دی؟	:	Q1405	</string>
-    <string  name="txt_Q1401"  translatable="false">	جواب دہندہ کانام کا ہے ؟	:	Q1401	</string>
+    <string  name="txt_Q1401"  translatable="false">	جواب دہندہ کا نام کیا ہے ؟	:	Q1401	</string>
     <string  name="txt_Q1402"  translatable="false">	جواب دہندہ کی جنس ریکارڈ کریں	:	Q1402	</string>
     <string  name="txt_Q1403"  translatable="false">	وفات پانے والے سے جواب دہندہ کا رشتہ کیا ہے  ؟	:	Q1403	</string>
     <string  name="txt_Q1404"  translatable="false">	کیا جواب دہندہ ،  وفات پانے والے کے ساتھ  اس دوران موجود تھا  جب اسکا انتقال ہوا ؟ 	:	Q1404	</string>
@@ -6357,6 +6357,7 @@
     <string  name="ed_W213"  translatable="false">	عمر سالوں میں</string>
     <string name="public_sector">عوامی سیکٹر</string>
     <string name="private_sector">نجی صحت کے سیکٹر</string>
+    <string name="C3065_hint1"><![CDATA[Inst_2: If no labor/delivery complications: ((C3051≠1 and C3052=9,10) and (C3057≠1 or C3058≠2) and (C3059≠1 or C3060≠2) and C3061≠1 and C3062<12 and C3063≠1) → C3071.]]></string>
 
     <!-- Reproductive Urdu TEXT & RESPONSE ENDS -->
 
