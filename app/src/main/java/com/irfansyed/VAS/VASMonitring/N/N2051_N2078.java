@@ -105,10 +105,10 @@ public class N2051_N2078 extends AppCompatActivity {
             bi.llN2075N2078.setVisibility(View.GONE);
         }
 
-        if (!flag_q1102) {
+        /*if (!flag_q1102) {
             ClearAllcontrol.ClearAll(bi.llN2063N2065); //ll_N2063_N2065
             bi.llN2063N2065.setVisibility(View.GONE);
-        }
+        }*/
 
     }
 
@@ -317,7 +317,7 @@ public class N2051_N2078 extends AppCompatActivity {
             }
         }
 
-        if (flag_q1102) {
+        if (!flag_q1102) {
             //ll_N2063
             if (!Gothrough.IamHiden(bi.llN2063)) {
                 return false;

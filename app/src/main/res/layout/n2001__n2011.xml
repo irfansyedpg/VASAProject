@@ -291,6 +291,10 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2005u" />
 
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="8 or 9 → N2006, 2 → N2005w, 3 → N2005m" />
+
                                 <RadioGroup
                                     android:id="@+id/rg_N2005u"
                                     style="@style/RadioGroup">
@@ -633,6 +637,10 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2009_1" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="1 → N2010" />
+
                         <LinearLayout
                             style="@style/Q_Linerlayout_v"
                             android:gravity="center">
@@ -694,6 +702,10 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2009_2" />
 
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="1 → N2010" />
+
                             <LinearLayout
                                 style="@style/Q_Linerlayout_v"
                                 android:gravity="center">
@@ -754,6 +766,10 @@
                                     android:id="@+id/txt_N2009_3"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2009_3" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="1 → N2010" />
 
                                 <LinearLayout
                                     style="@style/Q_Linerlayout_v"
