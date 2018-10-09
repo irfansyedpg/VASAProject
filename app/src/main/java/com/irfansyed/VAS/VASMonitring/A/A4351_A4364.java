@@ -156,13 +156,21 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 
+        //A4351
         if (compoundButton.getId() == R.id.rb_A4351_1
                 || compoundButton.getId() == R.id.rb_A4351_2
                 || compoundButton.getId() == R.id.rb_A4351_DK
-                || compoundButton.getId() == R.id.rb_A4351_RA)
+                || compoundButton.getId() == R.id.rb_A4351_RA) {
 
-        {
-            if (rb_A4351_2.isChecked() || rb_A4351_DK.isChecked() || rb_A4351_RA.isChecked()) {
+            if (rb_A4351_1.isChecked()) {
+                ll_A4352.setVisibility(View.VISIBLE);
+                ll_A4353.setVisibility(View.VISIBLE);
+                ll_A4354.setVisibility(View.VISIBLE);
+                ll_A4355.setVisibility(View.VISIBLE);
+                ll_A4356.setVisibility(View.VISIBLE);
+                ll_A4357.setVisibility(View.VISIBLE);
+                ll_A4358.setVisibility(View.VISIBLE);
+            } else {
                 ClearAllcontrol.ClearAll(ll_A4352);
                 ClearAllcontrol.ClearAll(ll_A4353);
                 ClearAllcontrol.ClearAll(ll_A4354);
@@ -178,8 +186,14 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
                 ll_A4356.setVisibility(View.GONE);
                 ll_A4357.setVisibility(View.GONE);
                 ll_A4358.setVisibility(View.GONE);
-            } else {
-                ll_A4352.setVisibility(View.VISIBLE);
+            }
+        }
+
+        //A4352
+        if (compoundButton.getId() == R.id.rb_A4352_1
+                || compoundButton.getId() == R.id.rb_A4352_2) {
+
+            if (rb_A4351_1.isChecked()) {
                 ll_A4353.setVisibility(View.VISIBLE);
                 ll_A4354.setVisibility(View.VISIBLE);
                 ll_A4355.setVisibility(View.VISIBLE);
@@ -187,13 +201,7 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
                 ll_A4357.setVisibility(View.VISIBLE);
                 ll_A4358.setVisibility(View.VISIBLE);
             }
-        }
-
-        if (compoundButton.getId() == R.id.rb_A4352_1
-                || compoundButton.getId() == R.id.rb_A4352_2)
-
-        {
-            if (rb_A4351_2.isChecked()) {
+            else if (rb_A4351_2.isChecked()){
                 ClearAllcontrol.ClearAll(ll_A4353);
                 ClearAllcontrol.ClearAll(ll_A4354);
                 ClearAllcontrol.ClearAll(ll_A4355);
@@ -207,29 +215,22 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
                 ll_A4356.setVisibility(View.GONE);
                 ll_A4357.setVisibility(View.GONE);
                 ll_A4358.setVisibility(View.GONE);
-            } else {
-                ll_A4353.setVisibility(View.VISIBLE);
-                ll_A4354.setVisibility(View.VISIBLE);
-                ll_A4355.setVisibility(View.VISIBLE);
-                ll_A4356.setVisibility(View.VISIBLE);
-                ll_A4357.setVisibility(View.VISIBLE);
-                ll_A4358.setVisibility(View.VISIBLE);
             }
         }
 
+        //A4363
         if (compoundButton.getId() == R.id.rb_A4363_1
                 || compoundButton.getId() == R.id.rb_A4363_2
                 || compoundButton.getId() == R.id.rb_A4363_3
                 || compoundButton.getId() == R.id.rb_A4363_DK
-                || compoundButton.getId() == R.id.rb_A4363_RA)
+                || compoundButton.getId() == R.id.rb_A4363_RA) {
 
-        {
-            if (rb_A4363_2.isChecked() || rb_A4363_3.isChecked() || rb_A4363_DK.isChecked() || rb_A4363_RA.isChecked()) {
-
+            if (rb_A4363_1.isChecked()) {
+                ll_A4364.setVisibility(View.VISIBLE);
+            }
+            else {
                 ClearAllcontrol.ClearAll(ll_A4364);
                 ll_A4364.setVisibility(View.GONE);
-            } else {
-                ll_A4364.setVisibility(View.VISIBLE);
             }
         }
 
