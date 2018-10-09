@@ -317,9 +317,8 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_A4051_1
                 || compoundButton.getId() == R.id.rb_A4051_2
                 || compoundButton.getId() == R.id.rb_A4051_DK
-                || compoundButton.getId() == R.id.rb_A4051_RA)
+                || compoundButton.getId() == R.id.rb_A4051_RA) {
 
-        {
             if (rb_A4051_2.isChecked() || rb_A4051_DK.isChecked() || rb_A4051_RA.isChecked()) {
                 ClearAllcontrol.ClearAll(ll_A4052_u);
                 ClearAllcontrol.ClearAll(ll_A4052_b);
@@ -350,7 +349,7 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_A4052_u_1
                 || compoundButton.getId() == R.id.rb_A4052_u_2
                 || compoundButton.getId() == R.id.rb_A4052_u_DK
-                || compoundButton.getId() == R.id.rb_A4052_u_RA)
+                || compoundButton.getId() == R.id.rb_A4052_u_RA) {
 
             ClearAllcontrol.ClearAll(ll_A4052_b);
         ClearAllcontrol.ClearAll(ll_A4052_c);
@@ -358,7 +357,7 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         ll_A4052_b.setVisibility(View.GONE);
         ll_A4052_c.setVisibility(View.GONE);
 
-        {
+
             if (rb_A4052_u_1.isChecked()) {
                 ll_A4052_b.setVisibility(View.VISIBLE);
             } else if (rb_A4052_u_2.isChecked()) {
@@ -366,12 +365,12 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
         if (compoundButton.getId() == R.id.rb_A4058_1
                 || compoundButton.getId() == R.id.rb_A4058_2
                 || compoundButton.getId() == R.id.rb_A4058_DK
-                || compoundButton.getId() == R.id.rb_A4058_RA)
+                || compoundButton.getId() == R.id.rb_A4058_RA) {
 
-        {
             if (rb_A4058_2.isChecked() || rb_A4058_DK.isChecked() || rb_A4058_RA.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_A4059_u);
@@ -391,7 +390,7 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_A4059_u_1
                 || compoundButton.getId() == R.id.rb_A4059_u_2
                 || compoundButton.getId() == R.id.rb_A4059_u_DK
-                || compoundButton.getId() == R.id.rb_A4059_u_RA)
+                || compoundButton.getId() == R.id.rb_A4059_u_RA) {
 
             ClearAllcontrol.ClearAll(ll_A4059_a);
         ClearAllcontrol.ClearAll(ll_A4059_b);
@@ -399,7 +398,6 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         ll_A4059_a.setVisibility(View.GONE);
         ll_A4059_b.setVisibility(View.GONE);
 
-        {
             if (rb_A4059_u_1.isChecked()) {
                 ll_A4059_a.setVisibility(View.VISIBLE);
             } else if (rb_A4059_u_2.isChecked()) {
@@ -410,9 +408,8 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_A4060_1
                 || compoundButton.getId() == R.id.rb_A4060_2
                 || compoundButton.getId() == R.id.rb_A4060_DK
-                || compoundButton.getId() == R.id.rb_A4060_RA)
+                || compoundButton.getId() == R.id.rb_A4060_RA) {
 
-        {
             if (rb_A4060_2.isChecked() || rb_A4060_DK.isChecked() || rb_A4060_RA.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_A4061);
@@ -426,9 +423,8 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_A4062_1
                 || compoundButton.getId() == R.id.rb_A4062_2
                 || compoundButton.getId() == R.id.rb_A4062_DK
-                || compoundButton.getId() == R.id.rb_A4062_RA)
+                || compoundButton.getId() == R.id.rb_A4062_RA) {
 
-        {
             if (rb_A4062_2.isChecked() || rb_A4062_DK.isChecked() || rb_A4062_RA.isChecked()) {
                 ClearAllcontrol.ClearAll(ll_A4063);
                 ClearAllcontrol.ClearAll(ll_A4064_u);
@@ -457,7 +453,7 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_A4064_u_1
                 || compoundButton.getId() == R.id.rb_A4064_u_2
                 || compoundButton.getId() == R.id.rb_A4064_u_DK
-                || compoundButton.getId() == R.id.rb_A4064_u_RA)
+                || compoundButton.getId() == R.id.rb_A4064_u_RA){
 
             ClearAllcontrol.ClearAll(ll_A4064_a);
         ClearAllcontrol.ClearAll(ll_A4064_b);
@@ -465,7 +461,6 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         ll_A4064_a.setVisibility(View.GONE);
         ll_A4064_b.setVisibility(View.GONE);
 
-        {
             if (rb_A4064_u_1.isChecked()) {
                 ll_A4064_a.setVisibility(View.VISIBLE);
             } else if (rb_A4064_u_2.isChecked()) {

@@ -661,9 +661,9 @@
             <!-- EditText A4013d Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_A4013d"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -675,10 +675,6 @@
                         android:id="@+id/A4013d_h"
                         style="@style/TextView_Hint"
                         android:text="@string/days_h" />
-
-                    <TextView
-                        style="@style/TextView_Hint"
-                        android:text="Days → A4014" />
 
                     <EditText
                         android:id="@+id/ed_A4013d"
@@ -696,6 +692,7 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4013m"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -704,11 +701,6 @@
                         android:text="@string/months" />
 
                     <TextView
-                        style="@style/TextView_Hint"
-                        android:text="Days → A4014" />
-
-                    <TextView
-                        android:id="@+id/A4013m_h"
                         style="@style/TextView_Hint"
                         android:text="Record months if 1-11 months\nIf Don't Know enter 99" />
 
@@ -728,6 +720,7 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4013y"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -736,7 +729,6 @@
                         android:text="@string/years" />
 
                     <TextView
-                        android:id="@+id/A4013y_h"
                         style="@style/TextView_Hint"
                         android:text="Record years if 1 year or more\nIf Don't know Enter 99" />
 
