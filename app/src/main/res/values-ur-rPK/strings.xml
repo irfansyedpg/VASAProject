@@ -347,21 +347,21 @@
     <string  name="rb_Q1421_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_Q1501_1"  translatable="false">	 ہاں	</string>
     <string  name="rb_Q1501_2"  translatable="false">	نہیں	</string>
-    <string  name="cb_Q1503_1"  translatable="false">	شریک حیات	</string>
-    <string  name="cb_Q1503_2"  translatable="false">	ماں	</string>
-    <string  name="cb_Q1503_3"  translatable="false">	باپ	</string>
-    <string  name="cb_Q1503_4"  translatable="false">	نانی/دادی	</string>
-    <string  name="cb_Q1503_5"  translatable="false">	نانا / داد	</string>
-    <string  name="cb_Q1503_6"  translatable="false">	بیٹا	</string>
-    <string  name="cb_Q1503_7"  translatable="false">	بیٹی	</string>
-    <string  name="cb_Q1503_8"  translatable="false">	آنٹی	</string>
-    <string  name="cb_Q1503_9"  translatable="false">	 چاچا(انکل)	</string>
-    <string  name="cb_Q1503_10"  translatable="false">	بھائی	</string>
-    <string  name="cb_Q1503_11"  translatable="false">	بہن	</string>
-    <string  name="cb_Q1503_12"  translatable="false">	پیدائش کروانے میں مددگار(وضاحت کریں)	</string>
-    <string  name="cb_Q1503_OTM"  translatable="false">	کوئی اور مرد (وضاحت کریں)	</string>
-    <string  name="cb_Q1503_OTF"  translatable="false">	کوئی اور عورت(وضاحت کریں) 	</string>
-    <string  name="cb_Q1503_OT"  translatable="false">	کوئی اور عورت/مرد (وضاحت کریں) 	</string>
+    <string  name="rb_Q1503_1"  translatable="false">	شریک حیات	</string>
+    <string  name="rb_Q1503_2"  translatable="false">	ماں	</string>
+    <string  name="rb_Q1503_3"  translatable="false">	باپ	</string>
+    <string  name="rb_Q1503_4"  translatable="false">	نانی/دادی	</string>
+    <string  name="rb_Q1503_5"  translatable="false">	نانا / داد	</string>
+    <string  name="rb_Q1503_6"  translatable="false">	بیٹا	</string>
+    <string  name="rb_Q1503_7"  translatable="false">	بیٹی	</string>
+    <string  name="rb_Q1503_8"  translatable="false">	آنٹی	</string>
+    <string  name="rb_Q1503_9"  translatable="false">	 چاچا(انکل)	</string>
+    <string  name="rb_Q1503_10"  translatable="false">	بھائی	</string>
+    <string  name="rb_Q1503_11"  translatable="false">	بہن	</string>
+    <string  name="rb_Q1503_12"  translatable="false">	پیدائش کروانے میں مددگار(وضاحت کریں)	</string>
+    <string  name="rb_Q1503_OTM"  translatable="false">	کوئی اور مرد (وضاحت کریں)	</string>
+    <string  name="rb_Q1503_OTF"  translatable="false">	کوئی اور عورت(وضاحت کریں) 	</string>
+    <string  name="rb_Q1503_OT"  translatable="false">	کوئی اور عورت/مرد (وضاحت کریں) 	</string>
     <string  name="rb_Q1601_1"  translatable="false">	بچہ /لڑکا	</string>
     <string  name="rb_Q1601_2"  translatable="false">	بچی /لڑکی	</string>
     <string  name="rb_Q1601_DK"  translatable="false">	معلوم نہیں	</string>
@@ -2862,7 +2862,7 @@
     <string  name="cb_N2082_4"  translatable="false">	 تربیت یافتہ کمیونٹی مڈوائف  نرس (صحت کی سہولت کے بغیر)	</string>
     <string  name="cb_N2082_5"  translatable="false">	 روایتی دائی /گاؤں کا ڈاکٹر /ڈسپینسر /دیگر غیر تربیت یافتہ   اور  روایتی فراہم کنندہ	</string>
     <string  name="cb_N2082_6"  translatable="false">	دوست ،رشتہ دار ،ہمسایہ 	</string>
-    <string  name="rb_N2082_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string  name="cb_N2082_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
     <string  name="cb_N2082_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_N2083_1"  translatable="false">	ہاں	</string>
     <string  name="rb_N2083_2"  translatable="false">	نہیں	</string>
@@ -3059,7 +3059,7 @@
     <string  name="cb_N2100_4"  translatable="false">	رشتہ داروں سے مدد   لی	</string>
     <string  name="cb_N2100_5"  translatable="false">	 کمیونٹی فنڈ	</string>
     <string  name="cb_N2100_6"  translatable="false">	گورنمٹ اسکیم	</string>
-    <string  name="rb_N2100_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string  name="cb_N2100_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
     <string  name="cb_N2100_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="cb_N2101_1"  translatable="false">	پیدل	</string>
     <string  name="cb_N2101_2"  translatable="false">	سائیکل /جانور والی گاڑی/کشتی	</string>
@@ -3833,7 +3833,7 @@
     <string  name="cb_N2216_1"  translatable="false">	اسکاخیال نہیں تھا کہ   بچہ/بڑا اتنا بیمار نہیں تھاکہ اسکو صحت کی سہولت فراہم کی جائے	</string>
     <string  name="cb_N2216_2"  translatable="false">	 کوئی ساتھ لے جانے والا موجود نہیں تھا	</string>
     <string  name="cb_N2216_3"  translatable="false">	 دیکھ بھال کرنے والے کی بہت ذمہ داریاں	</string>
-    <string  name="rb_N2216_4"  translatable="false">	 کسی اور کو فیصلہ کرنا پڑا (وضاحت کریں)	</string>
+    <string  name="cb_N2216_4"  translatable="false">	 کسی اور کو فیصلہ کرنا پڑا (وضاحت کریں)	</string>
     <string  name="cb_N2216_5"  translatable="false">	 بہت دور سفر کرنا	</string>
     <string  name="cb_N2216_6"  translatable="false">	 کوئی  ٹرانسپورٹ یا سواری  دستیاب  نہیں	</string>
     <string  name="cb_N2216_7"  translatable="false">	لاگت یا  خرچہ  ( ٹرانسپوڑٹ،صحت کی دیکھ بھال ،دیگر	</string>
@@ -3842,7 +3842,7 @@
     <string  name="cb_N2216_10"  translatable="false">	سوچا  وہ    اتنی کمزور ہ تھی کہ سفر نہیں کرسکتی تھی	</string>
     <string  name="cb_N2216_11"  translatable="false">	سوچا کہ علاج کے باوجود ہی موت واقع ہوجائیگی	</string>
     <string  name="cb_N2216_12"  translatable="false">	رات کو دیر ہو چکی تھی  (ٹرانسپورٹ  یا   ہیلتھ  مہیا کرنے والا موجود نہیں تھا)  	</string>
-    <string  name="rb_N2216_OT"  translatable="false">	 دیگر وضاحت کریں	</string>
+    <string  name="cb_N2216_OT"  translatable="false">	 دیگر وضاحت کریں	</string>
     <string  name="cb_N2216_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2218_1_1"  translatable="false">Normal	</string>
     <string  name="rb_N2218_1_2"  translatable="false">Modern	</string>
@@ -3977,7 +3977,7 @@
     <string  name="N2009_2_h"  translatable="false">	  کلو سے کم) 2.5( وزن 	</string>
     <string  name="N2009_3_h"  translatable="false">	 کلو سے کم) 1 ( وزن	</string>
     <string  name="N2009_4_h"  translatable="false">	کلو سے زیادہ) 4.5  ( وزن	</string>
-    <string  name="N2010_h"  translatable="false">	وزن  کلو گرام میں بتا ئے ۔ اس صورت میں ڈیٹا انٹری کے لئے1          کلو گرام کو 1000 میں تبدیل کریں۔   اگر "معلوم نہیں "ہے تو  "            9999" لکھیں اور "انکار" کی صورت میں  تو  "            8888" لکھیں۔	</string>
+    <string  name="N2010_h"  translatable="false">	وزن  کلو گرام میں بتا ئے ۔ اس صورت میں ڈیٹا انٹری کے لئے1          کلو گرام کو 1000 میں تبدیل کریں۔   اگر "معلوم نہیں "ہے تو  "            9999" لکھیں اور "انکار" کی صورت میں  تو  "  8888" لکھیں۔	</string>
     <string  name="N2016_h"  translatable="false">	اگر "زندہ" اور سوال N2013-N2015   = " نہیں " یا اگر "مردہ"اور سوال N2013-N2014 یا  N2015="ہاں"  ، تو ڈسکس کریں اور صحیح جواب لکھیں۔	</string>
     <string  name="N2019u_h"  translatable="false">	اگر 23-0 گھنٹے ہوں تو  "گھنٹوں " پر لکھیں یا اگر 60-1 دن ہو تو  " دنوں "  پر لکھیں	</string>
     <string  name="N2019h_h"  translatable="false">	اگر ایک گھنٹہ سے کم=‘00’ گھنٹے لکھیں	</string>
