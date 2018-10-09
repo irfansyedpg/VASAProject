@@ -788,11 +788,12 @@
 
                             <TextView
                                 style="@style/TextView_Hint"
-                                android:text="2 → N2085,	 9 →" />
+                                android:text="@string/N2081_h" />
 
                             <TextView
                                 style="@style/TextView_Hint"
-                                android:text="@string/N2081_h" />
+                                android:text="2 → N2085,	 9 →" />
+
 
                             <RadioGroup
                                 android:id="@+id/rg_N2081"
@@ -840,6 +841,10 @@
                                     android:id="@+id/txt_N2082"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2082" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/N2082_h" />
 
                                 <TextView
                                     style="@style/TextView_Hint"
@@ -1134,6 +1139,10 @@
                                     android:id="@+id/txt_N2086"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2086" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/N2086_h" />
 
                                 <TextView
                                     style="@style/TextView_Hint"
@@ -1667,7 +1676,7 @@
                             <TextView
                                 android:id="@+id/txt_N2088_9"
                                 style="@style/TextView"
-                                android:text="@string/txt_N2088" />
+                                android:text="@string/txt_N2088_9" />
 
                             <RadioGroup style="@style/RadioGroup">
 
@@ -2106,6 +2115,10 @@
 
                             <TextView
                                 style="@style/TextView_Hint"
+                                android:text="@string/N2089_h" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
                                 android:text="3 → N2093" />
 
                             <RadioGroup
@@ -2172,6 +2185,10 @@
 
                                 <TextView
                                     style="@style/TextView_Hint"
+                                    android:text="@string/N2090_h" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
                                     android:text="2 or 9 → N2093" />
 
                                 <RadioGroup
@@ -2218,6 +2235,10 @@
                                         android:id="@+id/txt_N2091"
                                         style="@style/TextView"
                                         android:text="@string/txt_N2091" />
+
+                                    <TextView
+                                        style="@style/TextView_Hint"
+                                        android:text="@string/N2091_h" />
 
 
                                     <TextView
@@ -2496,6 +2517,16 @@
                                 style="@style/EditText_varchar"
                                 android:hint="N2094" />
 
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <!-- EditText N2094 Ends -->
+
+                    <!-- EditText N2094 - Hint Starts -->
+                    <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                        <LinearLayout style="@style/Q_Linerlayout_v">
+
                             <TextView
                                 style="@style/TextView_Hint"
                                 android:text="  N2107  (ڈیلیوری یا علامات کے لیے کسی بھی صحت فراہم کنندہ کو نہیں دکھایا  ← N2093 = 1-2, 14, 99 اور  N2090 = 2, 9 ھدایت۔ 2:  اگر" />
@@ -2511,7 +2542,7 @@
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
-                    <!-- EditText N2094 Ends -->
+                    <!-- EditText N2094 - Hint Ends -->
 
                     <!-- Radio Buttons N2095 Starts -->
                     <LinearLayout
@@ -2922,6 +2953,10 @@
                                                 style="@style/TextView"
                                                 android:text="@string/txt_N2100" />
 
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="@string/N2100_h" />
+
                                             <CheckBox
                                                 android:id="@+id/cb_N2100_1"
                                                 style="@style/CheckBox"
@@ -2955,7 +2990,7 @@
                                             <CheckBox
                                                 android:id="@+id/cb_N2100_7"
                                                 style="@style/CheckBox"
-                                                android:text="@string/other" />
+                                                android:text="@string/cb_N2100_OT" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2100_DK"
@@ -2978,6 +3013,10 @@
                                                 android:id="@+id/txt_N2101"
                                                 style="@style/TextView"
                                                 android:text="@string/txt_N2101" />
+
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="@string/N2101_h" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2101_1"
@@ -3038,6 +3077,10 @@
                                         android:id="@+id/txt_N2102"
                                         style="@style/TextView"
                                         android:text="@string/txt_N2102" />
+
+                                    <TextView
+                                        style="@style/TextView_Hint"
+                                        android:text="@string/N2102_h" />
 
                                     <TextView
                                         style="@style/TextView_Hint"
@@ -3246,6 +3289,11 @@
                         style="@style/Q_Linerlayout_v">
 
                         <TextView
+                            android:id="@+id/txt_N2107"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2107" />
+
+                        <TextView
                             android:id="@+id/txt_N2107_1"
                             style="@style/TextView"
                             android:text="@string/txt_N2107_1" />
@@ -3336,11 +3384,11 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2107_3" />
 
-                            <TextView
-                                style="@style/TextView_Hint"
-                                android:text="N2271   ← N2016 = 1     ہدایت5:  اگر  (مردہ بچہ" />
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="N2271   ← N2016 = 1     ہدایت5:  اگر  (مردہ بچہ" />
 
-                            <RadioGroup style="@style/RadioGroup">
+                        <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
                                 android:id="@+id/rb_N2107_3_1"

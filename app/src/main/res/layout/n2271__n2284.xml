@@ -328,6 +328,10 @@
 
                         <TextView
                             style="@style/TextView_Hint"
+                            android:text="@string/N2283_h" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
                             android:text="8,2, 3 or 9 → N2291" />
 
                         <RadioGroup

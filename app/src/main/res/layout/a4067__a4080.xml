@@ -148,6 +148,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4069_u_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="Enter 1 unit only: \n0-23 hours, \n1-30 days, \n1-60 months. \n1 week = 7 days." />
 
                     <TextView
@@ -390,6 +394,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4072_u_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="Enter 1 unit only: \n0-30 days \n1-60 months. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days." />
 
                     <TextView
@@ -439,6 +447,10 @@
                         android:text="@string/A4072_a" />
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4072_a_h" />
+
+                    <TextView
                         android:id="@+id/A4072_a_h"
                         style="@style/TextView_Hint"
                         android:text="Enter 0-30 days. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days. \nDon't know = 99." />
@@ -466,6 +478,10 @@
                         android:id="@+id/A4072_b"
                         style="@style/TextView"
                         android:text="@string/A4072_b" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4072_b_h" />
 
                     <TextView
                         android:id="@+id/A4072_b_h"
@@ -583,6 +599,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4075_u_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="9, 8 → A4076 " />
 
                     <RadioGroup style="@style/RadioGroup">
@@ -628,6 +648,10 @@
                         android:text="@string/A4075_a" />
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4075_a_h" />
+
+                    <TextView
                         android:id="@+id/A4075_a_h"
                         style="@style/TextView"
                         android:text="@string/A4075_a_h" />
@@ -660,6 +684,10 @@
                         android:id="@+id/A4075_b"
                         style="@style/TextView"
                         android:text="@string/A4075_b" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4075_b_h" />
 
                     <EditText
                         android:id="@+id/ed_A4075_b"
@@ -731,6 +759,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4077_u_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="9, 8 → A4078 " />
 
                     <RadioGroup style="@style/RadioGroup">
@@ -776,6 +808,10 @@
                         android:text="@string/A4077_a" />
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4077_a_h" />
+
+                    <TextView
                         android:id="@+id/A4077_a_h"
                         style="@style/TextView"
                         android:text="@string/A4077_a_h" />
@@ -803,6 +839,10 @@
                         android:id="@+id/A4077_b"
                         style="@style/TextView"
                         android:text="@string/A4077_b" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4077_b_h" />
 
                     <TextView
                         style="@style/TextView_Hint"

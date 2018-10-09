@@ -297,6 +297,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4363_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="No \n Don't know or \n Refused to answer \n No registration → A4401" />
 
                     <RadioGroup style="@style/RadioGroup">

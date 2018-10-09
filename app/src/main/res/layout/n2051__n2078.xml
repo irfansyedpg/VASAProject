@@ -420,7 +420,7 @@
                             <TextView
                                 android:id="@+id/txt_N2057_4"
                                 style="@style/TextView"
-                                android:text="@string/txt_N2057_4" />
+                                android:text="@string/txt_N2057_4"/>
 
                             <RadioGroup style="@style/RadioGroup">
 
@@ -723,6 +723,10 @@
 
                         <TextView
                             style="@style/TextView_Hint"
+                            android:text="@string/N2062_h" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
                             android:text="  N2066  ←   Q1102 = 2 or 3     ھدایت۔ 1 اگر" />
 
 
@@ -913,6 +917,10 @@
                             android:id="@+id/txt_N2067"
                             style="@style/TextView"
                             android:text="@string/txt_N2067" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2067_h" />
 
 
                         <EditText
@@ -1132,6 +1140,10 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2070" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2070_h" />
+
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
@@ -1173,6 +1185,10 @@
                             android:id="@+id/txt_N2071"
                             style="@style/TextView"
                             android:text="@string/txt_N2071" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2071_h" />
 
                         <TextView
                             style="@style/TextView_Hint"
@@ -1223,6 +1239,10 @@
                             android:id="@+id/txt_N2072"
                             style="@style/TextView"
                             android:text="@string/txt_N2072" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2072_h" />
 
 
                         <EditText
@@ -1463,6 +1483,10 @@
 
                             <TextView
                                 style="@style/TextView_Hint"
+                                android:text="@string/N2077_h" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
                                 android:text=" 2 or 9 → N2080" />
 
                             <RadioGroup
@@ -1505,6 +1529,10 @@
                                 android:id="@+id/txt_N2078"
                                 style="@style/TextView"
                                 android:text="@string/txt_N2078" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2078_h" />
 
                             <CheckBox
                                 android:id="@+id/cb_N2078_1"

@@ -347,21 +347,21 @@
     <string  name="rb_Q1421_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_Q1501_1"  translatable="false">	 ہاں	</string>
     <string  name="rb_Q1501_2"  translatable="false">	نہیں	</string>
-    <string  name="cb_Q1503_1"  translatable="false">	شریک حیات	</string>
-    <string  name="cb_Q1503_2"  translatable="false">	ماں	</string>
-    <string  name="cb_Q1503_3"  translatable="false">	باپ	</string>
-    <string  name="cb_Q1503_4"  translatable="false">	نانی/دادی	</string>
-    <string  name="cb_Q1503_5"  translatable="false">	نانا / داد	</string>
-    <string  name="cb_Q1503_6"  translatable="false">	بیٹا	</string>
-    <string  name="cb_Q1503_7"  translatable="false">	بیٹی	</string>
-    <string  name="cb_Q1503_8"  translatable="false">	آنٹی	</string>
-    <string  name="cb_Q1503_9"  translatable="false">	 چاچا(انکل)	</string>
-    <string  name="cb_Q1503_10"  translatable="false">	بھائی	</string>
-    <string  name="cb_Q1503_11"  translatable="false">	بہن	</string>
-    <string  name="cb_Q1503_12"  translatable="false">	پیدائش کروانے میں مددگار(وضاحت کریں)	</string>
-    <string  name="cb_Q1503_OTM"  translatable="false">	کوئی اور مرد (وضاحت کریں)	</string>
-    <string  name="cb_Q1503_OTF"  translatable="false">	کوئی اور عورت(وضاحت کریں) 	</string>
-    <string  name="cb_Q1503_OT"  translatable="false">	کوئی اور عورت/مرد (وضاحت کریں) 	</string>
+    <string  name="rb_Q1503_1"  translatable="false">	شریک حیات	</string>
+    <string  name="rb_Q1503_2"  translatable="false">	ماں	</string>
+    <string  name="rb_Q1503_3"  translatable="false">	باپ	</string>
+    <string  name="rb_Q1503_4"  translatable="false">	نانی/دادی	</string>
+    <string  name="rb_Q1503_5"  translatable="false">	نانا / داد	</string>
+    <string  name="rb_Q1503_6"  translatable="false">	بیٹا	</string>
+    <string  name="rb_Q1503_7"  translatable="false">	بیٹی	</string>
+    <string  name="rb_Q1503_8"  translatable="false">	آنٹی	</string>
+    <string  name="rb_Q1503_9"  translatable="false">	 چاچا(انکل)	</string>
+    <string  name="rb_Q1503_10"  translatable="false">	بھائی	</string>
+    <string  name="rb_Q1503_11"  translatable="false">	بہن	</string>
+    <string  name="rb_Q1503_12"  translatable="false">	پیدائش کروانے میں مددگار(وضاحت کریں)	</string>
+    <string  name="rb_Q1503_OTM"  translatable="false">	کوئی اور مرد (وضاحت کریں)	</string>
+    <string  name="rb_Q1503_OTF"  translatable="false">	کوئی اور عورت(وضاحت کریں) 	</string>
+    <string  name="rb_Q1503_OT"  translatable="false">	کوئی اور عورت/مرد (وضاحت کریں) 	</string>
     <string  name="rb_Q1601_1"  translatable="false">	بچہ /لڑکا	</string>
     <string  name="rb_Q1601_2"  translatable="false">	بچی /لڑکی	</string>
     <string  name="rb_Q1601_DK"  translatable="false">	معلوم نہیں	</string>
@@ -961,8 +961,8 @@
     <string  name="rb_A4068_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_A4068_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="rb_A4069_u_1"  translatable="false">	گھنٹے             	</string>
-    <string  name="rb_A4069_u_2"  translatable="false">	دن	</string>
-    <string  name="rb_A4069_u_3"  translatable="false">	مہینے	</string>
+    <string  name="rb_A4069_u_2"  translatable="false">	مہینے	</string>
+    <string  name="rb_A4069_u_3"  translatable="false">    سال  </string>
     <string  name="rb_A4069_u_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_A4069_u_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="rb_A4070_1"  translatable="false">	اوپر کے حصہ میں 	</string>
@@ -1600,9 +1600,12 @@
     <string  name="rb_A4253_2"  translatable="false">	مرنے والے کا شوہر، ساتھی	</string>
     <string  name="rb_A4253_3"  translatable="false">	کوئی اور (وضاحت کریں)	</string>
     <string  name="rb_A4253_DK"  translatable="false">	معلوم نہیں 	</string>
-    <string  name="rb_A4254_1"  translatable="false">	                                         ہاں 	</string>
-    <string  name="rb_A4254_2"  translatable="false">	                                                     نہیں 	</string>
-    <string  name="rb_A4254_DK"  translatable="false">	معلوم نہیں 	</string>
+    <string  name="rb_A4254_1_1"  translatable="false">         ہاں 	</string>
+    <string  name="rb_A4254_1_2"  translatable="false">	          نہیں 	</string>
+    <string  name="rb_A4254_1_DK"  translatable="false">	معلوم نہیں 	</string>
+    <string  name="rb_A4254_2_1"  translatable="false">	                                         ہاں 	</string>
+    <string  name="rb_A4254_2_2"  translatable="false">	                                                     نہیں 	</string>
+    <string  name="rb_A4254_2_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="cb_A4255_1"  translatable="false">	اسکاخیال نہیں تھا کہ   بچہ/بڑا اتنا بیمار نہیں تھاکہ اسکو صحت کی سہولت فراہم کی جائے 	</string>
     <string  name="cb_A4255_2"  translatable="false">	کوئی ساتھ لے جانے والا موجود نہیں تھا	</string>
     <string  name="cb_A4255_3"  translatable="false">	دیکھ بھال کرنے والے کی بہت ذمہ داریاں 	</string>
@@ -1975,11 +1978,11 @@
 
     <!-- Adult Urdu HINT's STARTS -->
 
-    <string  name="A4005_h"  translatable="false">	اگر  ایک سال سے کم مکمل ہے تو 00 لکھیں	</string>
+    <string  name="A4005_h"  translatable="false">	اگر ایک سال سے کم مکمل ہے تو 00 لکھیں	</string>
     <string  name="A4006_h"  translatable="false">	"ہاں" لکھیں  اگر جواب دہندہ کو معلوم ہے کہ (نام) کو دونوں لکھنا پڑھنا یا صرف لکھنا یا صرف پڑھنا آتا  تھا  ۔	</string>
-    <string  name="A4011_h"  translatable="false">	لکھیں   “88”  = جواب دینے سے انکار کیا   ;   “99”= معلوم  نہیں	</string>
-    <string  name="A4012_h"  translatable="false">	لکھیں   “88”  = جواب دینے سے انکار کیا   ;   “99”= معلوم  نہیں	</string>
-    <string  name="A4013d_h"  translatable="false">	اگر صرف 30 دن سے کم ہے تودن ریکارڈ کریں ۔            اور اگر 24 گھنٹے سے کم ہے تو 00 دن ریکارڈ کریں	</string>
+    <string  name="A4011_h"  translatable="false">	لکھیں   “88”  = جواب دینے سے انکار کیا ;   “99”= معلوم  نہیں	</string>
+    <string  name="A4012_h"  translatable="false">	لکھیں   “88”  = جواب دینے سے انکار کیا ;   “99”= معلوم  نہیں	</string>
+    <string  name="A4013d_h"  translatable="false">	اگر صرف 30 دن سے کم ہے تودن ریکارڈ کریں۔ اور اگر 24 گھنٹے سے کم ہے تو 00 دن ریکارڈ کریں	</string>
     <string  name="A4013m_h"  translatable="false">	 1-11اگر مہینے تو مہینے ریکارڈ کریں 	</string>
     <string  name="A4013y_h"  translatable="false">	اگر ایک سال یا اس سے زیادہ ہو تو سال ریکارڈ کریں	</string>
     <string  name="A4052_u_h"  translatable="false">	 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛ ایک ہفتہ = 7 لکھیں	</string>
@@ -2009,7 +2012,7 @@
     <string  name="A4087_u_h"  translatable="false">	               مہینے ۔ 1-60 دن یا       0-30اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
     <string  name="A4087_b_h"  translatable="false">	مہینے         1-60	</string>
     <string  name="A4093_h"  translatable="false">	24 گھنٹے سے کم ہو تو 00 دن    	</string>
-    <string  name="A4094_u_h"  translatable="false">	             مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛    ایک ہفتہ = 7 لکھیں	</string>
+    <string  name="A4094_u_h"  translatable="false">	             مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
     <string  name="A4094_a_h"  translatable="false">	منٹس لکھیں 0-59	</string>
     <string  name="A4094_b_h"  translatable="false">	گھنٹے لکھیں 1-23	</string>
     <string  name="A4094_c_h"  translatable="false">	دن لکھیں  یا   ایک ہفتہ = 7 دن لکھیں 0-30	</string>
@@ -2022,7 +2025,7 @@
     <string  name="A4101_u_h"  translatable="false">	               مہینے ۔ 1-60 دن یا       0-30 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
     <string  name="A4101_a_h"  translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
     <string  name="A4101_b_h"  translatable="false">	مہینے         1-60	</string>
-    <string  name="A4107_h"  translatable="false">	   ایک منٹ سے کم=  00   منٹس ؛                  ایک گھنٹہ =  60   منٹس  	</string>
+    <string  name="A4107_h"  translatable="false">	   ایک منٹ سے کم=  00   منٹس ؛ ایک گھنٹہ =  60   منٹس  	</string>
     <string  name="A4117_u_h"  translatable="false">	               مہینے ۔ 1-60 دن یا       0-30 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
     <string  name="A4117_a_h"  translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
     <string  name="A4117_b_h"  translatable="false">	مہینے         1-60	</string>
@@ -2038,29 +2041,28 @@
     <string  name="A4150_u_h"  translatable="false">	               مہینے ۔ 1-60 دن یا       0-30 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
     <string  name="A4150_a_h"  translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
     <string  name="A4150_b_h"  translatable="false">	مہینے         1-60	</string>
-    <string  name="A4162_h"  translatable="false">	اگر عورت کی عمر چالیس سال سے کم ہے تو یہ سوال نہ پوچھیں اور       " نہیں" پر نشان لگادیں	</string>
-    <string  name="A4163_1_h"  translatable="false">	اگر عورت کی عمر چالیس سال سے کم ہے تو یہ سوال نہ پوچھیں اور       " نہیں" پر نشان لگادیں	</string>
+    <string  name="A4162_h"  translatable="false">	اگر عورت کی عمر چالیس سال سے کم ہے تو یہ سوال نہ پوچھیں اور  "نہیں" پر نشان لگادیں	</string>
+    <string  name="A4163_1_h"  translatable="false">	اگر عورت کی عمر چالیس سال سے کم ہے تو یہ سوال نہ پوچھیں اور  " نہیں" پر نشان لگادیں	</string>
     <string  name="A4178_2_h"  translatable="false">	یہ سوال اس بات کو یقینی بنانا ہے کہ کو ئی میٹرنل  ڈیتھ رہ تو نہیں گئی 	</string>
-    <string  name="A4191_h"  translatable="false">	جواب دہندہ سے اس کی رائے معلوم کریں کہ وہ " بچہ کی غیر معمولی پوزیشن" کو کیا سمجھتی ہے ؛ اگر  اسکو واضع نہیں ہے یا غلط بتاتی ہے تو وضاحت کریں کہ اسکا مطلب ہے کہ اگر اندام نہانی سے   بچہ کا سر     پہلے باہر نہ  آ ئے۔	</string>
+    <string  name="A4191_h"  translatable="false">	جواب دہندہ سے اس کی رائے معلوم کریں کہ وہ " بچہ کی غیر معمولی پوزیشن" کو کیا سمجھتی ہے ؛ اگر  اسکو واضع نہیں ہے یا غلط بتاتی ہے تو وضاحت کریں کہ اسکا مطلب ہے کہ اگر اندام نہانی سے   بچہ کا سر پہلے باہر نہ  آ ئے۔	</string>
     <string  name="A4192_h"  translatable="false">	اگر 60منٹس سے کم = 0 گھنٹے 	</string>
-    <string  name="A4196_h"  translatable="false">	( اچانک اسقاط حمل یا جان بوجھ کر اسقاط کرانا)	</string>
-    <string  name="A4197_h"  translatable="false">	( اچانک اسقاط حمل یا جان بوجھ کر اسقاط کرانا)	</string>
+    <string  name="A4196_h"  translatable="false">	(اچانک اسقاط حمل یا جان بوجھ کر اسقاط کرانا)	</string>
+    <string  name="A4197_h"  translatable="false">	(اچانک اسقاط حمل یا جان بوجھ کر اسقاط کرانا)	</string>
     <string  name="A4205_h"  translatable="false">	(جیسے آٹھویں مہینے یا اس سے پہل)	</string>
-    <!--<string  name="A4206_4_h"  translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔ 	</string>-->
     <string  name="A4206_5_h"  translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔ 	</string>
     <string  name="A4206_6_h"  translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔ 	</string>
     <string  name="A4206_7_h"  translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
     <string  name="A4206_8_h"  translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
     <string  name="A4206_12_h"  translatable="false">	بارہ سال سے کم عمر کے بچوں کے لیے " خود کشی" نہ کہیں۔ 	</string>
     <string  name="A4206_18_h"  translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
-    <string  name="A4207_1_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں :      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
-    <string  name="A4207_2_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں :      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
-    <string  name="A4255_h"  translatable="false">	مزید پوچھیں : کچھ اور   ایک سے زیادہ جوابات کی اجازت ہے.	</string>
-    <string  name="A4256_h"  translatable="false">	پڑھیں :"پہلا " اگر ایک یا ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئے. نشان لگائیں  دنوں ،گھنٹوں ،اور منٹوں پر اگر ضرورت ہے مثال کے طور پر 00 دن،   '02  گھنٹے،     '10  منٹس	</string>
-    <string  name="A4276_h"  translatable="false">	مزید پوچھیں : کچھ اور   ایک سے زیادہ جوابات کی اجازت ہے.	</string>
-    <string  name="A4277_h"  translatable="false">	پڑھیں :" کسی بھی صحت فراہم کرنے والے پاس؟ ۔۔"اگر مرحوم ایک سے زیادہ صحت فراہم کرنے والے کے پاس گیا .	</string>
-    <string  name="A4278_h"  translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں ۔ اگر معلوم نہیں تو "9 "پر نشان لگائیں 	</string>
-    <string  name="A4279_h"  translatable="false">	مقامی   سہولت کے مطابق: جوابات     الگ الگ   ہونا   چاہئے اور ضرورت پڑنے پر مقامی  طور  پر  موجود   سہولت کے مطابق   اختیا ر کئے جایئں 	</string>
+    <string  name="A4207_1_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں:      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
+    <string  name="A4207_2_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں:      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
+    <string  name="A4255_h"  translatable="false">	مزید پوچھیں: کچھ اور ایک سے زیادہ جوابات کی اجازت ہے.	</string>
+    <string  name="A4256_h"  translatable="false">	پڑھیں :"پہلا " اگر ایک یا ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئے. نشان لگائیں  دنوں ،گھنٹوں ،اور منٹوں پر اگر ضرورت ہے مثال کے طور پر 00 دن، '02  گھنٹے، '10  منٹس	</string>
+    <string  name="A4276_h"  translatable="false">	مزید پوچھیں: کچھ اور ایک سے زیادہ جوابات کی اجازت ہے.	</string>
+    <string  name="A4277_h"  translatable="false">	پڑھیں :" کسی بھی صحت فراہم کرنے والے پاس؟ ۔۔"اگر مرحوم ایک سے زیادہ صحت فراہم کرنے والے کے پاس گیا.	</string>
+    <string  name="A4278_h"  translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں۔ اگر معلوم نہیں تو "9 "پر نشان لگائیں 	</string>
+    <string  name="A4279_h"  translatable="false">	مقامی   سہولت کے مطابق: جوابات     الگ الگ   ہونا   چاہئے اور ضرورت پڑنے پر مقامی  طور پر  موجود سہولت کے مطابق اختیا ر کئے جایئں 	</string>
     <string  name="A4310_1_h"  translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
     <string  name="A4310_2_h"  translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
     <string  name="A4310_3_h"  translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
@@ -2075,13 +2077,13 @@
     <string  name="A4313_h"  translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
     <string  name="A4363_h"  translatable="false">	اگر ہاں تو پوچھیں : کیا میں وہ رجسٹریشن کارڈ دیکھ سکتی /سکتا  ہوں؟	</string>
     <string  name="A4401_h"  translatable="false">	پڑھیں: " جہاں اب ہم ہیں " ۔۔۔ اگر ضرورت ہو تو واضح کریں کہ آپ کس گھر کے بارے میں بات کررہے ہیں.	</string>
-    <string  name="A4402_h"  translatable="false">	مزید پوچھیں: (نام) بیماری کے دوران رہتی تھی یا رہتا تھا   ؟ 	</string>
+    <string  name="A4402_h"  translatable="false">	مزید پوچھیں: (نام) بیماری کے دوران رہتی تھی یا رہتا تھا ؟ 	</string>
     <string  name="A4403_h"  translatable="false">	لیول  1اور  لیول 2  کا مطلب  ملک  میں سب سے بڑا  اور دوسرا  سب سے بڑا  جغرافیائی  ڈویژن ہے.	</string>
-    <string  name="A4404_h"  translatable="false">	رہتی تھی)/ (وہ اپنے رشتہ دار کے ساتھ رہتا تھا     A4402 = 2-5 اگر …… پڑھیں:    "  رشتہ دار"  	</string>
-    <string  name="A4405_h"  translatable="false">	ضرورت پڑنے پر گھنٹے یا اور منٹس پر نشان لگا ئیں۔ مثا ل کے طور پر ایک گھنٹہ،   تیس منٹس	</string>
-    <string  name="A4451_h"  translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
-    <string  name="A4452_h"  translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
-    <string  name="A4453_h"  translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string  name="A4404_h"  translatable="false">	رہتی تھی)/ (وہ اپنے رشتہ دار کے ساتھ رہتا تھا  A4402 = 2-5 اگر …… پڑھیں:  "رشتہ دار"  	</string>
+    <string  name="A4405_h"  translatable="false">	ضرورت پڑنے پر گھنٹے یا اور منٹس پر نشان لگا ئیں۔ مثا ل کے طور پر ایک گھنٹہ، تیس منٹس	</string>
+    <string  name="A4451_h"  translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں. 	</string>
+    <string  name="A4452_h"  translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں. 	</string>
+    <string  name="A4453_h"  translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں. 	</string>
     <string  name="A4473_h"  translatable="false">	انٹرویور: انٹرویو کو بارے میں اپنا تبصرہ اور مشاہدہ لکھیں	</string>
 
     <!-- Adult Urdu Hint's ENDS -->
@@ -2099,73 +2101,73 @@
     <string  name="txt_N2006"  translatable="false">	وفات پانے والے کی پیدائش کہاں ہوئی تھی؟	:	N2006	</string>
     <string  name="txt_N2008"  translatable="false">	بچہ کی پیدائش (مرکز صحت  پر) کس نے کروائی تھی؟	:	N2008	</string>
     <string  name="txt_N2009_1"  translatable="false">	کیا پیدائش  پر، بچہ نارمل سا ئز کا تھا ؟	:	N2009_1	</string>
-    <string  name="txt_N2009_2"  translatable="false">	 کیا پیدائش  پر،  بچہ معمول سے چھوٹا تھا ؟ ( وزن 2.5کلو سے کم) 	:	N2009_2	</string>
-    <string  name="txt_N2009_3"  translatable="false">	کیا پیدائش  پر،  بچہ معمول سے بہت زیادہ  چھوٹا تھا  ؟ ( وزن 1کلو سے کم) 	:	N2009_3	</string>
-    <string  name="txt_N2009_4"  translatable="false">	کیا پیدائش  پر،  بچہ معمول سے بڑا  تھا ؟ ( وزن 4.5کلو سے کم)	:	N2009_4	</string>
+    <string  name="txt_N2009_2"  translatable="false">	 کیا پیدائش  پر،  بچہ معمول سے چھوٹا تھا ؟ (وزن 2.5کلو سے کم) 	:	N2009_2	</string>
+    <string  name="txt_N2009_3"  translatable="false">	کیا پیدائش  پر،  بچہ معمول سے بہت زیادہ  چھوٹا تھا  ؟ (وزن 1کلو سے کم) 	:	N2009_3	</string>
+    <string  name="txt_N2009_4"  translatable="false">	کیا پیدائش  پر،  بچہ معمول سے بڑا  تھا ؟ (وزن 4.5کلو سے کم)	:	N2009_4	</string>
     <string  name="txt_N2010"  translatable="false">	وفات پانے والے /والی کا وزن پیدائش کے وقت کیا تھا؟ 	:	N2010	</string>
     <string  name="txt_N2011"  translatable="false">	پیدائش کے وقت کے وزن کی معلومات کا ذریعہ ریکارڈ کریں.	:	N2011	</string>
     <string  name="txt_N2012"  translatable="false">	کیا بچہ زندہ پیدا ہوا یا مردہ پیدا ہوا تھا؟	:	N2012	</string>
     <string  name="txt_N2013"  translatable="false">	کیا بچہ کبھی رویاتھا؟اگر تھوڑا سا بھی  رویا؟	:	N2013	</string>
     <string  name="txt_N2014"  translatable="false">	کیا بچہ نے کبھی حرکت کی تھی؟	:	N2014	</string>
-    <string  name="txt_N2015"  translatable="false">	کیا بچہ نے سانس لی تھی ؟	:	N2015	</string>
+    <string  name="txt_N2015"  translatable="false">	کیا بچہ نے سانس لی تھی؟	:	N2015	</string>
     <string  name="txt_N2016"  translatable="false">	سوال نمبر ( N2012-N2015    )      پر جائیں: اگر  "مردہ" اور رویا نہیں ، حرکت نہیں کی یا سانس نہیں لی تو " مردہ  بچہ"  پر نشان لگائیں. اگر "زندہ" اور سوال N2013-N2015   = " نہیں " یا اگر "مردہ"اور سوال N2013-N2014 یا  N2015="ہاں"  ، تو ڈسکس کریں اور صحیح جواب لکھیں۔	:	N2016	</string>
-    <string  name="txt_N2017"  translatable="false">	کیا بچہ پیدائش سے کچھ دن پہلے کوئی حرکت کررہا تھا ؟	:	N2017	</string>
+    <string  name="txt_N2017"  translatable="false">	کیا بچہ پیدائش سے کچھ دن پہلے کوئی حرکت کررہا تھا؟	:	N2017	</string>
     <string  name="txt_N2018"  translatable="false">	کیا بچہ نے دردہ زہ / لیبر شروع ہونے سے پہلے    رحم/ بچہ دانی میں حرکت کرنا بند کردی تھی؟	:	N2018	</string>
-    <string  name="txt_N2019u"  translatable="false">	دردہ زہ / لیبر شروع ہونے سے کتنی دیر پہلے (آپ نے / ماں نے) بچہ کی حرکت محسوس کی تھی ؟	:	N2019u	</string>
-    <string  name="txt_N2019h"  translatable="false">	دردہ زہ / لیبر شروع ہونے سے کتنے گھنٹے   پہلے (آپ نے / ماں نے) بچہ کی حرکت محسوس کی تھی ؟	:	N2019h	</string>
-    <string  name="txt_N2019d"  translatable="false">	دردہ زہ / لیبر شروع ہونے سے کتنے دن پہلے (آپ نے / ماں نے) بچہ کی حرکت محسوس کی تھی ؟	:	N2019d	</string>
+    <string  name="txt_N2019u"  translatable="false">	دردہ زہ / لیبر شروع ہونے سے کتنی دیر پہلے (آپ نے / ماں نے) بچہ کی حرکت محسوس کی تھی؟	:	N2019u	</string>
+    <string  name="txt_N2019h"  translatable="false">	دردہ زہ / لیبر شروع ہونے سے کتنے گھنٹے   پہلے (آپ نے / ماں نے) بچہ کی حرکت محسوس کی تھی؟	:	N2019h	</string>
+    <string  name="txt_N2019d"  translatable="false">	دردہ زہ / لیبر شروع ہونے سے کتنے دن پہلے (آپ نے / ماں نے) بچہ کی حرکت محسوس کی تھی؟	:	N2019d	</string>
     <string  name="txt_N2020"  translatable="false">	کیا پیدائش کے وقت بچے کے جسم پر  کوئی زخم /نشان موجود تھا؟	:	N2020	</string>
     <string  name="txt_N2021"  translatable="false">	کیا بچہ کا جسم نرم اور ملائم  یا  پلپلا تھا اور اس کے ساتھ جلد بھی  اتر رہی تھی؟	:	N2021	</string>
-    <string  name="txt_N2022"  translatable="false">	کیا زچگی کے وقت بچے کاجسم جسمانی طور پر غیر معمولی یا ابنارمل تھا (مثال کے طور پر جسم کا حصہ بہت بڑاہونا یا بہت چھوٹا ہونا یا جسم پر زائد نشوونما کا ہونا  )	:	N2022 	</string>
+    <string  name="txt_N2022"  translatable="false">	کیا زچگی کے وقت بچے کاجسم جسمانی طور پر غیر معمولی یا ابنارمل تھا (مثال کے طور پر جسم کا حصہ بہت بڑاہونا یا بہت چھوٹا ہونا یا جسم پر زائد نشوونما کا ہونا)	:	N2022 	</string>
     <string  name="txt_N2022_1"  translatable="false">	کیا پیدائش پر ،بچے کی  ریٹرھ یا  پشت پرغیر معمولی نشوونما یا  پھوڑا تھا؟	:	N2022_1	</string>
-    <string  name="txt_N2022_2"  translatable="false">	کیا پیدائش پر ،بچے کا سر بہت بڑا تھا ؟	:	N2022_2	</string>
-    <string  name="txt_N2022_3"  translatable="false">	کیا پیدائش پر ،بچے کا سر بہت چھوٹا تھا ؟	:	N2022_3	</string>
-    <string  name="txt_N2023"  translatable="false">	وفات پانے والے کا پہلا نام کیا تھا ؟	:	N2023	</string>
-    <string  name="txt_N2024"  translatable="false">	بچہ/بچی کی عمر کیاتھی جب بیماری شروع ہوئی  ؟	:	N2024	</string>
+    <string  name="txt_N2022_2"  translatable="false">	کیا پیدائش پر ،بچے کا سر بہت بڑا تھا؟	:	N2022_2	</string>
+    <string  name="txt_N2022_3"  translatable="false">	کیا پیدائش پر ،بچے کا سر بہت چھوٹا تھا؟	:	N2022_3	</string>
+    <string  name="txt_N2023"  translatable="false">	وفات پانے والے کا پہلا نام کیا تھا؟	:	N2023	</string>
+    <string  name="txt_N2024"  translatable="false">	بچہ/بچی کی عمر کیاتھی جب بیماری شروع ہوئی؟	:	N2024	</string>
     <string  name="txt_N2024_1"  translatable="false">	بیماری  شروع ہونے سے پہلے  جو موت کی وجہ بنی سے ،  کیا  بچی/بچہ کی نشوونما  نارمل طریقہ سے ہورہی تھی؟	:	N2024_1	</string>
-    <string  name="txt_N2025u"  translatable="false">	وفات پانے کے کتنے عرصے پہلے سے بچی/بچہ  بیمار تھا ؟	:	N2025u	</string>
+    <string  name="txt_N2025u"  translatable="false">	وفات پانے کے کتنے عرصے پہلے سے بچی/بچہ  بیمار تھا؟	:	N2025u	</string>
     <string  name="txt_N2025d"  translatable="false">	دن	:	N2025d	</string>
-    <string  name="txt_N2026"  translatable="false">یا اس کی وفات  اچانک ہوئی تھی ؟	:	N2026	</string>
-    <string  name="txt_N2026_h"  translatable="false">	" اچانک " کا مطلب ہے ،  بیماری شروع ہونے کے چوبیس گھنٹوں کے اندر اند ؟	:	N2026_h	</string>
+    <string  name="txt_N2026"  translatable="false">یا اس کی وفات اچانک ہوئی تھی؟	:	N2026	</string>
+    <string  name="txt_N2026_h"  translatable="false">	" اچانک " کا مطلب ہے ،  بیماری شروع ہونے کے چوبیس گھنٹوں کے اندر اندر؟	:	N2026_h	</string>
 
     <string  name="txt_N2051"  translatable="false">	  (  آپ/   بچہ کی ماں) کے یہاں اس بچہ کی   پیدائش سے پہلے   کتنے بچوں کی  پیدائش ہوئی ، مردہ بچوں کو شامل کرکے 	:	N2051 	</string>
     <string  name="txt_N2052"  translatable="false">	اس  حمل کے دوران، کیا  (آپ /ماں) نے دوران حمل کسی سے طبی معائنہ کروایاتھا؟	:	N2052	</string>
     <string  name="txt_N2053"  translatable="false">	    ۔(آپ /ماں)  نے کس سے معائنہ کروایا تھا؟	:	N2053	</string>
-    <string  name="txt_N2054"  translatable="false">	اس حمل کے دوران (آپ/ماں) نے کتنی بار اپنا  حمل کا معائنہ کروایاتھا؟	:	N2054	</string>
-    <string  name="txt_N2055"  translatable="false">	حمل کے کس مہینے میں (آپ /ماں) نے پہلی مرتبہ   اپنا معائنہ کروایا تھا ؟	:	N2055	</string>
+    <string  name="txt_N2054"  translatable="false">	اس حمل کے دوران (آپ/ماں) نے کتنی بار اپنا حمل کا معائنہ کروایاتھا؟	:	N2054	</string>
+    <string  name="txt_N2055"  translatable="false">	حمل کے کس مہینے میں (آپ /ماں) نے پہلی مرتبہ اپنا معائنہ کروایا تھا؟	:	N2055	</string>
     <string  name="txt_N2056"  translatable="false">	حمل کے کس مہینے میں (آپ /ماں ) نے آخری بار اپنا معائنہ کروایا تھا؟	:	N2056	</string>
     <string name="txt_N2057"  translatable="false">N2057:	اس  حمل کے دوران طبی معائنہ کے علاوہ،  کیا (آپ   /ماں ) کا مندرجہ ذیل میں سے کوئی عمل کم از کم ایک دفعہ ہوا  تھا	</string>
 
-    <string name="txt_N2057_1"  translatable="false">N2057_1: 1.	کیا  آپ کا    بلڈ پریشر  چیک کیا تھا؟</string>
+    <string name="txt_N2057_1"  translatable="false">N2057_1: 1.	کیا  آپ کا  بلڈ پریشر  چیک کیا تھا؟</string>
     <string name="txt_N2057_2"  translatable="false">N2057_2: 2.	کیا آپ نے ٹیسٹ کے لئے پیشاب کا نمونہ دیاتھا؟ </string>
     <string name="txt_N2057_3"  translatable="false">N2057_3: 3.	کیا آپ نے ٹیسٹ کے لئے خون کا نمونہ دیاتھا؟</string>
     <string name="txt_N2057_4"  translatable="false">N2057_4: 4.	جب آپ/وہ حمل سے نہیں تھی  تو کیا ہیلتھ  مہیا کرنے والے  نے (آپ/اس)  کو اعلیٰ تونائی والی غذائیں اور  اعلیٰ پروٹین والی غذائیں زیادہ  کھانے کےلئے  بتا یا تھا ؟ </string>
-    <string name="txt_N2057_5"  translatable="false">N2057_5: 5.	کیا ہیلتھ  مہیا کرنے والے  نے حمل کے دوران خطرناک علامات کے بارے میں بتایا تھا  ؟ </string>
-    <string name="txt_N2057_6"  translatable="false">N2057_6: 6.	کیا ہیلتھ  مہیا کرنے والے نے  (آپ/اسکو)  کو بتایا تھا  کہ کسی بھی خطرناک علامات کی صورت میں  آپ کو  کہاں جانا ہے </string>
-    <string  name="txt_N2058"  translatable="false">	براہ مہربانی مجھے دوران حمل یا  زچگی اور پیدائش کے وقت ہونے والی  ایسی خطرناک علامات کے بارے میں بتائیں  کہ جنکی  آپ کو فوری طور پر دیکھ بھال کرنا تھی ؟	:	N2058	</string>
-    <string  name="txt_N2059"  translatable="false">	اس حمل کے دوران، کیا   (آپ/ماں) کو بازو پر ٹیکہ لگایا تھا تاکہ پیدا ہونے والے بچہ کو تشنج کی بیماری سے بچایا  جائے   جس میں بچہ کو ییدائش  کے بعد  جھٹکے آتے ہیں ؟ 	:	N2059 	</string>
+    <string name="txt_N2057_5"  translatable="false">N2057_5: 5.	کیا ہیلتھ  مہیا کرنے والے  نے حمل کے دوران خطرناک علامات کے بارے میں بتایا تھا؟ </string>
+    <string name="txt_N2057_6"  translatable="false">N2057_6: 6.	کیا ہیلتھ  مہیا کرنے والے نے  (آپ/اسکو)  کو بتایا تھا  کہ کسی بھی خطرناک علامات کی صورت میں  آپ کو  کہاں جانا ہے. </string>
+    <string  name="txt_N2058"  translatable="false">	براہ مہربانی مجھے دوران حمل یا  زچگی اور پیدائش کے وقت ہونے والی  ایسی خطرناک علامات کے بارے میں بتائیں  کہ جنکی آپ کو فوری طور پر دیکھ بھال کرنا تھی؟	:	N2058	</string>
+    <string  name="txt_N2059"  translatable="false">	اس حمل کے دوران، کیا   (آپ/ماں) کو بازو پر ٹیکہ لگایا تھا تاکہ پیدا ہونے والے بچہ کو تشنج کی بیماری سے بچایا جائے  جس میں بچہ کو ییدائش  کے بعد جھٹکے آتے ہیں؟ 	:	N2059 	</string>
     <string  name="txt_N2060"  translatable="false">	اس  حمل کے دوران آپ نےکتنی بار تشنج سے بچاؤ کے ٹیکے لگوائےتھے؟	:	N2060 	</string>
-    <string  name="txt_N2061"  translatable="false">	اس حمل سے پہلے کسی بھی وقت ،کیا (آپ /ماں) نے  تشنج سے بچاؤ کا ٹیکہ لگوایا تھا   تاکہ اپنے آپ کو  اپنے یا   دوسرے  بچے کو   تشنج    کی بیماری سے  بچایا  جائے؟ 	:	N2061	</string>
-    <string  name="txt_N2062"  translatable="false">	اس   حمل سے پہلے (آپ/ماں) نے اور کتنی بار تشنج کا ٹیکہ لگوایا تھا؟	:	N2062	</string>
-    <string  name="txt_N2063"  translatable="false">اس حمل  کے دوران، کیا (آپ / ماں)دوا چھڑکی ہو ئی مچھر دانی میں سوئی تھی ؟	جراثیم کش یا  مچھر مار	:N2063	</string>
-    <string  name="txt_N2064"  translatable="false">	اس حمل  کے دوران  ، کیا (آپ / ماں( نے ملیریا سے بچا ئو کی  کوئی  دوائی لی تھی     (جیسے MOH کی طرف سے تجویز کردہ  دوائیں)؟	:	N2064	</string>
+    <string  name="txt_N2061"  translatable="false">	اس حمل سے پہلے کسی بھی وقت ،کیا (آپ /ماں) نے  تشنج سے بچاؤ کا ٹیکہ لگوایا تھا   تاکہ اپنے آپ کو اپنے یا دوسرے  بچے کو  تشنج  کی بیماری سے  بچایا  جائے؟ 	:	N2061	</string>
+    <string  name="txt_N2062"  translatable="false">	اس  حمل سے پہلے (آپ/ماں) نے اور کتنی بار تشنج کا ٹیکہ لگوایا تھا؟	:	N2062	</string>
+    <string  name="txt_N2063"  translatable="false">اس حمل  کے دوران، کیا (آپ / ماں)دوا چھڑکی ہو ئی مچھر دانی میں سوئی تھی؟	جراثیم کش یا  مچھر مار	:N2063	</string>
+    <string  name="txt_N2064"  translatable="false">	اس حمل  کے دوران  ، کیا (آپ / ماں( نے ملیریا سے بچا ئو کی  کوئی  دوائی لی تھی (جیسے MOH کی طرف سے تجویز کردہ  دوائیں)؟	:	N2064	</string>
     <string  name="txt_N2065"  translatable="false">	اس حمل کے دوران کتنی مرتبہ (آپ یا اس نے ) یہ  دوائی لی تھی؟	:	N2065	</string>
-    <string  name="txt_N2066"  translatable="false">	کیا بچہ ایک مہینے یا  اس سے پہلے  پیدا  ہوا  تھا؟	:	N2066	</string>
+    <string  name="txt_N2066"  translatable="false">	کیا بچہ ایک مہینے یا اس سے پہلے  پیدا  ہوا  تھا؟	:	N2066	</string>
     <string  name="txt_N2067"  translatable="false">	پیدائش سے قبل حمل  کا عرصہ کتنے  ماہ  تھا؟	:	N2067 	</string>
     <string  name="txt_N2068"  translatable="false">	دردہ زہ  اور  زچگی میں کتنے گھنٹے لگے تھے؟ 	:	N2068 	</string>
-    <string  name="txt_N2069_1"  translatable="false">	کیا زچگی نارمل ہوئی تھی ، کسی بھی اوزار یا ویکیوم کو استعمال کئے بغیر ؟	:	N2069_1 	</string>
+    <string  name="txt_N2069_1"  translatable="false">	کیا زچگی نارمل ہوئی تھی ، کسی بھی اوزار یا ویکیوم کو استعمال کئے بغیر؟	:	N2069_1 	</string>
     <string  name="txt_N2069_2"  translatable="false">	کیا زچگی کسی آوزار یا ویکیوم کے ذریعہ ہوئی تھی؟	:	N2069_2 	</string>
     <string  name="txt_N2069_3"  translatable="false">	کیا زچگی بڑے آپریشن سے ہوئی تھی؟	:	N2069_3 	</string>
     <string  name="txt_N2070"  translatable="false">	زچگی کے دوران  مگر ڈیلیوری سے پہلے، کیا   (آپ / ماں(  نے کسی قسم کا انجیکشن لگوایا تھا؟ 	:	N2070	</string>
-    <string  name="txt_N2071"  translatable="false">	پانی کی تھیلی  زچگی سے پہلے پھٹی تھی    یا    زچگی کے دوران  ؟	:	N2071	</string>
+    <string  name="txt_N2071"  translatable="false">	پانی کی تھیلی  زچگی سے پہلے پھٹی تھی یا زچگی کے دوران؟	:	N2071	</string>
     <string  name="txt_N2072"  translatable="false">	دردہ زہ  شروع ہونے سے کتنے گھنٹے پہلے  پانی کی تھیلی پھٹی تھی؟	:	N2072	</string>
-    <string  name="txt_N2073"  translatable="false">	کیا   بچہ کی  پیدائش   پا نی کی تھیلی  پھٹنے کے  24 گھنٹے  یا    اس سے زیادہ کے بعد ہوئی تھی ؟	:	N2073 	</string>
-    <string  name="txt_N2074"  translatable="false">	جب پانی کی تھیلی پھٹی تو  خارج ہونے والے پانی کا  رنگ   کیسا تھا ؟	:	N2074	</string>
-    <string  name="txt_N2075"  translatable="false">	کیا بچہ دانی سے خارج ہونے والا پانی  "بدبودار" تھا؟	:	N2075 	</string>
+    <string  name="txt_N2073"  translatable="false">	کیا   بچہ کی  پیدائش   پا نی کی تھیلی  پھٹنے کے  24 گھنٹے  یا اس سے زیادہ کے بعد ہوئی تھی؟	:	N2073 	</string>
+    <string  name="txt_N2074"  translatable="false">	جب پانی کی تھیلی پھٹی تو  خارج ہونے والے پانی کا رنگ  کیسا تھا؟	:	N2074	</string>
+    <string  name="txt_N2075"  translatable="false">	کیا بچہ دانی سے خارج ہونے والا پانی "بدبودار" تھا؟	:	N2075 	</string>
     <string  name="txt_N2076"  translatable="false">	جیسا کہ آپ نے مجھے شروع میں بتایا کہ بچہ   "جائے پیدائش نام ۔۔۔۔۔۔۔۔۔"  میں  پیدا ہو ا  تھا؟تو کس نے   فیصلہ کیا کہ یہ (ہیلتھ   پروائڈریا ہسپتال)  بچے کی پیدائش  کی  صحیح جگہ ہے ؟	:	N2076	</string>
     <string  name="txt_N2077"  translatable="false">	اگر اس کی زچگی نہیں ہو ئی  یا اس نے ہیلتھ مہیا کرنے والے  کے پاس یا مرکز صحت میں زچگی کروانے کی کوشش نہیں کی    (N2006=12 or N2006=1-2 and N2008≠1-3). تو  پوچھو : کیا (آپ / ماں ( کو  کوئی تشویش/مسئلہ تھا جس کی وجہ سے (آپ /اس) نے ہیلتھ مہیا کرنے والے یا  مرکز صحت پر زچگی کروانے سے روکا ۔	:	N2077	</string>
     <string  name="txt_N2078"  translatable="false">	وہ کیا خدشات یا مشکلات  تھیں جو  (آپ/وہ) رکھتی تھیں؟	:	N2078	</string>
-    <string name="txt_N2080"  translatable="false">N2080: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by any of the following symptoms that started before labor?"></string>
+    <string name="txt_N2080"  translatable="false">N2080: اب میں آپ سے کسی بھی علامات کے بارے میں پوچھوں گی جو ہوسکتا ہے (آپ/ماں) کو   حمل کے آخری حصہ میں پیش آ ئی ہو۔ کیا زچگی شروع ہونے سے پہلے حمل کے آخری تین مہینوں میں مندرجہ ذیل  کسی علامت  کی وجہ سے حمل میں پیچیدگی رونما ہوئی تھی؟</string>
     <string  name="txt_N2080_h"  translatable="false">	جواب دہندہ کو وضاحت کریں کہ لیبر(زچگی )  شروع ہوتی ہے جب درد زہ کی وجہ سے اینٹھن کی لہریں ہر  20 منٹ   یا اس سے کم وقت میں   اٹھتی ہیں۔--پڑھیں  "ماں " ، اگر جوابدہندہ ماں نہیں ہے
 اس کے بعد ہر علامت کو پڑہیں  اور ہر ایک کے لئے "ہاں" ،   "نہیں"،   "معلوم نہیں "  پر نشان لگا ئیں</string>
     <string name="txt_N2080_1"  translatable="false">N2080_1: 1.	جھٹکے</string>
@@ -2186,15 +2188,15 @@
     <string name="txt_N2080_16"  translatable="false">N2080_16: 16.	لیبر یا زچگی  شروع ہونے سے پہلے کوئی علامات  ظاہر نہیں ہوئی </string>
     <string  name="txt_N2081"  translatable="false">	کیا ( آپ /ماں )  نے  کسی بھی شخص یا صحت مرکز سے    حمل کی کسی بھی علامت یا نشانیوں کی دیکھ بھال کے بارے میں مشورہ کیا تھا  جو   زچگی شروع ہونے  سے پہلے رونما ہو ئی ہوں؟	:	N2081	</string>
     <string  name="txt_N2082"  translatable="false">	کہاں سے ( آپ /ماں )  نے یہ مدد حاصل کی  ؟	:	N2082	</string>
-    <string  name="txt_N2083"  translatable="false">	کیا زچگی کا عمل شروع ہونے سے پہلے کو ئی مخصوص علامت یا علامتیں رونما    ہو ئیں جس کے لئے   (آپ /ماں ) صحت مہیا کرنے والے(پہلے) کے پاس گئیں  تھی؟	:	N2083	</string>
+    <string  name="txt_N2083"  translatable="false">	 اگر زچگی  یا  دردہ زہ سے  شروع ہونے سے پہلے ایک سے زیادہ علامات   رونما     ہو ئیں اور اس نے صحت مہیا کرنے  والے سے علاج کےلئے مشورہ کیا تو پوچھو:   (Q4003 = 1-4), کیا زچگی کا عمل شروع ہونے سے پہلے کو ئی مخصوص علامت یا علامتیں رونما    ہو ئیں جس کے لئے   (آپ /ماں ) صحت مہیا کرنے والے(پہلے) کے پاس گئیں  تھی؟	:	N2083	</string>
     <string  name="txt_N2084"  translatable="false">	کن علامات کی بنیاد پر (آپ /ماں ) علاج کے لیے گئی تھیں؟	:	N2084	</string>
     <string  name="txt_N2085"  translatable="false">	کیا (آپ  / ماں ( کو   ہیلتھ مہیا کرنے والے یا  مرکز صحت  سے کوئی تشویش/مسئلہ تھا جس کی وجہ سے  زچگی  سے پہلے شروع    ہونے والے مسا ئل کے لئے (آپ /اس)   ہیلتھ مہیا کرنے والے   کے پاس یا  مرکز صحت   نہیں گئی تھیں  ؟	:	N2085	</string>
     <string  name="N2085_h" translatable="false">	اگر  وہ   حمل کی علامات کے حوالے سے کبھی بھی صحت مہیا کرنے والے کے پاس نہیں گئی.  (Q4002 = 2 or Q4003 = only 5-7)  تو     پوچھو : 	:	N2085	</string>
     <string  name="txt_N2085_h2"  translatable="false">	کیا    (آپ/ ماں(         کوڈلیوری یا زچگی   پہلے شروع  ہونے  والے   مسا ئل کے حوالے سے  صحت مہیا کرنے والے یا  مرکز صحت کے بارے میں جو تشویش/ مسئلہ تھے وہ حل ہوچکے تھے  ؟	:	N2085	</string>
     <string  name="N2085_h2" translatable="false">	اگر  وہ   حمل کی علامات کے حوالے سے صحت مہیا کرنے والے   کے پاس گئی  تھی تو پوچھو   : (Q4003 = 1-4) 	:	N2085	</string>
 
-    <string  name="txt_N2086"  translatable="false">	کیا    مشکلات یا مسائل  تھے    جو( آپ  / ماں (کو پیش آ   ئے تھے ؟	:	N2086	</string>
-    <string  name="txt_N2087"  translatable="false">	کیا آپ / ماں) زچگی سے پہلے شروع ہونے والی علامات (کوئی بھی) کے لئے ہسپتال میں داخل ہوگئے	:	N2087	</string>
+    <string  name="txt_N2086"  translatable="false">	کیا    مشکلات یا مسائل  تھے    جو( آپ  / ماں (کو پیش آئے تھے ؟	:	N2086	</string>
+    <string  name="txt_N2087"  translatable="false">	کیا (ّپ/ ماں) زچگی شروع ہونے سے پہلے کسی بھی علامات کی وجہ سے ہسپتال میں داخل ہوئی تھیں؟ 	:	N2087	</string>
 
     <string name="txt_N2088"  translatable="false">N2088: اب میں آپ سے کسی بھی علامات کے بارے میں پوچھوں گی جو ہوسکتا ہے (آپ/ماں) کو   دورانِ زچگی یا  بچہ کی ولادت کے وقت  پیش آ ئی ہوں. کیا بچہ  کو  دورانِ زچگی یا  بچہ کی ولادت کے وقت مندرجہ ذیل میں سے کو  ئی   علامت  رونما ہوئی تھی"></string>
     <string name="N2088_h"  translatable="false">N2088_h: جواب دہندہ ، پڑہیں:  اگر "ماں" نہیں ہے۔ جواب دہندہ کو یاد دلائیں کہ لیبر(زچگی )  شروع ہوتی ہے جب درد زہ کی وجہ سے اینٹھن کی لہریں ہر  20 منٹ   یا اس سے کم وقت میں   اٹھتی ہیں۔."></string>
@@ -2230,20 +2232,20 @@
     <string  name="txt_N2095_h"  translatable="false">	پڑھیں :   "پہلا صحت فراہم کنندہ "  اگر  وہ   ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئی تھی	:	N2095	</string>
 
     <string  name="txt_N2096"  translatable="false">	کس علامات کی وجہ سے (آپ /ماں)  صحت فراہم کنندہ کے پاس گئی تھیں؟	:	N2096	</string>
-    <string  name="txt_N2097"  translatable="false">	آپ نے لیبر یا زچگی کی علامات ظاہر  ہونے کے کتنی دیر بعد صحت  فراہم کرنے والے (پہلے) کے پاس جانے کا فیصلہ کیا ؟	:	N2097	</string>
+    <string  name="txt_N2097"  translatable="false">	آپ نے لیبر یا زچگی کی علامات ظاہر  ہونے کے کتنی دیر بعد صحت  فراہم کرنے والے (پہلے) کے پاس جانے کا فیصلہ کیا؟	:	N2097	</string>
     <string  name="txt_N2098"  translatable="false">	اگر  اس   کی زچگی ہیلتھ   پروائڈر کے پاس یا مرکز صحت میں ہو ئی  یا راستے میں جاتے ہو ئے   ہو ئی  .  (N2006=3-11 or N2006=1-2 ) تو (N2008=1-3),ا ور پڑھیں ، آپ نے پہلے کہا تھا کہ (آپ /ماں)  کی زچگی    پر ہو ئی تھی	:	N2098	</string>
     <string  name="txt_N2098_2" translatable="false">	اگر اس کی زچگی صحت فراہم کنندہ کے پاس یا مرکز صحت جاتے ہو ئے            راستہ میں  نہیں ہوئی ہو     )N2008≠1-3 اور   N2006=1-2     یا       N2006=12(     تو    پڑھو :    آخری  صحت فراہم کنندہ    یا    آخری صحت کی سہولت کونسی تھی جہاں    (آپ /ماں)    لیبر یا زچگی کی علامات کی دیکھ بھال کے لیے گئی تھیں.	:	N2098_2	</string>
     <string  name="txt_N2100"  translatable="false">	(آپ/ماں ) نے کہاں سے اس  سفر کے لیے  رقم کا انتظام کیا تھا؟	:	N2100	</string>
     <string  name="txt_N2099"  translatable="false">	کیا    اس صحت فراہم کرنے والے کے پاس سفر کرنے کے لئے (آپ /ماں)   کو کوئی رقم  ادا  کرنی  پڑی تھی؟   	:	N2099	</string>
     <string  name="txt_N2101"  translatable="false">	وہاں جانے کے لیے کونسا ذریعہ سفر استعمال کیا گیا تھا؟	:	N2101	</string>
-    <string  name="txt_N2102"  translatable="false">	کیا   (آپ /ماں)  بچہ کی پیدائش  ہونے سے پہلے  صحت  فراہم کنندہ کے پاس پہنچ گئی تھیں ؟	:	N2102	</string>
+    <string  name="txt_N2102"  translatable="false">	کیا   (آپ /ماں)  بچہ کی پیدائش  ہونے سے پہلے  صحت  فراہم کنندہ کے پاس پہنچ گئی تھیں؟	:	N2102	</string>
     <string  name="txt_N2103"  translatable="false">	(لیبر /زچگی کی علامات یا  بچہ کی پیدائش   ) کی دیکھ بھا ل کا فیصلہ کرنے کے بعد ،  (آپ /ماں)  کو آخری  صحت  فراہم کنندہ کے پاس پہنچنے میں کتنا وقت  لگا   / یا     آخری  صحت  فراہم کنندہ  (آپ /ماں)  تک  کتنی دیر میں پہنچا  / پہنچی۔	:	N2103	</string>
-    <string  name="txt_N2103_h"  translatable="false">	پڑھیں :    "صحت فراہم کنندہ کا  (آپ /ماں)  تک پہنچنا"  اگر  صحت فراہم کرنے والے نے   ماں کو گھر پر یا مرکز صحت کے باہر کسی اور جگہ دیکھا  	:	N2103	</string>
+    <string  name="txt_N2103_h"  translatable="false">	پڑھیں :    "صحت فراہم کنندہ کا  (آپ /ماں)  تک پہنچنا"  اگر  صحت فراہم کرنے والے نے   ماں کو گھر پر یا مرکز صحت کے باہر کسی اور جگہ دیکھا.  	:	N2103	</string>
 
     <string  name="txt_N2104"  translatable="false">	کیا (آپ/ماں) ہسپتال میں داخل ہوگئی تھی؟	:	N2104	</string>
     <string  name="txt_N2105"  translatable="false">	کیا آخری صحت فراہم کرنے والے نے (آپ /ماں) کو کسی اور صحت فراہم کرنے والے یا صحت کی سہولت پر بھیجا تھا؟	:	N2105	</string>
     <string  name="txt_N2106"  translatable="false">	کیا بچہ کی پیدائش آخری صحت  فراہم کنندہ کے ذریعے  ہوئی تھی؟	:	N2106	</string>
-    <string name="txt_N2107"  translatable="false">N2107: اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد مندرجہ ذیل میں سے کوئی علامات بچہ کی پیدائش کے بعد    6 ماہ کے اندر شروع ہوئی تھی></string>
+    <string name="txt_N2107"  translatable="false">N2107: اب میں آپ سے بچہ کی پیدائش کے بعد کی علامات کےبارے میں پوچھوں گی ۔کیا (آپ/ماں) کو زچگی کہ بعد مندرجہ ذیل میں سے کوئی علامات بچہ کی پیدائش کے بعد  6 ماہ کے اندر شروع ہوئی تھی></string>
 
     <string name="txt_N2107_1"  translatable="false">N2107_1: 1.جھٹکے</string>
     <string name="txt_N2107_2"  translatable="false">N2107_2: 2.	خون کا زیادہ خارج ہونا</string>
@@ -2255,19 +2257,19 @@
     <string  name="txt_N2114"  translatable="false">	کیا پیدائش کے وقت بچے کے جسم پر زخم /نشان موجود تھے؟	:	N2114	</string>
     <string  name="txt_N2115"  translatable="false">	کیا زچگی کے وقت بچے کے جسم کے کسی حصہ میں  جسمانی نقص تھا  (مثال کے طور پر جسم کا حصہ بہت بڑاہونا یا بہت چھوٹا ہونا یا جسم پر غیر اضافی نشوونما ہونا.	:	N2115	</string>
     <string  name="txt_N2116_1"  translatable="false">	کیا پیدائش پر ،بچے کی  ریٹرھ یا  پشت پرغیر معمولی نشوونما یا  پھوڑا تھا؟	:	N2116_1	</string>
-    <string  name="txt_N2116_2"  translatable="false">	کیا پیدائش پر ،بچے کا سر بہت بڑا تھا ؟	:	N2116_2	</string>
-    <string  name="txt_N2116_3"  translatable="false">	کیا پیدائش پر ،بچے کا سر بہت  چھوٹاتھا ؟	:	N2116_3	</string>
+    <string  name="txt_N2116_2"  translatable="false">	کیا پیدائش پر ،بچے کا سر بہت بڑا تھا؟	:	N2116_2	</string>
+    <string  name="txt_N2116_3"  translatable="false">	کیا پیدائش پر ،بچے کا سر بہت  چھوٹاتھا؟	:	N2116_3	</string>
     <string  name="txt_N2117"  translatable="false">	کیا پیدائش کے وقت بچہ نیلا تھا؟	:	N2117	</string>
     <string  name="txt_N2118"  translatable="false">	کیا بچہ نے پیدائش کے فوراً بعد سانس لی تھی ، تھوڑی سی بھی؟	:	N2118	</string>
     <string  name="txt_N2119"  translatable="false">	کیا بچہ کو سانس لینے میں دشوراری ہوئی تھی؟	:	N2119	</string>
     <string  name="txt_N2120"  translatable="false">	بچے کی پیدائش کے بعد سانس لینے میں مدد کرنے کے لیے کچھ بھی کیاگیا تھا؟	:	N2120	</string>
     <string  name="txt_N2121"  translatable="false">	کیا بچہ  پیدائش کے فوراً بعد رویا تھا یہاں تک کہ تھوڑا سابھی؟	:	N2121	</string>
-    <string  name="txt_N2122"  translatable="false">	پیدائش کے کتنے منٹ  بعد بچہ پہلی بار رویا تھا ؟	:	N2122	</string>
-    <string  name="txt_N2122_h"  translatable="false">	         تو  جوابدہندہ سے گفتگو کرکے اس کو طے کریں۔   N2013  ="ہاں"  اگر           تو یہ "مردہ بچہ" ہوسکتا ہے ۔ اسلئے "مردہ بچہ " کے تعین کے سیکشن میں اسکو صحیح کریں  N2013    ="نہیں"     اگر ؟	:	N2122_h	</string>
+    <string  name="txt_N2122"  translatable="false">	پیدائش کے کتنے منٹ  بعد بچہ پہلی بار رویا تھا؟	:	N2122	</string>
+    <string  name="txt_N2122_h"  translatable="false">	         تو  جوابدہندہ سے گفتگو کرکے اس کو طے کریں۔   N2013  ="ہاں"  اگر           تو یہ "مردہ بچہ" ہوسکتا ہے ۔ اسلئے "مردہ بچہ " کے تعین کے سیکشن میں اسکو صحیح کریں  N2013    ="نہیں"     اگر؟	:	N2122_h	</string>
     <string  name="txt_N2123"  translatable="false">	کیا بچہ روتے ہوئے چپ  ہوگیا  تھا؟	:	N2123	</string>
     <string  name="txt_N2124"  translatable="false">	بچہ مرنے سے کتنے عرصہ پہلے  روتے  ہوئے چپ ہوگیا تھا؟	:	N2124	</string>
     <string  name="txt_N2125"  translatable="false">	کیا بچہ کو پیدائش کے بعد انکیوبیٹرمیں رکھاگیا تھا؟	:	N2125	</string>
-    <string  name="txt_N2125_h"  translatable="false">	وقت سے پہلے پیدا ہونے والے  بچوں کے  لئےاگر   (N2066=1 or N2067 9 months) میں پیدا ہوئے  (N2006=3-10) صحت کی سہولت ؟	:	N2125_h	</string>
+    <string  name="txt_N2125_h"  translatable="false">	وقت سے پہلے پیدا ہونے والے  بچوں کے  لئےاگر   (N2066=1 or N2067 9 months) میں پیدا ہوئے  (N2006=3-10) صحت کی سہولت؟	:	N2125_h	</string>
 
     <string  name="txt_N2126"  translatable="false">	پیدائش کے بعد بچے کو براہ راست (اپنی /ماں)  کے سینے یا چھاتی(کی ننگی جلد ) سے لگایا تھا؟	:	N2126	</string>
     <string  name="txt_N2127"  translatable="false">	پیدائش کے بعد بچے کو براہ راست (اپنی /ماں)  کے سینے یا چھاتی(کی ننگی جلد ) سے لگایا تھا؟	:	N2127	</string>
@@ -2277,8 +2279,8 @@
     <string  name="txt_N2131"  translatable="false">	بچے کو پیدائش کے کتنے عرصے بعد پہلی مرتبہ نہلایا گیا تھا؟	:	N2131	</string>
     <string  name="txt_N2132"  translatable="false">	 کیا (آپ/مان) نے یا کسی اور عورت نے بچے کو اپنا دودھ پلایا تھا؟	:	N2132	</string>
     <string  name="txt_N2133"  translatable="false">	پیدائش کے کتنے دیر بعد پہلی دفعہ بچہ کو  اپنا دودھ پلایا  تھا؟	:	N2133	</string>
-    <string  name="txt_N2134"  translatable="false">	مہلک بیماری شروع ہونے سے ایک دن پہلے ،کیا    بچے کو ماں کا  دودھ پلایا جارہا تھا ؟	:	N2134	</string>
-    <string name="txt_N2135"  translatable="false">N2135: بیماری شروع ہونے سے ایک دن پہلے ،کیا    بچے کو   کچھ  دیا  تھا ؟ </string>
+    <string  name="txt_N2134"  translatable="false">	مہلک بیماری شروع ہونے سے ایک دن پہلے ،کیا    بچے کو ماں کا  دودھ پلایا جارہا تھا؟	:	N2134	</string>
+    <string name="txt_N2135"  translatable="false">N2135: بیماری شروع ہونے سے ایک دن پہلے ،کیا    بچے کو   کچھ  دیا  تھا؟ </string>
     <string name="N2135_h"  translatable="false">N2135_h: تمام جوابات پڑھیں: " ہاں "   "نہیں " یا   " معلوم نہیں"  ریکارڈ کریں. </string>
 
     <string name="txt_N2135_1"  translatable="false">N2135_1: 1.	دودھ (ماں کے دودھ کے علاوہ )  </string>
@@ -2293,18 +2295,18 @@
     <string name="txt_N2135_10"  translatable="false">N2135_10: 10.	نیم ٹھوس غذا یا نرم غذا جیسے دہی ،دالیں یا کچھی سبزیاں کوئی اور مائع یا نیم ٹھوس ،غذا یا نرم غذا </string>
     <string name="txt_N2135_11"  translatable="false">N2135_11: (دیگر وضاحت کریں اگر دوسرے مائع نیم ٹھوس غذا ،نرم غذا) </string>
     <string name="txt_N2135_12"  translatable="false">N2135_12: (وضاحت کریں اگر دوسرے مائع نیم ٹھوس غذا ،نرم غذا) </string>
-    <string  name="txt_N2136"  translatable="false">	کیا بچہ پیدائش کے پہلے دن   عام طریقہ سے  چوسنے  یا بوتل سے دودھ پینے کے قابل تھا ؟	:	N2136	</string>
-    <string  name="txt_N2137"  translatable="false">	کیا بچہ نے کبھی عام طریقہ سے   دودھ  پیا  تھا ؟	:	N2137	</string>
-    <string  name="txt_N2138"  translatable="false">	کیا بچہ نے عام طریقہ سے چوسنا  یا   دودھ  پینا     چھوڑ دیا تھا  ؟	:	N2138	</string>
+    <string  name="txt_N2136"  translatable="false">	کیا بچہ پیدائش کے پہلے دن   عام طریقہ سے  چوسنے  یا بوتل سے دودھ پینے کے قابل تھا؟	:	N2136	</string>
+    <string  name="txt_N2137"  translatable="false">	کیا بچہ نے کبھی عام طریقہ سے   دودھ  پیا  تھا؟	:	N2137	</string>
+    <string  name="txt_N2138"  translatable="false">	کیا بچہ نے عام طریقہ سے چوسنا  یا   دودھ  پینا     چھوڑ دیا تھا؟	:	N2138	</string>
     <string  name="txt_N2139"  translatable="false">	پیدائش کے کتنے دن کے بعد بچہ نے دودھ پینا/چوسنا بند کردیا تھا؟	:	N2139	</string>
     <string  name="txt_N2140"  translatable="false">	کیا بچہ منہ اس وقت کھولنے کے قبل تھا جب اس نے  دودھ پینا/چوسنا چھوڑدیا تھا؟	:	N2140	</string>
     <string  name="txt_N2141"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی،      کیا بچہ کو جھٹکے یا تشنج کا دورہ پڑا تھا؟	:	N2141	</string>
     <string  name="txt_N2142"  translatable="false">	کیا ا بچہ کو پیدائش کے پہلے 24 گھنٹے میں جھٹکے لگے تھے؟	:	N2142	</string>
     <string  name="txt_N2143"  translatable="false">	کیا بچہ کو پیدائش کے  24 گھنٹے سے زیادہ  کے بعد جھٹکے آئے /لگے تھے؟	:	N2143	</string>
-    <string  name="txt_N2144"  translatable="false">	کیا بچہ کا جسم سخت ہوگیا تھا اور سر کمان کی طرح  پیچھے کی طرف  مڑگیا تھا ؟	:	N2144	</string>
+    <string  name="txt_N2144"  translatable="false">	کیا بچہ کا جسم سخت ہوگیا تھا اور سر کمان کی طرح  پیچھے کی طرف  مڑگیا تھا؟	:	N2144	</string>
     <string  name="txt_N2145"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی،      کیا بچہ  بے حس  یا بےہوش  ہوا تھا؟	:	N2145	</string>
     <string  name="txt_N2146"  translatable="false">	پیدائش کے فوراً بعد 24 گھنٹوں کے اندر  کیا بچہ بے حس  یا بےہوش  ہوا تھا؟	:	N2146	</string>
-    <string  name="txt_N2147"  translatable="false">	پیدائش کے بعد کیا بچہ  24 گھنٹوں سے زیادہ  بے حس  یا بےہوش   رہا تھا ؟	:	N2147	</string>
+    <string  name="txt_N2147"  translatable="false">	پیدائش کے بعد کیا بچہ  24 گھنٹوں سے زیادہ  بے حس  یا بےہوش   رہا تھا؟	:	N2147	</string>
     <string  name="txt_N2148"  translatable="false">	کیا (بچہ/بچی) وفات پانے سے پہلے 24 گھنٹوں سے زیادہ بے ہوش رہاتھا؟	:	N2148	</string>
     <string  name="txt_N2149"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی،       کیا بچہ  کچھ عرصہ نارمل  یا صحیح رہنے کے بعد سست ہوگیا تھا؟	:	N2149	</string>
     <string  name="txt_N2150"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی،   کیا بچہ کی     ناڑو  والی جگہ سے گندا مواد (پیپ)خارج ہو رہا تھا؟	:	N2150	</string>
@@ -2315,9 +2317,9 @@
     <string  name="txt_N2155"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،    کیا بچہ کو بخار تھا؟	:	N2155	</string>
     <string  name="txt_N2156"  translatable="false">	کتنی عمر میں بخار شروع ہوا؟	:	N2156	</string>
     <string  name="txt_N2157"  translatable="false">	بخار کتنے دنوں تک رہا تھا؟	:	N2157	</string>
-    <string  name="txt_N2158"  translatable="false">	کیا بخار  انتقال تک موجود تھا ؟	:	N2158	</string>
+    <string  name="txt_N2158"  translatable="false">	کیا بخار  انتقال تک موجود تھا؟	:	N2158	</string>
     <string  name="txt_N2159"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،    کیا بچہ چھونے پر ٹھنڈا محسوس ہوتا تھا؟	:	N2159	</string>
-    <string  name="txt_N2160"  translatable="false">	بچہ کی عمر  کتنی  تھی جب وہ چھونے پر ٹھنڈا محسوس ہوتا تھا  /تھی ؟ 	:	N2160	</string>
+    <string  name="txt_N2160"  translatable="false">	بچہ کی عمر  کتنی  تھی جب وہ چھونے پر ٹھنڈا محسوس ہوتا تھا/تھی؟ 	:	N2160	</string>
     <string  name="txt_N2161"  translatable="false">	کتنے دن بچہ/بچی چھونے پر ٹھنڈا محسوس ہوا تھا؟	:	N2161	</string>
     <string  name="txt_N2162"  translatable="false">	کیا بچہ کو کھانسی تھی؟	:	N2162	</string>
     <string  name="txt_N2163"  translatable="false">	کیا (بچی/بچہ) کو مسلسل کھانستے ہوئے  آخر میں ایک مخصوص آواز   آتی تھی؟	:	N2163	</string>
@@ -2335,8 +2337,8 @@
     <string  name="txt_N2174"  translatable="false">	خرخراہٹ/ہوا کے ساتھ سانس کی آواز	:	N2174	</string>
     <string  name="txt_N2175"  translatable="false">	گھر گھرانا	:	N2175	</string>
     <string  name="txt_N2176"  translatable="false">	سیٹی کی سی آواز	:	N2176	</string>
-    <string  name="txt_N2177a"  translatable="false">	کیا بچہ کا  تالو  ابھر ا ہوا  یا پھولا ہوا تھا  اس بیماری کے دوران  جو  بچہ کی وفات کا سبب بننی ؟	:	N2177a 	</string>
-    <string  name="txt_N2177"  translatable="false">	کیا بچہ کا  تالو  اندر کی طرف دھنسا  ہوا تھا ، اس  بیماری کے دوران  جو وفات کی وجہ بنی    ؟	:	N2177	</string>
+    <string  name="txt_N2177a"  translatable="false">	کیا بچہ کا  تالو  ابھر ا ہوا  یا پھولا ہوا تھا  اس بیماری کے دوران  جو  بچہ کی وفات کا سبب بننی؟	:	N2177a 	</string>
+    <string  name="txt_N2177"  translatable="false">	کیا بچہ کا  تالو  اندر کی طرف دھنسا  ہوا تھا ، اس  بیماری کے دوران  جو وفات کی وجہ بنی؟	:	N2177	</string>
     <string  name="txt_N2178"  translatable="false">	اس  بیماری کے دوران  جو وفات کی وجہ بنی    ، کیا اسکے/اسکی   جلد، ہتھیلیاں  یا پیر کےتلوے  پیلے تھے؟	:	N2178	</string>
     <string  name="txt_N2179"  translatable="false">	اس  بیماری کے دوران  جو وفات کی وجہ بنی    ، کیا بچہ کی آنکھوں کا رنگ پیلاتھا؟	:	N2179	</string>
     <string  name="txt_N2180"  translatable="false">	اس  بیماری کے دوران  جو وفات کی وجہ بنی ، کیا بچہ کی جلد پر کوئی سرخ دھبے جیسے نشان تھے	:	N2180	</string>
@@ -2344,35 +2346,35 @@
     <string  name="txt_N2182"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،    کیا بچہ کی جلد کا کوئی حصہ سیا ہ ہونے لگا تھا؟	:	N2182	</string>
     <string  name="txt_N2183"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،   کیا بچہ کو کہیں سے خون  بہا تھا؟	:	N2183	</string>
     <string  name="txt_N2184"  translatable="false">	ریکارڈ کریں بچہ کا خون کہاں  سے بہا تھا؟	:	N2184	</string>
-    <string  name="txt_N2185"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،   کیا بچہ نے معمول سے زیادہ پتلے یا پانی جیسے پاخانہ  کیے  تھے ؟	:	N2185	</string>
-    <string  name="txt_N2186"  translatable="false">	اس دن بچہ کو  کتنی بار پا خانے ہو ئے جس دن اس نے معمول سے  زیادہ پتلے یا پانی جیسے پاخانہ  کئے  تھے ؟	:	N2186	</string>
+    <string  name="txt_N2185"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،   کیا بچہ نے معمول سے زیادہ پتلے یا پانی جیسے پاخانہ  کیے  تھے؟	:	N2185	</string>
+    <string  name="txt_N2186"  translatable="false">	اس دن بچہ کو  کتنی بار پا خانے ہو ئے جس دن اس نے معمول سے  زیادہ پتلے یا پانی جیسے پاخانہ  کئے  تھے؟	:	N2186	</string>
     <string  name="txt_N2187"  translatable="false">	وفات سے کتنے دن پہلے پتلے یا  پانی جیسے پاخانے  شروع ہو ئے تھے؟	:	N2187	</string>
     <string  name="txt_N2188"  translatable="false">	مہلک بیماری کے دوران کسی بھی وقت کیا بچہ کے پاخانے میں خون آیا تھا؟	:	N2188	</string>
     <string  name="txt_N2189"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،     کیا بچہ نے سب کچھ الٹی کردی تھی؟	:	N2189	</string>
     <string  name="txt_N2189a"  translatable="false">	انتقال سے پہلے کے ہفتے میں  کیا بچہ نے الٹیاں کیں تھی؟	:	N2189a	</string>
-    <string  name="txt_N2190"  translatable="false">	کیا (نام) کو کوئی حادثہ یا چوٹ لگی تھی جو اس کی موت کی وجہ بننی ؟	:	N2190	</string>
-    <string  name="txt_N2190_1"  translatable="false">	کیا یہ روڈ ٹریفک کا حادثہ تھا  ؟	:	N2190_1	</string>
+    <string  name="txt_N2190"  translatable="false">	کیا (نام) کو کوئی حادثہ یا چوٹ لگی تھی جو اس کی موت کی وجہ بننی؟	:	N2190	</string>
+    <string  name="txt_N2190_1"  translatable="false">	کیا یہ روڈ ٹریفک کا حادثہ تھا؟	:	N2190_1	</string>
     <string  name="txt_N2190_2"  translatable="false">	اس روڈ ٹریفک  حادثہ میں اس کا کیا  کردار تھا؟	:	N2190_2	</string>
     <string  name="txt_N2190_3"  translatable="false">	وہ مقابل چیز کیا تھی جس سے روڈ ٹریفک ایکسیڈنٹ کے دوران تصادُم یا ٹکّرہوئی؟	:	N2190_3	</string>
     <string  name="txt_N2190_4"  translatable="false">	کیا وہ روڈ ٹریفک ایکسیڈنٹ کے علاوہ زخمی ہوا تھا، تھی؟  	:	N2190_4	</string>
     <string  name="txt_N2190_5"  translatable="false">	کیا وہ گرنے کی وجہ سے زخمی ہوا تھا، تھی؟  	:	N2190_5	</string>
-    <string  name="txt_N2190_6"  translatable="false">	کیا کوئی زہر یلا اثر تھا ؟	:	N2190_6	</string>
+    <string  name="txt_N2190_6"  translatable="false">	کیا کوئی زہر یلا اثر تھا؟	:	N2190_6	</string>
     <string  name="txt_N2190_7"  translatable="false">	کیا اس کی موت ڈوبنے سے ہو ئی؟	:	N2190_7	</string>
     <string  name="txt_N2190_8"  translatable="false">	کیا وہ کسی زہریلے جانور کے کاٹنے یا ڈنگ مارنے سے زخمی ہوا  /  ہو ئی؟	:	N2190_8	</string>
     <string  name="txt_N2190_9"  translatable="false">	کیا وہ کسی جانور  یا کیڑے (غیر زہریلا)کے کاٹنے یا ڈنگ مارنے سے زخمی ہوا  /  ہو ئی؟	:	N2190_9	</string>
     <string  name="txt_N2190_10"  translatable="false">	وہ جانور  یا کیڑا کیا تھا؟	:	N2190_10	</string>
-    <string  name="txt_N2190_11"  translatable="false">	آگ لگنے سے زخمی ہوا  /  ہو ئی؟     /     کیا وہ جلنے ؟	:	N2190_11	</string>
+    <string  name="txt_N2190_11"  translatable="false">	آگ لگنے سے زخمی ہوا  /  ہو ئی؟     /     کیا وہ جلنے؟	:	N2190_11	</string>
     <string  name="txt_N2190_12"  translatable="false">	کیا اس پر تشدد ہوا تھا (قتل ، ناجائز زیادتی یا گالم گلوچ)؟	:	N2190_12	</string>
     <string  name="txt_N2190_13"  translatable="false">	کیا وہ بندوق یا پستول کی گولی  سے زخمی ہوا  /  ہو ئی؟	:	N2190_13	</string>
-    <string  name="txt_N2190_14"  translatable="false">	کیا اس کو (چھرا) گھونپا ، کاٹا یا چھبویا تھا ؟	:	N2190_14	</string>
-    <string  name="txt_N2190_15"  translatable="false">	کیا اس کو گلا گھونٹ کر ماراتھا ؟ 	:	N2190_15	</string>
+    <string  name="txt_N2190_14"  translatable="false">	کیا اس کو (چھرا) گھونپا ، کاٹا یا چھبویا تھا؟	:	N2190_14	</string>
+    <string  name="txt_N2190_15"  translatable="false">	کیا اس کو گلا گھونٹ کر ماراتھا؟ 	:	N2190_15	</string>
     <string  name="txt_N2190_16"  translatable="false">	کیا وہ قدرتی آفات کی وجہ سے  زخمی ہوا  /  ہو ئی؟	:	N2190_16	</string>
     <string  name="txt_N2190_17"  translatable="false">	کیا بجلی کا کرنٹ لگا تھا؟ 	:	N2190_17	</string>
     <string  name="txt_N2190_18"  translatable="false">	کیا اس کو کوئی اور چوٹ یا ناگہانی صدمہ کا سامنا کرناپڑا؟  	:	N2190_18	</string>
     <string  name="txt_N2190_19"  translatable="false">	کیا چوٹ حادثاتی طور پر لگی تھی؟	:	N2190_19	</string>
     <string  name="txt_N2190_20"  translatable="false">	کیا چوٹ خود لگائی تھی؟	:	N2190_20	</string>
     <string  name="txt_N2190_21"  translatable="false">	کیا کسی نے جان بوجھ کر چوٹ لگائی یا  مارا  تھا؟	:	N2190_21	</string>
-    <string  name="txt_N2190_22"  translatable="false">	کیا اس کو کند آلہ سے زخمی کیا تھا ؟	:	N2190_22	</string>
+    <string  name="txt_N2190_22"  translatable="false">	کیا اس کو کند آلہ سے زخمی کیا تھا؟	:	N2190_22	</string>
     <string  name="txt_N2191"  translatable="false">	چوٹ لگنے کے بعد کتنے عرصے تک (نام) زندہ رہا تھا/تھی؟	:	N2191	</string>
     <string  name="txt_N2192"  translatable="false">	چیک N2006 کریں اور اس بات کی یقین دہانی کریں کہ بچہ صحت کی سہولت میں پیدا ہوا تھا؟	:	N2192	</string>
     <string  name="txt_N2193"  translatable="false">	کیا بچہ زندہ تھاجب صحت کی سہولت سے چھٹی ہو ئی یا  صحت کی سہولت میں بچہ کا انتقال ہوگیا تھا؟ 	:	N2193	</string>
@@ -2381,27 +2383,27 @@
     <string  name="txt_N2195"  translatable="false">	صھت کی سہولت چھوڑنے سے پہلے ، کسی نے جسمانی طور پر بچہ کا جائزہ لیا تھا مثال کے طور پر درجہ حرارت کی جانچ پڑتال یا ناف/آنونال کی جانچ پڑتال کی تھی؟	:	N2195	</string>
     <string  name="txt_N2196"  translatable="false">	سہولت چھوڑنے سے پہلے کیا کسی صحت کے کارکن نے (آپ/ماں) کو بچہ کو ماں کا دودھ پلانے کا مشورہ  دیا تھا؟	:	N2196	</string>
     <string  name="txt_N2197"  translatable="false">	سہولت چھوڑنے سے پہلے کیا (آپ/ماں)  کو کسی نے نشان اور علامات کے بارے میں بتایا کہ جس میں بچہ کو فوری دیکھ بھال کی ضرورت تھی؟	:	N2197	</string>
-    <string  name="txt_N2198"  translatable="false">	سہولت سے اخراج یا چھٹی  کے بعد ، مہلک بیماری کے شروع ہونے سے پہلے کیا بچہ کو تربیتی صحت کارکن یا نرس نے گھر پر  یا  کیمونٹی میں آکر جائزہ لیا تھا  یا  ڈاکٹر نے یا نرس نے  بچہ کو صحت کی سہولت    پر  دیکھا ؟	:	N2198	</string>
-    <string  name="txt_N2199"  translatable="false">	پیدائش کے بعد کیا  زچگی کرنے والی نے بچہ کا معا ئنہ  کیا تھا، مثال کے طور پر درجہ حرارت یا  بچہ کی آنول  نال کا  معا ئنہ   کرنا ؟	:	N2199	</string>
+    <string  name="txt_N2198"  translatable="false">	سہولت سے اخراج یا چھٹی  کے بعد ، مہلک بیماری کے شروع ہونے سے پہلے کیا بچہ کو تربیتی صحت کارکن یا نرس نے گھر پر  یا  کیمونٹی میں آکر جائزہ لیا تھا  یا  ڈاکٹر نے یا نرس نے  بچہ کو صحت کی سہولت    پر  دیکھا؟	:	N2198	</string>
+    <string  name="txt_N2199"  translatable="false">	پیدائش کے بعد کیا  زچگی کرنے والی نے بچہ کا معا ئنہ  کیا تھا، مثال کے طور پر درجہ حرارت یا  بچہ کی آنول  نال کا  معا ئنہ   کرنا؟	:	N2199	</string>
     <string  name="txt_N2200"  translatable="false">	بچہ کی پیدائش کے بعد ،  کیا زچگی کرانے والی نے (آپ/ماں) کو بچہ کو ماں کا دودھ پلانے کے لیے مشورہ دیا تھا؟	:	N2200	</string>
     <string  name="txt_N2201"  translatable="false">	بچے کی پیدائش کے بعد کیا بچہ پیدا کرانے والی نے ماں کو علامات کے بارے میں بتایا تھا جس میں بچہ کو فوری دیکھ بھال کی ضرورت تھی؟	:	N2201	</string>
-    <string  name="txt_N2202"  translatable="false">	زچگی کے بعد  کے دنوں میں ، اور  مہلک بیماری کے شروع ہونے سے پہلے کیا بچہ کو تربیتی صحت کے  کارکن یا نرس نے گھر پر  یا  کیمونٹی میں آکر جائزہ لیا تھا  یا  ڈاکٹر نے یا نرس نے  بچہ کو صحت کی سہولت    پر  دیکھا ؟	:	N2202	</string>
+    <string  name="txt_N2202"  translatable="false">	زچگی کے بعد  کے دنوں میں ، اور  مہلک بیماری کے شروع ہونے سے پہلے کیا بچہ کو تربیتی صحت کے  کارکن یا نرس نے گھر پر  یا  کیمونٹی میں آکر جائزہ لیا تھا  یا  ڈاکٹر نے یا نرس نے  بچہ کو صحت کی سہولت    پر  دیکھا؟	:	N2202	</string>
     <string  name="txt_N2251"  translatable="false">	کیا(نام) نے بیماری جو موت کی سبب بننی ، اس کا لیے کوئی   علاج حاصل کیا؟	:	N2251	</string>
-    <string  name="txt_N2252_1"  translatable="false">	کیا اس نے نمکول کا پانی لیا تھا ؟	:	N2252_1	</string>
-    <string  name="txt_N2252_2"  translatable="false">	کیا اس نے نس کے ذریعے پانی کی  بوتل لگا ئی    تھی ؟	:	N2252_2	</string>
-    <string  name="txt_N2252_3"  translatable="false">	کیا اس نے خون کی  بوتل لگا ئی    تھی ؟ (بلڈ ٹرانسفیوژن) ؟	:	N2252_3	</string>
+    <string  name="txt_N2252_1"  translatable="false">	کیا اس نے نمکول کا پانی لیا تھا؟	:	N2252_1	</string>
+    <string  name="txt_N2252_2"  translatable="false">	کیا اس نے نس کے ذریعے پانی کی  بوتل لگا ئی    تھی؟	:	N2252_2	</string>
+    <string  name="txt_N2252_3"  translatable="false">	کیا اس نے خون کی  بوتل لگا ئی    تھی ؟ (بلڈ ٹرانسفیوژن)؟	:	N2252_3	</string>
     <string  name="txt_N2252_4"  translatable="false">	کیا اس نے ناک سے گزاری ہوئی نلکی کے ذریعے دوا /خوارک  حاصل کی تھی؟	:	N2252_4	</string>
     <string  name="txt_N2252_5"  translatable="false">	کیا اس نے اینٹی با ئیوٹک دوا ئیں  استعمال کی تھیں؟	:	N2252_5	</string>
     <string  name="txt_N2252_6"  translatable="false">	کیا اس نے اینٹی ریٹرو وائرل تھراپی علاج کیا تھا؟	:	N2252_6	</string>
-    <string  name="txt_N2252_7"  translatable="false">	کیا اس کا بیماری کے لیے آپریشن ہوا تھا ؟ 	:	N2252_7	</string>
+    <string  name="txt_N2252_7"  translatable="false">	کیا اس کا بیماری کے لیے آپریشن ہوا تھا؟ 	:	N2252_7	</string>
     <string  name="txt_N2253"  translatable="false">	کیا آپ کے پاس مرنے والے سے متعلق کوئی صحت کار یکارڈ  موجود ہے؟	:	N2253	</string>
     <string  name="txt_N2254"  translatable="false">	کیا میں وہ ر ہیلتھ یکارڈ دیکھ سکتی /سکتا ہوں؟	:	N2254	</string>
-    <string  name="txt_N2255_1check"  translatable="false">	کیا (ہیلتھ کارڈ) پر آخری معائنہ کی تاریخ موجود ہے ؟	:	N2255_1check	</string>
-    <string  name="txt_N2255_1"  translatable="false">	آخری معائنہ کی تاریخ ریکارڈ کریں ؟	:	N2255_1 	</string>
-    <string  name="txt_N2255_2check"  translatable="false">	کیا دوسری سب سے حالیہ  معائنہ کی تاریخ موجود ہے ؟	:	N2255_2check	</string>
-    <string  name="txt_N2255_2"  translatable="false">	دوسری سب سے حالیہ   معائنہ کی تاریخ ریکارڈ کریں ؟	:	N2255_2 	</string>
-    <string  name="txt_N2256"  translatable="false">	ہیلتھ کارڈ پر موجود آخری نوٹ کی تاریخ ریکارڈ کریں ؟	:	N2256	</string>
-    <string  name="txt_N2257"  translatable="false">	آخری معائنہ کے دوران کئے گئے وزن کو  ریکارڈ کریں ؟	:	N2257	</string>
+    <string  name="txt_N2255_1check"  translatable="false">	کیا (ہیلتھ کارڈ) پر آخری معائنہ کی تاریخ موجود ہے؟	:	N2255_1check	</string>
+    <string  name="txt_N2255_1"  translatable="false">	آخری معائنہ کی تاریخ ریکارڈ کریں؟	:	N2255_1 	</string>
+    <string  name="txt_N2255_2check"  translatable="false">	کیا دوسری سب سے حالیہ  معائنہ کی تاریخ موجود ہے؟	:	N2255_2check	</string>
+    <string  name="txt_N2255_2"  translatable="false">	دوسری سب سے حالیہ   معائنہ کی تاریخ ریکارڈ کریں؟	:	N2255_2 	</string>
+    <string  name="txt_N2256"  translatable="false">	ہیلتھ کارڈ پر موجود آخری نوٹ کی تاریخ ریکارڈ کریں؟	:	N2256	</string>
+    <string  name="txt_N2257"  translatable="false">	آخری معائنہ کے دوران کئے گئے وزن کو  ریکارڈ کریں؟	:	N2257	</string>
     <string  name="txt_N2258"  translatable="false">	ہیلتھ کارڈ پر موجود آخری نوٹ(عبارت) کو یہاں درج کریں؟	:	N2258	</string>
     <string  name="txt_N2259"  translatable="false">	کیا ہیلتھ ورکر نے آپ کو موت کی وجہ بتا ئی تھی؟	:	N2259	</string>
     <string  name="txt_N2260"  translatable="false">	آپ کو ہیلتھ ورکر نے کیا بتایا تھا؟	:	N2260	</string>
@@ -2409,24 +2411,24 @@
     <string  name="txt_N2272"  translatable="false">	کیا میں وہ  سرٹیفیکٹ دیکھ سکتی /سکتا ہوں؟	:	N2272	</string>
     <string  name="txt_N2273"  translatable="false">	ڈیتھ سرٹیفیکٹ سے موت کی وجہ کا  فوری سببب ریکارڈ کریں؟	:	N2273	</string>
     <string  name="txt_N2274"  translatable="false">	(1a) مدت یا دورانیہ	:	N2274	</string>
-    <string  name="txt_N2275"  translatable="false">	ڈیتھ سرٹیفیکٹ سے موت کی وجہ کا   پہلا بنیادی   سببب ریکارڈ کریں ؟	:	N2275	</string>
+    <string  name="txt_N2275"  translatable="false">	ڈیتھ سرٹیفیکٹ سے موت کی وجہ کا   پہلا بنیادی   سببب ریکارڈ کریں؟	:	N2275	</string>
     <string  name="txt_N2276"  translatable="false">	(1b) مدت یا دورانیہ	:	N2276	</string>
-    <string  name="txt_N2277"  translatable="false">	ڈیتھ سرٹیفیکٹ سے موت کی وجہ کادوسرا    بنیادی   سببب ریکارڈ کریں ؟	:	N2277	</string>
+    <string  name="txt_N2277"  translatable="false">	ڈیتھ سرٹیفیکٹ سے موت کی وجہ کادوسرا    بنیادی   سببب ریکارڈ کریں؟	:	N2277	</string>
     <string  name="txt_N2278"  translatable="false">	(1c) مدت یا دورانیہ	:	N2278	</string>
     <string  name="txt_N2283"  translatable="false">	کیا موت رجسڑڈ کی گئی تھی؟	:	N2283	</string>
     <string  name="txt_N2284"  translatable="false">	موت کا رجسٹریشن نمبر ریکارڈ کری؟	:	N2284	</string>
     <string  name="txt_N2291"  translatable="false">	ماں کی عمر کیا تھی؟  یا  جب بچہ نے  وفات پائی تو ماں  کی عمر کیا تھی؟	:	N2291	</string>
     <string  name="txt_N2292"  translatable="false">	کیا بچہ کی ماں کبھی اسکول گئی تھی؟	:	N2292	</string>
-    <string  name="txt_N2293"  translatable="false">	اس کی زیادہ سے زیادہ تعلیم کی تھی : پرا ئمری،  سیکنڈری،   ی یا  اعلیٰ تعلیم  ؟	:	N2293	</string>
-    <string  name="txt_N2294"  translatable="false">	اس کی  اب تک کی مکمل تعلیم /گریڈ/سال  کیا ہے ؟	:	N2294	</string>
+    <string  name="txt_N2293"  translatable="false">	اس کی زیادہ سے زیادہ تعلیم کی تھی : پرا ئمری،  سیکنڈری،   ی یا  اعلیٰ تعلیم؟	:	N2293	</string>
+    <string  name="txt_N2294"  translatable="false">	اس کی  اب تک کی مکمل تعلیم /گریڈ/سال  کیا ہے؟	:	N2294	</string>
     <string  name="txt_N2295"  translatable="false">	بچہ کی وفات  کے وقت  (کیا آپ / بچہ کی ماں )شادی شدہ  تھی اور اپنے شوہر کے ساتھ رہےرہی تھی؟ 	:	N2295	</string>
-    <string  name="txt_N2296"  translatable="false">	عمر کیا تھی   ( آپ کی جب آپ /وہ  جب وہ ) کی پہلی شادی ہو ئی تھی  ؟	:	N2296	</string>
-    <string  name="txt_N2297"  translatable="false">	کیا (آپ کا   یا بچہ کی ماں کا )شوہر کبھی اسکول گیا تھا  	:	N2297	</string>
-    <string  name="txt_N2298"  translatable="false">	اس کی زیادہ سے زیادہ تعلیم کی تھی : پرا ئمری،  سیکنڈری،   ی یا  اعلیٰ تعلیم  ؟	:	N2298	</string>
-    <string  name="txt_N2299"  translatable="false">	اس کی کی اب تک کی مکمل تعلیم /گریڈ/سال  کیا ہے ؟	:	N2299	</string>
-    <string  name="txt_N2300"  translatable="false">	کیا یہ گھر ہے ( جہاں ابھی ہم موجود ہیں ) یہاں (آپ۔ ماں ۔ (نام))رہتی تھی حمل کے آخری دنوں میں ؟	:	N2300	</string>
+    <string  name="txt_N2296"  translatable="false">	عمر کیا تھی   ( آپ کی جب آپ /وہ  جب وہ ) کی پہلی شادی ہو ئی تھی؟	:	N2296	</string>
+    <string  name="txt_N2297"  translatable="false">	کیا (آپ کا   یا بچہ کی ماں کا )شوہر کبھی اسکول گیا تھا.  	:	N2297	</string>
+    <string  name="txt_N2298"  translatable="false">	اس کی زیادہ سے زیادہ تعلیم کی تھی : پرا ئمری،  سیکنڈری،   ی یا  اعلیٰ تعلیم؟	:	N2298	</string>
+    <string  name="txt_N2299"  translatable="false">	اس کی کی اب تک کی مکمل تعلیم /گریڈ/سال  کیا ہے؟	:	N2299	</string>
+    <string  name="txt_N2300"  translatable="false">	کیا یہ گھر ہے ( جہاں ابھی ہم موجود ہیں ) یہاں (آپ۔ ماں ۔ (نام))رہتی تھی حمل کے آخری دنوں میں؟	:	N2300	</string>
     <string  name="txt_N2301"  translatable="false">	پڑھیں: " جہاں اب ہم ہیں " ۔۔۔ اگر ضرورت ہو تو واضح کریں کہ آپ کس گھر کے بارے میں بات کررہے ہیں؟	:	N2301	</string>
-    <string  name="txt_N2302"  translatable="false">	گھر کا پتہ کیا ہے  جہاں (آپ /ماں ) رہتے تھے ؟	:	N2302	</string>
+    <string  name="txt_N2302"  translatable="false">	گھر کا پتہ کیا ہے  جہاں (آپ /ماں ) رہتے تھے؟	:	N2302	</string>
     <string  name="txt_N2303"  translatable="false">	جب بیماری شروع ہوئی تو کتنے عرصے سے (آپ/ماں/آپ کے رشتہ دار /ماں کے رشتہ دار) (نام) (نام کے رشتہ دار ) مسلسل اسی کمیونٹی میں رہ  رہے تھے؟	:	N2303	</string>
     <string  name="txt_N2304"  translatable="false">	ہنگامی صورتحال میں  اس  مقام سے قریبی صحت کی سہولت تک پہنچے کے لیے کتنا وقت لگتا ہے؟	:	N2304	</string>
     <string  name="txt_N2311"  translatable="false">	  موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے تعلیم /اسکول میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا؟	:	N2311	</string>
@@ -2450,7 +2452,7 @@
     <string  name="txt_N2312_3"  translatable="false">	کمیونٹی کا تعاون جیسے زراعی تعاون؟	:	N2312_3	</string>
     <string  name="txt_N2312_4"  translatable="false">	سیاسی گروپ؟	:	N2312_4	</string>
     <string  name="txt_N2312_5"  translatable="false">	  مذہبی گروپ؟	:	N2312_5	</string>
-    <string  name="txt_N2312_6"  translatable="false">	  کھیل کا کلب ؟	:	N2312_6	</string>
+    <string  name="txt_N2312_6"  translatable="false">	  کھیل کا کلب؟	:	N2312_6	</string>
     <string  name="txt_N2312_7"  translatable="false">	  نوجوان /طلب علم کلب؟	:	N2312_7	</string>
     <string  name="txt_N2312_8"  translatable="false">	  خواتین کے گروپ؟	:	N2312_8	</string>
     <string  name="txt_N2312_OT"  translatable="false">	  دیگر گروپس؟	:	N2312_9	</string>
@@ -2862,7 +2864,7 @@
     <string  name="cb_N2082_4"  translatable="false">	 تربیت یافتہ کمیونٹی مڈوائف  نرس (صحت کی سہولت کے بغیر)	</string>
     <string  name="cb_N2082_5"  translatable="false">	 روایتی دائی /گاؤں کا ڈاکٹر /ڈسپینسر /دیگر غیر تربیت یافتہ   اور  روایتی فراہم کنندہ	</string>
     <string  name="cb_N2082_6"  translatable="false">	دوست ،رشتہ دار ،ہمسایہ 	</string>
-    <string  name="rb_N2082_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string  name="cb_N2082_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
     <string  name="cb_N2082_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_N2083_1"  translatable="false">	ہاں	</string>
     <string  name="rb_N2083_2"  translatable="false">	نہیں	</string>
@@ -3059,7 +3061,7 @@
     <string  name="cb_N2100_4"  translatable="false">	رشتہ داروں سے مدد   لی	</string>
     <string  name="cb_N2100_5"  translatable="false">	 کمیونٹی فنڈ	</string>
     <string  name="cb_N2100_6"  translatable="false">	گورنمٹ اسکیم	</string>
-    <string  name="rb_N2100_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string  name="cb_N2100_OT"  translatable="false">	دیگر (وضاحت کریں)	</string>
     <string  name="cb_N2100_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="cb_N2101_1"  translatable="false">	پیدل	</string>
     <string  name="cb_N2101_2"  translatable="false">	سائیکل /جانور والی گاڑی/کشتی	</string>
@@ -3833,7 +3835,7 @@
     <string  name="cb_N2216_1"  translatable="false">	اسکاخیال نہیں تھا کہ   بچہ/بڑا اتنا بیمار نہیں تھاکہ اسکو صحت کی سہولت فراہم کی جائے	</string>
     <string  name="cb_N2216_2"  translatable="false">	 کوئی ساتھ لے جانے والا موجود نہیں تھا	</string>
     <string  name="cb_N2216_3"  translatable="false">	 دیکھ بھال کرنے والے کی بہت ذمہ داریاں	</string>
-    <string  name="rb_N2216_4"  translatable="false">	 کسی اور کو فیصلہ کرنا پڑا (وضاحت کریں)	</string>
+    <string  name="cb_N2216_4"  translatable="false">	 کسی اور کو فیصلہ کرنا پڑا (وضاحت کریں)	</string>
     <string  name="cb_N2216_5"  translatable="false">	 بہت دور سفر کرنا	</string>
     <string  name="cb_N2216_6"  translatable="false">	 کوئی  ٹرانسپورٹ یا سواری  دستیاب  نہیں	</string>
     <string  name="cb_N2216_7"  translatable="false">	لاگت یا  خرچہ  ( ٹرانسپوڑٹ،صحت کی دیکھ بھال ،دیگر	</string>
@@ -3842,7 +3844,7 @@
     <string  name="cb_N2216_10"  translatable="false">	سوچا  وہ    اتنی کمزور ہ تھی کہ سفر نہیں کرسکتی تھی	</string>
     <string  name="cb_N2216_11"  translatable="false">	سوچا کہ علاج کے باوجود ہی موت واقع ہوجائیگی	</string>
     <string  name="cb_N2216_12"  translatable="false">	رات کو دیر ہو چکی تھی  (ٹرانسپورٹ  یا   ہیلتھ  مہیا کرنے والا موجود نہیں تھا)  	</string>
-    <string  name="rb_N2216_OT"  translatable="false">	 دیگر وضاحت کریں	</string>
+    <string  name="cb_N2216_OT"  translatable="false">	 دیگر وضاحت کریں	</string>
     <string  name="cb_N2216_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2218_1_1"  translatable="false">Normal	</string>
     <string  name="rb_N2218_1_2"  translatable="false">Modern	</string>
@@ -3966,18 +3968,18 @@
 
     <!-- Neonate Urdu Text HINT's STARTS -->
 
-    <string  name="N2003_h"  translatable="false">	اگر ماں  انٹرویو میں موجود ہے تو   یہ سوال پوچھے بغیر  "ہاں"  پر نشان لگائیں 	</string>
+    <string  name="N2003_h"  translatable="false">	اگر ماں انٹرویو میں موجود ہے تو یہ سوال پوچھے بغیر  "ہاں"  پر نشان لگائیں 	</string>
     <string  name="N2005u_h"  translatable="false">	صرف ایک یونٹ یا جواب لکھیں	</string>
-    <string  name="N2005d_h"  translatable="false">	24 گھنٹے سے کم ہو تو 0     دن لکھیں      دن لکھیں ، اگر ایک دن یا 0-6  	</string>
-    <string  name="N2005w_h"  translatable="false">	  ہفتے لکھیں  1-7   	</string>
+    <string  name="N2005d_h"  translatable="false">	24 گھنٹے سے کم ہو تو 0  دن لکھیں  دن لکھیں ، اگر ایک دن یا 0-6  	</string>
+    <string  name="N2005w_h"  translatable="false"> ہفتے لکھیں  1-7   	</string>
     <string  name="N2005m_h"  translatable="false">	مہینے  لکھیں  2-60	</string>
     <string  name="N2006_h"  translatable="false">	سوال پڑہیں اور شروع کے پانچ جوابات کو آہستہ آہستہ پڑھیں. جواب دہندہ تمام جوابات کو سنے اور پھر جواب دے 	</string>
     <string  name="N2008_h"  translatable="false">	پڑھیں: " صحت  کی سہولت پر " ۔۔۔ اگر اس کی زچگی صحت کی سہولت فراہم کرے والی جگہ پر پیدا ہو ئی	</string>
     <string  name="N2009_1_h"  translatable="false">	تصویریں دکھائیں، جواب دہندہ کو  وضاحت کریں کہ اگر جواب " نہیں" ہے  تب بھی کچھ مزید سوال پوچھیں جائیں گے ، صرف اس بات کو  یقینی بنانے کے لئے کہ کو   ئی  اہم بات  چھوٹ نہ گئی ہو۔	</string>
-    <string  name="N2009_2_h"  translatable="false">	  کلو سے کم) 2.5( وزن 	</string>
+    <string  name="N2009_2_h"  translatable="false">  کلو سے کم) 2.5( وزن 	</string>
     <string  name="N2009_3_h"  translatable="false">	 کلو سے کم) 1 ( وزن	</string>
     <string  name="N2009_4_h"  translatable="false">	کلو سے زیادہ) 4.5  ( وزن	</string>
-    <string  name="N2010_h"  translatable="false">	وزن  کلو گرام میں بتا ئے ۔ اس صورت میں ڈیٹا انٹری کے لئے1          کلو گرام کو 1000 میں تبدیل کریں۔   اگر "معلوم نہیں "ہے تو  "            9999" لکھیں اور "انکار" کی صورت میں  تو  "            8888" لکھیں۔	</string>
+    <string  name="N2010_h"  translatable="false">	وزن  کلو گرام میں بتا ئے ۔ اس صورت میں ڈیٹا انٹری کے لئے1          کلو گرام کو 1000 میں تبدیل کریں۔   اگر "معلوم نہیں "ہے تو  "            9999" لکھیں اور "انکار" کی صورت میں  تو  "  8888" لکھیں۔	</string>
     <string  name="N2016_h"  translatable="false">	اگر "زندہ" اور سوال N2013-N2015   = " نہیں " یا اگر "مردہ"اور سوال N2013-N2014 یا  N2015="ہاں"  ، تو ڈسکس کریں اور صحیح جواب لکھیں۔	</string>
     <string  name="N2019u_h"  translatable="false">	اگر 23-0 گھنٹے ہوں تو  "گھنٹوں " پر لکھیں یا اگر 60-1 دن ہو تو  " دنوں "  پر لکھیں	</string>
     <string  name="N2019h_h"  translatable="false">	اگر ایک گھنٹہ سے کم=‘00’ گھنٹے لکھیں	</string>
@@ -3985,36 +3987,36 @@
     <string  name="N2023_h"  translatable="false">	(سے Q1202)  یہ صرف اس وقت  پوچھیں جب نام  پہلے معلوم نہ ہو	</string>
     <string  name="N2024_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو 00 دن ریکارڈ کریں ۔ اگر  ایک ہفتہ=7دن لکھیں	</string>
     <string  name="N2025d_h"  translatable="false">	نوازئیدہ بچوں کے لئے: دنوں میں ریکارڈ کریں ۔اگر 24 گھنٹے سے کم ہے تو 00 دن ریکارڈ کریں	</string>
-    <string  name="N2051_h"  translatable="false">	معلوم نہیں="99."اور   انکار کردیا="88." لکھیں   	</string>
+    <string  name="N2051_h"  translatable="false">	معلوم نہیں="99"اور انکار کردیا="88" لکھیں   	</string>
     <string  name="N2053_h"  translatable="false">	ایک سے زیادہ جواب آسکتے ہیں(تمام لوگوں کے نا م لکھیں جن کو دکھایا )	</string>
     <string  name="N2058_h"  translatable="false">	مزید پوچھیں: مجھے مزید  ایسی    خطرناک علامات کے  بارے میں بتائیں  جو آپ بتاسکتی ہوں	</string>
     <string  name="N2062_h"  translatable="false">	اگر 7 اور 7 سے زیادہ   دفعہ ہے تو 7 ریکارڈ کریں۔	</string>
-    <string  name="N2067_h"  translatable="false">	اگر "معلوم نہیں "ہے تو  "            99" لکھیں اور "انکار" کی صورت میں  تو  "            88" لکھیں۔  	</string>
-    <string  name="N2070_h"  translatable="false">	"ماں " ۔اگر جوابدہندہ ماں نہیں ہے    پڑھیں  : 	</string>
+    <string  name="N2067_h"  translatable="false">	اگر "معلوم نہیں "ہے تو  "99" لکھیں اور "انکار" کی صورت میں  تو  "88" لکھیں۔  	</string>
+    <string  name="N2070_h"  translatable="false">	"ماں " ۔اگر جوابدہندہ ماں نہیں ہے پڑھیں  : 	</string>
     <string  name="N2071_h"  translatable="false">	نوٹ:لیبر(زچگی )  شروع ہوتی ہے جب درد زہ کی وجہ سے اینٹھن کا درمیانی وقفہ  20 منٹ  سے زیادہ نہ ہو	</string>
-    <string  name="N2072_h"  translatable="false">	ریکارڈ 24 اگر 1 دن یا 1 دن سے زیادہ    ہو ۔	</string>
-    <string  name="N2076_h"  translatable="false">	اگر زچگی  صحت کے مرکز میں جاتے  ہو ئے راستے  میں ہوئی   (N2006=3-11 or N2006=1-2 and N2008=1-3), " مرکز صحت"   یا     " ہیلتھ مہیا کرنے والا پڑھیں   "  تو  کسی ایک فیصلہ کرنے والے کا  نام  ، ماں اور اسکے شوہر کا نام مشترکہ طور پر  ریکارڈ کریں   (3)  	</string>
-    <string  name="N2077_h"  translatable="false">	مرکز صحت میں زچگی کروانے کی کوشش نہیں کی. "یا" اگر اس کی زچگی  ہیلتھ مہیا کرنے والے  کے پاس یا مرکز صحت میں جاتے   ہو ئے    ہو   گئی .	</string>
+    <string  name="N2072_h"  translatable="false">	ریکارڈ 24 اگر 1 دن یا 1 دن سے زیادہ ہو ۔	</string>
+    <string  name="N2076_h"  translatable="false">	اگر زچگی  صحت کے مرکز میں جاتے  ہو ئے راستے  میں ہوئی   (N2006=3-11 or N2006=1-2 and N2008=1-3), " مرکز صحت"   یا     " ہیلتھ مہیا کرنے والا پڑھیں   "  تو  کسی ایک فیصلہ کرنے والے کا  نام  ، ماں اور اسکے شوہر کا نام مشترکہ طور پر  ریکارڈ کریں (3)  	</string>
+    <string  name="N2077_h"  translatable="false">	مرکز صحت میں زچگی کروانے کی کوشش نہیں کی. "یا" اگر اس کی زچگی  ہیلتھ مہیا کرنے والے  کے پاس یا مرکز صحت میں جاتے ہو ئے ہو گئی .	</string>
     <string  name="N2078_h"  translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں 	</string>
     <string  name="N2081_h"  translatable="false">	پڑھیں: اگر وہ       ایک سے زیادہ حمل کی علامات رکھتی تھی تو  پڑھ کر سنا ئیں.	</string>
     <string  name="N2082_h"  translatable="false">	کیا کہیں اور سے بھی  مدد حاصل کی؟	</string>
     <string  name="N2083_h"  translatable="false">	پڑھیں :  "پہلا  صحت فراہم کنندہ "…….اگر   وہ ایک سے زیادہ  فراہم کنندہ کے پاس گئی  ہو۔	</string>
     <string  name="N2086_h"  translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں 	</string>
     <string  name="N2089_h"  translatable="false">	پڑھیں: " پہلی بار"……..۔اگر اسکو  ایک سے زیادہ لیبر یا زچگی کی علامات ظاہر ہوئی تھیں ؟	</string>
-    <string  name="N2090_h"  translatable="false">	پڑھیں:     " کوئی بھی علامت"  اگر وہ  ایک سے زیادہ علامت  رکھتی تھی ۔	</string>
+    <string  name="N2090_h"  translatable="false">	پڑھیں:     " کوئی بھی علامت"  اگر وہ ایک سے زیادہ علامت  رکھتی تھی ۔	</string>
     <string  name="N2091_h"  translatable="false">	ایک سے زیادہ جوابات کی اجازت ہے 	</string>
     <string  name="N2092_h"  translatable="false">	کسی ایک فیصلہ کرنے والے کا  نام  ، ماں اور اسکے شوہر کا نام مشترکہ طور پر ریکارڈ کریں(3)	</string>
     <string  name="N2095_h"  translatable="false">	پڑھیں :   "پہلا صحت فراہم کنندہ "  اگر  وہ   ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئی تھی	</string>
     <string  name="N2098_h"  translatable="false">	اگر عورت کا معا ئنہ  کسی  تربیت یافتہ ،کمیونٹی نرس،یا مڈوائف نے  صحت کی سہولت  پر کیا  تھا          تو    د ئے    گئے     صحت کی سہولت  کی  اقسام  پر نشان لگا ئیں  جہاں صحت مہیا کرنے والے  کو دکھایا تھا ۔	</string>
     <string  name="N2100_h"  translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں	</string>
     <string  name="N2101_h"  translatable="false">	مقامی   سہولت کے مطابق: جوابات     الگ الگ   ہونا   چاہئے اور ضرورت پڑنے پر مقامی  طور  پر  موجود   سہولت کے مطابق   اختیا ر کئے جائیں	</string>
-    <string  name="N2102_h"  translatable="false">	اگر   " نہیں"   تو جواب دہندہ سے مزید    ڈسکس کریں   اور صحیح جواب تک     2 or 3  پہنچیں 	</string>
+    <string  name="N2102_h"  translatable="false">	اگر   " نہیں"   تو جواب دہندہ سے مزید  ڈسکس کریں اور صحیح جواب تک 2 or 3  پہنچیں 	</string>
     <string  name="N2107_h"  translatable="false">	ہر علامت کو پڑھیں اور "ہاں" ، "نہیں" یا " معلوم نہیں" لکھیں ۔	</string>
     <string  name="N2124_h"  translatable="false">	گھنٹے لکھیں۔ “00”= منٹس سے کم  60	</string>
     <string  name="N2127_h"  translatable="false">	اگر   1-23  گھنٹہ تو گھنٹوں کی تعداد ریکارڈ کریں	</string>
     <string  name="N2129_h"  translatable="false">	اگر ایک گھنٹہ سے کم“00.” ریکارڈ کریں 	</string>
     <string  name="N2130_h"  translatable="false">	اگر ایک دن سے کم“00.” ریکارڈ کریں	</string>
-    <string  name="N2139_h"  translatable="false">	24 گھنٹے سے کم=  00  دن 	</string>
+    <string  name="N2139_h"  translatable="false">	24 گھنٹے سے کم=  00 دن 	</string>
     <string  name="N2156_h"  translatable="false">	اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>
     <string  name="N2157_h"  translatable="false">	.    اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>
     <string  name="N2160_h"  translatable="false">	.    اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>

@@ -48,17 +48,17 @@
                     <EditText
                         android:id="@+id/ed_W201_d"
                         style="@style/EditText_number"
-                        android:text="@string/txt_W201_d_h" />
+                        android:hint="@string/txt_W201_d_h" />
 
                     <EditText
                         android:id="@+id/ed_W201_m"
                         style="@style/EditText_number"
-                        android:text="@string/txt_W201_m_h" />
+                        android:hint="@string/txt_W201_m_h" />
 
                     <EditText
                         android:id="@+id/ed_W201_y"
                         style="@style/EditText_number"
-                        android:text="@string/txt_W201_y_h" />
+                        android:hint="@string/txt_W201_y_h" />
 
                 </LinearLayout>
 
@@ -81,7 +81,7 @@
                     <EditText
                         android:id="@+id/ed_W202"
                         style="@style/EditText_number"
-                        android:text="@string/ed_W202" />
+                        android:hint="@string/ed_W202" />
 
 
                 </LinearLayout>
@@ -353,6 +353,7 @@
                         style="@style/CheckBox"
                         android:text="@string/cb_W210_1"
                          />
+
                     <CheckBox
                         android:id="@+id/cb_W210_2"
                         style="@style/CheckBox"
@@ -364,16 +365,19 @@
                         style="@style/CheckBox"
                         android:text="@string/cb_W210_3"
                         />
+
                     <CheckBox
                         android:id="@+id/cb_W210_dk"
                         style="@style/CheckBox"
                         android:text="@string/cb_W210_DK"
                         />
+
                     <CheckBox
                         android:id="@+id/cb_W210_RA"
                         style="@style/CheckBox"
                         android:text="@string/cb_W210_RA"
                         />
+
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>

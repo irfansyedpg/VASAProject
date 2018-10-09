@@ -96,6 +96,10 @@
 
                         <TextView
                             style="@style/TextView_Hint"
+                            android:text="@string/N2321_h" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
                             android:text="Inst_1: If stillbirth → End interview" />
 
                         <EditText

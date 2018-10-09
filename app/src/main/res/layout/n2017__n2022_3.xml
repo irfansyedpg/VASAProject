@@ -201,6 +201,10 @@
 
                                 <TextView
                                     style="@style/TextView_Hint"
+                                    android:text="@string/N2019u_h" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
                                     android:text=" 2 → N2019d" />
 
                                 <RadioGroup
@@ -251,6 +255,10 @@
 
                                 <TextView
                                     style="@style/TextView_Hint"
+                                    android:text="@string/N2019h_h" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
                                     android:text="(DK = 99)→ N2020" />
 
 
@@ -280,6 +288,10 @@
                                     android:id="@+id/txt_N2019d"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2019d" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/N2019d_h" />
 
 
                                 <EditText

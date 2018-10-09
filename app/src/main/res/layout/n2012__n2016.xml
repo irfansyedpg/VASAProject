@@ -264,6 +264,10 @@
 
                         <TextView
                             style="@style/TextView_Hint"
+                            android:text="@string/N2016_h" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
                             android:text=" 2 → N2023" />
 
                         <RadioGroup

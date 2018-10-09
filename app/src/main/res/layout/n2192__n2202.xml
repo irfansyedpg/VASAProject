@@ -198,13 +198,13 @@
                                 <EditText
                                     android:id="@+id/ed_N2194_1"
                                     style="@style/EditText_number"
-                                    android:hint="@string/days"
+                                    android:hint="@string/N2194_1_h"
                                     android:maxLength="2" />
 
                                 <EditText
                                     android:id="@+id/ed_N2194_2"
                                     style="@style/EditText_number"
-                                    android:hint="@string/hours"
+                                    android:hint="@string/N2194_2_h"
                                     android:maxLength="2" />
 
                             </LinearLayout>
@@ -337,6 +337,11 @@
                                     android:id="@+id/txt_N2198"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2198" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/N2198_h" />
+
 
                                 <CheckBox
                                     android:id="@+id/cb_N2198_1"
@@ -540,6 +545,10 @@
                                 android:id="@+id/txt_N2202"
                                 style="@style/TextView"
                                 android:text="@string/txt_N2202" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2202_h" />
 
                             <CheckBox
                                 android:id="@+id/cb_N2202_1"
