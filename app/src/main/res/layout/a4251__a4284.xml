@@ -1538,11 +1538,6 @@
                         style="@style/TextView"
                         android:text="@string/A4275_1" />
 
-                    <TextView
-                        android:id="@+id/A4275_2"
-                        style="@style/TextView"
-                        android:text="@string/A4275_2" />
-
 
                     <TextView
                         android:id="@+id/A4275_1_h"

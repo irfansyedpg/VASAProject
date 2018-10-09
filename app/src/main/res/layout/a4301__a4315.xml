@@ -971,7 +971,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="@string/A4310_6_h" />
+                        android:text="@string/A4310_5_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
