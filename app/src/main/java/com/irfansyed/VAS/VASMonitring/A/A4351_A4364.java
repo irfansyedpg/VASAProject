@@ -37,7 +37,6 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
             ll_A4363,
             ll_A4364;
 
-
     RadioButton
             rb_A4351_1,
             rb_A4351_2,
@@ -51,7 +50,6 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
             rb_A4363_DK,
             rb_A4363_RA;
 
-
     EditText
             ed_study_id,
             ed_A4353,
@@ -61,7 +59,6 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
             ed_A4357,
             ed_A4358,
             ed_A4364;
-
 
     String
             study_id,
