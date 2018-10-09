@@ -392,13 +392,17 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4085_a_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="Days → A4086" />
 
 
                     <EditText
                         android:id="@+id/ed_A4085_a"
                         style="@style/EditText_number"
-                        android:text="@string/A4085_a_h" />
+                        android:hint="@string/days" />
 
                 </LinearLayout>
 
@@ -418,10 +422,14 @@
                         style="@style/TextView"
                         android:text="@string/months" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/months_hint" />
+
                     <EditText
                         android:id="@+id/ed_A4085_b"
                         style="@style/EditText_number"
-                        android:hint="@string/months_hint" />
+                        android:hint="@string/months" />
 
                 </LinearLayout>
 
@@ -538,7 +546,7 @@
                     <EditText
                         android:id="@+id/ed_A4087_a"
                         style="@style/EditText_number"
-                        android:hint="Enter 0-30 days. Less than 1 day or 24 hours = 0 days; 1 week = 7 days" />
+                        android:hint="@string/days" />
 
                 </LinearLayout>
 

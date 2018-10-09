@@ -35,7 +35,7 @@
                           <TextView
                               android:id="@+id/txt_Q1503_header"
                               style="@style/TextView"
-                              android:text="@string/txt_Q1503" />
+                              android:text="@string/txt_Q1503"/>
                           <TextView
                               android:id="@+id/txt_Q1503"
                               style="@style/TextView"
@@ -130,7 +130,7 @@
                         <EditText
                             android:id="@+id/ed_Q1503_OT"
                             style="@style/EditText_varchar"
-                            android:hint="@string/rb_Q1503_OT" />
+                            android:hint="@string/explain" />
 
                     </LinearLayout>
 
