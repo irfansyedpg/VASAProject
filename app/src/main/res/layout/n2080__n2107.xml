@@ -2517,6 +2517,16 @@
                                 style="@style/EditText_varchar"
                                 android:hint="N2094" />
 
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <!-- EditText N2094 Ends -->
+
+                    <!-- EditText N2094 - Hint Starts -->
+                    <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                        <LinearLayout style="@style/Q_Linerlayout_v">
+
                             <TextView
                                 style="@style/TextView_Hint"
                                 android:text="  N2107  (ڈیلیوری یا علامات کے لیے کسی بھی صحت فراہم کنندہ کو نہیں دکھایا  ← N2093 = 1-2, 14, 99 اور  N2090 = 2, 9 ھدایت۔ 2:  اگر" />
@@ -2532,7 +2542,7 @@
                         </LinearLayout>
 
                     </android.support.v7.widget.CardView>
-                    <!-- EditText N2094 Ends -->
+                    <!-- EditText N2094 - Hint Ends -->
 
                     <!-- Radio Buttons N2095 Starts -->
                     <LinearLayout
@@ -3369,11 +3379,11 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2107_3" />
 
-                            <TextView
-                                style="@style/TextView_Hint"
-                                android:text="N2271   ← N2016 = 1     ہدایت5:  اگر  (مردہ بچہ" />
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="N2271   ← N2016 = 1     ہدایت5:  اگر  (مردہ بچہ" />
 
-                            <RadioGroup style="@style/RadioGroup">
+                        <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
                                 android:id="@+id/rb_N2107_3_1"
