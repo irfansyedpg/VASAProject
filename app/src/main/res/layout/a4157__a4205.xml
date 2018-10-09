@@ -339,6 +339,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4162_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text=" ( If woman was less than 40, do not ask and just click ' No '.)" />
 
 
@@ -386,6 +390,10 @@
                         android:id="@+id/A4163_1"
                         style="@style/TextView"
                         android:text="@string/A4163_1" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4163_1_h" />
 
                     <TextView
                         style="@style/TextView_Hint"
@@ -903,6 +911,10 @@
                         android:id="@+id/A4178_2"
                         style="@style/TextView"
                         android:text="@string/A4178_2" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4178_2_h" />
 
                     <TextView
                         style="@style/TextView_Hint"
@@ -1524,6 +1536,10 @@
                         style="@style/TextView"
                         android:text="@string/A4191" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4191_h" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -1564,6 +1580,10 @@
                         android:id="@+id/A4192"
                         style="@style/TextView"
                         android:text="@string/A4192" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4192_h" />
 
                     <TextView
                         android:id="@+id/A4192_h"
@@ -1788,6 +1808,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4196_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="Yes → A4198_1" />
 
 
@@ -1831,6 +1855,10 @@
                         android:id="@+id/A4197"
                         style="@style/TextView"
                         android:text="@string/A4197" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4197_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -2172,6 +2200,10 @@
                         android:id="@+id/A4205"
                         style="@style/TextView"
                         android:text="@string/A4205" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4205_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 

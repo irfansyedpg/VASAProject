@@ -744,6 +744,10 @@
                         style="@style/TextView"
                         android:text="@string/A4310_1" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4310_1_h" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -784,6 +788,10 @@
                         android:id="@+id/A4310_2"
                         style="@style/TextView"
                         android:text="@string/A4310_2" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4310_2_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -826,6 +834,10 @@
                         style="@style/TextView"
                         android:text="@string/A4310_3" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4310_3_h" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -866,6 +878,10 @@
                         android:id="@+id/A4310_4"
                         style="@style/TextView"
                         android:text="@string/A4310_4" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4310_4_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -908,6 +924,10 @@
                         style="@style/TextView"
                         android:text="@string/A4310_5" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4310_5_h" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -948,6 +968,10 @@
                         android:id="@+id/A4310_6"
                         style="@style/TextView"
                         android:text="@string/A4310_6" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4310_6_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -990,6 +1014,10 @@
                         style="@style/TextView"
                         android:text="@string/A4310_7" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4310_7_h" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -1030,6 +1058,10 @@
                         android:id="@+id/A4310_8"
                         style="@style/TextView"
                         android:text="@string/A4310_8" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4310_8_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -1072,6 +1104,10 @@
                         style="@style/TextView"
                         android:text="@string/A4310_9" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4310_9_h" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -1113,6 +1149,10 @@
                         style="@style/TextView"
                         android:text="@string/A4310_10" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4310_10_h" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -1153,6 +1193,10 @@
                         android:id="@+id/A4310_11"
                         style="@style/TextView"
                         android:text="@string/A4310_11" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4310_11_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -1400,6 +1444,10 @@
                         style="@style/TextView"
                         android:text="@string/A4312" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4312_h" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -1440,6 +1488,10 @@
                         android:id="@+id/A4313"
                         style="@style/TextView"
                         android:text="@string/A4313" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4313_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 

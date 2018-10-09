@@ -181,7 +181,7 @@
                         <RadioButton
                             android:id="@+id/rb_A4206_2_6"
                             style="@style/RadioButton"
-                            android:text="@string/rb_other" />
+                            android:text="@string/rb_A4206_2_OT" />
 
                         <RadioButton
                             android:id="@+id/rb_A4206_2_DK"
@@ -252,7 +252,7 @@
                         <RadioButton
                             android:id="@+id/rb_A4206_3_7"
                             style="@style/RadioButton"
-                            android:text="@string/rb_other" />
+                            android:text="@string/rb_A4206_3_OT" />
 
                         <RadioButton
                             android:id="@+id/rb_A4206_3_DK"
@@ -1112,6 +1112,11 @@
                         android:id="@+id/A4207"
                         style="@style/TextView"
                         android:text="@string/A4207" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4207_1_h" />
+
 
                     <TextView
                         style="@style/TextView_Hint"

@@ -85,6 +85,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4401_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="Yes → A4404 \n Don't know → A4454" />
 
 
@@ -123,6 +127,10 @@
                         android:id="@+id/A4402"
                         style="@style/TextView"
                         android:text="@string/A4402" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4402_h" />
 
                     <TextView
                         style="@style/TextView_Hint"
@@ -185,6 +193,10 @@
                         style="@style/TextView"
                         android:text="@string/A4403" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4403_h" />
+
                     <EditText
                         android:id="@+id/ed_A4403_province"
                         style="@style/EditText_varchar"
@@ -214,6 +226,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4404_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="less than 1 = 00 \nDon't know  = 99" />
 
 
@@ -238,6 +254,10 @@
                         android:id="@+id/tv_A4405"
                         style="@style/TextView"
                         android:text="@string/A4405" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4405_h" />
 
                     <TextView
                         style="@style/TextView_Hint"
@@ -272,6 +292,10 @@
                         android:id="@+id/A4451"
                         style="@style/TextView"
                         android:text="@string/A4451" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4451_h" />
 
                     <TextView
                         android:id="@+id/A4451_1"
@@ -755,6 +779,10 @@
                         android:text="@string/A4452" />
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4452_h" />
+
+                    <TextView
                         android:id="@+id/A4452_1"
                         style="@style/TextView"
                         android:text="@string/A4452_1" />
@@ -1089,6 +1117,10 @@
                         android:id="@+id/A4453"
                         style="@style/TextView"
                         android:text="@string/A4453" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4453_h" />
 
                     <TextView
                         android:id="@+id/A4453_1"
@@ -1826,6 +1858,10 @@
                         android:id="@+id/A4473"
                         style="@style/TextView"
                         android:text="@string/A4473" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4473_h" />
 
                     <EditText
                         android:id="@+id/ed_A4473"
