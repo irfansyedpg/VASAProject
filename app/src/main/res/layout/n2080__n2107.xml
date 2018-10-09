@@ -1676,7 +1676,7 @@
                             <TextView
                                 android:id="@+id/txt_N2088_9"
                                 style="@style/TextView"
-                                android:text="@string/txt_N2088" />
+                                android:text="@string/txt_N2088_9" />
 
                             <RadioGroup style="@style/RadioGroup">
 
@@ -2990,7 +2990,7 @@
                                             <CheckBox
                                                 android:id="@+id/cb_N2100_7"
                                                 style="@style/CheckBox"
-                                                android:text="@string/other" />
+                                                android:text="@string/cb_N2100_OT" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2100_DK"
@@ -3287,6 +3287,11 @@
                     <LinearLayout
                         android:id="@+id/ll_N2107_1"
                         style="@style/Q_Linerlayout_v">
+
+                        <TextView
+                            android:id="@+id/txt_N2107"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2107" />
 
                         <TextView
                             android:id="@+id/txt_N2107_1"

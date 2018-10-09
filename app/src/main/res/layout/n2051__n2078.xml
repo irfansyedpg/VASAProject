@@ -420,7 +420,7 @@
                             <TextView
                                 android:id="@+id/txt_N2057_4"
                                 style="@style/TextView"
-                                android:text="@string/txt_N2057_4" />
+                                android:text="@string/txt_N2057_4"/>
 
                             <RadioGroup style="@style/RadioGroup">
 
