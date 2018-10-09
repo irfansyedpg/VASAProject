@@ -166,7 +166,6 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
         ll_C3021y.setVisibility(View.GONE);
 
 
-
         if (ageInDays > 1460) {
 
             ll_C3013.setVisibility(View.VISIBLE);
@@ -193,7 +192,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             ll_C3018_1.setVisibility(View.GONE);
         }
 
-        if (ageInDays<3285) {
+        if (ageInDays < 3285) {
 
             ClearAllcontrol.ClearAll(ll_C3018);
             ClearAllcontrol.ClearAll(ll_C3018_1);
@@ -245,18 +244,24 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
         currentSection = 3;
 
-        if (ageInDays>334) {
+        /*if (ageInDays > 334) {
 
             Intent c = new Intent(this, C3101_C3112.class);
             c.putExtra("study_id", study_id);
             startActivity(c);
 
-        } else if (ageInDays<334){
+        } else if (ageInDays < 334) {
 
             Intent c = new Intent(this, C3051_C3099.class);
             c.putExtra("study_id", study_id);
             startActivity(c);
-        }
+        }*/
+
+        Intent c = new Intent(this, ageInDays < 334 ? C3051_C3099.class : C3101_C3112.class);
+        c.putExtra("study_id", study_id);
+        startActivity(c);
+
+
     }
 
     void Initialization() {
