@@ -16,8 +16,11 @@ import android.widget.Toast;
 import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
+import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -213,7 +216,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
     public int numOfDays(String dob, String dod) {
 
-        SimpleDateFormat myFormat = new SimpleDateFormat("dd/mm/yyyy");
+        SimpleDateFormat myFormat = new SimpleDateFormat("MM/dd/yyyy");
 
         int numOfDays = 0;
 
@@ -221,8 +224,18 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             Date date1 = myFormat.parse(dob);
             Date date2 = myFormat.parse(dod);
             long diff = date2.getTime() - date1.getTime();
+          //  numOfDays = (int) TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
 
-            numOfDays = (int) TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
+
+            long difference = Math.abs(date2.getTime() - date1.getTime());
+            long differenceDates = difference / (24 * 60 * 60 * 1000);
+
+            //Convert long to String
+            String dayDifference = Long.toString(differenceDates);
+
+
+            numOfDays=Integer.parseInt(dayDifference);
+
 
         } catch (ParseException e) {
             e.printStackTrace();
@@ -244,7 +257,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
         currentSection = 3;
 
-        /*if (ageInDays > 334) {
+      if (ageInDays > 334) {
 
             Intent c = new Intent(this, C3101_C3112.class);
             c.putExtra("study_id", study_id);
@@ -255,11 +268,11 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             Intent c = new Intent(this, C3051_C3099.class);
             c.putExtra("study_id", study_id);
             startActivity(c);
-        }*/
+        }
 
-        Intent c = new Intent(this, ageInDays < 334 ? C3051_C3099.class : C3101_C3112.class);
-        c.putExtra("study_id", study_id);
-        startActivity(c);
+      //  Intent c = new Intent(this, ageInDays < 334 ? C3051_C3099.class : C3101_C3112.class);
+     //   c.putExtra("study_id", study_id);
+      //  startActivity(c);
 
 
     }
@@ -780,4 +793,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
     public void onBackPressed() {
         globale.interviewExit(this, this, study_id, currentSection = 3);
     }
+
+
+
 }
