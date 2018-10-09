@@ -219,6 +219,10 @@
 
                                 <TextView
                                     style="@style/TextView_Hint"
+                                    android:text="@string/N2216_h" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
                                     android:text="Inst_3: If N2212 = 2 (No care given or sought) → N2271
 Inst_4: If N2213 ≠ “Health provider” (Never took to a health provider) → N2247" />
 
@@ -1859,6 +1863,10 @@ Otherwise → Inst_7" />
 
                                             <TextView
                                                 style="@style/TextView_Hint"
+                                                android:text="@string/N2240_h" />
+
+                                            <TextView
+                                                style="@style/TextView_Hint"
                                                 android:text="Inst_7: If N2219, N2229, N2224 or N2234 = 1-4, 6-9 or 11 (seen at any health facility) → continue with N2241;
 Otherwise → N2247" />
 
@@ -2005,6 +2013,10 @@ Otherwise → N2247" />
 
                                             <TextView
                                                 style="@style/TextView_Hint"
+                                                android:text="@string/N2241_h" />
+
+                                            <TextView
+                                                style="@style/TextView_Hint"
                                                 android:text="2 or 9 → N2243" />
 
                                             <RadioGroup
@@ -2046,6 +2058,10 @@ Otherwise → N2247" />
                                                 android:id="@+id/txt_N2242"
                                                 style="@style/TextView"
                                                 android:text="@string/txt_N2242" />
+
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="@string/N2242_h" />
 
 
                                             <CheckBox
@@ -2105,6 +2121,10 @@ Otherwise → N2247" />
                                                 android:id="@+id/txt_N2243"
                                                 style="@style/TextView"
                                                 android:text="@string/txt_N2243" />
+
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="@string/N2243_h" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2243_1"
@@ -2345,6 +2365,10 @@ if N2213 ≠ “Health Provider” (Never took to a health provider) → N2271" 
                             android:id="@+id/txt_N2248"
                             style="@style/TextView"
                             android:text="@string/txt_N2248" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2248_h" />
 
                         <EditText
                             android:id="@+id/ed_N2248"

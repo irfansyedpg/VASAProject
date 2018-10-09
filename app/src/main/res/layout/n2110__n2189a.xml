@@ -841,6 +841,11 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2124" />
 
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2124_h" />
+
                             <EditText
                                 android:id="@+id/ed_N2124"
                                 style="@style/EditText_number"
@@ -967,6 +972,10 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2127" />
 
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2127_h" />
+
                             <RadioGroup style="@style/RadioGroup">
 
                                 <RadioButton
@@ -1061,6 +1070,10 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2129" />
 
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/N2129_h" />
+
                                 <EditText
                                     android:id="@+id/ed_N2129"
                                     style="@style/EditText_number"
@@ -1082,6 +1095,10 @@
                                     android:id="@+id/txt_N2130"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2130" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/N2130_h" />
 
                                 <EditText
                                     android:id="@+id/ed_N2130"
@@ -1883,6 +1900,10 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2139" />
 
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/N2139_h" />
+
                                 <EditText
                                     android:id="@+id/ed_N2139"
                                     style="@style/EditText_number"
@@ -2670,6 +2691,10 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2156" />
 
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2156_h" />
+
                             <EditText
                                 android:id="@+id/ed_N2156"
                                 style="@style/EditText_number"
@@ -2692,6 +2717,10 @@
                                 android:id="@+id/txt_N2157"
                                 style="@style/TextView"
                                 android:text="@string/txt_N2157" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2157_h" />
 
                             <EditText
                                 android:id="@+id/ed_N2157"
@@ -2809,6 +2838,10 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2160" />
 
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2160_h" />
+
                             <EditText
                                 android:id="@+id/ed_N2160"
                                 style="@style/EditText_number"
@@ -2832,6 +2865,10 @@
                                 android:id="@+id/txt_N2161"
                                 style="@style/TextView"
                                 android:text="@string/txt_N2161" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2161_h" />
 
                             <EditText
                                 android:id="@+id/ed_N2161"
@@ -3051,6 +3088,10 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2166" />
 
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2166_h" />
+
                             <EditText
                                 android:id="@+id/ed_N2166"
                                 style="@style/EditText_number"
@@ -3100,6 +3141,10 @@
                             android:id="@+id/txt_N2167"
                             style="@style/TextView"
                             android:text="@string/txt_N2167" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2167_h" />
 
                         <TextView
                             style="@style/TextView_Hint"
@@ -3155,6 +3200,10 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2168" />
 
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2168_h" />
+
                             <EditText
                                 android:id="@+id/ed_N2168"
                                 style="@style/EditText_number"
@@ -3178,6 +3227,10 @@
                                 android:id="@+id/txt_N2169"
                                 style="@style/TextView"
                                 android:text="@string/txt_N2169" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2169_h" />
 
                             <EditText
                                 android:id="@+id/ed_N2169"

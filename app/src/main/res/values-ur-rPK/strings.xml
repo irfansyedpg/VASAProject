@@ -961,8 +961,8 @@
     <string  name="rb_A4068_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_A4068_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="rb_A4069_u_1"  translatable="false">	گھنٹے             	</string>
-    <string  name="rb_A4069_u_2"  translatable="false">	دن	</string>
-    <string  name="rb_A4069_u_3"  translatable="false">	مہینے	</string>
+    <string  name="rb_A4069_u_2"  translatable="false">	مہینے	</string>
+    <string  name="rb_A4069_u_3"  translatable="false">    سال  </string>
     <string  name="rb_A4069_u_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_A4069_u_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="rb_A4070_1"  translatable="false">	اوپر کے حصہ میں 	</string>
@@ -3966,15 +3966,15 @@
 
     <!-- Neonate Urdu Text HINT's STARTS -->
 
-    <string  name="N2003_h"  translatable="false">	اگر ماں  انٹرویو میں موجود ہے تو   یہ سوال پوچھے بغیر  "ہاں"  پر نشان لگائیں 	</string>
+    <string  name="N2003_h"  translatable="false">	اگر ماں انٹرویو میں موجود ہے تو یہ سوال پوچھے بغیر  "ہاں"  پر نشان لگائیں 	</string>
     <string  name="N2005u_h"  translatable="false">	صرف ایک یونٹ یا جواب لکھیں	</string>
-    <string  name="N2005d_h"  translatable="false">	24 گھنٹے سے کم ہو تو 0     دن لکھیں      دن لکھیں ، اگر ایک دن یا 0-6  	</string>
-    <string  name="N2005w_h"  translatable="false">	  ہفتے لکھیں  1-7   	</string>
+    <string  name="N2005d_h"  translatable="false">	24 گھنٹے سے کم ہو تو 0  دن لکھیں  دن لکھیں ، اگر ایک دن یا 0-6  	</string>
+    <string  name="N2005w_h"  translatable="false"> ہفتے لکھیں  1-7   	</string>
     <string  name="N2005m_h"  translatable="false">	مہینے  لکھیں  2-60	</string>
     <string  name="N2006_h"  translatable="false">	سوال پڑہیں اور شروع کے پانچ جوابات کو آہستہ آہستہ پڑھیں. جواب دہندہ تمام جوابات کو سنے اور پھر جواب دے 	</string>
     <string  name="N2008_h"  translatable="false">	پڑھیں: " صحت  کی سہولت پر " ۔۔۔ اگر اس کی زچگی صحت کی سہولت فراہم کرے والی جگہ پر پیدا ہو ئی	</string>
     <string  name="N2009_1_h"  translatable="false">	تصویریں دکھائیں، جواب دہندہ کو  وضاحت کریں کہ اگر جواب " نہیں" ہے  تب بھی کچھ مزید سوال پوچھیں جائیں گے ، صرف اس بات کو  یقینی بنانے کے لئے کہ کو   ئی  اہم بات  چھوٹ نہ گئی ہو۔	</string>
-    <string  name="N2009_2_h"  translatable="false">	  کلو سے کم) 2.5( وزن 	</string>
+    <string  name="N2009_2_h"  translatable="false">  کلو سے کم) 2.5( وزن 	</string>
     <string  name="N2009_3_h"  translatable="false">	 کلو سے کم) 1 ( وزن	</string>
     <string  name="N2009_4_h"  translatable="false">	کلو سے زیادہ) 4.5  ( وزن	</string>
     <string  name="N2010_h"  translatable="false">	وزن  کلو گرام میں بتا ئے ۔ اس صورت میں ڈیٹا انٹری کے لئے1          کلو گرام کو 1000 میں تبدیل کریں۔   اگر "معلوم نہیں "ہے تو  "            9999" لکھیں اور "انکار" کی صورت میں  تو  "  8888" لکھیں۔	</string>
@@ -3985,36 +3985,36 @@
     <string  name="N2023_h"  translatable="false">	(سے Q1202)  یہ صرف اس وقت  پوچھیں جب نام  پہلے معلوم نہ ہو	</string>
     <string  name="N2024_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو 00 دن ریکارڈ کریں ۔ اگر  ایک ہفتہ=7دن لکھیں	</string>
     <string  name="N2025d_h"  translatable="false">	نوازئیدہ بچوں کے لئے: دنوں میں ریکارڈ کریں ۔اگر 24 گھنٹے سے کم ہے تو 00 دن ریکارڈ کریں	</string>
-    <string  name="N2051_h"  translatable="false">	معلوم نہیں="99."اور   انکار کردیا="88." لکھیں   	</string>
+    <string  name="N2051_h"  translatable="false">	معلوم نہیں="99"اور انکار کردیا="88" لکھیں   	</string>
     <string  name="N2053_h"  translatable="false">	ایک سے زیادہ جواب آسکتے ہیں(تمام لوگوں کے نا م لکھیں جن کو دکھایا )	</string>
     <string  name="N2058_h"  translatable="false">	مزید پوچھیں: مجھے مزید  ایسی    خطرناک علامات کے  بارے میں بتائیں  جو آپ بتاسکتی ہوں	</string>
     <string  name="N2062_h"  translatable="false">	اگر 7 اور 7 سے زیادہ   دفعہ ہے تو 7 ریکارڈ کریں۔	</string>
-    <string  name="N2067_h"  translatable="false">	اگر "معلوم نہیں "ہے تو  "            99" لکھیں اور "انکار" کی صورت میں  تو  "            88" لکھیں۔  	</string>
-    <string  name="N2070_h"  translatable="false">	"ماں " ۔اگر جوابدہندہ ماں نہیں ہے    پڑھیں  : 	</string>
+    <string  name="N2067_h"  translatable="false">	اگر "معلوم نہیں "ہے تو  "99" لکھیں اور "انکار" کی صورت میں  تو  "88" لکھیں۔  	</string>
+    <string  name="N2070_h"  translatable="false">	"ماں " ۔اگر جوابدہندہ ماں نہیں ہے پڑھیں  : 	</string>
     <string  name="N2071_h"  translatable="false">	نوٹ:لیبر(زچگی )  شروع ہوتی ہے جب درد زہ کی وجہ سے اینٹھن کا درمیانی وقفہ  20 منٹ  سے زیادہ نہ ہو	</string>
-    <string  name="N2072_h"  translatable="false">	ریکارڈ 24 اگر 1 دن یا 1 دن سے زیادہ    ہو ۔	</string>
-    <string  name="N2076_h"  translatable="false">	اگر زچگی  صحت کے مرکز میں جاتے  ہو ئے راستے  میں ہوئی   (N2006=3-11 or N2006=1-2 and N2008=1-3), " مرکز صحت"   یا     " ہیلتھ مہیا کرنے والا پڑھیں   "  تو  کسی ایک فیصلہ کرنے والے کا  نام  ، ماں اور اسکے شوہر کا نام مشترکہ طور پر  ریکارڈ کریں   (3)  	</string>
-    <string  name="N2077_h"  translatable="false">	مرکز صحت میں زچگی کروانے کی کوشش نہیں کی. "یا" اگر اس کی زچگی  ہیلتھ مہیا کرنے والے  کے پاس یا مرکز صحت میں جاتے   ہو ئے    ہو   گئی .	</string>
+    <string  name="N2072_h"  translatable="false">	ریکارڈ 24 اگر 1 دن یا 1 دن سے زیادہ ہو ۔	</string>
+    <string  name="N2076_h"  translatable="false">	اگر زچگی  صحت کے مرکز میں جاتے  ہو ئے راستے  میں ہوئی   (N2006=3-11 or N2006=1-2 and N2008=1-3), " مرکز صحت"   یا     " ہیلتھ مہیا کرنے والا پڑھیں   "  تو  کسی ایک فیصلہ کرنے والے کا  نام  ، ماں اور اسکے شوہر کا نام مشترکہ طور پر  ریکارڈ کریں (3)  	</string>
+    <string  name="N2077_h"  translatable="false">	مرکز صحت میں زچگی کروانے کی کوشش نہیں کی. "یا" اگر اس کی زچگی  ہیلتھ مہیا کرنے والے  کے پاس یا مرکز صحت میں جاتے ہو ئے ہو گئی .	</string>
     <string  name="N2078_h"  translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں 	</string>
     <string  name="N2081_h"  translatable="false">	پڑھیں: اگر وہ       ایک سے زیادہ حمل کی علامات رکھتی تھی تو  پڑھ کر سنا ئیں.	</string>
     <string  name="N2082_h"  translatable="false">	کیا کہیں اور سے بھی  مدد حاصل کی؟	</string>
     <string  name="N2083_h"  translatable="false">	پڑھیں :  "پہلا  صحت فراہم کنندہ "…….اگر   وہ ایک سے زیادہ  فراہم کنندہ کے پاس گئی  ہو۔	</string>
     <string  name="N2086_h"  translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں 	</string>
     <string  name="N2089_h"  translatable="false">	پڑھیں: " پہلی بار"……..۔اگر اسکو  ایک سے زیادہ لیبر یا زچگی کی علامات ظاہر ہوئی تھیں ؟	</string>
-    <string  name="N2090_h"  translatable="false">	پڑھیں:     " کوئی بھی علامت"  اگر وہ  ایک سے زیادہ علامت  رکھتی تھی ۔	</string>
+    <string  name="N2090_h"  translatable="false">	پڑھیں:     " کوئی بھی علامت"  اگر وہ ایک سے زیادہ علامت  رکھتی تھی ۔	</string>
     <string  name="N2091_h"  translatable="false">	ایک سے زیادہ جوابات کی اجازت ہے 	</string>
     <string  name="N2092_h"  translatable="false">	کسی ایک فیصلہ کرنے والے کا  نام  ، ماں اور اسکے شوہر کا نام مشترکہ طور پر ریکارڈ کریں(3)	</string>
     <string  name="N2095_h"  translatable="false">	پڑھیں :   "پہلا صحت فراہم کنندہ "  اگر  وہ   ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئی تھی	</string>
     <string  name="N2098_h"  translatable="false">	اگر عورت کا معا ئنہ  کسی  تربیت یافتہ ،کمیونٹی نرس،یا مڈوائف نے  صحت کی سہولت  پر کیا  تھا          تو    د ئے    گئے     صحت کی سہولت  کی  اقسام  پر نشان لگا ئیں  جہاں صحت مہیا کرنے والے  کو دکھایا تھا ۔	</string>
     <string  name="N2100_h"  translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں	</string>
     <string  name="N2101_h"  translatable="false">	مقامی   سہولت کے مطابق: جوابات     الگ الگ   ہونا   چاہئے اور ضرورت پڑنے پر مقامی  طور  پر  موجود   سہولت کے مطابق   اختیا ر کئے جائیں	</string>
-    <string  name="N2102_h"  translatable="false">	اگر   " نہیں"   تو جواب دہندہ سے مزید    ڈسکس کریں   اور صحیح جواب تک     2 or 3  پہنچیں 	</string>
+    <string  name="N2102_h"  translatable="false">	اگر   " نہیں"   تو جواب دہندہ سے مزید  ڈسکس کریں اور صحیح جواب تک 2 or 3  پہنچیں 	</string>
     <string  name="N2107_h"  translatable="false">	ہر علامت کو پڑھیں اور "ہاں" ، "نہیں" یا " معلوم نہیں" لکھیں ۔	</string>
     <string  name="N2124_h"  translatable="false">	گھنٹے لکھیں۔ “00”= منٹس سے کم  60	</string>
     <string  name="N2127_h"  translatable="false">	اگر   1-23  گھنٹہ تو گھنٹوں کی تعداد ریکارڈ کریں	</string>
     <string  name="N2129_h"  translatable="false">	اگر ایک گھنٹہ سے کم“00.” ریکارڈ کریں 	</string>
     <string  name="N2130_h"  translatable="false">	اگر ایک دن سے کم“00.” ریکارڈ کریں	</string>
-    <string  name="N2139_h"  translatable="false">	24 گھنٹے سے کم=  00  دن 	</string>
+    <string  name="N2139_h"  translatable="false">	24 گھنٹے سے کم=  00 دن 	</string>
     <string  name="N2156_h"  translatable="false">	اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>
     <string  name="N2157_h"  translatable="false">	.    اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>
     <string  name="N2160_h"  translatable="false">	.    اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>

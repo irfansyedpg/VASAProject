@@ -775,6 +775,10 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2258" />
 
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/N2258_h" />
+
                                 <EditText
                                     android:id="@+id/ed_N2258"
                                     style="@style/EditText_multi"
@@ -848,6 +852,10 @@
                             android:id="@+id/txt_N2260"
                             style="@style/TextView"
                             android:text="@string/txt_N2260" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2260_h" />
 
                         <EditText
                             android:id="@+id/ed_N2260"
