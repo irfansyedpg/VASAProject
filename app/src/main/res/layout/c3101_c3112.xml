@@ -266,6 +266,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3105" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3105_h" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -376,6 +380,10 @@
                         android:id="@+id/txt_C3107"
                         style="@style/TextView"
                         android:text="@string/txt_C3107" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3107_h" />
 
                     <TextView
                         android:id="@+id/txt_C3107_1"
@@ -1255,6 +1263,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3109_1" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3109_h" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -1844,6 +1856,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/C3110_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="After completing the card → C3112" />
 
 
@@ -1886,6 +1902,10 @@
                         android:id="@+id/txt_C3111"
                         style="@style/TextView"
                         android:text="@string/txt_C3111" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3111_h" />
 
                     <TextView
                         style="@style/TextView_Hint"
@@ -2223,6 +2243,10 @@
                         android:id="@+id/txt_C3112"
                         style="@style/TextView"
                         android:text="@string/txt_C3112" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3112_h" />
 
                     <RadioGroup style="@style/RadioGroup"
 

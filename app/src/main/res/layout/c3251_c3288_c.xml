@@ -194,6 +194,10 @@
 
                                 <TextView
                                     style="@style/TextView_Hint"
+                                    android:text="@string/C3256_h" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
                                     android:text="Inst_3: If C3252 = 2 (No care given or sought) → C3351
 Inst_4: If C3253 ≠ “Health provider” (Never took to a health provider) → C3387" />
 
@@ -1725,6 +1729,10 @@ Inst_4: If C3253 ≠ “Health provider” (Never took to a health provider) →
                                                 style="@style/TextView"
                                                 android:text="@string/txt_C3278" />
 
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="@string/C3278_h" />
+
                                             <RadioGroup style="@style/RadioGroup">
 
                                                 <RadioButton
@@ -1804,6 +1812,10 @@ Inst_4: If C3253 ≠ “Health provider” (Never took to a health provider) →
                                                 style="@style/TextView_Hint"
                                                 android:text="Inst_7: If C3259, C3269, C3264 or C3274 = 1-4, 6-9 or 11 (seen at any health facility) → continue with C3281;
 Otherwise →C3287" />
+
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="@string/C3280_h" />
 
                                             <TextView
                                                 android:id="@+id/txt_C3280"
@@ -1953,6 +1965,10 @@ Otherwise →C3287" />
 
                                             <TextView
                                                 style="@style/TextView_Hint"
+                                                android:text="@string/C3281_h" />
+
+                                            <TextView
+                                                style="@style/TextView_Hint"
                                                 android:text="2 or 9 → C3283" />
 
                                             <RadioGroup
@@ -1994,6 +2010,10 @@ Otherwise →C3287" />
                                                 android:id="@+id/txt_C3282"
                                                 style="@style/TextView"
                                                 android:text="@string/txt_C3282" />
+
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="@string/C3282_h" />
 
 
                                             <CheckBox
@@ -2053,6 +2073,10 @@ Otherwise →C3287" />
                                                 android:id="@+id/txt_C3283"
                                                 style="@style/TextView"
                                                 android:text="@string/txt_C3283" />
+
+                                            <TextView
+                                                style="@style/TextView_Hint"
+                                                android:text="@string/C3283_h" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_C3283_1"
