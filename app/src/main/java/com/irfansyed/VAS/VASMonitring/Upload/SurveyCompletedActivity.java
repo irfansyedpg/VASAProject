@@ -1079,7 +1079,13 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     if (c16.moveToFirst()) {
 
                         params.put(N2321_N2322.sub_N2321_N2322.N2321, c17.getString(c17.getColumnIndex("N2321")));
-                        params.put(N2321_N2322.sub_N2321_N2322.N2322, c17.getString(c17.getColumnIndex("N2322")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_1, c17.getString(c17.getColumnIndex("N2322_1")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_2, c17.getString(c17.getColumnIndex("N2322_2")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_3, c17.getString(c17.getColumnIndex("N2322_3")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_4, c17.getString(c17.getColumnIndex("N2322_4")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_5, c17.getString(c17.getColumnIndex("N2322_5")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_6, c17.getString(c17.getColumnIndex("N2322_6")));
+                        params.put(N2321_N2322.sub_N2321_N2322.N2322_DK, c17.getString(c17.getColumnIndex("N2322_DK")));
                     }
                 }
 
