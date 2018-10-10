@@ -130,6 +130,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4127_u_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="Months → A4127_b \n  Don't know \n Refused to answer → A4128 " />
 
                     <RadioGroup style="@style/RadioGroup">
@@ -175,6 +179,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4127_a_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="Days → A4128" />
 
 
@@ -199,6 +207,10 @@
                         android:id="@+id/A4127_b"
                         style="@style/TextView"
                         android:text="@string/months" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4127_b_h" />
 
                     <EditText
                         android:id="@+id/ed_A4127_b"
@@ -310,6 +322,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4130_u_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="Months → A4130_b \n  Don't know \n Refused to answer → A4131" />
 
                     <RadioGroup style="@style/RadioGroup">
@@ -355,6 +371,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4130_a_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="Days → A4131" />
 
 
@@ -379,6 +399,10 @@
                         android:id="@+id/A4130_b"
                         style="@style/TextView"
                         android:text="@string/months" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4130_b_h" />
 
                     <EditText
                         android:id="@+id/ed_A4130_b"
@@ -531,6 +555,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4134_u_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="Months → A4134_b \n  Don't know \n Refused to answer → A4135 " />
 
                     <RadioGroup style="@style/RadioGroup">
@@ -576,6 +604,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4134_a_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="Days → A4135" />
 
 
@@ -600,6 +632,10 @@
                         android:id="@+id/A4134_b"
                         style="@style/TextView"
                         android:text="@string/months" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4134_b_h" />
 
                     <EditText
                         android:id="@+id/ed_A4134_b"

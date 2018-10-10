@@ -108,6 +108,10 @@
                         android:text="@string/A4052_u" />
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4052_u_h" />
+
+                    <TextView
                         android:id="@+id/A4052_u_h"
                         style="@style/TextView_Hint"
                         android:text="Enter 1 unit only: 0-30 days or 1-60 months. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days." />
@@ -158,6 +162,10 @@
                         android:text="@string/A4052_b" />
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4052_b_h" />
+
+                    <TextView
                         android:id="@+id/A4052_b_h"
                         style="@style/TextView_Hint"
                         android:text="Enter 0-29 days. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days. \n Don't know = 99" />
@@ -188,6 +196,10 @@
                     android:id="@+id/A4052_c"
                     style="@style/TextView"
                     android:text="@string/A4052_c" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4052_c_h" />
 
                     <TextView
                         android:id="@+id/A4052_c_h"
@@ -430,7 +442,7 @@
                     <TextView
                         android:id="@+id/A4058"
                         style="@style/TextView"
-                        android:text="During the illness that led to death, did NAME have more frequent loose or liquid stools than usual?"/>
+                        android:text="@string/A4058"/>
 
                     <TextView
                         style="@style/TextView_Hint"
@@ -476,6 +488,10 @@
                         android:id="@+id/A4059_u"
                         style="@style/TextView"
                         android:text="@string/A4059_u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4059_u_h" />
 
                     <TextView
                         android:id="@+id/A4059_u_h"
@@ -529,6 +545,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4059_a_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="Days → A4060" />
 
                     <TextView
@@ -558,6 +578,10 @@
                         android:id="@+id/A4059_b"
                         style="@style/TextView"
                         android:text="@string/A4059_b" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4059_b_h" />
 
                     <TextView
                         android:id="@+id/A4059_b_h"
@@ -761,6 +785,10 @@
                         android:text="@string/A4064_u" />
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4064_u_h" />
+
+                    <TextView
                         android:id="@+id/A4064_u_h"
                         style="@style/TextView_Hint"
                         android:text="Enter 1 unit only: 0-29 days or 1-60 months. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days." />
@@ -811,6 +839,10 @@
                         android:text="@string/A4064_a" />
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4064_a_h" />
+
+                    <TextView
                         android:id="@+id/A4064_a_h"
                         style="@style/TextView_Hint"
                         android:text="Enter 0-29 days. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days. \n Dont' know = 99" />
@@ -841,6 +873,10 @@
                         android:id="@+id/A4064_b"
                         style="@style/TextView"
                         android:text="@string/A4064_b" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4064_b_h" />
 
                     <TextView
                         android:id="@+id/A4064_b_h"

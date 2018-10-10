@@ -185,6 +185,10 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2003" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2003_h" />
+
                         <RadioGroup
                             android:id="@+id/rg_N2003"
                             style="@style/RadioGroup">
@@ -234,6 +238,7 @@
                                 android:id="@+id/txt_N2004"
                                 style="@style/TextView"
                                 android:text="@string/txt_N2004" />
+
 
                             <RadioGroup
                                 android:id="@+id/rg_N2004"
@@ -290,6 +295,14 @@
                                     android:id="@+id/txt_N2005u"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2005u" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/N2005u_h" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="8 or 9 → N2006, 2 → N2005w, 3 → N2005m" />
 
                                 <RadioGroup
                                     android:id="@+id/rg_N2005u"
@@ -432,6 +445,10 @@
                             android:id="@+id/txt_N2006"
                             style="@style/TextView"
                             android:text="@string/txt_N2006" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2006_h" />
 
                         <TextView
 
@@ -633,6 +650,14 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2009_1" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2009_1_h" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="1 → N2010" />
+
                         <LinearLayout
                             style="@style/Q_Linerlayout_v"
                             android:gravity="center">
@@ -693,6 +718,14 @@
                                 android:id="@+id/txt_N2009_2"
                                 style="@style/TextView"
                                 android:text="@string/txt_N2009_2" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2009_2_h" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="1 → N2010" />
 
                             <LinearLayout
                                 style="@style/Q_Linerlayout_v"
@@ -755,6 +788,14 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2009_3" />
 
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/N2009_3_h" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="1 → N2010" />
+
                                 <LinearLayout
                                     style="@style/Q_Linerlayout_v"
                                     android:gravity="center">
@@ -809,6 +850,10 @@
                                     android:id="@+id/txt_N2009_4"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2009_4" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/N2009_4_h" />
 
                                 <LinearLayout
                                     style="@style/Q_Linerlayout_v"
@@ -866,6 +911,10 @@
                             android:id="@+id/txt_N2010"
                             style="@style/TextView"
                             android:text="@string/txt_N2010" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2010_h" />
 
 
                         <EditText

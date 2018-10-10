@@ -90,6 +90,10 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2211" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2211_h" />
+
 
                     </LinearLayout>
 
@@ -187,6 +191,10 @@
                             android:id="@+id/txt_N2212"
                             style="@style/TextView"
                             android:text="@string/txt_N2212" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="2 → N2215, 9 → N2248" />
 
                         <RadioGroup style="@style/RadioGroup">
 

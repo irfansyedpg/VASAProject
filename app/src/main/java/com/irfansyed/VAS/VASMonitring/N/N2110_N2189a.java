@@ -629,7 +629,7 @@ public class N2110_N2189a extends AppCompatActivity {
             }
         }
 
-        if (bi.rbN21371.isChecked()) {
+        if (bi.rbN21361.isChecked() || bi.rbN21371.isChecked()) {
             //ll_N2138
             if (!Gothrough.IamHiden(bi.llN2138)) {
                 return false;

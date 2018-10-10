@@ -90,6 +90,13 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2213" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="Inst_1: If the illness began at the health provider where the child was delivered:
+A) and did not fill N2098–N2106  → N2219;    B) and filled N2098–N2106 → N2223
+" />
+
+
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 

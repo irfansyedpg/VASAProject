@@ -92,6 +92,10 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2023" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2023_h" />
+
                         <EditText
                             android:id="@+id/ed_N2023"
                             style="@style/EditText_Name"
@@ -112,6 +116,10 @@
                             android:id="@+id/txt_N2024"
                             style="@style/TextView"
                             android:text="@string/txt_N2024" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2024_h" />
 
                         <EditText
                             android:id="@+id/ed_N2024"
@@ -134,6 +142,10 @@
                             android:id="@+id/txt_N2024_1"
                             style="@style/TextView"
                             android:text="@string/txt_N2024_1" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2024_h" />
 
                         <RadioGroup
                             android:id="@+id/rg_N2024_1"
@@ -216,6 +228,10 @@
                             style="@style/TextView"
                             android:text="@string/days" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2025d_h" />
+
                         <EditText
                             android:id="@+id/ed_N2025d"
                             style="@style/EditText_number"
@@ -238,6 +254,10 @@
                             android:id="@+id/txt_N2026"
                             style="@style/TextView"
                             android:text="@string/txt_N2026" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/txt_N2026_h" />
 
                         <RadioGroup
                             android:id="@+id/rg_N2026"

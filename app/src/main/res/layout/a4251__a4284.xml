@@ -221,7 +221,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="8, 2 or 9 → Inst_3 \n Inst_3: If A4251 = 2 (No care given or sought) → A4351." />
+                        android:text="@string/A4254_h" />
 
 
                     <RadioGroup style="@style/RadioGroup">
@@ -258,11 +258,12 @@
                     <TextView
                         android:id="@+id/A4254_2"
                         style="@style/TextView"
-                        android:text="@string/A4254_2" />
+                        android:text="@string/A4254_h" />
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="8, 2 or 9 → Inst_3 \n Inst_3: If A4251 = 2 (No care given or sought) → A4351." />
+                        android:text="@string/A4254_h" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -299,6 +300,10 @@
                         android:id="@+id/A4255"
                         style="@style/TextView"
                         android:text="@string/A4255" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4255_h" />
 
                     <CheckBox
                         android:id="@+id/cb_A4255_1"
@@ -398,6 +403,10 @@
                         android:id="@+id/tv_A4256"
                         style="@style/TextView"
                         android:text="@string/A4256" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4256_h" />
 
                     <TextView
                         android:id="@+id/tv_A4256_h"
@@ -1529,6 +1538,7 @@
                         style="@style/TextView"
                         android:text="@string/A4275_1" />
 
+
                     <TextView
                         android:id="@+id/A4275_1_h"
                         style="@style/TextView_Hint"
@@ -1615,6 +1625,10 @@
                         android:id="@+id/A4276"
                         style="@style/TextView"
                         android:text="@string/A4276" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4276_h" />
 
                     <CheckBox
                         android:id="@+id/cb_A4276_1"
@@ -1732,6 +1746,10 @@
 
                     <TextView
                         style="@style/TextView_Hint"
+                        android:text="@string/A4277_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="No \ n Don't know → A4279" />
 
 
@@ -1770,6 +1788,10 @@
                         android:id="@+id/A4278"
                         style="@style/TextView"
                         android:text="@string/A4278" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4278_h" />
 
                     <CheckBox
                         android:id="@+id/cb_A4278_1"
@@ -1827,6 +1849,10 @@
                         android:id="@+id/A4279"
                         style="@style/TextView"
                         android:text="@string/A4279" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4279_h" />
 
                     <CheckBox
                         android:id="@+id/cb_A4279_1"
@@ -2051,7 +2077,8 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="Less than 1 = 00 \nDon't know = 99)" />
+                        android:text="@string/A4284_h" />
+
 
 
                     <EditText

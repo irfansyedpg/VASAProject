@@ -44,7 +44,6 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             ll_A4403,
             ll_A4404,
             ll_A4405,
-            ll_51_52_53,
             ll_A4451_1,
             ll_A4451_2,
             ll_A4451_3,
@@ -626,24 +625,33 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         btn_imgCapture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                String RootDir = Environment.getExternalStorageDirectory().getAbsolutePath()
-                        + File.separator + "VASA" + File.separator + ed_study_id.getText().toString();
+                String RootDir = Environment.getExternalStorageDirectory()
+                        + File.separator + "VASA";
                 File RootFile = new File(RootDir);
                 boolean success = true;
                 if (!RootFile.exists()) {
                     success = RootFile.mkdir();
                 }
                 if (success) {
-                    Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    output = new File(RootDir, "A4471_" + count + ".jpeg");
+                    RootDir = RootDir + File.separator + ed_study_id.getText().toString();
+                    RootFile = new File(RootDir);
+                    success = true;
+                    if (!RootFile.exists()) {
+                        success = RootFile.mkdir();
+                    }
 
-                    i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
-                    startActivityForResult(i, CONTENT_REQUEST);
+                    if (success) {
+                        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                        output = new File(RootDir, "A4471_" + count + ".jpeg");
+
+                        i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
+                        startActivityForResult(i, CONTENT_REQUEST);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
+                    }
                 } else {
                     Toast.makeText(getApplicationContext(), "Can't create folder!!", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
     }

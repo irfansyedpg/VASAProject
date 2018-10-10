@@ -48,10 +48,10 @@
             android:layout_marginBottom="5sp"
             android:fadeScrollbars="false"
             android:fillViewport="true"
-            android:paddingBottom="5sp"
             android:paddingLeft="5sp"
-            android:paddingRight="5sp"
             android:paddingTop="5sp"
+            android:paddingRight="5sp"
+            android:paddingBottom="5sp"
             android:scrollbarSize="10dip">
 
             <LinearLayout style="@style/Q_Linerlayout_v">
@@ -71,9 +71,9 @@
                             android:id="@+id/ed_study_id"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/txt_study_id"
                             android:clickable="false"
                             android:focusable="false"
+                            android:hint="@string/txt_study_id"
                             android:inputType="date"
                             app:met_mask="####-###-##" />
 
@@ -93,6 +93,14 @@
                             android:id="@+id/txt_N2321"
                             style="@style/TextView"
                             android:text="@string/txt_N2321" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2321_h" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="Inst_1: If stillbirth → End interview" />
 
                         <EditText
                             android:id="@+id/ed_N2321"
@@ -141,44 +149,40 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2322" />
 
-                        <RadioGroup style="@style/RadioGroup">
+                        <CheckBox
+                            android:id="@+id/cb_N2322_1"
+                            style="@style/CheckBox"
+                            android:text="@string/cb_N2322_1" />
 
-                            <RadioButton
-                                android:id="@+id/rb_N2322_1"
-                                style="@style/RadioButton"
-                                android:text="@string/rb_N2322_1" />
+                        <CheckBox
+                            android:id="@+id/cb_N2322_2"
+                            style="@style/CheckBox"
+                            android:text="@string/cb_N2322_2" />
 
-                            <RadioButton
-                                android:id="@+id/rb_N2322_2"
-                                style="@style/RadioButton"
-                                android:text="@string/rb_N2322_2" />
+                        <CheckBox
+                            android:id="@+id/cb_N2322_3"
+                            style="@style/CheckBox"
+                            android:text="@string/cb_N2322_3" />
 
-                            <RadioButton
-                                android:id="@+id/rb_N2322_3"
-                                style="@style/RadioButton"
-                                android:text="@string/rb_N2322_3" />
+                        <CheckBox
+                            android:id="@+id/cb_N2322_4"
+                            style="@style/CheckBox"
+                            android:text="@string/cb_N2322_4" />
 
-                            <RadioButton
-                                android:id="@+id/rb_N2322_4"
-                                style="@style/RadioButton"
-                                android:text="@string/rb_N2322_4" />
+                        <CheckBox
+                            android:id="@+id/cb_N2322_5"
+                            style="@style/CheckBox"
+                            android:text="@string/cb_N2322_5" />
 
-                            <RadioButton
-                                android:id="@+id/rb_N2322_5"
-                                style="@style/RadioButton"
-                                android:text="@string/rb_N2322_5" />
+                        <CheckBox
+                            android:id="@+id/cb_N2322_6"
+                            style="@style/CheckBox" 
+                            android:text="@string/cb_N2322_6" />
 
-                            <RadioButton
-                                android:id="@+id/rb_N2322_6"
-                                style="@style/RadioButton"
-                                android:text="@string/rb_N2322_6" />
-
-                            <RadioButton
-                                android:id="@+id/rb_N2322_DK"
-                                style="@style/RadioButton"
-                                android:text="@string/dnt" />
-
-                        </RadioGroup>
+                        <CheckBox
+                            android:id="@+id/cb_N2322_DK"
+                            style="@style/CheckBox"
+                            android:text="@string/dnt" />
 
                     </LinearLayout>
 

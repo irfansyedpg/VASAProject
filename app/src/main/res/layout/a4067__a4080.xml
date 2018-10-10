@@ -62,7 +62,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="No \n Don't know or \n Refused to answer → A4071" />
+                        android:text="2, 9, 8 → A4071" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -147,13 +147,16 @@
                         android:text="@string/A4069_u" />
 
                     <TextView
-                        android:id="@+id/A4069_u_h"
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4069_u_h" />
+
+                    <TextView
                         style="@style/TextView_Hint"
                         android:text="Enter 1 unit only: \n0-23 hours, \n1-30 days, \n1-60 months. \n1 week = 7 days." />
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="Days → A4069_b \n Months → A4069_c \n Don't know \n Refused to answer → A4070 " />
+                        android:text="9, 8 → A4070 " />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -194,6 +197,7 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4069_a"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -227,6 +231,7 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4069_b"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -259,6 +264,7 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4069_c"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -387,13 +393,16 @@
                         android:text="@string/A4072_u" />
 
                     <TextView
-                        android:id="@+id/A4072_u_h"
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4072_u_h" />
+
+                    <TextView
                         style="@style/TextView_Hint"
                         android:text="Enter 1 unit only: \n0-30 days \n1-60 months. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days." />
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="Months → A4072_b \n  Don't know \n Refused to answer → A4073 " />
+                        android:text="9, 8 → A4073 " />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -429,6 +438,7 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4072_a"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -437,13 +447,13 @@
                         android:text="@string/A4072_a" />
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4072_a_h" />
+
+                    <TextView
                         android:id="@+id/A4072_a_h"
                         style="@style/TextView_Hint"
                         android:text="Enter 0-30 days. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days. \nDon't know = 99." />
-
-                    <TextView
-                        style="@style/TextView_Hint"
-                        android:text="Days → A4073" />
 
                     <EditText
                         android:id="@+id/ed_A4072_a"
@@ -461,12 +471,17 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4072_b"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
                         android:id="@+id/A4072_b"
                         style="@style/TextView"
                         android:text="@string/A4072_b" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4072_b_h" />
 
                     <TextView
                         android:id="@+id/A4072_b_h"
@@ -584,7 +599,11 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="Months → A4075_b \n  Don't know \n Refused to answer → A4076 " />
+                        android:text="@string/A4075_u_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="9, 8 → A4076 " />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -620,12 +639,17 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4075_a"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
                         android:id="@+id/A4075_a"
                         style="@style/TextView"
                         android:text="@string/A4075_a" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4075_a_h" />
 
                     <TextView
                         android:id="@+id/A4075_a_h"
@@ -653,12 +677,17 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4075_b"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
                         android:id="@+id/A4075_b"
                         style="@style/TextView"
                         android:text="@string/A4075_b" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4075_b_h" />
 
                     <EditText
                         android:id="@+id/ed_A4075_b"
@@ -685,7 +714,7 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="No \n Don't know or \n Refused to answer → A4081" />
+                        android:text="2, 9, 8 → A4081" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -730,7 +759,11 @@
 
                     <TextView
                         style="@style/TextView_Hint"
-                        android:text="Months → A4077_b \n  Don't know \n Refused to answer → A4078 " />
+                        android:text="@string/A4077_u_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="9, 8 → A4078 " />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -766,6 +799,7 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4077_a"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -774,13 +808,13 @@
                         android:text="@string/A4077_a" />
 
                     <TextView
-                        android:id="@+id/A4077_a_h"
-                        style="@style/TextView"
+                        style="@style/TextView_Hint"
                         android:text="@string/A4077_a_h" />
 
                     <TextView
+                        android:id="@+id/A4077_a_h"
                         style="@style/TextView"
-                        android:text="Days → A4078" />
+                        android:text="@string/A4077_a_h" />
 
                     <EditText
                         android:id="@+id/ed_A4077_a"
@@ -798,6 +832,7 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4077_b"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -806,8 +841,11 @@
                         android:text="@string/A4077_b" />
 
                     <TextView
-                        android:id="@+id/A4077_b_h"
-                        style="@style/TextView"
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4077_b_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
                         android:text="@string/A4077_b_h" />
 
                     <EditText
