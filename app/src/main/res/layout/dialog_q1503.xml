@@ -160,7 +160,7 @@
 
             android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:text="Add Pregnancy"
+            android:text="Add Relation"
 
             android:textSize="14sp"
 
