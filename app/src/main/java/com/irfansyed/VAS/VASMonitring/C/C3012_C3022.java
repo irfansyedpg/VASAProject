@@ -16,13 +16,9 @@ import android.widget.Toast;
 import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
-import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.temporal.ChronoUnit;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
 import data.DBHelper;
 import data.LocalDataManager;
@@ -156,7 +152,12 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             String dob = res.getString(res.getColumnIndex("Q1603"));
             String dod = res.getString(res.getColumnIndex("Q1606"));
 
+            //if ()
+
+
             ageInDays = numOfDays(dob, dod);
+
+            //Toast.makeText(this, ""+ageInDays, Toast.LENGTH_LONG).show();
         }
 
         this.Initialization();
@@ -216,15 +217,17 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
     public int numOfDays(String dob, String dod) {
 
-        SimpleDateFormat myFormat = new SimpleDateFormat("MM/dd/yyyy");
+        SimpleDateFormat myFormat = new SimpleDateFormat("dd/MM/yyyy");
 
         int numOfDays = 0;
 
         try {
+
             Date date1 = myFormat.parse(dob);
             Date date2 = myFormat.parse(dod);
-            long diff = date2.getTime() - date1.getTime();
-          //  numOfDays = (int) TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
+
+            //long diff = date2.getTime() - date1.getTime();
+            //numOfDays = (int) TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
 
 
             long difference = Math.abs(date2.getTime() - date1.getTime());
@@ -234,7 +237,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             String dayDifference = Long.toString(differenceDates);
 
 
-            numOfDays=Integer.parseInt(dayDifference);
+            numOfDays = Integer.parseInt(dayDifference);
 
 
         } catch (ParseException e) {
