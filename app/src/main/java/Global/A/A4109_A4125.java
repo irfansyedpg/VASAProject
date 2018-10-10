@@ -12,16 +12,16 @@ public class A4109_A4125 {
     public static String A4115 = "A4115";
     public static String A4116 = "A4116";
     public static String A4117_u = "A4117_u";
-    public static String A4117_a = "A4117_a ";
-    public static String A4117_b = "A4117_b ";
+    public static String A4117_a = "A4117_a";
+    public static String A4117_b = "A4117_b";
     public static String A4118 = "A4118";
     public static String A4119 = "A4119";
     public static String A4120 = "A4120";
     public static String A4121 = "A4121";
     public static String A4122 = "A4122";
-    public static String A4123 = "A4123 ";
-    public static String A4124 = "A4124 ";
-    public static String A4125 = "A4125 ";
+    public static String A4123 = "A4123";
+    public static String A4124 = "A4124";
+    public static String A4125 = "A4125";
     public static String STATUS = "STATUS";
 
 }

@@ -32,7 +32,7 @@ public class A4157_A4205 {
     public static String A4184 = "A4184";
     public static String A4185 = "A4185";
     public static String A4186 = "A4186";
-    public static String A4186_1 = "A4186_1 ";
+    public static String A4186_1 = "A4186_1";
     public static String A4187 = "A4187";
     public static String A4188 = "A4188";
     public static String A4189 = "A4189";
@@ -52,7 +52,7 @@ public class A4157_A4205 {
     public static String A4203 = "A4203";
     public static String A4204 = "A4204";
     public static String A4205 = "A4205";
-    public static String A4205_1 = "A4205_1 ";
+    public static String A4205_1 = "A4205_1";
     public static String STATUS = "STATUS";
 
 }

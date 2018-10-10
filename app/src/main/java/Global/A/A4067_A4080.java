@@ -7,13 +7,13 @@ public class A4067_A4080 {
     public static String A4068 = "A4068";
     public static String A4069_u = "A4069_u";
     public static String A4069_a = "A4069_a";
-    public static String A4069_b = "A4069_b ";
-    public static String A4069_c = "A4069_c ";
+    public static String A4069_b = "A4069_b";
+    public static String A4069_c = "A4069_c";
     public static String A4070 = "A4070";
-    public static String A4071 = "A4071 ";
+    public static String A4071 = "A4071";
     public static String A4072_u = "A4072_u";
     public static String A4072_a = "A4072_a";
-    public static String A4072_b = "A4072_b ";
+    public static String A4072_b = "A4072_b";
     public static String A4073 = "A4073";
     public static String A4074 = "A4074";
     public static String A4075_u = "A4075_u";
