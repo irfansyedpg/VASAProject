@@ -2397,6 +2397,16 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3144_a.setVisibility(View.GONE);
                 ll_C3144_b.setVisibility(View.GONE);
             }
+
+            if (rb_C3143_2.isChecked() || rb_C3143_DK.isChecked() || rb_C3143_RA.isChecked()){
+
+                ClearAllcontrol.ClearAll(ll_C3145);
+                ll_C3145.setVisibility(View.GONE);
+
+            } else {
+
+                ll_C3145.setVisibility(View.VISIBLE);
+            }
         }
 
         if (compoundButton.getId() == R.id.rb_C3146_1

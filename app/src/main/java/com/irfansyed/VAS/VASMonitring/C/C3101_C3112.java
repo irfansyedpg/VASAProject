@@ -900,17 +900,23 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3104_DK
                 || compoundButton.getId() == R.id.rb_C3104_RA) {
 
-            if (rb_C3104_1.isChecked() && ageInDays>334){
+            if (rb_C3104_1.isChecked() && ageInDays > 330){
+
                 ClearAllcontrol.ClearAll(ll_C3105);
                 ll_C3105.setVisibility(View.GONE);
+
                 ll_C3106.setVisibility(View.VISIBLE);
 
-            }else if (rb_C3104_1.isChecked() && ageInDays<334){
+            } else if (rb_C3104_1.isChecked() && ageInDays < 330){
+
                 ll_C3105.setVisibility(View.VISIBLE);
                 ll_C3106.setVisibility(View.VISIBLE);
-            }else{
+
+            } else {
+
                 ClearAllcontrol.ClearAll(ll_C3105);
                 ClearAllcontrol.ClearAll(ll_C3106);
+
                 ll_C3105.setVisibility(View.GONE);
                 ll_C3106.setVisibility(View.GONE);
             }
