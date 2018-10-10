@@ -393,12 +393,12 @@ Inst_4: If N2213 ≠ “Health provider” (Never took to a health provider) →
                                             <RadioButton
                                                 android:id="@+id/rb_N2218_1_2"
                                                 style="@style/RadioButton"
-                                                android:text="@string/weeks" />
+                                                android:text="@string/rb_N2218_1_2" />
 
                                             <RadioButton
                                                 android:id="@+id/rb_N2218_1_3"
                                                 style="@style/RadioButton"
-                                                android:text="@string/months" />
+                                                android:text="@string/rb_N2218_1_3" />
 
                                             <RadioButton
                                                 android:id="@+id/rb_N2218_1_DK"
@@ -1050,7 +1050,7 @@ Inst_4: If N2213 ≠ “Health provider” (Never took to a health provider) →
                                             <TextView
                                                 android:id="@+id/txt_N2227_2"
                                                 style="@style/TextView"
-                                                android:text="@string/txt_N2227_1" />
+                                                android:text="@string/txt_N2227_2" />
 
                                             <RadioGroup style="@style/RadioGroup">
 

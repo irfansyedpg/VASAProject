@@ -1,6 +1,7 @@
 package com.irfansyed.VAS.VASMonitring.Core;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,8 +17,11 @@ import android.widget.Toast;
 import com.irfansyed.VAS.VASMonitring.A.A4001_A4014;
 import com.irfansyed.VAS.VASMonitring.A.A4251_A4284;
 import com.irfansyed.VAS.VASMonitring.GS.Q1101_Q1610;
+import com.irfansyed.VAS.VASMonitring.N.N2211_N2248_C;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.Upload.SurveyCompletedActivity;
+
+import java.util.Locale;
 
 import utils.MyPreferences;
 
@@ -32,7 +36,7 @@ public class HomeActivity extends AppCompatActivity
         setContentView(com.irfansyed.VAS.VASMonitring.R.layout.activity_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        //change_langua();
         final MyPreferences preferences = new MyPreferences(this);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -97,7 +101,8 @@ public class HomeActivity extends AppCompatActivity
 
 
           //intent = new Intent(this, Q1101_Q1610.class);
-            intent = new Intent(this, Q1101_Q1610.class);
+           intent = new Intent(this, Q1101_Q1610.class);
+
 
 
             intent.putExtra("put_extra", put_extr);
@@ -136,5 +141,37 @@ public class HomeActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+
+    //void change_langua()
+    {
+
+        final MyPreferences preferences = new MyPreferences(this);
+
+        String lang = preferences.getlanguage();
+
+//create a string for country
+        String country = preferences.getcountry();
+//use constructor with country
+
+
+        if(lang==null)
+        {
+            lang="ur";
+            country="PK";
+
+        }
+        Locale locale = new Locale(lang, country);
+
+
+
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        this.getResources().updateConfiguration(config,
+                this.getResources().getDisplayMetrics());
+
     }
 }
