@@ -366,6 +366,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
         Initialization();
 
+        ll_C3101.setVisibility(View.GONE);
         ll_C3105_OT.setVisibility(View.GONE);
         ll_C3107_6_OT.setVisibility(View.GONE);
         ll_C3107_21_OT.setVisibility(View.GONE);
@@ -383,7 +384,6 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             //Q1102 = Integer.parseInt(Q1101_Q1610.getString(3));
 
             /*Q1102 = Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1102")));
-
             if (Q1102 == 1) {
 
                 ll_C3101.setVisibility(View.VISIBLE);
@@ -393,12 +393,42 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3101.setVisibility(View.GONE);
             }*/
 
-            String dob = Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1603"));
+            /*String dob = Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1603"));
             String dod = Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1606"));
+            ageInDays = numOfDays(dob, dod);*/
 
-            ageInDays = numOfDays(dob, dod);
+            if (Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1607_1"))) > 0
+                    || Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1607_2"))) > 0
+                    || Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1607_3"))) > 0) {
 
-            if (ageInDays > 1460) {
+                if (Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1607_3"))) > 0) {
+
+                    ageInDays = Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1607_3"))) * 12 * 30;
+
+                } else if (Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1607_2"))) > 0) {
+
+                    ageInDays = Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1607_2"))) * 30;
+                } else {
+
+                    ageInDays = Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1607_1")));
+                }
+
+            } else {
+
+                if (Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1608_3"))) > 0) {
+
+                    ageInDays = Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1608_3"))) * 12 * 30;
+
+                } else if (Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1608_2"))) > 0) {
+
+                    ageInDays = Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1608_2"))) * 30;
+                } else {
+
+                    ageInDays = Integer.valueOf(Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1608_1")));
+                }
+            }
+
+            if (ageInDays > 1440) {
 
                 ll_C3102.setVisibility(View.GONE);
                 ll_C3103.setVisibility(View.GONE);

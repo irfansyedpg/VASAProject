@@ -397,8 +397,8 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         ed_study_id.setText(study_id);
         ed_study_id.setEnabled(false);
 
-        DBHelper db = new DBHelper(this);
-        Cursor Q1101_Q1610 = db.getData("Q1101_Q1610", study_id);
+
+        /*Cursor Q1101_Q1610 = db.getData("Q1101_Q1610", study_id);
 
         if (Q1101_Q1610.getCount() > 0) {
 
@@ -408,7 +408,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             String dod = Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1606"));
 
             ageInDays = numOfDays(dob, dod);
-        }
+        }*/
 
         Initialization();
 
@@ -418,13 +418,12 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         ll_C3068_OT.setVisibility(View.GONE);
         ll_C3079_OT.setVisibility(View.GONE);
 
+        DBHelper db = new DBHelper(this);
         Cursor C3001_C3011 = db.getData("C3001_C3011", study_id);
 
         if (C3001_C3011.getCount() > 0) {
 
             C3001_C3011.moveToFirst();
-
-            //C3006 = Integer.parseInt(C3001_C3011.getString(10));
 
             C3006 = Integer.valueOf(C3001_C3011.getString(C3001_C3011.getColumnIndex("C3006")));
         }

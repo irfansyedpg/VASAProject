@@ -149,15 +149,36 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
             res.moveToFirst();
 
-            String dob = res.getString(res.getColumnIndex("Q1603"));
-            String dod = res.getString(res.getColumnIndex("Q1606"));
+            if (Integer.valueOf(res.getString(res.getColumnIndex("Q1607_1"))) > 0
+                    || Integer.valueOf(res.getString(res.getColumnIndex("Q1607_2"))) > 0
+                    || Integer.valueOf(res.getString(res.getColumnIndex("Q1607_3"))) > 0) {
 
-            //if ()
+                if (Integer.valueOf(res.getString(res.getColumnIndex("Q1607_3"))) > 0) {
 
+                    ageInDays = Integer.valueOf(res.getString(res.getColumnIndex("Q1607_3"))) * 12 * 30;
 
-            ageInDays = numOfDays(dob, dod);
+                } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1607_2"))) > 0) {
 
-            //Toast.makeText(this, ""+ageInDays, Toast.LENGTH_LONG).show();
+                    ageInDays = Integer.valueOf(res.getString(res.getColumnIndex("Q1607_2"))) * 30;
+                } else {
+
+                    ageInDays = Integer.valueOf(res.getString(res.getColumnIndex("Q1607_1")));
+                }
+
+            } else {
+
+                if (Integer.valueOf(res.getString(res.getColumnIndex("Q1608_3"))) > 0) {
+
+                    ageInDays = Integer.valueOf(res.getString(res.getColumnIndex("Q1608_3"))) * 12 * 30;
+
+                } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1608_2"))) > 0) {
+
+                    ageInDays = Integer.valueOf(res.getString(res.getColumnIndex("Q1608_2"))) * 30;
+                } else {
+
+                    ageInDays = Integer.valueOf(res.getString(res.getColumnIndex("Q1608_1")));
+                }
+            }
         }
 
         this.Initialization();
@@ -170,16 +191,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
         ll_C3021y.setVisibility(View.GONE);
 
 
-        if (ageInDays > 1460) {
-
-            ll_C3013.setVisibility(View.VISIBLE);
-            ll_C3015.setVisibility(View.VISIBLE);
-            ll_C3016.setVisibility(View.VISIBLE);
-            ll_C3017.setVisibility(View.VISIBLE);
-            ll_C3018.setVisibility(View.VISIBLE);
-            ll_C3018_1.setVisibility(View.VISIBLE);
-
-        } else {
+        if (ageInDays > 27 && ageInDays < 1441) {
 
             ClearAllcontrol.ClearAll(ll_C3013);
             ClearAllcontrol.ClearAll(ll_C3015);
@@ -194,9 +206,18 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             ll_C3017.setVisibility(View.GONE);
             ll_C3018.setVisibility(View.GONE);
             ll_C3018_1.setVisibility(View.GONE);
+
+        } else {
+
+            ll_C3013.setVisibility(View.VISIBLE);
+            ll_C3015.setVisibility(View.VISIBLE);
+            ll_C3016.setVisibility(View.VISIBLE);
+            ll_C3017.setVisibility(View.VISIBLE);
+            ll_C3018.setVisibility(View.VISIBLE);
+            ll_C3018_1.setVisibility(View.VISIBLE);
         }
 
-        if (ageInDays < 3285) {
+        if (ageInDays > 1440 && ageInDays < 3240) {
 
             ClearAllcontrol.ClearAll(ll_C3018);
             ClearAllcontrol.ClearAll(ll_C3018_1);
@@ -260,24 +281,18 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
         currentSection = 3;
 
-      if (ageInDays > 334) {
+        if (ageInDays > 330) {
 
             Intent c = new Intent(this, C3101_C3112.class);
             c.putExtra("study_id", study_id);
             startActivity(c);
 
-        } else if (ageInDays < 334) {
+        } else if (ageInDays < 330) {
 
             Intent c = new Intent(this, C3051_C3099.class);
             c.putExtra("study_id", study_id);
             startActivity(c);
         }
-
-      //  Intent c = new Intent(this, ageInDays < 334 ? C3051_C3099.class : C3101_C3112.class);
-     //   c.putExtra("study_id", study_id);
-      //  startActivity(c);
-
-
     }
 
     void Initialization() {
@@ -796,7 +811,6 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
     public void onBackPressed() {
         globale.interviewExit(this, this, study_id, currentSection = 3);
     }
-
 
 
 }
