@@ -190,7 +190,7 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_A4352_1
                 || compoundButton.getId() == R.id.rb_A4352_2) {
 
-            if (rb_A4351_1.isChecked()) {
+            if (rb_A4352_1.isChecked()) {
                 ll_A4353.setVisibility(View.VISIBLE);
                 ll_A4354.setVisibility(View.VISIBLE);
                 ll_A4355.setVisibility(View.VISIBLE);
@@ -198,7 +198,7 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
                 ll_A4357.setVisibility(View.VISIBLE);
                 ll_A4358.setVisibility(View.VISIBLE);
             }
-            else if (rb_A4351_2.isChecked()){
+            else if (rb_A4352_2.isChecked()){
                 ClearAllcontrol.ClearAll(ll_A4353);
                 ClearAllcontrol.ClearAll(ll_A4354);
                 ClearAllcontrol.ClearAll(ll_A4355);
