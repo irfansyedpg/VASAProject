@@ -203,7 +203,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_N(final String study_id) {
 
-        final String ROOT_URL = "http://192.168.1.105/sm/Welcome/collect_N";
+        final String ROOT_URL = "http://10.199.15.253/sm/Welcome/collect_N";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -1346,7 +1346,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_C(final String study_id) {
 
-        final String ROOT_URL = "http://192.168.1.105/sm/Welcome/collect_C";
+        final String ROOT_URL = "http://10.199.15.253/sm/Welcome/collect_C";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -2473,7 +2473,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_A(final String study_id) {
 
-        final String ROOT_URL = "http://192.168.1.105/sm/Welcome/collect_A";
+        final String ROOT_URL = "http://10.199.15.253/sm/Welcome/collect_A";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -2639,7 +2639,6 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(Q1101_Q1610.interviewType, c.getString(c.getColumnIndex("interviewType")));
                         params.put(Q1101_Q1610.currentSection, c.getString(c.getColumnIndex("currentSection")));
                     }
-
                 }
 
                 if (c2 != null) {
@@ -2663,6 +2662,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4001_A4014.A4013d, c2.getString(c2.getColumnIndex("A4013d")));
                         params.put(A4001_A4014.A4013m, c2.getString(c2.getColumnIndex("A4013m")));
                         params.put(A4001_A4014.A4013y, c2.getString(c2.getColumnIndex("A4013y")));
+                        params.put(A4001_A4014.A4014, c2.getString(c2.getColumnIndex("A4014")));
                     }
                 }
                 else
@@ -2802,7 +2802,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
 
 
-                    if (c5 != null) {
+                if (c5 != null) {
 
                     if (c5.moveToFirst()) {
 
@@ -3066,7 +3066,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4157_A4205.A4161, c10.getString(c10.getColumnIndex("A4161")));
                         params.put(A4157_A4205.A4161_1, c10.getString(c10.getColumnIndex("A4161_1")));
                         params.put(A4157_A4205.A4162, c10.getString(c10.getColumnIndex("A4162")));
-                        params.put(A4157_A4205.A4163, c10.getString(c10.getColumnIndex("A4163")));
+                        params.put(A4157_A4205.A4163_1, c10.getString(c10.getColumnIndex("A4163_1")));
                         params.put(A4157_A4205.A4163, c10.getString(c10.getColumnIndex("A4163")));
                         params.put(A4157_A4205.A4164, c10.getString(c10.getColumnIndex("A4164")));
                         params.put(A4157_A4205.A4166, c10.getString(c10.getColumnIndex("A4166")));
@@ -3229,45 +3229,45 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
                     if (c12.moveToFirst()) {
 
-                        params.put(A4251_A4284.A4251,         c12.getString(c12.getColumnIndex("A4251")));
-                        params.put(A4251_A4284.A4253,         c12.getString(c12.getColumnIndex("A4253")));
-                        params.put(A4251_A4284.A4253_3,       c12.getString(c12.getColumnIndex("A4253_3")));
-                        params.put(A4251_A4284.A4254_1,       c12.getString(c12.getColumnIndex("A4254_1")));
-                        params.put(A4251_A4284.A4254_2,       c12.getString(c12.getColumnIndex("A4254_2")));
-                        params.put(A4251_A4284.A4255_1,       c12.getString(c12.getColumnIndex("A4255_1")));
-                        params.put(A4251_A4284.A4255_2,       c12.getString(c12.getColumnIndex("A4255_2")));
-                        params.put(A4251_A4284.A4255_3,       c12.getString(c12.getColumnIndex("A4255_3")));
-                        params.put(A4251_A4284.A4255_4,       c12.getString(c12.getColumnIndex("A4255_4")));
-                        params.put(A4251_A4284.A4255_4_OT,    c12.getString(c12.getColumnIndex("A4255_4_OT")));
-                        params.put(A4251_A4284.A4255_5,       c12.getString(c12.getColumnIndex("A4255_5")));
-                        params.put(A4251_A4284.A4255_6,       c12.getString(c12.getColumnIndex("A4255_6")));
-                        params.put(A4251_A4284.A4255_7,       c12.getString(c12.getColumnIndex("A4255_7")));
-                        params.put(A4251_A4284.A4255_8,       c12.getString(c12.getColumnIndex("A4255_8")));
-                        params.put(A4251_A4284.A4255_9,       c12.getString(c12.getColumnIndex("A4255_9")));
-                        params.put(A4251_A4284.A4255_10,      c12.getString(c12.getColumnIndex("A4255_10")));
-                        params.put(A4251_A4284.A4255_11,      c12.getString(c12.getColumnIndex("A4255_11")));
-                        params.put(A4251_A4284.A4255_12,      c12.getString(c12.getColumnIndex("A4255_12")));
-                        params.put(A4251_A4284.A4255_13,      c12.getString(c12.getColumnIndex("A4255_13")));
-                        params.put(A4251_A4284.A4255_13_OT,   c12.getString(c12.getColumnIndex("A4255_13_OT")));
-                        params.put(A4251_A4284.A4255_DK,      c12.getString(c12.getColumnIndex("A4255_DK")));
-                        params.put(A4251_A4284.A4256_days,    c12.getString(c12.getColumnIndex("A4256_days")));
-                        params.put(A4251_A4284.A4256_hours,   c12.getString(c12.getColumnIndex("A4256_hours")));
+                        params.put(A4251_A4284.A4251, c12.getString(c12.getColumnIndex("A4251")));
+                        params.put(A4251_A4284.A4253, c12.getString(c12.getColumnIndex("A4253")));
+                        params.put(A4251_A4284.A4253_3, c12.getString(c12.getColumnIndex("A4253_3")));
+                        params.put(A4251_A4284.A4254_1, c12.getString(c12.getColumnIndex("A4254_1")));
+                        params.put(A4251_A4284.A4254_2, c12.getString(c12.getColumnIndex("A4254_2")));
+                        params.put(A4251_A4284.A4255_1, c12.getString(c12.getColumnIndex("A4255_1")));
+                        params.put(A4251_A4284.A4255_2, c12.getString(c12.getColumnIndex("A4255_2")));
+                        params.put(A4251_A4284.A4255_3, c12.getString(c12.getColumnIndex("A4255_3")));
+                        params.put(A4251_A4284.A4255_4, c12.getString(c12.getColumnIndex("A4255_4")));
+                        params.put(A4251_A4284.A4255_4_OT, c12.getString(c12.getColumnIndex("A4255_4_OT")));
+                        params.put(A4251_A4284.A4255_5, c12.getString(c12.getColumnIndex("A4255_5")));
+                        params.put(A4251_A4284.A4255_6, c12.getString(c12.getColumnIndex("A4255_6")));
+                        params.put(A4251_A4284.A4255_7, c12.getString(c12.getColumnIndex("A4255_7")));
+                        params.put(A4251_A4284.A4255_8, c12.getString(c12.getColumnIndex("A4255_8")));
+                        params.put(A4251_A4284.A4255_9, c12.getString(c12.getColumnIndex("A4255_9")));
+                        params.put(A4251_A4284.A4255_10, c12.getString(c12.getColumnIndex("A4255_10")));
+                        params.put(A4251_A4284.A4255_11, c12.getString(c12.getColumnIndex("A4255_11")));
+                        params.put(A4251_A4284.A4255_12, c12.getString(c12.getColumnIndex("A4255_12")));
+                        params.put(A4251_A4284.A4255_13, c12.getString(c12.getColumnIndex("A4255_13")));
+                        params.put(A4251_A4284.A4255_13_OT, c12.getString(c12.getColumnIndex("A4255_13_OT")));
+                        params.put(A4251_A4284.A4255_DK, c12.getString(c12.getColumnIndex("A4255_DK")));
+                        params.put(A4251_A4284.A4256_days, c12.getString(c12.getColumnIndex("A4256_days")));
+                        params.put(A4251_A4284.A4256_hours, c12.getString(c12.getColumnIndex("A4256_hours")));
                         params.put(A4251_A4284.A4256_minutes, c12.getString(c12.getColumnIndex("A4256_minutes")));
-                        params.put(A4251_A4284.A4257,         c12.getString(c12.getColumnIndex("A4257")));
-                        params.put(A4251_A4284.A4257_name,    c12.getString(c12.getColumnIndex("A4257_name")));
-                        params.put(A4251_A4284.A4258_1,       c12.getString(c12.getColumnIndex("A4258_1")));
-                        params.put(A4251_A4284.A4258_2,       c12.getString(c12.getColumnIndex("A4258_2")));
-                        params.put(A4251_A4284.A4259_hours,   c12.getString(c12.getColumnIndex("A4259_hours")));
+                        params.put(A4251_A4284.A4257, c12.getString(c12.getColumnIndex("A4257")));
+                        params.put(A4251_A4284.A4257_name, c12.getString(c12.getColumnIndex("A4257_name")));
+                        params.put(A4251_A4284.A4258_1, c12.getString(c12.getColumnIndex("A4258_1")));
+                        params.put(A4251_A4284.A4258_2, c12.getString(c12.getColumnIndex("A4258_2")));
+                        params.put(A4251_A4284.A4259_hours, c12.getString(c12.getColumnIndex("A4259_hours")));
                         params.put(A4251_A4284.A4259_minutes, c12.getString(c12.getColumnIndex("A4259_minutes")));
-                        params.put(A4251_A4284.A4260,         c12.getString(c12.getColumnIndex("A4260")));
-                        params.put(A4251_A4284.A4261,         c12.getString(c12.getColumnIndex("A4261")));
-                        params.put(A4251_A4284.A4262,         c12.getString(c12.getColumnIndex("A4262")));
-                        params.put(A4251_A4284.A4262_name,    c12.getString(c12.getColumnIndex("A4262_name")));
-                        params.put(A4251_A4284.A4263_1,       c12.getString(c12.getColumnIndex("A4263_1")));
-                        params.put(A4251_A4284.A4263_2,       c12.getString(c12.getColumnIndex("A4263_2")));
-                        params.put(A4251_A4284.A4264,         c12.getString(c12.getColumnIndex("A4264")));
-                        params.put(A4251_A4284.A4266,         c12.getString(c12.getColumnIndex("A4266")));
-                        params.put(A4251_A4284.A4266_name,    c12.getString(c12.getColumnIndex("A4266_name")));
+                        params.put(A4251_A4284.A4260, c12.getString(c12.getColumnIndex("A4260")));
+                        params.put(A4251_A4284.A4261, c12.getString(c12.getColumnIndex("A4261")));
+                        params.put(A4251_A4284.A4262, c12.getString(c12.getColumnIndex("A4262")));
+                        params.put(A4251_A4284.A4262_name, c12.getString(c12.getColumnIndex("A4262_name")));
+                        params.put(A4251_A4284.A4263_1, c12.getString(c12.getColumnIndex("A4263_1")));
+                        params.put(A4251_A4284.A4263_2, c12.getString(c12.getColumnIndex("A4263_2")));
+                        params.put(A4251_A4284.A4264, c12.getString(c12.getColumnIndex("A4264")));
+                        params.put(A4251_A4284.A4266, c12.getString(c12.getColumnIndex("A4266")));
+                        params.put(A4251_A4284.A4266_name, c12.getString(c12.getColumnIndex("A4266_name")));
                         params.put(A4251_A4284.A4267_1, c12.getString(c12.getColumnIndex("A4267_1")));
                         params.put(A4251_A4284.A4267_2, c12.getString(c12.getColumnIndex("A4267_2")));
                         params.put(A4251_A4284.A4268_hours, c12.getString(c12.getColumnIndex("A4268_hours")));
@@ -3466,6 +3466,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         params.put(A4301_A4315.A4314, c13.getString(c13.getColumnIndex("A4314")));
                         params.put(A4301_A4315.A4315, c13.getString(c13.getColumnIndex("A4315")));
                     }
+
                 }
                 else
                     {
@@ -3695,15 +3696,15 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                     JSONObject round_one = new JSONObject();
                                     String A4252_1_a, A4252_2_a, A4252_3_a, A4252_4_a;
 
-                                    A4252_1_a = c12.getString(c12.getColumnIndex("C3252_1"));
-                                    A4252_2_a = c12.getString(c12.getColumnIndex("C3252_2"));
-                                    A4252_3_a = c12.getString(c12.getColumnIndex("C3252_3"));
-                                    A4252_4_a = c12.getString(c12.getColumnIndex("C3252_4"));
+                                    A4252_1_a = c16.getString(c16.getColumnIndex("A4252_1"));
+                                    A4252_2_a = c16.getString(c16.getColumnIndex("A4252_2"));
+                                    A4252_3_a = c16.getString(c16.getColumnIndex("A4252_3"));
+                                    A4252_4_a = c16.getString(c16.getColumnIndex("A4252_4"));
 
-                                    round_one.put("C3252_1", A4252_1_a);
-                                    round_one.put("A4252_2", A4252_2_a);
-                                    round_one.put("A4252_3", A4252_3_a);
-                                    round_one.put("A4252_4", A4252_4_a);
+                                    round_one.put("A4252_1_a", A4252_1_a);
+                                    round_one.put("A4252_2_a", A4252_2_a);
+                                    round_one.put("A4252_3_a", A4252_3_a);
+                                    round_one.put("A4252_4_a", A4252_4_a);
 
                                     params.put("round_one", String.valueOf(round_one));
                                     c16.moveToNext();
@@ -3721,15 +3722,15 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                     JSONObject round_two = new JSONObject();
                                     String A4252_1_b, A4252_2_b, A4252_3_b, A4252_4_b;
 
-                                    A4252_1_b = c12.getString(c12.getColumnIndex("C3252_1"));
-                                    A4252_2_b = c12.getString(c12.getColumnIndex("C3252_2"));
-                                    A4252_3_b = c12.getString(c12.getColumnIndex("C3252_3"));
-                                    A4252_4_b = c12.getString(c12.getColumnIndex("C3252_4"));
+                                    A4252_1_b = c16.getString(c16.getColumnIndex("A4252_1"));
+                                    A4252_2_b = c16.getString(c16.getColumnIndex("A4252_2"));
+                                    A4252_3_b = c16.getString(c16.getColumnIndex("A4252_3"));
+                                    A4252_4_b = c16.getString(c16.getColumnIndex("A4252_4"));
 
-                                    round_two.put("C3252_1", A4252_1_b);
-                                    round_two.put("A4252_2", A4252_2_b);
-                                    round_two.put("A4252_3", A4252_3_b);
-                                    round_two.put("A4252_4", A4252_4_b);
+                                    round_two.put("A4252_1_b", A4252_1_b);
+                                    round_two.put("A4252_2_b", A4252_2_b);
+                                    round_two.put("A4252_3_b", A4252_3_b);
+                                    round_two.put("A4252_4_b", A4252_4_b);
 
                                     params.put("round_two", String.valueOf(round_two));
                                     c16.moveToNext();
@@ -3747,15 +3748,15 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                     JSONObject round_three = new JSONObject();
                                     String A4252_1_c, A4252_2_c, A4252_3_c, A4252_4_c;
 
-                                    A4252_1_c = c12.getString(c12.getColumnIndex("C3252_1"));
-                                    A4252_2_c = c12.getString(c12.getColumnIndex("C3252_2"));
-                                    A4252_3_c = c12.getString(c12.getColumnIndex("C3252_3"));
-                                    A4252_4_c = c12.getString(c12.getColumnIndex("C3252_4"));
+                                    A4252_1_c = c16.getString(c16.getColumnIndex("A4252_1"));
+                                    A4252_2_c = c16.getString(c16.getColumnIndex("A4252_2"));
+                                    A4252_3_c = c16.getString(c16.getColumnIndex("A4252_3"));
+                                    A4252_4_c = c16.getString(c16.getColumnIndex("A4252_4"));
 
-                                    round_three.put("C3252_1", A4252_1_c);
-                                    round_three.put("A4252_2", A4252_2_c);
-                                    round_three.put("A4252_3", A4252_3_c);
-                                    round_three.put("A4252_4", A4252_4_c);
+                                    round_three.put("A4252_1_c", A4252_1_c);
+                                    round_three.put("A4252_2_c", A4252_2_c);
+                                    round_three.put("A4252_3_c", A4252_3_c);
+                                    round_three.put("A4252_4_c", A4252_4_c);
 
                                     params.put("round_three", String.valueOf(round_three));
                                     c16.moveToNext();
@@ -3773,15 +3774,15 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                     JSONObject round_four = new JSONObject();
                                     String A4252_1_d, A4252_2_d, A4252_3_d, A4252_4_d;
 
-                                    A4252_1_d = c12.getString(c12.getColumnIndex("C3252_1"));
-                                    A4252_2_d = c12.getString(c12.getColumnIndex("C3252_2"));
-                                    A4252_3_d = c12.getString(c12.getColumnIndex("C3252_3"));
-                                    A4252_4_d = c12.getString(c12.getColumnIndex("C3252_4"));
+                                    A4252_1_d = c16.getString(c16.getColumnIndex("A4252_1"));
+                                    A4252_2_d = c16.getString(c16.getColumnIndex("A4252_2"));
+                                    A4252_3_d = c16.getString(c16.getColumnIndex("A4252_3"));
+                                    A4252_4_d = c16.getString(c16.getColumnIndex("A4252_4"));
 
-                                    round_four.put("C3252_1", A4252_1_d);
-                                    round_four.put("A4252_2", A4252_2_d);
-                                    round_four.put("A4252_3", A4252_3_d);
-                                    round_four.put("A4252_4", A4252_4_d);
+                                    round_four.put("A4252_1_d", A4252_1_d);
+                                    round_four.put("A4252_2_d", A4252_2_d);
+                                    round_four.put("A4252_3_d", A4252_3_d);
+                                    round_four.put("A4252_4_d", A4252_4_d);
 
                                     params.put("round_four", String.valueOf(round_four));
                                     c16.moveToNext();
@@ -3799,15 +3800,15 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                     JSONObject round_five = new JSONObject();
                                     String A4252_1_e, A4252_2_e, A4252_3_e, A4252_4_e;
 
-                                    A4252_1_e = c12.getString(c12.getColumnIndex("C3252_1"));
-                                    A4252_2_e = c12.getString(c12.getColumnIndex("C3252_2"));
-                                    A4252_3_e = c12.getString(c12.getColumnIndex("C3252_3"));
-                                    A4252_4_e = c12.getString(c12.getColumnIndex("C3252_4"));
+                                    A4252_1_e = c16.getString(c16.getColumnIndex("A4252_1"));
+                                    A4252_2_e = c16.getString(c16.getColumnIndex("A4252_2"));
+                                    A4252_3_e = c16.getString(c16.getColumnIndex("A4252_3"));
+                                    A4252_4_e = c16.getString(c16.getColumnIndex("A4252_4"));
 
-                                    round_five.put("C3252_1", A4252_1_e);
-                                    round_five.put("A4252_2", A4252_2_e);
-                                    round_five.put("A4252_3", A4252_3_e);
-                                    round_five.put("A4252_4", A4252_4_e);
+                                    round_five.put("A4252_1_e", A4252_1_e);
+                                    round_five.put("A4252_2_e", A4252_2_e);
+                                    round_five.put("A4252_3_e", A4252_3_e);
+                                    round_five.put("A4252_4_e", A4252_4_e);
 
                                     params.put("round_five", String.valueOf(round_five));
                                     c16.moveToNext();
@@ -3825,15 +3826,15 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                     JSONObject round_six = new JSONObject();
                                     String A4252_1_f, A4252_2_f, A4252_3_f, A4252_4_f;
 
-                                    A4252_1_f = c12.getString(c12.getColumnIndex("C3252_1"));
-                                    A4252_2_f = c12.getString(c12.getColumnIndex("C3252_2"));
-                                    A4252_3_f = c12.getString(c12.getColumnIndex("C3252_3"));
-                                    A4252_4_f = c12.getString(c12.getColumnIndex("C3252_4"));
+                                    A4252_1_f = c16.getString(c16.getColumnIndex("A4252_1"));
+                                    A4252_2_f = c16.getString(c16.getColumnIndex("A4252_2"));
+                                    A4252_3_f = c16.getString(c16.getColumnIndex("A4252_3"));
+                                    A4252_4_f = c16.getString(c16.getColumnIndex("A4252_4"));
 
-                                    round_six.put("C3252_1", A4252_1_f);
-                                    round_six.put("A4252_2", A4252_2_f);
-                                    round_six.put("A4252_3", A4252_3_f);
-                                    round_six.put("A4252_4", A4252_4_f);
+                                    round_six.put("A4252_1_f", A4252_1_f);
+                                    round_six.put("A4252_2_f", A4252_2_f);
+                                    round_six.put("A4252_3_f", A4252_3_f);
+                                    round_six.put("A4252_4_f", A4252_4_f);
 
                                     params.put("round_six", String.valueOf(round_six));
                                     c16.moveToNext();
@@ -3851,15 +3852,15 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                     JSONObject round_seven = new JSONObject();
                                     String A4252_1_g, A4252_2_g, A4252_3_g, A4252_4_g;
 
-                                    A4252_1_g = c12.getString(c12.getColumnIndex("C3252_1"));
-                                    A4252_2_g = c12.getString(c12.getColumnIndex("C3252_2"));
-                                    A4252_3_g = c12.getString(c12.getColumnIndex("C3252_3"));
-                                    A4252_4_g = c12.getString(c12.getColumnIndex("C3252_4"));
+                                    A4252_1_g = c16.getString(c16.getColumnIndex("A4252_1"));
+                                    A4252_2_g = c16.getString(c16.getColumnIndex("A4252_2"));
+                                    A4252_3_g = c16.getString(c16.getColumnIndex("A4252_3"));
+                                    A4252_4_g = c16.getString(c16.getColumnIndex("A4252_4"));
 
-                                    round_seven.put("C3252_1", A4252_1_g);
-                                    round_seven.put("A4252_2", A4252_2_g);
-                                    round_seven.put("A4252_3", A4252_3_g);
-                                    round_seven.put("A4252_4", A4252_4_g);
+                                    round_seven.put("A4252_1_g", A4252_1_g);
+                                    round_seven.put("A4252_2_g", A4252_2_g);
+                                    round_seven.put("A4252_3_g", A4252_3_g);
+                                    round_seven.put("A4252_4_g", A4252_4_g);
 
                                     params.put("round_seven", String.valueOf(round_seven));
                                     c16.moveToNext();
@@ -3877,15 +3878,15 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                     JSONObject round_eight = new JSONObject();
                                     String A4252_1_h, A4252_2_h, A4252_3_h, A4252_4_h;
 
-                                    A4252_1_h = c12.getString(c12.getColumnIndex("C3252_1"));
-                                    A4252_2_h = c12.getString(c12.getColumnIndex("C3252_2"));
-                                    A4252_3_h = c12.getString(c12.getColumnIndex("C3252_3"));
-                                    A4252_4_h = c12.getString(c12.getColumnIndex("C3252_4"));
+                                    A4252_1_h = c16.getString(c16.getColumnIndex("A4252_1"));
+                                    A4252_2_h = c16.getString(c16.getColumnIndex("A4252_2"));
+                                    A4252_3_h = c16.getString(c16.getColumnIndex("A4252_3"));
+                                    A4252_4_h = c16.getString(c16.getColumnIndex("A4252_4"));
 
-                                    round_eight.put("C3252_1", A4252_1_h);
-                                    round_eight.put("A4252_2", A4252_2_h);
-                                    round_eight.put("A4252_3", A4252_3_h);
-                                    round_eight.put("A4252_4", A4252_4_h);
+                                    round_eight.put("A4252_1_h", A4252_1_h);
+                                    round_eight.put("A4252_2_h", A4252_2_h);
+                                    round_eight.put("A4252_3_h", A4252_3_h);
+                                    round_eight.put("A4252_4_h", A4252_4_h);
 
                                     params.put("round_eight", String.valueOf(round_eight));
                                     c16.moveToNext();
@@ -3903,15 +3904,15 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                     JSONObject round_nine = new JSONObject();
                                     String A4252_1_i, A4252_2_i, A4252_3_i, A4252_4_i;
 
-                                    A4252_1_i = c12.getString(c12.getColumnIndex("C3252_1"));
-                                    A4252_2_i = c12.getString(c12.getColumnIndex("C3252_2"));
-                                    A4252_3_i = c12.getString(c12.getColumnIndex("C3252_3"));
-                                    A4252_4_i = c12.getString(c12.getColumnIndex("C3252_4"));
+                                    A4252_1_i = c16.getString(c16.getColumnIndex("A4252_1"));
+                                    A4252_2_i = c16.getString(c16.getColumnIndex("A4252_2"));
+                                    A4252_3_i = c16.getString(c16.getColumnIndex("A4252_3"));
+                                    A4252_4_i = c16.getString(c16.getColumnIndex("A4252_4"));
 
-                                    round_nine.put("C3252_1", A4252_1_i);
-                                    round_nine.put("A4252_2", A4252_2_i);
-                                    round_nine.put("A4252_3", A4252_3_i);
-                                    round_nine.put("A4252_4", A4252_4_i);
+                                    round_nine.put("A4252_1_i", A4252_1_i);
+                                    round_nine.put("A4252_2_i", A4252_2_i);
+                                    round_nine.put("A4252_3_i", A4252_3_i);
+                                    round_nine.put("A4252_4_i", A4252_4_i);
 
                                     params.put("round_nine", String.valueOf(round_nine));
                                     c16.moveToNext();
