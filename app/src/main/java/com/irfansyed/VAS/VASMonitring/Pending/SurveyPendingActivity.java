@@ -13,9 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
 import com.irfansyed.VAS.VASMonitring.C.C3012_C3022;
 import com.irfansyed.VAS.VASMonitring.C.C3051_C3099;
 import com.irfansyed.VAS.VASMonitring.C.C3101_C3112;
@@ -24,17 +22,12 @@ import com.irfansyed.VAS.VASMonitring.C.C3301_C3314;
 import com.irfansyed.VAS.VASMonitring.C.C3351_C3364;
 import com.irfansyed.VAS.VASMonitring.C.C3401_C3457;
 import com.irfansyed.VAS.VASMonitring.C.C3471_C3472;
-import com.irfansyed.VAS.VASMonitring.Core.HomeActivity;
 import com.irfansyed.VAS.VASMonitring.R;
-import com.irfansyed.VAS.VASMonitring.Upload.SurveyCompletedActivity;
 
 import java.util.Collections;
 import java.util.List;
 
 import data.LocalDataManager;
-import data.UploadHouseInfoAsync;
-
-import static android.support.v4.content.ContextCompat.startActivity;
 
 
 public class SurveyPendingActivity extends AppCompatActivity {
@@ -57,7 +50,7 @@ public class SurveyPendingActivity extends AppCompatActivity {
 
         Collections.sort(list);
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.list_survey_completed);
+        mRecyclerView = findViewById(R.id.list_survey_completed);
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
@@ -106,8 +99,8 @@ class SurveyPendingCustomAdapter extends RecyclerView.Adapter {
             public void onClick(View view) {
 
                 AlertDialog.Builder b = new AlertDialog.Builder(mContext);
-                b.setTitle("Upload Interview");
-                b.setMessage("Do you want to upload this interview ");
+                b.setTitle("Restart Interview");
+                b.setMessage("Do you want to restart this interview");
                 b.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -206,8 +199,8 @@ class SurveyPendingCustomAdapter extends RecyclerView.Adapter {
 
         public ViewHolder(View v) {
             super(v);
-            textName = (TextView) v.findViewById(R.id.text_item_survey_pending_name);
-            textId = (TextView) v.findViewById(R.id.text_item_survey_pending_id);
+            textName = v.findViewById(R.id.text_item_survey_pending_name);
+            textId = v.findViewById(R.id.text_item_survey_pending_id);
         }
     }
 

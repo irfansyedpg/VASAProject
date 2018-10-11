@@ -580,7 +580,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                     Toast.makeText(this, "you have reached Maximaum Number", Toast.LENGTH_LONG).show();
                 }
 
-                btn_Q1502.setText("Add Persion No( " + lst_q1503.size() + ")");
+                int sixx=lst_q1503.size()+1;
+                btn_Q1502.setText("Add Persion No( " +sixx  + ")");
             }
         }
     }
