@@ -23,6 +23,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import java.io.File;
 
 import data.LocalDataManager;
+import utils.ClearAllcontrol;
 import utils.Gothrough;
 
 import static utils.ClearAllcontrol.ClearAll;
@@ -130,23 +131,23 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
             rb_A4451_11_2,
             rb_A4451_11_DK,
 
-    rb_A4451_12_1,
+            rb_A4451_12_1,
             rb_A4451_12_2,
             rb_A4451_12_DK,
 
-    rb_A4451_13_1,
+            rb_A4451_13_1,
             rb_A4451_13_2,
             rb_A4451_13_DK,
 
-    rb_A4452_1_1,
+            rb_A4452_1_1,
             rb_A4452_1_2,
             rb_A4452_1_DK,
 
-    rb_A4452_2_1,
+            rb_A4452_2_1,
             rb_A4452_2_2,
             rb_A4452_2_DK,
 
-    rb_A4452_3_1,
+            rb_A4452_3_1,
             rb_A4452_3_2,
             rb_A4452_3_DK,
 
@@ -690,22 +691,17 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 
-        if (compoundButton.getId() == R.id.rb_A4401_1) {
-            if (rb_A4401_1.isChecked()) {
-                ClearAll(ll_A4402);
-                ClearAll(ll_A4403);
+        if (compoundButton.getId() == R.id.rb_A4401_1
+                || compoundButton.getId() == R.id.rb_A4401_2
+                || compoundButton.getId() == R.id.rb_A4401_DK) {
 
+            if (rb_A4401_1.isChecked()) {
+                ClearAllcontrol.ClearAll(ll_A4402);
+                ClearAllcontrol.ClearAll(ll_A4403);
                 ll_A4402.setVisibility(View.GONE);
                 ll_A4403.setVisibility(View.GONE);
-            } else {
-
-                ll_A4402.setVisibility(View.VISIBLE);
-                ll_A4403.setVisibility(View.VISIBLE);
             }
-        }
-
-        if (compoundButton.getId() == R.id.rb_A4401_DK) {
-            if (rb_A4401_DK.isChecked()) {
+            else if (rb_A4401_DK.isChecked()) {
                 ClearAll(ll_A4402);
                 ClearAll(ll_A4403);
                 ClearAll(ll_A4404);
@@ -784,8 +780,8 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
                 ll_A4453_11.setVisibility(View.GONE);
                 ll_A4453_12.setVisibility(View.GONE);
                 
-            } else {
-
+            }
+            else if (rb_A4401_2.isChecked()){
                 ll_A4402.setVisibility(View.VISIBLE);
                 ll_A4403.setVisibility(View.VISIBLE);
                 ll_A4404.setVisibility(View.VISIBLE);
@@ -830,11 +826,10 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
 
         if (compoundButton.getId() == R.id.rb_A4402_5) {
             if (rb_A4402_5.isChecked()) {
-
                 ed_A4402_5.setVisibility(View.VISIBLE);
             }
             else {
-                ClearAll(ll_A4402);
+                ed_A4402_5.setText("");
                 ed_A4402_5.setVisibility(View.GONE);
             }
         }
@@ -960,11 +955,10 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_A4451_13_2
                 || compoundButton.getId() == R.id.rb_A4451_13_DK) {
             if (rb_A4451_13_1.isChecked()) {
-
                 ed_A4451_13.setVisibility(View.VISIBLE);
             }
             else {
-                ClearAll(ll_A4451_13);
+                ed_A4451_13.setText("");
                 ed_A4451_13.setVisibility(View.GONE);
             }
         }
@@ -978,7 +972,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
                 ed_A4452_9.setVisibility(View.VISIBLE);
             }
             else {
-                ClearAll(ll_A4452_9);
+                ed_A4452_9.setText("");
                 ed_A4452_9.setVisibility(View.GONE);
             }
         }
@@ -988,11 +982,10 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_A4453_12_DK)
         {
             if (rb_A4453_12_1.isChecked()) {
-
                 ed_A4453_12.setVisibility(View.VISIBLE);
             }
             else {
-                ClearAll(ll_A4453_12);
+                ed_A4453_12.setText("");
                 ed_A4453_12.setVisibility(View.GONE);
             }
         }
