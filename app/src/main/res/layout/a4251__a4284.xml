@@ -219,10 +219,6 @@
                         style="@style/TextView"
                         android:text="@string/A4254_1" />
 
-                    <TextView
-                        style="@style/TextView_Hint"
-                        android:text="@string/A4254_h" />
-
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -258,11 +254,7 @@
                     <TextView
                         android:id="@+id/A4254_2"
                         style="@style/TextView"
-                        android:text="@string/A4254_h" />
-
-                    <TextView
-                        style="@style/TextView_Hint"
-                        android:text="@string/A4254_h" />
+                        android:text="@string/A4254_2" />
 
 
                     <RadioGroup style="@style/RadioGroup">

@@ -167,7 +167,8 @@ public class A4351_A4364 extends AppCompatActivity implements RadioButton.OnChec
                 ll_A4356.setVisibility(View.VISIBLE);
                 ll_A4357.setVisibility(View.VISIBLE);
                 ll_A4358.setVisibility(View.VISIBLE);
-            } else {
+            }
+            else if (rb_A4351_2.isChecked() || rb_A4351_DK.isChecked() || rb_A4351_RA.isChecked()){
                 ClearAllcontrol.ClearAll(ll_A4352);
                 ClearAllcontrol.ClearAll(ll_A4353);
                 ClearAllcontrol.ClearAll(ll_A4354);
