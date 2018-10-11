@@ -246,7 +246,7 @@
     <string  name="rb_Q1403_12"  translatable="false">	پیدائش میں مدد کرنے والا (وضاحت کریں)	</string>
     <string  name="rb_Q1403_OTM"  translatable="false">	کوئی اور مرد (وضاحت کریں)	</string>
     <string  name="rb_Q1403_OTF"  translatable="false">	کوئی اور عورت (وضاحت کریں)	</string>
-    <string  name="ed_Q1403_OT"  translatable="false">	کوئی اور (وضاحت کریں)	</string>
+    <string  name="rb_Q1403_OT"  translatable="false">	کوئی اور (وضاحت کریں)	</string>
     <string  name="rb_Q1404_1"  translatable="false">	ہاں	</string>
     <string  name="rb_Q1404_2"  translatable="false">	 نہیں	</string>
     <string  name="rb_Q1404_DK"  translatable="false">	معلوم نہیں	</string>
@@ -295,7 +295,7 @@
     <string  name="rb_Q1416_5"  translatable="false">	بہتر ہوا دار گڑھے والا لیٹرین	</string>
     <string  name="rb_Q1416_6"  translatable="false">	گڑھے والا کھلا لیٹرین	</string>
     <string  name="rb_Q1416_7"  translatable="false">	لیٹرین موجود نہیں	</string>
-    <string  name="ed_Q1416_OT"  translatable="false">	دیگر وضاحت کریں	</string>
+    <string  name="rb_Q1416_OT"  translatable="false">	دیگر وضاحت کریں	</string>
     <string  name="rb_Q1416_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_Q1417_1"  translatable="false">	بجلی	</string>
     <string  name="rb_Q1417_2"  translatable="false">	گیس	</string>
@@ -701,8 +701,8 @@
     <string  name="A4272_2"  translatable="false"> : کیا (آخری صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام)  طبی معائنہ لئے واپس  آ ئے اگر  اسکی حالت بہتر نہیں ہوتی؟</string>
     <string  name="A4273"  translatable="false"> :کیا (نام) نے جب "(آخری صحت فراہم کنندہ )  " کو چھوڑا تھا تو کیا  وہ زندہ تھی /تھا ؟ </string>
     <string  name="A4274"  translatable="false">	کیا آپ (بچے کو /نام) کو  (تمام ) صحت فراہم کنندہ کے پاس لے گئے جہاں  اس کو ریفر   یا بھیجا  گیا تھا؟	:	A4274	</string>
-    <string name="A4275_1">اگر کسی بھی صحت فراہم کرنے والے /ریفریل کے پاس نہیں لے گئے توپوچھیں: کیا آپ کو کوئی مسائل/تشویش تھی جس کے پیش نظر آپ (نام) کو اس صحت فراہم کرنے والے کے پاس نہیں لے گئے جہاں کے لیے  اسے بھیجا (ریفریل کیا )گیا تھا۔	:A4275_1</string>
-    <string name="A4275_2">اگر (تمام) ریفر کئے گئے صحت فراہم کرنے والوں کے پاس لے گئے تو پوچھیں: کیا  آپ کو صحت کے حوالے سے  صحت مہیا کرنے والے کے بارے میں جو تشویش/مسائل تھے وہ حل ہوچکے تھے جہاں (نام) کو بھیجا  ( ریفر )کیا گیا تھا  ؟	:A4275_2</string>
+    <string name="A4275_1"   translatable="false">اگر کسی بھی صحت فراہم کرنے والے /ریفریل کے پاس نہیں لے گئے توپوچھیں: کیا آپ کو کوئی مسائل/تشویش تھی جس کے پیش نظر آپ (نام) کو اس صحت فراہم کرنے والے کے پاس نہیں لے گئے جہاں کے لیے  اسے بھیجا (ریفریل کیا )گیا تھا۔	:A4275_1</string>
+    <string name="A4275_2"  translatable="false">اگر (تمام) ریفر کئے گئے صحت فراہم کرنے والوں کے پاس لے گئے تو پوچھیں: کیا  آپ کو صحت کے حوالے سے  صحت مہیا کرنے والے کے بارے میں جو تشویش/مسائل تھے وہ حل ہوچکے تھے جہاں (نام) کو بھیجا  ( ریفر )کیا گیا تھا  ؟	:A4275_2</string>
     <string  name="A4276"  translatable="false">	کیا  آپ کو صحت کے حوالے سے  صحت مہیا کرنے والے کے بارے میں جو تشویش/مسائل تھے وہ حل ہوچکے تھے جہاں (نام) کو ریفر کیا گیا تھا  ؟	:	A4276	</string>
     <string  name="A4277"  translatable="false">	کیا آپ (نام) کو صحت فراہم کرنے والے کے پاس جانے میں کوئی رقم خرچ کرنی پڑی  تھی؟	:	A4277	</string>
     <string  name="A4278"  translatable="false">	آپ (نام) نے سفر پر جانے کے لیے رقم کا بندوبست کیسے کیا ؟	:	A4278	</string>
@@ -847,7 +847,7 @@
     <string  name="rb_A4007_3"  translatable="false">	  گھریلو	</string>
     <string  name="rb_A4007_4"  translatable="false">	 پینشن	</string>
     <string  name="rb_A4007_5"  translatable="false">	طالب علم	</string>
-    <string  name="ed_A4007_OT"  translatable="false">	دیگر  	</string>
+    <string  name="rb_A4007_OT"  translatable="false">	دیگر  	</string>
     <string  name="rb_A4007_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_A4007_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="ed_A4007_1_1"  translatable="false">		</string>
@@ -862,7 +862,7 @@
     <string  name="rb_A4010_1"  translatable="false">	سگریٹ	</string>
     <string  name="rb_A4010_2"  translatable="false">	پائپ	</string>
     <string  name="rb_A4010_3"  translatable="false">	چبانے والا تمباکو	</string>
-    <string  name="ed_A4010_OT"  translatable="false">	دیگر	</string>
+    <string  name="rb_A4010_OT"  translatable="false">	دیگر	</string>
     <string  name="rb_A4010_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_A4010_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="ed_A4011"  translatable="false">		</string>
@@ -1618,7 +1618,7 @@
     <string  name="cb_A4255_10"  translatable="false">	سوچا  وہ    اتنی کمزور ہ تھی کہ سفر نہیں کرسکتی تھی	</string>
     <string  name="cb_A4255_11"  translatable="false">	    سوچا کہ علاج کے باوجود ہی موت واقع ہوجائیگی	</string>
     <string  name="cb_A4255_12"  translatable="false">	 رات کو دیر ہو چکی تھی  (ٹرانسپورٹ  یا   ہیلتھ  مہیا کرنے والا موجود نہیں تھا)  	</string>
-    <string  name="ed_A4255_OT"  translatable="false">	    دیگر (وضاحت کریں)	</string>
+    <string  name="rb_A4255_OT"  translatable="false">	    دیگر (وضاحت کریں)	</string>
     <string  name="cb_A4255_DK"  translatable="false">	 معلوم نہیں	</string>
     <string  name="rb_A4257_1"  translatable="false">سرکاری  ہسپتال</string>
     <string  name="rb_A4257_2"  translatable="false">سرکاری مرکز صحت</string>
@@ -1677,7 +1677,7 @@
     <string  name="cb_A4279_3"  translatable="false">	3.بس	</string>
     <string  name="cb_A4279_4"  translatable="false">	4.ٹیکسی/رکشہ/ٹریکٹر/موٹرسائیکل	</string>
     <string  name="cb_A4279_5"  translatable="false">	5.ایمبولنس	</string>
-    <string  name="ed_A4279_OT"  translatable="false">	6.کوئی اور (وضاحت کریں)	</string>
+    <string  name="rb_A4279_OT"  translatable="false">	6.کوئی اور (وضاحت کریں)	</string>
     <string  name="cb_A4279_7"  translatable="false">	7.کوئی  ذریعہ سفر دستیاب نہیں کرسکے	</string>
     <string  name="cb_A4279_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_A4280_1"  translatable="false">	                                         ہاں 	</string>
@@ -2169,7 +2169,7 @@
     <string  name="txt_N2077"  translatable="false">	اگر اس کی زچگی نہیں ہو ئی  یا اس نے ہیلتھ مہیا کرنے والے  کے پاس یا مرکز صحت میں زچگی کروانے کی کوشش نہیں کی    (N2006=12 or N2006=1-2 and N2008≠1-3). تو  پوچھو : کیا (آپ / ماں ( کو  کوئی تشویش/مسئلہ تھا جس کی وجہ سے (آپ /اس) نے ہیلتھ مہیا کرنے والے یا  مرکز صحت پر زچگی کروانے سے روکا ۔	:	N2077	</string>
     <string  name="txt_N2078"  translatable="false">	وہ کیا خدشات یا مشکلات  تھیں جو  (آپ/وہ) رکھتی تھیں؟	:	N2078	</string>
     <string name="txt_N2080"  translatable="false">N2080: اب میں آپ سے کسی بھی علامات کے بارے میں پوچھوں گی جو ہوسکتا ہے (آپ/ماں) کو   حمل کے آخری حصہ میں پیش آ ئی ہو۔ کیا زچگی شروع ہونے سے پہلے حمل کے آخری تین مہینوں میں مندرجہ ذیل  کسی علامت  کی وجہ سے حمل میں پیچیدگی رونما ہوئی تھی؟</string>
-    <string  name="txt_N2080_h"  translatable="false">	جواب دہندہ کو وضاحت کریں کہ لیبر(زچگی )  شروع ہوتی ہے جب درد زہ کی وجہ سے اینٹھن کی لہریں ہر  20 منٹ   یا اس سے کم وقت میں   اٹھتی ہیں۔--پڑھیں  "ماں " ، اگر جوابدہندہ ماں نہیں ہے
+    <string  name="txt_N2080_h" translatable="false">	جواب دہندہ کو وضاحت کریں کہ لیبر(زچگی )  شروع ہوتی ہے جب درد زہ کی وجہ سے اینٹھن کی لہریں ہر  20 منٹ   یا اس سے کم وقت میں   اٹھتی ہیں۔--پڑھیں  "ماں " ، اگر جوابدہندہ ماں نہیں ہے
 اس کے بعد ہر علامت کو پڑہیں  اور ہر ایک کے لئے "ہاں" ،   "نہیں"،   "معلوم نہیں "  پر نشان لگا ئیں</string>
     <string name="txt_N2080_1"  translatable="false">N2080_1: 1.	جھٹکے</string>
     <string name="txt_N2080_2"  translatable="false">N2080_2: 2.	بلندفشار خون</string>
@@ -3533,12 +3533,12 @@
     <string  name="cb_N2202_3"  translatable="false">	نہیں دیکھا	</string>
     <string  name="cb_N2202_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_N2228_1_1"  translatable="false">معمول	</string>
-    <string  name="rb_N2228_1_2"  translatable="false">جدید	</string>
-    <string  name="rb_N2228_1_3"  translatable="false">شدید	</string>
+    <string  name="rb_N2228_1_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_N2228_1_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_N2228_1_DK"  translatable="false">معلوم نہیں	</string>
     <string  name="rb_N2228_2_1"  translatable="false">معمول	</string>
-    <string  name="rb_N2228_2_2"  translatable="false">جدید	</string>
-    <string  name="rb_N2228_2_3"  translatable="false">شدید	</string>
+    <string  name="rb_N2228_2_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_N2228_2_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_N2228_2_DK"  translatable="false">معلوم نہیں	</string>
     <string  name="rb_N2229_1_1"  translatable="false">سرکاری  ہسپتال</string>
     <string  name="rb_N2229_1_2"  translatable="false">سرکاری مرکز صحت</string>
@@ -3674,7 +3674,7 @@
     <string  name="rb_N2301_2"  translatable="false">	اپنے ساس /سسر کے گھر	</string>
     <string  name="rb_N2301_3"  translatable="false">	اپنے والدین کے گھر	</string>
     <string  name="rb_N2301_4"  translatable="false">	اپنے بھائی کے گھر	</string>
-    <string  name="ed_N2301_OT"  translatable="false">	دیگر (وضاحت کریں) 	</string>
+    <string  name="rb_N2301_OT"  translatable="false">	دیگر (وضاحت کریں) 	</string>
     <string  name="rb_N2301_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2311_1_1"  translatable="false">	ہاں	</string>
     <string  name="rb_N2311_1_2"  translatable="false">	نہیں	</string>
@@ -3715,7 +3715,7 @@
     <string  name="rb_N2311_OT_1"  translatable="false">	ہاں	</string>
     <string  name="rb_N2311_OT_2"  translatable="false">	نہیں	</string>
     <string  name="rb_N2311_OT_DK"  translatable="false">	معلوم نہیں	</string>
-    <string  name="ed_N2311_OT"  translatable="false">	وضاحت	</string>
+    <string  name="rb_N2311_OT"  translatable="false">	وضاحت	</string>
     <string  name="rb_N2311_14_1"  translatable="false">	ایک یا ایک سے زیادہ مسائل کی نشاندہی  	</string>
     <string  name="rb_N2311_14_2"  translatable="false">	مسائل کی کوئی نشاندہی نہیں کی گئی  	</string>
     <string  name="rb_N2312_1_1"  translatable="false">	ہاں	</string>
@@ -3745,7 +3745,7 @@
     <string  name="rb_N2312_OT_1"  translatable="false">	ہاں	</string>
     <string  name="rb_N2312_OT_2"  translatable="false">	نہیں	</string>
     <string  name="rb_N2312_OT_DK"  translatable="false">	معلوم نہیں	</string>
-    <string  name="ed_N2312_OT"  translatable="false">	وضاحت کریں	</string>
+    <string  name="rb_N2312_OT"  translatable="false">	وضاحت کریں	</string>
     <string  name="rb_N2312_10_1"  translatable="false">ایک گروپ کی شناخت	</string>
     <string  name="rb_N2312_10_2"  translatable="false">دو یا اس سے زائد گروپوں کی شناخت	</string>
     <string  name="rb_N2312_10_3"  translatable="false">کسی گروپ کی شناخت نہیں ہوئی	</string>
@@ -3785,7 +3785,7 @@
     <string  name="rb_N2313_OT_1"  translatable="false">	ہاں	</string>
     <string  name="rb_N2313_OT_2"  translatable="false">	نہیں	</string>
     <string  name="rb_N2313_OT_DK"  translatable="false">	معلوم نہیں	</string>
-    <string  name="ed_N2313_OT"  translatable="false">	وضاحت کریں	</string>
+    <string  name="rb_N2313_OT"  translatable="false">	وضاحت کریں	</string>
     <string  name="rb_N2313_12_1"  translatable="false">ایک گروپ کی شناخت	</string>
     <string  name="rb_N2313_12_2"  translatable="false">دو یا اس سے زائد گروپوں کی شناخت	</string>
     <string  name="rb_N2313_12_3"  translatable="false">کسی گروپ کی شناخت نہیں ہوئی	</string>
@@ -3848,12 +3848,12 @@
     <string  name="cb_N2216_OT"  translatable="false">	 دیگر وضاحت کریں	</string>
     <string  name="cb_N2216_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2218_1_1"  translatable="false">معمول	</string>
-    <string  name="rb_N2218_1_2"  translatable="false">جدید	</string>
-    <string  name="rb_N2218_1_3"  translatable="false">شدید	</string>
+    <string  name="rb_N2218_1_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_N2218_1_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_N2218_1_DK"  translatable="false">معلوم نہیں	</string>
     <string  name="rb_N2218_2_1"  translatable="false">معمول	</string>
-    <string  name="rb_N2218_2_2"  translatable="false">جدید	</string>
-    <string  name="rb_N2218_2_3"  translatable="false">شدید	</string>
+    <string  name="rb_N2218_2_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_N2218_2_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_N2218_2_DK"  translatable="false">معلوم نہیں	</string>
     <string  name="rb_N2219_1_1"  translatable="false">سرکاری  ہسپتال</string>
     <string  name="rb_N2219_1_2"  translatable="false">سرکاری مرکز صحت</string>
@@ -3898,12 +3898,12 @@
     <string  name="rb_N2226_1"  translatable="false">ہاں، چھوڑتے وقت زندہ تھی</string>
     <string  name="rb_N2226_2"  translatable="false">نہیں، اسکا صحت فراہم کنندہ کے پاس انتقال  ہو گیا</string>
     <string  name="rb_N2227_1_1"  translatable="false">معمول	</string>
-    <string  name="rb_N2227_1_2"  translatable="false">جدید	</string>
-    <string  name="rb_N2227_1_3"  translatable="false">شدید	</string>
+    <string  name="rb_N2227_1_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_N2227_1_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_N2227_1_DK"  translatable="false">معلوم نہیں	</string>
     <string  name="rb_N2227_2_1"  translatable="false">معمول	</string>
-    <string  name="rb_N2227_2_2"  translatable="false">جدید	</string>
-    <string  name="rb_N2227_2_3"  translatable="false">شدید	</string>
+    <string  name="rb_N2227_2_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_N2227_2_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_N2227_2_DK"  translatable="false">معلوم نہیں	</string>
 
     <string  name="rb_N2238_1"  translatable="false">	ہاں	</string>
@@ -3964,11 +3964,9 @@
     <string  name="rb_N2247_2"  translatable="false">	نہیں	</string>
     <string  name="rb_N2247_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2247_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
-
     <!-- Neonate Urdu Responses ENDS -->
 
     <!-- Neonate Urdu Text HINT's STARTS -->
-
     <string  name="N2003_h"  translatable="false">	اگر ماں انٹرویو میں موجود ہے تو یہ سوال پوچھے بغیر  "ہاں"  پر نشان لگائیں 	</string>
     <string  name="N2005u_h"  translatable="false">	صرف ایک یونٹ یا جواب لکھیں	</string>
     <string  name="N2005d_h"  translatable="false">	24 گھنٹے سے کم ہو تو 0  دن لکھیں  دن لکھیں ، اگر ایک دن یا 0-6  	</string>
@@ -4061,7 +4059,6 @@
     <string  name="N2313_h"  translatable="false">	تمام مسائل کو پڑھیں اور ہاں"  نہیں  "  معلوم نہیں"   پر نشان لگائیں	</string>
     <string  name="N2321_h"  translatable="false">	یہ ایک اختیار ی سوال ہے جس کو پوچھنے کا فیصلہ اسٹیڈی کی جگہ کے مطابق کیا جائیگا 	</string>
     <string  name="N2323_h"  translatable="false">	انٹرویور: انٹرویو کو بارے میں اپنا تبصرہ اور مشاہدہ لکھیں	</string>
-
     <!-- Neonate Urdu Text HINT's ENDS -->
 
     <!-- Child Urdu Text STARTS -->
@@ -4766,7 +4763,7 @@
     <string  name="rb_C3068_8"  translatable="false">	نجی کلینک	</string>
     <string  name="rb_C3068_9"  translatable="false">	نجی میٹرنٹی ہوم	</string>
     <string  name="rb_C3068_10"  translatable="false">	 دیگر نجی میڈیکل  	</string>
-    <string  name="rb_C3068_11"  translatable="false">	صحت فراہم کنندہ  کے پاس یا  مرکز صحت  راستہ میں جاتے ہو  ئے  	</string>
+    <string  name="rb_C3068_11"  translatable="false">	صحت فراہم کنندہ  کے پاس یا  مرکز صحت  راستہ میں جاتے ہوئے  	</string>
     <string  name="rb_C3068_OT"  translatable="false">	کو ئی     اور   	</string>
     <string  name="rb_C3068_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3069_1"  translatable="false">	                                         ہاں 	</string>

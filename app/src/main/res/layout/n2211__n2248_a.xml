@@ -115,17 +115,17 @@
                             <RadioButton
                                 android:id="@+id/rb_N2211_1_1"
                                 style="@style/RadioButton"
-                                android:text="@string/rb_nml" />
+                                android:text="@string/rb_N2211_1_1" />
 
                             <RadioButton
                                 android:id="@+id/rb_N2211_1_2"
                                 style="@style/RadioButton"
-                                android:text="@string/rb_mdm" />
+                                android:text="@string/rb_N2211_1_2" />
 
                             <RadioButton
                                 android:id="@+id/rb_N2211_1_3"
                                 style="@style/RadioButton"
-                                android:text="@string/rb_abnrml" />
+                                android:text="@string/rb_N2211_1_3" />
 
                             <RadioButton
                                 android:id="@+id/rb_N2211_1_DK"
@@ -156,17 +156,17 @@
                             <RadioButton
                                 android:id="@+id/rb_N2211_2_1"
                                 style="@style/RadioButton"
-                                android:text="@string/rb_nml" />
+                                android:text="@string/rb_N2211_2_1" />
 
                             <RadioButton
                                 android:id="@+id/rb_N2211_2_2"
                                 style="@style/RadioButton"
-                                android:text="@string/rb_mdm" />
+                                android:text="@string/rb_N2211_2_2" />
 
                             <RadioButton
                                 android:id="@+id/rb_N2211_2_3"
                                 style="@style/RadioButton"
-                                android:text="@string/rb_abnrml" />
+                                android:text="@string/rb_N2211_2_3" />
 
                             <RadioButton
                                 android:id="@+id/rb_N2211_2_DK"
