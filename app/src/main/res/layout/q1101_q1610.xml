@@ -2056,7 +2056,7 @@
                         <RadioButton
                             android:id="@+id/rb_Q1420_7"
                             style="@style/EditText_varchar"
-                            android:text="@string/ot" />
+                            android:text="@string/rb_Q1420_OT" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1420_DK"
