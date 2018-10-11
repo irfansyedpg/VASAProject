@@ -47,7 +47,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     //region Declaration
 
-    Button btn_next,btn_Q1502;
+    Button btn_next, btn_Q1502;
 
     // LinerLayouts
     LinearLayout
@@ -107,7 +107,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ll_Q1501,
             ll_Q1502,
 
-            ll_Q1601,
+    ll_Q1601,
             ll_Q1602,
             ll_Q1603,
             ll_Q1604,
@@ -265,7 +265,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             rb_Q1501_1,
             rb_Q1501_2,
 
-            rb_Q1601_1,
+    rb_Q1601_1,
             rb_Q1601_2,
             rb_Q1601_DK,
             rb_Q1602_1,
@@ -480,52 +480,45 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
     public void onClick(View view) {
 
 
+        if (view.getId() == R.id.btn_next) {
 
-        if(view.getId()==R.id.btn_next) {
+            if (ed_Q1201_1.getText().toString().length() < 1 || ed_Q1201_2.getText().toString().length() < 1) {
+                Toast.makeText(this, "Q1201 is required", Toast.LENGTH_LONG).show();
+                return;
+            }
 
             if (validateField() == false) {
                 Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
-                // return;
+                return;
             }
 
 
+            if (ed_Q1502.getText().toString().trim().length() > 0) {
+                int total = Integer.parseInt(ed_Q1502.getText().toString().trim());
 
-            if(ed_Q1502.getText().toString().trim().length()>0)
-            {
-                int total=Integer.parseInt(ed_Q1502.getText().toString().trim());
+                if (total < lst_q1503.size()) {
 
-                if(total<lst_q1503.size()) {
-
-
-                    Toast.makeText(this, "Please Enter All relative Q1503", Toast.LENGTH_LONG).show();
-
-
+                    Toast.makeText(this, "Please Enter All Relative Q1503", Toast.LENGTH_LONG).show();
                     return;
                 }
-
-
-
-
             }
-
-
 
 
             pattern = Pattern.compile(DATE_PATTERN);
 
-        /*if (!validate(ed_Q1603.getText().toString().trim())) {
+            if (!validate(ed_Q1603.getText().toString().trim())) {
 
-            ed_Q1603.setError("Kindly enter a valid date");
-            ed_Q1603.requestFocus();
-            return;
-        }
+                ed_Q1603.setError("Kindly enter a valid date");
+                ed_Q1603.requestFocus();
+                return;
+            }
 
-        if (!validate(ed_Q1606.getText().toString().trim())) {
+            if (!validate(ed_Q1606.getText().toString().trim())) {
 
-            ed_Q1606.setError("Kindly enter a valid date");
-            ed_Q1606.requestFocus();
-            return;
-        }*/
+                ed_Q1606.setError("Kindly enter a valid date");
+                ed_Q1606.requestFocus();
+                return;
+            }
 
             value_assignment();
 
@@ -545,9 +538,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             if (res.getCount() > 0) {
 
                 res.moveToFirst();
-
-                String aa = res.getString(res.getColumnIndex("Q1609"));
-                Toast.makeText(this, "" + parseInt(res.getString(res.getColumnIndex("Q1609"))), Toast.LENGTH_LONG).show();
 
                 if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(5)) {
 
@@ -579,25 +569,19 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 }
             }
 
-        }
+        } else if (view.getId() == R.id.btn_Q1502) {
 
-        else if(view.getId()==R.id.btn_Q1502)
-        {
+            if (ed_Q1502.getText().toString().trim().length() > 0) {
+                int total = Integer.parseInt(ed_Q1502.getText().toString().trim());
 
-            if(ed_Q1502.getText().toString().trim().length()>0)
-            {
-                int total=Integer.parseInt(ed_Q1502.getText().toString().trim());
-
-                if(total>lst_q1503.size())
-                {
+                if (total > lst_q1503.size()) {
                     show_dailuge_Q1503();
-                }
-                else
-                {
-                    Toast.makeText(this,"you have reached Maximaum Number",Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(this, "you have reached Maximaum Number", Toast.LENGTH_LONG).show();
                 }
 
-                btn_Q1502.setText("Add Persion No( "+lst_q1503.size()+")");
+                int sixx=lst_q1503.size()+1;
+                btn_Q1502.setText("Add Persion No( " +sixx  + ")");
             }
         }
     }
@@ -605,6 +589,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     List<String> lst_q1503 = new ArrayList();
     List<String> lst_other = new ArrayList();
+
     void show_dailuge_Q1503() {
 
 
@@ -616,7 +601,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         b.setView(v);
         b.show();
 
-       final LinearLayout    ll_Q1503,
+        final LinearLayout ll_Q1503,
                 ll_Q1503_OT;
 
         final EditText
@@ -657,44 +642,31 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         rb_Q1503_14 = v.findViewById(R.id.rb_Q1503_14);
 
 
-
         ed_Q1503_OT = v.findViewById(R.id.ed_Q1503_OT);
 
-        ll_Q1503 =   v. findViewById(R.id.ll_Q1503);
-        ll_Q1503_OT = v. findViewById(R.id.ll_Q1503_OT);
-        txt_Q1503_header=v.findViewById(R.id.txt_Q1503_header);
-
+        ll_Q1503 = v.findViewById(R.id.ll_Q1503);
+        ll_Q1503_OT = v.findViewById(R.id.ll_Q1503_OT);
+        txt_Q1503_header = v.findViewById(R.id.txt_Q1503_header);
 
 
         ll_Q1503_OT.setVisibility(View.GONE);
 
 
-
         Button btn_add = v.findViewById(R.id.btn_add);
 
-        int db=lst_q1503.size()+1;
+        int db = lst_q1503.size() + 1;
 
-        txt_Q1503_header.setText("Please Enter Relationship for Person No: " +db );
+        txt_Q1503_header.setText("Please Enter Relationship for Person No: " + db);
 
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
 
-
-                if (!Gothrough.IamHiden(ll_Q1503)  && !Gothrough.IamHiden(ll_Q1503_OT) ) {
+                if (!Gothrough.IamHiden(ll_Q1503) && !Gothrough.IamHiden(ll_Q1503_OT)) {
                     Toast.makeText(Q1101_Q1610.this, "Select Mendatory Field", Toast.LENGTH_LONG).show();
                     return;
                 }
-
-
-
-
-
-
-
-
-
 
 
                 if (rb_Q1503_1.isChecked()) {
@@ -731,8 +703,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 }
 
 
-
-
                 b.cancel();
 
 
@@ -742,9 +712,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         });
 
 
-
-
-
         rb_Q1503_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -752,22 +719,21 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 // Check which radiobutton was pressed
                 if (checked) {
 
-            ClearAllcontrol.ClearAll(ll_Q1503_OT);
-            ll_Q1503_OT.setVisibility(View.GONE);
+                    ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                    ll_Q1503_OT.setVisibility(View.GONE);
 
-            if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
+                    if (rb_Q1503_12.isChecked() || rb_Q1503_13.isChecked() || rb_Q1503_14.isChecked()) {
 
-                ll_Q1503_OT.setVisibility(View.VISIBLE);
+                        ll_Q1503_OT.setVisibility(View.VISIBLE);
 
-            } else {
+                    } else {
 
-                ClearAllcontrol.ClearAll(ll_Q1503_OT);
-                ll_Q1503_OT.setVisibility(View.GONE);
-            }
-        }
+                        ClearAllcontrol.ClearAll(ll_Q1503_OT);
+                        ll_Q1503_OT.setVisibility(View.GONE);
+                    }
+                }
             }
         });
-
 
 
         rb_Q1503_2.setOnClickListener(new View.OnClickListener() {
@@ -1071,12 +1037,11 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     }
 
-
     void Initialization() {
 
         // Button Next
         btn_next = findViewById(R.id.btn_next);
-        btn_Q1502 =(Button) findViewById(R.id.btn_Q1502);
+        btn_Q1502 = findViewById(R.id.btn_Q1502);
 
         // Layouts
 
@@ -1452,7 +1417,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         rb_Q1421_DK.setOnCheckedChangeListener(this);
 
 
-
         rb_Q1604_1.setOnCheckedChangeListener(this);
         rb_Q1604_2.setOnCheckedChangeListener(this);
         rb_Q1604_3.setOnCheckedChangeListener(this);
@@ -1547,6 +1511,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                             ll_Q1207.setVisibility(View.VISIBLE);
                             ll_Q1208.setVisibility(View.VISIBLE);
                         }
+
                     } else {
 
                         ll_Q1207.setVisibility(View.VISIBLE);
@@ -1832,7 +1797,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         }
 
 
-
         if (compoundButton.getId() == R.id.rb_Q1602_1
                 || compoundButton.getId() == R.id.rb_Q1602_2
                 || compoundButton.getId() == R.id.rb_Q1602_DK) {
@@ -2012,33 +1976,24 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         currentSection = 1;
 
 
-
-
-        for(int i=0;i<lst_q1503.size();i++)
-        {
-            if(i==0) {
+        for (int i = 0; i < lst_q1503.size(); i++) {
+            if (i == 0) {
                 Q1503 = lst_q1503.get(i);
-            }
-            else
-            {
-                Q1503 =  " andd "+  Q1503 + lst_q1503.get(i);
+            } else {
+                Q1503 = " andd " + Q1503 + lst_q1503.get(i);
             }
 
         }
 
 
-        for(int i=0;i<lst_other.size();i++)
-        {
-            if(i==0) {
+        for (int i = 0; i < lst_other.size(); i++) {
+            if (i == 0) {
                 Q1503_OT = lst_other.get(i);
-            }
-            else
-            {
-                Q1503_OT =  " andd "+  Q1503_OT + lst_other.get(i);
+            } else {
+                Q1503_OT = " andd " + Q1503_OT + lst_other.get(i);
             }
 
         }
-
 
 
         if (ed_study_id.getText().toString().length() > 0) {
@@ -2509,9 +2464,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             Q1501 = "2";
         }
         if (ed_Q1502.getText().toString().trim().length() > 0) {
-            Q1502=ed_Q1502.getText().toString().trim();
+            Q1502 = ed_Q1502.getText().toString().trim();
         }
-
 
 
         if (rb_Q1601_1.isChecked()) {
@@ -2835,15 +2789,166 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_study_id) == false) {
-
-            //CardView cv = findViewById(R.id.cv_study_id);
-            //cv.requestFocus();
-            //cv.setBackgroundColor(0xFFFF0000);
+        /*if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
-        return Gothrough.IamHiden(ll_Q1201) != false;
+        if (Gothrough.IamHiden(ll_Q1202) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1203) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1204) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1205) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1206_d) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1206_m) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1206_y) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1207) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1208) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1209) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1301) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1302) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1401) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1402) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1403) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1403_OT) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1404) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1405) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1406) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1407) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1408) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1409) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1410) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1411) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1412) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1413) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1414_1) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1414_2) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1414_3) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1414_4) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1414_5) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1414_6) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1414_7) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1414_8) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1414_9) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1414_10) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1415) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1416) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1416_OT) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1417) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1417_OT) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1418) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1418_OT) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1419) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1419_OT) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1420) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1420_OT) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1421) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1421_OT) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_Q1501) == false) {
+            return false;
+        }
+
+        if(Gothrough.IamHiden(ll_Q1502) == false){
+            return false;
+        }*/
+
+        return true;
     }
 
     @Override
@@ -2992,7 +3097,18 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 ed_Q1206_m.setEnabled(true);
                 ed_Q1206_y.setEnabled(true);
             }
+
+        } else {
+
+            ed_Q1206_d.setText(null);
+            ed_Q1206_m.setText(null);
+            ed_Q1206_y.setText(null);
+
+            ed_Q1206_d.setEnabled(false);
+            ed_Q1206_m.setEnabled(false);
+            ed_Q1206_y.setEnabled(false);
         }
+
 
         if (ed_Q1603.getText().toString().length() == 10 && ed_Q1606.getText().toString().length() == 10) {
 
@@ -3054,6 +3170,16 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 ed_Q1607_2.setEnabled(true);
                 ed_Q1607_3.setEnabled(true);
             }
+
+        } else {
+
+            ed_Q1607_1.setText(null);
+            ed_Q1607_2.setText(null);
+            ed_Q1607_3.setText(null);
+
+            ed_Q1607_1.setEnabled(false);
+            ed_Q1607_2.setEnabled(false);
+            ed_Q1607_3.setEnabled(false);
         }
     }
 
@@ -3098,9 +3224,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         }
     }
 
-
-    boolean if_study_id_exsist()
-    {
+    boolean if_study_id_exsist() {
         DBHelper db = new DBHelper(this);
         Cursor res = db.getData("Q1101_Q1610", study_id);
 
@@ -3108,9 +3232,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     }
 
-
-   void change_langua()
-    {
+    void change_langua() {
 
         final MyPreferences preferences = new MyPreferences(this);
 
@@ -3121,14 +3243,12 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 //use constructor with country
 
 
-        if(lang==null)
-        {
-            lang="ur";
-            country="PK";
+        if (lang == null) {
+            lang = "ur";
+            country = "PK";
 
         }
         Locale locale = new Locale(lang, country);
-
 
 
         Locale.setDefault(locale);

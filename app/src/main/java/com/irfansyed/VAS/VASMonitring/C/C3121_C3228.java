@@ -1060,6 +1060,16 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
             return;
         }
 
+        if (ed_C3122d.getText().toString().length() < 1 && ed_C3122m.getText().toString().length() < 1) {
+            Toast.makeText(this, "C3122 is required", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        if (ed_C3162d.getText().toString().length() < 1 && ed_C3162m.getText().toString().length() < 1) {
+            Toast.makeText(this, "C3162 is required", Toast.LENGTH_LONG).show();
+            return;
+        }
+
         value_assignment();
         insert_data();
 
@@ -2386,6 +2396,16 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3144.setVisibility(View.GONE);
                 ll_C3144_a.setVisibility(View.GONE);
                 ll_C3144_b.setVisibility(View.GONE);
+            }
+
+            if (rb_C3143_2.isChecked() || rb_C3143_DK.isChecked() || rb_C3143_RA.isChecked()){
+
+                ClearAllcontrol.ClearAll(ll_C3145);
+                ll_C3145.setVisibility(View.GONE);
+
+            } else {
+
+                ll_C3145.setVisibility(View.VISIBLE);
             }
         }
 
@@ -5593,11 +5613,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
         if (Gothrough.IamHiden(ll_C3121) == false) {
             return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3122) == false) {
-            return false;
-        }
+       }
 
         if (Gothrough.IamHiden(ll_C3123_u) == false) {
             return false;
@@ -5816,10 +5832,6 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         }
 
         if (Gothrough.IamHiden(ll_C3161) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3162) == false) {
             return false;
         }
 

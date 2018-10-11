@@ -306,7 +306,7 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
             C3457,
             STATUS;
 
-    int Q1403, currentSection;
+    int Q1403, C3003, currentSection;
 
     //endregion
 
@@ -327,6 +327,23 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
 
         DBHelper db = new DBHelper(this);
         Cursor Q1101_Q1610 = db.getData("Q1101_Q1610", study_id);
+        Cursor C3001_C3011 = db.getData("C3001_C3011", study_id);
+
+        if (C3001_C3011.getCount() > 0) {
+
+            C3001_C3011.moveToFirst();
+
+            C3003 = Integer.valueOf(C3001_C3011.getString(C3001_C3011.getColumnIndex("C3003")));
+
+            if (C3003 == 2) {
+
+                ll_C3401.setVisibility(View.GONE);
+
+            } else {
+
+                ll_C3401.setVisibility(View.VISIBLE);
+            }
+        }
 
         if (Q1101_Q1610.getCount() > 0) {
 
