@@ -190,46 +190,47 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
         ll_C3021m.setVisibility(View.GONE);
         ll_C3021y.setVisibility(View.GONE);
 
+        if (ageInDays > 27 && ageInDays < 3240) {
 
-        if (ageInDays > 27 && ageInDays < 1441) {
+            if (ageInDays > 27 && ageInDays < 1441) {
 
-            ClearAllcontrol.ClearAll(ll_C3013);
-            ClearAllcontrol.ClearAll(ll_C3015);
-            ClearAllcontrol.ClearAll(ll_C3016);
-            ClearAllcontrol.ClearAll(ll_C3017);
-            ClearAllcontrol.ClearAll(ll_C3018);
-            ClearAllcontrol.ClearAll(ll_C3018_1);
+                ClearAllcontrol.ClearAll(ll_C3013);
+                ClearAllcontrol.ClearAll(ll_C3015);
+                ClearAllcontrol.ClearAll(ll_C3016);
+                ClearAllcontrol.ClearAll(ll_C3017);
+                ClearAllcontrol.ClearAll(ll_C3018);
+                ClearAllcontrol.ClearAll(ll_C3018_1);
 
-            ll_C3013.setVisibility(View.GONE);
-            ll_C3015.setVisibility(View.GONE);
-            ll_C3016.setVisibility(View.GONE);
-            ll_C3017.setVisibility(View.GONE);
-            ll_C3018.setVisibility(View.GONE);
-            ll_C3018_1.setVisibility(View.GONE);
+                ll_C3013.setVisibility(View.GONE);
+                ll_C3015.setVisibility(View.GONE);
+                ll_C3016.setVisibility(View.GONE);
+                ll_C3017.setVisibility(View.GONE);
+                ll_C3018.setVisibility(View.GONE);
+                ll_C3018_1.setVisibility(View.GONE);
 
-        } else {
+            } else if (ageInDays > 1440 && ageInDays < 3240) {
 
-            ll_C3013.setVisibility(View.VISIBLE);
-            ll_C3015.setVisibility(View.VISIBLE);
-            ll_C3016.setVisibility(View.VISIBLE);
-            ll_C3017.setVisibility(View.VISIBLE);
-            ll_C3018.setVisibility(View.VISIBLE);
-            ll_C3018_1.setVisibility(View.VISIBLE);
+                ll_C3013.setVisibility(View.VISIBLE);
+                ll_C3015.setVisibility(View.VISIBLE);
+                ll_C3016.setVisibility(View.VISIBLE);
+                ll_C3017.setVisibility(View.VISIBLE);
+
+                ClearAllcontrol.ClearAll(ll_C3018);
+                ClearAllcontrol.ClearAll(ll_C3018_1);
+                ll_C3018.setVisibility(View.GONE);
+                ll_C3018_1.setVisibility(View.GONE);
+
+            } else {
+
+                ll_C3013.setVisibility(View.VISIBLE);
+                ll_C3015.setVisibility(View.VISIBLE);
+                ll_C3016.setVisibility(View.VISIBLE);
+                ll_C3017.setVisibility(View.VISIBLE);
+                ll_C3018.setVisibility(View.VISIBLE);
+                ll_C3018_1.setVisibility(View.VISIBLE);
+            }
         }
 
-        if (ageInDays > 1440 && ageInDays < 3240) {
-
-            ClearAllcontrol.ClearAll(ll_C3018);
-            ClearAllcontrol.ClearAll(ll_C3018_1);
-
-            ll_C3018.setVisibility(View.GONE);
-            ll_C3018_1.setVisibility(View.GONE);
-
-        } else {
-
-            ll_C3018.setVisibility(View.VISIBLE);
-            ll_C3018_1.setVisibility(View.VISIBLE);
-        }
 
         this.events_call();
 

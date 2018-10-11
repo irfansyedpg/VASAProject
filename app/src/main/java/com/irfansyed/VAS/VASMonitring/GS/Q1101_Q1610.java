@@ -2788,7 +2788,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_study_id) == false) {
+        /*if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -2826,12 +2826,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
         if (Gothrough.IamHiden(ll_Q1302) == false) {
-            return false;
-        }
-        if (Gothrough.IamHiden(ll_Q1312) == false) {
-            return false;
-        }
-        if (Gothrough.IamHiden(ll_Q1313) == false) {
             return false;
         }
         if (Gothrough.IamHiden(ll_Q1401) == false) {
@@ -2948,7 +2942,12 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         if (Gothrough.IamHiden(ll_Q1501) == false) {
             return false;
         }
-        return Gothrough.IamHiden(ll_Q1502) != false;
+
+        if(Gothrough.IamHiden(ll_Q1502) == false){
+            return false;
+        }*/
+
+        return true;
     }
 
     @Override
