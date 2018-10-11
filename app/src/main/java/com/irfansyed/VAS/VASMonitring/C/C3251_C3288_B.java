@@ -62,7 +62,7 @@ public class C3251_C3288_B extends AppCompatActivity {
                 bi.btnAddMore.setVisibility(View.GONE);
             }
 
-            String c32531 = db.getSpecificData(data.C.C3251_C3288_B.TABLE_NAME, bi.edStudyId.getText().toString(), Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_1);
+            /*String c32531 = db.getSpecificData(data.C.C3251_C3288_B.TABLE_NAME, bi.edStudyId.getText().toString(), Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_1);
             switch (Integer.valueOf(c32531)) {
                 case 1:
                     bi.rbC325313.setEnabled(false);
@@ -86,7 +86,7 @@ public class C3251_C3288_B extends AppCompatActivity {
                     bi.rbC325312.setEnabled(false);
                     break;
 
-            }
+            }*/
         }
 
         bi.rgC32531.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
