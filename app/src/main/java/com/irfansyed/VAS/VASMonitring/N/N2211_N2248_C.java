@@ -84,8 +84,13 @@ public class N2211_N2248_C extends AppCompatActivity {
 //        Inst_4
             if (col_n2211 != null) {
                 for (N2211_N2248_B col_data : col_n2211) {
-                    if ((Integer.valueOf(col_data.getN2213()) > 0 && Integer.valueOf(col_data.getN2213()) <= 3)
+                    /*if ((Integer.valueOf(col_data.getN2213()) > 0 && Integer.valueOf(col_data.getN2213()) <= 3)
                             || (Integer.valueOf(col_data.getN22132A()) == 1)) {
+                        flag_n2213 = false;
+                        break;
+                    }*/
+                    if (Integer.valueOf(col_data.getN2213()) <= 3
+                            && Integer.valueOf(col_data.getN22132A()) != 1) {
                         flag_n2213 = false;
                         break;
                     }
@@ -187,7 +192,7 @@ public class N2211_N2248_C extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == bi.rbN22262.getId()) {
-                    ClearAllcontrol.ClearAll(bi.llN22271N22272); //ll_N2227_1_N2227_2
+                    ClearAllcontrol.ClearAll(bi.llN22271N22372); //ll_N2227_1_N2237_2
                 }
             }
         });
