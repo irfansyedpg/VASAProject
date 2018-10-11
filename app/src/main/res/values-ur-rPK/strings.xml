@@ -3964,11 +3964,9 @@
     <string  name="rb_N2247_2"  translatable="false">	نہیں	</string>
     <string  name="rb_N2247_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2247_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
-
     <!-- Neonate Urdu Responses ENDS -->
 
     <!-- Neonate Urdu Text HINT's STARTS -->
-
     <string  name="N2003_h"  translatable="false">	اگر ماں انٹرویو میں موجود ہے تو یہ سوال پوچھے بغیر  "ہاں"  پر نشان لگائیں 	</string>
     <string  name="N2005u_h"  translatable="false">	صرف ایک یونٹ یا جواب لکھیں	</string>
     <string  name="N2005d_h"  translatable="false">	24 گھنٹے سے کم ہو تو 0  دن لکھیں  دن لکھیں ، اگر ایک دن یا 0-6  	</string>
@@ -4061,7 +4059,6 @@
     <string  name="N2313_h"  translatable="false">	تمام مسائل کو پڑھیں اور ہاں"  نہیں  "  معلوم نہیں"   پر نشان لگائیں	</string>
     <string  name="N2321_h"  translatable="false">	یہ ایک اختیار ی سوال ہے جس کو پوچھنے کا فیصلہ اسٹیڈی کی جگہ کے مطابق کیا جائیگا 	</string>
     <string  name="N2323_h"  translatable="false">	انٹرویور: انٹرویو کو بارے میں اپنا تبصرہ اور مشاہدہ لکھیں	</string>
-
     <!-- Neonate Urdu Text HINT's ENDS -->
 
     <!-- Child Urdu Text STARTS -->
