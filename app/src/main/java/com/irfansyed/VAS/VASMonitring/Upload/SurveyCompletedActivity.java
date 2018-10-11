@@ -56,6 +56,9 @@ import Global.C.C3351_C3364;
 import Global.C.C3401_C3457;
 import Global.C.C3471_C3472;
 import Global.GS.Q1101_Q1610;
+import Global.N.N2001_N2011;
+import Global.N.N2012_N2016;
+import Global.N.N2017_N2022_3;
 import data.DBHelper;
 import data.LocalDataManager;
 
@@ -188,7 +191,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_N(final String study_id) {
 
-        final String ROOT_URL = "http://10.199.28.86/sm/Welcome/collect_N";
+        final String ROOT_URL = "http://192.168.1.142/sm/Welcome/collect_N";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -358,8 +361,74 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     }
                 }
 
+                if (c2 != null) {
 
+                    if (c2.moveToFirst()) {
 
+                        params.put(N2001_N2011.sub_N2001_N2011.N2001, c2.getString(c2.getColumnIndex("N2001")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2002, c2.getString(c2.getColumnIndex("N2002")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2003, c2.getString(c2.getColumnIndex("N2003")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2004, c2.getString(c2.getColumnIndex("N2004")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2005u, c2.getString(c2.getColumnIndex("N2005u")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2005d, c2.getString(c2.getColumnIndex("N2005d")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2005w, c2.getString(c2.getColumnIndex("N2005w")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2005m, c2.getString(c2.getColumnIndex("N2005m")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2006, c2.getString(c2.getColumnIndex("N2006")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2006x, c2.getString(c2.getColumnIndex("N2006x")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2008, c2.getString(c2.getColumnIndex("N2008")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2008x, c2.getString(c2.getColumnIndex("N2008x")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2009_1, c2.getString(c2.getColumnIndex("N2009_1")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2009_2, c2.getString(c2.getColumnIndex("N2009_2")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2009_3, c2.getString(c2.getColumnIndex("N2009_3")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2009_4, c2.getString(c2.getColumnIndex("N2009_4")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2010, c2.getString(c2.getColumnIndex("N2010")));
+                        params.put(N2001_N2011.sub_N2001_N2011.N2011, c2.getString(c2.getColumnIndex("N2011")));
+                    }
+                }
+
+                if (c3 != null) {
+
+                    if (c3.moveToFirst()) {
+
+                        params.put(N2012_N2016.sub_N2012_N2016.N2012, c3.getString(c3.getColumnIndex("N2012")));
+                        params.put(N2012_N2016.sub_N2012_N2016.N2013, c3.getString(c3.getColumnIndex("N2013")));
+                        params.put(N2012_N2016.sub_N2012_N2016.N2014, c3.getString(c3.getColumnIndex("N2014")));
+                        params.put(N2012_N2016.sub_N2012_N2016.N2015, c3.getString(c3.getColumnIndex("N2015")));
+                        params.put(N2012_N2016.sub_N2012_N2016.N2016, c3.getString(c3.getColumnIndex("N2016")));
+                    }
+                }
+
+                if (c4 != null) {
+
+                    if (c4.moveToFirst()) {
+
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2017, c4.getString(c4.getColumnIndex("N2017")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2018, c4.getString(c4.getColumnIndex("N2018")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2019u, c4.getString(c4.getColumnIndex("N2019u")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2019h, c4.getString(c4.getColumnIndex("N2019h")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2019d, c4.getString(c4.getColumnIndex("N2019d")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2020, c4.getString(c4.getColumnIndex("N2020")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2021, c4.getString(c4.getColumnIndex("N2021")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2022, c4.getString(c4.getColumnIndex("N2022")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2022_1, c4.getString(c4.getColumnIndex("N2022_1")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2022_2, c4.getString(c4.getColumnIndex("N2022_2")));
+                        params.put(N2017_N2022_3.sub_N2017_N2022_3.N2022_3, c4.getString(c4.getColumnIndex("N2022_3")));
+                    }
+
+                } else {
+
+                    params.put(N2017_N2022_3.sub_N2017_N2022_3.N2017, "-2");
+                    params.put(N2017_N2022_3.sub_N2017_N2022_3.N2018, "-2");
+                    params.put(N2017_N2022_3.sub_N2017_N2022_3.N2019u, "-2");
+                    params.put(N2017_N2022_3.sub_N2017_N2022_3.N2019h, "-2");
+                    params.put(N2017_N2022_3.sub_N2017_N2022_3.N2019d, "-2");
+                    params.put(N2017_N2022_3.sub_N2017_N2022_3.N2020, "-2");
+                    params.put(N2017_N2022_3.sub_N2017_N2022_3.N2021, "-2");
+                    params.put(N2017_N2022_3.sub_N2017_N2022_3.N2022, "-2");
+                    params.put(N2017_N2022_3.sub_N2017_N2022_3.N2022_1, "-2");
+                    params.put(N2017_N2022_3.sub_N2017_N2022_3.N2022_2, "-2");
+                    params.put(N2017_N2022_3.sub_N2017_N2022_3.N2022_3, "-2");
+                }
 
                 return params;
             }
@@ -370,7 +439,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_C(final String study_id) {
 
-        final String ROOT_URL = "http://192.168.1.105/sm/Welcome/collect_C";
+        final String ROOT_URL = "http://10.199.28.86/sm/Welcome/collect_C";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -1497,7 +1566,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_A(final String study_id) {
 
-        final String ROOT_URL = "http://192.168.1.105/sm/Welcome/collect_A";
+        final String ROOT_URL = "http://10.199.28.86/sm/Welcome/collect_A";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
