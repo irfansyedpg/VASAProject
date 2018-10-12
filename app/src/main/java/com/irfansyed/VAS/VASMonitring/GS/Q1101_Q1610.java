@@ -534,8 +534,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
                     if (Integer.valueOf(dod_sep[2]) != 9999 && Integer.valueOf(dob_sep[2]) != 9999 && Integer.valueOf(dob_sep[2]) > Integer.valueOf(dod_sep[2])) {
 
-                        ed_Q1606.setError("Date of Birth cannot be greater than Date of Death");
-                        ed_Q1606.requestFocus();
+                        ed_Q1603.setError("Date of Birth cannot be greater than Date of Death");
+                        ed_Q1603.requestFocus();
                         return;
                     }
                 }
@@ -3210,9 +3210,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         matcher = pattern.matcher(date);
 
-        String[] date_sep = date.split("/");
+        //String[] date_sep = date.split("/");
 
-        if (date_sep[0].equals("99") || date_sep[1].equals("99") || date_sep[2].equals("9999")) {
+        if (date.equals("99/99/9999")) {
 
             return true;
 
