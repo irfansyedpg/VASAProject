@@ -3193,7 +3193,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         matcher = pattern.matcher(date);
 
-        if (date.equals("99/99/9999")) {
+        String[] date_sep = date.split("/");
+
+        if (date_sep[0].equals("99") || date_sep[1].equals("99") || date_sep[2].equals("9999")) {
 
             return true;
 
