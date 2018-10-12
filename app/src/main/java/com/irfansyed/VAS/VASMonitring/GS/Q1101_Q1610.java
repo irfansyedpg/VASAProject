@@ -483,7 +483,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         if (view.getId() == R.id.btn_next) {
 
             if (ed_Q1201_1.getText().toString().length() < 1 || ed_Q1201_2.getText().toString().length() < 1) {
-                Toast.makeText(this, "Q1201 is required", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Province and District are required", Toast.LENGTH_LONG).show();
                 return;
             }
 
@@ -510,7 +510,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
                 if (!validate(ed_Q1603.getText().toString().trim())) {
 
-                    ed_Q1603.setError("Kindly enter a valid date");
+                    ed_Q1603.setError("Kindly enter a valid Date of Birth");
                     ed_Q1603.requestFocus();
                     return;
                 }
@@ -520,11 +520,29 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
                 if (!validate(ed_Q1606.getText().toString().trim())) {
 
-                    ed_Q1606.setError("Kindly enter a valid date");
+                    ed_Q1606.setError("Kindly enter a valid Date of Death");
                     ed_Q1606.requestFocus();
                     return;
+
+                } else {
+
+                    String dob = ed_Q1603.getText().toString().trim();
+                    String dod = ed_Q1606.getText().toString().trim();
+
+                    String[] dob_sep = dob.split("/");
+                    String[] dod_sep = dod.split("/");
+
+                    if (Integer.valueOf(dod_sep[2]) != 9999 && Integer.valueOf(dob_sep[2]) != 9999 && Integer.valueOf(dob_sep[2]) > Integer.valueOf(dod_sep[2])) {
+
+                        ed_Q1606.setError("Date of Birth cannot be greater than Date of Death");
+                        ed_Q1606.requestFocus();
+                        return;
+                    }
                 }
             }
+
+
+
 
             value_assignment();
 
@@ -591,7 +609,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
     }
-
 
     List<String> lst_q1503 = new ArrayList();
     List<String> lst_other = new ArrayList();
