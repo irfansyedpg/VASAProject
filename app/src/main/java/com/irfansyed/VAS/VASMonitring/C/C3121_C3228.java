@@ -6282,7 +6282,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3228) == false;
+        return Gothrough.IamHiden(ll_C3228) != false;
     }
 
     private void changeMediaUI(final Button btn, final int resID) {

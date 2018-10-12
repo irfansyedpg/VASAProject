@@ -2246,7 +2246,15 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3097) != false;
+        if (Gothrough.IamHiden(ll_C3097) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_C3098) == false) {
+            return false;
+        }
+
+        return Gothrough.IamHiden(ll_C3099) != false;
     }
 
     @Override

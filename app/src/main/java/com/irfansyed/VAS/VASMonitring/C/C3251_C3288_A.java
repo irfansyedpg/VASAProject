@@ -83,7 +83,6 @@ public class C3251_C3288_A extends AppCompatActivity {
 
         //ll_C3252
         return Gothrough.IamHiden(bi.llC3252);
-
     }
 
     @Override
