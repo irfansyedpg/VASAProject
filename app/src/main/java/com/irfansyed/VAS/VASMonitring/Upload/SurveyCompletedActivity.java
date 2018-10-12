@@ -636,7 +636,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(N2080_N2107.sub_N2080_N2107.N2096_15, c7.getString(c7.getColumnIndex("N2096_15")));
                     params.put(N2080_N2107.sub_N2080_N2107.N2096_16, c7.getString(c7.getColumnIndex("N2096_16")));
                     params.put(N2080_N2107.sub_N2080_N2107.N2096_17, c7.getString(c7.getColumnIndex("N2096_17")));
-                    params.put(N2080_N2107.sub_N2080_N2107.N2096_OT, c7.getString(c7.getColumnIndex("N2096_OT")));
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_OT, c7.getString(c7.getColumnIndex("N2096_18")));
                     params.put(N2080_N2107.sub_N2080_N2107.N2097_1, c7.getString(c7.getColumnIndex("N2097_1")));
                     params.put(N2080_N2107.sub_N2080_N2107.N2097_2, c7.getString(c7.getColumnIndex("N2097_2")));
                     params.put(N2080_N2107.sub_N2080_N2107.N2097_3, c7.getString(c7.getColumnIndex("N2097_3")));
