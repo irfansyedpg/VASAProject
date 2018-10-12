@@ -1718,7 +1718,7 @@
                         <RadioButton
                             android:id="@+id/rb_Q1416_8"
                             style="@style/RadioButton"
-                            android:text="@string/ed_Q1416_OT" />
+                            android:text="@string/rb_Q1416_OT" />
 
                         <RadioButton
                             android:id="@+id/rb_Q1416_DK"
