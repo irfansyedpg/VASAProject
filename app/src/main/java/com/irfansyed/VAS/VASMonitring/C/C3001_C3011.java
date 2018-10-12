@@ -17,6 +17,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
@@ -613,25 +614,25 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        C3001 = "000";
-        C3002 = "000";
-        C3003 = "000";
-        C3004 = "000";
-        C3005u = "000";
-        C3005d = "000";
-        C3005w = "000";
-        C3005m = "000";
-        C3006 = "000";
-        C3006_OT = "000";
-        C3008 = "000";
-        C3008_OT = "000";
-        C3009_1 = "000";
-        C3009_2 = "000";
-        C3009_3 = "000";
-        C3009_4 = "000";
-        C3010 = "000";
-        C3011 = "000";
-        STATUS = "0";
+        C3001    = "-1";
+        C3002    = "-1";
+        C3003    = "-1";
+        C3004    = "-1";
+        C3005u   = "-1";
+        C3005d   = "-1";
+        C3005w   = "-1";
+        C3005m   = "-1";
+        C3006    = "-1";
+        C3006_OT = "-1";
+        C3008    = "-1";
+        C3008_OT = "-1";
+        C3009_1  = "-1";
+        C3009_2  = "-1";
+        C3009_3  = "-1";
+        C3009_4  = "-1";
+        C3010    = "-1";
+        C3011    = "-1";
+        STATUS   = "0";
 
 
         if (ed_study_id.getText().toString().length() > 0) {
@@ -867,7 +868,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_study_id) == false) {
+        if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -939,11 +940,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if(Gothrough.IamHiden(ll_C3011) == false){
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_C3011) != false;
     }
 
     @Override

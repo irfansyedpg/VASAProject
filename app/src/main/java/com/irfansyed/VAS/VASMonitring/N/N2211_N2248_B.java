@@ -40,10 +40,10 @@ public class N2211_N2248_B extends AppCompatActivity {
 
         if (count == 1) {
             bi.llN22133E2A.setVisibility(View.VISIBLE); //ll_N2213_3E_2A
-            bi.btnContinue.setEnabled(false);
+//            bi.btnContinue.setEnabled(false);
         } else {
             bi.llN22133E2A.setVisibility(View.GONE); //ll_N2213_3E_2A
-            bi.btnContinue.setEnabled(true);
+//            bi.btnContinue.setEnabled(true);
         }
 
         if (count == 9) {

@@ -1467,7 +1467,7 @@ public class N2080_N2107 {
         String N2096_15 = "N2096_15";
         String N2096_16 = "N2096_16";
         String N2096_17 = "N2096_17";
-        String N2096_OT = "N2096_18";
+        String N2096_OT = "N2096_OT";
 
         String N2097_1 = "N2097_1";
         String N2097_2 = "N2097_2";

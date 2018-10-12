@@ -222,7 +222,7 @@ A) and did not fill N2098–N2106  → N2219;    B) and filled N2098–N2106 →
                         android:layout_weight="1"
                         android:background="@color/black_overlay"
                         android:onClick="@{() -> callback.BtnContinue()}"
-                        android:text="@string/next" />
+                        android:text="@string/next"
                         android:textColor="@color/white"/>
 
                 </LinearLayout>

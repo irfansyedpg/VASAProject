@@ -23,6 +23,7 @@ import java.util.Date;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
@@ -551,23 +552,23 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        C3012 = "000";
-        C3013 = "000";
-        C3015 = "000";
-        C3016 = "000";
-        C3017 = "000";
-        C3018 = "000";
-        C3018_1 = "000";
-        C3019_u = "000";
-        C3019_a = "000";
-        C3019_b = "000";
-        C3019_c = "000";
-        C3020 = "000";
-        C3021u = "000";
-        C3021d = "000";
-        C3021m = "000";
-        C3021y = "000";
-        C3022 = "000";
+        C3012 = "-1";
+        C3013 = "-1";
+        C3015 = "-1";
+        C3016 = "-1";
+        C3017 = "-1";
+        C3018 = "-1";
+        C3018_1 = "-1";
+        C3019_u = "-1";
+        C3019_a = "-1";
+        C3019_b = "-1";
+        C3019_c = "-1";
+        C3020 = "-1";
+        C3021u = "-1";
+        C3021d = "-1";
+        C3021m = "-1";
+        C3021y = "-1";
+        C3022 = "-1";
         STATUS = "0";
 
         if (ed_study_id.getText().toString().length() > 0) {
@@ -757,7 +758,7 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_study_id) == false) {
+        if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -785,7 +786,15 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_C3019_a) == false && Gothrough.IamHiden(ll_C3019_b) == false && Gothrough.IamHiden(ll_C3019_c) == false) {
+        if (Gothrough.IamHiden(ll_C3019_a) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_C3019_b) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_C3019_c) == false) {
             return false;
         }
 
@@ -797,21 +806,24 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_C3021d) == false && Gothrough.IamHiden(ll_C3021m) == false && Gothrough.IamHiden(ll_C3021y) == false) {
+        if (Gothrough.IamHiden(ll_C3021d) == false) {
             return false;
         }
 
-        if(Gothrough.IamHiden(ll_C3022) != false){
+        if (Gothrough.IamHiden(ll_C3021m) == false) {
             return false;
-        }*/
+        }
 
-        return true;
+        if (Gothrough.IamHiden(ll_C3021y) == false) {
+            return false;
+        }
+
+        return Gothrough.IamHiden(ll_C3022) != false;
     }
 
     @Override
     public void onBackPressed() {
         globale.interviewExit(this, this, study_id, currentSection = 3);
     }
-
 
 }

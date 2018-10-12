@@ -243,7 +243,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
        TextView txt_genral = v.findViewById(R.id.txt_pregno);
 
-       int preg=lst_w17.size()+1;
+       int preg=lst_w17.size() + 1;
        txt_genral.setText(" Enter Detail for Pregnancy No: (" +preg +")");
 
 
@@ -357,26 +357,23 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                     days_22 = Integer.parseInt(ed_W222_3.getText().toString().trim()) * 1;
                 }
 
-
                 days_22 = days_22 + month_22 + year_22;
-
 
                 lst_w21.add(Integer.toString(days_21));
                 lst_w22.add(Integer.toString(days_22));
 
 
                 int number_preg=Integer.parseInt(ed_W215.getText().toString());
-                if(lst_w17.size()<number_preg)
-                {
-                    btn_next.setText("Add Next Pregnancy No:("+lst_w17.size()+")");
+                if(rb_W208_1.isChecked()) {
+                    number_preg = number_preg - 1;
                 }
-                else
-                {
+                if(lst_w17.size() < number_preg) {
+                    btn_next.setText("Add Next Pregnancy No:("+lst_w17.size()+")");
+                } else {
                     btn_next.setText("Next Section");
                 }
 
                 b.cancel();
-
             }
         });
 

@@ -21,6 +21,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import java.io.File;
 
 import data.LocalDataManager;
+import utils.Gothrough;
 
 public class C3471_C3472 extends AppCompatActivity implements View.OnClickListener {
 
@@ -199,19 +200,19 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     void value_assignment() {
 
-        C3471   = "000";
-        C3472_1 = "000";
-        C3472_2 = "000";
-        C3472_3 = "000";
-        C3472_4 = "000";
-        C3472_5 = "000";
-        C3472_6 = "000";
-        C3472_7 = "000";
-        C3472_8 = "000";
-        C3472_9 = "000";
-        C3472_10 = "000";
-        C3472_11 = "000";
-        C3472_DK = "000";
+        C3471   = "-1";
+        C3472_1 = "-1";
+        C3472_2 = "-1";
+        C3472_3 = "-1";
+        C3472_4 = "-1";
+        C3472_5 = "-1";
+        C3472_6 = "-1";
+        C3472_7 = "-1";
+        C3472_8 = "-1";
+        C3472_9 = "-1";
+        C3472_10 = "-1";
+        C3472_11 = "-1";
+        C3472_DK = "-1";
 
         STATUS = "0";
 
@@ -319,7 +320,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_study_id) == false) {
+        if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -327,11 +328,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_C3472) == false) {
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_C3472) != false;
     }
 
     @Override

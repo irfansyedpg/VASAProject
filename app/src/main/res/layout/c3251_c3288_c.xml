@@ -679,7 +679,7 @@ Inst_4: If C3253 ≠ “Health provider” (Never took to a health provider) →
                                                     <RadioButton
                                                         android:id="@+id/rb_C3262_2"
                                                         style="@style/RadioButton"
-                                                        android:text="@string/rb_C3262_1" />
+                                                        android:text="@string/rb_C3262_2" />
 
                                                     <RadioButton
                                                         android:id="@+id/rb_C3262_DK"
@@ -2074,7 +2074,7 @@ Otherwise →C3287" />
                                             <CheckBox
                                                 android:id="@+id/cb_C3282_7"
                                                 style="@style/CheckBox"
-                                                android:text="@string/other" />
+                                                android:text="@string/cb_C3282_7" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_C3282_dk"
@@ -2135,7 +2135,7 @@ Otherwise →C3287" />
                                             <CheckBox
                                                 android:id="@+id/cb_C3283_6"
                                                 style="@style/CheckBox"
-                                                android:text="@string/other" />
+                                                android:text="@string/cb_C3283_6" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_C3283_7"

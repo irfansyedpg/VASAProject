@@ -19,6 +19,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import Global.C.C3001_C3011;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
@@ -1055,18 +1056,26 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
     @Override
     public void onClick(View view) {
 
+        if (ll_C3122.getVisibility() == View.VISIBLE) {
+
+            if (ed_C3122d.getText().toString().length() < 1 && ed_C3122m.getText().toString().length() < 1) {
+                Toast.makeText(this, "C3122 is required", Toast.LENGTH_LONG).show();
+                ll_C3122.requestFocus();
+                return;
+            }
+        }
+
+        if (ll_C3162.getVisibility() == View.VISIBLE) {
+
+            if (ed_C3162d.getText().toString().length() < 1 && ed_C3162m.getText().toString().length() < 1) {
+                Toast.makeText(this, "C3162 is required", Toast.LENGTH_LONG).show();
+                ll_C3162.requestFocus();
+                return;
+            }
+        }
+
         if (validateField() == false) {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
-            return;
-        }
-
-        if (ed_C3122d.getText().toString().length() < 1 && ed_C3122m.getText().toString().length() < 1) {
-            Toast.makeText(this, "C3122 is required", Toast.LENGTH_LONG).show();
-            return;
-        }
-
-        if (ed_C3162d.getText().toString().length() < 1 && ed_C3162m.getText().toString().length() < 1) {
-            Toast.makeText(this, "C3162 is required", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -2398,7 +2407,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3144_b.setVisibility(View.GONE);
             }
 
-            if (rb_C3143_2.isChecked() || rb_C3143_DK.isChecked() || rb_C3143_RA.isChecked()){
+            if (rb_C3143_2.isChecked() || rb_C3143_DK.isChecked() || rb_C3143_RA.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_C3145);
                 ll_C3145.setVisibility(View.GONE);
@@ -3642,178 +3651,178 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        C3121 = "000";
-        C3122d = "000";
-        C3122m = "000";
-        C3123_u = "000";
-        C3123_b = "000";
-        C3123_c = "000";
-        C3124 = "000";
-        C3125 = "000";
-        C3126 = "000";
-        C3127 = "000";
-        C3128 = "000";
-        C3129 = "000";
-        C3130 = "000";
-        C3131 = "000";
-        C3132_u = "000";
-        C3132_a = "000";
-        C3132_b = "000";
-        C3133 = "000";
-        C3134 = "000";
-        C3135 = "000";
-        C3136 = "000";
-        C3137 = "000";
-        C3138 = "000";
-        C3139 = "000";
-        C3140 = "000";
-        C3141 = "000";
-        C3142 = "000";
-        C3143 = "000";
-        C3144_u = "000";
-        C3144 = "000";
-        C3144_a = "000";
-        C3144_b = "000";
-        C3145 = "000";
-        C3146 = "000";
-        C3147_u = "000";
-        C3147_a = "000";
-        C3147_b = "000";
-        C3148 = "000";
-        C3149 = "000";
-        C3150_u = "000";
-        C3150_a = "000";
-        C3150_b = "000";
-        C3151 = "000";
-        C3152_u = "000";
-        C3152_a = "000";
-        C3152_b = "000";
-        C3153 = "000";
-        C3154 = "000";
-        C3155 = "000";
-        C3156 = "000";
-        C3157 = "000";
-        C3158 = "000";
-        C3159_u = "000";
-        C3159_a = "000";
-        C3159_b = "000";
-        C3159_c = "000";
-        C3160 = "000";
-        C3161 = "000";
-        C3162d = "000";
-        C3162m = "000";
-        C3163_u = "000";
-        C3163_a = "000";
-        C3163_b = "000";
-        C3164 = "000";
-        C3165_u = "000";
-        C3165_a = "000";
-        C3165_b = "000";
-        C3166 = "000";
-        C3167 = "000";
-        C3168 = "000";
-        C3169 = "000";
-        C3170 = "000";
-        C3171 = "000";
-        C3172 = "000";
-        C3173 = "000";
-        C3174 = "000";
-        C3175_u = "000";
-        C3175_a = "000";
-        C3175_b = "000";
-        C3176 = "000";
-        C3177_u = "000";
-        C3177_a = "000";
-        C3177_b = "000";
-        C3178 = "000";
-        C3179_u = "000";
-        C3179_a = "000";
-        C3179_b = "000";
-        C3180 = "000";
-        C3181 = "000";
-        C3182 = "000";
-        C3183 = "000";
-        C3184 = "000";
-        C3185 = "000";
-        C3186_1 = "000";
-        C3186 = "000";
-        C3187 = "000";
-        C3188 = "000";
-        C3189 = "000";
-        C3190 = "000";
-        C3191 = "000";
-        C3192 = "000";
-        C3193_u = "000";
-        C3193_a = "000";
-        C3193_b = "000";
-        C3194 = "000";
-        C3195A = "000";
-        C3195 = "000";
-        C3196 = "000";
-        C3197 = "000";
-        C3198 = "000";
-        C3199 = "000";
-        C3199_1 = "000";
-        C3200 = "000";
-        C3201_u = "000";
-        C3201_a = "000";
-        C3201_b = "000";
-        C3202 = "000";
-        C3203 = "000";
-        C3204_u = "000";
-        C3204_a = "000";
-        C3204_b = "000";
-        C3205 = "000";
-        C3206 = "000";
-        C3207 = "000";
-        C3208_u = "000";
-        C3208_a = "000";
-        C3208_b = "000";
-        C3209 = "000";
-        C3210 = "000";
-        C3212 = "000";
-        C3213 = "000";
-        C3214 = "000";
-        C3215 = "000";
-        C3216 = "000";
-        C3217 = "000";
-        C3218 = "000";
-        C3218_OT = "000";
-        C3219 = "000";
-        C3220_u = "000";
-        C3220_a = "000";
-        C3220_b = "000";
-        C3221 = "000";
-        C3222 = "000";
-        C3223 = "000";
-        C3224 = "000";
-        C3225 = "000";
-        C3226 = "000";
-        C3227 = "000";
-        C3227_1 = "000";
-        C3227_2 = "000";
-        C3227_3 = "000";
-        C3227_4 = "000";
-        C3227_5 = "000";
-        C3227_6 = "000";
-        C3227_7 = "000";
-        C3227_8 = "000";
-        C3227_9 = "000";
-        C3227_10 = "000";
-        C3227_11 = "000";
-        C3227_12 = "000";
-        C3227_13 = "000";
-        C3227_14 = "000";
-        C3227_15 = "000";
-        C3227_16 = "000";
-        C3227_17 = "000";
-        C3227_18 = "000";
-        C3227_19 = "000";
-        C3227_20 = "000";
-        C3227_21 = "000";
-        C3227_22 = "000";
-        C3228 = "000";
-        STATUS = "0";
+        C3121    = "-1";
+        C3122d   = "-1";
+        C3122m   = "-1";
+        C3123_u  = "-1";
+        C3123_b  = "-1";
+        C3123_c  = "-1";
+        C3124    = "-1";
+        C3125    = "-1";
+        C3126    = "-1";
+        C3127    = "-1";
+        C3128    = "-1";
+        C3129    = "-1";
+        C3130    = "-1";
+        C3131    = "-1";
+        C3132_u  = "-1";
+        C3132_a  = "-1";
+        C3132_b  = "-1";
+        C3133    = "-1";
+        C3134    = "-1";
+        C3135    = "-1";
+        C3136    = "-1";
+        C3137    = "-1";
+        C3138    = "-1";
+        C3139    = "-1";
+        C3140    = "-1";
+        C3141    = "-1";
+        C3142    = "-1";
+        C3143    = "-1";
+        C3144_u  = "-1";
+        C3144    = "-1";
+        C3144_a  = "-1";
+        C3144_b  = "-1";
+        C3145    = "-1";
+        C3146    = "-1";
+        C3147_u  = "-1";
+        C3147_a  = "-1";
+        C3147_b  = "-1";
+        C3148    = "-1";
+        C3149    = "-1";
+        C3150_u  = "-1";
+        C3150_a  = "-1";
+        C3150_b  = "-1";
+        C3151    = "-1";
+        C3152_u  = "-1";
+        C3152_a  = "-1";
+        C3152_b  = "-1";
+        C3153    = "-1";
+        C3154    = "-1";
+        C3155    = "-1";
+        C3156    = "-1";
+        C3157    = "-1";
+        C3158    = "-1";
+        C3159_u  = "-1";
+        C3159_a  = "-1";
+        C3159_b  = "-1";
+        C3159_c  = "-1";
+        C3160    = "-1";
+        C3161    = "-1";
+        C3162d   = "-1";
+        C3162m   = "-1";
+        C3163_u  = "-1";
+        C3163_a  = "-1";
+        C3163_b  = "-1";
+        C3164    = "-1";
+        C3165_u  = "-1";
+        C3165_a  = "-1";
+        C3165_b  = "-1";
+        C3166    = "-1";
+        C3167    = "-1";
+        C3168    = "-1";
+        C3169    = "-1";
+        C3170    = "-1";
+        C3171    = "-1";
+        C3172    = "-1";
+        C3173    = "-1";
+        C3174    = "-1";
+        C3175_u  = "-1";
+        C3175_a  = "-1";
+        C3175_b  = "-1";
+        C3176    = "-1";
+        C3177_u  = "-1";
+        C3177_a  = "-1";
+        C3177_b  = "-1";
+        C3178    = "-1";
+        C3179_u  = "-1";
+        C3179_a  = "-1";
+        C3179_b  = "-1";
+        C3180    = "-1";
+        C3181    = "-1";
+        C3182    = "-1";
+        C3183    = "-1";
+        C3184    = "-1";
+        C3185    = "-1";
+        C3186_1  = "-1";
+        C3186    = "-1";
+        C3187    = "-1";
+        C3188    = "-1";
+        C3189    = "-1";
+        C3190    = "-1";
+        C3191    = "-1";
+        C3192    = "-1";
+        C3193_u  = "-1";
+        C3193_a  = "-1";
+        C3193_b  = "-1";
+        C3194    = "-1";
+        C3195A   = "-1";
+        C3195    = "-1";
+        C3196    = "-1";
+        C3197    = "-1";
+        C3198    = "-1";
+        C3199    = "-1";
+        C3199_1  = "-1";
+        C3200    = "-1";
+        C3201_u  = "-1";
+        C3201_a  = "-1";
+        C3201_b  = "-1";
+        C3202    = "-1";
+        C3203    = "-1";
+        C3204_u  = "-1";
+        C3204_a  = "-1";
+        C3204_b  = "-1";
+        C3205    = "-1";
+        C3206    = "-1";
+        C3207    = "-1";
+        C3208_u  = "-1";
+        C3208_a  = "-1";
+        C3208_b  = "-1";
+        C3209    = "-1";
+        C3210    = "-1";
+        C3212    = "-1";
+        C3213    = "-1";
+        C3214    = "-1";
+        C3215    = "-1";
+        C3216    = "-1";
+        C3217    = "-1";
+        C3218    = "-1";
+        C3218_OT = "-1";
+        C3219    = "-1";
+        C3220_u  = "-1";
+        C3220_a  = "-1";
+        C3220_b  = "-1";
+        C3221    = "-1";
+        C3222    = "-1";
+        C3223    = "-1";
+        C3224    = "-1";
+        C3225    = "-1";
+        C3226    = "-1";
+        C3227    = "-1";
+        C3227_1  = "-1";
+        C3227_2  = "-1";
+        C3227_3  = "-1";
+        C3227_4  = "-1";
+        C3227_5  = "-1";
+        C3227_6  = "-1";
+        C3227_7  = "-1";
+        C3227_8  = "-1";
+        C3227_9  = "-1";
+        C3227_10 = "-1";
+        C3227_11 = "-1";
+        C3227_12 = "-1";
+        C3227_13 = "-1";
+        C3227_14 = "-1";
+        C3227_15 = "-1";
+        C3227_16 = "-1";
+        C3227_17 = "-1";
+        C3227_18 = "-1";
+        C3227_19 = "-1";
+        C3227_20 = "-1";
+        C3227_21 = "-1";
+        C3227_22 = "-1";
+        C3228    = "-1";
+        STATUS   = "0";
 
         if (ed_study_id.getText().toString().length() > 0) {
 
@@ -3828,8 +3837,11 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
             C3121 = "9";
         }
 
-        if (ed_C3122d.getText().toString().length() > 0 || ed_C3122m.getText().toString().length() > 0) {
+        if (ed_C3122d.getText().toString().length() > 0) {
             C3122d = ed_C3122d.getText().toString().trim();
+        }
+
+        if (ed_C3122m.getText().toString().length() > 0) {
             C3122m = ed_C3122m.getText().toString().trim();
         }
 
@@ -4267,8 +4279,11 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
             C3161 = "8";
         }
 
-        if (ed_C3162d.getText().toString().length() > 0 || ed_C3162m.getText().toString().length() > 0) {
+        if (ed_C3162d.getText().toString().length() > 0) {
             C3162d = ed_C3162d.getText().toString().trim();
+        }
+
+        if (ed_C3162m.getText().toString().length() > 0) {
             C3162m = ed_C3162m.getText().toString().trim();
         }
 
@@ -5607,7 +5622,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_study_id) == false) {
+        if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -6267,11 +6282,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if(Gothrough.IamHiden(ll_C3228) != false){
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_C3228) != false;
     }
 
     private void changeMediaUI(final Button btn, final int resID) {
