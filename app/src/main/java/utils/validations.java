@@ -6,9 +6,7 @@ import android.widget.EditText;
 
 import java.util.HashMap;
 
-/**
- * Created by irfansyed on 2/15/2017.
- */
+
 
 public class validations {
 
