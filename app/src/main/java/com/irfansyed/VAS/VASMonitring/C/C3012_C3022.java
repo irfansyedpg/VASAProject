@@ -758,68 +758,62 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
+
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3012) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3013) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3015) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3016) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3017) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3018) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3018_1) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3019_u) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3019_a) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3019_b) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3019_c) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3020) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3021u) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3021d) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3021m) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3021y) == false) {
             return false;
         }
-
         return Gothrough.IamHiden(ll_C3022) != false;
+
     }
+
 
     @Override
     public void onBackPressed() {

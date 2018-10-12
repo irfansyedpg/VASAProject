@@ -1069,135 +1069,102 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3301) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3302_1) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3302_2) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3302_3) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3302_4) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3302_5) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3302_6) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3302_7) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3303) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3304) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3305) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3306_1check) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3306_1) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3306_2check) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3306_2) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3307) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3308) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3309) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3310_1) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3310_2) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3310_3) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3310_4) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3310_5) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3310_6) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3310_7) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3310_8) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3310_9) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3310_10) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3310_11) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3311) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3312) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3313) == false) {
             return false;
         }
-
         return Gothrough.IamHiden(ll_C3314) != false;
     }
 

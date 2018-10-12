@@ -195,9 +195,9 @@ public class N2251_N2260 {
         String N2252_7 = "N2252_7";
         String N2253 = "N2253";
         String N2254 = "N2254";
-        String N2255_1CHECK = "N2255_1check";
+        String N2255_1CHECK = "N2255_1CHECK";
         String N2255_1 = "N2255_1";
-        String N2255_2CHECK = "N2255_2check";
+        String N2255_2CHECK = "N2255_2CHECK";
         String N2255_2 = "N2255_2";
         String N2256 = "N2256";
         String N2257 = "N2257";

@@ -1089,65 +1089,65 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        C3401       = "-1";
-        C3402       = "-1";
-        C3403       = "-1";
-        C3404       = "-1";
-        C3405       = "-1";
-        C3406       = "-1";
-        C3407       = "-1";
-        C3408       = "-1";
-        C3409       = "-1";
-        C3410       = "-1";
-        C3411       = "-1";
-        C3412_L1    = "-1";
-        C3412_L2    = "-1";
-        C3413       = "-1";
-        C3414_1     = "-1";
-        C3414_2     = "-1";
-        C3451_1     = "-1";
-        C3451_2     = "-1";
-        C3451_3     = "-1";
-        C3451_4     = "-1";
-        C3451_5     = "-1";
-        C3451_6     = "-1";
-        C3451_7     = "-1";
-        C3451_8     = "-1";
-        C3451_9     = "-1";
-        C3451_10    = "-1";
-        C3451_11    = "-1";
-        C3451_12    = "-1";
-        C3451_13    = "-1";
+        C3401 = "-1";
+        C3402 = "-1";
+        C3403 = "-1";
+        C3404 = "-1";
+        C3405 = "-1";
+        C3406 = "-1";
+        C3407 = "-1";
+        C3408 = "-1";
+        C3409 = "-1";
+        C3410 = "-1";
+        C3411 = "-1";
+        C3412_L1 = "-1";
+        C3412_L2 = "-1";
+        C3413 = "-1";
+        C3414_1 = "-1";
+        C3414_2 = "-1";
+        C3451_1 = "-1";
+        C3451_2 = "-1";
+        C3451_3 = "-1";
+        C3451_4 = "-1";
+        C3451_5 = "-1";
+        C3451_6 = "-1";
+        C3451_7 = "-1";
+        C3451_8 = "-1";
+        C3451_9 = "-1";
+        C3451_10 = "-1";
+        C3451_11 = "-1";
+        C3451_12 = "-1";
+        C3451_13 = "-1";
         C3451_13_OT = "-1";
-        C3452_1     = "-1";
-        C3452_2     = "-1";
-        C3452_3     = "-1";
-        C3452_4     = "-1";
-        C3452_5     = "-1";
-        C3452_6     = "-1";
-        C3452_7     = "-1";
-        C3452_8     = "-1";
-        C3452_9     = "-1";
-        C3452_9_OT  = "-1";
-        C3453_1     = "-1";
-        C3453_2     = "-1";
-        C3453_3     = "-1";
-        C3453_4     = "-1";
-        C3453_5     = "-1";
-        C3453_6     = "-1";
-        C3453_7     = "-1";
-        C3453_8     = "-1";
-        C3453_9     = "-1";
-        C3453_10    = "-1";
-        C3453_11    = "-1";
-        C3453_12    = "-1";
+        C3452_1 = "-1";
+        C3452_2 = "-1";
+        C3452_3 = "-1";
+        C3452_4 = "-1";
+        C3452_5 = "-1";
+        C3452_6 = "-1";
+        C3452_7 = "-1";
+        C3452_8 = "-1";
+        C3452_9 = "-1";
+        C3452_9_OT = "-1";
+        C3453_1 = "-1";
+        C3453_2 = "-1";
+        C3453_3 = "-1";
+        C3453_4 = "-1";
+        C3453_5 = "-1";
+        C3453_6 = "-1";
+        C3453_7 = "-1";
+        C3453_8 = "-1";
+        C3453_9 = "-1";
+        C3453_10 = "-1";
+        C3453_11 = "-1";
+        C3453_12 = "-1";
         C3453_12_OT = "-1";
-        C3454       = "-1";
-        C3455       = "-1";
-        C3456       = "-1";
-        C3457       = "-1";
+        C3454 = "-1";
+        C3455 = "-1";
+        C3456 = "-1";
+        C3457 = "-1";
 
-        STATUS      = "0";
+        STATUS = "0";
 
         if (ed_study_id.getText().toString().length() > 0) {
 
@@ -1450,7 +1450,7 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
         } else if (rb_C3453_2_DK.isChecked()) {
             C3453_2 = "9";
         }
-        
+
         if (rb_C3453_3_1.isChecked()) {
             C3453_3 = "1";
         } else if (rb_C3453_3_2.isChecked()) {
@@ -1713,211 +1713,159 @@ public class C3401_C3457 extends AppCompatActivity implements RadioButton.OnChec
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3401) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3402) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3403) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3404) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3405) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3406) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3407) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3408) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3409) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3410) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3411) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3412) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3413) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3414) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3451_1) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3451_2) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3451_3) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3451_4) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3451_5) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3451_6) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3451_7) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3451_8) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3451_9) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3451_10) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3451_11) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3451_12) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3451_13) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3452_1) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3452_2) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3452_3) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3452_4) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3452_5) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3452_6) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3452_7) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3452_8) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3452_9) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3453_1) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3453_2) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3453_3) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3453_4) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3453_5) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3453_6) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3453_7) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3453_8) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3453_9) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3453_10) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3453_11) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3453_12) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3454) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3455) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3456) == false) {
             return false;
         }
-
         return Gothrough.IamHiden(ll_C3457) != false;
     }
 

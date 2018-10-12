@@ -55,29 +55,29 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             rb_C3001_DK,
             rb_C3001_RA,
 
-            rb_C3002_1,
+    rb_C3002_1,
             rb_C3002_2,
             rb_C3002_DK,
             rb_C3002_RA,
 
-            rb_C3003_1,
+    rb_C3003_1,
             rb_C3003_2,
             rb_C3003_DK,
             rb_C3003_RA,
 
-            rb_C3004_1,
+    rb_C3004_1,
             rb_C3004_2,
             rb_C3004_3,
             rb_C3004_DK,
             rb_C3004_RA,
 
-            rb_C3005u_1,
+    rb_C3005u_1,
             rb_C3005u_2,
             rb_C3005u_3,
             rb_C3005u_DK,
             rb_C3005u_RA,
 
-            rb_C3006_1,
+    rb_C3006_1,
             rb_C3006_2,
             rb_C3006_3,
             rb_C3006_4,
@@ -92,7 +92,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             rb_C3006_DK,
             rb_C3006_RA,
 
-            rb_C3008_1,
+    rb_C3008_1,
             rb_C3008_2,
             rb_C3008_3,
             rb_C3008_4,
@@ -102,7 +102,7 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
             rb_C3008_8,
             rb_C3008_9,
 
-            rb_C3009_1_1,
+    rb_C3009_1_1,
             rb_C3009_1_2,
             rb_C3009_1_DK,
             rb_C3009_1_RA,
@@ -614,25 +614,25 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        C3001    = "-1";
-        C3002    = "-1";
-        C3003    = "-1";
-        C3004    = "-1";
-        C3005u   = "-1";
-        C3005d   = "-1";
-        C3005w   = "-1";
-        C3005m   = "-1";
-        C3006    = "-1";
+        C3001 = "-1";
+        C3002 = "-1";
+        C3003 = "-1";
+        C3004 = "-1";
+        C3005u = "-1";
+        C3005d = "-1";
+        C3005w = "-1";
+        C3005m = "-1";
+        C3006 = "-1";
         C3006_OT = "-1";
-        C3008    = "-1";
+        C3008 = "-1";
         C3008_OT = "-1";
-        C3009_1  = "-1";
-        C3009_2  = "-1";
-        C3009_3  = "-1";
-        C3009_4  = "-1";
-        C3010    = "-1";
-        C3011    = "-1";
-        STATUS   = "0";
+        C3009_1 = "-1";
+        C3009_2 = "-1";
+        C3009_3 = "-1";
+        C3009_4 = "-1";
+        C3010 = "-1";
+        C3011 = "-1";
+        STATUS = "0";
 
 
         if (ed_study_id.getText().toString().length() > 0) {
@@ -871,75 +871,57 @@ public class C3001_C3011 extends AppCompatActivity implements RadioButton.OnChec
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3001) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3002) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3003) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3004) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3005u) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3005d) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3005w) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3005m) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3006) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3006_OT) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3008) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3008_OT) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3009_1) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3009_2) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3009_3) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3009_4) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3010) == false) {
             return false;
         }
-
         return Gothrough.IamHiden(ll_C3011) != false;
     }
 

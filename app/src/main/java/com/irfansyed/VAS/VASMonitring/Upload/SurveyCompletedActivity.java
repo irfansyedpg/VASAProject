@@ -66,6 +66,11 @@ import Global.N.N2110_N2189a;
 import Global.N.N2190_N2191;
 import Global.N.N2192_N2202;
 import Global.N.N2211_N2248_A_C;
+import Global.N.N2251_N2260;
+import Global.N.N2271_N2284;
+import Global.N.N2291_N2304;
+import Global.N.N2311_N2317;
+import Global.N.N2321_N2322;
 import data.DBHelper;
 import data.LocalDataManager;
 
@@ -196,6 +201,10 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
         }
     }
 
+
+
+
+
     public void upload_N(final String study_id) {
 
         final String ROOT_URL = "http://192.168.1.142/sm/Welcome/collect_N";
@@ -256,6 +265,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                 Cursor c15 = db.getData("N2311_N2317", study_id);
                 Cursor c16 = db.getData("N2321_N2322", study_id);
                 Cursor c17 = db.getData("N2211_N2248_B", study_id);
+                Cursor c18 = db.getData("w204_w215", study_id);
 
                 params.put("table1", "q1101_q1610");
                 params.put("table2", "n2001_n2011");
@@ -274,6 +284,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                 params.put("table15", "n2311_n2317");
                 params.put("table16", "n2321_n2322");
                 params.put("table17", "n2211_n2248_b");
+                params.put("table18", "w204_w215");
 
                 if (c.getCount() > 0) {
 
@@ -365,6 +376,95 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(Q1101_Q1610.Q1610_3, c.getString(c.getColumnIndex("Q1610_3")));
                     params.put(Q1101_Q1610.interviewType, c.getString(c.getColumnIndex("interviewType")));
                     params.put(Q1101_Q1610.currentSection, c.getString(c.getColumnIndex("currentSection")));
+
+                } else {
+
+                    params.put(Q1101_Q1610.study_id, "-2");
+                    params.put(Q1101_Q1610.Q1201_1, "-2");
+                    params.put(Q1101_Q1610.Q1201_2, "-2");
+                    params.put(Q1101_Q1610.Q1201_3, "-2");
+                    params.put(Q1101_Q1610.Q1201_4, "-2");
+                    params.put(Q1101_Q1610.Q1201_5, "-2");
+                    params.put(Q1101_Q1610.Q1201_6, "-2");
+                    params.put(Q1101_Q1610.Q1202, "-2");
+                    params.put(Q1101_Q1610.Q1203, "-2");
+                    params.put(Q1101_Q1610.Q1204, "-2");
+                    params.put(Q1101_Q1610.Q1205, "-2");
+                    params.put(Q1101_Q1610.Q1206_d, "-2");
+                    params.put(Q1101_Q1610.Q1206_m, "-2");
+                    params.put(Q1101_Q1610.Q1206_y, "-2");
+                    params.put(Q1101_Q1610.Q1207, "-2");
+                    params.put(Q1101_Q1610.Q1208, "-2");
+                    params.put(Q1101_Q1610.Q1209, "-2");
+                    params.put(Q1101_Q1610.Q1301, "-2");
+                    params.put(Q1101_Q1610.Q1302, "-2");
+                    params.put(Q1101_Q1610.Q1307, "-2");
+                    params.put(Q1101_Q1610.Q1308, "-2");
+                    params.put(Q1101_Q1610.Q1309, "-2");
+                    params.put(Q1101_Q1610.Q1310, "-2");
+                    params.put(Q1101_Q1610.Q1311, "-2");
+                    params.put(Q1101_Q1610.Q1312, "-2");
+                    params.put(Q1101_Q1610.Q1313, "-2");
+                    params.put(Q1101_Q1610.Q1401, "-2");
+                    params.put(Q1101_Q1610.Q1402, "-2");
+                    params.put(Q1101_Q1610.Q1403, "-2");
+                    params.put(Q1101_Q1610.Q1403_OT, "-2");
+                    params.put(Q1101_Q1610.Q1404, "-2");
+                    params.put(Q1101_Q1610.Q1405, "-2");
+                    params.put(Q1101_Q1610.Q1406, "-2");
+                    params.put(Q1101_Q1610.Q1407, "-2");
+                    params.put(Q1101_Q1610.Q1408, "-2");
+                    params.put(Q1101_Q1610.Q1409, "-2");
+                    params.put(Q1101_Q1610.Q1410, "-2");
+                    params.put(Q1101_Q1610.Q1411, "-2");
+                    params.put(Q1101_Q1610.Q1412, "-2");
+                    params.put(Q1101_Q1610.Q1413, "-2");
+                    params.put(Q1101_Q1610.Q1414_1, "-2");
+                    params.put(Q1101_Q1610.Q1414_2, "-2");
+                    params.put(Q1101_Q1610.Q1414_3, "-2");
+                    params.put(Q1101_Q1610.Q1414_4, "-2");
+                    params.put(Q1101_Q1610.Q1414_5, "-2");
+                    params.put(Q1101_Q1610.Q1414_6, "-2");
+                    params.put(Q1101_Q1610.Q1414_7, "-2");
+                    params.put(Q1101_Q1610.Q1414_8, "-2");
+                    params.put(Q1101_Q1610.Q1414_9, "-2");
+                    params.put(Q1101_Q1610.Q1414_10, "-2");
+                    params.put(Q1101_Q1610.Q1415, "-2");
+                    params.put(Q1101_Q1610.Q1416, "-2");
+                    params.put(Q1101_Q1610.Q1416_OT, "-2");
+                    params.put(Q1101_Q1610.Q1417, "-2");
+                    params.put(Q1101_Q1610.Q1417_OT, "-2");
+                    params.put(Q1101_Q1610.Q1418, "-2");
+                    params.put(Q1101_Q1610.Q1418_OT, "-2");
+                    params.put(Q1101_Q1610.Q1419, "-2");
+                    params.put(Q1101_Q1610.Q1419_OT, "-2");
+                    params.put(Q1101_Q1610.Q1420, "-2");
+                    params.put(Q1101_Q1610.Q1420_OT, "-2");
+                    params.put(Q1101_Q1610.Q1421, "-2");
+                    params.put(Q1101_Q1610.Q1421_OT, "-2");
+                    params.put(Q1101_Q1610.Q1501, "-2");
+                    params.put(Q1101_Q1610.Q1502, "-2");
+                    params.put(Q1101_Q1610.Q1503, "-2");
+                    params.put(Q1101_Q1610.Q1503_OT, "-2");
+                    params.put(Q1101_Q1610.Q1601, "-2");
+                    params.put(Q1101_Q1610.Q1602, "-2");
+                    params.put(Q1101_Q1610.Q1603, "-2");
+                    params.put(Q1101_Q1610.Q1604, "-2");
+                    params.put(Q1101_Q1610.Q1604_OT, "-2");
+                    params.put(Q1101_Q1610.Q1605, "-2");
+                    params.put(Q1101_Q1610.Q1606, "-2");
+                    params.put(Q1101_Q1610.Q1607_1, "-2");
+                    params.put(Q1101_Q1610.Q1607_2, "-2");
+                    params.put(Q1101_Q1610.Q1607_3, "-2");
+                    params.put(Q1101_Q1610.Q1608_1, "-2");
+                    params.put(Q1101_Q1610.Q1608_2, "-2");
+                    params.put(Q1101_Q1610.Q1608_3, "-2");
+                    params.put(Q1101_Q1610.Q1609, "-2");
+                    params.put(Q1101_Q1610.Q1610_1, "-2");
+                    params.put(Q1101_Q1610.Q1610_2, "-2");
+                    params.put(Q1101_Q1610.Q1610_3, "-2");
+                    params.put(Q1101_Q1610.interviewType, "1");
+                    params.put(Q1101_Q1610.currentSection, "-2");
                 }
 
                 if (c2.getCount() > 0) {
@@ -389,6 +489,27 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(N2001_N2011.sub_N2001_N2011.N2009_4, c2.getString(c2.getColumnIndex("N2009_4")));
                     params.put(N2001_N2011.sub_N2001_N2011.N2010, c2.getString(c2.getColumnIndex("N2010")));
                     params.put(N2001_N2011.sub_N2001_N2011.N2011, c2.getString(c2.getColumnIndex("N2011")));
+
+                } else {
+
+                    params.put(N2001_N2011.sub_N2001_N2011.N2001, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2002, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2003, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2004, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2005u, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2005d, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2005w, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2005m, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2006, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2006x, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2008, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2008x, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2009_1, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2009_2, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2009_3, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2009_4, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2010, "-2");
+                    params.put(N2001_N2011.sub_N2001_N2011.N2011, "-2");
                 }
 
                 if (c3.getCount() > 0) {
@@ -400,6 +521,14 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(N2012_N2016.sub_N2012_N2016.N2014, c3.getString(c3.getColumnIndex("N2014")));
                     params.put(N2012_N2016.sub_N2012_N2016.N2015, c3.getString(c3.getColumnIndex("N2015")));
                     params.put(N2012_N2016.sub_N2012_N2016.N2016, c3.getString(c3.getColumnIndex("N2016")));
+
+                } else {
+
+                    params.put(N2012_N2016.sub_N2012_N2016.N2012, "-2");
+                    params.put(N2012_N2016.sub_N2012_N2016.N2013, "-2");
+                    params.put(N2012_N2016.sub_N2012_N2016.N2014, "-2");
+                    params.put(N2012_N2016.sub_N2012_N2016.N2015, "-2");
+                    params.put(N2012_N2016.sub_N2012_N2016.N2016, "-2");
                 }
 
                 if (c4.getCount() > 0) {
@@ -443,6 +572,15 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(N2023_N2026.sub_N2023_N2026.N2025U, c5.getString(c5.getColumnIndex("N2025U")));
                     params.put(N2023_N2026.sub_N2023_N2026.N2025D, c5.getString(c5.getColumnIndex("N2025D")));
                     params.put(N2023_N2026.sub_N2023_N2026.N2026, c5.getString(c5.getColumnIndex("N2026")));
+
+                } else {
+
+                    params.put(N2023_N2026.sub_N2023_N2026.N2023, "-2");
+                    params.put(N2023_N2026.sub_N2023_N2026.N2024, "-2");
+                    params.put(N2023_N2026.sub_N2023_N2026.N2024_1, "-2");
+                    params.put(N2023_N2026.sub_N2023_N2026.N2025U, "-2");
+                    params.put(N2023_N2026.sub_N2023_N2026.N2025D, "-2");
+                    params.put(N2023_N2026.sub_N2023_N2026.N2026, "-2");
                 }
 
                 if (c6.getCount() > 0) {
@@ -518,6 +656,78 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(N2051_N2078.sub_N2051_N2078.N2078_DK, c6.getString(c6.getColumnIndex("N2078_DK")));
                     params.put(N2051_N2078.sub_N2051_N2078.N2078_OT, c6.getString(c6.getColumnIndex("N2078_OT")));
                     params.put(N2051_N2078.sub_N2051_N2078.N2078_OTx, c6.getString(c6.getColumnIndex("N2078_OTx")));
+
+                } else {
+
+                    params.put(N2051_N2078.sub_N2051_N2078.N2051, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2052, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2053_1, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2053_2, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2053_3, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2053_4, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2053_5, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2053_DK, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2053_OT, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2053_OTx, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2054, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2055, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2056, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2057_1, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2057_2, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2057_3, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2057_4, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2057_5, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2057_6, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2058_1, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2058_2, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2058_3, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2058_4, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2058_5, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2058_6, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2058_7, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2058_8, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2058_9, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2058_10, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2059, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2060, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2061, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2062, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2063, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2064, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2065, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2066, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2067, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2068, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2069_1, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2069_2, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2069_3, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2070, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2071, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2072, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2073, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2074, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2074x, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2075, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2076, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2076x, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2077, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_1, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_2, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_3, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_4, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_4x, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_5, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_6, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_7, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_8, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_9, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_10, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_11, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_12, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_13, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_DK, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_OT, "-2");
+                    params.put(N2051_N2078.sub_N2051_N2078.N2078_OTx, "-2");
                 }
 
                 if (c7.getCount() > 0) {
@@ -640,7 +850,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(N2080_N2107.sub_N2080_N2107.N2096_15, c7.getString(c7.getColumnIndex("N2096_15")));
                     params.put(N2080_N2107.sub_N2080_N2107.N2096_16, c7.getString(c7.getColumnIndex("N2096_16")));
                     params.put(N2080_N2107.sub_N2080_N2107.N2096_17, c7.getString(c7.getColumnIndex("N2096_17")));
-                    params.put(N2080_N2107.sub_N2080_N2107.N2096_OT, c7.getString(c7.getColumnIndex("N2096_18")));
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_OT, c7.getString(c7.getColumnIndex("N2096_OT")));
                     params.put(N2080_N2107.sub_N2080_N2107.N2097_1, c7.getString(c7.getColumnIndex("N2097_1")));
                     params.put(N2080_N2107.sub_N2080_N2107.N2097_2, c7.getString(c7.getColumnIndex("N2097_2")));
                     params.put(N2080_N2107.sub_N2080_N2107.N2097_3, c7.getString(c7.getColumnIndex("N2097_3")));
@@ -672,6 +882,157 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(N2080_N2107.sub_N2080_N2107.N2107_1, c7.getString(c7.getColumnIndex("N2107_1")));
                     params.put(N2080_N2107.sub_N2080_N2107.N2107_2, c7.getString(c7.getColumnIndex("N2107_2")));
                     params.put(N2080_N2107.sub_N2080_N2107.N2107_3, c7.getString(c7.getColumnIndex("N2107_3")));
+
+                } else {
+
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_1, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_2, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_3, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_4, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_5, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_6, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_7, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_8, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_9, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_10, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_11, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_12, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_13, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_14, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_15, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_15x, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2080_16, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2081, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2082_1, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2082_2, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2082_3, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2082_4, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2082_5, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2082_6, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2082_DK, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2082_OT, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2082_OTx, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2083, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_1, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_2, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_3, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_4, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_5, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_6, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_7, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_8, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_9, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_10, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_11, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_12, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_13, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_14, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2084_OT, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2085, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_1, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_2, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_3, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_4, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_4x, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_5, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_6, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_7, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_8, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_9, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_10, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_11, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_12, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_OT, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_OTx, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2086_DK, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2087, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_1, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_2, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_3, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_4, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_5, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_6, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_7, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_8, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_9, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_10, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_11, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_12, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_13, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_14, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_15, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_16, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_17, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_18, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_18x, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2088_19, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2089, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2089x, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2090, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2091_1, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2091_2, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2091_3, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2091_4, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2091_5, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2091_6, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2091_OT, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2091_OTx, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2091_DK, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2092, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2092x, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2093, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2093x, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2094, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2095, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_1, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_2, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_3, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_4, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_5, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_6, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_7, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_8, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_9, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_10, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_11, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_12, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_13, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_14, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_15, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_16, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_17, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2096_OT, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2097_1, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2097_2, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2097_3, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2098, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2098x, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2099, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2100_1, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2100_2, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2100_3, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2100_4, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2100_5, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2100_6, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2100_7, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2100_DK, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2101_1, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2101_2, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2101_3, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2101_4, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2101_5, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2101_6, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2101_7, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2101_DK, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2102, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2103_1, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2103_2, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2104, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2105, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2106, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2107_1, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2107_2, "-2");
+                    params.put(N2080_N2107.sub_N2080_N2107.N2107_3, "-2");
                 }
 
                 if (c8.getCount() > 0) {
@@ -785,6 +1146,116 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(N2110_N2189a.sub_N2110_N2189a.N2188, c8.getString(c8.getColumnIndex("N2188")));
                     params.put(N2110_N2189a.sub_N2110_N2189a.N2189, c8.getString(c8.getColumnIndex("N2189")));
                     params.put(N2110_N2189a.sub_N2110_N2189a.N2189A, c8.getString(c8.getColumnIndex("N2189A")));
+
+                } else {
+
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2110, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2110x, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2111, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2111x, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2112, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2113_1, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2113_2, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2113_3, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2113_4, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2113_OT, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2113_OTx, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2113_DK, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2114, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2115, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2116_1, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2116_2, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2116_3, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2117, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2118, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2119, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2120, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2121, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2122, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2123, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2124, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2125, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2126, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2127, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2127h, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2128, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2129, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2130, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2131, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2132, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2133, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2133d, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2133h, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2134, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2135_1, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2135_2, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2135_3, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2135_4, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2135_5, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2135_6, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2135_7, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2135_8, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2135_9, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2135_10, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2135_11, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2135_11x, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2136, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2137, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2138, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2139, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2140, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2141, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2142, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2143, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2144, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2145, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2146, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2147, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2148, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2149, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2150, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2151, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2152, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2153, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2154, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2155, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2156, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2157, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2158, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2159, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2160, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2161, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2162, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2163, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2164, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2165, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2166, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2166_1, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2167, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2168, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2169, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2170, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2171, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2172, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2173, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2174, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2175, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2176, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2177, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2177A, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2178, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2179, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2180, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2181, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2182, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2183, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2184, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2185, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2186, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2187, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2188, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2189, "-2");
+                    params.put(N2110_N2189a.sub_N2110_N2189a.N2189A, "-2");
                 }
 
                 if (c9.getCount() > 0) {
@@ -816,6 +1287,35 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(N2190_N2191.sub_N2190_N2191.N2190_22, c9.getString(c9.getColumnIndex("N2190_22")));
                     params.put(N2190_N2191.sub_N2190_N2191.N2191_1, c9.getString(c9.getColumnIndex("N2191_1")));
                     params.put(N2190_N2191.sub_N2190_N2191.N2191_2, c9.getString(c9.getColumnIndex("N2191_2")));
+
+                } else {
+
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_1, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_2, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_3, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_4, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_5, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_6, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_7, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_8, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_9, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_10, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_11, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_12, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_13, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_14, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_15, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_16, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_17, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_18, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_19, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_20, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_21, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2190_22, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2191_1, "-2");
+                    params.put(N2190_N2191.sub_N2190_N2191.N2191_2, "-2");
+
                 }
 
                 if (c10.getCount() > 0) {
@@ -830,25 +1330,55 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(N2192_N2202.sub_N2192_N2202.N2196, c10.getString(c10.getColumnIndex("N2196")));
                     params.put(N2192_N2202.sub_N2192_N2202.N2197, c10.getString(c10.getColumnIndex("N2197")));
                     params.put(N2192_N2202.sub_N2192_N2202.N2198_1, c10.getString(c10.getColumnIndex("N2198_1")));
-                    params.put(N2192_N2202.sub_N2192_N2202.N2198_1_T, c10.getString(c10.getColumnIndex("N2198_1_t")));
-                    params.put(N2192_N2202.sub_N2192_N2202.N2198_1_FV, c10.getString(c10.getColumnIndex("N2198_1_fv")));
+                    params.put(N2192_N2202.sub_N2192_N2202.N2198_1_T, c10.getString(c10.getColumnIndex("N2198_1_T")));
+                    params.put(N2192_N2202.sub_N2192_N2202.N2198_1_FV, c10.getString(c10.getColumnIndex("N2198_1_FV")));
                     params.put(N2192_N2202.sub_N2192_N2202.N2198_2, c10.getString(c10.getColumnIndex("N2198_2")));
-                    params.put(N2192_N2202.sub_N2192_N2202.N2198_2_T, c10.getString(c10.getColumnIndex("N2198_2_t")));
-                    params.put(N2192_N2202.sub_N2192_N2202.N2198_2_FV, c10.getString(c10.getColumnIndex("N2198_2_fv")));
+                    params.put(N2192_N2202.sub_N2192_N2202.N2198_2_T, c10.getString(c10.getColumnIndex("N2198_2_T")));
+                    params.put(N2192_N2202.sub_N2192_N2202.N2198_2_FV, c10.getString(c10.getColumnIndex("N2198_2_FV")));
                     params.put(N2192_N2202.sub_N2192_N2202.N2198_3, c10.getString(c10.getColumnIndex("N2198_3")));
-                    params.put(N2192_N2202.sub_N2192_N2202.N2198_DK, c10.getString(c10.getColumnIndex("N2198_9")));
+                    params.put(N2192_N2202.sub_N2192_N2202.N2198_DK, c10.getString(c10.getColumnIndex("N2198_DK")));
                     params.put(N2192_N2202.sub_N2192_N2202.N2199, c10.getString(c10.getColumnIndex("N2199")));
                     params.put(N2192_N2202.sub_N2192_N2202.N2200, c10.getString(c10.getColumnIndex("N2200")));
                     params.put(N2192_N2202.sub_N2192_N2202.N2201, c10.getString(c10.getColumnIndex("N2201")));
                     params.put(N2192_N2202.sub_N2192_N2202.N2202_1, c10.getString(c10.getColumnIndex("N2202_1")));
-                    params.put(N2192_N2202.sub_N2192_N2202.N2202_1_T, c10.getString(c10.getColumnIndex("N2202_1_t")));
-                    params.put(N2192_N2202.sub_N2192_N2202.N2202_1_FV, c10.getString(c10.getColumnIndex("N2202_1_fv")));
+                    params.put(N2192_N2202.sub_N2192_N2202.N2202_1_T, c10.getString(c10.getColumnIndex("N2202_1_T")));
+                    params.put(N2192_N2202.sub_N2192_N2202.N2202_1_FV, c10.getString(c10.getColumnIndex("N2202_1_FV")));
                     params.put(N2192_N2202.sub_N2192_N2202.N2202_2, c10.getString(c10.getColumnIndex("N2202_2")));
-                    params.put(N2192_N2202.sub_N2192_N2202.N2202_2_T, c10.getString(c10.getColumnIndex("N2202_2_t")));
-                    params.put(N2192_N2202.sub_N2192_N2202.N2202_2_FV, c10.getString(c10.getColumnIndex("N2202_2_fv")));
+                    params.put(N2192_N2202.sub_N2192_N2202.N2202_2_T, c10.getString(c10.getColumnIndex("N2202_2_T")));
+                    params.put(N2192_N2202.sub_N2192_N2202.N2202_2_FV, c10.getString(c10.getColumnIndex("N2202_2_FV")));
                     params.put(N2192_N2202.sub_N2192_N2202.N2202_3, c10.getString(c10.getColumnIndex("N2202_3")));
-                    params.put(N2192_N2202.sub_N2192_N2202.N2202_DK, c10.getString(c10.getColumnIndex("N2202_9")));
+                    params.put(N2192_N2202.sub_N2192_N2202.N2202_DK, c10.getString(c10.getColumnIndex("N2202_DK")));
+
+                } else {
+
+                    params.put(N2192_N2202.sub_N2192_N2202.N2192, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2193, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2194_1, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2194_2, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2195, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2196, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2197, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2198_1, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2198_1_T, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2198_1_FV, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2198_2, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2198_2_T, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2198_2_FV, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2198_3, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2198_DK, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2199, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2200, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2201, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2202_1, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2202_1_T, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2202_1_FV, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2202_2, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2202_2_T, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2202_2_FV, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2202_3, "-2");
+                    params.put(N2192_N2202.sub_N2192_N2202.N2202_DK, "-2");
                 }
+
 
                 if (c11.getCount() > 0) {
 
@@ -954,6 +1484,640 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2246, c11.getString(c11.getColumnIndex("N2246")));
                     params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2247, c11.getString(c11.getColumnIndex("N2247")));
                     params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2248, c11.getString(c11.getColumnIndex("N2248")));
+
+                } else {
+
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2211_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2211_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2212, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2214, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2214x, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2215, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_3, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_4, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_4x, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_5, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_6, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_7, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_8, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_9, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_10, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_11, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_12, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_OT, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_OTx, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2216_DK, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2217_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2217_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2217_3, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2218_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2218_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2219, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2219_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2220, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2221_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2221_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2222, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2223, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2224, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2224_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2225_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2225_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2226, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2227_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2227_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2228_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2228_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2229, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2229_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2230, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2231_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2231_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2232, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2233, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2234, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2234_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2235_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2235_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2236, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2237_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2237_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2238, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2239, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_3, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_4, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_5x, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_5, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_6, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_7, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_8, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_9, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_10, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_11, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_12, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_13, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_14, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_15, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_OT, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_OTx, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2240_DK, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2241, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_3, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_4, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_5, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_6, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_7, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_DK, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_1, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_2, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_3, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_4, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_5, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_6, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_7, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_DK, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2244, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2245, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2246, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2247, "-2");
+                    params.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2248, "-2");
+                }
+
+
+                if (c12.getCount() > 0) {
+
+                    c12.moveToFirst();
+
+                    params.put(N2251_N2260.sub_N2251_N2260.N2251, c12.getString(c12.getColumnIndex("N2251")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_1, c12.getString(c12.getColumnIndex("N2252_1")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_2, c12.getString(c12.getColumnIndex("N2252_2")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_3, c12.getString(c12.getColumnIndex("N2252_3")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_4, c12.getString(c12.getColumnIndex("N2252_4")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_5, c12.getString(c12.getColumnIndex("N2252_5")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_6, c12.getString(c12.getColumnIndex("N2252_6")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_7, c12.getString(c12.getColumnIndex("N2252_7")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2253, c12.getString(c12.getColumnIndex("N2253")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2254, c12.getString(c12.getColumnIndex("N2254")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2255_1CHECK, c12.getString(c12.getColumnIndex("N2255_1CHECK")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2255_1, c12.getString(c12.getColumnIndex("N2255_1")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2255_2CHECK, c12.getString(c12.getColumnIndex("N2255_2CHECK")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2255_2, c12.getString(c12.getColumnIndex("N2255_2")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2256, c12.getString(c12.getColumnIndex("N2256")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2257, c12.getString(c12.getColumnIndex("N2257")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2258, c12.getString(c12.getColumnIndex("N2258")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2259, c12.getString(c12.getColumnIndex("N2259")));
+                    params.put(N2251_N2260.sub_N2251_N2260.N2260, c12.getString(c12.getColumnIndex("N2260")));
+
+                } else {
+
+                    params.put(N2251_N2260.sub_N2251_N2260.N2251, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_1, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_2, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_3, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_4, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_5, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_6, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2252_7, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2253, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2254, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2255_1CHECK, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2255_1, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2255_2CHECK, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2255_2, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2256, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2257, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2258, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2259, "-2");
+                    params.put(N2251_N2260.sub_N2251_N2260.N2260, "-2");
+                }
+
+                if (c13.getCount() > 0) {
+
+                    c13.moveToFirst();
+
+                    params.put(N2271_N2284.sub_N2271_N2284.N2271, c13.getString(c13.getColumnIndex("N2271")));
+                    params.put(N2271_N2284.sub_N2271_N2284.N2272, c13.getString(c13.getColumnIndex("N2272")));
+                    params.put(N2271_N2284.sub_N2271_N2284.N2273, c13.getString(c13.getColumnIndex("N2273")));
+                    params.put(N2271_N2284.sub_N2271_N2284.N2274, c13.getString(c13.getColumnIndex("N2274")));
+                    params.put(N2271_N2284.sub_N2271_N2284.N2275, c13.getString(c13.getColumnIndex("N2275")));
+                    params.put(N2271_N2284.sub_N2271_N2284.N2276, c13.getString(c13.getColumnIndex("N2276")));
+                    params.put(N2271_N2284.sub_N2271_N2284.N2277, c13.getString(c13.getColumnIndex("N2277")));
+                    params.put(N2271_N2284.sub_N2271_N2284.N2278, c13.getString(c13.getColumnIndex("N2278")));
+                    params.put(N2271_N2284.sub_N2271_N2284.N2283, c13.getString(c13.getColumnIndex("N2283")));
+                    params.put(N2271_N2284.sub_N2271_N2284.N2284, c13.getString(c13.getColumnIndex("N2284")));
+
+                } else {
+
+                    params.put(N2271_N2284.sub_N2271_N2284.N2271, "-2");
+                    params.put(N2271_N2284.sub_N2271_N2284.N2272, "-2");
+                    params.put(N2271_N2284.sub_N2271_N2284.N2273, "-2");
+                    params.put(N2271_N2284.sub_N2271_N2284.N2274, "-2");
+                    params.put(N2271_N2284.sub_N2271_N2284.N2275, "-2");
+                    params.put(N2271_N2284.sub_N2271_N2284.N2276, "-2");
+                    params.put(N2271_N2284.sub_N2271_N2284.N2277, "-2");
+                    params.put(N2271_N2284.sub_N2271_N2284.N2278, "-2");
+                    params.put(N2271_N2284.sub_N2271_N2284.N2283, "-2");
+                    params.put(N2271_N2284.sub_N2271_N2284.N2284, "-2");
+                }
+
+                if (c14.getCount() > 0) {
+
+                    c14.moveToFirst();
+
+                    params.put(N2291_N2304.sub_N2291_N2304.N2291, c14.getString(c14.getColumnIndex("N2291")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2292, c14.getString(c14.getColumnIndex("N2292")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2293, c14.getString(c14.getColumnIndex("N2293")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2294, c14.getString(c14.getColumnIndex("N2294")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2295, c14.getString(c14.getColumnIndex("N2295")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2296, c14.getString(c14.getColumnIndex("N2296")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2297, c14.getString(c14.getColumnIndex("N2297")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2298, c14.getString(c14.getColumnIndex("N2298")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2299, c14.getString(c14.getColumnIndex("N2299")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2300, c14.getString(c14.getColumnIndex("N2300")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2301, c14.getString(c14.getColumnIndex("N2301")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2301x, c14.getString(c14.getColumnIndex("N2301x")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2302_1, c14.getString(c14.getColumnIndex("N2302_1")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2302_2, c14.getString(c14.getColumnIndex("N2302_2")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2303, c14.getString(c14.getColumnIndex("N2303")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2304_1, c14.getString(c14.getColumnIndex("N2304_1")));
+                    params.put(N2291_N2304.sub_N2291_N2304.N2304_2, c14.getString(c14.getColumnIndex("N2304_2")));
+
+                } else {
+
+                    params.put(N2291_N2304.sub_N2291_N2304.N2291, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2292, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2293, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2294, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2295, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2296, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2297, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2298, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2299, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2300, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2301, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2301x, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2302_1, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2302_2, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2303, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2304_1, "-2");
+                    params.put(N2291_N2304.sub_N2291_N2304.N2304_2, "-2");
+                }
+
+                if (c15.getCount() > 0) {
+
+                    c15.moveToFirst();
+
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311, c15.getString(c15.getColumnIndex("N2311")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_1, c15.getString(c15.getColumnIndex("N2311_1")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_2, c15.getString(c15.getColumnIndex("N2311_2")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_3, c15.getString(c15.getColumnIndex("N2311_3")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_4, c15.getString(c15.getColumnIndex("N2311_4")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_5, c15.getString(c15.getColumnIndex("N2311_5")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_6, c15.getString(c15.getColumnIndex("N2311_6")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_7, c15.getString(c15.getColumnIndex("N2311_7")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_8, c15.getString(c15.getColumnIndex("N2311_8")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_9, c15.getString(c15.getColumnIndex("N2311_9")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_10, c15.getString(c15.getColumnIndex("N2311_10")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_11, c15.getString(c15.getColumnIndex("N2311_11")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_12, c15.getString(c15.getColumnIndex("N2311_12")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_13, c15.getString(c15.getColumnIndex("N2311_13")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_13x, c15.getString(c15.getColumnIndex("N2311_13x")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_1, c15.getString(c15.getColumnIndex("N2312_1")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_2, c15.getString(c15.getColumnIndex("N2312_2")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_3, c15.getString(c15.getColumnIndex("N2312_3")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_4, c15.getString(c15.getColumnIndex("N2312_4")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_5, c15.getString(c15.getColumnIndex("N2312_5")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_6, c15.getString(c15.getColumnIndex("N2312_6")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_7, c15.getString(c15.getColumnIndex("N2312_7")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_8, c15.getString(c15.getColumnIndex("N2312_8")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_9, c15.getString(c15.getColumnIndex("N2312_9")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_9x, c15.getString(c15.getColumnIndex("N2312_9x")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_1, c15.getString(c15.getColumnIndex("N2313_1")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_2, c15.getString(c15.getColumnIndex("N2313_2")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_3, c15.getString(c15.getColumnIndex("N2313_3")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_4, c15.getString(c15.getColumnIndex("N2313_4")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_5, c15.getString(c15.getColumnIndex("N2313_5")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_6, c15.getString(c15.getColumnIndex("N2313_6")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_7, c15.getString(c15.getColumnIndex("N2313_7")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_8, c15.getString(c15.getColumnIndex("N2313_8")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_9, c15.getString(c15.getColumnIndex("N2313_9")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_10, c15.getString(c15.getColumnIndex("N2313_10")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_11, c15.getString(c15.getColumnIndex("N2313_11")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_12, c15.getString(c15.getColumnIndex("N2313_12")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_12x, c15.getString(c15.getColumnIndex("N2313_12x")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2314, c15.getString(c15.getColumnIndex("N2314")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2315, c15.getString(c15.getColumnIndex("N2315")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2316, c15.getString(c15.getColumnIndex("N2316")));
+                    params.put(N2311_N2317.sub_N2311_N2317.N2317, c15.getString(c15.getColumnIndex("N2317")));
+
+                } else {
+
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_1, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_2, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_3, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_4, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_5, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_6, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_7, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_8, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_9, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_10, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_11, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_12, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_13, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2311_13x, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_1, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_2, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_3, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_4, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_5, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_6, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_7, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_8, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_9, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2312_9x, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_1, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_2, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_3, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_4, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_5, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_6, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_7, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_8, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_9, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_10, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_11, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_12, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2313_12x, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2314, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2315, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2316, "-2");
+                    params.put(N2311_N2317.sub_N2311_N2317.N2317, "-2");
+                }
+
+                if (c16.getCount() > 0) {
+
+                    c16.moveToFirst();
+
+                    params.put(N2321_N2322.sub_N2321_N2322.N2321, c16.getString(c16.getColumnIndex("N2321")));
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_1, c16.getString(c16.getColumnIndex("N2322_1")));
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_2, c16.getString(c16.getColumnIndex("N2322_2")));
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_3, c16.getString(c16.getColumnIndex("N2322_3")));
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_4, c16.getString(c16.getColumnIndex("N2322_4")));
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_5, c16.getString(c16.getColumnIndex("N2322_5")));
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_6, c16.getString(c16.getColumnIndex("N2322_6")));
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_DK, c16.getString(c16.getColumnIndex("N2322_DK")));
+
+                } else {
+
+                    params.put(N2321_N2322.sub_N2321_N2322.N2321, "-2");
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_1, "-2");
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_2, "-2");
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_3, "-2");
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_4, "-2");
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_5, "-2");
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_6, "-2");
+                    params.put(N2321_N2322.sub_N2321_N2322.N2322_DK, "-2");
+                }
+
+
+                if (c17.getCount() > 0) {
+
+                    c17.moveToFirst();
+
+                    for (int i = 0; i < c17.getCount(); i++) {
+
+                        if (i == 0) {
+                            try {
+
+                                JSONObject round_one = new JSONObject();
+                                String ACT_COUNT_a, N2213_a, N2213_2A_a, N2213_4_a;
+
+                                ACT_COUNT_a = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                N2213_a = c17.getString(c17.getColumnIndex("N2213"));
+                                N2213_2A_a = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                N2213_4_a = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                round_one.put("ACT_COUNT_a", ACT_COUNT_a);
+                                round_one.put("N2213_a", N2213_a);
+                                round_one.put("N2213_2A_a", N2213_2A_a);
+                                round_one.put("N2213_4_a", N2213_4_a);
+
+                                params.put("round_one", String.valueOf(round_one));
+                                c17.moveToNext();
+
+                            } catch (JSONException e) {
+
+                                e.printStackTrace();
+
+                            }
+                        }
+
+                        if (i == 1) {
+                            try {
+
+                                JSONObject round_two = new JSONObject();
+                                String ACT_COUNT_b, N2213_b, N2213_2A_b, N2213_4_b;
+
+                                ACT_COUNT_b = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                N2213_b = c17.getString(c17.getColumnIndex("N2213"));
+                                N2213_2A_b = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                N2213_4_b = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                round_two.put("ACT_COUNT_b", ACT_COUNT_b);
+                                round_two.put("N2213_b", N2213_b);
+                                round_two.put("N2213_2A_b", N2213_2A_b);
+                                round_two.put("N2213_4_b", N2213_4_b);
+
+                                params.put("round_two", String.valueOf(round_two));
+                                c17.moveToNext();
+
+                            } catch (JSONException e) {
+
+                                e.printStackTrace();
+
+                            }
+                        }
+
+                        if (i == 2) {
+                            try {
+
+                                JSONObject round_three = new JSONObject();
+                                String ACT_COUNT_c, N2213_c, N2213_2A_c, N2213_4_c;
+
+                                ACT_COUNT_c = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                N2213_c = c17.getString(c17.getColumnIndex("N2213"));
+                                N2213_2A_c = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                N2213_4_c = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                round_three.put("ACT_COUNT_c", ACT_COUNT_c);
+                                round_three.put("N2213_c", N2213_c);
+                                round_three.put("N2213_2A_c", N2213_2A_c);
+                                round_three.put("N2213_4_c", N2213_4_c);
+
+                                params.put("round_three", String.valueOf(round_three));
+                                c17.moveToNext();
+
+                            } catch (JSONException e) {
+
+                                e.printStackTrace();
+
+                            }
+                        }
+
+                        if (i == 3) {
+                            try {
+
+                                JSONObject round_four = new JSONObject();
+                                String ACT_COUNT_d, N2213_d, N2213_2A_d, N2213_4_d;
+
+                                ACT_COUNT_d = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                N2213_d = c17.getString(c17.getColumnIndex("N2213"));
+                                N2213_2A_d = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                N2213_4_d = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                round_four.put("ACT_COUNT_d", ACT_COUNT_d);
+                                round_four.put("N2213_d", N2213_d);
+                                round_four.put("N2213_2A_d", N2213_2A_d);
+                                round_four.put("N2213_4_d", N2213_4_d);
+
+                                params.put("round_four", String.valueOf(round_four));
+                                c17.moveToNext();
+
+                            } catch (JSONException e) {
+
+                                e.printStackTrace();
+
+                            }
+                        }
+
+                        if (i == 4) {
+                            try {
+
+                                JSONObject round_five = new JSONObject();
+                                String ACT_COUNT_e, N2213_e, N2213_2A_e, N2213_4_e;
+
+                                ACT_COUNT_e = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                N2213_e = c17.getString(c17.getColumnIndex("N2213"));
+                                N2213_2A_e = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                N2213_4_e = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                round_five.put("ACT_COUNT_e", ACT_COUNT_e);
+                                round_five.put("N2213_e", N2213_e);
+                                round_five.put("N2213_2A_e", N2213_2A_e);
+                                round_five.put("N2213_4_e", N2213_4_e);
+
+                                params.put("round_five", String.valueOf(round_five));
+                                c17.moveToNext();
+
+                            } catch (JSONException e) {
+
+                                e.printStackTrace();
+
+                            }
+                        }
+
+                        if (i == 5) {
+                            try {
+
+                                JSONObject round_six = new JSONObject();
+                                String ACT_COUNT_f, N2213_f, N2213_2A_f, N2213_4_f;
+
+                                ACT_COUNT_f = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                N2213_f = c17.getString(c17.getColumnIndex("N2213"));
+                                N2213_2A_f = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                N2213_4_f = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                round_six.put("ACT_COUNT_f", ACT_COUNT_f);
+                                round_six.put("N2213_f", N2213_f);
+                                round_six.put("N2213_2A_f", N2213_2A_f);
+                                round_six.put("N2213_4_f", N2213_4_f);
+
+                                params.put("round_six", String.valueOf(round_six));
+                                c17.moveToNext();
+
+                            } catch (JSONException e) {
+
+                                e.printStackTrace();
+
+                            }
+                        }
+
+                        if (i == 6) {
+                            try {
+
+                                JSONObject round_seven = new JSONObject();
+                                String ACT_COUNT_g, N2213_g, N2213_2A_g, N2213_4_g;
+
+                                ACT_COUNT_g = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                N2213_g = c17.getString(c17.getColumnIndex("N2213"));
+                                N2213_2A_g = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                N2213_4_g = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                round_seven.put("ACT_COUNT_g", ACT_COUNT_g);
+                                round_seven.put("N2213_g", N2213_g);
+                                round_seven.put("N2213_2A_g", N2213_2A_g);
+                                round_seven.put("N2213_4_g", N2213_4_g);
+
+                                params.put("round_seven", String.valueOf(round_seven));
+                                c17.moveToNext();
+
+                            } catch (JSONException e) {
+
+                                e.printStackTrace();
+
+                            }
+                        }
+
+                        if (i == 7) {
+                            try {
+
+                                JSONObject round_eight = new JSONObject();
+                                String ACT_COUNT_h, N2213_h, N2213_2A_h, N2213_4_h;
+
+                                ACT_COUNT_h = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                N2213_h = c17.getString(c17.getColumnIndex("N2213"));
+                                N2213_2A_h = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                N2213_4_h = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                round_eight.put("ACT_COUNT_h", ACT_COUNT_h);
+                                round_eight.put("N2213_h", N2213_h);
+                                round_eight.put("N2213_2A_h", N2213_2A_h);
+                                round_eight.put("N2213_4_h", N2213_4_h);
+
+                                params.put("round_eight", String.valueOf(round_eight));
+                                c17.moveToNext();
+
+                            } catch (JSONException e) {
+
+                                e.printStackTrace();
+
+                            }
+                        }
+
+                        if (i == 8) {
+                            try {
+
+                                JSONObject round_nine = new JSONObject();
+                                String ACT_COUNT_i, N2213_i, N2213_2A_i, N2213_4_i;
+
+                                ACT_COUNT_i = c17.getString(c17.getColumnIndex("ACT_COUNT"));
+                                N2213_i = c17.getString(c17.getColumnIndex("N2213"));
+                                N2213_2A_i = c17.getString(c17.getColumnIndex("N2213_2A"));
+                                N2213_4_i = c17.getString(c17.getColumnIndex("N2213_4"));
+
+                                round_nine.put("ACT_COUNT_i", ACT_COUNT_i);
+                                round_nine.put("N2213_i", N2213_i);
+                                round_nine.put("N2213_2A_i", N2213_2A_i);
+                                round_nine.put("N2213_4_i", N2213_4_i);
+
+                                params.put("round_nine", String.valueOf(round_nine));
+                                c17.moveToNext();
+
+                            } catch (JSONException e) {
+
+                                e.printStackTrace();
+
+                            }
+                        }
+                    }
+                }
+
+                if (c18.getCount() > 0) {
+
+                    c18.moveToFirst();
+
+                    params.put(Global.RP.w204_w215.W201_d, c18.getString(c18.getColumnIndex("W201_d")));
+                    params.put(Global.RP.w204_w215.W201_m, c18.getString(c18.getColumnIndex("W201_m")));
+                    params.put(Global.RP.w204_w215.W201_y, c18.getString(c18.getColumnIndex("W201_y")));
+                    params.put(Global.RP.w204_w215.W202, c18.getString(c18.getColumnIndex("W202")));
+                    params.put(Global.RP.w204_w215.W203, c18.getString(c18.getColumnIndex("W203")));
+                    params.put(Global.RP.w204_w215.W204, c18.getString(c18.getColumnIndex("W204")));
+                    params.put(Global.RP.w204_w215.W205, c18.getString(c18.getColumnIndex("W205")));
+                    params.put(Global.RP.w204_w215.W206, c18.getString(c18.getColumnIndex("W206")));
+                    params.put(Global.RP.w204_w215.W207, c18.getString(c18.getColumnIndex("W207")));
+                    params.put(Global.RP.w204_w215.W208, c18.getString(c18.getColumnIndex("W208")));
+                    params.put(Global.RP.w204_w215.W209, c18.getString(c18.getColumnIndex("W209")));
+                    params.put(Global.RP.w204_w215.W210_1, c18.getString(c18.getColumnIndex("W210_1")));
+                    params.put(Global.RP.w204_w215.W210_2, c18.getString(c18.getColumnIndex("W210_2")));
+                    params.put(Global.RP.w204_w215.W210_3, c18.getString(c18.getColumnIndex("W210_3")));
+                    params.put(Global.RP.w204_w215.W210_4, c18.getString(c18.getColumnIndex("W210_4")));
+                    params.put(Global.RP.w204_w215.W210_5, c18.getString(c18.getColumnIndex("W210_5")));
+                    params.put(Global.RP.w204_w215.W211, c18.getString(c18.getColumnIndex("W211")));
+                    params.put(Global.RP.w204_w215.W212, c18.getString(c18.getColumnIndex("W212")));
+                    params.put(Global.RP.w204_w215.W213, c18.getString(c18.getColumnIndex("W213")));
+                    params.put(Global.RP.w204_w215.W214, c18.getString(c18.getColumnIndex("W214")));
+                    params.put(Global.RP.w204_w215.W215, c18.getString(c18.getColumnIndex("W215")));
+                } else {
+
+                    params.put(Global.RP.w204_w215.W201_d, "-2");
+                    params.put(Global.RP.w204_w215.W201_m, "-2");
+                    params.put(Global.RP.w204_w215.W201_y, "-2");
+                    params.put(Global.RP.w204_w215.W202, "-2");
+                    params.put(Global.RP.w204_w215.W203, "-2");
+                    params.put(Global.RP.w204_w215.W204, "-2");
+                    params.put(Global.RP.w204_w215.W205, "-2");
+                    params.put(Global.RP.w204_w215.W206, "-2");
+                    params.put(Global.RP.w204_w215.W207, "-2");
+                    params.put(Global.RP.w204_w215.W208, "-2");
+                    params.put(Global.RP.w204_w215.W209, "-2");
+                    params.put(Global.RP.w204_w215.W210_1, "-2");
+                    params.put(Global.RP.w204_w215.W210_2, "-2");
+                    params.put(Global.RP.w204_w215.W210_3, "-2");
+                    params.put(Global.RP.w204_w215.W210_4, "-2");
+                    params.put(Global.RP.w204_w215.W210_5, "-2");
+                    params.put(Global.RP.w204_w215.W211, "-2");
+                    params.put(Global.RP.w204_w215.W212, "-2");
+                    params.put(Global.RP.w204_w215.W213, "-2");
+                    params.put(Global.RP.w204_w215.W214, "-2");
+                    params.put(Global.RP.w204_w215.W215, "-2");
                 }
 
                 return params;
@@ -1019,6 +2183,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                 Cursor c10 = db.getData("C3471_C3472", study_id);
                 Cursor c11 = db.getData("C3251_C3288_A_C", study_id);
                 Cursor c12 = db.getData("C3251_C3288_B", study_id);
+                Cursor c13 = db.getData("w204_w215", study_id);
 
                 params.put("table1", "q1101_q1610");
                 params.put("table2", "c3001_c3011");
@@ -1032,6 +2197,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                 params.put("table10", "c3471_c3472");
                 params.put("table11", "c3251_c3288_a_c");
                 params.put("table12", "c3251_c3288_b");
+                params.put("table13", "w204_w215");
 
                 if (c.getCount() > 0) {
 
@@ -1123,6 +2289,95 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(Q1101_Q1610.Q1610_3, c.getString(c.getColumnIndex("Q1610_3")));
                     params.put(Q1101_Q1610.interviewType, c.getString(c.getColumnIndex("interviewType")));
                     params.put(Q1101_Q1610.currentSection, c.getString(c.getColumnIndex("currentSection")));
+
+                } else {
+
+                    params.put(Q1101_Q1610.study_id, "-2");
+                    params.put(Q1101_Q1610.Q1201_1, "-2");
+                    params.put(Q1101_Q1610.Q1201_2, "-2");
+                    params.put(Q1101_Q1610.Q1201_3, "-2");
+                    params.put(Q1101_Q1610.Q1201_4, "-2");
+                    params.put(Q1101_Q1610.Q1201_5, "-2");
+                    params.put(Q1101_Q1610.Q1201_6, "-2");
+                    params.put(Q1101_Q1610.Q1202, "-2");
+                    params.put(Q1101_Q1610.Q1203, "-2");
+                    params.put(Q1101_Q1610.Q1204, "-2");
+                    params.put(Q1101_Q1610.Q1205, "-2");
+                    params.put(Q1101_Q1610.Q1206_d, "-2");
+                    params.put(Q1101_Q1610.Q1206_m, "-2");
+                    params.put(Q1101_Q1610.Q1206_y, "-2");
+                    params.put(Q1101_Q1610.Q1207, "-2");
+                    params.put(Q1101_Q1610.Q1208, "-2");
+                    params.put(Q1101_Q1610.Q1209, "-2");
+                    params.put(Q1101_Q1610.Q1301, "-2");
+                    params.put(Q1101_Q1610.Q1302, "-2");
+                    params.put(Q1101_Q1610.Q1307, "-2");
+                    params.put(Q1101_Q1610.Q1308, "-2");
+                    params.put(Q1101_Q1610.Q1309, "-2");
+                    params.put(Q1101_Q1610.Q1310, "-2");
+                    params.put(Q1101_Q1610.Q1311, "-2");
+                    params.put(Q1101_Q1610.Q1312, "-2");
+                    params.put(Q1101_Q1610.Q1313, "-2");
+                    params.put(Q1101_Q1610.Q1401, "-2");
+                    params.put(Q1101_Q1610.Q1402, "-2");
+                    params.put(Q1101_Q1610.Q1403, "-2");
+                    params.put(Q1101_Q1610.Q1403_OT, "-2");
+                    params.put(Q1101_Q1610.Q1404, "-2");
+                    params.put(Q1101_Q1610.Q1405, "-2");
+                    params.put(Q1101_Q1610.Q1406, "-2");
+                    params.put(Q1101_Q1610.Q1407, "-2");
+                    params.put(Q1101_Q1610.Q1408, "-2");
+                    params.put(Q1101_Q1610.Q1409, "-2");
+                    params.put(Q1101_Q1610.Q1410, "-2");
+                    params.put(Q1101_Q1610.Q1411, "-2");
+                    params.put(Q1101_Q1610.Q1412, "-2");
+                    params.put(Q1101_Q1610.Q1413, "-2");
+                    params.put(Q1101_Q1610.Q1414_1, "-2");
+                    params.put(Q1101_Q1610.Q1414_2, "-2");
+                    params.put(Q1101_Q1610.Q1414_3, "-2");
+                    params.put(Q1101_Q1610.Q1414_4, "-2");
+                    params.put(Q1101_Q1610.Q1414_5, "-2");
+                    params.put(Q1101_Q1610.Q1414_6, "-2");
+                    params.put(Q1101_Q1610.Q1414_7, "-2");
+                    params.put(Q1101_Q1610.Q1414_8, "-2");
+                    params.put(Q1101_Q1610.Q1414_9, "-2");
+                    params.put(Q1101_Q1610.Q1414_10, "-2");
+                    params.put(Q1101_Q1610.Q1415, "-2");
+                    params.put(Q1101_Q1610.Q1416, "-2");
+                    params.put(Q1101_Q1610.Q1416_OT, "-2");
+                    params.put(Q1101_Q1610.Q1417, "-2");
+                    params.put(Q1101_Q1610.Q1417_OT, "-2");
+                    params.put(Q1101_Q1610.Q1418, "-2");
+                    params.put(Q1101_Q1610.Q1418_OT, "-2");
+                    params.put(Q1101_Q1610.Q1419, "-2");
+                    params.put(Q1101_Q1610.Q1419_OT, "-2");
+                    params.put(Q1101_Q1610.Q1420, "-2");
+                    params.put(Q1101_Q1610.Q1420_OT, "-2");
+                    params.put(Q1101_Q1610.Q1421, "-2");
+                    params.put(Q1101_Q1610.Q1421_OT, "-2");
+                    params.put(Q1101_Q1610.Q1501, "-2");
+                    params.put(Q1101_Q1610.Q1502, "-2");
+                    params.put(Q1101_Q1610.Q1503, "-2");
+                    params.put(Q1101_Q1610.Q1503_OT, "-2");
+                    params.put(Q1101_Q1610.Q1601, "-2");
+                    params.put(Q1101_Q1610.Q1602, "-2");
+                    params.put(Q1101_Q1610.Q1603, "-2");
+                    params.put(Q1101_Q1610.Q1604, "-2");
+                    params.put(Q1101_Q1610.Q1604_OT, "-2");
+                    params.put(Q1101_Q1610.Q1605, "-2");
+                    params.put(Q1101_Q1610.Q1606, "-2");
+                    params.put(Q1101_Q1610.Q1607_1, "-2");
+                    params.put(Q1101_Q1610.Q1607_2, "-2");
+                    params.put(Q1101_Q1610.Q1607_3, "-2");
+                    params.put(Q1101_Q1610.Q1608_1, "-2");
+                    params.put(Q1101_Q1610.Q1608_2, "-2");
+                    params.put(Q1101_Q1610.Q1608_3, "-2");
+                    params.put(Q1101_Q1610.Q1609, "-2");
+                    params.put(Q1101_Q1610.Q1610_1, "-2");
+                    params.put(Q1101_Q1610.Q1610_2, "-2");
+                    params.put(Q1101_Q1610.Q1610_3, "-2");
+                    params.put(Q1101_Q1610.interviewType, "2");
+                    params.put(Q1101_Q1610.currentSection, "-2");
                 }
 
                 if (c2.getCount() > 0) {
@@ -1192,6 +2447,25 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3012_C3022.C3021y, c3.getString(c3.getColumnIndex("C3021y")));
                     params.put(C3012_C3022.C3022, c3.getString(c3.getColumnIndex("C3022")));
 
+                } else {
+
+                    params.put(C3012_C3022.C3012, "-2");
+                    params.put(C3012_C3022.C3013, "-2");
+                    params.put(C3012_C3022.C3015, "-2");
+                    params.put(C3012_C3022.C3016, "-2");
+                    params.put(C3012_C3022.C3017, "-2");
+                    params.put(C3012_C3022.C3018, "-2");
+                    params.put(C3012_C3022.C3018_1, "-2");
+                    params.put(C3012_C3022.C3019_u, "-2");
+                    params.put(C3012_C3022.C3019_a, "-2");
+                    params.put(C3012_C3022.C3019_b, "-2");
+                    params.put(C3012_C3022.C3019_c, "-2");
+                    params.put(C3012_C3022.C3020, "-2");
+                    params.put(C3012_C3022.C3021u, "-2");
+                    params.put(C3012_C3022.C3021d, "-2");
+                    params.put(C3012_C3022.C3021m, "-2");
+                    params.put(C3012_C3022.C3021y, "-2");
+                    params.put(C3012_C3022.C3022, "-2");
                 }
 
                 if (c4.getCount() > 0) {
@@ -1406,6 +2680,66 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3101_C3112.C3111_8, c5.getString(c5.getColumnIndex("C3111_8")));
                     params.put(C3101_C3112.C3111_9, c5.getString(c5.getColumnIndex("C3111_9")));
                     params.put(C3101_C3112.C3112, c5.getString(c5.getColumnIndex("C3112")));
+
+                } else {
+
+                    params.put(C3101_C3112.C3101, "-2");
+                    params.put(C3101_C3112.C3102, "-2");
+                    params.put(C3101_C3112.C3103, "-2");
+                    params.put(C3101_C3112.C3104, "-2");
+                    params.put(C3101_C3112.C3105, "-2");
+                    params.put(C3101_C3112.C3105_OT, "-2");
+                    params.put(C3101_C3112.C3106, "-2");
+                    params.put(C3101_C3112.C3107_1, "-2");
+                    params.put(C3101_C3112.C3107_2, "-2");
+                    params.put(C3101_C3112.C3107_3, "-2");
+                    params.put(C3101_C3112.C3107_4, "-2");
+                    params.put(C3101_C3112.C3107_5, "-2");
+                    params.put(C3101_C3112.C3107_6, "-2");
+                    params.put(C3101_C3112.C3107_6_OT, "-2");
+                    params.put(C3101_C3112.C3107_7, "-2");
+                    params.put(C3101_C3112.C3107_8, "-2");
+                    params.put(C3101_C3112.C3107_9, "-2");
+                    params.put(C3101_C3112.C3107_10, "-2");
+                    params.put(C3101_C3112.C3107_11, "-2");
+                    params.put(C3101_C3112.C3107_12, "-2");
+                    params.put(C3101_C3112.C3107_13, "-2");
+                    params.put(C3101_C3112.C3107_14, "-2");
+                    params.put(C3101_C3112.C3107_15, "-2");
+                    params.put(C3101_C3112.C3107_16, "-2");
+                    params.put(C3101_C3112.C3107_17, "-2");
+                    params.put(C3101_C3112.C3107_18, "-2");
+                    params.put(C3101_C3112.C3107_19, "-2");
+                    params.put(C3101_C3112.C3107_20, "-2");
+                    params.put(C3101_C3112.C3107_21, "-2");
+                    params.put(C3101_C3112.C3107_21_OT, "-2");
+                    params.put(C3101_C3112.C3108, "-2");
+                    params.put(C3101_C3112.C3109_1, "-2");
+                    params.put(C3101_C3112.C3109_2, "-2");
+                    params.put(C3101_C3112.C3109_3, "-2");
+                    params.put(C3101_C3112.C3109_4, "-2");
+                    params.put(C3101_C3112.C3109_5, "-2");
+                    params.put(C3101_C3112.C3109_6, "-2");
+                    params.put(C3101_C3112.C3109_7, "-2");
+                    params.put(C3101_C3112.C3109_8, "-2");
+                    params.put(C3101_C3112.C3109_9, "-2");
+                    params.put(C3101_C3112.C3109_10, "-2");
+                    params.put(C3101_C3112.C3109_11, "-2");
+                    params.put(C3101_C3112.C3109_12, "-2");
+                    params.put(C3101_C3112.C3109_13, "-2");
+                    params.put(C3101_C3112.C3109_14, "-2");
+                    params.put(C3101_C3112.C3110, "-2");
+                    params.put(C3101_C3112.C3111, "-2");
+                    params.put(C3101_C3112.C3111_1, "-2");
+                    params.put(C3101_C3112.C3111_2, "-2");
+                    params.put(C3101_C3112.C3111_3, "-2");
+                    params.put(C3101_C3112.C3111_4, "-2");
+                    params.put(C3101_C3112.C3111_5, "-2");
+                    params.put(C3101_C3112.C3111_6, "-2");
+                    params.put(C3101_C3112.C3111_7, "-2");
+                    params.put(C3101_C3112.C3111_8, "-2");
+                    params.put(C3101_C3112.C3111_9, "-2");
+                    params.put(C3101_C3112.C3112, "-2");
                 }
 
                 if (c6.getCount() > 0) {
@@ -1583,6 +2917,180 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3121_C3228.C3227_21, c6.getString(c6.getColumnIndex("C3227_21")));
                     params.put(C3121_C3228.C3227_22, c6.getString(c6.getColumnIndex("C3227_22")));
                     params.put(C3121_C3228.C3228, c6.getString(c6.getColumnIndex("C3228")));
+
+                } else {
+
+                    params.put(C3121_C3228.C3121, "-2");
+                    params.put(C3121_C3228.C3122d, "-2");
+                    params.put(C3121_C3228.C3122m, "-2");
+                    params.put(C3121_C3228.C3123_u, "-2");
+                    params.put(C3121_C3228.C3123_b, "-2");
+                    params.put(C3121_C3228.C3123_c, "-2");
+                    params.put(C3121_C3228.C3124, "-2");
+                    params.put(C3121_C3228.C3125, "-2");
+                    params.put(C3121_C3228.C3126, "-2");
+                    params.put(C3121_C3228.C3127, "-2");
+                    params.put(C3121_C3228.C3128, "-2");
+                    params.put(C3121_C3228.C3129, "-2");
+                    params.put(C3121_C3228.C3130, "-2");
+                    params.put(C3121_C3228.C3131, "-2");
+                    params.put(C3121_C3228.C3132_u, "-2");
+                    params.put(C3121_C3228.C3132_a, "-2");
+                    params.put(C3121_C3228.C3132_b, "-2");
+                    params.put(C3121_C3228.C3133, "-2");
+                    params.put(C3121_C3228.C3134, "-2");
+                    params.put(C3121_C3228.C3135, "-2");
+                    params.put(C3121_C3228.C3136, "-2");
+                    params.put(C3121_C3228.C3137, "-2");
+                    params.put(C3121_C3228.C3138, "-2");
+                    params.put(C3121_C3228.C3139, "-2");
+                    params.put(C3121_C3228.C3140, "-2");
+                    params.put(C3121_C3228.C3141, "-2");
+                    params.put(C3121_C3228.C3142, "-2");
+                    params.put(C3121_C3228.C3143, "-2");
+                    params.put(C3121_C3228.C3144_u, "-2");
+                    params.put(C3121_C3228.C3144, "-2");
+                    params.put(C3121_C3228.C3144_a, "-2");
+                    params.put(C3121_C3228.C3144_b, "-2");
+                    params.put(C3121_C3228.C3145, "-2");
+                    params.put(C3121_C3228.C3146, "-2");
+                    params.put(C3121_C3228.C3147_u, "-2");
+                    params.put(C3121_C3228.C3147_a, "-2");
+                    params.put(C3121_C3228.C3147_b, "-2");
+                    params.put(C3121_C3228.C3148, "-2");
+                    params.put(C3121_C3228.C3149, "-2");
+                    params.put(C3121_C3228.C3150_u, "-2");
+                    params.put(C3121_C3228.C3150_a, "-2");
+                    params.put(C3121_C3228.C3150_b, "-2");
+                    params.put(C3121_C3228.C3151, "-2");
+                    params.put(C3121_C3228.C3152_u, "-2");
+                    params.put(C3121_C3228.C3152_a, "-2");
+                    params.put(C3121_C3228.C3152_b, "-2");
+                    params.put(C3121_C3228.C3153, "-2");
+                    params.put(C3121_C3228.C3154, "-2");
+                    params.put(C3121_C3228.C3155, "-2");
+                    params.put(C3121_C3228.C3156, "-2");
+                    params.put(C3121_C3228.C3157, "-2");
+                    params.put(C3121_C3228.C3158, "-2");
+                    params.put(C3121_C3228.C3159_u, "-2");
+                    params.put(C3121_C3228.C3159_a, "-2");
+                    params.put(C3121_C3228.C3159_b, "-2");
+                    params.put(C3121_C3228.C3159_c, "-2");
+                    params.put(C3121_C3228.C3160, "-2");
+                    params.put(C3121_C3228.C3161, "-2");
+                    params.put(C3121_C3228.C3162d, "-2");
+                    params.put(C3121_C3228.C3162m, "-2");
+                    params.put(C3121_C3228.C3163_u, "-2");
+                    params.put(C3121_C3228.C3163_a, "-2");
+                    params.put(C3121_C3228.C3163_b, "-2");
+                    params.put(C3121_C3228.C3164, "-2");
+                    params.put(C3121_C3228.C3165_u, "-2");
+                    params.put(C3121_C3228.C3165_a, "-2");
+                    params.put(C3121_C3228.C3165_b, "-2");
+                    params.put(C3121_C3228.C3166, "-2");
+                    params.put(C3121_C3228.C3167, "-2");
+                    params.put(C3121_C3228.C3168, "-2");
+                    params.put(C3121_C3228.C3169, "-2");
+                    params.put(C3121_C3228.C3170, "-2");
+                    params.put(C3121_C3228.C3171, "-2");
+                    params.put(C3121_C3228.C3172, "-2");
+                    params.put(C3121_C3228.C3173, "-2");
+                    params.put(C3121_C3228.C3174, "-2");
+                    params.put(C3121_C3228.C3175_u, "-2");
+                    params.put(C3121_C3228.C3175_a, "-2");
+                    params.put(C3121_C3228.C3175_b, "-2");
+                    params.put(C3121_C3228.C3176, "-2");
+                    params.put(C3121_C3228.C3177_u, "-2");
+                    params.put(C3121_C3228.C3177_a, "-2");
+                    params.put(C3121_C3228.C3177_b, "-2");
+                    params.put(C3121_C3228.C3178, "-2");
+                    params.put(C3121_C3228.C3179_u, "-2");
+                    params.put(C3121_C3228.C3179_a, "-2");
+                    params.put(C3121_C3228.C3179_b, "-2");
+                    params.put(C3121_C3228.C3180, "-2");
+                    params.put(C3121_C3228.C3181, "-2");
+                    params.put(C3121_C3228.C3182, "-2");
+                    params.put(C3121_C3228.C3183, "-2");
+                    params.put(C3121_C3228.C3184, "-2");
+                    params.put(C3121_C3228.C3185, "-2");
+                    params.put(C3121_C3228.C3186_1, "-2");
+                    params.put(C3121_C3228.C3186, "-2");
+                    params.put(C3121_C3228.C3187, "-2");
+                    params.put(C3121_C3228.C3188, "-2");
+                    params.put(C3121_C3228.C3189, "-2");
+                    params.put(C3121_C3228.C3190, "-2");
+                    params.put(C3121_C3228.C3191, "-2");
+                    params.put(C3121_C3228.C3192, "-2");
+                    params.put(C3121_C3228.C3193_u, "-2");
+                    params.put(C3121_C3228.C3193_a, "-2");
+                    params.put(C3121_C3228.C3193_b, "-2");
+                    params.put(C3121_C3228.C3194, "-2");
+                    params.put(C3121_C3228.C3195A, "-2");
+                    params.put(C3121_C3228.C3195, "-2");
+                    params.put(C3121_C3228.C3196, "-2");
+                    params.put(C3121_C3228.C3197, "-2");
+                    params.put(C3121_C3228.C3198, "-2");
+                    params.put(C3121_C3228.C3199, "-2");
+                    params.put(C3121_C3228.C3199_1, "-2");
+                    params.put(C3121_C3228.C3200, "-2");
+                    params.put(C3121_C3228.C3201_u, "-2");
+                    params.put(C3121_C3228.C3201_a, "-2");
+                    params.put(C3121_C3228.C3201_b, "-2");
+                    params.put(C3121_C3228.C3202, "-2");
+                    params.put(C3121_C3228.C3203, "-2");
+                    params.put(C3121_C3228.C3204_u, "-2");
+                    params.put(C3121_C3228.C3204_a, "-2");
+                    params.put(C3121_C3228.C3204_b, "-2");
+                    params.put(C3121_C3228.C3205, "-2");
+                    params.put(C3121_C3228.C3206, "-2");
+                    params.put(C3121_C3228.C3207, "-2");
+                    params.put(C3121_C3228.C3208_u, "-2");
+                    params.put(C3121_C3228.C3208_a, "-2");
+                    params.put(C3121_C3228.C3208_b, "-2");
+                    params.put(C3121_C3228.C3209, "-2");
+                    params.put(C3121_C3228.C3210, "-2");
+                    params.put(C3121_C3228.C3212, "-2");
+                    params.put(C3121_C3228.C3213, "-2");
+                    params.put(C3121_C3228.C3214, "-2");
+                    params.put(C3121_C3228.C3215, "-2");
+                    params.put(C3121_C3228.C3216, "-2");
+                    params.put(C3121_C3228.C3217, "-2");
+                    params.put(C3121_C3228.C3218, "-2");
+                    params.put(C3121_C3228.C3218_OT, "-2");
+                    params.put(C3121_C3228.C3219, "-2");
+                    params.put(C3121_C3228.C3220_u, "-2");
+                    params.put(C3121_C3228.C3220_a, "-2");
+                    params.put(C3121_C3228.C3220_b, "-2");
+                    params.put(C3121_C3228.C3221, "-2");
+                    params.put(C3121_C3228.C3222, "-2");
+                    params.put(C3121_C3228.C3223, "-2");
+                    params.put(C3121_C3228.C3224, "-2");
+                    params.put(C3121_C3228.C3225, "-2");
+                    params.put(C3121_C3228.C3226, "-2");
+                    params.put(C3121_C3228.C3227, "-2");
+                    params.put(C3121_C3228.C3227_1, "-2");
+                    params.put(C3121_C3228.C3227_2, "-2");
+                    params.put(C3121_C3228.C3227_3, "-2");
+                    params.put(C3121_C3228.C3227_4, "-2");
+                    params.put(C3121_C3228.C3227_5, "-2");
+                    params.put(C3121_C3228.C3227_6, "-2");
+                    params.put(C3121_C3228.C3227_7, "-2");
+                    params.put(C3121_C3228.C3227_8, "-2");
+                    params.put(C3121_C3228.C3227_9, "-2");
+                    params.put(C3121_C3228.C3227_10, "-2");
+                    params.put(C3121_C3228.C3227_11, "-2");
+                    params.put(C3121_C3228.C3227_12, "-2");
+                    params.put(C3121_C3228.C3227_13, "-2");
+                    params.put(C3121_C3228.C3227_14, "-2");
+                    params.put(C3121_C3228.C3227_15, "-2");
+                    params.put(C3121_C3228.C3227_16, "-2");
+                    params.put(C3121_C3228.C3227_17, "-2");
+                    params.put(C3121_C3228.C3227_18, "-2");
+                    params.put(C3121_C3228.C3227_19, "-2");
+                    params.put(C3121_C3228.C3227_20, "-2");
+                    params.put(C3121_C3228.C3227_21, "-2");
+                    params.put(C3121_C3228.C3227_22, "-2");
+                    params.put(C3121_C3228.C3228, "-2");
                 }
 
                 if (c7.getCount() > 0) {
@@ -1622,6 +3130,42 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3301_C3314.C3312, c7.getString(c7.getColumnIndex("C3312")));
                     params.put(C3301_C3314.C3313, c7.getString(c7.getColumnIndex("C3313")));
                     params.put(C3301_C3314.C3314, c7.getString(c7.getColumnIndex("C3314")));
+
+                } else {
+
+                    params.put(C3301_C3314.C3301, "-2");
+                    params.put(C3301_C3314.C3302_1, "-2");
+                    params.put(C3301_C3314.C3302_2, "-2");
+                    params.put(C3301_C3314.C3302_3, "-2");
+                    params.put(C3301_C3314.C3302_4, "-2");
+                    params.put(C3301_C3314.C3302_5, "-2");
+                    params.put(C3301_C3314.C3302_6, "-2");
+                    params.put(C3301_C3314.C3302_7, "-2");
+                    params.put(C3301_C3314.C3303, "-2");
+                    params.put(C3301_C3314.C3304, "-2");
+                    params.put(C3301_C3314.C3305, "-2");
+                    params.put(C3301_C3314.C3306_1check, "-2");
+                    params.put(C3301_C3314.C3306_1, "-2");
+                    params.put(C3301_C3314.C3306_2check, "-2");
+                    params.put(C3301_C3314.C3306_2, "-2");
+                    params.put(C3301_C3314.C3307, "-2");
+                    params.put(C3301_C3314.C3308, "-2");
+                    params.put(C3301_C3314.C3309, "-2");
+                    params.put(C3301_C3314.C3310_1, "-2");
+                    params.put(C3301_C3314.C3310_2, "-2");
+                    params.put(C3301_C3314.C3310_3, "-2");
+                    params.put(C3301_C3314.C3310_4, "-2");
+                    params.put(C3301_C3314.C3310_5, "-2");
+                    params.put(C3301_C3314.C3310_6, "-2");
+                    params.put(C3301_C3314.C3310_7, "-2");
+                    params.put(C3301_C3314.C3310_8, "-2");
+                    params.put(C3301_C3314.C3310_9, "-2");
+                    params.put(C3301_C3314.C3310_10, "-2");
+                    params.put(C3301_C3314.C3310_11, "-2");
+                    params.put(C3301_C3314.C3311, "-2");
+                    params.put(C3301_C3314.C3312, "-2");
+                    params.put(C3301_C3314.C3313, "-2");
+                    params.put(C3301_C3314.C3314, "-2");
                 }
 
                 if (c8.getCount() > 0) {
@@ -1638,6 +3182,19 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3351_C3364.C3358, c8.getString(c8.getColumnIndex("C3358")));
                     params.put(C3351_C3364.C3363, c8.getString(c8.getColumnIndex("C3363")));
                     params.put(C3351_C3364.C3364, c8.getString(c8.getColumnIndex("C3364")));
+
+                } else {
+
+                    params.put(C3351_C3364.C3351, "-2");
+                    params.put(C3351_C3364.C3352, "-2");
+                    params.put(C3351_C3364.C3353, "-2");
+                    params.put(C3351_C3364.C3354, "-2");
+                    params.put(C3351_C3364.C3355, "-2");
+                    params.put(C3351_C3364.C3356, "-2");
+                    params.put(C3351_C3364.C3357, "-2");
+                    params.put(C3351_C3364.C3358, "-2");
+                    params.put(C3351_C3364.C3363, "-2");
+                    params.put(C3351_C3364.C3364, "-2");
                 }
 
                 if (c9.getCount() > 0) {
@@ -1701,6 +3258,66 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3401_C3457.C3455, c9.getString(c9.getColumnIndex("C3455")));
                     params.put(C3401_C3457.C3456, c9.getString(c9.getColumnIndex("C3456")));
                     params.put(C3401_C3457.C3457, c9.getString(c9.getColumnIndex("C3457")));
+
+                } else {
+
+                    params.put(C3401_C3457.C3401, "-2");
+                    params.put(C3401_C3457.C3402, "-2");
+                    params.put(C3401_C3457.C3403, "-2");
+                    params.put(C3401_C3457.C3404, "-2");
+                    params.put(C3401_C3457.C3405, "-2");
+                    params.put(C3401_C3457.C3406, "-2");
+                    params.put(C3401_C3457.C3407, "-2");
+                    params.put(C3401_C3457.C3408, "-2");
+                    params.put(C3401_C3457.C3409, "-2");
+                    params.put(C3401_C3457.C3410, "-2");
+                    params.put(C3401_C3457.C3411, "-2");
+                    params.put(C3401_C3457.C3412_L1, "-2");
+                    params.put(C3401_C3457.C3412_L2, "-2");
+                    params.put(C3401_C3457.C3413, "-2");
+                    params.put(C3401_C3457.C3414_1, "-2");
+                    params.put(C3401_C3457.C3414_2, "-2");
+                    params.put(C3401_C3457.C3451_1, "-2");
+                    params.put(C3401_C3457.C3451_2, "-2");
+                    params.put(C3401_C3457.C3451_3, "-2");
+                    params.put(C3401_C3457.C3451_4, "-2");
+                    params.put(C3401_C3457.C3451_5, "-2");
+                    params.put(C3401_C3457.C3451_6, "-2");
+                    params.put(C3401_C3457.C3451_7, "-2");
+                    params.put(C3401_C3457.C3451_8, "-2");
+                    params.put(C3401_C3457.C3451_9, "-2");
+                    params.put(C3401_C3457.C3451_10, "-2");
+                    params.put(C3401_C3457.C3451_11, "-2");
+                    params.put(C3401_C3457.C3451_12, "-2");
+                    params.put(C3401_C3457.C3451_13, "-2");
+                    params.put(C3401_C3457.C3451_13_OT, "-2");
+                    params.put(C3401_C3457.C3452_1, "-2");
+                    params.put(C3401_C3457.C3452_2, "-2");
+                    params.put(C3401_C3457.C3452_3, "-2");
+                    params.put(C3401_C3457.C3452_4, "-2");
+                    params.put(C3401_C3457.C3452_5, "-2");
+                    params.put(C3401_C3457.C3452_6, "-2");
+                    params.put(C3401_C3457.C3452_7, "-2");
+                    params.put(C3401_C3457.C3452_8, "-2");
+                    params.put(C3401_C3457.C3452_9, "-2");
+                    params.put(C3401_C3457.C3452_9_OT, "-2");
+                    params.put(C3401_C3457.C3453_1, "-2");
+                    params.put(C3401_C3457.C3453_2, "-2");
+                    params.put(C3401_C3457.C3453_3, "-2");
+                    params.put(C3401_C3457.C3453_4, "-2");
+                    params.put(C3401_C3457.C3453_5, "-2");
+                    params.put(C3401_C3457.C3453_6, "-2");
+                    params.put(C3401_C3457.C3453_7, "-2");
+                    params.put(C3401_C3457.C3453_8, "-2");
+                    params.put(C3401_C3457.C3453_9, "-2");
+                    params.put(C3401_C3457.C3453_10, "-2");
+                    params.put(C3401_C3457.C3453_11, "-2");
+                    params.put(C3401_C3457.C3453_12, "-2");
+                    params.put(C3401_C3457.C3453_12_OT, "-2");
+                    params.put(C3401_C3457.C3454, "-2");
+                    params.put(C3401_C3457.C3455, "-2");
+                    params.put(C3401_C3457.C3456, "-2");
+                    params.put(C3401_C3457.C3457, "-2");
                 }
 
                 if (c10.getCount() > 0) {
@@ -1720,6 +3337,22 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3471_C3472.C3472_10, c10.getString(c10.getColumnIndex("C3472_10")));
                     params.put(C3471_C3472.C3472_11, c10.getString(c10.getColumnIndex("C3472_11")));
                     params.put(C3471_C3472.C3472_DK, c10.getString(c10.getColumnIndex("C3472_DK")));
+
+                } else {
+
+                    params.put(C3471_C3472.C3471, "-2");
+                    params.put(C3471_C3472.C3472_1, "-2");
+                    params.put(C3471_C3472.C3472_2, "-2");
+                    params.put(C3471_C3472.C3472_3, "-2");
+                    params.put(C3471_C3472.C3472_4, "-2");
+                    params.put(C3471_C3472.C3472_5, "-2");
+                    params.put(C3471_C3472.C3472_6, "-2");
+                    params.put(C3471_C3472.C3472_7, "-2");
+                    params.put(C3471_C3472.C3472_8, "-2");
+                    params.put(C3471_C3472.C3472_9, "-2");
+                    params.put(C3471_C3472.C3472_10, "-2");
+                    params.put(C3471_C3472.C3472_11, "-2");
+                    params.put(C3471_C3472.C3472_DK, "-2");
                 }
 
                 if (c11.getCount() > 0) {
@@ -1826,6 +3459,109 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3286, c11.getString(c11.getColumnIndex("C3286")));
                     params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3287, c11.getString(c11.getColumnIndex("C3287")));
                     params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3288, c11.getString(c11.getColumnIndex("C3288")));
+
+                } else {
+
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3251_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3251_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3252, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3254, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3254x, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3255, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_3, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_4, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_4x, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_5, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_6, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_7, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_8, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_9, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_10, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_11, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_12, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_OT, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_OTx, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3256_DK, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3257_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3257_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3257_3, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3258_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3258_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3259, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3259_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3260, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3261_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3261_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3262, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3263, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3264, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3264_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3265_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3265_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3266, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3267_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3267_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3268_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3268_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3269, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3269_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3270, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3271_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3271_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3272, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3273, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3274, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3274_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3275_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3275_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3276, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3277_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3277_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3278, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3279, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_3, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_4, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_5x, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_5, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_6, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_7, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_8, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_9, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_10, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_11, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_12, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_13, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_14, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_15, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_OT, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_OTx, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3280_DK, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3281, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3282_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3282_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3282_3, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3282_4, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3282_5, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3282_6, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3282_7, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3282_DK, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3283_1, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3283_2, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3283_3, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3283_4, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3283_5, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3283_6, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3283_7, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3283_DK, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3284, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3285, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3286, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3287, "-2");
+                    params.put(C3251_C3288_A_C.sub_C3251_C3288_A_C.C3288, "-2");
                 }
 
                 if (c12.getCount() > 0) {
@@ -2067,6 +3803,56 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     }
                 }
 
+                if (c13.getCount() > 0) {
+
+                    c13.moveToFirst();
+
+                    params.put(Global.RP.w204_w215.W201_d, c13.getString(c13.getColumnIndex("W201_d")));
+                    params.put(Global.RP.w204_w215.W201_m, c13.getString(c13.getColumnIndex("W201_m")));
+                    params.put(Global.RP.w204_w215.W201_y, c13.getString(c13.getColumnIndex("W201_y")));
+                    params.put(Global.RP.w204_w215.W202, c13.getString(c13.getColumnIndex("W202")));
+                    params.put(Global.RP.w204_w215.W203, c13.getString(c13.getColumnIndex("W203")));
+                    params.put(Global.RP.w204_w215.W204, c13.getString(c13.getColumnIndex("W204")));
+                    params.put(Global.RP.w204_w215.W205, c13.getString(c13.getColumnIndex("W205")));
+                    params.put(Global.RP.w204_w215.W206, c13.getString(c13.getColumnIndex("W206")));
+                    params.put(Global.RP.w204_w215.W207, c13.getString(c13.getColumnIndex("W207")));
+                    params.put(Global.RP.w204_w215.W208, c13.getString(c13.getColumnIndex("W208")));
+                    params.put(Global.RP.w204_w215.W209, c13.getString(c13.getColumnIndex("W209")));
+                    params.put(Global.RP.w204_w215.W210_1, c13.getString(c13.getColumnIndex("W210_1")));
+                    params.put(Global.RP.w204_w215.W210_2, c13.getString(c13.getColumnIndex("W210_2")));
+                    params.put(Global.RP.w204_w215.W210_3, c13.getString(c13.getColumnIndex("W210_3")));
+                    params.put(Global.RP.w204_w215.W210_4, c13.getString(c13.getColumnIndex("W210_4")));
+                    params.put(Global.RP.w204_w215.W210_5, c13.getString(c13.getColumnIndex("W210_5")));
+                    params.put(Global.RP.w204_w215.W211, c13.getString(c13.getColumnIndex("W211")));
+                    params.put(Global.RP.w204_w215.W212, c13.getString(c13.getColumnIndex("W212")));
+                    params.put(Global.RP.w204_w215.W213, c13.getString(c13.getColumnIndex("W213")));
+                    params.put(Global.RP.w204_w215.W214, c13.getString(c13.getColumnIndex("W214")));
+                    params.put(Global.RP.w204_w215.W215, c13.getString(c13.getColumnIndex("W215")));
+                } else {
+
+                    params.put(Global.RP.w204_w215.W201_d, "-2");
+                    params.put(Global.RP.w204_w215.W201_m, "-2");
+                    params.put(Global.RP.w204_w215.W201_y, "-2");
+                    params.put(Global.RP.w204_w215.W202, "-2");
+                    params.put(Global.RP.w204_w215.W203, "-2");
+                    params.put(Global.RP.w204_w215.W204, "-2");
+                    params.put(Global.RP.w204_w215.W205, "-2");
+                    params.put(Global.RP.w204_w215.W206, "-2");
+                    params.put(Global.RP.w204_w215.W207, "-2");
+                    params.put(Global.RP.w204_w215.W208, "-2");
+                    params.put(Global.RP.w204_w215.W209, "-2");
+                    params.put(Global.RP.w204_w215.W210_1, "-2");
+                    params.put(Global.RP.w204_w215.W210_2, "-2");
+                    params.put(Global.RP.w204_w215.W210_3, "-2");
+                    params.put(Global.RP.w204_w215.W210_4, "-2");
+                    params.put(Global.RP.w204_w215.W210_5, "-2");
+                    params.put(Global.RP.w204_w215.W211, "-2");
+                    params.put(Global.RP.w204_w215.W212, "-2");
+                    params.put(Global.RP.w204_w215.W213, "-2");
+                    params.put(Global.RP.w204_w215.W214, "-2");
+                    params.put(Global.RP.w204_w215.W215, "-2");
+                }
+
                 return params;
             }
         };
@@ -2241,6 +4027,95 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(Q1101_Q1610.Q1610_3, c.getString(c.getColumnIndex("Q1610_3")));
                     params.put(Q1101_Q1610.interviewType, c.getString(c.getColumnIndex("interviewType")));
                     params.put(Q1101_Q1610.currentSection, c.getString(c.getColumnIndex("currentSection")));
+
+                } else {
+
+                    params.put(Q1101_Q1610.study_id, "-2");
+                    params.put(Q1101_Q1610.Q1201_1, "-2");
+                    params.put(Q1101_Q1610.Q1201_2, "-2");
+                    params.put(Q1101_Q1610.Q1201_3, "-2");
+                    params.put(Q1101_Q1610.Q1201_4, "-2");
+                    params.put(Q1101_Q1610.Q1201_5, "-2");
+                    params.put(Q1101_Q1610.Q1201_6, "-2");
+                    params.put(Q1101_Q1610.Q1202, "-2");
+                    params.put(Q1101_Q1610.Q1203, "-2");
+                    params.put(Q1101_Q1610.Q1204, "-2");
+                    params.put(Q1101_Q1610.Q1205, "-2");
+                    params.put(Q1101_Q1610.Q1206_d, "-2");
+                    params.put(Q1101_Q1610.Q1206_m, "-2");
+                    params.put(Q1101_Q1610.Q1206_y, "-2");
+                    params.put(Q1101_Q1610.Q1207, "-2");
+                    params.put(Q1101_Q1610.Q1208, "-2");
+                    params.put(Q1101_Q1610.Q1209, "-2");
+                    params.put(Q1101_Q1610.Q1301, "-2");
+                    params.put(Q1101_Q1610.Q1302, "-2");
+                    params.put(Q1101_Q1610.Q1307, "-2");
+                    params.put(Q1101_Q1610.Q1308, "-2");
+                    params.put(Q1101_Q1610.Q1309, "-2");
+                    params.put(Q1101_Q1610.Q1310, "-2");
+                    params.put(Q1101_Q1610.Q1311, "-2");
+                    params.put(Q1101_Q1610.Q1312, "-2");
+                    params.put(Q1101_Q1610.Q1313, "-2");
+                    params.put(Q1101_Q1610.Q1401, "-2");
+                    params.put(Q1101_Q1610.Q1402, "-2");
+                    params.put(Q1101_Q1610.Q1403, "-2");
+                    params.put(Q1101_Q1610.Q1403_OT, "-2");
+                    params.put(Q1101_Q1610.Q1404, "-2");
+                    params.put(Q1101_Q1610.Q1405, "-2");
+                    params.put(Q1101_Q1610.Q1406, "-2");
+                    params.put(Q1101_Q1610.Q1407, "-2");
+                    params.put(Q1101_Q1610.Q1408, "-2");
+                    params.put(Q1101_Q1610.Q1409, "-2");
+                    params.put(Q1101_Q1610.Q1410, "-2");
+                    params.put(Q1101_Q1610.Q1411, "-2");
+                    params.put(Q1101_Q1610.Q1412, "-2");
+                    params.put(Q1101_Q1610.Q1413, "-2");
+                    params.put(Q1101_Q1610.Q1414_1, "-2");
+                    params.put(Q1101_Q1610.Q1414_2, "-2");
+                    params.put(Q1101_Q1610.Q1414_3, "-2");
+                    params.put(Q1101_Q1610.Q1414_4, "-2");
+                    params.put(Q1101_Q1610.Q1414_5, "-2");
+                    params.put(Q1101_Q1610.Q1414_6, "-2");
+                    params.put(Q1101_Q1610.Q1414_7, "-2");
+                    params.put(Q1101_Q1610.Q1414_8, "-2");
+                    params.put(Q1101_Q1610.Q1414_9, "-2");
+                    params.put(Q1101_Q1610.Q1414_10, "-2");
+                    params.put(Q1101_Q1610.Q1415, "-2");
+                    params.put(Q1101_Q1610.Q1416, "-2");
+                    params.put(Q1101_Q1610.Q1416_OT, "-2");
+                    params.put(Q1101_Q1610.Q1417, "-2");
+                    params.put(Q1101_Q1610.Q1417_OT, "-2");
+                    params.put(Q1101_Q1610.Q1418, "-2");
+                    params.put(Q1101_Q1610.Q1418_OT, "-2");
+                    params.put(Q1101_Q1610.Q1419, "-2");
+                    params.put(Q1101_Q1610.Q1419_OT, "-2");
+                    params.put(Q1101_Q1610.Q1420, "-2");
+                    params.put(Q1101_Q1610.Q1420_OT, "-2");
+                    params.put(Q1101_Q1610.Q1421, "-2");
+                    params.put(Q1101_Q1610.Q1421_OT, "-2");
+                    params.put(Q1101_Q1610.Q1501, "-2");
+                    params.put(Q1101_Q1610.Q1502, "-2");
+                    params.put(Q1101_Q1610.Q1503, "-2");
+                    params.put(Q1101_Q1610.Q1503_OT, "-2");
+                    params.put(Q1101_Q1610.Q1601, "-2");
+                    params.put(Q1101_Q1610.Q1602, "-2");
+                    params.put(Q1101_Q1610.Q1603, "-2");
+                    params.put(Q1101_Q1610.Q1604, "-2");
+                    params.put(Q1101_Q1610.Q1604_OT, "-2");
+                    params.put(Q1101_Q1610.Q1605, "-2");
+                    params.put(Q1101_Q1610.Q1606, "-2");
+                    params.put(Q1101_Q1610.Q1607_1, "-2");
+                    params.put(Q1101_Q1610.Q1607_2, "-2");
+                    params.put(Q1101_Q1610.Q1607_3, "-2");
+                    params.put(Q1101_Q1610.Q1608_1, "-2");
+                    params.put(Q1101_Q1610.Q1608_2, "-2");
+                    params.put(Q1101_Q1610.Q1608_3, "-2");
+                    params.put(Q1101_Q1610.Q1609, "-2");
+                    params.put(Q1101_Q1610.Q1610_1, "-2");
+                    params.put(Q1101_Q1610.Q1610_2, "-2");
+                    params.put(Q1101_Q1610.Q1610_3, "-2");
+                    params.put(Q1101_Q1610.interviewType, "3");
+                    params.put(Q1101_Q1610.currentSection, "-2");
                 }
 
                 if (c2.getCount() > 0) {
@@ -3503,7 +5378,6 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
                             }
                         }
-
                     }
                 }
 

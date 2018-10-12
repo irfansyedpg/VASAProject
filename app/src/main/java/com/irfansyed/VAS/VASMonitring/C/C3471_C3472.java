@@ -74,7 +74,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     int currentSection;
     TextView
-            txt_cap_count;
+        txt_cap_count;
     int count = 1;
     private File output = null;
 
@@ -200,7 +200,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     void value_assignment() {
 
-        C3471   = "-1";
+        C3471 = "-1";
         C3472_1 = "-1";
         C3472_2 = "-1";
         C3472_3 = "-1";
@@ -323,11 +323,9 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3471) == false) {
             return false;
         }
-
         return Gothrough.IamHiden(ll_C3472) != false;
     }
 

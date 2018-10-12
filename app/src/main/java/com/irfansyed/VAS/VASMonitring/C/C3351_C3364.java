@@ -389,43 +389,33 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3351) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3352) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3353) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3354) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3355) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3356) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3357) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3358) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3363) == false) {
             return false;
         }
-
         return Gothrough.IamHiden(ll_C3364) != false;
     }
 

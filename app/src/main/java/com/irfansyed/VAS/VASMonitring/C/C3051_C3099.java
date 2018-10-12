@@ -1372,40 +1372,40 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        C3051    = "-1";
-        C3052    = "-1";
-        C3053    = "-1";
-        C3053a   = "-1";
-        C3054    = "-1";
-        C3055    = "-1";
-        C3056    = "-1";
-        C3057    = "-1";
-        C3058    = "-1";
-        C3059    = "-1";
-        C3060    = "-1";
-        C3061    = "-1";
-        C3062    = "-1";
-        C3063    = "-1";
-        C3064    = "-1";
-        C3065_1  = "-1";
-        C3065_2  = "-1";
-        C3065_3  = "-1";
-        C3065_4  = "-1";
-        C3065_5  = "-1";
-        C3065_6  = "-1";
-        C3065_7  = "-1";
+        C3051 = "-1";
+        C3052 = "-1";
+        C3053 = "-1";
+        C3053a = "-1";
+        C3054 = "-1";
+        C3055 = "-1";
+        C3056 = "-1";
+        C3057 = "-1";
+        C3058 = "-1";
+        C3059 = "-1";
+        C3060 = "-1";
+        C3061 = "-1";
+        C3062 = "-1";
+        C3063 = "-1";
+        C3064 = "-1";
+        C3065_1 = "-1";
+        C3065_2 = "-1";
+        C3065_3 = "-1";
+        C3065_4 = "-1";
+        C3065_5 = "-1";
+        C3065_6 = "-1";
+        C3065_7 = "-1";
         C3065_OT = "-1";
         C3065_DK = "-1";
-        C3067_1  = "-1";
-        C3067_2  = "-1";
-        C3067_3  = "-1";
-        C3067_4  = "-1";
-        C3067_5  = "-1";
-        C3067_6  = "-1";
-        C3067_7  = "-1";
+        C3067_1 = "-1";
+        C3067_2 = "-1";
+        C3067_3 = "-1";
+        C3067_4 = "-1";
+        C3067_5 = "-1";
+        C3067_6 = "-1";
+        C3067_7 = "-1";
         C3067_OT = "-1";
         C3067_DK = "-1";
-        C3066   = "-1";
+        C3066 = "-1";
         C3068 = "-1";
         C3068_OT = "-1";
         C3069 = "-1";
@@ -2137,123 +2137,165 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3051) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3052) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3053) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3053a) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3054) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3055) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3056) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3057) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3058) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3059) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3060) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3061) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3062) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3063) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3064) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3065) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3066) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3067) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3068) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3068_OT) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3069) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3070) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3071) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3072) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3073_1) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3073_2) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3073_3) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3074) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3075) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3076) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3077) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3078) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3079) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3079_OT) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3080) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3081) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3082) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3083) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3084) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3085) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3086) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3087) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3088) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3089) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3090) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3091) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3092) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3093) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3094) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3095) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3096) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3097) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3098) == false) {
             return false;
         }
-
         return Gothrough.IamHiden(ll_C3099) != false;
     }
 
