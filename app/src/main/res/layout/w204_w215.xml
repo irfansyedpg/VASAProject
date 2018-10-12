@@ -493,7 +493,7 @@
                     <EditText
                         android:id="@+id/ed_W215"
                         style="@style/EditText_number"
-                        android:digits="123456789"
+                        android:digits="0123456789"
                         android:maxLength="1"
                         />
 

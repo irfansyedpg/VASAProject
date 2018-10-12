@@ -786,7 +786,15 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_C3019_a) == false && Gothrough.IamHiden(ll_C3019_b) == false && Gothrough.IamHiden(ll_C3019_c) == false) {
+        if (Gothrough.IamHiden(ll_C3019_a) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_C3019_b) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_C3019_c) == false) {
             return false;
         }
 
@@ -798,17 +806,24 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_C3021d) == false && Gothrough.IamHiden(ll_C3021m) == false && Gothrough.IamHiden(ll_C3021y) == false) {
+        if (Gothrough.IamHiden(ll_C3021d) == false) {
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3022) == false;
+        if (Gothrough.IamHiden(ll_C3021m) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_C3021y) == false) {
+            return false;
+        }
+
+        return Gothrough.IamHiden(ll_C3022) != false;
     }
 
     @Override
     public void onBackPressed() {
         globale.interviewExit(this, this, study_id, currentSection = 3);
     }
-
 
 }

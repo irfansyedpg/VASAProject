@@ -235,7 +235,7 @@ the child was delivered: A) and did not fill C3064-C3070→ C3259;    B) and fil
                         android:layout_weight="1"
                         android:background="@color/black_overlay"
                         android:onClick="@{() -> callback.BtnContinue()}"
-                        android:text="@string/next" />
+                        android:text="@string/next"
                         android:textColor="@color/white" />
 
                 </LinearLayout>

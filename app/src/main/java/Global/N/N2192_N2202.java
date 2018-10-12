@@ -262,7 +262,7 @@ public class N2192_N2202 {
         String N2198_2_T = "N2198_2_t";
         String N2198_2_FV = "N2198_2_fv";
         String N2198_3 = "N2198_3";
-        String N2198_DK = "N2198_9";
+        String N2198_DK = "N2198_DK";
         String N2199 = "N2199";
         String N2200 = "N2200";
         String N2201 = "N2201";
@@ -273,7 +273,7 @@ public class N2192_N2202 {
         String N2202_2_T = "N2202_2_t";
         String N2202_2_FV = "N2202_2_fv";
         String N2202_3 = "N2202_3";
-        String N2202_DK = "N2202_9";
+        String N2202_DK = "N2202_DK";
         String STUDYID = "study_id";
     }
 }

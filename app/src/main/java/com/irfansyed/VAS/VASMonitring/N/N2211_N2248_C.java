@@ -890,9 +890,11 @@ public class N2211_N2248_C extends AppCompatActivity {
                             if (!Gothrough.IamHiden(bi.llN2239)) {
                                 return false;
                             }
-                            //ll_N2240
-                            if (!Gothrough.IamHiden(bi.llN2240)) {
-                                return false;
+                            if (bi.rbN22391.isChecked()) {
+                                //ll_N2240
+                                if (!Gothrough.IamHiden(bi.llN2240)) {
+                                    return false;
+                                }
                             }
                             if (!Gothrough.TextHidden(
                                     bi.cbN22405.isChecked() ? bi.edN22405 : null)) {
