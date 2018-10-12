@@ -829,83 +829,84 @@ public class C3251_C3288_C extends AppCompatActivity {
                             if (!Gothrough.IamHiden(bi.llC32672)) {
                                 return false;
                             }
-                        }
-                        //ll_C3268_1
-                        if (!Gothrough.IamHiden(bi.llC32681)) {
-                            return false;
-                        }
-                        //ll_C3268_2
-                        if (!Gothrough.IamHiden(bi.llC32682)) {
-                            return false;
-                        }
-                        //ll_C3269
-                        if (!Gothrough.IamHiden(bi.llC3269)) {
-                            return false;
-                        }
-                        if (!Gothrough.TextHidden(
-                                !bi.rbC32691DK.isChecked() ? bi.edC32692 : null)) {
-                            return false;
-                        }
 
-                        //ll_C3270
-                        if (!Gothrough.IamHiden(bi.llC3270)) {
-                            return false;
-                        }
-
-                        if (bi.rbC32701.isChecked() || bi.rbC32703.isChecked()) {
-                            //ll_C3271_1
-                            if (!Gothrough.IamHiden(bi.llC32711)) {
+                            //ll_C3268_1
+                            if (!Gothrough.IamHiden(bi.llC32681)) {
                                 return false;
                             }
-                            //ll_C3271_2
-                            if (!Gothrough.IamHiden(bi.llC32712)) {
+                            //ll_C3268_2
+                            if (!Gothrough.IamHiden(bi.llC32682)) {
+                                return false;
+                            }
+                            //ll_C3269
+                            if (!Gothrough.IamHiden(bi.llC3269)) {
+                                return false;
+                            }
+                            if (!Gothrough.TextHidden(
+                                    !bi.rbC32691DK.isChecked() ? bi.edC32692 : null)) {
                                 return false;
                             }
 
-                            if (bi.rbC326911.isChecked() || bi.rbC326917.isChecked()) {
-                                //ll_C3272
-                                if (!Gothrough.IamHiden(bi.llC3272)) {
-                                    return false;
-                                }
-                            }
-                            //ll_C3273
-                            if (!Gothrough.IamHiden(bi.llC3273)) {
+                            //ll_C3270
+                            if (!Gothrough.IamHiden(bi.llC3270)) {
                                 return false;
                             }
 
-                            if (bi.rbC32731.isChecked()) {
-                                //ll_C3274
-                                if (!Gothrough.IamHiden(bi.llC3274)) {
+                            if (bi.rbC32701.isChecked() || bi.rbC32703.isChecked()) {
+                                //ll_C3271_1
+                                if (!Gothrough.IamHiden(bi.llC32711)) {
                                     return false;
                                 }
-                                if (!Gothrough.TextHidden(
-                                        !bi.rbC32741DK.isChecked() ? bi.edC32742 : null)) {
+                                //ll_C3271_2
+                                if (!Gothrough.IamHiden(bi.llC32712)) {
                                     return false;
                                 }
-                            } else {
-                                //ll_C3275_1
-                                if (!Gothrough.IamHiden(bi.llC32751)) {
-                                    return false;
-                                }
-                                //ll_C3275_2
-                                if (!Gothrough.IamHiden(bi.llC32752)) {
-                                    return false;
-                                }
-                            }
 
-                            //ll_C3276
-                            if (!Gothrough.IamHiden(bi.llC3276)) {
-                                return false;
-                            }
-
-                            if (!bi.rbC32762.isChecked()) {
-                                //ll_C3277_1
-                                if (!Gothrough.IamHiden(bi.llC32771)) {
+                                if (bi.rbC326911.isChecked() || bi.rbC326917.isChecked()) {
+                                    //ll_C3272
+                                    if (!Gothrough.IamHiden(bi.llC3272)) {
+                                        return false;
+                                    }
+                                }
+                                //ll_C3273
+                                if (!Gothrough.IamHiden(bi.llC3273)) {
                                     return false;
                                 }
-                                //ll_C3277_2
-                                if (!Gothrough.IamHiden(bi.llC32772)) {
+
+                                if (bi.rbC32731.isChecked()) {
+                                    //ll_C3274
+                                    if (!Gothrough.IamHiden(bi.llC3274)) {
+                                        return false;
+                                    }
+                                    if (!Gothrough.TextHidden(
+                                            !bi.rbC32741DK.isChecked() ? bi.edC32742 : null)) {
+                                        return false;
+                                    }
+                                } else {
+                                    //ll_C3275_1
+                                    if (!Gothrough.IamHiden(bi.llC32751)) {
+                                        return false;
+                                    }
+                                    //ll_C3275_2
+                                    if (!Gothrough.IamHiden(bi.llC32752)) {
+                                        return false;
+                                    }
+                                }
+
+                                //ll_C3276
+                                if (!Gothrough.IamHiden(bi.llC3276)) {
                                     return false;
+                                }
+
+                                if (!bi.rbC32762.isChecked()) {
+                                    //ll_C3277_1
+                                    if (!Gothrough.IamHiden(bi.llC32771)) {
+                                        return false;
+                                    }
+                                    //ll_C3277_2
+                                    if (!Gothrough.IamHiden(bi.llC32772)) {
+                                        return false;
+                                    }
                                 }
                             }
                         }
