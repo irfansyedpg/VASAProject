@@ -192,7 +192,7 @@ public class N2211_N2248_C extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == bi.rbN22262.getId()) {
-                    //ClearAllcontrol.ClearAll(bi.llN22271N22372); //ll_N2227_1_N2237_2
+                    ClearAllcontrol.ClearAll(bi.llN22271N22372); //ll_N2227_1_N2237_2
                 }
             }
         });
