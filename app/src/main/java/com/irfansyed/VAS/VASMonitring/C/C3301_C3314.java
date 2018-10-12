@@ -20,6 +20,7 @@ import java.util.regex.Pattern;
 import Global.C.C3001_C3011;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 
 public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -652,39 +653,39 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        C3301 = "000";
-        C3302_1 = "000";
-        C3302_2 = "000";
-        C3302_3 = "000";
-        C3302_4 = "000";
-        C3302_5 = "000";
-        C3302_6 = "000";
-        C3302_7 = "000";
-        C3303 = "000";
-        C3304 = "000";
-        C3305 = "000";
-        C3306_1check = "000";
-        C3306_1 = "000";
-        C3306_2check = "000";
-        C3306_2 = "000";
-        C3307 = "000";
-        C3308 = "000";
-        C3309 = "000";
-        C3310_1 = "000";
-        C3310_2 = "000";
-        C3310_3 = "000";
-        C3310_4 = "000";
-        C3310_5 = "000";
-        C3310_6 = "000";
-        C3310_7 = "000";
-        C3310_8 = "000";
-        C3310_9 = "000";
-        C3310_10 = "000";
-        C3310_11 = "000";
-        C3311 = "000";
-        C3312 = "000";
-        C3313 = "000";
-        C3314 = "000";
+        C3301 = "-1";
+        C3302_1 = "-1";
+        C3302_2 = "-1";
+        C3302_3 = "-1";
+        C3302_4 = "-1";
+        C3302_5 = "-1";
+        C3302_6 = "-1";
+        C3302_7 = "-1";
+        C3303 = "-1";
+        C3304 = "-1";
+        C3305 = "-1";
+        C3306_1check = "-1";
+        C3306_1 = "-1";
+        C3306_2check = "-1";
+        C3306_2 = "-1";
+        C3307 = "-1";
+        C3308 = "-1";
+        C3309 = "-1";
+        C3310_1 = "-1";
+        C3310_2 = "-1";
+        C3310_3 = "-1";
+        C3310_4 = "-1";
+        C3310_5 = "-1";
+        C3310_6 = "-1";
+        C3310_7 = "-1";
+        C3310_8 = "-1";
+        C3310_9 = "-1";
+        C3310_10 = "-1";
+        C3310_11 = "-1";
+        C3311 = "-1";
+        C3312 = "-1";
+        C3313 = "-1";
+        C3314 = "-1";
         STATUS = "0";
 
         if (ed_study_id.getText().toString().length() > 0) {
@@ -1065,7 +1066,7 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_study_id) == false) {
+        if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -1197,9 +1198,7 @@ public class C3301_C3314 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3314) != false;*/
-
-        return true;
+        return Gothrough.IamHiden(ll_C3314) != false;
     }
 
     public boolean validate(final String date) {
