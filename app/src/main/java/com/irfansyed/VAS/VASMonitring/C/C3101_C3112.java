@@ -28,6 +28,7 @@ import java.util.concurrent.TimeUnit;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 
 
 public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, View.OnFocusChangeListener {
@@ -1153,63 +1154,63 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        C3101 = "000";
-        C3102 = "000";
-        C3103 = "000";
-        C3104 = "000";
-        C3105 = "000";
-        C3105_OT = "000";
-        C3106 = "000";
-        C3107_1 = "000";
-        C3107_2 = "000";
-        C3107_3 = "000";
-        C3107_4 = "000";
-        C3107_5 = "000";
-        C3107_6 = "000";
-        C3107_6_OT = "000";
-        C3107_7 = "000";
-        C3107_8 = "000";
-        C3107_9 = "000";
-        C3107_10 = "000";
-        C3107_11 = "000";
-        C3107_12 = "000";
-        C3107_13 = "000";
-        C3107_14 = "000";
-        C3107_15 = "000";
-        C3107_16 = "000";
-        C3107_17 = "000";
-        C3107_18 = "000";
-        C3107_19 = "000";
-        C3107_20 = "000";
-        C3107_21 = "000";
-        C3107_21_OT = "000";
-        C3108 = "000";
-        C3109_1 = "000";
-        C3109_2 = "000";
-        C3109_3 = "000";
-        C3109_4 = "000";
-        C3109_5 = "000";
-        C3109_6 = "000";
-        C3109_7 = "000";
-        C3109_8 = "000";
-        C3109_9 = "000";
-        C3109_10 = "000";
-        C3109_11 = "000";
-        C3109_12 = "000";
-        C3109_13 = "000";
-        C3109_14 = "000";
-        C3110 = "000";
-        C3111 = "000";
-        C3111_1 = "000";
-        C3111_2 = "000";
-        C3111_3 = "000";
-        C3111_4 = "000";
-        C3111_5 = "000";
-        C3111_6 = "000";
-        C3111_7 = "000";
-        C3111_8 = "000";
-        C3111_9 = "000";
-        C3112 = "000";
+        C3101 = "-1";
+        C3102 = "-1";
+        C3103 = "-1";
+        C3104 = "-1";
+        C3105 = "-1";
+        C3105_OT = "-1";
+        C3106 = "-1";
+        C3107_1 = "-1";
+        C3107_2 = "-1";
+        C3107_3 = "-1";
+        C3107_4 = "-1";
+        C3107_5 = "-1";
+        C3107_6 = "-1";
+        C3107_6_OT = "-1";
+        C3107_7 = "-1";
+        C3107_8 = "-1";
+        C3107_9 = "-1";
+        C3107_10 = "-1";
+        C3107_11 = "-1";
+        C3107_12 = "-1";
+        C3107_13 = "-1";
+        C3107_14 = "-1";
+        C3107_15 = "-1";
+        C3107_16 = "-1";
+        C3107_17 = "-1";
+        C3107_18 = "-1";
+        C3107_19 = "-1";
+        C3107_20 = "-1";
+        C3107_21 = "-1";
+        C3107_21_OT = "-1";
+        C3108 = "-1";
+        C3109_1 = "-1";
+        C3109_2 = "-1";
+        C3109_3 = "-1";
+        C3109_4 = "-1";
+        C3109_5 = "-1";
+        C3109_6 = "-1";
+        C3109_7 = "-1";
+        C3109_8 = "-1";
+        C3109_9 = "-1";
+        C3109_10 = "-1";
+        C3109_11 = "-1";
+        C3109_12 = "-1";
+        C3109_13 = "-1";
+        C3109_14 = "-1";
+        C3110 = "-1";
+        C3111 = "-1";
+        C3111_1 = "-1";
+        C3111_2 = "-1";
+        C3111_3 = "-1";
+        C3111_4 = "-1";
+        C3111_5 = "-1";
+        C3111_6 = "-1";
+        C3111_7 = "-1";
+        C3111_8 = "-1";
+        C3111_9 = "-1";
+        C3112 = "-1";
         STATUS = "0";
 
         if (ed_study_id.getText().toString().length() > 0) {
@@ -1821,7 +1822,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_study_id) == false) {
+        if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -1933,11 +1934,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if(Gothrough.IamHiden(ll_C3112) == false){
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_C3112) != false;
     }
 
     @Override

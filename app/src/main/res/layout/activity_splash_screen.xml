@@ -38,18 +38,22 @@ android:background="#EEEEEE"
 
 
 
-    <ImageView
+    <TextView
         android:layout_width="260dp"
         android:layout_height="260dp"
         android:id="@+id/imageView2"
-        android:src="@drawable/uncolor"
+        android:layout_centerHorizontal="true"
 
 
-      android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:layout_marginTop="220dp"
+        android:text="VASA"
+        android:textColor="@color/colorPrimary"
+        android:textSize="55sp"
+        android:textStyle="bold"
 
 
-        />
+        />​
 
 
     <TextView

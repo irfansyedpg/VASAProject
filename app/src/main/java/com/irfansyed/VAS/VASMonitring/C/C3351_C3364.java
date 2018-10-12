@@ -17,6 +17,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import Global.C.C3001_C3011;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 
 public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -270,16 +271,16 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        C3351 = "000";
-        C3352 = "000";
-        C3353 = "000";
-        C3354 = "000";
-        C3355 = "000";
-        C3356 = "000";
-        C3357 = "000";
-        C3358 = "000";
-        C3363 = "000";
-        C3364 = "000";
+        C3351 = "-1";
+        C3352 = "-1";
+        C3353 = "-1";
+        C3354 = "-1";
+        C3355 = "-1";
+        C3356 = "-1";
+        C3357 = "-1";
+        C3358 = "-1";
+        C3363 = "-1";
+        C3364 = "-1";
         STATUS = "0";
 
         if (ed_study_id.getText().toString().length() > 0) {
@@ -385,7 +386,7 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_study_id) == false) {
+        if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
@@ -425,9 +426,7 @@ public class C3351_C3364 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        return Gothrough.IamHiden(ll_C3364) != false;*/
-
-        return true;
+        return Gothrough.IamHiden(ll_C3364) != false;
     }
 
     @Override

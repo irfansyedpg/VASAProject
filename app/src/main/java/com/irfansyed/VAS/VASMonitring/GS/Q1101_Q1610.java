@@ -506,18 +506,24 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
             pattern = Pattern.compile(DATE_PATTERN);
 
-            if (!validate(ed_Q1603.getText().toString().trim())) {
+            if (ll_Q1603.getVisibility() == View.VISIBLE) {
 
-                ed_Q1603.setError("Kindly enter a valid date");
-                ed_Q1603.requestFocus();
-                return;
+                if (!validate(ed_Q1603.getText().toString().trim())) {
+
+                    ed_Q1603.setError("Kindly enter a valid date");
+                    ed_Q1603.requestFocus();
+                    return;
+                }
             }
 
-            if (!validate(ed_Q1606.getText().toString().trim())) {
+            if (ll_Q1606.getVisibility() == View.VISIBLE) {
 
-                ed_Q1606.setError("Kindly enter a valid date");
-                ed_Q1606.requestFocus();
-                return;
+                if (!validate(ed_Q1606.getText().toString().trim())) {
+
+                    ed_Q1606.setError("Kindly enter a valid date");
+                    ed_Q1606.requestFocus();
+                    return;
+                }
             }
 
             value_assignment();
@@ -580,8 +586,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                     Toast.makeText(this, "you have reached Maximaum Number", Toast.LENGTH_LONG).show();
                 }
 
-                int sixx=lst_q1503.size()+1;
-                btn_Q1502.setText("Add Persion No( " +sixx  + ")");
+                int sixx = lst_q1503.size() + 1;
+                btn_Q1502.setText("Add Persion No( " + sixx + ")");
             }
         }
     }
