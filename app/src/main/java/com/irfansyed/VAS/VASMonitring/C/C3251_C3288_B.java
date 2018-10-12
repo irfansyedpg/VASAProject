@@ -5,7 +5,6 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.Other.globale;
@@ -53,16 +52,17 @@ public class C3251_C3288_B extends AppCompatActivity {
         if (count == 1) {
             bi.llC32533E2A.setVisibility(View.VISIBLE); //ll_C3253_3E_2A
 
-            bi.rbC325312.setEnabled(false);
-            bi.rbC325313.setEnabled(false);
+            /*bi.rbC325312.setEnabled(false);
+            bi.rbC325313.setEnabled(false);*/
         } else {
             bi.llC32533E2A.setVisibility(View.GONE); //ll_C3253_3E_2A
+            bi.btnContinue.setEnabled(true);
 
-            if (count == 9) {
+            /*if (count == 9) {
                 bi.btnAddMore.setVisibility(View.GONE);
             }
 
-            /*String c32531 = db.getSpecificData(data.C.C3251_C3288_B.TABLE_NAME, bi.edStudyId.getText().toString(), Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_1);
+            String c32531 = db.getSpecificData(data.C.C3251_C3288_B.TABLE_NAME, bi.edStudyId.getText().toString(), Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_1);
             switch (Integer.valueOf(c32531)) {
                 case 1:
                     bi.rbC325313.setEnabled(false);
@@ -89,14 +89,18 @@ public class C3251_C3288_B extends AppCompatActivity {
             }*/
         }
 
-        bi.rgC32531.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        if (count == 9) {
+            bi.btnAddMore.setVisibility(View.GONE);
+        }
+
+        /*bi.rgC32531.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == bi.rbC325313.getId()) {
                     bi.btnContinue.setEnabled(true);
                 }
             }
-        });
+        });*/
 
     }
 

@@ -125,8 +125,8 @@ public class C3251_C3288_C extends AppCompatActivity {
 //        Inst_4
             if (col_c3251 != null) {
                 for (C3251_C3288_B col_data : col_c3251) {
-                    if ((Integer.valueOf(col_data.getC3253()) > 0 && Integer.valueOf(col_data.getC3253()) <= 3)
-                            || (Integer.valueOf(col_data.getC32532A()) == 1)) {
+                    if (Integer.valueOf(col_data.getC3253()) <= 3
+                            && Integer.valueOf(col_data.getC32532A()) != 1) {
                         flag_c3253 = false;
                         break;
                     }
@@ -227,7 +227,7 @@ public class C3251_C3288_C extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == bi.rbC32662.getId()) {
-                    ClearAllcontrol.ClearAll(bi.llC32671C32672); //ll_C3267_1_C3267_2
+                    ClearAllcontrol.ClearAll(bi.llC32671C32772); //ll_C3267_1_C3277_2
                 }
             }
         });
