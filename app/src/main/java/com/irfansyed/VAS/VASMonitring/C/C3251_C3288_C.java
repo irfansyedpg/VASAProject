@@ -924,9 +924,11 @@ public class C3251_C3288_C extends AppCompatActivity {
                             if (!Gothrough.IamHiden(bi.llC3279)) {
                                 return false;
                             }
-                            //ll_C3280
-                            if (!Gothrough.IamHiden(bi.llC3280)) {
-                                return false;
+                            if (bi.rbC32791.isChecked()) {
+                                //ll_C3280
+                                if (!Gothrough.IamHiden(bi.llC3280)) {
+                                    return false;
+                                }
                             }
                             if (!Gothrough.TextHidden(
                                     bi.cbC32805.isChecked() ? bi.edC32805 : null)) {

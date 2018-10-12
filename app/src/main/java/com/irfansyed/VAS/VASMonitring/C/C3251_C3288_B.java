@@ -45,7 +45,7 @@ public class C3251_C3288_B extends AppCompatActivity {
 
     public void SetContentUI() {
 
-        bi.btnContinue.setEnabled(false);
+//        bi.btnContinue.setEnabled(false);
 
         DBHelper db = new DBHelper(this);
 
@@ -56,7 +56,6 @@ public class C3251_C3288_B extends AppCompatActivity {
             bi.rbC325313.setEnabled(false);*/
         } else {
             bi.llC32533E2A.setVisibility(View.GONE); //ll_C3253_3E_2A
-            bi.btnContinue.setEnabled(true);
 
             /*if (count == 9) {
                 bi.btnAddMore.setVisibility(View.GONE);
