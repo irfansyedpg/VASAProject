@@ -5622,13 +5622,13 @@
     <string  name="rb_C3227_22_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="ed_C3228_1"  translatable="false">		</string>
     <string  name="ed_C3228_2"  translatable="false">		</string>
-    <string  name="rb_C3251_1_1"  translatable="false">	معمول کے مطابق کھانا پینا	</string>
-    <string  name="rb_C3251_1_2"  translatable="false">	بہت کم کھانا پینا 	</string>
-    <string  name="rb_C3251_1_3"  translatable="false">	بلکل کھانا پینا نہیں 	</string>
+    <string  name="rb_C3251_1_1"  translatable="false">معمول</string>
+    <string  name="rb_C3251_1_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_C3251_1_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_C3251_1_DK"  translatable="false">	معلوم نہیں 	</string>
-    <string  name="rb_C3251_2_1"  translatable="false">	معمول کے مطابق کھانا پینا	</string>
-    <string  name="rb_C3251_2_2"  translatable="false">	بہت کم کھانا پینا 	</string>
-    <string  name="rb_C3251_2_3"  translatable="false">	بلکل کھانا پینا نہیں 	</string>
+    <string  name="rb_C3251_2_1"  translatable="false">معمول</string>
+    <string  name="rb_C3251_2_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_C3251_2_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_C3251_2_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3252_1"  translatable="false">	 ہاں	</string>
     <string  name="rb_C3252_2"  translatable="false">	 نہیں ،دیکھ بھال کی ضرورت نہیں تھی،نہ ہی تلاش کی	</string>
