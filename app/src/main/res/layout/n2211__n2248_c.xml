@@ -1249,7 +1249,7 @@ Inst_4: If N2213 ≠ “Health provider” (Never took to a health provider) →
                                         <EditText
                                             android:id="@+id/ed_N2229_2"
                                             style="@style/EditText_Name"
-                                            android:hint="Name of Provider/Facility" />
+                                            android:text="@string/txt_N2229_2" />
 
 
                                     </LinearLayout>
@@ -2158,7 +2158,7 @@ Otherwise → N2247" />
                                             <CheckBox
                                                 android:id="@+id/cb_N2243_6"
                                                 style="@style/CheckBox"
-                                                android:text="@string/other" />
+                                                android:text="@string/cb_N2243_OT" />
 
                                             <CheckBox
                                                 android:id="@+id/cb_N2243_7"
