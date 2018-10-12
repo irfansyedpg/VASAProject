@@ -826,5 +826,4 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
         globale.interviewExit(this, this, study_id, currentSection = 3);
     }
 
-
 }
