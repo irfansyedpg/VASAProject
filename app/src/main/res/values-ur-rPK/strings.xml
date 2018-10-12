@@ -4506,8 +4506,8 @@
     <string  name="txt_C3412"  translatable="false">	گھر کا پتہ کیا ہے  جہاں آپ رہتی  تھیں؟	:	C3412	</string>
     <string  name="txt_C3413"  translatable="false">	جب بیماری شروع ہوئی تو کتنے عرصے سے (آپ /آپ کے رشتہ دار) مسلسل اسی کمیونٹی میں رہ  رہے تھے؟	:	C3413	</string>
     <string  name="txt_C3414"  translatable="false">	ہنگامی صورتحال میں  اس  مقام سے قریبی صحت کی سہولت تک پہنچے کے لیے کتنا وقت لگتا ہے؟	:	C3414	</string>
-    <string name="txt_C3451"  translatable="false">C3451:   (نام ) کی موت سے 12ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے مندرجہ ذیل مسائل میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا	</string>
-    <string name="txt_C3451_h" translatable="false">C3451_h:  تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="txt_C3451"  translatable="false">C3451:   (نام ) کی موت سے  12 ماہ پہلے کیا (گاؤں یا پڑوسیوں) میں لوگوں نے مندرجہ ذیل مسائل میں ایک دوسرے کے ساتھ  مل کر کام کیا جو تمام کمیونٹی یا کمیونٹی کے حصہ کو متاثر کرتا	</string>
+    <string name="txt_C3451_h" translatable="false">C3451_h:  .تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
 
     <string name="txt_C3451_1"  translatable="false">C3451_1: 1.	تعلیم /اسکول</string>
     <string name="txt_C3451_2"  translatable="false">C3451_2: 2.	صحت کی سہولیات /کلینک 	</string>
@@ -5622,13 +5622,13 @@
     <string  name="rb_C3227_22_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
     <string  name="ed_C3228_1"  translatable="false">		</string>
     <string  name="ed_C3228_2"  translatable="false">		</string>
-    <string  name="rb_C3251_1_1"  translatable="false">	معمول کے مطابق کھانا پینا	</string>
-    <string  name="rb_C3251_1_2"  translatable="false">	بہت کم کھانا پینا 	</string>
-    <string  name="rb_C3251_1_3"  translatable="false">	بلکل کھانا پینا نہیں 	</string>
+    <string  name="rb_C3251_1_1"  translatable="false">معمول</string>
+    <string  name="rb_C3251_1_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_C3251_1_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_C3251_1_DK"  translatable="false">	معلوم نہیں 	</string>
-    <string  name="rb_C3251_2_1"  translatable="false">	معمول کے مطابق کھانا پینا	</string>
-    <string  name="rb_C3251_2_2"  translatable="false">	بہت کم کھانا پینا 	</string>
-    <string  name="rb_C3251_2_3"  translatable="false">	بلکل کھانا پینا نہیں 	</string>
+    <string  name="rb_C3251_2_1"  translatable="false">معمول</string>
+    <string  name="rb_C3251_2_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_C3251_2_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_C3251_2_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3252_1"  translatable="false">	 ہاں	</string>
     <string  name="rb_C3252_2"  translatable="false">	 نہیں ،دیکھ بھال کی ضرورت نہیں تھی،نہ ہی تلاش کی	</string>
@@ -5662,12 +5662,12 @@
     <string  name="ed_C3257_3"  translatable="false">		</string>
 
     <string  name="rb_C3258_1_1"  translatable="false">معمول	</string>
-    <string  name="rb_C3258_1_2"  translatable="false">جدید	</string>
-    <string  name="rb_C3258_1_3"  translatable="false">شدید	</string>
+    <string  name="rb_C3258_1_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_C3258_1_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_C3258_1_DK"  translatable="false">معلوم نہیں 	</string>
     <string  name="rb_C3258_2_1"  translatable="false">معمول	</string>
-    <string  name="rb_C3258_2_2"  translatable="false">جدید	</string>
-    <string  name="rb_C3258_2_3"  translatable="false">شدید	</string>
+    <string  name="rb_C3258_2_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_C3258_2_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_C3258_2_DK"  translatable="false">معلوم نہیں 	</string>
     <string  name="rb_C3259_1_1"  translatable="false">سرکاری  ہسپتال</string>
     <string  name="rb_C3259_1_2"  translatable="false">سرکاری مرکز صحت</string>
@@ -5712,33 +5712,33 @@
     <string  name="rb_C3266_1"  translatable="false">ہاں، چھوڑتے وقت زندہ تھی</string>
     <string  name="rb_C3266_2"  translatable="false">نہیں، اسکا صحت فراہم کنندہ کے پاس انتقال  ہو گیا</string>
     <string  name="rb_C3267_1_1"  translatable="false">معمول	</string>
-    <string  name="rb_C3267_1_2"  translatable="false">جدید	</string>
-    <string  name="rb_C3267_1_3"  translatable="false">شدید	</string>
+    <string  name="rb_C3267_1_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_C3267_1_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_C3267_1_DK"  translatable="false">معلوم نہیں	</string>
     <string  name="rb_C3267_2_1"  translatable="false">معمول	</string>
-    <string  name="rb_C3267_2_2"  translatable="false">جدید	</string>
-    <string  name="rb_C3267_2_3"  translatable="false">شدید	</string>
+    <string  name="rb_C3267_2_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_C3267_2_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_C3267_2_DK"  translatable="false">معلوم نہیں	</string>
     <string  name="rb_C3268_1_1"  translatable="false">معمول	</string>
-    <string  name="rb_C3268_1_2"  translatable="false">جدید	</string>
-    <string  name="rb_C3268_1_3"  translatable="false">شدید	</string>
+    <string  name="rb_C3268_1_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_C3268_1_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_C3268_1_DK"  translatable="false">معلوم نہیں	</string>
     <string  name="rb_C3268_2_1"  translatable="false">معمول	</string>
-    <string  name="rb_C3268_2_2"  translatable="false">جدید	</string>
-    <string  name="rb_C3268_2_3"  translatable="false">شدید	</string>
+    <string  name="rb_C3268_2_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_C3268_2_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_C3268_2_DK"  translatable="false">معلوم نہیں	</string>
-    <string  name="rb_C3269_1"  translatable="false">سرکاری  ہسپتال</string>
-    <string  name="rb_C3269_2"  translatable="false">سرکاری مرکز صحت</string>
-    <string  name="rb_C3269_3"  translatable="false">سرکاری صحت کا ادارہ</string>
-    <string  name="rb_C3269_4"  translatable="false">موبائیل کلینک</string>
-    <string  name="rb_C3269_5"  translatable="false">تربیتی CHW، نرس یا دائی (مرکز صحت سے باہر)</string>
-    <string  name="rb_C3269_6"  translatable="false">کوئی اور سرکاری ادارہ</string>
-    <string  name="rb_C3269_7"  translatable="false">نجی ہسپتال</string>
-    <string  name="rb_C3269_8"  translatable="false">نجی ڈاکٹر /کلینک</string>
-    <string  name="rb_C3269_9"  translatable="false">موبائیل کلینک</string>
-    <string  name="rb_C3269_10"  translatable="false">تربیتی CHW، نرس یا دائی (مرکز صحت سے باہر)</string>
-    <string  name="rb_C3269_11"  translatable="false">کوئی اور نجی صحت ادارہ</string>
-    <string  name="rb_C3269_DK"  translatable="false">معلو م نہیں</string>
+    <string  name="rb_C3269_1_1"  translatable="false">سرکاری  ہسپتال</string>
+    <string  name="rb_C3269_1_2"  translatable="false">سرکاری مرکز صحت</string>
+    <string  name="rb_C3269_1_3"  translatable="false">سرکاری صحت کا ادارہ</string>
+    <string  name="rb_C3269_1_4"  translatable="false">موبائیل کلینک</string>
+    <string  name="rb_C3269_1_5"  translatable="false">تربیتی CHW، نرس یا دائی (مرکز صحت سے باہر)</string>
+    <string  name="rb_C3269_1_6"  translatable="false">کوئی اور سرکاری ادارہ</string>
+    <string  name="rb_C3269_1_7"  translatable="false">نجی ہسپتال</string>
+    <string  name="rb_C3269_1_8"  translatable="false">نجی ڈاکٹر /کلینک</string>
+    <string  name="rb_C3269_1_9"  translatable="false">موبائیل کلینک</string>
+    <string  name="rb_C3269_1_10"  translatable="false">تربیتی CHW، نرس یا دائی (مرکز صحت سے باہر)</string>
+    <string  name="rb_C3269_1_11"  translatable="false">کوئی اور نجی صحت ادارہ</string>
+    <string  name="rb_C3269_1_DK"  translatable="false">معلو م نہیں</string>
     <string  name="rb_C3270_1"  translatable="false">ہاں  ، انتقال سے  پہلے پہنچ گیا تھا</string>
     <string  name="rb_C3270_2"  translatable="false">نہیں ،  فراہم کنندہ کے پاس پہنچنے سے پہلے راستے میں  انتقال  ہو گیا تھا</string>
     <string  name="rb_C3270_3"  translatable="false">نہیں،   فراہم کنندہ تک نہیں پہنچ سکے    اور گھر واپس آگئے  یا  دوسرا لائحہ عمل پر عمل کیا</string>
@@ -5770,12 +5770,12 @@
     <string  name="rb_C3276_1"  translatable="false">ہاں، چھوڑتے وقت زندہ تھی</string>
     <string  name="rb_C3276_2"  translatable="false">نہیں، اسکا صحت فراہم کنندہ کے پاس انتقال  ہو گیا</string>
     <string  name="rb_C3277_1_1"  translatable="false">معمول</string>
-    <string  name="rb_C3277_1_2"  translatable="false">جدید	</string>
-    <string  name="rb_C3277_1_3"  translatable="false">شدید	</string>
+    <string  name="rb_C3277_1_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_C3277_1_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_C3277_1_DK"  translatable="false">معلوم نہیں	</string>
     <string  name="rb_C3277_2_1"  translatable="false">معمول	</string>s
-    <string  name="rb_C3277_2_2"  translatable="false">جدید	</string>
-    <string  name="rb_C3277_2_3"  translatable="false">شدید	</string>
+    <string  name="rb_C3277_2_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_C3277_2_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_C3277_2_DK"  translatable="false">معلوم نہیں	</string>
 
     <string  name="rb_C3278_1"  translatable="false">	                                         ہاں 	</string>

@@ -7,9 +7,6 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 
-/**
- * Created by irfansyed on 3/28/2017.
- */
 
 public class ClearAllcontrol {
 

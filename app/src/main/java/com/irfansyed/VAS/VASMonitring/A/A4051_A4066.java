@@ -351,11 +351,11 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_A4052_u_DK
                 || compoundButton.getId() == R.id.rb_A4052_u_RA) {
 
-            ClearAllcontrol.ClearAll(ll_A4052_b);
-        ClearAllcontrol.ClearAll(ll_A4052_c);
+                ClearAllcontrol.ClearAll(ll_A4052_b);
+                ClearAllcontrol.ClearAll(ll_A4052_c);
 
-        ll_A4052_b.setVisibility(View.GONE);
-        ll_A4052_c.setVisibility(View.GONE);
+                ll_A4052_b.setVisibility(View.GONE);
+                ll_A4052_c.setVisibility(View.GONE);
 
 
             if (rb_A4052_u_1.isChecked()) {
@@ -392,11 +392,11 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_A4059_u_DK
                 || compoundButton.getId() == R.id.rb_A4059_u_RA) {
 
-            ClearAllcontrol.ClearAll(ll_A4059_a);
-        ClearAllcontrol.ClearAll(ll_A4059_b);
+                ClearAllcontrol.ClearAll(ll_A4059_a);
+                ClearAllcontrol.ClearAll(ll_A4059_b);
 
-        ll_A4059_a.setVisibility(View.GONE);
-        ll_A4059_b.setVisibility(View.GONE);
+                ll_A4059_a.setVisibility(View.GONE);
+                ll_A4059_b.setVisibility(View.GONE);
 
             if (rb_A4059_u_1.isChecked()) {
                 ll_A4059_a.setVisibility(View.VISIBLE);
@@ -453,13 +453,13 @@ public class A4051_A4066 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_A4064_u_1
                 || compoundButton.getId() == R.id.rb_A4064_u_2
                 || compoundButton.getId() == R.id.rb_A4064_u_DK
-                || compoundButton.getId() == R.id.rb_A4064_u_RA){
+                || compoundButton.getId() == R.id.rb_A4064_u_RA) {
 
             ClearAllcontrol.ClearAll(ll_A4064_a);
-        ClearAllcontrol.ClearAll(ll_A4064_b);
+            ClearAllcontrol.ClearAll(ll_A4064_b);
 
-        ll_A4064_a.setVisibility(View.GONE);
-        ll_A4064_b.setVisibility(View.GONE);
+            ll_A4064_a.setVisibility(View.GONE);
+            ll_A4064_b.setVisibility(View.GONE);
 
             if (rb_A4064_u_1.isChecked()) {
                 ll_A4064_a.setVisibility(View.VISIBLE);
