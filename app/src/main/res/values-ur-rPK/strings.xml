@@ -27,6 +27,7 @@
     <string  name="ra"  translatable="false">جواب دینے سے انکار کردیا</string>
     <string  name="ot"  translatable="false">دیگر</string>
     <string  name="ot_other"  translatable="false">دیگر (وضاحت کریں)</string>
+    <string  name="other"  translatable="false">دیگر </string>
     <string  name="explain"  translatable="false">وضاحت کریں</string>
     <string  name="minutes"  translatable="false">منٹ</string>
     <string  name="hours"  translatable="false">گھنٹے</string>
@@ -1980,8 +1981,8 @@
 
     <string  name="A4005_h"  translatable="false">	اگر ایک سال سے کم مکمل ہے تو 00 لکھیں	</string>
     <string  name="A4006_h"  translatable="false">	"ہاں" لکھیں  اگر جواب دہندہ کو معلوم ہے کہ (نام) کو دونوں لکھنا پڑھنا یا صرف لکھنا یا صرف پڑھنا آتا  تھا  ۔	</string>
-    <string  name="A4011_h"  translatable="false">	لکھیں   “88”  = جواب دینے سے انکار کیا ;   “99”= معلوم  نہیں	</string>
-    <string  name="A4012_h"  translatable="false">	لکھیں   “88”  = جواب دینے سے انکار کیا ;   “99”= معلوم  نہیں	</string>
+    <string  name="A4011_h"  translatable="false">	لکھیں   88  = جواب دینے سے انکار کیا ; 99= معلوم  نہیں	</string>
+    <string  name="A4012_h"  translatable="false">	لکھیں   88  = جواب دینے سے انکار کیا ; 99= معلوم  نہیں	</string>
     <string  name="A4013d_h"  translatable="false">	اگر صرف 30 دن سے کم ہے تودن ریکارڈ کریں۔ اور اگر 24 گھنٹے سے کم ہے تو 00 دن ریکارڈ کریں	</string>
     <string  name="A4013m_h"  translatable="false">	 1-11اگر مہینے تو مہینے ریکارڈ کریں 	</string>
     <string  name="A4013y_h"  translatable="false">	اگر ایک سال یا اس سے زیادہ ہو تو سال ریکارڈ کریں	</string>
@@ -2058,7 +2059,7 @@
     <string  name="A4207_1_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں:      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
     <string  name="A4207_2_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں:      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
     <string  name="A4255_h"  translatable="false">	مزید پوچھیں: کچھ اور ایک سے زیادہ جوابات کی اجازت ہے.	</string>
-    <string  name="A4256_h"  translatable="false">	پڑھیں :"پہلا " اگر ایک یا ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئے. نشان لگائیں  دنوں ،گھنٹوں ،اور منٹوں پر اگر ضرورت ہے مثال کے طور پر 00 دن، '02  گھنٹے، '10  منٹس	</string>
+    <string  name="A4256_h"  translatable="false">	پڑھیں :"پہلا " اگر ایک یا ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئے. نشان لگائیں  دنوں ،گھنٹوں ،اور منٹوں پر اگر ضرورت ہے مثال کے طور پر 00 دن، 02  گھنٹے، 10  منٹس	</string>
     <string  name="A4276_h"  translatable="false">	مزید پوچھیں: کچھ اور ایک سے زیادہ جوابات کی اجازت ہے.	</string>
     <string  name="A4277_h"  translatable="false">	پڑھیں :" کسی بھی صحت فراہم کرنے والے پاس؟ ۔۔"اگر مرحوم ایک سے زیادہ صحت فراہم کرنے والے کے پاس گیا.	</string>
     <string  name="A4278_h"  translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں۔ اگر معلوم نہیں تو "9 "پر نشان لگائیں 	</string>
