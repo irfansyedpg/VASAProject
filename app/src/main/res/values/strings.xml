@@ -1,4 +1,4 @@
-﻿<resources>
+﻿﻿<resources>
     <string name="app_name"  translatable="false">V A S A</string>
 
     <string name="txt_study_id"  translatable="false">Study ID</string>

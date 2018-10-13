@@ -27,6 +27,7 @@
     <string  name="ra"  translatable="false">جواب دینے سے انکار کردیا</string>
     <string  name="ot"  translatable="false">دیگر</string>
     <string  name="ot_other"  translatable="false">دیگر (وضاحت کریں)</string>
+    <string  name="other"  translatable="false">دیگر </string>
     <string  name="explain"  translatable="false">وضاحت کریں</string>
     <string  name="minutes"  translatable="false">منٹ</string>
     <string  name="hours"  translatable="false">گھنٹے</string>
@@ -565,7 +566,7 @@
     <string  name="A4140"  translatable="false">	کیا اس  کی بغل میں کوئی  گلٹی تھی؟	:	A4140	</string>
     <string  name="A4144"  translatable="false">	کیا  اسکی جانگیہ(  ٹانگوں کے بیچ )میں کوئی  گلٹی تھی؟	:	A4144	</string>
     <string  name="A4145"  translatable="false">	کیا  اس کاپورا جسم اکڑا ہوا تھا اور وہ منہ کھولنے کے قابل نہ تھا؟	:	A4145	</string>
-    <string  name="A4146"  translatable="false">	کیا وہ کسی بھی طرح  مفلوج تھا/تھی؟	:	A4146	</string>
+    <string  name="A4146"  translatable="false">	کیا اس کو فالج ہوا تھا؟	:	A4146	</string>
     <string  name="A4147"  translatable="false">	کیا اس کے جسم کا صرف   ایک طرف کا    حصہ مفلوج تھا؟	:	A4147	</string>
     <string  name="A4148"  translatable="false">	جسم کا کونسا   عضو  باز و یا ٹانگ یا جسم کے حصے مفلوج  ہوئے تھے؟	:	A4148	</string>
     <string  name="A4149"  translatable="false">	کیا اس کو   نگلنے میں دشواری تھی؟	:	A4149	</string>
@@ -1980,8 +1981,8 @@
 
     <string  name="A4005_h"  translatable="false">	اگر ایک سال سے کم مکمل ہے تو 00 لکھیں	</string>
     <string  name="A4006_h"  translatable="false">	"ہاں" لکھیں  اگر جواب دہندہ کو معلوم ہے کہ (نام) کو دونوں لکھنا پڑھنا یا صرف لکھنا یا صرف پڑھنا آتا  تھا  ۔	</string>
-    <string  name="A4011_h"  translatable="false">	لکھیں   “88”  = جواب دینے سے انکار کیا ;   “99”= معلوم  نہیں	</string>
-    <string  name="A4012_h"  translatable="false">	لکھیں   “88”  = جواب دینے سے انکار کیا ;   “99”= معلوم  نہیں	</string>
+    <string  name="A4011_h"  translatable="false">	لکھیں   88  = جواب دینے سے انکار کیا ; 99= معلوم  نہیں	</string>
+    <string  name="A4012_h"  translatable="false">	لکھیں   88  = جواب دینے سے انکار کیا ; 99= معلوم  نہیں	</string>
     <string  name="A4013d_h"  translatable="false">	اگر صرف 30 دن سے کم ہے تودن ریکارڈ کریں۔ اور اگر 24 گھنٹے سے کم ہے تو 00 دن ریکارڈ کریں	</string>
     <string  name="A4013m_h"  translatable="false">	 1-11اگر مہینے تو مہینے ریکارڈ کریں 	</string>
     <string  name="A4013y_h"  translatable="false">	اگر ایک سال یا اس سے زیادہ ہو تو سال ریکارڈ کریں	</string>
@@ -4336,7 +4337,7 @@
     <string  name="txt_C3213"  translatable="false">	کیا (نام) کی بغل میں کوئی  گلٹی تھی؟	:	C3213	</string>
     <string  name="txt_C3214"  translatable="false">	کیا (نام) کی جانگیہ(  ٹانگوں کے بیچ )میں کوئی  گلٹی تھی؟	:	C3214	</string>
     <string  name="txt_C3215"  translatable="false">	کیا (اس کا) کا پورا جسم اکڑا ہوا تھا اور وہ منہ کھولنے کے قابل نہ تھا؟	:	C3215	</string>
-    <string  name="txt_C3216"  translatable="false">	کیا وہ کسی بھی طرح  فالج  تھا/تھی؟	:	C3216	</string>
+    <string  name="txt_C3216"  translatable="false">	کیا اس کو فالج ہوا تھا؟	:	C3216	</string>
     <string  name="txt_C3217"  translatable="false">	کیا اس کے جسم کا صرف ایک طرف کا  حصہ فالج تھا؟	:	C3217	</string>
     <string  name="txt_C3218"  translatable="false">	جسم کا کونسا عضو  باز و یا ٹانگ یا جسم کے حصے مفلوج ہوئےتھے؟	:	C3218	</string>
     <string  name="txt_C3219"  translatable="false">	کیا اس کو   نگلنے میں دشواری تھی؟	:	C3219	</string>
