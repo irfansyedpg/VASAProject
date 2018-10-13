@@ -532,21 +532,39 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                     String[] dob_sep = dob.split("/");
                     String[] dod_sep = dod.split("/");
 
-                    if (Integer.valueOf(dod_sep[2]) != 9999 && Integer.valueOf(dob_sep[2]) != 9999 && Integer.valueOf(dob_sep[2]) > Integer.valueOf(dod_sep[2])) {
+                    if (!Integer.valueOf(dob_sep[2]).equals(9999)
+                            && !Integer.valueOf(dod_sep[2]).equals(9999)
+                            && Integer.valueOf(dob_sep[2]) > Integer.valueOf(dod_sep[2])) {
 
-                        ed_Q1603.setError("Date of Birth cannot be greater than Date of Death");
+                        ed_Q1603.setError("Date of Birth Year cannot be greater than Date of Death Year");
+                        ed_Q1603.requestFocus();
+                        return;
+
+                    } else if (Integer.valueOf(dob_sep[2]).equals(Integer.valueOf(dod_sep[2]))
+                            && !Integer.valueOf(dob_sep[1]).equals(99)
+                            && !Integer.valueOf(dod_sep[1]).equals(99)
+                            && Integer.valueOf(dob_sep[1]) > Integer.valueOf(dod_sep[1])) {
+
+                        ed_Q1603.setError("Date of Birth Month cannot be greater than Date of Death Month");
+                        ed_Q1603.requestFocus();
+                        return;
+
+                    } else if (Integer.valueOf(dob_sep[1]).equals(Integer.valueOf(dod_sep[1]))
+                            && !Integer.valueOf(dob_sep[0]).equals(99)
+                            && !Integer.valueOf(dod_sep[0]).equals(99)
+                            && Integer.valueOf(dob_sep[0]) > Integer.valueOf(dod_sep[0])) {
+
+                        ed_Q1603.setError("Date of Birth Day cannot be greater than Date of Death Day");
                         ed_Q1603.requestFocus();
                         return;
                     }
                 }
             }
 
-
-
-
             value_assignment();
 
             if (if_study_id_exsist() == true) {
+
                 Toast.makeText(this, "Study ID Already Exist", Toast.LENGTH_LONG).show();
 
                 ed_study_id.requestFocus();
@@ -559,7 +577,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             DBHelper db = new DBHelper(this);
             Cursor res = db.getData("Q1101_Q1610", study_id);
 
-            if (res.getCount() > 0) {
+            if (res.getCount() > 0)
+
+            {
 
                 res.moveToFirst();
 
@@ -593,7 +613,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 }
             }
 
-        } else if (view.getId() == R.id.btn_Q1502) {
+        } else if (view.getId() == R.id.btn_Q1502)
+
+        {
 
             if (ed_Q1502.getText().toString().trim().length() > 0) {
                 int total = Integer.parseInt(ed_Q1502.getText().toString().trim());
@@ -608,6 +630,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 btn_Q1502.setText("Add Persion No( " + sixx + ")");
             }
         }
+
     }
 
     List<String> lst_q1503 = new ArrayList();
@@ -3210,9 +3233,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         matcher = pattern.matcher(date);
 
-        //String[] date_sep = date.split("/");
+        String[] date_sep = date.split("/");
 
-        if (date.equals("99/99/9999")) {
+        if (!date.equals("") && (date_sep[0].equals("99") || date_sep[1].equals("99") || date_sep[2].equals("9999"))) {
 
             return true;
 
