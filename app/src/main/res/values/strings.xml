@@ -4605,7 +4605,7 @@ Examples of statements for the reading test:
     <string name="A4077_a_h"  translatable="false"><![CDATA[Enter 0-30 days. Less than 1 day or 24 hours = 0 days; 1 week = 7 days &amp; If Don\'t Know  Enter 99\"]]></string>
     <string name="A4077_b"  translatable="false">Enter how long (s)he had a cough in months?</string>
     <string name="A4077_b_h"  translatable="false"><![CDATA[Enter 1-60 Months & if don\'t know Enter 99]]></string>
-    <string name="txt_A4005_h"  translatable="false">If completed less than 1 year at that level, record 0 \nDon't know = 99</string>
+    <string name="A4005_h"  translatable="false">If completed less than 1 year at that level, record 0 \nDon\'t know = 99</string>
     <string name="A4006_h"  translatable="false">Record “yes” if both or either reading or writing is known to the respondent.</string>
     <string name="A4052_b"  translatable="false">A4052_b: Enter how long the fever lasted in days?</string>
     <string name="A4052_c"  translatable="false">A4052_c: Enter how long the fever lasted in months?</string>
@@ -4721,6 +4721,7 @@ Examples of statements for the reading test:
     <string name="next">NEXT SECTION</string>
     <string name="no_car_not_needed_given_or_sought_a4254_n_don_t_know_a4284">No - car not needed , given or sought → A4254   Don\'t know → A4284</string>
     <string name="C3065_hint1"><![CDATA[Inst_2: If no labor/delivery complications: ((C3051≠1 and C3052=9,10) and (C3057≠1 or C3058≠2) and (C3059≠1 or C3060≠2) and C3061≠1 and C3062<12 and C3063≠1) → C3071.]]></string>
+    <string name="enter_1_unit_only_0_30_days_or_1_60_months_nless_than_1_day_or_24_hours_0_days_n1_week_7_days">Enter 1 unit only: 0-30 days or 1-60 months.  Less than 1 day or 24 hours = 0 days.  1 week = 7 days.</string>
 
 
     <!-- Reproductive Urdu TEXT & RESPONSE ENDS -->

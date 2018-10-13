@@ -135,7 +135,7 @@
 
     <string  name="txt_Q1101"  translatable="false">کیا یہ ایچ آئی وی /ایڈز سے متاثر  علاقہ ہے ؟	:	Q1101	</string>
     <string  name="txt_Q1102"  translatable="false">کیا یہ ملیریا سے متاثر  علاقہ ہے؟	:	Q1102	</string>
-    <string  name="txt_Q1103"  translatable="false">کس موسم کے دوران لڑکا /لڑکی کی وفات ہوئی ؟	:	Q1103	</string>
+    <string  name="txt_Q1103"  translatable="false">کس موسم کے دوران متوفی کی وفات ہوئی ؟	:	Q1103	</string>
     <string  name="txt_Q1201"  translatable="false">گھرانے کا پتہ:	Q1201</string>
     <string  name="txt_Q1202"  translatable="false">مرنے والے کا نام (اگر معلوم ہے)	:	Q1202	</string>
     <string  name="txt_Q1203"  translatable="false">مرنے والے کی جنس	:	Q1203	</string>
@@ -2058,7 +2058,7 @@
     <string  name="A4207_1_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں:      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
     <string  name="A4207_2_h"  translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں:      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
     <string  name="A4255_h"  translatable="false">	مزید پوچھیں: کچھ اور ایک سے زیادہ جوابات کی اجازت ہے.	</string>
-    <string  name="A4256_h"  translatable="false">	پڑھیں :"پہلا " اگر ایک یا ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئے. نشان لگائیں  دنوں ،گھنٹوں ،اور منٹوں پر اگر ضرورت ہے مثال کے طور پر 00 دن، '02  گھنٹے، '10  منٹس	</string>
+    <string  name="A4256_h"  translatable="false">	پڑھیں :"پہلا " اگر ایک یا ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئے. نشان لگائیں  دنوں ،گھنٹوں ،اور منٹوں پر اگر ضرورت ہے مثال کے طور پر 00 دن، 02  گھنٹے، 10  منٹس	</string>
     <string  name="A4276_h"  translatable="false">	مزید پوچھیں: کچھ اور ایک سے زیادہ جوابات کی اجازت ہے.	</string>
     <string  name="A4277_h"  translatable="false">	پڑھیں :" کسی بھی صحت فراہم کرنے والے پاس؟ ۔۔"اگر مرحوم ایک سے زیادہ صحت فراہم کرنے والے کے پاس گیا.	</string>
     <string  name="A4278_h"  translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں۔ اگر معلوم نہیں تو "9 "پر نشان لگائیں 	</string>

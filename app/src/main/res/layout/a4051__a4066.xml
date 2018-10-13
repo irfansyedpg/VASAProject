@@ -114,7 +114,7 @@
                     <TextView
                         android:id="@+id/A4052_u_h"
                         style="@style/TextView_Hint"
-                        android:text="Enter 1 unit only: 0-30 days or 1-60 months. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days." />
+                        android:text="@string/enter_1_unit_only_0_30_days_or_1_60_months_nless_than_1_day_or_24_hours_0_days_n1_week_7_days" />
 
                     <TextView
                         style="@style/TextView_Hint"
