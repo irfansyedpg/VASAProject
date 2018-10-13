@@ -207,6 +207,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
         rb_W207_2.setOnCheckedChangeListener(this);
         rb_W208_1.setOnCheckedChangeListener(this);
         rb_W208_2.setOnCheckedChangeListener(this);
+
         rb_W209_1.setOnCheckedChangeListener(this);
         rb_W209_2.setOnCheckedChangeListener(this);
 
@@ -902,10 +903,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
     }
 
     @Override
-    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
-
-
-    {
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
         if (buttonView.getId() == R.id.rb_W204_1 || buttonView.getId() == R.id.rb_W204_2) {
             if (rb_W204_1.isChecked()) {
@@ -1015,6 +1013,21 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                 ll_W210.setVisibility(View.VISIBLE);
 
 
+            }
+
+        }
+        
+        if (buttonView.getId() == R.id.rb_W209_1
+                || buttonView.getId() == R.id.rb_W209_2) {
+
+            if (rb_W209_2.isChecked()) {
+
+                ClearAllcontrol.ClearAll(ll_W210);
+                ll_W210.setVisibility(View.GONE);
+
+            } else {
+
+                ll_W210.setVisibility(View.VISIBLE);
             }
 
         }
