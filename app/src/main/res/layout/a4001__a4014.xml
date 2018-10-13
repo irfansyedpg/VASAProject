@@ -249,7 +249,7 @@
                     <TextView
                         android:id="@+id/A4005_h"
                         style="@style/TextView_Hint"
-                        android:text="@string/A4005_h" />
+                        android:text="@string/txt_A4005_h" />
 
                     <TextView
                         style="@style/TextView_Hint"
