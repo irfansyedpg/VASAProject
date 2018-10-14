@@ -2119,41 +2119,388 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(Global.RP.w204_w215.W215, "-2");
                 }
 
-
-                if (c19.getCount() > 0) {
+                if (c19 != null && c19.getCount() > 0) {
 
                     c19.moveToFirst();
 
-                    for (int i = 0; i < c19.getCount(); i++) {
+                    for (int j = 0; j < c19.getCount(); j++) {
 
-                        try {
+                        if (j == 0) {
+                            try {
+                                JSONObject p1 = new JSONObject();
+                                p1.put("W17_1", c19.getString(c19.getColumnIndex("W17")));
+                                p1.put("W18_1", c19.getString(c19.getColumnIndex("W18")));
+                                p1.put("W19_1", c19.getString(c19.getColumnIndex("W19")));
+                                p1.put("W21_1", c19.getString(c19.getColumnIndex("W21")));
+                                p1.put("W22_1", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p1", String.valueOf(p1));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
 
-                            JSONObject round_one = new JSONObject();
-                            String W17, W18, W19, W21, W22;
+                        if (j == 1) {
+                            try {
+                                JSONObject p2 = new JSONObject();
+                                p2.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p2.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p2.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p2.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p2.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p2", String.valueOf(p2));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
 
-                            W17 = c19.getString(c19.getColumnIndex("W17"));
-                            W18 = c19.getString(c19.getColumnIndex("W18"));
-                            W19 = c19.getString(c19.getColumnIndex("W19"));
-                            W21 = c19.getString(c19.getColumnIndex("W21"));
-                            W22 = c19.getString(c19.getColumnIndex("W22"));
+                        if (j == 2) {
+                            try {
+                                JSONObject p3 = new JSONObject();
+                                p3.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p3.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p3.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p3.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p3.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p3", String.valueOf(p3));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
 
-                            round_one.put("W17", W17);
-                            round_one.put("W18", W18);
-                            round_one.put("W19", W19);
-                            round_one.put("W21", W21);
-                            round_one.put("W22", W22);
+                        if (j == 3) {
+                            try {
+                                JSONObject p4 = new JSONObject();
+                                p4.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p4.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p4.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p4.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p4.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p4", String.valueOf(p4));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
 
-                            params.put("round_one", String.valueOf(round_one));
-                            c19.moveToNext();
+                        if (j == 4) {
+                            try {
+                                JSONObject p5 = new JSONObject();
+                                p5.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p5.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p5.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p5.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p5.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p5", String.valueOf(p5));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
 
-                        } catch (JSONException e) {
+                        if (j == 5) {
+                            try {
+                                JSONObject p6 = new JSONObject();
+                                p6.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p6.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p6.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p6.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p6.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p6", String.valueOf(p6));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
 
-                            e.printStackTrace();
+                        if (j == 6) {
+                            try {
+                                JSONObject p7 = new JSONObject();
+                                p7.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p7.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p7.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p7.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p7.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p7", String.valueOf(p7));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
 
+                        if (j == 7) {
+                            try {
+                                JSONObject p8 = new JSONObject();
+                                p8.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p8.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p8.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p8.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p8.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p8", String.valueOf(p8));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 8) {
+                            try {
+                                JSONObject p9 = new JSONObject();
+                                p9.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p9.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p9.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p9.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p9.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p9", String.valueOf(p9));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 9) {
+                            try {
+                                JSONObject p10 = new JSONObject();
+                                p10.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p10.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p10.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p10.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p10.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p10", String.valueOf(p10));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 10) {
+                            try {
+                                JSONObject p11 = new JSONObject();
+                                p11.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p11.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p11.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p11.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p11.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p11", String.valueOf(p11));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 11) {
+                            try {
+                                JSONObject p12 = new JSONObject();
+                                p12.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p12.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p12.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p12.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p12.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p12", String.valueOf(p12));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 12) {
+                            try {
+                                JSONObject p13 = new JSONObject();
+                                p13.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p13.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p13.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p13.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p13.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p13", String.valueOf(p13));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 13) {
+                            try {
+                                JSONObject p14 = new JSONObject();
+                                p14.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p14.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p14.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p14.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p14.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p14", String.valueOf(p14));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 14) {
+                            try {
+                                JSONObject p15 = new JSONObject();
+                                p15.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p15.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p15.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p15.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p15.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p15", String.valueOf(p15));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 15) {
+                            try {
+                                JSONObject p16 = new JSONObject();
+                                p16.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p16.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p16.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p16.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p16.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p16", String.valueOf(p16));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 16) {
+                            try {
+                                JSONObject p17 = new JSONObject();
+                                p17.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p17.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p17.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p17.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p17.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p17", String.valueOf(p17));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 17) {
+                            try {
+                                JSONObject p18 = new JSONObject();
+                                p18.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p18.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p18.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p18.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p18.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p18", String.valueOf(p18));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 18) {
+                            try {
+                                JSONObject p19 = new JSONObject();
+                                p19.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p19.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p19.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p19.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p19.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p19", String.valueOf(p19));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 19) {
+                            try {
+                                JSONObject p20 = new JSONObject();
+                                p20.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p20.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p20.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p20.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p20.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p20", String.valueOf(p20));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 20) {
+                            try {
+                                JSONObject p21 = new JSONObject();
+                                p21.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p21.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p21.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p21.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p21.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p21", String.valueOf(p21));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 21) {
+                            try {
+                                JSONObject p22 = new JSONObject();
+                                p22.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p22.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p22.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p22.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p22.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p22", String.valueOf(p22));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 22) {
+                            try {
+                                JSONObject p23 = new JSONObject();
+                                p23.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p23.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p23.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p23.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p23.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p23", String.valueOf(p23));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 23) {
+                            try {
+                                JSONObject p24 = new JSONObject();
+                                p24.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p24.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p24.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p24.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p24.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p24", String.valueOf(p24));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 24) {
+                            try {
+                                JSONObject p25 = new JSONObject();
+                                p25.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p25.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p25.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p25.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p25.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p25", String.valueOf(p25));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
                         }
                     }
                 }
-
 
                 return params;
             }
@@ -2219,7 +2566,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                 Cursor c11 = db.getData("C3251_C3288_A_C", study_id);
                 Cursor c12 = db.getData("C3251_C3288_B", study_id);
                 Cursor c13 = db.getData("w204_w215", study_id);
-                Cursor c18 = db.getData("w216_w222", study_id);
+                Cursor c19 = db.getData("w216_w222", study_id);
 
                 params.put("table1", "q1101_q1610");
                 params.put("table2", "c3001_c3011");
@@ -2234,7 +2581,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                 params.put("table11", "c3251_c3288_a_c");
                 params.put("table12", "c3251_c3288_b");
                 params.put("table13", "w204_w215");
-                params.put("table18", "w216_w222");
+                params.put("table19", "w216_w222");
 
                 if (c.getCount() > 0) {
 
@@ -3920,22 +4267,22 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                 }*/
 
 
-                if (c18.getCount() > 0) {
+                if (c19 != null && c19.getCount() > 0) {
 
-                    c18.moveToFirst();
+                    c19.moveToFirst();
 
-                    for (int j = 0; j < c18.getCount(); j++) {
+                    for (int j = 0; j < c19.getCount(); j++) {
 
                         if (j == 0) {
                             try {
                                 JSONObject p1 = new JSONObject();
-                                p1.put("W17_1", c18.getString(c18.getColumnIndex("W17")));
-                                p1.put("W18_1", c18.getString(c18.getColumnIndex("W18")));
-                                p1.put("W19_1", c18.getString(c18.getColumnIndex("W19")));
-                                p1.put("W21_1", c18.getString(c18.getColumnIndex("W21")));
-                                p1.put("W22_1", c18.getString(c18.getColumnIndex("W22")));
+                                p1.put("W17_1", c19.getString(c19.getColumnIndex("W17")));
+                                p1.put("W18_1", c19.getString(c19.getColumnIndex("W18")));
+                                p1.put("W19_1", c19.getString(c19.getColumnIndex("W19")));
+                                p1.put("W21_1", c19.getString(c19.getColumnIndex("W21")));
+                                p1.put("W22_1", c19.getString(c19.getColumnIndex("W22")));
                                 params.put("p1", String.valueOf(p1));
-                                c18.moveToNext();
+                                c19.moveToNext();
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
@@ -3944,13 +4291,13 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         if (j == 1) {
                             try {
                                 JSONObject p2 = new JSONObject();
-                                p2.put("W17_2", c18.getString(c18.getColumnIndex("W17")));
-                                p2.put("W18_2", c18.getString(c18.getColumnIndex("W18")));
-                                p2.put("W19_2", c18.getString(c18.getColumnIndex("W19")));
-                                p2.put("W21_2", c18.getString(c18.getColumnIndex("W21")));
-                                p2.put("W22_2", c18.getString(c18.getColumnIndex("W22")));
+                                p2.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p2.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p2.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p2.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p2.put("W22", c19.getString(c19.getColumnIndex("W22")));
                                 params.put("p2", String.valueOf(p2));
-                                c18.moveToNext();
+                                c19.moveToNext();
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
@@ -3959,21 +4306,347 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         if (j == 2) {
                             try {
                                 JSONObject p3 = new JSONObject();
-                                p3.put("W17_3", c18.getString(c18.getColumnIndex("W17")));
-                                p3.put("W18_3", c18.getString(c18.getColumnIndex("W18")));
-                                p3.put("W19_3", c18.getString(c18.getColumnIndex("W19")));
-                                p3.put("W21_3", c18.getString(c18.getColumnIndex("W21")));
-                                p3.put("W22_3", c18.getString(c18.getColumnIndex("W22")));
+                                p3.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p3.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p3.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p3.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p3.put("W22", c19.getString(c19.getColumnIndex("W22")));
                                 params.put("p3", String.valueOf(p3));
-                                c18.moveToNext();
+                                c19.moveToNext();
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
                         }
 
+                        if (j == 3) {
+                            try {
+                                JSONObject p4 = new JSONObject();
+                                p4.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p4.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p4.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p4.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p4.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p4", String.valueOf(p4));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
 
+                        if (j == 4) {
+                            try {
+                                JSONObject p5 = new JSONObject();
+                                p5.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p5.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p5.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p5.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p5.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p5", String.valueOf(p5));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
 
+                        if (j == 5) {
+                            try {
+                                JSONObject p6 = new JSONObject();
+                                p6.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p6.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p6.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p6.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p6.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p6", String.valueOf(p6));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
 
+                        if (j == 6) {
+                            try {
+                                JSONObject p7 = new JSONObject();
+                                p7.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p7.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p7.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p7.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p7.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p7", String.valueOf(p7));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 7) {
+                            try {
+                                JSONObject p8 = new JSONObject();
+                                p8.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p8.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p8.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p8.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p8.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p8", String.valueOf(p8));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 8) {
+                            try {
+                                JSONObject p9 = new JSONObject();
+                                p9.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p9.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p9.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p9.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p9.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p9", String.valueOf(p9));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 9) {
+                            try {
+                                JSONObject p10 = new JSONObject();
+                                p10.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p10.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p10.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p10.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p10.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p10", String.valueOf(p10));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 10) {
+                            try {
+                                JSONObject p11 = new JSONObject();
+                                p11.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p11.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p11.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p11.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p11.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p11", String.valueOf(p11));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 11) {
+                            try {
+                                JSONObject p12 = new JSONObject();
+                                p12.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p12.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p12.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p12.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p12.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p12", String.valueOf(p12));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 12) {
+                            try {
+                                JSONObject p13 = new JSONObject();
+                                p13.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p13.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p13.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p13.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p13.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p13", String.valueOf(p13));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 13) {
+                            try {
+                                JSONObject p14 = new JSONObject();
+                                p14.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p14.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p14.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p14.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p14.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p14", String.valueOf(p14));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 14) {
+                            try {
+                                JSONObject p15 = new JSONObject();
+                                p15.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p15.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p15.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p15.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p15.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p15", String.valueOf(p15));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 15) {
+                            try {
+                                JSONObject p16 = new JSONObject();
+                                p16.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p16.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p16.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p16.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p16.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p16", String.valueOf(p16));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 16) {
+                            try {
+                                JSONObject p17 = new JSONObject();
+                                p17.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p17.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p17.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p17.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p17.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p17", String.valueOf(p17));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 17) {
+                            try {
+                                JSONObject p18 = new JSONObject();
+                                p18.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p18.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p18.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p18.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p18.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p18", String.valueOf(p18));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 18) {
+                            try {
+                                JSONObject p19 = new JSONObject();
+                                p19.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p19.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p19.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p19.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p19.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p19", String.valueOf(p19));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 19) {
+                            try {
+                                JSONObject p20 = new JSONObject();
+                                p20.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p20.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p20.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p20.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p20.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p20", String.valueOf(p20));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 20) {
+                            try {
+                                JSONObject p21 = new JSONObject();
+                                p21.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p21.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p21.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p21.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p21.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p21", String.valueOf(p21));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 21) {
+                            try {
+                                JSONObject p22 = new JSONObject();
+                                p22.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p22.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p22.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p22.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p22.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p22", String.valueOf(p22));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 22) {
+                            try {
+                                JSONObject p23 = new JSONObject();
+                                p23.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p23.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p23.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p23.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p23.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p23", String.valueOf(p23));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 23) {
+                            try {
+                                JSONObject p24 = new JSONObject();
+                                p24.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p24.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p24.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p24.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p24.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p24", String.valueOf(p24));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 24) {
+                            try {
+                                JSONObject p25 = new JSONObject();
+                                p25.put("W17", c19.getString(c19.getColumnIndex("W17")));
+                                p25.put("W18", c19.getString(c19.getColumnIndex("W18")));
+                                p25.put("W19", c19.getString(c19.getColumnIndex("W19")));
+                                p25.put("W21", c19.getString(c19.getColumnIndex("W21")));
+                                p25.put("W22", c19.getString(c19.getColumnIndex("W22")));
+                                params.put("p25", String.valueOf(p25));
+                                c19.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
                     }
                 }
 
