@@ -202,9 +202,6 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
     }
 
 
-
-
-
     public void upload_N(final String study_id) {
 
         final String ROOT_URL = "http://192.168.1.142/sm/Welcome/collect_N";
@@ -266,6 +263,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                 Cursor c16 = db.getData("N2321_N2322", study_id);
                 Cursor c17 = db.getData("N2211_N2248_B", study_id);
                 Cursor c18 = db.getData("w204_w215", study_id);
+                Cursor c19 = db.getData("w216_w222", study_id);
 
                 params.put("table1", "q1101_q1610");
                 params.put("table2", "n2001_n2011");
@@ -285,6 +283,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                 params.put("table16", "n2321_n2322");
                 params.put("table17", "n2211_n2248_b");
                 params.put("table18", "w204_w215");
+                params.put("table19", "w216_w222");
 
                 if (c.getCount() > 0) {
 
@@ -2120,6 +2119,42 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(Global.RP.w204_w215.W215, "-2");
                 }
 
+
+                if (c19.getCount() > 0) {
+
+                    c19.moveToFirst();
+
+                    for (int i = 0; i < c19.getCount(); i++) {
+
+                        try {
+
+                            JSONObject round_one = new JSONObject();
+                            String W17, W18, W19, W21, W22;
+
+                            W17 = c19.getString(c19.getColumnIndex("W17"));
+                            W18 = c19.getString(c19.getColumnIndex("W18"));
+                            W19 = c19.getString(c19.getColumnIndex("W19"));
+                            W21 = c19.getString(c19.getColumnIndex("W21"));
+                            W22 = c19.getString(c19.getColumnIndex("W22"));
+
+                            round_one.put("W17", W17);
+                            round_one.put("W18", W18);
+                            round_one.put("W19", W19);
+                            round_one.put("W21", W21);
+                            round_one.put("W22", W22);
+
+                            params.put("round_one", String.valueOf(round_one));
+                            c19.moveToNext();
+
+                        } catch (JSONException e) {
+
+                            e.printStackTrace();
+
+                        }
+                    }
+                }
+
+
                 return params;
             }
         };
@@ -2129,7 +2164,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_C(final String study_id) {
 
-        final String ROOT_URL = "http://192.168.1.12/sm/Welcome/collect_C";
+        final String ROOT_URL = "http://192.168.1.14/sm/Welcome/collect_C";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -2184,6 +2219,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                 Cursor c11 = db.getData("C3251_C3288_A_C", study_id);
                 Cursor c12 = db.getData("C3251_C3288_B", study_id);
                 Cursor c13 = db.getData("w204_w215", study_id);
+                Cursor c18 = db.getData("w216_w222", study_id);
 
                 params.put("table1", "q1101_q1610");
                 params.put("table2", "c3001_c3011");
@@ -2198,6 +2234,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                 params.put("table11", "c3251_c3288_a_c");
                 params.put("table12", "c3251_c3288_b");
                 params.put("table13", "w204_w215");
+                params.put("table18", "w216_w222");
 
                 if (c.getCount() > 0) {
 
@@ -3828,6 +3865,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(Global.RP.w204_w215.W213, c13.getString(c13.getColumnIndex("W213")));
                     params.put(Global.RP.w204_w215.W214, c13.getString(c13.getColumnIndex("W214")));
                     params.put(Global.RP.w204_w215.W215, c13.getString(c13.getColumnIndex("W215")));
+
                 } else {
 
                     params.put(Global.RP.w204_w215.W201_d, "-2");
@@ -3853,6 +3891,92 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(Global.RP.w204_w215.W215, "-2");
                 }
 
+                /*if (c14.getCount() > 0) {
+
+                    c14.moveToFirst();
+
+                    //Map<String, String> data = new HashMap<String, String>();
+
+                    //ArrayList<HashMap<String, String>> data = new ArrayList<HashMap<String, String>>();
+
+                    ArrayList data = new ArrayList();
+
+                    for (int i = 0; i < c14.getCount(); i++) {
+
+                       HashMap hashmap = new HashMap<String, String>();
+
+                        hashmap.put("W17", c14.getString(c14.getColumnIndex("W17")));
+                        hashmap.put("W18", c14.getString(c14.getColumnIndex("W18")));
+                        hashmap.put("W19", c14.getString(c14.getColumnIndex("W19")));
+                        hashmap.put("W21", c14.getString(c14.getColumnIndex("W21")));
+                        hashmap.put("W22", c14.getString(c14.getColumnIndex("W22")));
+
+                        data.add(hashmap);
+
+                        c14.moveToNext();
+                    }
+
+                    params.put("data", String.valueOf(data));
+                }*/
+
+
+                if (c18.getCount() > 0) {
+
+                    c18.moveToFirst();
+
+                    for (int j = 0; j < c18.getCount(); j++) {
+
+                        if (j == 0) {
+                            try {
+                                JSONObject p1 = new JSONObject();
+                                p1.put("W17_1", c18.getString(c18.getColumnIndex("W17")));
+                                p1.put("W18_1", c18.getString(c18.getColumnIndex("W18")));
+                                p1.put("W19_1", c18.getString(c18.getColumnIndex("W19")));
+                                p1.put("W21_1", c18.getString(c18.getColumnIndex("W21")));
+                                p1.put("W22_1", c18.getString(c18.getColumnIndex("W22")));
+                                params.put("p1", String.valueOf(p1));
+                                c18.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 1) {
+                            try {
+                                JSONObject p2 = new JSONObject();
+                                p2.put("W17_2", c18.getString(c18.getColumnIndex("W17")));
+                                p2.put("W18_2", c18.getString(c18.getColumnIndex("W18")));
+                                p2.put("W19_2", c18.getString(c18.getColumnIndex("W19")));
+                                p2.put("W21_2", c18.getString(c18.getColumnIndex("W21")));
+                                p2.put("W22_2", c18.getString(c18.getColumnIndex("W22")));
+                                params.put("p2", String.valueOf(p2));
+                                c18.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        if (j == 2) {
+                            try {
+                                JSONObject p3 = new JSONObject();
+                                p3.put("W17_3", c18.getString(c18.getColumnIndex("W17")));
+                                p3.put("W18_3", c18.getString(c18.getColumnIndex("W18")));
+                                p3.put("W19_3", c18.getString(c18.getColumnIndex("W19")));
+                                p3.put("W21_3", c18.getString(c18.getColumnIndex("W21")));
+                                p3.put("W22_3", c18.getString(c18.getColumnIndex("W22")));
+                                params.put("p3", String.valueOf(p3));
+                                c18.moveToNext();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+
+
+
+                    }
+                }
+
                 return params;
             }
         };
@@ -3862,7 +3986,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_A(final String study_id) {
 
-        final String ROOT_URL = "http://10.199.28.86/sm/Welcome/collect_A";
+        final String ROOT_URL = "http://192.168.1.142/sm/Welcome/collect_A";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 

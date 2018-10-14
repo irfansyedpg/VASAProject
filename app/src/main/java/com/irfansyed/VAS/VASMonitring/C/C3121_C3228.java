@@ -5628,9 +5628,6 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         if (Gothrough.IamHiden(ll_C3121) == false) {
             return false;
         }
-        if (Gothrough.IamHiden(ll_C3122) == false) {
-            return false;
-        }
         if (Gothrough.IamHiden(ll_C3123_u) == false) {
             return false;
         }
@@ -5794,9 +5791,6 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
         if (Gothrough.IamHiden(ll_C3161) == false) {
-            return false;
-        }
-        if (Gothrough.IamHiden(ll_C3162) == false) {
             return false;
         }
         if (Gothrough.IamHiden(ll_C3163_u) == false) {
