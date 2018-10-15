@@ -70,6 +70,7 @@ public class N2311_N2317 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
+                finish();
                 startActivity(new Intent(this, N2321_N2322.class)
                         .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
