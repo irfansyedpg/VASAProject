@@ -623,6 +623,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                     show_dailuge_Q1503();
                 } else {
                     Toast.makeText(this, "you have reached Maximaum Number", Toast.LENGTH_LONG).show();
+                    return;
                 }
 
                 int sixx = lst_q1503.size() + 1;
@@ -1846,17 +1847,14 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_Q1602_2
                 || compoundButton.getId() == R.id.rb_Q1602_DK) {
 
-            ClearAllcontrol.ClearAll(ll_Q1603);
-            ll_Q1603.setVisibility(View.GONE);
-
-            if (rb_Q1602_1.isChecked() || rb_Q1602_DK.isChecked()) {
-
-                ll_Q1603.setVisibility(View.VISIBLE);
-
-            } else {
+            if (rb_Q1602_2.isChecked() || rb_Q1602_DK.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_Q1603);
                 ll_Q1603.setVisibility(View.GONE);
+
+            } else {
+
+                ll_Q1603.setVisibility(View.VISIBLE);
             }
         }
 
@@ -3036,9 +3034,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_Q1502) == false) {
-            return false;
-        }
+
 
         if (Gothrough.IamHiden(ll_Q1601) == false) {
             return false;

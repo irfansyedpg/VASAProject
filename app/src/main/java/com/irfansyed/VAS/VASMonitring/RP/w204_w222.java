@@ -15,6 +15,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.santalu.widget.MaskEditText;
 
@@ -108,6 +109,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
             W215;
 
     //endregion
+    int currentSection;
     List<String> lst_w17 = new ArrayList();
     List<String> lst_w18 = new ArrayList();
     List<String> lst_w19 = new ArrayList();
@@ -1000,21 +1002,20 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
 
         if (buttonView.getId() == R.id.rb_W208_1 || buttonView.getId() == R.id.rb_W208_2) {
+
             if (rb_W208_2.isChecked()) {
-                ll_W209.setVisibility(View.GONE);
-                ll_W210.setVisibility(View.GONE);
+
                 ClearAllcontrol.ClearAll(ll_W209);
                 ClearAllcontrol.ClearAll(ll_W210);
-            } else if (rb_W208_1.isChecked())
 
-            {
+                ll_W209.setVisibility(View.GONE);
+                ll_W210.setVisibility(View.GONE);
+
+            } else if (rb_W208_1.isChecked()) {
 
                 ll_W209.setVisibility(View.VISIBLE);
                 ll_W210.setVisibility(View.VISIBLE);
-
-
             }
-
         }
         
         if (buttonView.getId() == R.id.rb_W209_1
@@ -1070,8 +1071,11 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
 
         }
+    }
 
-
+    @Override
+    public void onBackPressed() {
+        globale.interviewExit(this, this, study_id, currentSection = 20);
     }
 }
 

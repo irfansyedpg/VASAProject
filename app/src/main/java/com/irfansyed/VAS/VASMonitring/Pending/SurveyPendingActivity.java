@@ -27,6 +27,7 @@ import com.irfansyed.VAS.VASMonitring.C.C3351_C3364;
 import com.irfansyed.VAS.VASMonitring.C.C3401_C3457;
 import com.irfansyed.VAS.VASMonitring.C.C3471_C3472;
 import com.irfansyed.VAS.VASMonitring.R;
+import com.irfansyed.VAS.VASMonitring.RP.w204_w222;
 
 import java.util.Collections;
 import java.util.List;
@@ -193,6 +194,13 @@ class SurveyPendingCustomAdapter extends RecyclerView.Adapter {
                             if(curentSection == 13){
 
                                 intent= new Intent(mContext, C3471_C3472.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 20){
+
+                                intent= new Intent(mContext, w204_w222.class);
                                 intent.putExtra("study_id", study_id);
                                 mContext.startActivity(intent);
                             }
