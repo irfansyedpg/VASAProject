@@ -1,6 +1,7 @@
 package com.irfansyed.VAS.VASMonitring.C;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -18,7 +19,7 @@ import static com.irfansyed.VAS.VASMonitring.C.C3251_C3288_A.c3251A_ID;
 
 public class C3251_C3288_B extends AppCompatActivity {
 
-    int currentSection;
+    int currentSection, ageInDays;
 
     String study_id;
 
@@ -45,13 +46,50 @@ public class C3251_C3288_B extends AppCompatActivity {
 
     public void SetContentUI() {
 
-//        bi.btnContinue.setEnabled(false);
+    //bi.btnContinue.setEnabled(false);
 
         DBHelper db = new DBHelper(this);
+        Cursor res = db.getData("Q1101_Q1610", study_id);
 
-        if (count == 1) {
+        if (res.getCount() > 0) {
+
+            res.moveToFirst();
+
+            if (Integer.valueOf(res.getString(res.getColumnIndex("Q1607_1"))) > 0
+                    || Integer.valueOf(res.getString(res.getColumnIndex("Q1607_2"))) > 0
+                    || Integer.valueOf(res.getString(res.getColumnIndex("Q1607_3"))) > 0) {
+
+                if (Integer.valueOf(res.getString(res.getColumnIndex("Q1607_3"))) > 0) {
+
+                    ageInDays = Integer.valueOf(res.getString(res.getColumnIndex("Q1607_3"))) * 12 * 30;
+
+                } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1607_2"))) > 0) {
+
+                    ageInDays = Integer.valueOf(res.getString(res.getColumnIndex("Q1607_2"))) * 30;
+                } else {
+
+                    ageInDays = Integer.valueOf(res.getString(res.getColumnIndex("Q1607_1")));
+                }
+
+            } else {
+
+                if (Integer.valueOf(res.getString(res.getColumnIndex("Q1608_3"))) > 0) {
+
+                    ageInDays = Integer.valueOf(res.getString(res.getColumnIndex("Q1608_3"))) * 12 * 30;
+
+                } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1608_2"))) > 0) {
+
+                    ageInDays = Integer.valueOf(res.getString(res.getColumnIndex("Q1608_2"))) * 30;
+                } else {
+
+                    ageInDays = Integer.valueOf(res.getString(res.getColumnIndex("Q1608_1")));
+                }
+            }
+        }
+
+        if (count == 1 && ageInDays > 27 && ageInDays < 331) {
+
             bi.llC32533E2A.setVisibility(View.VISIBLE); //ll_C3253_3E_2A
-
             /*bi.rbC325312.setEnabled(false);
             bi.rbC325313.setEnabled(false);*/
         } else {

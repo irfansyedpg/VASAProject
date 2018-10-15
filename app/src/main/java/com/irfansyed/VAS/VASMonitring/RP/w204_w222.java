@@ -1,6 +1,7 @@
 package com.irfansyed.VAS.VASMonitring.RP;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -22,6 +23,7 @@ import com.santalu.widget.MaskEditText;
 import java.util.ArrayList;
 import java.util.List;
 
+import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -837,9 +839,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
                 Toast.makeText(w204_w222.this, "Please Enter Mendatory Fields ", Toast.LENGTH_LONG).show();
                 return;
-
             }
-
 
             int number_preg = 0;
 
@@ -847,61 +847,81 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                 number_preg = Integer.parseInt(ed_W211.getText().toString());
             }
 
-
             if (rb_W208_1.isChecked()) {
                 number_preg = number_preg - 1;
             }
 
             if (lst_w17.size() < number_preg) {
                 this.show_dailuge();
-
-
                 return;
-
             }
 
             this.value_assignment();
             this.insert_data();
             this.insert_w216_w222();
 
+            /*if (section.equals("C3001_C3011")) {
 
-            Intent c = new Intent();
-
-            if (section.equals("C3001_C3011")) {
-
-
-                c = new Intent(this, com.irfansyed.VAS.VASMonitring.C.C3001_C3011.class);
-
+                Intent c = new Intent(this, com.irfansyed.VAS.VASMonitring.C.C3001_C3011.class);
                 c.putExtra("study_id", study_id);
-
                 startActivity(c);
+
             } else if (section.equals("C3012_C3022")) {
 
-
-                c = new Intent(this, com.irfansyed.VAS.VASMonitring.C.C3012_C3022.class);
-
+                Intent c = new Intent(this, com.irfansyed.VAS.VASMonitring.C.C3012_C3022.class);
                 c.putExtra("study_id", study_id);
-
                 startActivity(c);
+
             } else if (section.equals("N2001_N2011")) {
 
-
-                c = new Intent(this, com.irfansyed.VAS.VASMonitring.N.N2001_N2011.class);
-
+                Intent c = new Intent(this, com.irfansyed.VAS.VASMonitring.N.N2001_N2011.class);
                 c.putExtra("study_id", study_id);
-
                 startActivity(c);
+
             } else {
-                c = new Intent(this, com.irfansyed.VAS.VASMonitring.A.A4001_A4014.class);
 
+                Intent c = new Intent(this, com.irfansyed.VAS.VASMonitring.A.A4001_A4014.class);
                 c.putExtra("study_id", study_id);
-
                 startActivity(c);
+            }*/
+
+
+            DBHelper db = new DBHelper(this);
+            Cursor res = db.getData("Q1101_Q1610", study_id);
+
+            if (res.getCount() > 0)
+
+            {
+                res.moveToFirst();
+
+                if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(1)) {
+
+                    Intent c = new Intent(this, com.irfansyed.VAS.VASMonitring.N.N2001_N2011.class);
+                    c.putExtra("study_id", study_id);
+                    startActivity(c);
+
+                } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(2)) {
+
+                    Intent c = new Intent(this, com.irfansyed.VAS.VASMonitring.C.C3001_C3011.class);
+                    c.putExtra("study_id", study_id);
+                    startActivity(c);
+
+                } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(3) ||
+                        Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(4)) {
+
+                    Intent c = new Intent(this, com.irfansyed.VAS.VASMonitring.C.C3012_C3022.class);
+                    c.putExtra("study_id", study_id);
+                    startActivity(c);
+                    
+                } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(5)) {
+
+                    Intent c = new Intent(this, com.irfansyed.VAS.VASMonitring.A.A4001_A4014.class);
+                    c.putExtra("study_id", study_id);
+                    startActivity(c);
+                }
             }
 
-
         }
-
     }
 
     @Override
@@ -917,7 +937,6 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
 
             }
-
         }
 
         if (buttonView.getId() == R.id.rb_W207_1 || buttonView.getId() == R.id.rb_W207_2) {
@@ -1017,7 +1036,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                 ll_W210.setVisibility(View.VISIBLE);
             }
         }
-        
+
         if (buttonView.getId() == R.id.rb_W209_1
                 || buttonView.getId() == R.id.rb_W209_2) {
 

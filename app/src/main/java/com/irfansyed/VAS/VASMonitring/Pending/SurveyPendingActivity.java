@@ -205,7 +205,6 @@ class SurveyPendingCustomAdapter extends RecyclerView.Adapter {
                                 mContext.startActivity(intent);
                             }
                         }
-
                     }
                 }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
@@ -219,6 +218,25 @@ class SurveyPendingCustomAdapter extends RecyclerView.Adapter {
             }
         });
     }
+
+
+    /*void fun_language() {
+
+        final MyPreferences preferences = new MyPreferences(mContext);
+
+        String lang = preferences.getlanguage();
+
+        //create a string for country
+        String country = preferences.getcountry();
+
+        Locale locale = new Locale(lang, country);
+
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        mContext.getResources().updateConfiguration(config,
+                mContext.getResources().getDisplayMetrics());​
+    }*/
 
 
     @Override
