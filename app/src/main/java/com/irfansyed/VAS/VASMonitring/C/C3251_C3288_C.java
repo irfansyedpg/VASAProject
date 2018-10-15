@@ -72,13 +72,12 @@ public class C3251_C3288_C extends AppCompatActivity {
                     else
                         val = db.getSpecificData(data.C.C3051_C3099.TABLE_NAME, bi.edStudyId.getText().toString(), C3051_C3099.C3065_DK);
 
-                    if (val != null) {
-                        if (Integer.valueOf(val) > 0) {
-                            c3065 = val;
-                            break;
-                        }
+                    if (Integer.valueOf(val) > -1) {
+                        c3065 = val;
+                        break;
                     }
                 }
+                c3065 = c3065 != null ? c3065 : "-1";
 
                 String c3066 = db.getSpecificData(data.C.C3051_C3099.TABLE_NAME, bi.edStudyId.getText().toString(), Global.C.C3051_C3099.C3066);
 
@@ -92,19 +91,19 @@ public class C3251_C3288_C extends AppCompatActivity {
                     else
                         val = db.getSpecificData(data.C.C3051_C3099.TABLE_NAME, bi.edStudyId.getText().toString(), C3051_C3099.C3067_DK);
 
-                    if (val != null) {
-                        if (Integer.valueOf(val) > 0) {
-                            c3067 = val;
-                            break;
-                        }
+                    if (Integer.valueOf(val) > -1) {
+                        c3067 = val;
+                        break;
                     }
                 }
+                c3067 = c3067 != null ? c3067 : "-1";
 
                 String c3068 = db.getSpecificData(data.C.C3051_C3099.TABLE_NAME, bi.edStudyId.getText().toString(), Global.C.C3051_C3099.C3068);
                 String c3069 = db.getSpecificData(data.C.C3051_C3099.TABLE_NAME, bi.edStudyId.getText().toString(), Global.C.C3051_C3099.C3069);
                 String c3070 = db.getSpecificData(data.C.C3051_C3099.TABLE_NAME, bi.edStudyId.getText().toString(), Global.C.C3051_C3099.C3070);
 
-                if (c3064 == null && c3065 == null && c3066 == null && c3067 == null && c3068 == null && c3069 == null && c3070 == null) {
+                if (c3064.equals("-1") && c3065.equals("-1") && c3066.equals("-1")
+                        && c3067.equals("-1") && c3068.equals("-1") && c3069.equals("-1") && c3070.equals("-1")) {
                     flag_c3064 = false;
                     break;
                 } else {
@@ -122,7 +121,7 @@ public class C3251_C3288_C extends AppCompatActivity {
                 flag_c3252 = false;
             }
 
-//        Inst_4
+//        Inst_2 || Inst_4
             if (col_c3251 != null) {
                 for (C3251_C3288_B col_data : col_c3251) {
                     if (Integer.valueOf(col_data.getC3253()) <= 3
