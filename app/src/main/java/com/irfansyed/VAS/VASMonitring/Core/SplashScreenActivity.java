@@ -1,11 +1,14 @@
 package com.irfansyed.VAS.VASMonitring.Core;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
 import com.irfansyed.VAS.VASMonitring.R;
+
+import java.util.Locale;
 
 import utils.MyPreferences;
 
@@ -16,6 +19,8 @@ public class SplashScreenActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
 
+
+        change_langua();
 
 
      setContentView(R.layout.activity_splash_screen);
@@ -60,6 +65,33 @@ public class SplashScreenActivity extends AppCompatActivity {
         }, 1000);
     }
 
+
+    void change_langua() {
+
+        final MyPreferences preferences = new MyPreferences(this);
+
+        String lang = preferences.getlanguage();
+
+//create a string for country
+        String country = preferences.getcountry();
+//use constructor with country
+
+
+        if (lang == null) {
+            lang = "ur";
+            country = "PK";
+
+        }
+        Locale locale = new Locale(lang, country);
+
+
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        this.getResources().updateConfiguration(config,
+                this.getResources().getDisplayMetrics());
+
+    }
 
 
 }

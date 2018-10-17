@@ -14,6 +14,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.irfansyed.VAS.VASMonitring.A.A4001_A4014;
+import com.irfansyed.VAS.VASMonitring.A.A4051_A4066;
+import com.irfansyed.VAS.VASMonitring.A.A4067_A4080;
+import com.irfansyed.VAS.VASMonitring.A.A4081_A4094;
+import com.irfansyed.VAS.VASMonitring.A.A4095_A4108;
+import com.irfansyed.VAS.VASMonitring.A.A4109_A4125;
+import com.irfansyed.VAS.VASMonitring.A.A4126_A4140;
+import com.irfansyed.VAS.VASMonitring.A.A4144_A4156;
+import com.irfansyed.VAS.VASMonitring.A.A4157_A4205;
+import com.irfansyed.VAS.VASMonitring.A.A4206_A4207;
+import com.irfansyed.VAS.VASMonitring.A.A4251_A4284;
+import com.irfansyed.VAS.VASMonitring.A.A4301_A4315;
+import com.irfansyed.VAS.VASMonitring.A.A4351_A4364;
+import com.irfansyed.VAS.VASMonitring.A.A4401_A4473;
 import com.irfansyed.VAS.VASMonitring.C.C3001_C3011;
 import com.irfansyed.VAS.VASMonitring.C.C3012_C3022;
 import com.irfansyed.VAS.VASMonitring.C.C3051_C3099;
@@ -110,6 +124,8 @@ class SurveyPendingCustomAdapter extends RecyclerView.Adapter {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
+
+
                         String memberId = vh.textName.getText().toString();
 
 
@@ -121,7 +137,106 @@ class SurveyPendingCustomAdapter extends RecyclerView.Adapter {
 
                         //here call activity
                         Intent  intent = null;
-                        if(interviewType == 2){
+
+                        if(interviewType == 3){
+
+                            if(curentSection == 2){
+
+                                intent= new Intent(mContext, A4001_A4014.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 3){
+
+                                intent= new Intent(mContext, A4051_A4066.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 4){
+
+                                intent= new Intent(mContext, A4067_A4080.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 5){
+
+                                intent= new Intent(mContext, A4081_A4094.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 6){
+
+                                intent= new Intent(mContext, A4095_A4108.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 7){
+
+                                intent= new Intent(mContext, A4109_A4125.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 8){
+
+                                intent= new Intent(mContext, A4126_A4140.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 9){
+
+                                intent= new Intent(mContext, A4144_A4156.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 10){
+
+                                intent= new Intent(mContext, A4157_A4205.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 11){
+
+                                intent= new Intent(mContext, A4206_A4207.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 12){
+
+                                intent= new Intent(mContext, A4251_A4284.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 13){
+
+                                intent= new Intent(mContext, A4301_A4315.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 14){
+
+                                intent= new Intent(mContext, A4351_A4364.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 15){
+
+                                intent= new Intent(mContext, A4401_A4473.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 20){
+
+                                intent= new Intent(mContext, w204_w222.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                        } else if(interviewType == 2){
 
                             if(curentSection == 2){
 
@@ -220,23 +335,7 @@ class SurveyPendingCustomAdapter extends RecyclerView.Adapter {
     }
 
 
-    /*void fun_language() {
 
-        final MyPreferences preferences = new MyPreferences(mContext);
-
-        String lang = preferences.getlanguage();
-
-        //create a string for country
-        String country = preferences.getcountry();
-
-        Locale locale = new Locale(lang, country);
-
-        Locale.setDefault(locale);
-        Configuration config = new Configuration();
-        config.locale = locale;
-        mContext.getResources().updateConfiguration(config,
-                mContext.getResources().getDisplayMetrics());​
-    }*/
 
 
     @Override

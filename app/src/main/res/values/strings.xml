@@ -4727,4 +4727,19 @@ Examples of statements for the reading test:
     <!-- Reproductive Urdu TEXT & RESPONSE ENDS -->
 
 
+    <!-- menu strings -->
+
+    <string name="Main_Menu">Main Menu</string>
+    <string name="Start_Interview">Start Interview</string>
+    <string name="Upload_Data">Upload Data</string>
+    <string name="Pending_Interviews">Pending Interviews</string>
+    <string name="Language">select Language</string>
+    <string name="English">English</string>
+    <string name="Urdu">Urdu</string>
+
+
+
+
+
+
 </resources>

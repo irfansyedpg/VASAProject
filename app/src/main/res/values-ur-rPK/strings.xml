@@ -6363,4 +6363,15 @@
     <!-- Reproductive Urdu TEXT & RESPONSE ENDS -->
 
 
+    <string name="Main_Menu">مین مینو</string>
+    <string name="Start_Interview">انٹرویو شروع کریں</string>
+    <string name="Upload_Data">ڈیٹا اپ لوڈ کریں</string>
+    <string name="Pending_Interviews">موصول ہونے والی انٹرویو</string>
+    <string name="Language">زبان منتخب کریں</string>
+    <string name="English">انگریزی</string>
+    <string name="Urdu">اردو</string>
+
+
+
+
 </resources>
