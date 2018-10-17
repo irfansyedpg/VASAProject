@@ -3615,6 +3615,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3401_C3457.C3451_12, c9.getString(c9.getColumnIndex("C3451_12")));
                     params.put(C3401_C3457.C3451_13, c9.getString(c9.getColumnIndex("C3451_13")));
                     params.put(C3401_C3457.C3451_13_OT, c9.getString(c9.getColumnIndex("C3451_13_OT")));
+                    params.put(C3401_C3457.C3451_code, c9.getString(c9.getColumnIndex("C3451_code")));
                     params.put(C3401_C3457.C3452_1, c9.getString(c9.getColumnIndex("C3452_1")));
                     params.put(C3401_C3457.C3452_2, c9.getString(c9.getColumnIndex("C3452_2")));
                     params.put(C3401_C3457.C3452_3, c9.getString(c9.getColumnIndex("C3452_3")));
@@ -3625,6 +3626,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3401_C3457.C3452_8, c9.getString(c9.getColumnIndex("C3452_8")));
                     params.put(C3401_C3457.C3452_9, c9.getString(c9.getColumnIndex("C3452_9")));
                     params.put(C3401_C3457.C3452_9_OT, c9.getString(c9.getColumnIndex("C3452_9_OT")));
+                    params.put(C3401_C3457.C3452_code, c9.getString(c9.getColumnIndex("C3452_code")));
                     params.put(C3401_C3457.C3453_1, c9.getString(c9.getColumnIndex("C3453_1")));
                     params.put(C3401_C3457.C3453_2, c9.getString(c9.getColumnIndex("C3453_2")));
                     params.put(C3401_C3457.C3453_3, c9.getString(c9.getColumnIndex("C3453_3")));
@@ -3638,6 +3640,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3401_C3457.C3453_11, c9.getString(c9.getColumnIndex("C3453_11")));
                     params.put(C3401_C3457.C3453_12, c9.getString(c9.getColumnIndex("C3453_12")));
                     params.put(C3401_C3457.C3453_12_OT, c9.getString(c9.getColumnIndex("C3453_12_OT")));
+                    params.put(C3401_C3457.C3453_code, c9.getString(c9.getColumnIndex("C3453_code")));
                     params.put(C3401_C3457.C3454, c9.getString(c9.getColumnIndex("C3454")));
                     params.put(C3401_C3457.C3455, c9.getString(c9.getColumnIndex("C3455")));
                     params.put(C3401_C3457.C3456, c9.getString(c9.getColumnIndex("C3456")));
@@ -3675,6 +3678,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3401_C3457.C3451_12, "-2");
                     params.put(C3401_C3457.C3451_13, "-2");
                     params.put(C3401_C3457.C3451_13_OT, "-2");
+                    params.put(C3401_C3457.C3451_code, "-2");
                     params.put(C3401_C3457.C3452_1, "-2");
                     params.put(C3401_C3457.C3452_2, "-2");
                     params.put(C3401_C3457.C3452_3, "-2");
@@ -3685,6 +3689,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3401_C3457.C3452_8, "-2");
                     params.put(C3401_C3457.C3452_9, "-2");
                     params.put(C3401_C3457.C3452_9_OT, "-2");
+                    params.put(C3401_C3457.C3452_code, "-2");
                     params.put(C3401_C3457.C3453_1, "-2");
                     params.put(C3401_C3457.C3453_2, "-2");
                     params.put(C3401_C3457.C3453_3, "-2");
@@ -3698,6 +3703,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3401_C3457.C3453_11, "-2");
                     params.put(C3401_C3457.C3453_12, "-2");
                     params.put(C3401_C3457.C3453_12_OT, "-2");
+                    params.put(C3401_C3457.C3453_code, "-2");
                     params.put(C3401_C3457.C3454, "-2");
                     params.put(C3401_C3457.C3455, "-2");
                     params.put(C3401_C3457.C3456, "-2");

@@ -24,9 +24,7 @@ import data.LocalDataManager;
 import utils.MyPreferences;
 import utils.PostRequestData;
 
-/**
- * Created by Umeed-e-Nau on 12/28/2016.
- */
+
 public class Upload_C3051_C3099 extends AsyncTask {
 
     public static ProgressDialog dialog;
