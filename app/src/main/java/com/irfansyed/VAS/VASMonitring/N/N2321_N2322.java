@@ -86,7 +86,7 @@ public class N2321_N2322 extends AppCompatActivity {
                     if (!bi.cbN23226.isChecked()) {
                         bi.cbN23226.setChecked(false);
                         bi.cbN23226.setEnabled(false);
-                    }else {
+                    } else {
                         bi.cbN2322DK.setChecked(false);
                         bi.cbN2322DK.setEnabled(false);
                     }
@@ -132,6 +132,7 @@ public class N2321_N2322 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
+                finish();
                 startActivity(new Intent(this, InterviewEnd.class)
                         .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {

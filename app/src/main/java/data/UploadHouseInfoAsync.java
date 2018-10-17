@@ -335,7 +335,7 @@ public class UploadHouseInfoAsync extends AsyncTask {
             String result = (((String) o).replace("\"", ""));
 
 
-            Toast.makeText(mContext, "Interivew Has ben Uploaded", Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, "Interivew Has been Uploaded", Toast.LENGTH_SHORT).show();
             // new LocalDataManager(mContext).uploadInterview();
 
             // LogtableUpdates.UpdateLogStatusUpload(mContext,Validation.hfauploadid);

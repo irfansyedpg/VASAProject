@@ -69,6 +69,7 @@ public class N2017_N2022_3 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
+                finish();
                 startActivity(new Intent(this, N2051_N2078.class)
                         .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {

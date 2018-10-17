@@ -107,6 +107,7 @@ public class N2190_N2191 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
+                finish();
                 startActivity(new Intent(this, N2192_N2202.class)
                         .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {

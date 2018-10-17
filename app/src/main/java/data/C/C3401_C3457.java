@@ -39,6 +39,7 @@ public class C3401_C3457 {
                 Global.C.C3401_C3457.C3451_12 + " TEXT," +
                 Global.C.C3401_C3457.C3451_13 + " TEXT," +
                 Global.C.C3401_C3457.C3451_13_OT + " TEXT," +
+                Global.C.C3401_C3457.C3451_code + " TEXT," +
                 Global.C.C3401_C3457.C3452_1 + " TEXT," +
                 Global.C.C3401_C3457.C3452_2 + " TEXT," +
                 Global.C.C3401_C3457.C3452_3 + " TEXT," +
@@ -49,6 +50,7 @@ public class C3401_C3457 {
                 Global.C.C3401_C3457.C3452_8 + " TEXT," +
                 Global.C.C3401_C3457.C3452_9 + " TEXT," +
                 Global.C.C3401_C3457.C3452_9_OT + " TEXT," +
+                Global.C.C3401_C3457.C3452_code + " TEXT," +
                 Global.C.C3401_C3457.C3453_1 + " TEXT," +
                 Global.C.C3401_C3457.C3453_2 + " TEXT," +
                 Global.C.C3401_C3457.C3453_3 + " TEXT," +
@@ -62,6 +64,7 @@ public class C3401_C3457 {
                 Global.C.C3401_C3457.C3453_11 + " TEXT," +
                 Global.C.C3401_C3457.C3453_12 + " TEXT," +
                 Global.C.C3401_C3457.C3453_12_OT + " TEXT," +
+                Global.C.C3401_C3457.C3453_code + " TEXT," +
                 Global.C.C3401_C3457.C3454 + " TEXT," +
                 Global.C.C3401_C3457.C3455 + " TEXT," +
                 Global.C.C3401_C3457.C3456 + " TEXT," +

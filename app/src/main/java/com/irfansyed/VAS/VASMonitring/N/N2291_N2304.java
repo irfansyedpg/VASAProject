@@ -108,6 +108,7 @@ public class N2291_N2304 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
+                finish();
                 startActivity(new Intent(this, N2311_N2317.class)
                         .putExtra("valFlag", bi.rbN2300DK.isChecked())
                         .putExtra("study_id", bi.edStudyId.getText().toString()));
