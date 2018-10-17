@@ -244,7 +244,7 @@ public class N2291_N2304 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), 14);
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), 16);
     }
 
 }

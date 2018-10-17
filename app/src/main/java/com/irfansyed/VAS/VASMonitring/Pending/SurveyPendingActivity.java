@@ -40,6 +40,23 @@ import com.irfansyed.VAS.VASMonitring.C.C3301_C3314;
 import com.irfansyed.VAS.VASMonitring.C.C3351_C3364;
 import com.irfansyed.VAS.VASMonitring.C.C3401_C3457;
 import com.irfansyed.VAS.VASMonitring.C.C3471_C3472;
+import com.irfansyed.VAS.VASMonitring.N.N2001_N2011;
+import com.irfansyed.VAS.VASMonitring.N.N2012_N2016;
+import com.irfansyed.VAS.VASMonitring.N.N2017_N2022_3;
+import com.irfansyed.VAS.VASMonitring.N.N2023_N2026;
+import com.irfansyed.VAS.VASMonitring.N.N2051_N2078;
+import com.irfansyed.VAS.VASMonitring.N.N2080_N2107;
+import com.irfansyed.VAS.VASMonitring.N.N2110_N2189a;
+import com.irfansyed.VAS.VASMonitring.N.N2190_N2191;
+import com.irfansyed.VAS.VASMonitring.N.N2192_N2202;
+import com.irfansyed.VAS.VASMonitring.N.N2211_N2248_A;
+import com.irfansyed.VAS.VASMonitring.N.N2211_N2248_B;
+import com.irfansyed.VAS.VASMonitring.N.N2211_N2248_C;
+import com.irfansyed.VAS.VASMonitring.N.N2251_N2260;
+import com.irfansyed.VAS.VASMonitring.N.N2271_N2284;
+import com.irfansyed.VAS.VASMonitring.N.N2291_N2304;
+import com.irfansyed.VAS.VASMonitring.N.N2311_N2317;
+import com.irfansyed.VAS.VASMonitring.N.N2321_N2322;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.RP.w204_w222;
 
@@ -138,7 +155,219 @@ class SurveyPendingCustomAdapter extends RecyclerView.Adapter {
                         //here call activity
                         Intent  intent = null;
 
-                        if(interviewType == 3){
+                        if(interviewType == 1){
+
+                            if(curentSection == 2){
+
+                                intent= new Intent(mContext, N2001_N2011.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 3){
+
+                                intent= new Intent(mContext, N2012_N2016.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 4){
+
+                                intent= new Intent(mContext, N2017_N2022_3.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 5){
+
+                                intent= new Intent(mContext, N2023_N2026.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 6){
+
+                                intent= new Intent(mContext, N2051_N2078.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 7){
+
+                                intent= new Intent(mContext, N2080_N2107.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 8){
+
+                                intent= new Intent(mContext, N2110_N2189a.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 9){
+
+                                intent= new Intent(mContext, N2190_N2191.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 10){
+
+                                intent= new Intent(mContext, N2192_N2202.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 11){
+
+                                intent= new Intent(mContext, N2211_N2248_A.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 12){
+
+                                intent= new Intent(mContext, N2211_N2248_B.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 13){
+
+                                intent= new Intent(mContext, N2211_N2248_C.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 14){
+
+                                intent= new Intent(mContext, N2251_N2260.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 15){
+
+                                intent= new Intent(mContext, N2271_N2284.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 16){
+
+                                intent= new Intent(mContext, N2291_N2304.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 17){
+
+                                intent= new Intent(mContext, N2311_N2317.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 18){
+
+                                intent= new Intent(mContext, N2321_N2322.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 20){
+
+                                intent= new Intent(mContext, w204_w222.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                        }
+
+
+
+
+
+
+
+
+                        else if(interviewType == 2){
+
+                            if(curentSection == 2){
+
+                                intent= new Intent(mContext, C3001_C3011.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 3){
+
+                                intent= new Intent(mContext, C3012_C3022.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 4){
+
+                                intent= new Intent(mContext, C3051_C3099.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 5){
+
+                                intent= new Intent(mContext, C3101_C3112.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 6){
+
+                                intent= new Intent(mContext, C3121_C3228.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 7){
+
+                                intent= new Intent(mContext, C3251_C3288_A.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 8){
+
+                                intent= new Intent(mContext, C3251_C3288_B.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 9){
+
+                                intent= new Intent(mContext, C3251_C3288_C.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 10){
+
+                                intent= new Intent(mContext, C3301_C3314.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+                            if(curentSection == 11){
+
+                                intent= new Intent(mContext, C3351_C3364.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 12){
+
+                                intent= new Intent(mContext, C3401_C3457.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 13){
+
+                                intent= new Intent(mContext, C3471_C3472.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                            if(curentSection == 20){
+
+                                intent= new Intent(mContext, w204_w222.class);
+                                intent.putExtra("study_id", study_id);
+                                mContext.startActivity(intent);
+                            }
+
+                        } else if(interviewType == 3){
 
                             if(curentSection == 2){
 
@@ -236,90 +465,8 @@ class SurveyPendingCustomAdapter extends RecyclerView.Adapter {
                                 mContext.startActivity(intent);
                             }
 
-                        } else if(interviewType == 2){
-
-                            if(curentSection == 2){
-
-                                intent= new Intent(mContext, C3001_C3011.class);
-                                intent.putExtra("study_id", study_id);
-                                mContext.startActivity(intent);
-                            }
-                            if(curentSection == 3){
-
-                                intent= new Intent(mContext, C3012_C3022.class);
-                                intent.putExtra("study_id", study_id);
-                                mContext.startActivity(intent);
-                            }
-                            if(curentSection == 4){
-
-                                intent= new Intent(mContext, C3051_C3099.class);
-                                intent.putExtra("study_id", study_id);
-                                mContext.startActivity(intent);
-                            }
-                            if(curentSection == 5){
-
-                                intent= new Intent(mContext, C3101_C3112.class);
-                                intent.putExtra("study_id", study_id);
-                                mContext.startActivity(intent);
-                            }
-                            if(curentSection == 6){
-
-                                intent= new Intent(mContext, C3121_C3228.class);
-                                intent.putExtra("study_id", study_id);
-                                mContext.startActivity(intent);
-                            }
-                            if(curentSection == 7){
-
-                                intent= new Intent(mContext, C3251_C3288_A.class);
-                                intent.putExtra("study_id", study_id);
-                                mContext.startActivity(intent);
-                            }
-                            if(curentSection == 8){
-
-                                intent= new Intent(mContext, C3251_C3288_B.class);
-                                intent.putExtra("study_id", study_id);
-                                mContext.startActivity(intent);
-                            }
-                            if(curentSection == 9){
-
-                                intent= new Intent(mContext, C3251_C3288_C.class);
-                                intent.putExtra("study_id", study_id);
-                                mContext.startActivity(intent);
-                            }
-                            if(curentSection == 10){
-
-                                intent= new Intent(mContext, C3301_C3314.class);
-                                intent.putExtra("study_id", study_id);
-                                mContext.startActivity(intent);
-                            }
-                            if(curentSection == 11){
-
-                                intent= new Intent(mContext, C3351_C3364.class);
-                                intent.putExtra("study_id", study_id);
-                                mContext.startActivity(intent);
-                            }
-
-                            if(curentSection == 12){
-
-                                intent= new Intent(mContext, C3401_C3457.class);
-                                intent.putExtra("study_id", study_id);
-                                mContext.startActivity(intent);
-                            }
-
-                            if(curentSection == 13){
-
-                                intent= new Intent(mContext, C3471_C3472.class);
-                                intent.putExtra("study_id", study_id);
-                                mContext.startActivity(intent);
-                            }
-
-                            if(curentSection == 20){
-
-                                intent= new Intent(mContext, w204_w222.class);
-                                intent.putExtra("study_id", study_id);
-                                mContext.startActivity(intent);
-                            }
                         }
+
                     }
                 }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override

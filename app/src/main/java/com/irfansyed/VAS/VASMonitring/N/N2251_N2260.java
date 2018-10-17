@@ -263,7 +263,7 @@ public class N2251_N2260 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), 12);
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), 14);
     }
 
 }
