@@ -1570,6 +1570,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
                     if (Integer.valueOf(ed_Q1409.getText().toString()) > 6) {
 
+                        ClearAllcontrol.ClearAll(ll_Q1409);
                         ll_Q1410.setVisibility(View.GONE);
 
                     } else {
