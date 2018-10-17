@@ -33,6 +33,7 @@ public class C3401_C3457 {
     public static String C3451_12    = "C3451_12";
     public static String C3451_13    = "C3451_13";
     public static String C3451_13_OT = "C3451_13_OT";
+    public static String C3451_code = "C3451_code";
     public static String C3452_1     = "C3452_1";
     public static String C3452_2     = "C3452_2";
     public static String C3452_3     = "C3452_3";
@@ -43,6 +44,7 @@ public class C3401_C3457 {
     public static String C3452_8     = "C3452_8";
     public static String C3452_9     = "C3452_9";
     public static String C3452_9_OT  = "C3452_9_OT";
+    public static String C3452_code = "C3452_code";
     public static String C3453_1     = "C3453_1";
     public static String C3453_2     = "C3453_2";
     public static String C3453_3     = "C3453_3";
@@ -56,6 +58,7 @@ public class C3401_C3457 {
     public static String C3453_11    = "C3453_11";
     public static String C3453_12    = "C3453_12";
     public static String C3453_12_OT = "C3453_12_OT";
+    public static String C3453_code = "C3453_code";
     public static String C3454       = "C3454";
     public static String C3455       = "C3455";
     public static String C3456       = "C3456";
