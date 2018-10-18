@@ -5384,7 +5384,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(A4157_A4205.A4161, "-2");
                     params.put(A4157_A4205.A4161_1, "-2");
                     params.put(A4157_A4205.A4162, "-2");
-                    params.put(A4157_A4205.A4163, "-2");
+                    params.put(A4157_A4205.A4163_1, "-2");
                     params.put(A4157_A4205.A4163, "-2");
                     params.put(A4157_A4205.A4164, "-2");
                     params.put(A4157_A4205.A4166, "-2");

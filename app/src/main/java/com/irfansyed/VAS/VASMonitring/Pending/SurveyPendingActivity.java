@@ -274,16 +274,7 @@ class SurveyPendingCustomAdapter extends RecyclerView.Adapter {
                                 mContext.startActivity(intent);
                             }
 
-                        }
-
-
-
-
-
-
-
-
-                        else if(interviewType == 2){
+                        } else if(interviewType == 2){
 
                             if(curentSection == 2){
 
