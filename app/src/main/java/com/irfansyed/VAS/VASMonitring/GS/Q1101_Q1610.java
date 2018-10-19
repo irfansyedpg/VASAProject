@@ -739,13 +739,13 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                     lst_q1503.add("11");
                 } else if (rb_Q1503_12.isChecked()) {
                     lst_q1503.add("12");
-                    Q1503_OT = ed_Q1503_OT.getText().toString().trim();
+                    lst_other.add(ed_Q1503_OT.getText().toString().trim());
                 } else if (rb_Q1503_13.isChecked()) {
                     lst_q1503.add("13");
-                    Q1503_OT = ed_Q1503_OT.getText().toString().trim();
+                    lst_other.add(ed_Q1503_OT.getText().toString().trim());
                 } else if (rb_Q1503_14.isChecked()) {
                     lst_q1503.add("14");
-                    Q1503_OT = ed_Q1503_OT.getText().toString().trim();
+                    lst_other.add(ed_Q1503_OT.getText().toString().trim());
                 }
 
 
@@ -2021,22 +2021,42 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
 
         for (int i = 0; i < lst_q1503.size(); i++) {
-            if (i == 0) {
-                Q1503 = lst_q1503.get(i);
-            } else {
-                Q1503 = " andd " + Q1503 + lst_q1503.get(i);
-            }
 
+            if (i == 0) {
+
+                Q1503 = lst_q1503.get(i) + ",";
+
+            } else {
+
+                if (i == lst_q1503.size() - 1) {
+
+                    Q1503 = Q1503 + lst_q1503.get(i);
+
+                } else {
+
+                    Q1503 = Q1503 + lst_q1503.get(i) + ",";
+                }
+            }
         }
 
 
-        for (int i = 0; i < lst_other.size(); i++) {
-            if (i == 0) {
-                Q1503_OT = lst_other.get(i);
-            } else {
-                Q1503_OT = " andd " + Q1503_OT + lst_other.get(i);
-            }
+        for (int j = 0; j < lst_other.size(); j++) {
 
+            if (j == 0) {
+
+                Q1503_OT = lst_other.get(j) + ",";
+
+            } else {
+
+                if (j == lst_other.size() - 1) {
+
+                    Q1503_OT = Q1503_OT + lst_other.get(j);
+
+                } else {
+
+                    Q1503_OT = Q1503_OT + lst_other.get(j) + ",";
+                }
+            }
         }
 
 
@@ -3034,7 +3054,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         if (Gothrough.IamHiden(ll_Q1501) == false) {
             return false;
         }
-
 
 
         if (Gothrough.IamHiden(ll_Q1601) == false) {
