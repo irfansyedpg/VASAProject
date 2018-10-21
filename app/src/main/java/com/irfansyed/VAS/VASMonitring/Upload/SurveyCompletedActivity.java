@@ -205,6 +205,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
     public void upload_N(final String study_id) {
 
         final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_N";
+        //final String ROOT_URL = "http://192.168.1.11/sm/Welcome/collect_N";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -2511,7 +2512,8 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_C(final String study_id) {
 
-        final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_C";
+        final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_N";
+        //final String ROOT_URL = "http://192.168.1.11/sm/Welcome/collect_N";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -3626,7 +3628,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3401_C3457.C3452_8, c9.getString(c9.getColumnIndex("C3452_8")));
                     params.put(C3401_C3457.C3452_9, c9.getString(c9.getColumnIndex("C3452_9")));
                     params.put(C3401_C3457.C3452_9_OT, c9.getString(c9.getColumnIndex("C3452_9_OT")));
-                    params.put(C3401_C3457.C3452_code, c9.getString(c9.getColumnIndex("C3452_code")));
+                    params.put(C3401_C3457.C3452_code, "-3");
                     params.put(C3401_C3457.C3453_1, c9.getString(c9.getColumnIndex("C3453_1")));
                     params.put(C3401_C3457.C3453_2, c9.getString(c9.getColumnIndex("C3453_2")));
                     params.put(C3401_C3457.C3453_3, c9.getString(c9.getColumnIndex("C3453_3")));
@@ -3640,7 +3642,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3401_C3457.C3453_11, c9.getString(c9.getColumnIndex("C3453_11")));
                     params.put(C3401_C3457.C3453_12, c9.getString(c9.getColumnIndex("C3453_12")));
                     params.put(C3401_C3457.C3453_12_OT, c9.getString(c9.getColumnIndex("C3453_12_OT")));
-                    params.put(C3401_C3457.C3453_code, c9.getString(c9.getColumnIndex("C3453_code")));
+                    params.put(C3401_C3457.C3453_code, "-3");
                     params.put(C3401_C3457.C3454, c9.getString(c9.getColumnIndex("C3454")));
                     params.put(C3401_C3457.C3455, c9.getString(c9.getColumnIndex("C3455")));
                     params.put(C3401_C3457.C3456, c9.getString(c9.getColumnIndex("C3456")));
@@ -4665,7 +4667,8 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_A(final String study_id) {
 
-        final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_A";
+        final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_N";
+        //final String ROOT_URL = "http://192.168.1.11/sm/Welcome/collect_N";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
