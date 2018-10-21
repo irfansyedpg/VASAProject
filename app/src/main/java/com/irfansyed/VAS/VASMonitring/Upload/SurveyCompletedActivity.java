@@ -2512,8 +2512,8 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_C(final String study_id) {
 
-        final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_N";
-        //final String ROOT_URL = "http://192.168.1.11/sm/Welcome/collect_N";
+        final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_C";
+        //final String ROOT_URL = "http://192.168.1.11/sm/Welcome/collect_C";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -4667,8 +4667,8 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_A(final String study_id) {
 
-        final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_N";
-        //final String ROOT_URL = "http://192.168.1.11/sm/Welcome/collect_N";
+        final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_A";
+        //final String ROOT_URL = "http://192.168.1.11/sm/Welcome/collect_A";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
