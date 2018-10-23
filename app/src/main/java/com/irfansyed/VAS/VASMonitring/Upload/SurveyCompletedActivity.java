@@ -3768,6 +3768,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3471_C3472.C3472_10, c10.getString(c10.getColumnIndex("C3472_10")));
                     params.put(C3471_C3472.C3472_11, c10.getString(c10.getColumnIndex("C3472_11")));
                     params.put(C3471_C3472.C3472_DK, c10.getString(c10.getColumnIndex("C3472_DK")));
+                    params.put(C3471_C3472.C3473, c10.getString(c10.getColumnIndex("C3473")));
 
                 } else {
 
@@ -3784,6 +3785,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(C3471_C3472.C3472_10, "-2");
                     params.put(C3471_C3472.C3472_11, "-2");
                     params.put(C3471_C3472.C3472_DK, "-2");
+                    params.put(C3471_C3472.C3473, "-2");
                 }
 
                 if (c11.getCount() > 0) {
