@@ -2068,6 +2068,31 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                             }
                         }
                     }
+
+                } else {
+
+                    try {
+
+                        JSONObject round_one = new JSONObject();
+                        String ACT_COUNT_a, N2213_a, N2213_2A_a, N2213_4_a;
+
+                        ACT_COUNT_a = "-2";
+                        N2213_a     = "-2";
+                        N2213_2A_a  = "-2";
+                        N2213_4_a   = "-2";
+
+                        round_one.put("ACT_COUNT_a", ACT_COUNT_a);
+                        round_one.put("N2213_a", N2213_a);
+                        round_one.put("N2213_2A_a", N2213_2A_a);
+                        round_one.put("N2213_4_a", N2213_4_a);
+
+                        params.put("round_one", String.valueOf(round_one));
+
+                    } catch (JSONException e) {
+
+                        e.printStackTrace();
+
+                    }
                 }
 
                 if (c18.getCount() > 0) {
@@ -2500,6 +2525,20 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                 e.printStackTrace();
                             }
                         }
+                    }
+
+                } else {
+
+                    try {
+                        JSONObject p1 = new JSONObject();
+                        p1.put("W17", "-2");
+                        p1.put("W18", "-2");
+                        p1.put("W19", "-2");
+                        p1.put("W21", "-2");
+                        p1.put("W22", "-2");
+                        params.put("p1", String.valueOf(p1));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
                     }
                 }
 
@@ -4193,6 +4232,31 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                             }
                         }
                     }
+
+                } else {
+
+                    try {
+
+                        JSONObject round_one = new JSONObject();
+                        String C3253_a, C3253_1_a, C3253_2A_a, C3253_4_a;
+
+                        C3253_a    = "-2";
+                        C3253_1_a  = "-2";
+                        C3253_2A_a = "-2";
+                        C3253_4_a  = "-2";
+
+                        round_one.put("C3253_a", C3253_a);
+                        round_one.put("C3253_1_a", C3253_1_a);
+                        round_one.put("C3253_2A_a", C3253_2A_a);
+                        round_one.put("C3253_4_a", C3253_4_a);
+
+                        params.put("round_one", String.valueOf(round_one));
+
+                    } catch (JSONException e) {
+
+                        e.printStackTrace();
+
+                    }
                 }
 
                 if (c13.getCount() > 0) {
@@ -4655,6 +4719,20 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                                 e.printStackTrace();
                             }
                         }
+                    }
+
+                } else {
+
+                    try {
+                        JSONObject p1 = new JSONObject();
+                        p1.put("W17", "-2");
+                        p1.put("W18", "-2");
+                        p1.put("W19", "-2");
+                        p1.put("W21", "-2");
+                        p1.put("W22", "-2");
+                        params.put("p1", String.valueOf(p1));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
                     }
                 }
 
@@ -6184,6 +6262,31 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
                             }
                         }
+                    }
+
+                } else {
+
+                    try {
+
+                        JSONObject round_one = new JSONObject();
+                        String A4252_1_a, A4252_2_a, A4252_3_a, A4252_4_a;
+
+                        A4252_1_a = "-2";
+                        A4252_2_a = "-2";
+                        A4252_3_a = "-2";
+                        A4252_4_a = "-2";
+
+                        round_one.put("A4252_1_a", A4252_1_a);
+                        round_one.put("A4252_2_a", A4252_2_a);
+                        round_one.put("A4252_3_a", A4252_3_a);
+                        round_one.put("A4252_4_a", A4252_4_a);
+
+                        params.put("round_one", String.valueOf(round_one));
+
+                    } catch (JSONException e) {
+
+                        e.printStackTrace();
+
                     }
                 }
 

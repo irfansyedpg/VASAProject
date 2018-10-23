@@ -187,6 +187,27 @@
             </android.support.v7.widget.CardView>
             <!--C3472 Radio Button and Edit text Ends-->
 
+            <!-- C3473 EditText Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_C3473"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/ll_C3473"
+                        style="@style/TextViewInstructions"
+                        android:text="@string/txt_C3473" />
+
+                    <EditText
+                        android:id="@+id/ed_C3473"
+                        style="@style/EditText_multi" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- C3473 EditText Ends -->
+
 
             <Button
                 android:id="@+id/btn_next"

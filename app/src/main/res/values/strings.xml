@@ -2479,6 +2479,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
         After the respondent(s) finishes, ask: Is there anything else?
         Write the respondent’s exact words. After s/he has finished, read this back and ask her to correct any errors in what you wrote."</string>
     <string name="txt_C3472"  translatable="false">C3472: Are any of the following words of interest mentioned in the above narrative?</string>
+    <string name="txt_C3473"  translatable="false">C3473: Interviewer: Use this space to write down your comments and observations about the interview</string>
     <string name="rb_C3002_1"  translatable="false">Second or later</string>
     <string name="rb_C3002_2"  translatable="false">Second or later</string>
     <string name="rb_C3002_DK"  translatable="false">Don’t know</string>

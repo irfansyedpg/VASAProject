@@ -25,6 +25,7 @@ public class C3471_C3472 {
                 Global.C.C3471_C3472.C3472_10 + " TEXT," +
                 Global.C.C3471_C3472.C3472_11 + " TEXT," +
                 Global.C.C3471_C3472.C3472_DK + " TEXT," +
+                Global.C.C3471_C3472.C3473 + " TEXT," +
                 C3001_C3011.STATUS + " TEXT" +
                 ')';
 

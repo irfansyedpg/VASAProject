@@ -34,7 +34,8 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
     LinearLayout
             ll_study_id,
             ll_C3471,
-            ll_C3472;
+            ll_C3472,
+            ll_C3473;
 
     CheckBox
             cb_C3472_1,
@@ -52,7 +53,8 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
 
     EditText
             ed_study_id,
-            ed_C3471;
+            ed_C3471,
+            ed_C3473;
     Button btn_next, btn_imgCapture;
 
     String
@@ -70,6 +72,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
             C3472_10,
             C3472_11,
             C3472_DK,
+            C3473,
             STATUS;
 
     int currentSection;
@@ -177,8 +180,9 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
         // Layouts
         ll_C3471 = findViewById(R.id.ll_C3471);
         ll_C3472 = findViewById(R.id.ll_C3472);
+        ll_C3473 = findViewById(R.id.ll_C3473);
 
-        // Radio Buttons
+        // check box
 
         cb_C3472_1 = findViewById(R.id.cb_C3472_1);
         cb_C3472_2 = findViewById(R.id.cb_C3472_2);
@@ -193,8 +197,8 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
         cb_C3472_11 = findViewById(R.id.cb_C3472_11);
         cb_C3472_DK = findViewById(R.id.cb_C3472_DK);
 
-
         ed_C3471 = findViewById(R.id.ed_C3471);
+        ed_C3473 = findViewById(R.id.ed_C3473);
 
     }
 
@@ -272,6 +276,11 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
         if (cb_C3472_DK.isChecked()) {
             C3472_DK = "1";
         }
+
+        if (ed_C3473.getText().toString().length() > 0) {
+
+            C3473 = ed_C3473.getText().toString().trim();
+        }
     }
 
     void insert_data() {
@@ -290,6 +299,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
                 + Global.C.C3471_C3472.C3472_10 + ","
                 + Global.C.C3471_C3472.C3472_11 + ","
                 + Global.C.C3471_C3472.C3472_DK + ","
+                + Global.C.C3471_C3472.C3473 + ","
                 + Global.C.C3471_C3472.STATUS + ") values ('" +
 
                 study_id + "','" +
@@ -306,6 +316,7 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
                 C3472_10 + "','" +
                 C3472_11 + "','" +
                 C3472_DK + "','" +
+                C3473 + "','" +
                 STATUS + "')";
 
 
@@ -326,7 +337,12 @@ public class C3471_C3472 extends AppCompatActivity implements View.OnClickListen
         if (Gothrough.IamHiden(ll_C3471) == false) {
             return false;
         }
-        return Gothrough.IamHiden(ll_C3472) != false;
+
+        if (Gothrough.IamHiden(ll_C3472) == false) {
+            return false;
+        }
+
+        return Gothrough.IamHiden(ll_C3473) != false;
     }
 
     @Override

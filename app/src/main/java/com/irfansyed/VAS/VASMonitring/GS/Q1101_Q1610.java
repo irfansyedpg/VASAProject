@@ -1853,6 +1853,11 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 ClearAllcontrol.ClearAll(ll_Q1603);
                 ll_Q1603.setVisibility(View.GONE);
 
+                cb_Q1607_conflict.setChecked(true);
+                ed_Q1607_1.setText("0");
+                ed_Q1607_2.setText("0");
+                ed_Q1607_3.setText("0");
+
             } else {
 
                 ll_Q1603.setVisibility(View.VISIBLE);
@@ -1883,17 +1888,19 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_Q1605_1
                 || compoundButton.getId() == R.id.rb_Q1605_2) {
 
-            ClearAllcontrol.ClearAll(ll_Q1606);
-            ll_Q1606.setVisibility(View.GONE);
-
-            if (rb_Q1605_1.isChecked()) {
-
-                ll_Q1606.setVisibility(View.VISIBLE);
-
-            } else {
+            if (rb_Q1605_2.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_Q1606);
                 ll_Q1606.setVisibility(View.GONE);
+
+                cb_Q1607_conflict.setChecked(true);
+                ed_Q1607_1.setText("0");
+                ed_Q1607_2.setText("0");
+                ed_Q1607_3.setText("0");
+
+            } else {
+
+                ll_Q1606.setVisibility(View.VISIBLE);
             }
         }
 
@@ -3305,29 +3312,27 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                             ed_Q1607_3.setText("0");
                         }
                     }
+
+                    cb_Q1607_conflict.setChecked(false);
                 }
                 // Force assigning values end
 
             } else {
 
-                ed_Q1607_1.setText(null);
-                ed_Q1607_2.setText(null);
-                ed_Q1607_3.setText(null);
+                ed_Q1607_1.setText("0");
+                ed_Q1607_2.setText("0");
+                ed_Q1607_3.setText("0");
 
-                ed_Q1607_1.setEnabled(true);
-                ed_Q1607_2.setEnabled(true);
-                ed_Q1607_3.setEnabled(true);
+                cb_Q1607_conflict.setChecked(true);
             }
 
         } else {
 
-            ed_Q1607_1.setText(null);
-            ed_Q1607_2.setText(null);
-            ed_Q1607_3.setText(null);
+            ed_Q1607_1.setText("0");
+            ed_Q1607_2.setText("0");
+            ed_Q1607_3.setText("0");
 
-            ed_Q1607_1.setEnabled(false);
-            ed_Q1607_2.setEnabled(false);
-            ed_Q1607_3.setEnabled(false);
+            cb_Q1607_conflict.setChecked(false);
         }
     }
 

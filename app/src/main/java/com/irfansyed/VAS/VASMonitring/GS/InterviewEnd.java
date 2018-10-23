@@ -18,6 +18,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import data.DBHelper;
+import utils.Gothrough;
 
 public class InterviewEnd extends AppCompatActivity implements View.OnClickListener {
 
@@ -205,84 +206,12 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
     }
 
     boolean validateField() {
-        /*
+
         if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_C3001) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3002) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3003) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3004) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3005u) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3005d) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3005w) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3005m) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3006) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3006_OT) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3008) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3008_OT) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3009_1) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3009_2) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3009_3) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3009_4) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_C3010) == false) {
-            return false;
-        }
-
-        if(Gothrough.IamHiden(ll_C3011) != false == ){
-            return false;
-        }*/
-
-        return true;
+        return Gothrough.IamHiden(ll_Q1311) != false;
     }
 
 }

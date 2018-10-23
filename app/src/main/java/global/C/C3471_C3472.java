@@ -16,5 +16,6 @@ public class C3471_C3472 {
     public static String C3472_10 = "C3472_10";
     public static String C3472_11 = "C3472_11";
     public static String C3472_DK = "C3472_DK";
+    public static String C3473    = "C3473";
     public static String STATUS = "STATUS";
 }

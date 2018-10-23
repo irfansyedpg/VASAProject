@@ -1597,7 +1597,6 @@
             <!--C3078 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_C3078"
                     style="@style/Q_Linerlayout_v">
@@ -1615,6 +1614,15 @@
                         style="@style/TextView_Hint"
                         android:text="8, 2 or 9 → C3083" />
 
+                    <LinearLayout
+                        style="@style/Q_Linerlayout_v"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/n2126" />
+                    </LinearLayout>
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -1643,6 +1651,7 @@
 
 
                 </LinearLayout>
+
             </android.support.v7.widget.CardView>
             <!--C3078 Radio Button Ends-->
 
@@ -2300,7 +2309,6 @@
             <!--C3093 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_C3093"
                     style="@style/Q_Linerlayout_v">
@@ -2310,6 +2318,15 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3093" />
 
+                    <LinearLayout
+                        style="@style/Q_Linerlayout_v"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/n2144" />
+                    </LinearLayout>
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -2344,12 +2361,12 @@
 
 
                 </LinearLayout>
+
             </android.support.v7.widget.CardView>
             <!--C3093 Radio Button Ends-->
 
             <!--C3094 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
-
 
                 <LinearLayout
                     android:id="@+id/ll_C3094"
@@ -2360,6 +2377,15 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3094" />
 
+                    <LinearLayout
+                        style="@style/Q_Linerlayout_v"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/n2177a" />
+                    </LinearLayout>
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -2394,12 +2420,12 @@
 
 
                 </LinearLayout>
+
             </android.support.v7.widget.CardView>
             <!--C3094 Radio Button Ends-->
 
             <!--C3095 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
-
 
                 <LinearLayout
                     android:id="@+id/ll_C3095"
@@ -2414,6 +2440,15 @@
                         style="@style/TextView_Hint"
                         android:text="@string/C3095_h" />
 
+                    <LinearLayout
+                        style="@style/Q_Linerlayout_v"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/n2177" />
+                    </LinearLayout>
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -2448,6 +2483,7 @@
 
 
                 </LinearLayout>
+
             </android.support.v7.widget.CardView>
             <!--C3095 Radio Button Ends-->
 
