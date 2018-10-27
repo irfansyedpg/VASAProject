@@ -2309,7 +2309,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
 
     <string name="txt_C3254"  translatable="false">C3254: If any formal care given or sought, ask: Who decided to seek care for (NAME)’s illness from the (FIRST FORMAL PROVIDER)?  </string>
 
-    <string name="txt_C3255"  translatable="false">C3254: Did you have any concerns or problems that kept you from taking (NAME) to a health provider during the illness?  </string>
+    <string name="txt_C3255"  translatable="false">C3255: Did you have any concerns or problems that kept you from taking (NAME) to a health provider during the illness?  </string>
 
     <string name="txt_C3256"  translatable="false">C3256: What concerns or problems did you have?</string>
 

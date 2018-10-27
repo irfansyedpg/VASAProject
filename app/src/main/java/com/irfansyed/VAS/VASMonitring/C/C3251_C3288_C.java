@@ -124,11 +124,20 @@ public class C3251_C3288_C extends AppCompatActivity {
 //        Inst_2 || Inst_4
             if (col_c3251 != null) {
                 for (C3251_C3288_B col_data : col_c3251) {
-                    if (Integer.valueOf(col_data.getC3253()) > 3
-                            || Integer.valueOf(col_data.getC32532A()) == 1) {
+                    /*if (Integer.valueOf(col_data.getC3253()) <= 3
+                            && Integer.valueOf(col_data.getC32532A()) != 1) {
+                        flag_c3253 = false;
+                        break;
+                    }*/
+
+                    if (Integer.valueOf(col_data.getC32532A()) == 1) {
+                        flag_c3253 = false;
+                        break;
+                    } else if (Integer.valueOf(col_data.getC3253()) > 3) {
                         flag_c3253 = false;
                         break;
                     }
+
                 }
             }
 
