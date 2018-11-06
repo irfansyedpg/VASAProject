@@ -20,6 +20,7 @@
     <string  name="rb_no"  translatable="false">نہیں</string>
     <string  name="rb_DK"  translatable="false">معلوم نہیں</string>
     <string  name="rb_RA"  translatable="false">جواب دینے سے انکار کردیا</string>
+    <string  name="ref"  translatable="false">جواب دینے سے انکار کردیا</string>
 
     <string  name="yes"  translatable="false">ہاں</string>
     <string  name="no"  translatable="false">نہیں</string>
@@ -167,104 +168,104 @@
     <string  name="txt_Q1410"  translatable="false">میں چاہوں گا کہ آپ یہ جملے مجھ کو پڑھ کر سنا ئیں               (جواب دہندہ کو کارڈ دکھا ئیں)	:	Q1410	</string>
     <string  name="txt_Q1411"  translatable="false">اس گھر میں کتنے لوگ رہتے ہیں ؟	:	Q1411	</string>
     <string  name="Q1411_h"  translatable="false">	پڑھیں:" اس گھر میں " کتنے افراد  رہتے ہیں ،  اگر آپ خاندان کے گھرکی بات کررہے ہیں؟	:	Q1411	</string>
-    <string  name="txt_Q1412"  translatable="false">	اس گھر میں سونے کے لیے کتنے کمرے استعمال ہوتے ہیں ؟	:	Q1412	</string>
-    <string  name="txt_Q1413"  translatable="false">	کیا گھر میں کھانا پکانے کے لیے الگ سے کمرہ ہے؟	:	Q1413	</string>
-    <string  name="txt_Q1414"  translatable="false">	کیا آپ کے گھر میں ان میں سے کچھ موجود ہے ؟	:	Q1414	</string>
-    <string  name="txt_Q1415"  translatable="false">	اس گھر میں پینے کے پانی کا اہم ذریعہ کیا ہے ؟	:	Q1415	</string>
-    <string  name="txt_Q1416"  translatable="false">	عام طورپر گھرانے کے افراد کس قسم کا لیٹرین استعمال  کرتے ہیں ؟	:	Q1416	</string>
-    <string  name="txt_Q1417"  translatable="false">	عام طور پر آپ کے گھر میں کھانے پکانے کے لیے کس قسم کا ایندھن استعمال ہوتا ہے ؟	:	Q1417	</string>
-    <string  name="txt_Q1418"  translatable="false">	گھر میں روشنی کرنے کے لیے کونسے ذرائع استعمال کرتے ہیں؟	:	Q1418	</string>
-    <string  name="txt_Q1419"  translatable="false">	گھر کا فرش بنانے میں کس قسم  کا میٹریل کا  استعمال کیا گیا ہے ؟	:	Q1419	</string>
-    <string  name="txt_Q1420"  translatable="false">	گھر کی چھت میں کسی قسم کا میٹریل استعمال ہوا ہے ؟	:	Q1420	</string>
-    <string  name="txt_Q1421"  translatable="false">	گھر کی  باہر کی دیوار وں میں کون سا میٹریل استعمال ہوا ہے ؟	:	Q1421	</string>
-    <string  name="txt_Q1501"  translatable="false">	کیا انٹرویو کے دوران دیگر لوگ موجود تھے؟	:	Q1501	</string>
-    <string  name="txt_Q1502"  translatable="false">	انٹرویور: جواب دہندہ کے علاوہ انٹرویو کے دوران کتنے لوگ موجود تھے(برائے مہربانی شمار میں جواب دہندہ کو شامل نہ کریں )	:	Q1502	</string>
-    <string  name="txt_Q1503"  translatable="false">	انٹرویور : وفات پانے والے سے آپ کا کیا رشتہ ہے ؟	:	Q1503	</string>
-    <string  name="txt_Q1601"  translatable="false">	وفات پانے والے کی جنس ؟	:	Q1601	</string>
-    <string  name="txt_Q1602"  translatable="false">	کیا تاریخ پیدائش معلوم ہے؟	:	Q1602	</string>
-    <string  name="txt_Q1603"  translatable="false">	وفات پانے والا /والی کب پیدا ہوا /ہوئی  ؟	:	Q1603	</string>
-    <string  name="txt_Q1604"  translatable="false">	 وفات پانے والے کی موت کہاں ہوئی  ؟	:	Q1604	</string>
-    <string  name="txt_Q1605"  translatable="false">	کیا وفات پانے والی/والے کی وفات کی تاریخ معلوم ہے ؟	:	Q1605	</string>
-    <string  name="txt_Q1606"  translatable="false">	وفات کی تاریخ کیاتھی؟ 	:	Q1606	</string>
-    <string  name="txt_Q1607"  translatable="false">	وفات کے وقت عمر  کا حساب لگا ئیں؟	:	Q1607	</string>
-    <string  name="txt_Q1608"  translatable="false">	وفات کے وقت مرنے والے کی عمر کتنی تھی؟	:	Q1608	</string>
-    <string  name="txt_Q1609"  translatable="false">	وفات کے وقت مرنے والے کی عمر کے گروپ یہ نشان لگائیں ۔	:	Q1609	</string>
-    <string  name="txt_Q1610"  translatable="false">	اگر وفات کے وقت کی عمر  28 دن سے کم عمر ہے تو عمر دنوں ،گھنٹے یا منٹس میں ریکارڈ کریں	:	Q1610	</string>
+    <string  name="txt_Q1412"  translatable="false">اس گھر میں سونے کے لیے کتنے کمرے استعمال ہوتے ہیں ؟	:	Q1412	</string>
+    <string  name="txt_Q1413"  translatable="false">کیا گھر میں کھانا پکانے کے لیے الگ سے کمرہ ہے؟	:	Q1413	</string>
+    <string  name="txt_Q1414"  translatable="false">کیا آپ کے گھر میں ان میں سے کچھ موجود ہے ؟	:	Q1414	</string>
+    <string  name="txt_Q1415"  translatable="false">اس گھر میں پینے کے پانی کا اہم ذریعہ کیا ہے ؟	:	Q1415	</string>
+    <string  name="txt_Q1416"  translatable="false">عام طورپر گھرانے کے افراد کس قسم کا لیٹرین استعمال  کرتے ہیں ؟	:	Q1416	</string>
+    <string  name="txt_Q1417"  translatable="false">عام طور پر آپ کے گھر میں کھانے پکانے کے لیے کس قسم کا ایندھن استعمال ہوتا ہے ؟	:	Q1417	</string>
+    <string  name="txt_Q1418"  translatable="false">گھر میں روشنی کرنے کے لیے کونسے ذرائع استعمال کرتے ہیں؟	:	Q1418	</string>
+    <string  name="txt_Q1419"  translatable="false">گھر کا فرش بنانے میں کس قسم  کا میٹریل کا  استعمال کیا گیا ہے ؟	:	Q1419	</string>
+    <string  name="txt_Q1420"  translatable="false">گھر کی چھت میں کسی قسم کا میٹریل استعمال ہوا ہے ؟	:	Q1420	</string>
+    <string  name="txt_Q1421"  translatable="false">گھر کی  باہر کی دیوار وں میں کون سا میٹریل استعمال ہوا ہے ؟	:	Q1421	</string>
+    <string  name="txt_Q1501"  translatable="false">کیا انٹرویو کے دوران دیگر لوگ موجود تھے؟	:	Q1501	</string>
+    <string  name="txt_Q1502"  translatable="false">انٹرویور: جواب دہندہ کے علاوہ انٹرویو کے دوران کتنے لوگ موجود تھے(برائے مہربانی شمار میں جواب دہندہ کو شامل نہ کریں )	:	Q1502	</string>
+    <string  name="txt_Q1503"  translatable="false">انٹرویور : وفات پانے والے سے آپ کا کیا رشتہ ہے ؟	:	Q1503	</string>
+    <string  name="txt_Q1601"  translatable="false">وفات پانے والے کی جنس ؟	:	Q1601	</string>
+    <string  name="txt_Q1602"  translatable="false">کیا تاریخ پیدائش معلوم ہے؟	:	Q1602	</string>
+    <string  name="txt_Q1603"  translatable="false">وفات پانے والا /والی کب پیدا ہوا /ہوئی  ؟	:	Q1603	</string>
+    <string  name="txt_Q1604"  translatable="false"> وفات پانے والے کی موت کہاں ہوئی  ؟	:	Q1604	</string>
+    <string  name="txt_Q1605"  translatable="false">کیا وفات پانے والی/والے کی وفات کی تاریخ معلوم ہے ؟	:	Q1605	</string>
+    <string  name="txt_Q1606"  translatable="false">وفات کی تاریخ کیاتھی؟ 	:	Q1606	</string>
+    <string  name="txt_Q1607"  translatable="false">وفات کے وقت عمر  کا حساب لگا ئیں؟	:	Q1607	</string>
+    <string  name="txt_Q1608"  translatable="false">وفات کے وقت مرنے والے کی عمر کتنی تھی؟	:	Q1608	</string>
+    <string  name="txt_Q1609"  translatable="false">وفات کے وقت مرنے والے کی عمر کے گروپ یہ نشان لگائیں ۔	:	Q1609	</string>
+    <string  name="txt_Q1610"  translatable="false">اگر وفات کے وقت کی عمر  28 دن سے کم عمر ہے تو عمر دنوں ،گھنٹے یا منٹس میں ریکارڈ کریں	:	Q1610	</string>
 
     <!-- GeneRAl Section Urdu Text ENDS -->
 
     <!-- GeneRAl Section Urdu Responses STARTS -->
 
-    <string  name="rb_Q1101_1"  translatable="false">	 زیادہ	</string>
-    <string  name="rb_Q1101_2"  translatable="false">	 کم	</string>
-    <string  name="rb_Q1101_3"  translatable="false">	 بہت کم	</string>
-    <string  name="rb_Q1102_1"  translatable="false">	   زیادہ	</string>
-    <string  name="rb_Q1102_2"  translatable="false">	 کم	</string>
-    <string  name="rb_Q1102_3"  translatable="false">	بہت کم	</string>
-    <string  name="rb_Q1103_1"  translatable="false">	  گیلا	</string>
-    <string  name="rb_Q1103_2"  translatable="false">	 سوکھا	</string>
-    <string  name="rb_Q1103_3"  translatable="false">	معلوم نہیں 	</string>
-    <string  name="rb_Q1201_1"  translatable="false">	 صوبہ 	</string>
-    <string  name="rb_Q1201_2"  translatable="false">	 ضلع 	</string>
-    <string  name="rb_Q1201_3"  translatable="false">	 ایڈمن پوزیشن 	</string>
-    <string  name="rb_Q1201_4"  translatable="false">	 مقامی 	</string>
-    <string  name="rb_Q1201_5"  translatable="false">	 برادری 	</string>
-    <string  name="rb_Q1201_6"  translatable="false">	  ای اے 	</string>
-    <string  name="rb_Q1201_7"  translatable="false">	گھرانے کا محل و وقوع	</string>
-    <string  name="rb_Q1203_1"  translatable="false">	لڑکا /مرد	</string>
-    <string  name="rb_Q1203_2"  translatable="false">	لڑکی/عورت	</string>
-    <string  name="rb_Q1207_1"  translatable="false">	مردہ	</string>
-    <string  name="rb_Q1207_2"  translatable="false">	نوزائیدہ	</string>
-    <string  name="rb_Q1207_3"  translatable="false">	ریکارڈ سے معلوم نہیں ہوا	</string>
-    <string  name="rb_Q1311_1"  translatable="false">	مکمل  (حتمی نیتجہ کورڈ)	</string>
-    <string  name="rb_Q1311_2"  translatable="false">	جزوی طورپر مکمل	</string>
-    <string  name="rb_Q1311_3"  translatable="false">	انٹرویو کے اہل جواب دہندہ نے انٹرویو  ملتوی کردیا	</string>
-    <string  name="rb_Q1311_4"  translatable="false">	گھر پر کوئی اہل جواب دہندہ  نہ موجود ہونا	</string>
-    <string  name="rb_Q1311_5"  translatable="false">	انٹرویو کے اہل جواب دہندہ نے انٹرویو سے انکار کردیا	</string>
-    <string  name="rb_Q1311_6"  translatable="false">	کوئی قابل جواب دہندہ گھر  یا پڑوس میں نہیں رہتا	</string>
-    <string  name="rb_Q1311_7"  translatable="false">	گھر میں کوئی فرد  موجود نہیں  تھا	</string>
-    <string  name="rb_Q1311_8"  translatable="false">	خالی گھر یا مکان /تباہ شدہ جگہ /   نہیں  ملا	</string>
-    <string  name="rb_Q1311_9"  translatable="false">	کام جاری (عبوری نتیجہ کوڈ)	</string>
-    <string  name="rb_Q1311_10"  translatable="false">	فرد کے انتقال کو رپورٹ کیا گیا  مگر وفات پانے والا  اصل میں زندہ ہے	</string>
-    <string  name="rb_Q1311_11"  translatable="false">	موت کی ڈپلیکیٹ رپورٹ۔انٹرویو پہلے ہی منعقد ہوگیا  تھا	</string>
-    <string  name="rb_Q1311_12"  translatable="false">	مرنے والی انٹرویو کے لئے اہل نہیں	</string>
-    <string  name="rb_Q1405_1"  translatable="false">	ہاں	</string>
-    <string  name="rb_Q1405_2"  translatable="false">	 نہیں	</string>
-    <string  name="rb_Q1402_1"  translatable="false">	مرد	</string>
-    <string  name="rb_Q1402_2"  translatable="false">	عورت	</string>
+    <string  name="rb_Q1101_1"  translatable="false"> زیادہ	</string>
+    <string  name="rb_Q1101_2"  translatable="false"> کم	</string>
+    <string  name="rb_Q1101_3"  translatable="false"> بہت کم	</string>
+    <string  name="rb_Q1102_1"  translatable="false">   زیادہ	</string>
+    <string  name="rb_Q1102_2"  translatable="false"> کم	</string>
+    <string  name="rb_Q1102_3"  translatable="false">بہت کم	</string>
+    <string  name="rb_Q1103_1"  translatable="false">  گیلا	</string>
+    <string  name="rb_Q1103_2"  translatable="false"> سوکھا	</string>
+    <string  name="rb_Q1103_3"  translatable="false">معلوم نہیں 	</string>
+    <string  name="rb_Q1201_1"  translatable="false"> صوبہ 	</string>
+    <string  name="rb_Q1201_2"  translatable="false"> ضلع 	</string>
+    <string  name="rb_Q1201_3"  translatable="false"> ایڈمن پوزیشن 	</string>
+    <string  name="rb_Q1201_4"  translatable="false"> مقامی 	</string>
+    <string  name="rb_Q1201_5"  translatable="false"> برادری 	</string>
+    <string  name="rb_Q1201_6"  translatable="false">  ای اے 	</string>
+    <string  name="rb_Q1201_7"  translatable="false">گھرانے کا محل و وقوع	</string>
+    <string  name="rb_Q1203_1"  translatable="false">لڑکا /مرد	</string>
+    <string  name="rb_Q1203_2"  translatable="false">لڑکی/عورت	</string>
+    <string  name="rb_Q1207_1"  translatable="false">مردہ	</string>
+    <string  name="rb_Q1207_2"  translatable="false">نوزائیدہ	</string>
+    <string  name="rb_Q1207_3"  translatable="false">ریکارڈ سے معلوم نہیں ہوا	</string>
+    <string  name="rb_Q1311_1"  translatable="false">مکمل  (حتمی نیتجہ کورڈ)	</string>
+    <string  name="rb_Q1311_2"  translatable="false">جزوی طورپر مکمل	</string>
+    <string  name="rb_Q1311_3"  translatable="false">انٹرویو کے اہل جواب دہندہ نے انٹرویو  ملتوی کردیا	</string>
+    <string  name="rb_Q1311_4"  translatable="false">گھر پر کوئی اہل جواب دہندہ  نہ موجود ہونا	</string>
+    <string  name="rb_Q1311_5"  translatable="false">انٹرویو کے اہل جواب دہندہ نے انٹرویو سے انکار کردیا	</string>
+    <string  name="rb_Q1311_6"  translatable="false">کوئی قابل جواب دہندہ گھر  یا پڑوس میں نہیں رہتا	</string>
+    <string  name="rb_Q1311_7"  translatable="false">گھر میں کوئی فرد  موجود نہیں  تھا	</string>
+    <string  name="rb_Q1311_8"  translatable="false">خالی گھر یا مکان /تباہ شدہ جگہ /   نہیں  ملا	</string>
+    <string  name="rb_Q1311_9"  translatable="false">کام جاری (عبوری نتیجہ کوڈ)	</string>
+    <string  name="rb_Q1311_10"  translatable="false">فرد کے انتقال کو رپورٹ کیا گیا  مگر وفات پانے والا  اصل میں زندہ ہے	</string>
+    <string  name="rb_Q1311_11"  translatable="false">موت کی ڈپلیکیٹ رپورٹ۔انٹرویو پہلے ہی منعقد ہوگیا  تھا	</string>
+    <string  name="rb_Q1311_12"  translatable="false">مرنے والی انٹرویو کے لئے اہل نہیں	</string>
+    <string  name="rb_Q1405_1"  translatable="false">ہاں	</string>
+    <string  name="rb_Q1405_2"  translatable="false"> نہیں	</string>
+    <string  name="rb_Q1402_1"  translatable="false">مرد	</string>
+    <string  name="rb_Q1402_2"  translatable="false">عورت	</string>
     <string  name="rb_Q1402_DK"  translatable="false">	معلوم نہیں	</string>
-    <string  name="rb_Q1403_1"  translatable="false">	شریک حیات	</string>
-    <string  name="rb_Q1403_2"  translatable="false">	ماں	</string>
-    <string  name="rb_Q1403_3"  translatable="false">	باپ	</string>
-    <string  name="rb_Q1403_4"  translatable="false">	نانی/دادی	</string>
-    <string  name="rb_Q1403_5"  translatable="false">	نانا/دادا	</string>
-    <string  name="rb_Q1403_6"  translatable="false">	بیٹا	</string>
-    <string  name="rb_Q1403_7"  translatable="false">	بیٹی	</string>
-    <string  name="rb_Q1403_8"  translatable="false">	آنٹی	</string>
-    <string  name="rb_Q1403_9"  translatable="false">	چاچا (انکل)	</string>
-    <string  name="rb_Q1403_10"  translatable="false">	بھائی	</string>
-    <string  name="rb_Q1403_11"  translatable="false">	بہن	</string>
-    <string  name="rb_Q1403_12"  translatable="false">	پیدائش میں مدد کرنے والا (وضاحت کریں)	</string>
-    <string  name="rb_Q1403_OTM"  translatable="false">	کوئی اور مرد (وضاحت کریں)	</string>
-    <string  name="rb_Q1403_OTF"  translatable="false">	کوئی اور عورت (وضاحت کریں)	</string>
-    <string  name="rb_Q1403_OT"  translatable="false">	کوئی اور (وضاحت کریں)	</string>
-    <string  name="rb_Q1404_1"  translatable="false">	ہاں	</string>
-    <string  name="rb_Q1404_2"  translatable="false">	 نہیں	</string>
-    <string  name="rb_Q1404_DK"  translatable="false">	معلوم نہیں	</string>
-    <string  name="rb_Q1407_1"  translatable="false">	ہاں	</string>
-    <string  name="rb_Q1407_2"  translatable="false">	نہیں	</string>
-    <string  name="rb_Q1407_DK"  translatable="false">	معلوم نہیں 	</string>
-    <string  name="rb_Q1408_1"  translatable="false">	پرائمری	</string>
-    <string  name="rb_Q1408_2"  translatable="false">	سیکنڈری	</string>
-    <string  name="rb_Q1408_3"  translatable="false">	سیکنڈری سے اوپراعلیٰ تعلیم	</string>
-    <string  name="rb_Q1408_DK"  translatable="false">	معلوم نہیں 	</string>
-    <string  name="rb_Q1410_1"  translatable="false">	کچھ نہیں پڑھ سکتا  یا سکتی 	</string>
-    <string  name="rb_Q1410_2"  translatable="false">	صرف جملہ کا  کچھ حصہ پڑھ سکتا  یا سکتی 	</string>
-    <string  name="rb_Q1410_3"  translatable="false">	پورا جملہ پڑھ سکتا  یا سکتی	</string>
-    <string  name="rb_Q1410_4"  translatable="false">	جملے اس زبان میں نہیں ہیں (زبان کی وضاحت کریں )	</string>
-    <string  name="rb_Q1410_5"  translatable="false">	نابینا /سن نہیں سکتا یا سکتی 	</string>
-    <string  name="rb_Q1413_1"  translatable="false">	ہاں	</string>
-    <string  name="rb_Q1413_2"  translatable="false">	نہیں	</string>
+    <string  name="rb_Q1403_1"  translatable="false">شریک حیات	</string>
+    <string  name="rb_Q1403_2"  translatable="false">ماں	</string>
+    <string  name="rb_Q1403_3"  translatable="false">باپ	</string>
+    <string  name="rb_Q1403_4"  translatable="false">نانی/دادی	</string>
+    <string  name="rb_Q1403_5"  translatable="false">نانا/دادا	</string>
+    <string  name="rb_Q1403_6"  translatable="false">بیٹا	</string>
+    <string  name="rb_Q1403_7"  translatable="false">بیٹی	</string>
+    <string  name="rb_Q1403_8"  translatable="false">آنٹی	</string>
+    <string  name="rb_Q1403_9"  translatable="false">چاچا (انکل)	</string>
+    <string  name="rb_Q1403_10"  translatable="false">بھائی	</string>
+    <string  name="rb_Q1403_11"  translatable="false">بہن	</string>
+    <string  name="rb_Q1403_12"  translatable="false">پیدائش میں مدد کرنے والا (وضاحت کریں)	</string>
+    <string  name="rb_Q1403_OTM"  translatable="false">کوئی اور مرد (وضاحت کریں)	</string>
+    <string  name="rb_Q1403_OTF"  translatable="false">کوئی اور عورت (وضاحت کریں)	</string>
+    <string  name="rb_Q1403_OT"  translatable="false">کوئی اور (وضاحت کریں)	</string>
+    <string  name="rb_Q1404_1"  translatable="false">ہاں	</string>
+    <string  name="rb_Q1404_2"  translatable="false"> نہیں	</string>
+    <string  name="rb_Q1404_DK"  translatable="false">معلوم نہیں	</string>
+    <string  name="rb_Q1407_1"  translatable="false">ہاں	</string>
+    <string  name="rb_Q1407_2"  translatable="false">نہیں	</string>
+    <string  name="rb_Q1407_DK"  translatable="false">معلوم نہیں 	</string>
+    <string  name="rb_Q1408_1"  translatable="false">پرائمری	</string>
+    <string  name="rb_Q1408_2"  translatable="false">سیکنڈری	</string>
+    <string  name="rb_Q1408_3"  translatable="false">سیکنڈری سے اوپراعلیٰ تعلیم	</string>
+    <string  name="rb_Q1408_DK"  translatable="false">معلوم نہیں 	</string>
+    <string  name="rb_Q1410_1"  translatable="false">کچھ نہیں پڑھ سکتا  یا سکتی 	</string>
+    <string  name="rb_Q1410_2"  translatable="false">صرف جملہ کا  کچھ حصہ پڑھ سکتا  یا سکتی 	</string>
+    <string  name="rb_Q1410_3"  translatable="false">پورا جملہ پڑھ سکتا  یا سکتی	</string>
+    <string  name="rb_Q1410_4"  translatable="false">جملے اس زبان میں نہیں ہیں (زبان کی وضاحت کریں )	</string>
+    <string  name="rb_Q1410_5"  translatable="false">نابینا /سن نہیں سکتا یا سکتی 	</string>
+    <string  name="rb_Q1413_1"  translatable="false">ہاں	</string>
+    <string  name="rb_Q1413_2"  translatable="false">نہیں	</string>
     <string  name="rb_Q1413_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_Q1414_1"  translatable="false">بجلی</string>
     <string  name="rb_Q1414_2"  translatable="false">ریڈیو</string>
@@ -276,87 +277,87 @@
     <string  name="rb_Q1414_8"  translatable="false">سائیکل</string>
     <string  name="rb_Q1414_9"  translatable="false">موٹر سائیکل</string>
     <string  name="rb_Q1414_10"  translatable="false">گاڑی یا ٹرک</string>
-    <string  name="rb_Q1415_1"  translatable="false">	گھر  میں نلکا		</string>
-    <string  name="rb_Q1415_2"  translatable="false">	صحن/گھر کے باہر میونسپل کمیٹی کا نلکا	</string>
-    <string  name="rb_Q1415_3"  translatable="false">	پڑوسی کے گھر میونسپل کمیٹی کا نلکا	</string>
-    <string  name="rb_Q1415_4"  translatable="false">	گلی/علاقے کا نلکا	</string>
-    <string  name="rb_Q1415_5"  translatable="false">	ہینڈ پمپ کے ساتھ محفوظ کنواں	</string>
-    <string  name="rb_Q1415_6"  translatable="false">	پینڈ پمپ کے بغیر محفوظ کنواں	</string>
-    <string  name="rb_Q1415_7"  translatable="false">	غیر محفوظ کنواں	</string>
-    <string  name="rb_Q1415_8"  translatable="false">	چشمے کاپانی	</string>
-    <string  name="rb_Q1415_9"  translatable="false">	سطح والا پانی (دریا ،جھیل ،تالات)	</string>
+    <string  name="rb_Q1415_1"  translatable="false">گھر  میں نلکا		</string>
+    <string  name="rb_Q1415_2"  translatable="false">صحن/گھر کے باہر میونسپل کمیٹی کا نلکا	</string>
+    <string  name="rb_Q1415_3"  translatable="false">پڑوسی کے گھر میونسپل کمیٹی کا نلکا	</string>
+    <string  name="rb_Q1415_4"  translatable="false">گلی/علاقے کا نلکا	</string>
+    <string  name="rb_Q1415_5"  translatable="false">ہینڈ پمپ کے ساتھ محفوظ کنواں	</string>
+    <string  name="rb_Q1415_6"  translatable="false">پینڈ پمپ کے بغیر محفوظ کنواں	</string>
+    <string  name="rb_Q1415_7"  translatable="false">غیر محفوظ کنواں	</string>
+    <string  name="rb_Q1415_8"  translatable="false">چشمے کاپانی	</string>
+    <string  name="rb_Q1415_9"  translatable="false">سطح والا پانی (دریا ،جھیل ،تالات)	</string>
     <string  name="rb_Q1415_10"  translatable="false">	بارش کا پانی	</string>
-    <string  name="rb_Q1415_11"  translatable="false">	پانی کا ٹینکر/پانی کا ڈرم	</string>
-    <string  name="rb_Q1415_12"  translatable="false">	بوتل کا پانی	</string>
-    <string  name="rb_Q1415_DK"  translatable="false">	 معلوم نہیں	</string>
-    <string  name="rb_Q1416_1"  translatable="false">	فلش لیٹرین گھر کے اندر	</string>
-    <string  name="rb_Q1416_2"  translatable="false">	فلش لیٹرین گھر کے باہر	</string>
-    <string  name="rb_Q1416_3"  translatable="false">	فلش کے بغیر لیڑین	</string>
-    <string  name="rb_Q1416_4"  translatable="false">	بہتر ہوا دار لیٹرین	</string>
-    <string  name="rb_Q1416_5"  translatable="false">	بہتر ہوا دار گڑھے والا لیٹرین	</string>
-    <string  name="rb_Q1416_6"  translatable="false">	گڑھے والا کھلا لیٹرین	</string>
-    <string  name="rb_Q1416_7"  translatable="false">	لیٹرین موجود نہیں	</string>
-    <string  name="rb_Q1416_OT"  translatable="false">	دیگر وضاحت کریں	</string>
-    <string  name="rb_Q1416_DK"  translatable="false">	معلوم نہیں	</string>
-    <string  name="rb_Q1417_1"  translatable="false">	بجلی	</string>
-    <string  name="rb_Q1417_2"  translatable="false">	گیس	</string>
-    <string  name="rb_Q1417_3"  translatable="false">	پیٹرول	</string>
-    <string  name="rb_Q1417_4"  translatable="false">	 کوئلہ	</string>
-    <string  name="rb_Q1417_5"  translatable="false">	چار کول	</string>
-    <string  name="rb_Q1417_6"  translatable="false">	لکڑی 	</string>
-    <string  name="rb_Q1417_7"  translatable="false">	جانوروں کا گوبر	</string>
-    <string  name="rb_Q1417_8"  translatable="false">	 گھر میں کھانا نہیں پکتا	</string>
+    <string  name="rb_Q1415_11"  translatable="false">پانی کا ٹینکر/پانی کا ڈرم	</string>
+    <string  name="rb_Q1415_12"  translatable="false">بوتل کا پانی	</string>
+    <string  name="rb_Q1415_DK"  translatable="false"> معلوم نہیں	</string>
+    <string  name="rb_Q1416_1"  translatable="false">فلش لیٹرین گھر کے اندر	</string>
+    <string  name="rb_Q1416_2"  translatable="false">فلش لیٹرین گھر کے باہر	</string>
+    <string  name="rb_Q1416_3"  translatable="false">فلش کے بغیر لیڑین	</string>
+    <string  name="rb_Q1416_4"  translatable="false">بہتر ہوا دار لیٹرین	</string>
+    <string  name="rb_Q1416_5"  translatable="false">بہتر ہوا دار گڑھے والا لیٹرین	</string>
+    <string  name="rb_Q1416_6"  translatable="false">گڑھے والا کھلا لیٹرین	</string>
+    <string  name="rb_Q1416_7"  translatable="false">لیٹرین موجود نہیں	</string>
+    <string  name="rb_Q1416_OT"  translatable="false">دیگر وضاحت کریں	</string>
+    <string  name="rb_Q1416_DK"  translatable="false">معلوم نہیں	</string>
+    <string  name="rb_Q1417_1"  translatable="false">بجلی	</string>
+    <string  name="rb_Q1417_2"  translatable="false">گیس	</string>
+    <string  name="rb_Q1417_3"  translatable="false">پیٹرول	</string>
+    <string  name="rb_Q1417_4"  translatable="false"> کوئلہ	</string>
+    <string  name="rb_Q1417_5"  translatable="false">چار کول	</string>
+    <string  name="rb_Q1417_6"  translatable="false">لکڑی 	</string>
+    <string  name="rb_Q1417_7"  translatable="false">جانوروں کا گوبر	</string>
+    <string  name="rb_Q1417_8"  translatable="false"> گھر میں کھانا نہیں پکتا	</string>
     <string  name="rb_Q1417_OT"  translatable="false">	دیگر وضاحت کریں	</string>
     <string  name="rb_Q1417_DK"  translatable="false">	معلوم نہیں	</string>
-    <string  name="rb_Q1418_1"  translatable="false">	بجلی	</string>
-    <string  name="rb_Q1418_2"  translatable="false">	جنریٹر/سولر	</string>
-    <string  name="rb_Q1418_3"  translatable="false">	گیس	</string>
-    <string  name="rb_Q1418_4"  translatable="false">	پیٹرول	</string>
-    <string  name="rb_Q1418_5"  translatable="false">	موم بتی	</string>
-    <string  name="rb_Q1418_6"  translatable="false">	بیٹری	</string>
-    <string  name="rb_Q1418_7"  translatable="false">	لکڑی	</string>
-    <string  name="rb_Q1418_8"  translatable="false">	فلاس	</string>
+    <string  name="rb_Q1418_1"  translatable="false">بجلی	</string>
+    <string  name="rb_Q1418_2"  translatable="false">جنریٹر/سولر	</string>
+    <string  name="rb_Q1418_3"  translatable="false">گیس	</string>
+    <string  name="rb_Q1418_4"  translatable="false">پیٹرول	</string>
+    <string  name="rb_Q1418_5"  translatable="false">موم بتی	</string>
+    <string  name="rb_Q1418_6"  translatable="false">بیٹری	</string>
+    <string  name="rb_Q1418_7"  translatable="false">لکڑی	</string>
+    <string  name="rb_Q1418_8"  translatable="false">فلاس	</string>
     <string  name="rb_Q1418_OT"  translatable="false">	دیگر وضاحت کریں	</string>
     <string  name="rb_Q1418_DK"  translatable="false">	 معلوم نہیں	</string>
-    <string  name="rb_Q1419_1"  translatable="false">	گیلی مٹی/چکنی مٹی	</string>
-    <string  name="rb_Q1419_2"  translatable="false">	زمین/مٹی	</string>
-    <string  name="rb_Q1419_3"  translatable="false">	بنیادی/سادہ لکٹری	</string>
-    <string  name="rb_Q1419_4"  translatable="false">	ایڈوب(کچی اینٹ)	</string>
-    <string  name="rb_Q1419_5"  translatable="false">	پالش کی ہوئی لکٹری	</string>
-    <string  name="rb_Q1419_6"  translatable="false">	ٹائلیں	</string>
-    <string  name="rb_Q1419_7"  translatable="false">	سیمنٹ	</string>
+    <string  name="rb_Q1419_1"  translatable="false">گیلی مٹی/چکنی مٹی	</string>
+    <string  name="rb_Q1419_2"  translatable="false">زمین/مٹی	</string>
+    <string  name="rb_Q1419_3"  translatable="false">بنیادی/سادہ لکٹری	</string>
+    <string  name="rb_Q1419_4"  translatable="false">ایڈوب(کچی اینٹ)	</string>
+    <string  name="rb_Q1419_5"  translatable="false">پالش کی ہوئی لکٹری	</string>
+    <string  name="rb_Q1419_6"  translatable="false">ٹائلیں	</string>
+    <string  name="rb_Q1419_7"  translatable="false">سیمنٹ	</string>
     <string  name="rb_Q1419_OT"  translatable="false">	دیگر وضاحت کریں	</string>
     <string  name="rb_Q1419_DK"  translatable="false">	 معلوم نہیں 	</string>
-    <string  name="rb_Q1420_1"  translatable="false">	چھت نہیں	</string>
-    <string  name="rb_Q1420_2"  translatable="false">	گھاس پھوس /پتے	</string>
-    <string  name="rb_Q1420_3"  translatable="false">	زنگ کی چارد	</string>
-    <string  name="rb_Q1420_4"  translatable="false">	لوسالائٹ کی چادر	</string>
-    <string  name="rb_Q1420_5"  translatable="false">	ٹائلیں	</string>
-    <string  name="rb_Q1420_6"  translatable="false">	 کنکریٹ سیمنٹ کی چھت (پکی چھت)	</string>
+    <string  name="rb_Q1420_1"  translatable="false">چھت نہیں	</string>
+    <string  name="rb_Q1420_2"  translatable="false">گھاس پھوس /پتے	</string>
+    <string  name="rb_Q1420_3"  translatable="false">زنگ کی چارد	</string>
+    <string  name="rb_Q1420_4"  translatable="false">لوسالائٹ کی چادر	</string>
+    <string  name="rb_Q1420_5"  translatable="false">ٹائلیں	</string>
+    <string  name="rb_Q1420_6"  translatable="false"> کنکریٹ سیمنٹ کی چھت (پکی چھت)	</string>
     <string  name="rb_Q1420_OT"  translatable="false">	دیگر وضاحت کریں	</string>
     <string  name="rb_Q1420_DK"  translatable="false">	 معلوم نہیں 	</string>
-    <string  name="rb_Q1421_1"  translatable="false">	کوئی دیوار نہیں	</string>
-    <string  name="rb_Q1421_2"  translatable="false">	کھجور/گنے/ناریل کے درخت/بانس	</string>
-    <string  name="rb_Q1421_3"  translatable="false">	ٹن/کارڈ بورڈ/کاغذ/تھیلی	</string>
-    <string  name="rb_Q1421_4"  translatable="false">	ایک جیسا پاؤ	</string>
-    <string  name="rb_Q1421_5"  translatable="false">	درخت کی کھال سے بنی ہو ئی دیوار(  بارک )	</string>
-    <string  name="rb_Q1421_6"  translatable="false">	لکٹری /زنگ یا جست	</string>
-    <string  name="rb_Q1421_7"  translatable="false">	ایڈوب کے بلاک(کچی اینٹ)	</string>
-    <string  name="rb_Q1421_8"  translatable="false">	اینٹیں	</string>
-    <string  name="rb_Q1421_9"  translatable="false">	سیمنٹ کے بلاک	</string>
+    <string  name="rb_Q1421_1"  translatable="false">کوئی دیوار نہیں	</string>
+    <string  name="rb_Q1421_2"  translatable="false">کھجور/گنے/ناریل کے درخت/بانس	</string>
+    <string  name="rb_Q1421_3"  translatable="false">ٹن/کارڈ بورڈ/کاغذ/تھیلی	</string>
+    <string  name="rb_Q1421_4"  translatable="false">ایک جیسا پاؤ	</string>
+    <string  name="rb_Q1421_5"  translatable="false">درخت کی کھال سے بنی ہو ئی دیوار(  بارک )	</string>
+    <string  name="rb_Q1421_6"  translatable="false">لکٹری /زنگ یا جست	</string>
+    <string  name="rb_Q1421_7"  translatable="false">ایڈوب کے بلاک(کچی اینٹ)	</string>
+    <string  name="rb_Q1421_8"  translatable="false">اینٹیں	</string>
+    <string  name="rb_Q1421_9"  translatable="false">سیمنٹ کے بلاک	</string>
     <string  name="rb_Q1421_OT"  translatable="false">	دیگر وضاحت کریں	</string>
     <string  name="rb_Q1421_DK"  translatable="false">	معلوم نہیں	</string>
-    <string  name="rb_Q1501_1"  translatable="false">	 ہاں	</string>
-    <string  name="rb_Q1501_2"  translatable="false">	نہیں	</string>
-    <string  name="rb_Q1503_1"  translatable="false">	شریک حیات	</string>
-    <string  name="rb_Q1503_2"  translatable="false">	ماں	</string>
-    <string  name="rb_Q1503_3"  translatable="false">	باپ	</string>
-    <string  name="rb_Q1503_4"  translatable="false">	نانی/دادی	</string>
-    <string  name="rb_Q1503_5"  translatable="false">	نانا / داد	</string>
-    <string  name="rb_Q1503_6"  translatable="false">	بیٹا	</string>
-    <string  name="rb_Q1503_7"  translatable="false">	بیٹی	</string>
-    <string  name="rb_Q1503_8"  translatable="false">	آنٹی	</string>
-    <string  name="rb_Q1503_9"  translatable="false">	 چاچا(انکل)	</string>
+    <string  name="rb_Q1501_1"  translatable="false"> ہاں	</string>
+    <string  name="rb_Q1501_2"  translatable="false">نہیں	</string>
+    <string  name="rb_Q1503_1"  translatable="false">شریک حیات	</string>
+    <string  name="rb_Q1503_2"  translatable="false">ماں	</string>
+    <string  name="rb_Q1503_3"  translatable="false">باپ	</string>
+    <string  name="rb_Q1503_4"  translatable="false">نانی/دادی	</string>
+    <string  name="rb_Q1503_5"  translatable="false">نانا / داد	</string>
+    <string  name="rb_Q1503_6"  translatable="false">بیٹا	</string>
+    <string  name="rb_Q1503_7"  translatable="false">بیٹی	</string>
+    <string  name="rb_Q1503_8"  translatable="false">آنٹی	</string>
+    <string  name="rb_Q1503_9"  translatable="false"> چاچا(انکل)	</string>
     <string  name="rb_Q1503_10"  translatable="false">	بھائی	</string>
     <string  name="rb_Q1503_11"  translatable="false">	بہن	</string>
     <string  name="rb_Q1503_12"  translatable="false">	پیدائش کروانے میں مددگار(وضاحت کریں)	</string>
@@ -375,13 +376,13 @@
     <string  name="rb_Q1604_4"  translatable="false">	گھر	</string>
     <string  name="rb_Q1604_OT"  translatable="false">	کوئی اور (وضاحت کریں	</string>
     <string  name="rb_Q1604_DK"  translatable="false">	معلوم نہیں 	</string>
-    <string  name="rb_Q1605_1"  translatable="false">	ہاں	</string>
-    <string  name="rb_Q1605_2"  translatable="false">	نہیں	</string>
-    <string  name="rb_Q1609_1"  translatable="false">	28 دنوں سے کم	</string>
-    <string  name="rb_Q1609_2"  translatable="false">	 مہینے11-1	</string>
-    <string  name="rb_Q1609_3"  translatable="false">	12 مہینے سے 4 سال	</string>
-    <string  name="rb_Q1609_4"  translatable="false">	سال5-11	</string>
-    <string  name="rb_Q1609_5"  translatable="false">	سال یا اس سے زیادہ-12	</string>
+    <string  name="rb_Q1605_1"  translatable="false">ہاں	</string>
+    <string  name="rb_Q1605_2"  translatable="false">نہیں	</string>
+    <string  name="rb_Q1609_1"  translatable="false">28 دنوں سے کم	</string>
+    <string  name="rb_Q1609_2"  translatable="false"> مہینے11-1	</string>
+    <string  name="rb_Q1609_3"  translatable="false">12 مہینے سے 4 سال	</string>
+    <string  name="rb_Q1609_4"  translatable="false">سال5-11	</string>
+    <string  name="rb_Q1609_5"  translatable="false">سال یا اس سے زیادہ-12	</string>
 
     <!-- GeneRAl Section Urdu Responses ENDS -->
 
@@ -582,7 +583,7 @@
     <string  name="A4157"  translatable="false">	کیااس کی  چھاتی میں کوئی  سوجن یا گانٹھ تھی؟	:	A4157	</string>
     <string  name="A4158"  translatable="false">	کیا اس کی چھاتی میں کوئی  کھلا زخم یا السر تھا؟	:	A4158	</string>
     <string  name="A4159"  translatable="false">	کیا اس کو کبھی ماہواری آئی تھی؟	:	A4159	</string>
-    <string  name="A4160"  translatable="false">	کیا کبھی ماہواری  یا حیض کے درمیان اس کو اندام نہانی سے  خون آیا تھا ؟	:	A4160	</string>
+    <string  name="A4160"  translatable="false">	کیا دو ماہواری کے بیچ میں اسکو خون آیا تھا ؟	:	A4160	</string>
     <string  name="A4161"  translatable="false">	کیا بہت زیادہ خون آیا تھا؟	:	A4161	</string>
     <string  name="A4161_1"  translatable="false">	کیا بہت زیادہ خون مرنے سے ایک ہفتہ پہلے  آیا تھا؟	:	A4161_1	</string>
     <string  name="A4162"  translatable="false">	کیا سن یاس کی وجہ سے یا بچہ دانی نکالنے کی وجہ سے ما  ہواری قدرتی طور پر رک گئی تھی؟	:	A4162	</string>
@@ -2268,7 +2269,7 @@
     <string  name="txt_N2121"  translatable="false">	کیا بچہ  پیدائش کے فوراً بعد رویا تھا یہاں تک کہ تھوڑا سابھی؟	:	N2121	</string>
     <string  name="txt_N2122"  translatable="false">	پیدائش کے کتنے منٹ  بعد بچہ پہلی بار رویا تھا؟	:	N2122	</string>
     <string  name="txt_N2122_h"  translatable="false">	         تو  جوابدہندہ سے گفتگو کرکے اس کو طے کریں۔   N2013  ="ہاں"  اگر           تو یہ "مردہ بچہ" ہوسکتا ہے ۔ اسلئے "مردہ بچہ " کے تعین کے سیکشن میں اسکو صحیح کریں  N2013    ="نہیں"     اگر؟	:	N2122_h	</string>
-    <string  name="txt_N2123"  translatable="false">	کیا بچہ روتے ہوئے چپ  ہوگیا  تھا؟	:	N2123	</string>
+    <string  name="txt_N2123"  translatable="false">	کیا بچہ رونے کے کابل نہیں تھا ؟	:	N2123	</string>
     <string  name="txt_N2124"  translatable="false">	بچہ مرنے سے کتنے عرصہ پہلے  روتے  ہوئے چپ ہوگیا تھا؟	:	N2124	</string>
     <string  name="txt_N2125"  translatable="false">	کیا بچہ کو پیدائش کے بعد انکیوبیٹرمیں رکھاگیا تھا؟	:	N2125	</string>
     <string  name="txt_N2125_h"  translatable="false">	وقت سے پہلے پیدا ہونے والے  بچوں کے  لئےاگر   (N2066=1 or N2067 9 months) میں پیدا ہوئے  (N2006=3-10) صحت کی سہولت؟	:	N2125_h	</string>
@@ -2479,6 +2480,7 @@
     <string  name="txt_N2317"  translatable="false">	کیا کسی ماہر صحت کنندہ نے (آپ /بچہ کی حقیقی ماں  ) کو ایڈز ت کی بیماری تشخیص کی تھی ؟	:	N2317	</string>
     <string  name="txt_N2321"  translatable="false">	جواب دہندہ کے عین  الفاظ کے  مطابق لکھیں ۔ اسکا جواب  ختم ہونے کے بعد ، اس کو دوبارہ پڑھیں اور اور اس سے پوچھیں کہ اگر آپ کے لکھنے میں کوئی غلطی ہو گئی  ہو تو  اسے ٹھیک کردے؟	:	N2321	</string>
     <string  name="txt_N2322"  translatable="false">	کیا اوپر دے گے وضاحتی بیانیہ میں  مندرجہ زیل میں سے کوئی بھی  الفاظ جو ہماری دلچسپی کے ہوں   بیان  ہوئے ہیں ؟	:	N2322	</string>
+    <string  name="txt_N2323"  translatable="false">		:	N2323	</string>
     <string  name="txt_N2211"  translatable="false">	پہلی بار کب محسوس ہوا کہ وہ (نام)  بیمار تھا/تھی؟	:	N2211_1	</string>
     <string  name="txt_N2211_1"  translatable="false">  1. معمول کے مطابق کھانا پینا،بہت کم کھانا پینا یا بلکل کھانا پینا نہیں .	:	N2211_1	</string>
     <string  name="txt_N2211_2"  translatable="false"> 2. معمول کے مطابق  حرکت کرنا ، معمول سے کم حرکت کرنا   یا بلکل حرکت نہیں کرنا.	:	N2211_2	</string>
@@ -3501,12 +3503,14 @@
     <string  name="rb_N2190_22_2"  translatable="false">	نہیں	</string>
     <string  name="rb_N2190_22_DK"  translatable="false">	معلوم نہیں	</string>
     <string  name="rb_N2190_22_RA"  translatable="false">	جواب دینے سے انکار کردیا	</string>
-    <string  name="rb_N2192_1"  translatable="false">	ہاں -  بچہ زندہ تھا جب مرکز صحت سے چھٹی ہوئی.	</string>
-    <string  name="rb_N2192_2"  translatable="false">	صحت کی سہولت میں پیدا نہیں ہوا تھا.	</string>
-    <string  name="rb_N2192_DK"  translatable="false">	معلوم نہیں	</string>
-    <string  name="rb_N2193_1"  translatable="false">	ہاں -زندہ	</string>
-    <string  name="rb_N2193_2"  translatable="false">	مرکز صحت میں وفات ہوگئی تھی	</string>
-    <string  name="rb_N2193_DK"  translatable="false">	معلوم نہیں	</string>
+
+    <string  name="rb_N2192_1"  translatable="false"> ہاں -  مرکز صحت میں پیدا ہوا تھا. </string>
+    <string  name="rb_N2192_2"  translatable="false"> مرکز صحت میں پیدا نہیں ہوا تھا. </string>
+    <string  name="rb_N2192_DK"  translatable="false"> معلوم نہیں </string>
+    <string  name="rb_N2193_1"  translatable="false"> ہاں - بچہ زندہ تھا جب مرکز صحت سے چھٹی ہوئی؟ </string>
+    <string  name="rb_N2193_2"  translatable="false"> مرکز صحت میں وفات ہوگئی تھی </string>
+    <string  name="rb_N2193_DK"  translatable="false"> معلوم نہیں </string>
+
     <string  name="rb_N2195_1"  translatable="false">	ہاں	</string>
     <string  name="rb_N2195_2"  translatable="false">	نہیں	</string>
     <string  name="rb_N2195_DK"  translatable="false">	معلوم نہیں	</string>
@@ -3584,12 +3588,12 @@
     <string  name="rb_N2236_1"  translatable="false">ہاں، چھوڑتے وقت زندہ تھی</string>
     <string  name="rb_N2236_2"  translatable="false">نہیں، اسکا صحت فراہم کنندہ کے پاس انتقال  ہو گیا</string>
     <string  name="rb_N2237_1_1"  translatable="false">معمول	</string>
-    <string  name="rb_N2237_1_2"  translatable="false">جدید	</string>
-    <string  name="rb_N2237_1_3"  translatable="false">شدید	</string>
+    <string  name="rb_N2237_1_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_N2237_1_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_N2237_1_DK"  translatable="false">معلوم نہیں	</string>
     <string  name="rb_N2237_2_1"  translatable="false">معمول	</string>
-    <string  name="rb_N2237_2_2"  translatable="false">جدید	</string>
-    <string  name="rb_N2237_2_3"  translatable="false">شدید	</string>
+    <string  name="rb_N2237_2_2"  translatable="false">	درمیانی	</string>
+    <string  name="rb_N2237_2_3"  translatable="false">	غیر معمولی	</string>
     <string  name="rb_N2237_2_DK"  translatable="false">معلوم نہیں	</string>
 
     <string  name="rb_N2251_1"  translatable="false">	ہاں	</string>
@@ -4417,9 +4421,9 @@
     <string  name="txt_C3263"  translatable="false">	کیا "پہلا صحت فراہم کنندہ )" نے (نام) کو اسکی تکلیف یا بیماری کی وجہ سے کسی دوسرے ہسپتال میں بھیجا تھا؟	:C3263	</string>
     <string  name="txt_C3264"  translatable="false">C3264:	 (نام) کو کہاں منتقل کیا گیا تھا؟	</string>
     <string  name="txt_C3264_2"  translatable="false">C3264_2:	صحت کی سہولت کا نام	</string>
-    <string  name="txt_C3265_1"  translatable="false"> : کیا (پہلا صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام ) کو   فوراً   ضرورت تھی واپس (ہسپتال) جانے کی؟</string>
-    <string  name="txt_C3265_2"  translatable="false"> : کیا (پہلا صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام)  طبی معائنہ لئے واپس  آ ئے اگر  اسکی حالت بہتر نہیں ہوتی؟</string>
-    <string  name="txt_C3266"  translatable="false"> :کیا (نام) نے جب "(پہلا صحت فراہم کنندہ )  " کو چھوڑا تھا تو کیا  وہ زندہ تھی /تھا ؟ </string>
+    <string  name="txt_C3265_1"  translatable="false">C3265_1 : کیا (پہلا صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام ) کو   فوراً   ضرورت تھی واپس (ہسپتال) جانے کی؟</string>
+    <string  name="txt_C3265_2"  translatable="false"> C3265_2: کیا (پہلا صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام)  طبی معائنہ لئے واپس  آ ئے اگر  اسکی حالت بہتر نہیں ہوتی؟</string>
+    <string  name="txt_C3266"  translatable="false"> :کیا (نام) نے جب "(پہلا صحت فراہم کنندہ )  " کو چھوڑا تھا تو کیا  وہ زندہ تھی /تھا ؟ :C3266</string>
     <string  name="txt_C3267_1"  translatable="false">C3267_1:	اس وقت جب "(پہلا صحت فراہم کنندہ )  " کے پاس لے کر جانے کا فیصلہ کیاگیا تو  کیا ؟  معمول کے مطابق کھانا پینا،بہت کم کھانا پینا یا بلکل کھانا پینا نہیں.	</string>
     <string  name="txt_C3267_2"  translatable="false">C3267_2:	اس وقت جب "(پہلا صحت فراہم کنندہ )  " کے پاس لے کر جانے کا فیصلہ کیاگیا تو  کیا ؟  معمول کے مطابق  حرکت کرنا ، معمول سے کم حرکت کرنا   یا بلکل حرکت نہیں کرنا. 	</string>
     <string  name="txt_C3268_1"  translatable="false">C3268_1:	اس وقت جب  (نام ) کو (آخری صحت فراہم کنندہ )  کے پاس لے کر جانے کا فیصلہ کیا تھا؟ کیا وہ ۔۔۔۔  معمول کے مطابق کھانا پینا،بہت کم کھانا پینا یا بلکل کھانا پینا نہیں 	</string>
@@ -4561,13 +4565,13 @@
     <string name="txt_C3453_C2"  translatable="false">C3453_C2: 2.	دو یا س سے زائد گروپوں کی شناخت</string>
     <string name="txt_C3453_C3"  translatable="false">C3453_C3: 3.	کسی گروپ کی شناخت نہیں ہوئی</string>
 
-   <string  name="txt_C3454"  translatable="false">	اب میں آپ سے آخر کے چار سوالات  بچے اور بچے کی ماں کے بارے میں پوچھوں گی /گا. کیاکبھی بچہ کا HIV ٹیسٹ مثبت(ve+) آیا تھا؟	:	C3454	</string>
+    <string  name="txt_C3454"  translatable="false">	اب میں آپ سے آخر کے چار سوالات  بچے اور بچے کی ماں کے بارے میں پوچھوں گی /گا. کیاکبھی بچہ کا HIV ٹیسٹ مثبت(ve+) آیا تھا؟	:	C3454	</string>
     <string  name="txt_C3455"  translatable="false">	کیا کسی ماہر صحت کنندہ نے بچہ کو ایڈز کی  بیماری تشخیص کی تھی ؟	:	C3455	</string>
     <string  name="txt_C3456"  translatable="false">	کیا (آپ /بچہ کی حقیقی ماں) کا کبھی ایڈز کا ٹیسٹ مثبت (+ve) آیا تھا؟	:	C3456	</string>
     <string  name="txt_C3457"  translatable="false">	کیا کسی ماہر صحت کنندہ نے (آپ /بچہ کی حقیقی ماں  ) کو ایڈز ت کی بیماری تشخیص کی تھی ؟	:	C3457	</string>
     <string  name="txt_C3471"  translatable="false">	پڑھیں: آپ کا بہت شکریہ کہ آپ  نے میرے پوچھے گئے سوالات کا جواب دیا ۔کیا آپ مجھے (نام) کی بیماری کے بارے میں اپنے الفاظ میں کچھ بتائیں گی/گے؟ اس کے علاوہ کیا (نام) کی بیماری کے بارے میں کچھ ایسی معلومات ہیں جو میں نے نہ پوچھی ہوں اور آپ اس  کے  بارے میں مزید  بتانا چاہیں ؟	:	C3471 	</string>
     <string  name="txt_C3472"  translatable="false">	کیا اوپر دے گے وضاحتی بیانیے  میں   مندرجہ زیل میں سے کوئی بھی  الفاظ جو ہماری دلچسپی کے ہوں   بیان  ہوئے ہیں ؟	:	C3472	</string>
-
+    <string  name="txt_C3473"  translatable="false">	انٹرویور: انٹرویو کے بارے میں اپنا تبصرہ اور مشاہدہ  لکھیں.	:	C3473	</string>
     <!-- Child Urdu Text ENDS -->
 
     <!-- Child Urdu Responses STARTS -->
@@ -5818,7 +5822,7 @@
     <string  name="cb_C3283_3"  translatable="false">	 بس	</string>
     <string  name="cb_C3283_4"  translatable="false">	ٹیکسی/رکشہ/ٹریکٹر/موٹرسائیکل	</string>
     <string  name="cb_C3283_5"  translatable="false">	 ایمبولنس	</string>
-    <string  name="cb_C3283_6"  translatable="false">	 کوئی اور (وضاحت کریں)	</string>
+    <string  name="cb_C3283_6"  translatable="false">دیگر </string>
     <string  name="cb_C3283_7"  translatable="false">	کوئی  ذریعہ سفر دستیاب نہیں کرسکے	</string>
     <string  name="cb_C3283_DK"  translatable="false">	معلوم نہیں 	</string>
     <string  name="rb_C3284_1"  translatable="false">	                                         ہاں 	</string>

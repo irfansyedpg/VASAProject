@@ -50,8 +50,8 @@ import data.A.A4401_A4473;
  */
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final String DB_NAME = "vasa.db";
-    private static final int VERSION = 1;
+    public static final  String DB_NAME = "vasa.db";
+    private static final int    VERSION = 2;
 
     Context mContext;
 
@@ -123,14 +123,13 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
+        switch (i) {
+            case 1:
+                db.execSQL(data.N.N2321_N2322.getAlterQuery());
 
-        String query;
-        //db.beginTransaction();
-        //query = "DROP TABLE IF EXISTS " + oTable.TABLE_NAME;
-        //db.execSQL(query);
-
-        //db.setTransactionSuccessful();
-        //db.endTransaction();
+            /*case 2:
+                db.execSQL(data.N.N2321_N2322.getAlterQuery());*/
+        }
     }
 
     public Cursor execRAW(String query) {
@@ -158,6 +157,14 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         Cursor res = db.rawQuery("select * from " + tableName + " where study_id = " + "'" + study_id + "' AND A4252_2 IN ('4', '5', '6', '7')", null);
+        return res;
+    }
+
+    public Cursor getData4(String tableName, String study_id) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor res = db.rawQuery("select * from " + tableName + " where study_id = " + "'" + study_id + "' AND C3253 IN ('4', '5', '6', '7')", null);
         return res;
     }
 
@@ -920,7 +927,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     //2211C
-    public Long update_N2211C(N2211_N2248_A_C n2211C, int id) {
+    public Long update_N2211C(N2211_N2248_A_C n2211C, String study_id) {
 
         // Gets the data repository in write mode
         SQLiteDatabase db = this.getWritableDatabase();
@@ -1031,14 +1038,15 @@ public class DBHelper extends SQLiteOpenHelper {
 
         newRowId = db.update(data.N.N2211_N2248_A_C.TABLE_NAME,
                 values,
-                "id = ?",
-                new String[]{String.valueOf(id)});
+                N2211_N2248_B.sub_N2211_N2248_B.STUDYID + " =?",
+                new String[]{study_id});
+//                new String[]{String.valueOf(id)});
 
         return newRowId;
     }
 
     //3251C
-    public Long update_C3251C(C3251_C3288_A_C c3251C, int id) {
+    public Long update_C3251C(C3251_C3288_A_C c3251C, String studyID) {
 
         // Gets the data repository in write mode
         SQLiteDatabase db = this.getWritableDatabase();
@@ -1149,8 +1157,8 @@ public class DBHelper extends SQLiteOpenHelper {
 
         newRowId = db.update(data.C.C3251_C3288_A_C.TABLE_NAME,
                 values,
-                "id = ?",
-                new String[]{String.valueOf(id)});
+                C3251_C3288_A_C.sub_C3251_C3288_A_C.STUDYID + " = ?",
+                new String[]{studyID});
 
         return newRowId;
     }
@@ -1344,6 +1352,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2321_N2322.sub_N2321_N2322.N2322_5, n2321.getN23225());
         values.put(N2321_N2322.sub_N2321_N2322.N2322_6, n2321.getN23226());
         values.put(N2321_N2322.sub_N2321_N2322.N2322_DK, n2321.getN2322DK());
+        values.put(N2321_N2322.sub_N2321_N2322.N2323, n2321.getN2323());
         values.put(N2321_N2322.sub_N2321_N2322.STUDYID, n2321.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
@@ -1405,12 +1414,14 @@ public class DBHelper extends SQLiteOpenHelper {
                 Global.N.N2211_N2248_B.sub_N2211_N2248_B.N2213_2A,
                 Global.N.N2211_N2248_B.sub_N2211_N2248_B.N2213_4
         };
-        String whereClause = N2211_N2248_B.sub_N2211_N2248_B.STUDYID + " =? AND " + N2211_N2248_B.sub_N2211_N2248_B.ACT_ID_FK + " =?";
-        String[] whereArgs = {studyID, String.valueOf(id)};
+//        String whereClause = N2211_N2248_B.sub_N2211_N2248_B.STUDYID + " =? AND " + N2211_N2248_B.sub_N2211_N2248_B.ACT_ID_FK + " =?";
+        String whereClause = N2211_N2248_B.sub_N2211_N2248_B.STUDYID + " =? ";
+//        String[] whereArgs = {studyID, String.valueOf(id)};
+        String[] whereArgs = {studyID};
         String groupBy = null;
         String having = null;
 
-        String orderBy = "id ASC";
+        String orderBy = N2211_N2248_B.sub_N2211_N2248_B.STUDYID + " DESC";
 
         ArrayList<N2211_N2248_B> allFC = new ArrayList<>();
         try {
@@ -1449,12 +1460,13 @@ public class DBHelper extends SQLiteOpenHelper {
                 Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_2A,
                 Global.C.C3251_C3288_B.sub_C3251_C3288_B.C3253_4
         };
-        String whereClause = C3251_C3288_B.sub_C3251_C3288_B.STUDYID + " =? AND " + C3251_C3288_B.sub_C3251_C3288_B.ACT_ID_FK + " =?";
-        String[] whereArgs = {studyID, String.valueOf(id)};
+        String whereClause = C3251_C3288_B.sub_C3251_C3288_B.STUDYID + " =?";
+//        String[] whereArgs = {studyID, String.valueOf(id)};
+        String[] whereArgs = {studyID};
         String groupBy = null;
         String having = null;
 
-        String orderBy = "id ASC";
+        String orderBy = Global.C.C3251_C3288_B.sub_C3251_C3288_B.STUDYID + " DESC";
 
         ArrayList<C3251_C3288_B> allFC = new ArrayList<>();
         try {

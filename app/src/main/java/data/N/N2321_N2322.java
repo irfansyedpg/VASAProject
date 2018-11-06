@@ -16,9 +16,18 @@ public class N2321_N2322 {
                 Global.N.N2321_N2322.sub_N2321_N2322.N2322_4 + " TEXT," +
                 Global.N.N2321_N2322.sub_N2321_N2322.N2322_5 + " TEXT," +
                 Global.N.N2321_N2322.sub_N2321_N2322.N2322_6 + " TEXT," +
-                Global.N.N2321_N2322.sub_N2321_N2322.N2322_DK + " TEXT" +
+                Global.N.N2321_N2322.sub_N2321_N2322.N2322_DK + " TEXT," +
+                Global.N.N2321_N2322.sub_N2321_N2322.N2323 + " TEXT" +
 
                 ')';
+
+        return query;
+    }
+
+    public static String getAlterQuery() {
+        String query;
+        query = "ALTER TABLE '" + TABLE_NAME + "' ADD COLUMN " +
+                Global.N.N2321_N2322.sub_N2321_N2322.N2323 + " TEXT;";
 
         return query;
     }

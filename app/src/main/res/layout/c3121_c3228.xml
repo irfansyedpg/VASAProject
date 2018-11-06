@@ -123,6 +123,11 @@
                         style="@style/EditText_number"
                         android:hint="Months" />
 
+                    <EditText
+                        android:id="@+id/ed_C3122y"
+                        style="@style/EditText_number"
+                        android:hint="Year" />
+
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -2592,12 +2597,12 @@
                         <RadioButton
                             android:id="@+id/rb_C3165_u_DK"
                             style="@style/RadioButton"
-                            android:text="Don't Know" />
+                            android:text="@string/rb_DK" />
 
                         <RadioButton
                             android:id="@+id/rb_C3165_u_RA"
                             style="@style/RadioButton"
-                            android:text="Refused to Answer" />
+                            android:text="@string/rb_RA" />
 
                     </RadioGroup>
 
@@ -7349,7 +7354,7 @@
 
                     <EditText
                         android:id="@+id/ed_C3228"
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_number"
                         android:hint="@string/txt_C3228" />
 
                 </LinearLayout>

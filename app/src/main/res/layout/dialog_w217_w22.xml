@@ -61,7 +61,7 @@
                             android:layout_height="wrap_content"
                            
                             android:inputType="date"
-                            app:met_mask="####-##-##" />
+                            app:met_mask="##/##/####" />
 
                     </LinearLayout>
 

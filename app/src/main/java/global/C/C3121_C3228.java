@@ -7,6 +7,7 @@ public class C3121_C3228 {
     public static String C3121     = "C3121";
     public static String C3122d    = "C3122d";
     public static String C3122m    = "C3122m";
+    public static String C3122y    = "C3122y";
     public static String C3123_u   = "C3123_u";
     public static String C3123_b   = "C3123_b";
     public static String C3123_c   = "C3123_c";

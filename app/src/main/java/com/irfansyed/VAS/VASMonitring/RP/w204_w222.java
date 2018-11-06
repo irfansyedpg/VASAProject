@@ -561,6 +561,18 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
     boolean validateField() {
 
 
+        if (Gothrough.IamHiden(ll_W201) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_W202) == false) {
+            return false;
+        }
+
+        if (Gothrough.IamHiden(ll_W203) == false) {
+            return false;
+        }
+
         if (Gothrough.IamHiden(ll_W204) == false) {
             return false;
         }
@@ -594,7 +606,11 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
         if (Gothrough.IamHiden(ll_W214) == false) {
             return false;
         }
-        return Gothrough.IamHiden(ll_W215) != false;
+
+        if (Gothrough.IamHiden(ll_W215) == false) {
+            return false;
+        }
+        return true;
 
     }
 

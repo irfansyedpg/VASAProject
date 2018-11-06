@@ -195,7 +195,6 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/ll_C3473"
                         style="@style/TextViewInstructions"
                         android:text="@string/txt_C3473" />
 

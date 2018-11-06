@@ -355,7 +355,7 @@
 
                     <EditText
                         android:id="@+id/ed_C3364"
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_number"
                         android:hint="@string/txt_C3364" />
 
                 </LinearLayout>

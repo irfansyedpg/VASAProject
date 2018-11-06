@@ -26,6 +26,7 @@ import com.irfansyed.VAS.VASMonitring.RP.w204_w222;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Currency;
 import java.util.List;
 import java.util.Locale;
 import java.util.regex.Matcher;
@@ -515,7 +516,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 }
             }
 
-            if (ll_Q1606.getVisibility() == View.VISIBLE) {
+            if (ll_Q1603.getVisibility() == View.VISIBLE && ll_Q1606.getVisibility() == View.VISIBLE) {
 
                 if (!validate(ed_Q1606.getText().toString().trim())) {
 
@@ -579,42 +580,49 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             if (res.getCount() > 0)
 
             {
-
                 res.moveToFirst();
 
-                if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(5)) {
+                if (Integer.valueOf(res.getString(res.getColumnIndex("Q1405"))).equals(2)) {
 
-                    Intent c = new Intent(this, A4001_A4014.class);
+                    Intent c = new Intent(this, InterviewEnd.class);
                     c.putExtra("study_id", study_id);
+                    c.putExtra("currentSection", currentSection);
                     startActivity(c);
 
-                } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(2)) {
+                } else {
 
-                    Intent c = new Intent(this, w204_w222.class);
-                    c.putExtra("study_id", study_id);
-                    //c.putExtra("section", "C3001_C3011");
-                    startActivity(c);
+                    if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(5)) {
 
-                } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(3) || Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(4)) {
+                        Intent c = new Intent(this, A4001_A4014.class);
+                        c.putExtra("study_id", study_id);
+                        startActivity(c);
 
-                    Intent c = new Intent(this, w204_w222.class);
-                    c.putExtra("study_id", study_id);
-                    //c.putExtra("section", "C3012_C3022");
-                    startActivity(c);
+                    } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(2)) {
 
-                } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(1)) {
+                        Intent c = new Intent(this, w204_w222.class);
+                        c.putExtra("study_id", study_id);
+                        //c.putExtra("section", "C3001_C3011");
+                        startActivity(c);
 
-                    Intent c = new Intent(this, w204_w222.class);
-                    c.putExtra("study_id", study_id);
-                    //c.putExtra("section", "N2001_N2011");
-                    startActivity(c);
+                    } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(3) || Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(4)) {
 
+                        Intent c = new Intent(this, w204_w222.class);
+                        c.putExtra("study_id", study_id);
+                        //c.putExtra("section", "C3012_C3022");
+                        startActivity(c);
+
+                    } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(1)) {
+
+                        Intent c = new Intent(this, w204_w222.class);
+                        c.putExtra("study_id", study_id);
+                        //c.putExtra("section", "N2001_N2011");
+                        startActivity(c);
+
+                    }
                 }
             }
 
-        } else if (view.getId() == R.id.btn_Q1502)
-
-        {
+        } else if (view.getId() == R.id.btn_Q1502) {
 
             if (ed_Q1502.getText().toString().trim().length() > 0) {
                 int total = Integer.parseInt(ed_Q1502.getText().toString().trim());
@@ -1633,17 +1641,151 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_Q1405_1
                 || compoundButton.getId() == R.id.rb_Q1405_2) {
 
-            ClearAllcontrol.ClearAll(ll_Q1406);
-            ll_Q1406.setVisibility(View.GONE);
+            if (rb_Q1405_2.isChecked()) {
 
-            if (rb_Q1405_1.isChecked()) {
+                ClearAllcontrol.ClearAll(ll_Q1401);
+                ClearAllcontrol.ClearAll(ll_Q1402);
+                ClearAllcontrol.ClearAll(ll_Q1403);
+                ClearAllcontrol.ClearAll(ll_Q1403_OT);
+                ClearAllcontrol.ClearAll(ll_Q1404);
+                ClearAllcontrol.ClearAll(ll_Q1406);
+                ClearAllcontrol.ClearAll(ll_Q1407);
+                ClearAllcontrol.ClearAll(ll_Q1408);
+                ClearAllcontrol.ClearAll(ll_Q1409);
+                ClearAllcontrol.ClearAll(ll_Q1410);
+                ClearAllcontrol.ClearAll(ll_Q1411);
+                ClearAllcontrol.ClearAll(ll_Q1412);
+                ClearAllcontrol.ClearAll(ll_Q1413);
+                ClearAllcontrol.ClearAll(ll_Q1414_1);
+                ClearAllcontrol.ClearAll(ll_Q1414_2);
+                ClearAllcontrol.ClearAll(ll_Q1414_3);
+                ClearAllcontrol.ClearAll(ll_Q1414_4);
+                ClearAllcontrol.ClearAll(ll_Q1414_5);
+                ClearAllcontrol.ClearAll(ll_Q1414_6);
+                ClearAllcontrol.ClearAll(ll_Q1414_7);
+                ClearAllcontrol.ClearAll(ll_Q1414_8);
+                ClearAllcontrol.ClearAll(ll_Q1414_9);
+                ClearAllcontrol.ClearAll(ll_Q1414_10);
+                ClearAllcontrol.ClearAll(ll_Q1415);
+                ClearAllcontrol.ClearAll(ll_Q1416);
+                ClearAllcontrol.ClearAll(ll_Q1416_OT);
+                ClearAllcontrol.ClearAll(ll_Q1417);
+                ClearAllcontrol.ClearAll(ll_Q1417_OT);
+                ClearAllcontrol.ClearAll(ll_Q1418);
+                ClearAllcontrol.ClearAll(ll_Q1418_OT);
+                ClearAllcontrol.ClearAll(ll_Q1419);
+                ClearAllcontrol.ClearAll(ll_Q1419_OT);
+                ClearAllcontrol.ClearAll(ll_Q1420);
+                ClearAllcontrol.ClearAll(ll_Q1420_OT);
+                ClearAllcontrol.ClearAll(ll_Q1421);
+                ClearAllcontrol.ClearAll(ll_Q1421_OT);
+                ClearAllcontrol.ClearAll(ll_Q1501);
+                ClearAllcontrol.ClearAll(ll_Q1502);
+                ClearAllcontrol.ClearAll(ll_Q1601);
+                ClearAllcontrol.ClearAll(ll_Q1602);
+                ClearAllcontrol.ClearAll(ll_Q1603);
+                ClearAllcontrol.ClearAll(ll_Q1604);
+                ClearAllcontrol.ClearAll(ll_Q1604_OT);
+                ClearAllcontrol.ClearAll(ll_Q1605);
+                ClearAllcontrol.ClearAll(ll_Q1606);
+                ClearAllcontrol.ClearAll(ll_Q1607);
+                ClearAllcontrol.ClearAll(ll_Q1608);
+                ClearAllcontrol.ClearAll(ll_Q1609);
+                ClearAllcontrol.ClearAll(ll_Q1610);
 
-                ll_Q1406.setVisibility(View.VISIBLE);
+                ll_Q1401.setVisibility(View.GONE);
+                ll_Q1402.setVisibility(View.GONE);
+                ll_Q1403.setVisibility(View.GONE);
+                ll_Q1403_OT.setVisibility(View.GONE);
+                ll_Q1404.setVisibility(View.GONE);
+                ll_Q1406.setVisibility(View.GONE);
+                ll_Q1407.setVisibility(View.GONE);
+                ll_Q1408.setVisibility(View.GONE);
+                ll_Q1409.setVisibility(View.GONE);
+                ll_Q1410.setVisibility(View.GONE);
+                ll_Q1411.setVisibility(View.GONE);
+                ll_Q1412.setVisibility(View.GONE);
+                ll_Q1413.setVisibility(View.GONE);
+                ll_Q1414_1.setVisibility(View.GONE);
+                ll_Q1414_2.setVisibility(View.GONE);
+                ll_Q1414_3.setVisibility(View.GONE);
+                ll_Q1414_4.setVisibility(View.GONE);
+                ll_Q1414_5.setVisibility(View.GONE);
+                ll_Q1414_6.setVisibility(View.GONE);
+                ll_Q1414_7.setVisibility(View.GONE);
+                ll_Q1414_8.setVisibility(View.GONE);
+                ll_Q1414_9.setVisibility(View.GONE);
+                ll_Q1414_10.setVisibility(View.GONE);
+                ll_Q1415.setVisibility(View.GONE);
+                ll_Q1416.setVisibility(View.GONE);
+                ll_Q1416_OT.setVisibility(View.GONE);
+                ll_Q1417.setVisibility(View.GONE);
+                ll_Q1417_OT.setVisibility(View.GONE);
+                ll_Q1418.setVisibility(View.GONE);
+                ll_Q1418_OT.setVisibility(View.GONE);
+                ll_Q1419.setVisibility(View.GONE);
+                ll_Q1419_OT.setVisibility(View.GONE);
+                ll_Q1420.setVisibility(View.GONE);
+                ll_Q1420_OT.setVisibility(View.GONE);
+                ll_Q1421.setVisibility(View.GONE);
+                ll_Q1421_OT.setVisibility(View.GONE);
+                ll_Q1501.setVisibility(View.GONE);
+                ll_Q1502.setVisibility(View.GONE);
+                ll_Q1601.setVisibility(View.GONE);
+                ll_Q1602.setVisibility(View.GONE);
+                ll_Q1603.setVisibility(View.GONE);
+                ll_Q1604.setVisibility(View.GONE);
+                ll_Q1604_OT.setVisibility(View.GONE);
+                ll_Q1605.setVisibility(View.GONE);
+                ll_Q1606.setVisibility(View.GONE);
+                ll_Q1607.setVisibility(View.GONE);
+                ll_Q1608.setVisibility(View.GONE);
+                ll_Q1609.setVisibility(View.GONE);
+                ll_Q1610.setVisibility(View.GONE);
 
             } else {
 
-                ClearAllcontrol.ClearAll(ll_Q1406);
-                ll_Q1406.setVisibility(View.GONE);
+                ll_Q1401.setVisibility(View.VISIBLE);
+                ll_Q1402.setVisibility(View.VISIBLE);
+                ll_Q1403.setVisibility(View.VISIBLE);
+                ll_Q1404.setVisibility(View.VISIBLE);
+                ll_Q1406.setVisibility(View.VISIBLE);
+                ll_Q1407.setVisibility(View.VISIBLE);
+                ll_Q1408.setVisibility(View.VISIBLE);
+                ll_Q1409.setVisibility(View.VISIBLE);
+                ll_Q1410.setVisibility(View.VISIBLE);
+                ll_Q1411.setVisibility(View.VISIBLE);
+                ll_Q1412.setVisibility(View.VISIBLE);
+                ll_Q1413.setVisibility(View.VISIBLE);
+                ll_Q1414_1.setVisibility(View.VISIBLE);
+                ll_Q1414_2.setVisibility(View.VISIBLE);
+                ll_Q1414_3.setVisibility(View.VISIBLE);
+                ll_Q1414_4.setVisibility(View.VISIBLE);
+                ll_Q1414_5.setVisibility(View.VISIBLE);
+                ll_Q1414_6.setVisibility(View.VISIBLE);
+                ll_Q1414_7.setVisibility(View.VISIBLE);
+                ll_Q1414_8.setVisibility(View.VISIBLE);
+                ll_Q1414_9.setVisibility(View.VISIBLE);
+                ll_Q1414_10.setVisibility(View.VISIBLE);
+                ll_Q1415.setVisibility(View.VISIBLE);
+                ll_Q1416.setVisibility(View.VISIBLE);
+                ll_Q1417.setVisibility(View.VISIBLE);
+                ll_Q1418.setVisibility(View.VISIBLE);
+                ll_Q1419.setVisibility(View.VISIBLE);
+                ll_Q1420.setVisibility(View.VISIBLE);
+                ll_Q1421.setVisibility(View.VISIBLE);
+                ll_Q1501.setVisibility(View.VISIBLE);
+                ll_Q1502.setVisibility(View.VISIBLE);
+                ll_Q1601.setVisibility(View.VISIBLE);
+                ll_Q1602.setVisibility(View.VISIBLE);
+                ll_Q1603.setVisibility(View.VISIBLE);
+                ll_Q1604.setVisibility(View.VISIBLE);
+                ll_Q1605.setVisibility(View.VISIBLE);
+                ll_Q1606.setVisibility(View.VISIBLE);
+                ll_Q1607.setVisibility(View.VISIBLE);
+                ll_Q1608.setVisibility(View.VISIBLE);
+                ll_Q1609.setVisibility(View.VISIBLE);
+                ll_Q1610.setVisibility(View.VISIBLE);
             }
         }
 
@@ -1861,6 +2003,11 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             } else {
 
                 ll_Q1603.setVisibility(View.VISIBLE);
+
+                cb_Q1607_conflict.setChecked(false);
+                ed_Q1607_1.setText("0");
+                ed_Q1607_2.setText("0");
+                ed_Q1607_3.setText("0");
             }
         }
 
@@ -1901,6 +2048,10 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             } else {
 
                 ll_Q1606.setVisibility(View.VISIBLE);
+                cb_Q1607_conflict.setChecked(false);
+                ed_Q1607_1.setText("0");
+                ed_Q1607_2.setText("0");
+                ed_Q1607_3.setText("0");
             }
         }
 
@@ -2233,6 +2384,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             Q1405 = "1";
         } else if (rb_Q1405_2.isChecked()) {
             Q1405 = "2";
+            currentSection = 99;
         }
 
         if (ed_Q1406.getText().toString().trim().length() > 0) {
@@ -3332,7 +3484,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ed_Q1607_2.setText("0");
             ed_Q1607_3.setText("0");
 
-            cb_Q1607_conflict.setChecked(false);
+            cb_Q1607_conflict.setChecked(true);
         }
     }
 

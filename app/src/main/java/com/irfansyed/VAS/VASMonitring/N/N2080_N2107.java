@@ -205,14 +205,14 @@ public class N2080_N2107 extends AppCompatActivity {
                 if (i == bi.rbN20901.getId()) {
                     ClearAllcontrol.ClearAll(bi.llN2091N2192); //ll_N2091_N2192
 
-                    bi.llN2095.setVisibility(View.VISIBLE); //ll_N2095
-                    bi.llN2096.setVisibility(View.VISIBLE); //ll_N2096
+                    /*bi.llN2095.setVisibility(View.VISIBLE); //ll_N2095
+                    bi.llN2096.setVisibility(View.VISIBLE); //ll_N2096*/
                 } else {
                     ClearAllcontrol.ClearAll(bi.llN2095); //ll_N2095
-                    bi.llN2095.setVisibility(View.GONE);
+//                    bi.llN2095.setVisibility(View.GONE);
 
                     ClearAllcontrol.ClearAll(bi.llN2096); //ll_N2096
-                    bi.llN2096.setVisibility(View.GONE);
+//                    bi.llN2096.setVisibility(View.GONE);
                 }
 
                 if (!bi.rbN20901.isChecked() && (bi.rbN20931.isChecked() || bi.rbN20932.isChecked() || bi.rbN2093OT.isChecked() || bi.rbN2093DK.isChecked())) {

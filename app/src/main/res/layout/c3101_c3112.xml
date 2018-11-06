@@ -318,7 +318,7 @@
 
                     <EditText
                         android:id="@+id/ed_C3105_OT"
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_number"
                         android:hint="C3105: Option 3 or 4" />
 
                 </LinearLayout>
@@ -1991,7 +1991,7 @@
 
                     <EditText
                         android:id="@+id/ed_C3111_2"
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_number"
                         android:hint="@string/txt_C3111_2" />
 
                 </LinearLayout>
@@ -2054,7 +2054,7 @@
 
                     <EditText
                         android:id="@+id/ed_C3111_4"
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_number"
                         android:hint="@string/txt_C3111_4" />
 
                 </LinearLayout>
@@ -2118,7 +2118,7 @@
 
                     <EditText
                         android:id="@+id/ed_C3111_6"
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_number"
                         android:hint="@string/txt_C3111_6" />
 
                 </LinearLayout>
@@ -2224,7 +2224,7 @@
 
                     <EditText
                         android:id="@+id/ed_C3111_9"
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_number"
                     android:hint="@string/txt_C3111_9" />
 
                 </LinearLayout>

@@ -498,7 +498,7 @@ public class A4067_A4080 extends AppCompatActivity implements RadioButton.OnChec
 
         ed_A4069_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 23, 99, 99)});
         ed_A4069_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 30, 99, 99)});
-        ed_A4069_c.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        ed_A4069_c.setFilters(new InputFilter[]{new InputFilterMinMax(1, 998, 999, 999)});
 
         ed_A4072_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
         ed_A4072_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});

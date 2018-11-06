@@ -10,6 +10,7 @@ public class N2321_N2322 {
     public String N2322_5 = "";
     public String N2322_6 = "";
     public String N2322_DK = "";
+    public String N2323 = "";
 
     public String STUDYID = "";
 
@@ -85,6 +86,14 @@ public class N2321_N2322 {
         N2322_DK = n2322_DK;
     }
 
+    public String getN2323() {
+        return N2323;
+    }
+
+    public void setN2323(String n2323) {
+        N2323 = n2323;
+    }
+
     public interface sub_N2321_N2322 {
         String N2321 = "N2321";
         String N2322_1 = "N2322_1";
@@ -94,6 +103,7 @@ public class N2321_N2322 {
         String N2322_5 = "N2322_5";
         String N2322_6 = "N2322_6";
         String N2322_DK = "N2322_DK";
+        String N2323 = "N2323";
         String STUDYID = "study_id";
     }
 }

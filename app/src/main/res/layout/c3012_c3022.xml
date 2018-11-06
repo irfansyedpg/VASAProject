@@ -210,7 +210,7 @@
 
                         <EditText
                             android:id="@+id/ed_C3016"
-                            style="@style/EditText_Name"
+                            style="@style/EditText_number"
                             android:hint="@string/txt_C3016" />
 
                     </LinearLayout>

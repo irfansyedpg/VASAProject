@@ -208,7 +208,7 @@ public class N2321_N2322 extends AppCompatActivity {
         n2321.setN23225(bi.cbN23225.isChecked() ? "5" : "-1");
         n2321.setN23226(bi.cbN23226.isChecked() ? "6" : "-1");
         n2321.setN2322DK(bi.cbN2322DK.isChecked() ? "9" : "-1");
-
+        n2321.setN2323(bi.edN2323.getText().toString().trim().length() > 0 ? bi.edN2323.getText().toString() : "-1");
 
         n2321.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
@@ -227,6 +227,11 @@ public class N2321_N2322 extends AppCompatActivity {
         if (flag_n2016) {
             //ll_N2322
             return Gothrough.IamHiden(bi.llN2322);
+        }
+
+        //ll_N2323
+        if (!Gothrough.IamHiden(bi.llN2323)) {
+            return false;
         }
 
         return true;

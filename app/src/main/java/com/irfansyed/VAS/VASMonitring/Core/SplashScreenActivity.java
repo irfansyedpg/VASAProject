@@ -34,7 +34,7 @@ public class SplashScreenActivity extends AppCompatActivity {
          //  preferences.setReq1("http://43.245.131.159/umeed/Monitoring");
 
 
-        preferences.setReq1("http://10.199.26.250/sm/Welcome/collect_upload_data");
+        //preferences.setReq1("http://10.199.26.250/sm/Welcome/collect_upload_data");
         //preferences.setReq1("http://10.199.2.137/sm/Welcome/collect_upload_data");
 
 

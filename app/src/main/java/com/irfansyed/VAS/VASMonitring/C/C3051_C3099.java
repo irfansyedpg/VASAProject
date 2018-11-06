@@ -29,7 +29,7 @@ import utils.Gothrough;
 import utils.InputFilterMinMax;
 
 
-public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, View.OnFocusChangeListener {
+public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
     //region Declaration
 
@@ -880,7 +880,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
         ed_C3079.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
         ed_C3090_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 29, 99, 99)});
-        ed_C3090_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 11, 99, 99)});
+        ed_C3090_2.setFilters(new InputFilter[]{new InputFilterMinMax(0, 11, 99, 99)});
     }
 
     @Override
@@ -941,7 +941,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             if ((rb_C3051_1.isChecked() && (Integer.valueOf(ed_C3052.getText().toString()) == 9 || Integer.valueOf(ed_C3052.getText().toString()) == 10)) &&
                     (rb_C3057_1.isChecked() || rb_C3058_2.isChecked()) &&
                     (rb_C3059_1.isChecked() || rb_C3060_2.isChecked()) &&
-                    rb_C3061_1.isChecked() && Integer.valueOf(ed_C3052.getText().toString()) < 12 &&
+                    rb_C3061_1.isChecked() && Integer.valueOf(ed_C3062.getText().toString()) < 12 &&
                     rb_C3063_1.isChecked()) {
 
                 ll_C3066.setVisibility(View.VISIBLE);
@@ -1124,7 +1124,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             } else {
 
                 ClearAllcontrol.ClearAll(ll_C3068_OT);
-                ll_C3073_1.setVisibility(View.GONE);
+                ll_C3068_OT.setVisibility(View.GONE);
             }
         }
 
@@ -1315,6 +1315,24 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        if (compoundButton.getId() == R.id.rb_C3089_1
+                || compoundButton.getId() == R.id.rb_C3089_2
+                || compoundButton.getId() == R.id.rb_C3089_DK
+                || compoundButton.getId() == R.id.rb_C3089_RA) {
+
+            if (rb_C3089_2.isChecked() || rb_C3089_DK.isChecked() || rb_C3089_RA.isChecked()) {
+
+                ClearAllcontrol.ClearAll(ll_C3090);
+                ll_C3090.setVisibility(View.GONE);
+
+            } else {
+
+                ll_C3090.setVisibility(View.VISIBLE);
+            }
+        }
+
+
         if (compoundButton.getId() == R.id.rb_C3091_1
                 || compoundButton.getId() == R.id.rb_C3091_2
                 || compoundButton.getId() == R.id.rb_C3091_DK
@@ -1365,28 +1383,6 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             } else {
 
                 ll_C3099.setVisibility(View.VISIBLE);
-            }
-        }
-    }
-
-    @Override
-    public void onFocusChange(View view, boolean b) {
-
-        if (view.getId() == R.id.ed_C3068_OT) {
-
-            if (!b) {
-            } else {
-
-                rb_C3068_1.setChecked(false);
-                rb_C3068_2.setChecked(false);
-                rb_C3068_3.setChecked(false);
-                rb_C3068_4.setChecked(false);
-                rb_C3068_5.setChecked(false);
-                rb_C3068_6.setChecked(false);
-                rb_C3068_7.setChecked(false);
-                rb_C3068_8.setChecked(false);
-                rb_C3068_9.setChecked(false);
-                rb_C3068_DK.setChecked(false);
             }
         }
     }

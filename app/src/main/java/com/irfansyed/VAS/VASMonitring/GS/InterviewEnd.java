@@ -71,7 +71,7 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
 
         Initialization();
 
-        if(bCurrentSection > 0){
+        if(bCurrentSection > 0){  // Zero because CurrentSection intent will pass a "0" value
 
             currentSection = bCurrentSection;
             rb_Q1311_1.setEnabled(false);

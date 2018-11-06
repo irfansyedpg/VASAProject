@@ -1,6 +1,7 @@
 package com.irfansyed.VAS.VASMonitring.C;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -31,7 +32,7 @@ public class C3251_C3288_C extends AppCompatActivity {
     String study_id;
 
     C3251C3288CBinding bi;
-    boolean C3281Flag = true, flag_c3252 = true, flag_c3064 = true, flag_c3070 = true, flag_c3253 = true;
+    boolean C3281Flag = true, flag_c3252 = true, flag_c3064 = true, flag_c3070 = true, flag_c3253 = false;
     int skip_flag;
 
     @Override
@@ -44,6 +45,44 @@ public class C3251_C3288_C extends AppCompatActivity {
         this.setTitle(getString(R.string.h_c_sec_10));
 
         study_id = getIntent().getExtras().getString("study_id");
+
+        /*DBHelper db = new DBHelper(this);
+        Cursor C3253 = db.getData4("C3251_C3288_b", study_id);
+
+        if (C3253.getCount() < 2) {
+
+            bi.llC32681.setVisibility(View.GONE);
+            bi.llC32682.setVisibility(View.GONE);
+            bi.llC3269.setVisibility(View.GONE);
+            bi.llC3270.setVisibility(View.GONE);
+            bi.llC32711.setVisibility(View.GONE);
+            bi.llC32712.setVisibility(View.GONE);
+            bi.llC3272.setVisibility(View.GONE);
+            bi.llC3273.setVisibility(View.GONE);
+            bi.llC3274.setVisibility(View.GONE);
+            bi.llC32751.setVisibility(View.GONE);
+            bi.llC32752.setVisibility(View.GONE);
+            bi.llC3276.setVisibility(View.GONE);
+            bi.llC32771.setVisibility(View.GONE);
+            bi.llC32772.setVisibility(View.GONE);
+
+        } else {
+
+            bi.llC32681.setVisibility(View.VISIBLE);
+            bi.llC32682.setVisibility(View.VISIBLE);
+            bi.llC3269.setVisibility(View.VISIBLE);
+            bi.llC3270.setVisibility(View.VISIBLE);
+            bi.llC32711.setVisibility(View.VISIBLE);
+            bi.llC32712.setVisibility(View.VISIBLE);
+            bi.llC3272.setVisibility(View.VISIBLE);
+            bi.llC3273.setVisibility(View.VISIBLE);
+            bi.llC3274.setVisibility(View.VISIBLE);
+            bi.llC32751.setVisibility(View.VISIBLE);
+            bi.llC32752.setVisibility(View.VISIBLE);
+            bi.llC3276.setVisibility(View.VISIBLE);
+            bi.llC32771.setVisibility(View.VISIBLE);
+            bi.llC32772.setVisibility(View.VISIBLE);
+        }*/
 
         bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
         bi.edStudyId.setEnabled(false);
@@ -130,20 +169,17 @@ public class C3251_C3288_C extends AppCompatActivity {
                         break;
                     }*/
 
-                    if (Integer.valueOf(col_data.getC32532A()) == 1) {
-                        flag_c3253 = false;
-                        break;
-                    } else if (Integer.valueOf(col_data.getC3253()) > 3) {
-                        flag_c3253 = false;
+                    if (Integer.valueOf(col_data.getC32532A()) == 1 || Integer.valueOf(col_data.getC3253()) > 3) {
+                        flag_c3253 = true;
                         break;
                     }
 
                 }
             }
 
+        } else {
+            flag_c3253 = true;
         }
-
-
     }
 
     public void SetContentUI() {
@@ -695,10 +731,8 @@ public class C3251_C3288_C extends AppCompatActivity {
 
         C3251C.setC3288(bi.edC3288.getText().toString().trim().length() > 0 ? bi.edC3288.getText().toString() : "-1");
 
-//        C3251C.setSTUDYID(bi.edStudyId.getText().toString());
-
         DBHelper db = new DBHelper(this);
-        Long row = db.update_C3251C(C3251C, c3251A_ID);
+        Long row = db.update_C3251C(C3251C, bi.edStudyId.getText().toString());
 
         return row == 1;
     }

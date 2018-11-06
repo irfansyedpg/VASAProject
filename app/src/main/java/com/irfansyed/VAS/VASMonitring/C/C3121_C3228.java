@@ -723,6 +723,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
             ed_study_id,
             ed_C3122d,
             ed_C3122m,
+            ed_C3122y,
             ed_C3123_b,
             ed_C3123_c,
             ed_C3131,
@@ -774,6 +775,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
             C3121,
             C3122d,
             C3122m,
+            C3122y,
             C3123_u,
             C3123_b,
             C3123_c,
@@ -1790,6 +1792,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
         ed_C3122d = findViewById(R.id.ed_C3122d);
         ed_C3122m = findViewById(R.id.ed_C3122m);
+        ed_C3122y = findViewById(R.id.ed_C3122y);
         ed_C3123_b = findViewById(R.id.ed_C3123_b);
         ed_C3123_c = findViewById(R.id.ed_C3123_c);
         ed_C3131 = findViewById(R.id.ed_C3131);
@@ -3654,6 +3657,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         C3121 = "-1";
         C3122d = "-1";
         C3122m = "-1";
+        C3122y = "-1";
         C3123_u = "-1";
         C3123_b = "-1";
         C3123_c = "-1";
@@ -3843,6 +3847,10 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
 
         if (ed_C3122m.getText().toString().length() > 0) {
             C3122m = ed_C3122m.getText().toString().trim();
+        }
+
+        if (ed_C3122y.getText().toString().length() > 0) {
+            C3122y = ed_C3122y.getText().toString().trim();
         }
 
         if (rb_C3123_u_1.isChecked()) {
@@ -5266,6 +5274,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
                 + Global.C.C3121_C3228.C3121 + ","
                 + Global.C.C3121_C3228.C3122d + ","
                 + Global.C.C3121_C3228.C3122m + ","
+                + Global.C.C3121_C3228.C3122y + ","
                 + Global.C.C3121_C3228.C3123_u + ","
                 + Global.C.C3121_C3228.C3123_b + ","
                 + Global.C.C3121_C3228.C3123_c + ","
@@ -5440,6 +5449,7 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
                 C3121 + "','" +
                 C3122d + "','" +
                 C3122m + "','" +
+                C3122y + "','" +
                 C3123_u + "','" +
                 C3123_b + "','" +
                 C3123_c + "','" +

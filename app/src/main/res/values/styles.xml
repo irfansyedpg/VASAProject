@@ -61,9 +61,7 @@
         <item name="android:singleLine">true</item>
         <!--  <item name="android:digits">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</item> -->
 
-        <item name="android:digits">[a-zA-Z
-            ]+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
-        </item>
+        <item name="android:digits">[a-zA-Z]+ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789,</item>
 
     </style>
 

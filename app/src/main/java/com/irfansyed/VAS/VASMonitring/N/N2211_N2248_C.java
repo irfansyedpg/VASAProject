@@ -26,7 +26,7 @@ import static com.irfansyed.VAS.VASMonitring.N.N2211_N2248_A.n2211A_ID;
 public class N2211_N2248_C extends AppCompatActivity {
 
     N2211N2248CBinding bi;
-    boolean N2241Flag = true, flag_n2212 = true, flag_n2090 = true, flag_n2093 = true, flag_n2213 = true;
+    boolean N2241Flag = true, flag_n2212 = true, flag_n2090 = true, flag_n2093 = true, flag_n2213 = false;
     int skip_flag;
 
     @Override
@@ -88,15 +88,22 @@ public class N2211_N2248_C extends AppCompatActivity {
                             || (Integer.valueOf(col_data.getN22132A()) == 1)) {
                         flag_n2213 = false;
                         break;
-                    }*/
+                    }
                     if (Integer.valueOf(col_data.getN2213()) <= 3
                             && Integer.valueOf(col_data.getN22132A()) != 1) {
                         flag_n2213 = false;
+                        break;
+                    }*/
+
+                    if (Integer.valueOf(col_data.getN22132A()) == 1 || Integer.valueOf(col_data.getN2213()) > 3) {
+                        flag_n2213 = true;
                         break;
                     }
                 }
             }
 
+        } else {
+            flag_n2213 = true;
         }
 
 
@@ -655,10 +662,8 @@ public class N2211_N2248_C extends AppCompatActivity {
 
         n2211C.setN2248(bi.edN2248.getText().toString().trim().length() > 0 ? bi.edN2248.getText().toString() : "-1");
 
-        n2211C.setSTUDYID(bi.edStudyId.getText().toString());
-
         DBHelper db = new DBHelper(this);
-        Long row = db.update_N2211C(n2211C, n2211A_ID);
+        Long row = db.update_N2211C(n2211C, bi.edStudyId.getText().toString());
 
         return row == 1;
     }

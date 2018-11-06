@@ -15,6 +15,7 @@ public class C3121_C3228 {
                 Global.C.C3121_C3228.C3121     + " TEXT," +
                 Global.C.C3121_C3228.C3122d    + " TEXT," +
                 Global.C.C3121_C3228.C3122m    + " TEXT," +
+                Global.C.C3121_C3228.C3122y    + " TEXT," +
                 Global.C.C3121_C3228.C3123_u   + " TEXT," +
                 Global.C.C3121_C3228.C3123_b   + " TEXT," +
                 Global.C.C3121_C3228.C3123_c   + " TEXT," +
