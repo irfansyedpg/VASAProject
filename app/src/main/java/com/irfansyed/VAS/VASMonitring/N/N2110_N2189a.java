@@ -531,14 +531,16 @@ public class N2110_N2189a extends AppCompatActivity {
                 return false;
             }
 
-            if ((flag_n2066 && flag_n2067) || flag_n2006_2) {
-                //ll_N2129
-                if (!Gothrough.IamHiden(bi.llN2129)) {
-                    return false;
-                }
-                //ll_N2130
-                if (!Gothrough.IamHiden(bi.llN2130)) {
-                    return false;
+            if (flag_n2066 && flag_n2067) {
+                if (flag_n2006_2) {
+                    //ll_N2129
+                    if (!Gothrough.IamHiden(bi.llN2129)) {
+                        return false;
+                    }
+                    //ll_N2130
+                    if (!Gothrough.IamHiden(bi.llN2130)) {
+                        return false;
+                    }
                 }
             }
         }

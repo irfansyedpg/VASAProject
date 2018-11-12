@@ -2938,7 +2938,7 @@
 
                             <!-- Check Box N2100 Starts -->
                             <LinearLayout
-                                android:id="@+id/ll_N2100_N2101"
+                                android:id="@+id/ll_N2100_N2100"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical"
@@ -3004,67 +3004,68 @@
                                 </android.support.v7.widget.CardView>
                                 <!-- Check Box N2100 Ends -->
 
-                                <!-- Check Box N2101 Starts -->
-                                <android.support.v7.widget.CardView style="@style/Q_CardView">
-
-                                    <LinearLayout
-                                        android:id="@+id/ll_N2101"
-                                        style="@style/Q_Linerlayout_v">
-
-                                        <TextView
-                                            android:id="@+id/txt_N2101"
-                                            style="@style/TextView"
-                                            android:text="@string/txt_N2101" />
-
-                                        <TextView
-                                            style="@style/TextView_Hint"
-                                            android:text="@string/N2101_h" />
-
-                                        <CheckBox
-                                            android:id="@+id/cb_N2101_1"
-                                            style="@style/CheckBox"
-                                            android:text="@string/cb_N2101_1" />
-
-                                        <CheckBox
-                                            android:id="@+id/cb_N2101_2"
-                                            style="@style/CheckBox"
-                                            android:text="@string/cb_N2101_2" />
-
-                                        <CheckBox
-                                            android:id="@+id/cb_N2101_3"
-                                            style="@style/CheckBox"
-                                            android:text="@string/cb_N2101_3" />
-
-                                        <CheckBox
-                                            android:id="@+id/cb_N2101_4"
-                                            style="@style/CheckBox"
-                                            android:text="@string/cb_N2101_4" />
-
-                                        <CheckBox
-                                            android:id="@+id/cb_N2101_5"
-                                            style="@style/CheckBox"
-                                            android:text="@string/cb_N2101_5" />
-
-                                        <CheckBox
-                                            android:id="@+id/cb_N2101_6"
-                                            style="@style/CheckBox"
-                                            android:text="@string/cb_N2101_OT" />
-
-                                        <CheckBox
-                                            android:id="@+id/cb_N2101_7"
-                                            style="@style/CheckBox"
-                                            android:text="@string/cb_N2101_7" />
-
-                                        <CheckBox
-                                            android:id="@+id/cb_N2101_DK"
-                                            style="@style/CheckBox"
-                                            android:text="@string/dnt" />
-
-                                    </LinearLayout>
-
-                                </android.support.v7.widget.CardView>
-
                             </LinearLayout>
+
+                            <!-- Check Box N2101 Starts -->
+                            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_N2101"
+                                    style="@style/Q_Linerlayout_v">
+
+                                    <TextView
+                                        android:id="@+id/txt_N2101"
+                                        style="@style/TextView"
+                                        android:text="@string/txt_N2101" />
+
+                                    <TextView
+                                        style="@style/TextView_Hint"
+                                        android:text="@string/N2101_h" />
+
+                                    <CheckBox
+                                        android:id="@+id/cb_N2101_1"
+                                        style="@style/CheckBox"
+                                        android:text="@string/cb_N2101_1" />
+
+                                    <CheckBox
+                                        android:id="@+id/cb_N2101_2"
+                                        style="@style/CheckBox"
+                                        android:text="@string/cb_N2101_2" />
+
+                                    <CheckBox
+                                        android:id="@+id/cb_N2101_3"
+                                        style="@style/CheckBox"
+                                        android:text="@string/cb_N2101_3" />
+
+                                    <CheckBox
+                                        android:id="@+id/cb_N2101_4"
+                                        style="@style/CheckBox"
+                                        android:text="@string/cb_N2101_4" />
+
+                                    <CheckBox
+                                        android:id="@+id/cb_N2101_5"
+                                        style="@style/CheckBox"
+                                        android:text="@string/cb_N2101_5" />
+
+                                    <CheckBox
+                                        android:id="@+id/cb_N2101_6"
+                                        style="@style/CheckBox"
+                                        android:text="@string/cb_N2101_OT" />
+
+                                    <CheckBox
+                                        android:id="@+id/cb_N2101_7"
+                                        style="@style/CheckBox"
+                                        android:text="@string/cb_N2101_7" />
+
+                                    <CheckBox
+                                        android:id="@+id/cb_N2101_DK"
+                                        style="@style/CheckBox"
+                                        android:text="@string/dnt" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
                         </LinearLayout>
                         <!-- Check Box N2101 Ends -->
 

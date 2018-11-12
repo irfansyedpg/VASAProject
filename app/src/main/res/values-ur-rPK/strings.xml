@@ -352,8 +352,8 @@
     <string  name="rb_Q1503_1"  translatable="false">شریک حیات	</string>
     <string  name="rb_Q1503_2"  translatable="false">ماں	</string>
     <string  name="rb_Q1503_3"  translatable="false">باپ	</string>
-    <string  name="rb_Q1503_4"  translatable="false">نانی/دادی	</string>
-    <string  name="rb_Q1503_5"  translatable="false">نانا / داد	</string>
+    <string  name="rb_Q1503_4"  translatable="false">نانا / دادا</string>
+    <string  name="rb_Q1503_5"  translatable="false">نانی/دادی</string>
     <string  name="rb_Q1503_6"  translatable="false">بیٹا	</string>
     <string  name="rb_Q1503_7"  translatable="false">بیٹی	</string>
     <string  name="rb_Q1503_8"  translatable="false">آنٹی	</string>
@@ -2532,9 +2532,9 @@
     <string  name="txt_N2233"  translatable="false">	کیا "آخری صحت فراہم کنندہ )" نے (نام) کو اسکی تکلیف یا بیماری کی وجہ سے کسی دوسرے ہسپتال میں بھیجا تھا؟	:N2233	</string>
     <string  name="txt_N2234"  translatable="false">N2234:	 (نام) کو کہاں منتقل کیا گیا تھا؟	</string>
     <string  name="txt_N2234_2"  translatable="false">N2234_2:	صحت کی سہولت کا نام	</string>
-    <string  name="txt_N2235_1"  translatable="false"> : کیا (آخری صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام ) کو   فوراً   ضرورت تھی واپس (ہسپتال) جانے کی؟</string>
-    <string  name="txt_N2235_2"  translatable="false"> : کیا (آخری صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام)  طبی معائنہ لئے واپس  آ ئے اگر  اسکی حالت بہتر نہیں ہوتی؟</string>
-    <string  name="txt_N2236"  translatable="false"> :کیا (نام) نے جب "(آخری صحت فراہم کنندہ )  " کو چھوڑا تھا تو کیا  وہ زندہ تھی /تھا ؟ </string>
+    <string  name="txt_N2235_1"  translatable="false"> : کیا (آخری صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام ) کو   فوراً   ضرورت تھی واپس (ہسپتال) جانے کی؟ :N2235_1</string>
+    <string  name="txt_N2235_2"  translatable="false">:N2235_2: کیا (آخری صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام)  طبی معائنہ لئے واپس  آ ئے اگر  اسکی حالت بہتر نہیں ہوتی؟</string>
+    <string  name="txt_N2236"  translatable="false"> :کیا (نام) نے جب "(آخری صحت فراہم کنندہ )  " کو چھوڑا تھا تو کیا  وہ زندہ تھی /تھا ؟ :N2236 </string>
     <string  name="txt_N2237_1"  translatable="false">N2237_1:	اس وقت جب "(آخری صحت فراہم کنندہ )  " کے پاس لے کر جانے کا فیصلہ کیاگیا تو  کیا ؟  معمول کے مطابق کھانا پینا،بہت کم کھانا پینا یا بلکل کھانا پینا نہیں.	</string>
     <string  name="txt_N2237_2"  translatable="false">N2237_2:	اس وقت جب "(آخری صحت فراہم کنندہ )  " کے پاس لے کر جانے کا فیصلہ کیاگیا تو  کیا ؟  معمول کے مطابق  حرکت کرنا ، معمول سے کم حرکت کرنا   یا بلکل حرکت نہیں کرنا. 	</string>
 

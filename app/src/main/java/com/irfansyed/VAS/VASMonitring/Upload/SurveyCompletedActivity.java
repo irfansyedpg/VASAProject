@@ -82,6 +82,7 @@ import Global.N.N2311_N2317;
 import Global.N.N2321_N2322;
 import data.DBHelper;
 import data.LocalDataManager;
+import utils.BackgroundTask;
 
 import static java.lang.Integer.parseInt;
 
@@ -129,9 +130,10 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_survey_pending, parent, false);
+
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_survey_pending, parent, false);
         ViewHolder vh = new ViewHolder(v);
+
         return vh;
     }
 
@@ -147,6 +149,15 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
         vh.textName.setText(mList.get(position).split("--")[0]);
         vh.textId.setText(position + 1 + "");
+
+        String memberId = vh.textName.getText().toString().trim();
+        String[] arrr = memberId.split("/");
+        String study_id;
+        study_id = arrr[0];
+
+        String method = "check_study_id";
+        BackgroundTask backgroundTask = new BackgroundTask(mContext, vh.itemView);
+        backgroundTask.execute(method, study_id);
 
         vh.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -166,20 +177,23 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         Q1101_Q1610.study_id_upload = arrr[0];
                         int interviewType = parseInt(arrr[1]);
 
-
-                        //new Upload_Q1101_Q1610(mContext).execute();
-
                         if (interviewType == 1) {
 
                             upload_N(Q1101_Q1610.study_id_upload);
+                            vh.itemView.setBackgroundColor(Color.parseColor("#99FF99"));
+                            vh.itemView.setClickable(false);
 
                         } else if (interviewType == 2) {
 
                             upload_C(Q1101_Q1610.study_id_upload);
+                            vh.itemView.setBackgroundColor(Color.parseColor("#99FF99"));
+                            vh.itemView.setClickable(false);
 
                         } else if (interviewType == 3) {
 
                             upload_A(Q1101_Q1610.study_id_upload);
+                            vh.itemView.setBackgroundColor(Color.parseColor("#99FF99"));
+                            vh.itemView.setClickable(false);
                         }
 
                     }
@@ -193,7 +207,6 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
             }
         });
     }
-
 
     @Override
     public int getItemCount() {
@@ -214,7 +227,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
     public void upload_N(final String study_id) {
 
         final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_N";
-        //final String ROOT_URL = "http://192.168.1.141/sm/Welcome/collect_N";
+        //final String ROOT_URL = "http://192.168.1.20/sm/Welcome/collect_N";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -223,14 +236,11 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
                     @Override
                     public void onResponse(String response) {
-
-                        Toast.makeText(mContext, response, Toast.LENGTH_LONG).show();
-                        myRequestQueue.getCache().clear();
-                        //upload2(study_id);
-
                         try {
 
-                            JSONObject JSONObject = new JSONObject(response);
+                            JSONObject jsonObject = new JSONObject(response);
+                            Toast.makeText(mContext, jsonObject.getString("message"), Toast.LENGTH_LONG).show();
+                            myRequestQueue.getCache().clear();
 
                         } catch (JSONException e) {
 
@@ -1823,7 +1833,15 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(N2321_N2322.sub_N2321_N2322.N2322_5, c16.getString(c16.getColumnIndex("N2322_5")));
                     params.put(N2321_N2322.sub_N2321_N2322.N2322_6, c16.getString(c16.getColumnIndex("N2322_6")));
                     params.put(N2321_N2322.sub_N2321_N2322.N2322_DK, c16.getString(c16.getColumnIndex("N2322_DK")));
-                    params.put(N2321_N2322.sub_N2321_N2322.N2323, "-2");
+
+                    if (c16.getString(c16.getColumnIndex("N2323")) != null) {
+
+                        params.put(N2321_N2322.sub_N2321_N2322.N2323, c16.getString(c16.getColumnIndex("N2323")));
+
+                    } else {
+
+                        params.put(N2321_N2322.sub_N2321_N2322.N2323, "-1");
+                    }
 
                 } else {
 
@@ -1965,7 +1983,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
             }
         };
 
-        sendMyRequest.setRetryPolicy(new DefaultRetryPolicy(5000,0, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        sendMyRequest.setRetryPolicy(new DefaultRetryPolicy(5000, 0, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 
         myRequestQueue.add(sendMyRequest);
     }
@@ -1973,7 +1991,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
     public void upload_C(final String study_id) {
 
         final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_C";
-        //final String ROOT_URL = "http://192.168.1.141/sm/Welcome/collect_C";
+        //final String ROOT_URL = "http://192.168.1.20/sm/Welcome/collect_C";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -1983,13 +2001,11 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     @Override
                     public void onResponse(String response) {
 
-                        Toast.makeText(mContext, response, Toast.LENGTH_LONG).show();
-                        myRequestQueue.getCache().clear();
-                        //upload2(study_id);
-
                         try {
 
-                            JSONObject JSONObject = new JSONObject(response);
+                            JSONObject jsonObject = new JSONObject(response);
+                            Toast.makeText(mContext, jsonObject.getString("message"), Toast.LENGTH_LONG).show();
+                            myRequestQueue.getCache().clear();
 
                         } catch (JSONException e) {
 
@@ -3557,7 +3573,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
             }
         };
 
-        sendMyRequest.setRetryPolicy(new DefaultRetryPolicy(5000,0, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        sendMyRequest.setRetryPolicy(new DefaultRetryPolicy(5000, 0, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 
         myRequestQueue.add(sendMyRequest);
     }
@@ -3565,7 +3581,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
     public void upload_A(final String study_id) {
 
         final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_A";
-        //final String ROOT_URL = "http://192.168.1.141/sm/Welcome/collect_A";
+        //final String ROOT_URL = "http://192.168.1.20/sm/Welcome/collect_A";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -3575,13 +3591,11 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     @Override
                     public void onResponse(String response) {
 
-                        Toast.makeText(mContext, response, Toast.LENGTH_LONG).show();
-                        myRequestQueue.getCache().clear();
-                        //upload2(study_id);
-
                         try {
 
-                            JSONObject JSONObject = new JSONObject(response);
+                            JSONObject jsonObject = new JSONObject(response);
+                            Toast.makeText(mContext, jsonObject.getString("message"), Toast.LENGTH_LONG).show();
+                            myRequestQueue.getCache().clear();
 
                         } catch (JSONException e) {
 
@@ -4881,9 +4895,11 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
             }
         };
 
-        sendMyRequest.setRetryPolicy(new DefaultRetryPolicy(5000,0, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        sendMyRequest.setRetryPolicy(new DefaultRetryPolicy(5000, 0, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 
         myRequestQueue.add(sendMyRequest);
     }
 
 }
+
+

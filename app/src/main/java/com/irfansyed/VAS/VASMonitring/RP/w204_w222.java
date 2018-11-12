@@ -330,8 +330,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
                 if (rb_W219_1.isChecked()) {
                     lst_w19.add("1");
-                }
-                if (rb_W219_2.isChecked()) {
+                } else if (rb_W219_2.isChecked()) {
                     lst_w19.add("2");
                 } else {
                     lst_w19.add("-1");
