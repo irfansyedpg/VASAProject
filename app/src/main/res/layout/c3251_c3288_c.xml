@@ -1035,7 +1035,7 @@ Inst_4: If C3253 ≠ “Health provider” (Never took to a health provider) →
                                             <TextView
                                                 android:id="@+id/txt_C3267_2"
                                                 style="@style/TextView"
-                                                android:text="@string/txt_C3267_1" />
+                                                android:text="@string/txt_C3267_2" />
 
                                             <RadioGroup style="@style/RadioGroup">
 

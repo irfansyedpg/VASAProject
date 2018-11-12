@@ -2115,8 +2115,8 @@ public class C3121_C3228 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3227_21_DK.setOnCheckedChangeListener(this);
         rb_C3227_21_RA.setOnCheckedChangeListener(this);
 
-        ed_C3122d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
-        ed_C3122m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+        //ed_C3122d.setFilters(new InputFilter[]{new InputFilterMinMax(0, 29, 99, 99)});
+        //ed_C3122m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
         ed_C3123_b.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
         ed_C3123_c.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
         ed_C3132_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});

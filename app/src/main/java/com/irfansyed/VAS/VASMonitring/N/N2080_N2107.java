@@ -273,7 +273,7 @@ public class N2080_N2107 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i != bi.rbN20991.getId()) {
-                    ClearAllcontrol.ClearAll(bi.llN2100N2101); //ll_N2100_N2101
+                    ClearAllcontrol.ClearAll(bi.llN2100N2100); //ll_N2100_N2100
                 }
             }
         });
@@ -855,11 +855,11 @@ public class N2080_N2107 extends AppCompatActivity {
                         if (!Gothrough.IamHiden(bi.llN2100)) {
                             return false;
                         }
+                    }
 
-                        //ll_N2101
-                        if (!Gothrough.IamHiden(bi.llN2101)) {
-                            return false;
-                        }
+                    //ll_N2101
+                    if (!Gothrough.IamHiden(bi.llN2101)) {
+                        return false;
                     }
                 }
 

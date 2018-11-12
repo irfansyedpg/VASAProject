@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/colorPrimaryDark"
-        android:text="These completed surveys will be soon uploaded to server"
+        android:text="These completed surveys will be soon be uploaded to server"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/textView5" />

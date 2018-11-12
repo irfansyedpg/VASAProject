@@ -692,7 +692,7 @@ Inst_4: If N2213 ≠ “Health provider” (Never took to a health provider) →
                                                 <RadioButton
                                                     android:id="@+id/rb_N2222_2"
                                                     style="@style/RadioButton"
-                                                    android:text="@string/rb_N2222_1" />
+                                                    android:text="@string/rb_N2222_2" />
 
                                                 <RadioButton
                                                     android:id="@+id/rb_N2222_DK"

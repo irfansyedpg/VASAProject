@@ -51,7 +51,7 @@ import data.A.A4401_A4473;
 public class DBHelper extends SQLiteOpenHelper {
 
     public static final  String DB_NAME = "vasa.db";
-    private static final int    VERSION = 2;
+    private static final int    VERSION = 3;
 
     Context mContext;
 
@@ -128,7 +128,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 db.execSQL(data.N.N2321_N2322.getAlterQuery());
 
             /*case 2:
-                db.execSQL(data.N.N2321_N2322.getAlterQuery());*/
+                db.execSQL(data.C.C3121_C3228.getAlterQuery());*/
         }
     }
 

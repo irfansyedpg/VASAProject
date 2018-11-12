@@ -161,7 +161,7 @@ public class InterviewEnd extends AppCompatActivity implements View.OnClickListe
 
 
         Calendar cdt = Calendar.getInstance();
-        SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
+        SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         String formattedDate = dt.format(cdt.getTime());
         String[] dtf = formattedDate.split(" ");
 
