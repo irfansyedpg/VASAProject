@@ -51,7 +51,7 @@ import data.A.A4401_A4473;
 public class DBHelper extends SQLiteOpenHelper {
 
     public static final  String DB_NAME = "vasa.db";
-    private static final int    VERSION = 3;
+    private static final int    VERSION = 5;
 
     Context mContext;
 
@@ -152,6 +152,14 @@ public class DBHelper extends SQLiteOpenHelper {
         return res;
     }
 
+    public Cursor getAllStudyIDs() {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor res = db.rawQuery("select * from Q1101_Q1610 where STATUS = 1", null);
+        return res;
+    }
+
     public Cursor getData3(String tableName, String study_id) {
 
         SQLiteDatabase db = this.getWritableDatabase();
@@ -214,6 +222,26 @@ public class DBHelper extends SQLiteOpenHelper {
         return newRowId;
     }
 
+
+    public long updateStatus(String tableName, ContentValues values, String study_id) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        long newRowId;
+        newRowId = db.update(tableName, values, Global.GS.Q1101_Q1610.study_id + " = ?", new String[]{study_id});
+        return newRowId;
+    }
+
+
+    /*public void updateee() {
+
+        //SQLiteDatabase db = this.getWritableDatabase();
+        //db.rawQuery("UPDATE Q1101_Q1610 set STATUS = 0 where study_id = '0165-136-01'");
+
+        LocalDataManager Lm = new LocalDataManager(mContext);
+        LocalDataManager.database.execSQL("UPDATE Q1101_Q1610 set STATUS = 1 where study_id = '6666-666-66' or study_id = '7777-777-77'");
+
+        //LocalDataManager.database.execSQL("DELETE from Q1101_Q1610 where study_id = '0247-029-01'");
+    }*/
 
     /*Ali's Files*/
     //2001

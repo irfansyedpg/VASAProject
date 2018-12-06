@@ -427,6 +427,23 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             C3001_C3011.moveToFirst();
 
             C3006 = Integer.valueOf(C3001_C3011.getString(C3001_C3011.getColumnIndex("C3006")));
+
+            if (C3006 == 1 || C3006 == 2 || C3006 == 11 || C3006 == 12 || C3006 == 99) {
+
+                ClearAllcontrol.ClearAll(ll_C3077);
+                ClearAllcontrol.ClearAll(ll_C3081);
+                ClearAllcontrol.ClearAll(ll_C3082);
+
+                ll_C3077.setVisibility(View.GONE);
+                ll_C3081.setVisibility(View.GONE);
+                ll_C3082.setVisibility(View.GONE);
+
+            } else {
+
+                ll_C3077.setVisibility(View.VISIBLE);
+                ll_C3081.setVisibility(View.VISIBLE);
+                ll_C3082.setVisibility(View.VISIBLE);
+            }
         }
 
         events_call();
@@ -789,6 +806,11 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     void events_call() {
 
+        rb_C3053_1.setOnCheckedChangeListener(this);
+        rb_C3053_2.setOnCheckedChangeListener(this);
+        rb_C3053_DK.setOnCheckedChangeListener(this);
+        rb_C3053_RA.setOnCheckedChangeListener(this);
+
         rb_C3057_1.setOnCheckedChangeListener(this);
         rb_C3057_2.setOnCheckedChangeListener(this);
         rb_C3057_DK.setOnCheckedChangeListener(this);
@@ -829,6 +851,19 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         cb_C3067_7.setOnCheckedChangeListener(this);
         cb_C3067_DK.setOnCheckedChangeListener(this);
 
+
+        rb_C3068_1.setOnCheckedChangeListener(this);
+        rb_C3068_2.setOnCheckedChangeListener(this);
+        rb_C3068_3.setOnCheckedChangeListener(this);
+        rb_C3068_4.setOnCheckedChangeListener(this);
+        rb_C3068_5.setOnCheckedChangeListener(this);
+        rb_C3068_6.setOnCheckedChangeListener(this);
+        rb_C3068_7.setOnCheckedChangeListener(this);
+        rb_C3068_8.setOnCheckedChangeListener(this);
+        rb_C3068_9.setOnCheckedChangeListener(this);
+        rb_C3068_10.setOnCheckedChangeListener(this);
+        rb_C3068_DK.setOnCheckedChangeListener(this);
+
         rb_C3072_1.setOnCheckedChangeListener(this);
         rb_C3072_2.setOnCheckedChangeListener(this);
         rb_C3072_DK.setOnCheckedChangeListener(this);
@@ -863,6 +898,12 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3086_DK.setOnCheckedChangeListener(this);
         rb_C3086_RA.setOnCheckedChangeListener(this);
 
+
+        rb_C3089_1.setOnCheckedChangeListener(this);
+        rb_C3089_2.setOnCheckedChangeListener(this);
+        rb_C3089_DK.setOnCheckedChangeListener(this);
+        rb_C3089_RA.setOnCheckedChangeListener(this);
+
         rb_C3091_1.setOnCheckedChangeListener(this);
         rb_C3091_2.setOnCheckedChangeListener(this);
         rb_C3091_DK.setOnCheckedChangeListener(this);
@@ -885,6 +926,35 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+        if (compoundButton.getId() == R.id.rb_C3053_1
+                || compoundButton.getId() == R.id.rb_C3053_2
+                || compoundButton.getId() == R.id.rb_C3053_DK
+                || compoundButton.getId() == R.id.rb_C3053_RA) {
+
+            if ((rb_C3051_1.isChecked() || rb_C3051_2.isChecked() || rb_C3051_DK.isChecked() || rb_C3051_RA.isChecked()) && ed_C3052.getText().toString().length() > 0) {
+
+                if ((!rb_C3051_1.isChecked() && (Integer.valueOf(ed_C3052.getText().toString()) == 9 || Integer.valueOf(ed_C3052.getText().toString()) == 10))) {
+
+                    ClearAllcontrol.ClearAll(ll_C3077);
+                    ClearAllcontrol.ClearAll(ll_C3081);
+                    ClearAllcontrol.ClearAll(ll_C3082);
+
+                    ll_C3077.setVisibility(View.GONE);
+                    ll_C3081.setVisibility(View.GONE);
+                    ll_C3082.setVisibility(View.GONE);
+
+                } else {
+
+                    ll_C3077.setVisibility(View.VISIBLE);
+                    ll_C3081.setVisibility(View.VISIBLE);
+                    ll_C3082.setVisibility(View.VISIBLE);
+                }
+            } else {
+
+                Toast.makeText(this, "Kindly attempt C3051 and C3052 first", Toast.LENGTH_SHORT).show();
+            }
+        }
 
         if (compoundButton.getId() == R.id.rb_C3057_1
                 || compoundButton.getId() == R.id.rb_C3057_2
@@ -922,35 +992,27 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3063_2
                 || compoundButton.getId() == R.id.rb_C3063_DK) {
 
-            if ((rb_C3054_1.isChecked() && rb_C3055_1.isChecked() && rb_C3056_1.isChecked()) &&
-                    (rb_C3057_1.isChecked() || rb_C3058_1.isChecked()) &&
-                    (rb_C3059_1.isChecked() || rb_C3060_1.isChecked())) {
-
-                ll_C3064.setVisibility(View.VISIBLE);
-                ll_C3065.setVisibility(View.VISIBLE);
-
-            } else {
+            if ((!rb_C3054_1.isChecked() && !rb_C3055_1.isChecked() && !rb_C3056_1.isChecked()) &&
+                    (!rb_C3057_1.isChecked() || !rb_C3058_1.isChecked()) &&
+                    (!rb_C3059_1.isChecked() || !rb_C3060_1.isChecked())) {
 
                 ClearAllcontrol.ClearAll(ll_C3064);
                 ClearAllcontrol.ClearAll(ll_C3065);
 
                 ll_C3064.setVisibility(View.GONE);
                 ll_C3065.setVisibility(View.GONE);
-            }
-
-            if ((rb_C3051_1.isChecked() && (Integer.valueOf(ed_C3052.getText().toString()) == 9 || Integer.valueOf(ed_C3052.getText().toString()) == 10)) &&
-                    (rb_C3057_1.isChecked() || rb_C3058_2.isChecked()) &&
-                    (rb_C3059_1.isChecked() || rb_C3060_2.isChecked()) &&
-                    rb_C3061_1.isChecked() && Integer.valueOf(ed_C3062.getText().toString()) < 12 &&
-                    rb_C3063_1.isChecked()) {
-
-                ll_C3066.setVisibility(View.VISIBLE);
-                ll_C3067.setVisibility(View.VISIBLE);
-                ll_C3068.setVisibility(View.VISIBLE);
-                ll_C3069.setVisibility(View.VISIBLE);
-                ll_C3070.setVisibility(View.VISIBLE);
 
             } else {
+
+                ll_C3064.setVisibility(View.VISIBLE);
+                ll_C3065.setVisibility(View.VISIBLE);
+            }
+
+            if ((!rb_C3051_1.isChecked() && (Integer.valueOf(ed_C3052.getText().toString()) == 9 || Integer.valueOf(ed_C3052.getText().toString()) == 10)) &&
+                    (!rb_C3057_1.isChecked() || !rb_C3058_2.isChecked()) &&
+                    (!rb_C3059_1.isChecked() || !rb_C3060_2.isChecked()) &&
+                    !rb_C3061_1.isChecked() && Integer.valueOf(ed_C3062.getText().toString()) < 12 &&
+                    !rb_C3063_1.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_C3066);
                 ClearAllcontrol.ClearAll(ll_C3067);
@@ -963,6 +1025,14 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3068.setVisibility(View.GONE);
                 ll_C3069.setVisibility(View.GONE);
                 ll_C3070.setVisibility(View.GONE);
+
+            } else {
+
+                ll_C3066.setVisibility(View.VISIBLE);
+                ll_C3067.setVisibility(View.VISIBLE);
+                ll_C3068.setVisibility(View.VISIBLE);
+                ll_C3069.setVisibility(View.VISIBLE);
+                ll_C3070.setVisibility(View.VISIBLE);
             }
         }
 
@@ -1176,30 +1246,11 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_C3075_1.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_C3076);
-
                 ll_C3076.setVisibility(View.GONE);
+
             } else {
+
                 ll_C3076.setVisibility(View.VISIBLE);
-            }
-
-            if ((!rb_C3051_1.isChecked() &&
-                    (Integer.valueOf(ed_C3052.getText().toString()) == 9
-                            || Integer.valueOf(ed_C3052.getText().toString()) == 10)) ||
-                    (C3006 == 1 || C3006 == 2 || C3006 == 11 || C3006 == 12 || C3006 == 99)) {
-
-                ClearAllcontrol.ClearAll(ll_C3077);
-                ClearAllcontrol.ClearAll(ll_C3081);
-                ClearAllcontrol.ClearAll(ll_C3082);
-
-                ll_C3077.setVisibility(View.GONE);
-                ll_C3081.setVisibility(View.GONE);
-                ll_C3082.setVisibility(View.GONE);
-
-            } else {
-
-                ll_C3077.setVisibility(View.VISIBLE);
-                ll_C3081.setVisibility(View.VISIBLE);
-                ll_C3082.setVisibility(View.VISIBLE);
             }
         }
 

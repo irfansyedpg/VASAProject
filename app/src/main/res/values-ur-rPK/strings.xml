@@ -352,8 +352,8 @@
     <string  name="rb_Q1503_1"  translatable="false">شریک حیات	</string>
     <string  name="rb_Q1503_2"  translatable="false">ماں	</string>
     <string  name="rb_Q1503_3"  translatable="false">باپ	</string>
-    <string  name="rb_Q1503_4"  translatable="false">نانا / دادا</string>
-    <string  name="rb_Q1503_5"  translatable="false">نانی/دادی</string>
+    <string name="rb_Q1503_4" translatable="false">نانی/دادی	</string>
+    <string name="rb_Q1503_5" translatable="false">نانا / داد	</string>
     <string  name="rb_Q1503_6"  translatable="false">بیٹا	</string>
     <string  name="rb_Q1503_7"  translatable="false">بیٹی	</string>
     <string  name="rb_Q1503_8"  translatable="false">آنٹی	</string>
@@ -2532,9 +2532,9 @@
     <string  name="txt_N2233"  translatable="false">	کیا "آخری صحت فراہم کنندہ )" نے (نام) کو اسکی تکلیف یا بیماری کی وجہ سے کسی دوسرے ہسپتال میں بھیجا تھا؟	:N2233	</string>
     <string  name="txt_N2234"  translatable="false">N2234:	 (نام) کو کہاں منتقل کیا گیا تھا؟	</string>
     <string  name="txt_N2234_2"  translatable="false">N2234_2:	صحت کی سہولت کا نام	</string>
-    <string  name="txt_N2235_1"  translatable="false"> : کیا (آخری صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام ) کو   فوراً   ضرورت تھی واپس (ہسپتال) جانے کی؟ :N2235_1</string>
-    <string  name="txt_N2235_2"  translatable="false">:N2235_2: کیا (آخری صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام)  طبی معائنہ لئے واپس  آ ئے اگر  اسکی حالت بہتر نہیں ہوتی؟</string>
-    <string  name="txt_N2236"  translatable="false"> :کیا (نام) نے جب "(آخری صحت فراہم کنندہ )  " کو چھوڑا تھا تو کیا  وہ زندہ تھی /تھا ؟ :N2236 </string>
+    <string name="txt_N2235_1" translatable="false"> : کیا (آخری صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام ) کو   فوراً   ضرورت تھی واپس (ہسپتال) جانے کیضرورت تھی؟N2235_1</string>
+    <string name="txt_N2235_2" translatable="false">N2235_2 : کیا (آخری صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ اگر اسکی حالت بہتر نہیں ہوتی (نام) کو طبی معائنہ لئے واپس  آ ئے؟</string>
+    <string name="txt_N2236" translatable="false"> :کیا (نام) نے جب "(آخری صحت فراہم کنندہ )  " کو چھوڑا تھا تو کیا  وہ زندہ تھی /تھا ؟ </string>
     <string  name="txt_N2237_1"  translatable="false">N2237_1:	اس وقت جب "(آخری صحت فراہم کنندہ )  " کے پاس لے کر جانے کا فیصلہ کیاگیا تو  کیا ؟  معمول کے مطابق کھانا پینا،بہت کم کھانا پینا یا بلکل کھانا پینا نہیں.	</string>
     <string  name="txt_N2237_2"  translatable="false">N2237_2:	اس وقت جب "(آخری صحت فراہم کنندہ )  " کے پاس لے کر جانے کا فیصلہ کیاگیا تو  کیا ؟  معمول کے مطابق  حرکت کرنا ، معمول سے کم حرکت کرنا   یا بلکل حرکت نہیں کرنا. 	</string>
 
@@ -4213,7 +4213,7 @@
     <string  name="txt_C3122"  translatable="false">	کتنی عمر میں بخار شروع ہوا تھا؟	:	C3122	</string>
     <string  name="txt_C3123_u"  translatable="false">	بخار کتنے عرصہ  رہا؟	:	C3123_u	</string>
     <string  name="txt_C3123_b"  translatable="false">	بخار کتنے دنوں تک رہا؟ 	:	C3123_b	</string>
-    <string  name="txt_C3123_c"  translatable="false">	بخار کتنے مہینوں  تک رہ؟	:	C3123_c	</string>
+    <string name="txt_C3123_c" translatable="false">	بخار کتنے مہینوں  تک رہا؟	:	C3123_c	</string>
     <string  name="txt_C3124"  translatable="false">	کیا بخار وفات تک جاری رہا تھا؟	:	C3124 	</string>
     <string  name="txt_C3125"  translatable="false">	بخار کتنی شدت کا تھا؟	:	C3125 	</string>
     <string  name="txt_C3126"  translatable="false">	بخار کی نو عیت کیا تھی؟	:	C3126	</string>
@@ -4266,7 +4266,7 @@
     <string  name="txt_C3159_c"  translatable="false">	سانس لینے میں دشواری کتنے سالوں تک رہی؟	:	C3159_c	</string>
     <string  name="txt_C3160"  translatable="false">	کیا سانس لینے میں دشواری مسلسل تھی  یا   وقفہ وقفہ سے تھی؟  	:	C3160	</string>
     <string  name="txt_C3161"  translatable="false">	کیا بیماری کے دوران جو وفات کی وجہ بنی ،کیا بچے (نام) کی سانس تیز چل رہی تھی؟	:	C3161	</string>
-    <string  name="txt_C3162"  translatable="false">	بیماری کے دوران  جو وفات کی وجہ بنی    ،    کیا بچہ کی سانس تیز تیز چل  رہی تھی؟	:	C3162	</string>
+    <string name="txt_C3162" translatable="false">	کس عمر میں تیز سانس لینے کا آغاز ہوا؟	:	C3162	</string>
     <string  name="txt_C3163_u"  translatable="false">	کتنے   عرصہ سے بسانس تیز چل رہی تھی؟	:	C3163_u	</string>
     <string  name="txt_C3163_a"  translatable="false">	کتنے دنوں تک سانس تیز چل رہی تھی؟	:	C3163_a	</string>
     <string  name="txt_C3163_b"  translatable="false">	کتنےمہینوں  تک سانس تیز چل رہی تھی؟	:	C3163_b	</string>
@@ -4428,7 +4428,7 @@
     <string  name="txt_C3267_2"  translatable="false">C3267_2:	اس وقت جب "(پہلا صحت فراہم کنندہ )  " کے پاس لے کر جانے کا فیصلہ کیاگیا تو  کیا ؟  معمول کے مطابق  حرکت کرنا ، معمول سے کم حرکت کرنا   یا بلکل حرکت نہیں کرنا. 	</string>
     <string  name="txt_C3268_1"  translatable="false">C3268_1:	اس وقت جب  (نام ) کو (آخری صحت فراہم کنندہ )  کے پاس لے کر جانے کا فیصلہ کیا تھا؟ کیا وہ ۔۔۔۔  معمول کے مطابق کھانا پینا،بہت کم کھانا پینا یا بلکل کھانا پینا نہیں 	</string>
     <string  name="txt_C3268_2"  translatable="false">C3268_2:	اس وقت جب  (نام ) کو (آخری صحت فراہم کنندہ )  کے پاس لے کر جانے کا فیصلہ کیا تھا؟ کیا وہ ۔۔۔۔ معمول کے مطابق  حرکت کرنا ، معمول سے کم حرکت کرنا   یا بلکل حرکت نہیں کرنا 	</string>
-    <string  name="txt_C3269"  translatable="false">C3269:	(آخری صحت فراہم کنندہ ) کا کیا نام تھا،جہاں (نام) کو لے کر گئے تھے؟	</string>
+    <string name="txt_C3269" translatable="false">C3269:	(آخری صحت فراہم کنندہ) کا کیا نام تھا،جہاں (نام) کو لے کر گئے تھے؟</string>
     <string  name="txt_C3269_2"  translatable="false">C3269_2:	صحت کی سہولت کا نام	</string>
     <string  name="txt_C3270"  translatable="false">C3270:	کیا (نام)  وفات سے پہلے ، (آخری صحت فراہم کنندہ ) کے پاس پہنچ  گیا تھا؟	</string>
     <string  name="txt_C3271_1"  translatable="false">	(دیکھ بھال کا فیصلہ کرنے  یا/ہسپتال بھیجنے کا فیصلہ )  کرنے کے بعد: (نام) کو کتنا وقت لگا (آخری صحت فراہم کنندہ ) تک پہنچنے میں  یا  (آخری صحت فراہم کنندہ )  کو بچے تک پہنچنے میں کتنا وقت لگا ؟	:C2371_1	</string>
@@ -4437,9 +4437,9 @@
     <string  name="txt_C3273"  translatable="false">	کیا "آخری صحت فراہم کنندہ )" نے (نام) کو اسکی تکلیف یا بیماری کی وجہ سے کسی دوسرے ہسپتال میں بھیجا تھا؟	:C3273	</string>
     <string  name="txt_C3274"  translatable="false">C3274:	(نام) کو کہاں منتقل کیا گیا تھا؟	</string>
     <string  name="txt_C3274_2"  translatable="false">C3274_2:	صحت کی سہولت کا نام	</string>
-    <string  name="txt_C3275_1"  translatable="false"> : کیا (آخری صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام ) کو   فوراً   ضرورت تھی واپس (ہسپتال) جانے کی؟</string>
-    <string  name="txt_C3275_2"  translatable="false"> : کیا (آخری صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام)  طبی معائنہ لئے واپس  آ ئے اگر  اسکی حالت بہتر نہیں ہوتی؟</string>
-    <string  name="txt_C3276"  translatable="false"> :کیا (نام) نے جب "(آخری صحت فراہم کنندہ )  " کو چھوڑا تھا تو کیا  وہ زندہ تھی /تھا ؟ </string>
+    <string name="txt_C3275_1" translatable="false"> : کیا (آخری صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام ) کو   فوراً   ضرورت تھی واپس (ہسپتال) جانے کی؟ :1_C3275</string>
+    <string name="txt_C3275_2" translatable="false"> : کیا (آخری صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام)  طبی معائنہ لئے واپس  آ ئے اگر  اسکی حالت بہتر نہیں ہوتی؟ :2_C3275</string>
+    <string name="txt_C3276" translatable="false"> :کیا (نام) نے جب "(آخری صحت فراہم کنندہ )  " کو چھوڑا تھا تو کیا  وہ زندہ تھی /تھا؟ :C3276</string>
     <string  name="txt_C3277_1"  translatable="false">C3277_1:	اس وقت جب "(آخری صحت فراہم کنندہ )  " کے پاس لے کر جانے کا فیصلہ کیاگیا تو  کیا ؟  معمول کے مطابق کھانا پینا،بہت کم کھانا پینا یا بلکل کھانا پینا نہیں.	</string>
     <string  name="txt_C3277_2"  translatable="false">C3277_2:	اس وقت جب "(آخری صحت فراہم کنندہ )  " کے پاس لے کر جانے کا فیصلہ کیاگیا تو  کیا ؟  معمول کے مطابق  حرکت کرنا ، معمول سے کم حرکت کرنا   یا بلکل حرکت نہیں کرنا. 	</string>
 
@@ -6206,6 +6206,7 @@
     <string  name="C3150_u_h"  translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
     <string  name="C3152_u_h"  translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
     <string  name="C3159_u_h"  translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3162_h" translatable="false">اگر ایک مہینہ سے کم ہے تو دنوں میں لکھیں۔ اگر 1 مہینہ یا زیادہ مہینے ہیں تو مہینوں میں لکھیں، اگر 24 گھنٹوں سے کم  00 لکھیں۔</string>
     <string  name="C3163_u_h"  translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
     <string  name="C3165_u_h"  translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
     <string  name="C3175_u_h"  translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>

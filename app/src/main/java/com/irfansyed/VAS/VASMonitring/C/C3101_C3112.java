@@ -871,6 +871,11 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3108_2.setOnCheckedChangeListener(this);
         rb_C3108_3.setOnCheckedChangeListener(this);
 
+
+        rb_C3110_1.setOnCheckedChangeListener(this);
+        rb_C3110_2.setOnCheckedChangeListener(this);
+        rb_C3110_DK.setOnCheckedChangeListener(this);
+
         rb_C3111_1.setOnCheckedChangeListener(this);
         rb_C3111_2.setOnCheckedChangeListener(this);
         rb_C3111_DK.setOnCheckedChangeListener(this);
@@ -1037,6 +1042,51 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
                 txt_cap_count.setText("Picture not Attached");
                 txt_cap_count.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
                 btn_next.setEnabled(false);
+            }
+        }
+
+
+        if (compoundButton.getId() == R.id.rb_C3110_1
+                || compoundButton.getId() == R.id.rb_C3110_2
+                || compoundButton.getId() == R.id.rb_C3110_DK) {
+
+            if (rb_C3110_1.isChecked() || rb_C3110_2.isChecked() || rb_C3110_DK.isChecked()) {
+
+                ClearAllcontrol.ClearAll(ll_C3111);
+                ClearAllcontrol.ClearAll(ll_C3111_1);
+                ClearAllcontrol.ClearAll(ll_C3111_2);
+                ClearAllcontrol.ClearAll(ll_C3111_3);
+                ClearAllcontrol.ClearAll(ll_C3111_4);
+                ClearAllcontrol.ClearAll(ll_C3111_5);
+                ClearAllcontrol.ClearAll(ll_C3111_6);
+                ClearAllcontrol.ClearAll(ll_C3111_7);
+                ClearAllcontrol.ClearAll(ll_C3111_8);
+                ClearAllcontrol.ClearAll(ll_C3111_9);
+
+                ll_C3111.setVisibility(View.GONE);
+                ll_C3111_1.setVisibility(View.GONE);
+                ll_C3111_2.setVisibility(View.GONE);
+                ll_C3111_3.setVisibility(View.GONE);
+                ll_C3111_4.setVisibility(View.GONE);
+                ll_C3111_5.setVisibility(View.GONE);
+                ll_C3111_6.setVisibility(View.GONE);
+                ll_C3111_7.setVisibility(View.GONE);
+                ll_C3111_8.setVisibility(View.GONE);
+                ll_C3111_9.setVisibility(View.GONE);
+
+
+            } else {
+
+                ll_C3111.setVisibility(View.VISIBLE);
+                ll_C3111_1.setVisibility(View.VISIBLE);
+                ll_C3111_2.setVisibility(View.VISIBLE);
+                ll_C3111_3.setVisibility(View.VISIBLE);
+                ll_C3111_4.setVisibility(View.VISIBLE);
+                ll_C3111_5.setVisibility(View.VISIBLE);
+                ll_C3111_6.setVisibility(View.VISIBLE);
+                ll_C3111_7.setVisibility(View.VISIBLE);
+                ll_C3111_8.setVisibility(View.VISIBLE);
+                ll_C3111_9.setVisibility(View.VISIBLE);
             }
         }
 
@@ -1275,9 +1325,8 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             C3105 = "9";
         }
 
-        if (rb_C3106_1.isChecked() && ed_C3107_6_OT.getText().toString().trim().length() > 0) {
+        if (rb_C3106_1.isChecked()) {
             C3106 = "1";
-            C3107_6_OT = ed_C3107_21_OT.getText().toString().trim();
         } else if (rb_C3106_2.isChecked()) {
             C3106 = "2";
         } else if (rb_C3106_DK.isChecked()) {
@@ -1326,6 +1375,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
 
         if (rb_C3107_6_1.isChecked()) {
             C3107_6 = "1";
+            C3107_6_OT = ed_C3107_6_OT.getText().toString().trim();
         } else if (rb_C3107_6_2.isChecked()) {
             C3107_6 = "2";
         } else if (rb_C3107_6_DK.isChecked()) {
@@ -1444,7 +1494,7 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             C3107_20 = "9";
         }
 
-        if (rb_C3107_21_1.isChecked() && ed_C3107_21_OT.getText().toString().trim().length() > 0) {
+        if (rb_C3107_21_1.isChecked()) {
             C3107_21 = "1";
             C3107_21_OT = ed_C3107_21_OT.getText().toString().trim();
         } else if (rb_C3107_21_2.isChecked()) {
@@ -1612,7 +1662,6 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
             C3110 = "9";
         }
 
-
         if (rb_C3111_1.isChecked()) {
             C3111 = "1";
         } else if (rb_C3111_2.isChecked()) {
@@ -1620,7 +1669,6 @@ public class C3101_C3112 extends AppCompatActivity implements RadioButton.OnChec
         } else if (rb_C3111_DK.isChecked()) {
             C3111 = "9";
         }
-
 
         if (rb_C3111_1_1.isChecked()) {
             C3111_1 = "1";

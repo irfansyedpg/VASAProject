@@ -1,6 +1,7 @@
 package com.irfansyed.VAS.VASMonitring.Upload;
 
 import android.app.AlertDialog;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.database.Cursor;
@@ -29,11 +30,6 @@ import com.irfansyed.VAS.VASMonitring.R;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.InetAddress;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -82,7 +78,6 @@ import Global.N.N2311_N2317;
 import Global.N.N2321_N2322;
 import data.DBHelper;
 import data.LocalDataManager;
-import utils.BackgroundTask;
 
 import static java.lang.Integer.parseInt;
 
@@ -99,7 +94,7 @@ public class SurveyCompletedActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey_completed);
 
-        List<String> list = new LocalDataManager(this).getLogList("0");
+        List<String> list = new LocalDataManager(this).getLogList();
 
 
         if (list == null)
@@ -150,14 +145,27 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
         vh.textName.setText(mList.get(position).split("--")[0]);
         vh.textId.setText(position + 1 + "");
 
-        String memberId = vh.textName.getText().toString().trim();
-        String[] arrr = memberId.split("/");
-        String study_id;
-        study_id = arrr[0];
 
+        String memberId2 = vh.textName.getText().toString().trim();
+        String[] arrr2 = memberId2.split("/");
+
+        String status = arrr2[3];
+
+        /*String study_id = arrr2[0];
         String method = "check_study_id";
-        BackgroundTask backgroundTask = new BackgroundTask(mContext, vh.itemView);
-        backgroundTask.execute(method, study_id);
+        BackgroundTask backgroundTask = new BackgroundTask(mContext);
+        backgroundTask.execute(method, study_id);*/
+
+        if (status.equals("0")) {
+
+            vh.itemView.setBackgroundColor(Color.parseColor("#ff6b75"));
+            vh.itemView.setEnabled(true);
+
+        } else {
+
+            vh.itemView.setBackgroundColor(Color.parseColor("#99FF99"));
+            vh.itemView.setEnabled(false);
+        }
 
         vh.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -179,21 +187,91 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
                         if (interviewType == 1) {
 
-                            upload_N(Q1101_Q1610.study_id_upload);
-                            vh.itemView.setBackgroundColor(Color.parseColor("#99FF99"));
-                            vh.itemView.setClickable(false);
+                            if (isNetworkAvailable() == true) {
+
+                                upload_N(Q1101_Q1610.study_id_upload);
+
+                                ContentValues values = new ContentValues();
+                                values.put(Q1101_Q1610.STATUS, "1");
+                                DBHelper db = new DBHelper(mContext);
+                                Long res = db.updateStatus("Q1101_Q1610", values, Q1101_Q1610.study_id_upload);
+
+                                if (res > 0) {
+
+                                    vh.itemView.setBackgroundColor(Color.parseColor("#99FF99"));
+                                    vh.itemView.setEnabled(false);
+                                }
+
+                            } else {
+
+                                Toast.makeText(mContext, "Kindly connect to internet first and make sure signal strength is strong", Toast.LENGTH_LONG).show();
+                            }
 
                         } else if (interviewType == 2) {
 
-                            upload_C(Q1101_Q1610.study_id_upload);
-                            vh.itemView.setBackgroundColor(Color.parseColor("#99FF99"));
-                            vh.itemView.setClickable(false);
+                            if (isNetworkAvailable() == true) {
+
+                                upload_C(Q1101_Q1610.study_id_upload);
+
+                                ContentValues values = new ContentValues();
+                                values.put(Q1101_Q1610.STATUS, "1");
+                                DBHelper db = new DBHelper(mContext);
+                                Long res = db.updateStatus("Q1101_Q1610", values, Q1101_Q1610.study_id_upload);
+
+                                if (res > 0) {
+
+                                    vh.itemView.setBackgroundColor(Color.parseColor("#99FF99"));
+                                    vh.itemView.setEnabled(false);
+                                }
+
+                            } else {
+
+                                Toast.makeText(mContext, "Kindly connect to internet first and make sure signal strength is strong", Toast.LENGTH_LONG).show();
+                            }
 
                         } else if (interviewType == 3) {
 
-                            upload_A(Q1101_Q1610.study_id_upload);
-                            vh.itemView.setBackgroundColor(Color.parseColor("#99FF99"));
-                            vh.itemView.setClickable(false);
+                            if (isNetworkAvailable() == true) {
+
+                                upload_A(Q1101_Q1610.study_id_upload);
+
+                                ContentValues values = new ContentValues();
+                                values.put(Q1101_Q1610.STATUS, "1");
+                                DBHelper db = new DBHelper(mContext);
+                                Long res = db.updateStatus("Q1101_Q1610", values, Q1101_Q1610.study_id_upload);
+
+                                if (res > 0) {
+
+                                    vh.itemView.setBackgroundColor(Color.parseColor("#99FF99"));
+                                    vh.itemView.setEnabled(false);
+                                }
+
+                            } else {
+
+                                Toast.makeText(mContext, "Kindly connect to internet first and make sure signal strength is strong", Toast.LENGTH_LONG).show();
+                            }
+
+                        } else if (interviewType == 4) {
+
+                            if (isNetworkAvailable() == true) {
+
+                                upload_NC(Q1101_Q1610.study_id_upload);
+
+                                ContentValues values = new ContentValues();
+                                values.put(Q1101_Q1610.STATUS, "1");
+                                DBHelper db = new DBHelper(mContext);
+                                Long res = db.updateStatus("Q1101_Q1610", values, Q1101_Q1610.study_id_upload);
+
+                                if (res > 0) {
+
+                                    vh.itemView.setBackgroundColor(Color.parseColor("#99FF99"));
+                                    vh.itemView.setEnabled(false);
+                                }
+
+                            } else {
+
+                                Toast.makeText(mContext, "Kindly connect to internet first and make sure signal strength is strong", Toast.LENGTH_LONG).show();
+                            }
                         }
 
                     }
@@ -206,6 +284,13 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                 }).show();
             }
         });
+    }
+
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
     @Override
@@ -227,7 +312,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
     public void upload_N(final String study_id) {
 
         final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_N";
-        //final String ROOT_URL = "http://192.168.1.20/sm/Welcome/collect_N";
+        //final String ROOT_URL = "http://10.199.21.109/sm/Welcome/collect_N";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -1991,7 +2076,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
     public void upload_C(final String study_id) {
 
         final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_C";
-        //final String ROOT_URL = "http://192.168.1.20/sm/Welcome/collect_C";
+        //final String ROOT_URL = "http://10.199.21.109:80/sm/Welcome/collect_C";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -2238,7 +2323,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                     params.put(Q1101_Q1610.Q1610_1, "-2");
                     params.put(Q1101_Q1610.Q1610_2, "-2");
                     params.put(Q1101_Q1610.Q1610_3, "-2");
-                    params.put(Q1101_Q1610.interviewType, "-2");
+                    params.put(Q1101_Q1610.interviewType, "2");
                     params.put(Q1101_Q1610.currentSection, "-2");
                 }
 
@@ -3581,7 +3666,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
     public void upload_A(final String study_id) {
 
         final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_A";
-        //final String ROOT_URL = "http://192.168.1.20/sm/Welcome/collect_A";
+        //final String ROOT_URL = "http://10.199.21.109:80/sm/Welcome/collect_A";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -4889,6 +4974,243 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
                     actions.add(hashmap);
                     params.put("actions", String.valueOf(actions));
+                }
+
+                return params;
+            }
+        };
+
+        sendMyRequest.setRetryPolicy(new DefaultRetryPolicy(5000, 0, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+
+        myRequestQueue.add(sendMyRequest);
+    }
+
+
+    public void upload_NC(final String study_id) {
+
+        final String ROOT_URL = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_NC";
+        //final String ROOT_URL = "http://192.168.1.141:80/sm/Welcome/collect_NC";
+
+        final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
+
+        StringRequest sendMyRequest = new StringRequest(Request.Method.POST, ROOT_URL,
+                new Response.Listener<String>() {
+
+                    @Override
+                    public void onResponse(String response) {
+
+                        try {
+
+                            JSONObject jsonObject = new JSONObject(response);
+                            Toast.makeText(mContext, jsonObject.getString("message"), Toast.LENGTH_LONG).show();
+                            myRequestQueue.getCache().clear();
+
+                        } catch (JSONException e) {
+
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                        Toast.makeText(mContext, error.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+
+                Map<String, String> params = new HashMap<>();
+
+                //ArrayList<String> loopResponse = new ArrayList();
+
+                DBHelper db = new DBHelper(mContext);
+
+                Cursor c = db.getData("Q1101_Q1610", study_id);
+
+                params.put("table1", "q1101_q1610");
+
+                if (c.getCount() > 0) {
+
+                    c.moveToFirst();
+
+                    params.put(Q1101_Q1610.study_id, c.getString(c.getColumnIndex("study_id")));
+                    params.put(Q1101_Q1610.Q1201_1, c.getString(c.getColumnIndex("Q1201_1")));
+                    params.put(Q1101_Q1610.Q1201_2, c.getString(c.getColumnIndex("Q1201_2")));
+                    params.put(Q1101_Q1610.Q1201_3, c.getString(c.getColumnIndex("Q1201_3")));
+                    params.put(Q1101_Q1610.Q1201_4, c.getString(c.getColumnIndex("Q1201_4")));
+                    params.put(Q1101_Q1610.Q1201_5, c.getString(c.getColumnIndex("Q1201_5")));
+                    params.put(Q1101_Q1610.Q1201_6, c.getString(c.getColumnIndex("Q1201_6")));
+                    params.put(Q1101_Q1610.Q1202, c.getString(c.getColumnIndex("Q1202")));
+                    params.put(Q1101_Q1610.Q1203, c.getString(c.getColumnIndex("Q1203")));
+                    params.put(Q1101_Q1610.Q1204, c.getString(c.getColumnIndex("Q1204")));
+                    params.put(Q1101_Q1610.Q1205, c.getString(c.getColumnIndex("Q1205")));
+                    params.put(Q1101_Q1610.Q1206_d, c.getString(c.getColumnIndex("Q1206_d")));
+                    params.put(Q1101_Q1610.Q1206_m, c.getString(c.getColumnIndex("Q1206_m")));
+                    params.put(Q1101_Q1610.Q1206_y, c.getString(c.getColumnIndex("Q1206_y")));
+                    params.put(Q1101_Q1610.Q1207, c.getString(c.getColumnIndex("Q1207")));
+                    params.put(Q1101_Q1610.Q1208, c.getString(c.getColumnIndex("Q1208")));
+                    params.put(Q1101_Q1610.Q1209, c.getString(c.getColumnIndex("Q1209")));
+                    params.put(Q1101_Q1610.Q1301, c.getString(c.getColumnIndex("Q1301")));
+                    params.put(Q1101_Q1610.Q1302, c.getString(c.getColumnIndex("Q1302")));
+                    params.put(Q1101_Q1610.Q1307, c.getString(c.getColumnIndex("Q1307")));
+                    params.put(Q1101_Q1610.Q1308, c.getString(c.getColumnIndex("Q1308")));
+                    params.put(Q1101_Q1610.Q1309, c.getString(c.getColumnIndex("Q1309")));
+                    params.put(Q1101_Q1610.Q1310, c.getString(c.getColumnIndex("Q1310")));
+                    params.put(Q1101_Q1610.Q1311, c.getString(c.getColumnIndex("Q1311")));
+                    params.put(Q1101_Q1610.Q1312, c.getString(c.getColumnIndex("Q1312")));
+                    params.put(Q1101_Q1610.Q1313, c.getString(c.getColumnIndex("Q1313")));
+                    params.put(Q1101_Q1610.Q1401, c.getString(c.getColumnIndex("Q1401")));
+                    params.put(Q1101_Q1610.Q1402, c.getString(c.getColumnIndex("Q1402")));
+                    params.put(Q1101_Q1610.Q1403, c.getString(c.getColumnIndex("Q1403")));
+                    params.put(Q1101_Q1610.Q1403_OT, c.getString(c.getColumnIndex("Q1403_OT")));
+                    params.put(Q1101_Q1610.Q1404, c.getString(c.getColumnIndex("Q1404")));
+                    params.put(Q1101_Q1610.Q1405, c.getString(c.getColumnIndex("Q1405")));
+                    params.put(Q1101_Q1610.Q1406, c.getString(c.getColumnIndex("Q1406")));
+                    params.put(Q1101_Q1610.Q1407, c.getString(c.getColumnIndex("Q1407")));
+                    params.put(Q1101_Q1610.Q1408, c.getString(c.getColumnIndex("Q1408")));
+                    params.put(Q1101_Q1610.Q1409, c.getString(c.getColumnIndex("Q1409")));
+                    params.put(Q1101_Q1610.Q1410, c.getString(c.getColumnIndex("Q1410")));
+                    params.put(Q1101_Q1610.Q1411, c.getString(c.getColumnIndex("Q1411")));
+                    params.put(Q1101_Q1610.Q1412, c.getString(c.getColumnIndex("Q1412")));
+                    params.put(Q1101_Q1610.Q1413, c.getString(c.getColumnIndex("Q1413")));
+                    params.put(Q1101_Q1610.Q1414_1, c.getString(c.getColumnIndex("Q1414_1")));
+                    params.put(Q1101_Q1610.Q1414_2, c.getString(c.getColumnIndex("Q1414_2")));
+                    params.put(Q1101_Q1610.Q1414_3, c.getString(c.getColumnIndex("Q1414_3")));
+                    params.put(Q1101_Q1610.Q1414_4, c.getString(c.getColumnIndex("Q1414_4")));
+                    params.put(Q1101_Q1610.Q1414_5, c.getString(c.getColumnIndex("Q1414_5")));
+                    params.put(Q1101_Q1610.Q1414_6, c.getString(c.getColumnIndex("Q1414_6")));
+                    params.put(Q1101_Q1610.Q1414_7, c.getString(c.getColumnIndex("Q1414_7")));
+                    params.put(Q1101_Q1610.Q1414_8, c.getString(c.getColumnIndex("Q1414_8")));
+                    params.put(Q1101_Q1610.Q1414_9, c.getString(c.getColumnIndex("Q1414_9")));
+                    params.put(Q1101_Q1610.Q1414_10, c.getString(c.getColumnIndex("Q1414_10")));
+                    params.put(Q1101_Q1610.Q1415, c.getString(c.getColumnIndex("Q1415")));
+                    params.put(Q1101_Q1610.Q1416, c.getString(c.getColumnIndex("Q1416")));
+                    params.put(Q1101_Q1610.Q1416_OT, c.getString(c.getColumnIndex("Q1416_OT")));
+                    params.put(Q1101_Q1610.Q1417, c.getString(c.getColumnIndex("Q1417")));
+                    params.put(Q1101_Q1610.Q1417_OT, c.getString(c.getColumnIndex("Q1417_OT")));
+                    params.put(Q1101_Q1610.Q1418, c.getString(c.getColumnIndex("Q1418")));
+                    params.put(Q1101_Q1610.Q1418_OT, c.getString(c.getColumnIndex("Q1418_OT")));
+                    params.put(Q1101_Q1610.Q1419, c.getString(c.getColumnIndex("Q1419")));
+                    params.put(Q1101_Q1610.Q1419_OT, c.getString(c.getColumnIndex("Q1419_OT")));
+                    params.put(Q1101_Q1610.Q1420, c.getString(c.getColumnIndex("Q1420")));
+                    params.put(Q1101_Q1610.Q1420_OT, c.getString(c.getColumnIndex("Q1420_OT")));
+                    params.put(Q1101_Q1610.Q1421, c.getString(c.getColumnIndex("Q1421")));
+                    params.put(Q1101_Q1610.Q1421_OT, c.getString(c.getColumnIndex("Q1421_OT")));
+                    params.put(Q1101_Q1610.Q1501, c.getString(c.getColumnIndex("Q1501")));
+                    params.put(Q1101_Q1610.Q1502, c.getString(c.getColumnIndex("Q1502")));
+                    params.put(Q1101_Q1610.Q1503, c.getString(c.getColumnIndex("Q1503")));
+                    params.put(Q1101_Q1610.Q1503_OT, c.getString(c.getColumnIndex("Q1503_OT")));
+                    params.put(Q1101_Q1610.Q1601, c.getString(c.getColumnIndex("Q1601")));
+                    params.put(Q1101_Q1610.Q1602, c.getString(c.getColumnIndex("Q1602")));
+                    params.put(Q1101_Q1610.Q1603, c.getString(c.getColumnIndex("Q1603")));
+                    params.put(Q1101_Q1610.Q1604, c.getString(c.getColumnIndex("Q1604")));
+                    params.put(Q1101_Q1610.Q1604_OT, c.getString(c.getColumnIndex("Q1604_OT")));
+                    params.put(Q1101_Q1610.Q1605, c.getString(c.getColumnIndex("Q1605")));
+                    params.put(Q1101_Q1610.Q1606, c.getString(c.getColumnIndex("Q1606")));
+                    params.put(Q1101_Q1610.Q1607_1, c.getString(c.getColumnIndex("Q1607_1")));
+                    params.put(Q1101_Q1610.Q1607_2, c.getString(c.getColumnIndex("Q1607_2")));
+                    params.put(Q1101_Q1610.Q1607_3, c.getString(c.getColumnIndex("Q1607_3")));
+                    params.put(Q1101_Q1610.Q1608_1, c.getString(c.getColumnIndex("Q1608_1")));
+                    params.put(Q1101_Q1610.Q1608_2, c.getString(c.getColumnIndex("Q1608_2")));
+                    params.put(Q1101_Q1610.Q1608_3, c.getString(c.getColumnIndex("Q1608_3")));
+                    params.put(Q1101_Q1610.Q1609, c.getString(c.getColumnIndex("Q1609")));
+                    params.put(Q1101_Q1610.Q1610_1, c.getString(c.getColumnIndex("Q1610_1")));
+                    params.put(Q1101_Q1610.Q1610_2, c.getString(c.getColumnIndex("Q1610_2")));
+                    params.put(Q1101_Q1610.Q1610_3, c.getString(c.getColumnIndex("Q1610_3")));
+                    params.put(Q1101_Q1610.interviewType, c.getString(c.getColumnIndex("interviewType")));
+                    params.put(Q1101_Q1610.currentSection, c.getString(c.getColumnIndex("currentSection")));
+
+                } else {
+
+                    params.put(Q1101_Q1610.study_id, "-2");
+                    params.put(Q1101_Q1610.Q1201_1, "-2");
+                    params.put(Q1101_Q1610.Q1201_2, "-2");
+                    params.put(Q1101_Q1610.Q1201_3, "-2");
+                    params.put(Q1101_Q1610.Q1201_4, "-2");
+                    params.put(Q1101_Q1610.Q1201_5, "-2");
+                    params.put(Q1101_Q1610.Q1201_6, "-2");
+                    params.put(Q1101_Q1610.Q1202, "-2");
+                    params.put(Q1101_Q1610.Q1203, "-2");
+                    params.put(Q1101_Q1610.Q1204, "-2");
+                    params.put(Q1101_Q1610.Q1205, "-2");
+                    params.put(Q1101_Q1610.Q1206_d, "-2");
+                    params.put(Q1101_Q1610.Q1206_m, "-2");
+                    params.put(Q1101_Q1610.Q1206_y, "-2");
+                    params.put(Q1101_Q1610.Q1207, "-2");
+                    params.put(Q1101_Q1610.Q1208, "-2");
+                    params.put(Q1101_Q1610.Q1209, "-2");
+                    params.put(Q1101_Q1610.Q1301, "-2");
+                    params.put(Q1101_Q1610.Q1302, "-2");
+                    params.put(Q1101_Q1610.Q1307, "-2");
+                    params.put(Q1101_Q1610.Q1308, "-2");
+                    params.put(Q1101_Q1610.Q1309, "-2");
+                    params.put(Q1101_Q1610.Q1310, "-2");
+                    params.put(Q1101_Q1610.Q1311, "-2");
+                    params.put(Q1101_Q1610.Q1312, "-2");
+                    params.put(Q1101_Q1610.Q1313, "-2");
+                    params.put(Q1101_Q1610.Q1401, "-2");
+                    params.put(Q1101_Q1610.Q1402, "-2");
+                    params.put(Q1101_Q1610.Q1403, "-2");
+                    params.put(Q1101_Q1610.Q1403_OT, "-2");
+                    params.put(Q1101_Q1610.Q1404, "-2");
+                    params.put(Q1101_Q1610.Q1405, "-2");
+                    params.put(Q1101_Q1610.Q1406, "-2");
+                    params.put(Q1101_Q1610.Q1407, "-2");
+                    params.put(Q1101_Q1610.Q1408, "-2");
+                    params.put(Q1101_Q1610.Q1409, "-2");
+                    params.put(Q1101_Q1610.Q1410, "-2");
+                    params.put(Q1101_Q1610.Q1411, "-2");
+                    params.put(Q1101_Q1610.Q1412, "-2");
+                    params.put(Q1101_Q1610.Q1413, "-2");
+                    params.put(Q1101_Q1610.Q1414_1, "-2");
+                    params.put(Q1101_Q1610.Q1414_2, "-2");
+                    params.put(Q1101_Q1610.Q1414_3, "-2");
+                    params.put(Q1101_Q1610.Q1414_4, "-2");
+                    params.put(Q1101_Q1610.Q1414_5, "-2");
+                    params.put(Q1101_Q1610.Q1414_6, "-2");
+                    params.put(Q1101_Q1610.Q1414_7, "-2");
+                    params.put(Q1101_Q1610.Q1414_8, "-2");
+                    params.put(Q1101_Q1610.Q1414_9, "-2");
+                    params.put(Q1101_Q1610.Q1414_10, "-2");
+                    params.put(Q1101_Q1610.Q1415, "-2");
+                    params.put(Q1101_Q1610.Q1416, "-2");
+                    params.put(Q1101_Q1610.Q1416_OT, "-2");
+                    params.put(Q1101_Q1610.Q1417, "-2");
+                    params.put(Q1101_Q1610.Q1417_OT, "-2");
+                    params.put(Q1101_Q1610.Q1418, "-2");
+                    params.put(Q1101_Q1610.Q1418_OT, "-2");
+                    params.put(Q1101_Q1610.Q1419, "-2");
+                    params.put(Q1101_Q1610.Q1419_OT, "-2");
+                    params.put(Q1101_Q1610.Q1420, "-2");
+                    params.put(Q1101_Q1610.Q1420_OT, "-2");
+                    params.put(Q1101_Q1610.Q1421, "-2");
+                    params.put(Q1101_Q1610.Q1421_OT, "-2");
+                    params.put(Q1101_Q1610.Q1501, "-2");
+                    params.put(Q1101_Q1610.Q1502, "-2");
+                    params.put(Q1101_Q1610.Q1503, "-2");
+                    params.put(Q1101_Q1610.Q1503_OT, "-2");
+                    params.put(Q1101_Q1610.Q1601, "-2");
+                    params.put(Q1101_Q1610.Q1602, "-2");
+                    params.put(Q1101_Q1610.Q1603, "-2");
+                    params.put(Q1101_Q1610.Q1604, "-2");
+                    params.put(Q1101_Q1610.Q1604_OT, "-2");
+                    params.put(Q1101_Q1610.Q1605, "-2");
+                    params.put(Q1101_Q1610.Q1606, "-2");
+                    params.put(Q1101_Q1610.Q1607_1, "-2");
+                    params.put(Q1101_Q1610.Q1607_2, "-2");
+                    params.put(Q1101_Q1610.Q1607_3, "-2");
+                    params.put(Q1101_Q1610.Q1608_1, "-2");
+                    params.put(Q1101_Q1610.Q1608_2, "-2");
+                    params.put(Q1101_Q1610.Q1608_3, "-2");
+                    params.put(Q1101_Q1610.Q1609, "-2");
+                    params.put(Q1101_Q1610.Q1610_1, "-2");
+                    params.put(Q1101_Q1610.Q1610_2, "-2");
+                    params.put(Q1101_Q1610.Q1610_3, "-2");
+                    params.put(Q1101_Q1610.interviewType, "4");
+                    params.put(Q1101_Q1610.currentSection, "99");
                 }
 
                 return params;

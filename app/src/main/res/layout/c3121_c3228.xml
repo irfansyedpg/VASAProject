@@ -548,6 +548,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3130" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9→C3137" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -2403,6 +2407,11 @@
                     <TextView
                         style="@style/TextView"
                         android:text="@string/txt_C3162" />
+
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3162_h" />
 
                     <EditText
                         android:id="@+id/ed_C3162d"

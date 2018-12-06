@@ -1156,7 +1156,7 @@
                         <EditText
                             android:id="@+id/ed_C3451_13_OT"
                             style="@style/EditText_varchar"
-                            android:text="@string/rb_C3451_OT" />
+                            android:hint="@string/rb_C3451_OT" />
 
                     </RadioGroup>
 
@@ -1538,7 +1538,7 @@
                         <EditText
                             android:id="@+id/ed_C3452_9_OT"
                             style="@style/EditText_varchar"
-                            android:text="@string/rb_C3452_OT" />
+                            android:hint="@string/rb_C3452_OT" />
 
                     </RadioGroup>
 
@@ -1570,9 +1570,7 @@
                         android:text="@string/txt_C3453_h" />
 
 
-                    <RadioGroup style="@style/RadioGroup"
-
-                        >
+                    <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
 
@@ -2043,14 +2041,14 @@
                         <RadioButton
                             android:id="@+id/rb_C3453_12_DK"
                             style="@style/RadioButton"
-                            android:text="@string/rb_C3453_12_DK" />
+                            android:hint="@string/rb_C3453_12_DK" />
 
                     </RadioGroup>
 
                     <EditText
                         android:id="@+id/ed_C3453_12_OT"
                         style="@style/EditText_varchar"
-                        android:text="@string/txt_C3453_OT"/>
+                        android:hint="@string/txt_C3453_OT" />
 
 
                 </LinearLayout>

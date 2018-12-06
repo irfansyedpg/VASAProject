@@ -6,10 +6,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
+import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.ndk.CrashlyticsNdk;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.util.Locale;
 
+import io.fabric.sdk.android.Fabric;
 import utils.MyPreferences;
 
 public class SplashScreenActivity extends AppCompatActivity {
@@ -18,6 +21,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics(), new CrashlyticsNdk());
 
 
         change_langua();

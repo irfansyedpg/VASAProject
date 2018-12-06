@@ -1164,7 +1164,6 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/txt_C3107_21_OT"
                         style="@style/TextView"
                         android:text="Other" />
 

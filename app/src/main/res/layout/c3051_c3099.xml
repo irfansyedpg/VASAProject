@@ -64,9 +64,7 @@
                         android:text="@string/txt_C3051" />
 
 
-                    <RadioGroup style="@style/RadioGroup"
-
-                        >
+                    <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
 

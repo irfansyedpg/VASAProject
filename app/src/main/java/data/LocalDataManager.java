@@ -24,14 +24,14 @@ public class LocalDataManager {
     }
 
 
-    public List<String> getLogList(String status) {
+    public List<String> getLogList() {
 
         ArrayList<String> list = new ArrayList<>();
 
         try {
 
-            String query = "select study_id, interviewType from Q1101_Q1610 where currentSection = 111 and STATUS = '%s' ORDER BY id DESC";
-            query = String.format(query, status);
+            String query = "select study_id, interviewType, currentSection, STATUS from Q1101_Q1610 where currentSection = 111 OR currentSection = 99 ORDER BY id DESC";
+            query = String.format(query);
 
             database.beginTransaction();
             Cursor c = database.rawQuery(query, null);
@@ -39,7 +39,7 @@ public class LocalDataManager {
                 if (c.moveToFirst()) {
                     do {
 
-                        list.add(c.getString(0) + "/" + c.getString(1));
+                        list.add(c.getString(0) + "/" + c.getString(1) + "/" + c.getString(2) + "/" + c.getString(3));
 
                     } while (c.moveToNext());
                 }
@@ -59,7 +59,7 @@ public class LocalDataManager {
 
         try {
 
-            String query = "select study_id, currentSection, interviewType from Q1101_Q1610 where currentSection != 111 order by id ASC";
+            String query = "select study_id, currentSection, interviewType from Q1101_Q1610 where currentSection != 111 and currentSection != 99 order by id ASC";
             query = String.format(query, status);
 
             database.beginTransaction();

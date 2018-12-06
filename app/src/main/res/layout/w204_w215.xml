@@ -148,11 +148,6 @@
                             style="@style/RadioButton"
                             android:text="@string/rb_W204_2" />
 
-                       
-
-                
-
-       
 
                     </RadioGroup>
 
@@ -187,7 +182,7 @@
                             style="@style/RadioButton"
                             android:text="@string/rb_W205_2" />
 
-                  
+
 
                     </RadioGroup>
 
@@ -503,20 +498,27 @@
             <!--W215 Edit text Ends-->
 
 
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
 
+                >
 
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+                <LinearLayout style="@style/Q_Linerlayout_v"
+
+                    >
 
                 <Button
+
                     android:id="@+id/btn_next"
                     style="@style/Button_collder"
                     android:layout_margin="10dp"
                     android:text="Next to Add Pregnancy" />
 
+
+                </LinearLayout>
+
             </android.support.v7.widget.CardView>
 
 
-            
         </LinearLayout>
 
     </ScrollView>

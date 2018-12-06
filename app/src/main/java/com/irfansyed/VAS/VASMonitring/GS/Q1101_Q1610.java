@@ -10,12 +10,15 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,7 +29,6 @@ import com.irfansyed.VAS.VASMonitring.RP.w204_w222;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Currency;
 import java.util.List;
 import java.util.Locale;
 import java.util.regex.Matcher;
@@ -40,7 +42,7 @@ import utils.MyPreferences;
 
 import static java.lang.Integer.parseInt;
 
-public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, TextWatcher {
+public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, TextWatcher, AdapterView.OnItemSelectedListener {
 
     private Pattern pattern;
     private Matcher matcher;
@@ -54,6 +56,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
     LinearLayout
             ll_study_id,
             ll_Q1201,
+            ll_Q1201_1,
+            ll_Q1201_2,
             ll_Q1202,
             ll_Q1203,
             ll_Q1204,
@@ -289,8 +293,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
     EditText
             ed_study_id,
-            ed_Q1201_1,
-            ed_Q1201_2,
             ed_Q1201_3,
             ed_Q1201_4,
             ed_Q1201_5,
@@ -332,6 +334,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ed_Q1610_1,
             ed_Q1610_2,
             ed_Q1610_3;
+
+    Spinner sp_Q1201_1,
+            sp_Q1201_2;
 
     String
             study_id,
@@ -476,16 +481,33 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         btn_Q1502.setOnClickListener(this);
     }
 
+    String dataDistricts[] = null;
+
+    List<String> lst_q1503 = new ArrayList();
+    List<String> lst_other = new ArrayList();
+
     @Override
     public void onClick(View view) {
+
+        /*if ((rb_Q1207_1.isChecked() || rb_Q1207_2.isChecked()) && (!rb_Q1609_1.isChecked() || Q1609 != "-1")) {
+
+            Toast.makeText(this, "Conflict in Q1207 and Q1609", Toast.LENGTH_LONG).show();
+            return;
+        }*/
+
+        if (ed_study_id.getText().toString().length() < 11) {
+
+            Toast.makeText(this, "Minimum Study ID length should be 9 characters", Toast.LENGTH_LONG).show();
+            return;
+        }
 
 
         if (view.getId() == R.id.btn_next) {
 
-            if (ed_Q1201_1.getText().toString().length() < 1 || ed_Q1201_2.getText().toString().length() < 1) {
+            /*if (ed_Q1201_1.getText().toString().length() < 1 || ed_Q1201_2.getText().toString().length() < 1) {
                 Toast.makeText(this, "Province and District are required", Toast.LENGTH_LONG).show();
                 return;
-            }
+            }*/
 
             if (validateField() == false) {
                 Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
@@ -505,6 +527,27 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
 
             pattern = Pattern.compile(DATE_PATTERN);
+
+            if (ll_Q1204.getVisibility() == View.VISIBLE) {
+
+                if (!validate(ed_Q1204.getText().toString().trim())) {
+
+                    ed_Q1204.setError("Kindly enter a valid Date of Birth for Q1204");
+                    ed_Q1204.requestFocus();
+                    return;
+                }
+            }
+
+
+            if (ll_Q1205.getVisibility() == View.VISIBLE) {
+
+                if (!validate(ed_Q1205.getText().toString().trim())) {
+
+                    ed_Q1205.setError("Kindly enter a valid Date of Death for Q1205");
+                    ed_Q1205.requestFocus();
+                    return;
+                }
+            }
 
             if (ll_Q1603.getVisibility() == View.VISIBLE) {
 
@@ -549,7 +592,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                         ed_Q1603.requestFocus();
                         return;
 
-                    } else if (Integer.valueOf(dob_sep[1]).equals(Integer.valueOf(dod_sep[1]))
+                    } else if (Integer.valueOf(dob_sep[2]).equals(Integer.valueOf(dod_sep[2]))
+                            && Integer.valueOf(dob_sep[1]).equals(Integer.valueOf(dod_sep[1]))
                             && !Integer.valueOf(dob_sep[0]).equals(99)
                             && !Integer.valueOf(dod_sep[0]).equals(99)
                             && Integer.valueOf(dob_sep[0]) > Integer.valueOf(dod_sep[0])) {
@@ -640,9 +684,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         }
 
     }
-
-    List<String> lst_q1503 = new ArrayList();
-    List<String> lst_other = new ArrayList();
 
     void show_dailuge_Q1503() {
 
@@ -1102,6 +1143,10 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ll_study_id = findViewById(R.id.ll_study_id);
         ll_Q1201 = findViewById(R.id.ll_Q1201);
         ll_Q1202 = findViewById(R.id.ll_Q1202);
+
+        ll_Q1201_1 = findViewById(R.id.ll_Q1201_1);
+        ll_Q1201_2 = findViewById(R.id.ll_Q1201_2);
+
         ll_Q1203 = findViewById(R.id.ll_Q1203);
         ll_Q1204 = findViewById(R.id.ll_Q1204);
         ll_Q1205 = findViewById(R.id.ll_Q1205);
@@ -1345,8 +1390,10 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
 
         ed_study_id = findViewById(R.id.ed_study_id);
-        ed_Q1201_1 = findViewById(R.id.ed_Q1201_1);
-        ed_Q1201_2 = findViewById(R.id.ed_Q1201_2);
+
+        sp_Q1201_1 = findViewById(R.id.sp_province);
+        sp_Q1201_2 = findViewById(R.id.sp_district);
+
         ed_Q1201_3 = findViewById(R.id.ed_Q1201_3);
         ed_Q1201_4 = findViewById(R.id.ed_Q1201_4);
         ed_Q1201_5 = findViewById(R.id.ed_Q1201_5);
@@ -1603,6 +1650,8 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1206_d.addTextChangedListener(txtWatcher);
         ed_Q1206_m.addTextChangedListener(txtWatcher);
         ed_Q1206_y.addTextChangedListener(txtWatcher);
+
+        sp_Q1201_1.setOnItemSelectedListener(this);
     }
 
     @Override
@@ -2224,13 +2273,10 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         }
 
 
-        if (ed_Q1201_1.getText().toString().trim().length() > 0) {
-            Q1201_1 = ed_Q1201_1.getText().toString().trim();
-        }
+        Q1201_1 = sp_Q1201_1.getSelectedItem().toString();
+        Q1201_2 = sp_Q1201_2.getSelectedItem().toString();
 
-        if (ed_Q1201_2.getText().toString().trim().length() > 0) {
-            Q1201_2 = ed_Q1201_2.getText().toString().trim();
-        }
+
 
         if (ed_Q1201_3.getText().toString().trim().length() > 0) {
             Q1201_3 = ed_Q1201_3.getText().toString().trim();
@@ -2385,6 +2431,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         } else if (rb_Q1405_2.isChecked()) {
             Q1405 = "2";
             currentSection = 99;
+            interviewType = 4;
         }
 
         if (ed_Q1406.getText().toString().trim().length() > 0) {
@@ -3563,6 +3610,80 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         config.locale = locale;
         this.getResources().updateConfiguration(config,
                 this.getResources().getDisplayMetrics());
+
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+        if (i == 0) {
+
+            dataDistricts = new String[]{"Quetta", "Pishin", "Killa Abdullah", "Chagai", "Nushki",
+                    "Loralai", "Barkhan", "Musakhel", "Killa Saifullah", "Zhob", "Sherani",
+                    "Sibi", "Harnai", "Ziarat", "Kohlu", "Dera Bugti", "Lehri",
+                    "Kech", "Gawadar", "Panjgur",
+                    "Kalat", "Mastung", "Khuzdar", "Awaran", "Kharan", "Washuk", "Lasbela",
+                    "Kachhi", "Jaffarabad", "Nasirabad", "Jhal Magsi", "Sohbatpur"};
+
+
+        }
+
+        if (i == 1) {
+
+            dataDistricts = new String[]{"Islamabad", "Attock", "Rawalpindi", "Jhelum", "Chakwal",
+                    "Sargodha", "Bhakkar", "Khushab", "Mianwali",
+                    "Faisalabad", "Chiniot", "Jhang", "Toba Tek Singh",
+                    "Gujranwala", "Hafizabad", "Gujrat", "Mandi Bahauddin", "Sialkot", "Narowal",
+                    "Lahore", "Kasur", "Sheikhupura", "Nankana Sahib",
+                    "Okara", "Sahiwal", "Pakpattan",
+                    "Vehari", "Multan", "Lodhran", "Khanewal",
+                    "Dera Ghazi Khan", "Rajanpur", "Layyah", "Muzaffargarh",
+                    "Bahawalpur", "Bahawalnagar", "Rahim Yar Khan"};
+        }
+
+        if (i == 2) {
+
+            dataDistricts = new String[]{"Karachi West", "Malir", "Karachi South", "Karachi East", "Karachi Central", "Korangi",
+                    "Sukkur", "Ghotki", "Khairpur",
+                    "Naushahro Feroze", "Shaheed Benazirabad", "Sanghar",
+                    "Mirpur Khas", "Umer Kot", "Tharparkar",
+                    "Jacobabad", "Kashmor", "Shikarpur", "Larkana", "Kambar Shahdad Kot",
+                    "Dadu", "Jamshoro", "Hyderabad", "Tando Allahyar", "Tando Muhammad Khan", "Matiari", "Badin", "Thatta", "Sujawal"};
+        }
+
+        if (i == 3) {
+
+            dataDistricts = new String[]{"Chitral", "Upper Dir", "Lower Dir", "Swat", "Shangla", "Buner", "Malakand Protected Area",
+                    "Kohistan", "Mansehra", "Batagram", "Abbotabad", "Haripur", "Torghar",
+                    "Mardan", "Swabi",
+                    "Charsadda", "Peshawar", "Nowshera",
+                    "Kohat", "Hangu", "Karak",
+                    "Bannu", "Lakki Marwat",
+                    "Dera Ismail Khan", "Tank"};
+        }
+
+        if (i == 4) {
+
+            dataDistricts = new String[]{"Bajaur Agency", "Mohmand Agency", "Khyber Agency", "Kurram Agency", "Orakzai Agency",
+                    "North Waziristan", "South Waziristan", "FR Bannu", "FR D.I Khan", "FR Kohat", "FR Lakki Marwat", "FR Peshawar", "FR Tank"};
+        }
+
+        if (i == 5) {
+
+            dataDistricts = new String[]{"Gilgit", "Ghizer", "Hunza", "Nagar", "Shigar", "Ghanche", "Baltistan", "Kharmang", "Diamir", "Astore"};
+        }
+
+        if (i == 6) {
+
+            dataDistricts = new String[]{"Muzaffarabad", "Neelum", "Hattian Bala", "Bagh", "Sudhnoti", "Poonch", "Haveli", "Bhimber", "Mirpur", "Kotli"};
+        }
+
+        ArrayAdapter<String> aas = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dataDistricts);
+        sp_Q1201_2.setAdapter(aas);
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
 }

@@ -232,7 +232,7 @@
         android:layout_weight="10"
         android:orientation="horizontal"
 
-        android:weightSum="1"
+        android:weightSum="2"
         >
 
         <Button
@@ -243,6 +243,18 @@
             android:layout_weight="1"
             android:text="Add Pregnancy"
 
+            android:textSize="14sp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_add_mutiple"
+            style="@style/Button_collder"
+
+            android:layout_marginTop="2dp"
+
+            android:layout_weight="1"
+            android:text="Add Another child"
             android:textSize="14sp"
 
             />

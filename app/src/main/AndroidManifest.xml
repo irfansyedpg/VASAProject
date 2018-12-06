@@ -197,6 +197,10 @@
             android:name=".A.A4401_A4473"
             android:screenOrientation="portrait" />
         <activity android:name=".GS.InterviewEnd" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0d5bec8df273199122c4bb418f66f631549fca02" />
     </application>
 
 </manifest>

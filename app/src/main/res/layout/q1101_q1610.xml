@@ -180,6 +180,55 @@
             </android.support.v7.widget.CardView>-->
             <!-- Radio Buttons Q1103 Ends -->
 
+            <!-- Spinner Q1201_1 Province Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_Q1201_1"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/txt_Q1201_1" />
+
+                    <Spinner
+                        android:id="@+id/sp_province"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/province"
+                        android:prompt="@string/province_prompt"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Spinner Q1201_1 Province Ends -->
+
+
+            <!-- Spinner Q1201_2 District Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_Q1201_2"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/txt_Q1201_2" />
+
+                    <Spinner
+                        android:id="@+id/sp_district"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/province"
+                        android:prompt="@string/district_prompt"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Spinner Q1201_2 District Ends -->
+
             <!-- EditText Q1201 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
@@ -192,7 +241,7 @@
                         style="@style/TextView"
                         android:text="@string/txt_Q1201" />
 
-                    <EditText
+                    <!--<EditText
                         android:id="@+id/ed_Q1201_1"
                         style="@style/EditText_varchar"
                         android:hint="Province" />
@@ -200,7 +249,7 @@
                     <EditText
                         android:id="@+id/ed_Q1201_2"
                         style="@style/EditText_varchar"
-                        android:hint="District" />
+                        android:hint="District" />-->
 
                     <EditText
                         android:id="@+id/ed_Q1201_3"

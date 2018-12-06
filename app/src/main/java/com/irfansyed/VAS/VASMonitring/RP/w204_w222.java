@@ -122,7 +122,10 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
             w18,
             w19,
             w21,
-            w22;
+            w22,
+            mult_w19,
+            mult_w21,
+            mult_w22;
     String section;
 
     @Override
@@ -224,12 +227,16 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
     void show_dailuge() {
 
+        mult_w19 = "";
+        mult_w21 = "";
+        mult_w22 = "";
 
         final LinearLayout
                 ll_W217,
                 ll_W218,
                 ll_W219,
                 ll_W221,
+
                 ll_W222;
 
         final MaskEditText ed_w217;
@@ -254,6 +261,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                 ed_W222_3;
 
 
+
         final AlertDialog b = new AlertDialog.Builder(this).create();
 
         LayoutInflater layoutInflater = getLayoutInflater();
@@ -267,12 +275,13 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
         ll_W219 = v.findViewById(R.id.ll_W219);
         ll_W221 = v.findViewById(R.id.ll_W221);
         ll_W222 = v.findViewById(R.id.ll_W222);
+
         ed_w217 = v.findViewById(R.id.ed_w217);
 
         TextView txt_genral = v.findViewById(R.id.txt_pregno);
 
         int preg = lst_w17.size() + 1;
-        txt_genral.setText(" Enter Detail for Pregnancy No: (" + preg + ")");
+        txt_genral.setText("Enter Detail for Pregnancy No: (" + preg + ")");
 
 
         rb_W218_1 = v.findViewById(R.id.rb_W218_1);
@@ -291,8 +300,130 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
         ed_W222_2 = v.findViewById(R.id.ed_W222_2);
         ed_W222_3 = v.findViewById(R.id.ed_W222_3);
 
+        final Button btn_add = v.findViewById(R.id.btn_add);
+        final Button btn_add_mutiple = v.findViewById(R.id.btn_add_mutiple);
 
-        Button btn_add = v.findViewById(R.id.btn_add);
+
+        btn_add_mutiple.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                if (!Gothrough.IamHiden(ll_W217) || !Gothrough.IamHiden(ll_W218) || !Gothrough.IamHiden(ll_W219) || !Gothrough.IamHiden(ll_W221) || !Gothrough.IamHiden(ll_W222)) {
+                    Toast.makeText(w204_w222.this, "Select Mendatory Field", Toast.LENGTH_LONG).show();
+                    return;
+                }
+
+
+                if (rb_W219_1.isChecked()) {
+                    mult_w19 = "1";
+                } else if (rb_W219_2.isChecked()) {
+                    mult_w19 = "2";
+                } else {
+                    mult_w19 = "-1";
+                }
+
+                int year_21 = 0;
+                int month_21 = 0;
+                int days_21 = 0;
+
+                if (ed_W221_1.getText().toString().trim().length() > 0) {
+                    if (ed_W221_1.getText().toString().equals("98")) {
+                        year_21 = 00;
+                    } else {
+                        year_21 = Integer.parseInt(ed_W221_1.getText().toString().trim()) * 365;
+                    }
+                }
+
+
+                if (ed_W221_2.getText().toString().trim().length() > 0) {
+                    if (ed_W221_2.getText().toString().equals("98")) {
+                        month_21 = 00;
+                    } else {
+                        month_21 = Integer.parseInt(ed_W221_2.getText().toString().trim()) * 30;
+                    }
+                }
+
+                if (ed_W221_1.getText().toString().trim().length() > 0) {
+                    if (ed_W221_1.getText().toString().equals("98")) {
+                        days_21 = 00;
+                    } else {
+                        days_21 = Integer.parseInt(ed_W221_3.getText().toString().trim()) * 1;
+                    }
+                }
+
+
+                days_21 = days_21 + month_21 + year_21;
+
+                mult_w21 = Integer.toString(days_21);
+
+
+                int year_22 = 0;
+                int month_22 = 0;
+                int days_22 = 0;
+
+                if (ed_W222_1.getText().toString().trim().length() > 0) {
+                    if (ed_W222_1.getText().toString().equals("98")) {
+
+                        year_22 = 00;
+
+                    } else {
+                        year_22 = Integer.parseInt(ed_W222_1.getText().toString().trim()) * 365;
+                    }
+                }
+
+                if (ed_W222_2.getText().toString().trim().length() > 0) {
+
+                    if (ed_W222_2.getText().toString().equals("98")) {
+                        month_22 = 00;
+                    } else {
+                        month_22 = Integer.parseInt(ed_W222_2.getText().toString().trim()) * 30;
+                    }
+
+                }
+
+                if (ed_W222_3.getText().toString().trim().length() > 0) {
+
+                    if (ed_W222_3.getText().toString().trim().equals("98")) {
+                        days_22 = 0;
+                    } else {
+
+                        days_22 = Integer.parseInt(ed_W222_3.getText().toString().trim()) * 1;
+
+                    }
+                }
+
+                days_22 = days_22 + month_22 + year_22;
+
+                mult_w22 = Integer.toString(days_22);
+                //  lst_w21.add(Integer.toString(days_21));
+                //  lst_w22.add(Integer.toString(days_22));
+
+
+                // int number_preg = Integer.parseInt(ed_W215.getText().toString());
+
+
+                btn_add.setVisibility(View.VISIBLE);
+                btn_add_mutiple.setVisibility(View.GONE);
+
+
+                rb_W219_1.setChecked(false);
+                rb_W219_2.setChecked(false);
+                ed_W221_1.setText("");
+                ed_W221_2.setText("");
+                ed_W221_3.setText("");
+                ed_W222_1.setText("");
+                ed_W222_2.setText("");
+                ed_W222_3.setText("");
+
+
+            }
+        });
+
+
+
+
+
 
 
         btn_add.setOnClickListener(new View.OnClickListener() {
@@ -329,11 +460,11 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                 }
 
                 if (rb_W219_1.isChecked()) {
-                    lst_w19.add("1");
+                    lst_w19.add("1" + "_" + mult_w19);
                 } else if (rb_W219_2.isChecked()) {
-                    lst_w19.add("2");
+                    lst_w19.add("2" + "_" + mult_w19);
                 } else {
-                    lst_w19.add("-1");
+                    lst_w19.add("-1" + "_" + mult_w19);
                 }
 
                 int year_21 = 0;
@@ -341,16 +472,28 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                 int days_21 = 0;
 
                 if (ed_W221_1.getText().toString().trim().length() > 0) {
-                    year_21 = Integer.parseInt(ed_W221_1.getText().toString().trim()) * 365;
+                    if (ed_W221_1.getText().toString().equals("98")) {
+                        year_21 = 00;
+                    } else {
+                        year_21 = Integer.parseInt(ed_W221_1.getText().toString().trim()) * 365;
+                    }
                 }
 
 
                 if (ed_W221_2.getText().toString().trim().length() > 0) {
-                    month_21 = Integer.parseInt(ed_W221_2.getText().toString().trim()) * 30;
+                    if (ed_W221_2.getText().toString().equals("98")) {
+                        month_21 = 00;
+                    } else {
+                        month_21 = Integer.parseInt(ed_W221_2.getText().toString().trim()) * 30;
+                    }
                 }
 
                 if (ed_W221_1.getText().toString().trim().length() > 0) {
-                    days_21 = Integer.parseInt(ed_W221_3.getText().toString().trim()) * 1;
+                    if (ed_W221_1.getText().toString().equals("98")) {
+                        days_21 = 00;
+                    } else {
+                        days_21 = Integer.parseInt(ed_W221_3.getText().toString().trim()) * 1;
+                    }
                 }
 
 
@@ -362,21 +505,40 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                 int days_22 = 0;
 
                 if (ed_W222_1.getText().toString().trim().length() > 0) {
-                    year_22 = Integer.parseInt(ed_W222_1.getText().toString().trim()) * 365;
+                    if (ed_W222_1.getText().toString().equals("98")) {
+
+                        year_22 = 00;
+
+                    } else {
+                        year_22 = Integer.parseInt(ed_W222_1.getText().toString().trim()) * 365;
+                    }
                 }
 
                 if (ed_W222_2.getText().toString().trim().length() > 0) {
-                    month_22 = Integer.parseInt(ed_W222_2.getText().toString().trim()) * 30;
+
+                    if (ed_W222_2.getText().toString().equals("98")) {
+                        month_22 = 00;
+                    } else {
+                        month_22 = Integer.parseInt(ed_W222_2.getText().toString().trim()) * 30;
+                    }
+
                 }
 
-                if (ed_W222_1.getText().toString().trim().length() > 0) {
-                    days_22 = Integer.parseInt(ed_W222_3.getText().toString().trim()) * 1;
+                if (ed_W222_3.getText().toString().trim().length() > 0) {
+
+                    if (ed_W222_3.getText().toString().trim().equals("98")) {
+                        days_22 = 0;
+                    } else {
+
+                        days_22 = Integer.parseInt(ed_W222_3.getText().toString().trim()) * 1;
+
+                    }
                 }
 
                 days_22 = days_22 + month_22 + year_22;
 
-                lst_w21.add(Integer.toString(days_21));
-                lst_w22.add(Integer.toString(days_22));
+                lst_w21.add(Integer.toString(days_21) + "_" + mult_w21);
+                lst_w22.add(Integer.toString(days_22) + "_" + mult_w22);
 
 
                 int number_preg = Integer.parseInt(ed_W215.getText().toString());
@@ -406,6 +568,8 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                     ClearAllcontrol.ClearAll(ll_W219);
                     ClearAllcontrol.ClearAll(ll_W221);
                     ClearAllcontrol.ClearAll(ll_W222);
+                    btn_add.setVisibility(View.VISIBLE);
+                    btn_add_mutiple.setVisibility(View.GONE);
                 } else {
                     ll_W219.setVisibility(View.VISIBLE);
                     ll_W221.setVisibility(View.VISIBLE);
@@ -429,6 +593,8 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                     ClearAllcontrol.ClearAll(ll_W219);
                     ClearAllcontrol.ClearAll(ll_W221);
                     ClearAllcontrol.ClearAll(ll_W222);
+                    btn_add.setVisibility(View.VISIBLE);
+                    btn_add_mutiple.setVisibility(View.GONE);
                 } else {
                     ll_W219.setVisibility(View.VISIBLE);
                     ll_W221.setVisibility(View.VISIBLE);
@@ -448,6 +614,8 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                     ll_W219.setVisibility(View.VISIBLE);
                     ll_W221.setVisibility(View.VISIBLE);
                     ll_W222.setVisibility(View.VISIBLE);
+                    btn_add.setVisibility(View.VISIBLE);
+                    btn_add_mutiple.setVisibility(View.GONE);
                 } else {
 
                 }
@@ -466,6 +634,9 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                     ll_W219.setVisibility(View.VISIBLE);
                     ll_W221.setVisibility(View.VISIBLE);
                     ll_W222.setVisibility(View.VISIBLE);
+
+                    btn_add.setVisibility(View.GONE);
+                    btn_add_mutiple.setVisibility(View.VISIBLE);
                 } else {
 
                 }
@@ -487,6 +658,8 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                     ClearAllcontrol.ClearAll(ll_W219);
                     ClearAllcontrol.ClearAll(ll_W221);
                     ClearAllcontrol.ClearAll(ll_W222);
+                    btn_add.setVisibility(View.GONE);
+                    btn_add_mutiple.setVisibility(View.VISIBLE);
                 } else {
                     ll_W219.setVisibility(View.VISIBLE);
                     ll_W221.setVisibility(View.VISIBLE);
@@ -507,6 +680,9 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                     ll_W219.setVisibility(View.VISIBLE);
                     ll_W221.setVisibility(View.VISIBLE);
                     ll_W222.setVisibility(View.VISIBLE);
+
+                    btn_add.setVisibility(View.GONE);
+                    btn_add_mutiple.setVisibility(View.VISIBLE);
                 } else {
 
 
@@ -606,10 +782,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_W215) == false) {
-            return false;
-        }
-        return true;
+        return Gothrough.IamHiden(ll_W215) != false;
 
     }
 
@@ -867,7 +1040,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
             }
 
             if (lst_w17.size() < number_preg) {
-                this.show_dailuge();
+                show_dailuge();
                 return;
             }
 
@@ -927,7 +1100,7 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                     Intent c = new Intent(this, com.irfansyed.VAS.VASMonitring.C.C3012_C3022.class);
                     c.putExtra("study_id", study_id);
                     startActivity(c);
-                    
+
                 } else if (Integer.valueOf(res.getString(res.getColumnIndex("Q1609"))).equals(5)) {
 
                     Intent c = new Intent(this, com.irfansyed.VAS.VASMonitring.A.A4001_A4014.class);
@@ -949,8 +1122,6 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
             } else {
 
                 ll_W205.setVisibility(View.VISIBLE);
-
-
             }
         }
 
@@ -989,7 +1160,6 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
 
             }
-
         }
 
 
@@ -1112,7 +1282,3 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
         globale.interviewExit(this, this, study_id, currentSection = 20);
     }
 }
-
-
-
-
