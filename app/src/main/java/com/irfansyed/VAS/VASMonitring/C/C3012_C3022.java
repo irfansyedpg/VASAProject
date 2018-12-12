@@ -275,12 +275,6 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
             Intent c = new Intent(this, C3101_C3112.class);
             c.putExtra("study_id", study_id);
             startActivity(c);
-
-        } else {
-
-            Intent c = new Intent(this, C3051_C3099.class);
-            c.putExtra("study_id", study_id);
-            startActivity(c);
         }
     }
 
@@ -497,6 +491,15 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3019_b.setVisibility(View.GONE);
 
                 ll_C3019_c.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ClearAllcontrol.ClearAll(ll_C3019_a);
+                ClearAllcontrol.ClearAll(ll_C3019_b);
+                ClearAllcontrol.ClearAll(ll_C3019_c);
+                ll_C3019_a.setVisibility(View.GONE);
+                ll_C3019_b.setVisibility(View.GONE);
+                ll_C3019_c.setVisibility(View.GONE);
             }
         }
 
@@ -533,6 +536,15 @@ public class C3012_C3022 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3021m.setVisibility(View.GONE);
 
                 ll_C3021y.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ClearAllcontrol.ClearAll(ll_C3021d);
+                ClearAllcontrol.ClearAll(ll_C3021m);
+                ClearAllcontrol.ClearAll(ll_C3021y);
+                ll_C3021d.setVisibility(View.GONE);
+                ll_C3021m.setVisibility(View.GONE);
+                ll_C3021y.setVisibility(View.GONE);
             }
         }
     }

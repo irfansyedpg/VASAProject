@@ -47,7 +47,7 @@ public class HomeActivity extends AppCompatActivity
 
     private static String TAG = "HomeActivity";
     ProgressDialog bar;
-    private double AppVersion = 1.1;
+    private double AppVersion = 1.3;
 
     TextView Profile_name;
     private Boolean exit = false;
