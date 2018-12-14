@@ -18,8 +18,7 @@ import utils.MyPreferences;
 public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics(), new CrashlyticsNdk());
 
@@ -27,27 +26,26 @@ public class SplashScreenActivity extends AppCompatActivity {
         change_langua();
 
 
-     setContentView(R.layout.activity_splash_screen);
+        setContentView(R.layout.activity_splash_screen);
 
 // Clear Old Data Irfan
 
 
-
         final MyPreferences preferences = new MyPreferences(this);
-    //    if (preferences.getReq1() == null) {
-         //  preferences.setReq1("http://43.245.131.159/umeed/Monitoring");
+        //    if (preferences.getReq1() == null) {
+        //  preferences.setReq1("http://43.245.131.159/umeed/Monitoring");
 
 
         //preferences.setReq1("http://10.199.26.250/sm/Welcome/collect_upload_data");
         //preferences.setReq1("http://10.199.2.137/sm/Welcome/collect_upload_data");
 
 
-     //   preferences.setReqLogin("http://10.198.96.124:61259/Testing/check_user_id");
+        //   preferences.setReqLogin("http://10.198.96.124:61259/Testing/check_user_id");
 
         //    preferences.setReq1("http://43.245.131.159/umeed/Testing/Monitoring");
         //preferences.setReqLogin("http://10.198.97.189:61259///Testing/check_user_id");
 
-     //   }
+        //   }
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -58,13 +56,13 @@ public class SplashScreenActivity extends AppCompatActivity {
                 if (preferences.getUserId() == -1) {
                     //mainIntent = new Intent(SplashScreenActivity.this, LoginActivity.class);
                 } else {
-                  //  mainIntent = new Intent(SplashScreenActivity.this, HomeActivity.class);
+                    //  mainIntent = new Intent(SplashScreenActivity.this, HomeActivity.class);
                 }
-                    mainIntent = new Intent(SplashScreenActivity.this, LoginActivity.class);
-                  //  mainIntent = new Intent(SplashScreenActivity.this, HomeActivity.class);
+                mainIntent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+                //  mainIntent = new Intent(SplashScreenActivity.this, HomeActivity.class);
 
-                    SplashScreenActivity.this.startActivity(mainIntent);
-                    SplashScreenActivity.this.finish();
+                SplashScreenActivity.this.startActivity(mainIntent);
+                SplashScreenActivity.this.finish();
             }
         }, 1000);
     }
