@@ -36,7 +36,7 @@
     <string  name="months"  translatable="false">مہینہ</string>
     <string  name="years"  translatable="false">سال</string>
     <string  name="conflict"  translatable="false">تضاد</string>
-    <string  name="next"  translatable="false">اگلا حصا</string>
+    <string name="next" translatable="false">نیکسٹ</string>
 
     <!--HEADINGS-->
 

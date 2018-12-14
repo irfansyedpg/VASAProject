@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
+import android.text.InputFilter;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,6 +39,7 @@ import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
+import utils.InputFilterMinMax;
 import utils.MyPreferences;
 
 import static java.lang.Integer.parseInt;
@@ -489,25 +491,14 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
     @Override
     public void onClick(View view) {
 
-        /*if ((rb_Q1207_1.isChecked() || rb_Q1207_2.isChecked()) && (!rb_Q1609_1.isChecked() || Q1609 != "-1")) {
-
-            Toast.makeText(this, "Conflict in Q1207 and Q1609", Toast.LENGTH_LONG).show();
-            return;
-        }*/
-
-        if (ed_study_id.getText().toString().length() < 11) {
-
-            Toast.makeText(this, "Minimum Study ID length should be 9 characters", Toast.LENGTH_LONG).show();
-            return;
-        }
-
-
         if (view.getId() == R.id.btn_next) {
 
-            /*if (ed_Q1201_1.getText().toString().length() < 1 || ed_Q1201_2.getText().toString().length() < 1) {
-                Toast.makeText(this, "Province and District are required", Toast.LENGTH_LONG).show();
+            if (ed_study_id.getText().toString().length() < 11) {
+
+                Toast.makeText(this, "Minimum Study ID length should be 9 digits", Toast.LENGTH_LONG).show();
                 return;
-            }*/
+            }
+
 
             if (validateField() == false) {
                 Toast.makeText(this, "Required fields are missing", Toast.LENGTH_LONG).show();
@@ -616,6 +607,115 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 return;
             }
 
+
+            if (ll_Q1607.getVisibility() == View.VISIBLE) {
+
+                if (!ed_Q1607_1.getText().toString().isEmpty()
+                        && !ed_Q1607_2.getText().toString().isEmpty()
+                        && !ed_Q1607_3.getText().toString().isEmpty()
+
+                        && Integer.valueOf(ed_Q1607_1.getText().toString()).equals(0)
+                        && Integer.valueOf(ed_Q1607_2.getText().toString()).equals(0)
+                        && Integer.valueOf(ed_Q1607_3.getText().toString()).equals(0)) {
+
+
+                    if (ll_Q1608.getVisibility() == View.VISIBLE) {
+
+                        if (!ed_Q1608_1.getText().toString().isEmpty()
+                                && !ed_Q1608_2.getText().toString().isEmpty()
+                                && !ed_Q1608_3.getText().toString().isEmpty()
+
+                                && Integer.valueOf(ed_Q1608_1.getText().toString()).equals(0)
+                                && Integer.valueOf(ed_Q1608_2.getText().toString()).equals(0)
+                                && Integer.valueOf(ed_Q1608_3.getText().toString()).equals(0)
+                                && !rb_Q1609_1.isChecked()) {
+
+                            Toast.makeText(this, "Neonatal death or still birth as per given Age", Toast.LENGTH_LONG).show();
+                            return;
+
+                        } else {
+
+                            if (Integer.valueOf(ed_Q1608_1.getText().toString()) > 0 && !rb_Q1609_1.isChecked()) {
+
+                                Toast.makeText(this, "Neonatal death or still birth as per given Age", Toast.LENGTH_LONG).show();
+                                return;
+
+                            } else if (Integer.valueOf(ed_Q1608_2.getText().toString()) > 0 && Integer.valueOf(ed_Q1608_2.getText().toString()) <= 11 && !rb_Q1609_2.isChecked()) {
+
+                                Toast.makeText(this, "1-11 months old child death as per given Age", Toast.LENGTH_LONG).show();
+                                return;
+
+                            } else if (Integer.valueOf(ed_Q1608_2.getText().toString()) > 11 && !rb_Q1609_3.isChecked()) {
+
+                                Toast.makeText(this, "12 months-4 years old child death as per given Age", Toast.LENGTH_LONG).show();
+                                return;
+
+                            } else if (Integer.valueOf(ed_Q1608_3.getText().toString()) == 1) {
+
+                                Toast.makeText(this, "Kindly provide age in months if child is less than 2 years", Toast.LENGTH_LONG).show();
+                                return;
+
+                            } else if (Integer.valueOf(ed_Q1608_3.getText().toString()) != 0 && Integer.valueOf(ed_Q1608_3.getText().toString()) > 1 && Integer.valueOf(ed_Q1608_3.getText().toString()) <= 4 && !rb_Q1609_3.isChecked()) {
+
+                                Toast.makeText(this, "12 months-4 years old child as per given Age", Toast.LENGTH_LONG).show();
+                                return;
+
+                            } else if (Integer.valueOf(ed_Q1608_3.getText().toString()) > 4 && Integer.valueOf(ed_Q1608_3.getText().toString()) <= 11 && !rb_Q1609_4.isChecked()) {
+
+                                Toast.makeText(this, "5-11 years old child death as per given Age", Toast.LENGTH_LONG).show();
+                                return;
+
+                            } else if (Integer.valueOf(ed_Q1608_3.getText().toString()) > 11 && !rb_Q1609_5.isChecked()) {
+
+                                Toast.makeText(this, "Adult death as per given Age", Toast.LENGTH_LONG).show();
+                                return;
+                            }
+                        }
+
+                    } else {
+
+                        Toast.makeText(this, "Neonatal death or still birth as per given Age", Toast.LENGTH_LONG).show();
+                        return;
+                    }
+
+
+                } else {
+
+                    if (Integer.valueOf(ed_Q1607_1.getText().toString()) > 0 && !rb_Q1609_1.isChecked()) {
+
+                        Toast.makeText(this, "Neonatal death or still birth as per given Age", Toast.LENGTH_LONG).show();
+                        return;
+
+                    } else if (Integer.valueOf(ed_Q1607_2.getText().toString()) > 0 && Integer.valueOf(ed_Q1607_2.getText().toString()) <= 11 && !rb_Q1609_2.isChecked()) {
+
+                        Toast.makeText(this, "1-11 months old child death as per given Age", Toast.LENGTH_LONG).show();
+                        return;
+
+                    } else if (Integer.valueOf(ed_Q1607_2.getText().toString()) > 11 && !rb_Q1609_3.isChecked()) {
+
+                        Toast.makeText(this, "12 months-4 years old child death as per given Age", Toast.LENGTH_LONG).show();
+                        return;
+
+                    } else if (Integer.valueOf(ed_Q1607_3.getText().toString()) > 0 && Integer.valueOf(ed_Q1607_3.getText().toString()) <= 4 && !rb_Q1609_3.isChecked()) {
+
+                        Toast.makeText(this, "12 months-4 years old child as per given Age", Toast.LENGTH_LONG).show();
+                        return;
+
+                    } else if (Integer.valueOf(ed_Q1607_3.getText().toString()) > 4 && Integer.valueOf(ed_Q1607_3.getText().toString()) <= 11 && !rb_Q1609_4.isChecked()) {
+
+                        Toast.makeText(this, "5-11 years old child death as per given Age", Toast.LENGTH_LONG).show();
+                        return;
+
+                    } else if (Integer.valueOf(ed_Q1607_3.getText().toString()) > 11 && !rb_Q1609_5.isChecked()) {
+
+                        Toast.makeText(this, "Adult death as per given Age", Toast.LENGTH_LONG).show();
+                        return;
+                    }
+                }
+
+            }
+
+
             insert_data();
 
             DBHelper db = new DBHelper(this);
@@ -666,7 +766,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 }
             }
 
-        } else if (view.getId() == R.id.btn_Q1502) {
+        } else if (view.getId() == R.id.btn_Q1502)
+
+        {
 
             if (ed_Q1502.getText().toString().trim().length() > 0) {
                 int total = Integer.parseInt(ed_Q1502.getText().toString().trim());
@@ -1652,6 +1754,18 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         ed_Q1206_y.addTextChangedListener(txtWatcher);
 
         sp_Q1201_1.setOnItemSelectedListener(this);
+
+        ed_Q1206_d.setFilters(new InputFilter[]{new InputFilterMinMax(1, 27, 0, 0)});
+        ed_Q1206_m.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 0, 0)});
+        ed_Q1206_y.setFilters(new InputFilter[]{new InputFilterMinMax(2, 80, 0, 1)});
+
+        ed_Q1608_1.setFilters(new InputFilter[]{new InputFilterMinMax(1, 27, 0, 0)});
+        ed_Q1608_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 0, 0)});
+        ed_Q1608_3.setFilters(new InputFilter[]{new InputFilterMinMax(2, 80, 0, 1)});
+
+        ed_Q1610_1.setFilters(new InputFilter[]{new InputFilterMinMax(1, 27, 0, 0)});
+        ed_Q1610_2.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 0, 0)});
+        ed_Q1610_3.setFilters(new InputFilter[]{new InputFilterMinMax(1, 59, 0, 0)});
     }
 
     @Override
@@ -2275,7 +2389,6 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         Q1201_1 = sp_Q1201_1.getSelectedItem().toString();
         Q1201_2 = sp_Q1201_2.getSelectedItem().toString();
-
 
 
         if (ed_Q1201_3.getText().toString().trim().length() > 0) {
@@ -3461,6 +3574,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ed_Q1206_d.setEnabled(false);
             ed_Q1206_m.setEnabled(false);
             ed_Q1206_y.setEnabled(false);
+
         }
 
 
@@ -3522,7 +3636,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
                 ed_Q1607_2.setText("0");
                 ed_Q1607_3.setText("0");
 
-                cb_Q1607_conflict.setChecked(true);
+                //cb_Q1607_conflict.setChecked(true);
             }
 
         } else {
@@ -3531,7 +3645,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
             ed_Q1607_2.setText("0");
             ed_Q1607_3.setText("0");
 
-            cb_Q1607_conflict.setChecked(true);
+            //cb_Q1607_conflict.setChecked(true);
         }
     }
 
