@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +16,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.R;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -389,23 +390,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
     //EndRegion Declaration
     Boolean b_place_where = false;
-    private TextWatcher generalTextWatcher = new TextWatcher() {
 
-        @Override
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-        }
-
-        @Override
-        public void onTextChanged(CharSequence s, int start, int count, int after) {
-
-        }
-
-        @Override
-        public void afterTextChanged(Editable s) {
-
-        }
-    };
 
     void Initialization() {
 
@@ -687,7 +672,11 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
                 return;
             }
 
-            value_assignment();
+            try {
+                value_assignment();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
             insert_data();
 
 
@@ -779,9 +768,8 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
                     }*/
 
 
-                    if (Gothrough.IamHiden(ll2_A4252) == false || Gothrough.IamHiden(ll3_A4252) == false || Gothrough.IamHiden(ll5_A4252) == false) {
+                    if (!Gothrough.IamHiden(ll2_A4252) || !Gothrough.IamHiden(ll3_A4252) || !Gothrough.IamHiden(ll5_A4252)) {
                         Toast.makeText(A4251_A4284.this, "Select All", Toast.LENGTH_LONG).show();
-
 
                         return;
                     }
@@ -1159,770 +1147,324 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         smart(ll_A4255);
     }
 
-    void value_assignment() {
-
-        study_id = "0";
-        A4251 = "-1";
-        A4253 = "-1";
-        A4253_3 = "-1";
-        A4254_1 = "-1";
-        A4254_2 = "-1";
-        A4255_1 = "-1";
-        A4255_2 = "-1";
-        A4255_3 = "-1";
-        A4255_4 = "-1";
-        A4255_4_OT = "-1";
-        A4255_5 = "-1";
-        A4255_6 = "-1";
-        A4255_7 = "-1";
-        A4255_8 = "-1";
-        A4255_9 = "-1";
-        A4255_10 = "-1";
-        A4255_11 = "-1";
-        A4255_12 = "-1";
-        A4255_13 = "-1";
-        A4255_13_OT = "-1";
-        A4255_DK = "-1";
-        A4256_days = "-1";
-        A4256_hours = "-1";
-        A4256_minutes = "-1";
-        A4257 = "-1";
-        A4257_name = "-1";
-        A4258_1 = "-1";
-        A4258_2 = "-1";
-        A4259_hours = "-1";
-        A4259_minutes = "-1";
-        A4260 = "-1";
-        A4261 = "-1";
-        A4262 = "-1";
-        A4262_name = "-1";
-        A4263_1 = "-1";
-        A4263_2 = "-1";
-        A4264 = "-1";
-        A4266 = "-1";
-        A4266_name = "-1";
-        A4267_1 = "-1";
-        A4267_2 = "-1";
-        A4268_hours = "-1";
-        A4268_minutes = "-1";
-        A4269 = "-1";
-        A4270 = "-1";
-        A4271 = "-1";
-        A4271_name = "-1";
-        A4272_1 = "-1";
-        A4272_2 = "-1";
-        A4273 = "-1";
-        A4274 = "-1";
-        A4275 = "-1";
-        A4276_1 = "-1";
-        A4276_2 = "-1";
-        A4276_3 = "-1";
-        A4276_4 = "-1";
-        A4276_5 = "-1";
-        A4276_5_OT = "-1";
-        A4276_6 = "-1";
-        A4276_7 = "-1";
-        A4276_8 = "-1";
-        A4276_9 = "-1";
-        A4276_10 = "-1";
-        A4276_11 = "-1";
-        A4276_12 = "-1";
-        A4276_13 = "-1";
-        A4276_14 = "-1";
-        A4276_15 = "-1";
-        A4276_16 = "-1";
-        A4276_16_OT = "-1";
-        A4276_DK = "-1";
-        A4277 = "-1";
-        A4278_1 = "-1";
-        A4278_2 = "-1";
-        A4278_3 = "-1";
-        A4278_4 = "-1";
-        A4278_5 = "-1";
-        A4278_6 = "-1";
-        A4278_7 = "-1";
-        A4278_DK = "-1";
-        A4279_1 = "-1";
-        A4279_2 = "-1";
-        A4279_3 = "-1";
-        A4279_4 = "-1";
-        A4279_5 = "-1";
-        A4279_6 = "-1";
-        A4279_7 = "-1";
-        A4279_DK = "-1";
-        A4280 = "-1";
-        A4281 = "-1";
-        A4282 = "-1";
-        A4283 = "-1";
-        A4284 = "-1";
-        STATUS = "0";
+    void value_assignment() throws JSONException {
 
 
-        //A4251
-        if (rb_A4251_1.isChecked()) {
-            A4251 = "1";
-        }
-        if (rb_A4251_2.isChecked()) {
-            A4251 = "2";
-        }
-        if (rb_A4251_DK.isChecked()) {
-            A4251 = "9";
-        }
+        Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
 
-        //A4253
-        if (rb_A4253_1.isChecked()) {
-            A4253 = "1";
-        }
-        if (rb_A4253_2.isChecked()) {
-            A4253 = "2";
-        }
-        if (rb_A4253_3.isChecked()) {
-            A4253 = "3";
-        }
-        if (rb_A4253_DK.isChecked()) {
-            A4253 = "9";
-        }
-        if (ed_A4253_3.getText().toString().trim().length() > 0) {
-            A4253_3 = ed_A4253_3.getText().toString().trim();
-        }
-
-        //A4254_1
-        if (rb_A4254_1_1.isChecked()) {
-            A4254_1 = "1";
-        }
-        if (rb_A4254_1_2.isChecked()) {
-            A4254_1 = "2";
-        }
-        if (rb_A4254_1_DK.isChecked()) {
-            A4254_1 = "9";
-        }
-
-        //A4254_2
-        if (rb_A4254_2_1.isChecked()) {
-            A4254_2 = "1";
-        }
-        if (rb_A4254_2_2.isChecked()) {
-            A4254_2 = "2";
-        }
-        if (rb_A4254_2_DK.isChecked()) {
-            A4254_2 = "9";
-        }
-
-        //A4255
-        if (cb_A4255_1.isChecked()) {
-            A4255_1 = "1";
-        }
-        if (cb_A4255_2.isChecked()) {
-            A4255_2 = "2";
-        }
-        if (cb_A4255_3.isChecked()) {
-            A4255_3 = "3";
-        }
-        if (cb_A4255_4.isChecked()) {
-            A4255_4 = "4";
-        }
-        if (ed_A4255_4.getText().toString().trim().length() > 0) {
-            A4255_4_OT = ed_A4255_4.getText().toString().trim();
-        }
-        if (cb_A4255_5.isChecked()) {
-            A4255_5 = "5";
-        }
-        if (cb_A4255_6.isChecked()) {
-            A4255_6 = "6";
-        }
-        if (cb_A4255_7.isChecked()) {
-            A4255_7 = "7";
-        }
-        if (cb_A4255_8.isChecked()) {
-            A4255_8 = "8";
-        }
-        if (cb_A4255_9.isChecked()) {
-            A4255_9 = "9";
-        }
-        if (cb_A4255_9.isChecked()) {
-            A4255_9 = "9";
-        }
-        if (cb_A4255_10.isChecked()) {
-            A4255_10 = "10";
-        }
-        if (cb_A4255_11.isChecked()) {
-            A4255_11 = "11";
-        }
-        if (cb_A4255_12.isChecked()) {
-            A4255_12 = "12";
-        }
-        if (cb_A4255_13.isChecked()) {
-            A4255_13 = "13";
-        }
-        if (ed_A4255_13.getText().toString().trim().length() > 0) {
-            A4255_13_OT = ed_A4255_13.getText().toString().trim();
-        }
-        if (cb_A4255_DK.isChecked()) {
-            A4255_DK = "99";
-        }
-
-        //A4256
-        if (ed_A4256_days.getText().toString().trim().length() > 0) {
-            A4256_days = ed_A4256_days.getText().toString().trim();
-        }
-        if (ed_A4256_hours.getText().toString().trim().length() > 0) {
-            A4256_hours = ed_A4256_hours.getText().toString().trim();
-        }
-        if (ed_A4256_minutes.getText().toString().trim().length() > 0) {
-            A4256_minutes = ed_A4256_minutes.getText().toString().trim();
-        }
-
-        //A4257
-        if (rb_A4257_1.isChecked()) {
-            A4257 = "1";
-        }
-        if (rb_A4257_2.isChecked()) {
-            A4257 = "2";
-        }
-        if (rb_A4257_3.isChecked()) {
-            A4257 = "3";
-        }
-        if (rb_A4257_4.isChecked()) {
-            A4257 = "4";
-        }
-        if (rb_A4257_5.isChecked()) {
-            A4257 = "5";
-        }
-        if (rb_A4257_6.isChecked()) {
-            A4257 = "6";
-        }
-        if (rb_A4257_7.isChecked()) {
-            A4257 = "7";
-        }
-        if (rb_A4257_8.isChecked()) {
-            A4257 = "8";
-        }
-        if (rb_A4257_9.isChecked()) {
-            A4257 = "9";
-        }
-        if (rb_A4257_10.isChecked()) {
-            A4257 = "10";
-        }
-        if (rb_A4257_11.isChecked()) {
-            A4257 = "11";
-        }
-        if (rb_A4257_DK.isChecked()) {
-            A4257 = "99";
-        }
-        if (ed_A4257_name.getText().toString().trim().length() > 0) {
-            A4257_name = ed_A4257_name.getText().toString().trim();
-        }
-
-        //A4258_1
-        if (rb_A4258_1_1.isChecked()) {
-            A4258_1 = "1";
-        }
-        if (rb_A4258_1_2.isChecked()) {
-            A4258_1 = "2";
-        }
-        if (rb_A4258_1_3.isChecked()) {
-            A4258_1 = "3";
-        }
-        if (rb_A4258_1_DK.isChecked()) {
-            A4258_1 = "9";
-        }
-
-        //A4258_2
-        if (rb_A4258_2_1.isChecked()) {
-            A4258_2 = "1";
-        }
-        if (rb_A4258_2_2.isChecked()) {
-            A4258_2 = "2";
-        }
-        if (rb_A4258_2_3.isChecked()) {
-            A4258_2 = "3";
-        }
-        if (rb_A4258_2_DK.isChecked()) {
-            A4258_2 = "9";
-        }
-
-        //A4259
-        if (ed_A4259_hours.getText().toString().trim().length() > 0) {
-            A4259_hours = ed_A4259_hours.getText().toString().trim();
-        }
-        if (ed_A4259_minutes.getText().toString().trim().length() > 0) {
-            A4259_minutes = ed_A4259_minutes.getText().toString().trim();
-        }
-
-        //A4260
-        if (rb_A4260_1.isChecked()) {
-            A4260 = "1";
-        }
-        if (rb_A4260_2.isChecked()) {
-            A4260 = "2";
-        }
-        if (rb_A4260_DK.isChecked()) {
-            A4260 = "9";
-        }
-
-        //A4261
-        if (rb_A4261_1.isChecked()) {
-            A4261 = "1";
-        }
-        if (rb_A4261_2.isChecked()) {
-            A4261 = "2";
-        }
-        if (rb_A4261_DK.isChecked()) {
-            A4261 = "9";
-        }
-
-        //A4262
-        if (rb_A4262_1.isChecked()) {
-            A4262 = "1";
-        }
-        if (rb_A4262_2.isChecked()) {
-            A4262 = "2";
-        }
-        if (rb_A4262_3.isChecked()) {
-            A4262 = "3";
-        }
-        if (rb_A4262_4.isChecked()) {
-            A4262 = "4";
-        }
-        if (rb_A4262_5.isChecked()) {
-            A4262 = "5";
-        }
-        if (rb_A4262_6.isChecked()) {
-            A4262 = "6";
-        }
-        if (rb_A4262_7.isChecked()) {
-            A4262 = "7";
-        }
-        if (rb_A4262_8.isChecked()) {
-            A4262 = "8";
-        }
-        if (rb_A4262_9.isChecked()) {
-            A4262 = "9";
-        }
-        if (rb_A4262_10.isChecked()) {
-            A4262 = "10";
-        }
-        if (rb_A4262_11.isChecked()) {
-            A4262 = "11";
-        }
-        if (rb_A4262_DK.isChecked()) {
-            A4262 = "99";
-        }
-        if (ed_A4262_name.getText().toString().trim().length() > 0) {
-            A4262_name = ed_A4262_name.getText().toString().trim();
-        }
-
-        //A4263_1
-        if (rb_A4263_1_1.isChecked()) {
-            A4263_1 = "1";
-        }
-        if (rb_A4263_1_2.isChecked()) {
-            A4263_1 = "2";
-        }
-        if (rb_A4263_1_DK.isChecked()) {
-            A4263_1 = "9";
-        }
-
-        //A4263_2
-        if (rb_A4263_2_1.isChecked()) {
-            A4263_2 = "1";
-        }
-        if (rb_A4263_2_2.isChecked()) {
-            A4263_2 = "2";
-        }
-        if (rb_A4263_2_DK.isChecked()) {
-            A4263_2 = "9";
-        }
-
-        //A4264
-        if (rb_A4264_1.isChecked()) {
-            A4264 = "1";
-        }
-        if (rb_A4264_2.isChecked()) {
-            A4264 = "2";
-        }
-
-        //A4266
-        if (rb_A4266_1.isChecked()) {
-            A4266 = "1";
-        }
-        if (rb_A4266_2.isChecked()) {
-            A4266 = "2";
-        }
-        if (rb_A4266_3.isChecked()) {
-            A4266 = "3";
-        }
-        if (rb_A4266_4.isChecked()) {
-            A4266 = "4";
-        }
-        if (rb_A4266_5.isChecked()) {
-            A4266 = "5";
-        }
-        if (rb_A4266_6.isChecked()) {
-            A4266 = "6";
-        }
-        if (rb_A4266_7.isChecked()) {
-            A4266 = "7";
-        }
-        if (rb_A4266_8.isChecked()) {
-            A4266 = "8";
-        }
-        if (rb_A4266_9.isChecked()) {
-            A4266 = "9";
-        }
-        if (rb_A4266_10.isChecked()) {
-            A4266 = "10";
-        }
-        if (rb_A4266_11.isChecked()) {
-            A4266 = "11";
-        }
-        if (rb_A4266_DK.isChecked()) {
-            A4266 = "99";
-        }
-        if (ed_A4266_name.getText().toString().trim().length() > 0) {
-            A4266_name = ed_A4266_name.getText().toString().trim();
-        }
-
-        //A4267_1
-        if (rb_A4267_1_1.isChecked()) {
-            A4267_1 = "1";
-        }
-        if (rb_A4267_1_2.isChecked()) {
-            A4267_1 = "2";
-        }
-        if (rb_A4267_1_3.isChecked()) {
-            A4267_1 = "3";
-        }
-        if (rb_A4267_1_DK.isChecked()) {
-            A4267_1 = "9";
-        }
-
-        //A4267_2
-        if (rb_A4267_2_1.isChecked()) {
-            A4267_2 = "1";
-        }
-        if (rb_A4267_2_2.isChecked()) {
-            A4267_2 = "2";
-        }
-        if (rb_A4267_2_3.isChecked()) {
-            A4267_2 = "3";
-        }
-        if (rb_A4267_2_DK.isChecked()) {
-            A4267_2 = "9";
-        }
+        JSONObject json = new JSONObject();
 
         //A4268
-        if (ed_A4268_hours.getText().toString().trim().length() > 0) {
-            A4268_hours = ed_A4268_hours.getText().toString().trim();
-        }
-        if (ed_A4268_minutes.getText().toString().trim().length() > 0) {
-            A4268_minutes = ed_A4268_minutes.getText().toString().trim();
-        }
+        json.put("study_id", study_id);
+        json.put("STATUS", STATUS);
+        
+        //A4251
+        json.put("A4251", rb_A4251_1.isChecked() ? "1"
+                : rb_A4251_2.isChecked() ? "2"
+                : rb_A4251_DK.isChecked() ? "98"
+                : "-1");
+
+        //A4253
+        json.put("A4253", rb_A4253_1.isChecked() ? "1"
+                : rb_A4253_2.isChecked() ? "2"
+                : rb_A4253_3.isChecked() ? "3"
+                : rb_A4253_DK.isChecked() ? "98"
+                : "-1");
+        json.put("A4253_3", ed_A4253_3.getText().toString().trim().length() > 0 ? ed_A4253_3.getText().toString() : "-1");
+
+        //A4254_1
+        json.put("A4254_1", rb_A4254_1_1.isChecked() ? "1"
+                : rb_A4254_1_2.isChecked() ? "2"
+                : rb_A4254_1_DK.isChecked() ? "98"
+                : "-1");
+
+        //A4254_2
+        json.put("A4254_2", rb_A4254_2_1.isChecked() ? "1"
+                : rb_A4254_2_2.isChecked() ? "2"
+                : rb_A4254_2_DK.isChecked() ? "98"
+                : "-1");
+
+        //A4255
+        json.put("A4255_1", cb_A4255_1.isChecked() ? "1" : "-1");
+        json.put("A4255_2", cb_A4255_2.isChecked() ? "2" : "-1");
+        json.put("A4255_3", cb_A4255_3.isChecked() ? "3" : "-1");
+        json.put("A4255_4", cb_A4255_4.isChecked() ? "4" : "-1");
+        json.put("A4255_5", cb_A4255_5.isChecked() ? "5" : "-1");
+        json.put("A4255_6", cb_A4255_6.isChecked() ? "6" : "-1");
+        json.put("A4255_7", cb_A4255_7.isChecked() ? "7" : "-1");
+        json.put("A4255_8", cb_A4255_8.isChecked() ? "8" : "-1");
+        json.put("A4255_9", cb_A4255_9.isChecked() ? "9" : "-1");
+        json.put("A4255_10", cb_A4255_10.isChecked() ? "10" : "-1");
+        json.put("A4255_11", cb_A4255_11.isChecked() ? "11" : "-1");
+        json.put("A4255_12", cb_A4255_12.isChecked() ? "12" : "-1");
+        json.put("A4255_13", cb_A4255_13.isChecked() ? "13" : "-1");
+        json.put("A4255_DK", cb_A4255_DK.isChecked() ? "98" : "-1");
+        json.put("A4255_4_OT", ed_A4255_4.getText().toString().trim().length() > 0 ? ed_A4255_4.getText().toString().trim() : "-1");
+        json.put("A4255_13_OT", ed_A4255_13.getText().toString().trim().length() > 0 ? ed_A4255_13.getText().toString().trim() : "-1");
+
+
+        //A4255
+        json.put("A4256_minutes", ed_A4256_minutes.getText().toString().trim().length() > 0 ? ed_A4256_minutes.getText().toString().trim() : "-1");
+        json.put("A4256_hours", ed_A4256_hours.getText().toString().trim().length() > 0 ? ed_A4256_hours.getText().toString().trim() : "-1");
+        json.put("A4256_days", ed_A4256_days.getText().toString().trim().length() > 0 ? ed_A4256_days.getText().toString().trim() : "-1");
+
+        //A4257
+        json.put("A4257", rb_A4257_1.isChecked() ? "1"
+                : rb_A4257_2.isChecked() ? "2"
+                : rb_A4257_3.isChecked() ? "3"
+                : rb_A4257_4.isChecked() ? "4"
+                : rb_A4257_5.isChecked() ? "5"
+                : rb_A4257_6.isChecked() ? "6"
+                : rb_A4257_7.isChecked() ? "7"
+                : rb_A4257_8.isChecked() ? "8"
+                : rb_A4257_9.isChecked() ? "9"
+                : rb_A4257_10.isChecked() ? "10"
+                : rb_A4257_11.isChecked() ? "11"
+                : rb_A4257_DK.isChecked() ? "98"
+                : "-1");
+        json.put("A4257_name", ed_A4257_name.getText().toString().trim().length() > 0 ? ed_A4257_name.getText().toString() : "-1");
+
+        //A4258_1
+        json.put("A4258_1", rb_A4258_1_1.isChecked() ? "1"
+                : rb_A4258_1_2.isChecked() ? "2"
+                : rb_A4258_1_3.isChecked() ? "3"
+                : rb_A4258_1_DK.isChecked() ? "98"
+                : "-1");
+
+        //A4258_2
+        json.put("A4258_2", rb_A4258_2_1.isChecked() ? "1"
+                : rb_A4258_2_2.isChecked() ? "2"
+                : rb_A4258_2_3.isChecked() ? "3"
+                : rb_A4258_2_DK.isChecked() ? "98"
+                : "-1");
+        
+        //A4259
+        json.put("A4259_minutes", ed_A4259_minutes.getText().toString().trim().length() > 0 ? ed_A4259_minutes.getText().toString().trim() : "-1");
+        json.put("A4259_hours", ed_A4259_hours.getText().toString().trim().length() > 0 ? ed_A4259_hours.getText().toString().trim() : "-1");
+
+
+        //A4260
+        json.put("A4260", rb_A4260_1.isChecked() ? "1"
+                : rb_A4260_2.isChecked() ? "2"
+                : rb_A4260_DK.isChecked() ? "98"
+                : "-1");
+
+        //A4261
+        json.put("A4261", rb_A4261_1.isChecked() ? "1"
+                : rb_A4261_2.isChecked() ? "2"
+                : rb_A4261_DK.isChecked() ? "98"
+                : "-1");
+
+        //A4262
+        json.put("A4262", rb_A4262_1.isChecked() ? "1"
+                : rb_A4262_2.isChecked() ? "2"
+                : rb_A4262_3.isChecked() ? "3"
+                : rb_A4262_4.isChecked() ? "4"
+                : rb_A4262_5.isChecked() ? "5"
+                : rb_A4262_6.isChecked() ? "6"
+                : rb_A4262_7.isChecked() ? "7"
+                : rb_A4262_8.isChecked() ? "8"
+                : rb_A4262_9.isChecked() ? "9"
+                : rb_A4262_10.isChecked() ? "10"
+                : rb_A4262_11.isChecked() ? "11"
+                : rb_A4262_DK.isChecked() ? "98"
+                : "-1");
+        json.put("A4262_name", ed_A4262_name.getText().toString().trim().length() > 0 ? ed_A4262_name.getText().toString() : "-1");
+
+        //A4263_1
+        json.put("A4263_1", rb_A4263_1_1.isChecked() ? "1"
+                : rb_A4263_1_2.isChecked() ? "2"
+                : rb_A4263_1_DK.isChecked() ? "98"
+                : "-1");
+
+        //A4263_2
+        json.put("A4263_2", rb_A4263_2_1.isChecked() ? "1"
+                : rb_A4263_2_2.isChecked() ? "2"
+                : rb_A4263_2_DK.isChecked() ? "98"
+                : "-1");
+
+        //A4264
+        json.put("A4264", rb_A4264_1.isChecked() ? "1"
+                : rb_A4264_2.isChecked() ? "2"
+                : "-1");
+
+        //A4266
+        json.put("A4266", rb_A4266_1.isChecked() ? "1"
+                : rb_A4266_2.isChecked() ? "2"
+                : rb_A4266_3.isChecked() ? "3"
+                : rb_A4266_4.isChecked() ? "4"
+                : rb_A4266_5.isChecked() ? "5"
+                : rb_A4266_6.isChecked() ? "6"
+                : rb_A4266_7.isChecked() ? "7"
+                : rb_A4266_8.isChecked() ? "8"
+                : rb_A4266_9.isChecked() ? "9"
+                : rb_A4266_10.isChecked() ? "10"
+                : rb_A4266_11.isChecked() ? "11"
+                : rb_A4266_DK.isChecked() ? "98"
+                : "-1");
+        json.put("A4266_name", ed_A4266_name.getText().toString().trim().length() > 0 ? ed_A4266_name.getText().toString() : "-1");
+
+        //A4267_1
+        json.put("A4267_1", rb_A4267_1_1.isChecked() ? "1"
+                : rb_A4267_1_2.isChecked() ? "2"
+                : rb_A4267_1_3.isChecked() ? "3"
+                : rb_A4267_1_DK.isChecked() ? "98"
+                : "-1");
+
+        //A4267_2
+        json.put("A4267_2", rb_A4267_2_1.isChecked() ? "1"
+                : rb_A4267_2_2.isChecked() ? "2"
+                : rb_A4267_2_3.isChecked() ? "3"
+                : rb_A4267_2_DK.isChecked() ? "98"
+                : "-1");
+
+        //A4268
+        json.put("A4268_minutes", ed_A4268_minutes.getText().toString().trim().length() > 0 ? ed_A4268_minutes.getText().toString().trim() : "-1");
+        json.put("A4268_hours", ed_A4268_hours.getText().toString().trim().length() > 0 ? ed_A4268_hours.getText().toString().trim() : "-1");
 
         //A4269
-        if (rb_A4269_1.isChecked()) {
-            A4269 = "1";
-        }
-        if (rb_A4269_2.isChecked()) {
-            A4269 = "2";
-        }
-        if (rb_A4269_DK.isChecked()) {
-            A4269 = "9";
-        }
+        json.put("A4269", rb_A4269_1.isChecked() ? "1"
+                : rb_A4269_2.isChecked() ? "2"
+                : rb_A4269_DK.isChecked() ? "98"
+                : "-1");
 
         //A4270
-        if (rb_A4270_1.isChecked()) {
-            A4270 = "1";
-        }
-        if (rb_A4270_2.isChecked()) {
-            A4270 = "2";
-        }
-        if (rb_A4270_DK.isChecked()) {
-            A4270 = "9";
-        }
+        json.put("A4270", rb_A4270_1.isChecked() ? "1"
+                : rb_A4270_2.isChecked() ? "2"
+                : rb_A4270_DK.isChecked() ? "98"
+                : "-1");
 
         //A4271
-        if (rb_A4271_1.isChecked()) {
-            A4271 = "1";
-        }
-        if (rb_A4271_2.isChecked()) {
-            A4271 = "2";
-        }
-        if (rb_A4271_3.isChecked()) {
-            A4271 = "3";
-        }
-        if (rb_A4271_4.isChecked()) {
-            A4271 = "4";
-        }
-        if (rb_A4271_5.isChecked()) {
-            A4271 = "5";
-        }
-        if (rb_A4271_6.isChecked()) {
-            A4271 = "6";
-        }
-        if (rb_A4271_7.isChecked()) {
-            A4271 = "7";
-        }
-        if (rb_A4271_8.isChecked()) {
-            A4271 = "8";
-        }
-        if (rb_A4271_9.isChecked()) {
-            A4271 = "9";
-        }
-        if (rb_A4271_10.isChecked()) {
-            A4271 = "10";
-        }
-        if (rb_A4271_11.isChecked()) {
-            A4271 = "11";
-        }
-        if (rb_A4271_DK.isChecked()) {
-            A4271 = "99";
-        }
-        if (ed_A4271_name.getText().toString().trim().length() > 0) {
-            A4271_name = ed_A4271_name.getText().toString().trim();
-        }
+        json.put("A4271", rb_A4271_1.isChecked() ? "1"
+                : rb_A4271_2.isChecked() ? "2"
+                : rb_A4271_3.isChecked() ? "3"
+                : rb_A4271_4.isChecked() ? "4"
+                : rb_A4271_5.isChecked() ? "5"
+                : rb_A4271_6.isChecked() ? "6"
+                : rb_A4271_7.isChecked() ? "7"
+                : rb_A4271_8.isChecked() ? "8"
+                : rb_A4271_9.isChecked() ? "9"
+                : rb_A4271_10.isChecked() ? "10"
+                : rb_A4271_11.isChecked() ? "11"
+                : rb_A4271_DK.isChecked() ? "98"
+                : "-1");
+        json.put("A4271_name", ed_A4271_name.getText().toString().trim().length() > 0 ? ed_A4271_name.getText().toString() : "-1");
 
         //A4272_1
-        if (rb_A4272_1_1.isChecked()) {
-            A4272_1 = "1";
-        }
-        if (rb_A4272_1_2.isChecked()) {
-            A4272_1 = "2";
-        }
-        if (rb_A4272_1_DK.isChecked()) {
-            A4272_1 = "9";
-        }
+        json.put("A4272_1", rb_A4272_1_1.isChecked() ? "1"
+                : rb_A4272_1_2.isChecked() ? "2"
+                : rb_A4272_1_DK.isChecked() ? "98"
+                : "-1");
 
         //A4272_2
-        if (rb_A4272_2_1.isChecked()) {
-            A4272_2 = "1";
-        }
-        if (rb_A4272_2_2.isChecked()) {
-            A4272_2 = "2";
-        }
-        if (rb_A4272_2_DK.isChecked()) {
-            A4272_2 = "9";
-        }
+        json.put("A4272_2", rb_A4272_2_1.isChecked() ? "1"
+                : rb_A4272_2_2.isChecked() ? "2"
+                : rb_A4272_2_DK.isChecked() ? "98"
+                : "-1");
 
         //A4273
-        if (rb_A4273_1.isChecked()) {
-            A4273 = "1";
-        }
-        if (rb_A4273_2.isChecked()) {
-            A4273 = "2";
-        }
-
+        json.put("A4273", rb_A4273_1.isChecked() ? "1"
+                : rb_A4273_2.isChecked() ? "2"
+                : "-1");
 
         //A4274
-        if (rb_A4274_1.isChecked()) {
-            A4274 = "1";
-        }
-        if (rb_A4274_2.isChecked()) {
-            A4274 = "2";
-        }
-        if (rb_A4274_DK.isChecked()) {
-            A4274 = "9";
-        }
+        json.put("A4274", rb_A4274_1.isChecked() ? "1"
+                : rb_A4274_2.isChecked() ? "2"
+                : rb_A4274_DK.isChecked() ? "98"
+                : "-1");
 
         //A4275
-        if (rb_A4275_1.isChecked()) {
-            A4275 = "1";
-        }
-        if (rb_A4275_2.isChecked()) {
-            A4275 = "2";
-        }
-        if (rb_A4275_DK.isChecked()) {
-            A4275 = "9";
-        }
+        json.put("A4275", rb_A4275_1.isChecked() ? "1"
+                : rb_A4275_2.isChecked() ? "2"
+                : rb_A4275_DK.isChecked() ? "98"
+                : "-1");
 
-        //A4276
-        if (cb_A4276_1.isChecked()) {
-            A4276_1 = "1";
-        }
-        if (cb_A4276_2.isChecked()) {
-            A4276_2 = "2";
-        }
-        if (cb_A4276_3.isChecked()) {
-            A4276_3 = "3";
-        }
-        if (cb_A4276_4.isChecked()) {
-            A4276_4 = "4";
-        }
-        if (cb_A4276_5.isChecked()) {
-            A4276_5 = "5";
-        }
-        if (ed_A4276_5.getText().toString().trim().length() > 0) {
-            A4276_5_OT = ed_A4276_5.getText().toString().trim();
-        }
-        if (cb_A4276_5.isChecked()) {
-            A4276_5 = "5";
-        }
-        if (cb_A4276_6.isChecked()) {
-            A4276_6 = "6";
-        }
-        if (cb_A4276_7.isChecked()) {
-            A4276_7 = "7";
-        }
-        if (cb_A4276_8.isChecked()) {
-            A4276_8 = "8";
-        }
-        if (cb_A4276_9.isChecked()) {
-            A4276_9 = "9";
-        }
-        if (cb_A4276_9.isChecked()) {
-            A4276_9 = "9";
-        }
-        if (cb_A4276_10.isChecked()) {
-            A4276_10 = "10";
-        }
-        if (cb_A4276_11.isChecked()) {
-            A4276_11 = "11";
-        }
-        if (cb_A4276_12.isChecked()) {
-            A4276_12 = "12";
-        }
-        if (cb_A4276_13.isChecked()) {
-            A4276_13 = "13";
-        }
-        if (cb_A4276_14.isChecked()) {
-            A4276_14 = "14";
-        }
-        if (cb_A4276_15.isChecked()) {
-            A4276_15 = "15";
-        }
-        if (cb_A4276_16.isChecked()) {
-            A4276_16 = "16";
-        }
-        if (ed_A4276_16.getText().toString().trim().length() > 0) {
-            A4276_16_OT = ed_A4276_16.getText().toString().trim();
-        }
-        if (cb_A4276_DK.isChecked()) {
-            A4276_DK = "99";
-        }
+        json.put("A4276_1", cb_A4276_1.isChecked() ? "1" : "-1");
+        json.put("A4276_2", cb_A4276_2.isChecked() ? "2" : "-1");
+        json.put("A4276_3", cb_A4276_3.isChecked() ? "3" : "-1");
+        json.put("A4276_4", cb_A4276_4.isChecked() ? "4" : "-1");
+        json.put("A4276_5", cb_A4276_5.isChecked() ? "5" : "-1");
+        json.put("A4276_6", cb_A4276_6.isChecked() ? "6" : "-1");
+        json.put("A4276_7", cb_A4276_7.isChecked() ? "7" : "-1");
+        json.put("A4276_8", cb_A4276_8.isChecked() ? "8" : "-1");
+        json.put("A4276_9", cb_A4276_9.isChecked() ? "9" : "-1");
+        json.put("A4276_10", cb_A4276_10.isChecked() ? "10" : "-1");
+        json.put("A4276_11", cb_A4276_11.isChecked() ? "11" : "-1");
+        json.put("A4276_12", cb_A4276_12.isChecked() ? "12" : "-1");
+        json.put("A4276_13", cb_A4276_13.isChecked() ? "13" : "-1");
+        json.put("A4276_14", cb_A4276_11.isChecked() ? "14" : "-1");
+        json.put("A4276_15", cb_A4276_12.isChecked() ? "15" : "-1");
+        json.put("A4276_16", cb_A4276_13.isChecked() ? "16" : "-1");
+        json.put("A4276_DK", cb_A4276_DK.isChecked() ? "98" : "-1");
+        json.put("A4276_5_OT", ed_A4276_5.getText().toString().trim().length() > 0 ? ed_A4276_5.getText().toString().trim() : "-1");
+        json.put("A4276_16_OT", ed_A4276_16.getText().toString().trim().length() > 0 ? ed_A4276_16.getText().toString().trim() : "-1");
 
         //A4277
-        if (rb_A4277_1.isChecked()) {
-            A4277 = "1";
-        }
-        if (rb_A4277_2.isChecked()) {
-            A4277 = "2";
-        }
-        if (rb_A4277_DK.isChecked()) {
-            A4277 = "9";
-        }
+        json.put("A4277", rb_A4277_1.isChecked() ? "1"
+                : rb_A4277_2.isChecked() ? "2"
+                : rb_A4277_DK.isChecked() ? "98"
+                : "-1");
 
-        //A4278
-        if (cb_A4278_1.isChecked()) {
-            A4278_1 = "1";
-        }
-        if (cb_A4278_2.isChecked()) {
-            A4278_2 = "2";
-        }
-        if (cb_A4278_3.isChecked()) {
-            A4278_3 = "3";
-        }
-        if (cb_A4278_4.isChecked()) {
-            A4278_4 = "4";
-        }
-        if (cb_A4278_5.isChecked()) {
-            A4278_5 = "5";
-        }
-        if (cb_A4278_6.isChecked()) {
-            A4278_6 = "6";
-        }
-        if (cb_A4278_7.isChecked()) {
-            A4278_7 = "7";
-        }
-        if (cb_A4278_DK.isChecked()) {
-            A4278_DK = "9";
-        }
+        json.put("A4278_1", cb_A4278_1.isChecked() ? "1" : "-1");
+        json.put("A4278_2", cb_A4278_2.isChecked() ? "2" : "-1");
+        json.put("A4278_3", cb_A4278_3.isChecked() ? "3" : "-1");
+        json.put("A4278_4", cb_A4278_4.isChecked() ? "4" : "-1");
+        json.put("A4278_5", cb_A4278_5.isChecked() ? "5" : "-1");
+        json.put("A4278_6", cb_A4278_6.isChecked() ? "6" : "-1");
+        json.put("A4278_7", cb_A4278_7.isChecked() ? "7" : "-1");
+        json.put("A4278_DK", cb_A4278_DK.isChecked() ? "98" : "-1");
 
-        //A4279
-        if (cb_A4279_1.isChecked()) {
-            A4279_1 = "1";
-        }
-        if (cb_A4279_2.isChecked()) {
-            A4279_2 = "2";
-        }
-        if (cb_A4279_3.isChecked()) {
-            A4279_3 = "3";
-        }
-        if (cb_A4279_4.isChecked()) {
-            A4279_4 = "4";
-        }
-        if (cb_A4279_5.isChecked()) {
-            A4279_5 = "5";
-        }
-        if (cb_A4279_6.isChecked()) {
-            A4279_6 = "6";
-        }
-        if (cb_A4279_7.isChecked()) {
-            A4279_7 = "7";
-        }
-        if (cb_A4279_DK.isChecked()) {
-            A4279_DK = "9";
-        }
+        json.put("A4279_1", cb_A4279_1.isChecked() ? "1" : "-1");
+        json.put("A4279_2", cb_A4279_2.isChecked() ? "2" : "-1");
+        json.put("A4279_3", cb_A4279_3.isChecked() ? "3" : "-1");
+        json.put("A4279_4", cb_A4279_4.isChecked() ? "4" : "-1");
+        json.put("A4279_5", cb_A4279_5.isChecked() ? "5" : "-1");
+        json.put("A4279_6", cb_A4279_6.isChecked() ? "6" : "-1");
+        json.put("A4279_7", cb_A4279_7.isChecked() ? "7" : "-1");
+        json.put("A4279_DK", cb_A4279_DK.isChecked() ? "98" : "-1");
 
         //A4280
-        if (rb_A4280_1.isChecked()) {
-            A4280 = "1";
-        }
-        if (rb_A4280_2.isChecked()) {
-            A4280 = "2";
-        }
-        if (rb_A4280_DK.isChecked()) {
-            A4280 = "9";
-        }
-        if (rb_A4280_RA.isChecked()) {
-            A4280 = "8";
-        }
+        json.put("A4280", rb_A4280_1.isChecked() ? "1"
+                : rb_A4280_2.isChecked() ? "2"
+                : rb_A4280_DK.isChecked() ? "98"
+                : rb_A4280_RA.isChecked() ? "99"
+                : "-1");
 
         //A4281
-        if (rb_A4281_1.isChecked()) {
-            A4281 = "1";
-        }
-        if (rb_A4281_2.isChecked()) {
-            A4281 = "2";
-        }
-        if (rb_A4281_DK.isChecked()) {
-            A4281 = "9";
-        }
-        if (rb_A4281_RA.isChecked()) {
-            A4281 = "8";
-        }
+        json.put("A4281", rb_A4281_1.isChecked() ? "1"
+                : rb_A4281_2.isChecked() ? "2"
+                : rb_A4281_DK.isChecked() ? "98"
+                : rb_A4281_RA.isChecked() ? "99"
+                : "-1");
 
         //A4282
-        if (rb_A4282_1.isChecked()) {
-            A4282 = "1";
-        }
-        if (rb_A4282_2.isChecked()) {
-            A4282 = "2";
-        }
-        if (rb_A4282_DK.isChecked()) {
-            A4282 = "9";
-        }
-        if (rb_A4282_RA.isChecked()) {
-            A4282 = "8";
-        }
+        json.put("A4282", rb_A4282_1.isChecked() ? "1"
+                : rb_A4282_2.isChecked() ? "2"
+                : rb_A4282_DK.isChecked() ? "98"
+                : rb_A4282_RA.isChecked() ? "99"
+                : "-1");
 
         //A4283
-        if (rb_A4283_1.isChecked()) {
-            A4283 = "1";
-        }
-        if (rb_A4283_2.isChecked()) {
-            A4283 = "2";
-        }
-        if (rb_A4283_DK.isChecked()) {
-            A4283 = "9";
-        }
-        if (rb_A4283_RA.isChecked()) {
-            A4280 = "8";
-        }
+        json.put("A4283", rb_A4283_1.isChecked() ? "1"
+                : rb_A4283_2.isChecked() ? "2"
+                : rb_A4283_DK.isChecked() ? "98"
+                : rb_A4283_RA.isChecked() ? "99"
+                : "-1");
 
-        //A4284
-        if (ed_A4284_days.getText().toString().trim().length() > 0) {
-            A4284 = ed_A4284_days.getText().toString().trim();
-        }
+
+        json.put("A4284", ed_A4284_days.getText().toString().trim().length() > 0 ? ed_A4284_days.getText().toString().trim() : "-1");
+
+        //json.put("mp06b001id1", mp06b001id1.getSelectedItem().toString());
+
+        //json.put("mp06b002", mp06b002.getText().toString());
+
+
+        LocalDataManager Lm = new LocalDataManager(this);
+
+        LocalDataManager.database.execSQL(String.valueOf(json));
+
+        Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+
     }
 
     void insert_data() {
