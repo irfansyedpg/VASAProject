@@ -277,7 +277,7 @@ public class A4001_A4014 extends AppCompatActivity implements View.OnClickListen
         }
 
         try {
-            value_assignment();
+            Assignment_Insertion();
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -435,9 +435,9 @@ public class A4001_A4014 extends AppCompatActivity implements View.OnClickListen
     }
 
 
-    void value_assignment() throws JSONException {
+    void Assignment_Insertion() throws JSONException {
 
-        Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Value Assignment & Data Insertion for  This Section", Toast.LENGTH_SHORT).show();
 
         JSONObject json = new JSONObject();
 
@@ -560,7 +560,7 @@ public class A4001_A4014 extends AppCompatActivity implements View.OnClickListen
 
         LocalDataManager.database.execSQL(String.valueOf(json));
 
-        Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Validation Successful! - Value Assignment & Data Insertion...", Toast.LENGTH_SHORT).show();
     }
 
     boolean validateField() {
