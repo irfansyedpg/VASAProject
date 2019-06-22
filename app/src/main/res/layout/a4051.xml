@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".A.A4051_A4066">
-
+    tools:context=".A.A4051">
 
 
     <ScrollView
@@ -15,10 +14,10 @@
         android:layout_marginBottom="5sp"
         android:fadeScrollbars="false"
         android:fillViewport="true"
-        android:paddingBottom="5sp"
         android:paddingLeft="5sp"
-        android:paddingRight="5sp"
         android:paddingTop="5sp"
+        android:paddingRight="5sp"
+        android:paddingBottom="5sp"
         android:scrollbarSize="10dip">
 
 
@@ -31,8 +30,7 @@
                 android:id="@+id/cvstudy_id"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -56,8 +54,7 @@
                 android:id="@+id/cvA4051"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -99,8 +96,7 @@
                 android:id="@+id/cvA4052_u"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -146,8 +142,7 @@
                 android:id="@+id/cvA4052_b"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -173,8 +168,7 @@
                 android:id="@+id/cvA4052_c"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -200,8 +194,7 @@
                 android:id="@+id/cvA4053"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -243,8 +236,7 @@
                 android:id="@+id/cvA4054"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -291,8 +283,7 @@
                 android:id="@+id/cvA4055"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -339,8 +330,7 @@
                 android:id="@+id/cvA4056"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -382,8 +372,7 @@
                 android:id="@+id/cvA4057"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -425,8 +414,7 @@
                 android:id="@+id/cvA4058"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -468,8 +456,7 @@
                 android:id="@+id/cvA4059_u"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -515,8 +502,7 @@
                 android:id="@+id/cvA4059_a"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -542,8 +528,7 @@
                 android:id="@+id/cvA4059_b"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -569,8 +554,7 @@
                 android:id="@+id/cvA4060"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -612,8 +596,7 @@
                 android:id="@+id/cvA4061"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -655,8 +638,7 @@
                 android:id="@+id/cvA4062"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -698,8 +680,7 @@
                 android:id="@+id/cvA4063"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -741,8 +722,7 @@
                 android:id="@+id/cvA4064_u"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -788,8 +768,7 @@
                 android:id="@+id/cvA4064_a"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -815,8 +794,7 @@
                 android:id="@+id/cvA4064_b"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -842,8 +820,7 @@
                 android:id="@+id/cvA4064_1"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -885,8 +862,7 @@
                 android:id="@+id/cvA4065"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"
@@ -928,8 +904,7 @@
                 android:id="@+id/cvA4066"
                 style="@style/Q_CardView">
 
-                <LinearLayout
-                    style="@style/Q_Linerlayout_v">
+                <LinearLayout style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"

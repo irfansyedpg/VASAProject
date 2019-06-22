@@ -282,7 +282,7 @@ public class A4001 extends AppCompatActivity implements View.OnClickListener {
             e.printStackTrace();
         }
 
-        Intent c = new Intent(A4001.this, A4051_A4066.class);
+        Intent c = new Intent(A4001.this, A4051.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
     }

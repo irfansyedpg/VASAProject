@@ -23,7 +23,7 @@ import utils.ClearAllcontrol;
 import utils.Gothrough;
 import utils.InputFilterMinMax;
 
-public class A4051_A4066 extends AppCompatActivity implements View.OnClickListener {
+public class A4051 extends AppCompatActivity implements View.OnClickListener {
 
     //Declaration
     Button
@@ -299,7 +299,7 @@ public class A4051_A4066 extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.a4051__a4066);
+        setContentView(R.layout.a4051);
 
         this.setTitle(getString(R.string.h_a_sec_9));
 
@@ -492,7 +492,7 @@ public class A4051_A4066 extends AppCompatActivity implements View.OnClickListen
             e.printStackTrace();
         }
 
-        Intent c = new Intent(A4051_A4066.this, A4067_A4080.class);
+        Intent c = new Intent(A4051.this, A4067_A4080.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
     }
