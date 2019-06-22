@@ -3841,39 +3841,39 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4066">A4066: Did s/he have any belly (abdominal) problems?</string>
     <string name="A4067">A4067: Did s/he have belly (abdominal) pain?</string>
     <string name="A4068">A4068: Was the belly (abdominal) pain severe?</string>
-    <string name="A4069_u">A4069_Units: For how long did s/he have belly (abdominal) pain?</string>
+    <string name="A4069u">A4069_Units: For how long did s/he have belly (abdominal) pain?</string>
     <string name="A4070">A4070: Was the pain in the upper or lower belly (abdomen)?</string>
     <string name="A4071">A4071: Did s/he have a more than usually protruding belly (abdomen)?</string>
-    <string name="A4072_u">A4072_Units: For how long before death did s/he have a more than usually protruding belly (abdomen)?</string>
+    <string name="A4072u">A4072_Units: For how long before death did s/he have a more than usually protruding belly (abdomen)?</string>
     <string name="A4073">A4073: How rapidly did s/he develop the protruding abdomen?</string>
     <string name="A4074">A4074: Did s/he have a mass in the abdomen?</string>
-    <string name="A4075_u">A4075_Units: For how long did s/he have a mass in the belly (abdomen)?</string>
+    <string name="A4075u">A4075_Units: For how long did s/he have a mass in the belly (abdomen)?</string>
     <string name="A4076">A4076: During the illness that led to death, did the deceased have a cough?</string>
-    <string name="A4077_u">A4077_Units: For how long did s/he have a cough?</string>
+    <string name="A4077u">A4077_Units: For how long did s/he have a cough?</string>
     <string name="A4078">"A4078: Was the cough productive, with sputum?</string>
     <string name="A4079">"A4079: Was the cough very severe?</string>
     <string name="A4080">"A4080: Did s/he cough up blood?</string>
     <string name="A4081">"A4081: During the illness that led to death, did (NAME) have difficulty breathing?</string>
-    <string name="A4082_u">A4082_Units: For how long did the difficulty breathing last?</string>
+    <string name="A4082u">A4082_Units: For how long did the difficulty breathing last?</string>
     <string name="A4083">A4083: Was the difficulty breathing continuous or on and off?</string>
     <string name="A4084">A4084: During the illness that led to death, did (NAME) have fast breathing?</string>
-    <string name="A4085_u">A4085_Units: How long did the fast breathing last?</string>
+    <string name="A4085u">A4085_Units: How long did the fast breathing last?</string>
     <string name="A4086">A4086: During the illness that led to death, did the s/he have breathlessness?</string>
-    <string name="A4087_u">A4087_Units: How long did s/he have breathlessness?</string>
+    <string name="A4087u">A4087_Units: How long did s/he have breathlessness?</string>
     <string name="A4088">A4088: Was s/he unable to carry out daily routines due to breathlessness?</string>
     <string name="A4089">A4089: Was she breathless while lying flat?</string>
     <string name="A4090">A4090: During the illness that led to death did (s)he have wheezing?</string>
     <string name="A4091">A4091: Did s/he have chest pain?</string>
     <string name="A4092">A4092: Was the chest pain severe?</string>
     <string name="A4093">A4093: How many days before death did s/he have chest pain?</string>
-    <string name="A4094_u">A4094_Units: How long did the chest pain last?</string>
+    <string name="A4094u">A4094_Units: How long did the chest pain last?</string>
     <string name="A4095">A4095: Did (NAME) have a severe headache?</string>
     <string name="A4096">A4096: Did (NAME) have a stiff neck during the illness that led to death?</string>
-    <string name="A4097_u">A4097_Units: How long before death did s/he have a stiff neck?</string>
+    <string name="A4097u">A4097_Units: How long before death did s/he have a stiff neck?</string>
     <string name="A4098">A4098: Did (NAME) have a painful neck during the illness that led to death?</string>
-    <string name="A4099_u">A4099_Units: How long before death did s/he have a painful neck?</string>
+    <string name="A4099u">A4099_Units: How long before death did s/he have a painful neck?</string>
     <string name="A4100">A4100: Did s/he have mental confusion?</string>
-    <string name="A4101_u">A4101_Units: How long did s/he have mental confusion?</string>
+    <string name="A4101u">A4101_Units: How long did s/he have mental confusion?</string>
     <string name="A4102">A4102: Was (NAME) unconscious during the illness that led to death?</string>
     <string name="A4103">A4103: Was s/he unconsciousness for more than 24 hours before death?</string>
     <string name="A4104">A4104: Did the unconsciousness start suddenly, quickly (at most within a single day)?</string>
@@ -3889,7 +3889,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4114">A4114: Did the sores or ulcers have pus?</string>
     <string name="A4115">A4115: Did s/he have an ulcer (pit) on the foot?</string>
     <string name="A4116">A4116: Did the ulcer on the foot ooze pus?</string>
-    <string name="A4117_u">A4117_Units: How long did the ulcer on the foot ooze pus?</string>
+    <string name="A4117u">A4117_Units: How long did the ulcer on the foot ooze pus?</string>
     <string name="A4118">A4118: During the illness that led to death, did (NAME) have any skin rash?</string>
     <string name="A4119">A4119: Where was the rash?</string>
     <string name="A4120">A4120: Where did the rash start?</string>
@@ -4113,50 +4113,50 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="rb_A4055_2">On and off</string>
     <string name="rb_A4055_3">Only at night</string>
 
-    <string name="rb_A4070_1">Upper abdomen</string>
-    <string name="rb_A4070_2">Lower abdomen</string>
-    <string name="rb_A4070_3">Upper and lower abdomen</string>
+    <string name="rbA4070_1">Upper abdomen</string>
+    <string name="rbA4070_2">Lower abdomen</string>
+    <string name="rbA4070_3">Upper and lower abdomen</string>
 
-    <string name="rb_A4073_1">Rapidly</string>
-    <string name="rb_A4073_2">Slowly</string>
+    <string name="rbA4073_1">Rapidly</string>
+    <string name="rbA4073_2">Slowly</string>
 
-    <string name="rb_A4083_1">Continuous</string>
-    <string name="rb_A4083_2">On and off</string>
+    <string name="rbA4083_1">Continuous</string>
+    <string name="rbA4083_2">On and off</string>
 
-    <string name="rb_A4119_1">Face</string>
-    <string name="rb_A4119_2">Trunk/Abdomen</string>
-    <string name="rb_A4119_3">Extremities</string>
-    <string name="rb_A4119_4">Everywhere</string>
+    <string name="rbA4119_1">Face</string>
+    <string name="rbA4119_2">Trunk/Abdomen</string>
+    <string name="rbA4119_3">Extremities</string>
+    <string name="rbA4119_4">Everywhere</string>
 
-    <string name="rb_A4120_1">Face</string>
-    <string name="rb_A4120_2">Trunk/Abdomen</string>
-    <string name="rb_A4120_3">Extremities</string>
-    <string name="rb_A4120_4">Everywhere</string>
+    <string name="rbA4120_1">Face</string>
+    <string name="rbA4120_2">Trunk/Abdomen</string>
+    <string name="rbA4120_3">Extremities</string>
+    <string name="rbA4120_4">Everywhere</string>
 
-    <string name="rb_A4148_1">Right side</string>
-    <string name="rb_A4148_2">Left side</string>
-    <string name="rb_A4148_3">Lower part of body</string>
-    <string name="rb_A4148_4">Upper part of body</string>
-    <string name="rb_A4148_5">One leg only</string>
-    <string name="rb_A4148_6">One arm only</string>
-    <string name="rb_A4148_7">Whole body</string>
+    <string name="rbA4148_1">Right side</string>
+    <string name="rbA4148_2">Left side</string>
+    <string name="rbA4148_3">Lower part of body</string>
+    <string name="rbA4148_4">Upper part of body</string>
+    <string name="rbA4148_5">One leg only</string>
+    <string name="rbA4148_6">One arm only</string>
+    <string name="rbA4148_7">Whole body</string>
 
-    <string name="rb_A4151_1">Solids</string>
-    <string name="rb_A4151_2">Liquids</string>
-    <string name="rb_A4151_3">Both</string>
+    <string name="rbA4151_1">Solids</string>
+    <string name="rbA4151_2">Liquids</string>
+    <string name="rbA4151_3">Both</string>
 
-    <string name="rb_A4178_2_1">Yes (She was not pregnant, and she did not recently deliver, have abortion, or miscarry)</string>
-    <string name="rb_A4178_2_2">No (She was pregnant or she recently delivered, had an abortion, or miscarried)</string>
+    <string name="rbA4178_2_1">Yes (She was not pregnant, and she did not recently deliver, have abortion, or miscarry)</string>
+    <string name="rbA4178_2_2">No (She was pregnant or she recently delivered, had an abortion, or miscarried)</string>
 
-    <string name="rb_A4193_1_1">Oral medicine</string>
-    <string name="rb_A4193_1_2">Traditional vaginal herbal application</string>
-    <string name="rb_A4193_1_3">Vaginal tablet</string>
-    <string name="rb_A4193_1_4">Instrumentation</string>
+    <string name="rbA4193_1_1">Oral medicine</string>
+    <string name="rbA4193_1_2">Traditional vaginal herbal application</string>
+    <string name="rbA4193_1_3">Vaginal tablet</string>
+    <string name="rbA4193_1_4">Instrumentation</string>
 
-    <string name="rb_A4198_1">Hospital</string>
-    <string name="rb_A4198_2">Other Health Facility</string>
-    <string name="rb_A4198_3">Home</string>
-    <string name="rb_A4198_4">On route to hospital or facility</string>
+    <string name="rbA4198_1">Hospital</string>
+    <string name="rbA4198_2">Other Health Facility</string>
+    <string name="rbA4198_3">Home</string>
+    <string name="rbA4198_4">On route to hospital or facility</string>
 
     <string name="rb_A4200_1">Doctor</string>
     <string name="rb_A4200_2">Midwife</string>
