@@ -25,7 +25,7 @@ import utils.ClearAllcontrol;
 import utils.Gothrough;
 import utils.InputFilterMinMax;
 
-public class A4001_A4014 extends AppCompatActivity implements View.OnClickListener {
+public class A4001 extends AppCompatActivity implements View.OnClickListener {
 
 
     //  Region_Declaration
@@ -282,7 +282,7 @@ public class A4001_A4014 extends AppCompatActivity implements View.OnClickListen
             e.printStackTrace();
         }
 
-        Intent c = new Intent(A4001_A4014.this, A4051_A4066.class);
+        Intent c = new Intent(A4001.this, A4051_A4066.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
     }
@@ -290,7 +290,7 @@ public class A4001_A4014 extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.a4001__a4014);
+        setContentView(R.layout.a4001);
 
         this.setTitle(getString(R.string.h_a_sec_2_4));
 
