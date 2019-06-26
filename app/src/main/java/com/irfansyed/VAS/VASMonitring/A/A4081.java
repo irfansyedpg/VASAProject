@@ -307,6 +307,7 @@ public class A4081 extends AppCompatActivity implements View.OnClickListener {
         Intent c = new Intent(A4081.this, A4095_A4108.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
+
     }
 
 
