@@ -756,10 +756,11 @@
             <!-- Radio Buttons A4092 Ends -->
 
             <!-- EditText A4093 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4093"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/cvA4093"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -779,18 +780,20 @@
             <!-- EditText A4093 Ends -->
 
             <!-- Radio Buttons A4094u Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4094u"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/cvA4094u"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4094u"
                         style="@style/TextView"
                         android:text="@string/A4094u" />
 
-                    <RadioGroup style="@style/RadioGroup">
+                    <RadioGroup
+                        android:id="@+id/A4094u"
+                        style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/rbA4094u_1"
@@ -825,10 +828,11 @@
             <!-- Radio Buttons A4094u Ends -->
 
             <!-- EditText A4094_a Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4094_a"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/cvA4094_a"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -847,10 +851,11 @@
             <!-- EditText A4094_a Ends -->
 
             <!-- EditText A4094_b Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4094_b"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/cvA4094_b"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -869,10 +874,11 @@
             <!-- EditText A4094_b Ends -->
 
             <!-- EditText A4094_c Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4094_c"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/cvA4094_c"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
