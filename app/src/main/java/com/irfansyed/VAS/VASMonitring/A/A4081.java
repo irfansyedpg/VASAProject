@@ -184,6 +184,21 @@ public class A4081 extends AppCompatActivity implements View.OnClickListener {
         cvA4094_b = findViewById(R.id.cvA4094_b);
         cvA4094_c = findViewById(R.id.cvA4094_c);
 
+        //RadioGroup
+        A4081 = findViewById(R.id.A4081);
+        A4082u = findViewById(R.id.A4082u);
+        A4083 = findViewById(R.id.A4083);
+        A4084 = findViewById(R.id.A4084);
+        A4085u = findViewById(R.id.A4085u);
+        A4086 = findViewById(R.id.A4086);
+        A4087u = findViewById(R.id.A4087u);
+        A4088 = findViewById(R.id.A4088);
+        A4089 = findViewById(R.id.A4089);
+        A4090 = findViewById(R.id.A4090);
+        A4091 = findViewById(R.id.A4091);
+        A4092 = findViewById(R.id.A4092);
+        A4094u = findViewById(R.id.A4094u);
+
         //Radio Button
         rbA4081_1 = findViewById(R.id.rbA4081_1);
         rbA4081_2 = findViewById(R.id.rbA4081_2);
