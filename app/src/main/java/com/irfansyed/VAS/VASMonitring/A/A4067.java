@@ -680,7 +680,6 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
         Toast.makeText(this, "Validation Successful! - Value Assignment & Data Insertion...", Toast.LENGTH_SHORT).show();
     }
 
-
     boolean validateField() {
 
         return Gothrough.IamHiden(llA4067) != false;
