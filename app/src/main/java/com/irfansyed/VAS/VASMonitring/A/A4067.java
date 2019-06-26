@@ -291,6 +291,8 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
 
         Initialization();
         events_calls();
+        setupSkips();
+
     }
 
     @Override
@@ -309,7 +311,6 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
         Intent c = new Intent(A4067.this, A4081_A4094.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
-        setupSkips();
 
     }
 
