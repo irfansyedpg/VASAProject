@@ -84,22 +84,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4126_1"
+                            android:id="@+id/rbA4126_1"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4126_2"
+                            android:id="@+id/rbA4126_2"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4126_DK"
+                            android:id="@+id/rbA4126_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4126_RA"
+                            android:id="@+id/rbA4126_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -125,22 +125,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4127_u_1"
+                            android:id="@+id/rbA4127_u_1"
                             style="@style/RadioButton"
                             android:text="@string/days" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4127_u_2"
+                            android:id="@+id/rbA4127_u_2"
                             style="@style/RadioButton"
                             android:text="@string/months" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4127_u_DK"
+                            android:id="@+id/rbA4127_u_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4127_u_RA"
+                            android:id="@+id/rbA4127_u_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -210,22 +210,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4128_1"
+                            android:id="@+id/rbA4128_1"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4128_2"
+                            android:id="@+id/rbA4128_2"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4128_DK"
+                            android:id="@+id/rbA4128_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4128_RA"
+                            android:id="@+id/rbA4128_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -251,22 +251,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4129_1"
+                            android:id="@+id/rbA4129_1"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4129_2"
+                            android:id="@+id/rbA4129_2"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4129_DK"
+                            android:id="@+id/rbA4129_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4129_RA"
+                            android:id="@+id/rbA4129_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -292,22 +292,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4130_u_1"
+                            android:id="@+id/rbA4130_u_1"
                             style="@style/RadioButton"
                             android:text="@string/days" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4130_u_2"
+                            android:id="@+id/rbA4130_u_2"
                             style="@style/RadioButton"
                             android:text="@string/months" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4130_u_DK"
+                            android:id="@+id/rbA4130_u_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4130_u_RA"
+                            android:id="@+id/rbA4130_u_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -377,22 +377,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4131_1"
+                            android:id="@+id/rbA4131_1"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4131_2"
+                            android:id="@+id/rbA4131_2"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4131_DK"
+                            android:id="@+id/rbA4131_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4131_RA"
+                            android:id="@+id/rbA4131_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -418,22 +418,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4132_1"
+                            android:id="@+id/rbA4132_1"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4132_2"
+                            android:id="@+id/rbA4132_2"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4132_DK"
+                            android:id="@+id/rbA4132_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4132_RA"
+                            android:id="@+id/rbA4132_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -459,22 +459,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4133_1"
+                            android:id="@+id/rbA4133_1"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4133_2"
+                            android:id="@+id/rbA4133_2"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4133_DK"
+                            android:id="@+id/rbA4133_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4133_RA"
+                            android:id="@+id/rbA4133_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -500,22 +500,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4134_u_1"
+                            android:id="@+id/rbA4134_u_1"
                             style="@style/RadioButton"
                             android:text="@string/days" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4134_u_2"
+                            android:id="@+id/rbA4134_u_2"
                             style="@style/RadioButton"
                             android:text="@string/months" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4134_u_DK"
+                            android:id="@+id/rbA4134_u_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4134_u_RA"
+                            android:id="@+id/rbA4134_u_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -585,22 +585,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4135_1"
+                            android:id="@+id/rbA4135_1"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4135_2"
+                            android:id="@+id/rbA4135_2"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4135_DK"
+                            android:id="@+id/rbA4135_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4135_RA"
+                            android:id="@+id/rbA4135_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -626,22 +626,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4136_1"
+                            android:id="@+id/rbA4136_1"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4136_2"
+                            android:id="@+id/rbA4136_2"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4136_DK"
+                            android:id="@+id/rbA4136_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4136_RA"
+                            android:id="@+id/rbA4136_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -667,22 +667,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4138_1"
+                            android:id="@+id/rbA4138_1"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4138_2"
+                            android:id="@+id/rbA4138_2"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4138_DK"
+                            android:id="@+id/rbA4138_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4138_RA"
+                            android:id="@+id/rbA4138_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -708,22 +708,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4139_1"
+                            android:id="@+id/rbA4139_1"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4139_2"
+                            android:id="@+id/rbA4139_2"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4139_DK"
+                            android:id="@+id/rbA4139_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4139_RA"
+                            android:id="@+id/rbA4139_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -749,22 +749,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4140_1"
+                            android:id="@+id/rbA4140_1"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4140_2"
+                            android:id="@+id/rbA4140_2"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4140_DK"
+                            android:id="@+id/rbA4140_DK"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4140_RA"
+                            android:id="@+id/rbA4140_RA"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
