@@ -49,7 +49,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_study_id"
+                    android:id="@+id/cvstudy_id"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -73,7 +73,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4126"
+                    android:id="@+id/cvA4126"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -114,7 +114,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4127_u"
+                    android:id="@+id/cvA4127_u"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -155,7 +155,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4127_a"
+                    android:id="@+id/cvA4127_a"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -177,7 +177,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4127_b"
+                    android:id="@+id/cvA4127_b"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -199,7 +199,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4128"
+                    android:id="@+id/cvA4128"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -240,7 +240,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4129"
+                    android:id="@+id/cvA4129"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -281,7 +281,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4130_u"
+                    android:id="@+id/cvA4130_u"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -322,7 +322,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4130_a"
+                    android:id="@+id/cvA4130_a"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -344,7 +344,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4130_b"
+                    android:id="@+id/cvA4130_b"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -366,7 +366,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4131"
+                    android:id="@+id/cvA4131"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -407,7 +407,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4132"
+                    android:id="@+id/cvA4132"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -448,7 +448,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4133"
+                    android:id="@+id/cvA4133"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -489,7 +489,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4134_u"
+                    android:id="@+id/cvA4134_u"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -530,7 +530,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4134_a"
+                    android:id="@+id/cvA4134_a"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -552,7 +552,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4134_b"
+                    android:id="@+id/cvA4134_b"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -574,7 +574,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4135"
+                    android:id="@+id/cvA4135"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -615,7 +615,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4136"
+                    android:id="@+id/cvA4136"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -656,7 +656,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4138"
+                    android:id="@+id/cvA4138"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -697,7 +697,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4139"
+                    android:id="@+id/cvA4139"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -738,7 +738,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4140"
+                    android:id="@+id/cvA4140"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
