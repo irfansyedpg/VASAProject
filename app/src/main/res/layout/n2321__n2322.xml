@@ -71,11 +71,13 @@
                             android:id="@+id/ed_study_id"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:hint="@string/txt_study_id"
                             android:clickable="false"
                             android:focusable="false"
-                            android:hint="@string/txt_study_id"
                             android:inputType="date"
-                            app:met_mask="####-###-##" />
+                            app:met_mask="##-##-###" />
+
+
 
                     </LinearLayout>
 

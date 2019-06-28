@@ -55,7 +55,7 @@ public class N2211_N2248_C extends AppCompatActivity {
         for (N2211_N2248_B col_data : col_n2211) {
             if (col_data.getN22132A().equals("1")) {
 
-                String n2090 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, bi.edStudyId.getText().toString(), Global.N.N2080_N2107.sub_N2080_N2107.N2090);
+                /*String n2090 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, bi.edStudyId.getText().toString(), Global.N.N2080_N2107.sub_N2080_N2107.N2090);
                 String n2093 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, bi.edStudyId.getText().toString(), Global.N.N2080_N2107.sub_N2080_N2107.N2093);
                 if (n2090 != null && n2093 != null) {
                     if (Integer.valueOf(n2090) != 1 &&
@@ -66,6 +66,16 @@ public class N2211_N2248_C extends AppCompatActivity {
                         flag_n2093 = false;
                         break;
                     }
+                }*/
+
+                String n2098 = db.getSpecificData(data.N.N2080_N2107.TABLE_NAME, bi.edStudyId.getText().toString(), Global.N.N2080_N2107.sub_N2080_N2107.N2098);
+
+                if (n2098.equals("-1") || n2098.equals("1") || n2098.equals("2") || n2098.equals("99")) {
+                    flag_n2090 = false;
+                    break;
+                } else {
+                    flag_n2093 = false;
+                    break;
                 }
 
             }

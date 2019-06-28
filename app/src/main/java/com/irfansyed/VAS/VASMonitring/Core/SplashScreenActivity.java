@@ -19,16 +19,15 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        Fabric.with(this, new Crashlytics(), new CrashlyticsNdk());
-
-
-        change_langua();
-
 
         setContentView(R.layout.activity_splash_screen);
 
-// Clear Old Data Irfan
+        //Fabric.with(this, new Crashlytics(), new CrashlyticsNdk());
+        change_langua();
+
+        // Clear Old Data Irfan
 
 
         final MyPreferences preferences = new MyPreferences(this);

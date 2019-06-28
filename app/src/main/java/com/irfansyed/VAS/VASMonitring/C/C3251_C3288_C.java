@@ -97,6 +97,7 @@ public class C3251_C3288_C extends AppCompatActivity {
         DBHelper db = new DBHelper(this);
 
         Collection<C3251_C3288_B> col_c3251 = db.getSecC10BData(bi.edStudyId.getText().toString(), c3251A_ID);
+
         for (C3251_C3288_B col_data : col_c3251) {
             if (col_data.getC32532A().equals("1")) {
 
@@ -141,14 +142,15 @@ public class C3251_C3288_C extends AppCompatActivity {
                 String c3069 = db.getSpecificData(data.C.C3051_C3099.TABLE_NAME, bi.edStudyId.getText().toString(), Global.C.C3051_C3099.C3069);
                 String c3070 = db.getSpecificData(data.C.C3051_C3099.TABLE_NAME, bi.edStudyId.getText().toString(), Global.C.C3051_C3099.C3070);
 
-                if (c3064.equals("-1") && c3065.equals("-1") && c3066.equals("-1")
+                /*if (c3064.equals("-1") && c3065.equals("-1") && c3066.equals("-1")
                         && c3067.equals("-1") && c3068.equals("-1") && c3069.equals("-1") && c3070.equals("-1")) {
                     flag_c3064 = false;
                     break;
                 } else {
                     flag_c3070 = false;
                     break;
-                }
+                }*/
+
             }
         }
 
@@ -734,7 +736,7 @@ public class C3251_C3288_C extends AppCompatActivity {
         DBHelper db = new DBHelper(this);
         Long row = db.update_C3251C(C3251C, bi.edStudyId.getText().toString());
 
-        return row == 1;
+        return row > 0;
     }
 
     public Boolean validateField() {

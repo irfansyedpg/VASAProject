@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -18,12 +19,17 @@ import com.irfansyed.VAS.VASMonitring.R;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 import utils.MyPreferences;
@@ -40,6 +46,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnTouchList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        exportDB1("vasa.db");
 
         final EditText textUsername = findViewById(R.id.login_username);
         final EditText textPassword = findViewById(R.id.login_password);
@@ -92,6 +100,83 @@ public class LoginActivity extends AppCompatActivity implements View.OnTouchList
 
             }
         });
+
+    }
+
+
+
+
+
+
+    private void exportDB1(String db_name) {
+
+        final String inFileName = "/data/data/" + this.getPackageName() + "/databases/" + db_name;
+
+
+        try {
+
+
+            SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+
+            Date dt = new Date();
+
+
+            File sd = new File(Environment.getExternalStorageDirectory() + "/DBBackup-" + sdf.format(dt));
+
+
+            boolean success = true;
+
+            if (!sd.exists()) {
+
+                success = sd.mkdir();
+
+            }
+
+
+            if (success) {
+
+
+                File dbFile = new File(inFileName);
+
+
+                FileInputStream fis = new FileInputStream(dbFile);
+
+
+                String outFileName = Environment.getExternalStorageDirectory() + "/DBBackup-" + sdf.format(dt) + "/" + db_name;
+
+
+                OutputStream output = new FileOutputStream(outFileName);
+
+
+                byte[] buffer = new byte[1024];
+
+                int length;
+
+
+                while ((length = fis.read(buffer)) > 0) {
+
+                    output.write(buffer, 0, length);
+
+                }
+
+
+                Toast.makeText(this, "Backup completed - " + outFileName, Toast.LENGTH_SHORT).show();
+
+
+                output.flush();
+
+                output.close();
+
+                fis.close();
+
+            }
+
+
+        } catch (Exception ex) {
+
+            Toast.makeText(this, ex.getMessage(), Toast.LENGTH_LONG).show();
+
+        }
 
     }
 

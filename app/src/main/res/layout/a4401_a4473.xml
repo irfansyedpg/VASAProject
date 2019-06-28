@@ -64,7 +64,7 @@
                         android:clickable="false"
                         android:focusable="false"
                         android:inputType="date"
-                        app:met_mask="####-###-##" />
+                        app:met_mask="##-##-###" />
 
                 </LinearLayout>
 
@@ -267,12 +267,12 @@
 
                     <EditText
                         android:id="@+id/ed_A4405_hours"
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_number"
                         android:hint="Hours" />
 
                     <EditText
                         android:id="@+id/ed_A4405_minutes"
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_number"
                         android:hint="Minutes" />
 
                 </LinearLayout>

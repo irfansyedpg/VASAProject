@@ -238,9 +238,9 @@ public class DBHelper extends SQLiteOpenHelper {
         //db.rawQuery("UPDATE Q1101_Q1610 set STATUS = 0 where study_id = '0165-136-01'");
 
         LocalDataManager Lm = new LocalDataManager(mContext);
-        LocalDataManager.database.execSQL("UPDATE Q1101_Q1610 set STATUS = 1 where study_id = '6666-666-66' or study_id = '7777-777-77'");
+        //LocalDataManager.database.execSQL("UPDATE Q1101_Q1610 set STATUS = 1 where study_id = '6666-666-66' or study_id = '7777-777-77'");
 
-        //LocalDataManager.database.execSQL("DELETE from Q1101_Q1610 where study_id = '0247-029-01'");
+        LocalDataManager.database.execSQL("DELETE from Q1101_Q1610 where study_id = '1631-051-15' or study_id = '1631-051-15' or study_id = '2790-099-01' or study_id = '3517-050-01' or study_id = '4483-061-01' or study_id = '4493-014-01' or study_id = '4501-047-01' or study_id = '4515-001-02' or study_id = '4518-001-02' or study_id = '5240-039-02' or study_id = '6482-093-03' or study_id = '6637-003-01' or study_id = '8286-017-01'");
     }*/
 
     /*Ali's Files*/
@@ -1520,6 +1520,5 @@ public class DBHelper extends SQLiteOpenHelper {
         }
         return allFC;
     }
-
 
 }

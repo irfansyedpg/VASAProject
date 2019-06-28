@@ -1744,7 +1744,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
 
     <string name="txt_N2218_1"  translatable="false">N2218_1:	At the time of leaving the (&lt;FIRST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all 	</string>
     <string name="txt_N2218_2"  translatable="false">N2218_2:	At the time of leaving the (&lt;FIRST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
-    <string name="txt_N2219"  translatable="false">N2219:	What was the name of the &lt;FIRST HEALTH PROVIDER> where you took &lt;NAME>?	</string>
+    <string name="txt_N2219"  translatable="false">N2219:	What was the name of the &lt;FIRST/LAST HEALTH PROVIDER> where &lt;NAME> was delivered/where you took &lt;NAME>?	</string>
     <string name="txt_N2219_2"  translatable="false">N2219_2:	Name of Provider/Facility	</string>
     <string name="txt_N2220"  translatable="false">N2220:	Did &lt;NAME> reach the &lt;FIRST HEALTH PROVIDER> before s/he died?	</string>
     <string name="txt_N2221_1"  translatable="false">N2221_1:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST HEALTH PROVIDER> / for the &lt;FIRST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
@@ -2319,7 +2319,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
 
     <string name="txt_C3258_1"  translatable="false">C3258_1:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Feeding normally, feeding poorly, or not feeding at all 	</string>
     <string name="txt_C3258_2"  translatable="false">C3258_2:	At the time of leaving the (&lt;FIRST/ LAST HEALTH PROVIDER>, was &lt;NAME> Normally active, less active than normal, or not moving 	</string>
-    <string name="txt_C3259"  translatable="false">C3259:	What was the name of the &lt;FIRST/LAST HEALTH PROVIDER> where you took &lt;NAME>?	</string>
+    <string name="txt_C3259"  translatable="false">C3259:	What was the name of the &lt;FIRST/LAST HEALTH PROVIDER> where &lt;NAME> was delivered/where you took &lt;NAME>?	</string>
     <string name="txt_C3259_2"  translatable="false">C3259_2:	Name of Provider/Facility	</string>
     <string name="txt_C3260"  translatable="false">C3260:	Did &lt;NAME> reach the &lt;FIRST/LAST HEALTH PROVIDER> before s/he died?	</string>
     <string name="txt_C3261_1"  translatable="false">C3261_1:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>

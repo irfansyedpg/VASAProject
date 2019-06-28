@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.view.View;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -47,10 +48,12 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
     protected String doInBackground(String... params) {
         //String reg_url = "http://10.0.2.2/webapp/register.php";
         String login_url = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_Response";
+        //String login_url = "http://192.168.1.141/sm/Welcome/collect_Response";
         String method = params[0];
 
         if (method.equals("check_study_id")) {
             String study_id = params[1];
+            //String Q1308    = params[2];
             try {
                 URL url = new URL(login_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -59,8 +62,10 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
                 httpURLConnection.setDoInput(true);
                 OutputStream outputStream = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
-                String data = URLEncoder.encode("study_id", "UTF-8") + "=" + URLEncoder.encode(study_id, "UTF-8");
+                String data  = URLEncoder.encode("study_id", "UTF-8") + "=" + URLEncoder.encode(study_id, "UTF-8");
+                //String data1 = URLEncoder.encode("Q1308", "UTF-8") + "=" + URLEncoder.encode(Q1308, "UTF-8");
                 bufferedWriter.write(data);
+                //bufferedWriter.write(data1);
                 bufferedWriter.flush();
                 bufferedWriter.close();
                 outputStream.close();
@@ -71,11 +76,6 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
                 if ((line = bufferedReader.readLine()) != null) {
 
                     response += line;
-
-                } else {
-
-                    LocalDataManager Lm = new LocalDataManager(ctx);
-                    LocalDataManager.database.execSQL("UPDATE Q1101_Q1610 set STATUS = 0 where study_id = " + "'" + study_id + "'");
                 }
 
                 bufferedReader.close();
@@ -99,14 +99,19 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
     @Override
     protected void onPostExecute(String result) {
 
-        //if (result != null && !result.isEmpty()) {
+
+        //Toast.makeText(ctx, ""+result, Toast.LENGTH_SHORT).show();
+
+        if (result != null) {
+
+            LocalDataManager Lm = new LocalDataManager(ctx);
+            Lm.database.execSQL("UPDATE Q1101_Q1610 set STATUS = 0 where study_id = '" + result + "'");
+        }
+
+
         //view.setBackgroundColor(Color.parseColor("#99FF99"));
         //view.setClickable(false);
         //Toast.makeText(ctx, ""+result, Toast.LENGTH_LONG).show();
-
-        //LocalDataManager Lm = new LocalDataManager(ctx);
-        //LocalDataManager.database.execSQL("UPDATE Q1101_Q1610 set STATUS = 1 where study_id = " + "'" + result + "'");
-
 
         //} //else {
         //view.setBackgroundColor(Color.parseColor("#FFB7BC"));

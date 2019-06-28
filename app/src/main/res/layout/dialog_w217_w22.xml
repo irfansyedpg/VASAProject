@@ -172,15 +172,22 @@
                         <EditText
                             android:id="@+id/ed_W221_1"
                             style="@style/EditText_number"
-                            android:hint="year" />
+                            android:hint="year"
+                            android:maxLength="2"
+                            />
+
                         <EditText
                             android:id="@+id/ed_W221_2"
                             style="@style/EditText_number"
-                            android:hint="Month" />
+                            android:hint="Month"
+                            android:maxLength="2"
+                            />
                         <EditText
                             android:id="@+id/ed_W221_3"
                             style="@style/EditText_number"
-                            android:hint="Day" />
+                            android:hint="Day"
+                            android:maxLength="2"
+                            />
 
                     </LinearLayout>
 
@@ -204,14 +211,17 @@
                         <EditText
                             android:id="@+id/ed_W222_1"
                             style="@style/EditText_number"
+                            android:maxLength="2"
                             android:hint="year" />
                         <EditText
                             android:id="@+id/ed_W222_2"
                             style="@style/EditText_number"
+                            android:maxLength="2"
                             android:hint="Month" />
                         <EditText
                             android:id="@+id/ed_W222_3"
                             style="@style/EditText_number"
+                            android:maxLength="2"
                             android:hint="Day" />
 
                     </LinearLayout>

@@ -3784,7 +3784,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         if (i == 5) {
 
-            dataDistricts = new String[]{"Gilgit", "Ghizer", "Hunza", "Nagar", "Shigar", "Ghanche", "Baltistan", "Kharmang", "Diamir", "Astore"};
+            dataDistricts = new String[]{"Gilgit", "Skardu", "Ghizer", "Hunza", "Nagar", "Shigar", "Ghanche", "Baltistan", "Kharmang", "Diamir", "Astore"};
         }
 
         if (i == 6) {

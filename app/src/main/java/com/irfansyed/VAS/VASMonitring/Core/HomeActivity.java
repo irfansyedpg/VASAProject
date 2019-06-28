@@ -6,8 +6,10 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -31,13 +33,18 @@ import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.Upload.SurveyCompletedActivity;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
 
 import data.DBHelper;
+import data.LocalDataManager;
 import utils.BackgroundTask;
 import utils.BackgroundTask2;
 import utils.MyPreferences;
@@ -47,7 +54,7 @@ public class HomeActivity extends AppCompatActivity
 
     private static String TAG = "HomeActivity";
     ProgressDialog bar;
-    private double AppVersion = 1.3;
+    private double AppVersion = 1.6;
 
     TextView Profile_name;
     private Boolean exit = false;
@@ -56,8 +63,13 @@ public class HomeActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        /*DBHelper db = new DBHelper(this);
-        db.updateee();*/
+        /*String model = Build.MODEL;
+        Toast.makeText(this, ""+model, Toast.LENGTH_SHORT).show();*/
+
+        exportDB1("vasa.db");
+        //LocalDataManager Lm = new LocalDataManager(this);
+        //LocalDataManager.database.execSQL("UPDATE Q1101_Q1610 set STATUS = 0 where STATUS = 1");
+
 
         DBHelper db = new DBHelper(this);
         Cursor AllStudyIDs = db.getAllStudyIDs();
@@ -65,7 +77,11 @@ public class HomeActivity extends AppCompatActivity
 
         for (int i = 0; i < AllStudyIDs.getCount(); i++) {
 
-            String study_id = AllStudyIDs.getString(AllStudyIDs.getColumnIndex("study_id"));
+            String study_id = AllStudyIDs.getString(AllStudyIDs.getColumnIndex("study_id")) + "/" + AllStudyIDs.getString(AllStudyIDs.getColumnIndex("Q1308"));
+            //String Q1308 = AllStudyIDs.getString(AllStudyIDs.getColumnIndex("Q1308"));
+
+            //Toast.makeText(this, ""+study_id, Toast.LENGTH_SHORT).show();
+
             String method = "check_study_id";
             BackgroundTask backgroundTask = new BackgroundTask(this);
             backgroundTask.execute(method, study_id);
@@ -117,7 +133,7 @@ public class HomeActivity extends AppCompatActivity
     protected void onResume() {
         super.onResume();
 
-        DBHelper db = new DBHelper(this);
+        /*DBHelper db = new DBHelper(this);
         Cursor AllStudyIDs = db.getAllStudyIDs();
         AllStudyIDs.moveToFirst();
 
@@ -128,7 +144,7 @@ public class HomeActivity extends AppCompatActivity
             BackgroundTask backgroundTask = new BackgroundTask(this);
             backgroundTask.execute(method, study_id);
             AllStudyIDs.moveToNext();
-        }
+        }*/
 
 
         Button update_btn = findViewById(R.id.btn);
@@ -285,6 +301,79 @@ public class HomeActivity extends AppCompatActivity
 
     }
 
+
+    private void exportDB1(String db_name) {
+
+        final String inFileName = "/data/data/" + this.getPackageName() + "/databases/" + db_name;
+
+
+        try {
+
+
+            SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+
+            Date dt = new Date();
+
+
+            File sd = new File(Environment.getExternalStorageDirectory() + "/DBBackup-" + sdf.format(dt));
+
+
+            boolean success = true;
+
+            if (!sd.exists()) {
+
+                success = sd.mkdir();
+
+            }
+
+
+            if (success) {
+
+
+                File dbFile = new File(inFileName);
+
+
+                FileInputStream fis = new FileInputStream(dbFile);
+
+
+                String outFileName = Environment.getExternalStorageDirectory() + "/DBBackup-" + sdf.format(dt) + "/" + db_name;
+
+
+                OutputStream output = new FileOutputStream(outFileName);
+
+
+                byte[] buffer = new byte[1024];
+
+                int length;
+
+
+                while ((length = fis.read(buffer)) > 0) {
+
+                    output.write(buffer, 0, length);
+
+                }
+
+
+                Toast.makeText(this, "Backup completed - " + outFileName, Toast.LENGTH_SHORT).show();
+
+
+                output.flush();
+
+                output.close();
+
+                fis.close();
+
+            }
+
+
+        } catch (Exception ex) {
+
+            Toast.makeText(this, ex.getMessage(), Toast.LENGTH_LONG).show();
+
+        }
+
+    }
+
     class DownloadNewVersion extends AsyncTask<String, Integer, Boolean> {
 
         @Override
@@ -347,7 +436,7 @@ public class HomeActivity extends AppCompatActivity
 
             try {
 
-                URL url = new URL("http://43.245.131.159:8080/uendashboard/vasaApp/app-debug.apk");
+                URL url = new URL("http://43.245.131.159:8080/uendashboard/lhw/app-debug.apk");
 
                 HttpURLConnection c = (HttpURLConnection) url.openConnection();
                 c.setRequestMethod("GET");

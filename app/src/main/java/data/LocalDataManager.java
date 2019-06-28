@@ -30,7 +30,7 @@ public class LocalDataManager {
 
         try {
 
-            String query = "select study_id, interviewType, currentSection, STATUS from Q1101_Q1610 where currentSection = 111 OR currentSection = 99 ORDER BY id DESC";
+            String query = "select study_id, interviewType, currentSection, STATUS from Q1101_Q1610 where currentSection = 111 OR currentSection = 99 ORDER BY id ASC";
             query = String.format(query);
 
             database.beginTransaction();

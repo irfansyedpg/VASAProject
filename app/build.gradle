@@ -75,3 +75,8 @@ crashlytics {
     androidNdkOut 'src/main/obj'
     androidNdkLibsOut 'src/main/libs'
 }
+
+configurations {
+    all*.exclude group: 'com.google.firebase', module: 'firebase-core'
+    all*.exclude group: 'com.google.firebase', module: 'firebase-iid'
+}

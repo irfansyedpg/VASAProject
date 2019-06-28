@@ -315,6 +315,161 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                 }
 
 
+
+
+                // startrs from here new code w222 new restriction
+
+
+
+                if (ed_W222_1.getText().toString().trim().length() > 0) {
+                    if (ed_W222_1.getText().toString().equals("98")) {
+
+
+                    } else {
+                        int year_22 = Integer.parseInt(ed_W222_1.getText().toString().trim());
+
+                        if (year_22 != 98 && year_22 > 40) {
+                            Toast.makeText(w204_w222.this, "Year w222 must be less then 40 years", Toast.LENGTH_LONG).show();
+                            return;
+
+                        }
+                    }
+                }
+
+                if (ed_W222_2.getText().toString().trim().length() > 0) {
+
+                    if(ed_W222_2.getText().toString().equals("98")) {
+
+                    }
+                    else {
+                        int  month_22 = Integer.parseInt(ed_W222_2.getText().toString().trim()) ;
+
+
+                        if(month_22!=98 && month_22>12)
+                        {
+                            Toast.makeText(w204_w222.this, "Month w222 must be less then 12 months", Toast.LENGTH_LONG).show();
+                            return;
+
+                        }
+                    }
+
+                }
+
+                if (ed_W222_3.getText().toString().trim().length() > 0) {
+
+                    if(ed_W222_3.getText().toString().trim().equals("98"))
+                    {
+
+                    }
+                    else {
+
+                        int  days_22 = Integer.parseInt(ed_W222_3.getText().toString().trim()) ;
+
+
+                        if(days_22!=98 && days_22>30)
+                        {
+                            Toast.makeText(w204_w222.this, "Days w222 must be less then 30 months", Toast.LENGTH_LONG).show();
+                            return;
+
+                        }
+
+
+                        if( days_22==0)
+                        {
+                            Toast.makeText(w204_w222.this, "Days w222 must greater then 0 days", Toast.LENGTH_LONG).show();
+                            return;
+
+                        }
+
+                    }
+                }
+
+
+// ends here w222 restrictis​
+
+
+
+// startrs from here new code w222 new restriction
+
+
+
+                if (ed_W221_1.getText().toString().trim().length() > 0) {
+                    if (ed_W221_1.getText().toString().equals("98")) {
+
+
+                    } else {
+                        int year_22 = Integer.parseInt(ed_W221_1.getText().toString().trim());
+
+                        if (year_22 != 98 && year_22 > 40) {
+                            Toast.makeText(w204_w222.this, "Year w221 must be less then 40 years", Toast.LENGTH_LONG).show();
+                            return;
+
+                        }
+                    }
+                }
+
+                if (ed_W221_2.getText().toString().trim().length() > 0) {
+
+                    if(ed_W221_2.getText().toString().equals("98")) {
+
+                    }
+                    else {
+                        int  month_22 = Integer.parseInt(ed_W221_2.getText().toString().trim()) ;
+
+
+                        if(month_22!=98 && month_22>12)
+                        {
+                            Toast.makeText(w204_w222.this, "Month w221 must be less then 12 months", Toast.LENGTH_LONG).show();
+                            return;
+
+                        }
+
+
+
+                    }
+
+                }
+
+                if (ed_W221_3.getText().toString().trim().length() > 0) {
+
+                    if(ed_W221_3.getText().toString().trim().equals("98"))
+                    {
+
+                    }
+                    else {
+
+                        int  days_22 = Integer.parseInt(ed_W221_3.getText().toString().trim()) ;
+
+
+                        if(days_22!=98 && days_22>30)
+                        {
+                            Toast.makeText(w204_w222.this, "Days w221 must be less then 30 days", Toast.LENGTH_LONG).show();
+                            return;
+
+                        }
+
+                        if( days_22==0)
+                        {
+                            Toast.makeText(w204_w222.this, "Days w221 must greater then 0 days", Toast.LENGTH_LONG).show();
+                            return;
+
+                        }
+
+
+                    }
+                }
+
+
+// ends here w221 restrictis
+
+
+
+
+
+
+
+
+
                 if (rb_W219_1.isChecked()) {
                     mult_w19 = "1";
                 } else if (rb_W219_2.isChecked()) {
@@ -346,7 +501,13 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
 
                 if (ed_W221_1.getText().toString().trim().length() > 0) {
                     if (ed_W221_1.getText().toString().equals("98")) {
-                        days_21 = 00;
+                        if(month_21==0 && year_21==0)
+                        {
+                            days_21=98;
+                        }
+                        else {
+                            days_21 = 00;
+                        }
                     } else {
                         days_21 = Integer.parseInt(ed_W221_3.getText().toString().trim()) * 1;
                     }
@@ -385,7 +546,15 @@ public class w204_w222 extends AppCompatActivity implements RadioButton.OnChecke
                 if (ed_W222_3.getText().toString().trim().length() > 0) {
 
                     if (ed_W222_3.getText().toString().trim().equals("98")) {
-                        days_22 = 0;
+
+                        if(month_22==0 && year_22==0)
+                        {
+                            days_22=98;
+                        }
+                        else {
+                            days_22 = 00;
+                        }
+
                     } else {
 
                         days_22 = Integer.parseInt(ed_W222_3.getText().toString().trim()) * 1;
