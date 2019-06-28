@@ -286,6 +286,7 @@ public class A4095 extends AppCompatActivity implements View.OnClickListener {
         Intent c = new Intent(A4095.this, A4109_A4125.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
+
     }
 
 
@@ -613,4 +614,5 @@ public class A4095 extends AppCompatActivity implements View.OnClickListener {
 
         return Gothrough.IamHiden(llA4095) != false;
     }
+
 }

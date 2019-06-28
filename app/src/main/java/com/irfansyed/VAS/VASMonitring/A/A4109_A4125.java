@@ -3,119 +3,144 @@ package com.irfansyed.VAS.VASMonitring.A;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.R;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 import utils.InputFilterMinMax;
 
-public class A4109_A4125 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
+public class A4109_A4125 extends AppCompatActivity implements View.OnClickListener {
 
     //Declaration
     Button
             btn_next6;
 
     LinearLayout
-            ll_study_id,
-            ll_A4109,
-            ll_A4110,
-            ll_A4111,
-            ll_A4112,
-            ll_A4113,
-            ll_A4114,
-            ll_A4115,
-            ll_A4116,
-            ll_A4117_u,
-            ll_A4117_a,
-            ll_A4117_b,
-            ll_A4118,
-            ll_A4119,
-            ll_A4120,
-            ll_A4121,
-            ll_A4122,
-            ll_A4123,
-            ll_A4124,
-            ll_A4125;
+            llA4109;
+    CardView
+            cvstudy_id,
+            cvA4109,
+            cvA4110,
+            cvA4111,
+            cvA4112,
+            cvA4113,
+            cvA4114,
+            cvA4115,
+            cvA4116,
+            cvA4117u,
+            cvA4117_a,
+            cvA4117_b,
+            cvA4118,
+            cvA4119,
+            cvA4120,
+            cvA4121,
+            cvA4122,
+            cvA4123,
+            cvA4124,
+            cvA4125;
+
+    RadioGroup
+            A4109,
+            A4110,
+            A4111,
+            A4112,
+            A4113,
+            A4114,
+            A4115,
+            A4116,
+            A4117u,
+            A4118,
+            A4119,
+            A4120,
+            A4122,
+            A4123,
+            A4124,
+            A4125;
+            
 
     RadioButton
-            rb_A4109_1,
-            rb_A4109_2,
-            rb_A4109_DK,
-            rb_A4109_RA,
-            rb_A4110_1,
-            rb_A4110_2,
-            rb_A4110_DK,
-            rb_A4110_RA,
-            rb_A4111_1,
-            rb_A4111_2,
-            rb_A4111_DK,
-            rb_A4111_RA,
-            rb_A4112_1,
-            rb_A4112_2,
-            rb_A4112_DK,
-            rb_A4112_RA,
-            rb_A4113_1,
-            rb_A4113_2,
-            rb_A4113_DK,
-            rb_A4113_RA,
-            rb_A4114_1,
-            rb_A4114_2,
-            rb_A4114_DK,
-            rb_A4114_RA,
-            rb_A4115_1,
-            rb_A4115_2,
-            rb_A4115_DK,
-            rb_A4115_RA,
-            rb_A4116_1,
-            rb_A4116_2,
-            rb_A4116_DK,
-            rb_A4116_RA,
-            rb_A4117_u_1,
-            rb_A4117_u_2,
-            rb_A4117_u_DK,
-            rb_A4117_u_RA,
-            rb_A4118_1,
-            rb_A4118_2,
-            rb_A4118_DK,
-            rb_A4118_RA,
-            rb_A4119_1,
-            rb_A4119_2,
-            rb_A4119_3,
-            rb_A4119_4,
-            rb_A4119_DK,
-            rb_A4119_RA,
-            rb_A4120_1,
-            rb_A4120_2,
-            rb_A4120_3,
-            rb_A4120_4,
-            rb_A4120_DK,
-            rb_A4120_RA,
-            rb_A4122_1,
-            rb_A4122_2,
-            rb_A4122_DK,
-            rb_A4122_RA,
-            rb_A4123_1,
-            rb_A4123_2,
-            rb_A4123_DK,
-            rb_A4123_RA,
-            rb_A4124_1,
-            rb_A4124_2,
-            rb_A4124_DK,
-            rb_A4124_RA,
-            rb_A4125_1,
-            rb_A4125_2,
-            rb_A4125_DK,
-            rb_A4125_RA;
+            rbA4109_1,
+            rbA4109_2,
+            rbA4109_DK,
+            rbA4109_RA,
+            rbA4110_1,
+            rbA4110_2,
+            rbA4110_DK,
+            rbA4110_RA,
+            rbA4111_1,
+            rbA4111_2,
+            rbA4111_DK,
+            rbA4111_RA,
+            rbA4112_1,
+            rbA4112_2,
+            rbA4112_DK,
+            rbA4112_RA,
+            rbA4113_1,
+            rbA4113_2,
+            rbA4113_DK,
+            rbA4113_RA,
+            rbA4114_1,
+            rbA4114_2,
+            rbA4114_DK,
+            rbA4114_RA,
+            rbA4115_1,
+            rbA4115_2,
+            rbA4115_DK,
+            rbA4115_RA,
+            rbA4116_1,
+            rbA4116_2,
+            rbA4116_DK,
+            rbA4116_RA,
+            rbA4117u_1,
+            rbA4117u_2,
+            rbA4117u_DK,
+            rbA4117u_RA,
+            rbA4118_1,
+            rbA4118_2,
+            rbA4118_DK,
+            rbA4118_RA,
+            rbA4119_1,
+            rbA4119_2,
+            rbA4119_3,
+            rbA4119_4,
+            rbA4119_DK,
+            rbA4119_RA,
+            rbA4120_1,
+            rbA4120_2,
+            rbA4120_3,
+            rbA4120_4,
+            rbA4120_DK,
+            rbA4120_RA,
+            rbA4122_1,
+            rbA4122_2,
+            rbA4122_DK,
+            rbA4122_RA,
+            rbA4123_1,
+            rbA4123_2,
+            rbA4123_DK,
+            rbA4123_RA,
+            rbA4124_1,
+            rbA4124_2,
+            rbA4124_DK,
+            rbA4124_RA,
+            rbA4125_1,
+            rbA4125_2,
+            rbA4125_DK,
+            rbA4125_RA;
 
     EditText
             ed_study_id,
@@ -126,25 +151,6 @@ public class A4109_A4125 extends AppCompatActivity implements RadioButton.OnChec
 
     String
             study_id,
-            A4109,
-            A4110,
-            A4111,
-            A4112,
-            A4113,
-            A4114,
-            A4115,
-            A4116,
-            A4117_u,
-            A4117_a,
-            A4117_b,
-            A4118,
-            A4119,
-            A4120,
-            A4121,
-            A4122,
-            A4123,
-            A4124,
-            A4125,
             STATUS;
 
     //End DECLARATION
@@ -155,95 +161,116 @@ public class A4109_A4125 extends AppCompatActivity implements RadioButton.OnChec
         btn_next6 = findViewById(R.id.btn_next6);
 
         //Linear Layout
-        ll_A4109 = findViewById(R.id.ll_A4109);
-        ll_A4110 = findViewById(R.id.ll_A4110);
-        ll_A4111 = findViewById(R.id.ll_A4111);
-        ll_A4112 = findViewById(R.id.ll_A4112);
-        ll_A4113 = findViewById(R.id.ll_A4113);
-        ll_A4114 = findViewById(R.id.ll_A4114);
-        ll_A4115 = findViewById(R.id.ll_A4115);
-        ll_A4116 = findViewById(R.id.ll_A4116);
-        ll_A4117_u = findViewById(R.id.ll_A4117_u);
-        ll_A4117_a = findViewById(R.id.ll_A4117_a);
-        ll_A4117_b = findViewById(R.id.ll_A4117_b);
-        ll_A4118 = findViewById(R.id.ll_A4118);
-        ll_A4119 = findViewById(R.id.ll_A4119);
-        ll_A4120 = findViewById(R.id.ll_A4120);
-        ll_A4121 = findViewById(R.id.ll_A4121);
-        ll_A4122 = findViewById(R.id.ll_A4122);
-        ll_A4123 = findViewById(R.id.ll_A4123);
-        ll_A4124 = findViewById(R.id.ll_A4124);
-        ll_A4125 = findViewById(R.id.ll_A4125);
+        llA4109 = findViewById(R.id.llA4109);
+
+        //CardView
+        cvA4109 = findViewById(R.id.cvA4109);
+        cvA4110 = findViewById(R.id.cvA4110);
+        cvA4111 = findViewById(R.id.cvA4111);
+        cvA4112 = findViewById(R.id.cvA4112);
+        cvA4113 = findViewById(R.id.cvA4113);
+        cvA4114 = findViewById(R.id.cvA4114);
+        cvA4115 = findViewById(R.id.cvA4115);
+        cvA4116 = findViewById(R.id.cvA4116);
+        cvA4117u = findViewById(R.id.cvA4117u);
+        cvA4117_a = findViewById(R.id.cvA4117_a);
+        cvA4117_b = findViewById(R.id.cvA4117_b);
+        cvA4118 = findViewById(R.id.cvA4118);
+        cvA4119 = findViewById(R.id.cvA4119);
+        cvA4120 = findViewById(R.id.cvA4120);
+        cvA4121 = findViewById(R.id.cvA4121);
+        cvA4122 = findViewById(R.id.cvA4122);
+        cvA4123 = findViewById(R.id.cvA4123);
+        cvA4124 = findViewById(R.id.cvA4124);
+        cvA4125 = findViewById(R.id.cvA4125);
+
+        //RadioGroup
+        A4109 = findViewById(R.id.A4109);
+        A4110 = findViewById(R.id.A4110);
+        A4111 = findViewById(R.id.A4111);
+        A4112 = findViewById(R.id.A4112);
+        A4113 = findViewById(R.id.A4113);
+        A4114 = findViewById(R.id.A4114);
+        A4115 = findViewById(R.id.A4115);
+        A4116 = findViewById(R.id.A4116);
+        A4117u = findViewById(R.id.A4117u);
+        A4118 = findViewById(R.id.A4118);
+        A4119 = findViewById(R.id.A4119);
+        A4120 = findViewById(R.id.A4120);
+        A4122 = findViewById(R.id.A4122);
+        A4123 = findViewById(R.id.A4123);
+        A4124 = findViewById(R.id.A4124);
+        A4125 = findViewById(R.id.A4125);
 
         //Radio Button
-        rb_A4109_1 = findViewById(R.id.rb_A4109_1);
-        rb_A4109_2 = findViewById(R.id.rb_A4109_2);
-        rb_A4109_DK = findViewById(R.id.rb_A4109_DK);
-        rb_A4109_RA = findViewById(R.id.rb_A4109_RA);
-        rb_A4110_1 = findViewById(R.id.rb_A4110_1);
-        rb_A4110_2 = findViewById(R.id.rb_A4110_2);
-        rb_A4110_DK = findViewById(R.id.rb_A4110_DK);
-        rb_A4110_RA = findViewById(R.id.rb_A4110_RA);
-        rb_A4111_1 = findViewById(R.id.rb_A4111_1);
-        rb_A4111_2 = findViewById(R.id.rb_A4111_2);
-        rb_A4111_DK = findViewById(R.id.rb_A4111_DK);
-        rb_A4111_RA = findViewById(R.id.rb_A4111_RA);
-        rb_A4112_1 = findViewById(R.id.rb_A4112_1);
-        rb_A4112_2 = findViewById(R.id.rb_A4112_2);
-        rb_A4112_DK = findViewById(R.id.rb_A4112_DK);
-        rb_A4112_RA = findViewById(R.id.rb_A4112_RA);
-        rb_A4113_1 = findViewById(R.id.rb_A4113_1);
-        rb_A4113_2 = findViewById(R.id.rb_A4113_2);
-        rb_A4113_DK = findViewById(R.id.rb_A4113_DK);
-        rb_A4113_RA = findViewById(R.id.rb_A4113_RA);
-        rb_A4114_1 = findViewById(R.id.rb_A4114_1);
-        rb_A4114_2 = findViewById(R.id.rb_A4114_2);
-        rb_A4114_DK = findViewById(R.id.rb_A4114_DK);
-        rb_A4114_RA = findViewById(R.id.rb_A4114_RA);
-        rb_A4115_1 = findViewById(R.id.rb_A4115_1);
-        rb_A4115_2 = findViewById(R.id.rb_A4115_2);
-        rb_A4115_DK = findViewById(R.id.rb_A4115_DK);
-        rb_A4115_RA = findViewById(R.id.rb_A4115_RA);
-        rb_A4116_1 = findViewById(R.id.rb_A4116_1);
-        rb_A4116_2 = findViewById(R.id.rb_A4116_2);
-        rb_A4116_DK = findViewById(R.id.rb_A4116_DK);
-        rb_A4116_RA = findViewById(R.id.rb_A4116_RA);
-        rb_A4117_u_1 = findViewById(R.id.rb_A4117_u_1);
-        rb_A4117_u_2 = findViewById(R.id.rb_A4117_u_2);
-        rb_A4117_u_DK = findViewById(R.id.rb_A4117_u_DK);
-        rb_A4117_u_RA = findViewById(R.id.rb_A4117_u_RA);
-        rb_A4118_1 = findViewById(R.id.rb_A4118_1);
-        rb_A4118_2 = findViewById(R.id.rb_A4118_2);
-        rb_A4118_DK = findViewById(R.id.rb_A4118_DK);
-        rb_A4118_RA = findViewById(R.id.rb_A4118_RA);
-        rb_A4119_1 = findViewById(R.id.rb_A4119_1);
-        rb_A4119_2 = findViewById(R.id.rb_A4119_2);
-        rb_A4119_3 = findViewById(R.id.rb_A4119_3);
-        rb_A4119_4 = findViewById(R.id.rb_A4119_4);
-        rb_A4119_DK = findViewById(R.id.rb_A4119_DK);
-        rb_A4119_RA = findViewById(R.id.rb_A4119_RA);
-        rb_A4120_1 = findViewById(R.id.rb_A4120_1);
-        rb_A4120_2 = findViewById(R.id.rb_A4120_2);
-        rb_A4120_3 = findViewById(R.id.rb_A4120_3);
-        rb_A4120_4 = findViewById(R.id.rb_A4120_4);
-        rb_A4120_DK = findViewById(R.id.rb_A4120_DK);
-        rb_A4120_RA = findViewById(R.id.rb_A4120_RA);
-        rb_A4122_1 = findViewById(R.id.rb_A4122_1);
-        rb_A4122_2 = findViewById(R.id.rb_A4122_2);
-        rb_A4122_DK = findViewById(R.id.rb_A4122_DK);
-        rb_A4122_RA = findViewById(R.id.rb_A4122_RA);
-        rb_A4123_1 = findViewById(R.id.rb_A4123_1);
-        rb_A4123_2 = findViewById(R.id.rb_A4123_2);
-        rb_A4123_DK = findViewById(R.id.rb_A4123_DK);
-        rb_A4123_RA = findViewById(R.id.rb_A4123_RA);
-        rb_A4124_1 = findViewById(R.id.rb_A4124_1);
-        rb_A4124_2 = findViewById(R.id.rb_A4124_2);
-        rb_A4124_DK = findViewById(R.id.rb_A4124_DK);
-        rb_A4124_RA = findViewById(R.id.rb_A4124_RA);
-        rb_A4125_1 = findViewById(R.id.rb_A4125_1);
-        rb_A4125_2 = findViewById(R.id.rb_A4125_2);
-        rb_A4125_DK = findViewById(R.id.rb_A4125_DK);
-        rb_A4125_RA = findViewById(R.id.rb_A4125_RA);
+        rbA4109_1 = findViewById(R.id.rbA4109_1);
+        rbA4109_2 = findViewById(R.id.rbA4109_2);
+        rbA4109_DK = findViewById(R.id.rbA4109_DK);
+        rbA4109_RA = findViewById(R.id.rbA4109_RA);
+        rbA4110_1 = findViewById(R.id.rbA4110_1);
+        rbA4110_2 = findViewById(R.id.rbA4110_2);
+        rbA4110_DK = findViewById(R.id.rbA4110_DK);
+        rbA4110_RA = findViewById(R.id.rbA4110_RA);
+        rbA4111_1 = findViewById(R.id.rbA4111_1);
+        rbA4111_2 = findViewById(R.id.rbA4111_2);
+        rbA4111_DK = findViewById(R.id.rbA4111_DK);
+        rbA4111_RA = findViewById(R.id.rbA4111_RA);
+        rbA4112_1 = findViewById(R.id.rbA4112_1);
+        rbA4112_2 = findViewById(R.id.rbA4112_2);
+        rbA4112_DK = findViewById(R.id.rbA4112_DK);
+        rbA4112_RA = findViewById(R.id.rbA4112_RA);
+        rbA4113_1 = findViewById(R.id.rbA4113_1);
+        rbA4113_2 = findViewById(R.id.rbA4113_2);
+        rbA4113_DK = findViewById(R.id.rbA4113_DK);
+        rbA4113_RA = findViewById(R.id.rbA4113_RA);
+        rbA4114_1 = findViewById(R.id.rbA4114_1);
+        rbA4114_2 = findViewById(R.id.rbA4114_2);
+        rbA4114_DK = findViewById(R.id.rbA4114_DK);
+        rbA4114_RA = findViewById(R.id.rbA4114_RA);
+        rbA4115_1 = findViewById(R.id.rbA4115_1);
+        rbA4115_2 = findViewById(R.id.rbA4115_2);
+        rbA4115_DK = findViewById(R.id.rbA4115_DK);
+        rbA4115_RA = findViewById(R.id.rbA4115_RA);
+        rbA4116_1 = findViewById(R.id.rbA4116_1);
+        rbA4116_2 = findViewById(R.id.rbA4116_2);
+        rbA4116_DK = findViewById(R.id.rbA4116_DK);
+        rbA4116_RA = findViewById(R.id.rbA4116_RA);
+        rbA4117u_1 = findViewById(R.id.rbA4117u_1);
+        rbA4117u_2 = findViewById(R.id.rbA4117u_2);
+        rbA4117u_DK = findViewById(R.id.rbA4117u_DK);
+        rbA4117u_RA = findViewById(R.id.rbA4117u_RA);
+        rbA4118_1 = findViewById(R.id.rbA4118_1);
+        rbA4118_2 = findViewById(R.id.rbA4118_2);
+        rbA4118_DK = findViewById(R.id.rbA4118_DK);
+        rbA4118_RA = findViewById(R.id.rbA4118_RA);
+        rbA4119_1 = findViewById(R.id.rbA4119_1);
+        rbA4119_2 = findViewById(R.id.rbA4119_2);
+        rbA4119_3 = findViewById(R.id.rbA4119_3);
+        rbA4119_4 = findViewById(R.id.rbA4119_4);
+        rbA4119_DK = findViewById(R.id.rbA4119_DK);
+        rbA4119_RA = findViewById(R.id.rbA4119_RA);
+        rbA4120_1 = findViewById(R.id.rbA4120_1);
+        rbA4120_2 = findViewById(R.id.rbA4120_2);
+        rbA4120_3 = findViewById(R.id.rbA4120_3);
+        rbA4120_4 = findViewById(R.id.rbA4120_4);
+        rbA4120_DK = findViewById(R.id.rbA4120_DK);
+        rbA4120_RA = findViewById(R.id.rbA4120_RA);
+        rbA4122_1 = findViewById(R.id.rbA4122_1);
+        rbA4122_2 = findViewById(R.id.rbA4122_2);
+        rbA4122_DK = findViewById(R.id.rbA4122_DK);
+        rbA4122_RA = findViewById(R.id.rbA4122_RA);
+        rbA4123_1 = findViewById(R.id.rbA4123_1);
+        rbA4123_2 = findViewById(R.id.rbA4123_2);
+        rbA4123_DK = findViewById(R.id.rbA4123_DK);
+        rbA4123_RA = findViewById(R.id.rbA4123_RA);
+        rbA4124_1 = findViewById(R.id.rbA4124_1);
+        rbA4124_2 = findViewById(R.id.rbA4124_2);
+        rbA4124_DK = findViewById(R.id.rbA4124_DK);
+        rbA4124_RA = findViewById(R.id.rbA4124_RA);
+        rbA4125_1 = findViewById(R.id.rbA4125_1);
+        rbA4125_2 = findViewById(R.id.rbA4125_2);
+        rbA4125_DK = findViewById(R.id.rbA4125_DK);
+        rbA4125_RA = findViewById(R.id.rbA4125_RA);
 
         // Edit Text
         ed_A4107 = findViewById(R.id.ed_A4107);
@@ -261,7 +288,7 @@ public class A4109_A4125 extends AppCompatActivity implements RadioButton.OnChec
 
         this.setTitle(getString(R.string.h_a_sec_9));
 
-        ll_study_id = findViewById(R.id.ll_study_id);
+        cvstudy_id = findViewById(R.id.cvstudy_id);
         ed_study_id = findViewById(R.id.ed_study_id);
         Intent getStudyId = getIntent();
         study_id = getStudyId.getExtras().getString("study_id");
@@ -270,6 +297,9 @@ public class A4109_A4125 extends AppCompatActivity implements RadioButton.OnChec
 
         Initialization();
         events_calls();
+        setupSkips();
+        
+        
     }
 
     @Override
@@ -279,7 +309,11 @@ public class A4109_A4125 extends AppCompatActivity implements RadioButton.OnChec
             return;
         }
 
-        value_assignment();
+        try {
+            Assignment_Insertion();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         insert_data();
 
         Intent c = new Intent(A4109_A4125.this, A4126_A4140.class);
@@ -287,455 +321,292 @@ public class A4109_A4125 extends AppCompatActivity implements RadioButton.OnChec
         startActivity(c);
     }
 
-    @Override
-    public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 
-        if (compoundButton.getId() == R.id.rb_A4109_1
-                || compoundButton.getId() == R.id.rb_A4109_2
-                || compoundButton.getId() == R.id.rb_A4109_DK
-                || compoundButton.getId() == R.id.rb_A4109_RA)
+    private void setupSkips() {
 
-        {
-            if (rb_A4109_2.isChecked() || rb_A4109_DK.isChecked() || rb_A4109_RA.isChecked()) {
-                ClearAllcontrol.ClearAll(ll_A4110);
-                ClearAllcontrol.ClearAll(ll_A4111);
-                ClearAllcontrol.ClearAll(ll_A4112);
+        A4109.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                ll_A4110.setVisibility(View.GONE);
-                ll_A4111.setVisibility(View.GONE);
-                ll_A4112.setVisibility(View.GONE);
+                if (checkedId == rbA4109_1.getId()) {
+                    cvA4110.setVisibility(View.VISIBLE);
+                    cvA4111.setVisibility(View.VISIBLE);
+                    cvA4112.setVisibility(View.VISIBLE);
+                } else {
+                    ClearAllcontrol.ClearAllC(cvA4110);
+                    ClearAllcontrol.ClearAllC(cvA4111);
+                    ClearAllcontrol.ClearAllC(cvA4112);
 
-            } else {
-                ll_A4110.setVisibility(View.VISIBLE);
-                ll_A4111.setVisibility(View.VISIBLE);
-                ll_A4112.setVisibility(View.VISIBLE);
+                    cvA4110.setVisibility(View.GONE);
+                    cvA4111.setVisibility(View.GONE);
+                    cvA4112.setVisibility(View.GONE);
+                }
             }
-        }
+        });
 
-        if (compoundButton.getId() == R.id.rb_A4113_1
-                || compoundButton.getId() == R.id.rb_A4113_2
-                || compoundButton.getId() == R.id.rb_A4113_DK
-                || compoundButton.getId() == R.id.rb_A4113_RA)
 
-        {
-            if (rb_A4113_2.isChecked() || rb_A4113_DK.isChecked() || rb_A4113_RA.isChecked()) {
-                ClearAllcontrol.ClearAll(ll_A4114);
+        A4113.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                ll_A4114.setVisibility(View.GONE);
-
-            } else {
-                ll_A4114.setVisibility(View.VISIBLE);
+                if (checkedId == rbA4113_1.getId()) {
+                    cvA4114.setVisibility(View.VISIBLE);
+                } else {
+                    ClearAllcontrol.ClearAllC(cvA4114);
+                    cvA4114.setVisibility(View.GONE);
+                }
             }
-        }
+        });
 
-        if (compoundButton.getId() == R.id.rb_A4115_1
-                || compoundButton.getId() == R.id.rb_A4115_2
-                || compoundButton.getId() == R.id.rb_A4115_DK
-                || compoundButton.getId() == R.id.rb_A4115_RA)
 
-        {
-            if (rb_A4115_2.isChecked() || rb_A4115_DK.isChecked() || rb_A4115_RA.isChecked()) {
-                ClearAllcontrol.ClearAll(ll_A4116);
-                ClearAllcontrol.ClearAll(ll_A4117_u);
-                ClearAllcontrol.ClearAll(ll_A4117_a);
-                ClearAllcontrol.ClearAll(ll_A4117_b);
+        A4115.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                ll_A4116.setVisibility(View.GONE);
-                ll_A4117_u.setVisibility(View.GONE);
-                ll_A4117_a.setVisibility(View.GONE);
-                ll_A4117_b.setVisibility(View.GONE);
+                if (checkedId == rbA4115_1.getId()) {
+                    cvA4116.setVisibility(View.VISIBLE);
+                    cvA4117u.setVisibility(View.VISIBLE);
+                    cvA4117_a.setVisibility(View.VISIBLE);
+                    cvA4117_b.setVisibility(View.VISIBLE);
+                } else {
+                    ClearAllcontrol.ClearAllC(cvA4116);
+                    ClearAllcontrol.ClearAllC(cvA4117u);
+                    ClearAllcontrol.ClearAllC(cvA4117_a);
+                    ClearAllcontrol.ClearAllC(cvA4117_b);
 
-            } else {
-                ll_A4116.setVisibility(View.VISIBLE);
-                ll_A4117_u.setVisibility(View.VISIBLE);
-                ll_A4117_a.setVisibility(View.VISIBLE);
-                ll_A4117_b.setVisibility(View.VISIBLE);
+                    cvA4116.setVisibility(View.GONE);
+                    cvA4117u.setVisibility(View.GONE);
+                    cvA4117_a.setVisibility(View.GONE);
+                    cvA4117_b.setVisibility(View.GONE);
+                }
             }
-        }
+        });
 
-        if (compoundButton.getId() == R.id.rb_A4116_1
-                || compoundButton.getId() == R.id.rb_A4116_2
-                || compoundButton.getId() == R.id.rb_A4116_DK
-                || compoundButton.getId() == R.id.rb_A4116_RA)
 
-        {
-            if (rb_A4116_2.isChecked() || rb_A4116_DK.isChecked() || rb_A4116_RA.isChecked()) {
-                ClearAllcontrol.ClearAll(ll_A4117_u);
-                ClearAllcontrol.ClearAll(ll_A4117_a);
-                ClearAllcontrol.ClearAll(ll_A4117_b);
+        A4116.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                ll_A4117_u.setVisibility(View.GONE);
-                ll_A4117_a.setVisibility(View.GONE);
-                ll_A4117_b.setVisibility(View.GONE);
+                if (checkedId == rbA4116_1.getId()) {
+                    cvA4117u.setVisibility(View.VISIBLE);
+                    cvA4117_a.setVisibility(View.VISIBLE);
+                    cvA4117_b.setVisibility(View.VISIBLE);
+                } else {
+                    ClearAllcontrol.ClearAllC(cvA4117u);
+                    ClearAllcontrol.ClearAllC(cvA4117_a);
+                    ClearAllcontrol.ClearAllC(cvA4117_b);
 
-            } else {
-                ll_A4117_u.setVisibility(View.VISIBLE);
-                ll_A4117_a.setVisibility(View.VISIBLE);
-                ll_A4117_b.setVisibility(View.VISIBLE);
+                    cvA4117u.setVisibility(View.GONE);
+                    cvA4117_a.setVisibility(View.GONE);
+                    cvA4117_b.setVisibility(View.GONE);
+                }
             }
-        }
+        });
 
-        if (compoundButton.getId() == R.id.rb_A4117_u_1
-                || compoundButton.getId() == R.id.rb_A4117_u_2
-                || compoundButton.getId() == R.id.rb_A4117_u_DK
-                || compoundButton.getId() == R.id.rb_A4117_u_RA)
 
-            ClearAllcontrol.ClearAll(ll_A4117_a);
-        ClearAllcontrol.ClearAll(ll_A4117_b);
+        A4117u.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-        ll_A4117_a.setVisibility(View.GONE);
-        ll_A4117_b.setVisibility(View.GONE);
+                ClearAllcontrol.ClearAllC(cvA4117_a);
+                ClearAllcontrol.ClearAllC(cvA4117_b);
 
-        {
-            if (rb_A4117_u_1.isChecked()) {
-                ll_A4117_a.setVisibility(View.VISIBLE);
-            } else if (rb_A4117_u_2.isChecked()) {
-                ll_A4117_b.setVisibility(View.VISIBLE);
+                cvA4117_a.setVisibility(View.GONE);
+                cvA4117_b.setVisibility(View.GONE);
+
+                if (checkedId == rbA4117u_1.getId()) {
+                    cvA4117_a.setVisibility(View.VISIBLE);
+                } else if (checkedId == rbA4117u_2.getId()) {
+                    cvA4117_b.setVisibility(View.VISIBLE);
+                }
             }
-        }
+        });
 
-        if (compoundButton.getId() == R.id.rb_A4118_1
-                || compoundButton.getId() == R.id.rb_A4118_2
-                || compoundButton.getId() == R.id.rb_A4118_DK
-                || compoundButton.getId() == R.id.rb_A4118_RA)
 
-        {
-            if (rb_A4118_2.isChecked() || rb_A4118_DK.isChecked() || rb_A4118_RA.isChecked()) {
-                ClearAllcontrol.ClearAll(ll_A4119);
-                ClearAllcontrol.ClearAll(ll_A4120);
-                ClearAllcontrol.ClearAll(ll_A4121);
-                ClearAllcontrol.ClearAll(ll_A4122);
+        A4118.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                ll_A4119.setVisibility(View.GONE);
-                ll_A4120.setVisibility(View.GONE);
-                ll_A4121.setVisibility(View.GONE);
-                ll_A4122.setVisibility(View.GONE);
+                if (checkedId == rbA4118_1.getId()) {
+                    cvA4119.setVisibility(View.VISIBLE);
+                    cvA4120.setVisibility(View.VISIBLE);
+                    cvA4121.setVisibility(View.VISIBLE);
+                    cvA4122.setVisibility(View.VISIBLE);
+                } else {
+                    ClearAllcontrol.ClearAllC(cvA4119);
+                    ClearAllcontrol.ClearAllC(cvA4120);
+                    ClearAllcontrol.ClearAllC(cvA4121);
+                    ClearAllcontrol.ClearAllC(cvA4122);
 
-            } else {
-                ll_A4119.setVisibility(View.VISIBLE);
-                ll_A4120.setVisibility(View.VISIBLE);
-                ll_A4121.setVisibility(View.VISIBLE);
-                ll_A4122.setVisibility(View.VISIBLE);
+                    cvA4119.setVisibility(View.GONE);
+                    cvA4120.setVisibility(View.GONE);
+                    cvA4121.setVisibility(View.GONE);
+                    cvA4122.setVisibility(View.GONE);
+                }
             }
-        }
+        });
+        
 
     }
-
 
     private void events_calls() {
 
         btn_next6.setOnClickListener(this);
-
-        rb_A4109_1.setOnCheckedChangeListener(this);
-        rb_A4109_2.setOnCheckedChangeListener(this);
-        rb_A4109_DK.setOnCheckedChangeListener(this);
-        rb_A4109_RA.setOnCheckedChangeListener(this);
-        rb_A4113_1.setOnCheckedChangeListener(this);
-        rb_A4113_2.setOnCheckedChangeListener(this);
-        rb_A4113_DK.setOnCheckedChangeListener(this);
-        rb_A4113_RA.setOnCheckedChangeListener(this);
-        rb_A4115_1.setOnCheckedChangeListener(this);
-        rb_A4115_2.setOnCheckedChangeListener(this);
-        rb_A4115_DK.setOnCheckedChangeListener(this);
-        rb_A4115_RA.setOnCheckedChangeListener(this);
-        rb_A4116_1.setOnCheckedChangeListener(this);
-        rb_A4116_2.setOnCheckedChangeListener(this);
-        rb_A4116_DK.setOnCheckedChangeListener(this);
-        rb_A4116_RA.setOnCheckedChangeListener(this);
-        rb_A4117_u_1.setOnCheckedChangeListener(this);
-        rb_A4117_u_2.setOnCheckedChangeListener(this);
-        rb_A4117_u_DK.setOnCheckedChangeListener(this);
-        rb_A4117_u_RA.setOnCheckedChangeListener(this);
-        rb_A4118_1.setOnCheckedChangeListener(this);
-        rb_A4118_2.setOnCheckedChangeListener(this);
-        rb_A4118_DK.setOnCheckedChangeListener(this);
-        rb_A4118_RA.setOnCheckedChangeListener(this);
 
         ed_A4117_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
         ed_A4117_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
 
     }
 
-    void value_assignment() {
+    void Assignment_Insertion() throws JSONException {
 
-        study_id = "0";
-        A4109 = "-1";
-        A4110 = "-1";
-        A4111 = "-1";
-        A4112 = "-1";
-        A4113 = "-1";
-        A4114 = "-1";
-        A4115 = "-1";
-        A4116 = "-1";
-        A4117_u = "-1";
-        A4117_a = "-1";
-        A4117_b = "-1";
-        A4118 = "-1";
-        A4119 = "-1";
-        A4120 = "-1";
-        A4121 = "-1";
-        A4122 = "-1";
-        A4123 = "-1";
-        A4124 = "-1";
-        A4125 = "-1";
-        STATUS = "0";
+        Toast.makeText(this, "Value Assignment & Data Insertion for  This Section", Toast.LENGTH_SHORT).show();
 
-        if (ed_study_id.getText().toString().length() > 0) {
+        JSONObject json = new JSONObject();
 
-            study_id = ed_study_id.getText().toString().trim();
-        }
+        //study_id
+        json.put("study_id", ed_study_id.getText().toString().length() > 0 ? ed_study_id.getText().toString().trim() : "-1");
 
         //A4109
-        if (rb_A4109_1.isChecked()) {
-            A4109 = "1";
-        }
-        if (rb_A4109_2.isChecked()) {
-            A4109 = "2";
-        }
-        if (rb_A4109_DK.isChecked()) {
-            A4109 = "9";
-        }
-        if (rb_A4109_RA.isChecked()) {
-            A4109 = "8";
-        }
+        json.put("A4109", rbA4109_1.isChecked() ? "1"
+                : rbA4109_2.isChecked() ? "2"
+                : rbA4109_DK.isChecked() ? "98"
+                : rbA4109_RA.isChecked() ? "99"
+                : "-1");
 
         //A4110
-        if (rb_A4110_1.isChecked()) {
-            A4110 = "1";
-        }
-        if (rb_A4110_2.isChecked()) {
-            A4110 = "2";
-        }
-        if (rb_A4110_DK.isChecked()) {
-            A4110 = "9";
-        }
-        if (rb_A4110_RA.isChecked()) {
-            A4110 = "8";
-        }
+        json.put("A4110", rbA4110_1.isChecked() ? "1"
+                : rbA4110_2.isChecked() ? "2"
+                : rbA4110_DK.isChecked() ? "98"
+                : rbA4110_RA.isChecked() ? "99"
+                : "-1");
 
         //A4111
-        if (rb_A4111_1.isChecked()) {
-            A4111 = "1";
-        }
-        if (rb_A4111_2.isChecked()) {
-            A4111 = "2";
-        }
-        if (rb_A4111_DK.isChecked()) {
-            A4111 = "9";
-        }
-        if (rb_A4111_RA.isChecked()) {
-            A4111 = "8";
-        }
+        json.put("A4111", rbA4111_1.isChecked() ? "1"
+                : rbA4111_2.isChecked() ? "2"
+                : rbA4111_DK.isChecked() ? "98"
+                : rbA4111_RA.isChecked() ? "99"
+                : "-1");
 
         //A4112
-        if (rb_A4112_1.isChecked()) {
-            A4112 = "1";
-        }
-        if (rb_A4112_2.isChecked()) {
-            A4112 = "2";
-        }
-        if (rb_A4112_DK.isChecked()) {
-            A4112 = "9";
-        }
-        if (rb_A4112_RA.isChecked()) {
-            A4112 = "8";
-        }
+        json.put("A4112", rbA4112_1.isChecked() ? "1"
+                : rbA4112_2.isChecked() ? "2"
+                : rbA4112_DK.isChecked() ? "98"
+                : rbA4112_RA.isChecked() ? "99"
+                : "-1");
 
         //A4113
-        if (rb_A4113_1.isChecked()) {
-            A4113 = "1";
-        }
-        if (rb_A4113_2.isChecked()) {
-            A4113 = "2";
-        }
-        if (rb_A4113_DK.isChecked()) {
-            A4113 = "9";
-        }
-        if (rb_A4113_RA.isChecked()) {
-            A4113 = "8";
-        }
+        json.put("A4113", rbA4113_1.isChecked() ? "1"
+                : rbA4113_2.isChecked() ? "2"
+                : rbA4113_DK.isChecked() ? "98"
+                : rbA4113_RA.isChecked() ? "99"
+                : "-1");
 
         //A4114
-        if (rb_A4114_1.isChecked()) {
-            A4114 = "1";
-        }
-        if (rb_A4114_2.isChecked()) {
-            A4114 = "2";
-        }
-        if (rb_A4114_DK.isChecked()) {
-            A4114 = "9";
-        }
-        if (rb_A4114_RA.isChecked()) {
-            A4114 = "8";
-        }
+        json.put("A4114", rbA4114_1.isChecked() ? "1"
+                : rbA4114_2.isChecked() ? "2"
+                : rbA4114_DK.isChecked() ? "98"
+                : rbA4114_RA.isChecked() ? "99"
+                : "-1");
 
         //A4115
-        if (rb_A4115_1.isChecked()) {
-            A4115 = "1";
-        }
-        if (rb_A4115_2.isChecked()) {
-            A4115 = "2";
-        }
-        if (rb_A4115_DK.isChecked()) {
-            A4115 = "9";
-        }
-        if (rb_A4115_RA.isChecked()) {
-            A4115 = "8";
-        }
+        json.put("A4115", rbA4115_1.isChecked() ? "1"
+                : rbA4115_2.isChecked() ? "2"
+                : rbA4115_DK.isChecked() ? "98"
+                : rbA4115_RA.isChecked() ? "99"
+                : "-1");
 
         //A4116
-        if (rb_A4116_1.isChecked()) {
-            A4116 = "1";
-        }
-        if (rb_A4116_2.isChecked()) {
-            A4116 = "2";
-        }
-        if (rb_A4116_DK.isChecked()) {
-            A4116 = "9";
-        }
-        if (rb_A4116_RA.isChecked()) {
-            A4116 = "8";
-        }
+        json.put("A4116", rbA4116_1.isChecked() ? "1"
+                : rbA4116_2.isChecked() ? "2"
+                : rbA4116_DK.isChecked() ? "98"
+                : rbA4116_RA.isChecked() ? "99"
+                : "-1");
 
-        //A4117_u
-        if (rb_A4117_u_1.isChecked()) {
-            A4117_u = "1";
-        }
-        if (rb_A4117_u_2.isChecked()) {
-            A4117_u = "2";
-        }
-        if (rb_A4117_u_DK.isChecked()) {
-            A4117_u = "9";
-        }
-        if (rb_A4117_u_RA.isChecked()) {
-            A4117_u = "8";
-        }
+        //A4117u
+        json.put("A4117u", rbA4117u_1.isChecked() ? "1"
+                : rbA4117u_2.isChecked() ? "2"
+                : rbA4117u_DK.isChecked() ? "98"
+                : rbA4117u_RA.isChecked() ? "99"
+                : "-1");
 
         //A4117_a
-        if (ed_A4117_a.getText().toString().trim().length() > 0) {
-            A4117_a = ed_A4117_a.getText().toString().trim();
-        }
+        json.put("A4117_a", ed_A4117_a.getText().toString().length() > 0 ? ed_A4117_a.getText().toString().trim() : "-1");
 
         //A4117_b
-        if (ed_A4117_b.getText().toString().trim().length() > 0) {
-            A4117_b = ed_A4117_b.getText().toString().trim();
-        }
+        json.put("A4117_b", ed_A4117_b.getText().toString().length() > 0 ? ed_A4117_b.getText().toString().trim() : "-1");
+
+
 
         //A4118
-        if (rb_A4118_1.isChecked()) {
-            A4118 = "1";
-        }
-        if (rb_A4118_2.isChecked()) {
-            A4118 = "2";
-        }
-        if (rb_A4118_DK.isChecked()) {
-            A4118 = "9";
-        }
-        if (rb_A4118_RA.isChecked()) {
-            A4118 = "8";
-        }
+        json.put("A4118", rbA4118_1.isChecked() ? "1"
+                : rbA4118_2.isChecked() ? "2"
+                : rbA4118_DK.isChecked() ? "98"
+                : rbA4118_RA.isChecked() ? "99"
+                : "-1");
 
         //A4119
-        if (rb_A4119_1.isChecked()) {
-            A4119 = "1";
-        }
-        if (rb_A4119_2.isChecked()) {
-            A4119 = "2";
-        }
-        if (rb_A4119_3.isChecked()) {
-            A4119 = "3";
-        }
-        if (rb_A4119_4.isChecked()) {
-            A4119 = "4";
-        }
-        if (rb_A4119_DK.isChecked()) {
-            A4119 = "9";
-        }
-        if (rb_A4119_RA.isChecked()) {
-            A4119 = "8";
-        }
+        json.put("A4119", rbA4119_1.isChecked() ? "1"
+                : rbA4119_2.isChecked() ? "2"
+                : rbA4119_3.isChecked() ? "3"
+                : rbA4119_4.isChecked() ? "4"
+                : rbA4119_DK.isChecked() ? "98"
+                : rbA4119_RA.isChecked() ? "99"
+                : "-1");
 
         //A4120
-        if (rb_A4120_1.isChecked()) {
-            A4120 = "1";
-        }
-        if (rb_A4120_2.isChecked()) {
-            A4120 = "2";
-        }
-        if (rb_A4120_3.isChecked()) {
-            A4120 = "3";
-        }
-        if (rb_A4120_4.isChecked()) {
-            A4120 = "4";
-        }
-        if (rb_A4120_DK.isChecked()) {
-            A4120 = "9";
-        }
-        if (rb_A4120_RA.isChecked()) {
-            A4120 = "8";
-        }
-
+        json.put("A4120", rbA4120_1.isChecked() ? "1"
+                : rbA4120_2.isChecked() ? "2"
+                : rbA4120_3.isChecked() ? "3"
+                : rbA4120_4.isChecked() ? "4"
+                : rbA4120_DK.isChecked() ? "98"
+                : rbA4120_RA.isChecked() ? "99"
+                : "-1");
+        
         //A4121
-        if (ed_A4121.getText().toString().trim().length() > 0) {
-            A4121 = ed_A4121.getText().toString().trim();
-        }
+        json.put("A4121", ed_A4121.getText().toString().length() > 0 ? ed_A4121.getText().toString().trim() : "-1");
 
+        
         //A4122
-        if (rb_A4122_1.isChecked()) {
-            A4122 = "1";
-        }
-        if (rb_A4122_2.isChecked()) {
-            A4122 = "2";
-        }
-        if (rb_A4122_DK.isChecked()) {
-            A4122 = "9";
-        }
-        if (rb_A4122_RA.isChecked()) {
-            A4122 = "8";
-        }
+        json.put("A4122", rbA4122_1.isChecked() ? "1"
+                : rbA4122_2.isChecked() ? "2"
+                : rbA4122_DK.isChecked() ? "98"
+                : rbA4122_RA.isChecked() ? "99"
+                : "-1");
 
         //A4123
-        if (rb_A4123_1.isChecked()) {
-            A4123 = "1";
-        }
-        if (rb_A4123_2.isChecked()) {
-            A4123 = "2";
-        }
-        if (rb_A4123_DK.isChecked()) {
-            A4123 = "9";
-        }
-        if (rb_A4123_RA.isChecked()) {
-            A4123 = "8";
-        }
+        json.put("A4123", rbA4123_1.isChecked() ? "1"
+                : rbA4123_2.isChecked() ? "2"
+                : rbA4123_DK.isChecked() ? "98"
+                : rbA4123_RA.isChecked() ? "99"
+                : "-1");
 
         //A4124
-        if (rb_A4124_1.isChecked()) {
-            A4124 = "1";
-        }
-        if (rb_A4124_2.isChecked()) {
-            A4124 = "2";
-        }
-        if (rb_A4124_DK.isChecked()) {
-            A4124 = "9";
-        }
-        if (rb_A4124_RA.isChecked()) {
-            A4124 = "8";
-        }
+        json.put("A4124", rbA4124_1.isChecked() ? "1"
+                : rbA4124_2.isChecked() ? "2"
+                : rbA4124_DK.isChecked() ? "98"
+                : rbA4124_RA.isChecked() ? "99"
+                : "-1");
+
+
 
         //A4125
-        if (rb_A4125_1.isChecked()) {
-            A4125 = "1";
-        }
-        if (rb_A4125_2.isChecked()) {
-            A4125 = "2";
-        }
-        if (rb_A4125_DK.isChecked()) {
-            A4125 = "9";
-        }
-        if (rb_A4125_RA.isChecked()) {
-            A4125 = "8";
-        }
+        json.put("A4125", rbA4125_1.isChecked() ? "1"
+                : rbA4125_2.isChecked() ? "2"
+                : rbA4125_DK.isChecked() ? "98"
+                : rbA4125_RA.isChecked() ? "99"
+                : "-1");
 
+
+        //json.put("mp06b001id1", mp06b001id1.getSelectedItem().toString());
+        //json.put("mp06b002", mp06b002.getText().toString());
+
+
+        LocalDataManager Lm = new LocalDataManager(this);
+
+        LocalDataManager.database.execSQL(String.valueOf(json));
+
+        Toast.makeText(this, "Validation Successful! - Value Assignment & Data Insertion...", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -752,7 +623,7 @@ public class A4109_A4125 extends AppCompatActivity implements RadioButton.OnChec
                 + Global.A.A4109_A4125.A4114 + ","
                 + Global.A.A4109_A4125.A4115 + ","
                 + Global.A.A4109_A4125.A4116 + ","
-                + Global.A.A4109_A4125.A4117_u + ","
+                + Global.A.A4109_A4125.A4117u + ","
                 + Global.A.A4109_A4125.A4117_a + ","
                 + Global.A.A4109_A4125.A4117_b + ","
                 + Global.A.A4109_A4125.A4118 + ","
@@ -776,7 +647,7 @@ public class A4109_A4125 extends AppCompatActivity implements RadioButton.OnChec
                 A4114 + "','" +
                 A4115 + "','" +
                 A4116 + "','" +
-                A4117_u + "','" +
+                A4117u + "','" +
                 A4117_a + "','" +
                 A4117_b + "','" +
                 A4118 + "','" +
@@ -800,82 +671,6 @@ public class A4109_A4125 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_study_id) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4109) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4110) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4111) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4112) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4113) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4114) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4115) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4116) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4117_u) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4117_a) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4117_b) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4118) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4119) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4120) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4121) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4122) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4123) == false) {
-            return false;
-        }
-
-        if (Gothrough.IamHiden(ll_A4124) == false) {
-            return false;
-        }
-
-        return Gothrough.IamHiden(ll_A4125) != false;
+        return Gothrough.IamHiden(llA4109) != false;
     }
 }
