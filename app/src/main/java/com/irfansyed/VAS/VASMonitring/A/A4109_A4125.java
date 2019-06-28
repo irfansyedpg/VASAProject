@@ -314,7 +314,6 @@ public class A4109_A4125 extends AppCompatActivity implements View.OnClickListen
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        insert_data();
 
         Intent c = new Intent(A4109_A4125.this, A4126_A4140.class);
         c.putExtra("study_id", study_id);
@@ -608,65 +607,6 @@ public class A4109_A4125 extends AppCompatActivity implements View.OnClickListen
 
         Toast.makeText(this, "Validation Successful! - Value Assignment & Data Insertion...", Toast.LENGTH_SHORT).show();
 
-    }
-
-    void insert_data() {
-
-        String query = "insert into A4109_A4125("
-
-                + Global.A.A4109_A4125.study_id + ","
-                + Global.A.A4109_A4125.A4109 + ","
-                + Global.A.A4109_A4125.A4110 + ","
-                + Global.A.A4109_A4125.A4111 + ","
-                + Global.A.A4109_A4125.A4112 + ","
-                + Global.A.A4109_A4125.A4113 + ","
-                + Global.A.A4109_A4125.A4114 + ","
-                + Global.A.A4109_A4125.A4115 + ","
-                + Global.A.A4109_A4125.A4116 + ","
-                + Global.A.A4109_A4125.A4117u + ","
-                + Global.A.A4109_A4125.A4117_a + ","
-                + Global.A.A4109_A4125.A4117_b + ","
-                + Global.A.A4109_A4125.A4118 + ","
-                + Global.A.A4109_A4125.A4119 + ","
-                + Global.A.A4109_A4125.A4120 + ","
-                + Global.A.A4109_A4125.A4121 + ","
-                + Global.A.A4109_A4125.A4122 + ","
-                + Global.A.A4109_A4125.A4123 + ","
-                + Global.A.A4109_A4125.A4124 + ","
-                + Global.A.A4109_A4125.A4125 + ","
-                + Global.A.A4109_A4125.STATUS + ")" +
-
-                " values ('" +
-
-                study_id + "','" +
-                A4109 + "','" +
-                A4110 + "','" +
-                A4111 + "','" +
-                A4112 + "','" +
-                A4113 + "','" +
-                A4114 + "','" +
-                A4115 + "','" +
-                A4116 + "','" +
-                A4117u + "','" +
-                A4117_a + "','" +
-                A4117_b + "','" +
-                A4118 + "','" +
-                A4119 + "','" +
-                A4120 + "','" +
-                A4121 + "','" +
-                A4122 + "','" +
-                A4123 + "','" +
-                A4124 + "','" +
-                A4125 + "','" +
-                STATUS + "')";
-
-        query = String.format(query);
-
-        LocalDataManager Lm = new LocalDataManager(this);
-
-        LocalDataManager.database.execSQL(query);
-
-        Toast.makeText(this, "6th TABLE SAVED Successfully", Toast.LENGTH_SHORT).show();
     }
 
     boolean validateField() {
