@@ -493,9 +493,9 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
 
         if (view.getId() == R.id.btn_next) {
 
-            if (ed_study_id.getText().toString().length() < 11) {
+            if (ed_study_id.getText().toString().length() < 9) {
 
-                Toast.makeText(this, "Minimum Study ID length should be 9 digits", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Minimum Study ID length should be 7 digits", Toast.LENGTH_LONG).show();
                 return;
             }
 
