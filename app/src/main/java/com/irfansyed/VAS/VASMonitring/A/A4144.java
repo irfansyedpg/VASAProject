@@ -5,11 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.irfansyed.VAS.VASMonitring.R;
 
-public class A4111 extends AppCompatActivity {
+public class A4144 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.a4111);
+        setContentView(R.layout.a4144);
     }
 }

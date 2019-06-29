@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".A.A4111"></activity>
+        <activity android:name=".A.A4144"></activity>
         <activity android:name=".A.A4126" />
         <activity android:name=".A.A4109" />
         <activity android:name=".A.A4095" />
