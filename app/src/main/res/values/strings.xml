@@ -3899,14 +3899,14 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4124">A4124: Did s/he have noticeable weight loss? [hint: limbs (legs, arms) become very thin]</string>
     <string name="A4125">A4125: Was s/he severely thin or wasted?</string>
     <string name="A4126">A4126: During the illness that led to death, did (NAME) have swollen legs or feet?</string>
-    <string name="A4127_u">A4127_Units: How long did the swelling last?</string>
+    <string name="A4127u">A4127_Units: How long did the swelling last?</string>
     <string name="A4128">A4128: Did s/he have both feet swollen?</string>
     <string name="A4129">A4129: Did s/he have puffiness of the face?</string>
-    <string name="A4130_u">A4130_Units: How long did s/he have puffiness of the face?</string>
+    <string name="A4130u">A4130_Units: How long did s/he have puffiness of the face?</string>
     <string name="A4131">A4131: Did s/he have general puffiness all over her/his body</string>
     <string name="A4132">A4132: During the illness that led to death, did (NAME)’s skin flake off in patches?</string>
     <string name="A4133">A4133: Did s/he have yellow discoloration of the eyes?</string>
-    <string name="A4134_u">A4134_Units: For how long did s/he have yellow discoloration?</string>
+    <string name="A4134u">A4134_Units: For how long did s/he have yellow discoloration?</string>
     <string name="A4135">A4135: Did (NAME)’s hair change in color to a reddish or yellowish color?</string>
     <string name="A4136">A4136: Did s/he look pale (thinning/lack of blood) or have pale palms, eyes or nail bed?</string>
     <string name="A4138">A4138: Did s/he have any lumps or lesions in the mouth?</string>
@@ -3918,7 +3918,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4147">A4147: Did s/he have paralysis of only one side of the body?</string>
     <string name="A4148">A4148: Which were the limbs or body parts paralyzed?</string>
     <string name="A4149">A4149: Did s/he have difficulty swallowing?</string>
-    <string name="A4150_u">A4150_Units: For how long before death did s/he have difficulty swallowing?</string>
+    <string name="A4150u">A4150_Units: For how long before death did s/he have difficulty swallowing?</string>
     <string name="A4151">A4151: Was the difficulty with swallowing with solids, liquids or both?</string>
     <string name="A4152">A4152: Did s/he have pain upon swallowing?</string>
     <string name="A4153">A4153: During the illness that led to death, did (NAME) have a whitish rash inside the mouth or on the tongue?</string>
