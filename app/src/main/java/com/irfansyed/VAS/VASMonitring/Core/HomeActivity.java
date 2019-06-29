@@ -72,7 +72,7 @@ public class HomeActivity extends AppCompatActivity
 
 
         DBHelper db = new DBHelper(this);
-        Cursor AllStudyIDs = db.getAllStudyIDs();
+        /*Cursor AllStudyIDs = db.getAllStudyIDs();
         AllStudyIDs.moveToFirst();
 
         for (int i = 0; i < AllStudyIDs.getCount(); i++) {
@@ -86,7 +86,7 @@ public class HomeActivity extends AppCompatActivity
             BackgroundTask backgroundTask = new BackgroundTask(this);
             backgroundTask.execute(method, study_id);
             AllStudyIDs.moveToNext();
-        }
+        }*/
 
         setContentView(com.irfansyed.VAS.VASMonitring.R.layout.activity_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
