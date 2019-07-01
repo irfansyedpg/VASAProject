@@ -315,7 +315,7 @@ public class A4109 extends AppCompatActivity implements View.OnClickListener {
             e.printStackTrace();
         }
 
-        Intent c = new Intent(A4109.this, A4126_A4140.class);
+        Intent c = new Intent(A4109.this, A4126.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
     }
