@@ -261,8 +261,6 @@ public class A4144_A4156 extends AppCompatActivity implements View.OnClickListen
 
     }
 
-
-
     @Override
     public void onClick(View view) {
         if (validateField() == false) {
