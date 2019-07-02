@@ -4148,41 +4148,41 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="rbA4178_2_1">Yes (She was not pregnant, and she did not recently deliver, have abortion, or miscarry)</string>
     <string name="rbA4178_2_2">No (She was pregnant or she recently delivered, had an abortion, or miscarried)</string>
 
-    <string name="rbA4193_1_1">Oral medicine</string>
-    <string name="rbA4193_1_2">Traditional vaginal herbal application</string>
-    <string name="rbA4193_1_3">Vaginal tablet</string>
-    <string name="rbA4193_1_4">Instrumentation</string>
+    <string name="A41931a">Oral medicine</string>
+    <string name="A41931b">Traditional vaginal herbal application</string>
+    <string name="A41931c">Vaginal tablet</string>
+    <string name="A41931d">Instrumentation</string>
 
-    <string name="rbA4198_1">Hospital</string>
-    <string name="rbA4198_2">Other Health Facility</string>
-    <string name="rbA4198_3">Home</string>
-    <string name="rbA4198_4">On route to hospital or facility</string>
+    <string name="A4198a">Hospital</string>
+    <string name="A4198b">Other Health Facility</string>
+    <string name="A4198c">Home</string>
+    <string name="A4198d">On route to hospital or facility</string>
 
-    <string name="rbA4200_1">Doctor</string>
-    <string name="rbA4200_2">Midwife</string>
-    <string name="rbA4200_3">Nurse</string>
-    <string name="rbA4200_4">Relative</string>
-    <string name="rbA4200_5">Self (the mother)</string>
-    <string name="rbA4200_6">Traditional birth attendant</string>
+    <string name="A4200a">Doctor</string>
+    <string name="A4200b">Midwife</string>
+    <string name="A4200c">Nurse</string>
+    <string name="A4200d">Relative</string>
+    <string name="A4200e">Self (the mother)</string>
+    <string name="A4200f">Traditional birth attendant</string>
 
-    <string name="rbA4206_2_1">Pedestrian	</string>
-    <string name="rbA4206_2_2">Driver or passenger in car or light vehicle</string>
-    <string name="rbA4206_2_3">Driver or passenger in bus or heavy vehicle</string>
-    <string name="rbA4206_2_4">Driver or passenger on a motorcycle</string>
-    <string name="rbA4206_2_5">Driver or passenger on a pedal cycle</string>
+    <string name="A42062a">Pedestrian	</string>
+    <string name="A42062b">Driver or passenger in car or light vehicle</string>
+    <string name="A42062c">Driver or passenger in bus or heavy vehicle</string>
+    <string name="A42062d">Driver or passenger on a motorcycle</string>
+    <string name="A42062e">Driver or passenger on a pedal cycle</string>
 
-    <string name="rbA4206_3_1">Pedestrian</string>
-    <string name="rbA4206_3_2">Stationary object</string>
-    <string name="rbA4206_3_3">Car or light vehicle</string>
-    <string name="rbA4206_3_4">Bus or heavy vehicle</string>
-    <string name="rbA4206_3_5">Motorcycle</string>
-    <string name="rbA4206_3_6">Pedal cycle</string>
+    <string name="A42063a">Pedestrian</string>
+    <string name="A42063b">Stationary object</string>
+    <string name="A42063c">Car or light vehicle</string>
+    <string name="A42063d">Bus or heavy vehicle</string>
+    <string name="A42063e">Motorcycle</string>
+    <string name="A42063f">Pedal cycle</string>
 
-    <string name="rbA4206_10_1">Dog</string>
-    <string name="rbA4206_10_2">Snake</string>
-    <string name="rbA4206_10_3">Insect or scorpion</string>
+    <string name="A420610a">Dog</string>
+    <string name="A420610b">Snake</string>
+    <string name="A420610c">Insect or scorpion</string>
 
-    <string name="rbA4251_2">No—care not needed, given or sought</string>
+    <string name="A4251b">No—care not needed, given or sought</string>
 
     <string name="rbA4253_1">Adult deceased him/herself</string>
     <string name="rbA4253_2">Adult deceased’s spouse/partner</string>
