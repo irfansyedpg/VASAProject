@@ -153,9 +153,6 @@
             android:name=".N.N2321_N2322"
             android:screenOrientation="portrait" /> <!-- Sajid files -->
         <activity
-            android:name=".A.A4157_A4205"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".A.A4206_A4207"
             android:screenOrientation="portrait" />
         <activity

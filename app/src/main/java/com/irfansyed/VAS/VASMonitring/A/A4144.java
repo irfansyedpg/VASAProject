@@ -273,7 +273,7 @@ public class A4144 extends AppCompatActivity implements View.OnClickListener {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        Intent c = new Intent(A4144.this, A4157_A4205.class);
+        Intent c = new Intent(A4144.this, A4157.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
 

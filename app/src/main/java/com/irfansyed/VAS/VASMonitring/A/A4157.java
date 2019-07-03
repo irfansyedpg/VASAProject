@@ -386,6 +386,7 @@ public class A4157 extends AppCompatActivity implements View.OnClickListener {
             STATUS;
 
     //End DECLARATION
+
     private TextWatcher generalTextWatcher = new TextWatcher() {
 
         @Override
