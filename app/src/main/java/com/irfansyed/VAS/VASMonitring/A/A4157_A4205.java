@@ -365,13 +365,11 @@ public class A4157_A4205 extends AppCompatActivity implements View.OnClickListen
             A4204b,
             A420498,
             A420499,
-
-    A4205a,
+            A4205a,
             A4205b,
             A420598,
             A420599,
-
-    A42051a,
+            A42051a,
             A42051b,
             A4205198,
             A4205199;
@@ -812,7 +810,6 @@ public class A4157_A4205 extends AppCompatActivity implements View.OnClickListen
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        insert_data();
 
         Intent c = new Intent(A4157_A4205.this, A4206_A4207.class);
         c.putExtra("study_id", study_id);
@@ -1519,354 +1516,126 @@ public class A4157_A4205 extends AppCompatActivity implements View.OnClickListen
         //A4192
         json.put("A4192", A4192.getText().toString().trim().length() > 0 ? A4192.getText().toString().trim() : "-1");
 
+
         //A4193
-        if (A4193_1.isChecked()) {
-            A4193 = "1";
-        }
-        if (A4193_2.isChecked()) {
-            A4193 = "2";
-        }
-        if (A419398.isChecked()) {
-            A4193 = "9";
-        }
-        if (A419399.isChecked()) {
-            A4193 = "8";
-        }
+        json.put("A4193", A4193a.isChecked() ? "1"
+                : A4193b.isChecked() ? "2"
+                : A419398.isChecked() ? "98"
+                : A419399.isChecked() ? "99"
+                : "-1");
 
-        //A4193_1
-        if (A41931a.isChecked()) {
-            A4193_1 = "1";
-        }
-        if (A41931b.isChecked()) {
-            A4193_1 = "2";
-        }
-        if (A41931c.isChecked()) {
-            A4193_1 = "3";
-        }
-        if (A4193_1_4.isChecked()) {
-            A4193_1 = "4";
-        }
-        if (A4193_198.isChecked()) {
-            A4193_1 = "9";
-        }
-        if (A4193_199.isChecked()) {
-            A4193_1 = "8";
-        }
-
+        //A41931
+        json.put("A41931", A41931a.isChecked() ? "1"
+                : A41931b.isChecked() ? "2"
+                : A41931c.isChecked() ? "3"
+                : A41931d.isChecked() ? "4"
+                : A4193198.isChecked() ? "98"
+                : A4193199.isChecked() ? "99"
+                : "-1");
+        
         //A4194
-        if (A4194_1.isChecked()) {
-            A4194 = "1";
-        }
-        if (A4194_2.isChecked()) {
-            A4194 = "2";
-        }
-        if (A419498.isChecked()) {
-            A4194 = "9";
-        }
-        if (A419499.isChecked()) {
-            A4194 = "8";
-        }
-
+        json.put("A4194", A4194a.isChecked() ? "1"
+                : A4194b.isChecked() ? "2"
+                : A419498.isChecked() ? "98"
+                : A419499.isChecked() ? "99"
+                : "-1");
+        
         //A4195
-        if (A4195_1.isChecked()) {
-            A4195 = "1";
-        }
-        if (A4195_2.isChecked()) {
-            A4195 = "2";
-        }
-        if (A419598.isChecked()) {
-            A4195 = "9";
-        }
-        if (A419599.isChecked()) {
-            A4195 = "8";
-        }
-
+        json.put("A4195", A4195a.isChecked() ? "1"
+                : A4195b.isChecked() ? "2"
+                : A419598.isChecked() ? "98"
+                : A419599.isChecked() ? "99"
+                : "-1");
+        
         //A4196
-        if (A4196_1.isChecked()) {
-            A4196 = "1";
-        }
-        if (A4196_2.isChecked()) {
-            A4196 = "2";
-        }
-        if (A419698.isChecked()) {
-            A4196 = "9";
-        }
-        if (A419699.isChecked()) {
-            A4196 = "8";
-        }
-
+        json.put("A4196", A4196a.isChecked() ? "1"
+                : A4196b.isChecked() ? "2"
+                : A419698.isChecked() ? "98"
+                : A419699.isChecked() ? "99"
+                : "-1");
+        
         //A4197
-        if (A4197_1.isChecked()) {
-            A4197 = "1";
-        }
-        if (A4197_2.isChecked()) {
-            A4197 = "2";
-        }
-        if (A419798.isChecked()) {
-            A4197 = "9";
-        }
-        if (A419799.isChecked()) {
-            A4197 = "8";
-        }
+        json.put("A4197", A4197a.isChecked() ? "1"
+                : A4197b.isChecked() ? "2"
+                : A419798.isChecked() ? "98"
+                : A419799.isChecked() ? "99"
+                : "-1");
 
-        //A4198_1
-        if (A41981a.isChecked()) {
-            A4198_1 = "1";
-        }
-        if (A41981b.isChecked()) {
-            A4198_1 = "2";
-        }
-        if (A4198_198.isChecked()) {
-            A4198_1 = "9";
-        }
-        if (A4198_199.isChecked()) {
-            A4198_1 = "8";
-        }
-
+        //A41981
+        json.put("A41981", A41981a.isChecked() ? "1"
+                : A41981b.isChecked() ? "2"
+                : A4198198.isChecked() ? "98"
+                : A4198199.isChecked() ? "99"
+                : "-1");
+        
         //A4198
-        if (A4198_1.isChecked()) {
-            A4198 = "1";
-        }
-        if (A4198_2.isChecked()) {
-            A4198 = "2";
-        }
-        if (A4198_3.isChecked()) {
-            A4198 = "3";
-        }
-        if (A4198_4.isChecked()) {
-            A4198 = "4";
-        }
-        if (A4198_5.isChecked()) {
-            A4198 = "5";
-        }
-        if (A419898.isChecked()) {
-            A4198 = "9";
-        }
-        if (A419899.isChecked()) {
-            A4198 = "8";
-        }
-
+        json.put("A4198", A4198a.isChecked() ? "1"
+                : A4198b.isChecked() ? "2"
+                : A4198c.isChecked() ? "3"
+                : A4198d.isChecked() ? "4"
+                : A419898.isChecked() ? "98"
+                : A419899.isChecked() ? "99"
+                : A419896.isChecked() ? "96"
+                : "-1");
+        
         //A4200
-        if (A4200_1.isChecked()) {
-            A4200 = "1";
-        }
-        if (A4200_2.isChecked()) {
-            A4200 = "2";
-        }
-        if (A4200_3.isChecked()) {
-            A4200 = "3";
-        }
-        if (A4200_4.isChecked()) {
-            A4200 = "4";
-        }
-        if (A4200_5.isChecked()) {
-            A4200 = "5";
-        }
-        if (A4200_6.isChecked()) {
-            A4200 = "6";
-        }
-        if (A4200_7.isChecked()) {
-            A4200 = "7";
-        }
-        if (A420098.isChecked()) {
-            A4200 = "9";
-        }
-        if (A420099.isChecked()) {
-            A4200 = "8";
-        }
-
+        json.put("A4200", A4200a.isChecked() ? "1"
+                : A4200b.isChecked() ? "2"
+                : A4200c.isChecked() ? "3"
+                : A4200d.isChecked() ? "4"
+                : A4200e.isChecked() ? "5"
+                : A4200f.isChecked() ? "6"
+                : A420098.isChecked() ? "98"
+                : A420099.isChecked() ? "99"
+                : A420096.isChecked() ? "96"
+                : "-1");
+        
         //A4202
-        if (A4202_1.isChecked()) {
-            A4202 = "1";
-        }
-        if (A4202_2.isChecked()) {
-            A4202 = "2";
-        }
-        if (A420298.isChecked()) {
-            A4202 = "9";
-        }
-        if (A420299.isChecked()) {
-            A4202 = "8";
-        }
-
+        json.put("A4202", A4202a.isChecked() ? "1"
+                : A4202b.isChecked() ? "2"
+                : A420298.isChecked() ? "98"
+                : A420299.isChecked() ? "99"
+                : "-1");
+        
         //A4203
-        if (A4203_1.isChecked()) {
-            A4203 = "1";
-        }
-        if (A4203_2.isChecked()) {
-            A4203 = "2";
-        }
-        if (A420398.isChecked()) {
-            A4203 = "9";
-        }
-        if (A420399.isChecked()) {
-            A4203 = "8";
-        }
-
+        json.put("A4203", A4203a.isChecked() ? "1"
+                : A4203b.isChecked() ? "2"
+                : A420398.isChecked() ? "98"
+                : A420399.isChecked() ? "99"
+                : "-1");
+        
         //A4204
-        if (A4204_1.isChecked()) {
-            A4204 = "1";
-        }
-        if (A4204_2.isChecked()) {
-            A4204 = "2";
-        }
-        if (A420498.isChecked()) {
-            A4204 = "9";
-        }
-        if (A420499.isChecked()) {
-            A4204 = "8";
-        }
-
+        json.put("A4204", A4204a.isChecked() ? "1"
+                : A4204b.isChecked() ? "2"
+                : A420498.isChecked() ? "98"
+                : A420499.isChecked() ? "99"
+                : "-1");
+        
         //A4205
-        if (A4205_1.isChecked()) {
-            A4205 = "1";
-        }
-        if (A4205_2.isChecked()) {
-            A4205 = "2";
-        }
-        if (A420598.isChecked()) {
-            A4205 = "9";
-        }
-        if (A420599.isChecked()) {
-            A4205 = "8";
-        }
+        json.put("A4205", A4205a.isChecked() ? "1"
+                : A4205b.isChecked() ? "2"
+                : A420598.isChecked() ? "98"
+                : A420599.isChecked() ? "99"
+                : "-1");
 
-        //A4205_1
-        if (A42051a.isChecked()) {
-            A4205_1 = "1";
-        }
-        if (A42051b.isChecked()) {
-            A4205_1 = "2";
-        }
-        if (A4205_198.isChecked()) {
-            A4205_1 = "9";
-        }
-        if (A4205_199.isChecked()) {
-            A4205_1 = "8";
-        }
+        //A42051
+        json.put("A42051", A42051a.isChecked() ? "1"
+                : A42051b.isChecked() ? "2"
+                : A4205198.isChecked() ? "98"
+                : A4205199.isChecked() ? "99"
+                : "-1");
 
 
-    }
+        //json.put("mp06b001id1", mp06b001id1.getSelectedItem().toString());
+        //json.put("mp06b002", mp06b002.getText().toString());
 
-    void insert_data() {
-
-        String query = "insert into A4157_A4205("
-
-                + Global.A.A4157_A4205.study_id + ","
-                + Global.A.A4157_A4205.A4157 + ","
-                + Global.A.A4157_A4205.A4158 + ","
-                + Global.A.A4157_A4205.A4159 + ","
-                + Global.A.A4157_A4205.A4160 + ","
-                + Global.A.A4157_A4205.A4161 + ","
-                + Global.A.A4157_A4205.A41611 + ","
-                + Global.A.A4157_A4205.A4162 + ","
-                + Global.A.A4157_A4205.A41631 + ","
-                + Global.A.A4157_A4205.A4163 + ","
-                + Global.A.A4157_A4205.A4164 + ","
-                + Global.A.A4157_A4205.A4166 + ","
-                + Global.A.A4157_A4205.A4167 + ","
-                + Global.A.A4157_A4205.A4168_1 + ","
-                + Global.A.A4157_A4205.A4168_3 + ","
-                + Global.A.A4157_A4205.A4168 + ","
-                + Global.A.A4157_A4205.A4173_1 + ","
-                + Global.A.A4157_A4205.A4173 + ","
-                + Global.A.A4157_A4205.A4173_2 + ","
-                + Global.A.A4157_A4205.A4178_1 + ","
-                + Global.A.A4157_A4205.A4178_2 + ","
-                + Global.A.A4157_A4205.A4178 + ","
-                + Global.A.A4157_A4205.A4179 + ","
-                + Global.A.A4157_A4205.A4180 + ","
-                + Global.A.A4157_A4205.A4181 + ","
-                + Global.A.A4157_A4205.A4182 + ","
-                + Global.A.A4157_A4205.A4183 + ","
-                + Global.A.A4157_A4205.A4184 + ","
-                + Global.A.A4157_A4205.A4185 + ","
-                + Global.A.A4157_A4205.A4186 + ","
-                + Global.A.A4157_A4205.A4186_1 + ","
-                + Global.A.A4157_A4205.A4187 + ","
-                + Global.A.A4157_A4205.A4188 + ","
-                + Global.A.A4157_A4205.A4189 + ","
-                + Global.A.A4157_A4205.A4190 + ","
-                + Global.A.A4157_A4205.A4191 + ","
-                + Global.A.A4157_A4205.A4192 + ","
-                + Global.A.A4157_A4205.A4193 + ","
-                + Global.A.A4157_A4205.A4193_1 + ","
-                + Global.A.A4157_A4205.A4194 + ","
-                + Global.A.A4157_A4205.A4195 + ","
-                + Global.A.A4157_A4205.A4196 + ","
-                + Global.A.A4157_A4205.A4197 + ","
-                + Global.A.A4157_A4205.A4198_1 + ","
-                + Global.A.A4157_A4205.A4198 + ","
-                + Global.A.A4157_A4205.A4200 + ","
-                + Global.A.A4157_A4205.A4202 + ","
-                + Global.A.A4157_A4205.A4203 + ","
-                + Global.A.A4157_A4205.A4204 + ","
-                + Global.A.A4157_A4205.A4205 + ","
-                + Global.A.A4157_A4205.A4205_1 + ","
-                + Global.A.A4157_A4205.STATUS + ")" +
-
-                " values ('" +
-
-                study_id + "','" +
-                A4157 + "','" +
-                A4158 + "','" +
-                A4159 + "','" +
-                A4160 + "','" +
-                A4161 + "','" +
-                A41611 + "','" +
-                A4162 + "','" +
-                A41631 + "','" +
-                A4163 + "','" +
-                A4164 + "','" +
-                A4166 + "','" +
-                A4167 + "','" +
-                A4168_1 + "','" +
-                A4168_3 + "','" +
-                A4168 + "','" +
-                A4173_1 + "','" +
-                A4173 + "','" +
-                A4173_2 + "','" +
-                A4178_1 + "','" +
-                A4178_2 + "','" +
-                A4178 + "','" +
-                A4179 + "','" +
-                A4180 + "','" +
-                A4181 + "','" +
-                A4182 + "','" +
-                A4183 + "','" +
-                A4184 + "','" +
-                A4185 + "','" +
-                A4186 + "','" +
-                A4186_1 + "','" +
-                A4187 + "','" +
-                A4188 + "','" +
-                A4189 + "','" +
-                A4190 + "','" +
-                A4191 + "','" +
-                A4192 + "','" +
-                A4193 + "','" +
-                A4193_1 + "','" +
-                A4194 + "','" +
-                A4195 + "','" +
-                A4196 + "','" +
-                A4197 + "','" +
-                A4198_1 + "','" +
-                A4198 + "','" +
-                A4200 + "','" +
-                A4202 + "','" +
-                A4203 + "','" +
-                A4204 + "','" +
-                A4205 + "','" +
-                A4205_1 + "','" +
-                STATUS + "')";
-
-        query = String.format(query);
 
         LocalDataManager Lm = new LocalDataManager(this);
 
-        LocalDataManager.database.execSQL(query);
+        LocalDataManager.database.execSQL(String.valueOf(json));
 
-        Toast.makeText(this, "9th TABLE SAVED Successfully", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Validation Successful! - Value Assignment & Data Insertion...", Toast.LENGTH_SHORT).show();
+
     }
 
     boolean validateField() {
