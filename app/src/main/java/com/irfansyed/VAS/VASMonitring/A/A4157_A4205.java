@@ -141,42 +141,42 @@ public class A4157_A4205 extends AppCompatActivity implements View.OnClickListen
             A415798,
             A415799,
 
-            A4158a,
+    A4158a,
             A4158b,
             A415898,
             A415899,
 
-            A4159a,
+    A4159a,
             A4159b,
             A415998,
             A415999,
 
-            A4160a,
+    A4160a,
             A4160b,
             A416098,
             A416099,
 
-            A4161a,
+    A4161a,
             A4161b,
             A416198,
             A416199,
 
-            A41611a,
+    A41611a,
             A41611b,
             A4161198,
             A4161199,
 
-            A4162a,
+    A4162a,
             A4162b,
             A416298,
             A416299,
 
-            A41631a,
+    A41631a,
             A41631b,
             A4163198,
             A4163199,
 
-            A4163a,
+    A4163a,
             A4163b,
             A416398,
             A416399,
@@ -191,52 +191,52 @@ public class A4157_A4205 extends AppCompatActivity implements View.OnClickListen
             A416798,
             A416799,
 
-            A41681a,
+    A41681a,
             A41681b,
             A4168198,
             A4168199,
 
-            A41683a,
+    A41683a,
             A41683b,
             A4168398,
             A4168399,
 
-            A4168a,
+    A4168a,
             A4168b,
             A416898,
             A416899,
 
-            A41731a,
+    A41731a,
             A41731b,
             A4173198,
             A4173199,
 
-            A4173a,
+    A4173a,
             A4173b,
             A417398,
             A417399,
 
-            A41732a,
+    A41732a,
             A41732b,
             A4173298,
             A4173299,
 
-            A41782a,
+    A41782a,
             A41782b,
             A4178298,
             A4178299,
 
-            A4178a,
+    A4178a,
             A4178b,
             A417898,
             A417899,
 
-            A4179a,
+    A4179a,
             A4179b,
             A417998,
             A417999,
 
-            A4181a,
+    A4181a,
             A4181b,
             A418198,
             A418199,
@@ -266,10 +266,10 @@ public class A4157_A4205 extends AppCompatActivity implements View.OnClickListen
             A418698,
             A418699,
 
-            A41861a,
+    A41861a,
             A41861b,
-                    A4186198,
-                    A4186199,
+            A4186198,
+            A4186199,
 
     A4187a,
             A4187b,
@@ -301,12 +301,12 @@ public class A4157_A4205 extends AppCompatActivity implements View.OnClickListen
             A419398,
             A419399,
 
-            A41931a,
+    A41931a,
             A41931b,
             A41931c,
-                    A41931d,
-                    A4193198,
-                    A4193199,
+            A41931d,
+            A4193198,
+            A4193199,
 
     A4194a,
             A4194b,
@@ -1272,480 +1272,252 @@ public class A4157_A4205 extends AppCompatActivity implements View.OnClickListen
         //study_id
         json.put("study_id", ed_study_id.getText().toString().length() > 0 ? ed_study_id.getText().toString().trim() : "-1");
 
-        //A4144
-        json.put("A4144", rbA4144_1.isChecked() ? "1"
-                : rbA4144_2.isChecked() ? "2"
-                : rbA4144_DK.isChecked() ? "98"
-                : rbA4144_RA.isChecked() ? "99"
+        //A4157
+        json.put("A4157", A4157a.isChecked() ? "1"
+                : A4157b.isChecked() ? "2"
+                : A415798.isChecked() ? "98"
+                : A415799.isChecked() ? "99"
                 : "-1");
 
-        //A4157
-        if (A4157_1.isChecked()) {
-            A4157 = "1";
-        }
-        if (A4157_2.isChecked()) {
-            A4157 = "2";
-        }
-        if (A415798.isChecked()) {
-            A4157 = "9";
-        }
-        if (A415799.isChecked()) {
-            A4157 = "8";
-        }
-
         //A4158
-        if (A4158_1.isChecked()) {
-            A4158 = "1";
-        }
-        if (A4158_2.isChecked()) {
-            A4158 = "2";
-        }
-        if (A415898.isChecked()) {
-            A4158 = "9";
-        }
-        if (A415899.isChecked()) {
-            A4158 = "8";
-        }
+        json.put("A4158", A4158a.isChecked() ? "1"
+                : A4158b.isChecked() ? "2"
+                : A415898.isChecked() ? "98"
+                : A415899.isChecked() ? "99"
+                : "-1");
 
         //A4159
-        if (A4159_1.isChecked()) {
-            A4159 = "1";
-        }
-        if (A4159_2.isChecked()) {
-            A4159 = "2";
-        }
-        if (A415998.isChecked()) {
-            A4159 = "9";
-        }
-        if (A415999.isChecked()) {
-            A4159 = "8";
-        }
+        json.put("A4159", A4159a.isChecked() ? "1"
+                : A4159b.isChecked() ? "2"
+                : A415998.isChecked() ? "98"
+                : A415999.isChecked() ? "99"
+                : "-1");
 
         //A4160
-        if (A4160_1.isChecked()) {
-            A4160 = "1";
-        }
-        if (A4160_2.isChecked()) {
-            A4160 = "2";
-        }
-        if (A416098.isChecked()) {
-            A4160 = "9";
-        }
-        if (A416099.isChecked()) {
-            A4160 = "8";
-        }
+        json.put("A4160", A4160a.isChecked() ? "1"
+                : A4160b.isChecked() ? "2"
+                : A416098.isChecked() ? "98"
+                : A416099.isChecked() ? "99"
+                : "-1");
 
         //A4161
-        if (A41611.isChecked()) {
-            A4161 = "1";
-        }
-        if (A4161_2.isChecked()) {
-            A4161 = "2";
-        }
-        if (A416198.isChecked()) {
-            A4161 = "9";
-        }
-        if (A416199.isChecked()) {
-            A4161 = "8";
-        }
+        json.put("A4161", A4161a.isChecked() ? "1"
+                : A4161b.isChecked() ? "2"
+                : A416198.isChecked() ? "98"
+                : A416199.isChecked() ? "99"
+                : "-1");
 
         //A41611
-        if (A41611a.isChecked()) {
-            A41611 = "1";
-        }
-        if (A41611b.isChecked()) {
-            A41611 = "2";
-        }
-        if (A4161198.isChecked()) {
-            A41611 = "9";
-        }
-        if (A4161199.isChecked()) {
-            A41611 = "8";
-        }
+        json.put("A41611", A41611a.isChecked() ? "1"
+                : A41611b.isChecked() ? "2"
+                : A4161198.isChecked() ? "98"
+                : A4161199.isChecked() ? "99"
+                : "-1");
 
         //A4162
-        if (A4162_1.isChecked()) {
-            A4162 = "1";
-        }
-        if (A4162_2.isChecked()) {
-            A4162 = "2";
-        }
-        if (A416298.isChecked()) {
-            A4162 = "9";
-        }
-        if (A416299.isChecked()) {
-            A4162 = "8";
-        }
+        json.put("A4162", A4162a.isChecked() ? "1"
+                : A4162b.isChecked() ? "2"
+                : A416298.isChecked() ? "98"
+                : A416299.isChecked() ? "99"
+                : "-1");
 
         //A41631
-        if (A41631a.isChecked()) {
-            A41631 = "1";
-        }
-        if (A41631b.isChecked()) {
-            A41631 = "2";
-        }
-        if (A4163198.isChecked()) {
-            A41631 = "9";
-        }
-        if (A4163199.isChecked()) {
-            A41631 = "8";
-        }
+        json.put("A41631", A41631a.isChecked() ? "1"
+                : A41631b.isChecked() ? "2"
+                : A4163198.isChecked() ? "98"
+                : A4163199.isChecked() ? "99"
+                : "-1");
 
         //A4163
-        if (A41631.isChecked()) {
-            A4163 = "1";
-        }
-        if (A4163_2.isChecked()) {
-            A4163 = "2";
-        }
-        if (A416398.isChecked()) {
-            A4163 = "9";
-        }
-        if (A416399.isChecked()) {
-            A4163 = "8";
-        }
-
+        json.put("A4163", A4163a.isChecked() ? "1"
+                : A4163b.isChecked() ? "2"
+                : A416398.isChecked() ? "98"
+                : A416399.isChecked() ? "99"
+                : "-1");
+        
+        
         //A4164
-        if (ed_A4164.getText().toString().trim().length() > 0) {
-            A4164 = ed_A4164.getText().toString().trim();
-        }
+        json.put("A4164", A4164.getText().toString().trim().length() > 0 ? A4164.getText().toString().trim() : "-1");
+
 
         //A4166
-        if (A4166_1.isChecked()) {
-            A4166 = "1";
-        }
-        if (A4166_2.isChecked()) {
-            A4166 = "2";
-        }
-        if (A416698.isChecked()) {
-            A4166 = "9";
-        }
-        if (A416699.isChecked()) {
-            A4166 = "8";
-        }
-
+        json.put("A4166", A4166a.isChecked() ? "1"
+                : A4166b.isChecked() ? "2"
+                : A416698.isChecked() ? "98"
+                : A416699.isChecked() ? "99"
+                : "-1");
+        
         //A4167
-        if (A4167_1.isChecked()) {
-            A4167 = "1";
-        }
-        if (A4167_2.isChecked()) {
-            A4167 = "2";
-        }
-        if (A416798.isChecked()) {
-            A4167 = "9";
-        }
-        if (A416799.isChecked()) {
-            A4167 = "8";
-        }
+        json.put("A4167", A4167a.isChecked() ? "1"
+                : A4167b.isChecked() ? "2"
+                : A416798.isChecked() ? "98"
+                : A416799.isChecked() ? "99"
+                : "-1");
 
-        //A4168_1
-        if (A41681a.isChecked()) {
-            A4168_1 = "1";
-        }
-        if (A41681b.isChecked()) {
-            A4168_1 = "2";
-        }
-        if (A4168_198.isChecked()) {
-            A4168_1 = "9";
-        }
-        if (A4168_199.isChecked()) {
-            A4168_1 = "8";
-        }
+        //A41681
+        json.put("A41681", A41681a.isChecked() ? "1"
+                : A41681b.isChecked() ? "2"
+                : A4168198.isChecked() ? "98"
+                : A4168199.isChecked() ? "99"
+                : "-1");
 
-        //A4168_3
-        if (A4168_3_1.isChecked()) {
-            A4168_3 = "1";
-        }
-        if (A4168_3_2.isChecked()) {
-            A4168_3 = "2";
-        }
-        if (A4168_398.isChecked()) {
-            A4168_3 = "9";
-        }
-        if (A4168_399.isChecked()) {
-            A4168_3 = "8";
-        }
+        //A41683
+        json.put("A41683", A41683a.isChecked() ? "1"
+                : A41683b.isChecked() ? "2"
+                : A4168398.isChecked() ? "98"
+                : A4168399.isChecked() ? "99"
+                : "-1");
 
+        //A41683
+        json.put("A41683", A41683a.isChecked() ? "1"
+                : A41683b.isChecked() ? "2"
+                : A4168398.isChecked() ? "98"
+                : A4168399.isChecked() ? "99"
+                : "-1");
+        
         //A4168
-        if (A4168_1.isChecked()) {
-            A4168 = "1";
-        }
-        if (A4168_2.isChecked()) {
-            A4168 = "2";
-        }
-        if (A416898.isChecked()) {
-            A4168 = "9";
-        }
-        if (A416899.isChecked()) {
-            A4168 = "8";
-        }
+        json.put("A4168", A4168a.isChecked() ? "1"
+                : A4168b.isChecked() ? "2"
+                : A416898.isChecked() ? "98"
+                : A416899.isChecked() ? "99"
+                : "-1");
 
-        //A4173_1
-        if (A41731a.isChecked()) {
-            A4173_1 = "1";
-        }
-        if (A41731b.isChecked()) {
-            A4173_1 = "2";
-        }
-        if (A4173_198.isChecked()) {
-            A4173_1 = "9";
-        }
-        if (A4173_199.isChecked()) {
-            A4173_1 = "8";
-        }
-
+        //A41731
+        json.put("A41731", A41731a.isChecked() ? "1"
+                : A41731b.isChecked() ? "2"
+                : A4173198.isChecked() ? "98"
+                : A4173199.isChecked() ? "99"
+                : "-1");
+        
         //A4173
-        if (A4173_1.isChecked()) {
-            A4173 = "1";
-        }
-        if (A4173_2.isChecked()) {
-            A4173 = "2";
-        }
-        if (A417398.isChecked()) {
-            A4173 = "9";
-        }
-        if (A417399.isChecked()) {
-            A4173 = "8";
-        }
+        json.put("A4173", A4173a.isChecked() ? "1"
+                : A4173b.isChecked() ? "2"
+                : A417398.isChecked() ? "98"
+                : A417399.isChecked() ? "99"
+                : "-1");
 
-        //A4173_2
-        if (A4173_2_1.isChecked()) {
-            A4173_2 = "1";
-        }
-        if (A4173_2_2.isChecked()) {
-            A4173_2 = "2";
-        }
-        if (A4173_298.isChecked()) {
-            A4173_2 = "9";
-        }
-        if (A4173_299.isChecked()) {
-            A4173_2 = "8";
-        }
+        //A41732
+        json.put("A41732", A41732a.isChecked() ? "1"
+                : A41732b.isChecked() ? "2"
+                : A4173298.isChecked() ? "98"
+                : A4173299.isChecked() ? "99"
+                : "-1");
 
-        //A4178_1
-        if (ed_A4178_1.getText().toString().trim().length() > 0) {
-            A4178_1 = ed_A4178_1.getText().toString().trim();
-        }
+        //A41781
+        json.put("A41781", A41781.getText().toString().trim().length() > 0 ? A41781.getText().toString().trim() : "-1");
 
-        //A4178_2
-        if (A4178_2_1.isChecked()) {
-            A4178_2 = "1";
-        }
-        if (A4178_2_2.isChecked()) {
-            A4178_2 = "2";
-        }
-        if (A4178_298.isChecked()) {
-            A4178_2 = "9";
-        }
-        if (A4178_299.isChecked()) {
-            A4178_2 = "8";
-        }
 
+        //A41782
+        json.put("A41782", A41782a.isChecked() ? "1"
+                : A41782b.isChecked() ? "2"
+                : A4178298.isChecked() ? "98"
+                : A4178299.isChecked() ? "99"
+                : "-1");
+        
         //A4178
-        if (A4178_1.isChecked()) {
-            A4178 = "1";
-        }
-        if (A4178_2.isChecked()) {
-            A4178 = "2";
-        }
-        if (A417898.isChecked()) {
-            A4178 = "9";
-        }
-        if (A417899.isChecked()) {
-            A4178 = "8";
-        }
-
+        json.put("A4178", A4178a.isChecked() ? "1"
+                : A4178b.isChecked() ? "2"
+                : A417898.isChecked() ? "98"
+                : A417899.isChecked() ? "99"
+                : "-1");
+        
         //A4179
-        if (A4179_1.isChecked()) {
-            A4179 = "1";
-        }
-        if (A4179_2.isChecked()) {
-            A4179 = "2";
-        }
-        if (A417998.isChecked()) {
-            A4179 = "9";
-        }
-        if (A417999.isChecked()) {
-            A4179 = "8";
-        }
+        json.put("A4179", A4179a.isChecked() ? "1"
+                : A4179b.isChecked() ? "2"
+                : A417998.isChecked() ? "98"
+                : A417999.isChecked() ? "99"
+                : "-1");
 
         //A4180
-        if (ed_A4180.getText().toString().trim().length() > 0) {
-            A4180 = ed_A4180.getText().toString().trim();
-        }
+        json.put("A4180", A4180.getText().toString().trim().length() > 0 ? A4180.getText().toString().trim() : "-1");
+
 
         //A4181
-        if (A4181_1.isChecked()) {
-            A4181 = "1";
-        }
-        if (A4181_2.isChecked()) {
-            A4181 = "2";
-        }
-        if (A418198.isChecked()) {
-            A4181 = "9";
-        }
-        if (A418199.isChecked()) {
-            A4181 = "8";
-        }
+        json.put("A4181", A4181a.isChecked() ? "1"
+                : A4181b.isChecked() ? "2"
+                : A418198.isChecked() ? "98"
+                : A418199.isChecked() ? "99"
+                : "-1");
 
         //A4182
-        if (A4182_1.isChecked()) {
-            A4182 = "1";
-        }
-        if (A4182_2.isChecked()) {
-            A4182 = "2";
-        }
-        if (A418298.isChecked()) {
-            A4182 = "9";
-        }
-        if (A418299.isChecked()) {
-            A4182 = "8";
-        }
+        json.put("A4182", A4182a.isChecked() ? "1"
+                : A4182b.isChecked() ? "2"
+                : A418298.isChecked() ? "98"
+                : A418299.isChecked() ? "99"
+                : "-1");
 
         //A4183
-        if (A4183_1.isChecked()) {
-            A4183 = "1";
-        }
-        if (A4183_2.isChecked()) {
-            A4183 = "2";
-        }
-        if (A418398.isChecked()) {
-            A4183 = "9";
-        }
-        if (A418399.isChecked()) {
-            A4183 = "8";
-        }
+        json.put("A4183", A4183a.isChecked() ? "1"
+                : A4183b.isChecked() ? "2"
+                : A418398.isChecked() ? "98"
+                : A418399.isChecked() ? "99"
+                : "-1");
 
         //A4184
-        if (A4184_1.isChecked()) {
-            A4184 = "1";
-        }
-        if (A4184_2.isChecked()) {
-            A4184 = "2";
-        }
-        if (A418498.isChecked()) {
-            A4184 = "9";
-        }
-        if (A418499.isChecked()) {
-            A4184 = "8";
-        }
+        json.put("A4184", A4184a.isChecked() ? "1"
+                : A4184b.isChecked() ? "2"
+                : A418498.isChecked() ? "98"
+                : A418499.isChecked() ? "99"
+                : "-1");
 
         //A4185
-        if (A4185_1.isChecked()) {
-            A4185 = "1";
-        }
-        if (A4185_2.isChecked()) {
-            A4185 = "2";
-        }
-        if (A418598.isChecked()) {
-            A4185 = "9";
-        }
-        if (A418599.isChecked()) {
-            A4185 = "8";
-        }
+        json.put("A4185", A4185a.isChecked() ? "1"
+                : A4185b.isChecked() ? "2"
+                : A418598.isChecked() ? "98"
+                : A418599.isChecked() ? "99"
+                : "-1");
 
         //A4186
-        if (A4186_1.isChecked()) {
-            A4186 = "1";
-        }
-        if (A4186_2.isChecked()) {
-            A4186 = "2";
-        }
-        if (A418698.isChecked()) {
-            A4186 = "9";
-        }
-        if (A418699.isChecked()) {
-            A4186 = "8";
-        }
+        json.put("A4186", A4186a.isChecked() ? "1"
+                : A4186b.isChecked() ? "2"
+                : A418698.isChecked() ? "98"
+                : A418699.isChecked() ? "99"
+                : "-1");
 
-        //A4186_1
-        if (A41861a.isChecked()) {
-            A4186_1 = "1";
-        }
-        if (A41861b.isChecked()) {
-            A4186_1 = "2";
-        }
-        if (A4186_198.isChecked()) {
-            A4186_1 = "9";
-        }
-        if (A4186_199.isChecked()) {
-            A4186_1 = "8";
-        }
+        //A41861
+        json.put("A41861", A41861a.isChecked() ? "1"
+                : A41861b.isChecked() ? "2"
+                : A4186198.isChecked() ? "98"
+                : A4186199.isChecked() ? "99"
+                : "-1");
 
         //A4187
-        if (A4187_1.isChecked()) {
-            A4187 = "1";
-        }
-        if (A4187_2.isChecked()) {
-            A4187 = "2";
-        }
-        if (A418798.isChecked()) {
-            A4187 = "9";
-        }
-        if (A418799.isChecked()) {
-            A4187 = "8";
-        }
+        json.put("A4187", A4187a.isChecked() ? "1"
+                : A4187b.isChecked() ? "2"
+                : A418798.isChecked() ? "98"
+                : A418799.isChecked() ? "99"
+                : "-1");
 
         //A4188
-        if (A4188_1.isChecked()) {
-            A4188 = "1";
-        }
-        if (A4188_2.isChecked()) {
-            A4188 = "2";
-        }
-        if (A418898.isChecked()) {
-            A4188 = "9";
-        }
-        if (A418899.isChecked()) {
-            A4188 = "8";
-        }
+        json.put("A4188", A4188a.isChecked() ? "1"
+                : A4188b.isChecked() ? "2"
+                : A418898.isChecked() ? "98"
+                : A418899.isChecked() ? "99"
+                : "-1");
 
         //A4189
-        if (A4189_1.isChecked()) {
-            A4189 = "1";
-        }
-        if (A4189_2.isChecked()) {
-            A4189 = "2";
-        }
-        if (A418998.isChecked()) {
-            A4189 = "9";
-        }
-        if (A418999.isChecked()) {
-            A4189 = "8";
-        }
+        json.put("A4189", A4189a.isChecked() ? "1"
+                : A4189b.isChecked() ? "2"
+                : A418998.isChecked() ? "98"
+                : A418999.isChecked() ? "99"
+                : "-1");
 
         //A4190
-        if (A4190_1.isChecked()) {
-            A4190 = "1";
-        }
-        if (A4190_2.isChecked()) {
-            A4190 = "2";
-        }
-        if (A419098.isChecked()) {
-            A4190 = "9";
-        }
-        if (A419099.isChecked()) {
-            A4190 = "8";
-        }
+        json.put("A4190", A4190a.isChecked() ? "1"
+                : A4190b.isChecked() ? "2"
+                : A419098.isChecked() ? "98"
+                : A419099.isChecked() ? "99"
+                : "-1");
 
         //A4191
-        if (A4191_1.isChecked()) {
-            A4191 = "1";
-        }
-        if (A4191_2.isChecked()) {
-            A4191 = "2";
-        }
-        if (A419198.isChecked()) {
-            A4191 = "9";
-        }
-        if (A419199.isChecked()) {
-            A4191 = "8";
-        }
+        json.put("A4191", A4191a.isChecked() ? "1"
+                : A4191b.isChecked() ? "2"
+                : A419198.isChecked() ? "98"
+                : A419199.isChecked() ? "99"
+                : "-1");
 
         //A4192
-        if (ed_A4192.getText().toString().trim().length() > 0) {
-            A4192 = ed_A4192.getText().toString().trim();
-        }
+        json.put("A4192", A4192.getText().toString().trim().length() > 0 ? A4192.getText().toString().trim() : "-1");
 
         //A4193
         if (A4193_1.isChecked()) {
