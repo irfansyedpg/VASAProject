@@ -178,11 +178,6 @@
                             android:text="@string/A42062e" />
 
                         <RadioButton
-                            android:id="@+id/A4206296"
-                            style="@style/RadioButton"
-                            android:text="@string/other" />
-
-                        <RadioButton
                             android:id="@+id/A4206298"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
@@ -191,6 +186,11 @@
                             android:id="@+id/A4206299"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
+
+                        <RadioButton
+                            android:id="@+id/A4206296"
+                            style="@style/RadioButton"
+                            android:text="@string/other" />
 
                     </RadioGroup>
 
@@ -276,19 +276,20 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A42064"
                         style="@style/TextView"
                         android:text="@string/A42064" />
 
-                    <RadioGroup style="@style/RadioGroup">
+                    <RadioGroup
+                        android:id="@+id/A42064"
+                        style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/A42064_1"
+                            android:id="@+id/A42064a"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/A42064_2"
+                            android:id="@+id/A42064b"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
@@ -556,11 +557,6 @@
                             android:text="@string/A420610c" />
 
                         <RadioButton
-                            android:id="@+id/A42061096"
-                            style="@style/RadioButton"
-                            android:text="@string/other" />
-
-                        <RadioButton
                             android:id="@+id/A42061098"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
@@ -569,6 +565,11 @@
                             android:id="@+id/A42061099"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
+
+                        <RadioButton
+                            android:id="@+id/A42061096"
+                            style="@style/RadioButton"
+                            android:text="@string/other" />
 
                     </RadioGroup>
 
