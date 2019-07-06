@@ -588,40 +588,26 @@ public class A4206_A4207 extends AppCompatActivity implements View.OnClickListen
         //study_id
         json.put("study_id", ed_study_id.getText().toString().length() > 0 ? ed_study_id.getText().toString().trim() : "-1");
 
-        //A4157
-        json.put("A4157", A4157a.isChecked() ? "1"
-                : A4157b.isChecked() ? "2"
-                : A415798.isChecked() ? "98"
-                : A415799.isChecked() ? "99"
+        //A4206
+        json.put("A4206", A4206a.isChecked() ? "1"
+                : A4206b.isChecked() ? "2"
+                : A420698.isChecked() ? "98"
+                : A420699.isChecked() ? "99"
                 : "-1");
 
-        //A4206
-        if (A4206_1.isChecked()) {
-            A4206 = "1";
-        }
-        if (A4206_2.isChecked()) {
-            A4206 = "2";
-        }
-        if (A420698.isChecked()) {
-            A4206 = "9";
-        }
-        if (A420699.isChecked()) {
-            A4206 = "8";
-        }
+        //A42061
+        json.put("A42061", A42061a.isChecked() ? "1"
+                : A42061b.isChecked() ? "2"
+                : A4206198.isChecked() ? "98"
+                : A4206199.isChecked() ? "99"
+                : "-1");
 
-        //A4206_1
-        if (A42061a.isChecked()) {
-            A4206_1 = "1";
-        }
-        if (A42061b.isChecked()) {
-            A4206_1 = "2";
-        }
-        if (A4206_198.isChecked()) {
-            A4206_1 = "9";
-        }
-        if (A4206_199.isChecked()) {
-            A4206_1 = "8";
-        }
+        //A42062
+        json.put("A42062", A42062a.isChecked() ? "1"
+                : A42062b.isChecked() ? "2"
+                : A4206298.isChecked() ? "98"
+                : A4206299.isChecked() ? "99"
+                : "-1");
 
         //A4206_2
         if (A42062a.isChecked()) {
