@@ -632,20 +632,19 @@ public class A4206_A4207 extends AppCompatActivity implements View.OnClickListen
                 : A4206499.isChecked() ? "99"
                 : "-1");
 
+        //A42065
+        json.put("A42065", A42065a.isChecked() ? "1"
+                : A42065b.isChecked() ? "2"
+                : A4206598.isChecked() ? "98"
+                : A4206599.isChecked() ? "99"
+                : "-1");
 
-        //A4206_5
-        if (A4206_5_1.isChecked()) {
-            A4206_5 = "1";
-        }
-        if (A4206_5_2.isChecked()) {
-            A4206_5 = "2";
-        }
-        if (A4206_598.isChecked()) {
-            A4206_5 = "9";
-        }
-        if (A4206_599.isChecked()) {
-            A4206_5 = "8";
-        }
+        //A42066
+        json.put("A42066", A42066a.isChecked() ? "1"
+                : A42066b.isChecked() ? "2"
+                : A4206698.isChecked() ? "98"
+                : A4206699.isChecked() ? "99"
+                : "-1");
 
         //A4206_6
         if (A4206_6_1.isChecked()) {
@@ -891,15 +890,11 @@ public class A4206_A4207 extends AppCompatActivity implements View.OnClickListen
             A4206_22 = "8";
         }
 
-        //A4207_hour
-        if (ed_A4207_hour.getText().toString().trim().length() > 0) {
-            A4207_hour = ed_A4207_hour.getText().toString().trim();
-        }
+        //A4207H
+        json.put("A4207H", A4207H.getText().toString().trim().length() > 0 ? A4207H.getText().toString().trim() : "-1");
 
-        //A4207_day
-        if (ed_A4207_day.getText().toString().trim().length() > 0) {
-            A4207_day = ed_A4207_day.getText().toString().trim();
-        }
+        //A4207D
+        json.put("A4207D", A4207D.getText().toString().trim().length() > 0 ? A4207D.getText().toString().trim() : "-1");
 
     }
 
