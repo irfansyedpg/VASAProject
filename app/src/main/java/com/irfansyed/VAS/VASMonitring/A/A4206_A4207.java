@@ -605,35 +605,13 @@ public class A4206_A4207 extends AppCompatActivity implements View.OnClickListen
         //A42062
         json.put("A42062", A42062a.isChecked() ? "1"
                 : A42062b.isChecked() ? "2"
+                : A42062c.isChecked() ? "3"
+                : A42062d.isChecked() ? "4"
+                : A42062e.isChecked() ? "5"
+                : A4206296.isChecked() ? "96"
                 : A4206298.isChecked() ? "98"
                 : A4206299.isChecked() ? "99"
                 : "-1");
-
-        //A4206_2
-        if (A42062a.isChecked()) {
-            A4206_2 = "1";
-        }
-        if (A42062b.isChecked()) {
-            A4206_2 = "2";
-        }
-        if (A42062c.isChecked()) {
-            A4206_2 = "3";
-        }
-        if (A42062d.isChecked()) {
-            A4206_2 = "4";
-        }
-        if (A42062e.isChecked()) {
-            A4206_2 = "5";
-        }
-        if (A42062f.isChecked()) {
-            A4206_2 = "6";
-        }
-        if (A4206_298.isChecked()) {
-            A4206_2 = "9";
-        }
-        if (A4206_299.isChecked()) {
-            A4206_2 = "8";
-        }
 
         //A4206_3
         if (A42063a.isChecked()) {
