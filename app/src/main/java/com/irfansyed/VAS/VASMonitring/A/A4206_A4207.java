@@ -646,81 +646,43 @@ public class A4206_A4207 extends AppCompatActivity implements View.OnClickListen
                 : A4206699.isChecked() ? "99"
                 : "-1");
 
-        //A4206_6
-        if (A4206_6_1.isChecked()) {
-            A4206_6 = "1";
-        }
-        if (A4206_6_2.isChecked()) {
-            A4206_6 = "2";
-        }
-        if (A4206_698.isChecked()) {
-            A4206_6 = "9";
-        }
-        if (A4206_699.isChecked()) {
-            A4206_6 = "8";
-        }
+        //A42067
+        json.put("A42067", A42067a.isChecked() ? "1"
+                : A42067b.isChecked() ? "2"
+                : A4206798.isChecked() ? "98"
+                : A4206799.isChecked() ? "99"
+                : "-1");
 
-        //A4206_7
-        if (A4206_7_1.isChecked()) {
-            A4206_7 = "1";
-        }
-        if (A4206_7_2.isChecked()) {
-            A4206_7 = "2";
-        }
-        if (A4206_798.isChecked()) {
-            A4206_7 = "9";
-        }
-        if (A4206_799.isChecked()) {
-            A4206_7 = "8";
-        }
+        //A42068
+        json.put("A42068", A42068a.isChecked() ? "1"
+                : A42068b.isChecked() ? "2"
+                : A4206898.isChecked() ? "98"
+                : A4206899.isChecked() ? "99"
+                : "-1");
 
-        //A4206_8
-        if (A4206_8_1.isChecked()) {
-            A4206_8 = "1";
-        }
-        if (A4206_8_2.isChecked()) {
-            A4206_8 = "2";
-        }
-        if (A4206_898.isChecked()) {
-            A4206_8 = "9";
-        }
-        if (A4206_899.isChecked()) {
-            A4206_8 = "8";
-        }
+        //A42069
+        json.put("A42069", A42069a.isChecked() ? "1"
+                : A42069b.isChecked() ? "2"
+                : A4206998.isChecked() ? "98"
+                : A4206999.isChecked() ? "99"
+                : "-1");
 
-        //A4206_9
-        if (A4206_9_1.isChecked()) {
-            A4206_9 = "1";
-        }
-        if (A4206_9_2.isChecked()) {
-            A4206_9 = "2";
-        }
-        if (A4206_998.isChecked()) {
-            A4206_9 = "9";
-        }
-        if (A4206_999.isChecked()) {
-            A4206_9 = "8";
-        }
+        //A420610
+        json.put("A420610", A420610a.isChecked() ? "1"
+                : A420610b.isChecked() ? "2"
+                : A420610c.isChecked() ? "3"
+                : A42061096.isChecked() ? "96"
+                : A42061098.isChecked() ? "98"
+                : A42061099.isChecked() ? "99"
+                : "-1");
 
-        //A4206_10
-        if (A4206_10_1.isChecked()) {
-            A4206_10 = "1";
-        }
-        if (A4206_10_2.isChecked()) {
-            A4206_10 = "2";
-        }
-        if (A4206_10_3.isChecked()) {
-            A4206_10 = "3";
-        }
-        if (A4206_10_4.isChecked()) {
-            A4206_10 = "4";
-        }
-        if (A4206_1098.isChecked()) {
-            A4206_10 = "9";
-        }
-        if (A4206_1099.isChecked()) {
-            A4206_10 = "8";
-        }
+        //A420611
+        json.put("A420611", A420611a.isChecked() ? "1"
+                : A420611b.isChecked() ? "2"
+                : A42061198.isChecked() ? "98"
+                : A42061199.isChecked() ? "99"
+                : "-1");
+
 
         //A4206_11
         if (A4206_11_1.isChecked()) {
