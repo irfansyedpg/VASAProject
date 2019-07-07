@@ -683,48 +683,19 @@ public class A4206_A4207 extends AppCompatActivity implements View.OnClickListen
                 : A42061199.isChecked() ? "99"
                 : "-1");
 
+        //A420612
+        json.put("A420612", A420612a.isChecked() ? "1"
+                : A420612b.isChecked() ? "2"
+                : A42061298.isChecked() ? "98"
+                : A42061299.isChecked() ? "99"
+                : "-1");
 
-        //A4206_11
-        if (A4206_11_1.isChecked()) {
-            A4206_11 = "1";
-        }
-        if (A4206_11_2.isChecked()) {
-            A4206_11 = "2";
-        }
-        if (A4206_1198.isChecked()) {
-            A4206_11 = "9";
-        }
-        if (A4206_1199.isChecked()) {
-            A4206_11 = "8";
-        }
-
-        //A4206_12
-        if (A4206_12_1.isChecked()) {
-            A4206_12 = "1";
-        }
-        if (A4206_12_2.isChecked()) {
-            A4206_12 = "2";
-        }
-        if (A4206_1298.isChecked()) {
-            A4206_12 = "9";
-        }
-        if (A4206_1299.isChecked()) {
-            A4206_12 = "8";
-        }
-
-        //A4206_13
-        if (A4206_13_1.isChecked()) {
-            A4206_13 = "1";
-        }
-        if (A4206_13_2.isChecked()) {
-            A4206_13 = "2";
-        }
-        if (A4206_1398.isChecked()) {
-            A4206_13 = "9";
-        }
-        if (A4206_1399.isChecked()) {
-            A4206_13 = "8";
-        }
+        //A420613
+        json.put("A420613", A420613a.isChecked() ? "1"
+                : A420613b.isChecked() ? "2"
+                : A42061398.isChecked() ? "98"
+                : A42061399.isChecked() ? "99"
+                : "-1");
 
         //A4206_14
         if (A4206_14_1.isChecked()) {
