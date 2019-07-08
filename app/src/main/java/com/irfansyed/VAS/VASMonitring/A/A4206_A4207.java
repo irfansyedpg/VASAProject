@@ -738,50 +738,27 @@ public class A4206_A4207 extends AppCompatActivity implements View.OnClickListen
                 : A42061998.isChecked() ? "98"
                 : A42061999.isChecked() ? "99"
                 : "-1");
-        
-        
 
-        //A4206_20
-        if (A4206_20_1.isChecked()) {
-            A4206_20 = "1";
-        }
-        if (A4206_20_2.isChecked()) {
-            A4206_20 = "2";
-        }
-        if (A4206_2098.isChecked()) {
-            A4206_20 = "9";
-        }
-        if (A4206_2099.isChecked()) {
-            A4206_20 = "8";
-        }
+        //A420620
+        json.put("A420620", A420620a.isChecked() ? "1"
+                : A420620b.isChecked() ? "2"
+                : A42062098.isChecked() ? "98"
+                : A42062099.isChecked() ? "99"
+                : "-1");
 
-        //A4206_21
-        if (A4206_21_1.isChecked()) {
-            A4206_21 = "1";
-        }
-        if (A4206_21_2.isChecked()) {
-            A4206_21 = "2";
-        }
-        if (A4206_2198.isChecked()) {
-            A4206_21 = "9";
-        }
-        if (A4206_2199.isChecked()) {
-            A4206_21 = "8";
-        }
+        //A420621
+        json.put("A420621", A420621a.isChecked() ? "1"
+                : A420621b.isChecked() ? "2"
+                : A42062198.isChecked() ? "98"
+                : A42062199.isChecked() ? "99"
+                : "-1");
 
-        //A4206_22
-        if (A4206_22_1.isChecked()) {
-            A4206_22 = "1";
-        }
-        if (A4206_22_2.isChecked()) {
-            A4206_22 = "2";
-        }
-        if (A4206_2298.isChecked()) {
-            A4206_22 = "9";
-        }
-        if (A4206_2299.isChecked()) {
-            A4206_22 = "8";
-        }
+        //A420622
+        json.put("A420622", A420622a.isChecked() ? "1"
+                : A420622b.isChecked() ? "2"
+                : A42062298.isChecked() ? "98"
+                : A42062299.isChecked() ? "99"
+                : "-1");
 
         //A4207H
         json.put("A4207H", A4207H.getText().toString().trim().length() > 0 ? A4207H.getText().toString().trim() : "-1");
