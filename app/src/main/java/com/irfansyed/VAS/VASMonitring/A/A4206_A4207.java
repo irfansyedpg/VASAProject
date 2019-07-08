@@ -18,6 +18,7 @@ import com.irfansyed.VAS.VASMonitring.R;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 import utils.InputFilterMinMax;
@@ -765,6 +766,17 @@ public class A4206_A4207 extends AppCompatActivity implements View.OnClickListen
 
         //A4207D
         json.put("A4207D", A4207D.getText().toString().trim().length() > 0 ? A4207D.getText().toString().trim() : "-1");
+
+
+        //json.put("mp06b001id1", mp06b001id1.getSelectedItem().toString());
+        //json.put("mp06b002", mp06b002.getText().toString());
+
+
+        LocalDataManager Lm = new LocalDataManager(this);
+
+        LocalDataManager.database.execSQL(String.valueOf(json));
+
+        Toast.makeText(this, "Validation Successful! - Value Assignment & Data Insertion...", Toast.LENGTH_SHORT).show();
 
     }
 
