@@ -96,7 +96,7 @@
                         <TextView
                             android:id="@+id/A4252a"
                             style="@style/TextView"
-                            android:text="@string/rb_A4252_1" />
+                            android:text="@string/rb_A4257_1" />
 
                         <TextView
                             android:id="@+id/A4252_2"
@@ -285,22 +285,22 @@
                         android:text="@string/A4255" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4255_1"
+                        android:id="@+id/A4255_1"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4255_1" />
+                        android:text="@string/A4255_1" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4255_2"
+                        android:id="@+id/A4255_2"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4255_2" />
+                        android:text="@string/A4255_2" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4255_3"
+                        android:id="@+id/A4255_3"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4255_3" />
+                        android:text="@string/A4255_3" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4255_4"
+                        android:id="@+id/A4255_4"
                         style="@style/CheckBox"
                         android:text="Someone else had to Decide (Specify)" />
 
@@ -311,47 +311,47 @@
                         android:visibility="gone" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4255_5"
+                        android:id="@+id/A4255_5"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4255_5" />
+                        android:text="@string/A4255_5" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4255_6"
+                        android:id="@+id/A4255_6"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4255_6" />
+                        android:text="@string/A4255_6" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4255_7"
+                        android:id="@+id/A4255_7"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4255_7" />
+                        android:text="@string/A4255_7" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4255_8"
+                        android:id="@+id/A4255_8"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4255_8" />
+                        android:text="@string/A4255_8" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4255_9"
+                        android:id="@+id/A4255_9"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4255_9" />
+                        android:text="@string/A4255_9" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4255_10"
+                        android:id="@+id/A4255_10"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4255_10" />
+                        android:text="@string/A4255_10" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4255_11"
+                        android:id="@+id/A4255_11"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4255_11" />
+                        android:text="@string/A4255_11" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4255_12"
+                        android:id="@+id/A4255_12"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4255_12" />
+                        android:text="@string/A4255_12" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4255_13"
+                        android:id="@+id/A4255_13"
                         style="@style/CheckBox"
                         android:text="@string/ot_other" />
 
@@ -362,7 +362,7 @@
                         android:visibility="gone" />
 
                     <CheckBox
-                        android:id="@+id/cb_A425598"
+                        android:id="@+id/A425598"
                         style="@style/CheckBox"
                         android:text="@string/dnt" />
 
@@ -1436,27 +1436,27 @@
                         android:text="@string/A4276" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_1"
+                        android:id="@+id/A4276_1"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_1" />
+                        android:text="@string/A4276_1" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_2"
+                        android:id="@+id/A4276_2"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_2" />
+                        android:text="@string/A4276_2" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_3"
+                        android:id="@+id/A4276_3"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_3" />
+                        android:text="@string/A4276_3" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_4"
+                        android:id="@+id/A4276_4"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_4" />
+                        android:text="@string/A4276_4" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_5"
+                        android:id="@+id/A4276_5"
                         style="@style/CheckBox"
                         android:text="@string/ot_someone" />
 
@@ -1467,57 +1467,57 @@
                         android:hint="@string/ot_someone" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_6"
+                        android:id="@+id/A4276_6"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_6" />
+                        android:text="@string/A4276_6" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_7"
+                        android:id="@+id/A4276_7"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_7" />
+                        android:text="@string/A4276_7" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_8"
+                        android:id="@+id/A4276_8"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_8" />
+                        android:text="@string/A4276_8" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_9"
+                        android:id="@+id/A4276_9"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_9" />
+                        android:text="@string/A4276_9" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_10"
+                        android:id="@+id/A4276_10"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_10" />
+                        android:text="@string/A4276_10" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_11"
+                        android:id="@+id/A4276_11"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_11" />
+                        android:text="@string/A4276_11" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_12"
+                        android:id="@+id/A4276_12"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_12" />
+                        android:text="@string/A4276_12" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_13"
+                        android:id="@+id/A4276_13"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_13" />
+                        android:text="@string/A4276_13" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_14"
+                        android:id="@+id/A4276_14"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_14" />
+                        android:text="@string/A4276_14" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_15"
+                        android:id="@+id/A4276_15"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4276_15" />
+                        android:text="@string/A4276_15" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4276_16"
+                        android:id="@+id/A4276_16"
                         style="@style/CheckBox"
                         android:text="@string/ot_other" />
 
@@ -1528,7 +1528,7 @@
                         android:hint="@string/ot_other" />
 
                     <CheckBox
-                        android:id="@+id/cb_A427698"
+                        android:id="@+id/A427698"
                         style="@style/CheckBox"
                         android:text="@string/dnt" />
 
@@ -1586,42 +1586,42 @@
                         android:text="@string/A4278" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4278_1"
+                        android:id="@+id/A4278_1"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4278_1" />
+                        android:text="@string/A4278_1" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4278_2"
+                        android:id="@+id/A4278_2"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4278_2" />
+                        android:text="@string/A4278_2" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4278_3"
+                        android:id="@+id/A4278_3"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4278_3" />
+                        android:text="@string/A4278_3" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4278_4"
+                        android:id="@+id/A4278_4"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4278_4" />
+                        android:text="@string/A4278_4" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4278_5"
+                        android:id="@+id/A4278_5"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4278_5" />
+                        android:text="@string/A4278_5" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4278_6"
+                        android:id="@+id/A4278_6"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4278_6" />
+                        android:text="@string/A4278_6" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4278_7"
+                        android:id="@+id/A4278_7"
                         style="@style/CheckBox"
                         android:text="Other" />
 
                     <CheckBox
-                        android:id="@+id/cb_A427898"
+                        android:id="@+id/A427898"
                         style="@style/CheckBox"
                         android:text="@string/dnt" />
 
@@ -1643,42 +1643,42 @@
                         android:text="@string/A4279" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4279_1"
+                        android:id="@+id/A4279_1"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4279_1" />
+                        android:text="@string/A4279_1" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4279_2"
+                        android:id="@+id/A4279_2"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4279_2" />
+                        android:text="@string/A4279_2" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4279_3"
+                        android:id="@+id/A4279_3"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4279_3" />
+                        android:text="@string/A4279_3" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4279_4"
+                        android:id="@+id/A4279_4"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4279_4" />
+                        android:text="@string/A4279_4" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4279_5"
+                        android:id="@+id/A4279_5"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4279_5" />
+                        android:text="@string/A4279_5" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4279_6"
+                        android:id="@+id/A4279_6"
                         style="@style/CheckBox"
                         android:text="Other" />
 
                     <CheckBox
-                        android:id="@+id/cb_A4279_7"
+                        android:id="@+id/A4279_7"
                         style="@style/CheckBox"
-                        android:text="@string/cb_A4279_7" />
+                        android:text="@string/A4279_7" />
 
                     <CheckBox
-                        android:id="@+id/cb_A427998"
+                        android:id="@+id/A427998"
                         style="@style/CheckBox"
                         android:text="@string/dnt" />
 
