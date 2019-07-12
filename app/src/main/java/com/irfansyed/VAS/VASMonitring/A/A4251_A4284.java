@@ -203,19 +203,19 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
             A4280_1,
             A4280_2,
             A428098,
-            A4280_RA,
+            A428099,
             A4281_1,
             A4281_2,
             A428198,
-            A4281_RA,
+            A428199,
             A4282_1,
             A4282_2,
             A428298,
-            A4282_RA,
+            A428299,
             A4283_1,
             A4283_2,
             A428398,
-            A4283_RA;
+            A428399;
 
     EditText
             ed_study_id,
@@ -559,19 +559,19 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         A4280_1 = findViewById(R.id.A4280_1);
         A4280_2 = findViewById(R.id.A4280_2);
         A428098 = findViewById(R.id.A428098);
-        A4280_RA = findViewById(R.id.A4280_RA);
+        A428099 = findViewById(R.id.A428099);
         A4281_1 = findViewById(R.id.A4281_1);
         A4281_2 = findViewById(R.id.A4281_2);
         A428198 = findViewById(R.id.A428198);
-        A4281_RA = findViewById(R.id.A4281_RA);
+        A428199 = findViewById(R.id.A428199);
         A4282_1 = findViewById(R.id.A4282_1);
         A4282_2 = findViewById(R.id.A4282_2);
         A428298 = findViewById(R.id.A428298);
-        A4282_RA = findViewById(R.id.A4282_RA);
+        A428299 = findViewById(R.id.A428299);
         A4283_1 = findViewById(R.id.A4283_1);
         A4283_2 = findViewById(R.id.A4283_2);
         A428398 = findViewById(R.id.A428398);
-        A4283_RA = findViewById(R.id.A4283_RA);
+        A428399 = findViewById(R.id.A428399);
 
         ed_A4253_3 = findViewById(R.id.ed_A4253_3);
         ed_A4255_4 = findViewById(R.id.ed_A4255_4);
@@ -1130,19 +1130,19 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         A4280_1.setOnCheckedChangeListener(this);
         A4280_2.setOnCheckedChangeListener(this);
         A428098.setOnCheckedChangeListener(this);
-        A4280_RA.setOnCheckedChangeListener(this);
+        A428099.setOnCheckedChangeListener(this);
         A4281_1.setOnCheckedChangeListener(this);
         A4281_2.setOnCheckedChangeListener(this);
         A428198.setOnCheckedChangeListener(this);
-        A4281_RA.setOnCheckedChangeListener(this);
+        A428199.setOnCheckedChangeListener(this);
         A4282_1.setOnCheckedChangeListener(this);
         A4282_2.setOnCheckedChangeListener(this);
         A428298.setOnCheckedChangeListener(this);
-        A4282_RA.setOnCheckedChangeListener(this);
+        A428299.setOnCheckedChangeListener(this);
         A4283_1.setOnCheckedChangeListener(this);
         A4283_2.setOnCheckedChangeListener(this);
         A428398.setOnCheckedChangeListener(this);
-        A4283_RA.setOnCheckedChangeListener(this);*/
+        A428399.setOnCheckedChangeListener(this);*/
 
         smart(cvA4255);
     }
@@ -1427,28 +1427,28 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         json.put("A4280", A4280_1.isChecked() ? "1"
                 : A4280_2.isChecked() ? "2"
                 : A428098.isChecked() ? "98"
-                : A4280_RA.isChecked() ? "99"
+                : A428099.isChecked() ? "99"
                 : "-1");
 
         //A4281
         json.put("A4281", A4281_1.isChecked() ? "1"
                 : A4281_2.isChecked() ? "2"
                 : A428198.isChecked() ? "98"
-                : A4281_RA.isChecked() ? "99"
+                : A428199.isChecked() ? "99"
                 : "-1");
 
         //A4282
         json.put("A4282", A4282_1.isChecked() ? "1"
                 : A4282_2.isChecked() ? "2"
                 : A428298.isChecked() ? "98"
-                : A4282_RA.isChecked() ? "99"
+                : A428299.isChecked() ? "99"
                 : "-1");
 
         //A4283
         json.put("A4283", A4283_1.isChecked() ? "1"
                 : A4283_2.isChecked() ? "2"
                 : A428398.isChecked() ? "98"
-                : A4283_RA.isChecked() ? "99"
+                : A428399.isChecked() ? "99"
                 : "-1");
 
 
