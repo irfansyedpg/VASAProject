@@ -20,13 +20,16 @@
         android:scrollbarSize="10dip">
 
 
-        <LinearLayout style="@style/Q_Linerlayout_v">
+        <LinearLayout
+            android:id="@+id/llA4251"
+            style="@style/Q_Linerlayout_v">
 
             <!-- EditText study_id Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvstudy_id"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/cvstudy_id"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -47,18 +50,20 @@
             <!-- EditText study_id Ends -->
 
             <!-- Radio Buttons A4251 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4251"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/cvA4251"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4251"
                         style="@style/TextView"
                         android:text="@string/A4251" />
 
-                    <RadioGroup style="@style/RadioGroup">
+                    <RadioGroup
+                        android:id="@+id/A4251"
+                        style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/A4251a"
@@ -83,10 +88,11 @@
             <!-- Radio Buttons A4251 Ends -->
 
             <!-- TextView A4252 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4252"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/cvA4252"
                     style="@style/Q_Linerlayout_v">
 
                     <LinearLayout
@@ -101,22 +107,22 @@
                         <TextView
                             android:id="@+id/A4252_2"
                             style="@style/TextView"
-                            android:text="@string/A4252_2" />
+                            android:text="@string/A42522" />
 
                         <TextView
                             android:id="@+id/A4252_3"
                             style="@style/TextView"
-                            android:text="@string/A4252_3" />
+                            android:text="@string/A42523" />
 
                         <TextView
-                            android:id="@+id/A4252_4"
+                            android:id="@+id/A42524"
                             style="@style/TextView"
-                            android:text="@string/A4252_4" />
+                            android:text="@string/A42524" />
 
                         <TextView
                             android:id="@+id/A4252_5"
                             style="@style/TextView"
-                            android:text="@string/A4252_5" />
+                            android:text="@string/A42525" />
 
                         <TextView
                             android:id="@+id/A4252_start"
