@@ -3786,23 +3786,28 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4471"><![CDATA[4471: Note: This is an optional question, to be asked or not as determined by the study site.  Read: Thank you for answering the many questions that I’ve asked. Would you like to tell me about <NAME>’s illness in your own words? Also, is there anything else about her/his illness that I did not ask and you would like to tell me about?  After the respondent(s) finishes, ask: Is there anything else?  Write the respondent’s exact words. After s/he has finished, read this back and ask her to correct any errors in what you wrote.]]></string>
     <string name="A4473">4473:   Interviewer: Use this space to write down your comments and observations about the interview.</string>
     <string name="kilograms_kg">Kilograms Kg &amp; DK = 999</string>
+
+
     <string name="A4257">A4257: What was the name of the FIRST HEALTH PROVIDER where NAME went?</string>
-    <string name="rb_A42571">Government hospital</string>
-    <string name="rb_A42572">Government health center</string>
-    <string name="rb_A42573">Government health post</string>
-    <string name="rb_A42574">Mobile Clinic</string>
-    <string name="rb_A42575">Trained CHW, nurse or midwife (outside a health facility)</string>
-    <string name="rb_A42576">Other public sector</string>
-    <string name="rb_A42577">Private hospital</string>
-    <string name="rb_A42578">Private doctor/clinic</string>
-    <string name="rb_A42579">Mobile Clinic</string>
-    <string name="rb_A425710">Trained CHW, nurse or midwife (outside a health facility)</string>
-    <string name="rb_A425711">Other private medical sector</string>
+    <string name="A4257a">Government hospital</string>
+    <string name="A4257b">Government health center</string>
+    <string name="A4257c">Government health post</string>
+    <string name="A4257d">Mobile Clinic</string>
+    <string name="A4257e">Trained CHW, nurse or midwife (outside a health facility)</string>
+    <string name="A4257f">Other public sector</string>
+    <string name="A4257g">Private hospital</string>
+    <string name="A4257h">Private doctor/clinic</string>
+    <string name="A4257i">Mobile Clinic</string>
+    <string name="A4257j">Trained CHW, nurse or midwife (outside a health facility)</string>
+    <string name="A4257k">Other private medical sector</string>
+
     <string name="rb_A42581">Yes, reached before died</string>
     <string name="rb_A42582">No, died on route to this provider / before this provider reached the deceased</string>
     <string name="rb_A42583">No, could not reach this provider, so returned home or took other action</string>
+
     <string name="A42581">A4258_1: For health care at a facility, \nask: \nDid NAME reach the FIRST HEALTH PROVIDER before s/he died?</string>
     <string name="A4258Hint">If “No,” discuss with respondent to determine correct response: 2 or 3.</string>
+
     <string name="A42582">A4258_2: For health care outside a facility, \nask: \nDid the FIRST HEALTH PROVIDER reach (NAME) before s/he died?</string>
 
     <!-- HINTS ENDS -->
