@@ -174,22 +174,22 @@
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/A4253_1"
+                            android:id="@+id/A4253a"
                             style="@style/RadioButton"
-                            android:text="@string/A4253_1" />
+                            android:text="@string/A4253a" />
 
                         <RadioButton
-                            android:id="@+id/A4253_2"
+                            android:id="@+id/A4253b"
                             style="@style/RadioButton"
-                            android:text="@string/A4253_2" />
+                            android:text="@string/A4253b" />
 
                         <RadioButton
-                            android:id="@+id/A4253_3"
+                            android:id="@+id/A425396"
                             style="@style/RadioButton"
                             android:text="@string/ot_someone" />
 
                         <EditText
-                            android:id="@+id/ed_A4253_3"
+                            android:id="@+id/ed_A42533"
                             style="@style/EditText_varchar"
                             android:hint="Please Specify..."
                             android:visibility="gone" />

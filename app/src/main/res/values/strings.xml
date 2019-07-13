@@ -4005,7 +4005,12 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A42523">For pregnancy-related deaths: Mark any provider where the woman had an abortion (spontaneous or induced) or delivered.</string>
     <string name="A42524">For all adults: If the illness lasted 3 months or more, ask about the first three actions taken at the start of the illness and the middle of the illness, and about the last three actions at the end of the illness. Circle ‘S’ (Start), ‘M’ (Middle) or ‘E’ (End) for each action.</string>
     <string name="A42525">1 - If the illness lasted 3 months or more, circle ‘S’ (Start), ‘M’ (Middle) or ‘E’ (End) for each action. \n\n2 - Check one other care or health care provider box for each action row. Check ‘Trained CHW, nurse or midwife’ only if the provider was seen outside a facility. \n\n3 - For pregnancy-related deaths only: Mark any provider where the woman aborted or delivered. \n\n4 - Mark the symptom(s) that were present when each action was taken.</string>
+
     <string name="A4253">A4253: If any formal care given or sought, \nask: \nWho decided to seek care for (NAME)’s illness from the (FIRST FORMAL PROVIDER)</string>
+    <string name="A4253a">Adult deceased him/herself</string>
+    <string name="A4253b">Adult deceased’s spouse/partner</string>
+
+
     <string name="A42541">A4254_1: If never taken to a health provider, \nask: \nDid you or (NAME) have any concerns or problems that kept him/her from going to a health provider during the illness?</string>
     <string name="A42542">A4254_2: If taken to a health provider, \nask: \nDid you or (NAME) have to overcome any concerns or problems for him/her to go the (first) health provider?</string>
     <string name="A4255">A4255: What concerns or problems did you or (NAME) have?</string>
@@ -4184,8 +4189,6 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
 
     <string name="A4251b">No—care not needed, given or sought</string>
 
-    <string name="rbA4253_1">Adult deceased him/herself</string>
-    <string name="rbA4253_2">Adult deceased’s spouse/partner</string>
 
     <string name="cbA4255_1">Did not think adult was sick enough to need health care</string>
     <string name="cbA4255_2">No one available to accompany</string>
