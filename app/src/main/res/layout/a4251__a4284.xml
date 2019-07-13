@@ -297,78 +297,78 @@
                         android:text="@string/A4255" />
 
                     <CheckBox
-                        android:id="@+id/A4255_1"
+                        android:id="@+id/A4255a"
                         style="@style/CheckBox"
-                        android:text="@string/A4255_1" />
+                        android:text="@string/A4255a" />
 
                     <CheckBox
-                        android:id="@+id/A4255_2"
+                        android:id="@+id/A4255b"
                         style="@style/CheckBox"
-                        android:text="@string/A4255_2" />
+                        android:text="@string/A4255b" />
 
                     <CheckBox
-                        android:id="@+id/A4255_3"
+                        android:id="@+id/A4255c"
                         style="@style/CheckBox"
-                        android:text="@string/A4255_3" />
+                        android:text="@string/A4255c" />
 
                     <CheckBox
-                        android:id="@+id/A4255_4"
+                        android:id="@+id/A4255d"
                         style="@style/CheckBox"
                         android:text="Someone else had to Decide (Specify)" />
 
                     <EditText
-                        android:id="@+id/ed_A4255_4"
+                        android:id="@+id/ed_A4255d"
                         style="@style/EditText_varchar"
                         android:hint="Please Specify..."
                         android:visibility="gone" />
 
                     <CheckBox
-                        android:id="@+id/A4255_5"
+                        android:id="@+id/A4255e"
                         style="@style/CheckBox"
-                        android:text="@string/A4255_5" />
+                        android:text="@string/A4255e" />
 
                     <CheckBox
-                        android:id="@+id/A4255_6"
+                        android:id="@+id/A4255f"
                         style="@style/CheckBox"
-                        android:text="@string/A4255_6" />
+                        android:text="@string/A4255f" />
 
                     <CheckBox
-                        android:id="@+id/A4255_7"
+                        android:id="@+id/A4255g"
                         style="@style/CheckBox"
-                        android:text="@string/A4255_7" />
+                        android:text="@string/A4255g" />
 
                     <CheckBox
-                        android:id="@+id/A4255_8"
+                        android:id="@+id/A4255h"
                         style="@style/CheckBox"
-                        android:text="@string/A4255_8" />
+                        android:text="@string/A4255h" />
 
                     <CheckBox
-                        android:id="@+id/A4255_9"
+                        android:id="@+id/A4255i"
                         style="@style/CheckBox"
-                        android:text="@string/A4255_9" />
+                        android:text="@string/A4255i" />
 
                     <CheckBox
-                        android:id="@+id/A4255_10"
+                        android:id="@+id/A4255j"
                         style="@style/CheckBox"
-                        android:text="@string/A4255_10" />
+                        android:text="@string/A4255j" />
 
                     <CheckBox
-                        android:id="@+id/A4255_11"
+                        android:id="@+id/A4255k"
                         style="@style/CheckBox"
-                        android:text="@string/A4255_11" />
+                        android:text="@string/A4255k" />
 
                     <CheckBox
-                        android:id="@+id/A4255_12"
+                        android:id="@+id/A4255l"
                         style="@style/CheckBox"
-                        android:text="@string/A4255_12" />
+                        android:text="@string/A4255l" />
 
                     <CheckBox
-                        android:id="@+id/A4255_13"
+                        android:id="@+id/A425596"
                         style="@style/CheckBox"
                         android:text="@string/ot_other" />
 
                     <EditText
-                        android:id="@+id/ed_A4255_13"
+                        android:id="@+id/ed_A425596"
                         style="@style/EditText_varchar"
                         android:hint="Please Specify..."
                         android:visibility="gone" />
@@ -384,36 +384,35 @@
             <!-- CheckBox A4255 Ends -->
 
             <!-- EditText A4256 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4256"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/cvA4256"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/tv_A4256"
                         style="@style/TextView"
                         android:text="@string/A4256" />
 
                     <TextView
-                        android:id="@+id/tv_A4256_h"
                         style="@style/TextView_Hint"
                         android:text="Read “…to the first…” if took or tried to take to more than one health provider. \nMark days, hours &amp;/or minutes as needed: e.g. 00 day, 02 hours, 10 minutes" />
 
                     <EditText
-                        android:id="@+id/ed_A4256_days"
+                        android:id="@+id/A4256D"
                         style="@style/EditText_number"
                         android:maxLength="2"
                         android:hint="@string/days" />
 
                     <EditText
-                        android:id="@+id/ed_A4256_hours"
+                        android:id="@+id/A4256H"
                         style="@style/EditText_number"
                         android:maxLength="2"
                         android:hint="@string/hours" />
 
                     <EditText
-                        android:id="@+id/ed_A4256_minutes"
+                        android:id="@+id/A4256m"
                         style="@style/EditText_number"
                         android:maxLength="2"
                         android:hint="@string/minutes" />

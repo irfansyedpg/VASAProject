@@ -4013,7 +4013,21 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
 
     <string name="A42541">A4254_1: If never taken to a health provider, \nask: \nDid you or (NAME) have any concerns or problems that kept him/her from going to a health provider during the illness?</string>
     <string name="A42542">A4254_2: If taken to a health provider, \nask: \nDid you or (NAME) have to overcome any concerns or problems for him/her to go the (first) health provider?</string>
+
     <string name="A4255">A4255: What concerns or problems did you or (NAME) have?</string>
+    <string name="A4255a">Did not think adult was sick enough to need health care</string>
+    <string name="A4255b">No one available to accompany</string>
+    <string name="A4255c">Too much time from caregiver’s duties</string>
+    <string name="A4255d">Someone else (specify) had to decide</string>
+    <string name="A4255e">Too far to travel</string>
+    <string name="A4255f">No transportation available</string>
+    <string name="A4255g">Cost (transport, health care, other)</string>
+    <string name="A4255h">Not satisfied with available health care</string>
+    <string name="A4255i">Problem required traditional care</string>
+    <string name="A4255j">Thought s/he was too sick to travel</string>
+    <string name="A4255k">Thought s/he will die no matter what</string>
+    <string name="A4255l">Was late at night (transportation or provider not available)</string>
+
     <string name="A4256">A4256: You mentioned that (NAME) went to the (first) health provider, I mean the (FIRST HEALTH PROVIDER) with (SYMPTOM(S)). How long had (NAME) had (this / these) symptom(s) when it was decided to go to the (FIRST HEALTH PROVIDER)</string>
     <string name="A4274">A4274: Did (NAME) go to (all) the health provider(s) where s/he was referred?</string>
     <string name="A4275">A4275: Did you or (NAME) have any concerns or problems that kept him/her from going to a health provider where s/he was refrered?</string>
@@ -4189,19 +4203,6 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
 
     <string name="A4251b">No—care not needed, given or sought</string>
 
-
-    <string name="cbA4255_1">Did not think adult was sick enough to need health care</string>
-    <string name="cbA4255_2">No one available to accompany</string>
-    <string name="cbA4255_3">Too much time from caregiver’s duties</string>
-    <string name="ed_A4255_4">Someone else (specify) had to decide</string>
-    <string name="cbA4255_5">Too far to travel</string>
-    <string name="cbA4255_6">No transportation available</string>
-    <string name="cbA4255_7">Cost (transport, health care, other)</string>
-    <string name="cbA4255_8">Not satisfied with available health care</string>
-    <string name="cbA4255_9">Problem required traditional care</string>
-    <string name="cbA4255_10">Thought s/he was too sick to travel</string>
-    <string name="cbA4255_11">Thought s/he will die no matter what</string>
-    <string name="cbA4255_12">Was late at night (transportation or provider not available)</string>
 
     <string name="cbA4276_1">Provider didn’t say referral so important</string>
     <string name="cbA4276_2">Thought no more care needed</string>
