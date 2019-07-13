@@ -3801,9 +3801,9 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4257j">Trained CHW, nurse or midwife (outside a health facility)</string>
     <string name="A4257k">Other private medical sector</string>
 
-    <string name="rb_A42581">Yes, reached before died</string>
-    <string name="rb_A42582">No, died on route to this provider / before this provider reached the deceased</string>
-    <string name="rb_A42583">No, could not reach this provider, so returned home or took other action</string>
+    <string name="A4258a">Yes, reached before died</string>
+    <string name="A4258b">No, died on route to this provider / before this provider reached the deceased</string>
+    <string name="A4258c">No, could not reach this provider, so returned home or took other action</string>
 
     <string name="A42581">A4258_1: For health care at a facility, \nask: \nDid NAME reach the FIRST HEALTH PROVIDER before s/he died?</string>
     <string name="A4258Hint">If “No,” discuss with respondent to determine correct response: 2 or 3.</string>
