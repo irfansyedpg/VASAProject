@@ -12,12 +12,7 @@ import android.widget.RadioGroup;
 
 public class Gothrough {
 
-
     public static boolean IamHiden(LinearLayout lv) {
-
-        ///Yes dear should I import Adult Section Layout
-
-        /// Checkbox Celar*************************************
 
         try {
             if (lv.getVisibility() != View.VISIBLE) {
