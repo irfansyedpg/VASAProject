@@ -812,7 +812,7 @@ public class A4157 extends AppCompatActivity implements View.OnClickListener {
             e.printStackTrace();
         }
 
-        Intent c = new Intent(A4157.this, A4206_A4207.class);
+        Intent c = new Intent(A4157.this, A4206.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
 
