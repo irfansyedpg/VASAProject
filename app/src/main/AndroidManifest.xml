@@ -158,9 +158,6 @@
             android:name=".A.A4251_A4284"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4301_A4315"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".A.A4351_A4364"
             android:screenOrientation="portrait" />
         <activity
