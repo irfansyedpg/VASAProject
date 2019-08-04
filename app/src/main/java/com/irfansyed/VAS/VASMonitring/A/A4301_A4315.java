@@ -24,7 +24,7 @@ import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 
-public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
+public class A4301_A4315 extends AppCompatActivity implements View.OnClickListener {
 
     private Pattern pattern;
     private Matcher matcher;
@@ -492,6 +492,12 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
             return;
         }
 
+        try {
+            Assignment_Insertion();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
         pattern = Pattern.compile(DATE_PATTERN);
 
         /*if (!validate(A4306a.getText().toString().trim())) {
@@ -515,8 +521,6 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
             return;
         }*/
 
-        value_assignment();
-        insert_data();
 
         Intent c = new Intent(A4301_A4315.this, A4351_A4364.class);
         c.putExtra("study_id", study_id);
@@ -814,481 +818,134 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
                 : A4310299.isChecked() ? "99"
                 : "-1");
 
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A4304
-        json.put("A4304", A4304a.isChecked() ? "1"
-                : A4304b.isChecked() ? "2"
-                : A430498.isChecked() ? "98"
-                : A430499.isChecked() ? "99"
-                : "-1");
-
-        //A43101
-        if (A43101a.isChecked()) {
-            A43101 = "1";
-        }
-        if (A43101b.isChecked()) {
-            A43101 = "2";
-        }
-        if (A4310198.isChecked()) {
-            A43101 = "9";
-        }
-        if (A4310199.isChecked()) {
-            A43101 = "8";
-        }
-
-        //A43102
-        if (A43102a.isChecked()) {
-            A43102 = "1";
-        }
-        if (A43102b.isChecked()) {
-            A43102 = "2";
-        }
-        if (A4310298.isChecked()) {
-            A43102 = "9";
-        }
-        if (A4310299.isChecked()) {
-            A43102 = "8";
-        }
-
         //A43103
-        if (A43103a.isChecked()) {
-            A43103 = "1";
-        }
-        if (A43103b.isChecked()) {
-            A43103 = "2";
-        }
-        if (A4310398.isChecked()) {
-            A43103 = "9";
-        }
-        if (A4310399.isChecked()) {
-            A43103 = "8";
-        }
+        json.put("A43103", A43103a.isChecked() ? "1"
+                : A43103b.isChecked() ? "2"
+                : A4310398.isChecked() ? "98"
+                : A4310399.isChecked() ? "99"
+                : "-1");
 
         //A43104
-        if (A43104a.isChecked()) {
-            A43104 = "1";
-        }
-        if (A43104b.isChecked()) {
-            A43104 = "2";
-        }
-        if (A4310498.isChecked()) {
-            A43104 = "9";
-        }
-        if (A4310499.isChecked()) {
-            A43104 = "8";
-        }
+        json.put("A43104", A43104a.isChecked() ? "1"
+                : A43104b.isChecked() ? "2"
+                : A4310498.isChecked() ? "98"
+                : A4310499.isChecked() ? "99"
+                : "-1");
 
         //A43105
-        if (A43105a.isChecked()) {
-            A43105 = "1";
-        }
-        if (A43105b.isChecked()) {
-            A43105 = "2";
-        }
-        if (A4310598.isChecked()) {
-            A43105 = "9";
-        }
-        if (A4310599.isChecked()) {
-            A43105 = "8";
-        }
+        json.put("A43105", A43105a.isChecked() ? "1"
+                : A43105b.isChecked() ? "2"
+                : A4310598.isChecked() ? "98"
+                : A4310599.isChecked() ? "99"
+                : "-1");
 
         //A43106
-        if (A43106a.isChecked()) {
-            A43106 = "1";
-        }
-        if (A43106b.isChecked()) {
-            A43106 = "2";
-        }
-        if (A4310698.isChecked()) {
-            A43106 = "9";
-        }
-        if (A4310699.isChecked()) {
-            A43106 = "8";
-        }
+        json.put("A43106", A43106a.isChecked() ? "1"
+                : A43106b.isChecked() ? "2"
+                : A4310698.isChecked() ? "98"
+                : A4310699.isChecked() ? "99"
+                : "-1");
 
         //A43107
-        if (A43107a.isChecked()) {
-            A43107 = "1";
-        }
-        if (A43107b.isChecked()) {
-            A43107 = "2";
-        }
-        if (A4310798.isChecked()) {
-            A43107 = "9";
-        }
-        if (A4310799.isChecked()) {
-            A43107 = "8";
-        }
+        json.put("A43107", A43107a.isChecked() ? "1"
+                : A43107b.isChecked() ? "2"
+                : A4310798.isChecked() ? "98"
+                : A4310799.isChecked() ? "99"
+                : "-1");
 
         //A43108
-        if (A43108a.isChecked()) {
-            A43108 = "1";
-        }
-        if (A43108b.isChecked()) {
-            A43108 = "2";
-        }
-        if (A4310898.isChecked()) {
-            A43108 = "9";
-        }
-        if (A4310899.isChecked()) {
-            A43108 = "8";
-        }
+        json.put("A43108", A43108a.isChecked() ? "1"
+                : A43108b.isChecked() ? "2"
+                : A4310898.isChecked() ? "98"
+                : A4310899.isChecked() ? "99"
+                : "-1");
 
         //A43109
-        if (A43109a.isChecked()) {
-            A43109 = "1";
-        }
-        if (A43109b.isChecked()) {
-            A43109 = "2";
-        }
-        if (A4310998.isChecked()) {
-            A43109 = "9";
-        }
-        if (A4310999.isChecked()) {
-            A43109 = "8";
-        }
+        json.put("A43109", A43109a.isChecked() ? "1"
+                : A43109b.isChecked() ? "2"
+                : A4310998.isChecked() ? "98"
+                : A4310999.isChecked() ? "99"
+                : "-1");
 
         //A431010
-        if (A431010a.isChecked()) {
-            A431010 = "1";
-        }
-        if (A431010b.isChecked()) {
-            A431010 = "2";
-        }
-        if (A43101098.isChecked()) {
-            A431010 = "9";
-        }
-        if (A43101099.isChecked()) {
-            A431010 = "8";
-        }
+        json.put("A431010", A431010a.isChecked() ? "1"
+                : A431010b.isChecked() ? "2"
+                : A43101098.isChecked() ? "98"
+                : A43101099.isChecked() ? "99"
+                : "-1");
 
         //A431011
-        if (A431011a.isChecked()) {
-            A431011 = "1";
-        }
-        if (A431011b.isChecked()) {
-            A431011 = "2";
-        }
-        if (A43101198.isChecked()) {
-            A431011 = "9";
-        }
-        if (A43101199.isChecked()) {
-            A431011 = "8";
-        }
+        json.put("A431011", A431011a.isChecked() ? "1"
+                : A431011b.isChecked() ? "2"
+                : A43101198.isChecked() ? "98"
+                : A43101199.isChecked() ? "99"
+                : "-1");
 
         //A43111
-        if (A43111a.isChecked()) {
-            A43111 = "1";
-        }
-        if (A43111b.isChecked()) {
-            A43111 = "2";
-        }
-        if (A4311198.isChecked()) {
-            A43111 = "9";
-        }
-        if (A4311199.isChecked()) {
-            A43111 = "8";
-        }
+        json.put("A43111", A43111a.isChecked() ? "1"
+                : A43111b.isChecked() ? "2"
+                : A4311198.isChecked() ? "98"
+                : A4311199.isChecked() ? "99"
+                : "-1");
 
         //A43112
-        if (A43112a.isChecked()) {
-            A43112 = "1";
-        }
-        if (A43112b.isChecked()) {
-            A43112 = "2";
-        }
-        if (A4311298.isChecked()) {
-            A43112 = "9";
-        }
-        if (A4311299.isChecked()) {
-            A43112 = "8";
-        }
+        json.put("A43112", A43112a.isChecked() ? "1"
+                : A43112b.isChecked() ? "2"
+                : A4311298.isChecked() ? "98"
+                : A4311299.isChecked() ? "99"
+                : "-1");
 
         //A43113
-        if (A43113a.isChecked()) {
-            A43113 = "1";
-        }
-        if (A43113b.isChecked()) {
-            A43113 = "2";
-        }
-        if (A4311398.isChecked()) {
-            A43113 = "9";
-        }
-        if (A4311399.isChecked()) {
-            A43113 = "8";
-        }
+        json.put("A43113", A43113a.isChecked() ? "1"
+                : A43113b.isChecked() ? "2"
+                : A4311398.isChecked() ? "98"
+                : A4311399.isChecked() ? "99"
+                : "-1");
 
         //A43114
-        if (A43114a.isChecked()) {
-            A43114 = "1";
-        }
-        if (A43114b.isChecked()) {
-            A43114 = "2";
-        }
-        if (A4311498.isChecked()) {
-            A43114 = "9";
-        }
-        if (A4311499.isChecked()) {
-            A43114 = "8";
-        }
+        json.put("A43114", A43114a.isChecked() ? "1"
+                : A43114b.isChecked() ? "2"
+                : A4311498.isChecked() ? "98"
+                : A4311499.isChecked() ? "99"
+                : "-1");
 
         //A43115
-        if (A43115a.isChecked()) {
-            A43115 = "1";
-        }
-        if (A43115b.isChecked()) {
-            A43115 = "2";
-        }
-        if (A4311598.isChecked()) {
-            A43115 = "9";
-        }
-        if (A4311599.isChecked()) {
-            A43115 = "8";
-        }
+        json.put("A43115", A43115a.isChecked() ? "1"
+                : A43115b.isChecked() ? "2"
+                : A4311598.isChecked() ? "98"
+                : A4311599.isChecked() ? "99"
+                : "-1");
 
         //A4312
-        if (A4312a.isChecked()) {
-            A4312 = "1";
-        }
-        if (A4312b.isChecked()) {
-            A4312 = "2";
-        }
-        if (A431298.isChecked()) {
-            A4312 = "9";
-        }
-        if (A431299.isChecked()) {
-            A4312 = "8";
-        }
+        json.put("A4312", A4312a.isChecked() ? "1"
+                : A4312b.isChecked() ? "2"
+                : A431298.isChecked() ? "98"
+                : A431299.isChecked() ? "99"
+                : "-1");
 
         //A4313
-        if (A4313a.isChecked()) {
-            A4313 = "1";
-        }
-        if (A4313b.isChecked()) {
-            A4313 = "2";
-        }
-        if (A431398.isChecked()) {
-            A4313 = "9";
-        }
-        if (A431399.isChecked()) {
-            A4313 = "8";
-        }
+        json.put("A4313", A4313a.isChecked() ? "1"
+                : A4313b.isChecked() ? "2"
+                : A431398.isChecked() ? "98"
+                : A431399.isChecked() ? "99"
+                : "-1");
 
         //A4314
-        if (A4314a.isChecked()) {
-            A4314 = "1";
-        }
-        if (A4314b.isChecked()) {
-            A4314 = "2";
-        }
-        if (A431498.isChecked()) {
-            A4314 = "9";
-        }
-        if (A431499.isChecked()) {
-            A4314 = "8";
-        }
-
+        json.put("A4314", A4314a.isChecked() ? "1"
+                : A4314b.isChecked() ? "2"
+                : A431498.isChecked() ? "98"
+                : A431499.isChecked() ? "99"
+                : "-1");
+        
         //A4315
-        if (A4315.getText().toString().trim().length() > 0) {
-            A4315 = A4315.getText().toString().trim();
-        }
+        json.put("A4315", A4315.getText().toString().length() > 0 ? A4315.getText().toString().trim() : "-1");
 
+        LocalDataManager ldm = new LocalDataManager(this);
 
-    }
+        LocalDataManager.database.execSQL(String.valueOf(json));
 
-    void insert_data() {
+        Toast.makeText(this, "Validation Successful! - Value Assignment & Data Insertion...", Toast.LENGTH_SHORT).show();
 
-        String query = "insert into A4301_A4315("
-
-                + Global.A.A4301_A4315.study_id + ","
-                + Global.A.A4301_A4315.A4301 + ","
-                + Global.A.A4301_A4315.A43021 + ","
-                + Global.A.A4301_A4315.A43022 + ","
-                + Global.A.A4301_A4315.A43023 + ","
-                + Global.A.A4301_A4315.A43024 + ","
-                + Global.A.A4301_A4315.A43025 + ","
-                + Global.A.A4301_A4315.A43026 + ","
-                + Global.A.A4301_A4315.A43027 + ","
-                + Global.A.A4301_A4315.A4303 + ","
-                + Global.A.A4301_A4315.A4304 + ","
-                + Global.A.A4301_A4315.A4305 + ","
-                + Global.A.A4301_A4315.A4306acheck + ","
-                + Global.A.A4301_A4315.A4306a + ","
-                + Global.A.A4301_A4315.A4306bcheck + ","
-                + Global.A.A4301_A4315.A4306b + ","
-                + Global.A.A4301_A4315.A4307 + ","
-                + Global.A.A4301_A4315.A4308 + ","
-                + Global.A.A4301_A4315.A4309 + ","
-                + Global.A.A4301_A4315.A43101 + ","
-                + Global.A.A4301_A4315.A43102 + ","
-                + Global.A.A4301_A4315.A43103 + ","
-                + Global.A.A4301_A4315.A43104 + ","
-                + Global.A.A4301_A4315.A43105 + ","
-                + Global.A.A4301_A4315.A43106 + ","
-                + Global.A.A4301_A4315.A43107 + ","
-                + Global.A.A4301_A4315.A43108 + ","
-                + Global.A.A4301_A4315.A43109 + ","
-                + Global.A.A4301_A4315.A431010 + ","
-                + Global.A.A4301_A4315.A431011 + ","
-                + Global.A.A4301_A4315.A43111 + ","
-                + Global.A.A4301_A4315.A43112 + ","
-                + Global.A.A4301_A4315.A43113 + ","
-                + Global.A.A4301_A4315.A43114 + ","
-                + Global.A.A4301_A4315.A43115 + ","
-                + Global.A.A4301_A4315.A4312 + ","
-                + Global.A.A4301_A4315.A4313 + ","
-                + Global.A.A4301_A4315.A4314 + ","
-                + Global.A.A4301_A4315.A4315 + ","
-                + Global.A.A4301_A4315.STATUS + ")" +
-
-                " values ('" +
-
-                study_id + "','" +
-                A4301 + "','" +
-                A43021 + "','" +
-                A43022 + "','" +
-                A43023 + "','" +
-                A43024 + "','" +
-                A43025 + "','" +
-                A43026 + "','" +
-                A43027 + "','" +
-                A4303 + "','" +
-                A4304 + "','" +
-                A4305 + "','" +
-                A4306acheck + "','" +
-                A4306a + "','" +
-                A4306bcheck + "','" +
-                A4306b + "','" +
-                A4307 + "','" +
-                A4308 + "','" +
-                A4309 + "','" +
-                A43101 + "','" +
-                A43102 + "','" +
-                A43103 + "','" +
-                A43104 + "','" +
-                A43105 + "','" +
-                A43106 + "','" +
-                A43107 + "','" +
-                A43108 + "','" +
-                A43109 + "','" +
-                A431010 + "','" +
-                A431011 + "','" +
-                A43111 + "','" +
-                A43112 + "','" +
-                A43113 + "','" +
-                A43114 + "','" +
-                A43115 + "','" +
-                A4312 + "','" +
-                A4313 + "','" +
-                A4314 + "','" +
-                A4315 + "','" +
-                STATUS + "')";
-
-        query = String.format(query);
-
-        LocalDataManager Lm = new LocalDataManager(this);
-
-        LocalDataManager.database.execSQL(query);
-
-        Toast.makeText(this, "12th TABLE SAVED Successfully", Toast.LENGTH_SHORT).show();
     }
 
     boolean validateField() {

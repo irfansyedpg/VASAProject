@@ -1631,7 +1631,7 @@ public class A4157 extends AppCompatActivity implements View.OnClickListener {
         //json.put("mp06b002", mp06b002.getText().toString());
 
 
-        LocalDataManager Lm = new LocalDataManager(this);
+        LocalDataManager ldm = new LocalDataManager(this);
 
         LocalDataManager.database.execSQL(String.valueOf(json));
 
