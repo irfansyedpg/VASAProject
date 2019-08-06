@@ -18,17 +18,43 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".A.A4351"></activity>
-        <activity android:name=".A.A4301" />
-        <activity android:name=".A.A4206" />
-        <activity android:name=".A.A4157" />
-        <activity android:name=".A.A4144" />
-        <activity android:name=".A.A4126" />
-        <activity android:name=".A.A4109" />
-        <activity android:name=".A.A4095" />
-        <activity android:name=".A.A4081" />
-        <activity android:name=".A.A4067" />
-        <activity android:name=".A.A4051" />
-        <activity android:name=".A.A4001" />
+        <activity
+            android:name=".A.A4301"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".A.A4206"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".A.A4157"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".A.A4144"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".A.A4126"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".A.A4109"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".A.A4095"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".A.A4081"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".A.A4067"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".A.A4051"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".A.A4001"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Core.HomeActivity"
             android:label="@string/title_home"
