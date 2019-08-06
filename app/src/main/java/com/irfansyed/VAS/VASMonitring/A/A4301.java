@@ -72,6 +72,7 @@ public class A4301 extends AppCompatActivity {
             cvA4313,
             cvA4314,
             cvA4315;
+
     RadioGroup
             A4301,
             A43021,
@@ -105,6 +106,7 @@ public class A4301 extends AppCompatActivity {
             A4312,
             A4313,
             A4314;
+
     RadioButton
             A4301a,
             A4301b,
