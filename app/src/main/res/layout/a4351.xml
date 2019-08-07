@@ -43,13 +43,16 @@
         android:scrollbarSize="10dip">
 
 
-        <LinearLayout style="@style/Q_Linerlayout_v">
+        <LinearLayout
+            android:id="@+id/llA4351"
+            style="@style/Q_Linerlayout_v">
 
             <!-- EditText study_id Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvstudy_id"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_study_id"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -70,36 +73,38 @@
             <!-- EditText study_id Ends -->
 
             <!-- Radio Buttons A4351 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4351"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4351"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4351"
                         style="@style/TextView"
                         android:text="@string/A4351" />
 
-                    <RadioGroup style="@style/RadioGroup">
+                    <RadioGroup
+                        android:id="@+id/A4351"
+                        style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4351_1"
+                            android:id="@+id/A4351a"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4351_2"
+                            android:id="@+id/A4351b"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4351_DK"
+                            android:id="@+id/A435198"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4351_RA"
+                            android:id="@+id/A435199"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -111,26 +116,28 @@
             <!-- Radio Buttons A4351 Ends -->
 
             <!-- Radio Buttons A4352 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4352"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4352"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4352"
                         style="@style/TextView"
                         android:text="@string/A4352" />
 
-                    <RadioGroup style="@style/RadioGroup">
+                    <RadioGroup
+                        android:id="@+id/A4352"
+                        style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4352_1"
+                            android:id="@+id/A4352a"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4352_2"
+                            android:id="@+id/A4352b"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
@@ -142,19 +149,19 @@
             <!-- Radio Buttons A4352 Ends -->
 
             <!-- EditText A4353 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4353"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4353"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4353"
                         style="@style/TextView"
                         android:text="@string/A4353" />
 
                     <EditText
-                        android:id="@+id/ed_A4353"
+                        android:id="@+id/A4353"
                         style="@style/EditText_varchar"
                         android:hint="Cause of Death" />
 
@@ -164,19 +171,19 @@
             <!-- EditText A4353 Ends -->
 
             <!-- EditText A4354 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4354"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4354"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4354"
                         style="@style/TextView"
                         android:text="@string/A4354" />
 
                     <EditText
-                        android:id="@+id/ed_A4354"
+                        android:id="@+id/A4354"
                         style="@style/EditText_number"
                         android:hint="Duration" />
 
@@ -186,19 +193,19 @@
             <!-- EditText A4354 Ends -->
 
             <!-- EditText A4355 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4355"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4355"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/tv_A4355"
                         style="@style/TextView"
                         android:text="@string/A4355" />
 
                     <EditText
-                        android:id="@+id/ed_A4355"
+                        android:id="@+id/A4355"
                         style="@style/EditText_varchar"
                         android:hint="Cause of Death" />
 
@@ -208,19 +215,19 @@
             <!-- EditText A4355 Ends -->
 
             <!-- EditText A4356 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4356"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4356"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4356"
                         style="@style/TextView"
                         android:text="@string/A4356" />
 
                     <EditText
-                        android:id="@+id/ed_A4356"
+                        android:id="@+id/A4356"
                         style="@style/EditText_number"
                         android:hint="Duration" />
 
@@ -230,19 +237,19 @@
             <!-- EditText A4356 Ends -->
 
             <!-- EditText A4357 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4357"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4357"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4357"
                         style="@style/TextView"
                         android:text="@string/A4357" />
 
                     <EditText
-                        android:id="@+id/ed_A4357"
+                        android:id="@+id/A4357"
                         style="@style/EditText_varchar"
                         android:hint="Cause of Death" />
 
@@ -252,19 +259,19 @@
             <!-- EditText A4357 Ends -->
 
             <!-- EditText A4358 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4358"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4358"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4358"
                         style="@style/TextView"
                         android:text="@string/A4358" />
 
                     <EditText
-                        android:id="@+id/ed_A4358"
+                        android:id="@+id/A4358"
                         style="@style/EditText_number"
                         android:hint="Duration" />
 
@@ -274,41 +281,43 @@
             <!-- EditText A4358 Ends -->
 
             <!-- Radio Buttons A4363 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4363"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4363"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4363"
                         style="@style/TextView"
                         android:text="@string/A4363" />
 
-                    <RadioGroup style="@style/RadioGroup">
+                    <RadioGroup
+                        android:id="@+id/A4363"
+                        style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/rb_A4363_1"
+                            android:id="@+id/A4363a"
                             style="@style/RadioButton"
-                            android:text="@string/rb_A4363_1" />
+                            android:text="@string/A4363a" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4363_2"
+                            android:id="@+id/A4363b"
                             style="@style/RadioButton"
-                            android:text="@string/rb_A4363_2" />
+                            android:text="@string/A4363b" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4363_3"
+                            android:id="@+id/A4363c"
                             style="@style/RadioButton"
-                            android:text="@string/rb_A4363_3" />
+                            android:text="@string/A4363c" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4363_DK"
+                            android:id="@+id/A436398"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4363_RA"
+                            android:id="@+id/A436399"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -320,19 +329,19 @@
             <!-- Radio Buttons A4363 Ends -->
 
             <!-- EditText A4364 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvA4364"
+                style="@style/Q_CardView">
 
                 <LinearLayout
-                    android:id="@+id/ll_A4364"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4364"
                         style="@style/TextView"
                         android:text="@string/A4364" />
 
                     <EditText
-                        android:id="@+id/ed_A4364"
+                        android:id="@+id/A4364"
                         style="@style/EditText_varchar"
                         android:hint="Enter here" />
 

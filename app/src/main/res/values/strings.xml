@@ -4091,7 +4091,6 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4356">A4356: Duration (1b)</string>
     <string name="A4357">A4357: Record the second underlying cause of death from the death certificate</string>
     <string name="A4358">A4358: Duration (1c)</string>
-    <string name="A4363">A4363: Do you have a death registration certificate?</string>
     <string name="A4364">A4364: Record the death registration number</string>
     <string name="A4401">A4401: Is this the house (where we are now) where (NAME) stayed during the his/her fatal illness?</string>
     <string name="A4402">A4402: Where did (NAME) stay at that time?</string>
@@ -4209,44 +4208,45 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4251b">No—care not needed, given or sought</string>
 
 
-    <string name="cbA4276_1">Provider didn’t say referral so important</string>
-    <string name="cbA4276_2">Thought no more care needed</string>
-    <string name="cbA4276_3">No one available to accompany</string>
-    <string name="cbA4276_4">Too much time from caregiver’s duties</string>
-    <string name="cbA4276_5">Someone else (specify) decided</string>
-    <string name="cbA4276_6">Too far to travel</string>
-    <string name="cbA4276_7">No transportation available</string>
-    <string name="cbA4276_8">Cost (transport, health care, other)</string>
-    <string name="cbA4276_9">Not satisfied with available care</string>
-    <string name="cbA4276_10">Went to a different provider/facility</string>
-    <string name="cbA4276_11">Problem required traditional care</string>
-    <string name="cbA4276_12">Thought s/he was too sick to travel</string>
-    <string name="cbA4276_13">Thought s/he will die despite care</string>
-    <string name="cbA4276_14">Was late at night</string>
-    <string name="cbA4276_15">The adult died before going</string>
+    <string name="A4276a">Provider didn’t say referral so important</string>
+    <string name="A4276b">Thought no more care needed</string>
+    <string name="A4276c">No one available to accompany</string>
+    <string name="A4276d">Too much time from caregiver’s duties</string>
+    <string name="A4276e">Someone else (specify) decided</string>
+    <string name="A4276f">Too far to travel</string>
+    <string name="A4276g">No transportation available</string>
+    <string name="A4276h">Cost (transport, health care, other)</string>
+    <string name="A4276i">Not satisfied with available care</string>
+    <string name="A4276j">Went to a different provider/facility</string>
+    <string name="A4276k">Problem required traditional care</string>
+    <string name="A4276l">Thought s/he was too sick to travel</string>
+    <string name="A4276m">Thought s/he will die despite care</string>
+    <string name="A4276n">Was late at night</string>
+    <string name="A4276o">The adult died before going</string>
 
-    <string name="cbA4278_1">Had available</string>
-    <string name="cbA4278_2">Borrowed</string>
-    <string name="cbA4278_3">Old Assets</string>
-    <string name="cbA4278_4">Help from kin/relatives</string>
-    <string name="cbA4278_5">Community fund</string>
-    <string name="cbA4278_6">Govt. scheme</string>
+    <string name="A4278a">Had available</string>
+    <string name="A4278b">Borrowed</string>
+    <string name="A4278c">Old Assets</string>
+    <string name="A4278d">Help from kin/relatives</string>
+    <string name="A4278e">Community fund</string>
+    <string name="A4278f">Govt. scheme</string>
 
-    <string name="cbA4279_1">Walk</string>
-    <string name="cbA4279_2">Bicycle / Animal Cart / Boat</string>
-    <string name="cbA4279_3">Bus</string>
-    <string name="cbA4279_4">Taxi/Auto/Tractor/motorcycle</string>
-    <string name="cbA4279_5">Ambulance</string>
-    <string name="cbA4279_7">Could not arrange transport</string>
+    <string name="A4279a">Walk</string>
+    <string name="A4279b">Bicycle / Animal Cart / Boat</string>
+    <string name="A4279c">Bus</string>
+    <string name="A4279d">Taxi/Auto/Tractor/motorcycle</string>
+    <string name="A4279e">Ambulance</string>
+    <string name="A4279f">Could not arrange transport</string>
 
-    <string name="rbA4363_1">Yes, card seen</string>
-    <string name="rbA4363_2">Yes, card not seen</string>
-    <string name="rbA4363_3">No registration</string>
+    <string name="A4363">A4363: Do you have a death registration certificate?</string>
+    <string name="A4363a">Yes, card seen</string>
+    <string name="A4363b">Yes, card not seen</string>
+    <string name="A4363c">No registration</string>
 
-    <string name="rbA4402_1">Her/His own home at that time (different from the current location)</string>
-    <string name="rbA4402_2">Her/His in-law’s home</string>
-    <string name="rbA4402_3">Her/His parent’s home</string>
-    <string name="rbA4402_4">Her/His brother’s home</string>
+    <string name="A4402a">Her/His own home at that time (different from the current location)</string>
+    <string name="A4402b">Her/His in-law’s home</string>
+    <string name="A4402c">Her/His parent’s home</string>
+    <string name="A4402d">Her/His brother’s home</string>
 
     <string name="rbA4403_L1">Level 1</string>
     <string name="rbA4403_L2">Level 2</string>
