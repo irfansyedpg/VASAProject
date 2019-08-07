@@ -192,9 +192,6 @@
             android:name=".A.A4251_A4284"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4351_A4364"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".A.A4401_A4473"
             android:screenOrientation="portrait" />
         <activity android:name=".GS.InterviewEnd" />

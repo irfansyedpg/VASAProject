@@ -14,6 +14,9 @@ import android.widget.Toast;
 
 import com.irfansyed.VAS.VASMonitring.R;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -231,33 +234,6 @@ public class A4351 extends AppCompatActivity implements View.OnClickListener {
 
     void value_assignment() {
 
-        if (ed_study_id.getText().toString().length() > 0) {
-
-            study_id = ed_study_id.getText().toString().trim();
-        }
-
-        //A4351
-        if (A4351a.isChecked()) {
-            A4351 = "1";
-        }
-        if (A4351b.isChecked()) {
-            A4351 = "2";
-        }
-        if (A435198.isChecked()) {
-            A4351 = "9";
-        }
-        if (A435199.isChecked()) {
-            A4351 = "8";
-        }
-
-        //A4352
-        if (A4352a.isChecked()) {
-            A4352 = "1";
-        }
-        if (A4352b.isChecked()) {
-            A4352 = "2";
-        }
-
         //A4353
         if (A4353.getText().toString().trim().length() > 0) {
             A4353 = A4353.getText().toString().trim();
@@ -350,6 +326,58 @@ public class A4351 extends AppCompatActivity implements View.OnClickListener {
         LocalDataManager.database.execSQL(query);
 
         Toast.makeText(this, "13th TABLE SAVED Successfully", Toast.LENGTH_SHORT).show();
+    }
+
+    void Assignment_Insertion() throws JSONException {
+
+        Toast.makeText(this, "Value Assignment & Data Insertion for  This Section", Toast.LENGTH_SHORT).show();
+
+        JSONObject json = new JSONObject();
+
+        //study_id
+        json.put("study_id", ed_study_id.getText().toString().length() > 0 ? ed_study_id.getText().toString().trim() : "-1");
+
+        //A4351
+        json.put("A4351", A4351a.isChecked() ? "1"
+                : A4351b.isChecked() ? "2"
+                : A435198.isChecked() ? "98"
+                : A435199.isChecked() ? "99"
+                : "-1");
+
+        //A4352
+        json.put("A4352", A4352a.isChecked() ? "1"
+                : A4352b.isChecked() ? "2"
+                : "-1");
+
+        //A4353
+        json.put("A4353", A4353.getText().toString().length() > 0 ? A4353.getText().toString().trim() : "-1");
+
+        //A4354
+        json.put("A4354", A4354.getText().toString().length() > 0 ? A4354.getText().toString().trim() : "-1");
+
+        //A4355
+        json.put("A4355", A4355.getText().toString().length() > 0 ? A4355.getText().toString().trim() : "-1");
+
+        //A4356
+        json.put("A4356", A4356.getText().toString().length() > 0 ? A4356.getText().toString().trim() : "-1");
+
+        //A4357
+        json.put("A4357", A4357.getText().toString().length() > 0 ? A4357.getText().toString().trim() : "-1");
+
+        //A4358
+        json.put("A4358", A4358.getText().toString().length() > 0 ? A4358.getText().toString().trim() : "-1");
+
+
+        //json.put("mp06b001id1", mp06b001id1.getSelectedItem().toString());
+        //json.put("mp06b002", mp06b002.getText().toString());
+
+
+        LocalDataManager ldm = new LocalDataManager(this);
+
+        LocalDataManager.database.execSQL(String.valueOf(json));
+
+        Toast.makeText(this, "Validation Successful! - Value Assignment & Data Insertion...", Toast.LENGTH_SHORT).show();
+
     }
 
     boolean validateField() {
