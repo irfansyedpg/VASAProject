@@ -36,239 +36,239 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
             btn_imgCapture;
 
     LinearLayout
-            ll_study_id,
-            ll_A4401,
-            ll_A4402,
-            ll_A4403,
-            ll_A4404,
-            ll_A4405,
-            ll_51_52_53,
-            ll_A4451_1,
-            ll_A4451_2,
-            ll_A4451_3,
-            ll_A4451_4,
-            ll_A4451_5,
-            ll_A4451_6,
-            ll_A4451_7,
-            ll_A4451_8,
-            ll_A4451_9,
-            ll_A4451_10,
-            ll_A4451_11,
-            ll_A4451_12,
-            ll_A4451_13,
-            ll_A4452_1,
-            ll_A4452_2,
-            ll_A4452_3,
-            ll_A4452_4,
-            ll_A4452_5,
-            ll_A4452_6,
-            ll_A4452_7,
-            ll_A4452_8,
-            ll_A4452_9,
-            ll_A4453_1,
-            ll_A4453_2,
-            ll_A4453_3,
-            ll_A4453_4,
-            ll_A4453_5,
-            ll_A4453_6,
-            ll_A4453_7,
-            ll_A4453_8,
-            ll_A4453_9,
-            ll_A4453_10,
-            ll_A4453_11,
-            ll_A4453_12,
-            ll_A4454,
-            ll_A4455,
-            ll_A4456,
-            ll_A4457,
-            ll_A4471,
-            ll_A4472,
-            ll_A4473;
+            cvstudy_id,
+            cvA4401,
+            cvA4402,
+            cvA4403,
+            cvA4404,
+            cvA4405,
+            cv51_52_53,
+            cvA44511,
+            cvA44512,
+            cvA44513,
+            cvA44514,
+            cvA44515,
+            cvA44516,
+            cvA44517,
+            cvA44518,
+            cvA44519,
+            cvA445110,
+            cvA445111,
+            cvA445112,
+            cvA445113,
+            cvA44521,
+            cvA44522,
+            cvA44523,
+            cvA44524,
+            cvA44525,
+            cvA44526,
+            cvA44527,
+            cvA44528,
+            cvA44529,
+            cvA44531,
+            cvA44532,
+            cvA44533,
+            cvA44534,
+            cvA44535,
+            cvA44536,
+            cvA44537,
+            cvA44538,
+            cvA44539,
+            cvA445310,
+            cvA445311,
+            cvA445312,
+            cvA4454,
+            cvA4455,
+            cvA4456,
+            cvA4457,
+            cvA4471,
+            cvA4472,
+            cvA4473;
 
     RadioButton
-            rb_A4401_1,
-            rb_A4401_2,
-            rb_A4401_DK,
-            rb_A4402_1,
-            rb_A4402_2,
-            rb_A4402_3,
-            rb_A4402_4,
-            rb_A4402_5,
-            rb_A4402_DK,
-            rb_A4451_1_1,
-            rb_A4451_1_2,
-            rb_A4451_1_DK,
-            rb_A4451_2_1,
-            rb_A4451_2_2,
-            rb_A4451_2_DK,
-            rb_A4451_3_1,
-            rb_A4451_3_2,
-            rb_A4451_3_DK,
-            rb_A4451_4_1,
-            rb_A4451_4_2,
-            rb_A4451_4_DK,
-            rb_A4451_5_1,
-            rb_A4451_5_2,
-            rb_A4451_5_DK,
-            rb_A4451_6_1,
-            rb_A4451_6_2,
-            rb_A4451_6_DK,
-            rb_A4451_7_1,
-            rb_A4451_7_2,
-            rb_A4451_7_DK,
-            rb_A4451_8_1,
-            rb_A4451_8_2,
-            rb_A4451_8_DK,
-            rb_A4451_9_1,
-            rb_A4451_9_2,
-            rb_A4451_9_DK,
-            rb_A4451_10_1,
-            rb_A4451_10_2,
-            rb_A4451_10_DK,
-            rb_A4451_11_1,
-            rb_A4451_11_2,
-            rb_A4451_11_DK,
+            A4401_1,
+            A4401_2,
+            A440198,
+            A4402_1,
+            A4402_2,
+            A4402_3,
+            A4402_4,
+            A4402_5,
+            A440298,
+            A44511_1,
+            A44511_2,
+            A4451198,
+            A44512_1,
+            A44512_2,
+            A4451298,
+            A44513_1,
+            A44513_2,
+            A4451398,
+            A44514_1,
+            A44514_2,
+            A4451498,
+            A44515_1,
+            A44515_2,
+            A4451598,
+            A44516_1,
+            A44516_2,
+            A4451698,
+            A44517_1,
+            A44517_2,
+            A4451798,
+            A44518_1,
+            A44518_2,
+            A4451898,
+            A44519_1,
+            A44519_2,
+            A4451998,
+            A445110_1,
+            A445110_2,
+            A44511098,
+            A445111_1,
+            A445111_2,
+            A44511198,
 
-    rb_A4451_12_1,
-            rb_A4451_12_2,
-            rb_A4451_12_DK,
+    A445112_1,
+            A445112_2,
+            A44511298,
 
-    rb_A4451_13_1,
-            rb_A4451_13_2,
-            rb_A4451_13_DK,
+    A445113_1,
+            A445113_2,
+            A44511398,
 
-    rb_A4452_1_1,
-            rb_A4452_1_2,
-            rb_A4452_1_DK,
+    A44521_1,
+            A44521_2,
+            A4452198,
 
-    rb_A4452_2_1,
-            rb_A4452_2_2,
-            rb_A4452_2_DK,
+    A44522_1,
+            A44522_2,
+            A4452298,
 
-    rb_A4452_3_1,
-            rb_A4452_3_2,
-            rb_A4452_3_DK,
+    A44523_1,
+            A44523_2,
+            A4452398,
 
-    rb_A4452_4_1,
-            rb_A4452_4_2,
-            rb_A4452_4_DK,
+    A44524_1,
+            A44524_2,
+            A4452498,
 
-    rb_A4452_5_1,
-            rb_A4452_5_2,
-            rb_A4452_5_DK,
+    A44525_1,
+            A44525_2,
+            A4452598,
 
-    rb_A4452_6_1,
-            rb_A4452_6_2,
-            rb_A4452_6_DK,
+    A44526_1,
+            A44526_2,
+            A4452698,
 
-    rb_A4452_7_1,
-            rb_A4452_7_2,
-            rb_A4452_7_DK,
+    A44527_1,
+            A44527_2,
+            A4452798,
 
-    rb_A4452_8_1,
-            rb_A4452_8_2,
-            rb_A4452_8_DK,
+    A44528_1,
+            A44528_2,
+            A4452898,
 
-    rb_A4452_9_1,
-            rb_A4452_9_2,
-            rb_A4452_9_DK,
+    A44529_1,
+            A44529_2,
+            A4452998,
 
-    rb_A4453_1_1,
-            rb_A4453_1_2,
-            rb_A4453_1_DK,
+    A44531_1,
+            A44531_2,
+            A4453198,
 
-    rb_A4453_2_1,
-            rb_A4453_2_2,
-            rb_A4453_2_DK,
+    A44532_1,
+            A44532_2,
+            A4453298,
 
-    rb_A4453_3_1,
-            rb_A4453_3_2,
-            rb_A4453_3_DK,
+    A44533_1,
+            A44533_2,
+            A4453398,
 
-    rb_A4453_4_1,
-            rb_A4453_4_2,
-            rb_A4453_4_DK,
+    A44534_1,
+            A44534_2,
+            A4453498,
 
-    rb_A4453_5_1,
-            rb_A4453_5_2,
-            rb_A4453_5_DK,
+    A44535_1,
+            A44535_2,
+            A4453598,
 
-    rb_A4453_6_1,
-            rb_A4453_6_2,
-            rb_A4453_6_DK,
+    A44536_1,
+            A44536_2,
+            A4453698,
 
-    rb_A4453_7_1,
-            rb_A4453_7_2,
-            rb_A4453_7_DK,
+    A44537_1,
+            A44537_2,
+            A4453798,
 
-    rb_A4453_8_1,
-            rb_A4453_8_2,
-            rb_A4453_8_DK,
+    A44538_1,
+            A44538_2,
+            A4453898,
 
-    rb_A4453_9_1,
-            rb_A4453_9_2,
-            rb_A4453_9_DK,
+    A44539_1,
+            A44539_2,
+            A4453998,
 
-    rb_A4453_10_1,
-            rb_A4453_10_2,
-            rb_A4453_10_DK,
+    A445310_1,
+            A445310_2,
+            A44531098,
 
-    rb_A4453_11_1,
-            rb_A4453_11_2,
-            rb_A4453_11_DK,
+    A445311_1,
+            A445311_2,
+            A44531198,
 
-    rb_A4453_12_1,
-            rb_A4453_12_2,
-            rb_A4453_12_DK,
+    A445312_1,
+            A445312_2,
+            A44531298,
 
-    rb_A4454_1,
-            rb_A4454_2,
-            rb_A4454_DK,
-            rb_A4454_RA,
+    A4454_1,
+            A4454_2,
+            A445498,
+            A445499,
 
-    rb_A4455_1,
-            rb_A4455_2,
-            rb_A4455_DK,
-            rb_A4455_RA,
+    A4455_1,
+            A4455_2,
+            A445598,
+            A445599,
 
-    rb_A4456_1,
-            rb_A4456_2,
-            rb_A4456_DK,
-            rb_A4456_RA,
+    A4456_1,
+            A4456_2,
+            A445698,
+            A445699,
 
-    rb_A4457_1,
-            rb_A4457_2,
-            rb_A4457_DK,
-            rb_A4457_RA;
+    A4457_1,
+            A4457_2,
+            A445798,
+            A445799;
 
     EditText
-            ed_study_id,
-            ed_A4402_5,
-            ed_A4403_province,
-            ed_A4403_district,
-            ed_A4404_years,
-            ed_A4405_hours,
-            ed_A4405_minutes,
-            ed_A4451_13,
-            ed_A4452_9,
-            ed_A4453_12,
-            ed_A4471,
-            ed_A4473;
+            study_id,
+            A4402_5,
+            A4403_province,
+            A4403_district,
+            A4404_years,
+            A4405_hours,
+            A4405_minutes,
+            A445113,
+            A44529,
+            A445312,
+            A4471,
+            A4473;
 
     CheckBox
-            cb_A4472_1,
-            cb_A4472_2,
-            cb_A4472_3,
-            cb_A4472_4,
-            cb_A4472_5,
-            cb_A4472_6,
-            cb_A4472_7,
-            cb_A4472_8,
-            cb_A4472_9,
-            cb_A4472_10,
-            cb_A4472_11,
-            cb_A4472_12,
-            cb_A4472_DK;
+            A4472_1,
+            A4472_2,
+            A4472_3,
+            A4472_4,
+            A4472_5,
+            A4472_6,
+            A4472_7,
+            A4472_8,
+            A4472_9,
+            A4472_10,
+            A4472_11,
+            A4472_12,
+            A447298;
 
     String
             study_id,
@@ -281,46 +281,46 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
             A4404_years,
             A4405_hours,
             A4405_minutes,
-            A4451_1,
-            A4451_2,
-            A4451_3,
-            A4451_4,
-            A4451_5,
-            A4451_6,
-            A4451_7,
-            A4451_8,
-            A4451_9,
-            A4451_10,
-            A4451_11,
-            A4451_12,
-            A4451_13,
-            A4451_13_OT,
-            A4451_code,
-            A4452_1,
-            A4452_2,
-            A4452_3,
-            A4452_4,
-            A4452_5,
-            A4452_6,
-            A4452_7,
-            A4452_8,
-            A4452_9,
-            A4452_9_OT,
-            A4452_code,
-            A4453_1,
-            A4453_2,
-            A4453_3,
-            A4453_4,
-            A4453_5,
-            A4453_6,
-            A4453_7,
-            A4453_8,
-            A4453_9,
-            A4453_10,
-            A4453_11,
-            A4453_12,
-            A4453_12_OT,
-            A4453_code,
+            A44511,
+            A44512,
+            A44513,
+            A44514,
+            A44515,
+            A44516,
+            A44517,
+            A44518,
+            A44519,
+            A445110,
+            A445111,
+            A445112,
+            A445113,
+            A445113_OT,
+            A4451code,
+            A44521,
+            A44522,
+            A44523,
+            A44524,
+            A44525,
+            A44526,
+            A44527,
+            A44528,
+            A44529,
+            A44529_OT,
+            A4452code,
+            A44531,
+            A44532,
+            A44533,
+            A44534,
+            A44535,
+            A44536,
+            A44537,
+            A44538,
+            A44539,
+            A445310,
+            A445311,
+            A445312,
+            A445312_OT,
+            A4453code,
             A4454,
             A4455,
             A4456,
@@ -338,7 +338,7 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
             A4472_10,
             A4472_11,
             A4472_12,
-            A4472_DK,
+            A447298,
             A4473,
             STATUS;
 
@@ -354,246 +354,246 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
         btn_imgCapture = findViewById(R.id.btn_imgCapture);
         txt_cap_count = findViewById(R.id.txt_cap_count);
 
-        ll_A4401 = findViewById(R.id.ll_A4401);
-        ll_51_52_53 = findViewById(R.id.ll_51_52_53);
-        ll_A4402 = findViewById(R.id.ll_A4402);
-        ll_A4403 = findViewById(R.id.ll_A4403);
-        ll_A4404 = findViewById(R.id.ll_A4404);
-        ll_A4405 = findViewById(R.id.ll_A4405);
-        ll_A4451_1 = findViewById(R.id.ll_A4451_1);
-        ll_A4451_2 = findViewById(R.id.ll_A4451_2);
-        ll_A4451_3 = findViewById(R.id.ll_A4451_3);
-        ll_A4451_4 = findViewById(R.id.ll_A4451_4);
-        ll_A4451_5 = findViewById(R.id.ll_A4451_5);
-        ll_A4451_6 = findViewById(R.id.ll_A4451_6);
-        ll_A4451_7 = findViewById(R.id.ll_A4451_7);
-        ll_A4451_8 = findViewById(R.id.ll_A4451_8);
-        ll_A4451_9 = findViewById(R.id.ll_A4451_9);
-        ll_A4451_10 = findViewById(R.id.ll_A4451_10);
-        ll_A4451_11 = findViewById(R.id.ll_A4451_11);
-        ll_A4451_12 = findViewById(R.id.ll_A4451_12);
-        ll_A4451_13 = findViewById(R.id.ll_A4451_13);
-        ll_A4452_1 = findViewById(R.id.ll_A4452_1);
-        ll_A4452_2 = findViewById(R.id.ll_A4452_2);
-        ll_A4452_3 = findViewById(R.id.ll_A4452_3);
-        ll_A4452_4 = findViewById(R.id.ll_A4452_4);
-        ll_A4452_5 = findViewById(R.id.ll_A4452_5);
-        ll_A4452_6 = findViewById(R.id.ll_A4452_6);
-        ll_A4452_7 = findViewById(R.id.ll_A4452_7);
-        ll_A4452_8 = findViewById(R.id.ll_A4452_8);
-        ll_A4452_9 = findViewById(R.id.ll_A4452_9);
-        ll_A4453_1 = findViewById(R.id.ll_A4453_1);
-        ll_A4453_2 = findViewById(R.id.ll_A4453_2);
-        ll_A4453_3 = findViewById(R.id.ll_A4453_3);
-        ll_A4453_4 = findViewById(R.id.ll_A4453_4);
-        ll_A4453_5 = findViewById(R.id.ll_A4453_5);
-        ll_A4453_6 = findViewById(R.id.ll_A4453_6);
-        ll_A4453_7 = findViewById(R.id.ll_A4453_7);
-        ll_A4453_8 = findViewById(R.id.ll_A4453_8);
-        ll_A4453_9 = findViewById(R.id.ll_A4453_9);
-        ll_A4453_10 = findViewById(R.id.ll_A4453_10);
-        ll_A4453_11 = findViewById(R.id.ll_A4453_11);
-        ll_A4453_12 = findViewById(R.id.ll_A4453_12);
-        ll_A4454 = findViewById(R.id.ll_A4454);
-        ll_A4455 = findViewById(R.id.ll_A4455);
-        ll_A4456 = findViewById(R.id.ll_A4456);
-        ll_A4457 = findViewById(R.id.ll_A4457);
-        ll_A4471 = findViewById(R.id.ll_A4471);
-        ll_A4472 = findViewById(R.id.ll_A4472);
-        ll_A4473 = findViewById(R.id.ll_A4473);
+        cvA4401 = findViewById(R.id.cvA4401);
+        cv51_52_53 = findViewById(R.id.cv51_52_53);
+        cvA4402 = findViewById(R.id.cvA4402);
+        cvA4403 = findViewById(R.id.cvA4403);
+        cvA4404 = findViewById(R.id.cvA4404);
+        cvA4405 = findViewById(R.id.cvA4405);
+        cvA44511 = findViewById(R.id.cvA44511);
+        cvA44512 = findViewById(R.id.cvA44512);
+        cvA44513 = findViewById(R.id.cvA44513);
+        cvA44514 = findViewById(R.id.cvA44514);
+        cvA44515 = findViewById(R.id.cvA44515);
+        cvA44516 = findViewById(R.id.cvA44516);
+        cvA44517 = findViewById(R.id.cvA44517);
+        cvA44518 = findViewById(R.id.cvA44518);
+        cvA44519 = findViewById(R.id.cvA44519);
+        cvA445110 = findViewById(R.id.cvA445110);
+        cvA445111 = findViewById(R.id.cvA445111);
+        cvA445112 = findViewById(R.id.cvA445112);
+        cvA445113 = findViewById(R.id.cvA445113);
+        cvA44521 = findViewById(R.id.cvA44521);
+        cvA44522 = findViewById(R.id.cvA44522);
+        cvA44523 = findViewById(R.id.cvA44523);
+        cvA44524 = findViewById(R.id.cvA44524);
+        cvA44525 = findViewById(R.id.cvA44525);
+        cvA44526 = findViewById(R.id.cvA44526);
+        cvA44527 = findViewById(R.id.cvA44527);
+        cvA44528 = findViewById(R.id.cvA44528);
+        cvA44529 = findViewById(R.id.cvA44529);
+        cvA44531 = findViewById(R.id.cvA44531);
+        cvA44532 = findViewById(R.id.cvA44532);
+        cvA44533 = findViewById(R.id.cvA44533);
+        cvA44534 = findViewById(R.id.cvA44534);
+        cvA44535 = findViewById(R.id.cvA44535);
+        cvA44536 = findViewById(R.id.cvA44536);
+        cvA44537 = findViewById(R.id.cvA44537);
+        cvA44538 = findViewById(R.id.cvA44538);
+        cvA44539 = findViewById(R.id.cvA44539);
+        cvA445310 = findViewById(R.id.cvA445310);
+        cvA445311 = findViewById(R.id.cvA445311);
+        cvA445312 = findViewById(R.id.cvA445312);
+        cvA4454 = findViewById(R.id.cvA4454);
+        cvA4455 = findViewById(R.id.cvA4455);
+        cvA4456 = findViewById(R.id.cvA4456);
+        cvA4457 = findViewById(R.id.cvA4457);
+        cvA4471 = findViewById(R.id.cvA4471);
+        cvA4472 = findViewById(R.id.cvA4472);
+        cvA4473 = findViewById(R.id.cvA4473);
 
-        rb_A4401_1 = findViewById(R.id.rb_A4401_1);
-        rb_A4401_2 = findViewById(R.id.rb_A4401_2);
-        rb_A4401_DK = findViewById(R.id.rb_A4401_DK);
+        A4401_1 = findViewById(R.id.A4401_1);
+        A4401_2 = findViewById(R.id.A4401_2);
+        A440198 = findViewById(R.id.A440198);
 
-        rb_A4402_1 = findViewById(R.id.rb_A4402_1);
-        rb_A4402_2 = findViewById(R.id.rb_A4402_2);
-        rb_A4402_3 = findViewById(R.id.rb_A4402_3);
-        rb_A4402_4 = findViewById(R.id.rb_A4402_4);
-        rb_A4402_5 = findViewById(R.id.rb_A4402_5);
-        rb_A4402_DK = findViewById(R.id.rb_A4402_DK);
+        A4402_1 = findViewById(R.id.A4402_1);
+        A4402_2 = findViewById(R.id.A4402_2);
+        A4402_3 = findViewById(R.id.A4402_3);
+        A4402_4 = findViewById(R.id.A4402_4);
+        A4402_5 = findViewById(R.id.A4402_5);
+        A440298 = findViewById(R.id.A440298);
 
-        rb_A4451_1_1 = findViewById(R.id.rb_A4451_1_1);
-        rb_A4451_1_2 = findViewById(R.id.rb_A4451_1_2);
-        rb_A4451_1_DK = findViewById(R.id.rb_A4451_1_DK);
+        A44511_1 = findViewById(R.id.A44511_1);
+        A44511_2 = findViewById(R.id.A44511_2);
+        A4451198 = findViewById(R.id.A4451198);
 
-        rb_A4451_2_1 = findViewById(R.id.rb_A4451_2_1);
-        rb_A4451_2_2 = findViewById(R.id.rb_A4451_2_2);
-        rb_A4451_2_DK = findViewById(R.id.rb_A4451_2_DK);
+        A44512_1 = findViewById(R.id.A44512_1);
+        A44512_2 = findViewById(R.id.A44512_2);
+        A4451298 = findViewById(R.id.A4451298);
 
-        rb_A4451_3_1 = findViewById(R.id.rb_A4451_3_1);
-        rb_A4451_3_2 = findViewById(R.id.rb_A4451_3_2);
-        rb_A4451_3_DK = findViewById(R.id.rb_A4451_3_DK);
+        A44513_1 = findViewById(R.id.A44513_1);
+        A44513_2 = findViewById(R.id.A44513_2);
+        A4451398 = findViewById(R.id.A4451398);
 
-        rb_A4451_4_1 = findViewById(R.id.rb_A4451_4_1);
-        rb_A4451_4_2 = findViewById(R.id.rb_A4451_4_2);
-        rb_A4451_4_DK = findViewById(R.id.rb_A4451_4_DK);
+        A44514_1 = findViewById(R.id.A44514_1);
+        A44514_2 = findViewById(R.id.A44514_2);
+        A4451498 = findViewById(R.id.A4451498);
 
-        rb_A4451_5_1 = findViewById(R.id.rb_A4451_5_1);
-        rb_A4451_5_2 = findViewById(R.id.rb_A4451_5_2);
-        rb_A4451_5_DK = findViewById(R.id.rb_A4451_5_DK);
+        A44515_1 = findViewById(R.id.A44515_1);
+        A44515_2 = findViewById(R.id.A44515_2);
+        A4451598 = findViewById(R.id.A4451598);
 
-        rb_A4451_6_1 = findViewById(R.id.rb_A4451_6_1);
-        rb_A4451_6_2 = findViewById(R.id.rb_A4451_6_2);
-        rb_A4451_6_DK = findViewById(R.id.rb_A4451_6_DK);
+        A44516_1 = findViewById(R.id.A44516_1);
+        A44516_2 = findViewById(R.id.A44516_2);
+        A4451698 = findViewById(R.id.A4451698);
 
-        rb_A4451_7_1 = findViewById(R.id.rb_A4451_7_1);
-        rb_A4451_7_2 = findViewById(R.id.rb_A4451_7_2);
-        rb_A4451_7_DK = findViewById(R.id.rb_A4451_7_DK);
+        A44517_1 = findViewById(R.id.A44517_1);
+        A44517_2 = findViewById(R.id.A44517_2);
+        A4451798 = findViewById(R.id.A4451798);
 
-        rb_A4451_8_1 = findViewById(R.id.rb_A4451_8_1);
-        rb_A4451_8_2 = findViewById(R.id.rb_A4451_8_2);
-        rb_A4451_8_DK = findViewById(R.id.rb_A4451_8_DK);
+        A44518_1 = findViewById(R.id.A44518_1);
+        A44518_2 = findViewById(R.id.A44518_2);
+        A4451898 = findViewById(R.id.A4451898);
 
-        rb_A4451_9_1 = findViewById(R.id.rb_A4451_9_1);
-        rb_A4451_9_2 = findViewById(R.id.rb_A4451_9_2);
-        rb_A4451_9_DK = findViewById(R.id.rb_A4451_9_DK);
+        A44519_1 = findViewById(R.id.A44519_1);
+        A44519_2 = findViewById(R.id.A44519_2);
+        A4451998 = findViewById(R.id.A4451998);
 
-        rb_A4451_10_1 = findViewById(R.id.rb_A4451_10_1);
-        rb_A4451_10_2 = findViewById(R.id.rb_A4451_10_2);
-        rb_A4451_10_DK = findViewById(R.id.rb_A4451_10_DK);
+        A445110_1 = findViewById(R.id.A445110_1);
+        A445110_2 = findViewById(R.id.A445110_2);
+        A44511098 = findViewById(R.id.A44511098);
 
-        rb_A4451_11_1 = findViewById(R.id.rb_A4451_11_1);
-        rb_A4451_11_2 = findViewById(R.id.rb_A4451_11_2);
-        rb_A4451_11_DK = findViewById(R.id.rb_A4451_11_DK);
+        A445111_1 = findViewById(R.id.A445111_1);
+        A445111_2 = findViewById(R.id.A445111_2);
+        A44511198 = findViewById(R.id.A44511198);
 
-        rb_A4451_12_1 = findViewById(R.id.rb_A4451_12_1);
-        rb_A4451_12_2 = findViewById(R.id.rb_A4451_12_2);
-        rb_A4451_12_DK = findViewById(R.id.rb_A4451_12_DK);
+        A445112_1 = findViewById(R.id.A445112_1);
+        A445112_2 = findViewById(R.id.A445112_2);
+        A44511298 = findViewById(R.id.A44511298);
 
-        rb_A4451_13_1 = findViewById(R.id.rb_A4451_13_1);
-        rb_A4451_13_2 = findViewById(R.id.rb_A4451_13_2);
-        rb_A4451_13_DK = findViewById(R.id.rb_A4451_13_DK);
+        A445113_1 = findViewById(R.id.A445113_1);
+        A445113_2 = findViewById(R.id.A445113_2);
+        A44511398 = findViewById(R.id.A44511398);
 
-        rb_A4452_1_1 = findViewById(R.id.rb_A4452_1_1);
-        rb_A4452_1_2 = findViewById(R.id.rb_A4452_1_2);
-        rb_A4452_1_DK = findViewById(R.id.rb_A4452_1_DK);
+        A44521_1 = findViewById(R.id.A44521_1);
+        A44521_2 = findViewById(R.id.A44521_2);
+        A4452198 = findViewById(R.id.A4452198);
 
-        rb_A4452_2_1 = findViewById(R.id.rb_A4452_2_1);
-        rb_A4452_2_2 = findViewById(R.id.rb_A4452_2_2);
-        rb_A4452_2_DK = findViewById(R.id.rb_A4452_2_DK);
+        A44522_1 = findViewById(R.id.A44522_1);
+        A44522_2 = findViewById(R.id.A44522_2);
+        A4452298 = findViewById(R.id.A4452298);
 
-        rb_A4452_3_1 = findViewById(R.id.rb_A4452_3_1);
-        rb_A4452_3_2 = findViewById(R.id.rb_A4452_3_2);
-        rb_A4452_3_DK = findViewById(R.id.rb_A4452_3_DK);
+        A44523_1 = findViewById(R.id.A44523_1);
+        A44523_2 = findViewById(R.id.A44523_2);
+        A4452398 = findViewById(R.id.A4452398);
 
-        rb_A4452_4_1 = findViewById(R.id.rb_A4452_4_1);
-        rb_A4452_4_2 = findViewById(R.id.rb_A4452_4_2);
-        rb_A4452_4_DK = findViewById(R.id.rb_A4452_4_DK);
+        A44524_1 = findViewById(R.id.A44524_1);
+        A44524_2 = findViewById(R.id.A44524_2);
+        A4452498 = findViewById(R.id.A4452498);
 
-        rb_A4452_5_1 = findViewById(R.id.rb_A4452_5_1);
-        rb_A4452_5_2 = findViewById(R.id.rb_A4452_5_2);
-        rb_A4452_5_DK = findViewById(R.id.rb_A4452_5_DK);
+        A44525_1 = findViewById(R.id.A44525_1);
+        A44525_2 = findViewById(R.id.A44525_2);
+        A4452598 = findViewById(R.id.A4452598);
 
-        rb_A4452_6_1 = findViewById(R.id.rb_A4452_6_1);
-        rb_A4452_6_2 = findViewById(R.id.rb_A4452_6_2);
-        rb_A4452_6_DK = findViewById(R.id.rb_A4452_6_DK);
+        A44526_1 = findViewById(R.id.A44526_1);
+        A44526_2 = findViewById(R.id.A44526_2);
+        A4452698 = findViewById(R.id.A4452698);
 
-        rb_A4452_7_1 = findViewById(R.id.rb_A4452_7_1);
-        rb_A4452_7_2 = findViewById(R.id.rb_A4452_7_2);
-        rb_A4452_7_DK = findViewById(R.id.rb_A4452_7_DK);
+        A44527_1 = findViewById(R.id.A44527_1);
+        A44527_2 = findViewById(R.id.A44527_2);
+        A4452798 = findViewById(R.id.A4452798);
 
-        rb_A4452_8_1 = findViewById(R.id.rb_A4452_8_1);
-        rb_A4452_8_2 = findViewById(R.id.rb_A4452_8_2);
-        rb_A4452_8_DK = findViewById(R.id.rb_A4452_8_DK);
+        A44528_1 = findViewById(R.id.A44528_1);
+        A44528_2 = findViewById(R.id.A44528_2);
+        A4452898 = findViewById(R.id.A4452898);
 
-        rb_A4452_9_1 = findViewById(R.id.rb_A4452_9_1);
-        rb_A4452_9_2 = findViewById(R.id.rb_A4452_9_2);
-        rb_A4452_9_DK = findViewById(R.id.rb_A4452_9_DK);
+        A44529_1 = findViewById(R.id.A44529_1);
+        A44529_2 = findViewById(R.id.A44529_2);
+        A4452998 = findViewById(R.id.A4452998);
 
-        rb_A4453_1_1 = findViewById(R.id.rb_A4453_1_1);
-        rb_A4453_1_2 = findViewById(R.id.rb_A4453_1_2);
-        rb_A4453_1_DK = findViewById(R.id.rb_A4453_1_DK);
+        A44531_1 = findViewById(R.id.A44531_1);
+        A44531_2 = findViewById(R.id.A44531_2);
+        A4453198 = findViewById(R.id.A4453198);
 
-        rb_A4453_2_1 = findViewById(R.id.rb_A4453_2_1);
-        rb_A4453_2_2 = findViewById(R.id.rb_A4453_2_2);
-        rb_A4453_2_DK = findViewById(R.id.rb_A4453_2_DK);
+        A44532_1 = findViewById(R.id.A44532_1);
+        A44532_2 = findViewById(R.id.A44532_2);
+        A4453298 = findViewById(R.id.A4453298);
 
-        rb_A4453_3_1 = findViewById(R.id.rb_A4453_3_1);
-        rb_A4453_3_2 = findViewById(R.id.rb_A4453_3_2);
-        rb_A4453_3_DK = findViewById(R.id.rb_A4453_3_DK);
+        A44533_1 = findViewById(R.id.A44533_1);
+        A44533_2 = findViewById(R.id.A44533_2);
+        A4453398 = findViewById(R.id.A4453398);
 
-        rb_A4453_4_1 = findViewById(R.id.rb_A4453_4_1);
-        rb_A4453_4_2 = findViewById(R.id.rb_A4453_4_2);
-        rb_A4453_4_DK = findViewById(R.id.rb_A4453_4_DK);
+        A44534_1 = findViewById(R.id.A44534_1);
+        A44534_2 = findViewById(R.id.A44534_2);
+        A4453498 = findViewById(R.id.A4453498);
 
-        rb_A4453_5_1 = findViewById(R.id.rb_A4453_5_1);
-        rb_A4453_5_2 = findViewById(R.id.rb_A4453_5_2);
-        rb_A4453_5_DK = findViewById(R.id.rb_A4453_5_DK);
+        A44535_1 = findViewById(R.id.A44535_1);
+        A44535_2 = findViewById(R.id.A44535_2);
+        A4453598 = findViewById(R.id.A4453598);
 
-        rb_A4453_6_1 = findViewById(R.id.rb_A4453_6_1);
-        rb_A4453_6_2 = findViewById(R.id.rb_A4453_6_2);
-        rb_A4453_6_DK = findViewById(R.id.rb_A4453_6_DK);
+        A44536_1 = findViewById(R.id.A44536_1);
+        A44536_2 = findViewById(R.id.A44536_2);
+        A4453698 = findViewById(R.id.A4453698);
 
-        rb_A4453_7_1 = findViewById(R.id.rb_A4453_7_1);
-        rb_A4453_7_2 = findViewById(R.id.rb_A4453_7_2);
-        rb_A4453_7_DK = findViewById(R.id.rb_A4453_7_DK);
+        A44537_1 = findViewById(R.id.A44537_1);
+        A44537_2 = findViewById(R.id.A44537_2);
+        A4453798 = findViewById(R.id.A4453798);
 
-        rb_A4453_8_1 = findViewById(R.id.rb_A4453_8_1);
-        rb_A4453_8_2 = findViewById(R.id.rb_A4453_8_2);
-        rb_A4453_8_DK = findViewById(R.id.rb_A4453_8_DK);
+        A44538_1 = findViewById(R.id.A44538_1);
+        A44538_2 = findViewById(R.id.A44538_2);
+        A4453898 = findViewById(R.id.A4453898);
 
-        rb_A4453_9_1 = findViewById(R.id.rb_A4453_9_1);
-        rb_A4453_9_2 = findViewById(R.id.rb_A4453_9_2);
-        rb_A4453_9_DK = findViewById(R.id.rb_A4453_9_DK);
+        A44539_1 = findViewById(R.id.A44539_1);
+        A44539_2 = findViewById(R.id.A44539_2);
+        A4453998 = findViewById(R.id.A4453998);
 
-        rb_A4453_10_1 = findViewById(R.id.rb_A4453_10_1);
-        rb_A4453_10_2 = findViewById(R.id.rb_A4453_10_2);
-        rb_A4453_10_DK = findViewById(R.id.rb_A4453_10_DK);
+        A445310_1 = findViewById(R.id.A445310_1);
+        A445310_2 = findViewById(R.id.A445310_2);
+        A44531098 = findViewById(R.id.A44531098);
 
-        rb_A4453_11_1 = findViewById(R.id.rb_A4453_11_1);
-        rb_A4453_11_2 = findViewById(R.id.rb_A4453_11_2);
-        rb_A4453_11_DK = findViewById(R.id.rb_A4453_11_DK);
+        A445311_1 = findViewById(R.id.A445311_1);
+        A445311_2 = findViewById(R.id.A445311_2);
+        A44531198 = findViewById(R.id.A44531198);
 
-        rb_A4453_12_1 = findViewById(R.id.rb_A4453_12_1);
-        rb_A4453_12_2 = findViewById(R.id.rb_A4453_12_2);
-        rb_A4453_12_DK = findViewById(R.id.rb_A4453_12_DK);
+        A445312_1 = findViewById(R.id.A445312_1);
+        A445312_2 = findViewById(R.id.A445312_2);
+        A44531298 = findViewById(R.id.A44531298);
 
-        rb_A4454_1 = findViewById(R.id.rb_A4454_1);
-        rb_A4454_2 = findViewById(R.id.rb_A4454_2);
-        rb_A4454_DK = findViewById(R.id.rb_A4454_DK);
-        rb_A4454_RA = findViewById(R.id.rb_A4454_RA);
+        A4454_1 = findViewById(R.id.A4454_1);
+        A4454_2 = findViewById(R.id.A4454_2);
+        A445498 = findViewById(R.id.A445498);
+        A445499 = findViewById(R.id.A445499);
 
-        rb_A4455_1 = findViewById(R.id.rb_A4455_1);
-        rb_A4455_2 = findViewById(R.id.rb_A4455_2);
-        rb_A4455_DK = findViewById(R.id.rb_A4455_DK);
-        rb_A4455_RA = findViewById(R.id.rb_A4455_RA);
+        A4455_1 = findViewById(R.id.A4455_1);
+        A4455_2 = findViewById(R.id.A4455_2);
+        A445598 = findViewById(R.id.A445598);
+        A445599 = findViewById(R.id.A445599);
 
-        rb_A4456_1 = findViewById(R.id.rb_A4456_1);
-        rb_A4456_2 = findViewById(R.id.rb_A4456_2);
-        rb_A4456_DK = findViewById(R.id.rb_A4456_DK);
-        rb_A4456_RA = findViewById(R.id.rb_A4456_RA);
+        A4456_1 = findViewById(R.id.A4456_1);
+        A4456_2 = findViewById(R.id.A4456_2);
+        A445698 = findViewById(R.id.A445698);
+        A445699 = findViewById(R.id.A445699);
 
-        rb_A4457_1 = findViewById(R.id.rb_A4457_1);
-        rb_A4457_2 = findViewById(R.id.rb_A4457_2);
-        rb_A4457_DK = findViewById(R.id.rb_A4457_DK);
-        rb_A4457_RA = findViewById(R.id.rb_A4457_RA);
+        A4457_1 = findViewById(R.id.A4457_1);
+        A4457_2 = findViewById(R.id.A4457_2);
+        A445798 = findViewById(R.id.A445798);
+        A445799 = findViewById(R.id.A445799);
 
-        ed_A4402_5 = findViewById(R.id.ed_A4402_5);
-        ed_A4403_province = findViewById(R.id.ed_A4403_province);
-        ed_A4403_district = findViewById(R.id.ed_A4403_district);
-        ed_A4404_years = findViewById(R.id.ed_A4404_years);
-        ed_A4405_hours = findViewById(R.id.ed_A4405_hours);
-        ed_A4405_minutes = findViewById(R.id.ed_A4405_minutes);
-        ed_A4451_13 = findViewById(R.id.ed_A4451_13);
-        ed_A4452_9 = findViewById(R.id.ed_A4452_9);
-        ed_A4453_12 = findViewById(R.id.ed_A4453_12);
-        ed_A4471 = findViewById(R.id.ed_A4471);
-        ed_A4473 = findViewById(R.id.ed_A4473);
+        A4402_5 = findViewById(R.id.A4402_5);
+        A4403_province = findViewById(R.id.A4403_province);
+        A4403_district = findViewById(R.id.A4403_district);
+        A4404_years = findViewById(R.id.A4404_years);
+        A4405_hours = findViewById(R.id.A4405_hours);
+        A4405_minutes = findViewById(R.id.A4405_minutes);
+        A445113 = findViewById(R.id.A445113);
+        A44529 = findViewById(R.id.A44529);
+        A445312 = findViewById(R.id.A445312);
+        A4471 = findViewById(R.id.A4471);
+        A4473 = findViewById(R.id.A4473);
 
-        cb_A4472_1 = findViewById(R.id.cb_A4472_1);
-        cb_A4472_2 = findViewById(R.id.cb_A4472_2);
-        cb_A4472_3 = findViewById(R.id.cb_A4472_3);
-        cb_A4472_4 = findViewById(R.id.cb_A4472_4);
-        cb_A4472_5 = findViewById(R.id.cb_A4472_5);
-        cb_A4472_6 = findViewById(R.id.cb_A4472_6);
-        cb_A4472_7 = findViewById(R.id.cb_A4472_7);
-        cb_A4472_8 = findViewById(R.id.cb_A4472_8);
-        cb_A4472_9 = findViewById(R.id.cb_A4472_9);
-        cb_A4472_10 = findViewById(R.id.cb_A4472_10);
-        cb_A4472_11 = findViewById(R.id.cb_A4472_11);
-        cb_A4472_12 = findViewById(R.id.cb_A4472_12);
-        cb_A4472_DK = findViewById(R.id.cb_A4472_DK);
+        A4472_1 = findViewById(R.id.A4472_1);
+        A4472_2 = findViewById(R.id.A4472_2);
+        A4472_3 = findViewById(R.id.A4472_3);
+        A4472_4 = findViewById(R.id.A4472_4);
+        A4472_5 = findViewById(R.id.A4472_5);
+        A4472_6 = findViewById(R.id.A4472_6);
+        A4472_7 = findViewById(R.id.A4472_7);
+        A4472_8 = findViewById(R.id.A4472_8);
+        A4472_9 = findViewById(R.id.A4472_9);
+        A4472_10 = findViewById(R.id.A4472_10);
+        A4472_11 = findViewById(R.id.A4472_11);
+        A4472_12 = findViewById(R.id.A4472_12);
+        A447298 = findViewById(R.id.A447298);
 
     }
 
@@ -604,12 +604,12 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
 
         this.setTitle(getString(R.string.h_a_sec_13));
 
-        ll_study_id = findViewById(R.id.ll_study_id);
-        ed_study_id = findViewById(R.id.ed_study_id);
+        cvstudy_id = findViewById(R.id.cvstudy_id);
+        study_id = findViewById(R.id.study_id);
         Intent getStudyId = getIntent();
         study_id = getStudyId.getExtras().getString("study_id");
-        ed_study_id.setText(study_id);
-        ed_study_id.setEnabled(false);
+        study_id.setText(study_id);
+        study_id.setEnabled(false);
 
         Initialization();
         events_call();
@@ -620,7 +620,7 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
             public void onClick(View view) {
 
                 String RootDir = Environment.getExternalStorageDirectory().getAbsolutePath()
-                        + File.separator + "VASA" + File.separator + ed_study_id.getText().toString();
+                        + File.separator + "VASA" + File.separator + study_id.getText().toString();
                 File RootFile = new File(RootDir);
                 boolean success = true;
                 if (!RootFile.exists()) {
@@ -674,153 +674,153 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 
-        if (compoundButton.getId() == R.id.rb_A4401_1) {
-            if (rb_A4401_1.isChecked()) {
-                ClearAll(ll_A4402);
-                ClearAll(ll_A4403);
+        if (compoundButton.getId() == R.id.A4401_1) {
+            if (A4401_1.isChecked()) {
+                ClearAll(cvA4402);
+                ClearAll(cvA4403);
 
-                ll_A4402.setVisibility(View.GONE);
-                ll_A4403.setVisibility(View.GONE);
+                cvA4402.setVisibility(View.GONE);
+                cvA4403.setVisibility(View.GONE);
             } else {
 
-                ll_A4402.setVisibility(View.VISIBLE);
-                ll_A4403.setVisibility(View.VISIBLE);
+                cvA4402.setVisibility(View.VISIBLE);
+                cvA4403.setVisibility(View.VISIBLE);
             }
         }
 
-        if (compoundButton.getId() == R.id.rb_A4401_DK) {
-            if (rb_A4401_DK.isChecked()) {
-                ClearAll(ll_A4402);
-                ClearAll(ll_A4403);
-                ClearAll(ll_A4404);
-                ClearAll(ll_A4405);
-                ClearAll(ll_51_52_53);
+        if (compoundButton.getId() == R.id.A440198) {
+            if (A440198.isChecked()) {
+                ClearAll(cvA4402);
+                ClearAll(cvA4403);
+                ClearAll(cvA4404);
+                ClearAll(cvA4405);
+                ClearAll(cv51_52_53);
 
-                ll_A4402.setVisibility(View.GONE);
-                ll_A4403.setVisibility(View.GONE);
-                ll_A4404.setVisibility(View.GONE);
-                ll_A4405.setVisibility(View.GONE);
-                ll_51_52_53.setVisibility(View.GONE);
+                cvA4402.setVisibility(View.GONE);
+                cvA4403.setVisibility(View.GONE);
+                cvA4404.setVisibility(View.GONE);
+                cvA4405.setVisibility(View.GONE);
+                cv51_52_53.setVisibility(View.GONE);
             } else {
 
-                ll_A4402.setVisibility(View.VISIBLE);
-                ll_A4403.setVisibility(View.VISIBLE);
-                ll_A4404.setVisibility(View.VISIBLE);
-                ll_A4405.setVisibility(View.VISIBLE);
-                ll_51_52_53.setVisibility(View.VISIBLE);
+                cvA4402.setVisibility(View.VISIBLE);
+                cvA4403.setVisibility(View.VISIBLE);
+                cvA4404.setVisibility(View.VISIBLE);
+                cvA4405.setVisibility(View.VISIBLE);
+                cv51_52_53.setVisibility(View.VISIBLE);
             }
         }
 
 
-        if (compoundButton.getId() == R.id.rb_A4402_5) {
-            if (rb_A4402_5.isChecked()) {
+        if (compoundButton.getId() == R.id.A4402_5) {
+            if (A4402_5.isChecked()) {
 
-                ed_A4402_5.setVisibility(View.VISIBLE);
+                A4402_5.setVisibility(View.VISIBLE);
             } else {
-                ClearAll(ll_A4402);
-                ed_A4402_5.setVisibility(View.GONE);
+                ClearAll(cvA4402);
+                A4402_5.setVisibility(View.GONE);
             }
         }
 
-        if (compoundButton.getId() == R.id.rb_A4402_DK) {
-            if (rb_A4402_DK.isChecked()) {
+        if (compoundButton.getId() == R.id.A440298) {
+            if (A440298.isChecked()) {
 
-                ClearAll(ll_A4403);
-                ClearAll(ll_A4404);
-                ClearAll(ll_A4405);
-                ClearAll(ll_51_52_53);
+                ClearAll(cvA4403);
+                ClearAll(cvA4404);
+                ClearAll(cvA4405);
+                ClearAll(cv51_52_53);
 
-                ll_A4403.setVisibility(View.GONE);
-                ll_A4404.setVisibility(View.GONE);
-                ll_A4405.setVisibility(View.GONE);
-                ll_51_52_53.setVisibility(View.GONE);
+                cvA4403.setVisibility(View.GONE);
+                cvA4404.setVisibility(View.GONE);
+                cvA4405.setVisibility(View.GONE);
+                cv51_52_53.setVisibility(View.GONE);
             } else {
 
-                ll_A4403.setVisibility(View.VISIBLE);
-                ll_A4404.setVisibility(View.VISIBLE);
-                ll_A4405.setVisibility(View.VISIBLE);
-                ll_51_52_53.setVisibility(View.VISIBLE);
+                cvA4403.setVisibility(View.VISIBLE);
+                cvA4404.setVisibility(View.VISIBLE);
+                cvA4405.setVisibility(View.VISIBLE);
+                cv51_52_53.setVisibility(View.VISIBLE);
             }
         }
 
-        if (compoundButton.getId() == R.id.rb_A4451_13_1
-                || compoundButton.getId() == R.id.rb_A4451_13_2
-                || compoundButton.getId() == R.id.rb_A4451_13_DK) {
-            if (rb_A4451_13_1.isChecked()) {
+        if (compoundButton.getId() == R.id.A445113_1
+                || compoundButton.getId() == R.id.A445113_2
+                || compoundButton.getId() == R.id.A44511398) {
+            if (A445113_1.isChecked()) {
 
-                ed_A4451_13.setVisibility(View.VISIBLE);
+                A445113.setVisibility(View.VISIBLE);
             } else {
-                ClearAll(ll_A4451_13);
-                ed_A4451_13.setVisibility(View.GONE);
+                ClearAll(cvA445113);
+                A445113.setVisibility(View.GONE);
             }
         }
 
-        if (compoundButton.getId() == R.id.rb_A4452_9_1
-                || compoundButton.getId() == R.id.rb_A4452_9_2
-                || compoundButton.getId() == R.id.rb_A4452_9_DK) {
-            if (rb_A4452_9_1.isChecked()) {
+        if (compoundButton.getId() == R.id.A44529_1
+                || compoundButton.getId() == R.id.A44529_2
+                || compoundButton.getId() == R.id.A4452998) {
+            if (A44529_1.isChecked()) {
 
-                ed_A4452_9.setVisibility(View.VISIBLE);
+                A44529.setVisibility(View.VISIBLE);
             } else {
-                ClearAll(ll_A4452_9);
-                ed_A4452_9.setVisibility(View.GONE);
+                ClearAll(cvA44529);
+                A44529.setVisibility(View.GONE);
             }
         }
 
-        if (compoundButton.getId() == R.id.rb_A4453_12_1
-                || compoundButton.getId() == R.id.rb_A4453_12_2
-                || compoundButton.getId() == R.id.rb_A4453_12_DK) {
-            if (rb_A4453_12_1.isChecked()) {
+        if (compoundButton.getId() == R.id.A445312_1
+                || compoundButton.getId() == R.id.A445312_2
+                || compoundButton.getId() == R.id.A44531298) {
+            if (A445312_1.isChecked()) {
 
-                ed_A4453_12.setVisibility(View.VISIBLE);
+                A445312.setVisibility(View.VISIBLE);
             } else {
-                ClearAll(ll_A4453_12);
-                ed_A4453_12.setVisibility(View.GONE);
+                ClearAll(cvA445312);
+                A445312.setVisibility(View.GONE);
             }
         }
 
-        if (compoundButton.getId() == R.id.cb_A4472_DK) {
-            if (cb_A4472_DK.isChecked()) {
-                cb_A4472_1.setChecked(false);
-                cb_A4472_2.setChecked(false);
-                cb_A4472_3.setChecked(false);
-                cb_A4472_4.setChecked(false);
-                cb_A4472_5.setChecked(false);
-                cb_A4472_6.setChecked(false);
-                cb_A4472_7.setChecked(false);
-                cb_A4472_8.setChecked(false);
-                cb_A4472_9.setChecked(false);
-                cb_A4472_10.setChecked(false);
-                cb_A4472_11.setChecked(false);
-                cb_A4472_12.setChecked(false);
+        if (compoundButton.getId() == R.id.A447298) {
+            if (A447298.isChecked()) {
+                A4472_1.setChecked(false);
+                A4472_2.setChecked(false);
+                A4472_3.setChecked(false);
+                A4472_4.setChecked(false);
+                A4472_5.setChecked(false);
+                A4472_6.setChecked(false);
+                A4472_7.setChecked(false);
+                A4472_8.setChecked(false);
+                A4472_9.setChecked(false);
+                A4472_10.setChecked(false);
+                A4472_11.setChecked(false);
+                A4472_12.setChecked(false);
             } else {
-                cb_A4472_DK.setChecked(false);
+                A447298.setChecked(false);
             }
         } else {
 
-            cb_A4472_DK.setChecked(false);
+            A447298.setChecked(false);
         }
 
-        if (compoundButton.getId() == R.id.cb_A4472_12) {
-            if (cb_A4472_12.isChecked()) {
-                cb_A4472_1.setChecked(false);
-                cb_A4472_2.setChecked(false);
-                cb_A4472_3.setChecked(false);
-                cb_A4472_4.setChecked(false);
-                cb_A4472_5.setChecked(false);
-                cb_A4472_6.setChecked(false);
-                cb_A4472_7.setChecked(false);
-                cb_A4472_8.setChecked(false);
-                cb_A4472_9.setChecked(false);
-                cb_A4472_10.setChecked(false);
-                cb_A4472_11.setChecked(false);
-                cb_A4472_DK.setChecked(false);
+        if (compoundButton.getId() == R.id.A4472_12) {
+            if (A4472_12.isChecked()) {
+                A4472_1.setChecked(false);
+                A4472_2.setChecked(false);
+                A4472_3.setChecked(false);
+                A4472_4.setChecked(false);
+                A4472_5.setChecked(false);
+                A4472_6.setChecked(false);
+                A4472_7.setChecked(false);
+                A4472_8.setChecked(false);
+                A4472_9.setChecked(false);
+                A4472_10.setChecked(false);
+                A4472_11.setChecked(false);
+                A447298.setChecked(false);
             } else {
-                cb_A4472_12.setChecked(false);
+                A4472_12.setChecked(false);
             }
         } else {
 
-            cb_A4472_12.setChecked(false);
+            A4472_12.setChecked(false);
         }
     }
 
@@ -828,43 +828,43 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
 
         btn_next14.setOnClickListener(this);
 
-        rb_A4401_1.setOnCheckedChangeListener(this);
-        rb_A4401_2.setOnCheckedChangeListener(this);
-        rb_A4401_DK.setOnCheckedChangeListener(this);
+        A4401_1.setOnCheckedChangeListener(this);
+        A4401_2.setOnCheckedChangeListener(this);
+        A440198.setOnCheckedChangeListener(this);
 
-        rb_A4402_1.setOnCheckedChangeListener(this);
-        rb_A4402_2.setOnCheckedChangeListener(this);
-        rb_A4402_3.setOnCheckedChangeListener(this);
-        rb_A4402_4.setOnCheckedChangeListener(this);
-        rb_A4402_5.setOnCheckedChangeListener(this);
-        rb_A4402_DK.setOnCheckedChangeListener(this);
+        A4402_1.setOnCheckedChangeListener(this);
+        A4402_2.setOnCheckedChangeListener(this);
+        A4402_3.setOnCheckedChangeListener(this);
+        A4402_4.setOnCheckedChangeListener(this);
+        A4402_5.setOnCheckedChangeListener(this);
+        A440298.setOnCheckedChangeListener(this);
 
-        rb_A4451_13_1.setOnCheckedChangeListener(this);
-        rb_A4451_13_2.setOnCheckedChangeListener(this);
-        rb_A4451_13_DK.setOnCheckedChangeListener(this);
+        A445113_1.setOnCheckedChangeListener(this);
+        A445113_2.setOnCheckedChangeListener(this);
+        A44511398.setOnCheckedChangeListener(this);
 
-        rb_A4452_9_1.setOnCheckedChangeListener(this);
-        rb_A4452_9_2.setOnCheckedChangeListener(this);
-        rb_A4452_9_DK.setOnCheckedChangeListener(this);
+        A44529_1.setOnCheckedChangeListener(this);
+        A44529_2.setOnCheckedChangeListener(this);
+        A4452998.setOnCheckedChangeListener(this);
 
-        rb_A4453_12_1.setOnCheckedChangeListener(this);
-        rb_A4453_12_2.setOnCheckedChangeListener(this);
-        rb_A4453_12_DK.setOnCheckedChangeListener(this);
+        A445312_1.setOnCheckedChangeListener(this);
+        A445312_2.setOnCheckedChangeListener(this);
+        A44531298.setOnCheckedChangeListener(this);
 
-        // cb_A4472_1.setOnCheckedChangeListener(this);
-        // cb_A4472_2.setOnCheckedChangeListener(this);
-        // cb_A4472_3.setOnCheckedChangeListener(this);
-        // cb_A4472_4.setOnCheckedChangeListener(this);
-        // cb_A4472_5.setOnCheckedChangeListener(this);
-        // cb_A4472_6.setOnCheckedChangeListener(this);
-        // cb_A4472_7.setOnCheckedChangeListener(this);
-        // cb_A4472_8.setOnCheckedChangeListener(this);
-        // cb_A4472_9.setOnCheckedChangeListener(this);
-        // cb_A4472_10.setOnCheckedChangeListener(this);
-        // cb_A4472_11.setOnCheckedChangeListener(this);
-        // cb_A4472_12.setOnCheckedChangeListener(this);
-        // cb_A4472_DK.setOnCheckedChangeListener(this);
-        smart(ll_A4472);
+        // A4472_1.setOnCheckedChangeListener(this);
+        // A4472_2.setOnCheckedChangeListener(this);
+        // A4472_3.setOnCheckedChangeListener(this);
+        // A4472_4.setOnCheckedChangeListener(this);
+        // A4472_5.setOnCheckedChangeListener(this);
+        // A4472_6.setOnCheckedChangeListener(this);
+        // A4472_7.setOnCheckedChangeListener(this);
+        // A4472_8.setOnCheckedChangeListener(this);
+        // A4472_9.setOnCheckedChangeListener(this);
+        // A4472_10.setOnCheckedChangeListener(this);
+        // A4472_11.setOnCheckedChangeListener(this);
+        // A4472_12.setOnCheckedChangeListener(this);
+        // A447298.setOnCheckedChangeListener(this);
+        smart(cvA4472);
 
     }
 
@@ -879,46 +879,46 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
         A4404_years = "-1";
         A4405_hours = "-1";
         A4405_minutes = "-1";
-        A4451_1 = "-1";
-        A4451_2 = "-1";
-        A4451_3 = "-1";
-        A4451_4 = "-1";
-        A4451_5 = "-1";
-        A4451_6 = "-1";
-        A4451_7 = "-1";
-        A4451_8 = "-1";
-        A4451_9 = "-1";
-        A4451_10 = "-1";
-        A4451_11 = "-1";
-        A4451_12 = "-1";
-        A4451_13 = "-1";
-        A4451_13_OT = "-1";
-        A4451_code = "-1";
-        A4452_1 = "-1";
-        A4452_2 = "-1";
-        A4452_3 = "-1";
-        A4452_4 = "-1";
-        A4452_5 = "-1";
-        A4452_6 = "-1";
-        A4452_7 = "-1";
-        A4452_8 = "-1";
-        A4452_9 = "-1";
-        A4452_9_OT = "-1";
-        A4452_code = "-1";
-        A4453_1 = "-1";
-        A4453_2 = "-1";
-        A4453_3 = "-1";
-        A4453_4 = "-1";
-        A4453_5 = "-1";
-        A4453_6 = "-1";
-        A4453_7 = "-1";
-        A4453_8 = "-1";
-        A4453_9 = "-1";
-        A4453_10 = "-1";
-        A4453_11 = "-1";
-        A4453_12 = "-1";
-        A4453_12_OT = "-1";
-        A4453_code = "-1";
+        A44511 = "-1";
+        A44512 = "-1";
+        A44513 = "-1";
+        A44514 = "-1";
+        A44515 = "-1";
+        A44516 = "-1";
+        A44517 = "-1";
+        A44518 = "-1";
+        A44519 = "-1";
+        A445110 = "-1";
+        A445111 = "-1";
+        A445112 = "-1";
+        A445113 = "-1";
+        A445113_OT = "-1";
+        A4451code = "-1";
+        A44521 = "-1";
+        A44522 = "-1";
+        A44523 = "-1";
+        A44524 = "-1";
+        A44525 = "-1";
+        A44526 = "-1";
+        A44527 = "-1";
+        A44528 = "-1";
+        A44529 = "-1";
+        A44529_OT = "-1";
+        A4452code = "-1";
+        A44531 = "-1";
+        A44532 = "-1";
+        A44533 = "-1";
+        A44534 = "-1";
+        A44535 = "-1";
+        A44536 = "-1";
+        A44537 = "-1";
+        A44538 = "-1";
+        A44539 = "-1";
+        A445310 = "-1";
+        A445311 = "-1";
+        A445312 = "-1";
+        A445312_OT = "-1";
+        A4453code = "-1";
         A4454 = "-1";
         A4455 = "-1";
         A4456 = "-1";
@@ -936,559 +936,559 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
         A4472_10 = "-1";
         A4472_11 = "-1";
         A4472_12 = "-1";
-        A4472_DK = "-1";
+        A447298 = "-1";
         A4473 = "-1";
         STATUS = "0";
 
 
-        if (ed_study_id.getText().toString().length() > 0) {
+        if (study_id.getText().toString().length() > 0) {
 
-            study_id = ed_study_id.getText().toString().trim();
+            study_id = study_id.getText().toString().trim();
         }
 
         //A4401
-        if (rb_A4401_1.isChecked()) {
+        if (A4401_1.isChecked()) {
             A4401 = "1";
         }
-        if (rb_A4401_2.isChecked()) {
+        if (A4401_2.isChecked()) {
             A4401 = "2";
         }
-        if (rb_A4401_DK.isChecked()) {
+        if (A440198.isChecked()) {
             A4401 = "9";
         }
 
         //A4402
-        if (rb_A4402_1.isChecked()) {
+        if (A4402_1.isChecked()) {
             A4402 = "1";
         }
-        if (rb_A4402_2.isChecked()) {
+        if (A4402_2.isChecked()) {
             A4402 = "2";
         }
-        if (rb_A4402_3.isChecked()) {
+        if (A4402_3.isChecked()) {
             A4402 = "3";
         }
-        if (rb_A4402_4.isChecked()) {
+        if (A4402_4.isChecked()) {
             A4402 = "4";
         }
-        if (rb_A4402_5.isChecked()) {
+        if (A4402_5.isChecked()) {
             A4402 = "5";
         }
-        if (rb_A4402_DK.isChecked()) {
+        if (A440298.isChecked()) {
             A4402 = "9";
         }
-        if (ed_A4402_5.getText().toString().trim().length() > 0) {
-            A4402_5_OT = ed_A4402_5.getText().toString().trim();
+        if (A4402_5.getText().toString().trim().length() > 0) {
+            A4402_5_OT = A4402_5.getText().toString().trim();
         }
 
         //A4403
-        if (ed_A4403_province.getText().toString().trim().length() > 0) {
-            A4403_province = ed_A4403_province.getText().toString().trim();
+        if (A4403_province.getText().toString().trim().length() > 0) {
+            A4403_province = A4403_province.getText().toString().trim();
         }
-        if (ed_A4403_district.getText().toString().trim().length() > 0) {
-            A4403 = ed_A4403_district.getText().toString().trim();
+        if (A4403_district.getText().toString().trim().length() > 0) {
+            A4403 = A4403_district.getText().toString().trim();
         }
 
         //A4404_years
-        if (ed_A4404_years.getText().toString().trim().length() > 0) {
-            A4404_years = ed_A4404_years.getText().toString().trim();
+        if (A4404_years.getText().toString().trim().length() > 0) {
+            A4404_years = A4404_years.getText().toString().trim();
         }
 
         //A4405
-        if (ed_A4405_hours.getText().toString().trim().length() > 0) {
-            A4405_hours = ed_A4405_hours.getText().toString().trim();
+        if (A4405_hours.getText().toString().trim().length() > 0) {
+            A4405_hours = A4405_hours.getText().toString().trim();
         }
-        if (ed_A4405_minutes.getText().toString().trim().length() > 0) {
-            A4405_minutes = ed_A4405_minutes.getText().toString().trim();
-        }
-
-        //A4451_1
-        if (rb_A4451_1_1.isChecked()) {
-            A4451_1 = "1";
-        }
-        if (rb_A4451_1_2.isChecked()) {
-            A4451_1 = "2";
-        }
-        if (rb_A4451_1_DK.isChecked()) {
-            A4451_1 = "9";
+        if (A4405_minutes.getText().toString().trim().length() > 0) {
+            A4405_minutes = A4405_minutes.getText().toString().trim();
         }
 
-        //A4451_2
-        if (rb_A4451_2_1.isChecked()) {
-            A4451_2 = "1";
+        //A44511
+        if (A44511_1.isChecked()) {
+            A44511 = "1";
         }
-        if (rb_A4451_2_2.isChecked()) {
-            A4451_2 = "2";
+        if (A44511_2.isChecked()) {
+            A44511 = "2";
         }
-        if (rb_A4451_2_DK.isChecked()) {
-            A4451_2 = "9";
-        }
-
-        //A4451_3
-        if (rb_A4451_3_1.isChecked()) {
-            A4451_3 = "1";
-        }
-        if (rb_A4451_3_2.isChecked()) {
-            A4451_3 = "2";
-        }
-        if (rb_A4451_3_DK.isChecked()) {
-            A4451_3 = "9";
+        if (A4451198.isChecked()) {
+            A44511 = "9";
         }
 
-        //A4451_4
-        if (rb_A4451_4_1.isChecked()) {
-            A4451_4 = "1";
+        //A44512
+        if (A44512_1.isChecked()) {
+            A44512 = "1";
         }
-        if (rb_A4451_4_2.isChecked()) {
-            A4451_4 = "2";
+        if (A44512_2.isChecked()) {
+            A44512 = "2";
         }
-        if (rb_A4451_4_DK.isChecked()) {
-            A4451_4 = "9";
-        }
-
-        //A4451_5
-        if (rb_A4451_5_1.isChecked()) {
-            A4451_5 = "1";
-        }
-        if (rb_A4451_5_2.isChecked()) {
-            A4451_5 = "2";
-        }
-        if (rb_A4451_5_DK.isChecked()) {
-            A4451_5 = "9";
+        if (A4451298.isChecked()) {
+            A44512 = "9";
         }
 
-        //A4451_6
-        if (rb_A4451_6_1.isChecked()) {
-            A4451_6 = "1";
+        //A44513
+        if (A44513_1.isChecked()) {
+            A44513 = "1";
         }
-        if (rb_A4451_6_2.isChecked()) {
-            A4451_6 = "2";
+        if (A44513_2.isChecked()) {
+            A44513 = "2";
         }
-        if (rb_A4451_6_DK.isChecked()) {
-            A4451_6 = "9";
-        }
-
-        //A4451_7
-        if (rb_A4451_7_1.isChecked()) {
-            A4451_7 = "1";
-        }
-        if (rb_A4451_7_2.isChecked()) {
-            A4451_7 = "2";
-        }
-        if (rb_A4451_7_DK.isChecked()) {
-            A4451_7 = "9";
+        if (A4451398.isChecked()) {
+            A44513 = "9";
         }
 
-        //A4451_8
-        if (rb_A4451_8_1.isChecked()) {
-            A4451_8 = "1";
+        //A44514
+        if (A44514_1.isChecked()) {
+            A44514 = "1";
         }
-        if (rb_A4451_8_2.isChecked()) {
-            A4451_8 = "2";
+        if (A44514_2.isChecked()) {
+            A44514 = "2";
         }
-        if (rb_A4451_8_DK.isChecked()) {
-            A4451_8 = "9";
-        }
-
-        //A4451_9
-        if (rb_A4451_9_1.isChecked()) {
-            A4451_9 = "1";
-        }
-        if (rb_A4451_9_2.isChecked()) {
-            A4451_9 = "2";
-        }
-        if (rb_A4451_9_DK.isChecked()) {
-            A4451_9 = "9";
+        if (A4451498.isChecked()) {
+            A44514 = "9";
         }
 
-        //A4451_10
-        if (rb_A4451_10_1.isChecked()) {
-            A4451_10 = "1";
+        //A44515
+        if (A44515_1.isChecked()) {
+            A44515 = "1";
         }
-        if (rb_A4451_10_2.isChecked()) {
-            A4451_10 = "2";
+        if (A44515_2.isChecked()) {
+            A44515 = "2";
         }
-        if (rb_A4451_10_DK.isChecked()) {
-            A4451_10 = "9";
-        }
-
-        //A4451_11
-        if (rb_A4451_11_1.isChecked()) {
-            A4451_11 = "1";
-        }
-        if (rb_A4451_11_2.isChecked()) {
-            A4451_11 = "2";
-        }
-        if (rb_A4451_11_DK.isChecked()) {
-            A4451_11 = "9";
+        if (A4451598.isChecked()) {
+            A44515 = "9";
         }
 
-        //A4451_12
-        if (rb_A4451_12_1.isChecked()) {
-            A4451_12 = "1";
+        //A44516
+        if (A44516_1.isChecked()) {
+            A44516 = "1";
         }
-        if (rb_A4451_12_2.isChecked()) {
-            A4451_12 = "2";
+        if (A44516_2.isChecked()) {
+            A44516 = "2";
         }
-        if (rb_A4451_12_DK.isChecked()) {
-            A4451_12 = "9";
-        }
-
-        //A4451_13
-        if (rb_A4451_13_1.isChecked()) {
-            A4451_13 = "1";
-        }
-        if (rb_A4451_13_2.isChecked()) {
-            A4451_13 = "2";
-        }
-        if (rb_A4451_13_DK.isChecked()) {
-            A4451_13 = "9";
-        }
-        if (ed_A4451_13.getText().toString().trim().length() > 0) {
-            A4451_13_OT = ed_A4451_13.getText().toString().trim();
+        if (A4451698.isChecked()) {
+            A44516 = "9";
         }
 
-        //A4452_1
-        if (rb_A4452_1_1.isChecked()) {
-            A4452_1 = "1";
+        //A44517
+        if (A44517_1.isChecked()) {
+            A44517 = "1";
         }
-        if (rb_A4452_1_2.isChecked()) {
-            A4452_1 = "2";
+        if (A44517_2.isChecked()) {
+            A44517 = "2";
         }
-        if (rb_A4452_1_DK.isChecked()) {
-            A4452_1 = "9";
-        }
-
-        //A4452_2
-        if (rb_A4452_2_1.isChecked()) {
-            A4452_2 = "1";
-        }
-        if (rb_A4452_2_2.isChecked()) {
-            A4452_2 = "2";
-        }
-        if (rb_A4452_2_DK.isChecked()) {
-            A4452_2 = "9";
+        if (A4451798.isChecked()) {
+            A44517 = "9";
         }
 
-        //A4452_3
-        if (rb_A4452_3_1.isChecked()) {
-            A4452_3 = "1";
+        //A44518
+        if (A44518_1.isChecked()) {
+            A44518 = "1";
         }
-        if (rb_A4452_3_2.isChecked()) {
-            A4452_3 = "2";
+        if (A44518_2.isChecked()) {
+            A44518 = "2";
         }
-        if (rb_A4452_3_DK.isChecked()) {
-            A4452_3 = "9";
-        }
-
-        //A4452_4
-        if (rb_A4452_4_1.isChecked()) {
-            A4452_4 = "1";
-        }
-        if (rb_A4452_4_2.isChecked()) {
-            A4452_4 = "2";
-        }
-        if (rb_A4452_4_DK.isChecked()) {
-            A4452_4 = "9";
+        if (A4451898.isChecked()) {
+            A44518 = "9";
         }
 
-        //A4452_5
-        if (rb_A4452_5_1.isChecked()) {
-            A4452_5 = "1";
+        //A44519
+        if (A44519_1.isChecked()) {
+            A44519 = "1";
         }
-        if (rb_A4452_5_2.isChecked()) {
-            A4452_5 = "2";
+        if (A44519_2.isChecked()) {
+            A44519 = "2";
         }
-        if (rb_A4452_5_DK.isChecked()) {
-            A4452_5 = "9";
-        }
-
-        //A4452_6
-        if (rb_A4452_6_1.isChecked()) {
-            A4452_6 = "1";
-        }
-        if (rb_A4452_6_2.isChecked()) {
-            A4452_6 = "2";
-        }
-        if (rb_A4452_6_DK.isChecked()) {
-            A4452_6 = "9";
+        if (A4451998.isChecked()) {
+            A44519 = "9";
         }
 
-        //A4452_7
-        if (rb_A4452_7_1.isChecked()) {
-            A4452_7 = "1";
+        //A445110
+        if (A445110_1.isChecked()) {
+            A445110 = "1";
         }
-        if (rb_A4452_7_2.isChecked()) {
-            A4452_7 = "2";
+        if (A445110_2.isChecked()) {
+            A445110 = "2";
         }
-        if (rb_A4452_7_DK.isChecked()) {
-            A4452_7 = "9";
-        }
-
-        //A4452_8
-        if (rb_A4452_8_1.isChecked()) {
-            A4452_8 = "1";
-        }
-        if (rb_A4452_8_2.isChecked()) {
-            A4452_8 = "2";
-        }
-        if (rb_A4452_8_DK.isChecked()) {
-            A4452_8 = "9";
+        if (A44511098.isChecked()) {
+            A445110 = "9";
         }
 
-        //A4452_9
-        if (rb_A4452_9_1.isChecked()) {
-            A4452_9 = "1";
+        //A445111
+        if (A445111_1.isChecked()) {
+            A445111 = "1";
         }
-        if (rb_A4452_9_2.isChecked()) {
-            A4452_9 = "2";
+        if (A445111_2.isChecked()) {
+            A445111 = "2";
         }
-        if (rb_A4452_9_DK.isChecked()) {
-            A4452_9 = "9";
-        }
-        if (ed_A4452_9.getText().toString().trim().length() > 0) {
-            A4452_9_OT = ed_A4452_9.getText().toString().trim();
+        if (A44511198.isChecked()) {
+            A445111 = "9";
         }
 
-        //A4453_1
-        if (rb_A4453_1_1.isChecked()) {
-            A4453_1 = "1";
+        //A445112
+        if (A445112_1.isChecked()) {
+            A445112 = "1";
         }
-        if (rb_A4453_1_2.isChecked()) {
-            A4453_1 = "2";
+        if (A445112_2.isChecked()) {
+            A445112 = "2";
         }
-        if (rb_A4453_1_DK.isChecked()) {
-            A4453_1 = "9";
-        }
-
-        //A4453_2
-        if (rb_A4453_2_1.isChecked()) {
-            A4453_2 = "1";
-        }
-        if (rb_A4453_2_2.isChecked()) {
-            A4453_2 = "2";
-        }
-        if (rb_A4453_2_DK.isChecked()) {
-            A4453_2 = "9";
+        if (A44511298.isChecked()) {
+            A445112 = "9";
         }
 
-        //A4453_3
-        if (rb_A4453_3_1.isChecked()) {
-            A4453_3 = "1";
+        //A445113
+        if (A445113_1.isChecked()) {
+            A445113 = "1";
         }
-        if (rb_A4453_3_2.isChecked()) {
-            A4453_3 = "2";
+        if (A445113_2.isChecked()) {
+            A445113 = "2";
         }
-        if (rb_A4453_3_DK.isChecked()) {
-            A4453_3 = "9";
+        if (A44511398.isChecked()) {
+            A445113 = "9";
         }
-
-        //A4453_4
-        if (rb_A4453_4_1.isChecked()) {
-            A4453_4 = "1";
-        }
-        if (rb_A4453_4_2.isChecked()) {
-            A4453_4 = "2";
-        }
-        if (rb_A4453_4_DK.isChecked()) {
-            A4453_4 = "9";
+        if (A445113.getText().toString().trim().length() > 0) {
+            A445113_OT = A445113.getText().toString().trim();
         }
 
-        //A4453_5
-        if (rb_A4453_5_1.isChecked()) {
-            A4453_5 = "1";
+        //A44521
+        if (A44521_1.isChecked()) {
+            A44521 = "1";
         }
-        if (rb_A4453_5_2.isChecked()) {
-            A4453_5 = "2";
+        if (A44521_2.isChecked()) {
+            A44521 = "2";
         }
-        if (rb_A4453_5_DK.isChecked()) {
-            A4453_5 = "9";
-        }
-
-        //A4453_6
-        if (rb_A4453_6_1.isChecked()) {
-            A4453_6 = "1";
-        }
-        if (rb_A4453_6_2.isChecked()) {
-            A4453_6 = "2";
-        }
-        if (rb_A4453_6_DK.isChecked()) {
-            A4453_6 = "9";
+        if (A4452198.isChecked()) {
+            A44521 = "9";
         }
 
-        //A4453_7
-        if (rb_A4453_7_1.isChecked()) {
-            A4453_7 = "1";
+        //A44522
+        if (A44522_1.isChecked()) {
+            A44522 = "1";
         }
-        if (rb_A4453_7_2.isChecked()) {
-            A4453_7 = "2";
+        if (A44522_2.isChecked()) {
+            A44522 = "2";
         }
-        if (rb_A4453_7_DK.isChecked()) {
-            A4453_7 = "9";
-        }
-
-        //A4453_8
-        if (rb_A4453_8_1.isChecked()) {
-            A4453_8 = "1";
-        }
-        if (rb_A4453_8_2.isChecked()) {
-            A4453_8 = "2";
-        }
-        if (rb_A4453_8_DK.isChecked()) {
-            A4453_8 = "9";
+        if (A4452298.isChecked()) {
+            A44522 = "9";
         }
 
-        //A4453_9
-        if (rb_A4453_9_1.isChecked()) {
-            A4453_9 = "1";
+        //A44523
+        if (A44523_1.isChecked()) {
+            A44523 = "1";
         }
-        if (rb_A4453_9_2.isChecked()) {
-            A4453_9 = "2";
+        if (A44523_2.isChecked()) {
+            A44523 = "2";
         }
-        if (rb_A4453_9_DK.isChecked()) {
-            A4453_9 = "9";
-        }
-
-        //A4453_10
-        if (rb_A4453_10_1.isChecked()) {
-            A4453_10 = "1";
-        }
-        if (rb_A4453_10_2.isChecked()) {
-            A4453_10 = "2";
-        }
-        if (rb_A4453_10_DK.isChecked()) {
-            A4453_10 = "9";
+        if (A4452398.isChecked()) {
+            A44523 = "9";
         }
 
-        //A4453_11
-        if (rb_A4453_11_1.isChecked()) {
-            A4453_11 = "1";
+        //A44524
+        if (A44524_1.isChecked()) {
+            A44524 = "1";
         }
-        if (rb_A4453_11_2.isChecked()) {
-            A4453_11 = "2";
+        if (A44524_2.isChecked()) {
+            A44524 = "2";
         }
-        if (rb_A4453_11_DK.isChecked()) {
-            A4453_11 = "9";
+        if (A4452498.isChecked()) {
+            A44524 = "9";
         }
 
-        //A4453_12
-        if (rb_A4453_12_1.isChecked()) {
-            A4453_12 = "1";
+        //A44525
+        if (A44525_1.isChecked()) {
+            A44525 = "1";
         }
-        if (rb_A4453_12_2.isChecked()) {
-            A4453_12 = "2";
+        if (A44525_2.isChecked()) {
+            A44525 = "2";
         }
-        if (rb_A4453_12_DK.isChecked()) {
-            A4453_12 = "9";
+        if (A4452598.isChecked()) {
+            A44525 = "9";
         }
-        if (ed_A4453_12.getText().toString().trim().length() > 0) {
-            A4453_12_OT = ed_A4453_12.getText().toString().trim();
+
+        //A44526
+        if (A44526_1.isChecked()) {
+            A44526 = "1";
+        }
+        if (A44526_2.isChecked()) {
+            A44526 = "2";
+        }
+        if (A4452698.isChecked()) {
+            A44526 = "9";
+        }
+
+        //A44527
+        if (A44527_1.isChecked()) {
+            A44527 = "1";
+        }
+        if (A44527_2.isChecked()) {
+            A44527 = "2";
+        }
+        if (A4452798.isChecked()) {
+            A44527 = "9";
+        }
+
+        //A44528
+        if (A44528_1.isChecked()) {
+            A44528 = "1";
+        }
+        if (A44528_2.isChecked()) {
+            A44528 = "2";
+        }
+        if (A4452898.isChecked()) {
+            A44528 = "9";
+        }
+
+        //A44529
+        if (A44529_1.isChecked()) {
+            A44529 = "1";
+        }
+        if (A44529_2.isChecked()) {
+            A44529 = "2";
+        }
+        if (A4452998.isChecked()) {
+            A44529 = "9";
+        }
+        if (A44529.getText().toString().trim().length() > 0) {
+            A44529_OT = A44529.getText().toString().trim();
+        }
+
+        //A44531
+        if (A44531_1.isChecked()) {
+            A44531 = "1";
+        }
+        if (A44531_2.isChecked()) {
+            A44531 = "2";
+        }
+        if (A4453198.isChecked()) {
+            A44531 = "9";
+        }
+
+        //A44532
+        if (A44532_1.isChecked()) {
+            A44532 = "1";
+        }
+        if (A44532_2.isChecked()) {
+            A44532 = "2";
+        }
+        if (A4453298.isChecked()) {
+            A44532 = "9";
+        }
+
+        //A44533
+        if (A44533_1.isChecked()) {
+            A44533 = "1";
+        }
+        if (A44533_2.isChecked()) {
+            A44533 = "2";
+        }
+        if (A4453398.isChecked()) {
+            A44533 = "9";
+        }
+
+        //A44534
+        if (A44534_1.isChecked()) {
+            A44534 = "1";
+        }
+        if (A44534_2.isChecked()) {
+            A44534 = "2";
+        }
+        if (A4453498.isChecked()) {
+            A44534 = "9";
+        }
+
+        //A44535
+        if (A44535_1.isChecked()) {
+            A44535 = "1";
+        }
+        if (A44535_2.isChecked()) {
+            A44535 = "2";
+        }
+        if (A4453598.isChecked()) {
+            A44535 = "9";
+        }
+
+        //A44536
+        if (A44536_1.isChecked()) {
+            A44536 = "1";
+        }
+        if (A44536_2.isChecked()) {
+            A44536 = "2";
+        }
+        if (A4453698.isChecked()) {
+            A44536 = "9";
+        }
+
+        //A44537
+        if (A44537_1.isChecked()) {
+            A44537 = "1";
+        }
+        if (A44537_2.isChecked()) {
+            A44537 = "2";
+        }
+        if (A4453798.isChecked()) {
+            A44537 = "9";
+        }
+
+        //A44538
+        if (A44538_1.isChecked()) {
+            A44538 = "1";
+        }
+        if (A44538_2.isChecked()) {
+            A44538 = "2";
+        }
+        if (A4453898.isChecked()) {
+            A44538 = "9";
+        }
+
+        //A44539
+        if (A44539_1.isChecked()) {
+            A44539 = "1";
+        }
+        if (A44539_2.isChecked()) {
+            A44539 = "2";
+        }
+        if (A4453998.isChecked()) {
+            A44539 = "9";
+        }
+
+        //A445310
+        if (A445310_1.isChecked()) {
+            A445310 = "1";
+        }
+        if (A445310_2.isChecked()) {
+            A445310 = "2";
+        }
+        if (A44531098.isChecked()) {
+            A445310 = "9";
+        }
+
+        //A445311
+        if (A445311_1.isChecked()) {
+            A445311 = "1";
+        }
+        if (A445311_2.isChecked()) {
+            A445311 = "2";
+        }
+        if (A44531198.isChecked()) {
+            A445311 = "9";
+        }
+
+        //A445312
+        if (A445312_1.isChecked()) {
+            A445312 = "1";
+        }
+        if (A445312_2.isChecked()) {
+            A445312 = "2";
+        }
+        if (A44531298.isChecked()) {
+            A445312 = "9";
+        }
+        if (A445312.getText().toString().trim().length() > 0) {
+            A445312_OT = A445312.getText().toString().trim();
         }
 
         //A4454
-        if (rb_A4454_1.isChecked()) {
+        if (A4454_1.isChecked()) {
             A4454 = "1";
         }
-        if (rb_A4454_2.isChecked()) {
+        if (A4454_2.isChecked()) {
             A4454 = "2";
         }
-        if (rb_A4454_DK.isChecked()) {
+        if (A445498.isChecked()) {
             A4454 = "9";
         }
-        if (rb_A4454_RA.isChecked()) {
+        if (A445499.isChecked()) {
             A4454 = "8";
         }
 
         //A4455
-        if (rb_A4455_1.isChecked()) {
+        if (A4455_1.isChecked()) {
             A4455 = "1";
         }
-        if (rb_A4455_2.isChecked()) {
+        if (A4455_2.isChecked()) {
             A4455 = "2";
         }
-        if (rb_A4455_DK.isChecked()) {
+        if (A445598.isChecked()) {
             A4455 = "9";
         }
-        if (rb_A4455_RA.isChecked()) {
+        if (A445599.isChecked()) {
             A4455 = "8";
         }
 
         //A4456
-        if (rb_A4456_1.isChecked()) {
+        if (A4456_1.isChecked()) {
             A4456 = "1";
         }
-        if (rb_A4456_2.isChecked()) {
+        if (A4456_2.isChecked()) {
             A4456 = "2";
         }
-        if (rb_A4456_DK.isChecked()) {
+        if (A445698.isChecked()) {
             A4456 = "9";
         }
-        if (rb_A4456_RA.isChecked()) {
+        if (A445699.isChecked()) {
             A4456 = "8";
         }
 
         //A4457
-        if (rb_A4457_1.isChecked()) {
+        if (A4457_1.isChecked()) {
             A4457 = "1";
         }
-        if (rb_A4457_2.isChecked()) {
+        if (A4457_2.isChecked()) {
             A4457 = "2";
         }
-        if (rb_A4457_DK.isChecked()) {
+        if (A445798.isChecked()) {
             A4457 = "9";
         }
-        if (rb_A4457_RA.isChecked()) {
+        if (A445799.isChecked()) {
             A4457 = "8";
         }
 
         //A4471
-        if (ed_A4471.getText().toString().trim().length() > 0) {
-            A4471 = ed_A4471.getText().toString().trim();
+        if (A4471.getText().toString().trim().length() > 0) {
+            A4471 = A4471.getText().toString().trim();
         }
 
         //A4472 CheckBox
-        if (cb_A4472_1.isChecked()) {
+        if (A4472_1.isChecked()) {
             A4472_1 = "1";
         }
-        if (cb_A4472_2.isChecked()) {
+        if (A4472_2.isChecked()) {
             A4472_2 = "2";
         }
-        if (cb_A4472_3.isChecked()) {
+        if (A4472_3.isChecked()) {
             A4472_3 = "3";
         }
-        if (cb_A4472_4.isChecked()) {
+        if (A4472_4.isChecked()) {
             A4472_4 = "4";
         }
-        if (cb_A4472_5.isChecked()) {
+        if (A4472_5.isChecked()) {
             A4472_5 = "5";
         }
-        if (cb_A4472_6.isChecked()) {
+        if (A4472_6.isChecked()) {
             A4472_6 = "6";
         }
-        if (cb_A4472_7.isChecked()) {
+        if (A4472_7.isChecked()) {
             A4472_7 = "7";
         }
-        if (cb_A4472_8.isChecked()) {
+        if (A4472_8.isChecked()) {
             A4472_8 = "8";
         }
-        if (cb_A4472_9.isChecked()) {
+        if (A4472_9.isChecked()) {
             A4472_9 = "9";
         }
-        if (cb_A4472_10.isChecked()) {
+        if (A4472_10.isChecked()) {
             A4472_10 = "10";
         }
-        if (cb_A4472_11.isChecked()) {
+        if (A4472_11.isChecked()) {
             A4472_11 = "11";
         }
-        if (cb_A4472_12.isChecked()) {
+        if (A4472_12.isChecked()) {
             A4472_12 = "12";
         }
-        if (cb_A4472_DK.isChecked()) {
-            A4472_DK = "99";
+        if (A447298.isChecked()) {
+            A447298 = "99";
         }
 
         //A4473
-        if (ed_A4473.getText().toString().trim().length() > 0) {
-            A4473 = ed_A4473.getText().toString().trim();
+        if (A4473.getText().toString().trim().length() > 0) {
+            A4473 = A4473.getText().toString().trim();
         }
     }
 
@@ -1505,46 +1505,46 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
                 + Global.A.A4401_A4473.A4404_years + ","
                 + Global.A.A4401_A4473.A4405_hours + ","
                 + Global.A.A4401_A4473.A4405_minutes + ","
-                + Global.A.A4401_A4473.A4451_1 + ","
-                + Global.A.A4401_A4473.A4451_2 + ","
-                + Global.A.A4401_A4473.A4451_3 + ","
-                + Global.A.A4401_A4473.A4451_4 + ","
-                + Global.A.A4401_A4473.A4451_5 + ","
-                + Global.A.A4401_A4473.A4451_6 + ","
-                + Global.A.A4401_A4473.A4451_7 + ","
-                + Global.A.A4401_A4473.A4451_8 + ","
-                + Global.A.A4401_A4473.A4451_9 + ","
-                + Global.A.A4401_A4473.A4451_10 + ","
-                + Global.A.A4401_A4473.A4451_11 + ","
-                + Global.A.A4401_A4473.A4451_12 + ","
-                + Global.A.A4401_A4473.A4451_13 + ","
-                + Global.A.A4401_A4473.A4451_13_OT + ","
-                + Global.A.A4401_A4473.A4451_code + ","
-                + Global.A.A4401_A4473.A4452_1 + ","
-                + Global.A.A4401_A4473.A4452_2 + ","
-                + Global.A.A4401_A4473.A4452_3 + ","
-                + Global.A.A4401_A4473.A4452_4 + ","
-                + Global.A.A4401_A4473.A4452_5 + ","
-                + Global.A.A4401_A4473.A4452_6 + ","
-                + Global.A.A4401_A4473.A4452_7 + ","
-                + Global.A.A4401_A4473.A4452_8 + ","
-                + Global.A.A4401_A4473.A4452_9 + ","
-                + Global.A.A4401_A4473.A4452_9_OT + ","
-                + Global.A.A4401_A4473.A4452_code + ","
-                + Global.A.A4401_A4473.A4453_1 + ","
-                + Global.A.A4401_A4473.A4453_2 + ","
-                + Global.A.A4401_A4473.A4453_3 + ","
-                + Global.A.A4401_A4473.A4453_4 + ","
-                + Global.A.A4401_A4473.A4453_5 + ","
-                + Global.A.A4401_A4473.A4453_6 + ","
-                + Global.A.A4401_A4473.A4453_7 + ","
-                + Global.A.A4401_A4473.A4453_8 + ","
-                + Global.A.A4401_A4473.A4453_9 + ","
-                + Global.A.A4401_A4473.A4453_10 + ","
-                + Global.A.A4401_A4473.A4453_11 + ","
-                + Global.A.A4401_A4473.A4453_12 + ","
-                + Global.A.A4401_A4473.A4453_12_OT + ","
-                + Global.A.A4401_A4473.A4453_code + ","
+                + Global.A.A4401_A4473.A44511 + ","
+                + Global.A.A4401_A4473.A44512 + ","
+                + Global.A.A4401_A4473.A44513 + ","
+                + Global.A.A4401_A4473.A44514 + ","
+                + Global.A.A4401_A4473.A44515 + ","
+                + Global.A.A4401_A4473.A44516 + ","
+                + Global.A.A4401_A4473.A44517 + ","
+                + Global.A.A4401_A4473.A44518 + ","
+                + Global.A.A4401_A4473.A44519 + ","
+                + Global.A.A4401_A4473.A445110 + ","
+                + Global.A.A4401_A4473.A445111 + ","
+                + Global.A.A4401_A4473.A445112 + ","
+                + Global.A.A4401_A4473.A445113 + ","
+                + Global.A.A4401_A4473.A445113_OT + ","
+                + Global.A.A4401_A4473.A4451code + ","
+                + Global.A.A4401_A4473.A44521 + ","
+                + Global.A.A4401_A4473.A44522 + ","
+                + Global.A.A4401_A4473.A44523 + ","
+                + Global.A.A4401_A4473.A44524 + ","
+                + Global.A.A4401_A4473.A44525 + ","
+                + Global.A.A4401_A4473.A44526 + ","
+                + Global.A.A4401_A4473.A44527 + ","
+                + Global.A.A4401_A4473.A44528 + ","
+                + Global.A.A4401_A4473.A44529 + ","
+                + Global.A.A4401_A4473.A44529_OT + ","
+                + Global.A.A4401_A4473.A4452code + ","
+                + Global.A.A4401_A4473.A44531 + ","
+                + Global.A.A4401_A4473.A44532 + ","
+                + Global.A.A4401_A4473.A44533 + ","
+                + Global.A.A4401_A4473.A44534 + ","
+                + Global.A.A4401_A4473.A44535 + ","
+                + Global.A.A4401_A4473.A44536 + ","
+                + Global.A.A4401_A4473.A44537 + ","
+                + Global.A.A4401_A4473.A44538 + ","
+                + Global.A.A4401_A4473.A44539 + ","
+                + Global.A.A4401_A4473.A445310 + ","
+                + Global.A.A4401_A4473.A445311 + ","
+                + Global.A.A4401_A4473.A445312 + ","
+                + Global.A.A4401_A4473.A445312_OT + ","
+                + Global.A.A4401_A4473.A4453code + ","
                 + Global.A.A4401_A4473.A4454 + ","
                 + Global.A.A4401_A4473.A4455 + ","
                 + Global.A.A4401_A4473.A4456 + ","
@@ -1562,7 +1562,7 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
                 + Global.A.A4401_A4473.A4472_10 + ","
                 + Global.A.A4401_A4473.A4472_11 + ","
                 + Global.A.A4401_A4473.A4472_12 + ","
-                + Global.A.A4401_A4473.A4472_DK + ","
+                + Global.A.A4401_A4473.A447298 + ","
                 + Global.A.A4401_A4473.A4473 + ","
                 + Global.A.A4401_A4473.STATUS + ")" +
 
@@ -1577,46 +1577,46 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
                 A4404_years + "','" +
                 A4405_hours + "','" +
                 A4405_minutes + "','" +
-                A4451_1 + "','" +
-                A4451_2 + "','" +
-                A4451_3 + "','" +
-                A4451_4 + "','" +
-                A4451_5 + "','" +
-                A4451_6 + "','" +
-                A4451_7 + "','" +
-                A4451_8 + "','" +
-                A4451_9 + "','" +
-                A4451_10 + "','" +
-                A4451_11 + "','" +
-                A4451_12 + "','" +
-                A4451_13 + "','" +
-                A4451_13_OT + "','" +
-                A4451_code + "','" +
-                A4452_1 + "','" +
-                A4452_2 + "','" +
-                A4452_3 + "','" +
-                A4452_4 + "','" +
-                A4452_5 + "','" +
-                A4452_6 + "','" +
-                A4452_7 + "','" +
-                A4452_8 + "','" +
-                A4452_9 + "','" +
-                A4452_9_OT + "','" +
-                A4452_code + "','" +
-                A4453_1 + "','" +
-                A4453_2 + "','" +
-                A4453_3 + "','" +
-                A4453_4 + "','" +
-                A4453_5 + "','" +
-                A4453_6 + "','" +
-                A4453_7 + "','" +
-                A4453_8 + "','" +
-                A4453_9 + "','" +
-                A4453_10 + "','" +
-                A4453_11 + "','" +
-                A4453_12 + "','" +
-                A4453_12_OT + "','" +
-                A4453_code + "','" +
+                A44511 + "','" +
+                A44512 + "','" +
+                A44513 + "','" +
+                A44514 + "','" +
+                A44515 + "','" +
+                A44516 + "','" +
+                A44517 + "','" +
+                A44518 + "','" +
+                A44519 + "','" +
+                A445110 + "','" +
+                A445111 + "','" +
+                A445112 + "','" +
+                A445113 + "','" +
+                A445113_OT + "','" +
+                A4451code + "','" +
+                A44521 + "','" +
+                A44522 + "','" +
+                A44523 + "','" +
+                A44524 + "','" +
+                A44525 + "','" +
+                A44526 + "','" +
+                A44527 + "','" +
+                A44528 + "','" +
+                A44529 + "','" +
+                A44529_OT + "','" +
+                A4452code + "','" +
+                A44531 + "','" +
+                A44532 + "','" +
+                A44533 + "','" +
+                A44534 + "','" +
+                A44535 + "','" +
+                A44536 + "','" +
+                A44537 + "','" +
+                A44538 + "','" +
+                A44539 + "','" +
+                A445310 + "','" +
+                A445311 + "','" +
+                A445312 + "','" +
+                A445312_OT + "','" +
+                A4453code + "','" +
                 A4454 + "','" +
                 A4455 + "','" +
                 A4456 + "','" +
@@ -1634,7 +1634,7 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
                 A4472_10 + "','" +
                 A4472_11 + "','" +
                 A4472_12 + "','" +
-                A4472_DK + "','" +
+                A447298 + "','" +
                 A4473 + "','" +
                 STATUS + "')";
 
@@ -1649,195 +1649,195 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
 
     boolean validateField() {
 
-        if (Gothrough.IamHiden(ll_study_id) == false) {
+        if (Gothrough.IamHiden(cvstudy_id) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_study_id) == false) {
+        if (Gothrough.IamHiden(cvstudy_id) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4401) == false) {
+        if (Gothrough.IamHiden(cvA4401) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4402) == false) {
+        if (Gothrough.IamHiden(cvA4402) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4403) == false) {
+        if (Gothrough.IamHiden(cvA4403) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4404) == false) {
+        if (Gothrough.IamHiden(cvA4404) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4405) == false) {
+        if (Gothrough.IamHiden(cvA4405) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4451_1) == false) {
+        if (Gothrough.IamHiden(cvA44511) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4451_2) == false) {
+        if (Gothrough.IamHiden(cvA44512) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4451_3) == false) {
+        if (Gothrough.IamHiden(cvA44513) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4451_4) == false) {
+        if (Gothrough.IamHiden(cvA44514) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4451_5) == false) {
+        if (Gothrough.IamHiden(cvA44515) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4451_6) == false) {
+        if (Gothrough.IamHiden(cvA44516) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4451_7) == false) {
+        if (Gothrough.IamHiden(cvA44517) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4451_8) == false) {
+        if (Gothrough.IamHiden(cvA44518) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4451_9) == false) {
+        if (Gothrough.IamHiden(cvA44519) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4451_10) == false) {
+        if (Gothrough.IamHiden(cvA445110) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4451_11) == false) {
+        if (Gothrough.IamHiden(cvA445111) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4451_12) == false) {
+        if (Gothrough.IamHiden(cvA445112) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4451_13) == false) {
+        if (Gothrough.IamHiden(cvA445113) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4452_1) == false) {
+        if (Gothrough.IamHiden(cvA44521) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4452_2) == false) {
+        if (Gothrough.IamHiden(cvA44522) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4452_3) == false) {
+        if (Gothrough.IamHiden(cvA44523) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4452_4) == false) {
+        if (Gothrough.IamHiden(cvA44524) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4452_5) == false) {
+        if (Gothrough.IamHiden(cvA44525) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4452_6) == false) {
+        if (Gothrough.IamHiden(cvA44526) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4452_7) == false) {
+        if (Gothrough.IamHiden(cvA44527) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4452_8) == false) {
+        if (Gothrough.IamHiden(cvA44528) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4452_9) == false) {
+        if (Gothrough.IamHiden(cvA44529) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4453_1) == false) {
+        if (Gothrough.IamHiden(cvA44531) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4453_2) == false) {
+        if (Gothrough.IamHiden(cvA44532) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4453_3) == false) {
+        if (Gothrough.IamHiden(cvA44533) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4453_4) == false) {
+        if (Gothrough.IamHiden(cvA44534) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4453_5) == false) {
+        if (Gothrough.IamHiden(cvA44535) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4453_6) == false) {
+        if (Gothrough.IamHiden(cvA44536) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4453_7) == false) {
+        if (Gothrough.IamHiden(cvA44537) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4453_8) == false) {
+        if (Gothrough.IamHiden(cvA44538) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4453_9) == false) {
+        if (Gothrough.IamHiden(cvA44539) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4453_10) == false) {
+        if (Gothrough.IamHiden(cvA445310) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4453_11) == false) {
+        if (Gothrough.IamHiden(cvA445311) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4453_12) == false) {
+        if (Gothrough.IamHiden(cvA445312) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4454) == false) {
+        if (Gothrough.IamHiden(cvA4454) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4455) == false) {
+        if (Gothrough.IamHiden(cvA4455) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4456) == false) {
+        if (Gothrough.IamHiden(cvA4456) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4457) == false) {
+        if (Gothrough.IamHiden(cvA4457) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4471) == false) {
+        if (Gothrough.IamHiden(cvA4471) == false) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_A4472) == false) {
+        if (Gothrough.IamHiden(cvA4472) == false) {
             return false;
         }
 
-        return Gothrough.IamHiden(ll_A4473) != false;
+        return Gothrough.IamHiden(cvA4473) != false;
     }
 
 

@@ -645,7 +645,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         if (requestCode == CONTENT_REQUEST) {
             if (resultCode == RESULT_OK) {
 
-                txt_cap_count.setText("Pictures Attached: " + String.valueOf(count));
+                txt_cap_count.setText("Pictures Attached: " + count);
 
                 Toast.makeText(this, "Image capture done!!", Toast.LENGTH_SHORT).show();
                 btn_next14.setEnabled(true);
@@ -665,7 +665,7 @@ public class A4401_A4473 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c = new Intent(A4401_A4473.this, A4001_A4014.class);
+        Intent c = new Intent(A4401_A4473.this, A4001.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
 
