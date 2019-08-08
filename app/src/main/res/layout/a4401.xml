@@ -241,7 +241,7 @@
             <!-- EditText A4405 Ends -->
 
             <LinearLayout
-                android:id="@+id/cv51_52_53"
+                android:id="@+id/ll51_52_53"
                 style="@style/Q_Linerlayout_v"
                 android:layout_margin="0dp"
                 android:padding="0dp">
@@ -257,7 +257,9 @@
                             style="@style/TextView"
                             android:text="@string/A44511" />
 
-                        <RadioGroup style="@style/RadioGroup">
+                        <RadioGroup
+                            android:id="@+id/A44511"
+                            style="@style/RadioGroup">
 
                             <RadioButton
                                 android:id="@+id/A44511a"
