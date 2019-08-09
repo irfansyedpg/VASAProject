@@ -1744,7 +1744,9 @@
                 android:id="@+id/cvA4472"
                 style="@style/Q_CardView">
 
-                <LinearLayout style="@style/Q_Linerlayout_v">
+                <LinearLayout
+                    android:id="@+id/llA4472"
+                    style="@style/Q_Linerlayout_v">
 
                     <TextView
                         style="@style/TextView"

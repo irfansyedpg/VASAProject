@@ -40,7 +40,8 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
 
     LinearLayout
             llA4401,
-            ll51_52_53;
+            ll51_52_53,
+            llA4472;
 
     CardView
             cvstudy_id, cvA4401, cvA4402, cvA4403, cvA4404, cvA4405, cvA44511, cvA44512,
@@ -147,6 +148,7 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
 
         llA4401 = findViewById(R.id.llA4401);
         ll51_52_53 = findViewById(R.id.ll51_52_53);
+        llA4401 = findViewById(R.id.llA4401);
 
         cvA4401 = findViewById(R.id.cvA4401);
         cvA4402 = findViewById(R.id.cvA4402);
@@ -698,7 +700,7 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
         // A4472k.setOnCheckedChangeListener(this);
         // A4472l.setOnCheckedChangeListener(this);
         // A447298.setOnCheckedChangeListener(this);
-        smart(cvA4472);
+        smart(llA4472);
 
     }
 
