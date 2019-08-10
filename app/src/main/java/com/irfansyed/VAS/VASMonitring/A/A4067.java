@@ -75,76 +75,76 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
             A4080;
 
     RadioButton
-            rbA4067_1,
-            rbA4067_2,
-            rbA4067_DK,
-            rbA4067_RA,
-            rbA4068_1,
-            rbA4068_2,
-            rbA4068_DK,
-            rbA4068_RA,
-            rbA4069u_1,
-            rbA4069u_2,
-            rbA4069u_3,
-            rbA4069u_DK,
-            rbA4069u_RA,
-            rbA4070_1,
-            rbA4070_2,
-            rbA4070_3,
-            rbA4070_DK,
-            rbA4070_RA,
-            rbA4071_1,
-            rbA4071_2,
-            rbA4071_DK,
-            rbA4071_RA,
-            rbA4072u_1,
-            rbA4072u_2,
-            rbA4072u_DK,
-            rbA4072u_RA,
-            rbA4073_1,
-            rbA4073_2,
-            rbA4073_DK,
-            rbA4073_RA,
-            rbA4074_1,
-            rbA4074_2,
-            rbA4074_DK,
-            rbA4074_RA,
-            rbA4075u_1,
-            rbA4075u_2,
-            rbA4075u_DK,
-            rbA4075u_RA,
-            rbA4076_1,
-            rbA4076_2,
-            rbA4076_DK,
-            rbA4076_RA,
-            rbA4077u_1,
-            rbA4077u_2,
-            rbA4077u_DK,
-            rbA4077u_RA,
-            rbA4078_1,
-            rbA4078_2,
-            rbA4078_DK,
-            rbA4078_RA,
-            rbA4079_1,
-            rbA4079_2,
-            rbA4079_DK,
-            rbA4079_RA,
-            rbA4080_1,
-            rbA4080_2,
-            rbA4080_DK,
-            rbA4080_RA;
+            A4067_1,
+            A4067_2,
+            A406798,
+            A4067_RA,
+            A4068_1,
+            A4068_2,
+            A406898,
+            A4068_RA,
+            A4069ua,
+            A4069u_2,
+            A4069u_3,
+            A4069u98,
+            A4069u_RA,
+            A4070_1,
+            A4070_2,
+            A4070_3,
+            A407098,
+            A4070_RA,
+            A4071_1,
+            A4071_2,
+            A407198,
+            A4071_RA,
+            A4072u_1,
+            A4072u_2,
+            A4072u98,
+            A4072u_RA,
+            A4073_1,
+            A4073_2,
+            A407398,
+            A4073_RA,
+            A4074_1,
+            A4074_2,
+            A407498,
+            A4074_RA,
+            A4075u_1,
+            A4075u_2,
+            A4075u98,
+            A4075u_RA,
+            A4076_1,
+            A4076_2,
+            A407698,
+            A4076_RA,
+            A4077u_1,
+            A4077u_2,
+            A4077u98,
+            A4077u_RA,
+            A4078_1,
+            A4078_2,
+            A407898,
+            A4078_RA,
+            A4079_1,
+            A4079_2,
+            A407998,
+            A4079_RA,
+            A4080_1,
+            A4080_2,
+            A408098,
+            A4080_RA;
 
     EditText
             ed_study_id,
-            ed_A4069_a,
-            ed_A4069_b,
-            ed_A4069_c,
-            ed_A4072_a,
-            ed_A4072_b,
-            ed_A4075_a,
-            ed_A4075_b,
-            ed_A4077_a,
-            ed_A4077_b;
+            A4069_a,
+            A4069_b,
+            A4069_c,
+            A4072_a,
+            A4072_b,
+            A4075_a,
+            A4075_b,
+            A4077_a,
+            A4077_b;
 
     String
             study_id,
@@ -164,7 +164,7 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
         cvA4067 = findViewById(R.id.cvA4067);
         cvA4068 = findViewById(R.id.cvA4068);
         cvA4069u = findViewById(R.id.cvA4069u);
-        cvA4069_a = findViewById(R.id.cvA4069_a);
+        cvA4069_a = findViewById(R.id.cvA4069a);
         cvA4069_b = findViewById(R.id.cvA4069_b);
         cvA4069_c = findViewById(R.id.cvA4069_c);
         cvA4070 = findViewById(R.id.cvA4070);
@@ -202,64 +202,64 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
         A4080 = findViewById(R.id.A4080);
 
         //Radio Button
-        rbA4067_1 = findViewById(R.id.rbA4067_1);
-        rbA4067_2 = findViewById(R.id.rbA4067_2);
-        rbA4067_DK = findViewById(R.id.rbA4067_DK);
-        rbA4067_RA = findViewById(R.id.rbA4067_RA);
-        rbA4068_1 = findViewById(R.id.rbA4068_1);
-        rbA4068_2 = findViewById(R.id.rbA4068_2);
-        rbA4068_DK = findViewById(R.id.rbA4068_DK);
-        rbA4068_RA = findViewById(R.id.rbA4068_RA);
-        rbA4069u_1 = findViewById(R.id.rbA4069u_1);
-        rbA4069u_2 = findViewById(R.id.rbA4069u_2);
-        rbA4069u_3 = findViewById(R.id.rbA4069u_3);
-        rbA4069u_DK = findViewById(R.id.rbA4069u_DK);
-        rbA4069u_RA = findViewById(R.id.rbA4069u_RA);
-        rbA4070_1 = findViewById(R.id.rbA4070_1);
-        rbA4070_2 = findViewById(R.id.rbA4070_2);
-        rbA4070_3 = findViewById(R.id.rbA4070_3);
-        rbA4070_DK = findViewById(R.id.rbA4070_DK);
-        rbA4070_RA = findViewById(R.id.rbA4070_RA);
-        rbA4071_1 = findViewById(R.id.rbA4071_1);
-        rbA4071_2 = findViewById(R.id.rbA4071_2);
-        rbA4071_DK = findViewById(R.id.rbA4071_DK);
-        rbA4071_RA = findViewById(R.id.rbA4071_RA);
-        rbA4072u_1 = findViewById(R.id.rbA4072u_1);
-        rbA4072u_2 = findViewById(R.id.rbA4072u_2);
-        rbA4072u_DK = findViewById(R.id.rbA4072u_DK);
-        rbA4072u_RA = findViewById(R.id.rbA4072u_RA);
-        rbA4073_1 = findViewById(R.id.rbA4073_1);
-        rbA4073_2 = findViewById(R.id.rbA4073_2);
-        rbA4073_DK = findViewById(R.id.rbA4073_DK);
-        rbA4073_RA = findViewById(R.id.rbA4073_RA);
-        rbA4074_1 = findViewById(R.id.rbA4074_1);
-        rbA4074_2 = findViewById(R.id.rbA4074_2);
-        rbA4074_DK = findViewById(R.id.rbA4074_DK);
-        rbA4074_RA = findViewById(R.id.rbA4074_RA);
-        rbA4075u_1 = findViewById(R.id.rbA4075u_1);
-        rbA4075u_2 = findViewById(R.id.rbA4075u_2);
-        rbA4075u_DK = findViewById(R.id.rbA4075u_DK);
-        rbA4075u_RA = findViewById(R.id.rbA4075u_RA);
-        rbA4076_1 = findViewById(R.id.rbA4076_1);
-        rbA4076_2 = findViewById(R.id.rbA4076_2);
-        rbA4076_DK = findViewById(R.id.rbA4076_DK);
-        rbA4076_RA = findViewById(R.id.rbA4076_RA);
-        rbA4077u_1 = findViewById(R.id.rbA4077u_1);
-        rbA4077u_2 = findViewById(R.id.rbA4077u_2);
-        rbA4077u_DK = findViewById(R.id.rbA4077u_DK);
-        rbA4077u_RA = findViewById(R.id.rbA4077u_RA);
-        rbA4078_1 = findViewById(R.id.rbA4078_1);
-        rbA4078_2 = findViewById(R.id.rbA4078_2);
-        rbA4078_DK = findViewById(R.id.rbA4078_DK);
-        rbA4078_RA = findViewById(R.id.rbA4078_RA);
-        rbA4079_1 = findViewById(R.id.rbA4079_1);
-        rbA4079_2 = findViewById(R.id.rbA4079_2);
-        rbA4079_DK = findViewById(R.id.rbA4079_DK);
-        rbA4079_RA = findViewById(R.id.rbA4079_RA);
-        rbA4080_1 = findViewById(R.id.rbA4080_1);
-        rbA4080_2 = findViewById(R.id.rbA4080_2);
-        rbA4080_DK = findViewById(R.id.rbA4080_DK);
-        rbA4080_RA = findViewById(R.id.rbA4080_RA);
+        A4067_1 = findViewById(R.id.A4067_1);
+        A4067_2 = findViewById(R.id.A4067_2);
+        A406798 = findViewById(R.id.A406798);
+        A4067_RA = findViewById(R.id.A4067_RA);
+        A4068_1 = findViewById(R.id.A4068_1);
+        A4068_2 = findViewById(R.id.A4068_2);
+        A406898 = findViewById(R.id.A406898);
+        A4068_RA = findViewById(R.id.A4068_RA);
+        A4069ua = findViewById(R.id.A4069ua);
+        A4069u_2 = findViewById(R.id.A4069u_2);
+        A4069u_3 = findViewById(R.id.A4069u_3);
+        A4069u98 = findViewById(R.id.A4069u98);
+        A4069u_RA = findViewById(R.id.A4069u_RA);
+        A4070_1 = findViewById(R.id.A4070_1);
+        A4070_2 = findViewById(R.id.A4070_2);
+        A4070_3 = findViewById(R.id.A4070_3);
+        A407098 = findViewById(R.id.A407098);
+        A4070_RA = findViewById(R.id.A4070_RA);
+        A4071_1 = findViewById(R.id.A4071_1);
+        A4071_2 = findViewById(R.id.A4071_2);
+        A407198 = findViewById(R.id.A407198);
+        A4071_RA = findViewById(R.id.A4071_RA);
+        A4072u_1 = findViewById(R.id.A4072u_1);
+        A4072u_2 = findViewById(R.id.A4072u_2);
+        A4072u98 = findViewById(R.id.A4072u98);
+        A4072u_RA = findViewById(R.id.A4072u_RA);
+        A4073_1 = findViewById(R.id.A4073_1);
+        A4073_2 = findViewById(R.id.A4073_2);
+        A407398 = findViewById(R.id.A407398);
+        A4073_RA = findViewById(R.id.A4073_RA);
+        A4074_1 = findViewById(R.id.A4074_1);
+        A4074_2 = findViewById(R.id.A4074_2);
+        A407498 = findViewById(R.id.A407498);
+        A4074_RA = findViewById(R.id.A4074_RA);
+        A4075u_1 = findViewById(R.id.A4075u_1);
+        A4075u_2 = findViewById(R.id.A4075u_2);
+        A4075u98 = findViewById(R.id.A4075u98);
+        A4075u_RA = findViewById(R.id.A4075u_RA);
+        A4076_1 = findViewById(R.id.A4076_1);
+        A4076_2 = findViewById(R.id.A4076_2);
+        A407698 = findViewById(R.id.A407698);
+        A4076_RA = findViewById(R.id.A4076_RA);
+        A4077u_1 = findViewById(R.id.A4077u_1);
+        A4077u_2 = findViewById(R.id.A4077u_2);
+        A4077u98 = findViewById(R.id.A4077u98);
+        A4077u_RA = findViewById(R.id.A4077u_RA);
+        A4078_1 = findViewById(R.id.A4078_1);
+        A4078_2 = findViewById(R.id.A4078_2);
+        A407898 = findViewById(R.id.A407898);
+        A4078_RA = findViewById(R.id.A4078_RA);
+        A4079_1 = findViewById(R.id.A4079_1);
+        A4079_2 = findViewById(R.id.A4079_2);
+        A407998 = findViewById(R.id.A407998);
+        A4079_RA = findViewById(R.id.A4079_RA);
+        A4080_1 = findViewById(R.id.A4080_1);
+        A4080_2 = findViewById(R.id.A4080_2);
+        A408098 = findViewById(R.id.A408098);
+        A4080_RA = findViewById(R.id.A4080_RA);
 
         // Edit Text
         ed_A4069_a = findViewById(R.id.ed_A4069_a);
@@ -308,7 +308,7 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
             e.printStackTrace();
         }
 
-        Intent c = new Intent(A4067.this, A4081_A4094.class);
+        Intent c = new Intent(A4067.this, A4081.class);
         c.putExtra("study_id", study_id);
         startActivity(c);
 
@@ -321,7 +321,7 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                if (checkedId == rbA4067_1.getId()) {
+                if (checkedId == A4067_1.getId()) {
                     cvA4068.setVisibility(View.VISIBLE);
                     cvA4069u.setVisibility(View.VISIBLE);
                     cvA4069_a.setVisibility(View.VISIBLE);
@@ -359,11 +359,11 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
                 cvA4069_b.setVisibility(View.GONE);
                 cvA4069_c.setVisibility(View.GONE);
 
-                if (checkedId == rbA4069u_1.getId()) {
+                if (checkedId == A4069ua.getId()) {
                     cvA4069_a.setVisibility(View.VISIBLE);
-                } else if (checkedId == rbA4069u_2.getId()) {
+                } else if (checkedId == A4069u_2.getId()) {
                     cvA4069_b.setVisibility(View.VISIBLE);
-                } else if (checkedId == rbA4069u_3.getId()) {
+                } else if (checkedId == A4069u_3.getId()) {
                     cvA4069_c.setVisibility(View.VISIBLE);
                 }
 
@@ -376,7 +376,7 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                if (checkedId == rbA4071_1.getId()) {
+                if (checkedId == A4071_1.getId()) {
                     cvA4072u.setVisibility(View.VISIBLE);
                     cvA4072_a.setVisibility(View.VISIBLE);
                     cvA4072_b.setVisibility(View.VISIBLE);
@@ -408,9 +408,9 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
                 cvA4072_a.setVisibility(View.GONE);
                 cvA4072_b.setVisibility(View.GONE);
 
-                if (checkedId == rbA4072u_1.getId()) {
+                if (checkedId == A4072u_1.getId()) {
                     cvA4072_a.setVisibility(View.VISIBLE);
-                } else if (checkedId == rbA4072u_2.getId()) {
+                } else if (checkedId == A4072u_2.getId()) {
                     cvA4072_b.setVisibility(View.VISIBLE);
                 }
             }
@@ -421,7 +421,7 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                if (checkedId == rbA4074_1.getId()) {
+                if (checkedId == A4074_1.getId()) {
                     cvA4075u.setVisibility(View.VISIBLE);
                     cvA4075_a.setVisibility(View.VISIBLE);
                     cvA4075_b.setVisibility(View.VISIBLE);
@@ -448,9 +448,9 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
                 cvA4075_a.setVisibility(View.GONE);
                 cvA4075_b.setVisibility(View.GONE);
 
-                if (checkedId == rbA4075u_1.getId()) {
+                if (checkedId == A4075u_1.getId()) {
                     cvA4075_a.setVisibility(View.VISIBLE);
-                } else if (checkedId == rbA4075u_2.getId()) {
+                } else if (checkedId == A4075u_2.getId()) {
                     cvA4075_b.setVisibility(View.VISIBLE);
                 }
             }
@@ -461,7 +461,7 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                if (checkedId == rbA4076_1.getId()) {
+                if (checkedId == A4076_1.getId()) {
                     cvA4077u.setVisibility(View.VISIBLE);
                     cvA4077_a.setVisibility(View.VISIBLE);
                     cvA4077_b.setVisibility(View.VISIBLE);
@@ -497,9 +497,9 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
                 cvA4077_a.setVisibility(View.GONE);
                 cvA4077_b.setVisibility(View.GONE);
 
-                if (checkedId == rbA4077u_1.getId()) {
+                if (checkedId == A4077u_1.getId()) {
                     cvA4077_a.setVisibility(View.VISIBLE);
-                } else if (checkedId == rbA4077u_2.getId()) {
+                } else if (checkedId == A4077u_2.getId()) {
                     cvA4077_b.setVisibility(View.VISIBLE);
                 }
             }
@@ -536,25 +536,25 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
         json.put("study_id", ed_study_id.getText().toString().length() > 0 ? ed_study_id.getText().toString().trim() : "-1");
 
         //A4067
-        json.put("A4067", rbA4067_1.isChecked() ? "1"
-                : rbA4067_2.isChecked() ? "2"
-                : rbA4067_DK.isChecked() ? "98"
-                : rbA4067_RA.isChecked() ? "99"
+        json.put("A4067", A4067_1.isChecked() ? "1"
+                : A4067_2.isChecked() ? "2"
+                : A406798.isChecked() ? "98"
+                : A4067_RA.isChecked() ? "99"
                 : "-1");
 
         //A4068
-        json.put("A4068", rbA4068_1.isChecked() ? "1"
-                : rbA4068_2.isChecked() ? "2"
-                : rbA4068_DK.isChecked() ? "98"
-                : rbA4068_RA.isChecked() ? "99"
+        json.put("A4068", A4068_1.isChecked() ? "1"
+                : A4068_2.isChecked() ? "2"
+                : A406898.isChecked() ? "98"
+                : A4068_RA.isChecked() ? "99"
                 : "-1");
 
         //A4069u
-        json.put("A4069u", rbA4069u_1.isChecked() ? "1"
-                : rbA4069u_2.isChecked() ? "2"
-                : rbA4069u_3.isChecked() ? "3"
-                : rbA4069u_DK.isChecked() ? "98"
-                : rbA4069u_RA.isChecked() ? "99"
+        json.put("A4069u", A4069ua.isChecked() ? "1"
+                : A4069u_2.isChecked() ? "2"
+                : A4069u_3.isChecked() ? "3"
+                : A4069u98.isChecked() ? "98"
+                : A4069u_RA.isChecked() ? "99"
                 : "-1");
 
         //A4069_a
@@ -568,26 +568,26 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
 
 
         //A4070
-        json.put("A4070", rbA4070_1.isChecked() ? "1"
-                : rbA4070_2.isChecked() ? "2"
-                : rbA4070_3.isChecked() ? "3"
-                : rbA4070_DK.isChecked() ? "98"
-                : rbA4070_RA.isChecked() ? "99"
+        json.put("A4070", A4070_1.isChecked() ? "1"
+                : A4070_2.isChecked() ? "2"
+                : A4070_3.isChecked() ? "3"
+                : A407098.isChecked() ? "98"
+                : A4070_RA.isChecked() ? "99"
                 : "-1");
 
         //A4071
-        json.put("A4071", rbA4071_1.isChecked() ? "1"
-                : rbA4071_2.isChecked() ? "2"
-                : rbA4071_DK.isChecked() ? "98"
-                : rbA4071_RA.isChecked() ? "99"
+        json.put("A4071", A4071_1.isChecked() ? "1"
+                : A4071_2.isChecked() ? "2"
+                : A407198.isChecked() ? "98"
+                : A4071_RA.isChecked() ? "99"
                 : "-1");
 
 
         //A4072u
-        json.put("A4072u", rbA4072u_1.isChecked() ? "1"
-                : rbA4072u_2.isChecked() ? "2"
-                : rbA4072u_DK.isChecked() ? "98"
-                : rbA4072u_RA.isChecked() ? "99"
+        json.put("A4072u", A4072u_1.isChecked() ? "1"
+                : A4072u_2.isChecked() ? "2"
+                : A4072u98.isChecked() ? "98"
+                : A4072u_RA.isChecked() ? "99"
                 : "-1");
 
         //A4072_a
@@ -598,25 +598,25 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
 
 
         //A4073
-        json.put("A4073", rbA4073_1.isChecked() ? "1"
-                : rbA4073_2.isChecked() ? "2"
-                : rbA4073_DK.isChecked() ? "98"
-                : rbA4073_RA.isChecked() ? "99"
+        json.put("A4073", A4073_1.isChecked() ? "1"
+                : A4073_2.isChecked() ? "2"
+                : A407398.isChecked() ? "98"
+                : A4073_RA.isChecked() ? "99"
                 : "-1");
 
         //A4074
-        json.put("A4074", rbA4074_1.isChecked() ? "1"
-                : rbA4074_2.isChecked() ? "2"
-                : rbA4074_DK.isChecked() ? "98"
-                : rbA4074_RA.isChecked() ? "99"
+        json.put("A4074", A4074_1.isChecked() ? "1"
+                : A4074_2.isChecked() ? "2"
+                : A407498.isChecked() ? "98"
+                : A4074_RA.isChecked() ? "99"
                 : "-1");
 
 
         //A4075u
-        json.put("A4075u", rbA4075u_1.isChecked() ? "1"
-                : rbA4075u_2.isChecked() ? "2"
-                : rbA4075u_DK.isChecked() ? "98"
-                : rbA4075u_RA.isChecked() ? "99"
+        json.put("A4075u", A4075u_1.isChecked() ? "1"
+                : A4075u_2.isChecked() ? "2"
+                : A4075u98.isChecked() ? "98"
+                : A4075u_RA.isChecked() ? "99"
                 : "-1");
 
         //A4075_a
@@ -627,18 +627,18 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
 
 
         //A4076
-        json.put("A4076", rbA4076_1.isChecked() ? "1"
-                : rbA4076_2.isChecked() ? "2"
-                : rbA4076_DK.isChecked() ? "98"
-                : rbA4076_RA.isChecked() ? "99"
+        json.put("A4076", A4076_1.isChecked() ? "1"
+                : A4076_2.isChecked() ? "2"
+                : A407698.isChecked() ? "98"
+                : A4076_RA.isChecked() ? "99"
                 : "-1");
 
 
         //A4077u
-        json.put("A4077u", rbA4077u_1.isChecked() ? "1"
-                : rbA4077u_2.isChecked() ? "2"
-                : rbA4077u_DK.isChecked() ? "98"
-                : rbA4077u_RA.isChecked() ? "99"
+        json.put("A4077u", A4077u_1.isChecked() ? "1"
+                : A4077u_2.isChecked() ? "2"
+                : A4077u98.isChecked() ? "98"
+                : A4077u_RA.isChecked() ? "99"
                 : "-1");
 
         //A4077_a
@@ -649,24 +649,24 @@ public class A4067 extends AppCompatActivity implements View.OnClickListener {
 
 
         //A4078
-        json.put("A4078", rbA4078_1.isChecked() ? "1"
-                : rbA4078_2.isChecked() ? "2"
-                : rbA4078_DK.isChecked() ? "98"
-                : rbA4078_RA.isChecked() ? "99"
+        json.put("A4078", A4078_1.isChecked() ? "1"
+                : A4078_2.isChecked() ? "2"
+                : A407898.isChecked() ? "98"
+                : A4078_RA.isChecked() ? "99"
                 : "-1");
 
         //A4079
-        json.put("A4079", rbA4079_1.isChecked() ? "1"
-                : rbA4079_2.isChecked() ? "2"
-                : rbA4079_DK.isChecked() ? "98"
-                : rbA4079_RA.isChecked() ? "99"
+        json.put("A4079", A4079_1.isChecked() ? "1"
+                : A4079_2.isChecked() ? "2"
+                : A407998.isChecked() ? "98"
+                : A4079_RA.isChecked() ? "99"
                 : "-1");
 
         //A4080
-        json.put("A4080", rbA4080_1.isChecked() ? "1"
-                : rbA4080_2.isChecked() ? "2"
-                : rbA4080_DK.isChecked() ? "98"
-                : rbA4080_RA.isChecked() ? "99"
+        json.put("A4080", A4080_1.isChecked() ? "1"
+                : A4080_2.isChecked() ? "2"
+                : A408098.isChecked() ? "98"
+                : A4080_RA.isChecked() ? "99"
                 : "-1");
 
 
