@@ -144,8 +144,11 @@ public class A4351 extends AppCompatActivity implements View.OnClickListener {
             return;
         }
 
-        value_assignment();
-        insert_data();
+        try {
+            Assignment_Insertion();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
         Intent c = new Intent(A4351.this, A4401.class);
         c.putExtra("study_id", study_id);
@@ -232,102 +235,6 @@ public class A4351 extends AppCompatActivity implements View.OnClickListener {
 
     }
 
-    void value_assignment() {
-
-        //A4353
-        if (A4353.getText().toString().trim().length() > 0) {
-            A4353 = A4353.getText().toString().trim();
-        }
-
-        //A4354
-        if (A4354.getText().toString().trim().length() > 0) {
-            A4354 = A4354.getText().toString().trim();
-        }
-
-        //A4355
-        if (A4355.getText().toString().trim().length() > 0) {
-            A4355 = A4355.getText().toString().trim();
-        }
-
-        //A4356
-        if (A4356.getText().toString().trim().length() > 0) {
-            A4356 = A4356.getText().toString().trim();
-        }
-
-        //A4357
-        if (A4357.getText().toString().trim().length() > 0) {
-            A4357 = A4357.getText().toString().trim();
-        }
-
-        //A4358
-        if (A4358.getText().toString().trim().length() > 0) {
-            A4358 = A4358.getText().toString().trim();
-        }
-
-        //A4363
-        if (A4363a.isChecked()) {
-            A4363 = "1";
-        }
-        if (A4363b.isChecked()) {
-            A4363 = "2";
-        }
-        if (A4363c.isChecked()) {
-            A4363 = "3";
-        }
-        if (A436398.isChecked()) {
-            A4363 = "9";
-        }
-        if (A436399.isChecked()) {
-            A4363 = "8";
-        }
-
-        //A4364
-        if (A4364.getText().toString().trim().length() > 0) {
-            A4364 = A4364.getText().toString().trim();
-        }
-    }
-
-    void insert_data() {
-
-        String query = "insert into A4351_A4364("
-
-                + Global.A.A4351_A4364.study_id + ","
-                + Global.A.A4351_A4364.A4351 + ","
-                + Global.A.A4351_A4364.A4352 + ","
-                + Global.A.A4351_A4364.A4353 + ","
-                + Global.A.A4351_A4364.A4354 + ","
-                + Global.A.A4351_A4364.A4355 + ","
-                + Global.A.A4351_A4364.A4356 + ","
-                + Global.A.A4351_A4364.A4357 + ","
-                + Global.A.A4351_A4364.A4358 + ","
-                + Global.A.A4351_A4364.A4363 + ","
-                + Global.A.A4351_A4364.A4364 + ","
-                + Global.A.A4351_A4364.STATUS + ")" +
-
-                " values ('" +
-
-                study_id + "','" +
-                A4351 + "','" +
-                A4352 + "','" +
-                A4353 + "','" +
-                A4354 + "','" +
-                A4355 + "','" +
-                A4356 + "','" +
-                A4357 + "','" +
-                A4358 + "','" +
-                A4363 + "','" +
-                A4364 + "','" +
-                STATUS + "')";
-
-        query = String.format(query);
-
-        LocalDataManager Lm = new LocalDataManager(this);
-
-        LocalDataManager.database.execSQL(query);
-
-        Toast.makeText(this, "13th TABLE SAVED Successfully", Toast.LENGTH_SHORT).show();
-    }
-
     void Assignment_Insertion() throws JSONException {
 
         Toast.makeText(this, "Value Assignment & Data Insertion for  This Section", Toast.LENGTH_SHORT).show();
@@ -367,6 +274,17 @@ public class A4351 extends AppCompatActivity implements View.OnClickListener {
         //A4358
         json.put("A4358", A4358.getText().toString().length() > 0 ? A4358.getText().toString().trim() : "-1");
 
+        //A4363
+        json.put("A4363", A4363a.isChecked() ? "1"
+                : A4363b.isChecked() ? "2"
+                : A4363c.isChecked() ? "3"
+                : A436398.isChecked() ? "98"
+                : A436399.isChecked() ? "99"
+                : "-1");
+
+        //A4364
+        json.put("A4364", A4364.getText().toString().length() > 0 ? A4364.getText().toString().trim() : "-1");
+
 
         //json.put("mp06b001id1", mp06b001id1.getSelectedItem().toString());
         //json.put("mp06b002", mp06b002.getText().toString());
@@ -388,4 +306,5 @@ public class A4351 extends AppCompatActivity implements View.OnClickListener {
 
         return Gothrough.IamHiden(llA4351) != false;
     }
+
 }
