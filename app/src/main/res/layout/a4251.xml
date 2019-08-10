@@ -95,27 +95,22 @@
                     <LinearLayout style="@style/Q_Linerlayout_v">
 
                         <TextView
-                            android:id="@+id/A4252a"
                             style="@style/TextView"
-                            android:text="@string/A4252a" />
+                            android:text="@string/A42521" />
 
                         <TextView
-                            android:id="@+id/A4252_2"
                             style="@style/TextView"
                             android:text="@string/A42522" />
 
                         <TextView
-                            android:id="@+id/A4252_3"
                             style="@style/TextView"
                             android:text="@string/A42523" />
 
                         <TextView
-                            android:id="@+id/A42524"
                             style="@style/TextView"
                             android:text="@string/A42524" />
 
                         <TextView
-                            android:id="@+id/A4252_5"
                             style="@style/TextView"
                             android:text="@string/A42525" />
 
@@ -178,13 +173,14 @@
                         <RadioButton
                             android:id="@+id/A425396"
                             style="@style/RadioButton"
-                            android:text="@string/ot_someone" />
+                            android:text="@string/someone" />
 
                         <EditText
-                            android:id="@+id/ed_A425396x"
+                            android:id="@+id/A425396x"
                             style="@style/EditText_varchar"
                             android:hint="Please Specify..."
-                            android:visibility="gone" />
+                            android:text='@{A425396.checked ? A425396x.getText.toString : "" }'
+                            android:visibility='@{A425396.checked ? View.VISIBLE : View.GONE }' />
 
                         <RadioButton
                             android:id="@+id/A425398"
@@ -353,10 +349,10 @@
                     <CheckBox
                         android:id="@+id/A425596"
                         style="@style/CheckBox"
-                        android:text="@string/ot_other" />
+                        android:text="@string/other" />
 
                     <EditText
-                        android:id="@+id/ed_A425596"
+                        android:id="@+id/A425596x"
                         style="@style/EditText_varchar"
                         android:hint="Please Specify..."
                         android:visibility="gone" />
