@@ -65,22 +65,22 @@
                         style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/A4051_1"
+                            android:id="@+id/A4051a"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/A4051_2"
+                            android:id="@+id/A4051b"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/A4051_DK"
+                            android:id="@+id/A405198"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4051_RA"
+                            android:id="@+id/A405199"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -121,12 +121,12 @@
                             android:text="@string/months" />
 
                         <RadioButton
-                            android:id="@+id/A4052_u_DK"
+                            android:id="@+id/A4052_u98"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4052_u_RA"
+                            android:id="@+id/A4052_u99"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -153,7 +153,7 @@
                         android:text="Enter 0-29 days. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days. \n Don't know = 99" />
 
                     <EditText
-                        android:id="@+id/ed_A4052_b"
+                        android:id="@+id/A4052_b"
                         style="@style/EditText_number"
                         android:hint="0-29 or 99"
                         android:maxLength="2" />
@@ -179,7 +179,7 @@
                         android:text="Enter 1-60 months. \nDon't know = 99" />
 
                     <EditText
-                        android:id="@+id/ed_A4052_c"
+                        android:id="@+id/A4052_c"
                         style="@style/EditText_number"
                         android:hint="1-60 or 99"
                         android:maxLength="2" />
@@ -215,12 +215,12 @@
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/A4053_DK"
+                            android:id="@+id/A405398"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4053_RA"
+                            android:id="@+id/A405399"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -249,12 +249,12 @@
                         <RadioButton
                             android:id="@+id/A4054_1"
                             style="@style/RadioButton"
-                            android:text="@string/A4054_1" />
+                            android:text="@string/rb_A4054_1" />
 
                         <RadioButton
                             android:id="@+id/A4054_2"
                             style="@style/RadioButton"
-                            android:text="@string/A4054_2" />
+                            android:text="@string/rb_A4054_2" />
 
                         <RadioButton
                             android:id="@+id/A4054_3"
@@ -262,12 +262,12 @@
                             android:text="@string/A4054_3" />
 
                         <RadioButton
-                            android:id="@+id/A4054_DK"
+                            android:id="@+id/A405498"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4054_RA"
+                            android:id="@+id/A405499"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -309,12 +309,12 @@
                             android:text="@string/A4055_3" />
 
                         <RadioButton
-                            android:id="@+id/A4055_DK"
+                            android:id="@+id/A405598"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4055_RA"
+                            android:id="@+id/A405599"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -351,12 +351,12 @@
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/A4056_DK"
+                            android:id="@+id/A405698"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4056_RA"
+                            android:id="@+id/A405699"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -393,12 +393,12 @@
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/A4057_DK"
+                            android:id="@+id/A405798"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4057_RA"
+                            android:id="@+id/A405799"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -435,12 +435,12 @@
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/A4058_DK"
+                            android:id="@+id/A405898"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4058_RA"
+                            android:id="@+id/A405899"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -481,12 +481,12 @@
                             android:text="@string/months" />
 
                         <RadioButton
-                            android:id="@+id/A4059_u_DK"
+                            android:id="@+id/A4059_u98"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4059_u_RA"
+                            android:id="@+id/A4059_u99"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -513,7 +513,7 @@
                         android:text="Enter 0-29 days. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days. \nDon't know = 99" />
 
                     <EditText
-                        android:id="@+id/ed_A4059_a"
+                        android:id="@+id/A4059_a"
                         style="@style/EditText_number"
                         android:hint="0-29 or 99"
                         android:maxLength="2" />
@@ -539,7 +539,7 @@
                         android:text="Enter 1-60 months. \nDon't know = 99" />
 
                     <EditText
-                        android:id="@+id/ed_A4059_b"
+                        android:id="@+id/A4059_b"
                         style="@style/EditText_number"
                         android:hint="1-60 or 99"
                         android:maxLength="2" />
@@ -575,12 +575,12 @@
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/A4060_DK"
+                            android:id="@+id/A406098"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4060_RA"
+                            android:id="@+id/A406099"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -617,12 +617,12 @@
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/A4061_DK"
+                            android:id="@+id/A406198"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4061_RA"
+                            android:id="@+id/A406199"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -659,12 +659,12 @@
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/A4062_DK"
+                            android:id="@+id/A406298"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4062_RA"
+                            android:id="@+id/A406299"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -701,12 +701,12 @@
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/A4063_DK"
+                            android:id="@+id/A406398"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4063_RA"
+                            android:id="@+id/A406399"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -747,12 +747,12 @@
                             android:text="@string/months" />
 
                         <RadioButton
-                            android:id="@+id/A4064_u_DK"
+                            android:id="@+id/A4064_u98"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4064_u_RA"
+                            android:id="@+id/A4064_u99"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -779,7 +779,7 @@
                         android:text="Enter 0-29 days. \nLess than 1 day or 24 hours = 0 days. \n1 week = 7 days. \n Dont' know = 99" />
 
                     <EditText
-                        android:id="@+id/ed_A4064_a"
+                        android:id="@+id/A4064_a"
                         style="@style/EditText_number"
                         android:hint="0-29 or 99"
                         android:maxLength="2" />
@@ -805,7 +805,7 @@
                         android:text="Enter 1-60 months. \nDon't know = 99" />
 
                     <EditText
-                        android:id="@+id/ed_A4064_b"
+                        android:id="@+id/A4064_b"
                         style="@style/EditText_number"
                         android:hint="1-60 or 99"
                         android:maxLength="2" />
@@ -841,12 +841,12 @@
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/A4064_1_DK"
+                            android:id="@+id/A4064_198"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4064_1_RA"
+                            android:id="@+id/A4064_199"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -883,12 +883,12 @@
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/A4065_DK"
+                            android:id="@+id/A406598"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4065_RA"
+                            android:id="@+id/A406599"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
@@ -925,12 +925,12 @@
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/A4066_DK"
+                            android:id="@+id/A406698"
                             style="@style/RadioButton"
                             android:text="@string/dnt" />
 
                         <RadioButton
-                            android:id="@+id/A4066_RA"
+                            android:id="@+id/A406699"
                             style="@style/RadioButton"
                             android:text="@string/ra" />
 
