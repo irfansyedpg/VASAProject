@@ -3831,8 +3831,13 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4012">A4012: How many times did (s)he use tobacco products each day?</string>
     <string name="A4013u">A4013_Units: For how long was (s)he ill before death?</string>
     <string name="A4014">A4014: Did (s)he die suddenly?</string>
+
     <string name="A4051">A4051: During the illness that led to death, did (NAME) have a fever?</string>
-    <string name="A4052u">A4052_Units: How long did the fever last?</string>
+
+    <string name="A4052u"> A4052_Units: How long did the fever last ? </string>
+    <string name="A4052D"> A4052D: Enter how long the fever lasted in days ? </string>
+    <string name="A4052M"> A4052M: Enter how long the fever lasted in months ? </string>
+
     <string name="A4053">A4053: Did the fever continue until death?</string>
 
     <string name="A4054"> A4054: How severe was the fever ? </string>
@@ -3848,7 +3853,11 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4056">A4056: Did the deceased have night sweats?</string>
     <string name="A4057">A4057: Did s/he drink a lot more water than usual?</string>
     <string name="A4058">A4058: During the illness that led to death, did (NAME) have more frequent loose or liquid stools than usual?</string>
-    <string name="A4059u">A4059_Units: How long did the frequent loose or liquid stools last?</string>
+
+    <string name="A4059u"> A4059_Units: How long did the frequent loose or liquid stools last ? </string>
+    <string name="A4059D"> A4059D: Enter how long the loose or liquid stools lasted in days ? </string>
+    <string name="A4059M"> A4059M: Enter how long the loose or liquid stools lasted in months ? </string>
+
     <string name="A4060">A4060: At any time during the fatal illness was there blood in the liquid stools?</string>
     <string name="A4061">A4061: Was there blood in the stools up until death?</string>
     <string name="A4062">A4062: During the illness that led to death, did the deceased vomit?</string>
@@ -4601,10 +4610,6 @@ Examples of statements for the reading test:
     <string name="A4077_b_h"><![CDATA[Enter 1-60 Months & if don\'t know Enter 99]]></string>
     <string name="A4005_h">If completed less than 1 year at that level, record 0 \nDon't know = 99</string>
     <string name="A4006_h">Record “yes” if both or either reading or writing is known to the respondent.</string>
-    <string name="A4052_b">A4052_b: Enter how long the fever lasted in days?</string>
-    <string name="A4052_c">A4052_c: Enter how long the fever lasted in months?</string>
-    <string name="A4059_a">A4059_a: Enter how long the loose or liquid stools lasted in days?</string>
-    <string name="A4059_b">A4059_b: Enter how long the loose or liquid stools lasted in months?</string>
     <string name="days_h">Enter 0-29 days. Less than 1 day or 24 hours = 0 days. 1 week = 7 days. Don\'t know = 99</string>
 
     <string name="txt_W214">W214: DATE OF OUTCOME	</string>
