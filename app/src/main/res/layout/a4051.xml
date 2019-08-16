@@ -565,12 +565,12 @@
                         style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/A4060_1"
+                            android:id="@+id/A4060a"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/A4060_2"
+                            android:id="@+id/A4060b"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
@@ -607,12 +607,12 @@
                         style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/A4061_1"
+                            android:id="@+id/A4061a"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/A4061_2"
+                            android:id="@+id/A4061b"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
@@ -649,12 +649,12 @@
                         style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/A4062_1"
+                            android:id="@+id/A4062a"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/A4062_2"
+                            android:id="@+id/A4062b"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
@@ -691,12 +691,12 @@
                         style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/A4063_1"
+                            android:id="@+id/A4063a"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/A4063_2"
+                            android:id="@+id/A4063b"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
@@ -873,12 +873,12 @@
                         style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/A4065_1"
+                            android:id="@+id/A4065a"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/A4065_2"
+                            android:id="@+id/A4065b"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
@@ -915,12 +915,12 @@
                         style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/A4066_1"
+                            android:id="@+id/A4066a"
                             style="@style/RadioButton"
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/A4066_2"
+                            android:id="@+id/A4066b"
                             style="@style/RadioButton"
                             android:text="@string/no" />
 
