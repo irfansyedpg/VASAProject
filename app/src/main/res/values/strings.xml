@@ -3834,8 +3834,17 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4051">A4051: During the illness that led to death, did (NAME) have a fever?</string>
     <string name="A4052u">A4052_Units: How long did the fever last?</string>
     <string name="A4053">A4053: Did the fever continue until death?</string>
-    <string name="A4054">A4054: How severe was the fever?</string>
-    <string name="A4055">A4055: What was the pattern of the fever?</string>
+
+    <string name="A4054"> A4054: How severe was the fever ? </string>
+    <string name="A4054a"> Mild </string>
+    <string name="A4054b"> Moderate </string>
+    <string name="A4054c"> Severe </string>
+
+    <string name="A4055"> A4055: What was the pattern of the fever ? </string>
+    <string name="A4055a"> Continuous </string>
+    <string name="A4055b"> On and off </string>
+    <string name="A4055c"> Only at night </string>
+
     <string name="A4056">A4056: Did the deceased have night sweats?</string>
     <string name="A4057">A4057: Did s/he drink a lot more water than usual?</string>
     <string name="A4058">A4058: During the illness that led to death, did (NAME) have more frequent loose or liquid stools than usual?</string>
@@ -3844,8 +3853,13 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4061">A4061: Was there blood in the stools up until death?</string>
     <string name="A4062">A4062: During the illness that led to death, did the deceased vomit?</string>
     <string name="A4063">A4063: Did s/he vomit in the week preceding death?</string>
-    <string name="A4064_u">A4064_Units: How long before death did she vomit?</string>
-    <string name="A4064_1">A4064_1: Was there blood in the vomit?</string>
+
+    <string name="A4064u"> A4064_Units: How long before death did she vomit ? </string>
+    <string name="A4064D"> A4064D: Enter how long before death she vomited in days ? </string>
+    <string name="A4064M"> A4064M: Enter how long before death she vomited in months ? </string>
+
+    <string name="A40641"> A4064_1: Was there blood in the vomit ? </string>
+
     <string name="A4065">A4065: Was the vomit black?</string>
     <string name="A4066">A4066: Did s/he have any belly (abdominal) problems?</string>
     <string name="A4067">A4067: Did s/he have belly (abdominal) pain?</string>
@@ -4130,14 +4144,6 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="rbA4010_1">Cigarettes</string>
     <string name="rbA4010_2">Pipe</string>
     <string name="rbA4010_3">Chewing tobacco</string>
-
-    <string name="rbA4054_1">Mild</string>
-    <string name="rbA4054_2">Moderate</string>
-    <string name="rbA4054_3">Severe</string>
-
-    <string name="rbA4055_1">Continuous</string>
-    <string name="rbA4055_2">On and off</string>
-    <string name="rbA4055_3">Only at night</string>
 
     <string name="rbA4070_1">Upper abdomen</string>
     <string name="rbA4070_2">Lower abdomen</string>
@@ -4599,8 +4605,6 @@ Examples of statements for the reading test:
     <string name="A4052_c">A4052_c: Enter how long the fever lasted in months?</string>
     <string name="A4059_a">A4059_a: Enter how long the loose or liquid stools lasted in days?</string>
     <string name="A4059_b">A4059_b: Enter how long the loose or liquid stools lasted in months?</string>
-    <string name="A4064_a">A4064_a: Enter how long before death she vomited in days?</string>
-    <string name="A4064_b">A4064_b: Enter how long before death she vomited in months?</string>
     <string name="days_h">Enter 0-29 days. Less than 1 day or 24 hours = 0 days. 1 week = 7 days. Don\'t know = 99</string>
 
     <string name="txt_W214">W214: DATE OF OUTCOME	</string>
