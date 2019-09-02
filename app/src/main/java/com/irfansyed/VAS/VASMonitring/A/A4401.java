@@ -514,11 +514,9 @@ public class A4401 extends AppCompatActivity implements RadioButton.OnCheckedCha
             if (A4401a.isChecked()) {
                 ClearAllC(cvA4402);
                 ClearAllC(cvA4403);
-
                 cvA4402.setVisibility(View.GONE);
                 cvA4403.setVisibility(View.GONE);
             } else {
-
                 cvA4402.setVisibility(View.VISIBLE);
                 cvA4403.setVisibility(View.VISIBLE);
             }
