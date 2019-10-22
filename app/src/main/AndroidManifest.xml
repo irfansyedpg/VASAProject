@@ -69,9 +69,20 @@
         <activity
             android:name=".C.C3301_C3314"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".C.C3351_C3364"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <data android:mimeType="image/*" />
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="http" />
+            </intent-filter>
+
+        </activity>
+
         <activity
             android:name=".C.C3401_C3457"
             android:exported="true"

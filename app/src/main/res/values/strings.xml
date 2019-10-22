@@ -4581,8 +4581,8 @@ Examples of statements for the reading test:
     <string name="A4260">A4260: Did the FIRST HEALTH PROVIDER admit NAME to the hospital for his/her problem?</string>
     <string name="A4261">A4261: Did the FIRST HEALTH PROVIDER refer NAME to another health provider or facility?</string>
     <string name="A4262">A4262: To where was NAME referred?</string>
-    <string name="A4263_1">A4263_1: Did the FIRST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for which NAME needs to return immediately?</string>
-    <string name="A4263_2">A4263_2: Did the FIRST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for follow-up if NAME did not improve after leaving?</string>
+    <string name="A42631">A4263_1: Did the FIRST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for which NAME needs to return immediately?</string>
+    <string name="A42632">A4263_2: Did the FIRST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for follow-up if NAME did not improve after leaving?</string>
     <string name="A4264">A4264: Did NAME leave the FIRST HEALTH PROVIDER alive?</string>
     <string name="rb_A4264_1">Yes, left alive</string>
     <string name="rb_A4264_2">No, died at this provider</string>

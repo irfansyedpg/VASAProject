@@ -15,6 +15,7 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.List;
 
@@ -168,9 +169,6 @@ public class Upload_A4251_A4284 extends AsyncTask {
                 param.put(A4251_A4284.	STATUS	, c1.getString(	91	));
 
 
-
-
-
             }
         }
 
@@ -203,7 +201,7 @@ public class Upload_A4251_A4284 extends AsyncTask {
             connection.setConnectTimeout(1000);
 
            OutputStream os = connection.getOutputStream();
-            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os,"UTF-8"));
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os, StandardCharsets.UTF_8));
 
             bw.write(PostRequestData.getData(param));
             bw.flush();
