@@ -483,7 +483,7 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         btn_Q1502.setOnClickListener(this);
     }
 
-    String dataDistricts[] = null;
+    String[] dataDistricts = null;
 
     List<String> lst_q1503 = new ArrayList();
     List<String> lst_other = new ArrayList();
@@ -2688,23 +2688,23 @@ public class Q1101_Q1610 extends AppCompatActivity implements RadioButton.OnChec
         } else if (rb_Q1415_3.isChecked()) {
             Q1415 = "3";
         } else if (rb_Q1415_4.isChecked()) {
-            Q1415 = "3";
+            Q1415 = "4";
         } else if (rb_Q1415_5.isChecked()) {
-            Q1415 = "3";
+            Q1415 = "5";
         } else if (rb_Q1415_6.isChecked()) {
-            Q1415 = "3";
+            Q1415 = "6";
         } else if (rb_Q1415_7.isChecked()) {
-            Q1415 = "3";
+            Q1415 = "7";
         } else if (rb_Q1415_8.isChecked()) {
-            Q1415 = "3";
+            Q1415 = "8";
         } else if (rb_Q1415_9.isChecked()) {
-            Q1415 = "3";
+            Q1415 = "9";
         } else if (rb_Q1415_10.isChecked()) {
-            Q1415 = "3";
+            Q1415 = "10";
         } else if (rb_Q1415_11.isChecked()) {
-            Q1415 = "3";
+            Q1415 = "11";
         } else if (rb_Q1415_12.isChecked()) {
-            Q1415 = "3";
+            Q1415 = "12";
         } else if (rb_Q1415_DK.isChecked()) {
             Q1415 = "99";
         }

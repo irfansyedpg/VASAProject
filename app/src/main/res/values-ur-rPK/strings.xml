@@ -1,6 +1,13 @@
 ﻿<resources>
     <!--&lt;!&ndash;<string  translatable="false"  name="app_name"> VASA NEONATAL DEATH </string>-->
 
+
+    <string name="txt_Q1201_1">Province</string>
+    <string name="txt_Q1201_2">District</string>
+
+    <string name="province_prompt">Select Province</string>
+    <string name="district_prompt">Select District</string>
+
     <string  name="navigation_dRAwer_open"  translatable="false">Open navigation dRAwer</string>
     <string  name="navigation_dRAwer_close"  translatable="false">Close navigation dRAwer</string>
 
