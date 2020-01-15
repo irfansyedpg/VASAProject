@@ -405,14 +405,14 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         cvA4252 = findViewById(R.id.cvA4252);
         //   cvA4252_1 = findViewById(R.id.cvA4252_1);
         cvA4253 = findViewById(R.id.cvA4253);
-        cvA4254_1 = findViewById(R.id.cvA4254_1);
-        cvA4254_2 = findViewById(R.id.cvA4254_2);
+        cvA4254_1 = findViewById(R.id.cvA42541);
+        cvA4254_2 = findViewById(R.id.cvA42542);
         cvA4255 = findViewById(R.id.cvA4255);
         cvA4256 = findViewById(R.id.cvA4256);
         cv257_273 = findViewById(R.id.cv257_273);
         cvA4257 = findViewById(R.id.cvA4257);
-        cvA4258_1 = findViewById(R.id.cvA4258_1);
-        cvA4258_2 = findViewById(R.id.cvA4258_2);
+        cvA4258_1 = findViewById(R.id.cvA42581);
+        cvA4258_2 = findViewById(R.id.cvA42582);
         cvA4259 = findViewById(R.id.cvA4259);
         cvA4260 = findViewById(R.id.cvA4260);
         cvA4261 = findViewById(R.id.cvA4261);
@@ -442,12 +442,13 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         cvA4283 = findViewById(R.id.cvA4283);
         cvA4284 = findViewById(R.id.cvA4284);
 
-        A4251_1 = findViewById(R.id.A4251_1);
-        A4251_2 = findViewById(R.id.A4251_2);
+        A4251_1 = findViewById(R.id.A4251a);
+        A4251_2 = findViewById(R.id.A4251b);
         A425198 = findViewById(R.id.A425198);
-        A4253_1 = findViewById(R.id.A4253_1);
-        A4253_2 = findViewById(R.id.A4253_2);
-        A4253_3 = findViewById(R.id.A4253_3);
+        A4253_1 = findViewById(R.id.A4253a);
+        A4253_2 = findViewById(R.id.A4253b);
+        A4253_3 = findViewById(R.id.A425396);
+        A425396x = findViewById(R.id.A425396x);
         A425398 = findViewById(R.id.A425398);
         A4254_1_1 = findViewById(R.id.A4254_1_1);
         A4254_1_2 = findViewById(R.id.A4254_1_2);
@@ -573,7 +574,7 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
         A428398 = findViewById(R.id.A428398);
         A428399 = findViewById(R.id.A428399);
 
-        ed_A4253_3 = findViewById(R.id.ed_A4253_3);
+        A425396x = findViewById(R.id.A425396x);
         ed_A4255_4 = findViewById(R.id.ed_A4255_4);
         ed_A4255_13 = findViewById(R.id.ed_A4255_13);
         ed_A4256_minutes = findViewById(R.id.ed_A4256_minutes);
@@ -682,10 +683,12 @@ public class A4251_A4284 extends AppCompatActivity implements RadioButton.OnChec
 
             if (A4251_1.isChecked() && lst_phase.size() > 0) {
                 insert_A4252();
+                //<editor-fold desc="Description">
             }
+            //</editor-fold>
 
 
-            Intent c = new Intent(A4251_A4284.this, A4301_A4315.class);
+            Intent c = new Intent(A4251_A4284.this, A4301.class);
             c.putExtra("study_id", study_id);
             startActivity(c);
         }
