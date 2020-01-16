@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">V A S A</string>
 
-    <string name="app_name"> VASA NEONATAL DEATH </string>
+    <string name="studyid">Study ID</string>
 
-    <string name="navigation_dRAwer_open">Open navigation dRAwer</string>
-    <string name="navigation_dRAwer_close">Close navigation dRAwer</string>
+    <string name="navigation_drawer_open"> Open navigation drawer </string>
+    <string name="navigation_drawer_close"> Close navigation drawer </string>
 
-    TODO: Remove or change this placeholder text
-    <string name="hello_blank_fRAgment">Hello blank fRAgment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment"> Hello blank fragment </string>
 
-    <string name="title_new_survey">New Survey</string>
-    <string name="title_home">Home</string>
+    <string name="title_new_survey"> New Survey </string>
+    <string name="title_home"> Home </string>
 
+    <string name="yes"> ہاں </string>
+    <string name="no"> نہیں </string>
+    <string name="dnt"> معلوم نہیں </string>
+    <string name="ra"> جواب دینے سے انکار کردیا </string>
+    <string name="time"> اوقات </string>
+    <string name="fv"> ابتدائی تشخیص </string>
 
-    <string name="rb_dk">Don\'t Know</string>
-
-    <string name="time">Times</string>
-    <string name="fv">First Visit</string>
-
-    <string name="rb_yes">ہاں </string>
-    <string name="rb_no">نہیں </string>
-    <string name="rb_DK">معلوم نہیں </string>
-    <string name="rb_RA">جواب دینے سے انکار کردیا</string>
+    <string name="ecn"> Enter Complete Name </string>
+    <string name="someone"> Someone else </string>
+    <string name="other"> Other </string>
+    <string name="specify"> Please specify </string>
+    <string name="minutes"> Minutes </string>
+    <string name="hours"> Hours </string>
+    <string name="days"> Days </string>
+    <string name="weeks"> Weeks </string>
+    <string name="months"> Months </string>
+    <string name="years"> Years </string>
+    <string name="days_hint"> 1 &#8212; 99 </string>
+    <string name="kg"> Kilograms </string>
 
 
     <!--HEADINGS-->
@@ -55,15 +65,15 @@
     <string name="h_a_sec_14">SECTION 14: SOCIAL CAPITAL AND HIV/AIDS QUESTIONS</string>
     <string name="h_a_sec_15">SECTION 15: OPEN ENDED RESPONSE &amp; INTERVIEWER COMMENTS/OBSERVATIONS</string>
 
-    <!--    GeneRAl Section-->
+    <!--General Section-->
     <string name="h_g_sec_1">SECTION 1: GENERAL INFORMATION</string>
-    <string name="h_g_sec_1.1">1.1 Information about the prevalence of HIV and malaria</string>
-    <string name="h_g_sec_1.2">1.2 Information about the deceased</string>
-    <string name="h_g_sec_1.3">1.3: Information about the interview</string>
-    <string name="h_g_sec_I_R">IDENTIFY THE BEST RESPONDENT</string>
-    <string name="h_g_sec_1.4">1.4 Information about the respondent</string>
-    <string name="h_g_sec_1.5">1.5 Information about others at the interview</string>
-    <string name="h_g_sec_1.6">1.6 Deceased child or adults sex and age at death</string>
+    <string name="h_g_sec_1.1"> 1.1 Information about the prevalence of HIV and malaria </string>
+    <string name="h_g_sec_1.2"> 1.2 Information about the deceased </string>
+    <string name="h_g_sec_1.3"> 1.3: Information about the interview </string>
+    <string name="h_g_sec_I_R"> IDENTIFY THE BEST RESPONDENT</string>
+    <string name="h_g_sec_1.4"> 1.4 Information about the respondent </string>
+    <string name="h_g_sec_1.5"> 1.5 Information about others at the interview </string>
+    <string name="h_g_sec_1.6"> 1.6 Deceased child or adults sex and age at death </string>
 
     <!--  Child-->
     <string name="h_c_sec_2">SECTION 2: BACKGROUND</string>
@@ -120,7 +130,7 @@
 
     <!--    GeneRAl Section Urdu Text STARTS-->
 
-    <string name="txt_Q1101">	کیا یہ ایچ آئی وی /ایڈز سے متاثر  علاقہ ہے ؟	:	Q1101	</string>
+    <string name="Q1101">	کیا یہ ایچ آئی وی /ایڈز سے متاثر  علاقہ ہے ؟	:	Q1101	</string>
     <string name="txt_Q1102">	کیا یہ ملیریا سے متاثر  علاقہ ہے؟	:	Q1102	</string>
     <string name="txt_Q1103">	کس موسم کے دوران لڑکا /لڑکی کی وفات ہوئی ؟	:	Q1103	</string>
     <string name="txt_Q1201">	گھرانے کا پتہ:	:	Q1201	</string>
@@ -648,8 +658,8 @@
     <string name="A4260">	اپہلا " صحت فراہم کنندہ )" نے (نام) کو  بیماری کی وجہ سے ہسپتال میں داخل کیا تھا؟	:A4260	</string>
     <string name="A4261">	کیا "پہلا صحت فراہم کنندہ )" نے (نام) کو اسکی تکلیف یا بیماری کی وجہ سے کسی دوسرے ہسپتال میں بھیجا تھا؟	:A4261	</string>
     <string name="A4262"> : (نام) کو کہاں منتقل کیا گیا تھا؟</string>
-    <string name="A4263_1"> : کیا (پہلا صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام ) کو   فوراً   ضرورت تھی واپس (ہسپتال) جانے کی؟</string>
-    <string name="A4263_2"> : کیا (پہلا صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام)  طبی معائنہ لئے واپس  آ ئے اگر  اسکی حالت بہتر نہیں ہوتی؟</string>
+    <string name="A42631"> : کیا (پہلا صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام ) کو   فوراً   ضرورت تھی واپس (ہسپتال) جانے کی؟</string>
+    <string name="A42632"> : کیا (پہلا صحت فراہم کنندہ ) نے آپ کو بیماری کی علامات کے بارے میں کچھ بتایا تھا  جس کے لئے۔ (نام)  طبی معائنہ لئے واپس  آ ئے اگر  اسکی حالت بہتر نہیں ہوتی؟</string>
     <string name="A4264"> :کیا (نام) نے جب "(پہلا /آخری صحت فراہم کنندہ )  " کو چھوڑا تھا تو کیا  وہ زندہ تھی /تھا ؟ </string>
     <string name="A4266">  :  کہاں (آخری صحت فراہم کنندہ ) کانام بتائیں،جہاں (نام) کو لے کر گئے تھے؟   </string>
     <string name="A4267">  :  صحت کی سہولت میں صحت کی دیکھ بھال کے لیے پوچھیں: کیا (نام)  وفات سے پہلے ، (آخری صحت فراہم کنندہ ) کے پاس پہنچ  گیا تھا؟   </string>
@@ -2048,11 +2058,11 @@
 
     Neonate Urdu Text STARTS
 
-    <string name="txt_N2001">	کیا ایک سے زیادہ بچوں کی پیدائش ہوئی تھی ؟	:	N2001	</string>
-    <string name="txt_N2002">	ترتیب پیدائش میں بچے کا نمبر پہلا،دوسرا یا  اس کے بعد  کا  تھا؟	:	N2002	</string>
-    <string name="txt_N2003">	کیا ماں ابھی زندہ ہے؟	:	N2003	</string>
-    <string name="txt_N2004">	کیا زچگی کے دوران یا  بچہ کی  پیدائش کے بعد ماں کی وفات ہوئی تھی؟	:	N2004	</string>
-    <string name="txt_N2005u">	زچگی کے کتنی دیر بعد ماں کی وفات ہوئی   تھی؟	:	N2005u	</string>
+    <string name="N2001">	کیا ایک سے زیادہ بچوں کی پیدائش ہوئی تھی ؟	:	N2001	</string>
+    <string name="N2002">	ترتیب پیدائش میں بچے کا نمبر پہلا،دوسرا یا  اس کے بعد  کا  تھا؟	:	N2002	</string>
+    <string name="N2003">	کیا ماں ابھی زندہ ہے؟	:	N2003	</string>
+    <string name="N2004">	کیا زچگی کے دوران یا  بچہ کی  پیدائش کے بعد ماں کی وفات ہوئی تھی؟	:	N2004	</string>
+    <string name="N2005u">	زچگی کے کتنی دیر بعد ماں کی وفات ہوئی   تھی؟	:	N2005u	</string>
     <string name="txt_N2005d">	زچگی کے کتنے دنوں کے  بعد ماں کی وفات ہوئی   تھی؟	:	N2005d	</string>
     <string name="txt_N2005w">	زچگی کے کتنے ہفتوں کے  بعد ماں کی وفات ہوئی   تھی؟	:	N2005w	</string>
     <string name="txt_N2005m">	زچگی کے کتنے مہینوں کے  بعد ماں کی وفات ہوئی   تھی؟	:	N2005m	</string>

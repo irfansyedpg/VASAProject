@@ -91,7 +91,7 @@
                         <TextView
                             android:id="@+id/txt_N2001"
                             style="@style/TextView"
-                            android:text="@string/txt_N2001" />
+                            android:text="@string/N2001" />
 
                         <RadioGroup
                             android:id="@+id/rg_N2001"
@@ -137,7 +137,7 @@
                         <TextView
                             android:id="@+id/txt_N2002"
                             style="@style/TextView"
-                            android:text="@string/txt_N2002" />
+                            android:text="@string/N2002" />
 
                         <RadioGroup
                             android:id="@+id/rg_N2002"
@@ -181,7 +181,7 @@
                         <TextView
                             android:id="@+id/txt_N2003"
                             style="@style/TextView"
-                            android:text="@string/txt_N2003" />
+                            android:text="@string/N2003" />
 
                         <RadioGroup
                             android:id="@+id/rg_N2003"
@@ -231,7 +231,7 @@
                             <TextView
                                 android:id="@+id/txt_N2004"
                                 style="@style/TextView"
-                                android:text="@string/txt_N2004" />
+                                android:text="@string/N2004" />
 
                             <RadioGroup
                                 android:id="@+id/rg_N2004"
@@ -287,7 +287,7 @@
                                 <TextView
                                     android:id="@+id/txt_N2005u"
                                     style="@style/TextView"
-                                    android:text="@string/txt_N2005u" />
+                                    android:text="@string/N2005u" />
 
                                 <RadioGroup
                                     android:id="@+id/rg_N2005u"

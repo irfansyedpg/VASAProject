@@ -3,7 +3,7 @@
 <resources>
     <string name="app_name">V A S A</string>
 
-    <string name="txt_study_id">Study ID</string>
+    <string name="studyid">Study ID</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -14,19 +14,41 @@
     <string name="title_new_survey">New Survey</string>
     <string name="title_home">Home</string>
 
-    <string name="rb_yes">Yes</string>
-    <string name="rb_no">No</string>
-    <string name="rb_dk">Don\'t Know</string>
-    <string name="rb_ra">Refused to answer</string>
-    <string name="time">Times</string>
-    <string name="fv">First Visit</string>
+    <string name="yes"> Yes </string>
+    <string name="no"> No </string>
+    <string name="dnt"> Don\'t Know </string>
+    <string name="ra"> Refused to answer </string>
+    <string name="time"> Times </string>
+    <string name="fv"> First Visit </string>
+
+    <string name="ecn"> Enter Complete Name </string>
+    <string name="someone"> Someone else </string>
+    <string name="other"> Other </string>
+    <string name="specify"> Please specify </string>
+    <string name="minutes"> Minutes </string>
+    <string name="hours"> Hours </string>
+    <string name="days"> Days </string>
+    <string name="weeks"> Weeks </string>
+    <string name="months"> Months </string>
+    <string name="years"> Years </string>
+    <string name="days_hint">1 &#8212; 99</string>
+    <string name="kg"> Kilograms </string>
 
     <!--HEADINGS-->
+    <!--General Section-->
+    <string name="h_g_sec_1">SECTION 1: GENERAL INFORMATION</string>
+    <string name="h_g_sec_1.1">1.1 Information about the prevalence of HIV and malaria</string>
+    <string name="h_g_sec_1.2">1.2 Information about the deceased</string>
+    <string name="h_g_sec_1.3">1.3: Information about the interview</string>
+    <string name="h_g_sec_I_R">IDENTIFY THE BEST RESPONDENT</string>
+    <string name="h_g_sec_1.4">1.4 Information about the respondent</string>
+    <string name="h_g_sec_1.5">1.5 Information about others at the interview</string>
+    <string name="h_g_sec_1.6">1.6 Deceased child or adults sex and age at death</string>
 
     <!--Neonates-->
     <string name="h_n_sec_2">SECTION 2: BACKGROUND</string>
-    <string name="h_n_sec_2_1">2.1 GENERAL DELIVERY CONTEXT (for 0-27 day olds) </string>
-    <string name="h_n_sec_2_2">2.2 STILLBIRTH / NEONATAL DEATH DETERMINATION (for 0-27 day olds) </string>
+    <string name="h_n_sec_2_1">2.1 GENERAL DELIVERY CONTEXT (for 0&#8211;27 day olds) </string>
+    <string name="h_n_sec_2_2">2.2 STILLBIRTH / NEONATAL DEATH DETERMINATION (for 0&#8211;27 day olds) </string>
     <string name="h_n_sec_2_3">2.3 GENERAL SIGNS AND SYMPTOMS FOR STILLBIRTHS </string>
     <string name="h_n_sec_2_4">2.4 BACKGROUNDAND FATAL ILLNESS DURATION (FOR NEONATAL DEATHS) </string>
     <string name="h_n_sec_3">SECTION 3: MATERNAL HISTORY (FOR STILLBIRTHS AND NEONATAL DEATHS) </string>
@@ -52,15 +74,6 @@
     <string name="h_a_sec_14">SECTION 14: SOCIAL CAPITAL AND HIV/AIDS QUESTIONS</string>
     <string name="h_a_sec_15">SECTION 15: OPEN ENDED RESPONSE &amp; INTERVIEWER COMMENTS/OBSERVATIONS</string>
 
-    <!--General Section-->
-    <string name="h_g_sec_1">SECTION 1: GENERAL INFORMATION</string>
-    <string name="h_g_sec_1.1">1.1 Information about the prevalence of HIV and malaria</string>
-    <string name="h_g_sec_1.2">1.2 Information about the deceased</string>
-    <string name="h_g_sec_1.3">1.3: Information about the interview</string>
-    <string name="h_g_sec_I_R">IDENTIFY THE BEST RESPONDENT</string>
-    <string name="h_g_sec_1.4">1.4 Information about the respondent</string>
-    <string name="h_g_sec_1.5">1.5 Information about others at the interview</string>
-    <string name="h_g_sec_1.6">1.6 Deceased child or adults sex and age at death</string>
 
     <!--Child-->
     <string name="h_c_sec_2">SECTION 2: BACKGROUND</string>
@@ -119,11 +132,11 @@
     <!-- 0 t0 27 starts ..........................-->
 
 
-    <string name="txt_N2001">N2001:	Was the child part of a multiple birth?	</string>
-    <string name="txt_N2002">N2002:	Was the child the first, second, or later in the birth order?	</string>
-    <string name="txt_N2003">N2003:	Is the mother still alive?	</string>
-    <string name="txt_N2004">N2004:	Did the mother die before, during or after the delivery?	</string>
-    <string name="txt_N2005u">N2005u: How long after the delivery did the mother die?	</string>
+    <string name="N2001"> N2001: Was the child part of a multiple birth? </string>
+    <string name="N2002"> N2002: Was the child the first, second, or later in the birth order? </string>
+    <string name="N2003"> N2003: Is the mother still alive?	</string>
+    <string name="N2004"> N2004: Did the mother die before, during or after the delivery?	</string>
+    <string name="N2005u">N2005u: How long after the delivery did the mother die?	</string>
     <string name="txt_N2005d">N2005d: How many days after the delivery did the mother die?	</string>
     <string name="txt_N2005w">N2005w: How many weeks after the delivery did the mother die?	</string>
     <string name="txt_N2005m">N2005m: How long after the delivery did the mother die?	</string>
@@ -3720,24 +3733,6 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="rb_C3472_11">None of the above words were mentioned 	</string>
     <string name="rb_C3472_DK">DK 	</string>
 
-
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="dnt">Don\'t Know</string>
-    <string name="ecn">Enter Complete Name</string>
-    <string name="ra">Refused to Answer</string>
-    <string name="someone">Someone else </string>
-    <string name="other">Other</string>
-    <string name="specify"> Please specify </string>
-    <string name="minutes">Minutes</string>
-    <string name="hours">Hours</string>
-    <string name="days">Days</string>
-    <string name="weeks">Weeks</string>
-    <string name="months">Months</string>
-    <string name="years">Years</string>
-    <string name="days_hint">1-99</string>
-    <string name="kg">Kilograms</string>
-
     <!-- HINTS STARTS -->
     <string name="days_hint1">Enter 0-6 days. Less than 1 day or 24 hours = 0 days.</string>
     <string name="weeks_hint">Enter 1-7 weeks.</string>
@@ -4322,7 +4317,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="zero_to_30_days"><![CDATA[Enter 0-30 days. Less than 1 day or 24 hours = 0 days; 1 week = 7 days.]]></string>
     <string name="one_to_60_months"><![CDATA[Enter 1-60 months]]></string>
 
-    <string name="txt_Q1101">Q1101:	Is this an area of high HIV/AIDS prevalence?	</string>
+    <string name="Q1101">Q1101:	Is this an area of high HIV/AIDS prevalence?	</string>
     <string name="txt_Q1102">Q1102:	Is this a region of high malaria prevalence?	</string>
     <string name="txt_Q1103">Q1103:	During which season did the child/she/he die?	</string>
     <string name="txt_Q1201">Q1201:	Address of the household</string>
@@ -4586,11 +4581,11 @@ Examples of statements for the reading test:
     <string name="A42631">A4263_1: Did the FIRST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for which NAME needs to return immediately?</string>
     <string name="A42632">A4263_2: Did the FIRST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for follow-up if NAME did not improve after leaving?</string>
     <string name="A4264">A4264: Did NAME leave the FIRST HEALTH PROVIDER alive?</string>
-    <string name="rb_A4264_1">Yes, left alive</string>
-    <string name="rb_A4264_2">No, died at this provider</string>
+    <string name="A4264a">Yes, left alive</string>
+    <string name="A4264b">No, died at this provider</string>
     <string name="A4266">A4266: What was the name of the LAST HEALTH PROVIDER where NAME went?</string>
-    <string name="A4267_1">A4267_1: For health care at a facility, \nask: \nDid NAME reach the LAST HEALTH PROVIDER before s/he died?</string>
-    <string name="A4267_2">A4267_2: For health care outside a facility, \nask: \nDid NAME reach the LAST HEALTH PROVIDER before s/he died?</string>
+    <string name="A42671">A4267_1: For health care at a facility, \nask: \nDid NAME reach the LAST HEALTH PROVIDER before s/he died?</string>
+    <string name="A42672">A4267_2: For health care outside a facility, \nask: \nDid NAME reach the LAST HEALTH PROVIDER before s/he died?</string>
     <string name="A4268">A4268: After (deciding to seek care / being referred), how long did it take (to reach the LAST HEALTH PROVIDER / for the LAST HEALTH PROVIDER to reach NAME?</string>
     <string name="A4269">A4269: Did the LAST HEALTH PROVIDER admit NAME to the hospital for his/her problem?</string>
     <string name="A4270">A4270: Did the LAST HEALTH PROVIDER refer NAME to another health provider or facility?</string>
