@@ -1272,7 +1272,7 @@
                         <TextView
                             android:id="@+id/A4272_1"
                             style="@style/TextView"
-                            android:text="@string/A4272_1" />
+                            android:text="@string/A42721" />
 
                         <RadioGroup style="@style/RadioGroup">
 
@@ -1308,7 +1308,7 @@
                         <TextView
                             android:id="@+id/A4272_2"
                             style="@style/TextView"
-                            android:text="@string/A4272_2" />
+                            android:text="@string/A42722" />
 
                         <RadioGroup style="@style/RadioGroup">
 

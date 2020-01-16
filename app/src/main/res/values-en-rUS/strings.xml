@@ -4590,8 +4590,8 @@ Examples of statements for the reading test:
     <string name="A4269">A4269: Did the LAST HEALTH PROVIDER admit NAME to the hospital for his/her problem?</string>
     <string name="A4270">A4270: Did the LAST HEALTH PROVIDER refer NAME to another health provider or facility?</string>
     <string name="A4271">A4271: To where was NAME referred?</string>
-    <string name="A4272_1">A4272_1: Did the LAST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for which NAME needs to return immediately?</string>
-    <string name="A4272_2">A4272_2: Did the LAST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for which To follow-up if NAME did not improve after leaving?</string>
+    <string name="A42721">A4272_1: Did the LAST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for which NAME needs to return immediately?</string>
+    <string name="A42722">A4272_2: Did the LAST HEALTH PROVIDER tell you or NAME about illness signs and symptoms for which To follow-up if NAME did not improve after leaving?</string>
     <string name="A4273">A4273: Did NAME leave the LAST HEALTH PROVIDER alive?</string>
     <string name="A4069_a">Enter how long s/he had belly (abdominal) pain in hours</string>
     <string name="A4069_b">Enter how long s/he had belly (abdominal) pain in DAYS</string>
