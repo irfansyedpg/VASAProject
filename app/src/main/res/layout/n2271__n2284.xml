@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".N.N2271_N2284">
+    tools:context=".neo.N2271_N2284">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="com.irfansyed.VAS.VASMonitring.N.N2271_N2284" />
+            type="com.irfansyed.vas.vasmonitring.neo.N2271_N2284" />
     </data>
 
     <LinearLayout
@@ -51,7 +51,7 @@
                             android:clickable="false"
                             android:focusable="false"
                             android:inputType="date"
-                            app:met_mask="##-##-###" />
+                            app:met_mask="####-#" />
 
 
                     </LinearLayout>
@@ -367,7 +367,7 @@
                             android:id="@+id/ed_N2284"
                             style="@style/EditText_number"
                             android:hint="@string/txt_N2284"
-                            android:text='@{rbN22831.checked ? edN2284.getText.toString : ""}' />
+                            android:text='@{rbN22831.checked ? edN2284.getText().toString() : ""}' />
 
                     </LinearLayout>
 

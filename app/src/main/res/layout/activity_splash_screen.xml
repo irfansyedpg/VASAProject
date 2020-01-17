@@ -8,7 +8,7 @@
     android:background="#EEEEEE"
     android:orientation="vertical"
     android:weightSum="1"
-    tools:context="com.irfansyed.VAS.VASMonitring.Core.LoginActivity"
+    tools:context="com.irfansyed.vas.vasmonitring.core.LoginActivity"
 
     >
 

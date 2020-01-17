@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".C.C3101_C3112">
+    tools:context=".child.C3101_C3112">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
                         android:clickable="false"
                         android:focusable="false"
                         android:inputType="date"
-                        app:met_mask="##-##-###" />
+                        app:met_mask="####-#" />
 
                 </LinearLayout>
 

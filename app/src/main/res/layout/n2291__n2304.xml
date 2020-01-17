@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".N.N2291_N2304">
+    tools:context=".neo.N2291_N2304">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="com.irfansyed.VAS.VASMonitring.N.N2291_N2304" />
+            type="com.irfansyed.vas.vasmonitring.neo.N2291_N2304" />
     </data>
 
     <LinearLayout
@@ -75,7 +75,7 @@
                             android:clickable="false"
                             android:focusable="false"
                             android:inputType="date"
-                            app:met_mask="##-##-###" />
+                            app:met_mask="####-#" />
 
 
                     </LinearLayout>
@@ -565,7 +565,7 @@
                                         android:id="@+id/ed_N2301_OT"
                                         style="@style/EditText_varchar"
                                         android:hint="Other"
-                                        android:text='@{rbN2301OT.checked ? edN2301OT.getText.toString : ""}'
+                                        android:text='@{rbN2301OT.checked ? edN2301OT.getText().toString() : ""}'
                                         android:visibility="@{rbN2301OT.checked ? View.VISIBLE : View.GONE}" />
 
                                 </RadioGroup>
@@ -597,13 +597,13 @@
                                     android:id="@+id/ed_N2302_L1"
                                     style="@style/TextView"
                                     android:hint="Level 1 - State / Provice"
-                                    android:text='@{rbN2301DK.checked ?  "" : edN2302L1.getText.toString }' />
+                                    android:text='@{rbN2301DK.checked ?  "" : edN2302L1.getText().toString() }' />
 
                                 <EditText
                                     android:id="@+id/ed_N2302_L2"
                                     style="@style/TextView"
                                     android:hint="Level 2 - District"
-                                    android:text='@{rbN2301DK.checked ?  "" : edN2302L2.getText.toString }' />
+                                    android:text='@{rbN2301DK.checked ?  "" : edN2302L2.getText().toString() }' />
 
                             </LinearLayout>
 

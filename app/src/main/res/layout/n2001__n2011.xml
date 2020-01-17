@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".N.N2001_N2011">
+    tools:context=".neo.N2001_N2011">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="com.irfansyed.VAS.VASMonitring.N.N2001_N2011" />
+            type="com.irfansyed.vas.vasmonitring.neo.N2001_N2011" />
     </data>
 
     <LinearLayout
@@ -75,7 +75,7 @@
                             android:clickable="false"
                             android:focusable="false"
                             android:inputType="date"
-                            app:met_mask="##-##-###" />
+                            app:met_mask="####-#" />
 
                     </LinearLayout>
 
@@ -367,7 +367,7 @@
                                         style="@style/EditText_number"
                                         android:hint="Enter 0-6 days. Less than 1 day or 24 hours = 0 days"
                                         android:maxLength="1"
-                                        android:text='@{rbN2005u1.checked ? edN2005d.getText.toString : ""}' />
+                                        android:text='@{rbN2005u1.checked ? edN2005d.getText().toString() : ""}' />
 
                                 </LinearLayout>
 
@@ -395,7 +395,7 @@
                                         style="@style/EditText_number"
                                         android:hint="Enter 1-7 weeks"
                                         android:maxLength="1"
-                                        android:text='@{rbN2005u2.checked ? edN2005w.getText.toString : ""}' />
+                                        android:text='@{rbN2005u2.checked ? edN2005w.getText().toString() : ""}' />
 
                                 </LinearLayout>
 
@@ -423,7 +423,7 @@
                                         style="@style/EditText_number"
                                         android:hint="Enter 2-60 months"
                                         android:maxLength="2"
-                                        android:text='@{rbN2005u3.checked ? edN2005m.getText.toString : ""}' />
+                                        android:text='@{rbN2005u3.checked ? edN2005m.getText().toString() : ""}' />
 
                                 </LinearLayout>
 
@@ -493,7 +493,7 @@
                                 android:id="@+id/ed_N2006_6"
                                 style="@style/EditText_varchar"
                                 android:hint="@string/rb_N2006_6"
-                                android:text='@{rbN20066.checked ? edN20066.getText.toString : ""}'
+                                android:text='@{rbN20066.checked ? edN20066.getText().toString() : ""}'
                                 android:visibility="@{rbN20066.checked ? View.VISIBLE : View.GONE}" />
 
                             <RadioButton
@@ -520,7 +520,7 @@
                                 android:id="@+id/ed_N2006_10"
                                 style="@style/EditText_varchar"
                                 android:hint="@string/rb_N2006_10"
-                                android:text='@{rbN200610.checked ? edN200610.getText.toString : ""}'
+                                android:text='@{rbN200610.checked ? edN200610.getText().toString() : ""}'
                                 android:visibility="@{rbN200610.checked ? View.VISIBLE : View.GONE}" />
 
                             <RadioButton
@@ -547,7 +547,7 @@
                                 android:id="@+id/ed_N2006_OT"
                                 style="@style/EditText_varchar"
                                 android:hint="@string/ot_other"
-                                android:text='@{rbN200612.checked ? edN2006OT.getText.toString : ""}'
+                                android:text='@{rbN200612.checked ? edN2006OT.getText().toString() : ""}'
                                 android:visibility="@{rbN200612.checked ? View.VISIBLE : View.GONE}" />
 
                         </RadioGroup>
@@ -627,7 +627,7 @@
                                 android:id="@+id/ed_N2008_OT"
                                 style="@style/EditText_varchar"
                                 android:hint="@string/ot_other"
-                                android:text='@{rbN2008OT.checked ? edN2008OT.getText.toString : ""}'
+                                android:text='@{rbN2008OT.checked ? edN2008OT.getText().toString() : ""}'
                                 android:visibility="@{rbN2008OT.checked ? View.VISIBLE : View.GONE}" />
 
                         </RadioGroup>

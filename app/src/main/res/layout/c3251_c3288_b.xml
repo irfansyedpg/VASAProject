@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".C.C3251_C3288_B">
+    tools:context=".child.C3251_C3288_B">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="com.irfansyed.VAS.VASMonitring.C.C3251_C3288_B" />
+            type="com.irfansyed.vas.vasmonitring.child.C3251_C3288_B" />
     </data>
 
     <LinearLayout
@@ -52,7 +52,7 @@
                             android:clickable="false"
                             android:focusable="false"
                             android:inputType="date"
-                            app:met_mask="##-##-###" />
+                            app:met_mask="####-#" />
 
                     </LinearLayout>
                 </android.support.v7.widget.CardView>

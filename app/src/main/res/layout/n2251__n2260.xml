@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".N.N2251_N2260">
+    tools:context=".neo.N2251_N2260">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="com.irfansyed.VAS.VASMonitring.N.N2251_N2260" />
+            type="com.irfansyed.vas.vasmonitring.neo.N2251_N2260" />
     </data>
 
     <LinearLayout
@@ -75,7 +75,7 @@
                             android:clickable="false"
                             android:focusable="false"
                             android:inputType="date"
-                            app:met_mask="##-##-###" />
+                            app:met_mask="####-#" />
 
 
                     </LinearLayout>
@@ -588,7 +588,7 @@
                                         android:enabled='@{cbN22551.checked ? false : true }'
                                         android:focusable="true"
                                         android:hint="@string/txt_N2255_1"
-                                        android:text='@{rbN22551check1.checked &amp;&amp; !cbN22551.checked ? edN22551.getText.toString : ""}'
+                                        android:text='@{rbN22551check1.checked &amp;&amp; !cbN22551.checked ? edN22551.getText().toString() : ""}'
                                         android:textColor="@android:color/black"
                                         app:dateFormat="dd/MM/yyyy" />-->
 
@@ -597,7 +597,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:hint="@string/txt_N2255_1"
-                                        android:text='@{rbN22551check1.checked ? edN22551.getText.toString : ""}'
+                                        android:text='@{rbN22551check1.checked ? edN22551.getText().toString() : ""}'
                                         android:textColor="@android:color/black" />
 
                                 </LinearLayout>
@@ -672,7 +672,7 @@
                                         android:enabled='@{cbN22552.checked ? false : true }'
                                         android:focusable="true"
                                         android:hint="@string/txt_N2255_2"
-                                        android:text='@{rbN22552check1.checked &amp;&amp; !cbN22552.checked ? edN22552.getText.toString : ""}'
+                                        android:text='@{rbN22552check1.checked &amp;&amp; !cbN22552.checked ? edN22552.getText().toString() : ""}'
                                         android:textColor="@android:color/black"
                                         app:dateFormat="dd/MM/yyyy" />-->
 
@@ -681,7 +681,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:hint="@string/txt_N2255_2"
-                                        android:text='@{rbN22552check1.checked ? edN22552.getText.toString : ""}'
+                                        android:text='@{rbN22552check1.checked ? edN22552.getText().toString() : ""}'
                                         android:textColor="@android:color/black" />
 
                                 </LinearLayout>
@@ -718,7 +718,7 @@
                                         android:enabled='@{cbN2256.checked ? false : true }'
                                         android:focusable="true"
                                         android:hint="@string/txt_N2256"
-                                        android:text='@{(rbN22531.checked || rbN22541.checked) &amp;&amp; !cbN2256.checked ? edN2256.getText.toString : ""}'
+                                        android:text='@{(rbN22531.checked || rbN22541.checked) &amp;&amp; !cbN2256.checked ? edN2256.getText().toString() : ""}'
                                         android:textColor="@android:color/black"
                                         app:dateFormat="dd/MM/yyyy" />-->
 
@@ -727,7 +727,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:hint="@string/txt_N2256"
-                                        android:text='@{(rbN22531.checked || rbN22541.checked) ? edN2256.getText.toString : ""}'
+                                        android:text='@{(rbN22531.checked || rbN22541.checked) ? edN2256.getText().toString() : ""}'
                                         android:textColor="@android:color/black" />
 
                                 </LinearLayout>
@@ -759,7 +759,7 @@
                                     style="@style/EditText_number"
                                     android:hint="@string/txt_N2257"
                                     android:maxLength="4"
-                                    android:text='@{rbN22531.checked || rbN22541.checked ? edN2257.getText.toString : ""}' />
+                                    android:text='@{rbN22531.checked || rbN22541.checked ? edN2257.getText().toString() : ""}' />
 
                             </LinearLayout>
 
@@ -786,7 +786,7 @@
                                     style="@style/EditText_multi"
                                     android:hint="@string/txt_N2258"
                                     android:maxLength="200"
-                                    android:text='@{rbN22531.checked || rbN22541.checked ? edN2258.getText.toString : ""}' />
+                                    android:text='@{rbN22531.checked || rbN22541.checked ? edN2258.getText().toString() : ""}' />
 
                             </LinearLayout>
 
@@ -864,7 +864,7 @@
                             style="@style/EditText_multi"
                             android:hint="@string/txt_N2260"
                             android:maxLength="200"
-                            android:text='@{rbN22591.checked ? edN2260.getText.toString : ""}' />
+                            android:text='@{rbN22591.checked ? edN2260.getText().toString() : ""}' />
 
                     </LinearLayout>
 

@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".C.C3251_C3288_A">
+    tools:context=".child.C3251_C3288_A">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="com.irfansyed.VAS.VASMonitring.C.C3251_C3288_A" />
+            type="com.irfansyed.vas.vasmonitring.child.C3251_C3288_A" />
     </data>
 
     <LinearLayout

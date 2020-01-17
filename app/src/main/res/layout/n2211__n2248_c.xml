@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".N.N2211_N2248_C">
+    tools:context=".neo.N2211_N2248_C">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="com.irfansyed.VAS.VASMonitring.N.N2211_N2248_C" />
+            type="com.irfansyed.vas.vasmonitring.neo.N2211_N2248_C" />
     </data>
 
     <LinearLayout
@@ -75,7 +75,7 @@
                             android:clickable="false"
                             android:focusable="false"
                             android:inputType="date"
-                            app:met_mask="##-##-###" />
+                            app:met_mask="####-#" />
 
 
                     </LinearLayout>
@@ -149,7 +149,7 @@
                                         android:id="@+id/ed_N2214_OT"
                                         style="@style/EditText_varchar"
                                         android:hint="Other"
-                                        android:text='@{rbN2214OT.checked ? edN2214OT.getText.toString : ""}'
+                                        android:text='@{rbN2214OT.checked ? edN2214OT.getText().toString() : ""}'
                                         android:visibility="@{rbN2214OT.checked ? View.VISIBLE : View.GONE}" />
 
                                 </RadioGroup>
@@ -252,7 +252,7 @@ Inst_4: If N2213 ≠ “Health provider” (Never took to a health provider) →
                                     android:id="@+id/ed_N2216_4"
                                     style="@style/EditText_varchar"
                                     android:hint="other"
-                                    android:text='@{cbN22164.checked ? edN22164.getText.toString : ""}'
+                                    android:text='@{cbN22164.checked ? edN22164.getText().toString() : ""}'
                                     android:visibility="@{cbN22164.checked ? View.VISIBLE : View.GONE}" />
 
                                 <CheckBox
@@ -309,7 +309,7 @@ Inst_4: If N2213 ≠ “Health provider” (Never took to a health provider) →
                                     android:id="@+id/ed_N2216_OT"
                                     style="@style/EditText_varchar"
                                     android:hint="other"
-                                    android:text='@{cbN2216OT.checked ? edN2216OT.getText.toString : ""}'
+                                    android:text='@{cbN2216OT.checked ? edN2216OT.getText().toString() : ""}'
                                     android:visibility="@{cbN2216OT.checked ? View.VISIBLE : View.GONE}" />
 
                             </LinearLayout>
@@ -548,7 +548,7 @@ Inst_4: If N2213 ≠ “Health provider” (Never took to a health provider) →
                                             android:id="@+id/ed_N2219_2"
                                             style="@style/EditText_Name"
                                             android:hint="Name of Provider/Facility"
-                                            android:text='@{rbN22191DK.checked ? "" : edN22192.getText.toString}'
+                                            android:text='@{rbN22191DK.checked ? "" : edN22192.getText().toString()}'
                                             android:visibility="@{rbN22191DK.checked ? View.GONE : View.VISIBLE}" />
 
 
@@ -862,7 +862,7 @@ Inst_4: If N2213 ≠ “Health provider” (Never took to a health provider) →
                                             android:id="@+id/ed_N2224_2"
                                             style="@style/EditText_Name"
                                             android:hint="Name of Provider/Facility"
-                                            android:text='@{rbN22241DK.checked ?  "" : edN22242.getText.toString}'
+                                            android:text='@{rbN22241DK.checked ?  "" : edN22242.getText().toString()}'
                                             android:visibility="@{rbN22241DK.checked ? View.GONE : View.VISIBLE}" />
 
 
@@ -1906,7 +1906,7 @@ Otherwise → N2247" />
                                                 android:id="@+id/ed_N2240_5"
                                                 style="@style/EditText_varchar"
                                                 android:hint="other"
-                                                android:text='@{cbN22405.checked ? edN22405.getText.toString : ""}'
+                                                android:text='@{cbN22405.checked ? edN22405.getText().toString() : ""}'
                                                 android:visibility="@{cbN22405.checked ? View.VISIBLE : View.GONE}" />
 
                                             <CheckBox
@@ -1985,7 +1985,7 @@ Otherwise → N2247" />
                                                 android:id="@+id/ed_N2240_OT"
                                                 style="@style/EditText_varchar"
                                                 android:hint="other"
-                                                android:text='@{cbN2240OT.checked ? edN2240OT.getText.toString : ""}'
+                                                android:text='@{cbN2240OT.checked ? edN2240OT.getText().toString() : ""}'
                                                 android:visibility="@{cbN2240OT.checked ? View.VISIBLE : View.GONE}" />
 
                                         </LinearLayout>

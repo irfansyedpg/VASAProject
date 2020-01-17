@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.irfansyed.VAS.VASMonitring">
+    package="com.irfansyed.vas.vasmonitring">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -19,27 +19,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Core.HomeActivity"
+            android:name="com.irfansyed.vas.vasmonitring.core.HomeActivity"
             android:label="@string/title_home"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Upload.SurveyCompletedActivity"
+            android:name="com.irfansyed.vas.vasmonitring.upload.SurveyCompletedActivity"
             android:label="@string/title_home"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Core.LoginActivity"
+            android:name="com.irfansyed.vas.vasmonitring.core.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".RP.w204_w222"
+            android:name="com.irfansyed.vas.vasmonitring.rep.w204_w222"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".Core.SplashScreenActivity"
+            android:name="com.irfansyed.vas.vasmonitring.core.SplashScreenActivity"
             android:theme="@style/AppThemeNACB">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,155 +48,155 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Other.templete"
+            android:name="com.irfansyed.vas.vasmonitring.other.templete"
 
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Other.Genifno"
+            android:name="com.irfansyed.vas.vasmonitring.other.Genifno"
 
             android:screenOrientation="portrait" />
         <activity
-            android:name=".C.C3001_C3011"
+            android:name="com.irfansyed.vas.vasmonitring.child.C3001_C3011"
 
             android:screenOrientation="portrait" />
         <activity
-            android:name=".C.C3012_C3022"
+            android:name="com.irfansyed.vas.vasmonitring.child.C3012_C3022"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".C.C3051_C3099"
+            android:name="com.irfansyed.vas.vasmonitring.child.C3051_C3099"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".C.C3101_C3112"
+            android:name="com.irfansyed.vas.vasmonitring.child.C3101_C3112"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".C.C3121_C3228"
+            android:name="com.irfansyed.vas.vasmonitring.child.C3121_C3228"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".C.C3301_C3314"
+            android:name="com.irfansyed.vas.vasmonitring.child.C3301_C3314"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".C.C3351_C3364"
+            android:name="com.irfansyed.vas.vasmonitring.child.C3351_C3364"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".C.C3401_C3457"
+            android:name="com.irfansyed.vas.vasmonitring.child.C3401_C3457"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".C.C3471_C3472"
+            android:name="com.irfansyed.vas.vasmonitring.child.C3471_C3472"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".GS.Q1101_Q1610"
+            android:name="com.irfansyed.vas.vasmonitring.general.Q1101_Q1610"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".C.C3251_C3288_A"
+            android:name="com.irfansyed.vas.vasmonitring.child.C3251_C3288_A"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".C.C3251_C3288_B"
+            android:name="com.irfansyed.vas.vasmonitring.child.C3251_C3288_B"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".C.C3251_C3288_C"
+            android:name="com.irfansyed.vas.vasmonitring.child.C3251_C3288_C"
             android:screenOrientation="portrait" />
 
         <!-- Ali files -->
         <activity
-            android:name=".N.N2001_N2011"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2001_N2011"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2012_N2016"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2012_N2016"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2017_N2022_3"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2017_N2022_3"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2023_N2026"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2023_N2026"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2051_N2078"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2051_N2078"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2080_N2107"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2080_N2107"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2110_N2189a"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2110_N2189a"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2190_N2191"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2190_N2191"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2192_N2202"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2192_N2202"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2211_N2248_A"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2211_N2248_A"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2211_N2248_B"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2211_N2248_B"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2211_N2248_C"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2211_N2248_C"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2251_N2260"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2251_N2260"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Pending.SurveyPendingActivity"
+            android:name="com.irfansyed.vas.vasmonitring.pending.SurveyPendingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2271_N2284"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2271_N2284"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2291_N2304"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2291_N2304"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2311_N2317"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2311_N2317"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N.N2321_N2322"
+            android:name="com.irfansyed.vas.vasmonitring.neo.N2321_N2322"
             android:screenOrientation="portrait" />
 
         <!-- Sajid files -->
         <activity
-            android:name=".A.A4001_A4014"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4001_A4014"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4051_A4066"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4051_A4066"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4067_A4080"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4067_A4080"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4081_A4094"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4081_A4094"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4095_A4108"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4095_A4108"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4109_A4125"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4109_A4125"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4126_A4140"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4126_A4140"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4144_A4156"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4144_A4156"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4157_A4205"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4157_A4205"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4206_A4207"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4206_A4207"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4251_A4284"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4251_A4284"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4301_A4315"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4301_A4315"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4351_A4364"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4351_A4364"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".A.A4401_A4473"
+            android:name="com.irfansyed.vas.vasmonitring.adult.A4401_A4473"
             android:screenOrientation="portrait" />
-        <activity android:name=".GS.InterviewEnd" />
+        <activity android:name="com.irfansyed.vas.vasmonitring.general.InterviewEnd" />
 
         <meta-data
             android:name="io.fabric.ApiKey"

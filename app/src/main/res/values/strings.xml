@@ -1,5 +1,120 @@
-﻿﻿
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
+    <string name="A4005_h" translatable="false">	اگر  ایک سال سے کم مکمل ہے تو 00 لکھیں	</string>
+    <string name="A4006_h" translatable="false">	"ہاں" لکھیں  اگر جواب دہندہ کو معلوم ہے کہ (نام) کو دونوں لکھنا پڑھنا یا صرف لکھنا یا صرف پڑھنا آتا  تھا  ۔	</string>
+    <string name="A4011_h" translatable="false">	لکھیں   “88”  = جواب دینے سے انکار کیا   ;   “99”= معلوم  نہیں	</string>
+    <string name="A4012_h" translatable="false">	لکھیں   “88”  = جواب دینے سے انکار کیا   ;   “99”= معلوم  نہیں	</string>
+    <string name="A4013d_h" translatable="false">	اگر صرف 30 دن سے کم ہے تودن ریکارڈ کریں ۔            اور اگر 24 گھنٹے سے کم ہے تو 00 دن ریکارڈ کریں	</string>
+    <string name="A4013m_h" translatable="false">	 1-11اگر مہینے تو مہینے ریکارڈ کریں 	</string>
+    <string name="A4013y_h" translatable="false">	اگر ایک سال یا اس سے زیادہ ہو تو سال ریکارڈ کریں	</string>
+    <string name="A4052_u_h" translatable="false">	 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛ ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4052_b_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4052_c_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4059_u_h" translatable="false">	 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4059_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4059_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4064_u_h" translatable="false">	              مہینے ۔ 1-60 دن یا       0-30اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4064_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4064_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4069_u_h" translatable="false">	             مہینے ۔ 1-60دن یا  1-30  گھنٹے  ،یا       0- 23      ایک ہفتہ = 7 دن لکھیں	</string>
+    <string name="A4072_u_h" translatable="false">	              مہینے ۔ 1-60 دن یا       0-30اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4072_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4072_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4075_u_h" translatable="false">	 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4075_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4077_u_h" translatable="false">	              مہینے ۔ 1-60 دن یا       0-30اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4082_u_h" translatable="false">	 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4082_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4082_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4082_c_h" translatable="false">	موت کے وقت کی  عمر سے سالوں کا نمبر کم لکھیں 	</string>
+    <string name="A4085_u_h" translatable="false">	              مہینے ۔ 1-60 دن یا       0-30اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4085_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4085_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4087_u_h" translatable="false">	               مہینے ۔ 1-60 دن یا       0-30اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4087_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4087_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4093_h" translatable="false">	24 گھنٹے سے کم ہو تو 00 دن    	</string>
+    <string name="A4094_u_h" translatable="false">	             مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛    ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4094_a_h" translatable="false">	منٹس لکھیں 0-59	</string>
+    <string name="A4094_b_h" translatable="false">	گھنٹے لکھیں 1-23	</string>
+    <string name="A4094_c_h" translatable="false">	دن لکھیں  یا   ایک ہفتہ = 7 دن لکھیں 0-30	</string>
+    <string name="A4097_u_h" translatable="false">	              مہینے ۔ 1-60 دن یا       0-30 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4097_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4097_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4099_u_h" translatable="false">	               مہینے ۔ 1-60 دن یا       0-30 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4099_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4099_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4101_u_h" translatable="false">	               مہینے ۔ 1-60 دن یا       0-30 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4101_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4101_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4107_h" translatable="false">	   ایک منٹ سے کم=  00   منٹس ؛                  ایک گھنٹہ =  60   منٹس  	</string>
+    <string name="A4117_u_h" translatable="false">	               مہینے ۔ 1-60 دن یا       0-30 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4117_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4117_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4127_u_h" translatable="false">	               مہینے ۔ 1-60 دن یا       0-30 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4127_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4127_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4130_u_h" translatable="false">	               مہینے ۔ 1-60 دن یا       0-30 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4130_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4130_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4134_u_h" translatable="false">	               مہینے ۔ 1-60 دن یا       0-30 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4134_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4134_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4150_u_h" translatable="false">	               مہینے ۔ 1-60 دن یا       0-30 اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛   ایک ہفتہ = 7 لکھیں	</string>
+    <string name="A4150_a_h" translatable="false">	دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="A4150_b_h" translatable="false">	مہینے         1-60	</string>
+    <string name="A4162_h" translatable="false">	اگر عورت کی عمر چالیس سال سے کم ہے تو یہ سوال نہ پوچھیں اور       " نہیں" پر نشان لگادیں	</string>
+    <string name="A4163_1_h" translatable="false">	اگر عورت کی عمر چالیس سال سے کم ہے تو یہ سوال نہ پوچھیں اور       " نہیں" پر نشان لگادیں	</string>
+    <string name="A4178_2_h" translatable="false">	یہ سوال اس بات کو یقینی بنانا ہے کہ کو ئی میٹرنل  ڈیتھ رہ تو نہیں گئی 	</string>
+    <string name="A4191_h" translatable="false">	جواب دہندہ سے اس کی رائے معلوم کریں کہ وہ " بچہ کی غیر معمولی پوزیشن" کو کیا سمجھتی ہے ؛ اگر  اسکو واضع نہیں ہے یا غلط بتاتی ہے تو وضاحت کریں کہ اسکا مطلب ہے کہ اگر اندام نہانی سے   بچہ کا سر     پہلے باہر نہ  آ ئے۔	</string>
+    <string name="A4192_h" translatable="false">	اگر 60منٹس سے کم = 0 گھنٹے 	</string>
+    <string name="A4196_h" translatable="false">	( اچانک اسقاط حمل یا جان بوجھ کر اسقاط کرانا)	</string>
+    <string name="A4197_h" translatable="false">	( اچانک اسقاط حمل یا جان بوجھ کر اسقاط کرانا)	</string>
+    <string name="A4205_h" translatable="false">	(جیسے آٹھویں مہینے یا اس سے پہل)	</string>
+    <string name="A4206_4_h" translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔ 	</string>
+    <string name="A4206_5_h" translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔ 	</string>
+    <string name="A4206_6_h" translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔ 	</string>
+    <string name="A4206_7_h" translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
+    <string name="A4206_8_h" translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
+    <string name="A4206_12_h" translatable="false">	بارہ سال سے کم عمر کے بچوں کے لیے " خود کشی" نہ کہیں۔ 	</string>
+    <string name="A4206_18_h" translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
+    <string name="A4207_1_h" translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں :      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
+    <string name="A4207_2_h" translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں :      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
+    <string name="A4254_h" translatable="false">	اگر صحت فراہم کرنے والے کے پاس لے کر گئے تو پوچھیں: کیاتم  (نام)کو(پہلا) صحت مہیا کرنے والے کے بارے میں جو تشویش/مسائل تھے وہ حل ہوچکے تھے؟	</string>
+    <string name="A4255_h" translatable="false">	مزید پوچھیں : کچھ اور   ایک سے زیادہ جوابات کی اجازت ہے.	</string>
+    <string name="A4256_h" translatable="false">	پڑھیں :"پہلا " اگر ایک یا ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئے. نشان لگائیں  دنوں ،گھنٹوں ،اور منٹوں پر اگر ضرورت ہے مثال کے طور پر 00 دن،   02  گھنٹے،  10  منٹس	</string>
+    <string name="A4276_h" translatable="false">	مزید پوچھیں : کچھ اور   ایک سے زیادہ جوابات کی اجازت ہے.	</string>
+    <string name="A4277_h" translatable="false">	پڑھیں :" کسی بھی صحت فراہم کرنے والے پاس؟ ۔۔"اگر مرحوم ایک سے زیادہ صحت فراہم کرنے والے کے پاس گیا .	</string>
+    <string name="A4278_h" translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں ۔ اگر معلوم نہیں تو "9 "پر نشان لگائیں 	</string>
+    <string name="A4279_h" translatable="false">	مقامی   سہولت کے مطابق: جوابات     الگ الگ   ہونا   چاہئے اور ضرورت پڑنے پر مقامی  طور  پر  موجود   سہولت کے مطابق   اختیا ر کئے جایئں 	</string>
+    <string name="A4310_1_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
+    <string name="A4310_2_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
+    <string name="A4310_3_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
+    <string name="A4310_4_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
+    <string name="A4310_5_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
+    <string name="A4310_7_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
+    <string name="A4310_8_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
+    <string name="A4310_9_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
+    <string name="A4310_10_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
+    <string name="A4310_11_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
+    <string name="A4312_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
+    <string name="A4313_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں۔	</string>
+    <string name="A4363_h" translatable="false">	اگر ہاں تو پوچھیں : کیا میں وہ رجسٹریشن کارڈ دیکھ سکتی /سکتا  ہوں؟	</string>
+    <string name="A4401_h" translatable="false">	پڑھیں: " جہاں اب ہم ہیں " ۔۔۔ اگر ضرورت ہو تو واضح کریں کہ آپ کس گھر کے بارے میں بات کررہے ہیں.	</string>
+    <string name="A4402_h" translatable="false">	مزید پوچھیں: (نام) بیماری کے دوران رہتی تھی یا رہتا تھا   ؟ 	</string>
+    <string name="A4403_h" translatable="false">	لیول  1اور  لیول 2  کا مطلب  ملک  میں سب سے بڑا  اور دوسرا  سب سے بڑا  جغرافیائی  ڈویژن ہے.	</string>
+    <string name="A4404_h" translatable="false">	رہتی تھی)/ (وہ اپنے رشتہ دار کے ساتھ رہتا تھا     A4402 = 2-5 اگر …… پڑھیں:    "  رشتہ دار"  	</string>
+    <string name="A4405_h" translatable="false">	ضرورت پڑنے پر گھنٹے یا اور منٹس پر نشان لگا ئیں۔ مثا ل کے طور پر ایک گھنٹہ،   تیس منٹس	</string>
+    <string name="A4451_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="A4452_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="A4453_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="A4473_h" translatable="false">	انٹرویور: انٹرویو کو بارے میں اپنا تبصرہ اور مشاہدہ لکھیں	</string>
+
+    <!-- Adult Urdu Hint's ENDS -->
+
+
     <string name="app_name" translatable="false">V A S A</string>
 
     <string name="txt_study_id" translatable="false">Study ID</string>
@@ -19,6 +134,17 @@
     <string name="rb_ra" translatable="false">Refused to answer</string>
     <string name="time" translatable="false">Times</string>
     <string name="fv" translatable="false">First Visit</string>
+
+    <string name="rb_DK" translatable="false">معلوم نہیں</string>
+    <string name="rb_RA" translatable="false">جواب دینے سے انکار کردیا</string>
+    <string name="explain" translatable="false">وضاحت کریں</string>
+
+
+    <string name="h_g_sec_1.2" translatable="false">1.2 Information about the deceased</string>
+    <string name="h_g_sec_1.3" translatable="false">1.3: Information about the interview</string>
+    <string name="h_g_sec_1.4" translatable="false">1.4 Information about the respondent</string>
+    <string name="h_g_sec_1.5" translatable="false">1.5 Information about others at the interview</string>
+    <string name="h_g_sec_1.6" translatable="false">1.6 Deceased child or adults sex and age at death</string>
 
     <!--HEADINGS-->
 
@@ -54,12 +180,358 @@
     <!--General Section-->
     <string name="h_g_sec_1" translatable="false">SECTION 1: GENERAL INFORMATION</string>
     <string name="h_g_sec_1.1" translatable="false">1.1 Information about the prevalence of HIV and malaria</string>
-    <string name="h_g_sec_1.2" translatable="false">1.2 Information about the deceased</string>
-    <string name="h_g_sec_1.3" translatable="false">1.3: Information about the interview</string>
     <string name="h_g_sec_I_R" translatable="false">IDENTIFY THE BEST RESPONDENT</string>
-    <string name="h_g_sec_1.4" translatable="false">1.4 Information about the respondent</string>
-    <string name="h_g_sec_1.5" translatable="false">1.5 Information about others at the interview</string>
-    <string name="h_g_sec_1.6" translatable="false">1.6 Deceased child or adults sex and age at death</string>
+
+    <string name="rb_A4276_OT" translatable="false">	16.    کچھ اور (وضاحت کریں)	</string>
+    <string name="cb_A4276_DK" translatable="false">	معلوم نہیں	</string>
+    <string name="rb_A4277_1" translatable="false">	                                         ہاں 	</string>
+    <string name="rb_A4277_2" translatable="false">	                                                     نہیں 	</string>
+    <string name="rb_A4277_DK" translatable="false">	معلوم نہیں 	</string>
+
+    <string name="rb_A4278_OT" translatable="false">	کچھ اور (وضاحت کریں)	</string>
+    <string name="cb_A4278_DK" translatable="false">	  معلوم نہیں	</string>
+
+    <string name="A4284_h" translatable="false">	اگر (کو ئی دیکھ بھال نہیں  کی)  تو  پڑھیں۔۔۔۔۔ "پہلی دفعہ بیماری کو نوٹس کیا" C3252 = 2 . 	:	A4284	</string>
+
+
+    <string name="C3001_h" translatable="false">	اگر ایک ہی وقت میں دو یا اس سے زیادہ بچے پیدا ہوئے ہیں تو یہ ایک سے زیادہ پیدائش کی حیثیت میں شمار ہوں گی چاہیے ایک یا ایک سے زیادہ بچوں کی وفات ہوئی ہو	</string>
+    <string name="C3003_h" translatable="false">	اگر ماں  انٹرویو میں موجود ہے تو   یہ سوال پوچھے بغیر  "ہاں"  پر نشان لگائیں	</string>
+    <string name="C3005u_h" translatable="false">	صرف ایک یونٹ یا جواب لکھیں
+  	0-6    دن لکھیں،  اگر ایک دن یا   24  گھنٹے سے کم ہو تو 0     دن لکھیں      	</string>
+    <string name="C3005w_h" translatable="false">	  1-7   ہفتے لکھیں       	</string>
+    <string name="C3005m_h" translatable="false">	مہینے  لکھیں 2-60	</string>
+    <string name="C3006_h" translatable="false">	سوال پڑہیں اور شروع کے پانچ جوابات کو آہستہ آہستہ پڑھیں ۔ جواب دہندہ تمام جوابات کو سنے اور پھر جواب دے	</string>
+    <string name="C3008_h" translatable="false">	پڑھیں: " مرکز صحت پر" ۔۔۔ اگر اس کی زچگی صحت کی سہولت فراہم کرے والی جگہ پر پیدا ہو ئی	</string>
+    <string name="C3009_1_h" translatable="false">	تصویریں دکھائیں، جواب دہندہ کو  وضاحت کریں کہ اگر جواب " نہیں" ہے  تب بھی کچھ مزید سوال پوچھیں جائیں گے ، صرف اس بات کو  یقینی بنانے کے لئے کہ کو   ئی  اہم بات  چھوٹ نہ گئی ہو۔ 	</string>
+    <string name="C3009_2_h" translatable="false">	اگر تصویریں موجود ہوں تو دکھائیں	</string>
+    <string name="C3009_3_h" translatable="false">	اگر تصویریں موجود ہوں تو دکھائیں	</string>
+    <string name="C3009_4_h" translatable="false">	اگر تصویریں موجود ہوں تو دکھائیں	</string>
+    <string name="C3010_h" translatable="false">	بچےکے پیدائش کے کارڈ  کے بارے میں پوچھیں ۔ اگر کارڈ موجود ہے تو کارڈ سے پیدائش کے وقت کا وزن ریکارڈ کریں۔ اگر کارڈ موجود نہیں ہے تو جواب دہندہ سے وزن معلوم کرکے لکھیں اگر اس کو معلوم ہو۔ وزن کو گرام میں چار ہندسوں میں لکھیں۔ ہوسکتا ہے جواب دہندہ وزن  کلو گرام میں بتا ئے ۔ اس صورت میں ڈیٹا انٹری کے لئے1          کلو گرام کو 1000 میں تبدیل کریں۔
+ 	اگر "معلوم نہیں "ہے تو  "            9999" لکھیں اور "انکار" کی صورت میں  تو  "            8888" لکھیں۔	</string>
+    <string name="C3012_h" translatable="false">	     (سے Q1202)  یہ صرف اس وقت  پوچھیں جب نام  پہلے معلوم نہ ہو	</string>
+    <string name="C3016_h" translatable="false">	نہ پڑہیںat that level بچوں کی اموات کے لیے ،  " اگر  ایک سال سے کم مکمل ہے تو 00 لکھیں".	</string>
+    <string name="C3019_u_h" translatable="false">	صرف ایک جواب لکھیں ،0-30 دن،   1-11 مہینہ،  1-11 سال۔	</string>
+    <string name="C3019_a_h" translatable="false">	  دن 7 = دن لکھیں ، اگر ایک دن یا 24 گھنٹے سے کم ہو تو 0     دن لکھیں   ،       1   ہفتہ            0-30  	</string>
+    <string name="C3019_b_h" translatable="false">	مہینے لکھیں  1-11	</string>
+    <string name="C3019_c_h" translatable="false">	1-11 سال  لکھیں  	</string>
+    <string name="C3020_h" translatable="false">	پڑھیں:  " بچہ ، بچی "اگر اس کی عمر و فات کے وقت  ایک سال سے کم  تھی	</string>
+    <string name="C3021d_h" translatable="false">	  دن 7 = دن لکھیں ، اگر ایک دن یا 24 گھنٹے سے کم ہو تو 0     دن لکھیں   ،       1   ہفتہ            0-30  	</string>
+    <string name="C3021m_h" translatable="false">	مہینے لکھیں  1-11	</string>
+    <string name="C3021y_h" translatable="false">	1-11 سال  لکھیں  	</string>
+    <string name="C3022_h" translatable="false">	" اچانک " کا مطلب ہے ،  بیماری شروع ہونے کے چوبیس گھنٹوں کے اندر اندر	</string>
+    <string name="C3053_h" translatable="false">	( واضح کریں کہ اس کا مطلب زچگی سے پہلے حمل کے آخری تین مہینہ ہیں  )	</string>
+    <string name="C3062_h" translatable="false">	اگر 1 گھنٹے سے کم "00" ریکارڈ کریں	</string>
+    <string name="C3063_h" translatable="false">	باہر آیا تھا؟	</string>
+    <string name="C3064_h" translatable="false">	پڑھیں: اگر وہ       ایک سے زیادہ حمل کی علامات رکھتی تھی تو  پڑھ کر سنا ئیں.	</string>
+    <string name="C3065_h" translatable="false">	اگر عورت کا معا ئنہ  کسی  تربیت یافتہ ،کمیونٹی نرس،یا مڈوائف نے  صحت کی سہولت  پر کیا  تھا          تو    د ئے    گئے     صحت کی سہولت  کی  اقسام(3-1  )  پر نشان لگا ئیں  جہاں صحت مہیا کرنے والے نے اسکو دیکھا۔اور اگر عورت کا معا ئنہ    صحت کی سہولت کے باہر کیا گیا تھا تو  د ئے    گئے      جواب (4) پر نشان  لگا ئیں۔	</string>
+    <string name="C3066_h" translatable="false">	پڑھیں:     " کوئی بھی علامت"  اگر وہ  ایک سے زیادہ علامت  رکھتی تھی ۔	</string>
+    <string name="C3067_h" translatable="false">	مزید پوچھیں ۔ اگر عورت نے صحت فراہم کرنے کی سہولت میں تربیتی کمیونٹی نرس یا مڈوائف کو دیکھا یا ہے تو (3-1) سہولت کی اقسام پر نشانا لگائیں اگر عورت کا معا ئنہ   صحت کی سہولت کے باہر کیا گیا تھا تو  د ئے    گئے      جواب (4) پر نشان  لگا ئیں. اور اگر کسی دوسرے شخص نے  صحت کی سہولت کے باہر دیکھ بھال کی تو جواب5-7  پر نشان لگا ئیں  ۔	</string>
+    <string name="C3068_h" translatable="false">	اگر عورت کا معا ئنہ  کسی  تربیت یافتہ ،کمیونٹی نرس،یا مڈوائف نے  صحت کی سہولت  پر کیا  تھا          تو    د ئے    گئے     صحت کی سہولت  کی  اقسام  پر نشان لگا ئیں  جہاں صحت مہیا کرنے والے  کو دکھایا تھا 	</string>
+    <string name="C3076_h" translatable="false">	سرف ایک جواب لکھیں 	</string>
+    <string name="C3077_h" translatable="false">	میں  رکھاگیا تھا ؟  (incubator) کیا بچہ کو پیدائش کے بعد انکیوبیٹر 	</string>
+    <string name="C3078_h" translatable="false">	عورت کو تصویر کے ذریعے جلد سے جلد کے رابطہ کی پوزیشن دکھا ئیں	</string>
+    <string name="C3079_h" translatable="false">	اگر   1-23  گھنٹہ تو گھنٹوں کی تعداد ریکارڈ کریں.	</string>
+    <string name="C3081_h" translatable="false">	اگر ایک گھنٹہ سے کم“00.” ریکارڈ کریں.	</string>
+    <string name="C3082_h" translatable="false">	 اگر ایک دن سے کم“00.” ریکارڈ کریں.	</string>
+    <string name="C3090_h" translatable="false">	اگر ایک مہینہ سے کم ہے تو    "دنوں"  میں ریکارڈ کریں اور اگر ایک مہینہ یا ایک مہینہ سے زیادہ ہو تو       " مہینوں " میں ریکارڈ کریں. اگر24  گھنٹوں سے کم تو   00 دن لکھیں.	</string>
+    <string name="C3095_h" translatable="false">	تصویر دیکھائیں	</string>
+    <string name="C3099_h" translatable="false">	میں C3098 and C3099 اگر دونوں سوال جواب "نہیں "  ہے تو جواب دہندہ  کے ساتھ مزید   ڈسکس کریں  	</string>
+    <string name="C3105_h" translatable="false">	اگر 23-1 گھنٹے میں تو گھنٹوں کی تعداد ریکارڈ کریں. اگر  1 دن یا اس سے زیادہ تو دنوں میں تعداد ریکارڈ کریں.	</string>
+    <string name="C3107_h" translatable="false">	تمام جوابات پڑھیں: " ہاں "   "نہیں " یا   " معلوم نہیں"  ریکارڈ کریں.	</string>
+    <string name="C3109_h" translatable="false">	اس موقعہ پر  "نہیں"،  "معلاوم نہیں" یا "جواب نہیں دیا" لائن پر کچھ نہ لکھیں 	</string>
+    <string name="C3110_h" translatable="false">	اگر ہاں تو مزید ٹیکوں کے بارے میں  پوچھیں  جو کارڈ پر  موجود  نہ ہوں. 	</string>
+    <string name="C3111_h" translatable="false">	براہِ مہربانی بتائیں (نام) اگر مندرجہ ذیل کوئی بھی حفاظتی ٹیکہ لگا ہو	</string>
+    <string name="C3112_h" translatable="false">	پڑھیں : "پہلے"اگر بچہ چھ مہینوں سے کم زندہ  رہا ہو ۔	</string>
+    <string name="C3122_h" translatable="false">	اگر ایک مہینے سے کم تھا تو دنوں میں ریکارڈ کریں اور  اگر ایک مہینے یا زیادہ تو مہینوں میں ریکارڈ کریں۔	</string>
+    <string name="C3123_b_h" translatable="false">	 دن لکھیں۔ اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں     0-30	</string>
+    <string name="C3132_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3147_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3150_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3152_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3159_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3163_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3165_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3175_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3177_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3179_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3193_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3196_h" translatable="false">	اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0 لکھیں؛ ایک ہفتہ = 7 لکھیں   ؛           ایک مہینہ= 30 دن  لکھیں.	</string>
+    <string name="C3201_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3201_a_h" translatable="false">	       دن 7 = دن لکھیں ، اگر ایک دن یا 24 گھنٹے سے کم ہو تو 0     دن لکھیں   ،       1   ہفتہ            0-30	</string>
+    <string name="C3201_b_h" translatable="false">	مہینے لکھیں    1-60	</string>
+    <string name="C3204_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3204_a_h" translatable="false">	       دن 7 = دن لکھیں ، اگر ایک دن یا 24 گھنٹے سے کم ہو تو 0     دن لکھیں   ،       1   ہفتہ            0-30	</string>
+    <string name="C3204_b_h" translatable="false">	مہینے لکھیں    1-60	</string>
+    <string name="C3208_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3208_a_h" translatable="false">	       دن 7 = دن لکھیں ، اگر ایک دن یا 24 گھنٹے سے کم ہو تو 0     دن لکھیں   ،       1   ہفتہ            0-30	</string>
+    <string name="C3208_b_h" translatable="false">	مہینے لکھیں    1-60	</string>
+    <string name="C3220_u_h" translatable="false">	کو ئی ایک جواب لکھیں: مہینے ۔ 1-60 دن یا       0-30  اگر ایک دن یا چوبیس گھنٹوں سے کم  =  0  دن لکھیں؛  ایک ہفتہ = 7 لکھیں.	</string>
+    <string name="C3220_a_h" translatable="false">	       دن 7 = دن لکھیں ، اگر ایک دن یا 24 گھنٹے سے کم ہو تو 0     دن لکھیں   ،       1   ہفتہ            0-30	</string>
+    <string name="C3220_b_h" translatable="false">	مہینے لکھیں    1-60	</string>
+    <string name="C3227_5_h" translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
+    <string name="C3227_6_h" translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
+    <string name="C3227_7_h" translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
+    <string name="C3227_8_h" translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
+    <string name="C3227_12_h" translatable="false">	بارہ سال سے کم عمر کے بچوں کے لیے " خود کشی" نہ کہیں.	</string>
+    <string name="C3227_18_h" translatable="false">	اس میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
+    <string name="C3228_h" translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں :      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں.	</string>
+    <string name="C3254_h" translatable="false">	صرف اہم فیصلہ کرنے والے کا نام ا  ماں اور باپ مشترکہ(4) ریکارڈ کریں.	</string>
+    <string name="C3256_h" translatable="false">	مزید پوچھیں : کچھ اور   ایک سے زیادہ جوابات کی اجازت ہے.	</string>
+    <string name="C3278_h" translatable="false">	پڑھیں: (تمام ) صحت فراہم کنندہ  اگر مرحوم کو پہلے اور آخری صحت فراہم کرنے والوں نے  ریفر کیا تھا.	</string>
+    <string name="C3280_h" translatable="false">	مزید پوچھیں : کچھ اور   ایک سے زیادہ جوابات کی اجازت ہے.	</string>
+    <string name="C3281_h" translatable="false">	پڑھیں :" کسی بھی صحت فراہم کرنے والے پاس؟ ۔۔"اگر مرحوم ایک سے زیادہ صحت فراہم کرنے والے کے پاس گیا ہو.	</string>
+    <string name="C3282_h" translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں ۔ اگر معلوم نہیں تو "9 "پر نشان لگائیں .	</string>
+    <string name="C3283_h" translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں ۔ اگر "معلوم نہیں " تو "9 "پر نشان لگائیں.	</string>
+    <string name="C3309_h" translatable="false">	ہیلتھ کارڈ پر موجود آخری نوٹ(عبارت) کو یہاں درج کریں.	</string>
+    <string name="C3310_1_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں.	</string>
+    <string name="C3310_2_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں.	</string>
+    <string name="C3310_3_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں.	</string>
+    <string name="C3310_4_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں.	</string>
+    <string name="C3310_5_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں.	</string>
+    <string name="C3310_6_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں.	</string>
+    <string name="C3310_7_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں.	</string>
+    <string name="C3310_8_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں.	</string>
+    <string name="C3310_9_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں.	</string>
+    <string name="C3310_10_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں.	</string>
+    <string name="C3310_11_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں.	</string>
+    <string name="C3311_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں.	</string>
+    <string name="C3312_h" translatable="false">	جواب دہندہ کو یا دلا ئیں کہ  ہم آخری بیماری کے دوران ڈاکٹر، صحت کارکن، یا دیگر صحت مند پیشہ ورانہ نے جو  تشخیص کی ہے اس کے بارے میں پوچھ رہے ہیں.	</string>
+    <string name="C3314_h" translatable="false">	آپ کو ہیلتھ ورکر نے کیا بتایا تھا؟ 	</string>
+    <string name="C3363_h" translatable="false">	اگر ہاں تو پوچھیں : کیا میں وہ رجسٹریشن کارڈ دیکھ سکتی /سکتا  ہوں؟	</string>
+    <string name="C3401_h" translatable="false">	چیک کریں:   اگر  ماں وفات پاگئی تو پڑھیں ۔ "بچہ کی ماں کی عمر کیا تھی جب  اس کی وفات ہوئی؟" C3003 	</string>
+    <string name="C3404_h" translatable="false">	اگر  ایک سال سے کم مکمل ہے تو 00 لکھیں.	</string>
+    <string name="C3405_h" translatable="false">	پڑھیں:   اگر جواب دہ ماں نہیں ہے تو پڑھیں "بچے کی ماں"	</string>
+    <string name="C3410_h" translatable="false">	پڑھیں: " جہاں اب ہم ہیں " ۔۔۔ اگر ضرورت ہو تو واضح کریں کہ آپ کس گھر کے بارے میں بات کررہے ہیں.	</string>
+    <string name="C3411_h" translatable="false">	پوچھیں: آپ ۔ ماں بیماری کے دوران کہاں رہتی  تھیں ؟	</string>
+    <string name="C3412_1_h" translatable="false">	لیول  1اکا مطلب  ملک  میں سب سے بڑا  اور دوسرا  سب سے بڑا  جغرافیائی  ڈویژن ہے	</string>
+    <string name="C3412_2_h" translatable="false">	لیول   2  کا مطلب  ملک  میں سب سے بڑا  اور دوسرا  سب سے بڑا  جغرافیائی  ڈویژن ہے	</string>
+    <string name="C3451_1_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3451_2_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3451_3_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3451_4_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3451_5_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3451_6_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3451_7_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3451_8_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3451_9_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3451_10_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3451_11_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3451_12_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3451_13_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3451_14_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3452_1_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3452_2_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3452_3_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3452_4_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3452_5_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3452_6_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3452_7_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3452_8_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3452_9_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3452_10_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3453_1_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3453_2_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3453_3_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3453_4_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3453_5_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3453_6_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3453_7_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3453_8_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3453_9_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3453_10_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3453_11_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3453_12_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3453_13_h" translatable="false">	تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="C3473_h" translatable="false">	انٹرویور: انٹرویو کے بارے میں اپنا تبصرہ اور مشاہدہ لکھیں	</string>
+
+    <!-- Child Urdu TEXT HINT's ENDS -->
+
+    <string name="rb_C3006_12" translatable="false">	دیگر(وضاحت کریں)	</string>
+    <string name="rb_C3008_OT" translatable="false">	دیگر(وضاحت کریں)	</string>
+
+    <string name="txt_C3107" translatable="false">C3107:	مہلک بیماری شروع ہونے سے ایک دن پہلے ،کیا   (نام) کو کیا کچھ دیا جا رہا تھا	</string>
+
+    <string name="C3162_h" translatable="false">اگر ایک مہینہ سے کم ہے تو دنوں میں لکھیں۔ اگر 1 مہینہ یا زیادہ مہینے ہیں تو مہینوں میں لکھیں، اگر 24 گھنٹوں سے کم  00 لکھیں۔</string>
+
+    <string name="ed_C3228_1" translatable="false">		</string>
+    <string name="ed_C3228_2" translatable="false">		</string>
+    <string name="rb_C3251_1_1" translatable="false">	معمول کے مطابق کھانا پینا	</string>
+    <string name="rb_C3251_1_2" translatable="false">	بہت کم کھانا پینا 	</string>
+    <string name="rb_C3251_1_3" translatable="false">	بلکل کھانا پینا نہیں 	</string>
+    <string name="rb_C3251_1_DK" translatable="false">	معلوم نہیں 	</string>
+    <string name="rb_C3251_2_1" translatable="false">	معمول کے مطابق کھانا پینا	</string>
+    <string name="rb_C3251_2_2" translatable="false">	بہت کم کھانا پینا 	</string>
+    <string name="rb_C3251_2_3" translatable="false">	بلکل کھانا پینا نہیں 	</string>
+    <string name="rb_C3251_2_DK" translatable="false">	معلوم نہیں 	</string>
+
+    <string name="C3255_h" translatable="false">	اگر صحت فراہم کرنے والے کے پاس لیکر گئے تو پوچھیں: کیاتم کوصحت مہیا کرنے واللا (پہلا) کے بارے میں جو تشویش/مسائل تھے وہ حل ہوچکے تھے.	</string>
+
+    <string name="cb_C3256_OT" translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string name="ed_C3257_1" translatable="false">		</string>
+    <string name="ed_C3257_2" translatable="false">		</string>
+    <string name="ed_C3257_3" translatable="false">		</string>
+
+    <string name="txt_C3259_h" translatable="false">C3259_h:	صرف  جواب 5 یا  10 کو استعمال کریں  اگر صحت  فراہم کنندہ کو   صحت کی ہولت  کے باہر دکھایا گیا تھا.	</string>
+    <string name="txt_C3261_h" translatable="false">	 ضرورت  کے مطابق نشان لگائیں گھنٹے اور /یا منٹس: مثال کے طور پر  02 گھنٹے،   10 منٹ . (DK = 99)	:C3261_2	</string>
+    <string name="txt_C3451_h" translatable="false">C3451_h:  .تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+
+    <string name="rb_C3451_13_DK" translatable="false">	معلوم نہیں 	</string>
+    <string name="rb_C3451_OT" translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string name="txt_C3452_h" translatable="false">C3452_h:  تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="rb_C3452_9_DK" translatable="false">	معلوم نہیں 	</string>
+    <string name="ed_C3452_OT" translatable="false">	دیگر (وضاحت کریں)	</string>
+    <string name="txt_C3453_h" translatable="false">C3452_h:  تمام مسائل کو پڑھیں اور "ہاں" ، "نہیں" یا "معلوم نہیں" پر نشان لگائیں 	</string>
+    <string name="rb_C3453_12_DK" translatable="false">	معلوم نہیں 	</string>
+    <string name="rb_C3452_OT" translatable="false">	دیگر (وضاحت کریں)	</string>
+
+    <!-- Neonate Urdu Text HINT's STARTS -->
+
+    <string name="N2003_h" translatable="false">	اگر ماں  انٹرویو میں موجود ہے تو   یہ سوال پوچھے بغیر  "ہاں"  پر نشان لگائیں 	</string>
+    <string name="N2005u_h" translatable="false">	صرف ایک یونٹ یا جواب لکھیں	</string>
+    <string name="N2005d_h" translatable="false">	24 گھنٹے سے کم ہو تو 0     دن لکھیں      دن لکھیں ، اگر ایک دن یا 0-6  	</string>
+    <string name="N2005w_h" translatable="false">	  ہفتے لکھیں  1-7   	</string>
+    <string name="N2005m_h" translatable="false">	مہینے  لکھیں  2-60	</string>
+    <string name="N2006_h" translatable="false">	سوال پڑہیں اور شروع کے پانچ جوابات کو آہستہ آہستہ پڑھیں 	</string>
+    <string name="N2008_h" translatable="false">	پڑھیں: " صحت  کی سہولت پر " ۔۔۔ اگر اس کی زچگی صحت کی سہولت فراہم کرے والی جگہ پر پیدا ہو ئی	</string>
+    <string name="N2009_1_h" translatable="false">	تصویریں دکھائیں، جواب دہندہ کو  وضاحت کریں کہ اگر جواب " نہیں" ہے  تب بھی کچھ مزید سوال پوچھیں جائیں گے ، صرف اس بات کو  یقینی بنانے کے لئے کہ کو   ئی  اہم بات  چھوٹ نہ گئی ہو۔	</string>
+    <string name="N2009_2_h" translatable="false">	  کلو سے کم) 2.5( وزن 	</string>
+    <string name="N2009_3_h" translatable="false">	 کلو سے کم) 1 ( وزن	</string>
+    <string name="N2009_4_h" translatable="false">	کلو سے زیادہ) 4.5  ( وزن	</string>
+    <string name="N2010_h" translatable="false">	وزن  کلو گرام میں بتا ئے ۔ اس صورت میں ڈیٹا انٹری کے لئے1          کلو گرام کو 1000 میں تبدیل کریں۔   اگر "معلوم نہیں "ہے تو  "            9999" لکھیں اور "انکار" کی صورت میں  تو  "            8888" لکھیں۔	</string>
+    <string name="N2016_h" translatable="false">	اگر "زندہ" اور سوال N2013-N2015   = " نہیں " یا اگر "مردہ"اور سوال N2013-N2014 یا  N2015="ہاں"  ، تو ڈسکس کریں اور صحیح جواب لکھیں۔	</string>
+    <string name="N2019u_h" translatable="false">	اگر 23-0 گھنٹے ہوں تو  "گھنٹوں " پر لکھیں یا اگر 60-1 دن ہو تو  " دنوں "  پر لکھیں	</string>
+    <string name="N2019h_h" translatable="false">	اگر ایک گھنٹہ سے کم=‘00’ گھنٹے لکھیں	</string>
+    <string name="N2019d_h" translatable="false">	اگر  ایک ہفتہ=7دن لکھیں	</string>
+    <string name="N2023_h" translatable="false">	(سے Q1202)  یہ صرف اس وقت  پوچھیں جب نام  پہلے معلوم نہ ہو	</string>
+    <string name="N2024_h" translatable="false">	اگر 24 گھنٹے سے کم ہے تو 00 دن ریکارڈ کریں ۔ اگر  ایک ہفتہ=7دن لکھیں	</string>
+    <string name="N2025d_h" translatable="false">	نوازئیدہ بچوں کے لئے: دنوں میں ریکارڈ کریں ۔اگر 24 گھنٹے سے کم ہے تو 00 دن ریکارڈ کریں	</string>
+    <string name="N2051_h" translatable="false">	معلوم نہیں="99."اور   انکار کردیا="88." لکھیں   	</string>
+    <string name="N2053_h" translatable="false">	ایک سے زیادہ جواب آسکتے ہیں(تمام لوگوں کے نا م لکھیں جن کو دکھایا )	</string>
+    <string name="N2058_h" translatable="false">	مزید پوچھیں: مجھے مزید  ایسی    خطرناک علامات کے  بارے میں بتائیں  جو آپ بتاسکتی ہوں	</string>
+    <string name="N2062_h" translatable="false">	اگر 7 اور 7 سے زیادہ   دفعہ ہے تو 7 ریکارڈ کریں۔	</string>
+    <string name="N2067_h" translatable="false">	اگر "معلوم نہیں "ہے تو  "            99" لکھیں اور "انکار" کی صورت میں  تو  "            88" لکھیں۔  	</string>
+    <string name="N2070_h" translatable="false">	"ماں " ۔اگر جوابدہندہ ماں نہیں ہے    پڑھیں  : 	</string>
+    <string name="N2071_h" translatable="false">	نوٹ:لیبر(زچگی )  شروع ہوتی ہے جب درد زہ کی وجہ سے اینٹھن کا درمیانی وقفہ  20 منٹ  سے زیادہ نہ ہو	</string>
+    <string name="N2072_h" translatable="false">	ریکارڈ 24 اگر 1 دن یا 1 دن سے زیادہ    ہو ۔	</string>
+    <string name="N2076_h" translatable="false">	اگر زچگی  صحت کے مرکز میں جاتے  ہو ئے راستے  میں ہوئی .  (N2006=3-11 or N2006=1-2 and N2008=1-3),	</string>
+    <string name="N2077_h" translatable="false">	مرکز صحت میں زچگی کروانے کی کوشش نہیں کی. "یا" اگر اس کی زچگی  ہیلتھ مہیا کرنے والے  کے پاس یا مرکز صحت میں جاتے   ہو ئے    ہو   گئی .	</string>
+    <string name="N2078_h" translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں 	</string>
+    <string name="N2081_h" translatable="false">	پڑھیں: اگر وہ       ایک سے زیادہ حمل کی علامات رکھتی تھی تو  پڑھ کر سنا ئیں.	</string>
+    <string name="N2082_h" translatable="false">	کیا کہیں اور سے بھی  مدد حاصل کی؟	</string>
+    <string name="N2083_h" translatable="false">	پڑھیں :  "پہلا  صحت فراہم کنندہ "…….اگر   وہ ایک سے زیادہ  فراہم کنندہ کے پاس گئی  ہو۔	</string>
+    <string name="N2086_h" translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں 	</string>
+    <string name="N2089_h" translatable="false">	پڑھیں: " پہلی بار"……..۔اگر اسکو  ایک سے زیادہ لیبر یا زچگی کی علامات ظاہر ہوئی تھیں ؟	</string>
+    <string name="N2090_h" translatable="false">	پڑھیں:     " کوئی بھی علامت"  اگر وہ  ایک سے زیادہ علامت  رکھتی تھی ۔	</string>
+    <string name="N2091_h" translatable="false">	ایک سے زیادہ جوابات کی اجازت ہے 	</string>
+    <string name="N2092_h" translatable="false">	کسی ایک فیصلہ کرنے والے کا  نام  ، ماں اور اسکے شوہر کا نام مشترکہ طور پر ریکارڈ کریں(3)	</string>
+    <string name="N2095_h" translatable="false">	پڑھیں :   "پہلا صحت فراہم کنندہ "  اگر  وہ   ایک سے زیادہ  صحت فراہم کنندہ کے پاس گئی تھی	</string>
+    <string name="N2098_h" translatable="false">	اگر عورت کا معا ئنہ  کسی  تربیت یافتہ ،کمیونٹی نرس،یا مڈوائف نے  صحت کی سہولت  پر کیا  تھا          تو    د ئے    گئے     صحت کی سہولت  کی  اقسام  پر نشان لگا ئیں  جہاں صحت مہیا کرنے والے  کو دکھایا تھا ۔	</string>
+    <string name="N2100_h" translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں	</string>
+    <string name="N2101_h" translatable="false">	مقامی   سہولت کے مطابق: جوابات     الگ الگ   ہونا   چاہئے اور ضرورت پڑنے پر مقامی  طور  پر  موجود   سہولت کے مطابق   اختیا ر کئے جائیں	</string>
+    <string name="N2102_h" translatable="false">	اگر   " نہیں"   تو جواب دہندہ سے مزید    ڈسکس کریں   اور صحیح جواب تک     2 or 3  پہنچیں 	</string>
+    <string name="N2107_h" translatable="false">	ہر علامت کو پڑھیں اور "ہاں" ، "نہیں" یا " معلوم نہیں" لکھیں ۔	</string>
+    <string name="N2124_h" translatable="false">	گھنٹے لکھیں۔ “00”= منٹس سے کم  60	</string>
+    <string name="N2127_h" translatable="false">	اگر   1-23  گھنٹہ تو گھنٹوں کی تعداد ریکارڈ کریں	</string>
+    <string name="N2129_h" translatable="false">	اگر ایک گھنٹہ سے کم“00.” ریکارڈ کریں 	</string>
+    <string name="N2130_h" translatable="false">	اگر ایک دن سے کم“00.” ریکارڈ کریں	</string>
+    <string name="N2139_h" translatable="false">	24 گھنٹے سے کم=  00  دن 	</string>
+    <string name="N2156_h" translatable="false">	اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>
+    <string name="N2157_h" translatable="false">	.    اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>
+    <string name="N2160_h" translatable="false">	.    اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>
+    <string name="N2161_h" translatable="false">	.    اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>
+    <string name="N2166_h" translatable="false">	اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>
+    <string name="N2167_h" translatable="false">	اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>
+    <string name="N2168_h" translatable="false">	اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>
+    <string name="N2169_h" translatable="false">	اگر24  گھنٹوں سے کم تو   00 دن لکھیں	</string>
+    <string name="N2173_h" translatable="false">	ہر آواز کے لیے عملی مظاہرہ کریں 	</string>
+    <string name="N2190_5_h" translatable="false">	س میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
+    <string name="N2190_6_h" translatable="false">	س میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
+    <string name="N2190_7_h" translatable="false">	س میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
+    <string name="N2190_8_h" translatable="false">	س میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
+    <string name="N2190_18_h" translatable="false">	س میں وہ  حادثات یا کیسز شامل ہیں جن کے بارے میں معلوم نہیں کہ وہ ایک حادثہ تھا یا جان بوجھ کر تشدد کیا گیا  تھا۔	</string>
+    <string name="N2190_1_h" translatable="false">	بارہ سال سے کم عمر کے بچوں کے لیے " خود کشی" نہ کہیں۔	</string>
+    <string name="N2190_2_h" translatable="false">	اس میں حادثات اور ایسے کیسزز بھی شامل ہیں جو یا تو نامعلوم حادثہ تھا یا جان بوجھ کریا بالارادہ تشدد تھا .	</string>
+    <string name="N2191_h" translatable="false">	اگر 24 گھنٹے سے کم ہے تو  گھنٹے ریکارڈ کریں :      ایک گھنٹہ سے کم  00=لکھیں  اگر 1 دن یا اس سے زیادہ تو دنوں میں ریکارڈ کریں	</string>
+    <string name="N2194_2_h" translatable="false">	اگر 24 گھنٹوں سے کم ہے تو گھنٹوں میں ریکارڈ کریں۔اگر 1 گھنٹہ سے کم ہے تو "00" گھنٹے ریکارڈ کریں.	</string>
+    <string name="N2194_1_h" translatable="false">	 اگر ایک سے یا 1 دن سے ذیادہ ہے تو دنوں میں ریکارڈ کریں.	</string>
+    <string name="N2198_h" translatable="false">	دیے گئے  ہر جواب کے بارے میں پوچھیں: مہلک بیماری شروع ہونے سے پہلے کتنی بار بچہ کو   صحت فراہم کنندہ نے گھر یا مرکز صحت میں  > دیکھا تھا؟	</string>
+    <string name="N2202_h" translatable="false">	دیے گئے  ہر جواب کے بارے میں پوچھیں: مہلک بیماری شروع ہونے سے پہلے کتنی بار بچہ کو   صحت فراہم کنندہ نے گھر یا مرکز صحت میں  > دیکھا تھا؟	</string>
+    <string name="N2211_h" translatable="false">	پڑھیں: ہر ایک  حالت کے لئے   دئے گئے انتخاب کو پڑھیں	</string>
+    <string name="N2215_h" translatable="false">	اگر صحت فراہم کرنے والے کے پاس لیکر گئے تو پوچھیں: کیاتم کوصحت مہیا کرنے واللا (پہلا) کے بارے میں جو تشویش/مسائل تھے وہ حل ہوچکے تھے؟	</string>
+    <string name="N2216_h" translatable="false">	ایک سے زیادہ جوابات کی اجازت ہے	</string>
+    <string name="N2240_h" translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں	</string>
+    <string name="N2241_h" translatable="false">	پڑھیں :" کسی بھی صحت فراہم کرنے والے پاس؟ ۔۔"اگر مرحوم ایک سے زیادہ صحت فراہم کرنے والے کے پاس گیا ہو.	</string>
+    <string name="N2242_h" translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں ۔ اگر "معلوم نہیں " تو "9 "پر نشان لگائیں.	</string>
+    <string name="N2243_h" translatable="false">	ایک سے زیادہ جوابات آسکتے ہیں ۔ اگر "معلوم نہیں " تو "9 "پر نشان لگائیں.	</string>
+    <string name="N2248_h" translatable="false">	 (کو ئی دیکھ بھال نہیں  کی)  تو  پڑھیں۔۔۔۔۔ "پہلی دفعہ بیماری کو نوٹس کیا" N2212 = 2 اگر	</string>
+    <string name="N2258_h" translatable="false">	یلتھ کارڈ پر موجود آخری نوٹ(عبارت) کو یہاں درج کریں 	</string>
+    <string name="N2260_h" translatable="false">	آپ کو ہیلتھ ورکر نے کیا بتایا تھا؟ 	</string>
+    <string name="N2283_h" translatable="false">	اگر ہاں تو پوچھیں : کیا میں وہ رجسٹریشن کارڈ دیکھ سکتی /سکتا  ہوں	</string>
+    <string name="N2291_h" translatable="false">	   اگر  ماں وفات پاگئی تو پڑھیں ۔ "بچہ کی ماں کی عمر کیا تھی جب  اس کی وفات ہوئی؟"	</string>
+    <string name="N2295_h" translatable="false">	پڑھیں:   اگر جواب دہ ماں نہیں ہے تو پڑھیں "بچے کی ماں"	</string>
+    <string name="N2299_h" translatable="false">	اگر  ایک سال سے کم مکمل ہے تو 00 لکھیں	</string>
+    <string name="N2300_h" translatable="false">	مردہ بچہ یا نومولود بچہ کی موت:  پڑھیں " آخری دنوں میں"	</string>
+    <string name="N2302_h" translatable="false">	مقامی مطابقت: لیول  1اور  لیول 2  کا مطلب  ملک  میں سب سے بڑا  اور دوسرا  سب سے بڑا  جغرافیائی  ڈویژن ہے.	</string>
+    <string name="N2303_h" translatable="false">	رہتی تھی؟/ (وہ اپنے رشتہ دار کے ساتھ رہتا تھا     N2301 = 2-5 اگر …… پڑھیں:    "  رشتہ دار  " 	</string>
+    <string name="N2311_h" translatable="false">	تمام مسائل کو پڑھیں اور ہاں"  نہیں  "  معلوم نہیں"   پر نشان لگائیں	</string>
+    <string name="N2312_h" translatable="false">	تمام مسائل کو پڑھیں اور ہاں"  نہیں  "  معلوم نہیں"   پر نشان لگائیں	</string>
+    <string name="N2313_h" translatable="false">	تمام مسائل کو پڑھیں اور ہاں"  نہیں  "  معلوم نہیں"   پر نشان لگائیں	</string>
+    <string name="N2321_h" translatable="false">	یہ ایک اختیار ی سوال ہے جس کو پوچھنے کا فیصلہ اسٹیڈی کی جگہ کے مطابق کیا جائیگا 	</string>
+    <string name="N2323_h" translatable="false">	انٹرویور: انٹرویو کو بارے میں اپنا تبصرہ اور مشاہدہ لکھیں	</string>
+
+    <!-- Neonate Urdu Text HINT's ENDS -->
+
+    <string name="txt_N2026_h" translatable="false">	" اچانک " کا مطلب ہے ،  بیماری شروع ہونے کے چوبیس گھنٹوں کے اندر اندر؟	:	N2026_h	</string>
+    <string name="txt_N2057_h" translatable="false">	 تمام جوابات پڑھیں اور ہر ایک پر (ہاں) یا  (نہیں) یا (معلوم نہیں) پر دائرہ لگائیں. مقامی قبولیت:۔ اگر جواب دہندہ پوچھے کہ کوئی اضافی پروٹین اور اعلی توانائی کی غذا تو ذکر کریں.	</string>
+
+    <string name="txt_N2080_h" translatable="false">	جواب دہندہ کو وضاحت کریں کہ لیبر(زچگی )  شروع ہوتی ہے جب درد زہ کی وجہ سے اینٹھن کی لہریں ہر  20 منٹ   یا اس سے کم وقت میں   اٹھتی ہیں۔--پڑھیں  "ماں " ، اگر جوابدہندہ ماں نہیں ہے
+اس کے بعد ہر علامت کو پڑہیں  اور ہر ایک کے لئے "ہاں" ،   "نہیں"،   "معلوم نہیں "  پر نشان لگا ئیں</string>
+    <string name="N2085_h" translatable="false">	اگر  وہ   حمل کی علامات کے حوالے سے کبھی بھی صحت مہیا کرنے والے کے پاس نہیں گئی.  (Q4002 = 2 or Q4003 = only 5-7)  تو     پوچھو : 	:	N2085	</string>
+
+    <string name="txt_N2122_h" translatable="false">	         تو  جوابدہندہ سے گفتگو کرکے اس کو طے کریں۔   N2013  ="ہاں"  اگر           تو یہ "مردہ بچہ" ہوسکتا ہے ۔ اسلئے "مردہ بچہ " کے تعین کے سیکشن میں اسکو صحیح کریں  N2013    ="نہیں"     اگر؟	:	N2122_h	</string>
+    <string name="txt_N2125_h" translatable="false">	وقت سے پہلے پیدا ہونے والے  بچوں کے  لئےاگر   (N2066=1 or N2067 9 months) میں پیدا ہوئے  (N2006=3-10) صحت کی سہولت؟	:	N2125_h	</string>
+    <string name="N2135_h" translatable="false">N2135_h: تمام جوابات پڑھیں: " ہاں "   "نہیں " یا   " معلوم نہیں"  ریکارڈ کریں. </string>
+
+    <string name="txt_N2193_h" translatable="false">	8, 2 or 9 → N2211	</string>
+
+    <string name="rb_N2322_DK" translatable="false">	معلوم نہیں	</string>
+    <string name="rb_N2211_1_1" translatable="false">	معمول	</string>
+    <string name="rb_N2211_1_2" translatable="false">	درمیانی	</string>
+    <string name="rb_N2211_1_3" translatable="false">	غیر معمولی	</string>
+    <string name="rb_N2211_1_DK" translatable="false">	معلوم نہیں	</string>
+    <string name="rb_N2211_2_1" translatable="false">	معمول	</string>
+    <string name="rb_N2211_2_2" translatable="false">	درمیانی	</string>
+    <string name="rb_N2211_2_3" translatable="false">	غیر معمولی	</string>
+    <string name="rb_N2211_2_DK" translatable="false">	معلوم نہیں	</string>
+    <string name="rb_N2212_1" translatable="false">	 ہاں	</string>
+    <string name="rb_N2212_2" translatable="false">	نہیں ،.-------دیکھ بھال کی ضرورت نہیں تھی،نہ ہی تلاش کی	</string>
+    <string name="rb_N2212_DK" translatable="false">	معلوم نہیں	</string>
+
+    <string name="cb_N2322_1" translatable="false">	دم گھٹنا	</string>
+    <string name="cb_N2322_2" translatable="false">	انکیو بیٹر	</string>
+    <string name="cb_N2322_3" translatable="false">	پھپھڑوں کا مسئلہ	</string>
+    <string name="cb_N2322_4" translatable="false">	وقت سے پہلے ڈیلیوری	</string>
+    <string name="cb_N2322_5" translatable="false">	سانس میں تکلیف	</string>
+    <string name="cb_N2322_6" translatable="false">	ان میں سے کوئی لفظ موجو د نہیں	</string>
+    <string name="cb_N2322_DK" translatable="false">	معلوم نہیں	</string>
+
+    <string name="txt_N2313_13" translatable="false">	کیا  (آپ /وہ /(نام) کمیونٹی میں مندرجہ ذیل   کوڈ لوگوں یا گروپوں میں سے کسی کو  (حمل /یا  بچے کی مہلک بیماری /اس کی بیماری) کےدوران  مدد کے لئے  قا ئل   یا راغب کیا تھا؟	:	N2313_13	</string>
+    <string name="txt_N2323" translatable="false">		:	N2323	</string>
+
+    <string name="Q1411_h" translatable="false">	پڑھیں:" اس گھر میں " کتنے افراد  رہتے ہیں ،  اگر آپ خاندان کے گھرکی بات کررہے ہیں؟	:	Q1411	</string>
+
+    <string name="rb_Q1414_1" translatable="false">	(بجلی)	</string>
+    <string name="rb_Q1414_2" translatable="false">	(ریڈی)	</string>
+    <string name="rb_Q1414_3" translatable="false">	(ٹیلی وژن)	</string>
+    <string name="rb_Q1414_4" translatable="false">	(ریفرجیٹر)	</string>
+    <string name="rb_Q1414_5" translatable="false">	(ٹیلی فون)	</string>
+    <string name="rb_Q1414_6" translatable="false">	(موبائل)	</string>
+    <string name="rb_Q1414_7" translatable="false">	(کمپیوٹر)	</string>
+    <string name="rb_Q1414_8" translatable="false">	(سائیکل)	</string>
+    <string name="rb_Q1414_9" translatable="false">	(موٹر سائیکل)	</string>
+    <string name="rb_Q1414_10" translatable="false">	(گاڑی یا ٹرک)	</string>
+
+    <string name="rb_Q1416_OT" translatable="false">دیگر وضاحت کریں	</string>
 
     <!--Child-->
     <string name="h_c_sec_2" translatable="false">SECTION 2: BACKGROUND</string>
@@ -3991,7 +4463,6 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="A4206_2" translatable="false">A4206_2: What was her/his role in the road traffic accident?</string>
     <string name="A4206_3" translatable="false">A4206_3: What was the counterpart that was hit during the road traffic accident?</string>
     <string name="A4206_4" translatable="false">A4206_4: Was (s)he injured in a non-road transport accident?</string>
-    <string name="A4206_4_h" translatable="false">This includes accidents and cases where it is unknown if it was an accident or whether there was   intentional violence</string>
     <string name="A4206_5" translatable="false">A4206_5: Was (s)he injured in a fall?</string>
     <string name="A4206_6" translatable="false">A4206_6: Was there any poisoning?</string>
     <string name="A4206_7" translatable="false">A4206_7: Did (s)he die of drowning?</string>
@@ -4607,8 +5078,6 @@ Examples of statements for the reading test:
     <string name="A4077_a_h" translatable="false"><![CDATA[Enter 0-30 days. Less than 1 day or 24 hours = 0 days; 1 week = 7 days &amp; If Don\'t Know  Enter 99\"]]></string>
     <string name="A4077_b" translatable="false">Enter how long (s)he had a cough in months?</string>
     <string name="A4077_b_h" translatable="false"><![CDATA[Enter 1-60 Months & if don\'t know Enter 99]]></string>
-    <string name="A4005_h" translatable="false">If completed less than 1 year at that level, record 0 \nDon\'t know = 99</string>
-    <string name="A4006_h" translatable="false">Record “yes” if both or either reading or writing is known to the respondent.</string>
     <string name="A4052_b" translatable="false">A4052_b: Enter how long the fever lasted in days?</string>
     <string name="A4052_c" translatable="false">A4052_c: Enter how long the fever lasted in months?</string>
     <string name="A4059_a" translatable="false">A4059_a: Enter how long the loose or liquid stools lasted in days?</string>
@@ -4617,7 +5086,13 @@ Examples of statements for the reading test:
     <string name="A4064_b" translatable="false">A4064_b: Enter how long before death she vomited in months?</string>
     <string name="days_h" translatable="false">Enter 0-29 days. Less than 1 day or 24 hours = 0 days. 1 week = 7 days. Don\'t know = 99</string>
 
+    <string name="A4014_h" translatable="false">	" اچانک " کا مطلب ہے ،  بیماری شروع ہونے کے چوبیس گھنٹوں کے اندر اندر انتقال ہوگیا  	:	A4014	</string>
 
+
+    <string name="rb_A4206_2_OT" translatable="false">	دیگر 	</string>
+    <string name="rb_A4206_2_DK" translatable="false">	معلوم نہیں 	</string>
+    <string name="rb_A4206_2_RA" translatable="false">	جواب دینے سے انکار کردیا	</string>
+    <string name="rb_A4206_3_OT" translatable="false">	دیگر 	</string>
     <!-- Reproductive Urdu TEXT & RESPONSE STARTS -->
 
     <string name="txt_W201" translatable="false">	آپ/ماں کی تاریخ پیدائش کیا ہے ؟	:W201	</string>

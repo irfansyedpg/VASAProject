@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".N.N2080_N2107">
+    tools:context=".neo.N2080_N2107">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="com.irfansyed.VAS.VASMonitring.N.N2080_N2107" />
+            type="com.irfansyed.vas.vasmonitring.neo.N2080_N2107" />
     </data>
 
     <LinearLayout
@@ -75,7 +75,7 @@
                             android:clickable="false"
                             android:focusable="false"
                             android:inputType="date"
-                            app:met_mask="##-##-###" />
+                            app:met_mask="####-#" />
 
 
                     </LinearLayout>
@@ -756,7 +756,7 @@
                                     android:id="@+id/ed_N2080_15"
                                     style="@style/EditText_varchar"
                                     android:hint="Specify the other symptom"
-                                    android:text='@{rbN2080151.checked ? edN208015.getText.toString : ""}'
+                                    android:text='@{rbN2080151.checked ? edN208015.getText().toString() : ""}'
                                     android:visibility="@{rbN2080151.checked ? View.VISIBLE : View.GONE}" />
 
                             </RadioGroup>
@@ -1174,7 +1174,7 @@
                                     android:id="@+id/ed_N2086_4"
                                     style="@style/EditText_varchar"
                                     android:hint="@string/cb_N2086_4"
-                                    android:text='@{cbN20864.checked ? edN20864.getText.toString : ""}'
+                                    android:text='@{cbN20864.checked ? edN20864.getText().toString() : ""}'
                                     android:visibility="@{cbN20864.checked ? View.VISIBLE : View.GONE}" />
 
                                 <CheckBox
@@ -1231,7 +1231,7 @@
                                     android:id="@+id/ed_N2086_OT"
                                     style="@style/EditText_varchar"
                                     android:hint="Other"
-                                    android:text='@{cbN2086OT.checked ? edN2086OT.getText.toString : ""}'
+                                    android:text='@{cbN2086OT.checked ? edN2086OT.getText().toString() : ""}'
                                     android:visibility="@{cbN2086OT.checked ? View.VISIBLE : View.GONE}" />
 
                             </LinearLayout>
@@ -2083,7 +2083,7 @@
                                     android:id="@+id/ed_N2088_18"
                                     style="@style/EditText_varchar"
                                     android:hint="Specify the other symptom"
-                                    android:text='@{rbN2088181.checked ? edN208818.getText.toString : ""}'
+                                    android:text='@{rbN2088181.checked ? edN208818.getText().toString() : ""}'
                                     android:visibility="@{rbN2088181.checked ? View.VISIBLE : View.GONE}" />
 
                             </RadioGroup>
@@ -2156,7 +2156,7 @@
                                     android:id="@+id/ed_N2089_OT"
                                     style="@style/EditText_varchar"
                                     android:hint="Other"
-                                    android:text='@{rbN2089OT.checked ? edN2089OT.getText.toString : ""}'
+                                    android:text='@{rbN2089OT.checked ? edN2089OT.getText().toString() : ""}'
                                     android:visibility="@{rbN2089OT.checked ? View.VISIBLE : View.GONE}" />
 
                             </RadioGroup>
@@ -2363,7 +2363,7 @@
                                             android:id="@+id/ed_N2092_OT"
                                             style="@style/EditText_varchar"
                                             android:hint="@string/explain"
-                                            android:text='@{rbN2092OT.checked ? edN2092OT.getText.toString : ""}'
+                                            android:text='@{rbN2092OT.checked ? edN2092OT.getText().toString() : ""}'
                                             android:visibility="@{rbN2092OT.checked ? View.VISIBLE : View.GONE}" />
 
                                     </RadioGroup>
@@ -2437,7 +2437,7 @@
                                     android:id="@+id/ed_N2093_8"
                                     style="@style/EditText_varchar"
                                     android:hint="Other"
-                                    android:text='@{rbN20938.checked ? edN20938.getText.toString : ""}'
+                                    android:text='@{rbN20938.checked ? edN20938.getText().toString() : ""}'
                                     android:visibility="@{rbN20938.checked ? View.VISIBLE : View.GONE}" />
 
                                 <RadioButton
@@ -2464,7 +2464,7 @@
                                     android:id="@+id/ed_N2093_12"
                                     style="@style/EditText_varchar"
                                     android:hint="Other"
-                                    android:text='@{rbN209312.checked ? edN209312.getText.toString : ""}'
+                                    android:text='@{rbN209312.checked ? edN209312.getText().toString() : ""}'
                                     android:visibility="@{rbN209312.checked ? View.VISIBLE : View.GONE}" />
 
                                 <RadioButton
@@ -2486,7 +2486,7 @@
                                     android:id="@+id/ed_N2093_OT"
                                     style="@style/EditText_varchar"
                                     android:hint="Other"
-                                    android:text='@{rbN2093OT.checked ? edN2093OT.getText.toString : ""}'
+                                    android:text='@{rbN2093OT.checked ? edN2093OT.getText().toString() : ""}'
                                     android:visibility="@{rbN2093OT.checked ? View.VISIBLE : View.GONE}" />
 
                             </RadioGroup>
@@ -2857,7 +2857,7 @@
                                         android:id="@+id/ed_N2098_10"
                                         style="@style/EditText_varchar"
                                         android:hint="@string/rb_N2098_10"
-                                        android:text='@{rbN209810.checked ? edN209810.getText.toString : ""}'
+                                        android:text='@{rbN209810.checked ? edN209810.getText().toString() : ""}'
                                         android:visibility="@{rbN209810.checked ? View.VISIBLE : View.GONE}" />
 
                                     <RadioButton
@@ -2879,7 +2879,7 @@
                                         android:id="@+id/ed_N2098_OT"
                                         style="@style/EditText_varchar"
                                         android:hint="Other"
-                                        android:text='@{rbN2098OT.checked ? edN2098OT.getText.toString : ""}'
+                                        android:text='@{rbN2098OT.checked ? edN2098OT.getText().toString() : ""}'
                                         android:visibility="@{rbN2098OT.checked ? View.VISIBLE : View.GONE}" />
 
                                 </RadioGroup>

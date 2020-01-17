@@ -29,21 +29,21 @@ import Global.N.N2271_N2284;
 import Global.N.N2291_N2304;
 import Global.N.N2311_N2317;
 import Global.N.N2321_N2322;
-import data.A.A4001_A4014;
-import data.A.A4051_A4066;
-import data.A.A4067_A4080;
-import data.A.A4081_A4094;
-import data.A.A4095_A4108;
-import data.A.A4109_A4125;
-import data.A.A4126_A4140;
-import data.A.A4144_A4156;
-import data.A.A4157_A4205;
-import data.A.A4206_A4207;
-import data.A.A4251_A4284;
-import data.A.A4252_atributes;
-import data.A.A4301_A4315;
-import data.A.A4351_A4364;
-import data.A.A4401_A4473;
+import data.adult.A4001_A4014;
+import data.adult.A4051_A4066;
+import data.adult.A4067_A4080;
+import data.adult.A4081_A4094;
+import data.adult.A4095_A4108;
+import data.adult.A4109_A4125;
+import data.adult.A4126_A4140;
+import data.adult.A4144_A4156;
+import data.adult.A4157_A4205;
+import data.adult.A4206_A4207;
+import data.adult.A4251_A4284;
+import data.adult.A4252_atributes;
+import data.adult.A4301_A4315;
+import data.adult.A4351_A4364;
+import data.adult.A4401_A4473;
 
 /**
  * Created by Umeed-e-Nau on 12/21/2016.
@@ -66,36 +66,36 @@ public class DBHelper extends SQLiteOpenHelper {
         db.beginTransaction();
 
         /*Waseem's File creation*/
-        db.execSQL(data.GS.Q1101_Q1610.getCreateQuery()); // Q1101_Q1610 created here
-        db.execSQL(data.C.C3001_C3011.getCreateQuery()); // C3001_C3011 created here
-        db.execSQL(data.C.C3012_C3022.getCreateQuery()); // C3012_C3022 created here
-        db.execSQL(data.C.C3051_C3099.getCreateQuery()); // C3051_C3099 created here
-        db.execSQL(data.C.C3101_C3112.getCreateQuery()); // C3101_C3112 created here
-        db.execSQL(data.C.C3121_C3228.getCreateQuery()); // C3121_C3228 created here
-        db.execSQL(data.C.C3301_C3314.getCreateQuery()); // C3301_C3314 created here
-        db.execSQL(data.C.C3351_C3364.getCreateQuery()); // C3301_C3314 created here
-        db.execSQL(data.C.C3401_C3457.getCreateQuery()); // C3401_C3457 created here
-        db.execSQL(data.C.C3471_C3472.getCreateQuery()); // C3471_C3472 created here
-        db.execSQL(data.C.C3251_C3288_A_C.getCreateQuery()); // C3251_C3288_A.C created here
-        db.execSQL(data.C.C3251_C3288_B.getCreateQuery()); // C3251_C3288_B created here
+        db.execSQL(data.general.Q1101_Q1610.getCreateQuery()); // Q1101_Q1610 created here
+        db.execSQL(data.child.C3001_C3011.getCreateQuery()); // C3001_C3011 created here
+        db.execSQL(data.child.C3012_C3022.getCreateQuery()); // C3012_C3022 created here
+        db.execSQL(data.child.C3051_C3099.getCreateQuery()); // C3051_C3099 created here
+        db.execSQL(data.child.C3101_C3112.getCreateQuery()); // C3101_C3112 created here
+        db.execSQL(data.child.C3121_C3228.getCreateQuery()); // C3121_C3228 created here
+        db.execSQL(data.child.C3301_C3314.getCreateQuery()); // C3301_C3314 created here
+        db.execSQL(data.child.C3351_C3364.getCreateQuery()); // C3301_C3314 created here
+        db.execSQL(data.child.C3401_C3457.getCreateQuery()); // C3401_C3457 created here
+        db.execSQL(data.child.C3471_C3472.getCreateQuery()); // C3471_C3472 created here
+        db.execSQL(data.child.C3251_C3288_A_C.getCreateQuery()); // C3251_C3288_A.C created here
+        db.execSQL(data.child.C3251_C3288_B.getCreateQuery()); // C3251_C3288_B created here
 
         /*Ali's File creation*/
-        db.execSQL(data.N.N2001_N2011.getCreateQuery()); // N2001_N2011 created here
-        db.execSQL(data.N.N2012_N2016.getCreateQuery()); // N2012_N2016 created here
-        db.execSQL(data.N.N2017_N2022_3.getCreateQuery()); // N2017_N2022_3 created here
-        db.execSQL(data.N.N2023_N2026.getCreateQuery()); // N2023_N2026 created here
-        db.execSQL(data.N.N2051_N2078.getCreateQuery()); // N2051_N2078 created here
-        db.execSQL(data.N.N2080_N2107.getCreateQuery()); // N2080_N2107 created here
-        db.execSQL(data.N.N2110_N2189a.getCreateQuery()); // N2110_N2189a created here
-        db.execSQL(data.N.N2190_N2191.getCreateQuery()); // N2190_N2191 created here
-        db.execSQL(data.N.N2192_N2202.getCreateQuery()); // N2192_N2202 created here
-        db.execSQL(data.N.N2211_N2248_A_C.getCreateQuery()); // N2211_N2248_A_C created here
-        db.execSQL(data.N.N2211_N2248_B.getCreateQuery()); // N2211_N2248_B created here
-        db.execSQL(data.N.N2251_N2260.getCreateQuery()); // N2251_N2260 created here
-        db.execSQL(data.N.N2271_N2284.getCreateQuery()); // N2271_N2284 created here
-        db.execSQL(data.N.N2291_N2304.getCreateQuery()); // N2291_N2304 created here
-        db.execSQL(data.N.N2311_N2317.getCreateQuery()); // N2311_N2317 created here
-        db.execSQL(data.N.N2321_N2322.getCreateQuery()); // N2321_N2322 created here
+        db.execSQL(data.neo.N2001_N2011.getCreateQuery()); // N2001_N2011 created here
+        db.execSQL(data.neo.N2012_N2016.getCreateQuery()); // N2012_N2016 created here
+        db.execSQL(data.neo.N2017_N2022_3.getCreateQuery()); // N2017_N2022_3 created here
+        db.execSQL(data.neo.N2023_N2026.getCreateQuery()); // N2023_N2026 created here
+        db.execSQL(data.neo.N2051_N2078.getCreateQuery()); // N2051_N2078 created here
+        db.execSQL(data.neo.N2080_N2107.getCreateQuery()); // N2080_N2107 created here
+        db.execSQL(data.neo.N2110_N2189a.getCreateQuery()); // N2110_N2189a created here
+        db.execSQL(data.neo.N2190_N2191.getCreateQuery()); // N2190_N2191 created here
+        db.execSQL(data.neo.N2192_N2202.getCreateQuery()); // N2192_N2202 created here
+        db.execSQL(data.neo.N2211_N2248_A_C.getCreateQuery()); // N2211_N2248_A_C created here
+        db.execSQL(data.neo.N2211_N2248_B.getCreateQuery()); // N2211_N2248_B created here
+        db.execSQL(data.neo.N2251_N2260.getCreateQuery()); // N2251_N2260 created here
+        db.execSQL(data.neo.N2271_N2284.getCreateQuery()); // N2271_N2284 created here
+        db.execSQL(data.neo.N2291_N2304.getCreateQuery()); // N2291_N2304 created here
+        db.execSQL(data.neo.N2311_N2317.getCreateQuery()); // N2311_N2317 created here
+        db.execSQL(data.neo.N2321_N2322.getCreateQuery()); // N2321_N2322 created here
 
         /*Sajid's File creation*/
         db.execSQL(A4001_A4014.getCreateQuery()); // A4001_A4014 created here
@@ -114,8 +114,8 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(A4351_A4364.getCreateQuery()); // A4351_A4364 created here
         db.execSQL(A4401_A4473.getCreateQuery()); // A4401_A4405 created here
 
-        db.execSQL(data.RP.w204_w215.getCreateQuery());
-        db.execSQL(data.RP.w216_w222.getCreateQuery());
+        db.execSQL(data.rep.w204_w215.getCreateQuery());
+        db.execSQL(data.rep.w216_w222.getCreateQuery());
 
         db.setTransactionSuccessful();
         db.endTransaction();
@@ -125,7 +125,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         switch (i) {
             case 1:
-                db.execSQL(data.N.N2321_N2322.getAlterQuery());
+                db.execSQL(data.neo.N2321_N2322.getAlterQuery());
 
             /*case 2:
                 db.execSQL(data.C.C3121_C3228.getAlterQuery());*/
@@ -276,7 +276,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2001_N2011.TABLE_NAME,
+                data.neo.N2001_N2011.TABLE_NAME,
                 null,
                 values);
 
@@ -302,7 +302,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2012_N2016.TABLE_NAME,
+                data.neo.N2012_N2016.TABLE_NAME,
                 null,
                 values);
 
@@ -334,7 +334,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2017_N2022_3.TABLE_NAME,
+                data.neo.N2017_N2022_3.TABLE_NAME,
                 null,
                 values);
 
@@ -361,7 +361,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2023_N2026.TABLE_NAME,
+                data.neo.N2023_N2026.TABLE_NAME,
                 null,
                 values);
 
@@ -451,7 +451,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2051_N2078.TABLE_NAME,
+                data.neo.N2051_N2078.TABLE_NAME,
                 null,
                 values);
 
@@ -624,7 +624,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2080_N2107.TABLE_NAME,
+                data.neo.N2080_N2107.TABLE_NAME,
                 null,
                 values);
 
@@ -752,7 +752,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2110_N2189a.TABLE_NAME,
+                data.neo.N2110_N2189a.TABLE_NAME,
                 null,
                 values);
 
@@ -798,7 +798,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2190_N2191.TABLE_NAME,
+                data.neo.N2190_N2191.TABLE_NAME,
                 null,
                 values);
 
@@ -846,7 +846,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2192_N2202.TABLE_NAME,
+                data.neo.N2192_N2202.TABLE_NAME,
                 null,
                 values);
 
@@ -870,7 +870,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2211_N2248_A_C.TABLE_NAME,
+                data.neo.N2211_N2248_A_C.TABLE_NAME,
                 null,
                 values);
 
@@ -894,7 +894,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.C.C3251_C3288_A_C.TABLE_NAME,
+                data.child.C3251_C3288_A_C.TABLE_NAME,
                 null,
                 values);
 
@@ -920,7 +920,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2211_N2248_B.TABLE_NAME,
+                data.neo.N2211_N2248_B.TABLE_NAME,
                 null,
                 values);
 
@@ -947,7 +947,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.C.C3251_C3288_B.TABLE_NAME,
+                data.child.C3251_C3288_B.TABLE_NAME,
                 null,
                 values);
 
@@ -1064,7 +1064,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
 
-        newRowId = db.update(data.N.N2211_N2248_A_C.TABLE_NAME,
+        newRowId = db.update(data.neo.N2211_N2248_A_C.TABLE_NAME,
                 values,
                 N2211_N2248_B.sub_N2211_N2248_B.STUDYID + " =?",
                 new String[]{study_id});
@@ -1183,7 +1183,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
 
-        newRowId = db.update(data.C.C3251_C3288_A_C.TABLE_NAME,
+        newRowId = db.update(data.child.C3251_C3288_A_C.TABLE_NAME,
                 values,
                 C3251_C3288_A_C.sub_C3251_C3288_A_C.STUDYID + " = ?",
                 new String[]{studyID});
@@ -1224,7 +1224,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2251_N2260.TABLE_NAME,
+                data.neo.N2251_N2260.TABLE_NAME,
                 null,
                 values);
 
@@ -1255,7 +1255,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2271_N2284.TABLE_NAME,
+                data.neo.N2271_N2284.TABLE_NAME,
                 null,
                 values);
 
@@ -1293,7 +1293,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2291_N2304.TABLE_NAME,
+                data.neo.N2291_N2304.TABLE_NAME,
                 null,
                 values);
 
@@ -1356,7 +1356,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2311_N2317.TABLE_NAME,
+                data.neo.N2311_N2317.TABLE_NAME,
                 null,
                 values);
 
@@ -1386,7 +1386,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                data.N.N2321_N2322.TABLE_NAME,
+                data.neo.N2321_N2322.TABLE_NAME,
                 null,
                 values);
 
@@ -1454,7 +1454,7 @@ public class DBHelper extends SQLiteOpenHelper {
         ArrayList<N2211_N2248_B> allFC = new ArrayList<>();
         try {
             c = db.query(
-                    data.N.N2211_N2248_B.TABLE_NAME,  // The table to query
+                    data.neo.N2211_N2248_B.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause
@@ -1499,7 +1499,7 @@ public class DBHelper extends SQLiteOpenHelper {
         ArrayList<C3251_C3288_B> allFC = new ArrayList<>();
         try {
             c = db.query(
-                    data.C.C3251_C3288_B.TABLE_NAME,  // The table to query
+                    data.child.C3251_C3288_B.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause

@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".N.N2110_N2189a">
+    tools:context=".neo.N2110_N2189a">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="com.irfansyed.VAS.VASMonitring.N.N2110_N2189a" />
+            type="com.irfansyed.vas.vasmonitring.neo.N2110_N2189a" />
     </data>
 
     <LinearLayout
@@ -75,7 +75,7 @@
                             android:clickable="false"
                             android:focusable="false"
                             android:inputType="date"
-                            app:met_mask="##-##-###" />
+                            app:met_mask="####-#" />
 
 
                     </LinearLayout>
@@ -132,7 +132,7 @@
                                     android:id="@+id/ed_N2110_OT"
                                     style="@style/EditText_varchar"
                                     android:hint="Other"
-                                    android:text='@{rbN2110OT.checked ? edN2110OT.getText.toString : ""}'
+                                    android:text='@{rbN2110OT.checked ? edN2110OT.getText().toString() : ""}'
                                     android:visibility="@{rbN2110OT.checked ? View.VISIBLE : View.GONE}" />
 
                             </RadioGroup>
@@ -185,7 +185,7 @@
                                     android:id="@+id/ed_N2111_OT"
                                     style="@style/EditText_varchar"
                                     android:hint="Other"
-                                    android:text='@{rbN2111OT.checked ? edN2111OT.getText.toString : ""}'
+                                    android:text='@{rbN2111OT.checked ? edN2111OT.getText().toString() : ""}'
                                     android:visibility="@{rbN2111OT.checked ? View.VISIBLE : View.GONE}" />
 
                             </RadioGroup>
@@ -287,7 +287,7 @@
                             android:id="@+id/ed_N2113_OT"
                             style="@style/EditText_varchar"
                             android:hint="Other"
-                            android:text='@{cbN2113OT.checked ? edN2113OT.getText.toString : ""}'
+                            android:text='@{cbN2113OT.checked ? edN2113OT.getText().toString() : ""}'
                             android:visibility="@{cbN2113OT.checked ? View.VISIBLE : View.GONE}" />
 
                     </LinearLayout>
@@ -769,7 +769,7 @@
                             style="@style/EditText_number"
                             android:hint="@string/minutes"
                             android:maxLength="2"
-                            android:text='@{rbN21211.checked ? "" : edN2122.getText.toString}' />
+                            android:text='@{rbN21211.checked ? "" : edN2122.getText().toString()}' />
 
                     </LinearLayout>
 
@@ -853,7 +853,7 @@
                                 style="@style/EditText_number"
                                 android:hint="Less than 60 minutes = '00' hours"
                                 android:maxLength="2"
-                                android:text='@{rbN21231.checked ? edN2124.getText.toString : ""}' />
+                                android:text='@{rbN21231.checked ? edN2124.getText().toString() : ""}' />
 
                         </LinearLayout>
 
@@ -999,7 +999,7 @@
                                     android:id="@+id/ed_N2127_3"
                                     style="@style/EditText_number"
                                     android:hint="Hours"
-                                    android:text='@{rbN21273.checked ? edN21273.getText.toString : ""}'
+                                    android:text='@{rbN21273.checked ? edN21273.getText().toString() : ""}'
                                     android:visibility="@{rbN21273.checked ? View.VISIBLE : View.GONE}" />
 
                                 <RadioButton
@@ -1243,7 +1243,7 @@
                                     android:id="@+id/ed_N2133_3"
                                     style="@style/EditText_number"
                                     android:hint="Hours"
-                                    android:text='@{rbN21333.checked ? edN21333.getText.toString : ""}'
+                                    android:text='@{rbN21333.checked ? edN21333.getText().toString() : ""}'
                                     android:visibility="@{rbN21333.checked ? View.VISIBLE : View.GONE}" />
 
                                 <RadioButton
@@ -1255,7 +1255,7 @@
                                     android:id="@+id/ed_N2133_4"
                                     style="@style/EditText_number"
                                     android:hint="Days"
-                                    android:text='@{rbN21334.checked ? edN21334.getText.toString : ""}'
+                                    android:text='@{rbN21334.checked ? edN21334.getText().toString() : ""}'
                                     android:visibility="@{rbN21334.checked ? View.VISIBLE : View.GONE}" />
 
                                 <RadioButton
@@ -1726,7 +1726,7 @@
                             android:id="@+id/ed_N2135_12_OT"
                             style="@style/EditText_varchar"
                             android:hint="Other"
-                            android:text='@{rbN2135111.checked ? edN213512OT.getText.toString : ""}' />
+                            android:text='@{rbN2135111.checked ? edN213512OT.getText().toString() : ""}' />
 
                     </LinearLayout>
 
@@ -2849,7 +2849,7 @@
                                 style="@style/EditText_number"
                                 android:hint="@string/days"
                                 android:maxLength="2"
-                                android:text='@{rbN21591.checked ? edN2160.getText.toString : ""}' />
+                                android:text='@{rbN21591.checked ? edN2160.getText().toString() : ""}' />
 
                         </LinearLayout>
 
@@ -2877,7 +2877,7 @@
                                 style="@style/EditText_number"
                                 android:hint="@string/days"
                                 android:maxLength="2"
-                                android:text='@{rbN21591.checked ? edN2161.getText.toString : ""}' />
+                                android:text='@{rbN21591.checked ? edN2161.getText().toString() : ""}' />
 
                         </LinearLayout>
 
@@ -3099,7 +3099,7 @@
                                 style="@style/EditText_number"
                                 android:hint="@string/days"
                                 android:maxLength="2"
-                                android:text='@{rbN21651.checked ? edN2166.getText.toString : ""}' />
+                                android:text='@{rbN21651.checked ? edN2166.getText().toString() : ""}' />
 
                         </LinearLayout>
 
@@ -3123,7 +3123,7 @@
                                 style="@style/EditText_number"
                                 android:hint="@string/days"
                                 android:maxLength="2"
-                                android:text='@{rbN21651.checked ? edN21661.getText.toString : ""}' />
+                                android:text='@{rbN21651.checked ? edN21661.getText().toString() : ""}' />
 
                         </LinearLayout>
 
@@ -3211,7 +3211,7 @@
                                 style="@style/EditText_number"
                                 android:hint="@string/days"
                                 android:maxLength="2"
-                                android:text='@{rbN21671.checked ? edN2168.getText.toString : ""}' />
+                                android:text='@{rbN21671.checked ? edN2168.getText().toString() : ""}' />
 
                         </LinearLayout>
 
@@ -3239,7 +3239,7 @@
                                 style="@style/EditText_number"
                                 android:hint="@string/days"
                                 android:maxLength="2"
-                                android:text='@{rbN21671.checked ? edN2169.getText.toString : ""}' />
+                                android:text='@{rbN21671.checked ? edN2169.getText().toString() : ""}' />
 
                         </LinearLayout>
 
@@ -3314,7 +3314,7 @@
                             style="@style/EditText_number"
                             android:hint="@string/days"
                             android:maxLength="2"
-                            android:text='@{rbN21701.checked ? edN2171.getText.toString : ""}' />
+                            android:text='@{rbN21701.checked ? edN2171.getText().toString() : ""}' />
 
                     </LinearLayout>
 
@@ -3930,7 +3930,7 @@
                             style="@style/EditText_varchar"
                             android:hint="@string/txt_N2184"
                             android:maxLength="100"
-                            android:text='@{rbN21831.checked ? edN2184.getText.toString : ""}' />
+                            android:text='@{rbN21831.checked ? edN2184.getText().toString() : ""}' />
 
                     </LinearLayout>
 
@@ -4008,7 +4008,7 @@
                                 style="@style/EditText_number"
                                 android:hint="@string/txt_N2186"
                                 android:maxLength="2"
-                                android:text='@{rbN21851.checked ? edN2186.getText.toString : ""}' />
+                                android:text='@{rbN21851.checked ? edN2186.getText().toString() : ""}' />
 
                         </LinearLayout>
 
@@ -4032,7 +4032,7 @@
                                 style="@style/EditText_number"
                                 android:hint="@string/days"
                                 android:maxLength="2"
-                                android:text='@{rbN21851.checked ? edN2187.getText.toString : ""}' />
+                                android:text='@{rbN21851.checked ? edN2187.getText().toString() : ""}' />
 
                         </LinearLayout>
 

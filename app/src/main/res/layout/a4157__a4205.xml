@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".A.A4157_A4205">
+    tools:context=".adult.A4157_A4205">
 
     <!--<RelativeLayout
         android:layout_width="match_parent"

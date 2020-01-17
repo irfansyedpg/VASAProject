@@ -8,7 +8,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
 
-import com.irfansyed.VAS.VASMonitring.R;
+import com.irfansyed.vas.vasmonitring.R;
 
 import java.util.Calendar;
 import java.util.Date;
