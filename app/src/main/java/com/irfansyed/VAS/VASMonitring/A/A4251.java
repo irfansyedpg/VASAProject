@@ -37,6 +37,7 @@ public class A4251 extends AppCompatActivity implements View.OnClickListener {
     List<String> lst_action = new ArrayList();
     List<String> lst_symtomps = new ArrayList();
     List<String> lst_place = new ArrayList();
+    List<View> A4252List;
 
 
 
@@ -49,7 +50,7 @@ public class A4251 extends AppCompatActivity implements View.OnClickListener {
         bi = DataBindingUtil.setContentView(this, R.layout.a4251);
         bi.setCallback(this);
 
-
+        A4252List = new ArrayList<>();
         events_call();
 
     }
@@ -307,6 +308,7 @@ public class A4251 extends AppCompatActivity implements View.OnClickListener {
         
     }
 
+
     private void SaveDraft() throws JSONException {
 
         JSONObject json = new JSONObject();
@@ -318,6 +320,29 @@ public class A4251 extends AppCompatActivity implements View.OnClickListener {
                 : bi.A4251b.isChecked() ? "2"
                 : bi.A425198.isChecked() ? "98"
                 : "0");
+
+        //A4252
+        int counterA4252 = 1;
+        for (View view : A4252List) {
+            DialogTtBinding dialogT = DataBindingUtil.bind(view);
+            json.put("A42521" + String.format("%02d", counterA4252), dialogT.A42521a.isChecked() ? "1"
+                    : dialogT.A42521b.isChecked() ? "2"
+                    : dialogT.A42521c.isChecked() ? "3"
+                    : "0");
+            json.put("A42522" + String.format("%02d", counterA4252), dialogT.A42522a.isChecked() ? "1"
+                    : dialogT.A42522b.isChecked() ? "2"
+                    : dialogT.A42522c.isChecked() ? "3"
+                    : dialogT.A42522d.isChecked() ? "4"
+                    : dialogT.A42522e.isChecked() ? "5"
+                    : dialogT.A42522f.isChecked() ? "6"
+                    : dialogT.A42522g.isChecked() ? "7"
+                    : "0");
+            json.put("A42523" + String.format("%02d", counterA4252), dialogT.A42523.isChecked() ? "1" : "0");
+            json.put("A42524" + String.format("%02d", counterA4252), dialogT.A42524.getText().toString());
+
+            counterA4252++;
+
+        }
 
         //A4253
         json.put("A4253", bi.A4253a.isChecked() ? "1"
@@ -613,12 +638,8 @@ public class A4251 extends AppCompatActivity implements View.OnClickListener {
 
         json.put("A4284D", bi.A4284D.getText().toString().trim().length() > 0 ? bi.A4284D.getText().toString().trim() : "0");
 
+        //MainApp.fc.setsA(String.valueOf(json));
 
-        LocalDataManager Lm = new LocalDataManager(this);
-
-        LocalDataManager.database.execSQL(String.valueOf(json));
-
-        Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
 
     }
 

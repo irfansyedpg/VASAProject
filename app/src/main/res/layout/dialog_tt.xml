@@ -37,6 +37,7 @@
                                 android:text="Illness Phase" />
 
                             <RadioGroup
+                                android:id="@+id/A42521"
                                 style="@style/RadioGroup" >
 
                                 <RadioButton
