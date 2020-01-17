@@ -32,6 +32,9 @@
     <string name="years"> Years </string>
     <string name="days_hint"> 1 &#8212; 99 </string>
     <string name="kg"> Kilograms </string>
+    <string name="end_interview"> اختتام </string>
+    <string name="start_interview"> انٽرويو شروع ڪريو </string>
+    <string name="nextSection"> اڳيون سيڪشن </string>
 
 
     <!--HEADINGS-->
