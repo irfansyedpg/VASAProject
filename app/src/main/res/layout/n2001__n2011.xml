@@ -18,29 +18,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!--        <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/mnchmainpsbi"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerInParent="true"
-                        android:text="@string/app_name"
-                        android:textColor="@color/white"
-                        android:textSize="30sp"
-                        android:textStyle="bold|italic" />
-
-                    <ImageView
-                        android:id="@+id/img_psbitest"
-                        android:layout_width="90dp"
-                        android:layout_height="60sp"
-                        android:layout_alignParentTop="true"
-                        android:src="@drawable/unwhite" />
-
-                </RelativeLayout>-->
 
         <ScrollView
             android:layout_width="match_parent"
@@ -56,7 +33,7 @@
 
             <LinearLayout style="@style/Q_Linerlayout_v">
 
-                <!-- EditText study_id Starts -->
+                <!-- EditText studyid Starts -->
                 <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                     <LinearLayout
@@ -78,7 +55,7 @@
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
-                <!-- EditText study_id Ends -->
+                <!-- EditText studyid Ends -->
 
                 <!-- Radio Buttons N2001 Starts -->
                 <android.support.v7.widget.CardView style="@style/Q_CardView">

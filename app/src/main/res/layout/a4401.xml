@@ -47,7 +47,7 @@
             android:id="@+id/llA4401"
             style="@style/Q_Linerlayout_v">
 
-            <!-- EditText study_id Starts -->
+            <!-- EditText studyid Starts -->
             <android.support.v7.widget.CardView
                 android:id="@+id/cvstudy_id"
                 style="@style/Q_CardView">
@@ -56,20 +56,21 @@
 
                     <TextView
                         style="@style/TextView"
-                        android:text="@string/txt_study_id" />
+                        android:text="@string/studyid" />
 
                     <com.santalu.widget.MaskEditText
-                        android:id="@+id/ed_study_id"
+                        android:id="@+id/studyid"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/txt_study_id"
+                        android:hint="@string/studyid"
                         android:inputType="date"
                         app:met_mask="####-###-##" />
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
-            <!-- EditText study_id Ends -->
+            <!-- EditText studyid Ends -->
+
 
             <!-- Radio Buttons A4401 Starts -->
             <android.support.v7.widget.CardView
@@ -226,12 +227,12 @@
                         android:text="@string/A4405" />
 
                     <EditText
-                        android:id="@+id/A4405a"
+                        android:id="@+id/A4405H"
                         style="@style/EditText_varchar"
                         android:hint="Hours" />
 
                     <EditText
-                        android:id="@+id/A4405b"
+                        android:id="@+id/A4405m"
                         style="@style/EditText_varchar"
                         android:hint="Minutes" />
 
@@ -241,7 +242,7 @@
             <!-- EditText A4405 Ends -->
 
             <LinearLayout
-                android:id="@+id/ll51_52_53"
+                android:id="@+id/ll515253"
                 style="@style/Q_Linerlayout_v"
                 android:layout_margin="0dp"
                 android:padding="0dp">
@@ -714,7 +715,7 @@
                                 android:id="@+id/A445113ax"
                                 style="@style/EditText_varchar"
                                 android:hint="@string/specify"
-                                android:text='@{A445113a.checked ? A445113ax.getText.toString : View.GONE}'
+                                android:text='@{A445113a.checked ? A445113ax.getText().toString() : ""}'
                                 android:visibility='@{A445113a.checked ? View.VISIBLE : View.GONE}' />
 
                             <RadioButton
