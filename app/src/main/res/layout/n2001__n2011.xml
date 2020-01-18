@@ -42,13 +42,13 @@
 
                         <TextView
                             style="@style/TextView"
-                            android:text="@string/txt_study_id" />
+                            android:text="@string/studyid" />
 
                         <com.santalu.widget.MaskEditText
                             android:id="@+id/ed_study_id"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/txt_study_id"
+                            android:hint="@string/studyid"
                             android:inputType="date"
                             app:met_mask="####-###-##" />
 
@@ -494,12 +494,12 @@
                             <RadioButton
                                 android:id="@+id/rb_N2006_12"
                                 style="@style/RadioButton"
-                                android:text="@string/ot_other" />
+                                android:text="@string/other" />
 
                             <EditText
                                 android:id="@+id/ed_N2006_OT"
                                 style="@style/EditText_varchar"
-                                android:hint="@string/ot_other"
+                                android:hint="@string/specify"
                                 android:text='@{rbN200612.checked ? edN2006OT.getText.toString : ""}'
                                 android:visibility="@{rbN200612.checked ? View.VISIBLE : View.GONE}" />
 
@@ -570,12 +570,12 @@
                             <RadioButton
                                 android:id="@+id/rb_N2008_OT"
                                 style="@style/RadioButton"
-                                android:text="@string/ot_other" />
+                                android:text="@string/other" />
 
                             <EditText
                                 android:id="@+id/ed_N2008_OT"
                                 style="@style/EditText_varchar"
-                                android:hint="@string/ot_other"
+                                android:hint="@string/specify"
                                 android:text='@{rbN2008OT.checked ? edN2008OT.getText.toString : ""}'
                                 android:visibility="@{rbN2008OT.checked ? View.VISIBLE : View.GONE}" />
 
