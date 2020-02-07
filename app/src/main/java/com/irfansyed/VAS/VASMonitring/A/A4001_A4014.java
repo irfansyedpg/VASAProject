@@ -578,10 +578,6 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
                 : rb_A4014_2.isChecked() ? "2"
                 : rb_A4014_DK.isChecked() ? "9" : "0";
 
-        EditText editText = new EditText(this);
-        if (editText.getText().toString().trim().length() > 0) {
-            editText.getText().toString().trim();
-        }
     }
 
     void insert_data() {
