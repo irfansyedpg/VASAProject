@@ -9,7 +9,7 @@ public class A4126_A4140 {
 
     public static String getCreateQuery() {
         String query;
-        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' INTEGER,   " +
+        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' TEXT,   " +
 
                 Global.A.A4126_A4140.A4126 + " TEXT," +
                 Global.A.A4126_A4140.A4127_u + " TEXT," +

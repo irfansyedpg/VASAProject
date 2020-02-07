@@ -32,58 +32,60 @@ import utils.PostRequestData;
 public class LoginActivity extends AppCompatActivity implements View.OnTouchListener {
 
     @Override
+    public void onBackPressed() {
+        finish();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        final EditText textUsername = (EditText) findViewById(R.id.login_username);
-        final EditText textPassword = (EditText) findViewById(R.id.login_password);
-       final TextView textlogout = (TextView) findViewById(R.id.txt_logut);
-        Button btnLogin = (Button) findViewById(R.id.login_btn);
+        final EditText textUsername = findViewById(R.id.login_username);
+        final EditText textPassword = findViewById(R.id.login_password);
+        final TextView textlogout = findViewById(R.id.txt_logut);
+        Button btnLogin = findViewById(R.id.login_btn);
         final MyPreferences preferences = new MyPreferences(this);
-
 
 
         textlogout.setOnTouchListener(this);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
+            public void onClick(View view) {
 
 
-                if(textUsername.getText().toString().trim().isEmpty()
-                        || textPassword.getText().toString().trim().isEmpty() ){
+                if (textUsername.getText().toString().trim().isEmpty()
+                        || textPassword.getText().toString().trim().isEmpty()) {
                     Toast.makeText(LoginActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                else if(preferences.getUserId()==-1) {
+                //  else if(preferences.getUserId()==-1) {
 
 
-                    new LoginAsync(LoginActivity.this, textUsername.getText().toString().trim(),
-                            textPassword.getText().toString().trim()).execute();
-                }
-                else
-                {
-                    if(textUsername.getText().toString().trim().equals(preferences.getUsername())) {
+                //   new LoginAsync(LoginActivity.this, textUsername.getText().toString().trim(),
+                //        textPassword.getText().toString().trim()).execute();
+                //  }
+                else {
+                    // if(textUsername.getText().toString().trim().equals(preferences.getUsername())) {
 
-                        if(textPassword.getText().toString().trim().equals(preferences.getPassword())) {
+                    if (textUsername.getText().toString().trim().equals("pretesting")) {
 
-                    // call andother activity
+                        //  if(textPassword.getText().toString().trim().equals(preferences.getPassword())) {
+
+                        if (textPassword.getText().toString().trim().equals("pretesting")) {
+
+                            // call andother activity
 
 
                             Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                             LoginActivity.this.startActivity(intent);
                             LoginActivity.this.finish();
 
-                        }
-                        else
-                        {
+                        } else {
                             textPassword.setError("Incorrect use Password");
                         }
 
-                    }
-                    else
-                    {
+                    } else {
                         textUsername.setError("Incorrect use name");
                     }
                 }
@@ -96,11 +98,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnTouchList
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
 
-       MyPreferences MyPreferences;
+        MyPreferences MyPreferences;
 
 
-       new  MyPreferences(LoginActivity.this).removeUserId();
-        Toast.makeText(this,"Logout Succefully",Toast.LENGTH_LONG).show();
+        new MyPreferences(LoginActivity.this).removeUserId();
+        Toast.makeText(this, "Logout Succefully", Toast.LENGTH_LONG).show();
         return false;
     }
 }
@@ -132,7 +134,7 @@ class LoginAsync extends AsyncTask {
         HttpURLConnection connection;
         String urlString = new MyPreferences(mContext).getReqLogin();
 
-                //"http://umeed.bsoftproducts.com//Testing/check_user_id";
+        //"http://umeed.bsoftproducts.com//Testing/check_user_id";
 
         try {
             url = new URL(urlString);
@@ -176,14 +178,14 @@ class LoginAsync extends AsyncTask {
         try {
 
             //connection isn't available or something is wrong with server address
-            if(mUserMsg != null)
-                throw  new IOException();
+            if (mUserMsg != null)
+                throw new IOException();
 
-            String resp = (String)o;
+            String resp = (String) o;
 
-            if ( resp == null || resp.equals(""))
+            if (resp == null || resp.equals(""))
                 throw new NullPointerException("Server response is empty");
-            else if(resp.equals("-1")){
+            else if (resp.equals("-1")) {
                 mUserMsg = "Incorrect username or password";
             } else {
                 mUserMsg = null;
@@ -191,12 +193,12 @@ class LoginAsync extends AsyncTask {
 
                 // for login id and data collectore Name irfan
 
-             //   Toast.makeText(mContext, resp, Toast.LENGTH_SHORT).show();
-                String[] resp_arry=resp.split(",");
-                String userid=resp_arry[0];
+                //   Toast.makeText(mContext, resp, Toast.LENGTH_SHORT).show();
+                String[] resp_arry = resp.split(",");
+                String userid = resp_arry[0];
 
-                String name=resp_arry[1];
-                String District=resp_arry[2];
+                String name = resp_arry[1];
+                String District = resp_arry[2];
 
                 prefs.setUserId(Integer.parseInt(userid));
 
@@ -211,10 +213,10 @@ class LoginAsync extends AsyncTask {
                 ((Activity) mContext).finish();
             }
 
-        }  catch (IOException e) {
+        } catch (IOException e) {
             //if connection was available via connecting but
             //we can't get data from server..
-            if(mUserMsg == null)
+            if (mUserMsg == null)
                 mUserMsg = "Please check connection";
             e.printStackTrace();
         } catch (NullPointerException e) {

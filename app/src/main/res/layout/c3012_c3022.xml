@@ -2,9 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginTop="10dp"
     android:background="#EEEEEE"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".C.C3012_C3022">
 
 
     <ScrollView
@@ -18,6 +21,7 @@
         android:paddingRight="5dp"
         android:paddingTop="5dp"
         android:scrollbarSize="50dip">
+
         <!-- Parent layout starts -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,6 +29,32 @@
             android:background="#F1F1F1"
             android:orientation="vertical">
 
+
+            <!-- EditText study_id Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_study_id"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/txt_study_id" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_study_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_study_id"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="date"
+                        app:met_mask="####-###-##" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText study_id Ends -->
 
             <!--C3012 Edit text Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
@@ -42,12 +72,11 @@
                     <EditText
                         android:id="@+id/ed_C3012"
                         style="@style/EditText_Name"
-                        android:hint="Enter age in years" />
+                        android:hint="@string/txt_C3012" />
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
             <!--C3012 Radio Button Ends-->
-
 
             <LinearLayout
                 android:id="@+id/ll_c3013_c3018"
@@ -64,6 +93,10 @@
                             android:id="@+id/txt_C3013"
                             style="@style/TextView"
                             android:text="@string/txt_C3013" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="1 → C3016, 8, 2 or 9 → C3017" />
 
 
                         <RadioGroup style="@style/RadioGroup"
@@ -114,6 +147,10 @@
                             android:id="@+id/txt_C3015"
                             style="@style/TextView"
                             android:text="@string/txt_C3015" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="8 or 9 → C3017" />
 
 
                         <RadioGroup style="@style/RadioGroup"
@@ -173,7 +210,7 @@
 
                         <EditText
                             android:id="@+id/ed_C3016"
-                            style="@style/EditText_Name"
+                            style="@style/EditText_number"
                             android:hint="@string/txt_C3016" />
 
                     </LinearLayout>
@@ -242,6 +279,10 @@
                             android:id="@+id/txt_C3018"
                             style="@style/TextView"
                             android:text="@string/txt_C3018" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="≠ 2 → C3019_units" />
 
 
                         <RadioGroup style="@style/RadioGroup"
@@ -339,6 +380,14 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3019_u" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3019_u_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3019_b, 3 → C3019_c, 8 or 9 → C3020" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -385,7 +434,6 @@
             <!--C3019_a Edit text Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_C3019_a"
                     style="@style/Q_Linerlayout_v">
@@ -402,6 +450,7 @@
 
 
                 </LinearLayout>
+
             </android.support.v7.widget.CardView>
             <!--C3019_a Edit text Ends-->
 
@@ -464,6 +513,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3020" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3020_h" />
+
 
                     <RadioGroup style="@style/RadioGroup"
 
@@ -513,6 +566,10 @@
                         android:id="@+id/txt_C3021u"
                         style="@style/TextView"
                         android:text="@string/txt_C3021u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3021m, 3 → C3021y, 8, 9 → C3022" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -635,9 +692,17 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Inst_5: Child deaths 28 days – 11 months → C3051, Child deaths 1 – 11 years → C3101" />
+
+                    <TextView
                         android:id="@+id/txt_C3022"
                         style="@style/TextView"
                         android:text="@string/txt_C3022" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3022_h" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -670,12 +735,17 @@
             </android.support.v7.widget.CardView>
             <!--C3022 Radio Button Ends-->
 
+            <!-- Buttons Start-->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
 
             <Button
                 android:id="@+id/btn_next"
                 style="@style/Button_collder"
                 android:layout_margin="10dp"
-                android:text="Next" />
+                android:text="@string/next" />
+
+            </android.support.v7.widget.CardView>
+            <!-- Buttons End-->
 
 
         </LinearLayout>

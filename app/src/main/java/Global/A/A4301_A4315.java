@@ -15,9 +15,9 @@ public class A4301_A4315 {
     public static String A4304 = "A4304";
     public static String A4305 = "A4305";
     public static String A4306_1check = "A4306_1check";
-    public static String A4306_1 = "A4306_1 ";
+    public static String A4306_1 = "A4306_1";
     public static String A4306_2check = "A4306_2check";
-    public static String A4306_2 = "A4306_2 ";
+    public static String A4306_2 = "A4306_2";
     public static String A4307 = "A4307";
     public static String A4308 = "A4308";
     public static String A4309 = "A4309";
@@ -42,6 +42,4 @@ public class A4301_A4315 {
     public static String A4314 = "A4314";
     public static String A4315 = "A4315";
     public static String STATUS = "STATUS";
-
-
 }

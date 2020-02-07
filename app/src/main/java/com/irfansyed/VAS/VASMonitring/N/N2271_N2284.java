@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.databinding.N2271N2284Binding;
 
@@ -25,11 +26,16 @@ public class N2271_N2284 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2271__n2284);
         bi.setCallback(this);
 
+        this.setTitle(getString(R.string.h_n_sec_12));
+
         SetContentUI();
 
     }
 
-    public void SetContentUI() {
+    private void SetContentUI() {
+
+        bi.edStudyId.setText(getIntent().getExtras().getString("study_id"));
+        bi.edStudyId.setEnabled(false);
 
         bi.rgN2271.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -54,7 +60,9 @@ public class N2271_N2284 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, N2291_N2304.class));
+                finish();
+                startActivity(new Intent(this, N2291_N2304.class)
+                        .putExtra("study_id", bi.edStudyId.getText().toString()));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -68,19 +76,19 @@ public class N2271_N2284 extends AppCompatActivity {
         Global.N.N2271_N2284 n2271 = new Global.N.N2271_N2284();
 
         n2271.setN2271(bi.rbN22711.isChecked() ? "1" : bi.rbN22712.isChecked() ? "2" : bi.rbN2271DK.isChecked() ? "9"
-                : bi.rbN2271RA.isChecked() ? "8" : "");
-        n2271.setN2272(bi.rbN22721.isChecked() ? "1" : bi.rbN22722.isChecked() ? "2" : "");
-        n2271.setN2273(bi.edN2273.getText().toString());
-        n2271.setN2274(bi.edN2274.getText().toString());
-        n2271.setN2275(bi.edN2275.getText().toString());
-        n2271.setN2276(bi.edN2276.getText().toString());
-        n2271.setN2277(bi.edN2277.getText().toString());
-        n2271.setN2278(bi.edN2278.getText().toString());
+                : bi.rbN2271RA.isChecked() ? "8" : "-1");
+        n2271.setN2272(bi.rbN22721.isChecked() ? "1" : bi.rbN22722.isChecked() ? "2" : "-1");
+        n2271.setN2273(bi.edN2273.getText().toString().trim().length() > 0 ? bi.edN2273.getText().toString() : "-1");
+        n2271.setN2274(bi.edN2274.getText().toString().trim().length() > 0 ? bi.edN2274.getText().toString() : "-1");
+        n2271.setN2275(bi.edN2275.getText().toString().trim().length() > 0 ? bi.edN2275.getText().toString() : "-1");
+        n2271.setN2276(bi.edN2276.getText().toString().trim().length() > 0 ? bi.edN2276.getText().toString() : "-1");
+        n2271.setN2277(bi.edN2277.getText().toString().trim().length() > 0 ? bi.edN2277.getText().toString() : "-1");
+        n2271.setN2278(bi.edN2278.getText().toString().trim().length() > 0 ? bi.edN2278.getText().toString() : "-1");
         n2271.setN2283(bi.rbN22831.isChecked() ? "1" : bi.rbN22832.isChecked() ? "2" : bi.rbN22833.isChecked() ? "3"
-                : bi.rbN2283DK.isChecked() ? "9" : bi.rbN2283RA.isChecked() ? "8" : "");
-        n2271.setN2284(bi.edN2284.getText().toString());
+                : bi.rbN2283DK.isChecked() ? "9" : bi.rbN2283RA.isChecked() ? "8" : "-1");
+        n2271.setN2284(bi.edN2284.getText().toString().trim().length() > 0 ? bi.edN2284.getText().toString() : "-1");
 
-        n2271.setSTUDYID("");
+        n2271.setSTUDYID(bi.edStudyId.getText().toString());
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2271(n2271);
 
@@ -141,4 +149,8 @@ public class N2271_N2284 extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public void onBackPressed() {
+        globale.interviewExit(this, this, bi.edStudyId.getText().toString(), 15);
+    }
 }

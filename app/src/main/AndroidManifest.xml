@@ -9,16 +9,15 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
     <uses-feature android:name="android.hardware.location.gps" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/pdra"
+        android:icon="@drawable/uncolor"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".Core.HomeActivity"
             android:label="@string/title_home"
@@ -33,6 +32,12 @@
             android:name=".Core.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".RP.w204_w222"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".Core.SplashScreenActivity"
             android:theme="@style/AppThemeNACB">
@@ -44,49 +49,58 @@
         </activity>
         <activity
             android:name=".Other.templete"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
+
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Other.Genifno"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
+
+            android:screenOrientation="portrait" />
         <activity
             android:name=".C.C3001_C3011"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
+
+            android:screenOrientation="portrait" />
         <activity
             android:name=".C.C3012_C3022"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".C.C3051_C3099"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".C.C3101_C3112"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".C.C3121_C3228"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".C.C3301_C3314"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".C.C3351_C3364"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".C.C3401_C3457"
             android:exported="true"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".C.C3471_C3472"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".GS.Q1101_Q1610"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".C.C3251_C3288_A"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".C.C3251_C3288_B"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".C.C3251_C3288_C"
+            android:screenOrientation="portrait" />
 
-        <!--Ali files-->
+        <!-- Ali files -->
         <activity
             android:name=".N.N2001_N2011"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".N.N2012_N2016"
             android:screenOrientation="portrait" />
@@ -124,6 +138,9 @@
             android:name=".N.N2251_N2260"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".Pending.SurveyPendingActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".N.N2271_N2284"
             android:screenOrientation="portrait" />
         <activity
@@ -136,48 +153,50 @@
             android:name=".N.N2321_N2322"
             android:screenOrientation="portrait" />
 
-        <!--Sajid files-->
+        <!-- Sajid files -->
         <activity
-            android:name=".A.A4251_A4284"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".A.A4001_A4014"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4051_A4066"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4067_A4080"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4081_A4094"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4095_A4108"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4109_A4125"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4126_A4140"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4144_A4156"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4157_A4205"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4206_A4207"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".A.A4251_A4284"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4301_A4315"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4351_A4364"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A.A4401_A4473"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-
+            android:screenOrientation="portrait" />
+        <activity android:name=".GS.InterviewEnd" />
     </application>
 
 </manifest>

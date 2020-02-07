@@ -2,33 +2,25 @@ package Global.N;
 
 public class N2001_N2011 {
 
-    public String N2001 = "N2001";
-    public String N2002 = "N2002";
-    public String N2003 = "N2003";
-    public String N2004 = "N2004";
-    public String N2005u = "N2005u";
-    public String N2005d = "N2005d";
-    public String N2005w = "N2005w";
-    public String N2005m = "N2005m";
-    public String N2006 = "N2006";
-    public String N2006x = "N2006x";
-    public String N2008 = "N2008";
-    public String N2008x = "N2008x";
-    public String N2009_1 = "N2009_1";
-    public String N2009_2 = "N2009_2";
-    public String N2009_3 = "N2009_3";
-    public String N2009_4 = "N2009_4";
-    public String N2010 = "N2010";
-    public String N2011 = "N2011";
-    public String STUDYID = "STUDYID";
-
-    public String getSTUDYID() {
-        return STUDYID;
-    }
-
-    public void setSTUDYID(String STUDYID) {
-        this.STUDYID = STUDYID;
-    }
+    public String N2001 = "";
+    public String N2002 = "";
+    public String N2003 = "";
+    public String N2004 = "";
+    public String N2005u = "";
+    public String N2005d = "";
+    public String N2005w = "";
+    public String N2005m = "";
+    public String N2006 = "";
+    public String N2006x = "";
+    public String N2008 = "";
+    public String N2008x = "";
+    public String N2009_1 = "";
+    public String N2009_2 = "";
+    public String N2009_3 = "";
+    public String N2009_4 = "";
+    public String N2010 = "";
+    public String N2011 = "";
+    public String STUDYID = "";
 
     public String getN2001() {
         return N2001;
@@ -102,6 +94,14 @@ public class N2001_N2011 {
         N2006 = n2006;
     }
 
+    public String getN2006x() {
+        return N2006x;
+    }
+
+    public void setN2006x(String n2006x) {
+        N2006x = n2006x;
+    }
+
     public String getN2008() {
         return N2008;
     }
@@ -110,36 +110,44 @@ public class N2001_N2011 {
         N2008 = n2008;
     }
 
-    public String getN20091() {
+    public String getN2008x() {
+        return N2008x;
+    }
+
+    public void setN2008x(String n2008x) {
+        N2008x = n2008x;
+    }
+
+    public String getN2009_1() {
         return N2009_1;
     }
 
-    public void setN20091(String n20091) {
-        N2009_1 = n20091;
+    public void setN2009_1(String n2009_1) {
+        N2009_1 = n2009_1;
     }
 
-    public String getN20092() {
+    public String getN2009_2() {
         return N2009_2;
     }
 
-    public void setN20092(String n20092) {
-        N2009_2 = n20092;
+    public void setN2009_2(String n2009_2) {
+        N2009_2 = n2009_2;
     }
 
-    public String getN20093() {
+    public String getN2009_3() {
         return N2009_3;
     }
 
-    public void setN20093(String n20093) {
-        N2009_3 = n20093;
+    public void setN2009_3(String n2009_3) {
+        N2009_3 = n2009_3;
     }
 
-    public String getN20094() {
+    public String getN2009_4() {
         return N2009_4;
     }
 
-    public void setN20094(String n20094) {
-        N2009_4 = n20094;
+    public void setN2009_4(String n2009_4) {
+        N2009_4 = n2009_4;
     }
 
     public String getN2010() {
@@ -158,20 +166,12 @@ public class N2001_N2011 {
         N2011 = n2011;
     }
 
-    public String getN2006x() {
-        return N2006x;
+    public String getSTUDYID() {
+        return STUDYID;
     }
 
-    public void setN2006x(String n2006x) {
-        N2006x = n2006x;
-    }
-
-    public String getN2008x() {
-        return N2008x;
-    }
-
-    public void setN2008x(String n2008x) {
-        N2008x = n2008x;
+    public void setSTUDYID(String STUDYID) {
+        this.STUDYID = STUDYID;
     }
 
     public interface sub_N2001_N2011 {
@@ -193,6 +193,7 @@ public class N2001_N2011 {
         String N2009_4 = "N2009_4";
         String N2010 = "N2010";
         String N2011 = "N2011";
+
         String STUDYID = "study_id";
     }
 }

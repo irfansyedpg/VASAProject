@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".C.C3351_C3364">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,6 +18,8 @@
         android:paddingRight="5dp"
         android:paddingTop="5dp"
         android:scrollbarSize="50dip">
+
+
         <!-- Parent layout starts -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,6 +27,32 @@
             android:background="#F1F1F1"
             android:orientation="vertical">
 
+
+            <!-- EditText study_id Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_study_id"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/txt_study_id" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_study_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_study_id"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="date"
+                        app:met_mask="####-###-##" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText study_id Ends -->
 
             <!--C3351 Radio Button and Edit text Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
@@ -35,6 +66,10 @@
                         android:id="@+id/txt_C3351"
                         style="@style/TextView"
                         android:text="@string/txt_C3351" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3363" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -83,6 +118,10 @@
                         android:id="@+id/txt_C3352"
                         style="@style/TextView"
                         android:text="@string/txt_C3352" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="2 → C3363" />
 
 
                     <RadioGroup style="@style/RadioGroup"
@@ -247,9 +286,21 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Inst_1: If Q1403 = 2 (Respondent is the child’s mother) → C3405" />
+
+                    <TextView
                         android:id="@+id/txt_C3363"
                         style="@style/TextView"
                         android:text="@string/txt_C3363" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3363_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2, 3 or 9 → C3401" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -304,7 +355,7 @@
 
                     <EditText
                         android:id="@+id/ed_C3364"
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_number"
                         android:hint="@string/txt_C3364" />
 
                 </LinearLayout>
@@ -316,7 +367,7 @@
                 android:id="@+id/btn_next"
                 style="@style/Button_collder"
                 android:layout_margin="10dp"
-                android:text="Next" />
+                android:text="@string/next" />
 
         </LinearLayout>
 

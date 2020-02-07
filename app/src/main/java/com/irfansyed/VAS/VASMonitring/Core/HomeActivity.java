@@ -1,7 +1,11 @@
 package com.irfansyed.VAS.VASMonitring.Core;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,10 +17,13 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.A.A4251_A4284;
 import com.irfansyed.VAS.VASMonitring.GS.Q1101_Q1610;
-import com.irfansyed.VAS.VASMonitring.Other.Genifno;
+import com.irfansyed.VAS.VASMonitring.Pending.SurveyPendingActivity;
 import com.irfansyed.VAS.VASMonitring.R;
 import com.irfansyed.VAS.VASMonitring.Upload.SurveyCompletedActivity;
+
+import java.util.Random;
 
 import utils.MyPreferences;
 
@@ -24,6 +31,7 @@ public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     TextView Profile_name;
+    private Boolean exit = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +60,27 @@ public class HomeActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+//            super.onBackPressed();
+            if (exit) {
+                finish(); // finish activity
+
+                Intent ii = new Intent(this, LoginActivity.class);
+                ii.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(ii);
+                finish();
+
+            } else {
+                Toast.makeText(this, "Press Back again to Exit.",
+                        Toast.LENGTH_SHORT).show();
+                exit = true;
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        exit = false;
+                    }
+                }, 3 * 1000);
+
+            }
         }
     }
 
@@ -87,17 +115,30 @@ public class HomeActivity extends AppCompatActivity
 
         if (id == com.irfansyed.VAS.VASMonitring.R.id.upload_date) {
             intent = new Intent(this, SurveyCompletedActivity.class);
+
+            intent.putExtra("put_extra", put_extr);
+            if (intent != null)
+                startActivity(intent);
         }
         if (id == com.irfansyed.VAS.VASMonitring.R.id.stage_1) {
+
+
+          //intent = new Intent(this, Q1101_Q1610.class);
             intent = new Intent(this, Q1101_Q1610.class);
+
+
+            intent.putExtra("put_extra", put_extr);
+            if (intent != null)
+                startActivity(intent);
+           // intent = new Intent(this, com.irfansyed.VAS.VASMonitring.RP.w204_w222.class);
             put_extr = 1;
+        }/*
 
+        if (id == R.id.stage_2) {
+            intent = new Intent(this, N2001_N2011.class);
+            put_extr = 1;
         }
-        //if (id == R.id.stage_2) {
-        //intent = new Intent(this, VasaAdult.class);
-        //put_extr=1;
 
-        //}
         if (id == R.id.stage_3) {
             intent = new Intent(this, Genifno.class);
             put_extr = 1;
@@ -105,22 +146,44 @@ public class HomeActivity extends AppCompatActivity
         }
 
         if (id == R.id.stage_4) {
-//            intent = new Intent(this, Asection.class);
+            intent = new Intent(this, A4251_A4284.class);
             put_extr = 1;
 
-        } else if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_e) {
+        } else*/
+
+        Random rand = new Random();
+        int value = rand.nextInt(50);
+        if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_e) {
             preferences.setlanguage("en", "US");
+
             Toast.makeText(this, "Application Language Changed to English", Toast.LENGTH_LONG).show();
+            Intent mStartActivity = new Intent(this, SplashScreenActivity.class);
+            int mPendingIntentId = value;
+            PendingIntent mPendingIntent = PendingIntent.getActivity(this, mPendingIntentId,    mStartActivity, PendingIntent.FLAG_CANCEL_CURRENT);
+            AlarmManager mgr = (AlarmManager)this.getSystemService(Context.ALARM_SERVICE);
+            mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 100, mPendingIntent);
+            System.exit(0);
 
         } else if (id == com.irfansyed.VAS.VASMonitring.R.id.nav_lang_u) {
-            preferences.setlanguage("en", "GB");
+            preferences.setlanguage("ur","PK");
+
             Toast.makeText(this, "Application Language Changed to Urdu", Toast.LENGTH_LONG).show();
+
+            Intent mStartActivity = new Intent(this, SplashScreenActivity.class);
+            int mPendingIntentId = value;
+            PendingIntent mPendingIntent = PendingIntent.getActivity(this, mPendingIntentId,    mStartActivity, PendingIntent.FLAG_CANCEL_CURRENT);
+            AlarmManager mgr = (AlarmManager)this.getSystemService(Context.ALARM_SERVICE);
+            mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 100, mPendingIntent);
+            System.exit(0);
+        }
+
+        if (id == R.id.pending_interviews) {
+
+            intent = new Intent(this, SurveyPendingActivity.class);
+            startActivity(intent);
         }
 
 
-        intent.putExtra("put_extra", put_extr);
-        if (intent != null)
-            startActivity(intent);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

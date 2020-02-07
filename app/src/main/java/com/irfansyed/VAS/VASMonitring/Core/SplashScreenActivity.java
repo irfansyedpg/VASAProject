@@ -1,11 +1,14 @@
 package com.irfansyed.VAS.VASMonitring.Core;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
 import com.irfansyed.VAS.VASMonitring.R;
+
+import java.util.Locale;
 
 import utils.MyPreferences;
 
@@ -16,6 +19,8 @@ public class SplashScreenActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
 
+
+        change_langua();
 
 
      setContentView(R.layout.activity_splash_screen);
@@ -29,7 +34,8 @@ public class SplashScreenActivity extends AppCompatActivity {
          //  preferences.setReq1("http://43.245.131.159/umeed/Monitoring");
 
 
-        preferences.setReq1("http://10.198.96.203/sm/welcome/collect_upload_data");
+        //preferences.setReq1("http://10.199.26.250/sm/Welcome/collect_upload_data");
+        //preferences.setReq1("http://10.199.2.137/sm/Welcome/collect_upload_data");
 
 
      //   preferences.setReqLogin("http://10.198.96.124:61259/Testing/check_user_id");
@@ -50,15 +56,42 @@ public class SplashScreenActivity extends AppCompatActivity {
                 } else {
                   //  mainIntent = new Intent(SplashScreenActivity.this, HomeActivity.class);
                 }
-                    //mainIntent = new Intent(SplashScreenActivity.this, LoginActivity.class);
-                    mainIntent = new Intent(SplashScreenActivity.this, HomeActivity.class);
+                    mainIntent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+                  //  mainIntent = new Intent(SplashScreenActivity.this, HomeActivity.class);
 
                     SplashScreenActivity.this.startActivity(mainIntent);
                     SplashScreenActivity.this.finish();
             }
-        }, 2000);
+        }, 1000);
     }
 
+
+    void change_langua() {
+
+        final MyPreferences preferences = new MyPreferences(this);
+
+        String lang = preferences.getlanguage();
+
+//create a string for country
+        String country = preferences.getcountry();
+//use constructor with country
+
+
+        if (lang == null) {
+            lang = "ur";
+            country = "PK";
+
+        }
+        Locale locale = new Locale(lang, country);
+
+
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        this.getResources().updateConfiguration(config,
+                this.getResources().getDisplayMetrics());
+
+    }
 
 
 }

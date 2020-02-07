@@ -8,61 +8,41 @@
 
     </group>
 
-    <item android:title="Session On">
+    <item android:title="@string/Main_Menu">
         <menu>
             <item
                 android:id="@+id/stage_1"
                 android:icon="@drawable/pregnancy"
-                android:title="C Section" />
+                android:title="@string/Start_Interview" />
 
             <item
-                android:id="@+id/stage_2"
-                android:icon="@drawable/delivery"
-                android:title="N section" />
+                android:id="@+id/upload_date"
+                android:icon="@drawable/upload_interview"
+                android:title="@string/Upload_Data" />
 
             <item
-                android:id="@+id/stage_3"
-                android:icon="@drawable/pills"
-                android:title="Gen Info" />
-            <item
-                android:id="@+id/stage_4"
-                android:icon="@drawable/babygirl"
-                android:title=" A section" />
-            <item
-                android:id="@+id/stage_5"
-                android:icon="@drawable/syringe"
-                android:title="Immunization" />
-            <item
-                android:id="@+id/stage_6"
-                android:icon="@drawable/labmicroscope"
-                android:title="Pneumonia " />
-            <item
-                android:id="@+id/stage_7"
-                android:icon="@drawable/sick"
-                android:title="Diarrhea" />
-
-
-
+                android:id="@+id/pending_interviews"
+                android:icon="@drawable/upload_interview"
+                android:title="@string/Pending_Interviews" />
 
         </menu>
     </item>
 
 
-    <item android:title="Language">
+    <item android:title="@string/Language">
         <menu>
 
-            <item
-                android:id="@+id/upload_date"
-                android:icon="@drawable/upload_interview"
-                android:title="Upload Data" />
+
+
+
             <item
                 android:id="@+id/nav_lang_e"
                 android:icon="@drawable/english"
-                android:title="English" />
+                android:title="@string/English" />
             <item
                 android:id="@+id/nav_lang_u"
                 android:icon="@drawable/urdu"
-                android:title="Urdu" />
+                android:title="@string/Urdu" />
 
         </menu>
     </item>

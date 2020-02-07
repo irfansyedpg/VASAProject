@@ -8,7 +8,7 @@ public class C3051_C3099 {
 
     public static String getCreateQuery() {
         String query;
-        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' INTEGER,   " +
+        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' TEXT,   " +
 
                 Global.C.C3051_C3099.C3051 + " TEXT," +
                 Global.C.C3051_C3099.C3052 + " TEXT," +
@@ -32,8 +32,8 @@ public class C3051_C3099 {
                 Global.C.C3051_C3099.C3065_5 + " TEXT," +
                 Global.C.C3051_C3099.C3065_6 + " TEXT," +
                 Global.C.C3051_C3099.C3065_7 + " TEXT," +
-                Global.C.C3051_C3099.C3065_DK + " TEXT," +
                 Global.C.C3051_C3099.C3065_OT + " TEXT," +
+                Global.C.C3051_C3099.C3065_DK + " TEXT," +
                 Global.C.C3051_C3099.C3066 + " TEXT," +
                 Global.C.C3051_C3099.C3067_1 + " TEXT," +
                 Global.C.C3051_C3099.C3067_2 + " TEXT," +
@@ -42,8 +42,10 @@ public class C3051_C3099 {
                 Global.C.C3051_C3099.C3067_5 + " TEXT," +
                 Global.C.C3051_C3099.C3067_6 + " TEXT," +
                 Global.C.C3051_C3099.C3067_7 + " TEXT," +
+                Global.C.C3051_C3099.C3067_OT + " TEXT," +
                 Global.C.C3051_C3099.C3067_DK + " TEXT," +
                 Global.C.C3051_C3099.C3068 + " TEXT," +
+                Global.C.C3051_C3099.C3068_OT + " TEXT," +
                 Global.C.C3051_C3099.C3069 + " TEXT," +
                 Global.C.C3051_C3099.C3070 + " TEXT," +
                 Global.C.C3051_C3099.C3071 + " TEXT," +
@@ -57,6 +59,7 @@ public class C3051_C3099 {
                 Global.C.C3051_C3099.C3077 + " TEXT," +
                 Global.C.C3051_C3099.C3078 + " TEXT," +
                 Global.C.C3051_C3099.C3079 + " TEXT," +
+                Global.C.C3051_C3099.C3079_OT + " TEXT," +
                 Global.C.C3051_C3099.C3080 + " TEXT," +
                 Global.C.C3051_C3099.C3081 + " TEXT," +
                 Global.C.C3051_C3099.C3082 + " TEXT," +

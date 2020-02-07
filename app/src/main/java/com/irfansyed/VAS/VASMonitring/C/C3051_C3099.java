@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -13,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
 import java.text.ParseException;
@@ -23,10 +25,11 @@ import java.util.concurrent.TimeUnit;
 import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
+import utils.Gothrough;
+import utils.InputFilterMinMax;
 
 
-public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener, View.OnFocusChangeListener {
-
+public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
     //region Declaration
 
@@ -34,6 +37,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     // LinerLayouts
     LinearLayout
+            ll_study_id,
             ll_C3051,
             ll_C3052,
             ll_C3053,
@@ -53,6 +57,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             ll_C3066,
             ll_C3067,
             ll_C3068,
+            ll_C3068_OT,
             ll_C3069,
             ll_C3070,
             ll_C3071,
@@ -66,6 +71,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             ll_C3077,
             ll_C3078,
             ll_C3079,
+            ll_C3079_OT,
             ll_C3080,
             ll_C3081,
             ll_C3082,
@@ -285,11 +291,13 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             cb_C3067_DK;
 
     EditText
+            ed_study_id,
             ed_C3052,
             ed_C3062,
             ed_C3065_OT,
             ed_C3067_OT,
             ed_C3068_OT,
+            ed_C3079,
             ed_C3081,
             ed_C3082,
             ed_C3087,
@@ -332,8 +340,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             C3067_OT,
             C3067_DK,
             C3068,
-            C3068_6_OT,
-            C3068_10_OT,
+            C3068_OT,
             C3069,
             C3070,
             C3071,
@@ -347,6 +354,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             C3077,
             C3078,
             C3079,
+            C3079_OT,
             C3080,
             C3081,
             C3082,
@@ -372,7 +380,8 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             study_id;
 
     int ageInDays;
-    int C3006;
+    int C3006,
+            currentSection;
 
     //endregion
 
@@ -380,28 +389,44 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c3051_c3099);
 
-        DBHelper db = new DBHelper(this);
-        Cursor Q1101_Q1610 = db.getData("Q1101_Q1610");
+        this.setTitle(getString(R.string.h_c_sec_6));
+
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
+
+
+        /*Cursor Q1101_Q1610 = db.getData("Q1101_Q1610", study_id);
 
         if (Q1101_Q1610.getCount() > 0) {
 
             Q1101_Q1610.moveToFirst();
 
-            String dob = Q1101_Q1610.getString(67);
-            String dod = Q1101_Q1610.getString(71);
+            String dob = Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1603"));
+            String dod = Q1101_Q1610.getString(Q1101_Q1610.getColumnIndex("Q1606"));
 
             ageInDays = numOfDays(dob, dod);
-        }
+        }*/
 
         Initialization();
 
-        Cursor C3001_C3011 = db.getData("C3001_C3011");
+        ed_C3065_OT.setVisibility(View.GONE);
+        ed_C3067_OT.setVisibility(View.GONE);
+
+        ll_C3068_OT.setVisibility(View.GONE);
+        ll_C3079_OT.setVisibility(View.GONE);
+
+        DBHelper db = new DBHelper(this);
+        Cursor C3001_C3011 = db.getData("C3001_C3011", study_id);
 
         if (C3001_C3011.getCount() > 0) {
 
             C3001_C3011.moveToFirst();
 
-            C3006 = Integer.parseInt(C3001_C3011.getString(10));
+            C3006 = Integer.valueOf(C3001_C3011.getString(C3001_C3011.getColumnIndex("C3006")));
         }
 
         events_call();
@@ -416,6 +441,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         int numOfDays = 0;
 
         try {
+
             Date date1 = myFormat.parse(dob);
             Date date2 = myFormat.parse(dod);
             long diff = date2.getTime() - date1.getTime();
@@ -441,7 +467,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         insert_data();
 
         Intent c = new Intent(this, C3101_C3112.class);
-
+        c.putExtra("study_id", study_id);
         startActivity(c);
     }
 
@@ -451,7 +477,6 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         btn_next = findViewById(R.id.btn_next);
 
         // Layouts
-
         ll_C3051 = findViewById(R.id.ll_C3051);
         ll_C3052 = findViewById(R.id.ll_C3052);
         ll_C3053 = findViewById(R.id.ll_C3053);
@@ -471,6 +496,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         ll_C3066 = findViewById(R.id.ll_C3066);
         ll_C3067 = findViewById(R.id.ll_C3067);
         ll_C3068 = findViewById(R.id.ll_C3068);
+        ll_C3068_OT = findViewById(R.id.ll_C3068_OT);
         ll_C3069 = findViewById(R.id.ll_C3069);
         ll_C3070 = findViewById(R.id.ll_C3070);
         ll_C3071 = findViewById(R.id.ll_C3071);
@@ -484,6 +510,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         ll_C3077 = findViewById(R.id.ll_C3077);
         ll_C3078 = findViewById(R.id.ll_C3078);
         ll_C3079 = findViewById(R.id.ll_C3079);
+        ll_C3079_OT = findViewById(R.id.ll_C3079_OT);
         ll_C3080 = findViewById(R.id.ll_C3080);
         ll_C3081 = findViewById(R.id.ll_C3081);
         ll_C3082 = findViewById(R.id.ll_C3082);
@@ -746,13 +773,12 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
 
         // Edittexts
-
         ed_C3052 = findViewById(R.id.ed_C3052);
         ed_C3062 = findViewById(R.id.ed_C3062);
         ed_C3065_OT = findViewById(R.id.ed_C3065_OT);
         ed_C3067_OT = findViewById(R.id.ed_C3067_OT);
         ed_C3068_OT = findViewById(R.id.ed_C3068_OT);
-        ed_C3067_OT = findViewById(R.id.ed_C3067_OT);
+        ed_C3079 = findViewById(R.id.ed_C3079_OT);
         ed_C3081 = findViewById(R.id.ed_C3081);
         ed_C3082 = findViewById(R.id.ed_C3082);
         ed_C3087 = findViewById(R.id.ed_C3087);
@@ -763,57 +789,15 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     void events_call() {
 
-        rb_C3051_1.setOnCheckedChangeListener(this);
-        rb_C3051_2.setOnCheckedChangeListener(this);
-        rb_C3051_DK.setOnCheckedChangeListener(this);
-        rb_C3051_RA.setOnCheckedChangeListener(this);
-
-        rb_C3053_1.setOnCheckedChangeListener(this);
-        rb_C3053_2.setOnCheckedChangeListener(this);
-        rb_C3053_DK.setOnCheckedChangeListener(this);
-        rb_C3053_RA.setOnCheckedChangeListener(this);
-
-        rb_C3053a_1.setOnCheckedChangeListener(this);
-        rb_C3053a_2.setOnCheckedChangeListener(this);
-        rb_C3053a_DK.setOnCheckedChangeListener(this);
-        rb_C3053a_RA.setOnCheckedChangeListener(this);
-
-        rb_C3054_1.setOnCheckedChangeListener(this);
-        rb_C3054_2.setOnCheckedChangeListener(this);
-        rb_C3054_DK.setOnCheckedChangeListener(this);
-        rb_C3054_RA.setOnCheckedChangeListener(this);
-
-        rb_C3055_1.setOnCheckedChangeListener(this);
-        rb_C3055_2.setOnCheckedChangeListener(this);
-        rb_C3055_DK.setOnCheckedChangeListener(this);
-        rb_C3055_RA.setOnCheckedChangeListener(this);
-
-        rb_C3056_1.setOnCheckedChangeListener(this);
-        rb_C3056_2.setOnCheckedChangeListener(this);
-        rb_C3056_DK.setOnCheckedChangeListener(this);
-        rb_C3056_RA.setOnCheckedChangeListener(this);
-
         rb_C3057_1.setOnCheckedChangeListener(this);
         rb_C3057_2.setOnCheckedChangeListener(this);
         rb_C3057_DK.setOnCheckedChangeListener(this);
         rb_C3057_RA.setOnCheckedChangeListener(this);
 
-        rb_C3058_1.setOnCheckedChangeListener(this);
-        rb_C3058_2.setOnCheckedChangeListener(this);
-        rb_C3058_DK.setOnCheckedChangeListener(this);
-
         rb_C3059_1.setOnCheckedChangeListener(this);
         rb_C3059_2.setOnCheckedChangeListener(this);
         rb_C3059_DK.setOnCheckedChangeListener(this);
         rb_C3059_RA.setOnCheckedChangeListener(this);
-
-        rb_C3060_1.setOnCheckedChangeListener(this);
-        rb_C3060_2.setOnCheckedChangeListener(this);
-        rb_C3060_DK.setOnCheckedChangeListener(this);
-
-        rb_C3061_1.setOnCheckedChangeListener(this);
-        rb_C3061_2.setOnCheckedChangeListener(this);
-        rb_C3061_DK.setOnCheckedChangeListener(this);
 
         rb_C3063_1.setOnCheckedChangeListener(this);
         rb_C3063_2.setOnCheckedChangeListener(this);
@@ -845,88 +829,24 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         cb_C3067_7.setOnCheckedChangeListener(this);
         cb_C3067_DK.setOnCheckedChangeListener(this);
 
-        rb_C3068_1.setOnCheckedChangeListener(this);
-        rb_C3068_2.setOnCheckedChangeListener(this);
-        rb_C3068_3.setOnCheckedChangeListener(this);
-        rb_C3068_4.setOnCheckedChangeListener(this);
-        rb_C3068_5.setOnCheckedChangeListener(this);
-        rb_C3068_6.setOnCheckedChangeListener(this);
-        rb_C3068_7.setOnCheckedChangeListener(this);
-        rb_C3068_8.setOnCheckedChangeListener(this);
-        rb_C3068_9.setOnCheckedChangeListener(this);
-        rb_C3068_10.setOnCheckedChangeListener(this);
-        rb_C3068_DK.setOnCheckedChangeListener(this);
-
-        rb_C3069_1.setOnCheckedChangeListener(this);
-        rb_C3069_2.setOnCheckedChangeListener(this);
-        rb_C3069_DK.setOnCheckedChangeListener(this);
-
-        rb_C3070_1.setOnCheckedChangeListener(this);
-        rb_C3070_2.setOnCheckedChangeListener(this);
-        rb_C3070_DK.setOnCheckedChangeListener(this);
-
-        rb_C3071_1.setOnCheckedChangeListener(this);
-        rb_C3071_2.setOnCheckedChangeListener(this);
-        rb_C3071_DK.setOnCheckedChangeListener(this);
-        rb_C3071_RA.setOnCheckedChangeListener(this);
-
         rb_C3072_1.setOnCheckedChangeListener(this);
         rb_C3072_2.setOnCheckedChangeListener(this);
         rb_C3072_DK.setOnCheckedChangeListener(this);
         rb_C3072_RA.setOnCheckedChangeListener(this);
-
-        rb_C3073_1_1.setOnCheckedChangeListener(this);
-        rb_C3073_1_2.setOnCheckedChangeListener(this);
-        rb_C3073_1_DK.setOnCheckedChangeListener(this);
-        rb_C3073_1_RA.setOnCheckedChangeListener(this);
 
         rb_C3073_2_1.setOnCheckedChangeListener(this);
         rb_C3073_2_2.setOnCheckedChangeListener(this);
         rb_C3073_2_DK.setOnCheckedChangeListener(this);
         rb_C3073_2_RA.setOnCheckedChangeListener(this);
 
-        rb_C3073_3_1.setOnCheckedChangeListener(this);
-        rb_C3073_3_2.setOnCheckedChangeListener(this);
-        rb_C3073_3_DK.setOnCheckedChangeListener(this);
-        rb_C3073_3_RA.setOnCheckedChangeListener(this);
-
-        rb_C3074_1.setOnCheckedChangeListener(this);
-        rb_C3074_2.setOnCheckedChangeListener(this);
-        rb_C3074_DK.setOnCheckedChangeListener(this);
-        rb_C3074_RA.setOnCheckedChangeListener(this);
-
         rb_C3075_1.setOnCheckedChangeListener(this);
         rb_C3075_2.setOnCheckedChangeListener(this);
         rb_C3075_DK.setOnCheckedChangeListener(this);
         rb_C3075_RA.setOnCheckedChangeListener(this);
 
-        rb_C3076_1.setOnCheckedChangeListener(this);
-        rb_C3076_2.setOnCheckedChangeListener(this);
-        rb_C3076_3.setOnCheckedChangeListener(this);
-        rb_C3076_4.setOnCheckedChangeListener(this);
-        rb_C3076_DK.setOnCheckedChangeListener(this);
-        rb_C3076_RA.setOnCheckedChangeListener(this);
-
-        rb_C3077_1.setOnCheckedChangeListener(this);
-        rb_C3077_2.setOnCheckedChangeListener(this);
-        rb_C3077_DK.setOnCheckedChangeListener(this);
         rb_C3078_1.setOnCheckedChangeListener(this);
         rb_C3078_2.setOnCheckedChangeListener(this);
         rb_C3078_DK.setOnCheckedChangeListener(this);
-
-        rb_C3079_1.setOnCheckedChangeListener(this);
-        rb_C3079_2.setOnCheckedChangeListener(this);
-        rb_C3079_3.setOnCheckedChangeListener(this);
-        rb_C3079_DK.setOnCheckedChangeListener(this);
-        rb_C3080_1.setOnCheckedChangeListener(this);
-        rb_C3080_2.setOnCheckedChangeListener(this);
-        rb_C3080_DK.setOnCheckedChangeListener(this);
-
-        rb_C3083_1.setOnCheckedChangeListener(this);
-        rb_C3083_2.setOnCheckedChangeListener(this);
-        rb_C3083_3.setOnCheckedChangeListener(this);
-        rb_C3083_4.setOnCheckedChangeListener(this);
-        rb_C3083_DK.setOnCheckedChangeListener(this);
 
         rb_C3084_1.setOnCheckedChangeListener(this);
         rb_C3084_2.setOnCheckedChangeListener(this);
@@ -943,45 +863,10 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3086_DK.setOnCheckedChangeListener(this);
         rb_C3086_RA.setOnCheckedChangeListener(this);
 
-        rb_C3088_1.setOnCheckedChangeListener(this);
-        rb_C3088_2.setOnCheckedChangeListener(this);
-        rb_C3088_DK.setOnCheckedChangeListener(this);
-        rb_C3088_RA.setOnCheckedChangeListener(this);
-
-        rb_C3089_1.setOnCheckedChangeListener(this);
-        rb_C3089_2.setOnCheckedChangeListener(this);
-        rb_C3089_DK.setOnCheckedChangeListener(this);
-        rb_C3089_RA.setOnCheckedChangeListener(this);
-
         rb_C3091_1.setOnCheckedChangeListener(this);
         rb_C3091_2.setOnCheckedChangeListener(this);
         rb_C3091_DK.setOnCheckedChangeListener(this);
         rb_C3091_RA.setOnCheckedChangeListener(this);
-
-        rb_C3092_1.setOnCheckedChangeListener(this);
-        rb_C3092_2.setOnCheckedChangeListener(this);
-        rb_C3092_DK.setOnCheckedChangeListener(this);
-        rb_C3092_RA.setOnCheckedChangeListener(this);
-
-        rb_C3093_1.setOnCheckedChangeListener(this);
-        rb_C3093_2.setOnCheckedChangeListener(this);
-        rb_C3093_DK.setOnCheckedChangeListener(this);
-        rb_C3093_RA.setOnCheckedChangeListener(this);
-
-        rb_C3094_1.setOnCheckedChangeListener(this);
-        rb_C3094_2.setOnCheckedChangeListener(this);
-        rb_C3094_DK.setOnCheckedChangeListener(this);
-        rb_C3094_RA.setOnCheckedChangeListener(this);
-
-        rb_C3095_1.setOnCheckedChangeListener(this);
-        rb_C3095_2.setOnCheckedChangeListener(this);
-        rb_C3095_DK.setOnCheckedChangeListener(this);
-        rb_C3095_RA.setOnCheckedChangeListener(this);
-
-        rb_C3096_1.setOnCheckedChangeListener(this);
-        rb_C3096_2.setOnCheckedChangeListener(this);
-        rb_C3096_DK.setOnCheckedChangeListener(this);
-        rb_C3096_RA.setOnCheckedChangeListener(this);
 
         rb_C3097_1.setOnCheckedChangeListener(this);
         rb_C3097_2.setOnCheckedChangeListener(this);
@@ -993,10 +878,9 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         rb_C3098_DK.setOnCheckedChangeListener(this);
         rb_C3098_RA.setOnCheckedChangeListener(this);
 
-        rb_C3099_1.setOnCheckedChangeListener(this);
-        rb_C3099_2.setOnCheckedChangeListener(this);
-        rb_C3099_DK.setOnCheckedChangeListener(this);
-        rb_C3099_RA.setOnCheckedChangeListener(this);
+        ed_C3079.setFilters(new InputFilter[]{new InputFilterMinMax(1, 23, 23, 23)});
+        ed_C3090_1.setFilters(new InputFilter[]{new InputFilterMinMax(0, 29, 99, 99)});
+        ed_C3090_2.setFilters(new InputFilter[]{new InputFilterMinMax(0, 11, 99, 99)});
     }
 
     @Override
@@ -1006,9 +890,6 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3057_2
                 || compoundButton.getId() == R.id.rb_C3057_DK
                 || compoundButton.getId() == R.id.rb_C3057_RA) {
-
-            ClearAllcontrol.ClearAll(ll_C3058);
-            ll_C3058.setVisibility(View.GONE);
 
             if (rb_C3057_1.isChecked()) {
 
@@ -1026,9 +907,6 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3059_DK
                 || compoundButton.getId() == R.id.rb_C3059_RA) {
 
-            ClearAllcontrol.ClearAll(ll_C3060);
-            ll_C3060.setVisibility(View.GONE);
-
             if (rb_C3059_1.isChecked()) {
 
                 ll_C3060.setVisibility(View.VISIBLE);
@@ -1043,25 +921,6 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_C3063_1
                 || compoundButton.getId() == R.id.rb_C3063_2
                 || compoundButton.getId() == R.id.rb_C3063_DK) {
-
-
-            ClearAllcontrol.ClearAll(ll_C3064);
-            ClearAllcontrol.ClearAll(ll_C3065);
-
-            ll_C3064.setVisibility(View.GONE);
-            ll_C3065.setVisibility(View.GONE);
-
-            ClearAllcontrol.ClearAll(ll_C3066);
-            ClearAllcontrol.ClearAll(ll_C3067);
-            ClearAllcontrol.ClearAll(ll_C3068);
-            ClearAllcontrol.ClearAll(ll_C3069);
-            ClearAllcontrol.ClearAll(ll_C3070);
-
-            ll_C3066.setVisibility(View.GONE);
-            ll_C3067.setVisibility(View.GONE);
-            ll_C3068.setVisibility(View.GONE);
-            ll_C3069.setVisibility(View.GONE);
-            ll_C3070.setVisibility(View.GONE);
 
             if ((rb_C3054_1.isChecked() && rb_C3055_1.isChecked() && rb_C3056_1.isChecked()) &&
                     (rb_C3057_1.isChecked() || rb_C3058_1.isChecked()) &&
@@ -1079,10 +938,10 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3065.setVisibility(View.GONE);
             }
 
-            if ((rb_C3051_1.isChecked() && (Integer.valueOf(ed_C3052.getText().toString()) < 9 || Integer.valueOf(ed_C3052.getText().toString()) > 10)) &&
+            if ((rb_C3051_1.isChecked() && (Integer.valueOf(ed_C3052.getText().toString()) == 9 || Integer.valueOf(ed_C3052.getText().toString()) == 10)) &&
                     (rb_C3057_1.isChecked() || rb_C3058_2.isChecked()) &&
                     (rb_C3059_1.isChecked() || rb_C3060_2.isChecked()) &&
-                    rb_C3061_1.isChecked() && Integer.valueOf(ed_C3052.getText().toString()) < 12 &&
+                    rb_C3061_1.isChecked() && Integer.valueOf(ed_C3062.getText().toString()) < 12 &&
                     rb_C3063_1.isChecked()) {
 
                 ll_C3066.setVisibility(View.VISIBLE);
@@ -1111,16 +970,61 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_C3064_2
                 || compoundButton.getId() == R.id.rb_C3064_DK) {
 
-            if (rb_C3064_2.isChecked() || rb_C3064_DK.isChecked()) {
+            if (rb_C3064_1.isChecked()) {
 
-                ClearAllcontrol.ClearAll(ll_C3065);
-                ll_C3065.setVisibility(View.GONE);
+                ll_C3065.setVisibility(View.VISIBLE);
 
             } else {
 
-                ll_C3065.setVisibility(View.VISIBLE);
+                ClearAllcontrol.ClearAll(ll_C3065);
+                ll_C3065.setVisibility(View.GONE);
             }
         }
+
+
+        if (compoundButton.getId() == R.id.cb_C3065_1
+                || compoundButton.getId() == R.id.cb_C3065_2
+                || compoundButton.getId() == R.id.cb_C3065_3
+                || compoundButton.getId() == R.id.cb_C3065_4
+                || compoundButton.getId() == R.id.cb_C3065_5
+                || compoundButton.getId() == R.id.cb_C3065_6
+                || compoundButton.getId() == R.id.cb_C3065_7
+                || compoundButton.getId() == R.id.cb_C3065_DK) {
+
+            if (rb_C3064_1.isChecked()) {
+
+                ll_C3065.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ClearAllcontrol.ClearAll(ll_C3065);
+                ll_C3065.setVisibility(View.GONE);
+            }
+
+
+            if (cb_C3065_DK.isChecked()) {
+
+                ed_C3065_OT.setText("");
+
+                cb_C3065_1.setChecked(false);
+                cb_C3065_2.setChecked(false);
+                cb_C3065_3.setChecked(false);
+                cb_C3065_4.setChecked(false);
+                cb_C3065_5.setChecked(false);
+                cb_C3065_6.setChecked(false);
+                cb_C3065_7.setChecked(false);
+            }
+
+            if (cb_C3065_7.isChecked()) {
+
+                ed_C3065_OT.setVisibility(View.VISIBLE);
+            } else {
+
+                ed_C3065_OT.setText("");
+                ed_C3065_OT.setVisibility(View.GONE);
+            }
+        }
+
 
         if (compoundButton.getId() == R.id.rb_C3066_1
                 || compoundButton.getId() == R.id.rb_C3066_2
@@ -1156,37 +1060,73 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.cb_C3067_7
                 || compoundButton.getId() == R.id.cb_C3067_DK) {
 
-            ed_C3067_OT.setText("");
+
+            if (cb_C3067_DK.isChecked()) {
+
+                ed_C3067_OT.setText("");
+
+                cb_C3067_1.setChecked(false);
+                cb_C3067_2.setChecked(false);
+                cb_C3067_3.setChecked(false);
+                cb_C3067_4.setChecked(false);
+                cb_C3067_5.setChecked(false);
+                cb_C3067_6.setChecked(false);
+                cb_C3067_7.setChecked(false);
+            }
+
+            if (cb_C3067_7.isChecked()) {
+
+                ed_C3067_OT.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ed_C3067_OT.setText("");
+                ed_C3067_OT.setVisibility(View.GONE);
+            }
 
             if (cb_C3067_5.isChecked() || cb_C3067_6.isChecked() || cb_C3067_7.isChecked() || cb_C3067_DK.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_C3068);
+                ClearAllcontrol.ClearAll(ll_C3068_OT);
                 ClearAllcontrol.ClearAll(ll_C3069);
                 ClearAllcontrol.ClearAll(ll_C3070);
 
                 ll_C3068.setVisibility(View.GONE);
+                ll_C3068_OT.setVisibility(View.GONE);
                 ll_C3069.setVisibility(View.GONE);
                 ll_C3070.setVisibility(View.GONE);
-
-                if (cb_C3067_DK.isChecked()) {
-
-                    cb_C3067_1.setChecked(false);
-                    cb_C3067_2.setChecked(false);
-                    cb_C3067_3.setChecked(false);
-                    cb_C3067_4.setChecked(false);
-                    cb_C3067_5.setChecked(false);
-                    cb_C3067_6.setChecked(false);
-                    cb_C3067_7.setChecked(false);
-                }
 
             } else {
 
                 ll_C3068.setVisibility(View.VISIBLE);
+                ll_C3068_OT.setVisibility(View.VISIBLE);
                 ll_C3069.setVisibility(View.VISIBLE);
                 ll_C3070.setVisibility(View.VISIBLE);
             }
         }
 
+        if (compoundButton.getId() == R.id.rb_C3068_1
+                || compoundButton.getId() == R.id.rb_C3068_2
+                || compoundButton.getId() == R.id.rb_C3068_3
+                || compoundButton.getId() == R.id.rb_C3068_4
+                || compoundButton.getId() == R.id.rb_C3068_5
+                || compoundButton.getId() == R.id.rb_C3068_6
+                || compoundButton.getId() == R.id.rb_C3068_7
+                || compoundButton.getId() == R.id.rb_C3068_8
+                || compoundButton.getId() == R.id.rb_C3068_9
+                || compoundButton.getId() == R.id.rb_C3068_10
+                || compoundButton.getId() == R.id.rb_C3068_DK) {
+
+            if (rb_C3068_6.isChecked() || rb_C3068_10.isChecked()) {
+
+                ll_C3068_OT.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ClearAllcontrol.ClearAll(ll_C3068_OT);
+                ll_C3068_OT.setVisibility(View.GONE);
+            }
+        }
 
         if (compoundButton.getId() == R.id.rb_C3072_1
                 || compoundButton.getId() == R.id.rb_C3072_2
@@ -1242,18 +1182,10 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3076.setVisibility(View.VISIBLE);
             }
 
-            if ((rb_C3051_1.isChecked() &&
-                    (Integer.valueOf(ed_C3052.getText().toString()) < 9 ||
-                            Integer.valueOf(ed_C3052.getText().toString()) > 10)) ||
-                    (C3006 != 1 || C3006 != 2 || C3006 != 11 || C3006 != 12 || C3006 != 99)) {
-
-                Toast.makeText(this, "" + C3006, Toast.LENGTH_LONG).show();
-
-                ll_C3077.setVisibility(View.VISIBLE);
-                ll_C3081.setVisibility(View.VISIBLE);
-                ll_C3082.setVisibility(View.VISIBLE);
-
-            } else {
+            if ((!rb_C3051_1.isChecked() &&
+                    (Integer.valueOf(ed_C3052.getText().toString()) == 9
+                            || Integer.valueOf(ed_C3052.getText().toString()) == 10)) ||
+                    (C3006 == 1 || C3006 == 2 || C3006 == 11 || C3006 == 12 || C3006 == 99)) {
 
                 ClearAllcontrol.ClearAll(ll_C3077);
                 ClearAllcontrol.ClearAll(ll_C3081);
@@ -1262,6 +1194,12 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3077.setVisibility(View.GONE);
                 ll_C3081.setVisibility(View.GONE);
                 ll_C3082.setVisibility(View.GONE);
+
+            } else {
+
+                ll_C3077.setVisibility(View.VISIBLE);
+                ll_C3081.setVisibility(View.VISIBLE);
+                ll_C3082.setVisibility(View.VISIBLE);
             }
         }
 
@@ -1280,11 +1218,29 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 ll_C3080.setVisibility(View.GONE);
                 ll_C3081.setVisibility(View.GONE);
                 ll_C3082.setVisibility(View.GONE);
+
             } else {
+
                 ll_C3079.setVisibility(View.VISIBLE);
                 ll_C3080.setVisibility(View.VISIBLE);
                 ll_C3081.setVisibility(View.VISIBLE);
                 ll_C3082.setVisibility(View.VISIBLE);
+            }
+        }
+
+        if (compoundButton.getId() == R.id.rb_C3079_1
+                || compoundButton.getId() == R.id.rb_C3079_2
+                || compoundButton.getId() == R.id.rb_C3079_3
+                || compoundButton.getId() == R.id.rb_C3079_DK) {
+
+            if (rb_C3079_3.isChecked()) {
+
+                ll_C3079_OT.setVisibility(View.VISIBLE);
+
+            } else {
+
+                ClearAllcontrol.ClearAll(ll_C3079_OT);
+                ll_C3079_OT.setVisibility(View.GONE);
             }
         }
 
@@ -1359,6 +1315,24 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             }
         }
 
+
+        if (compoundButton.getId() == R.id.rb_C3089_1
+                || compoundButton.getId() == R.id.rb_C3089_2
+                || compoundButton.getId() == R.id.rb_C3089_DK
+                || compoundButton.getId() == R.id.rb_C3089_RA) {
+
+            if (rb_C3089_2.isChecked() || rb_C3089_DK.isChecked() || rb_C3089_RA.isChecked()) {
+
+                ClearAllcontrol.ClearAll(ll_C3090);
+                ll_C3090.setVisibility(View.GONE);
+
+            } else {
+
+                ll_C3090.setVisibility(View.VISIBLE);
+            }
+        }
+
+
         if (compoundButton.getId() == R.id.rb_C3091_1
                 || compoundButton.getId() == R.id.rb_C3091_2
                 || compoundButton.getId() == R.id.rb_C3091_DK
@@ -1413,102 +1387,85 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
         }
     }
 
-    @Override
-    public void onFocusChange(View view, boolean b) {
-
-        if (view.getId() == R.id.ed_C3068_OT) {
-
-            if (!b) {
-            } else {
-
-                rb_C3068_1.setChecked(false);
-                rb_C3068_2.setChecked(false);
-                rb_C3068_3.setChecked(false);
-                rb_C3068_4.setChecked(false);
-                rb_C3068_5.setChecked(false);
-                rb_C3068_6.setChecked(false);
-                rb_C3068_7.setChecked(false);
-                rb_C3068_8.setChecked(false);
-                rb_C3068_9.setChecked(false);
-                rb_C3068_DK.setChecked(false);
-            }
-        }
-    }
-
     void value_assignment() {
 
-        study_id = "0";
-        C3051 = "000";
-        C3052 = "000";
-        C3053 = "000";
-        C3053a = "000";
-        C3054 = "000";
-        C3055 = "000";
-        C3056 = "000";
-        C3057 = "000";
-        C3058 = "000";
-        C3059 = "000";
-        C3060 = "000";
-        C3061 = "000";
-        C3062 = "000";
-        C3063 = "000";
-        C3064 = "000";
-        C3065_1 = "000";
-        C3065_2 = "000";
-        C3065_3 = "000";
-        C3065_4 = "000";
-        C3065_5 = "000";
-        C3065_6 = "000";
-        C3065_7 = "000";
-        C3065_OT = "000";
-        C3065_DK = "000";
-        C3067_1 = "000";
-        C3067_2 = "000";
-        C3067_3 = "000";
-        C3067_4 = "000";
-        C3067_5 = "000";
-        C3067_6 = "000";
-        C3067_7 = "000";
-        C3067_OT = "000";
-        C3065_DK = "000";
-        C3066 = "000";
-        C3068 = "000";
-        C3069 = "000";
-        C3070 = "000";
-        C3071 = "000";
-        C3072 = "000";
-        C3073_1 = "000";
-        C3073_2 = "000";
-        C3073_3 = "000";
-        C3074 = "000";
-        C3075 = "000";
-        C3076 = "000";
-        C3077 = "000";
-        C3078 = "000";
-        C3079 = "000";
-        C3080 = "000";
-        C3081 = "000";
-        C3082 = "000";
-        C3083 = "000";
-        C3084 = "000";
-        C3085 = "000";
-        C3086 = "000";
-        C3087 = "000";
-        C3088 = "000";
-        C3089 = "000";
-        C3090_1 = "000";
-        C3090_2 = "000";
-        C3091 = "000";
-        C3092 = "000";
-        C3093 = "000";
-        C3094 = "000";
-        C3095 = "000";
-        C3096 = "000";
-        C3097 = "000";
-        C3098 = "000";
-        C3099 = "000";
+        C3051 = "-1";
+        C3052 = "-1";
+        C3053 = "-1";
+        C3053a = "-1";
+        C3054 = "-1";
+        C3055 = "-1";
+        C3056 = "-1";
+        C3057 = "-1";
+        C3058 = "-1";
+        C3059 = "-1";
+        C3060 = "-1";
+        C3061 = "-1";
+        C3062 = "-1";
+        C3063 = "-1";
+        C3064 = "-1";
+        C3065_1 = "-1";
+        C3065_2 = "-1";
+        C3065_3 = "-1";
+        C3065_4 = "-1";
+        C3065_5 = "-1";
+        C3065_6 = "-1";
+        C3065_7 = "-1";
+        C3065_OT = "-1";
+        C3065_DK = "-1";
+        C3067_1 = "-1";
+        C3067_2 = "-1";
+        C3067_3 = "-1";
+        C3067_4 = "-1";
+        C3067_5 = "-1";
+        C3067_6 = "-1";
+        C3067_7 = "-1";
+        C3067_OT = "-1";
+        C3067_DK = "-1";
+        C3066 = "-1";
+        C3068 = "-1";
+        C3068_OT = "-1";
+        C3069 = "-1";
+        C3070 = "-1";
+        C3071 = "-1";
+        C3072 = "-1";
+        C3073_1 = "-1";
+        C3073_2 = "-1";
+        C3073_3 = "-1";
+        C3074 = "-1";
+        C3075 = "-1";
+        C3076 = "-1";
+        C3077 = "-1";
+        C3078 = "-1";
+        C3079 = "-1";
+        C3079_OT = "-1";
+        C3080 = "-1";
+        C3081 = "-1";
+        C3082 = "-1";
+        C3083 = "-1";
+        C3084 = "-1";
+        C3085 = "-1";
+        C3086 = "-1";
+        C3087 = "-1";
+        C3088 = "-1";
+        C3089 = "-1";
+        C3090_1 = "-1";
+        C3090_2 = "-1";
+        C3091 = "-1";
+        C3092 = "-1";
+        C3093 = "-1";
+        C3094 = "-1";
+        C3095 = "-1";
+        C3096 = "-1";
+        C3097 = "-1";
+        C3098 = "-1";
+        C3099 = "-1";
         STATUS = "0";
 
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         if (rb_C3051_1.isChecked()) {
             C3051 = "1";
@@ -1660,10 +1617,8 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             C3065_DK = "1";
         }
         if (cb_C3065_7.isChecked()) {
-            if (ed_C3065_OT.getText().toString().trim().length() > 0) {
-                C3065_7 = "1";
-                C3065_OT = ed_C3065_OT.getText().toString().trim();
-            }
+            C3065_7 = "1";
+            C3065_OT = ed_C3065_OT.getText().toString().trim();
         }
 
         if (rb_C3066_1.isChecked()) {
@@ -1693,10 +1648,8 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             C3067_6 = "1";
         }
         if (cb_C3065_7.isChecked()) {
-            if (ed_C3067_OT.getText().toString().trim().length() > 0) {
-                C3067_7 = "1";
-                C3067_OT = ed_C3067_OT.getText().toString().trim();
-            }
+            C3067_7 = "1";
+            C3067_OT = ed_C3067_OT.getText().toString().trim();
         }
         if (cb_C3067_DK.isChecked()) {
             C3067_DK = "1";
@@ -1712,22 +1665,20 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             C3068 = "4";
         } else if (rb_C3068_5.isChecked()) {
             C3068 = "5";
+        } else if (rb_C3068_6.isChecked()) {
+            C3068 = "6";
+            C3068_OT = ed_C3068_OT.getText().toString().trim();
         } else if (rb_C3068_7.isChecked()) {
             C3068 = "7";
         } else if (rb_C3068_8.isChecked()) {
             C3068 = "8";
         } else if (rb_C3068_9.isChecked()) {
             C3068 = "9";
+        } else if (rb_C3068_10.isChecked()) {
+            C3068 = "10";
+            C3068_OT = ed_C3068_OT.getText().toString().trim();
         } else if (rb_C3068_DK.isChecked()) {
             C3068 = "99";
-        } else if (rb_C3068_6.isChecked()) {
-            if (ed_C3068_OT.getText().toString().trim().length() > 0) {
-                C3068_6_OT = ed_C3068_OT.getText().toString().trim();
-            }
-        } else if (rb_C3068_10.isChecked()) {
-            if (ed_C3068_OT.getText().toString().trim().length() > 0) {
-                C3068_10_OT = ed_C3068_OT.getText().toString().trim();
-            }
         }
 
         if (rb_C3069_1.isChecked()) {
@@ -1852,6 +1803,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
             C3079 = "2";
         } else if (rb_C3079_3.isChecked()) {
             C3079 = "3";
+            C3079_OT = ed_C3079.getText().toString().trim();
         } else if (rb_C3079_DK.isChecked()) {
             C3079 = "9";
         }
@@ -2072,8 +2024,10 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 + Global.C.C3051_C3099.C3067_5 + ","
                 + Global.C.C3051_C3099.C3067_6 + ","
                 + Global.C.C3051_C3099.C3067_7 + ","
+                + Global.C.C3051_C3099.C3067_OT + ","
                 + Global.C.C3051_C3099.C3067_DK + ","
                 + Global.C.C3051_C3099.C3068 + ","
+                + Global.C.C3051_C3099.C3068_OT + ","
                 + Global.C.C3051_C3099.C3069 + ","
                 + Global.C.C3051_C3099.C3070 + ","
                 + Global.C.C3051_C3099.C3071 + ","
@@ -2087,6 +2041,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 + Global.C.C3051_C3099.C3077 + ","
                 + Global.C.C3051_C3099.C3078 + ","
                 + Global.C.C3051_C3099.C3079 + ","
+                + Global.C.C3051_C3099.C3079_OT + ","
                 + Global.C.C3051_C3099.C3080 + ","
                 + Global.C.C3051_C3099.C3081 + ","
                 + Global.C.C3051_C3099.C3082 + ","
@@ -2143,8 +2098,10 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 C3067_5 + "','" +
                 C3067_6 + "','" +
                 C3067_7 + "','" +
+                C3067_OT + "','" +
                 C3067_DK + "','" +
                 C3068 + "','" +
+                C3068_OT + "','" +
                 C3069 + "','" +
                 C3070 + "','" +
                 C3071 + "','" +
@@ -2158,6 +2115,7 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
                 C3077 + "','" +
                 C3078 + "','" +
                 C3079 + "','" +
+                C3079_OT + "','" +
                 C3080 + "','" +
                 C3081 + "','" +
                 C3082 + "','" +
@@ -2193,119 +2151,174 @@ public class C3051_C3099 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
-        /*if (Gothrough.IamHiden(ll_C3051) == false) {
+        if (Gothrough.IamHiden(ll_study_id) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3051) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3052) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3053) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3053a) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3054) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3055) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3056) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3057) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3058) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3059) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3060) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3061) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3062) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3063) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3064) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3065) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3066) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3067) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3068) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3068_OT) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3069) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3070) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3071) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3072) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3073_1) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3073_2) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3073_3) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3074) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3075) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3076) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3077) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3078) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3079) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3079_OT) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3080) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3081) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3082) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3083) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3084) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3085) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3086) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3087) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3088) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3089) == false) {
+            return false;
+        }
+        if (Gothrough.IamHiden(ll_C3090) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3091) == false) {
             return false;
         }
-
+        if (Gothrough.IamHiden(ll_C3092) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_C3093) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3094) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3095) == false) {
             return false;
         }
-
         if (Gothrough.IamHiden(ll_C3096) == false) {
             return false;
         }
-
-        if(Gothrough.IamHiden(ll_C3097) != false){
+        if (Gothrough.IamHiden(ll_C3097) == false) {
             return false;
-        }*/
+        }
+        if (Gothrough.IamHiden(ll_C3098) == false) {
+            return false;
+        }
+        return Gothrough.IamHiden(ll_C3099) != false;
+    }
 
-        return true;
+    @Override
+    public void onBackPressed() {
+        globale.interviewExit(this, this, study_id, currentSection = 4);
     }
 
 }

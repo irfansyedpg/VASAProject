@@ -2,14 +2,14 @@ package Global.N;
 
 public class N2023_N2026 {
 
-    public String N2023 = "N2023";
-    public String N2024 = "N2024";
-    public String N2024_1 = "N2024_1";
-    public String N2025U = "N2025U";
-    public String N2025D = "N2025D";
-    public String N2026 = "N2026";
+    public String N2023 = "";
+    public String N2024 = "";
+    public String N2024_1 = "";
+    public String N2025U = "";
+    public String N2025D = "";
+    public String N2026 = "";
 
-    public String STUDYID = "STUDYID";
+    public String STUDYID = "";
 
     public String getSTUDYID() {
         return STUDYID;

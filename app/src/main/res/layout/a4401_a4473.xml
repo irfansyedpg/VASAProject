@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cyan"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".A.A4401_A4473">
 
-    <RelativeLayout
+    <!--<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -27,7 +27,7 @@
             android:layout_alignParentTop="true"
             android:src="@drawable/unwhite" />
 
-    </RelativeLayout>
+    </RelativeLayout>-->
 
 
     <ScrollView
@@ -45,6 +45,32 @@
 
         <LinearLayout style="@style/Q_Linerlayout_v">
 
+            <!-- EditText study_id Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_study_id"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/txt_study_id" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_study_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_study_id"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="date"
+                        app:met_mask="####-###-##" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText study_id Ends -->
+
             <!-- Radio Buttons A4401 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
@@ -56,6 +82,15 @@
                         android:id="@+id/A4401"
                         style="@style/TextView"
                         android:text="@string/A4401" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4401_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Yes → A4404 \n Don't know → A4454" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -93,6 +128,14 @@
                         style="@style/TextView"
                         android:text="@string/A4402" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4402_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Don't know → A4454" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -116,11 +159,6 @@
                             android:text="@string/rb_A4402_4" />
 
                         <RadioButton
-                            android:id="@+id/rb_A4402_DK"
-                            style="@style/RadioButton"
-                            android:text="@string/dnt" />
-
-                        <RadioButton
                             android:id="@+id/rb_A4402_5"
                             style="@style/RadioButton"
                             android:text="@string/ot_other" />
@@ -128,7 +166,13 @@
                         <EditText
                             android:id="@+id/ed_A4402_5"
                             style="@style/RadioButton"
+                            android:visibility="gone"
                             android:hint="@string/ot_other" />
+
+                        <RadioButton
+                            android:id="@+id/rb_A4402_DK"
+                            style="@style/RadioButton"
+                            android:text="@string/dnt" />
 
                     </RadioGroup>
 
@@ -148,6 +192,10 @@
                         android:id="@+id/tv_A4403"
                         style="@style/TextView"
                         android:text="@string/A4403" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4403_h" />
 
                     <EditText
                         android:id="@+id/ed_A4403_province"
@@ -176,10 +224,19 @@
                         style="@style/TextView"
                         android:text="@string/A4404" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4404_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="less than 1 = 00 \nDon't know  = 99" />
+
+
                     <EditText
                         android:id="@+id/ed_A4404_years"
                         style="@style/EditText_number"
-                        android:hint="other_hint" />
+                        android:hint="@string/years" />
 
                 </LinearLayout>
 
@@ -198,6 +255,16 @@
                         style="@style/TextView"
                         android:text="@string/A4405" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4405_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Mark hours &amp;/or minutes as needed: \ne.g. 01 hour, 30 minutes. \nDon't know = 99" />
+
+
+
                     <EditText
                         android:id="@+id/ed_A4405_hours"
                         style="@style/EditText_varchar"
@@ -213,12 +280,22 @@
             </android.support.v7.widget.CardView>
             <!-- EditText A4405 Ends -->
 
+
             <!-- Radio Buttons A4451_1 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
                     android:id="@+id/ll_A4451_1"
                     style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/A4451"
+                        style="@style/TextView"
+                        android:text="@string/A4451" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4451_h" />
 
                     <TextView
                         android:id="@+id/A4451_1"
@@ -680,6 +757,7 @@
                     <EditText
                         android:id="@+id/ed_A4451_13"
                         style="@style/EditText_varchar"
+                        android:visibility="gone"
                         android:hint="Please Specify Other" />
 
                 </LinearLayout>
@@ -687,12 +765,22 @@
             </android.support.v7.widget.CardView>
             <!-- Radio Buttons A4451_13 with Other Ends -->
 
+
             <!-- Radio Buttons A4452_1 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
                     android:id="@+id/ll_A4452_1"
                     style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/A4452"
+                        style="@style/TextView"
+                        android:text="@string/A4452" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4452_h" />
 
                     <TextView
                         android:id="@+id/A4452_1"
@@ -1010,6 +1098,7 @@
                     <EditText
                         android:id="@+id/ed_A4452_9"
                         style="@style/EditText_varchar"
+                        android:visibility="gone"
                         android:hint="Please Specify Other" />
 
                 </LinearLayout>
@@ -1023,6 +1112,15 @@
                 <LinearLayout
                     android:id="@+id/ll_A4453_1"
                     style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/A4453"
+                        style="@style/TextView"
+                        android:text="@string/A4453" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4453_h" />
 
                     <TextView
                         android:id="@+id/A4453_1"
@@ -1448,12 +1546,15 @@
                     <EditText
                         android:id="@+id/ed_A4453_12"
                         style="@style/EditText_varchar"
+                        android:visibility="gone"
                         android:hint="Please Specify Other" />
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
             <!-- Radio Buttons A4453_12 with Other Ends -->
+
+
 
             <!-- Radio Buttons A4454 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
@@ -1641,6 +1742,29 @@
             </android.support.v7.widget.CardView>
             <!-- EditText A4471 Ends -->
 
+            <!-- EditText BTN Capture Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_cap_count"
+                        style="@style/TextViewInstructions"
+                        android:text="Pictures Attached: 0" />
+
+                    <Button
+                        android:id="@+id/btn_imgCapture"
+                        style="@style/Button_collder"
+                        android:layout_margin="10dp"
+                        android:background="@color/green1"
+                        android:onClick="@{() -> callback.BtnCapture()}"
+                        android:text="CAPTURE IMAGE" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText BTN Capture Ends -->
+
             <!-- CheckBox A4472 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
@@ -1735,6 +1859,10 @@
                         style="@style/TextView"
                         android:text="@string/A4473" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4473_h" />
+
                     <EditText
                         android:id="@+id/ed_A4473"
                         style="@style/EditText_varchar"
@@ -1751,7 +1879,7 @@
                     android:id="@+id/btn_next14"
                     style="@style/Button_collder"
                     android:layout_margin="10dp"
-                    android:text="NEXT" />
+                    android:text="@string/next" />
 
             </android.support.v7.widget.CardView>
 

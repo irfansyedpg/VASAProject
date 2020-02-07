@@ -1,7 +1,9 @@
 package utils;
 
 import android.text.Editable;
+import android.text.InputFilter;
 import android.text.TextWatcher;
+import android.text.method.DigitsKeyListener;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
@@ -38,6 +40,9 @@ public class ValidateDate {
     }
 
     public void ValDate(final EditText editText) {
+
+        editText.setFilters(new InputFilter[]{new InputFilter.LengthFilter(10)});
+        editText.setKeyListener(DigitsKeyListener.getInstance("0123456789/"));
 
         editText.addTextChangedListener(new TextWatcher() {
 

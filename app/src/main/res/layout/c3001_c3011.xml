@@ -2,31 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/mnchmainpsbi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:text="@string/app_name"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:textStyle="bold|italic" />
-
-        <ImageView
-            android:id="@+id/img_psbitest"
-            android:layout_width="90dp"
-            android:layout_height="60sp"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/unwhite" />
-
-    </RelativeLayout>
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".C.C3001_C3011">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -44,6 +23,32 @@
         <LinearLayout style="@style/Q_Linerlayout_v">
 
 
+            <!-- EditText study_id Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_study_id"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/txt_study_id" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_study_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_study_id"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="date"
+                        app:met_mask="####-###-##" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText study_id Ends -->
+
             <!--C3001 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
@@ -55,6 +60,14 @@
                         android:id="@+id/txt_C3001"
                         style="@style/TextView"
                         android:text="@string/txt_C3001" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3001_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 2 or 9 → C3003" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -138,6 +151,14 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3003" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3003_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3006" />
+
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -179,6 +200,10 @@
                         android:id="@+id/txt_C3004"
                         style="@style/TextView"
                         android:text="@string/txt_C3004" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8, 1, 2,or 9 → C3006" />
 
 
                     <RadioGroup style="@style/RadioGroup">
@@ -226,6 +251,14 @@
                         android:id="@+id/txt_C3005u"
                         style="@style/TextView"
                         android:text="@string/txt_C3005u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3005u_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="8 or 9 →C3006" />
 
 
                     <RadioGroup style="@style/RadioGroup">
@@ -295,6 +328,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3005w" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3005w_h" />
+
                     <EditText
                         android:id="@+id/ed_C3005w"
                         style="@style/EditText_number" />
@@ -317,6 +354,10 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3005m" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3005m_h" />
+
                     <EditText
                         android:id="@+id/ed_C3005m"
                         style="@style/EditText_number" />
@@ -337,6 +378,10 @@
                         android:id="@+id/txt_C3006"
                         style="@style/TextView"
                         android:text="@string/txt_C3006" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3006_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -368,7 +413,7 @@
                         <RadioButton
                             android:id="@+id/rb_C3006_6"
                             style="@style/RadioButton"
-                            android:text="Other public (specify)" />
+                            android:text="@string/rb_C3006_6" />
 
                         <RadioButton
                             android:id="@+id/rb_C3006_7"
@@ -388,7 +433,7 @@
                         <RadioButton
                             android:id="@+id/rb_C3006_10"
                             style="@style/RadioButton"
-                            android:text="Other private medical (Specify)" />
+                            android:text="@string/rb_C3006_10" />
 
                         <RadioButton
                             android:id="@+id/rb_C3006_11"
@@ -398,7 +443,7 @@
                         <RadioButton
                             android:id="@+id/rb_C3006_12"
                             style="@style/RadioButton"
-                            android:text="Other (specify)" />
+                            android:text="@string/rb_C3006_12" />
 
                         <RadioButton
                             android:id="@+id/rb_C3006_DK"
@@ -445,6 +490,10 @@
                         android:id="@+id/txt_C3008"
                         style="@style/TextView"
                         android:text="@string/txt_C3008" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3008_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -517,7 +566,7 @@
             </android.support.v7.widget.CardView>
             <!--C3008_OT Edit text Ends-->
 
-            <!--C3008_1 Radio Button Starts -->
+            <!--C3009_1 Radio Button Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
@@ -528,6 +577,24 @@
                         android:id="@+id/txt_C3009_1"
                         style="@style/TextView"
                         android:text="@string/txt_C3009_1" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3009_1_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3010" />
+
+                    <LinearLayout
+                        style="@style/Q_Linerlayout_v"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/n2009_1" />
+                    </LinearLayout>
 
 
                     <RadioGroup style="@style/RadioGroup">
@@ -571,6 +638,24 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3009_2" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3009_2_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3010" />
+
+                    <LinearLayout
+                        style="@style/Q_Linerlayout_v"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/n2009_2" />
+                    </LinearLayout>
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -613,6 +698,19 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3009_3" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="1 → C3010" />
+
+                    <LinearLayout
+                        style="@style/Q_Linerlayout_v"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/n2009_3" />
+                    </LinearLayout>
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -655,6 +753,15 @@
                         style="@style/TextView"
                         android:text="@string/txt_C3009_4" />
 
+                    <LinearLayout
+                        style="@style/Q_Linerlayout_v"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/n2009_4" />
+                    </LinearLayout>
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -696,6 +803,10 @@
                         android:id="@+id/txt_C3010"
                         style="@style/TextView"
                         android:text="@string/txt_C3010" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/C3010_h" />
 
                     <EditText
                         android:id="@+id/ed_C3010"
@@ -743,7 +854,7 @@
                 android:id="@+id/btn_next"
                 style="@style/Button_collder"
                 android:layout_margin="10dp"
-                android:text="Next" />
+                android:text="@string/next" />
 
         </LinearLayout>
 

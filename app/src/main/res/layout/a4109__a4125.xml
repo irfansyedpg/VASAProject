@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cyan"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".A.A4109_A4125">
 
-    <RelativeLayout
+    <!--<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -27,7 +27,7 @@
             android:layout_alignParentTop="true"
             android:src="@drawable/unwhite" />
 
-    </RelativeLayout>
+    </RelativeLayout>-->
 
 
     <ScrollView
@@ -45,6 +45,32 @@
 
         <LinearLayout style="@style/Q_Linerlayout_v">
 
+            <!-- EditText study_id Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_study_id"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/txt_study_id" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_study_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_study_id"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="date"
+                        app:met_mask="####-###-##" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText study_id Ends -->
+
             <!-- Radio Buttons A4109 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
@@ -56,6 +82,10 @@
                         android:id="@+id/A4109"
                         style="@style/TextView"
                         android:text="@string/A4109" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4113" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -221,6 +251,10 @@
                         style="@style/TextView"
                         android:text="@string/A4113" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4115" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -303,6 +337,10 @@
                         style="@style/TextView"
                         android:text="@string/A4115" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4118" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -343,6 +381,10 @@
                         android:id="@+id/A4116"
                         style="@style/TextView"
                         android:text="@string/A4116" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4118" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -385,6 +427,14 @@
                         style="@style/TextView"
                         android:text="@string/A4117_u" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4117_u_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Months → A4117_b \n  Don't know \n Refused to answer → A4118 " />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -426,6 +476,15 @@
                         style="@style/TextView"
                         android:text="@string/days" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4117_a_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Days → A4118" />
+
+
                     <EditText
                         android:id="@+id/ed_A4117_a"
                         style="@style/EditText_number"
@@ -448,6 +507,10 @@
                         style="@style/TextView"
                         android:text="@string/months" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4117_b_h" />
+
                     <EditText
                         android:id="@+id/ed_A4117_b"
                         style="@style/EditText_number"
@@ -469,6 +532,10 @@
                         android:id="@+id/A4118"
                         style="@style/TextView"
                         android:text="@string/A4118" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4123" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -793,7 +860,7 @@
                     android:id="@+id/btn_next6"
                     style="@style/Button_collder"
                     android:layout_margin="10dp"
-                    android:text="NEXT" />
+                    android:text="@string/next" />
 
             </android.support.v7.widget.CardView>
 

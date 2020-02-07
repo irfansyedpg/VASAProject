@@ -18,16 +18,9 @@ public class LocalDataManager {
 
 
     public LocalDataManager(Context context) {
-       // try {
+
             this.mContext = context;
             database = new DBHelper(context).getWritableDatabase();
-
-
-      /*  } catch (Exception e) {
-             Toast.makeText(context,"Error in Localdata Mangager",Toast.LENGTH_LONG).show();
-        }
-
-        */
     }
 
 
@@ -37,7 +30,7 @@ public class LocalDataManager {
 
         try {
 
-            String query = "select * from C3001_C3011 where STATUS = '%s' order by id ASC";
+            String query = "select study_id, interviewType from Q1101_Q1610 where currentSection = 111 and STATUS = '%s' ORDER BY id DESC";
             query = String.format(query, status);
 
             database.beginTransaction();
@@ -46,7 +39,36 @@ public class LocalDataManager {
                 if (c.moveToFirst()) {
                     do {
 
-                        list.add(c.getString(2) + "/" + c.getString(0));
+                        list.add(c.getString(0) + "/" + c.getString(1));
+
+                    } while (c.moveToNext());
+                }
+            }
+        } finally {
+            database.setTransactionSuccessful();
+            database.endTransaction();
+            database.close();
+        }
+        return list;
+    }
+
+
+    public List<String> getLogListPending(String status) {
+
+        ArrayList<String> list = new ArrayList<>();
+
+        try {
+
+            String query = "select study_id, currentSection, interviewType from Q1101_Q1610 where currentSection != 111 order by id ASC";
+            query = String.format(query, status);
+
+            database.beginTransaction();
+            Cursor c = database.rawQuery(query, null);
+            if (c != null) {
+                if (c.moveToFirst()) {
+                    do {
+
+                        list.add(c.getString(0) + "/" + c.getString(1) + "/" + c.getString(2));
                     } while (c.moveToNext());
                 }
             }

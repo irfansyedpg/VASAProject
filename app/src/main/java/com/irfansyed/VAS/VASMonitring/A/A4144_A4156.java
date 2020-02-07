@@ -1,8 +1,10 @@
 package com.irfansyed.VAS.VASMonitring.A;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -11,11 +13,14 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
 
+import data.DBHelper;
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
+import utils.InputFilterMinMax;
 
 public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
@@ -24,6 +29,7 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
             btn_next8;
 
     LinearLayout
+            ll_study_id,
             ll_A4144,
             ll_A4145,
             ll_A4146,
@@ -100,6 +106,7 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
             rb_A4156_RA;
 
     EditText
+            ed_study_id,
             ed_A4150_a,
             ed_A4150_b;
 
@@ -121,6 +128,8 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
             A4155,
             A4156,
             STATUS;
+
+    int currentSection;
 
     //End DECLARATION
 
@@ -217,6 +226,15 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4144__a4156);
 
+        this.setTitle(getString(R.string.h_a_sec_9));
+
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
+
         Initialization();
         events_calls();
     }
@@ -231,8 +249,36 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
         value_assignment();
         insert_data();
 
-        Intent c2 = new Intent(A4144_A4156.this, A4157_A4205.class);
-        startActivity(c2);
+        DBHelper db = new DBHelper(this);
+        Cursor res = db.getData("Q1101_Q1610", study_id);
+
+
+
+        if (res.getCount() > 0) {
+
+            //Toast.makeText(this, "" + parseInt(res.getString(68)), Toast.LENGTH_LONG).show();
+
+            res.moveToFirst();
+
+            if (Integer.valueOf(res.getString(res.getColumnIndex("Q1601"))).equals(1)) {
+
+                Intent c = new Intent(this, A4206_A4207.class);
+                c.putExtra("study_id", study_id);
+                startActivity(c);
+
+            } else {
+
+                Intent c = new Intent(this, A4157_A4205.class);
+                c.putExtra("study_id", study_id);
+                startActivity(c);
+
+            }
+        }
+
+
+        /*Intent c = new Intent(A4144_A4156.this, A4157_A4205.class);
+        c.putExtra("study_id", study_id);
+        startActivity(c);*/
     }
 
     @Override
@@ -285,7 +331,7 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
         if (compoundButton.getId() == R.id.rb_A4150_u_1
                 || compoundButton.getId() == R.id.rb_A4150_u_2
                 || compoundButton.getId() == R.id.rb_A4150_u_DK
-                || compoundButton.getId() == R.id.rb_A4150_u_RA)
+                || compoundButton.getId() == R.id.rb_A4150_u_RA) {
 
             ClearAllcontrol.ClearAll(ll_A4150_a);
         ClearAllcontrol.ClearAll(ll_A4150_b);
@@ -293,7 +339,7 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
         ll_A4150_a.setVisibility(View.GONE);
         ll_A4150_b.setVisibility(View.GONE);
 
-        {
+
             if (rb_A4150_u_1.isChecked()) {
                 ll_A4150_a.setVisibility(View.VISIBLE);
             } else if (rb_A4150_u_2.isChecked()) {
@@ -341,27 +387,35 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
         rb_A4154_DK.setOnCheckedChangeListener(this);
         rb_A4154_RA.setOnCheckedChangeListener(this);
 
+        ed_A4150_a.setFilters(new InputFilter[]{new InputFilterMinMax(0, 30, 99, 99)});
+        ed_A4150_b.setFilters(new InputFilter[]{new InputFilterMinMax(1, 60, 99, 99)});
+
     }
 
     void value_assignment() {
 
         study_id = "0";
-        A4144 = "000";
-        A4145 = "000";
-        A4146 = "000";
-        A4147 = "000";
-        A4148 = "000";
-        A4149 = "000";
-        A4150_u = "000";
-        A4150_a = "000";
-        A4150_b = "000";
-        A4151 = "000";
-        A4152 = "000";
-        A4153 = "000";
-        A4154 = "000";
-        A4155 = "000";
-        A4156 = "000";
+        A4144 = "-1";
+        A4145 = "-1";
+        A4146 = "-1";
+        A4147 = "-1";
+        A4148 = "-1";
+        A4149 = "-1";
+        A4150_u = "-1";
+        A4150_a = "-1";
+        A4150_b = "-1";
+        A4151 = "-1";
+        A4152 = "-1";
+        A4153 = "-1";
+        A4154 = "-1";
+        A4155 = "-1";
+        A4156 = "-1";
         STATUS = "0";
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         //A4144
         if (rb_A4144_1.isChecked()) {
@@ -623,6 +677,10 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
     }
 
     boolean validateField() {
+
+        if (Gothrough.IamHiden(ll_study_id) == false) {
+            return false;
+        }
         if (Gothrough.IamHiden(ll_A4144) == false) {
             return false;
         }
@@ -680,5 +738,9 @@ public class A4144_A4156 extends AppCompatActivity implements RadioButton.OnChec
         }
 
         return Gothrough.IamHiden(ll_A4156) != false;
+    }
+
+    public void onBackPressed() {
+        globale.interviewExit(this, this, study_id, currentSection = 9);
     }
 }

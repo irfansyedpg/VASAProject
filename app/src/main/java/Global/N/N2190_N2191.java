@@ -2,33 +2,34 @@ package Global.N;
 
 public class N2190_N2191 {
 
-    public String N2190 = "N2190";
-    public String N2190_1 = "N2190_1";
-    public String N2190_2 = "N2190_2";
-    public String N2190_3 = "N2190_3";
-    public String N2190_4 = "N2190_4";
-    public String N2190_5 = "N2190_5";
-    public String N2190_6 = "N2190_6";
-    public String N2190_7 = "N2190_7";
-    public String N2190_8 = "N2190_8";
-    public String N2190_9 = "N2190_9";
-    public String N2190_10 = "N2190_10";
-    public String N2190_11 = "N2190_11";
-    public String N2190_12 = "N2190_12";
-    public String N2190_13 = "N2190_13";
-    public String N2190_14 = "N2190_14";
-    public String N2190_15 = "N2190_15";
-    public String N2190_16 = "N2190_16";
-    public String N2190_17 = "N2190_17";
-    public String N2190_18 = "N2190_18";
-    public String N2190_19 = "N2190_19";
-    public String N2190_20 = "N2190_20";
-    public String N2190_21 = "N2190_21";
-    public String N2190_22 = "N2190_22";
-    public String N2191_1 = "N2191_1";
-    public String N2191_2 = "N2191_2";
+    public String N2190 = "";
+    public String N2190_1 = "";
+    public String N2190_2 = "";
+    public String N2190_3 = "";
+    public String N2190_4 = "";
+    public String N2190_5 = "";
+    public String N2190_6 = "";
+    public String N2190_7 = "";
+    public String N2190_8 = "";
+    public String N2190_9 = "";
+    public String N2190_10 = "";
+    public String N2190_11 = "";
+    public String N2190_12 = "";
+    public String N2190_13 = "";
+    public String N2190_14 = "";
+    public String N2190_15 = "";
+    public String N2190_16 = "";
+    public String N2190_17 = "";
+    public String N2190_18 = "";
+    public String N2190_19 = "";
+    public String N2190_20 = "";
+    public String N2190_21 = "";
+    public String N2190_22 = "";
+    public String N2191_1 = "";
+    public String N2191_2 = "";
 
-    public String STUDYID = "STUDYID";
+
+    public String STUDYID = "";
 
     public String getSTUDYID() {
         return STUDYID;

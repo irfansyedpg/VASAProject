@@ -18,8 +18,8 @@ public class A4051_A4066 {
     public static String A4059_b = "A4059_b";
     public static String A4060 = "A4060";
     public static String A4061 = "A4061";
-    public static String A4062 = "A4062 ";
-    public static String A4063 = "A4063 ";
+    public static String A4062 = "A4062";
+    public static String A4063 = "A4063";
     public static String A4064_u = "A4064_u";
     public static String A4064_a = "A4064_a";
     public static String A4064_b = "A4064_b";

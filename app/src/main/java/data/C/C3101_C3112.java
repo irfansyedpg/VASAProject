@@ -8,13 +8,14 @@ public class C3101_C3112 {
 
     public static String getCreateQuery() {
         String query;
-        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' INTEGER,   " +
+        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' TEXT,   " +
 
                 Global.C.C3101_C3112.C3101 + " TEXT," +
                 Global.C.C3101_C3112.C3102 + " TEXT," +
                 Global.C.C3101_C3112.C3103 + " TEXT," +
                 Global.C.C3101_C3112.C3104 + " TEXT," +
                 Global.C.C3101_C3112.C3105 + " TEXT," +
+                Global.C.C3101_C3112.C3105_OT + " TEXT," +
                 Global.C.C3101_C3112.C3106 + " TEXT," +
                 Global.C.C3101_C3112.C3107_1 + " TEXT," +
                 Global.C.C3101_C3112.C3107_2 + " TEXT," +

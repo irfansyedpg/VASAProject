@@ -5,7 +5,7 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent" android:orientation="vertical"
-tools:context="com.samirk433.VAS.VASMonitring.LoginActivity"
+    tools:context="com.irfansyed.VAS.VASMonitring.Core.LoginActivity"
 android:weightSum="1"
 android:background="#EEEEEE"
 
@@ -38,18 +38,22 @@ android:background="#EEEEEE"
 
 
 
-    <ImageView
+    <TextView
         android:layout_width="260dp"
         android:layout_height="260dp"
         android:id="@+id/imageView2"
-        android:src="@drawable/uncolor"
+        android:layout_centerHorizontal="true"
 
 
-      android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:layout_marginTop="220dp"
+        android:text="VASA"
+        android:textColor="@color/colorPrimary"
+        android:textSize="55sp"
+        android:textStyle="bold"
 
 
-        />
+        />​
 
 
     <TextView

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".N.N2012_N2016">
 
     <data>
@@ -54,6 +55,31 @@
             android:scrollbarSize="10dip">
 
             <LinearLayout style="@style/Q_Linerlayout_v">
+
+                <!-- EditText study_id Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                    <LinearLayout
+                        android:id="@+id/ll_study_id"
+                        style="@style/Q_Linerlayout_v">
+
+                        <TextView
+                            style="@style/TextView"
+                            android:text="@string/txt_study_id" />
+
+                        <com.santalu.widget.MaskEditText
+                            android:id="@+id/ed_study_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_study_id"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:inputType="date"
+                            app:met_mask="####-###-##" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <!-- EditText study_id Ends -->
+
 
                 <!-- Radio Buttons N2012 Starts -->
                 <android.support.v7.widget.CardView style="@style/Q_CardView">
@@ -236,6 +262,14 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2016" />
 
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="@string/N2016_h" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text=" 2 → N2023" />
+
                         <RadioGroup
                             android:id="@+id/rg_N2016"
                             style="@style/RadioGroup">
@@ -268,7 +302,7 @@
                         style="@style/Button_collder"
                         android:layout_margin="10dp"
                         android:onClick="@{() -> callback.BtnContinue()}"
-                        android:text="NEXT SECTION" />
+                        android:text="@string/next" />
 
 
                 </android.support.v7.widget.CardView>

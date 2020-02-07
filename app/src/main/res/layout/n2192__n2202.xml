@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".N.N2192_N2202">
 
     <data>
@@ -55,6 +56,31 @@
 
             <LinearLayout style="@style/Q_Linerlayout_v">
 
+                <!-- EditText study_id Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                    <LinearLayout
+                        android:id="@+id/ll_study_id"
+                        style="@style/Q_Linerlayout_v">
+
+                        <TextView
+                            style="@style/TextView"
+                            android:text="@string/txt_study_id" />
+
+                        <com.santalu.widget.MaskEditText
+                            android:id="@+id/ed_study_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_study_id"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:inputType="date"
+                            app:met_mask="####-###-##" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <!-- EditText study_id Ends -->
+
+
                 <!-- Radio Buttons N2192 Starts -->
                 <android.support.v7.widget.CardView style="@style/Q_CardView">
 
@@ -66,6 +92,10 @@
                             android:id="@+id/txt_N2192"
                             style="@style/TextView"
                             android:text="@string/txt_N2192" />
+
+                        <TextView
+                            style="@style/TextView_Hint"
+                            android:text="8, 2 or 9 → N2199" />
 
                         <RadioGroup
                             android:id="@+id/rg_N2192"
@@ -111,6 +141,14 @@
                                 android:id="@+id/txt_N2193"
                                 style="@style/TextView"
                                 android:text="@string/txt_N2193" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/txt_N2193_h" />
+
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="8, 2 or 9 → N2211" />
 
                             <RadioGroup
                                 android:id="@+id/rg_N2193"
@@ -160,13 +198,13 @@
                                 <EditText
                                     android:id="@+id/ed_N2194_1"
                                     style="@style/EditText_number"
-                                    android:hint="@string/days"
+                                    android:hint="@string/N2194_1_h"
                                     android:maxLength="2" />
 
                                 <EditText
                                     android:id="@+id/ed_N2194_2"
                                     style="@style/EditText_number"
-                                    android:hint="@string/hours"
+                                    android:hint="@string/N2194_2_h"
                                     android:maxLength="2" />
 
                             </LinearLayout>
@@ -299,6 +337,11 @@
                                     android:id="@+id/txt_N2198"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2198" />
+
+                                <TextView
+                                    style="@style/TextView_Hint"
+                                    android:text="@string/N2198_h" />
+
 
                                 <CheckBox
                                     android:id="@+id/cb_N2198_1"
@@ -503,6 +546,10 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2202" />
 
+                            <TextView
+                                style="@style/TextView_Hint"
+                                android:text="@string/N2202_h" />
+
                             <CheckBox
                                 android:id="@+id/cb_N2202_1"
                                 style="@style/CheckBox"
@@ -580,7 +627,7 @@
                         style="@style/Button_collder"
                         android:layout_margin="10dp"
                         android:onClick="@{() -> callback.BtnContinue()}"
-                        android:text="NEXT SECTION" />
+                        android:text="@string/next" />
 
 
                 </android.support.v7.widget.CardView>

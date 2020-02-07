@@ -8,7 +8,7 @@ public class N2051_N2078 {
         String query;
         query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT,  " +
 
-                Global.N.N2051_N2078.sub_N2051_N2078.STUDYID + " INTEGER," +
+                Global.N.N2051_N2078.sub_N2051_N2078.STUDYID + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2051 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2052 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2053_1 + " TEXT," +
@@ -22,7 +22,12 @@ public class N2051_N2078 {
                 Global.N.N2051_N2078.sub_N2051_N2078.N2054 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2055 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2056 + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2057 + " TEXT," +
+                Global.N.N2051_N2078.sub_N2051_N2078.N2057_1 + " TEXT," +
+                Global.N.N2051_N2078.sub_N2051_N2078.N2057_2 + " TEXT," +
+                Global.N.N2051_N2078.sub_N2051_N2078.N2057_3 + " TEXT," +
+                Global.N.N2051_N2078.sub_N2051_N2078.N2057_4 + " TEXT," +
+                Global.N.N2051_N2078.sub_N2051_N2078.N2057_5 + " TEXT," +
+                Global.N.N2051_N2078.sub_N2051_N2078.N2057_6 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2058_1 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2058_2 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2058_3 + " TEXT," +
@@ -42,12 +47,6 @@ public class N2051_N2078 {
                 Global.N.N2051_N2078.sub_N2051_N2078.N2065 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2066 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2067 + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2057_1 + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2057_2 + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2057_3 + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2057_4 + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2057_5 + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2057_6 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2068 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2069_1 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2069_2 + " TEXT," +

@@ -11,7 +11,11 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.irfansyed.VAS.VASMonitring.Other.globale;
 import com.irfansyed.VAS.VASMonitring.R;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
@@ -19,11 +23,16 @@ import utils.Gothrough;
 
 public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
+    private Pattern pattern;
+    private Matcher matcher;
+    private static final String DATE_PATTERN = "(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/((19|20)\\d\\d)";
+
     //Declaration Region
     Button
             btn_next12;
 
     LinearLayout
+            ll_study_id,
             ll_A4301,
             ll_A4302_1,
             ll_A4302_2,
@@ -188,6 +197,7 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
             rb_A4314_RA;
 
     EditText
+            ed_study_id,
             ed_A4306_1,
             ed_A4306_2,
             ed_A4307,
@@ -236,6 +246,8 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
             A4314,
             A4315,
             STATUS;
+
+    int currentSection;
 
     //EndRegion Declaration
 
@@ -420,6 +432,15 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a4301__a4315);
 
+        this.setTitle(getString(R.string.h_a_sec_11));
+
+        ll_study_id = findViewById(R.id.ll_study_id);
+        ed_study_id = findViewById(R.id.ed_study_id);
+        Intent getStudyId = getIntent();
+        study_id = getStudyId.getExtras().getString("study_id");
+        ed_study_id.setText(study_id);
+        ed_study_id.setEnabled(false);
+
         Initialization();
         events_call();
     }
@@ -432,11 +453,35 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
             return;
         }
 
+        pattern = Pattern.compile(DATE_PATTERN);
+
+        /*if (!validate(ed_A4306_1.getText().toString().trim())) {
+
+            ed_A4306_1.setError("Kindly enter a valid date");
+            ed_A4306_1.requestFocus();
+            return;
+        }
+
+        if (!validate(ed_A4306_2.getText().toString().trim())) {
+
+            ed_A4306_2.setError("Kindly enter a valid date");
+            ed_A4306_2.requestFocus();
+            return;
+        }
+
+        if (!validate(ed_A4307.getText().toString().trim())) {
+
+            ed_A4307.setError("Kindly enter a valid date");
+            ed_A4307.requestFocus();
+            return;
+        }*/
+
         value_assignment();
         insert_data();
 
-        Intent c2 = new Intent(A4301_A4315.this, A4351_A4364.class);
-        startActivity(c2);
+        Intent c = new Intent(A4301_A4315.this, A4351_A4364.class);
+        c.putExtra("study_id", study_id);
+        startActivity(c);
 
     }
 
@@ -490,7 +535,6 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
             if (rb_A4302_7_2.isChecked() || rb_A4302_7_DK.isChecked() || rb_A4302_7_RA.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_A4303);
-
                 ll_A4303.setVisibility(View.GONE);
 
             } else {
@@ -603,7 +647,7 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
                 || compoundButton.getId() == R.id.rb_A4314_RA)
 
         {
-            if (rb_A4306_2check_2.isChecked() || rb_A4314_DK.isChecked() || rb_A4314_RA.isChecked()) {
+            if (rb_A4314_2.isChecked() || rb_A4314_DK.isChecked() || rb_A4314_RA.isChecked()) {
 
                 ClearAllcontrol.ClearAll(ll_A4315);
                 ll_A4315.setVisibility(View.GONE);
@@ -653,46 +697,51 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
     void value_assignment() {
 
         study_id = "0";
-        A4301 = "000";
-        A4302_1 = "000";
-        A4302_2 = "000";
-        A4302_3 = "000";
-        A4302_4 = "000";
-        A4302_5 = "000";
-        A4302_6 = "000";
-        A4302_7 = "000";
-        A4303 = "000";
-        A4304 = "000";
-        A4305 = "000";
-        A4306_1check = "000";
-        A4306_1 = "000";
-        A4306_2check = "000";
-        A4306_2 = "000";
-        A4307 = "000";
-        A4308 = "000";
-        A4309 = "000";
-        A4310_1 = "000";
-        A4310_2 = "000";
-        A4310_3 = "000";
-        A4310_4 = "000";
-        A4310_5 = "000";
-        A4310_6 = "000";
-        A4310_7 = "000";
-        A4310_8 = "000";
-        A4310_9 = "000";
-        A4310_10 = "000";
-        A4310_11 = "000";
-        A4311_1 = "000";
-        A4311_2 = "000";
-        A4311_3 = "000";
-        A4311_4 = "000";
-        A4311_5 = "000";
-        A4312 = "000";
-        A4313 = "000";
-        A4314 = "000";
-        A4315 = "000";
+        A4301 = "-1";
+        A4302_1 = "-1";
+        A4302_2 = "-1";
+        A4302_3 = "-1";
+        A4302_4 = "-1";
+        A4302_5 = "-1";
+        A4302_6 = "-1";
+        A4302_7 = "-1";
+        A4303 = "-1";
+        A4304 = "-1";
+        A4305 = "-1";
+        A4306_1check = "-1";
+        A4306_1 = "-1";
+        A4306_2check = "-1";
+        A4306_2 = "-1";
+        A4307 = "-1";
+        A4308 = "-1";
+        A4309 = "-1";
+        A4310_1 = "-1";
+        A4310_2 = "-1";
+        A4310_3 = "-1";
+        A4310_4 = "-1";
+        A4310_5 = "-1";
+        A4310_6 = "-1";
+        A4310_7 = "-1";
+        A4310_8 = "-1";
+        A4310_9 = "-1";
+        A4310_10 = "-1";
+        A4310_11 = "-1";
+        A4311_1 = "-1";
+        A4311_2 = "-1";
+        A4311_3 = "-1";
+        A4311_4 = "-1";
+        A4311_5 = "-1";
+        A4312 = "-1";
+        A4313 = "-1";
+        A4314 = "-1";
+        A4315 = "-1";
         STATUS = "0";
 
+
+        if (ed_study_id.getText().toString().length() > 0) {
+
+            study_id = ed_study_id.getText().toString().trim();
+        }
 
         //A4301
         if (rb_A4301_1.isChecked()) {
@@ -1256,6 +1305,10 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
 
     boolean validateField() {
 
+        if (Gothrough.IamHiden(ll_study_id) == false) {
+            return false;
+        }
+
         if (Gothrough.IamHiden(ll_A4301) == false) {
             return false;
         }
@@ -1405,5 +1458,51 @@ public class A4301_A4315 extends AppCompatActivity implements RadioButton.OnChec
         }
 
         return Gothrough.IamHiden(ll_A4315) != false;
+    }
+
+
+    public boolean validate(final String date) {
+
+        matcher = pattern.matcher(date);
+
+        if (date.equals("99/99/9999")) {
+
+            return true;
+
+        } else if (matcher.matches()) {
+
+            matcher.reset();
+
+            if (matcher.find()) {
+
+                String day = matcher.group(1);
+                String month = matcher.group(2);
+                int year = Integer.parseInt(matcher.group(3));
+
+                if (day.equals("31") &&
+                        (month.equals("4") || month.equals("6") || month.equals("9") ||
+                                month.equals("11") || month.equals("04") || month.equals("06") ||
+                                month.equals("09"))) {
+                    return false; // only 1,3,5,7,8,10,12 has 31 days
+                } else if (month.equals("2") || month.equals("02")) {
+                    //leap year
+                    if (year % 4 == 0) {
+                        return !day.equals("30") && !day.equals("31");
+                    } else {
+                        return !day.equals("29") && !day.equals("30") && !day.equals("31");
+                    }
+                } else {
+                    return true;
+                }
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
+
+    public void onBackPressed() {
+        globale.interviewExit(this, this, study_id, currentSection = 13);
     }
 }

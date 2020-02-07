@@ -3,31 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cyan"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".A.A4001_A4014">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:text="@string/app_name"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:textStyle="bold|italic" />
-
-        <ImageView
-            android:layout_width="90dp"
-            android:layout_height="60sp"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/unwhite" />
-
-    </RelativeLayout>
 
 
     <ScrollView
@@ -44,6 +22,32 @@
 
 
         <LinearLayout style="@style/Q_Linerlayout_v">
+
+            <!-- EditText study_id Starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_study_id"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/txt_study_id" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_study_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_study_id"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="date"
+                        app:met_mask="####-###-##" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText study_id Ends -->
 
             <!-- EditText A4001 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
@@ -144,6 +148,11 @@
                         style="@style/TextView"
                         android:text="@string/A4003" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4006" />
+
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -185,6 +194,10 @@
                         android:id="@+id/A4004"
                         style="@style/TextView"
                         android:text="@string/A4004" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Don't know or \n Refused to answer → A4006" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -229,15 +242,24 @@
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
-                        android:id="@+id/A4005"
-                        style="@style/TextView"
-                        android:text="@string/A4005" />
+                    android:id="@+id/A4005"
+                    style="@style/TextView"
+                    android:text="@string/A4005" />
 
+                    <TextView
+                        android:id="@+id/A4005_h"
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4005_h" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Grade/Year > = 8  → A4007" />
 
                     <EditText
                         android:id="@+id/ed_A4005"
                         style="@style/EditText_number"
-                        android:hint="@string/grade_year" />
+                        android:maxLength="2"
+                        android:hint="0-22 or 99" />
 
                 </LinearLayout>
 
@@ -256,6 +278,11 @@
                         android:id="@+id/A4006"
                         style="@style/TextView"
                         android:text="@string/A4006" />
+
+                    <TextView
+                        android:id="@+id/A4006_h"
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4006_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -299,6 +326,10 @@
                         style="@style/TextView"
                         android:text="@string/A4007" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="≠ 2 → A4007" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -329,7 +360,7 @@
                         <RadioButton
                             android:id="@+id/rb_A4007_6"
                             style="@style/RadioButton"
-                            android:text="Other" />
+                            android:text="@string/ot" />
 
                         <RadioButton
                             android:id="@+id/rb_A4007_DK"
@@ -427,6 +458,11 @@
                         style="@style/TextView"
                         android:text="@string/A4009a" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="No \n Don't know or \n Refused to answer → A4013u" />
+
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -468,6 +504,10 @@
                         style="@style/TextView"
                         android:text="@string/A4010" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Pipe or \n Chewing tobacco or \n other → A4012 \n Don't know or \n Refused to answer → A4013u" />
+
                     <RadioGroup style="@style/RadioGroup">
 
                         <RadioButton
@@ -488,7 +528,7 @@
                         <RadioButton
                             android:id="@+id/rb_A4010_4"
                             style="@style/RadioButton"
-                            android:text="other" />
+                            android:text="@string/ot" />
 
                         <RadioButton
                             android:id="@+id/rb_A4010_DK"
@@ -519,11 +559,21 @@
                         style="@style/TextView"
                         android:text="@string/A4011" />
 
+                    <TextView
+                        android:id="@+id/A4011_h"
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4011_h" />
+
+                    <TextView
+                    style="@style/TextView_Hint"
+                    android:text="سگریٹ → A4013u" />
+
 
                     <EditText
                         android:id="@+id/ed_A4011"
                         style="@style/EditText_number"
-                        android:hint="For don't know enter 99, For refused enter 88" />
+                        android:hint="1-99"
+                        android:maxLength="2" />
 
                 </LinearLayout>
 
@@ -532,7 +582,6 @@
 
             <!-- EditText A4012 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
-
 
                 <LinearLayout
                     android:id="@+id/ll_A4012"
@@ -543,10 +592,16 @@
                         style="@style/TextView"
                         android:text="@string/A4012" />
 
+                    <TextView
+                        android:id="@+id/A4012_h"
+                        style="@style/TextView_Hint"
+                        android:text="For don't know enter 99.\nFor refused enter 88" />
+
                     <EditText
                         android:id="@+id/ed_A4012"
                         style="@style/EditText_number"
-                        android:hint="For don't know enter 99, For refused enter 88" />
+                        android:hint="1-99"
+                        android:maxLength="2" />
 
                 </LinearLayout>
 
@@ -564,6 +619,10 @@
                         android:id="@+id/A4013u"
                         style="@style/TextView"
                         android:text="@string/A4013u" />
+
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Months → A4013m \n Years → A4013y \n Don't know \n Refused to answer → A4014 " />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -602,9 +661,9 @@
             <!-- EditText A4013d Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-
                 <LinearLayout
                     android:id="@+id/ll_A4013d"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -612,10 +671,16 @@
                         style="@style/TextView"
                         android:text="@string/days" />
 
+                    <TextView
+                        android:id="@+id/A4013d_h"
+                        style="@style/TextView_Hint"
+                        android:text="@string/days_h" />
+
                     <EditText
                         android:id="@+id/ed_A4013d"
                         style="@style/EditText_number"
-                        android:hint="@string/record_days_if_less_than_30_days_if_24_hours_00" />
+                        android:hint="0-29 or 99"
+                        android:maxLength="2" />
 
                 </LinearLayout>
 
@@ -627,6 +692,7 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4013m"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -634,10 +700,15 @@
                         style="@style/TextView"
                         android:text="@string/months" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Record months if 1-11 months\nIf Don't Know enter 99" />
+
                     <EditText
                         android:id="@+id/ed_A4013m"
                         style="@style/EditText_number"
-                        android:hint="Record months if 1-11 months" />
+                        android:hint="1-11 or 99"
+                        android:maxLength="2" />
 
                 </LinearLayout>
 
@@ -649,6 +720,7 @@
 
                 <LinearLayout
                     android:id="@+id/ll_A4013y"
+                    android:visibility="gone"
                     style="@style/Q_Linerlayout_v">
 
                     <TextView
@@ -656,10 +728,15 @@
                         style="@style/TextView"
                         android:text="@string/years" />
 
+                    <TextView
+                        style="@style/TextView_Hint"
+                        android:text="Record years if 1 year or more\nIf Don't know Enter 99" />
+
                     <EditText
                         android:id="@+id/ed_A4013y"
                         style="@style/EditText_number"
-                        android:hint="Record years if 1 year or more" />
+                        android:hint="1-49 or 99"
+                        android:maxLength="2" />
 
                 </LinearLayout>
 
@@ -677,6 +754,11 @@
                         android:id="@+id/A4014"
                         style="@style/TextView"
                         android:text="@string/A4014" />
+
+                    <TextView
+                        android:id="@+id/A4014_h"
+                        style="@style/TextView_Hint"
+                        android:text="@string/A4014_h" />
 
                     <RadioGroup style="@style/RadioGroup">
 
@@ -708,7 +790,7 @@
                     android:id="@+id/btn_next1"
                     style="@style/Button_collder"
                     android:layout_margin="10dp"
-                    android:text="NEXT" />
+                    android:text="@string/next" />
 
             </android.support.v7.widget.CardView>
 

@@ -10,10 +10,12 @@ public class C3121_C3228 {
 
     public static String getCreateQuery() {
         String query;
-        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' INTEGER,   " +
+        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' TEXT,   " +
 
                 Global.C.C3121_C3228.C3121 + " TEXT," +
-                Global.C.C3121_C3228.C3122 + " TEXT," +
+                Global.C.C3121_C3228.C3122d + " TEXT," +
+                Global.C.C3121_C3228.C3122m + " TEXT," +
+                Global.C.C3121_C3228.C3122y + " TEXT," +
                 Global.C.C3121_C3228.C3123_u + " TEXT," +
                 Global.C.C3121_C3228.C3123_b + " TEXT," +
                 Global.C.C3121_C3228.C3123_c + " TEXT," +
@@ -69,7 +71,8 @@ public class C3121_C3228 {
                 Global.C.C3121_C3228.C3159_c + " TEXT," +
                 Global.C.C3121_C3228.C3160 + " TEXT," +
                 Global.C.C3121_C3228.C3161 + " TEXT," +
-                Global.C.C3121_C3228.C3162 + " TEXT," +
+                Global.C.C3121_C3228.C3162d + " TEXT," +
+                Global.C.C3121_C3228.C3162m + " TEXT," +
                 Global.C.C3121_C3228.C3163_u + " TEXT," +
                 Global.C.C3121_C3228.C3163_a + " TEXT," +
                 Global.C.C3121_C3228.C3163_b + " TEXT," +
@@ -146,6 +149,7 @@ public class C3121_C3228 {
                 Global.C.C3121_C3228.C3216 + " TEXT," +
                 Global.C.C3121_C3228.C3217 + " TEXT," +
                 Global.C.C3121_C3228.C3218 + " TEXT," +
+                Global.C.C3121_C3228.C3218_OT + " TEXT," +
                 Global.C.C3121_C3228.C3219 + " TEXT," +
                 Global.C.C3121_C3228.C3220_u + " TEXT," +
                 Global.C.C3121_C3228.C3220_a + " TEXT," +
@@ -185,5 +189,13 @@ public class C3121_C3228 {
 
         return query;
     }
+
+    /*public static String getAlterQuery() {
+        String query;
+        query = "ALTER TABLE '" + TABLE_NAME + "' ADD COLUMN " +
+                Global.C.C3121_C3228.C3122y + " TEXT;";
+
+        return query;
+    }*/
 }
 
