@@ -463,23 +463,21 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
 
 
         //A4001
-        if (ed_A4001.getText().toString().trim().length() > 0) {
-            A4001 = ed_A4001.getText().toString().trim();
-        }
+        A4001 = ed_A4001.getText().toString().trim().length() > 0 ? ed_A4001.getText().toString().trim() : "0";
 
         //A4002
-        if (rb_A4002_1.isChecked()) {
-            A4002 = "1";
-        }
-        if (rb_A4002_2.isChecked()) {
-            A4002 = "2";
-        }
-        if (rb_A4002_3.isChecked()) {
-            A4002 = "3";
-        }
-        if (rb_A4002_4.isChecked()) {
-            A4002 = "4";
-        }
+        A4002 = rb_A4002_1.isChecked() ? "1"
+                : rb_A4002_2.isChecked() ? "2"
+                : rb_A4002_3.isChecked() ? "3"
+                : rb_A4002_4.isChecked() ? "4"
+                : rb_A4002_5.isChecked() ? "5"
+                : rb_A4002_6.isChecked() ? "6"
+                : rb_A4002_DK.isChecked() ? "98"
+                : rb_A4002_RA.isChecked() ? "99" : "0";
+
+
+
+
         if (rb_A4002_5.isChecked()) {
             A4002 = "5";
         }
@@ -665,15 +663,7 @@ public class A4001_A4014 extends AppCompatActivity implements RadioButton.OnChec
         }
 
         //A4014
-        if (rb_A4014_1.isChecked()) {
-            A4014 = "1";
-        }
-        if (rb_A4014_2.isChecked()) {
-            A4014 = "2";
-        }
-        if (rb_A4014_DK.isChecked()) {
-            A4014 = "9";
-        }
+        A4014 = rb_A4014_1.isChecked() ? "1" : rb_A4014_2.isChecked() ? "2" : rb_A4014_DK.isChecked() ? "9" : "0";
     }
 
     void insert_data() {
