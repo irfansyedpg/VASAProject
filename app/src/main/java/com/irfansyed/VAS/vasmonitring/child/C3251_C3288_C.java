@@ -1,5 +1,7 @@
 package com.irfansyed.vas.vasmonitring.child;
 
+import static com.irfansyed.vas.vasmonitring.child.C3251_C3288_A.c3251A_ID;
+
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -22,14 +24,10 @@ import data.DBHelper;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 
-import static com.irfansyed.vas.vasmonitring.child.C3251_C3288_A.c3251A_ID;
-
 public class C3251_C3288_C extends AppCompatActivity {
 
     int currentSection;
-
     String study_id;
-
     C3251C3288CBinding bi;
     boolean C3281Flag = true, flag_c3252 = true, flag_c3064 = true, flag_c3070 = true, flag_c3253 = false;
     int skip_flag;
@@ -596,15 +594,26 @@ public class C3251_C3288_C extends AppCompatActivity {
 
         C3251_C3288_A_C C3251C = new C3251_C3288_A_C();
 
-        C3251C.setC3254(bi.rbC32541.isChecked() ? "1" : bi.rbC32542.isChecked() ? "2" : bi.rbC32543.isChecked() ? "3" : bi.rbC32544.isChecked() ? "4" : bi.rbC32545.isChecked() ? "5" : bi.rbC3254OT.isChecked() ? "6" : bi.rbC3254DK.isChecked() ? "9" : "-1");
-        C3251C.setC3254x(bi.edC3254OT.getText().toString().trim().length() > 0 ? bi.edC3254OT.getText().toString() : "-1");
-        C3251C.setC3255(bi.rbC32551.isChecked() ? "1" : bi.rbC32552.isChecked() ? "2" : bi.rbC3255DK.isChecked() ? "9" : "-1");
+        C3251C.setC3254(bi.rbC32541.isChecked() ? "1"
+                : bi.rbC32542.isChecked() ? "2"
+                : bi.rbC32543.isChecked() ? "3"
+                : bi.rbC32544.isChecked() ? "4"
+                : bi.rbC32545.isChecked() ? "5"
+                : bi.rbC3254OT.isChecked() ? "6"
+                : bi.rbC3254DK.isChecked() ? "9"
+                : "-1");
+        C3251C.setC3254x(bi.edC3254OT.getText().toString().trim().isEmpty() ? "-1" : bi.edC3254OT.getText().toString());
+
+        C3251C.setC3255(bi.rbC32551.isChecked() ? "1"
+                : bi.rbC32552.isChecked() ? "2"
+                : bi.rbC3255DK.isChecked() ? "9"
+                : "-1");
 
         C3251C.setC32561(bi.cbC32561.isChecked() ? "1" : "-1");
         C3251C.setC32562(bi.cbC32562.isChecked() ? "2" : "-1");
         C3251C.setC32563(bi.cbC32563.isChecked() ? "3" : "-1");
         C3251C.setC32564(bi.cbC32564.isChecked() ? "4" : "-1");
-        C3251C.setC32564x(bi.edC32564.getText().toString().trim().length() > 0 ? bi.edC32564.getText().toString() : "-1");
+        C3251C.setC32564x(bi.edC32564.getText().toString().trim().isEmpty() ? "-1" : bi.edC32564.getText().toString());
         C3251C.setC32565(bi.cbC32565.isChecked() ? "5" : "-1");
         C3251C.setC32566(bi.cbC32566.isChecked() ? "6" : "-1");
         C3251C.setC32567(bi.cbC32567.isChecked() ? "7" : "-1");
@@ -614,15 +623,24 @@ public class C3251_C3288_C extends AppCompatActivity {
         C3251C.setC325611(bi.cbC325611.isChecked() ? "11" : "-1");
         C3251C.setC325612(bi.cbC325612.isChecked() ? "12" : "-1");
         C3251C.setC3256Ot(bi.cbC3256OT.isChecked() ? "13" : "-1");
-        C3251C.setC3256OTx(bi.edC3256OT.getText().toString().trim().length() > 0 ? bi.edC3256OT.getText().toString() : "-1");
+        C3251C.setC3256OTx(bi.edC3256OT.getText().toString().trim().isEmpty() ? "-1" : bi.edC3256OT.getText().toString());
         C3251C.setC3256Dk(bi.cbC3256DK.isChecked() ? "99" : "-1");
 
-        C3251C.setC32571(bi.edC32571.getText().toString().trim().length() > 0 ? bi.edC32571.getText().toString() : "-1");
-        C3251C.setC32572(bi.edC32572.getText().toString().trim().length() > 0 ? bi.edC32572.getText().toString() : "-1");
-        C3251C.setC32573(bi.edC32573.getText().toString().trim().length() > 0 ? bi.edC32573.getText().toString() : "-1");
+        C3251C.setC32571(bi.edC32571.getText().toString().trim().isEmpty() ? "-1" : bi.edC32571.getText().toString());
+        C3251C.setC32572(bi.edC32572.getText().toString().trim().isEmpty() ? "-1" : bi.edC32572.getText().toString());
+        C3251C.setC32573(bi.edC32573.getText().toString().trim().isEmpty() ? "-1" : bi.edC32573.getText().toString());
 
-        C3251C.setC32581(bi.rbC325811.isChecked() ? "1" : bi.rbC325812.isChecked() ? "2" : bi.rbC325813.isChecked() ? "3" : bi.rbC32581DK.isChecked() ? "9" : "-1");
-        C3251C.setC32582(bi.rbC325821.isChecked() ? "1" : bi.rbC325822.isChecked() ? "2" : bi.rbC325823.isChecked() ? "3" : bi.rbC32582DK.isChecked() ? "9" : "-1");
+        C3251C.setC32581(bi.rbC325811.isChecked() ? "1"
+                : bi.rbC325812.isChecked() ? "2"
+                : bi.rbC325813.isChecked() ? "3"
+                : bi.rbC32581DK.isChecked() ? "9"
+                : "-1");
+
+        C3251C.setC32582(bi.rbC325821.isChecked() ? "1"
+                : bi.rbC325822.isChecked() ? "2"
+                : bi.rbC325823.isChecked() ? "3"
+                : bi.rbC32582DK.isChecked() ? "9"
+                : "-1");
 
         C3251C.setC3259(bi.rbC325911.isChecked() ? "1" : bi.rbC325912.isChecked() ? "2" : bi.rbC325913.isChecked() ? "3"
                 : bi.rbC325914.isChecked() ? "4" : bi.rbC325915.isChecked() ? "5" : bi.rbC325916.isChecked() ? "6" : bi.rbC325917.isChecked() ? "7"
@@ -730,13 +748,14 @@ public class C3251_C3288_C extends AppCompatActivity {
 
         C3251C.setC3287(bi.rbC32871.isChecked() ? "1" : bi.rbC32872.isChecked() ? "2" : bi.rbC3287DK.isChecked() ? "9" : bi.rbC3287RA.isChecked() ? "8" : "-1");
 
-        C3251C.setC3288(bi.edC3288.getText().toString().trim().length() > 0 ? bi.edC3288.getText().toString() : "-1");
+        C3251C.setC3288(bi.edC3288.getText().toString().trim().isEmpty() ? "-1" : bi.edC3288.getText().toString());
 
         DBHelper db = new DBHelper(this);
         Long row = db.update_C3251C(C3251C, bi.edStudyId.getText().toString());
 
         return row > 0;
     }
+
 
     public Boolean validateField() {
 
